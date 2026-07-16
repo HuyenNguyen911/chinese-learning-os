@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "title": "Buổi 1 — Chào hỏi",
+    "lesson": "Bài 1 · Quyển 1 · Giáo trình Hán ngữ"
+  },
+  "theme": {
+    "accent": "C0392B",
+    "cjk_font": "Microsoft YaHei"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "你好!",
+      "subtitle": "Buổi 1 — Chào hỏi cơ bản",
+      "footer": "Bài 1 · Quyển 1 · Giáo trình Hán ngữ"
+    },
+    {
+      "type": "section",
+      "title": "生词",
+      "subtitle": "6 từ mới cho buổi hôm nay"
+    },
+    {
+      "type": "vocab",
+      "title": "6 từ chào hỏi bạn dùng được ngay hôm nay",
+      "kicker": "生词",
+      "cols": 3,
+      "items": [
+        {"hz": "你", "py": "nǐ", "vn": "bạn / anh / chị"},
+        {"hz": "好", "py": "hǎo", "vn": "tốt, khỏe"},
+        {"hz": "你好", "py": "nǐ hǎo", "vn": "xin chào"},
+        {"hz": "老师", "py": "lǎoshī", "vn": "thầy/cô giáo"},
+        {"hz": "谢谢", "py": "xièxie", "vn": "cảm ơn"},
+        {"hz": "再见", "py": "zàijiàn", "vn": "tạm biệt"}
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "\"你好\" = 你 (bạn) + 好 (tốt) — chào ai cũng đúng",
+      "kicker": "语法",
+      "point": "Ghép đại từ nhân xưng + 好 để tạo lời chào lịch sự.",
+      "examples": [
+        {"hz": "你好!", "py": "Nǐ hǎo!", "vn": "Chào bạn!"},
+        {"hz": "老师好!", "py": "Lǎoshī hǎo!", "vn": "Chào thầy/cô!"},
+        {"hz": "你们好!", "py": "Nǐmen hǎo!", "vn": "Chào các bạn!"}
+      ],
+      "note": "Người Việt hay quên: 好 đọc thanh 3 (hǎo), không phải hào.",
+      "source": "Giáo trình Hán ngữ, Quyển 1, Bài 1"
+    },
+    {
+      "type": "table",
+      "title": "你好 vs 您好 — khi nào lịch sự hơn?",
+      "kicker": "对比",
+      "headers": ["", "你好", "您好"],
+      "cjk_cols": [1, 2],
+      "rows": [
+        ["Đối tượng", "bạn bè, ngang hàng", "người lớn tuổi, trang trọng"],
+        ["Sắc thái", "thân mật", "kính trọng"],
+        ["Pinyin", "nǐ hǎo", "nín hǎo"]
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Hội thoại: hai người bạn gặp nhau",
+      "kicker": "会话",
+      "turns": [
+        {"speaker": "A", "hz": "你好!", "py": "Nǐ hǎo!", "vn": "Chào cậu!"},
+        {"speaker": "B", "hz": "你好!", "py": "Nǐ hǎo!", "vn": "Chào cậu!"},
+        {"speaker": "A", "hz": "谢谢,再见!", "py": "Xièxie, zàijiàn!", "vn": "Cảm ơn, tạm biệt!"},
+        {"speaker": "B", "hz": "再见!", "py": "Zàijiàn!", "vn": "Tạm biệt!"}
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Đọc thêm để mở rộng",
+      "kicker": "阅读",
+      "groups": [
+        {
+          "label": "Trong sách",
+          "items": ["Giáo trình Hán ngữ Q1 — Bài 1: phần hội thoại 1 & 2", "Bài tập 生词 cuối Bài 1"]
+        },
+        {
+          "label": "Nguồn ngoài",
+          "items": ["你好 (nǐ hǎo) — cách dùng theo vùng miền", "您好 trong tình huống trang trọng / dịch vụ"]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "title": "Luyện tập: điền từ còn thiếu",
+      "kicker": "练习",
+      "instructions": "Điền chữ Hán thích hợp vào chỗ trống:",
+      "items": [
+        "____ 好! (Chào thầy/cô!)",
+        "谢____! (Cảm ơn!)",
+        "再____! (Tạm biệt!)"
+      ]
+    },
+    {
+      "type": "answers",
+      "title": "Đáp án",
+      "kicker": "答案",
+      "items": ["老师好!", "谢谢!", "再见!"]
+    },
+    {
+      "type": "bullets",
+      "title": "Tổng kết buổi 1",
+      "kicker": "总结",
+      "bullets": [
+        "Đã học 6 từ chào hỏi: 你好 · 老师 · 谢谢 · 再见 ...",
+        "Cấu trúc: đại từ + 好 = lời chào",
+        "Phân biệt 你好 (thân mật) vs 您好 (trang trọng)"
+      ]
+    }
+  ]
+}

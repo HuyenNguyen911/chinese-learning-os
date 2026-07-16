@@ -1,0 +1,91 @@
+{
+  "meta": { "lesson": "HSK1 · Buổi 3: 了 / 没 / 快…了 / 过 — Thời tiết", "hsk": 1, "student": "" },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối chữ với nghĩa",
+      "instructions": "Viết chữ cái (A/B/C…) của nghĩa đúng vào ô trả lời.",
+      "pairs": [
+        { "left": "晴天", "right": "trời nắng, quang" },
+        { "left": "阴天", "right": "trời âm u" },
+        { "left": "刮风", "right": "có gió" },
+        { "left": "暖和", "right": "ấm áp" },
+        { "left": "凉快", "right": "mát mẻ" },
+        { "left": "快…了", "right": "sắp… rồi" }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền 了 / 没 / 过 / 快 vào chỗ trống",
+      "instructions": "Chọn từ trong khung điền vào mỗi câu.",
+      "word_bank": ["了", "没", "过", "快"],
+      "items": [
+        { "q": "下雨{}，快回家吧。", "answer": "了", "src": "phỏng theo 真题" },
+        { "q": "我{}看过雪。", "answer": "没", "src": "phỏng theo 真题" },
+        { "q": "你去{}北京吗？", "answer": "过", "src": "phỏng theo 真题" },
+        { "q": "{}到夏天了，天气热了。", "answer": "快", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc đoạn văn rồi chọn đáp án đúng",
+      "passage": "北京的秋天很好，不冷不热，很凉快。可是冬天很冷，常常刮风、下雪。小明去过北京的冬天，他说冬天要多穿衣服。快到冬天了。",
+      "questions": [
+        { "q": "北京的秋天怎么样？", "options": ["不冷不热，凉快", "很热", "常常下雪"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "北京冬天常常怎么样？", "options": ["刮风、下雪", "下雨", "很暖和"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "小明去过北京的什么季节？", "options": ["冬天", "夏天", "春天"], "answer": "A", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp các từ thành câu đúng",
+      "instructions": "Viết lại thành câu hoàn chỉnh, đúng trật tự.",
+      "items": [
+        { "words": ["天气", "冷", "了"], "answer": "天气冷了。", "answer_plus": "快到冬天了，天气冷了。", "src": "phỏng theo 真题" },
+        { "words": ["今天", "刮风", "了"], "answer": "今天刮风了。", "answer_plus": "今天刮风了，有点儿冷。", "src": "phỏng theo 真题" },
+        { "words": ["快", "到", "春天", "了"], "answer": "快到春天了。", "answer_plus": "快到春天了，天气暖和了。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch sang tiếng Trung (dùng từ cho sẵn)",
+      "instructions": "Đặt câu tiếng Trung, có dùng các từ trong ngoặc.",
+      "items": [
+        { "prompt": "Hôm qua có tuyết.", "given": ["昨天", "下雪"], "answer": "昨天下雪了。", "answer_plus": "昨天下雪了，很冷，我没出去。", "src": "phỏng theo 真题" },
+        { "prompt": "Mình đã mua một cái áo mới.", "given": ["买", "了"], "answer": "我买了一件新衣服。", "answer_plus": "我买了一件新衣服，是蓝色的。", "src": "phỏng theo 真题" },
+        { "prompt": "Hôm nay không có gió.", "given": ["没", "刮风"], "answer": "今天没刮风。", "answer_plus": "今天没刮风，是晴天，很暖和。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe mỗi câu rồi chọn đáp án đúng.",
+      "items": [
+        { "script": "下雪了，今天很冷。", "q": "今天天气怎么样？", "options": ["下雪，很冷", "下雨", "很热"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "phỏng theo 真题" },
+        { "script": "我去过北京，没去过上海。", "q": "他去过哪儿？", "options": ["北京", "上海", "南京"], "answer": "A", "audio": "audio/nghe-2.mp3", "src": "phỏng theo 真题" },
+        { "script": "明天是晴天，很暖和。", "q": "明天天气怎么样？", "options": ["晴天，暖和", "下雨", "下雪"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Nghe và nhắc lại",
+      "part": "听后重复",
+      "instructions": "Nghe audio rồi nhắc lại đúng câu.",
+      "items": [
+        { "script": "冬天到了，天气很冷。", "audio": "audio/hskk-1.mp3" },
+        { "script": "秋天不冷不热，很凉快。", "audio": "audio/hskk-2.mp3" },
+        { "script": "春天来了，天气暖和了。", "audio": "audio/hskk-3.mp3" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Trả lời câu hỏi",
+      "part": "回答问题",
+      "instructions": "Trả lời bằng câu hoàn chỉnh (2-3 câu).",
+      "items": [
+        { "script": "今天天气怎么样？", "hint": "今天…（下雨了 / 晴天 / 很热）。", "hint_plus": "今天下雨了，有点儿冷。快到冬天了，天气快冷了。" },
+        { "script": "你喜欢什么季节？", "hint": "我喜欢…天。", "hint_plus": "我最喜欢秋天，因为不冷不热，很凉快，天气也很好。" }
+      ]
+    }
+  ]
+}

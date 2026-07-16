@@ -1,0 +1,4 @@
+# Backup đầy đủ — track cả raw/ (giáo trình) và output/ (slide + baitap).
+# Chỉ loại rác thật sự:
+__pycache__/
+~$*

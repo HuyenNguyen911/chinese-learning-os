@@ -1,0 +1,58 @@
+{
+  "meta": {"lesson": "Buổi 1: 会 / 想 / 能", "hsk": 1, "student": "demo"},
+  "blocks": [
+    {"type": "noi", "title": "Nối chữ với nghĩa",
+     "instructions": "Viết chữ cái đúng vào ô.",
+     "pairs": [
+       {"left": "会", "right": "biết (kỹ năng đã học)"},
+       {"left": "想", "right": "muốn"},
+       {"left": "能", "right": "có thể (điều kiện)"}
+     ]},
+    {"type": "dien_cho_trong", "title": "Điền từ vào chỗ trống",
+     "instructions": "Chọn từ trong khung.",
+     "word_bank": ["会", "想", "能"],
+     "items": [
+       {"q": "我{}说一点儿汉语。", "answer": "会"},
+       {"q": "今天下雨，我不{}去公园。", "answer": "能",
+        "src": "phỏng theo 真题"},
+       {"q": "我{}喝一杯咖啡。", "answer": "想"}
+     ]},
+    {"type": "doc_hieu", "title": "Đọc hiểu",
+     "passage": "小明会说汉语，也会说一点儿英语。他很想去中国。",
+     "questions": [
+       {"q": "小明会说什么？",
+        "options": ["汉语和一点儿英语", "只有英语", "日语"], "answer": "A"},
+       {"q": "小明想去哪儿？", "options": ["中国", "美国", "日本"],
+        "answer": "A", "src": "phỏng theo 真题"}
+     ]},
+    {"type": "sap_xep", "title": "Sắp xếp thành câu đúng",
+     "items": [
+       {"words": ["我", "会", "说", "汉语"], "answer": "我会说汉语。"},
+       {"words": ["他", "想", "去", "中国"], "answer": "他想去中国。"}
+     ]},
+    {"type": "dich_dat_cau", "title": "Dịch sang tiếng Trung",
+     "items": [
+       {"prompt": "Tôi muốn học tiếng Trung.", "given": ["想", "学"],
+        "answer": "我想学汉语。",
+        "answer_plus": "我很想学汉语，因为我想去中国工作。"},
+       {"prompt": "Hôm nay tôi không thể đi.", "given": ["能"],
+        "answer": "今天我不能去。"}
+     ]},
+    {"type": "nghe", "title": "Nghe và chọn đáp án",
+     "instructions": "Nghe rồi chọn đáp án đúng.",
+     "items": [
+       {"script": "你会游泳吗？", "q": "问的是什么？",
+        "options": ["会不会游泳", "会不会开车", "想不想吃饭"], "answer": "A",
+        "audio": "audio/nghe-1.mp3"}
+     ]},
+    {"type": "noi_hskk", "title": "Nghe và nhắc lại", "part": "听后重复",
+     "items": [
+       {"script": "我会说一点儿汉语。", "audio": "audio/hskk-1.mp3"}
+     ]},
+    {"type": "noi_hskk", "title": "Trả lời câu hỏi", "part": "回答问题",
+     "items": [
+       {"script": "你会做饭吗？", "hint": "我会做饭。/ 我不会做饭。",
+        "hint_plus": "我会做饭，我最喜欢做中国菜，周末常常在家做。"}
+     ]}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "out_dir": "assets",
+  "images": [
+    { "name": "reading", "query": "rainbow color splash paint" },
+    { "name": "objects", "query": "school supplies stationery flat lay" },
+    { "name": "gekou", "query": "happy family cartoon illustration" },
+    { "name": "jianzhang", "query": "folded colorful shirts stack" },
+    { "name": "shuliangming", "query": "stack of colorful books" },
+    { "name": "yidianr", "query": "pouring water into glass" },
+    { "name": "apply", "query": "shopping bags cartoon illustration" }
+  ]
+}

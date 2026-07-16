@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 3",
+    "topic": "了 / 没 / 快…了 / 过 · Thời tiết"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "了 · 过 · 快…了",
+      "footer": ""
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么",
+      "image": "assets/muctieu.jpg",
+      "bullets": [
+        "了 — thay đổi & hoàn thành",
+        "没 — phủ định",
+        "快…了 · 过 — sắp xảy ra & đã từng",
+        "Thời tiết"
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "复习",
+      "title": "量词 · 一点儿",
+      "bullets": [
+        "Lượng từ:  数 + 量 + 名  →  三本书、一件衣服",
+        "一点儿 (mong muốn) / 有点儿 (than phiền):  便宜一点儿 / 有点儿贵",
+        "Màu sắc:  红色、蓝色、白色…"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "天气",
+      "image": "assets/tianqi.jpg",
+      "items": [
+        {
+          "hz": "天气",
+          "py": "tiānqì",
+          "vn": "thời tiết"
+        },
+        {
+          "hz": "晴天",
+          "py": "qíngtiān",
+          "vn": "trời nắng, quang"
+        },
+        {
+          "hz": "阴天",
+          "py": "yīntiān",
+          "vn": "trời âm u"
+        },
+        {
+          "hz": "下雨",
+          "py": "xià yǔ",
+          "vn": "mưa"
+        },
+        {
+          "hz": "下雪",
+          "py": "xià xuě",
+          "vn": "có tuyết"
+        },
+        {
+          "hz": "刮风",
+          "py": "guā fēng",
+          "vn": "có gió"
+        },
+        {
+          "hz": "冷",
+          "py": "lěng",
+          "vn": "lạnh"
+        },
+        {
+          "hz": "热",
+          "py": "rè",
+          "vn": "nóng"
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "季节 · 温度",
+      "image": "assets/season.jpg",
+      "image_side": "right",
+      "items": [
+        {
+          "hz": "春天",
+          "py": "chūntiān",
+          "vn": "mùa xuân"
+        },
+        {
+          "hz": "夏天",
+          "py": "xiàtiān",
+          "vn": "mùa hè"
+        },
+        {
+          "hz": "秋天",
+          "py": "qiūtiān",
+          "vn": "mùa thu"
+        },
+        {
+          "hz": "冬天",
+          "py": "dōngtiān",
+          "vn": "mùa đông"
+        },
+        {
+          "hz": "暖和",
+          "py": "nuǎnhuo",
+          "vn": "ấm áp"
+        },
+        {
+          "hz": "凉快",
+          "py": "liángkuai",
+          "vn": "mát mẻ"
+        },
+        {
+          "hz": "度",
+          "py": "dù",
+          "vn": "độ (nhiệt độ)"
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "了①：变化",
+      "image": "assets/rain.jpg",
+      "image_side": "left",
+      "point": "了 ở CUỐI câu = tình huống MỚI / có thay đổi (trước không vậy, giờ vậy).",
+      "examples": [
+        {
+          "hz": "下雨了。",
+          "py": "Xià yǔ le.",
+          "vn": "Trời mưa rồi."
+        },
+        {
+          "hz": "天气冷了。",
+          "py": "Tiānqì lěng le.",
+          "vn": "Trời lạnh rồi."
+        }
+      ],
+      "note": "Phủ định thay đổi: 不…了 — 不下雨了 (tạnh mưa rồi).",
+      "tip": "了 = '…rồi'. 我十八岁了 = mình 18 tuổi rồi (vừa tròn, trước chưa).",
+      "source": "Nguồn: HSK标准教程1, Bài 15",
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "了②：完成",
+      "image": "assets/buy.jpg",
+      "point": "动词 + 了 = việc ĐÃ HOÀN THÀNH / đã xảy ra.",
+      "examples": [
+        {
+          "hz": "我买了三本书。",
+          "py": "Wǒ mǎi le sān běn shū.",
+          "vn": "Mình đã mua ba quyển sách."
+        },
+        {
+          "hz": "他去了商店。",
+          "py": "Tā qù le shāngdiàn.",
+          "vn": "Anh ấy đã đi cửa hàng."
+        }
+      ],
+      "note": "Hỏi: …了吗？ — 你吃饭了吗？(Bạn ăn cơm chưa?)",
+      "tip": "Đã làm gì (có kết quả / số lượng cụ thể) → 动词 + 了 + tân ngữ.",
+      "source": "Nguồn: HSK标准教程1, Bài 14",
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "没",
+      "image": "assets/nopark.jpg",
+      "image_side": "left",
+      "point": [
+        "没(有) + động từ = CHƯA / không (đã) làm.",
+        "Đã có 没 thì KHÔNG dùng 了."
+      ],
+      "examples": [
+        {
+          "hz": "今天没下雨。",
+          "py": "Jīntiān méi xià yǔ.",
+          "vn": "Hôm nay trời không mưa."
+        },
+        {
+          "hz": "我没去公园。",
+          "py": "Wǒ méi qù gōngyuán.",
+          "vn": "Mình chưa đi công viên."
+        }
+      ],
+      "note": "Sai:  我没去了 ❌   →   Đúng:  我没去 ✔",
+      "tip": "不 = không (thói quen / tương lai) · 没 = chưa (việc đã qua).",
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "快…了",
+      "image": "assets/storm.jpg",
+      "point": "快(要) + … + 了 = SẮP xảy ra.",
+      "examples": [
+        {
+          "hz": "快下雨了。",
+          "py": "Kuài xià yǔ le.",
+          "vn": "Sắp mưa rồi."
+        },
+        {
+          "hz": "快到冬天了。",
+          "py": "Kuài dào dōngtiān le.",
+          "vn": "Sắp đến mùa đông rồi."
+        }
+      ],
+      "tip": "Cũng nói 要…了 / 快要…了.  火车快到了 = tàu sắp đến rồi.",
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "过",
+      "image": "assets/travel.jpg",
+      "image_side": "left",
+      "point": "动词 + 过 = ĐÃ TỪNG (có kinh nghiệm, không cần biết khi nào).",
+      "examples": [
+        {
+          "hz": "我去过北京。",
+          "py": "Wǒ qù guo Běijīng.",
+          "vn": "Mình từng đến Bắc Kinh."
+        },
+        {
+          "hz": "你看过雪吗？",
+          "py": "Nǐ kàn guo xuě ma?",
+          "vn": "Bạn từng thấy tuyết chưa?"
+        }
+      ],
+      "note": "Phủ định: 没…过 — 我没去过。(Mình chưa từng đi.)",
+      "tip": "过 nhấn 'đã trải qua ít nhất 1 lần'.  了 nhấn 'việc lần này đã xong'.",
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "对比",
+      "title": "了 · 过",
+      "headers": [
+        "So sánh",
+        "了 le",
+        "过 guo"
+      ],
+      "cjk_cols": [
+        1,
+        2
+      ],
+      "rows": [
+        [
+          "Ý nghĩa",
+          "hoàn thành / thay đổi",
+          "đã từng (kinh nghiệm)"
+        ],
+        [
+          "Thời điểm",
+          "lần này, cụ thể",
+          "bất kỳ lúc nào trước đây"
+        ],
+        [
+          "Ví dụ",
+          "我去了商店 (đã đi)",
+          "我去过北京 (từng đến)"
+        ]
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "应用",
+      "title": "怎么说天气",
+      "image": "assets/forecast.jpg",
+      "point": [
+        "① Hỏi:  今天天气怎么样？",
+        "② Tả:  下雨了 / 天气冷了",
+        "③ Đoán:  快到夏天了"
+      ],
+      "examples": [
+        {
+          "hz": "今天天气怎么样？— 下雪了，很冷。",
+          "py": "Jīntiān tiānqì zěnmeyàng? — Xià xuě le, hěn lěng.",
+          "vn": "Hôm nay thời tiết thế nào? — Có tuyết rồi, rất lạnh."
+        },
+        {
+          "hz": "快到夏天了，天气热了。",
+          "py": "Kuài dào xiàtiān le, tiānqì rè le.",
+          "vn": "Sắp đến mùa hè, trời nóng lên rồi."
+        }
+      ],
+      "tip": "怎么样？ = thế nào? — hỏi tình hình / ý kiến.",
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "谈天气",
+      "turns": [
+        {
+          "speaker": "A",
+          "hz": "今天天气怎么样？",
+          "py": "Jīntiān tiānqì zěnmeyàng?"
+        },
+        {
+          "speaker": "B",
+          "hz": "下雨了，有点儿冷。",
+          "py": "Xià yǔ le, yǒudiǎnr lěng."
+        },
+        {
+          "speaker": "A",
+          "hz": "你去过北京吗？",
+          "py": "Nǐ qù guo Běijīng ma?"
+        },
+        {
+          "speaker": "B",
+          "hz": "去过。北京冬天下雪。",
+          "py": "Qù guo. Běijīng dōngtiān xià xuě."
+        },
+        {
+          "speaker": "A",
+          "hz": "快到冬天了。",
+          "py": "Kuài dào dōngtiān le."
+        },
+        {
+          "speaker": "B",
+          "hz": "是啊，天气快冷了。",
+          "py": "Shì a, tiānqì kuài lěng le."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "常用句（一）",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "今天天气怎么样？",
+          "Jīntiān tiānqì zěnmeyàng?",
+          "Hôm nay thời tiết thế nào?"
+        ],
+        [
+          "下雨了。",
+          "Xià yǔ le.",
+          "Trời mưa rồi."
+        ],
+        [
+          "天气冷了。",
+          "Tiānqì lěng le.",
+          "Trời lạnh rồi."
+        ],
+        [
+          "快到夏天了。",
+          "Kuài dào xiàtiān le.",
+          "Sắp đến mùa hè rồi."
+        ],
+        [
+          "我买了一件衣服。",
+          "Wǒ mǎi le yí jiàn yīfu.",
+          "Mình đã mua một bộ đồ."
+        ]
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "常用句（二）",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "今天没下雨。",
+          "Jīntiān méi xià yǔ.",
+          "Hôm nay trời không mưa."
+        ],
+        [
+          "我去过北京。",
+          "Wǒ qù guo Běijīng.",
+          "Mình từng đến Bắc Kinh."
+        ],
+        [
+          "你吃饭了吗？",
+          "Nǐ chī fàn le ma?",
+          "Bạn ăn cơm chưa?"
+        ],
+        [
+          "北京冬天下雪。",
+          "Běijīng dōngtiān xià xuě.",
+          "Mùa đông Bắc Kinh có tuyết."
+        ],
+        [
+          "天气热了，我想喝一点儿水。",
+          "Tiānqì rè le, wǒ xiǎng hē yìdiǎnr shuǐ.",
+          "Trời nóng rồi, mình muốn uống chút nước."
+        ]
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "reading",
+      "kicker": "阅读",
+      "title": "推荐材料",
+      "groups": [
+        {
+          "label": "Trong 2 giáo trình (đọc lại 课文):",
+          "items": [
+            "《HSK标准教程1》Bài 12「明天天气怎么样」— 天气 + 怎么样",
+            "《HSK标准教程1》Bài 14「我们去看电影吧」— 了 (hoàn thành)",
+            "《HSK标准教程1》Bài 15「祝你生日快乐」— 了 (thay đổi) + 过",
+            "《汉语教程1·上》Bài 14–15 — thời tiết, mùa, 了"
+          ]
+        },
+        {
+          "label": "Nguồn luyện đọc thêm (trình độ HSK1):",
+          "items": [
+            "Du Chinese (app) — mục Newbie / HSK1",
+            "The Chairman's Bao — bài trình độ HSK1",
+            "Mandarin Companion — Readers Level 0",
+            "hsk.academy — HSK1 reading online"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "谢谢！"
+    }
+  ]
+}

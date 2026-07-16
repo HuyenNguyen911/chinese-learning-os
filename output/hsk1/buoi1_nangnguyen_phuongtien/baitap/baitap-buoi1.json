@@ -1,0 +1,132 @@
+{
+  "meta": { "lesson": "HSK1 · Buổi 1: 会 / 想 / 能 — Hoạt động & Giao thông", "hsk": 1, "student": "" },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối chữ với nghĩa",
+      "instructions": "Viết chữ cái (A/B/C…) của nghĩa đúng vào ô trả lời.",
+      "pairs": [
+        { "left": "会", "right": "biết làm (kỹ năng học được)" },
+        { "left": "想", "right": "muốn làm gì đó" },
+        { "left": "能", "right": "có thể / được phép" },
+        { "left": "起床", "right": "ngủ dậy" },
+        { "left": "看电视", "right": "xem TV" },
+        { "left": "出租车", "right": "taxi" }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền 会 / 想 / 能 vào chỗ trống",
+      "instructions": "Chọn từ trong khung điền vào mỗi câu.",
+      "word_bank": ["会", "想", "能"],
+      "items": [
+        { "q": "我{}说一点儿汉语。", "answer": "会", "src": "phỏng theo 真题" },
+        { "q": "你{}开车吗？", "answer": "会", "src": "phỏng theo 真题" },
+        { "q": "明天我{}去商店买东西。", "answer": "想", "src": "phỏng theo 真题" },
+        { "q": "你周末{}做什么？", "answer": "想", "src": "phỏng theo 真题" },
+        { "q": "这儿{}停车吗？", "answer": "能", "src": "phỏng theo 真题" },
+        { "q": "我感冒了，今天不{}上课。", "answer": "能", "src": "phỏng theo 真题 (HSK2: 感冒了)" }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc đoạn văn rồi chọn đáp án đúng",
+      "passage": "小明是学生。他会说一点儿英语，也很想学汉语。他每天骑自行车上学。周末他想坐地铁去公园。",
+      "questions": [
+        {
+          "q": "小明每天怎么上学？",
+          "options": ["骑自行车", "坐地铁", "走路"],
+          "answer": "A",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "q": "周末小明想去哪儿？",
+          "options": ["公园", "商店", "学校"],
+          "answer": "A",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "q": "小明现在会说什么？",
+          "options": ["一点儿英语", "汉语", "日语"],
+          "answer": "A",
+          "src": "phỏng theo 真题"
+        }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp các từ thành câu đúng",
+      "instructions": "Viết lại thành câu hoàn chỉnh, đúng trật tự.",
+      "items": [
+        { "words": ["我", "会", "做", "中国菜"], "answer": "我会做中国菜。", "answer_plus": "我会做中国菜，也想学做越南菜。", "src": "phỏng theo 真题" },
+        { "words": ["你", "想", "看电视", "吗"], "answer": "你想看电视吗？", "answer_plus": "你现在想看电视吗？还是想出去走走？", "src": "phỏng theo 真题" },
+        { "words": ["我", "能", "坐", "这儿", "吗"], "answer": "我能坐这儿吗？", "answer_plus": "请问，我能坐这儿吗？这儿有人吗？", "src": "phỏng theo 真题" },
+        { "words": ["他", "每天", "走路", "上学"], "answer": "他每天走路上学。", "answer_plus": "他家离学校很近，所以每天走路上学。", "src": "phỏng theo 真题 (HSK2: 离…近, 所以)" }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch sang tiếng Trung (dùng từ cho sẵn)",
+      "instructions": "Đặt câu tiếng Trung, có dùng các từ trong ngoặc.",
+      "items": [
+        { "prompt": "Mình biết bơi.", "given": ["会", "游泳"], "answer": "我会游泳。", "answer_plus": "我会游泳，我每个星期都去游泳。", "src": "phỏng theo 真题" },
+        { "prompt": "Cuối tuần mình muốn ngủ và xem TV.", "given": ["想", "周末"], "answer": "周末我想睡觉、看电视。", "answer_plus": "周末我想在家睡觉、看电视，也想跟朋友出去玩儿。", "src": "phỏng theo 真题" },
+        { "prompt": "Ở đây gọi điện được không?", "given": ["能", "打电话"], "answer": "这儿能打电话吗？", "answer_plus": "请问，这儿能打电话吗？还是要去外面打？", "src": "phỏng theo 真题" },
+        { "prompt": "Ngày nào mình cũng đi xe buýt đi làm.", "given": ["坐", "每天"], "answer": "我每天坐公共汽车上班。", "answer_plus": "我每天早上坐公共汽车上班，大概要半个小时。", "src": "phỏng theo 真题 (HSK2: 上班, 大概, 半个小时)" }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe mỗi câu/đoạn rồi chọn đáp án đúng.",
+      "items": [
+        {
+          "script": "你会骑自行车吗？",
+          "q": "说话人问什么？",
+          "options": ["会不会骑自行车", "想不想坐地铁", "能不能停车"],
+          "answer": "A",
+          "audio": "audio/nghe-1.mp3",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "script": "我们坐公共汽车去学校吧。",
+          "q": "他们想怎么去学校？",
+          "options": ["坐公共汽车", "坐地铁", "骑自行车"],
+          "answer": "A",
+          "audio": "audio/nghe-2.mp3",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "script": "我姐姐会做饭，我不会。",
+          "q": "谁会做饭？",
+          "options": ["姐姐", "说话人", "两个人都会"],
+          "answer": "A",
+          "audio": "audio/nghe-3.mp3",
+          "src": "phỏng theo 真题"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Nghe và nhắc lại",
+      "part": "听后重复",
+      "instructions": "Nghe audio rồi nhắc lại đúng câu.",
+      "items": [
+        { "script": "我每天七点起床。", "audio": "audio/hskk-1.mp3" },
+        { "script": "我想坐出租车去公司。", "audio": "audio/hskk-2.mp3" },
+        { "script": "我们走路去公园吧。", "audio": "audio/hskk-3.mp3" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Trả lời câu hỏi",
+      "part": "回答问题",
+      "instructions": "Trả lời bằng câu hoàn chỉnh (2-3 câu).",
+      "items": [
+        { "script": "你会做什么菜？", "hint": "我会做西红柿炒鸡蛋。", "hint_plus": "我会做几个简单的中国菜，比如西红柿炒鸡蛋。我周末常常在家做饭。" },
+        { "script": "你平时怎么上学？", "hint": "我坐公共汽车 / 骑自行车 / 走路去。", "hint_plus": "我平时骑自行车上学，大概二十分钟。下雨的时候我坐公共汽车。" },
+        { "script": "你晚上几点睡觉？", "hint": "我晚上…点睡觉。", "hint_plus": "我平时晚上十一点睡觉，周末会晚一点儿，因为想看电视。" }
+      ]
+    }
+  ]
+}

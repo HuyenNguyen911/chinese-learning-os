@@ -1,0 +1,91 @@
+{
+  "meta": { "lesson": "HSK1 · Buổi 2: Lượng từ + 一点儿/有点儿 — Màu sắc", "hsk": 1, "student": "" },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối chữ với nghĩa",
+      "instructions": "Viết chữ cái (A/B/C…) của nghĩa đúng vào ô trả lời.",
+      "pairs": [
+        { "left": "张", "right": "lượng từ cho vật mỏng, phẳng" },
+        { "left": "双", "right": "lượng từ cho đôi (giày, đũa)" },
+        { "left": "绿色", "right": "màu xanh lá" },
+        { "left": "黄色", "right": "màu vàng" },
+        { "left": "筷子", "right": "đôi đũa" },
+        { "left": "一点儿", "right": "một chút (mong muốn)" }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền lượng từ đúng vào chỗ trống",
+      "instructions": "Chọn lượng từ trong khung điền vào mỗi câu.",
+      "word_bank": ["个", "口", "件", "张", "本", "支"],
+      "items": [
+        { "q": "桌子上有三{}书。", "answer": "本", "src": "phỏng theo 真题" },
+        { "q": "我有一{}铅笔。", "answer": "支", "src": "phỏng theo 真题" },
+        { "q": "我家有五{}人。", "answer": "口", "src": "phỏng theo 真题" },
+        { "q": "我想买一{}衣服。", "answer": "件", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc đoạn văn rồi chọn đáp án đúng",
+      "passage": "小美有很多颜色的笔：红色的、蓝色的，还有绿色的。今天她想买一个新书包。这个黄色的书包很漂亮，可是有点儿贵。她说：“便宜一点儿吧。”",
+      "questions": [
+        { "q": "小美今天想买什么？", "options": ["书包", "铅笔", "衣服"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "那个书包是什么颜色？", "options": ["黄色", "红色", "蓝色"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "这个书包怎么样？", "options": ["有点儿贵", "很便宜", "很小"], "answer": "A", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp các từ thành câu đúng",
+      "instructions": "Viết lại thành câu hoàn chỉnh, đúng trật tự.",
+      "items": [
+        { "words": ["我", "有", "三", "个", "苹果"], "answer": "我有三个苹果。", "answer_plus": "我有三个苹果，你想吃一个吗？", "src": "phỏng theo 真题" },
+        { "words": ["他", "买了", "两", "双", "鞋"], "answer": "他买了两双鞋。", "answer_plus": "他买了两双鞋，一双黑色，一双白色。", "src": "phỏng theo 真题" },
+        { "words": ["桌子", "上", "有", "一", "杯", "茶"], "answer": "桌子上有一杯茶。", "answer_plus": "桌子上有一杯茶和一本书。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch sang tiếng Trung (dùng từ cho sẵn)",
+      "instructions": "Đặt câu tiếng Trung, có dùng các từ trong ngoặc.",
+      "items": [
+        { "prompt": "Cái cốc này hơi nhỏ.", "given": ["个", "有点儿"], "answer": "这个杯子有点儿小。", "answer_plus": "这个杯子有点儿小，我想要大一点儿的。", "src": "phỏng theo 真题" },
+        { "prompt": "Nhà mình có ba người.", "given": ["口", "人"], "answer": "我家有三口人。", "answer_plus": "我家有三口人：爸爸、妈妈和我。", "src": "phỏng theo 真题" },
+        { "prompt": "Mình thích màu xanh lá.", "given": ["喜欢", "绿色"], "answer": "我喜欢绿色。", "answer_plus": "我喜欢绿色，也喜欢蓝色。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe mỗi câu rồi chọn đáp án đúng.",
+      "items": [
+        { "script": "我买了一件蓝色的衣服。", "q": "他买了什么颜色的衣服？", "options": ["蓝色", "红色", "白色"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "phỏng theo 真题" },
+        { "script": "我买了三张电影票。", "q": "他买了几张票？", "options": ["三张", "两张", "一张"], "answer": "A", "audio": "audio/nghe-2.mp3", "src": "phỏng theo 真题" },
+        { "script": "这双鞋有点儿贵。", "q": "这双鞋怎么样？", "options": ["有点儿贵", "很便宜", "很漂亮"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Nghe và nhắc lại",
+      "part": "听后重复",
+      "instructions": "Nghe audio rồi nhắc lại đúng câu.",
+      "items": [
+        { "script": "我有两支红色的笔。", "audio": "audio/hskk-1.mp3" },
+        { "script": "请给我一双筷子。", "audio": "audio/hskk-2.mp3" },
+        { "script": "桌子上有一本黄色的书。", "audio": "audio/hskk-3.mp3" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Trả lời câu hỏi",
+      "part": "回答问题",
+      "instructions": "Trả lời bằng câu hoàn chỉnh (2-3 câu).",
+      "items": [
+        { "script": "你喜欢什么颜色？", "hint": "我喜欢…色。", "hint_plus": "我最喜欢绿色和蓝色，我有很多这两种颜色的东西。" },
+        { "script": "你家有几口人？", "hint": "我家有…口人。", "hint_plus": "我家有四口人：爸爸、妈妈、我和弟弟。" }
+      ]
+    }
+  ]
+}

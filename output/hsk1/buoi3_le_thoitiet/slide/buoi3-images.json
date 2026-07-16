@@ -1,0 +1,12 @@
+{
+  "out_dir": "assets",
+  "images": [
+    { "name": "muctieu", "query": "blue sky clouds sun" },
+    { "name": "tianqi", "query": "weather icons sun rain cloud illustration" },
+    { "name": "season", "query": "four seasons tree illustration" },
+    { "name": "rain", "query": "rain drops window" },
+    { "name": "storm", "query": "dark storm clouds sky" },
+    { "name": "travel", "query": "great wall of china" },
+    { "name": "forecast", "query": "weather forecast smartphone app" }
+  ]
+}

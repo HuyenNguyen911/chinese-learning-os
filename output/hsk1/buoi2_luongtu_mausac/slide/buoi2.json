@@ -1,0 +1,608 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 2",
+    "topic": "Lượng từ + 一点儿/有点儿 · Màu sắc"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "量词 · 一点儿 · 有点儿",
+      "footer": ""
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么",
+      "image": "assets/reading.jpg",
+      "bullets": [
+        "Đếm: 数 + 量 + 名",
+        "Lượng từ (个 / 口 / 件 / 张 …)",
+        "Phân biệt 一点儿 và 有点儿",
+        "Màu sắc"
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "复习",
+      "title": "会 · 想 · 能",
+      "bullets": [
+        "会 = biết làm (kỹ năng học được):  我会说汉语。",
+        "想 = muốn (nhẹ):  我想去公园。",
+        "能 / 可以 = có thể / được phép:  我能坐这儿吗？"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "颜色",
+      "items": [
+        {
+          "hz": "颜色",
+          "py": "yánsè",
+          "vn": "màu sắc (từ chung)"
+        },
+        {
+          "hz": "红色",
+          "py": "hóngsè",
+          "vn": "màu đỏ",
+          "color": "E74C3C"
+        },
+        {
+          "hz": "橙色",
+          "py": "chéngsè",
+          "vn": "màu cam",
+          "color": "E67E22"
+        },
+        {
+          "hz": "黄色",
+          "py": "huángsè",
+          "vn": "màu vàng",
+          "color": "F1C40F"
+        },
+        {
+          "hz": "绿色",
+          "py": "lǜsè",
+          "vn": "màu xanh lá",
+          "color": "27AE60"
+        },
+        {
+          "hz": "蓝色",
+          "py": "lánsè",
+          "vn": "màu xanh dương",
+          "color": "2980B9"
+        },
+        {
+          "hz": "紫色",
+          "py": "zǐsè",
+          "vn": "màu tím",
+          "color": "8E44AD"
+        },
+        {
+          "hz": "粉色",
+          "py": "fěnsè",
+          "vn": "màu hồng",
+          "color": "F78FB3"
+        },
+        {
+          "hz": "白色",
+          "py": "báisè",
+          "vn": "màu trắng",
+          "color": "FFFFFF"
+        },
+        {
+          "hz": "黑色",
+          "py": "hēisè",
+          "vn": "màu đen",
+          "color": "111111"
+        },
+        {
+          "hz": "灰色",
+          "py": "huīsè",
+          "vn": "màu xám",
+          "color": "95A5A6"
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "学习用品",
+      "image": "assets/objects.jpg",
+      "image_side": "left",
+      "items": [
+        {
+          "hz": "铅笔",
+          "py": "qiānbǐ",
+          "vn": "bút chì  (一支)"
+        },
+        {
+          "hz": "本子",
+          "py": "běnzi",
+          "vn": "quyển vở  (一本)"
+        },
+        {
+          "hz": "书包",
+          "py": "shūbāo",
+          "vn": "cặp sách  (一个)"
+        },
+        {
+          "hz": "尺子",
+          "py": "chǐzi",
+          "vn": "thước kẻ  (一把)"
+        },
+        {
+          "hz": "橡皮",
+          "py": "xiàngpí",
+          "vn": "cục tẩy  (一块)"
+        },
+        {
+          "hz": "杯子",
+          "py": "bēizi",
+          "vn": "cái cốc  (一个)"
+        },
+        {
+          "hz": "筷子",
+          "py": "kuàizi",
+          "vn": "đôi đũa  (一双)"
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "数 + 量 + 名",
+      "image": "assets/shuliangming.jpg",
+      "point": "Số + Lượng từ + Danh từ. Giữa SỐ và DANH TỪ bắt buộc có lượng từ.",
+      "examples": [
+        {
+          "hz": "一个人",
+          "py": "yí gè rén",
+          "vn": "một người"
+        },
+        {
+          "hz": "三本书",
+          "py": "sān běn shū",
+          "vn": "ba quyển sách"
+        }
+      ],
+      "note": "Sai:  三书 ❌   →   Đúng:  三本书 ✔",
+      "tip": "Giống tiếng Việt: một *con* mèo, một *cái* bàn, một *quyển* sách — mỗi vật một 'từ đếm' riêng.",
+      "source": "Nguồn: HSK标准教程1, Bài 5",
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "个 · 口",
+      "image": "assets/gekou.jpg",
+      "image_side": "left",
+      "point": [
+        "个 (gè) = lượng từ vạn năng — dùng khi chưa chắc.",
+        "口 (kǒu) = đếm người trong GIA ĐÌNH."
+      ],
+      "examples": [
+        {
+          "hz": "一个老师，两个学生。",
+          "py": "yí gè lǎoshī, liǎng gè xuéshēng.",
+          "vn": "một giáo viên, hai học sinh."
+        },
+        {
+          "hz": "我家有五口人。",
+          "py": "Wǒ jiā yǒu wǔ kǒu rén.",
+          "vn": "Nhà mình có 5 người."
+        }
+      ],
+      "note": "Chú ý: 二 → 两 khi đứng trước lượng từ (两个, không nói 二个).",
+      "tip": "Chưa chắc dùng lượng từ nào? Cứ dùng 个. Nhưng hỏi số người trong nhà thì luôn 口.",
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "件 · 张",
+      "image": "assets/jianzhang.jpg",
+      "point": [
+        "件 (jiàn) = quần áo & sự việc.",
+        "张 (zhāng) = vật MỎNG, PHẲNG."
+      ],
+      "examples": [
+        {
+          "hz": "一件衣服 / 一件事",
+          "py": "yí jiàn yīfu / yí jiàn shì",
+          "vn": "một bộ quần áo / một việc"
+        },
+        {
+          "hz": "一张桌子、一张票",
+          "py": "yì zhāng zhuōzi, yì zhāng piào",
+          "vn": "một cái bàn, một tấm vé"
+        }
+      ],
+      "tip": "张 cho thứ có mặt phẳng: bàn, giường, vé, giấy, ảnh, bản đồ.",
+      "source": "Nguồn: HSK标准教程1, Bài 9",
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "拓展",
+      "title": "量词（一）：人・动物・长条物",
+      "headers": [
+        "量词",
+        "Pinyin",
+        "Dùng cho (liên tưởng)",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        0,
+        3
+      ],
+      "rows": [
+        [
+          "个",
+          "gè",
+          "chung — người, đồ vật",
+          "一个人"
+        ],
+        [
+          "位",
+          "wèi",
+          "người (lịch sự)",
+          "一位老师"
+        ],
+        [
+          "口",
+          "kǒu",
+          "người trong nhà",
+          "五口人"
+        ],
+        [
+          "只",
+          "zhī",
+          "động vật nhỏ",
+          "一只猫"
+        ],
+        [
+          "条",
+          "tiáo",
+          "vật dài (cá, đường, quần)",
+          "一条鱼"
+        ],
+        [
+          "支",
+          "zhī",
+          "vật dài mảnh (bút)",
+          "一支笔"
+        ],
+        [
+          "双",
+          "shuāng",
+          "đôi (giày, đũa)",
+          "一双鞋"
+        ],
+        [
+          "把",
+          "bǎ",
+          "vật có cán (ô, ghế, dao)",
+          "一把伞"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "拓展",
+      "title": "量词（二）：物品・食物・饮料",
+      "headers": [
+        "量词",
+        "Pinyin",
+        "Dùng cho (liên tưởng)",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        0,
+        3
+      ],
+      "rows": [
+        [
+          "件",
+          "jiàn",
+          "quần áo, sự việc",
+          "一件衣服"
+        ],
+        [
+          "张",
+          "zhāng",
+          "vật mỏng phẳng",
+          "一张纸"
+        ],
+        [
+          "本",
+          "běn",
+          "sách vở",
+          "一本书"
+        ],
+        [
+          "辆",
+          "liàng",
+          "xe cộ",
+          "一辆车"
+        ],
+        [
+          "杯",
+          "bēi",
+          "cốc (đồ uống)",
+          "一杯咖啡"
+        ],
+        [
+          "瓶",
+          "píng",
+          "chai",
+          "一瓶水"
+        ],
+        [
+          "块",
+          "kuài",
+          "cục / tiền",
+          "五块钱"
+        ],
+        [
+          "些",
+          "xiē",
+          "một số (số nhiều)",
+          "一些书"
+        ]
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "一点儿",
+      "image": "assets/yidianr.jpg",
+      "image_side": "left",
+      "point": "一点儿 = 'một chút' (số lượng ít). Đứng SAU tính từ, hoặc TRƯỚC danh từ.",
+      "examples": [
+        {
+          "hz": "便宜一点儿吧。",
+          "py": "Piányi yìdiǎnr ba.",
+          "vn": "Rẻ hơn chút đi. (形容词 + 一点儿)"
+        },
+        {
+          "hz": "我想喝一点儿水。",
+          "py": "Wǒ xiǎng hē yìdiǎnr shuǐ.",
+          "vn": "Mình muốn uống chút nước. (一点儿 + 名词)"
+        }
+      ],
+      "note": "Nói nhanh rút thành 一点 hoặc 点儿.",
+      "tip": "Muốn 'hơn một chút':  大一点儿 (to hơn tí) · 快一点儿 (nhanh lên tí).",
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "有点儿",
+      "image": "assets/youdianr.jpg",
+      "point": "有点儿 = 'hơi…', đứng TRƯỚC tính từ. Thường mang ý CHÊ, không vừa ý.",
+      "examples": [
+        {
+          "hz": "这件衣服有点儿贵。",
+          "py": "Zhè jiàn yīfu yǒudiǎnr guì.",
+          "vn": "Bộ đồ này hơi đắt."
+        },
+        {
+          "hz": "今天有点儿累。",
+          "py": "Jīntiān yǒudiǎnr lèi.",
+          "vn": "Hôm nay hơi mệt."
+        }
+      ],
+      "note": "有点儿 + 形容词, thường là điều tiêu cực: 贵 / 累 / 难 / 忙.",
+      "tip": "有点儿 = than phiền · 一点儿 = mong muốn.",
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "对比",
+      "title": "有点儿 · 一点儿",
+      "headers": [
+        "So sánh",
+        "有点儿 yǒudiǎnr",
+        "一点儿 yìdiǎnr"
+      ],
+      "cjk_cols": [
+        1,
+        2
+      ],
+      "rows": [
+        [
+          "Vị trí",
+          "有点儿 + 形容词",
+          "形容词 + 一点儿 / 一点儿 + 名词"
+        ],
+        [
+          "Sắc thái",
+          "chê, không vừa ý",
+          "mong muốn / so sánh"
+        ],
+        [
+          "Ví dụ",
+          "有点儿贵 (đắt quá)",
+          "便宜一点儿 (rẻ chút đi)"
+        ]
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "应用",
+      "title": "买东西",
+      "image": "assets/apply.jpg",
+      "point": [
+        "① Hỏi giá:  这件衣服多少钱？",
+        "② Thêm màu:  这件 红色的 衣服多少钱？",
+        "③ Mặc cả:  有点儿贵 → 便宜一点儿"
+      ],
+      "examples": [
+        {
+          "hz": "这件红色的衣服多少钱？",
+          "py": "Zhè jiàn hóngsè de yīfu duōshao qián?",
+          "vn": "Bộ đồ đỏ này bao nhiêu tiền?"
+        },
+        {
+          "hz": "有点儿贵，便宜一点儿吧。",
+          "py": "Yǒudiǎnr guì, piányi yìdiǎnr ba.",
+          "vn": "Hơi đắt, rẻ chút đi."
+        }
+      ],
+      "tip": "的 nối màu với đồ vật:  红色的衣服 = bộ đồ (màu) đỏ.",
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "在商店",
+      "turns": [
+        {
+          "speaker": "A",
+          "hz": "你喜欢什么颜色？",
+          "py": "Nǐ xǐhuan shénme yánsè?"
+        },
+        {
+          "speaker": "B",
+          "hz": "我喜欢蓝色。这件蓝色的衣服多少钱？",
+          "py": "Wǒ xǐhuan lánsè. Zhè jiàn lánsè de yīfu duōshao qián?"
+        },
+        {
+          "speaker": "A",
+          "hz": "这件一百块。",
+          "py": "Zhè jiàn yìbǎi kuài."
+        },
+        {
+          "speaker": "B",
+          "hz": "有点儿贵，便宜一点儿吧。",
+          "py": "Yǒudiǎnr guì, piányi yìdiǎnr ba."
+        },
+        {
+          "speaker": "A",
+          "hz": "好，九十块。",
+          "py": "Hǎo, jiǔshí kuài."
+        },
+        {
+          "speaker": "B",
+          "hz": "好，我要这件。",
+          "py": "Hǎo, wǒ yào zhè jiàn."
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "常用句（一）",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "这是什么颜色？— 这是红色。",
+          "Zhè shì shénme yánsè? — Zhè shì hóngsè.",
+          "Đây là màu gì? — Màu đỏ."
+        ],
+        [
+          "我喜欢蓝色。",
+          "Wǒ xǐhuan lánsè.",
+          "Mình thích màu xanh dương."
+        ],
+        [
+          "我有三个苹果。",
+          "Wǒ yǒu sān gè píngguǒ.",
+          "Mình có ba quả táo."
+        ],
+        [
+          "我家有四口人。",
+          "Wǒ jiā yǒu sì kǒu rén.",
+          "Nhà mình có bốn người."
+        ],
+        [
+          "这件衣服很漂亮。",
+          "Zhè jiàn yīfu hěn piàoliang.",
+          "Bộ quần áo này rất đẹp."
+        ]
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "常用句（二）",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "我想买一张桌子。",
+          "Wǒ xiǎng mǎi yì zhāng zhuōzi.",
+          "Mình muốn mua một cái bàn."
+        ],
+        [
+          "这件衣服有点儿贵。",
+          "Zhè jiàn yīfu yǒudiǎnr guì.",
+          "Bộ đồ này hơi đắt."
+        ],
+        [
+          "便宜一点儿吧。",
+          "Piányi yìdiǎnr ba.",
+          "Rẻ hơn một chút đi."
+        ],
+        [
+          "我会说一点儿汉语。",
+          "Wǒ huì shuō yìdiǎnr Hànyǔ.",
+          "Mình biết nói một chút tiếng Trung."
+        ],
+        [
+          "我想喝一点儿水。",
+          "Wǒ xiǎng hē yìdiǎnr shuǐ.",
+          "Mình muốn uống một chút nước."
+        ]
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "reading",
+      "kicker": "阅读",
+      "title": "推荐材料",
+      "groups": [
+        {
+          "label": "Trong 2 giáo trình (đọc lại 课文):",
+          "items": [
+            "《HSK标准教程1》Bài 5「这是我的家」— 数量名 + 口",
+            "《HSK标准教程1》Bài 9「多少钱」— 件 / 张 + mua sắm + 块",
+            "《HSK标准教程1》Bài 11「他在哪儿工作」— 一点儿 / 有点儿",
+            "《汉语教程1·上》Bài 13–14 — hỏi giá, màu sắc, lượng từ"
+          ]
+        },
+        {
+          "label": "Nguồn luyện đọc thêm (trình độ HSK1):",
+          "items": [
+            "Du Chinese (app) — mục Newbie / HSK1",
+            "The Chairman's Bao — bài trình độ HSK1",
+            "Mandarin Companion — Readers Level 0",
+            "hsk.academy — HSK1 reading online"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "谢谢！",
+      "subtitle": "Buổi sau: 了 (thay đổi + hoàn thành) · Thời tiết"
+    }
+  ]
+}

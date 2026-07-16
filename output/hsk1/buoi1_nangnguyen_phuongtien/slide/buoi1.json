@@ -1,0 +1,218 @@
+{
+  "meta": { "lesson": "HSK1 · Buổi 1", "topic": "会/想/能 · Hoạt động & Giao thông" },
+  "slides": [
+    {
+      "type": "title",
+      "title": "会 · 想 · 能",
+      "subtitle": "Buổi 1 — Nói được điều mình biết, mình muốn, mình có thể làm.",
+      "footer": "HSK1 · Sơ cấp"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Mục tiêu hôm nay",
+      "image": "assets/reading.jpg",
+      "bullets": [
+        "Nói được mình biết làm gì (会), muốn làm gì (想), có thể / được phép làm gì (能).",
+        "Kể về hoạt động trong ngày và cách mình đi lại.",
+        "Luyện 10 câu giao tiếp thông dụng dùng được ngay."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "复习",
+      "title": "Nhắc lại buổi trước",
+      "bullets": [
+        "Gọi điện với 喂:  喂，你好？你在哪儿？",
+        "Câu liên động:  我去商店买东西。",
+        "Trật tự câu:  主语 + 时间 + 地点 + 对象 + 动词"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Từ vựng ①  Hoạt động trong ngày",
+      "image": "assets/act.jpg",
+      "items": [
+        { "hz": "起床", "py": "qǐchuáng", "vn": "ngủ dậy" },
+        { "hz": "吃饭", "py": "chīfàn", "vn": "ăn cơm" },
+        { "hz": "上课", "py": "shàngkè", "vn": "lên lớp / học" },
+        { "hz": "做作业", "py": "zuò zuòyè", "vn": "làm bài tập" },
+        { "hz": "看电视", "py": "kàn diànshì", "vn": "xem TV" },
+        { "hz": "打电话", "py": "dǎ diànhuà", "vn": "gọi điện" },
+        { "hz": "睡觉", "py": "shuìjiào", "vn": "đi ngủ" }
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Từ vựng ②  Đi lại & giao thông",
+      "image": "assets/trans.jpg",
+      "items": [
+        { "hz": "上学", "py": "shàngxué", "vn": "đi học" },
+        { "hz": "坐 (车)", "py": "zuò (chē)", "vn": "đi (ngồi) — phương tiện" },
+        { "hz": "公共汽车", "py": "gōnggòng qìchē", "vn": "xe buýt" },
+        { "hz": "地铁", "py": "dìtiě", "vn": "tàu điện ngầm" },
+        { "hz": "出租车", "py": "chūzūchē", "vn": "taxi" },
+        { "hz": "骑 (自行车)", "py": "qí (zìxíngchē)", "vn": "đi (cưỡi) xe đạp" },
+        { "hz": "走路", "py": "zǒulù", "vn": "đi bộ" }
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "会 (huì)",
+      "image": "assets/hui.jpg",
+      "point": "会 + động từ = biết làm (kỹ năng mình HỌC được).",
+      "examples": [
+        { "hz": "我会说汉语。", "py": "Wǒ huì shuō Hànyǔ.", "vn": "Mình biết nói tiếng Trung." },
+        { "hz": "你会开车吗？", "py": "Nǐ huì kāichē ma?", "vn": "Bạn biết lái xe không?" }
+      ],
+      "note": "Phủ định: 不会 — 我不会游泳。",
+      "tip": "会 dùng cho việc phải HỌC mới biết: nói ngoại ngữ, lái xe, bơi, nấu ăn.",
+      "source": "Nguồn: HSK标准教程1, Bài 6"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "想 (xiǎng)",
+      "image": "assets/xiang.jpg",
+      "point": "想 + động từ = muốn làm điều gì đó.",
+      "examples": [
+        { "hz": "我想去公园。", "py": "Wǒ xiǎng qù gōngyuán.", "vn": "Mình muốn đi công viên." },
+        { "hz": "周末你想做什么？", "py": "Zhōumò nǐ xiǎng zuò shénme?", "vn": "Cuối tuần bạn muốn làm gì?" }
+      ],
+      "note": "Phủ định: 不想",
+      "tip": "想 = mong muốn (nhẹ). Mạnh hơn, dứt khoát hơn thì dùng 要.",
+      "source": "Nguồn: HSK标准教程1, Bài 8"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "能 (néng)",
+      "image": "assets/neng.jpg",
+      "point": "能 + động từ = có thể / được phép (nói về khả năng hoặc xin phép).",
+      "examples": [
+        { "hz": "我能坐这儿吗？", "py": "Wǒ néng zuò zhèr ma?", "vn": "Mình ngồi đây được không?" },
+        { "hz": "这儿能停车吗？", "py": "Zhèr néng tíngchē ma?", "vn": "Ở đây đỗ xe được không?" }
+      ],
+      "note": "Phủ định: 不能",
+      "tip": "能 nhấn 'có đủ điều kiện' (khỏe / rảnh / được phép). Xin phép: 能…吗？ = 可以…吗？",
+      "source": "Nguồn: HSK标准教程1, Bài 10"
+    },
+    {
+      "type": "grammar",
+      "kicker": "拓展",
+      "title": "要 / 可以",
+      "point": "Hai từ rất hay gặp, biết thêm để nói tự nhiên hơn:",
+      "examples": [
+        { "hz": "我要一杯咖啡。", "py": "Wǒ yào yì bēi kāfēi.", "vn": "要 = muốn (mạnh) / sẽ / phải." },
+        { "hz": "我可以走了吗？", "py": "Wǒ kěyǐ zǒu le ma?", "vn": "可以 = được phép / có thể." }
+      ],
+      "tip": "Muốn xin phép, có thể nói 能…吗？ hoặc 可以…吗？ đều được."
+    },
+    {
+      "type": "table",
+      "kicker": "对比",
+      "title": "会 / 能 / 可以  ·  想 / 要",
+      "headers": ["Từ", "Ý nghĩa", "Ví dụ"],
+      "cjk_cols": [0, 2],
+      "rows": [
+        ["会", "biết (kỹ năng học được)", "我会说汉语"],
+        ["能", "khả năng / điều kiện", "我感冒了，不能游泳"],
+        ["可以", "được phép", "你可以走了"],
+        ["想", "muốn (nhẹ nhàng)", "我想去公园"],
+        ["要", "muốn (mạnh) / sẽ", "我要学汉语"]
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "应用",
+      "title": "Bạn đi lại thế nào?",
+      "image": "assets/apply.jpg",
+      "point": "Công thức:  主语 + 想/会/能 + 坐/骑 + 交通工具 + 去 + 地方",
+      "examples": [
+        { "hz": "我每天骑自行车上学。", "py": "Wǒ měitiān qí zìxíngchē shàngxué.", "vn": "Ngày nào mình cũng đạp xe đi học." },
+        { "hz": "你怎么去学校？— 我坐公共汽车去。", "py": "Nǐ zěnme qù xuéxiào? — Wǒ zuò gōnggòng qìchē qù.", "vn": "Bạn đi học bằng gì? — Mình đi xe buýt." }
+      ],
+      "tip": "Phương tiện (坐/骑…) luôn đứng TRƯỚC 去 + nơi đến."
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "Hội thoại mẫu",
+      "turns": [
+        { "speaker": "A", "hz": "你会骑自行车吗？", "py": "Nǐ huì qí zìxíngchē ma?" },
+        { "speaker": "B", "hz": "会。我每天骑自行车上学。", "py": "Huì. Wǒ měitiān qí zìxíngchē shàngxué." },
+        { "speaker": "A", "hz": "明天你想做什么？", "py": "Míngtiān nǐ xiǎng zuò shénme?" },
+        { "speaker": "B", "hz": "我想坐地铁去公园。你能来吗？", "py": "Wǒ xiǎng zuò dìtiě qù gōngyuán. Nǐ néng lái ma?" },
+        { "speaker": "A", "hz": "我可以来。", "py": "Wǒ kěyǐ lái." }
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "Câu giao tiếp (1/2)",
+      "headers": ["中文", "Pinyin", "Tiếng Việt"],
+      "cjk_cols": [0],
+      "rows": [
+        ["你会说汉语吗？", "Nǐ huì shuō Hànyǔ ma?", "Bạn biết nói tiếng Trung không?"],
+        ["我会做中国菜。", "Wǒ huì zuò Zhōngguó cài.", "Mình biết nấu món Trung."],
+        ["你想做什么？", "Nǐ xiǎng zuò shénme?", "Bạn muốn làm gì?"],
+        ["周末我想睡觉、看电视。", "Zhōumò wǒ xiǎng shuìjiào, kàn diànshì.", "Cuối tuần mình muốn ngủ, xem TV."],
+        ["我每天骑自行车上学。", "Wǒ měitiān qí zìxíngchē shàngxué.", "Ngày nào mình cũng đạp xe đi học."]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "Câu giao tiếp (2/2)",
+      "headers": ["中文", "Pinyin", "Tiếng Việt"],
+      "cjk_cols": [0],
+      "rows": [
+        ["你怎么去学校？", "Nǐ zěnme qù xuéxiào?", "Bạn đi học bằng gì?"],
+        ["我坐公共汽车去。", "Wǒ zuò gōnggòng qìchē qù.", "Mình đi bằng xe buýt."],
+        ["这儿能停车吗？", "Zhèr néng tíngchē ma?", "Ở đây đỗ xe được không?"],
+        ["我可以坐这儿吗？", "Wǒ kěyǐ zuò zhèr ma?", "Mình ngồi đây được không?"],
+        ["你会开车吗？— 还不会。", "Nǐ huì kāichē ma? — Hái bú huì.", "Bạn biết lái xe không? — Chưa biết."]
+      ]
+    },
+    {
+      "type": "reading",
+      "kicker": "阅读",
+      "title": "Đọc thêm ở nhà",
+      "groups": [
+        {
+          "label": "Trong 2 giáo trình (đọc lại 课文):",
+          "items": [
+            "《HSK标准教程1》Bài 6「我会说汉语」— luyện 会",
+            "《HSK标准教程1》Bài 8「我想喝茶」— luyện 想",
+            "《HSK标准教程1》Bài 10「我能坐这儿吗」— luyện 能",
+            "《HSK标准教程1》Bài 13「他在学做中国菜呢」— hoạt động hằng ngày",
+            "《汉语教程1·上》Bài 10–12 — hội thoại hỏi đường / đi lại"
+          ]
+        },
+        {
+          "label": "Nguồn luyện đọc thêm (trình độ HSK1):",
+          "items": [
+            "Du Chinese (app) — mục Newbie / HSK1",
+            "The Chairman's Bao — bài trình độ HSK1",
+            "Mandarin Companion — Readers Level 0",
+            "hsk.academy — HSK1 reading online"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "blank",
+      "kicker": "作业",
+      "title": "Bài tập về nhà",
+      "placeholder": "(Phần bài tập sẽ được tạo bằng công cụ riêng — tạm để trống)"
+    },
+    {
+      "type": "section",
+      "title": "谢谢！",
+      "subtitle": "Buổi sau: Lượng từ + 一点儿 · Màu sắc"
+    }
+  ]
+}
