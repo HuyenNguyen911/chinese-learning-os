@@ -15,6 +15,7 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
 - `/hsk6-examiner` → invoke Skill("hsk6-examiner")
 - `/speaking-coach` → invoke Skill("speaking-coach")
 - `/exercise-generator` → invoke Skill("exercise-generator")
+- `/close-session` → invoke Skill("close-session")
 
 ### Soft Route (intent detection — priority order)
 1. Explicit command → hard route
@@ -23,6 +24,7 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
    _(Nếu cùng match rule 2 và 3: ưu tiên speaking-coach nếu có từ khóa speaking rõ ràng)_
 4. "kế hoạch" / "plan" / "backlog" / "tuần này" / "hôm nay học gì" → learning-strategist
 4b. "tạo bài tập" / "bài tập" / "làm đề" / "worksheet" / "bài tập buổi X" → exercise-generator
+4c. "đóng session" / "kết thúc buổi" / "kết thúc session" / "close session" → close-session
 5. Ambiguous → hỏi 1 câu ngắn
 
 ### Confidence Rules
@@ -64,6 +66,7 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 | output/hskN/buoiX_&lt;chude&gt;/slide/ | Teaching Coach (buoiX.json + .pptx + assets/) |
 | output/hskN/buoiX_&lt;chude&gt;/baitap/ | Exercise Generator (baitap.json + hocsinh/worksheet.docx + audio + dapan/dapan.docx) |
 | knowledge/hsk-exam-bank/ | Exercise Generator (seed có review gate) |
+| .claude/skills/**/SKILL.md, CLAUDE.md | Close Session (chỉ sửa sau khi user duyệt từng mục; không đụng memory) |
 | memory/* | User only |
 
 > **Cấu trúc output gom theo buổi:** mỗi buổi 1 folder `output/hskN/buoiX_<chude>/`
@@ -76,3 +79,4 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 - **hsk6-examiner** — Chấm bài viết tiếng Trung, ước lượng điểm HSK6, giữ văn phong gốc
 - **speaking-coach** — Luyện speaking, tóm tắt → sửa lỗi → mở rộng → hỏi sâu
 - **exercise-generator** — Sinh bài tập HSK1-3 cho học viên (đủ 听/读/书写 + HSKK), bám buổi dạy, ưu tiên kho đề真题, render .docx tương tác + file đáp án; audio nghe/nói qua cổng xác nhận
+- **close-session** — Đóng session: hygiene check (git status) + rà soát session tìm tri thức/pattern mới cần đưa vào skill hiện có, trình bày bảng và chờ duyệt từng mục trước khi sửa (meta-skill, được sửa SKILL.md/CLAUDE.md sau duyệt, không đụng memory)
