@@ -1,0 +1,97 @@
+{
+  "meta": {"lesson": "HSK6 · Bài 29 《“笑”的备忘录》", "hsk": 6},
+  "blocks": [
+    {
+      "type": "grammar_note",
+      "title": "语言点 1 — 预先",
+      "points": [
+        {"pattern": "预先 + 动词", "explain": "Phó từ, nghĩa là làm sẵn/làm trước một việc gì đó TRƯỚC khi sự việc xảy ra. Đứng trước động từ.", "example": "到那里去旅行，一定要预先订好旅馆。"}
+      ]
+    },
+    {
+      "type": "grammar_note",
+      "title": "语言点 2 — ……也好，……也罢",
+      "points": [
+        {"pattern": "……也好，……也罢，都/也……", "explain": "Dùng để liệt kê, biểu thị BẤT KỂ trường hợp nào thì kết quả cũng như nhau. Có thể nói “…也好，…也好” hoặc “…也罢，…也罢”; phía sau thường đi với 都/也.", "example": "开汽车也罢，骑自行车也罢，行进中打电话都会影响注意力与反应能力。"}
+      ]
+    },
+    {
+      "type": "grammar_note",
+      "title": "辨析 — 各 / 诸",
+      "points": [
+        {"pattern": "各 (mỗi, các)", "explain": "Chỉ mọi cá thể trong một phạm vi (người hoặc vật); có thể làm phó từ đứng trước động từ với nghĩa “mỗi/riêng”.", "example": "双方各执一词。/ 几种水果他各买了一斤。"},
+        {"pattern": "诸 (chư, chúng, nhiều)", "explain": "Văn viết, nghĩa “nhiều, các”; danh từ theo sau thường chỉ người, phần lớn là kết cấu cố định (诸位/诸君/诸子百家). Trong 诸位/各位 thì hai từ dùng như nhau.", "example": "诸位/各位有何意见，请尽量发表。"}
+      ]
+    },
+    {
+      "type": "grammar_note",
+      "title": "修辞（六）— 设问",
+      "points": [
+        {"pattern": "无疑而问，自问自答（设问）", "explain": "Tự đặt câu hỏi rồi tự trả lời. Tác dụng: (1) gây chú ý, gợi cho người đọc suy nghĩ; (2) tiện tổ chức bài, giúp chuyển ý tự nhiên, gọn.", "example": "难道我们听到庸俗、不上档次的笑话假笑两声，敷衍一下也不可以吗？可是，好像确实不行。"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "用“预先”完成句子",
+      "instructions": "Dùng “预先” hoàn thành câu (đáp án gợi ý từ slide).",
+      "items": [
+        {"prompt": "这事她__________，我最近都忙糊涂了，忘了告诉你了。", "answer": "预先通知我了", "src": "slide"},
+        {"prompt": "他__________，居然有那么多朋友，在他最困难的时候向他伸出了援手。", "answer": "预先没想到的是", "src": "slide"},
+        {"prompt": "……送公文的到了，吃饱喝足，稍稍休息一下，换一匹__________，继续赶路。", "answer": "预先准备好的马", "src": "slide"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "用所给词语或结构改写句子",
+      "instructions": "Viết lại câu bằng từ/cấu trúc trong ngoặc (đáp án chuẩn lấy từ slide).",
+      "items": [
+        {"prompt": "我已经提前做好了计划，所以实施起来很顺利。（预先）", "answer": "我已经预先做好了计划，所以实施起来很顺利。", "src": "slide"},
+        {"prompt": "无论富贵还是贫穷，我对他的爱不会改变。（……也好，……也罢）", "answer": "富贵也好，贫穷也罢，我对他的爱不会改变。", "src": "slide"},
+        {"prompt": "付出艰苦努力的人什么都没得到，哪有这样的道理啊？（岂有此理）", "answer": "付出艰苦努力的人什么都没得到，真是岂有此理。", "src": "slide"},
+        {"prompt": "“米”是国际上普遍使用的基本长度单位。（通用）", "answer": "“米”是国际上通用的基本长度单位。", "src": "slide"},
+        {"prompt": "问题的本质在于某些人缺乏责任心。（实质）", "answer": "问题的实质在于某些人缺乏责任心。", "src": "slide"},
+        {"prompt": "明天的会议很重要，发言稿你好好考虑考虑。（斟酌）", "answer": "明天的会议很重要，发言稿你好好儿斟酌斟酌。", "src": "slide"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "判断对错 — 各 / 诸",
+      "instructions": "Xét câu đúng/sai; nếu sai thì sửa (đáp án AI).",
+      "items": [
+        {"prompt": "亚洲各国首脑都参加了此次会议。", "answer": "对。“各国” = mỗi nước, dùng đúng.", "src": "AI"},
+        {"prompt": "经过诸方的共同努力，事情终于圆满解决了。", "answer": "错。Nên dùng “各方”：经过各方的共同努力……（“诸” thường đi với danh từ chỉ người/kết cấu cố định).", "src": "AI"},
+        {"prompt": "三种办法各有优点和缺点，实在难以抉择。", "answer": "对。“各有” = mỗi cái đều có, dùng đúng.", "src": "AI"},
+        {"prompt": "他喜欢读古代诸子百家的著作。", "answer": "对。“诸子百家” là kết cấu cố định.", "src": "AI"}
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "课文 1 —《大脑能“听”出笑声的真假》",
+      "instructions": "Đọc đoạn văn và chọn đáp án đúng.",
+      "passage": "真是岂有此理，难道我们听到庸俗、不上档次的笑话假笑两声、敷衍一下也不可以吗？可是，好像确实不行。诸位，如果你不想难堪，不想让别人发现你发出的是虚伪、违背心意的笑声，你可以回避，可以不表态，可以把话题岔开，可以装聋装哑，但不要画蛇添足，违心地笑。因为只要你笑，不管你多机灵，不管你掩饰得多么周密，别人都能看出你的笑是真心实意，还是虚情假意、装模作样。有人不禁要问，人是通过什么途径识别“笑”背后的真实情感呢？研究者发现，我们在听到发自内心的笑声和虚假的笑声时，大脑会呈现出完全不同的反应。",
+      "questions": [
+        {"q": "别人能看出你的笑是真是假，主要靠什么？", "options": ["靠你的表情和动作", "靠大脑对真假笑声呈现出的不同反应", "靠你说话的内容"], "answer": "B", "src": "AI"},
+        {"q": "根据短文，如果不想让别人发现你在假笑，下面哪种做法作者“不建议”？", "options": ["把话题岔开、不表态", "回避、装聋装哑", "画蛇添足，违心地笑"], "answer": "C", "src": "AI"}
+      ]
+    },
+    {
+      "type": "noi",
+      "title": "复习 — 近义词连线",
+      "instructions": "Nối từ ở cột trái với từ gần nghĩa ở cột phải.",
+      "pairs": [
+        {"left": "腐朽", "right": "腐败"},
+        {"left": "焦点", "right": "中心"},
+        {"left": "埋葬", "right": "安葬"},
+        {"left": "践踏", "right": "摧残"}
+      ]
+    },
+    {
+      "type": "writing_prompt",
+      "title": "写一写 / HSKK",
+      "items": [
+        {"prompt": "简述课文《大脑能“听”出笑声的真假》的主要内容（约150–200字）。", "kind": "viết", "outline": ["Mở: nêu vấn đề — não có phân biệt được cười thật/cười giả không?", "Thân: nghiên cứu phát hiện cười thật và cười giả khiến não phản ứng khác nhau; nêu cách/途径 nhận biết", "Kết: ý nghĩa của tiếng cười chân thật và “知音”"]},
+        {"prompt": "谈谈你的看法：“笑”真的是人生旅途中的最佳良药吗？", "kind": "HSKK", "outline": ["Nêu quan điểm: cười có/không phải liều thuốc tốt", "Lý do + ví dụ: liên hệ câu “开怀大笑也好，哈哈傻笑也罢……都是良方”", "Liên hệ bản thân, chốt lại ngắn gọn"]}
+      ]
+    }
+  ]
+}
