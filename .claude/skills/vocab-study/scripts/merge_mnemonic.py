@@ -3,6 +3,9 @@
 # Chạy:  python .../merge_mnemonic.py <đường_dẫn_file_output_workflow>
 #   file output workflow là JSON {summary,...,"result":{word:mn,...}} hoặc trực tiếp {word:mn}.
 import json, os, sys, re
+for _s in (sys.stdout, sys.stderr):  # console Windows cp1252 → tránh crash khi print 中文/tiếng Việt
+    try: _s.reconfigure(encoding="utf-8")
+    except Exception: pass
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "data")

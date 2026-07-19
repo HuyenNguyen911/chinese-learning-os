@@ -3,3 +3,5 @@ data/_src/
 # File trung gian, tái sinh mỗi lần chạy extract_xlsx.py
 data/tv.json
 data/ct.json
+# File workflow tạm sinh mẹo nhớ (tái tạo bằng gen_mnemonic_wf.py)
+data/wf_mnemonic.js

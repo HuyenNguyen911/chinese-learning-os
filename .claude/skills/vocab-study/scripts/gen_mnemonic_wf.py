@@ -2,8 +2,11 @@
 # Sinh file workflow data/wf_mnemonic.js CHỈ cho các từ CHƯA có trong data/mnemonic.json.
 # Sau đó gọi tool Workflow({scriptPath: ".../data/wf_mnemonic.js"}) để sinh mẹo nhớ,
 # rồi chạy merge_mnemonic.py để gộp kết quả vào data/mnemonic.json.
-import json, re, os
+import json, re, os, sys
 from pypinyin import pinyin as _py, Style
+for _s in (sys.stdout, sys.stderr):  # console Windows cp1252 → tránh crash khi print 中文/tiếng Việt
+    try: _s.reconfigure(encoding="utf-8")
+    except Exception: pass
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "data")
