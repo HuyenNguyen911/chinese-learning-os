@@ -50,6 +50,7 @@ Kiểm tra extension của file đầu vào:
 | `.md` `.txt` `.csv` `.html` | Đọc trực tiếp bằng Read tool |
 | `.docx` | Convert bằng pandoc (xem bên dưới) |
 | `.xlsx` | Convert bằng Python pandas (xem bên dưới) |
+| `.pptx` | **Convert bằng `pptx_to_text.py`** (python-pptx). In `PPTX <out.txt> <slides>` → đọc file `<out.txt>`. |
 
 ### Convert PDF → Text (text-PDF hoặc scan-PDF/OCR)
 
@@ -182,6 +183,7 @@ Sau khi tự cài thành công, **chạy lại** `pdf_to_text.py` một lần.
 | `ERROR NOPYPDF` | `python -m pip install pypdf` | `[ERROR] Cần pypdf. Cài: pip install pypdf` |
 | `ERROR NOPYMUPDF` | `python -m pip install pymupdf` | `[ERROR] Cần PyMuPDF. Cài: pip install pymupdf` |
 | `ERROR NOTESSERACT` | `winget install --id UB-Mannheim.TesseractOCR -e --silent --accept-source-agreements --accept-package-agreements` | `[ERROR] Cần Tesseract OCR. Cài: winget install UB-Mannheim.TesseractOCR` |
+| `ERROR NOPPTX` | `python -m pip install python-pptx` | `[ERROR] Cần python-pptx. Cài: pip install python-pptx` |
 | `ERROR NOFILE` | — | `[ERROR] Không tìm thấy file: {file_path}` → dừng |
 
 **Thiếu language data OCR** (Tesseract có nhưng thiếu `chi_sim`/`vie`): tải `.traineddata` vào `<tessdata>`:
