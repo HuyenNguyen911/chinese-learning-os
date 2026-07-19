@@ -73,7 +73,7 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 | output/study/hskN/tu-vung.{md,html} | Vocab Study (đọc raw/Từ vựng.xlsx; CHỈ ĐỌC knowledge/vocabulary để lấy Activation) |
 | .claude/skills/vocab-study/data/* | Vocab Study (hanzi.json, mnemonic.json — tích lũy; desc_override, exp_extra) |
 | .claude/skills/**/SKILL.md, CLAUDE.md | Close Session (chỉ sửa sau khi user duyệt từng mục; không đụng memory) |
-| knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D) |
+| knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D; **ghi đè** luật tier-*.md ở trên cho riêng file này) |
 | raw/Từ vựng.xlsx | User / Lesson Prep (append dòng vocab mới) |
 | output/hsk6/**/lesson-prep/ | Lesson Prep (vocab_payload.json, exercise_payload.json, baitap.docx) |
 | memory/* | User only |
@@ -86,6 +86,8 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 > **Lesson Prep & tier-a.md:** Lesson Prep chỉ **thêm** entry mới vào
 > `knowledge/vocabulary/tier-a.md` (dedup theo 生词, không trùng từ đã có), không
 > sửa/xóa entry do Learning Strategist đang quản lý.
+>
+> Buổi HSK6 tự học thêm `lesson-prep/` (Lesson Prep: vocab_payload.json, exercise_payload.json, baitap.docx).
 
 ## 7. Skill Catalog
 - **learning-strategist** — Lập kế hoạch học, quản lý vocabulary backlog, batch update activation từ session-log
