@@ -43,7 +43,8 @@ Phân loại từng slide:
   → `exercise_payload.json`. Từ mới ở đây chỉ là ngữ liệu, KHÔNG nhặt làm vocab.
 - **Slide "bài viết/HSKK"** → block `writing_prompt` trong `exercise_payload.json`.
 
-**`vocab_payload.json`:** `{ "bai": <N>, "words":[{"w","pinyin","desc","vi","ex"}] }`
+**`vocab_payload.json`:** `{ "bai": <N>, "bai_title": "<标题 bài khóa>", "words":[{"w","pinyin","desc","vi","ex"}] }`
+- `bai_title` = **tên bài khóa (标题) lấy từ pptx** — thường ở slide tiêu đề (vd `第29课: "笑"的备忘录` → `"笑"的备忘录`). LUÔN bắt tên này.
 - `desc` = 释义 tiếng Trung ĐƠN GIẢN (học sinh tiểu học hiểu, KHÔNG đồng nghĩa).
 - `pinyin` ưu tiên lấy từ slide; `ex` ưu tiên câu ví dụ từ slide (tự nhiên).
 
@@ -64,6 +65,8 @@ Vocab:
 ```
 "$PY" "$LP/append_tier_a.py" "output/hsk6/buoiX_<chude>/lesson-prep/vocab_payload.json"
 "$PY" "$LP/append_xlsx.py"   "output/hsk6/buoiX_<chude>/lesson-prep/vocab_payload.json"
+# Ghi TÊN BÀI vào .claude/skills/vocab-study/data/bai_titles.json (map {"<N>": "<bai_title>"}):
+#   thêm/ cập nhật khoá "<N>" = bai_title từ vocab_payload → build_md/render_html sẽ hiện tên bài.
 # rồi chạy pipeline vocab-study (tối thiểu 1→3→5; thêm 2/4 nếu có chữ/từ mới):
 "$PY" "$VS/extract_xlsx.py"
 "$PY" "$VS/build_md.py"
