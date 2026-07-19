@@ -16,6 +16,8 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
 - `/speaking-coach` → invoke Skill("speaking-coach")
 - `/exercise-generator` → invoke Skill("exercise-generator")
 - `/close-session` → invoke Skill("close-session")
+- `/vocab-study` → invoke Skill("vocab-study")
+- `/lesson-prep` → invoke Skill("lesson-prep")
 
 ### Soft Route (intent detection — priority order)
 1. Explicit command → hard route
@@ -25,6 +27,8 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
 4. "kế hoạch" / "plan" / "backlog" / "tuần này" / "hôm nay học gì" → learning-strategist
 4b. "tạo bài tập" / "bài tập" / "làm đề" / "worksheet" / "bài tập buổi X" → exercise-generator
 4c. "đóng session" / "kết thúc buổi" / "kết thúc session" / "close session" → close-session
+4d. "học từ vựng" / "review từ vựng" / "sinh trang học từ" / "cập nhật từ vựng theo bài" / "tu-vung" → vocab-study
+4e. "chuẩn bị bài" / "bóc bài khóa" / "lesson-prep" / "chuẩn bị buổi X" / "bài khóa của cô" → lesson-prep
 5. Ambiguous → hỏi 1 câu ngắn
 
 ### Confidence Rules
@@ -66,13 +70,22 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 | output/hskN/buoiX_&lt;chude&gt;/slide/ | Teaching Coach (buoiX.json + .pptx + assets/) |
 | output/hskN/buoiX_&lt;chude&gt;/baitap/ | Exercise Generator (baitap.json + hocsinh/worksheet.docx + audio + dapan/dapan.docx) |
 | knowledge/hsk-exam-bank/ | Exercise Generator (seed có review gate) |
+| output/study/hskN/tu-vung.{md,html} | Vocab Study (đọc raw/Từ vựng.xlsx; CHỈ ĐỌC knowledge/vocabulary để lấy Activation) |
+| .claude/skills/vocab-study/data/* | Vocab Study (hanzi.json, mnemonic.json — tích lũy; desc_override, exp_extra) |
 | .claude/skills/**/SKILL.md, CLAUDE.md | Close Session (chỉ sửa sau khi user duyệt từng mục; không đụng memory) |
+| knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D) |
+| raw/Từ vựng.xlsx | User / Lesson Prep (append dòng vocab mới) |
+| output/hsk6/**/lesson-prep/ | Lesson Prep (vocab_payload.json, exercise_payload.json, baitap.docx) |
 | memory/* | User only |
 
 > **Cấu trúc output gom theo buổi:** mỗi buổi 1 folder `output/hskN/buoiX_<chude>/`
 > chứa `slide/` (Teaching Coach) và `baitap/` (Exercise Generator). `<chude>` = slug
 > chủ đề buổi, vd `buoi2_luongtu_mausac`. Đưa học sinh: cả folder `baitap/hocsinh/`
 > (worksheet + audio, KHÔNG có đáp án).
+>
+> **Lesson Prep & tier-a.md:** Lesson Prep chỉ **thêm** entry mới vào
+> `knowledge/vocabulary/tier-a.md` (dedup theo 生词, không trùng từ đã có), không
+> sửa/xóa entry do Learning Strategist đang quản lý.
 
 ## 7. Skill Catalog
 - **learning-strategist** — Lập kế hoạch học, quản lý vocabulary backlog, batch update activation từ session-log
@@ -80,3 +93,5 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 - **speaking-coach** — Luyện speaking, tóm tắt → sửa lỗi → mở rộng → hỏi sâu
 - **exercise-generator** — Sinh bài tập HSK1-3 cho học viên (đủ 听/读/书写 + HSKK), bám buổi dạy, ưu tiên kho đề真题, render .docx tương tác + file đáp án; audio nghe/nói qua cổng xác nhận
 - **close-session** — Đóng session: hygiene check (git status) + rà soát session tìm tri thức/pattern mới cần đưa vào skill hiện có, trình bày bảng và chờ duyệt từng mục trước khi sửa (meta-skill, được sửa SKILL.md/CLAUDE.md sau duyệt, không đụng memory)
+- **vocab-study** — Sinh trang học từ vựng theo bài (Quizlet-style) từ `raw/Từ vựng.xlsx` → `output/study/hskN/tu-vung.html`: bảng 生词 + 生词拓展, flashcard active-recall + Leitner (neo Activation), chiết tự + mẹo nhớ tiếng Việt, phát âm 🔊. Chỉ đọc knowledge/vocabulary.
+- **lesson-prep** — Bóc tách pptx bài khóa HSK6: convert (doc-analyzer) → phân loại → nạp từ vựng (tier-a + vocab-study) + xuất bài tập/bài viết ra .docx. Kiểm tra đáp án AI trước khi xuất.
