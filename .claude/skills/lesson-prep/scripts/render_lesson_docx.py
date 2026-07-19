@@ -23,10 +23,9 @@ def main(argv):
         print("Usage: python render_lesson_docx.py <exercise_payload.json> <out.docx>",
               file=sys.stderr); return 2
     spec = json.loads(Path(argv[1]).read_text(encoding="utf-8"))
-    header = spec.get("meta", {}).get("lesson", "BÀI TẬP CHUẨN BỊ")
     out = Path(argv[2])
     out.parent.mkdir(parents=True, exist_ok=True)
-    WorksheetBuilder(spec).render_study(header).save(str(out))
+    WorksheetBuilder(spec).render_study("BÀI TẬP CHUẨN BỊ").save(str(out))
     print("OK: lesson docx -> %s (%d block)" % (out, len(spec.get("blocks", []))))
     return 0
 
