@@ -71,6 +71,7 @@ Lần cập nhật thông thường (không có chữ/từ mới) chỉ cần **
 - Nghĩa Việt giữ theo cột 意义.
 - Chỉ **đọc** `knowledge/vocabulary/*` (Activation). Không ghi. State vocabulary do learning-strategist sở hữu (CLAUDE.md §6).
 - Mẹo nhớ: workflow cần user bật orchestration; **chỉ sinh cho từ mới** để tiết kiệm token.
+- **Mọi script phải `reconfigure(utf-8)` stdout/stderr ở đầu file** — console Windows mặc định cp1252, in 中文/tiếng Việt sẽ crash `UnicodeEncodeError` nếu thiếu.
 
 ## Phụ thuộc
 - Python: `pypinyin`, `openpyxl`.

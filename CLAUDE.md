@@ -88,6 +88,10 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 > sửa/xóa entry do Learning Strategist đang quản lý.
 >
 > Buổi HSK6 tự học thêm `lesson-prep/` (Lesson Prep: vocab_payload.json, exercise_payload.json, baitap.docx).
+>
+> **Lesson Prep ghi chéo vào data Vocab Study:** append `bai_titles.json` (tên bài) và
+> `exp_extra.json` (nhóm 生词拓展 + nghĩa) trong `.claude/skills/vocab-study/data/` — append-only,
+> dùng chung với Vocab Study; rồi chạy pipeline vocab-study để sinh lại `tu-vung.html`.
 
 ## 7. Skill Catalog
 - **learning-strategist** — Lập kế hoạch học, quản lý vocabulary backlog, batch update activation từ session-log
@@ -95,5 +99,5 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 - **speaking-coach** — Luyện speaking, tóm tắt → sửa lỗi → mở rộng → hỏi sâu
 - **exercise-generator** — Sinh bài tập HSK1-3 cho học viên (đủ 听/读/书写 + HSKK), bám buổi dạy, ưu tiên kho đề真题, render .docx tương tác + file đáp án; audio nghe/nói qua cổng xác nhận
 - **close-session** — Đóng session: hygiene check (git status) + rà soát session tìm tri thức/pattern mới cần đưa vào skill hiện có, trình bày bảng và chờ duyệt từng mục trước khi sửa (meta-skill, được sửa SKILL.md/CLAUDE.md sau duyệt, không đụng memory)
-- **vocab-study** — Sinh trang học từ vựng theo bài (Quizlet-style) từ `raw/Từ vựng.xlsx` → `output/study/hskN/tu-vung.html`: bảng 生词 + 生词拓展, flashcard active-recall + Leitner (neo Activation), chiết tự + mẹo nhớ tiếng Việt, phát âm 🔊. Chỉ đọc knowledge/vocabulary.
+- **vocab-study** — Sinh trang học từ vựng theo bài (Quizlet-style) từ `raw/Từ vựng.xlsx` → `output/study/hskN/tu-vung.html`: bảng 生词 + 生词拓展 (**sơ đồ cây**: gốc → nhánh có nghĩa), flashcard active-recall + Leitner (neo Activation), chiết tự + mẹo nhớ tiếng Việt (~1350 từ), tên bài, phát âm 🔊 (chọn giọng). Chỉ đọc knowledge/vocabulary.
 - **lesson-prep** — Bóc tách pptx bài khóa HSK6: convert (doc-analyzer) → phân loại → nạp từ vựng (tier-a + vocab-study) + xuất bài tập/bài viết ra .docx. Kiểm tra đáp án AI trước khi xuất.
