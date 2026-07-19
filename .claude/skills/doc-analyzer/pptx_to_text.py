@@ -11,8 +11,25 @@ import sys, os
 
 try:
     from pptx import Presentation
+    from pptx.enum.shapes import MSO_SHAPE_TYPE
 except ImportError:
     print("ERROR NOPPTX"); sys.exit(3)
+
+
+def _iter_shapes(shapes):
+    """Duyệt shape, ĐỆ QUY vào GROUP shape. Không đệ quy sẽ sót nội dung nằm
+    trong group (vd đoạn 课文/bài đọc thường được gom vào một group shape)."""
+    for sh in shapes:
+        is_group = False
+        try:
+            is_group = sh.shape_type == MSO_SHAPE_TYPE.GROUP
+        except Exception:
+            is_group = False
+        if is_group:
+            for s in _iter_shapes(sh.shapes):
+                yield s
+        else:
+            yield sh
 
 
 def slide_to_text(slide, idx):
@@ -26,7 +43,7 @@ def slide_to_text(slide, idx):
         title = None
     if title:
         lines.append("[TITLE] " + title)
-    for shape in slide.shapes:
+    for shape in _iter_shapes(slide.shapes):
         if title_id is not None and getattr(shape, "shape_id", None) == title_id:
             continue
         if getattr(shape, "has_table", False) and shape.has_table:

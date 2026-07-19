@@ -3,10 +3,13 @@ import os, sys, subprocess
 from pathlib import Path
 from pptx import Presentation
 from pptx.util import Inches
+from pptx.enum.shapes import MSO_SHAPE_TYPE
 
 HERE = Path(__file__).resolve().parent
 SCRIPT = HERE.parent / "pptx_to_text.py"
 PY = sys.executable
+sys.path.insert(0, str(HERE.parent))
+from pptx_to_text import _iter_shapes  # noqa: E402
 
 def _make_pptx(path):
     prs = Presentation()
@@ -43,3 +46,21 @@ def test_pptx_to_text_nofile(tmp_path):
     r = subprocess.run([PY, str(SCRIPT), str(tmp_path / "missing.pptx")],
                        capture_output=True, text=True, encoding="utf-8")
     assert "ERROR NOFILE" in r.stdout
+
+
+class _Leaf:
+    def __init__(self, n):
+        self.shape_type = MSO_SHAPE_TYPE.TEXT_BOX
+        self.n = n
+
+
+class _Group:
+    def __init__(self, kids):
+        self.shape_type = MSO_SHAPE_TYPE.GROUP
+        self.shapes = kids
+
+
+def test_iter_shapes_recurses_nested_groups():
+    # Group lồng group — phải "làm phẳng" theo đúng thứ tự, không bỏ sót shape trong group.
+    tree = [_Leaf(1), _Group([_Leaf(2), _Group([_Leaf(3)]), _Leaf(4)]), _Leaf(5)]
+    assert [s.n for s in _iter_shapes(tree)] == [1, 2, 3, 4, 5]
