@@ -92,24 +92,36 @@ def status_cell(word):
     return '<span class="st %s" title="%s">%s</span>' % (cls, esc(full), label)
 
 def render_exp(line):
+    # Sơ đồ cây: chữ gốc bên trái → các nhánh (汉字 · pinyin · nghĩa).
     m = re.match(r"\*\*(.+?)\*\*\s*(\(.*?\))?\s*:\s*(.*)", line)
     if not m:
         return '<div class="grp">%s</div>' % esc(line)
-    root, src, words = m.group(1), (m.group(2) or "").strip("()"), m.group(3)
-    chips = []
+    root, rootgloss, words = m.group(1), (m.group(2) or "").strip("()"), m.group(3)
+    branches = []
     for chunk in words.split(" · "):
         chunk = chunk.strip()
         if not chunk:
             continue
+        g = ""
+        gm = re.search(r"〖(.*?)〗", chunk)
+        if gm:
+            g = gm.group(1); chunk = (chunk[:gm.start()] + chunk[gm.end():]).strip()
         mm = re.match(r"([一-鿿]+)\s*(.*)", chunk)
-        if mm:
-            chips.append('<span class="chip"><b>%s</b> <i>%s</i></span>' % (esc(mm.group(1)), esc(mm.group(2))))
-        else:
-            chips.append('<span class="chip">%s</span>' % esc(chunk))
-    head = '<span class="root">%s</span>' % esc(root)
-    if src:
-        head += ' <span class="src">%s</span>' % esc(src)
-    return '<div class="grp">%s<div class="chips">%s</div></div>' % (head, "".join(chips))
+        han, pyv = (mm.group(1), mm.group(2).strip()) if mm else (chunk, "")
+        branches.append(
+            '<div class="branch"><span class="bh">%s</span> <span class="bpy">%s</span>%s</div>'
+            % (esc(han), esc(pyv), (' <span class="bg">%s</span>' % esc(g) if g else '')))
+    rpy = ""
+    if re.fullmatch(r"[一-鿿]+", root or ""):
+        try:
+            rpy = "".join(x[0] for x in _pyf(root, style=_Style.TONE, errors="ignore"))
+        except Exception:
+            rpy = ""
+    rg = ('<span class="rgloss">%s</span>' % esc(rootgloss)) if rootgloss else ''
+    rpys = ('<span class="tr-py">%s</span>' % esc(rpy)) if rpy else ''
+    troot = '<div class="troot"><span class="tr-han">%s</span>%s%s</div>' % (esc(root), rpys, rg)
+    return '<div class="grp"><div class="tree">%s<div class="branches">%s</div></div></div>' % (
+        troot, "".join(branches))
 
 CSS = r"""
 :root{--bd:#dcdcdc;--head:#2b3a67;--headtx:#fff;--zebra:#f7f9fc;--accent:#2b6cb0;--study:#6d28d9;}
@@ -117,6 +129,7 @@ CSS = r"""
 body{margin:0;font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:#1a1a1a;background:#fafafa;line-height:1.5;}
 .bar{display:flex;gap:10px;align-items:center;padding:6px 14px;background:#fff;border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:20;}
 .bar h1{font-size:15px;margin:0;color:var(--head);white-space:nowrap;}
+#voicesel{margin-left:auto;max-width:230px;font-size:12px;padding:3px 6px;border:1px solid var(--bd);border-radius:6px;color:var(--head);background:#fff;}
 #q{flex:1;padding:5px 10px;border:1px solid var(--bd);border-radius:6px;font-size:14px;min-width:120px;}
 .tip{color:#999;cursor:help;font-size:14px;}
 .legend{font-size:11.5px;color:#888;white-space:nowrap;}
@@ -159,14 +172,31 @@ td:nth-child(3){color:#2f855a;}
 td:nth-child(5){color:#b7791f;}
 td:nth-child(6){white-space:normal;min-width:340px;color:#333;}
 td[contenteditable="true"]{outline:2px solid var(--accent);border-radius:3px;background:#fff;}
-.exp{padding:6px 12px 12px;}
-.grp{padding:9px 0;border-bottom:1px dashed #e2e2e2;}
+/* xếp 2-3 cây cạnh nhau trên một hàng, không dồn 1 mé trái */
+.exp{padding:8px 12px 12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(430px,1fr));gap:10px 14px;align-items:start;}
+.grp{padding:10px 12px;border:1px solid #edf0f5;border-radius:10px;background:#fff;}
 .grp .root{display:inline-block;font-size:19px;font-weight:700;color:var(--head);background:#eef1f8;border-radius:6px;padding:1px 10px;}
 .grp .src{font-size:12px;color:#999;}
 .chips{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px 10px;}
 .chip{background:#f5f7fb;border:1px solid #e4e8f0;border-radius:6px;padding:3px 9px;font-size:14px;}
 .chip b{font-size:15px;}
 .chip i{color:#2f855a;font-style:normal;}
+/* 生词拓展 dạng sơ đồ cây: gốc bên trái → nhánh (汉字 · pinyin · nghĩa) */
+.tree{display:flex;align-items:flex-start;gap:14px;}
+.troot{flex:0 0 auto;min-width:54px;display:flex;flex-direction:column;align-items:center;
+  background:linear-gradient(180deg,#eef1f8,#e3e9f6);border:1px solid #d3d9ea;border-radius:10px;padding:7px 11px;}
+.troot .tr-han{font-size:26px;font-weight:800;color:var(--head);line-height:1.1;}
+.troot .tr-py{font-size:12px;color:#2f855a;margin-top:2px;}
+.troot .rgloss{font-size:11px;color:#7a8194;margin-top:3px;text-align:center;max-width:90px;}
+/* nhánh dọc gọn trong mỗi cây (nhiều cây xếp cạnh nhau nhờ .exp grid) */
+.branches{flex:1;display:flex;flex-direction:column;gap:5px;border-left:2px solid #d3d9ea;padding-left:14px;}
+.branch{position:relative;line-height:1.4;}
+.branch::before{content:"";position:absolute;left:-14px;top:0.75em;width:10px;height:2px;background:#d3d9ea;}
+.branch .bh{font-size:16px;font-weight:700;color:#1a1a1a;}
+.branch .bpy{color:#2f855a;font-size:13px;margin-left:3px;}
+.branch .bg{color:#555;font-size:13px;margin-left:7px;}
+tr.stale{background:#fffdf5;}
+.stalebadge{display:inline-block;margin-left:6px;font-size:10px;color:#b7791f;background:#fff3cd;border:1px solid #f0d98c;border-radius:4px;padding:0 5px;white-space:nowrap;vertical-align:middle;cursor:help;}
 .hidden{display:none;}
 /* ---- study modal ---- */
 #study{position:fixed;inset:0;background:rgba(18,18,28,.8);z-index:100;display:flex;align-items:center;justify-content:center;padding:16px;}
@@ -246,11 +276,18 @@ function store(o){localStorage.setItem(KEY,JSON.stringify(o));}
 var DB=load();
 function rec(w){if(!DB[w])DB[w]={};return DB[w];}
 function initRow(tr){var w=tr.getAttribute('data-w');var r=DB[w];if(!r)return;
-  var c=tr.querySelectorAll('td.data');for(var i=0;i<c.length;i++){if(r[i]!=null)c[i].textContent=r[i];}}
+  var c=tr.querySelectorAll('td.data');for(var i=0;i<c.length;i++){if(r[i]!=null)c[i].textContent=r[i];}
+  if(r._stale){tr.classList.add('stale');staleBadge(tr);}}
+function staleBadge(tr){if(tr.querySelector('.stalebadge'))return;
+  var b=document.createElement('span');b.className='stalebadge';
+  b.title='Bạn đã sửa 生词 — Pinyin/释义/Nghĩa/例句 có thể chưa khớp. Chạy lại pipeline hoặc nhờ cập nhật.';
+  b.textContent='⚠ cần làm mới';var first=tr.querySelector('td.w');if(first)first.appendChild(b);}
 function er(btn){var tr=btn.closest('tr');var on=!tr.classList.contains('editing');
   tr.classList.toggle('editing',on);var c=tr.querySelectorAll('td.data');var w=tr.getAttribute('data-w');
   for(var i=0;i<c.length;i++){var td=c[i];td.contentEditable=on?'true':'false';
-    if(on){td.oninput=(function(idx,cell){return function(){rec(w)[idx]=cell.textContent;store(DB);};})(i,td);}}
+    /* sửa ô nào lưu ô đó; riêng ô 生词 (idx 0) đổi → đánh dấu dòng cần làm mới cột sau */
+    if(on){td.oninput=(function(idx,cell,row){return function(){var r=rec(w);r[idx]=cell.textContent;
+      if(idx===0){r._stale=1;row.classList.add('stale');staleBadge(row);}store(DB);};})(i,td,tr);}}
   btn.textContent=on?'✅':'✏️';if(on)c[0].focus();}
 function tab(btn,which){var d=btn.closest('details');
   d.querySelectorAll('.tabbtn').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');
@@ -265,11 +302,32 @@ function filt(){var k=document.getElementById('q').value.trim().toLowerCase();
     d.open=k?any:false;});}
 function esc(s){var d=document.createElement('div');d.textContent=(s==null?'':s);return d.innerHTML;}
 /* ===== 🔊 phát âm (Web Speech API) ===== */
-var _zhVoice=null;
+var _zhVoices=[],_zhVoice=null,VKEY='hsk6vocab_voice';
+function scoreVoice(v){var s=(v.name+' '+v.lang).toLowerCase(),sc=0;
+  if(/zh[-_]?cn|zh_cn|普通话|mandarin|chinese \(china|zh-hans/.test(s))sc+=3;
+  else if(/^zh|中文|chinese/.test(s))sc+=1;
+  /* giọng neural/online chất lượng cao (Edge có sẵn khi online) */
+  if(/natural|neural|online|神经|xiaoxiao|yunxi|yunyang|yunjian|xiaoyi|晓晓|云希|云扬/.test(s))sc+=5;
+  if(/huihui|kangkang|yaoyao/.test(s))sc-=1; /* giọng local cũ, máy móc */
+  return sc;}
 function pickVoice(){
   try{var vs=window.speechSynthesis.getVoices();
-    _zhVoice=vs.filter(function(v){return /^zh|zh[-_]|Chinese|中文|普通话|Mandarin/i.test(v.lang+' '+v.name);})[0]||null;
+    _zhVoices=vs.filter(function(v){return /^zh|zh[-_]|Chinese|中文|普通话|Mandarin/i.test(v.lang+' '+v.name);})
+                .sort(function(a,b){return scoreVoice(b)-scoreVoice(a);});
+    var saved=localStorage.getItem(VKEY);
+    _zhVoice=_zhVoices.filter(function(v){return v.name===saved;})[0]||_zhVoices[0]||null;
+    buildVoiceSel();
   }catch(e){}
+}
+function buildVoiceSel(){var bar=document.querySelector('.bar');if(!bar||!_zhVoices.length)return;
+  var sel=document.getElementById('voicesel');
+  if(!sel){sel=document.createElement('select');sel.id='voicesel';sel.title='Chọn giọng đọc 🔊 (ưu tiên giọng Natural/Online)';
+    sel.onchange=function(){_zhVoice=_zhVoices[this.value];localStorage.setItem(VKEY,_zhVoice.name);speak('你好，这是试听');};
+    bar.appendChild(sel);}
+  sel.innerHTML='';
+  _zhVoices.forEach(function(v,i){var o=document.createElement('option');o.value=i;
+    o.textContent='🔊 '+v.name.replace('Microsoft ','').replace(' - Chinese (Mainland)','');
+    if(v===_zhVoice)o.selected=true;sel.appendChild(o);});
 }
 if(window.speechSynthesis){pickVoice();window.speechSynthesis.onvoiceschanged=pickVoice;}
 function speak(t){

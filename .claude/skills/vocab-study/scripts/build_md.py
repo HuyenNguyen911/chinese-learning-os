@@ -28,7 +28,8 @@ HAN = r"[一-鿿]"
 ER_KEEP = {"婴儿", "女儿", "儿子", "儿童", "幼儿", "孤儿", "育儿", "宠儿",
            "健儿", "男儿", "混血儿", "少儿", "托儿所", "儿女"}
 PINYIN_OVERRIDE = {"古朴": "gǔpǔ", "简朴": "jiǎnpǔ", "巴不得": "bābude",
-                   "恨不得": "hènbude", "堵得慌": "dǔdehuāng"}
+                   "恨不得": "hènbude", "堵得慌": "dǔdehuāng",
+                   "琢磨": "zuómo"}  # nghĩa "suy nghĩ, cân nhắc" (không phải zhuómó = đẽo gọt)
 _VOWEL = set("aāáǎàoōóǒòeēéěê")
 
 def py(w):
@@ -81,11 +82,17 @@ def split_members(grp):
     return [x.strip() for x in re.split(r"[、\-/／]", grp) if x.strip()]
 
 def chip(member):
-    m = re.match(r"(" + HAN + r"+)(.*)", member.strip())
+    # member: dict {"w":..., "g":...} — g = nghĩa tiếng Việt (tùy chọn), mã hoá 〖g〗
+    w = member["w"] if isinstance(member, dict) else member
+    g = (member.get("g") if isinstance(member, dict) else "") or ""
+    m = re.match(r"(" + HAN + r"+)(.*)", w.strip())
     if not m:
-        return cell(member)
-    han, rest = m.group(1), m.group(2).strip()
-    return cell("%s %s%s" % (han, py(han), (" " + rest if rest else "")))
+        base = cell(w)
+    else:
+        han, rest = m.group(1), m.group(2).strip()
+        base = cell("%s %s%s" % (han, py(han), (" " + rest if rest else "")))
+    g = g.strip()
+    return base + ("〖%s〗" % cell(g) if g else "")
 
 def exp_line(members, note, label):
     chips = " · ".join(chip(m) for m in members)
@@ -119,15 +126,19 @@ def build_bai(n):
     # ---- 生词拓展 ----
     groups = []
     for g in ct.get(str(n), []):
+        if "members" in g:  # format giàu: root + từng từ con có nghĩa (vd exp_extra Bài 29)
+            mem = [{"w": m["w"], "g": m.get("g", "")} for m in g["members"]]
+            groups.append((mem, g.get("vi", "").strip(), g.get("root", "").strip()))
+            continue
         grp = g["grp"].strip()
         note = g["vi"].strip()
         if re.search(r"\bvs\b| và |[A-Za-zÀ-ỹ]{2,}", grp) and "、" not in grp and "-" not in grp:
-            groups.append(([grp], note, "⇄ so sánh"))
+            groups.append(([{"w": grp, "g": ""}], note, "⇄ so sánh"))
         else:
-            mem = split_members(grp)
-            groups.append((mem, note, shared_char(mem)))
+            mem = [{"w": x, "g": ""} for x in split_members(grp)]
+            groups.append((mem, note, shared_char([m["w"] for m in mem])))
     for w, ex in seeds:  # seed 1 chữ trong 'Từ vựng' (vd 宠/染/恋…)
-        mem = split_members(ex)
+        mem = [{"w": x, "g": ""} for x in split_members(ex)]
         groups.append((mem, "", w))
     if groups:
         out += ["", "### 生词拓展", ""]

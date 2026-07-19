@@ -5,5 +5,63 @@
     {"grp": "妙-不妙-妙趣-锦囊妙计-莫名其妙", "vi": ""},
     {"grp": "凡-平凡-非凡-不凡-凡人-凡夫俗子", "vi": ""},
     {"grp": "谱-乐谱-食谱-谱曲-脸谱-谱写-靠谱儿", "vi": ""}
+  ],
+  "29": [
+    {"root": "庸", "vi": "tầm thường", "members": [
+      {"w": "平庸", "g": "tầm thường, xoàng xĩnh"},
+      {"w": "庸俗", "g": "dung tục"},
+      {"w": "昏庸", "g": "hôn ám, ngu muội (vua quan)"},
+      {"w": "庸才", "g": "kẻ bất tài"},
+      {"w": "庸医", "g": "lang băm, thầy thuốc kém"}
+    ]},
+    {"root": "诸", "vi": "chư, các (nhiều)", "members": [
+      {"w": "诸多", "g": "rất nhiều"},
+      {"w": "诸如", "g": "chẳng hạn như"},
+      {"w": "诸位", "g": "chư vị, các vị"},
+      {"w": "诸君", "g": "chư quân, các bạn"},
+      {"w": "付诸东流", "g": "đổ sông đổ bể, công cốc"}
+    ]},
+    {"root": "堪", "vi": "kham, chịu đựng", "members": [
+      {"w": "难堪", "g": "khó xử, bẽ bàng"},
+      {"w": "不堪", "g": "không chịu nổi; hết chỗ nói"},
+      {"w": "不堪回首", "g": "không dám nhớ lại (quá khứ đau buồn)"},
+      {"w": "不堪设想", "g": "hậu quả khôn lường"}
+    ]},
+    {"root": "斟", "vi": "rót; cân nhắc", "members": [
+      {"w": "斟茶", "g": "rót trà"},
+      {"w": "斟酒", "g": "rót rượu"},
+      {"w": "字斟句酌", "g": "cân nhắc từng câu từng chữ"}
+    ]},
+    {"root": "酌", "vi": "rót rượu; cân nhắc", "members": [
+      {"w": "对酌", "g": "đối ẩm (ngồi uống cùng nhau)"},
+      {"w": "自酌", "g": "tự rót tự uống"},
+      {"w": "酌情", "g": "tùy tình hình mà xử lý"},
+      {"w": "斟酌", "g": "cân nhắc, đắn đo"}
+    ]},
+    {"root": "径", "vi": "đường, lối", "members": [
+      {"w": "田径", "g": "điền kinh"},
+      {"w": "途径", "g": "con đường, phương thức"},
+      {"w": "直径", "g": "đường kính"},
+      {"w": "捷径", "g": "đường tắt"},
+      {"w": "小径", "g": "lối nhỏ"}
+    ]},
+    {"root": "苟", "vi": "cẩu thả, tạm bợ", "members": [
+      {"w": "一丝不苟", "g": "tỉ mỉ, không cẩu thả chút nào"},
+      {"w": "不苟言笑", "g": "nghiêm nghị, ít nói cười"},
+      {"w": "苟且", "g": "qua loa, tạm bợ; sống lay lắt"}
+    ]},
+    {"root": "倾", "vi": "nghiêng, dốc", "members": [
+      {"w": "倾听", "g": "lắng nghe"},
+      {"w": "倾向", "g": "khuynh hướng, nghiêng về"},
+      {"w": "倾斜", "g": "nghiêng, dốc"},
+      {"w": "倾覆", "g": "lật đổ, lật úp"},
+      {"w": "倾盆", "g": "(mưa) như trút nước"}
+    ]},
+    {"root": "炼", "vi": "luyện", "members": [
+      {"w": "锻炼", "g": "rèn luyện (thể chất)"},
+      {"w": "提炼", "g": "chắt lọc, tinh luyện"},
+      {"w": "百炼成钢", "g": "trăm luyện thành thép (tôi luyện nên người)"},
+      {"w": "锤炼", "g": "tôi luyện, mài giũa"}
+    ]}
   ]
 }
