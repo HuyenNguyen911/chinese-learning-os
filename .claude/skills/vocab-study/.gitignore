@@ -1,0 +1,5 @@
+# Cache tải về của build_hanzi.py (Unihan + Make-Me-a-Hanzi) — regenerable, ~20MB
+data/_src/
+# File trung gian, tái sinh mỗi lần chạy extract_xlsx.py
+data/tv.json
+data/ct.json
