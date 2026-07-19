@@ -23,6 +23,10 @@
   "audio"?, "audio_url"?, "src"?}] }`
 - `noi_hskk`: `{ "type":"noi_hskk", "title", "part":"听后重复|回答问题",
   "instructions"?, "items":[{"script","hint"?,"hint_plus"?,"audio"?}] }`
+- `grammar_note`: `{ "type":"grammar_note", "title", "instructions"?,
+  "points":[{"pattern","explain"?,"example"?}] }` — hộp giải thích ngữ pháp (chỉ hiển thị).
+- `writing_prompt`: `{ "type":"writing_prompt", "title", "instructions"?,
+  "items":[{"prompt","kind"?:"viết|HSKK","outline"?:[str]}] }` — đề viết/HSKK + dàn ý.
 
 ## Đáp án 2 cấp (chỉ khối tự luận: viết + nói)
 Các khối `dich_dat_cau`, `sap_xep`, và `noi_hskk` (`回答问题`) hỗ trợ đáp án 2 cấp,
@@ -33,5 +37,10 @@ không đổi:
   dài hơn, tự nhiên hơn, dùng thêm từ nối/vốn từ (thường chạm HSK cao hơn 1 bậc).
 Nếu bỏ trường `_plus` thì chỉ in mức chuẩn (tương thích ngược). Khối trắc nghiệm /
 điền / nghe / nối chỉ có 1 đáp án đúng nên không dùng cơ chế này.
+
+`dich_dat_cau`/`sap_xep` có thêm field tùy chọn `answer_alts:[str]` — in dưới
+nhãn "Phương án khác" (dùng cho lesson-prep khi muốn ~3 phương án). Ghi chú:
+`render_study()` xuất 1 doc gộp (đề + đáp án), khác luồng worksheet/dapan của
+exercise-generator.
 
 Xem ví dụ đầy đủ: `worksheet/example-baitap.json`.

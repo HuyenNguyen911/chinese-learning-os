@@ -252,11 +252,9 @@ class WorksheetBuilder:
             self._run(ans, "→ " + BLANK * 3, 12, color="muted")
 
     def _two_level_answer(self, doc, n, standard, advanced=None, src=None,
-                          std_label="Chuẩn (đủ điểm)",
+                          alts=None, std_label="Chuẩn (đủ điểm)",
                           adv_label="Nâng cao (điểm cao)"):
-        """Đáp án tự luận 2 cấp: chuẩn (đạt điểm) + nâng cao (điểm cao).
-
-        Nếu không có `advanced` thì chỉ in mức chuẩn (tương thích ngược)."""
+        """Đáp án tự luận 2 cấp + (tùy chọn) các phương án khác (alts)."""
         p = doc.add_paragraph()
         self._run(p, "%d) " % n, 12, color="accent", bold=True)
         self._run(p, std_label + ": ", 11, color="muted", bold=True)
@@ -268,12 +266,18 @@ class WorksheetBuilder:
             ap.paragraph_format.left_indent = Pt(18)
             self._run(ap, adv_label + ": ", 11, color="accent", bold=True)
             self._run(ap, advanced, 13, cjk=True)
+        for alt in (alts or []):
+            altp = doc.add_paragraph()
+            altp.paragraph_format.left_indent = Pt(18)
+            self._run(altp, "Phương án khác: ", 11, color="muted", bold=True)
+            self._run(altp, alt, 13, cjk=True)
 
     def _ans_sap_xep(self, doc, block, idx):
         self._block_header(doc, idx, block.get("title", "Sắp xếp câu"))
         for n, it in enumerate(block.get("items", []), start=1):
             self._two_level_answer(doc, n, it.get("answer", ""),
-                                   it.get("answer_plus"), it.get("src"))
+                                   it.get("answer_plus"), it.get("src"),
+                                   alts=it.get("answer_alts"))
 
     # -- dich_dat_cau (translate / compose) --------------------------------
     def _ws_dich_dat_cau(self, doc, block, idx):
@@ -293,7 +297,8 @@ class WorksheetBuilder:
         self._block_header(doc, idx, block.get("title", "Dịch / Đặt câu"))
         for n, it in enumerate(block.get("items", []), start=1):
             self._two_level_answer(doc, n, it.get("answer", ""),
-                                   it.get("answer_plus"), it.get("src"))
+                                   it.get("answer_plus"), it.get("src"),
+                                   alts=it.get("answer_alts"))
 
     # -- noi_hskk (speaking) ----------------------------------------------
     def _ws_noi_hskk(self, doc, block, idx):
@@ -371,6 +376,54 @@ class WorksheetBuilder:
             if it.get("src"):
                 self._run(ap, "  [%s]" % it["src"], 10, color="muted",
                           italic=True)
+
+    # -- grammar_note (giải thích ngữ pháp) -------------------------------
+    def _grammar_note(self, doc, block, idx):
+        self._block_header(doc, idx, block.get("title", "Ngữ pháp"),
+                           block.get("instructions"))
+        for pt in block.get("points", []):
+            p = doc.add_paragraph()
+            self._run(p, "• ", 12, color="accent", bold=True)
+            self._run(p, pt.get("pattern", ""), 13, color="ink", bold=True,
+                      cjk=True)
+            if pt.get("explain"):
+                ep = doc.add_paragraph()
+                ep.paragraph_format.left_indent = Pt(18)
+                self._run(ep, pt["explain"], 12, color="ink")
+            if pt.get("example"):
+                xp = doc.add_paragraph()
+                xp.paragraph_format.left_indent = Pt(18)
+                self._run(xp, "Vd: ", 11, color="muted", bold=True)
+                self._run(xp, pt["example"], 12, cjk=True)
+
+    _ws_grammar_note = _grammar_note
+    _ans_grammar_note = _grammar_note
+
+    # -- writing_prompt (đề viết/HSKK + dàn ý) ----------------------------
+    def _writing_prompt(self, doc, block, idx):
+        self._block_header(doc, idx, block.get("title", "Bài viết / HSKK"),
+                           block.get("instructions"))
+        for n, it in enumerate(block.get("items", []), start=1):
+            p = doc.add_paragraph()
+            self._run(p, "%d) " % n, 12, color="accent", bold=True)
+            if it.get("kind"):
+                self._run(p, "[%s] " % it["kind"], 11, color="muted", bold=True)
+            self._run(p, it.get("prompt", ""), 13, cjk=True)
+            for step in it.get("outline", []):
+                sp = doc.add_paragraph()
+                sp.paragraph_format.left_indent = Pt(18)
+                self._run(sp, "– ", 12, color="muted")
+                self._run(sp, step, 12, cjk=True)
+
+    _ws_writing_prompt = _writing_prompt
+    _ans_writing_prompt = _writing_prompt
+
+    # -- render_study: 1 doc gộp có đáp án (cho lesson-prep) ---------------
+    def render_study(self, header_text="BÀI TẬP CHUẨN BỊ"):
+        doc = Document()
+        p = doc.add_paragraph()
+        self._run(p, header_text, 13, color="muted", bold=True)
+        return self._render(doc, "answers")
 
 
 def docx_to_pdf(docx_path):
