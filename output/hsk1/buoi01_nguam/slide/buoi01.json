@@ -1,0 +1,703 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 1",
+    "topic": "拼音 · Ngữ âm nhập môn"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "拼音",
+      "subtitle": "Buổi 1 — Nền tảng ngữ âm: thanh mẫu · vận mẫu · thanh điệu · biến điệu · 儿化",
+      "footer": "HSK1 · Sơ cấp · Buổi 1"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Mục tiêu hôm nay",
+      "bullets": [
+        "Nhận diện đủ 21 声母 (phụ âm đầu) + 6 nguyên âm đơn — phân biệt được các nhóm dễ lẫn với người Việt: zh/ch/sh/r, j/q/x, z/c/s.",
+        "Đọc đúng 4 thanh điệu + khinh thanh — không đọc phẳng thanh 1, không lẫn thanh 2 với thanh 3.",
+        "Biết quy tắc biến điệu cơ bản: 3+3 (你好), 一 và 不 đổi thanh theo âm sau.",
+        "Đọc được câu chào hỏi đầu tiên đúng ngữ điệu: 你好, 谢谢."
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "声母",
+      "title": "声母 (1/2) — Nhóm quen thuộc với người Việt",
+      "headers": [
+        "Nhóm",
+        "声母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        3
+      ],
+      "rows": [
+        [
+          "Môi (b p m f)",
+          "b",
+          "gần \"p\" Việt — KHÔNG bật hơi",
+          "爸爸 bàba — bố"
+        ],
+        [
+          "Môi (b p m f)",
+          "p",
+          "gần \"ph\" Việt — bật hơi mạnh",
+          "苹果 píngguǒ — táo"
+        ],
+        [
+          "Môi (b p m f)",
+          "m",
+          "như \"m\" Việt",
+          "妈妈 māma — mẹ"
+        ],
+        [
+          "Môi (b p m f)",
+          "f",
+          "như \"ph/f\" Việt",
+          "飞机 fēijī — máy bay"
+        ],
+        [
+          "Đầu lưỡi (d t n l)",
+          "d",
+          "gần \"t\" Việt — KHÔNG bật hơi",
+          "大 dà — to, lớn"
+        ],
+        [
+          "Đầu lưỡi (d t n l)",
+          "t",
+          "gần \"th\" Việt — bật hơi",
+          "他 tā — anh ấy"
+        ],
+        [
+          "Đầu lưỡi (d t n l)",
+          "n",
+          "như \"n\" Việt",
+          "你 nǐ — bạn"
+        ],
+        [
+          "Đầu lưỡi (d t n l)",
+          "l",
+          "như \"l\" Việt",
+          "老师 lǎoshī — giáo viên"
+        ],
+        [
+          "Gốc lưỡi (g k h)",
+          "g",
+          "gần \"c/k\" Việt — KHÔNG bật hơi",
+          "哥哥 gēge — anh trai"
+        ],
+        [
+          "Gốc lưỡi (g k h)",
+          "k",
+          "gần \"kh\" Việt — bật hơi",
+          "看 kàn — xem, nhìn"
+        ],
+        [
+          "Gốc lưỡi (g k h)",
+          "h",
+          "như \"h\" Việt, hơi cọ ở họng",
+          "好 hǎo — tốt, khỏe"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "声母",
+      "title": "声母 (2/2) — Nhóm KHÓ nhất với người Việt",
+      "headers": [
+        "Nhóm",
+        "声母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        3
+      ],
+      "rows": [
+        [
+          "Mặt lưỡi phẳng (j q x)",
+          "j",
+          "gần \"ch\" nhẹ, lưỡi PHẲNG sát răng dưới",
+          "叫 jiào — gọi là, tên là"
+        ],
+        [
+          "Mặt lưỡi phẳng (j q x)",
+          "q",
+          "gần \"ch\" bật hơi mạnh, lưỡi phẳng",
+          "请 qǐng — mời, xin"
+        ],
+        [
+          "Mặt lưỡi phẳng (j q x)",
+          "x",
+          "gần \"x/s\" nhẹ, lưỡi phẳng sát răng",
+          "学习 xuéxí — học"
+        ],
+        [
+          "Cong lưỡi (zh ch sh r) — khó nhất",
+          "zh",
+          "gần \"tr\" Việt, KHÔNG bật hơi, đầu lưỡi CONG chạm ngạc cứng",
+          "中国 Zhōngguó — Trung Quốc"
+        ],
+        [
+          "Cong lưỡi (zh ch sh r) — khó nhất",
+          "ch",
+          "gần \"tr\" bật hơi mạnh, lưỡi cong",
+          "吃 chī — ăn"
+        ],
+        [
+          "Cong lưỡi (zh ch sh r) — khó nhất",
+          "sh",
+          "gần \"s\" Việt nhưng lưỡi cong lên",
+          "是 shì — là, thì"
+        ],
+        [
+          "Cong lưỡi (zh ch sh r) — khó nhất",
+          "r",
+          "không có âm tương đương — lưỡi cong, rung nhẹ, gần \"r\" Mỹ",
+          "人 rén — người"
+        ],
+        [
+          "Đầu lưỡi phẳng (z c s)",
+          "z",
+          "gần \"d/ch\" nhẹ, đầu lưỡi chạm RĂNG trên, KHÔNG cong",
+          "字 zì — chữ"
+        ],
+        [
+          "Đầu lưỡi phẳng (z c s)",
+          "c",
+          "gần \"x/ts\" bật hơi mạnh, lưỡi phẳng",
+          "菜 cài — món ăn"
+        ],
+        [
+          "Đầu lưỡi phẳng (z c s)",
+          "s",
+          "như \"x/s\" Việt, lưỡi phẳng",
+          "三 sān — số 3"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "韵母",
+      "title": "韵母 (1/2) — Nguyên âm đơn & nguyên âm kép",
+      "headers": [
+        "韵母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "rows": [
+        [
+          "a",
+          "\"a\" Việt, mở miệng to",
+          "妈 mā — mẹ"
+        ],
+        [
+          "o",
+          "giữa \"o\" và \"ô\" Việt",
+          "我 wǒ — tôi"
+        ],
+        [
+          "e",
+          "KHÔNG có âm tương đương — giữa \"ơ\" và \"ưa\", miệng dẹt",
+          "喝 hē — uống"
+        ],
+        [
+          "i",
+          "\"i\" Việt (sau phụ âm thường)",
+          "你 nǐ — bạn"
+        ],
+        [
+          "u",
+          "\"u\" Việt",
+          "五 wǔ — số 5"
+        ],
+        [
+          "ü",
+          "KHÔNG có trong tiếng Việt — đọc \"i\" nhưng CHÚM MÔI tròn như \"u\"",
+          "女 nǚ — con gái"
+        ],
+        [
+          "ai",
+          "như \"ai\" Việt",
+          "爱 ài — yêu"
+        ],
+        [
+          "ei",
+          "như \"ây\" Việt",
+          "谁 shéi — ai (đại từ hỏi)"
+        ],
+        [
+          "ao",
+          "như \"ao\" Việt",
+          "好 hǎo — tốt"
+        ],
+        [
+          "ou",
+          "như \"âu/ô\" Việt",
+          "都 dōu — đều"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "韵母",
+      "title": "韵母 (2/2) — Vận mẫu mũi (khó vì tiếng Việt không phân biệt rõ)",
+      "headers": [
+        "韵母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "rows": [
+        [
+          "an",
+          "như \"an\" Việt",
+          "三 sān — số 3"
+        ],
+        [
+          "en",
+          "như \"ân\" Việt, nhẹ và ngắn",
+          "很 hěn — rất"
+        ],
+        [
+          "ang",
+          "như \"ang\" Việt nhưng MŨI hơn, miệng mở to hơn an",
+          "忙 máng — bận"
+        ],
+        [
+          "eng",
+          "như \"âng\" Việt",
+          "冷 lěng — lạnh"
+        ],
+        [
+          "in",
+          "như \"in\" Việt",
+          "您 nín — ngài (kính trọng)"
+        ],
+        [
+          "ing",
+          "như \"inh\" Việt",
+          "姓 xìng — họ, tên họ"
+        ],
+        [
+          "-i (sau zh/ch/sh/z/c/s)",
+          "KHÔNG đọc \"i\" thường — chỉ giữ vị trí lưỡi của phụ âm trước, không phát âm rõ",
+          "知 zhī — biết · 是 shì — là"
+        ]
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "声调",
+      "title": "声调 — 4 thanh điệu + khinh thanh",
+      "bullets": [
+        "Tiếng Trung có 4 thanh chính + 1 khinh thanh — thanh khác nhau thì NGHĨA khác nhau hoàn toàn dù cùng phụ âm + vần.",
+        "Ví dụ kinh điển: mā (妈, mẹ) – má (麻, cây gai) – mǎ (马, con ngựa) – mà (骂, mắng) – ma (吗, trợ từ hỏi).",
+        "Người Việt hay mắc: đọc PHẲNG thanh 1 (phải giữ cao đều, không tụt giọng); LẪN thanh 2 với thanh 3 (thanh 2 đi lên dứt khoát, thanh 3 xuống đáy rồi mới lên nhẹ, kéo dài hơn).",
+        "Xem 5 GIF đường cong ở các slide sau để thấy rõ hình dạng từng thanh."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "声调",
+      "title": "声调 1 — Ngang cao (55)",
+      "image": "assets/tone1.gif",
+      "bullets": [
+        "Giữ độ cao ổn định từ đầu đến cuối — không lên, không xuống.",
+        "Ví dụ: mā (妈, mẹ), tā (他, anh ấy/cô ấy), gāo (高, cao)",
+        "Lỗi thường gặp: giọng bị \"rơi\" ở cuối âm tiết — phải giữ CAO đến hết."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "声调",
+      "title": "声调 2 — Đi lên (35)",
+      "image": "assets/tone2.gif",
+      "bullets": [
+        "Bắt đầu ở mức trung, đi lên dứt khoát — như đang hỏi lại \"hả?\".",
+        "Ví dụ: shéi (谁, ai), rén (人, người), lái (来, đến)",
+        "Lỗi thường gặp: lên không đủ đà, nghe giống thanh 3 — phải bật mạnh lên ở cuối."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "声调",
+      "title": "声调 3 — Xuống rồi lên (214)",
+      "image": "assets/tone3.gif",
+      "bullets": [
+        "Bắt đầu mức thấp, hạ xuống đáy rồi bật lên nhẹ ở cuối — khi đọc một mình, kéo dài hơn 3 thanh kia.",
+        "Ví dụ: nǐ (你, bạn), hǎo (好, tốt), wǒ (我, tôi)",
+        "Lỗi thường gặp: đọc thành thanh 2 — bỏ quên đoạn xuống đáy ở đầu.",
+        "Ghi nhớ: 2 thanh 3 đứng liền nhau → thanh 3 đầu đổi thành thanh 2 (xem slide 变调)."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "声调",
+      "title": "声调 4 — Đi xuống (51)",
+      "image": "assets/tone4.gif",
+      "bullets": [
+        "Từ mức cao nhất RƠI THẲNG xuống đáy — dứt khoát như ra lệnh.",
+        "Ví dụ: bú (不, không — đã biến điệu), zài (再, lại/nữa), shì (是, là/thì)",
+        "Lỗi thường gặp: rơi không đủ nhanh/mạnh — nghe lưng chừng giữa thanh 4 và thanh 1."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "声调",
+      "title": "声调 5 — Khinh thanh (nhẹ)",
+      "image": "assets/tone5.gif",
+      "bullets": [
+        "Không có đường cong riêng — đọc NHẸ và NGẮN, cao độ phụ thuộc âm tiết đứng trước.",
+        "Ví dụ: māma (妈妈, mẹ — chữ 妈 thứ 2 nhẹ), xièxie (谢谢, cảm ơn — chữ 谢 thứ 2 nhẹ), ma (吗, trợ từ hỏi cuối câu)",
+        "Lỗi thường gặp: cố thêm dấu thanh cho âm tiết nhẹ — chỉ cần đọc lướt nhanh, không nhấn."
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "变调",
+      "title": "变调 — Biến điệu",
+      "point": "Một số thanh điệu THAY ĐỔI khi đọc liền với thanh khác — đọc đúng biến điệu thì nghe mới tự nhiên.",
+      "examples": [
+        {
+          "hz": "你好",
+          "py": "nǐ hǎo → đọc: ní hǎo",
+          "vn": "3+3 liền nhau: thanh 3 đầu tiên đổi thành thanh 2"
+        },
+        {
+          "hz": "一个",
+          "py": "yí gè",
+          "vn": "一 (yī) đứng trước thanh 4 → đổi thành thanh 2 (yí)"
+        },
+        {
+          "hz": "一起",
+          "py": "yì qǐ",
+          "vn": "一 đứng trước thanh 1/2/3 → đổi thành thanh 4 (yì)"
+        },
+        {
+          "hz": "不是",
+          "py": "bú shì",
+          "vn": "不 (bù) đứng trước thanh 4 → đổi thành thanh 2 (bú)"
+        },
+        {
+          "hz": "不客气",
+          "py": "bú kèqi",
+          "vn": "客气 (kèqi) = khách sáo — 不 đổi thanh vì 客 là thanh 4"
+        }
+      ],
+      "note": "你好 viết vẫn giữ dấu thanh 3+3, nhưng ĐỌC ní hǎo. 一 và 不 là 2 từ duy nhất tự đổi thanh theo âm đứng sau.",
+      "tip": "Học thuộc câu quen 你好 luôn đọc \"ní hǎo\" — nghe quen tai trước, hiểu quy tắc sau.",
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "轻声",
+      "title": "轻声 — Đọc nhẹ, không nhấn",
+      "point": "Âm tiết thứ 2 (thường là hậu tố lặp lại/trợ từ) đọc NHẸ và NGẮN, mất dấu thanh riêng.",
+      "examples": [
+        {
+          "hz": "妈妈",
+          "py": "māma",
+          "vn": "mẹ — chữ 妈 thứ 2 đọc nhẹ"
+        },
+        {
+          "hz": "谢谢",
+          "py": "xièxie",
+          "vn": "cảm ơn — chữ 谢 thứ 2 đọc nhẹ, ngắn"
+        },
+        {
+          "hz": "朋友",
+          "py": "péngyou",
+          "vn": "bạn bè — 友 đọc nhẹ"
+        }
+      ],
+      "note": "Nhận biết trên chữ viết: âm tiết khinh thanh KHÔNG ghi dấu thanh trong pinyin (xièxie, không phải xièxiè).",
+      "tip": "谢谢 không phải 2 tiếng \"xiè xiè\" rõ ràng bằng nhau — tiếng sau lướt nhẹ và ngắn hơn hẳn.",
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "儿化",
+      "title": "儿化 — Cuốn lưỡi cuối âm tiết",
+      "point": "儿 (r) gắn vào cuối âm tiết trước, đọc CUỐN LƯỠI LIỀN thành 1 âm — không tách thành 2 tiếng.",
+      "examples": [
+        {
+          "hz": "这儿",
+          "py": "zhèr",
+          "vn": "ở đây (= 这里)"
+        },
+        {
+          "hz": "那儿",
+          "py": "nàr",
+          "vn": "ở đó (= 那里)"
+        },
+        {
+          "hz": "哪儿",
+          "py": "nǎr",
+          "vn": "ở đâu (= 哪里)"
+        },
+        {
+          "hz": "一点儿",
+          "py": "yìdiǎnr",
+          "vn": "một chút, một ít"
+        }
+      ],
+      "note": "儿化 phổ biến trong khẩu ngữ giọng Bắc Kinh; miền Nam Trung Quốc ít dùng hơn — nghe cả 2 kiểu đều được, nói theo kiểu nào cũng đúng.",
+      "tip": "Đừng đọc \"zhè-ơ\" thành 2 tiếng tách rời — lưỡi cuốn lên NGAY trong âm tiết 这, nghe liền một hơi \"zhèr\".",
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "汉字：一 (yī) — số 1",
+      "image": "assets/stroke_yi.gif",
+      "bullets": [
+        "Nghĩa: số 1. Chỉ 1 nét duy nhất — nét ngang.",
+        "Thứ tự nét: viết 1 nét từ TRÁI sang PHẢI.",
+        "Ghi nhớ: nét ngang trong chữ Hán luôn viết trái → phải, khác thói quen viết số của người Việt."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "汉字：二 (èr) — số 2",
+      "image": "assets/stroke_er.gif",
+      "bullets": [
+        "Nghĩa: số 2. Gồm 2 nét ngang.",
+        "Thứ tự nét: nét trên (ngắn hơn) viết trước, nét dưới (dài hơn) viết sau.",
+        "Ghi nhớ: quy tắc \"trên trước, dưới sau\" — áp dụng cho rất nhiều chữ Hán khác."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "汉字：三 (sān) — số 3",
+      "image": "assets/stroke_san.gif",
+      "bullets": [
+        "Nghĩa: số 3. Gồm 3 nét ngang.",
+        "Thứ tự nét: từ trên xuống dưới, mỗi nét viết trái → phải.",
+        "Ghi nhớ: quy tắc chung của chữ Hán — TRÊN trước DƯỚI sau, TRÁI trước PHẢI sau."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "汉字：人 (rén) — người",
+      "image": "assets/stroke_ren.gif",
+      "bullets": [
+        "Nghĩa: người. Gồm 2 nét (nét phẩy + nét mác).",
+        "Thứ tự nét: nét phẩy (bên trái, đi xuống) viết trước, nét mác (bên phải, đi xuống) viết sau.",
+        "Ghi nhớ: hình dáng như 2 chân người đang đứng — nét trái trước, nét phải sau."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "汉字：口 (kǒu) — miệng",
+      "image": "assets/stroke_kou.gif",
+      "bullets": [
+        "Nghĩa: miệng. Cũng là bộ thủ hay gặp (吗, 叫, 谢…).",
+        "Thứ tự nét: nét dọc bên trái → nét ngang-dọc gập góc (trên + phải) → nét ngang đóng đáy.",
+        "Ghi nhớ: viết như khung cửa — trái, rồi trên-phải, cuối cùng đóng đáy."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "汉字：你 (nǐ) — bạn",
+      "image": "assets/stroke_ni.gif",
+      "bullets": [
+        "Nghĩa: bạn / anh / chị. Ghép bộ 亻(nhân đứng) + 尔.",
+        "Thứ tự nét: bộ 亻 (2 nét) viết trước, phần bên phải viết sau.",
+        "Ghi nhớ: mọi chữ có bộ 亻 (người đứng bên trái) đều viết phần người trước — vd 你 / 他 / 们."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "汉字：好 (hǎo) — tốt",
+      "image": "assets/stroke_hao.gif",
+      "bullets": [
+        "Nghĩa: tốt, khỏe. Ghép 女 (nữ) + 子 (tử/con).",
+        "Thứ tự nét: 女 (3 nét) viết trước, 子 (3 nét) viết sau.",
+        "Ghi nhớ: \"女 (mẹ) + 子 (con) = 好 (tốt)\" — hình ảnh dễ nhớ để ghép nghĩa với mặt chữ."
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "练音",
+      "title": "Luyện âm (1/2) — Cặp âm dễ lẫn",
+      "headers": [
+        "Để ý",
+        "Cặp âm",
+        "Ghi chú"
+      ],
+      "cjk_cols": [],
+      "rows": [
+        [
+          "Bật hơi hay không",
+          "bā – pā",
+          "b KHÔNG bật hơi, p bật hơi mạnh"
+        ],
+        [
+          "Bật hơi hay không",
+          "dū – tū",
+          "d KHÔNG bật hơi, t bật hơi mạnh"
+        ],
+        [
+          "Bật hơi hay không",
+          "gē – kē",
+          "g KHÔNG bật hơi, k bật hơi mạnh"
+        ],
+        [
+          "Cong lưỡi hay không",
+          "zhī – zī",
+          "zh cong lưỡi, z lưỡi phẳng — nghe rất khác dù nhìn giống"
+        ],
+        [
+          "Cong lưỡi hay không",
+          "chī – cī",
+          "ch cong lưỡi bật hơi, c lưỡi phẳng bật hơi"
+        ],
+        [
+          "Cong lưỡi hay không",
+          "shī – sī",
+          "sh cong lưỡi, s lưỡi phẳng"
+        ],
+        [
+          "j/q/x vs zh/ch/sh",
+          "jī – zhī",
+          "j lưỡi phẳng sát răng, zh lưỡi cong lên ngạc — dễ gộp làm một"
+        ],
+        [
+          "Nguyên âm ü",
+          "nǚ – nú",
+          "ü môi tròn nhọn (đọc \"i\" nhưng chúm môi), u môi tròn thường"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "Luyện âm (2/2) — Âm tiết & chào hỏi đọc thử",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "你好",
+          "Nǐ hǎo (đọc: ní hǎo)",
+          "Xin chào — biến điệu 3+3"
+        ],
+        [
+          "您好",
+          "Nín hǎo",
+          "Xin chào (kính trọng, trang trọng hơn)"
+        ],
+        [
+          "谢谢",
+          "Xièxie",
+          "Cảm ơn — chữ thứ 2 khinh thanh"
+        ],
+        [
+          "不客气",
+          "Bú kèqi",
+          "Không có gì — 不 biến điệu thành bú"
+        ],
+        [
+          "再见",
+          "Zàijiàn",
+          "Tạm biệt"
+        ],
+        [
+          "这儿",
+          "Zhèr",
+          "Ở đây — 儿化"
+        ],
+        [
+          "那儿",
+          "Nàr",
+          "Ở đó — 儿化"
+        ],
+        [
+          "一点儿",
+          "Yìdiǎnr",
+          "Một chút — 一 biến điệu + 儿化"
+        ]
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "对照",
+      "title": "Đối chiếu: Giáo trình Hán ngữ Quyển 1",
+      "bullets": [
+        "Sách 《汉语教程》(Giáo trình Hán ngữ) Quyển 1 — Bài 1 đến Bài 5: phần nhập môn ngữ âm (pinyin, thanh mẫu, vận mẫu, thanh điệu).",
+        "Bạn đã có sẵn sách + audio gốc — mở đọc theo, nghe theo audio trong sách để luyện phản xạ nghe thêm ở nhà.",
+        "Tập trung nghe kỹ phần luyện thanh điệu và các cặp âm dễ lẫn — đúng những nội dung buổi học hôm nay.",
+        "Buổi sau (đại từ · chào hỏi) sẽ đối chiếu tiếp Bài 1, 3, 5 — phần hội thoại 你好 / 谢谢你 / 你叫什么名字."
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "易错",
+      "title": "Lỗi người Việt hay mắc",
+      "headers": [
+        "Sai (thường gặp)",
+        "Đúng (nên làm)",
+        "Vì sao"
+      ],
+      "cjk_cols": [],
+      "rows": [
+        [
+          "Đọc zh/ch/sh như tr/ch/s tiếng Việt, không cong lưỡi",
+          "Cong đầu lưỡi lên chạm ngạc cứng khi phát zh/ch/sh/r",
+          "Tiếng Việt không có âm cong lưỡi (retroflex) — không tập sẽ tự động đọc thành nhóm z/c/s"
+        ],
+        [
+          "Lẫn thanh 2 và thanh 3 (你好 nghe như phẳng hoặc sai hướng)",
+          "Thanh 2 đi lên dứt khoát; thanh 3 hạ xuống đáy rồi mới lên nhẹ",
+          "Hai thanh nghe gần giống nhưng hướng đi hoàn toàn khác nhau"
+        ],
+        [
+          "Đọc thanh 1 bị tụt giọng ở cuối câu",
+          "Giữ thanh 1 CAO ĐỀU từ đầu đến cuối, không hạ",
+          "Tiếng Việt không có thanh nào bắt buộc giữ cao đều suốt âm tiết như vậy"
+        ],
+        [
+          "Bỏ qua ü, đọc thành u (nǚ đọc thành nú)",
+          "Chúm môi tròn khi đọc i để ra ü — 2 âm nghĩa khác hẳn nhau",
+          "ü không tồn tại trong tiếng Việt nên dễ bị thay bằng âm quen thuộc \"u\""
+        ],
+        [
+          "Tách 儿化 thành 2 âm riêng (zhè + ơ)",
+          "Đọc liền 1 hơi, lưỡi cuốn NGAY trong âm tiết (zhèr)",
+          "Tiếng Việt không có hiện tượng ghép âm cuối như vậy nên hay tách ra theo thói quen"
+        ],
+        [
+          "Đọc rõ dấu cho âm khinh thanh (xiè-xiè rõ cả 2 tiếng bằng nhau)",
+          "Âm khinh thanh đọc NHẸ, NGẮN, không mang dấu thanh riêng",
+          "Tiếng Việt không có khái niệm \"mất trọng âm\" như khinh thanh"
+        ],
+        [
+          "Đọc x/j và sh/zh giống hệt nhau, không phân biệt được",
+          "x/j: lưỡi PHẲNG sát răng · zh/sh: lưỡi CONG lên ngạc",
+          "Cả 2 nhóm đều nghe gần giống \"ch/x\" tiếng Việt nên dễ gộp làm một"
+        ]
+      ]
+    }
+  ]
+}
