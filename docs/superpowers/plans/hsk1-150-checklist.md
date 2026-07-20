@@ -14,19 +14,19 @@ Hai nguồn 1 và 2 cho **danh sách giống hệt nhau từng từ, từng th�
 
 ## Mapping vị trí syllabus ↔ folder hiện tại
 
-| Vị trí syllabus | Chủ đề | Folder hiện tại (chưa đổi tên — Task 0.3) |
+| Vị trí syllabus | Chủ đề | Folder |
 |---|---|---|
 | Buổi 2 | Đại từ · chào hỏi · làm quen | MỚI |
 | Buổi 3 | Số/thời gian/địa điểm | MỚI |
 | Buổi 4 | Gia đình & tuổi | MỚI |
 | Buổi 5 | Nghề/quốc tịch/ngôn ngữ | MỚI |
-| Buổi 6 | 会/想/能 — Hoạt động & giao thông | `output/hsk1/buoi1_nangnguyen_phuongtien/` (ĐÃ CÓ) |
+| Buổi 6 | 会/想/能 — Hoạt động & giao thông | `output/hsk1/buoi06_nangnguyen_phuongtien/` (ĐÃ CÓ) |
 | Buổi 7 | Ăn uống | MỚI |
 | Buổi 8 | Nhà/đồ vật/vị trí | MỚI |
 | Buổi 9 | Sở thích & động từ | MỚI |
-| Buổi 10 | Lượng từ + màu sắc | `output/hsk1/buoi2_luongtu_mausac/` (ĐÃ CÓ) |
+| Buổi 10 | Lượng từ + màu sắc | `output/hsk1/buoi10_luongtu_mausac/` (ĐÃ CÓ) |
 | Buổi 11 | Mua sắm/tiền/tính từ | MỚI |
-| Buổi 12 | 了/没/过/快…了 — Thời tiết | `output/hsk1/buoi3_le_thoitiet/` (ĐÃ CÓ) |
+| Buổi 12 | 了/没/过/快…了 — Thời tiết | `output/hsk1/buoi12_le_thoitiet/` (ĐÃ CÓ) |
 
 Buổi 1 (Ngữ âm) không có 生词 HSK — không nằm trong bảng 150 từ.
 
