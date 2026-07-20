@@ -20,6 +20,7 @@ Bắc Kinh của thiết kế (theo yêu cầu user):
 ### Trong phạm vi
 - **9 buổi tôi làm** = 3 buổi nền tảng (dựng mới, có GIF) + 6 buổi chủ đề mới.
 - Mỗi buổi giao **trọn gói**: slide `.pptx` (+ audio) · bài tập worksheet + audio + đáp án · bài đọc HSK SC1 (text + audio) · dòng đối chiếu Hán ngữ Q1.
+- **Trang từ vựng HSK1 theo buổi** (vocab-study-style, kiểu Quizlet) — mỗi buổi 1 trang `output/study/hsk1/buoiXX/tu-vung.html`. Làm ở **phase cuối** (mục 14).
 - 1 file syllabus tổng `output/hsk1/README.md` (bảng thứ tự dạy, source of truth).
 
 ### Ngoài phạm vi (không tái soạn nội dung)
@@ -149,6 +150,7 @@ Foundation thêm slide **GIF** (image key trỏ `.gif` trong `assets/`). Riêng 
 - User duyệt 2 pilot → sản xuất 7 buổi còn lại theo khuôn, **giao theo lô + review**.
 - Thứ tự sản xuất còn lại: theo syllabus (3 → 4 → 5 → 7 → 8 → 9 → 11).
 - Việc **đổi tên existing** buoi1/2/3 (mục 11) làm 1 lần ở đầu (trước hoặc cùng lô pilot) để `README.md` syllabus khớp ngay.
+- **Phase cuối:** sinh trang từ vựng theo buổi (mục 14) sau khi vocab tất cả các buổi đã chốt.
 
 ## 13. Tiêu chí hoàn thành (verification)
 
@@ -161,8 +163,16 @@ Foundation thêm slide **GIF** (image key trỏ `.gif` trong `assets/`). Riêng 
 - [ ] 课文 HSK SC1 đối chiếu đúng bản gốc (web-search verified).
 - [ ] Bài tập qua cổng kiểm tra đáp án AI.
 - [ ] `README.md` syllabus đầy đủ, khớp folder.
+- [ ] Trang từ vựng theo buổi `output/study/hsk1/buoiXX/tu-vung.html` sinh đủ, flashcard + 🔊 chạy được (không phụ thuộc Activation vault).
 
-## 14. Rủi ro & mở
+## 14. Trang từ vựng HSK1 theo buổi (vocab-study-style)
+
+- **Phạm vi:** mỗi buổi (có 生词) 1 trang `output/study/hsk1/buoiXX/tu-vung.html` tự chứa, kiểu Quizlet — giống bản HSK6 nhưng cho từ vựng buổi đó.
+- **Tái dùng** engine của vocab-study: bảng 生词 (+ 生词拓展 nếu có), flashcard active-recall + Leitner, chiết tự + mẹo nhớ tiếng Việt, phát âm 🔊.
+- **Khác bản HSK6:** **bỏ phần neo Activation từ vault** (`knowledge/vocabulary` là dữ liệu HSK6 cá nhân của user, không áp cho từ HSK1 dạy học viên) → Leitner khởi động trung tính (box 1). KHÔNG đọc `raw/Từ vựng.xlsx` — nguồn từ vựng là `生词` của buổi (đã chốt trong `buoiXX.json`).
+- **Thời điểm:** **phase cuối**, sau khi vocab các buổi đã chốt (tránh làm lại nếu vocab đổi trong lúc sản xuất). Sinh loạt cho tất cả các buổi (kể cả buổi existing 06/10/12 nếu muốn đồng bộ — xác nhận ở plan).
+
+## 15. Rủi ro & mở
 
 - **GIF khẩu hình bản quyền**: nếu không tìm được nguồn dùng được → fallback sơ đồ tĩnh + audio (không chặn tiến độ).
 - **Nguyên văn 课文 HSK SC1**: phải verify; nếu web-search không cho bản đáng tin → xác nhận với user cách xử lý (paraphrase có ghi chú vs. bỏ bài đọc buổi đó).
