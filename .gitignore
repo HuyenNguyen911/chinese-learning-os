@@ -2,3 +2,7 @@
 # Chỉ loại rác thật sự:
 __pycache__/
 ~$*
+
+# hsk1 GIF tooling — cache + spike scratch
+scripts/hsk1/_src/
+output/hsk1/_spike/
