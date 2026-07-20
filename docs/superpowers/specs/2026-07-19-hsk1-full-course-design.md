@@ -2,7 +2,7 @@
 
 **Ngày:** 2026-07-19
 **Trạng thái:** Đã duyệt thiết kế — chờ viết implementation plan
-**Chủ sở hữu output:** Teaching Coach (`slide/`), Exercise Generator (`baitap/`), Lesson Prep/Learning Strategist (`tier-a.md`, `vocab-study`)
+**Chủ sở hữu output:** Teaching Coach (`slide/`), Exercise Generator (`baitap/`)
 
 ## 1. Mục tiêu
 
@@ -22,9 +22,9 @@ Bắc Kinh của thiết kế (theo yêu cầu user):
 - Mỗi buổi giao **trọn gói**: slide `.pptx` (+ audio) · bài tập worksheet + audio + đáp án · bài đọc HSK SC1 (text + audio) · dòng đối chiếu Hán ngữ Q1.
 - 1 file syllabus tổng `output/hsk1/README.md` (bảng thứ tự dạy, source of truth).
 
-### Ngoài phạm vi (không đụng)
-- Buổi 1/2/3 hiện có (`buoi1_nangnguyen_phuongtien`, `buoi2_luongtu_mausac`, `buoi3_le_thoitiet`).
-- Ôn 1 (`on1_nguphap_dongtu`), Ôn 2 (`on2_tuvung_chude`).
+### Ngoài phạm vi (không tái soạn nội dung)
+- **Nội dung dạy** của buổi 1/2/3 hiện có — giữ nguyên. Chỉ **đổi tên folder + nhãn số** theo syllabus (mục 11), không viết lại bài giảng.
+- Ôn 1 (`on1_nguphap_dongtu`), Ôn 2 (`on2_tuvung_chude`) — giữ nguyên.
 - 3 file raw `.pptx` (`NHẬP MÔN`, `CHỦ ĐỀ 1`, `CHỦ ĐỀ 2`) — chỉ đọc tham khảo để tránh trùng, KHÔNG sửa. (Các buổi nền tảng mới dựng lại nội dung này ở định dạng vault, có GIF, không phụ thuộc file raw.)
 
 ## 3. Reconcile "12 buổi"
@@ -32,7 +32,7 @@ Bắc Kinh của thiết kế (theo yêu cầu user):
 **12 buổi content = 9 (tôi làm) + 3 (đã có).** Ngoài ra 2 buổi ôn (đã có) là checkpoint. Tổng tài liệu = 12 content + 2 ôn.
 
 - 9 tôi làm: vị trí syllabus **1, 2, 3, 4, 5, 7, 8, 9, 11**.
-- 3 đã có: buoi1 (=vị trí 6), buoi2 (=vị trí 10), buoi3 (=vị trí 12).
+- 3 đã có (đổi tên theo syllabus): `buoi06` (会/想/能), `buoi10` (lượng từ/màu), `buoi12` (thời tiết).
 
 ## 4. Master syllabus (thứ tự dạy hợp lý)
 
@@ -45,13 +45,13 @@ Tiến trình sư phạm: nền tảng → nhận diện người/danh tính →
 | 3 | Số đếm · thời gian · ngày tháng · địa điểm · phương hướng | MỚI · nền tảng | 几点 · 号/月/星期 · 这儿/那儿/哪儿 · 在 | L7 今天几号 · L11 现在几点 | Bài 8 |
 | 4 | Gia đình & tuổi | MỚI | 有/没有 · 几口人 · 和 · 都 · 多大/几岁 | L5 她女儿今年二十岁 | Q1 Hạ (gia đình) |
 | 5 | Nghề nghiệp · quốc tịch · ngôn ngữ | MỚI | 是 (X是Y) · 说+ngôn ngữ · 哪国人 | L4 她是我的汉语老师 · L6 我会说汉语 · L9 你儿子在哪儿工作 | Bài 6, 11, 12 |
-| 6 | 会/想/能 — Hoạt động & giao thông | ĐÃ CÓ (buoi1) | 会/想/能/要/可以 | L6 我会说汉语 · L10 我能坐这儿吗 | Bài 10 |
+| 6 | 会/想/能 — Hoạt động & giao thông | ĐÃ CÓ (buoi06) | 会/想/能/要/可以 | L6 我会说汉语 · L10 我能坐这儿吗 | Bài 10 |
 | 7 | Ăn uống | MỚI | 想/要+V · 吃饭了吗 · 好吃/好喝 | L8 我想喝茶 | Bài 7 |
 | 8 | Nhà · đồ vật · vị trí 在…里/上 | MỚI | 在 (tồn tại) · …里/…上 · 前面/后面 | L9 你儿子在哪儿工作 | Bài 10, 12 |
 | 9 | Sở thích & động từ | MỚI | 喜欢+V · 爱 · (ôn 会/想) | L13 他在学做中国菜 | Q1 Hạ (sở thích) |
-| 10 | Lượng từ + 一点儿 · Màu sắc | ĐÃ CÓ (buoi2) | 量词 · 一点儿/有点儿 | L14 她买了不少东西 | Bài 14 |
+| 10 | Lượng từ + 一点儿 · Màu sắc | ĐÃ CÓ (buoi10) | 量词 · 一点儿/有点儿 | L14 她买了不少东西 | Bài 14 |
 | 11 | Mua sắm · tiền · tính từ mô tả | MỚI | 多少钱 · 太…了 · 买 · 很+Adj · 不 · số lớn | L14 她买了不少东西 · L15 我在这儿买的 | Bài 8, 9, 15 |
-| 12 | 了/没/过/快…了 — Thời tiết | ĐÃ CÓ (buoi3) | 了/没/过/快…了 | L12 明天天气怎么样 | Q1 Hạ (thời tiết) |
+| 12 | 了/没/过/快…了 — Thời tiết | ĐÃ CÓ (buoi12) | 了/没/过/快…了 | L12 明天天气怎么样 | Q1 Hạ (thời tiết) |
 | Ôn 1 | Ngữ pháp · động từ · cấu trúc câu | ĐÃ CÓ | — | — | — |
 | Ôn 2 | Từ vựng theo cụm chủ đề | ĐÃ CÓ | — | — | — |
 
@@ -92,7 +92,10 @@ output/hsk1/buoiXX_<slug>/
     bai-doc-hsksc1.<n>.mp3  # audio tự tạo (edge-tts)
 ```
 
-Khối JSON slide theo thứ tự: `title` → `muctieu` (bullets) → `ôn buổi trước` (bullets) → `生词` (vocab, chia nhóm) → `ngữ pháp` (grammar/table) → `hội thoại / 课文` (dialogue) → `bài đọc` (reading) → **slide lỗi người Việt hay mắc** (từ `common-vietnamese-mistakes.md`) → preview bài tập (exercise) → footer đối chiếu Hán ngữ Q1. Foundation thêm slide **GIF** (image key trỏ `.gif` trong `assets/`).
+Khối JSON slide theo thứ tự:
+`title` → `ôn buổi trước` (bullets) → `muctieu` (bullets) → `生词` (vocab, chia nhóm) → `ngữ pháp` (grammar/table) → **`10 câu khẩu ngữ thông dụng`** (10 câu dùng-được-ngay, khẩu ngữ đời thường; hán + pinyin + dịch) → `hội thoại / 课文` (dialogue) → `bài đọc` (reading HSK SC1) → **footer đối chiếu Hán ngữ Q1** → **slide lỗi người Việt hay mắc** (từ `common-vietnamese-mistakes.md`) → preview bài tập (exercise) → Done.
+
+Foundation thêm slide **GIF** (image key trỏ `.gif` trong `assets/`). Riêng buổi 1 (ngữ âm) không có block "10 câu khẩu ngữ" — thay bằng luyện âm; các buổi còn lại đều có.
 
 ## 7. GIF phát âm (buổi nền tảng)
 
@@ -123,25 +126,35 @@ Khối JSON slide theo thứ tự: `title` → `muctieu` (bullets) → `ôn bu�
 4. **Assets**: fetch ảnh · sinh/tìm GIF · edge-tts audio → **soát phát âm 多音字/儿化 trước khi giao**.
 5. **Render pptx**: `build_deck.py`.
 6. **Bài tập**: exercise-generator (worksheet + audio + đáp án) → **cổng kiểm tra đáp án AI**; audio qua cổng xác nhận.
-7. **Nạp từ vựng**: append `knowledge/vocabulary/tier-a.md` (dedup theo 生词) + trang vocab-study (theo ownership CLAUDE.md).
+
+> **Không nạp `tier-a.md` / vocab-study.** `tier-a.md` là vocabulary activation **cá nhân của user (HSK6)** do Learning Strategist/Lesson Prep quản lý — không phải kho từ HSK1 dạy học viên. `vocab-study` là luồng HSK6 (đọc `raw/Từ vựng.xlsx`, neo Activation vault của user) — không áp cho tài liệu HSK1. Từ vựng HSK1 của mỗi buổi đã nằm trong slide `生词` + bài tập; không cần đường nạp riêng.
 
 ## 11. Đặt tên & syllabus index
 
-- Folder mới: `buoiXX_<slug>` với XX = **vị trí syllabus** 2 chữ số: `buoi01_nguam`, `buoi02_daitu_chaohoi`, `buoi03_so_thoigian_diadiem`, `buoi04_giadinh`, `buoi05_nghe_quoctich`, `buoi07_anuong`, `buoi08_nha_vitri`, `buoi09_sothich`, `buoi11_muasam_tinhtu`.
-- Existing `buoi1/2/3_*` giữ nguyên (= vị trí syllabus 6/10/12).
+- **Tất cả 12 buổi đánh số 2 chữ số theo vị trí syllabus** — đồng nhất `buoi01` … `buoi12`.
+- Folder mới: `buoi01_nguam`, `buoi02_daitu_chaohoi`, `buoi03_so_thoigian_diadiem`, `buoi04_giadinh`, `buoi05_nghe_quoctich`, `buoi07_anuong`, `buoi08_nha_vitri`, `buoi09_sothich`, `buoi11_muasam_tinhtu`.
+- **Existing đổi tên** (git mv) theo vị trí syllabus:
+  - `buoi1_nangnguyen_phuongtien` → `buoi06_nangnguyen_phuongtien`
+  - `buoi2_luongtu_mausac` → `buoi10_luongtu_mausac`
+  - `buoi3_le_thoitiet` → `buoi12_le_thoitiet`
+- Khi đổi tên existing: cũng đổi tên file `buoiX.json`/`.pptx` bên trong + cập nhật nhãn `meta.lesson` ("HSK1 · Buổi 6/10/12") cho khớp. **Không tái soạn nội dung dạy** (block "ôn buổi trước" cũ có thể lệch mạch — chấp nhận như artifact, không viết lại). Grep toàn repo tìm tham chiếu đường dẫn cũ (state, memory, docs) và cập nhật.
+- Ôn 1/Ôn 2 (`on1_nguphap_dongtu`, `on2_tuvung_chude`) giữ nguyên tên, nằm sau buổi 12.
 - `output/hsk1/README.md` = bảng syllabus 12 buổi + 2 ôn, map vị trí ↔ folder, là source of truth về thứ tự dạy. Trong `meta.lesson` của các JSON mới ghi đúng vị trí syllabus (vd "HSK1 · Buổi 4").
 
 ## 12. Chiến lược giao (de-risk)
 
-- **2 pilot trước:**
-  - Buổi 1 (ngữ âm + GIF) — chốt khuôn nền tảng + verify GIF phát trong pptx.
-  - Buổi 4 (gia đình) — chốt khuôn buổi chủ đề (trọn gói).
+- **2 pilot trước (theo yêu cầu user):**
+  - `buoi01_nguam` (ngữ âm + GIF) — chốt khuôn nền tảng + verify GIF phát trong pptx.
+  - `buoi02_daitu_chaohoi` (đại từ · chào hỏi · làm quen) — chốt khuôn buổi có 生词/hội thoại/课文/10 câu khẩu ngữ/bài tập (trọn gói).
 - User duyệt 2 pilot → sản xuất 7 buổi còn lại theo khuôn, **giao theo lô + review**.
-- Thứ tự sản xuất còn lại: theo syllabus (2 → 3 → 5 → 7 → 8 → 9 → 11).
+- Thứ tự sản xuất còn lại: theo syllabus (3 → 4 → 5 → 7 → 8 → 9 → 11).
+- Việc **đổi tên existing** buoi1/2/3 (mục 11) làm 1 lần ở đầu (trước hoặc cùng lô pilot) để `README.md` syllabus khớp ngay.
 
 ## 13. Tiêu chí hoàn thành (verification)
 
 - [ ] 9 buổi đủ deliverable (slide pptx + audio, baitap 3 phần, bài đọc HSK SC1 + audio, footer Hán ngữ Q1).
+- [ ] Mỗi buổi (trừ buổi ngữ âm) có block **10 câu khẩu ngữ thông dụng**.
+- [ ] Existing buoi1/2/3 đã đổi tên `buoi06/buoi10/buoi12` (folder + file + nhãn), grep tham chiếu cũ đã cập nhật.
 - [ ] Tổng từ vựng 9 buổi mới + 3 existing = phủ đủ 150 từ HSK1 (đối chiếu danh sách chính thức), không trùng lặp giữa các buổi.
 - [ ] Mỗi pptx render thành công, mở được, GIF phát trong slideshow (buổi nền tảng).
 - [ ] Audio soát 多音字/儿化, đọc chậm đúng chuẩn HSK1-3.
