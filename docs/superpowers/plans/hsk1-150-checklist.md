@@ -37,8 +37,8 @@ Buổi 1 (Ngữ âm) không có 生词 HSK — không nằm trong bảng 150 t�
 | Buổi 2 | 29 | ⏳ chưa soạn |
 | Buổi 3 | 36 | ⏳ chưa soạn |
 | Buổi 4 | 10 | ⏳ chưa soạn |
-| Buổi 5 | 8 | ⏳ chưa soạn |
-| Buổi 6 | 11 | ✅ đã có |
+| Buổi 5 | 9 | ⏳ chưa soạn |
+| Buổi 6 | 10 | ✅ đã có |
 | Buổi 7 | 8 | ⏳ chưa soạn |
 | Buổi 8 | 9 | ⏳ chưa soạn |
 | Buổi 9 | 15 | ⏳ chưa soạn |
@@ -141,7 +141,7 @@ Ghi chú "ôn ở buổi X" trong cột **buổi phụ trách** = từ đã dạ
 | 女儿 | nǚ'ér | con gái | Buổi 4 | ⏳ chưa soạn |
 | 有 | yǒu | có | Buổi 4 | ⏳ chưa soạn |
 
-## Buổi 5 — Nghề nghiệp · quốc tịch · ngôn ngữ (8 từ) — ⏳ chưa soạn
+## Buổi 5 — Nghề nghiệp · quốc tịch · ngôn ngữ (9 từ) — ⏳ chưa soạn
 
 | 汉字 | pinyin | nghĩa Việt | buổi phụ trách | trạng thái |
 |---|---|---|---|---|
@@ -153,12 +153,12 @@ Ghi chú "ôn ở buổi X" trong cột **buổi phụ trách** = từ đã dạ
 | 说 | shuō | nói | Buổi 5 | ⏳ chưa soạn |
 | 学习 | xuéxí | học, học tập | Buổi 5 (ôn ở buổi 9) | ⏳ chưa soạn |
 | 工作 | gōngzuò | làm việc, công việc | Buổi 5 | ⏳ chưa soạn |
+| 飞机 | fēijī | máy bay | Buổi 5 | ⏳ chưa soạn |
 
-## Buổi 6 — 会/想/能 · Hoạt động & giao thông (11 từ) — ✅ đã có
+## Buổi 6 — 会/想/能 · Hoạt động & giao thông (10 từ) — ✅ đã có
 
 | 汉字 | pinyin | nghĩa Việt | buổi phụ trách | trạng thái |
 |---|---|---|---|---|
-| 飞机 | fēijī | máy bay | Buổi 6 | ✅ đã có |
 | 出租车 | chūzūchē | taxi | Buổi 6 | ✅ đã có |
 | 电视 | diànshì | tivi | Buổi 6 (ôn ở buổi 8) | ✅ đã có |
 | 看 | kàn | xem, nhìn | Buổi 6 (ôn ở buổi 9) | ✅ đã có |
@@ -278,7 +278,7 @@ Spec §5 chỉ liệt kê vocab **lõi gợi ý**, không đủ 150 khi đối c
 | 饭店 | nhà hàng/khách sạn | Buổi 3 | địa điểm |
 | 医院 | bệnh viện | Buổi 3 | địa điểm |
 | 北京 | Bắc Kinh | Buổi 3 | địa điểm/địa danh |
-| 飞机 | máy bay | Buổi 6 | giao thông |
+| 飞机 | máy bay | **Buổi 5** | giao thông — chủ đề gốc là Buổi 6 nhưng Buổi 6 đã **frozen** (không tái soạn); dạy ở Buổi 5 qua ngữ cảnh du lịch/quốc tịch "坐飞机去中国". *(Sửa theo review finding: trước đây gán nhầm Buổi 6 "✅ đã có" trong khi deck Buổi 6 KHÔNG có 飞机.)* |
 | 猫 | mèo | Buổi 9 | sở thích ("你喜欢猫还是狗?") |
 | 狗 | chó | Buổi 9 | sở thích |
 | 衣服 | quần áo | Buổi 11 | mua sắm (đã xuất hiện trong ví dụ buổi 10 hiện có: "这件衣服...") |
@@ -305,7 +305,7 @@ Theo spec §2/§11, nội dung 3 buổi này **không tái soạn** — các t�
 
 ## Verify
 
-- Tổng số dòng trong 11 bảng buổi (2–12): 29+36+10+8+11+8+9+15+6+13+5 = **150** ✓
+- Tổng số dòng trong 11 bảng buổi (2–12): 29+36+10+9+10+8+9+15+6+13+5 = **150** ✓
 - Không từ nào xuất hiện ở 2 dòng khác nhau (đã rà tay theo index 1–150 của danh sách chuẩn, không trùng) ✓
 - Mọi từ có đủ 汉字 + pinyin + nghĩa Việt ✓
 - Mọi từ có đúng 1 buổi phụ trách (ghi chú "ôn ở buổi X" không phải gán buổi thứ 2) ✓
