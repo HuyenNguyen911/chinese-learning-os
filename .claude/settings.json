@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(python -m pip install *)",
+      "Bash(python3 -m pip install *)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)"
+    ],
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(python *)",
+      "Bash(pandoc *)"
+    ]
+  }
+}
