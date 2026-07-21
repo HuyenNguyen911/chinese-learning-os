@@ -58,6 +58,19 @@ SK=".claude/skills/vocab-study/scripts"
 ```
 Lần cập nhật thông thường (không có chữ/từ mới) chỉ cần **1 → 3 → 5**.
 
+## Sinh override bằng workflow (nghĩa Việt / 例句 cá nhân hoá)
+Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu cá nhân hoá — dùng workflow (cần user bật orchestration):
+1. **Trích payload theo bài** ra scratchpad: mỗi bài 1 file JSON `[{w, zh(=释义), vi}]` (lọc bỏ seed 拓展).
+2. **Workflow**: `pipeline` theo bài, mỗi agent 1 bài, `schema` ép trả `{items:[{w, vi|ex}]}`.
+   - Nghĩa Việt: prompt "biên soạn từ điển Hán-Việt, chắt nghĩa cốt lõi từ 释义, ngắn gọn".
+   - 例句 cá nhân hoá: **nạp `memory/user-profile.md` vào prompt** làm bối cảnh; câu đủ chủ-vị, khẩu ngữ, bám đời sống user, ~12-22 chữ.
+3. **Merge** kết quả (đọc `result` trong task output) → ghi `vi_override.json` / `ex_override.json` (map `{w: value}`).
+4. Build lại **3 → 5**, rồi **verify**: `html.escape(value) in html` cho mọi entry (phải 100%); đếm 意义 trống = 0.
+
+> ⚠️ **Gotcha `user-profile` cho 例句:** bản đầy đủ (khối "Đời sống & Cá nhân") có thể nằm ở nhánh khác
+> (`feat/personalization-doc-hieu`). Nếu nhánh hiện tại chỉ có bản tối thiểu → đọc qua
+> `git show feat/personalization-doc-hieu:memory/user-profile.md` (CHỈ đọc, không ghi memory).
+
 ## Assets (đóng gói sẵn trong data/)
 - `hanzi.json` — chiết tự + bộ + 字源(sem/phon) + pinyin + Hán-Việt (~1861 chữ). Nguồn: Make Me a Hanzi + Unihan.
 - `mnemonic.json` — mẹo nhớ tiếng Việt theo từ (~1301, sinh bằng workflow). **Tăng dần**.
@@ -77,6 +90,7 @@ Lần cập nhật thông thường (không có chữ/từ mới) chỉ cần **
 - Chỉ **đọc** `knowledge/vocabulary/*` (Activation). Không ghi. State vocabulary do learning-strategist sở hữu (CLAUDE.md §6).
 - Mẹo nhớ: workflow cần user bật orchestration; **chỉ sinh cho từ mới** để tiết kiệm token.
 - **Mọi script phải `reconfigure(utf-8)` stdout/stderr ở đầu file** — console Windows mặc định cp1252, in 中文/tiếng Việt sẽ crash `UnicodeEncodeError` nếu thiếu.
+- **Sau mỗi lần build, nhắc user `Ctrl+Shift+R`** — trình duyệt cache file HTML rất mạnh; mở lại/`start` chỉ focus tab cũ, dễ tưởng "update mất tiêu".
 
 ## Phụ thuộc
 - Python: `pypinyin`, `openpyxl`.
