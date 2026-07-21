@@ -10,7 +10,7 @@ Xây **bộ HSK2 theo chuẩn mới HSK 3.0** (国际中文教育中文水平等
 
 Yêu cầu cốt lõi (theo phỏng vấn user):
 - Build theo **chuẩn 3.0**, KHÔNG phải 2.0.
-- **Sách chính** = giáo trình chuẩn 3.0 = **New HSK Course 2** (新HSK教程2, NXB FLTRP/外研社). **Sách tham khảo** = **Giáo trình Hán ngữ Quyển 2** (footer đối chiếu, list tên bài).
+- **Sách chính** = giáo trình chuẩn 3.0 = **New HSK Course 2** (新HSK教程2, 主编 郭凤岚, NXB FLTRP/外研社, HSK官方认证教材 — user đã xác nhận bìa). **Sách tham khảo** = **Giáo trình Hán ngữ** (user cấp `raw/Hán ngữ 2.pdf` = 《汉语教程》第一册·下 修订本, 主编 杨寄洲, BLCU — **bài 16–30**, nối tiếp Quyển Thượng bài 1–15). Footer đối chiếu, list tên bài.
 - **Thêm chủ đề** Giải trí · Thể thao · Sở thích · Động vật · Thú cưng (3.0 có sẵn vốn từ các nhóm này — không phải "bổ sung ngoài chuẩn").
 - **Tránh trùng lặp với HSK1** để không gây chán — mỗi buổi chỉ dạy **từ MỚI**; chủ đề tái xuất thì **đào sâu bằng từ mới + ngữ pháp mới**, không lặp lại.
 - Deliverable mỗi buổi **trọn gói như HSK1**.
@@ -44,28 +44,32 @@ Yêu cầu cốt lõi (theo phỏng vấn user):
 
 Nguyên tắc: **1 buổi = 1 chủ đề 3.0 + 3–4 điểm ngữ pháp + ~12–15 từ mới**, bám sát 15 bài New HSK Course 2 (buổi ≈ bài; buổi 16 là capstone tổng hợp). Chủ đề trùng tên với HSK1 (ăn uống, thời tiết, mua sắm...) **chỉ tái xuất ở tầng sâu hơn** với vốn từ + ngữ pháp mới.
 
-| # | Buổi (chủ đề) | Ngữ pháp trọng tâm | Chủ đề 3.0 | Đối chiếu Hán ngữ Q2 |
+Cột "Hán ngữ" trỏ bài trong 《汉语教程》第一册·下 (bài 16–30, §8). Ngữ pháp HSK2 3.0 **khớp rất tốt** với ngữ pháp các bài này → footer để học viên tự mở đọc/nghe đúng bài.
+
+| # | Buổi (chủ đề) | Ngữ pháp trọng tâm | Chủ đề 3.0 | Hán ngữ (第一册·下) |
 |---|---|---|---|---|
-| 1 | Ngày mới & thói quen | 每 · thời lượng (V了+时间) · 从…到 (thời gian) | daily routine, time mở rộng | ⏳ map ở impl |
-| 2 | Ngoại hình & trang phục | **比 (so sánh 1)** · 觉得 · vị ngữ tính từ nâng cao | appearance & clothing | ⏳ |
-| 3 | Ăn uống & thói quen ăn | 了 (đổi trạng thái) · 太…了 · bổ ngữ kết quả 完 | dietary habits | ⏳ |
-| 4 | **Sở thích & giải trí** | 喜欢/爱+V nâng cao · 一边…一边 · 会…的 | hobbies & entertainment | ⏳ |
-| 5 | **Thể thao** | **得 (bổ ngữ trình độ)** · 正在…呢 | sports | ⏳ |
-| 6 | **Động vật & thú cưng** | tồn tại 有/是 nâng cao · **比 (so sánh 2)** · tính từ mô tả | animals & pets | ⏳ |
-| 7 | Thời tiết & mùa | **比 (so sánh 3, sâu)** · 要…了 (sắp) · 最/更 | weather & seasons | ⏳ |
-| 8 | Đi lại & giao thông | 从…到 · 离 (khoảng cách) · bổ ngữ kết quả 到 | transport | ⏳ |
+| 1 | Ngày mới & thói quen | 每 · thời lượng (V了+时间) · 从…到 (thời gian) | daily routine, time mở rộng | L21 我的一天 · L30 时量补语 · L22 以前/以后 |
+| 2 | Ngoại hình & trang phục | **比 (so sánh 1)** · 觉得 · vị ngữ tính từ nâng cao | appearance & clothing | L19 便宜一点儿 (⚠️ 比 có thể ở 第二册 — kiểm tra) |
+| 3 | Ăn uống & thói quen ăn | 了 (đổi trạng thái) · 太…了 · bổ ngữ kết quả 完 | dietary habits | L26 语气助词了 · L29 结果补语(完) |
+| 4 | **Sở thích & giải trí** | 喜欢/爱+V nâng cao · 一边…一边 · 会…的 | hobbies & entertainment | L16 晚上你常做什么 |
+| 5 | **Thể thao** | **得 (bổ ngữ trình độ)** · 正在…呢 | sports | **L25 她学得很好 (状态补语)** · L17 动作的进行 |
+| 6 | **Động vật & thú cưng** | tồn tại 有/是 nâng cao · **比 (so sánh 2)** · tính từ mô tả | animals & pets | L20 属狗 (con giáp) · L23 存在的表达 |
+| 7 | Thời tiết & mùa | **比 (so sánh 3, sâu)** · 要…了 (sắp) · 最/更 | weather & seasons | L28 阳光 (⚠️ 比/mùa có thể bổ sung ngoài) |
+| 8 | Đi lại & giao thông | 从…到 · 离 (khoảng cách) · bổ ngữ kết quả 到 | transport | **L23 从这儿到博物馆有多远/方位词** · L18 去上海参观 |
 | — | **Ôn 1** | ngữ pháp buổi 1–8 | — | — |
-| 9 | Du lịch & trải nghiệm | **过 (trải nghiệm)** · 了 (hoàn thành) · bổ ngữ xu hướng 来/去 | travel experiences | ⏳ |
-| 10 | Học tập & kinh nghiệm | **因为…所以** · **虽然…但是** | study experiences | ⏳ |
-| 11 | Công việc & giao tiếp | 给 sb V · 对 sb · 让 (khiến, cơ bản) · 帮 | work & communication | ⏳ |
-| 12 | Mua sắm nâng cao | 多少钱 nâng cao · 千/元 · 又…又 · 有点儿 vs (一)点儿 | shopping | ⏳ |
-| 13 | Sức khoẻ & khám bệnh | 别 (khuyên/cấm) · 应该 · 快…了 | health | ⏳ |
-| 14 | Cảm xúc & mô tả người | 觉得 · 得 (ôn) · 更/最/非常 · 还是/或者 (lựa chọn) | feelings, describing people | ⏳ |
-| 15 | Kế hoạch & tương lai | 打算 · 就/才 · 第 (thứ tự) · 会…的 | plans, future | ⏳ |
-| 16 | **Capstone hội thoại** | ôn tổng hợp toàn khoá | trộn chủ đề | ⏳ |
+| 9 | Du lịch & trải nghiệm | **过 (trải nghiệm)** · 了 (hoàn thành) · bổ ngữ xu hướng 来/去 | travel experiences | L27 动作的完成:动词+了 · L18 参观 |
+| 10 | Học tập & kinh nghiệm | **因为…所以** · **虽然…但是** | study experiences | **L27 因为…所以** · **L28 虽然…但是** |
+| 11 | Công việc & giao tiếp | 给 sb V · 对 sb · 让 (khiến, cơ bản) · 帮 | work & communication | **L17 双宾语句** · L22 请老师教我书法 |
+| 12 | Mua sắm nâng cao | 多少钱 nâng cao · 千/元 · 又…又 · 有点儿 vs (一)点儿 | shopping | **L19 便宜一点儿/人民币单位/多一点儿·有一点儿** |
+| 13 | Sức khoẻ & khám bệnh | 别 (khuyên/cấm) · 应该 · 快…了 | health | L27 你怎么了/玛丽病了 · L24 能愿动词(应该) |
+| 14 | Cảm xúc & mô tả người | 觉得 · 得 (ôn) · 更/最/非常 · 还是/或者 (lựa chọn) | feelings, describing people | **L16 还是/或者** |
+| 15 | Kế hoạch & tương lai | 打算 · 就/才 · 第 (thứ tự) · 会…的 | plans, future | **L28 就/才 · 要是…就** · L20 毕业/生日 |
+| 16 | **Capstone hội thoại** | ôn tổng hợp toàn khoá | trộn chủ đề | tổng hợp L16–30 |
 | — | **Ôn 2** | ngữ pháp buổi 9–16 + từ vựng cụm | — | — |
 
 **Phủ ngữ pháp:** ~3 điểm/buổi × 16 ≈ 48 điểm ⊇ 45 điểm sách chính. "6 nhóm ngữ pháp mới của cấp 2" (so sánh 比, liên từ nhân quả/nhượng bộ, bổ ngữ trình độ/kết quả, thể quá khứ/tiếp diễn, giới từ, mô tả mức độ) đều có buổi phụ trách.
+
+> ⚠️ **Điểm cần kiểm tra ở impl:** 汉语教程 第一册·下 (L16–30) **thiếu điểm 比 (so sánh)** và có thể thiếu mùa/thời tiết đầy đủ — các điểm này có thể nằm ở **第二册**. Buổi 2/6/7 (dùng 比 nhiều) sẽ đối chiếu 第二册 nếu user có, hoặc footer ghi "比 — bổ sung ngoài Hán ngữ 第一册·下". New HSK Course 2 (sách chính) mới là nguồn chuẩn cho 比.
 
 **Ràng buộc chống trùng HSK1 (cứng):** danh sách 生词 mỗi buổi phải **loại mọi từ đã có trong 150 từ HSK1** (đối chiếu checklist §Task impl). Chủ đề tái xuất (buổi 3 ăn uống / 7 thời tiết / 12 mua sắm) framing "mở rộng", vocab hoàn toàn mới.
 
@@ -124,10 +128,32 @@ Khác HSK1:
   2. Không tìm được → **tự soạn** đoạn đọc/hội thoại bám 生词 + ngữ pháp buổi, **đánh dấu rõ "tự soạn, không phải nguyên văn sách"**.
 - Định dạng: 汉字 + pinyin + dịch Việt. Audio edge-tts đọc chậm (`-18%`, hội thoại đa giọng), soát 多音字/儿化.
 
-## 8. Đối chiếu Giáo trình Hán ngữ Quyển 2
+## 8. Đối chiếu Giáo trình Hán ngữ (《汉语教程》第一册·下)
 
-- Footer slide + `README.md`: **list tên bài Hán ngữ Q2** (số + tên Hán + nghĩa) tương ứng chủ đề buổi. User có sách + audio → tự hướng dẫn học viên mở đọc/nghe.
-- Mapping bài Hán ngữ Q2 ↔ buổi: chốt ở implementation (tra mục lục Hán ngữ Q2; hiện repo có `raw/Hán ngữ 1.pdf` — Q2 cần user cấp hoặc đánh dấu ⏳).
+- **Sách:** `raw/Hán ngữ 2.pdf` = 《汉语教程》第一册·下 修订本 (主编 杨寄洲, BLCU) — **bài 16–30**, nối tiếp Quyển Thượng (bài 1–15) mà HSK1 dùng. File là **PDF scan** → bóc mục lục bằng doc-analyzer/OCR chi_sim (đã làm; số trang trong ngoặc).
+- Footer slide + `README.md`: **list tên bài Hán ngữ** tương ứng chủ đề buổi (mapping ở bảng §4). User có sách + audio → tự hướng dẫn học viên mở đọc/nghe.
+
+**Mục lục 《汉语教程》第一册·下 (đã OCR):**
+
+| Bài | 课文 | Ngữ pháp chính | Trang |
+|---|---|---|---|
+| L16 | 你常去图书馆吗 / 晚上你常做什么 | 时间词语作状语 · 还是/或者 | 1 |
+| L17 | 他在做什么呢 / 谁教你们语法 | 动作的进行 · 双宾语句 · 怎么+动词 | 14 |
+| L18 | 我去邮局寄包裹 / 外贸代表团明天去上海参观 | (语音: 逻辑重音) | 28 |
+| L19 | 可以试试吗 / 便宜一点儿吧 | 动词重叠 · 多一点儿/有一点儿 · 人民币单位 | 40 |
+| L20 | 你哪一年大学毕业 / 祝你生日快乐 | 年月日 · 疑问语调 · 属狗 | 54 |
+| L21 | 我的一天 / 明天早上七点一刻出发 | 时间的表达 | 68 |
+| L22 | 请老师教我书法 | 以前/以后 · 京剧 | 82 |
+| L23 | 学校里边有邮局吗 / 从这儿到博物馆有多远 | 方位词 · 存在的表达 · 离…有多远 | ~96 |
+| L24 | 我想学太极拳 / 您能不能再说一遍 | 能愿动词 · 询问原因 | 114 |
+| L25 | 她学得很好 / 她每天都起得很早 | **状态补语 (bổ ngữ trình độ 得)** | 129 |
+| L26 | 田芳去哪儿了 / 他又来电话了 | 语气助词"了"(1) | 144 |
+| L27 | 你怎么了 / 玛丽病了 | 动作的完成:动词+了 · 因为…所以 | 160 |
+| L28 | (房子/阳光) / 我还是想要上下午都有阳光的 | 就/才 · 要是…就 · 虽然…但是 | 177 |
+| L29 | 我都做对了 / 看完电影再做作业 | 结果补语 (上/成/到) · 主谓词组作定语 | 192 |
+| L30 | 我来了两个多月了 / 我每天都练一个小时 | 时量补语 · 概数 · 离合动词 | 208 |
+
+- ⚠️ Sách **thiếu điểm 比 (so sánh)** — nhiều khả năng ở 第二册. Buổi 2/6/7 (HSK2 3.0 dùng 比) sẽ đối chiếu 第二册 nếu user cấp, hoặc footer ghi rõ "比 — ngoài phạm vi Hán ngữ 第一册·下, xem sách chính New HSK Course 2".
 
 ## 9. Pipeline sản xuất mỗi buổi (có cổng duyệt) — Procedure P
 
@@ -180,7 +206,7 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 - **Nguyên văn 課文 New HSK Course 2:** sách mới (11/2025) → có thể thiếu bản online. Fallback: tự soạn có ghi chú (đã thống nhất §7). Nếu user có sách/PDF → chuyển sang bóc bằng doc-analyzer (chính xác hơn).
 - **Con số 3.0 lệch giữa nguồn:** chốt bằng 词汇表/语法表 chính thức + sách chính ở implementation.
 - **Phần Viết (书写) 3.0:** cần xác nhận exercise-generator hỗ trợ dạng câu Viết; nếu chưa, bổ sung dạng mục trong schema (đánh giá ở đầu implementation).
-- **Hán ngữ Q2 mapping:** repo mới có Hán ngữ 1; Q2 cần user cấp mục lục hoặc đánh dấu ⏳.
+- **Hán ngữ mapping — ĐÃ CÓ:** user cấp `raw/Hán ngữ 2.pdf` (=《汉语教程》第一册·下, L16–30); mục lục đã OCR + map vào §4/§8. Còn thiếu điểm **比** (khả năng ở 第二册) → nếu cần, user cấp thêm 第二册; nếu không, footer buổi 2/6/7 ghi rõ 比 ngoài phạm vi sách này.
 
 ## 15. Bước tiếp theo
 

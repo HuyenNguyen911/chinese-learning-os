@@ -174,7 +174,7 @@ git commit -m "feat(hsk2): buổi XX <chủ đề> — trọn gói (slide+audio+
 - 生词 (§5 B2): 衣服, 穿, 帽子, 眼睛, 长, 短, 高, 白, 黑, 觉得, 比, 一样 (lọc trùng HSK1).
 - Ngữ pháp: **比 (so sánh 1: A比B+adj, KHÔNG dùng 很/非常)** · 跟…一样 · 觉得 · vị ngữ tính từ.
 - 課文: New HSK Course 2 bài ngoại hình/trang phục (P2 web-search/tự soạn).
-- Hán ngữ Q2: ⏳ (map khi có mục lục).
+- Hán ngữ (第一册·下): L19 便宜一点儿 (⚠️ 比 có thể ở 第二册 — footer ghi rõ nếu thiếu).
 - Lỗi người Việt: 他比我很高 (thừa 很), lẫn 长 (cháng/zhǎng), thiếu 觉得.
 
 - [ ] **Step 1:** P1 — nội dung + 10 câu khẩu ngữ mô tả người/đồ.
@@ -283,6 +283,6 @@ git commit -m "feat(hsk2): buổi XX <chủ đề> — trọn gói (slide+audio+
 **Seed kho đề `knowledge/hsk-exam-bank/hsk2.md`** — tách việc, không thuộc bộ giáo trình này.
 
 ## Self-review notes
-- Spec §2 chuẩn 3.0 → Global Constraints + Task 0.1. §4 syllabus → Task 0.3 README + mọi task buổi. §5 vocab → Param từng task + Task 0.1 checklist (chống trùng HSK1). §6 block → Global Constraints + P3 (bỏ ngữ âm). §7 課文 → P2 (web-search→fallback tự soạn có ghi chú). §8 Hán ngữ Q2 → P3 footer + Param (⏳ chờ mục lục). §9 pipeline → Procedure P. §10 đặt tên → Global Constraints + tên folder từng task. §12 verify → "Verify hoàn thành buổi" + FINAL GATE. §13 vocab-study → follow-up. §14 rủi ro → Task 0.2 (schema Viết), P2 (課文 fallback), gap HSK1 đã giải quyết (user rebuild).
+- Spec §2 chuẩn 3.0 → Global Constraints + Task 0.1. §4 syllabus → Task 0.3 README + mọi task buổi. §5 vocab → Param từng task + Task 0.1 checklist (chống trùng HSK1). §6 block → Global Constraints + P3 (bỏ ngữ âm). §7 課文 → P2 (web-search→fallback tự soạn có ghi chú). §8 Hán ngữ (《汉语教程》第一册·下 L16–30, mục lục đã OCR) → P3 footer + Param (map đã có trong §4). §9 pipeline → Procedure P. §10 đặt tên → Global Constraints + tên folder từng task. §12 verify → "Verify hoàn thành buổi" + FINAL GATE. §13 vocab-study → follow-up. §14 rủi ro → Task 0.2 (schema Viết), P2 (課文 fallback), gap HSK1 đã giải quyết (user rebuild).
 - Điểm mới 3.0 so với plan HSK1: (a) phần Viết 3.0 bắt buộc trong P8/bài tập — cần Task 0.2 xác nhận schema; (b) chống trùng HSK1 thành ràng buộc cứng có checklist; (c) không có buổi/GIF ngữ âm; (d) 課文 sách mới → nhiều khả năng tự soạn có ghi chú.
-- Điểm cần user cấp: mục lục Hán ngữ Q2 (§8, ⏳); xác nhận có PDF New HSK Course 2 để bóc doc-analyzer (tăng độ chính xác vocab + 課文).
+- Điểm cần user cấp: 第二册 Hán ngữ nếu muốn footer 比 (buổi 2/6/7) — hiện chỉ có 第一册·下; PDF/ảnh nội dung New HSK Course 2 để bóc doc-analyzer (hiện mới có bìa → 課文 dựa web-search→tự soạn).
