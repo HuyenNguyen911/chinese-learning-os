@@ -1,4 +1,4 @@
-# HSK2 (chuẩn 3.0) — Bộ giáo trình 16 buổi (design spec)
+# HSK2 (chuẩn 3.0) — Bộ giáo trình 15 buổi (design spec)
 
 **Ngày:** 2026-07-20
 **Trạng thái:** Đã duyệt thiết kế (user chốt 2026-07-20; HSK1 sẽ build lại 3.0 riêng) — implementation plan: xem `docs/superpowers/plans/2026-07-20-hsk2-full-course.md`
@@ -6,7 +6,7 @@
 
 ## 1. Mục tiêu
 
-Xây **bộ HSK2 theo chuẩn mới HSK 3.0** (国际中文教育中文水平等级标准, công bố 11/2025, kỳ thi chuyển đổi từ 2026) — trọn 16 buổi + 2 ôn, chất lượng cao, khẩu ngữ, đa dạng chủ đề, dành cho học viên **đã qua HSK1** và chuẩn bị thi HSK2 (cấp 2 hệ 3 bậc 9 cấp).
+Xây **bộ HSK2 theo chuẩn mới HSK 3.0** (国际中文教育中文水平等级标准, công bố 11/2025, kỳ thi chuyển đổi từ 2026) — **15 buổi (bám sát 15 bài New HSK Course 2) + 2 ôn**, chất lượng cao, khẩu ngữ, đa dạng chủ đề, dành cho học viên **đã qua HSK1** và chuẩn bị thi HSK2 (cấp 2 hệ 3 bậc 9 cấp).
 
 Yêu cầu cốt lõi (theo phỏng vấn user):
 - Build theo **chuẩn 3.0**, KHÔNG phải 2.0.
@@ -30,7 +30,7 @@ Yêu cầu cốt lõi (theo phỏng vấn user):
 ## 3. Phạm vi
 
 ### Trong phạm vi
-- **16 buổi nội dung** (dựng mới hoàn toàn) + **2 buổi ôn** (checkpoint sau buổi 8 và sau buổi 16).
+- **15 buổi nội dung** (buổi = 1 bài New HSK Course 2) + **2 buổi ôn** (checkpoint sau bài 8 và sau bài 15).
 - Mỗi buổi giao **trọn gói**: slide `.pptx` (+ audio) · bài tập worksheet + audio + đáp án (đủ 听/读/书写 + **书写/Viết** 3.0 + HSKK) · bài đọc 課文 (text + audio) · footer đối chiếu Hán ngữ Q2.
 - **Trang từ vựng HSK2 theo buổi** (vocab-study-style, Quizlet) — `output/study/hsk2/buoiXX/tu-vung.html`. Làm ở **phase cuối** (§14).
 - 1 file syllabus tổng `output/hsk2/README.md` (source of truth thứ tự dạy).
@@ -40,60 +40,50 @@ Yêu cầu cốt lõi (theo phỏng vấn user):
 - **Không tái chuẩn hoá HSK1 lên 3.0** (xem rủi ro §15 — gap đầu vào).
 - Không seed kho đề `knowledge/hsk-exam-bank/hsk2.md` trong bộ này (tách việc).
 
-## 4. Master syllabus 16 buổi + 2 ôn (thứ tự dạy)
+## 4. Master syllabus 15 buổi + 2 ôn — BÁM SÁT New HSK Course 2
 
-Nguyên tắc: **1 buổi = 1 chủ đề 3.0 + 3–4 điểm ngữ pháp + ~12–15 từ mới**, bám sát 15 bài New HSK Course 2 (buổi ≈ bài; buổi 16 là capstone tổng hợp). Chủ đề trùng tên với HSK1 (ăn uống, thời tiết, mua sắm...) **chỉ tái xuất ở tầng sâu hơn** với vốn từ + ngữ pháp mới.
+**Quyết định (user 2026-07-20):** syllabus **bám đúng 15 bài sách chính**; **buổi = bài**. Nguồn chân lý = mục lục thật `docs/superpowers/specs/hsk2-new-hsk-course-2-toc.md` (đã trích từ `raw/New HSK Course 2.pdf`). Ngữ pháp = cột 小语讲堂 của sách; 生词 = 词汇表 sách (trang 141) + 生词 từng bài (khoá ở Task 0.1). **Ôn:** 2 buổi ôn (sau bài 8 giữa khoá, sau bài 15 cuối khoá); ngoài ra sách có 学习小结 mỗi 3 bài → dùng làm ôn nhanh trong buổi.
 
-Cột "Hán ngữ" trỏ bài trong 《汉语教程》第一册·下 (bài 16–30, §8). Ngữ pháp HSK2 3.0 **khớp rất tốt** với ngữ pháp các bài này → footer để học viên tự mở đọc/nghe đúng bài.
+Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, §8) khớp **một phần** (điểm nâng cao như 比较句/趋向补语/着/动量补语 nằm ở 第二册 → đánh dấu). Footer để học viên tự mở đọc/nghe.
 
-| # | Buổi (chủ đề) | Ngữ pháp trọng tâm | Chủ đề 3.0 | Hán ngữ (第一册·下) |
+| # | Bài (课文 tiêu đề) | Ngữ pháp (小语讲堂) | Chủ đề | Hán ngữ 第一册·下 |
 |---|---|---|---|---|
-| 1 | Ngày mới & thói quen | 每 · thời lượng (V了+时间) · 从…到 (thời gian) | daily routine, time mở rộng | L21 我的一天 · L30 时量补语 · L22 以前/以后 |
-| 2 | Ngoại hình & trang phục | **比 (so sánh 1)** · 觉得 · vị ngữ tính từ nâng cao | appearance & clothing | L19 便宜一点儿 (⚠️ 比 có thể ở 第二册 — kiểm tra) |
-| 3 | Ăn uống & thói quen ăn | 了 (đổi trạng thái) · 太…了 · bổ ngữ kết quả 完 | dietary habits | L26 语气助词了 · L29 结果补语(完) |
-| 4 | **Sở thích & giải trí** | 喜欢/爱+V nâng cao · 一边…一边 · 会…的 | hobbies & entertainment | L16 晚上你常做什么 |
-| 5 | **Thể thao** | **得 (bổ ngữ trình độ)** · 正在…呢 | sports | **L25 她学得很好 (状态补语)** · L17 动作的进行 |
-| 6 | **Động vật & thú cưng** | tồn tại 有/是 nâng cao · **比 (so sánh 2)** · tính từ mô tả | animals & pets | L20 属狗 (con giáp) · L23 存在的表达 |
-| 7 | Thời tiết & mùa | **比 (so sánh 3, sâu)** · 要…了 (sắp) · 最/更 | weather & seasons | L28 阳光 (⚠️ 比/mùa có thể bổ sung ngoài) |
-| 8 | Đi lại & giao thông | 从…到 · 离 (khoảng cách) · bổ ngữ kết quả 到 | transport | **L23 从这儿到博物馆有多远/方位词** · L18 去上海参观 |
-| — | **Ôn 1** | ngữ pháp buổi 1–8 | — | — |
-| 9 | Du lịch & trải nghiệm | **过 (trải nghiệm)** · 了 (hoàn thành) · bổ ngữ xu hướng 来/去 | travel experiences | L27 动作的完成:动词+了 · L18 参观 |
-| 10 | Học tập & kinh nghiệm | **因为…所以** · **虽然…但是** | study experiences | **L27 因为…所以** · **L28 虽然…但是** |
-| 11 | Công việc & giao tiếp | 给 sb V · 对 sb · 让 (khiến, cơ bản) · 帮 | work & communication | **L17 双宾语句** · L22 请老师教我书法 |
-| 12 | Mua sắm nâng cao | 多少钱 nâng cao · 千/元 · 又…又 · 有点儿 vs (一)点儿 | shopping | **L19 便宜一点儿/人民币单位/多一点儿·有一点儿** |
-| 13 | Sức khoẻ & khám bệnh | 别 (khuyên/cấm) · 应该 · 快…了 | health | L27 你怎么了/玛丽病了 · L24 能愿动词(应该) |
-| 14 | Cảm xúc & mô tả người | 觉得 · 得 (ôn) · 更/最/非常 · 还是/或者 (lựa chọn) | feelings, describing people | **L16 还是/或者** |
-| 15 | Kế hoạch & tương lai | 打算 · 就/才 · 第 (thứ tự) · 会…的 | plans, future | **L28 就/才 · 要是…就** · L20 毕业/生日 |
-| 16 | **Capstone hội thoại** | ôn tổng hợp toàn khoá | trộn chủ đề | tổng hợp L16–30 |
-| — | **Ôn 2** | ngữ pháp buổi 9–16 + từ vựng cụm | — | — |
+| 1 | 她请我们吃了北京烤鸭 | 语气助词"吧"(2) · "是…的"句 · 请/让/叫 (nhờ) | mời ăn, món BK, nhờ vả | L22 请… |
+| 2 | 还是打车去北大吧 | 兼语句 · 还是…吧 · 多 (概数) · cụm làm định ngữ | giao thông, đề nghị | L16 还是/或者 · L17 兼语 |
+| 3 | 我想去西安旅游 | 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因为…所以 | du lịch (Tây An) | L29 结果补语 · L19 动词重叠 · L27 因为…所以 |
+| 4 | 你穿红色的很好看 | "的"字短语 · 简单趋向补语(1)(2) · 都…了 | trang phục, màu sắc | L19 便宜一点儿 · (趋向补语→第二册) |
+| 5 | 第一次去中国朋友家 | 形容词重叠 · 什么的 · 结构助词"地" · 一…就… | thăm nhà bạn ⟨**lồng động vật/thú cưng**⟩ | — |
+| 6 | 小雪，生日快乐！ | 状态补语(1)(2) [bổ ngữ trình độ **得**] | sinh nhật, chúc mừng | **L25 状态补语 得** |
+| 7 | 他篮球打得很好 | 比较句(1)(2) [**比**] | **thể thao** (bóng rổ) | L25 得 · (比较句→第二册) |
+| 8 | 虽然你忘了，但是我记得 | 虽然…但是 · 比较句(3) · 动词"离" | trí nhớ, so sánh | **L28 虽然…但是** · **L23 离** |
+| — | **Ôn 1** (giữa khoá) | ôn bài 1–8 | — | — |
+| 9 | 我去买杯奶茶 | 时量补语(1) · 主谓谓语句 · 选择问句 | đồ uống, mua sắm | **L30 时量补语** · L16 选择问 |
+| 10 | 就要考试了 | 要/快/快要/就要…了 · 动态助词"着"(1)(2) | thi cử, học tập | (快…了; 着→第二册) |
+| 11 | 我最喜欢吃中国菜 | 程度副词"最" | ăn uống, sở thích | L?? (最) |
+| 12 | 这里比北京冷多了 | 比较句(4)(5)(6) | thời tiết, so sánh | (比较句→第二册) |
+| 13 | 我们爱上中文课 | 双宾语句(2) · 比较句(7)(8) | học tiếng Trung | **L17 双宾语句** |
+| 14 | 一个人过年多没意思啊 | 存现句 · 复合趋向补语 | lễ Tết, cảm xúc | L23 存在的表达 · (复合趋向→第二册) |
+| 15 | 我想再去一次中国 | 动量补语(1)(2) · "有"字句(2) | kế hoạch, quay lại TQ | (动量补语→第二册) |
+| — | **Ôn 2** (cuối khoá) | ôn bài 9–15 + capstone hội thoại | — | — |
 
-**Phủ ngữ pháp:** ~3 điểm/buổi × 16 ≈ 48 điểm ⊇ 45 điểm sách chính. "6 nhóm ngữ pháp mới của cấp 2" (so sánh 比, liên từ nhân quả/nhượng bộ, bổ ngữ trình độ/kết quả, thể quá khứ/tiếp diễn, giới từ, mô tả mức độ) đều có buổi phụ trách.
+**Phủ ngữ pháp:** 45 điểm 小语讲堂 trải đều 15 bài (một số bài 2–3 điểm; bài nhiều nhất là các bài có nhiều 比较句). Danh sách 45 điểm đầy đủ ở file TOC.
 
-> ⚠️ **Điểm cần kiểm tra ở impl:** 汉语教程 第一册·下 (L16–30) **thiếu điểm 比 (so sánh)** và có thể thiếu mùa/thời tiết đầy đủ — các điểm này có thể nằm ở **第二册**. Buổi 2/6/7 (dùng 比 nhiều) sẽ đối chiếu 第二册 nếu user có, hoặc footer ghi "比 — bổ sung ngoài Hán ngữ 第一册·下". New HSK Course 2 (sách chính) mới là nguồn chuẩn cho 比.
+> **Động vật & thú cưng (user muốn, sách không có bài riêng):** theo quyết định → **lồng từ mở rộng vào Bài 5** (第一次去中国朋友家 — tự nhiên có "nhà bạn nuôi mèo/chó"), đánh dấu "từ mở rộng ngoài 200 từ sách". Có thể rải thêm ở Bài 3 (du lịch thấy động vật). KHÔNG thêm buổi riêng.
 
-**Ràng buộc chống trùng HSK1 (cứng):** danh sách 生词 mỗi buổi phải **loại mọi từ đã có trong 150 từ HSK1** (đối chiếu checklist §Task impl). Chủ đề tái xuất (buổi 3 ăn uống / 7 thời tiết / 12 mua sắm) framing "mở rộng", vocab hoàn toàn mới.
+**Ràng buộc chống trùng HSK1 (cứng):** 生词 mỗi bài loại mọi từ đã có trong HSK1 (đối chiếu checklist Task 0.1). Từ mở rộng (pets) cũng chọn từ ngoài HSK1.
 
-## 5. Chi tiết vocab lõi + ngữ pháp mỗi buổi
+## 5. Nguồn vocab mỗi bài (từ sách chính, không tự nghĩ)
 
-Danh sách chốt ở implementation theo **词汇表 3.0 + mục lục New HSK Course 2**. Lõi định hướng (đã loại từ HSK1):
+**Không liệt kê vocab tự soạn.** 生词 mỗi bài = trích trực tiếp từ **`raw/New HSK Course 2.pdf`**:
+- **词汇表 tổng (trang 141)** = 200 từ chuẩn + 略有扩展 → nguồn chân lý.
+- **生词 từng bài** (đầu mỗi bài trong sách) → phân bổ ~12–15 từ/bài.
 
-- **B1 Thói quen:** 起床, 睡觉, 上班, 事情, 分钟, 小时, 时候, 以前, 以后, 一起, 正在.
-- **B2 Ngoại hình/trang phục:** 衣服, 穿, 帽子, 眼睛, 长, 短, 高, 白, 黑, 觉得, 比, 一样.
-- **B3 Ăn uống mở rộng:** 鸡蛋, 羊肉, 鱼, 牛奶, 咖啡, 西瓜, 服务员, 餐厅, 好吃(≠HSK1?→check), 完, 饱.
-- **B4 Sở thích/giải trí:** 爱好, 唱歌, 跳舞, 音乐, 玩(儿), 电影, 游戏, 一边…一边, 有意思.
-- **B5 Thể thao:** 运动, 篮球, 足球, 游泳, 跑步, 踢, 打, 得, 累, 身体.
-- **B6 Động vật/thú cưng:** 猫, 狗, 鸟, 鱼, 可爱, 养, 只(lượng từ), 大/小(mô tả), 比.
-- **B7 Thời tiết/mùa:** 晴, 阴, 雪, 春, 夏, 秋, 冬, 冷, 热, 最, 更, 要…了.
-- **B8 Giao thông:** 火车, 出租车, 公共汽车, 飞机, 机场, 站, 路, 走, 离, 远, 近, 到.
-- **B9 Du lịch/trải nghiệm:** 旅游, 玩儿, 照片, 地方, 过, 次, 回, 来, 去, 一起.
-- **B10 Học tập/kinh nghiệm:** 课, 考试, 问题, 意思, 复习, 因为, 所以, 虽然, 但是, 懂.
-- **B11 Công việc/giao tiếp:** 公司, 帮, 帮助, 告诉, 介绍, 让, 给, 对, 回答, 打电话.
-- **B12 Mua sắm:** 卖, 贵, 便宜, 送, 千, 元, 块, 又…又, 一点儿, 有点儿, 商店.
-- **B13 Sức khoẻ:** 医院, 药, 生病, 休息, 累, 应该, 别, 快…了, 疼(check level).
-- **B14 Cảm xúc/mô tả người:** 高兴, 快乐, 忙, 舒服, 漂亮, 聪明, 认真, 更, 非常, 还是.
-- **B15 Kế hoạch/tương lai:** 打算, 希望, 准备, 第, 就, 才, 会…的, 时间.
+Ở **Task 0.1** (implementation) sẽ bóc `New HSK Course 2.pdf` (có text layer — pypdf, không cần OCR) ra bảng `汉字 | pinyin | 词性 | nghĩa | bài | trùng HSK1?`, rồi:
+1. **Loại/đánh dấu từ trùng HSK1** (ràng buộc cứng §4).
+2. **Từ mở rộng động vật/thú cưng** cho Bài 5 (猫/狗/鸟/可爱/养/只… — chọn ngoài HSK1, đánh dấu "mở rộng ngoài 200 từ").
+3. Verify tổng ≈ 200 (+扩展), khớp 词汇表 sách.
 
-> Từ nghi trùng HSK1 (好吃, 电影, 一起, 块, 商店...) sẽ bị gạt khỏi 生词 nếu đã dạy ở HSK1; giữ lại chỉ để **ôn nhanh trong câu ví dụ**, không tính là từ mới của buổi.
+45 điểm ngữ pháp: theo cột 小语讲堂 (đã liệt kê §4 + file TOC), bóc giải thích + ví dụ từ mục 小语讲堂 mỗi bài.
 
 ## 6. Cấu trúc deliverable mỗi buổi
 
@@ -120,13 +110,12 @@ Khác HSK1:
 - **Không có buổi ngữ âm/GIF phát âm** (học viên đã qua HSK1). GIF **thứ tự nét** chỉ dùng **tuỳ chọn** cho vài chữ mới khó (tái dùng `gen_stroke_gif.py` của HSK1), không bắt buộc.
 - Bài tập **thêm phần Viết (书写) 3.0**: sắp xếp câu, điền chữ Hán, viết câu ngắn theo mẫu (tách khỏi HSKK nói).
 
-## 7. Nguồn bài đọc 課文 (sách chính New HSK Course 2)
+## 7. Nguồn bài đọc 課文 (LẤY THẲNG TỪ SÁCH — đã có PDF)
 
-- Quyết định user: **web-search thử** text New HSK Course 2 → bài nào không có bản đáng tin thì **tự soạn theo chủ đề** (fallback).
-- Sách New HSK Course 2 mới ra 11/2025 → nhiều bài có thể **chưa có bản gốc online**. Quy trình mỗi buổi:
-  1. WebSearch/WebFetch text 課文 bài tương ứng → nếu tìm được bản đáng tin (≥1 nguồn) → dùng nguyên văn, ghi nguồn.
-  2. Không tìm được → **tự soạn** đoạn đọc/hội thoại bám 生词 + ngữ pháp buổi, **đánh dấu rõ "tự soạn, không phải nguyên văn sách"**.
-- Định dạng: 汉字 + pinyin + dịch Việt. Audio edge-tts đọc chậm (`-18%`, hội thoại đa giọng), soát 多音字/儿化.
+**ĐÃ GIẢI QUYẾT:** có `raw/New HSK Course 2.pdf` (**có text layer**) → 課文 **trích trực tiếp từ sách**, KHÔNG cần web-search / tự soạn / fallback nữa.
+- Mỗi bài sách có **4 課文** (3 hội thoại + 1 tự sự). Chọn 課文 phù hợp buổi (thường lấy bài đối thoại chính + bài tự sự làm bài đọc).
+- Bóc bằng pypdf (text layer sạch). Giữ **nguyên văn sách** → độ chính xác tuyệt đối, không lo bịa.
+- Định dạng: 汉字 (nguyên văn) + pinyin + dịch Việt. Audio edge-tts đọc chậm (`-18%`, hội thoại đa giọng), soát 多音字/儿化. (Sách có audio gốc — nếu user cấp file MP3 sách thì ưu tiên; mặc định tự sinh edge-tts.)
 
 ## 8. Đối chiếu Giáo trình Hán ngữ (《汉语教程》第一册·下)
 
@@ -159,7 +148,7 @@ Khác HSK1:
 
 Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 1. **Master Teacher:** nội dung đúng-đủ — 生词 (đủ 汉字/pinyin/nghĩa, đã loại trùng HSK1), ngữ pháp giải thích bản chất, ví dụ khẩu ngữ đời thường, 10 câu khẩu ngữ dùng-ngay, 2–3 lỗi người Việt.
-2. **Nguồn 課文 (cổng a):** web-search New HSK Course 2 → cổng duyệt text (nguyên văn hoặc tự soạn có ghi chú).
+2. **Nguồn 課文 (cổng a):** trích nguyên văn từ `raw/New HSK Course 2.pdf` (text layer) → cổng duyệt text đã trích.
 3. **Experience Designer:** map → `buoiXX.json` (đúng thứ tự block, action title, ghost-deck test).
 4. **Assets:** fetch ảnh · (GIF nét tuỳ chọn) · edge-tts audio → soát 多音字/儿化.
 5. **Render pptx:** `build_deck.py`.
@@ -167,29 +156,29 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 
 ## 10. Đặt tên & syllabus index
 
-- Tất cả buổi đánh số 2 chữ số theo vị trí: `buoi01_thoiquen`, `buoi02_ngoaihinh_trangphuc`, `buoi03_anuong`, `buoi04_sothich_giaitri`, `buoi05_thethao`, `buoi06_dongvat_thucung`, `buoi07_thoitiet`, `buoi08_giaothong`, `buoi09_dulich`, `buoi10_hoctap`, `buoi11_congviec_giaotiep`, `buoi12_muasam`, `buoi13_suckhoe`, `buoi14_camxuc`, `buoi15_kehoach`, `buoi16_capstone`; ôn: `on1_nguphap_1-8`, `on2_nguphap_9-16`.
-- `output/hsk2/README.md` = bảng syllabus 16 buổi + 2 ôn, map vị trí ↔ folder, ghi rõ chuẩn **3.0** + sách chính/tham khảo. Source of truth.
+- Tất cả buổi đánh số 2 chữ số theo bài sách: `buoi01_moian_vitquay`, `buoi02_giaothong`, `buoi03_dulich_xian`, `buoi04_trangphuc_mausac`, `buoi05_thamnha` (lồng động vật/thú cưng), `buoi06_sinhnhat`, `buoi07_thethao`, `buoi08_trinho_sosanh`, `buoi09_douong`, `buoi10_thicu`, `buoi11_monan_yeuthich`, `buoi12_thoitiet`, `buoi13_hoctiengtrung`, `buoi14_letet`, `buoi15_kehoach`; ôn: `on1_bai1-8`, `on2_bai9-15`.
+- `output/hsk2/README.md` = bảng syllabus 15 buổi + 2 ôn, map bài sách ↔ folder, ghi rõ chuẩn **3.0** + sách chính (New HSK Course 2)/tham khảo (Hán ngữ 第一册·下). Source of truth.
 - `meta.lesson` mỗi JSON: `"HSK2 · Buổi X"`.
 
 ## 11. Chiến lược giao (de-risk)
 
 - **2 pilot trước:**
-  - `buoi02_ngoaihinh_trangphuc` — chốt khuôn buổi có **比 (so sánh)**, block đầy đủ, phần Viết 3.0 trong bài tập.
-  - `buoi05_thethao` — chốt khuôn **得 (bổ ngữ trình độ)** + chủ đề mới (thể thao) user yêu cầu.
+  - `buoi01_moian_vitquay` (Bài 1) — chốt khuôn buổi mở đầu: 是…的 / 吧(2) / 请-让-叫, block đầy đủ, phần Viết 3.0.
+  - `buoi07_thethao` (Bài 7) — chốt khuôn buổi có **得 (bổ ngữ trình độ)** + **比较句** + chủ đề thể thao user quan tâm.
 - User duyệt 2 pilot → sản xuất phần còn lại theo lô + review.
-- Thứ tự sản xuất còn lại: theo syllabus (01 → 03 → 04 → 06 → 07 → 08 → [Ôn 1] → 09 → … → 16 → [Ôn 2]).
+- Thứ tự sản xuất còn lại: theo syllabus (02 → 03 → 04 → 05 → 06 → 08 → [Ôn 1] → 09 → … → 15 → [Ôn 2]).
 - **Phase cuối:** trang từ vựng theo buổi (§14) sau khi vocab đã chốt.
 
 ## 12. Tiêu chí hoàn thành (verification)
 
-- [ ] 16 buổi + 2 ôn đủ deliverable (slide pptx + audio, baitap 4 phần **có Viết 3.0**, bài đọc + audio, footer Hán ngữ Q2).
+- [ ] 15 buổi + 2 ôn đủ deliverable (slide pptx + audio, baitap 4 phần **có Viết 3.0**, bài đọc + audio, footer Hán ngữ 第一册·下).
 - [ ] Mỗi buổi có block **10 câu khẩu ngữ thông dụng**.
 - [ ] **Không từ nào trùng 150 từ HSK1** trong danh sách 生词 (đối chiếu checklist).
-- [ ] Tổng vocab ≈ mục tiêu sách chính (~200 từ mới + mở rộng), phủ đủ nhóm chủ đề (gồm giải trí/thể thao/sở thích/động vật/thú cưng), không trùng giữa các buổi.
-- [ ] 45 điểm ngữ pháp 3.0 đều có buổi phụ trách (đối chiếu 语法表 3.0).
+- [ ] Tổng vocab khớp 词汇表 sách (~200 + mở rộng), + động vật/thú cưng lồng ở Bài 5, không trùng giữa các buổi.
+- [ ] 45 điểm ngữ pháp (小语讲堂) đều có buổi phụ trách (đối chiếu mục lục sách).
 - [ ] Mỗi pptx render + mở được.
 - [ ] Audio soát 多音字/儿化, đọc chậm.
-- [ ] 課文: nguyên văn New HSK Course 2 (web-search verified) HOẶC tự soạn có ghi chú rõ.
+- [ ] 課文: nguyên văn trích từ `raw/New HSK Course 2.pdf` (text layer), đúng bài.
 - [ ] Bài tập qua cổng kiểm tra đáp án AI.
 - [ ] `README.md` syllabus đầy đủ, ghi rõ chuẩn 3.0.
 - [ ] Trang từ vựng `output/study/hsk2/buoiXX/tu-vung.html` sinh đủ, flashcard + 🔊 chạy (Leitner trung tính, không neo Activation vault).
@@ -198,13 +187,14 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 
 - Như HSK1 §14: mỗi buổi 1 trang Quizlet `output/study/hsk2/buoiXX/tu-vung.html`, tái dùng engine vocab-study (bảng 生词 + flashcard active-recall + Leitner + chiết tự + mẹo nhớ Việt + 🔊).
 - **Bỏ neo Activation vault** (dữ liệu Activation là HSK6 cá nhân user) → Leitner khởi động box 1. Nguồn từ = 生词 trong `buoiXX.json`. KHÔNG đọc `raw/Từ vựng.xlsx`.
-- **Phase cuối**, sau khi vocab 16 buổi chốt.
+- **Phase cuối**, sau khi vocab 15 buổi chốt.
 
 ## 14. Rủi ro & mở
 
 - **Gap đầu vào HSK1→HSK2 — ĐÃ GIẢI QUYẾT:** user sẽ **build lại HSK1 theo chuẩn 3.0** (việc riêng, sau). Do đó HSK2 3.0 cứ giả định đầu vào HSK1 3.0 (~300 từ) như sách chính, **không cần buổi cầu nối**. Buổi 1 là chủ đề HSK2 đầy đủ.
-- **Nguyên văn 課文 New HSK Course 2:** sách mới (11/2025) → có thể thiếu bản online. Fallback: tự soạn có ghi chú (đã thống nhất §7). Nếu user có sách/PDF → chuyển sang bóc bằng doc-analyzer (chính xác hơn).
-- **Con số 3.0 lệch giữa nguồn:** chốt bằng 词汇表/语法表 chính thức + sách chính ở implementation.
+- **Nguyên văn 課文 — ĐÃ GIẢI QUYẾT:** có `raw/New HSK Course 2.pdf` (text layer) → trích thẳng, không cần web-search/tự soạn (§7).
+- **Con số 3.0:** chốt bằng 词汇表 sách (trang 141) + 小语讲堂 ở Task 0.1. (200 từ + mở rộng, 45 ngữ pháp — đã xác minh nguồn chính chủ.)
+- **Audio gốc sách:** New HSK Course 2 có audio chính thức. Mặc định tự sinh edge-tts; nếu user cấp MP3 gốc → ưu tiên dùng.
 - **Phần Viết (书写) 3.0:** cần xác nhận exercise-generator hỗ trợ dạng câu Viết; nếu chưa, bổ sung dạng mục trong schema (đánh giá ở đầu implementation).
 - **Hán ngữ mapping — ĐÃ CÓ:** user cấp `raw/Hán ngữ 2.pdf` (=《汉语教程》第一册·下, L16–30); mục lục đã OCR + map vào §4/§8. Còn thiếu điểm **比** (khả năng ở 第二册) → nếu cần, user cấp thêm 第二册; nếu không, footer buổi 2/6/7 ghi rõ 比 ngoài phạm vi sách này.
 

@@ -2,28 +2,28 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Xây bộ HSK2 chuẩn **3.0** — 16 buổi nội dung + 2 ôn, trọn gói slide/audio/bài tập(có Viết 3.0)/bài đọc, bám sách chính **New HSK Course 2**, tham khảo **Hán ngữ Q2**, không trùng từ HSK1.
+**Goal:** Xây bộ HSK2 chuẩn **3.0** — **15 buổi (bám sát 15 bài New HSK Course 2) + 2 ôn**, trọn gói slide/audio/bài tập(có Viết 3.0)/bài đọc; 生词 + 課文 + 45 ngữ pháp **trích trực tiếp từ `raw/New HSK Course 2.pdf`** (có text layer); footer tham khảo Hán ngữ 第一册·下; không trùng từ HSK1.
 
-**Architecture:** Pipeline nội dung dựa trên tooling có sẵn của vault (teaching-coach, exercise-generator, edge-tts). Mỗi buổi = 1 folder `output/hsk2/buoiXX_<slug>/` với `slide/` · `baitap/` · `doc/`. Quy trình mỗi buổi giống nhau (Procedure P) — chỉ khác dữ liệu. Làm 2 pilot trước (buổi 02 比 · buổi 05 得) để chốt khuôn, rồi nhân bản theo lô.
+**Architecture:** Pipeline nội dung trên tooling vault (teaching-coach, exercise-generator, edge-tts). Mỗi buổi = 1 folder `output/hsk2/buoiXX_<slug>/` với `slide/` · `baitap/` · `doc/`. Buổi = 1 bài sách. Quy trình mỗi buổi giống nhau (Procedure P). Làm 2 pilot (Bài 1 + Bài 7) chốt khuôn, rồi nhân bản.
 
-**Tech Stack:** Python 3.12 (python-pptx, Pillow, pypinyin, python-docx), edge-tts, build_deck.py / slide_audio.py / fetch_images.py (teaching-coach), build_worksheet.py / check_baitap.py (exercise-generator), gen_stroke_gif.py (tuỳ chọn, tái dùng HSK1).
+**Tech Stack:** Python 3.12 (pypdf, python-pptx, Pillow, pypinyin, python-docx), edge-tts, build_deck.py / slide_audio.py / fetch_images.py (teaching-coach), build_worksheet.py / check_baitap.py (exercise-generator), gen_stroke_gif.py (tuỳ chọn, tái dùng HSK1).
 
-**Spec:** `docs/superpowers/specs/2026-07-20-hsk2-full-course-design.md` — nguồn chân lý về chuẩn 3.0 (§2), syllabus 16 buổi (§4), vocab lõi (§5), cấu trúc slide (§6), nguồn 課文 (§7), Hán ngữ Q2 (§8), pipeline (§9), đặt tên (§10).
+**Spec:** `docs/superpowers/specs/2026-07-20-hsk2-full-course-design.md`. **Mục lục sách (nguồn chân lý syllabus):** `docs/superpowers/specs/hsk2-new-hsk-course-2-toc.md`.
 
 ## Global Constraints
 
-- **Python:** `PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"`. Chạy mọi lệnh **từ gốc repo** `c:/Tài liệu/ai-vault/CHINESE`.
-- **Chuẩn 3.0:** vocab/ngữ pháp bám **词汇表/语法表 3.0 + New HSK Course 2**. Số vận hành: ~200 từ mới + mở rộng, 45 điểm ngữ pháp.
-- **Đánh số:** tất cả buổi prefix 2 chữ số `buoiXX` (§10 spec). Ôn: `on1_nguphap_1-8`, `on2_nguphap_9-16`.
-- **CHỐNG TRÙNG HSK1 (ràng buộc cứng):** mọi 生词 phải KHÔNG nằm trong 150 từ HSK1 (đối chiếu Task 0.1). Từ trùng chỉ dùng lại trong câu ví dụ, không tính là từ mới.
-- **Mọi từ/câu tiếng Trung mới** phải có đủ **汉字 + pinyin + nghĩa Việt**.
-- **Lượng từ mới:** ~12–15 từ/buổi (nhịp HSK2, học viên đã qua HSK1).
-- **Thứ tự block slide (§6 spec):** `title → ôn buổi trước → mục tiêu → 生词 → ngữ pháp → 10 câu khẩu ngữ → hội thoại/課文 → bài đọc → footer Hán ngữ Q2 → lỗi người Việt → preview bài tập`. KHÔNG có block ngữ âm.
-- **Bài tập đủ 4 phần 3.0:** 听 (nghe) · 读 (đọc) · **书写/Viết** (sắp câu, điền chữ, viết câu ngắn) · HSKK (nói). Phần Viết là điểm mới bắt buộc.
-- **Audio đọc chậm:** slide `slide_audio.py --rate=-18%`; baitap `nghe` `--rate=-22%` (nhanh hơn HSK1 chút vì trình độ cao hơn), `noi_hskk` `--rate=-18%`. Giọng chính `zh-CN-XiaoxiaoNeural`.
-- **Cổng duyệt bắt buộc:** (a) text 課文 web-search đối chiếu New HSK Course 2 (hoặc tự soạn có ghi chú) trước khi dùng; (b) script 听力/HSKK trình user trước khi sinh MP3; (c) đáp án bài tập `check_baitap.py` + rà AI trước khi giao; (d) soát 多音字/儿化 mọi audio.
-- **Console Windows:** khi in 中文 debug, đặt `PYTHONIOENCODING=utf-8`.
-- **Git:** commit sau mỗi task, message tiếng Việt + trailer `Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`.
+- **Python:** `PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"`. Chạy từ gốc repo `c:/Tài liệu/ai-vault/CHINESE`.
+- **NGUỒN CHÂN LÝ = sách:** 生词/課文/45 ngữ pháp trích từ `raw/New HSK Course 2.pdf` (text layer sạch — dùng pypdf, KHÔNG bịa, KHÔNG web-search). Không tự nghĩ từ vựng.
+- **Buổi = bài:** 15 buổi ↔ 15 bài sách (mục lục TOC). Ôn: `on1_bai1-8` (sau bài 8), `on2_bai9-15` (sau bài 15).
+- **CHỐNG TRÙNG HSK1 (cứng):** mọi 生词 loại/đánh dấu từ đã có trong 150 từ HSK1 (Task 0.1).
+- **Động vật/thú cưng:** lồng **từ mở rộng** vào Bài 5 (thăm nhà bạn), đánh dấu "ngoài 200 từ sách". Không thêm buổi.
+- **Mọi từ/câu tiếng Trung** đủ **汉字 + pinyin + nghĩa Việt**.
+- **Thứ tự block slide:** `title → ôn buổi trước → mục tiêu → 生词 → ngữ pháp (小语讲堂) → 10 câu khẩu ngữ → hội thoại/課文 → bài đọc → footer Hán ngữ 第一册·下 → lỗi người Việt → preview bài tập`. KHÔNG block ngữ âm.
+- **Bài tập đủ 4 phần 3.0:** 听 · 读 · **书写/Viết** (sắp câu, điền chữ, viết câu ngắn) · HSKK.
+- **Audio đọc chậm:** slide `--rate=-18%`; baitap `nghe --rate=-22%`, `noi_hskk --rate=-18%`. Giọng chính `zh-CN-XiaoxiaoNeural`. (Nếu user cấp MP3 gốc sách → ưu tiên.)
+- **Cổng duyệt:** (a) text 課文 trích từ PDF → trình user duyệt; (b) script 听力/HSKK trình user trước khi sinh MP3; (c) `check_baitap.py` + rà đáp án AI; (d) soát 多音字/儿化 mọi audio.
+- **Console Windows:** in 中文 debug đặt `PYTHONIOENCODING=utf-8`.
+- **Git:** commit sau mỗi task, message tiếng Việt + trailer `Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`. **Nhánh `feat/hsk2-full-course`** (lưu ý: môi trường user đôi khi tự `git checkout` về nhánh khác — verify `git branch --show-current` trước mỗi thao tác file/commit).
 
 ---
 
@@ -31,258 +31,136 @@
 
 ```
 output/hsk2/
-  README.md                          # [Task 0.3] bảng syllabus 16 buổi + 2 ôn (source of truth, ghi rõ chuẩn 3.0)
-  buoiXX_<slug>/                      # mỗi buổi:
-    slide/
-      buoiXX.json                     # JSON teaching-coach
-      buoiXX-images.json              # manifest fetch ảnh
-      Buoi-XX-<Ten>.pptx              # render
-      assets/                         # *.jpg (fetch), *.gif (nét, tuỳ chọn), audio/slideNN.mp3
-    baitap/
-      baitap-buoiXX.json              # JSON exercise-generator (có phần Viết 3.0)
-      hocsinh/worksheet.docx + audio/*.mp3
-      dapan/dapan.docx
-    doc/
-      bai-doc.md                      # 課文: hán+pinyin+dịch (nguyên văn New HSK Course 2 hoặc tự soạn có ghi chú)
-      bai-doc.NN.mp3                  # audio edge-tts
-docs/superpowers/plans/hsk2-vocab-grammar-checklist.md   # [Task 0.1] checklist phủ từ 3.0 + chống trùng HSK1
+  README.md                          # [Task 0.3] syllabus 15 buổi + 2 ôn (source of truth, chuẩn 3.0)
+  buoiXX_<slug>/
+    slide/  buoiXX.json · buoiXX-images.json · Buoi-XX-<Ten>.pptx · assets/(*.jpg, *.gif?, audio/)
+    baitap/ baitap-buoiXX.json · hocsinh/worksheet.docx+audio/ · dapan/dapan.docx
+    doc/    bai-doc.md (課文 nguyên văn sách) · bai-doc.NN.mp3
+docs/superpowers/plans/hsk2-vocab-grammar-checklist.md   # [Task 0.1] 200 từ + 45 ngữ pháp trích từ PDF + cờ trùng HSK1
 ```
 
-Vocab-study phase (§13 spec) **tách plan riêng** — xem "Out of scope / follow-up".
+Slug 15 buổi: `buoi01_moian_vitquay`, `buoi02_giaothong`, `buoi03_dulich_xian`, `buoi04_trangphuc_mausac`, `buoi05_thamnha`, `buoi06_sinhnhat`, `buoi07_thethao`, `buoi08_trinho_sosanh`, `buoi09_douong`, `buoi10_thicu`, `buoi11_monan_yeuthich`, `buoi12_thoitiet`, `buoi13_hoctiengtrung`, `buoi14_letet`, `buoi15_kehoach`.
+
+Vocab-study phase (§13 spec) **tách plan riêng** — xem "Out of scope".
 
 ---
 
 ## PHASE 0 — Infrastructure
 
-### Task 0.1: Checklist vocab 3.0 + chống trùng HSK1
+### Task 0.1: Trích 词汇表 + 45 ngữ pháp từ sách + cờ trùng HSK1
 
-**Files:**
-- Create: `docs/superpowers/plans/hsk2-vocab-grammar-checklist.md`
+**Files:** Create `docs/superpowers/plans/hsk2-vocab-grammar-checklist.md`
 
-**Interfaces:**
-- Produces: (1) bảng từ HSK2 3.0 ↔ buổi phụ trách; (2) danh sách 150 từ HSK1 để đối chiếu loại trùng; (3) bảng 45 điểm ngữ pháp ↔ buổi.
-
-- [ ] **Step 1: Lấy danh sách từ + ngữ pháp HSK2 3.0**
-
-WebSearch/WebFetch **词汇表 3.0 cấp 2** + mục lục **New HSK Course 2** (200 từ mới + mở rộng) + **语法表 3.0 cấp 2** (45 điểm). Đối chiếu ≥2 nguồn (fltrp/newhskcourse.com, mandarinbean new-hsk-2, hskstory syllabus). Nếu user có PDF sách → bóc bằng doc-analyzer (chính xác hơn).
+- [ ] **Step 1: Bóc 词汇表 tổng (trang 141) + 生词 từng bài từ PDF**
+```bash
+PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"
+"$PY" -c "import pypdf,sys;sys.stdout.reconfigure(encoding='utf-8');r=pypdf.PdfReader('raw/New HSK Course 2.pdf');[print(f'==P{i+1}==',(r.pages[i].extract_text() or '')) for i in range(140,164)]"
+```
+Trích bảng `汉字 | pinyin | 词性 | nghĩa | bài`. Đối chiếu 生词 đầu mỗi bài (bóc trang tương ứng theo TOC) để gán từ ↔ bài.
 
 - [ ] **Step 2: Trích 150 từ HSK1 để loại trùng**
-
 ```bash
 grep -ho '"hz": *"[^"]*"' output/hsk1/*/slide/*.json | sort -u
 ```
-Expected: tập 汉字 HSK1 đã dạy → dùng làm bộ lọc chống trùng.
 
-- [ ] **Step 3: Viết checklist**
+- [ ] **Step 3: Viết checklist** — bảng vocab (thêm cột `trùng HSK1?`) + bảng 45 ngữ pháp `điểm 小语讲堂 | bài`. Đánh dấu từ mở rộng động vật/thú cưng (Bài 5).
 
-Bảng vocab: `汉字 | pinyin | nghĩa | buổi phụ trách (§4/§5) | trùng HSK1? | trạng thái`. Từ trùng HSK1 → đánh dấu, loại khỏi 生词 (chỉ dùng ôn trong câu). Bảng ngữ pháp: `điểm ngữ pháp | buổi phụ trách | nhóm (1 trong 6 nhóm mới)`.
+- [ ] **Step 4: Verify** — tổng ≈ 200 (+扩展) khớp 词汇表; mọi từ có bài; 45 ngữ pháp đủ; không từ trùng HSK1 lọt vào cột 生词 chính.
 
-- [ ] **Step 4: Verify — phủ đủ, không trùng HSK1, không trùng giữa buổi**
-
-Mọi từ 3.0 có buổi phụ trách; không từ nào trùng 150 HSK1 lọt vào cột 生词; 45 điểm ngữ pháp đều có buổi. Lệch → chỉnh phân bổ trong plan + ghi chú.
-
-- [ ] **Step 5: Commit**
-```bash
-git add docs/superpowers/plans/hsk2-vocab-grammar-checklist.md
-git commit -m "docs(hsk2): checklist vocab 3.0 + chống trùng HSK1 + map 45 ngữ pháp"
-```
+- [ ] **Step 5: Commit** `docs(hsk2): trích 200 từ + 45 ngữ pháp từ New HSK Course 2 + cờ trùng HSK1`
 
 ### Task 0.2: Đánh giá schema Viết (书写) 3.0 trong exercise-generator
 
-**Files:**
-- Read: `.claude/skills/exercise-generator/worksheet/schema.md`, `build_worksheet.py`
+**Files:** Read `.claude/skills/exercise-generator/worksheet/schema.md`, `build_worksheet.py`
 
-**Interfaces:**
-- Produces: kết luận exercise-generator có hỗ trợ dạng mục "Viết câu / sắp xếp câu / điền chữ Hán" chưa; nếu chưa → phương án (dùng dạng mục gần nhất vs mở rộng schema).
-
-- [ ] **Step 1: Rà schema hiện có**
-
-Đọc schema exercise-generator — liệt kê các dạng mục hỗ trợ (听/读/书写/HSKK). Xác định dạng nào dùng được cho Viết 3.0 (sắp xếp câu 连词成句, điền chữ Hán, viết câu theo mẫu/tranh).
-
-- [ ] **Step 2: Kết luận + quyết định**
-
-- Nếu schema đã đủ (có dạng sắp xếp câu/điền) → ghi mapping dạng mục → phần Viết. KHÔNG sửa skill.
-- Nếu thiếu → **cổng duyệt user**: đề xuất bổ sung dạng mục (qua close-session hoặc chỉnh schema exercise-generator có duyệt). Ghi quyết định vào README kỹ thuật.
-
-- [ ] **Step 3: Commit (nếu có ghi chú)**
-```bash
-git add output/hsk2/README.md
-git commit -m "docs(hsk2): kết luận schema Viết 3.0 cho exercise-generator"
-```
+- [ ] **Step 1:** Rà dạng mục hỗ trợ; xác định dạng dùng cho Viết 3.0 (连词成句, điền chữ, viết câu theo mẫu/tranh).
+- [ ] **Step 2:** Đủ → map dạng mục → phần Viết (không sửa skill). Thiếu → **cổng duyệt user** đề xuất bổ sung dạng mục. Ghi vào README kỹ thuật.
+- [ ] **Step 3:** Commit nếu có ghi chú.
 
 ### Task 0.3: README syllabus (source of truth)
 
-**Files:**
-- Create: `output/hsk2/README.md`
+**Files:** Create `output/hsk2/README.md`
 
-- [ ] **Step 1: Viết bảng syllabus 16 buổi + 2 ôn**
-
-Copy bảng §4 spec: cột `# | Buổi | Folder | Ngữ pháp | Chủ đề 3.0 | New HSK Course 2 (bài) | Hán ngữ Q2`. Header ghi rõ: **chuẩn 3.0**, sách chính New HSK Course 2, tham khảo Hán ngữ Q2. Mục "Ghi chú kỹ thuật" (kết luận schema Viết Task 0.2, quyết định GIF nét). Buổi chưa làm đánh dấu "⏳".
-
-- [ ] **Step 2: Verify** — mỗi dòng buổi trỏ folder đúng convention; ôn 1 sau buổi 8, ôn 2 sau buổi 16.
-
+- [ ] **Step 1:** Bảng 15 buổi + 2 ôn từ §4 spec: `# | Bài (课文) | Folder | Ngữ pháp (小语讲堂) | Chủ đề | Hán ngữ 第一册·下`. Header ghi rõ chuẩn 3.0, sách chính New HSK Course 2 (郭风岚/FLTRP), tham khảo Hán ngữ 第一册·下. Mục "Ghi chú kỹ thuật" (schema Viết, GIF nét). Buổi chưa làm "⏳".
+- [ ] **Step 2: Verify** — folder đúng convention; ôn 1 sau bài 8, ôn 2 sau bài 15.
 - [ ] **Step 3: Commit**
-```bash
-git add output/hsk2/README.md
-git commit -m "docs(hsk2): README syllabus 16 buổi + 2 ôn (source of truth, chuẩn 3.0)"
-```
 
 ---
 
-## PROCEDURE P — Quy trình sản xuất 1 buổi (dùng lại cho mọi task buổi)
+## PROCEDURE P — Quy trình sản xuất 1 buổi
 
-> Mỗi task buổi cung cấp **Param** rồi chạy P1–P9. Lệnh giống nhau, chỉ khác đường dẫn theo `SLUG`/`XX`.
+> Param mỗi buổi: `XX`, `SLUG`, `DIR=output/hsk2/buoiXX_SLUG`; **bài sách số N**; 生词 (Task 0.1, đã lọc trùng HSK1); ngữ pháp 小语讲堂 (TOC); 課文 sách; dòng Hán ngữ 第一册·下; lỗi người Việt.
 
-**Param mỗi buổi:** `XX` (số 2 chữ số); `SLUG`; `DIR=output/hsk2/buoiXX_SLUG`; danh sách **生词** (§5, đã lọc trùng HSK1) + nhóm; **điểm ngữ pháp** (§4); **課文** New HSK Course 2 bài tương ứng; **dòng Hán ngữ Q2**; ghi chú lỗi người Việt.
+**P1 — Master Teacher:** Đóng vai Master Chinese Teacher. Soạn: giải thích 小语讲堂 đúng bản chất; 生词 bài (đủ 汉字/pinyin/nghĩa, đã lọc trùng HSK1); ví dụ khẩu ngữ; **10 câu khẩu ngữ dùng-ngay**; hội thoại; 2–3 lỗi người Việt (đọc `common-vietnamese-mistakes.md`).
 
-**P1 — Master Teacher (nội dung):** Đóng vai Master Chinese Teacher (teaching-coach Giai đoạn A). Soạn: giải thích ngữ pháp đúng bản chất; ~12–15 生词 (đủ 汉字/pinyin/nghĩa, **đã đối chiếu checklist Task 0.1 — không trùng HSK1, không lấn buổi khác**); ví dụ khẩu ngữ đời thường; **10 câu khẩu ngữ thông dụng** dùng-ngay; hội thoại mẫu; 2–3 lỗi người Việt (đọc `.claude/skills/teaching-coach/references/common-vietnamese-mistakes.md`).
+**P2 — 課文 (cổng a):** Trích **nguyên văn** 課文 bài N từ `raw/New HSK Course 2.pdf` (pypdf, theo trang trong TOC). Chọn 課文 phù hợp (đối thoại chính + bài tự sự). **Trình user duyệt text đã trích** → ghi `DIR/doc/bai-doc.md` (汉字 nguyên văn + pinyin + dịch Việt).
 
-**P2 — Nguồn 課文 (cổng duyệt a):** WebSearch/WebFetch text 課文 New HSK Course 2 bài được giao. ≥1 nguồn tin cậy → dùng nguyên văn, ghi nguồn. Không tìm được → **tự soạn** đoạn đọc/hội thoại bám 生词+ngữ pháp, **đánh dấu rõ "tự soạn, không phải nguyên văn sách"**. **Trình user duyệt text** trước khi ghi `DIR/doc/bai-doc.md` (汉字+pinyin+dịch).
+**P3 — Experience Designer:** Map → `DIR/slide/buoiXX.json` (schema teaching-coach, đúng thứ tự block). Footer Hán ngữ 第一册·下 (bullets/reading); lỗi VN (table). Action title + ghost-deck test.
 
-**P3 — Experience Designer (JSON slide):** Map P1+P2 → `DIR/slide/buoiXX.json` theo schema teaching-coach (`.claude/skills/teaching-coach/pptx/README.md`) và **đúng thứ tự block** (Global Constraints). "10 câu khẩu ngữ" dùng `vocab`/`dialogue`/`bullets`; footer Hán ngữ Q2 dùng `bullets`/`reading`; lỗi người Việt dùng `table` (Sai|Đúng|Vì sao). Đặt **action title** + chạy ghost-deck test.
+**P4 — Ảnh:** `DIR/slide/buoiXX-images.json` → `fetch_images.py`. Expected `DONE: N/N`.
 
-**P4 — Ảnh minh hoạ:** `DIR/slide/buoiXX-images.json` = `{"out_dir":"DIR/slide/assets","images":[...]}`. Chạy `fetch_images.py`. Expected: `DONE: N/N images`.
+**P5 — GIF nét (tuỳ chọn):** chữ mới khó → `gen_stroke_gif.py`.
 
-**P5 — GIF nét (TUỲ CHỌN):** Chỉ nếu buổi có chữ mới khó → `gen_stroke_gif.py <hz> DIR/slide/assets/xx.gif` (tái dùng HSK1). Không bắt buộc.
+**P6 — Render slide + audio:** `build_deck.py` + `slide_audio.py --rate=-18%`. Soát 多音字/儿化 (得/着/行/为/教/还/长…).
 
-**P6 — Render slide + audio:**
-```bash
-"$PY" .claude/skills/teaching-coach/pptx/build_deck.py DIR/slide/buoiXX.json DIR/slide/Buoi-XX-<Ten>.pptx
-"$PY" .claude/skills/teaching-coach/pptx/slide_audio.py DIR/slide/buoiXX.json --rate=-18%
-```
-**Soát phát âm (cổng d):** nghe lại file chứa 多音字/儿化 (得/着/行/为/教/还…), sai thì đổi câu/thêm ngữ cảnh rồi `--force`.
+**P7 — Audio 課文:** edge-tts `--rate=-18%` → `DIR/doc/bai-doc.NN.mp3`. Soát như P6.
 
-**P7 — Audio bài đọc 課文:** edge-tts đọc chậm `--rate=-18%` → `DIR/doc/bai-doc.NN.mp3`. Soát như P6.
+**P8 — Bài tập (cổng b/c):** `DIR/baitap/baitap-buoiXX.json` (~25–30 mục) đủ **听/读/书写(Viết 3.0)/HSKK**, không trùng câu, đáp án 2 cấp. Cổng b: trình script audio duyệt. `check_baitap.py`. Sinh audio (`nghe --rate=-22%`, `noi_hskk --rate=-18%`). `build_worksheet.py`. Cổng c: rà đáp án AI. Append `state/session-log.md`.
 
-**P8 — Bài tập (exercise-generator):** Soạn `DIR/baitap/baitap-buoiXX.json` (~25–30 mục), **đủ 4 phần: 听/读/书写(Viết 3.0)/HSKK**, không trùng câu, phủ rộng vốn từ, đáp án 2 cấp cho tự luận. **Cổng b:** trình script 听力/HSKK cho user duyệt trước khi sinh MP3. `check_baitap.py` (không báo trùng). Sinh audio sau duyệt (`nghe --rate=-22%`, `noi_hskk --rate=-18%`). Render `build_worksheet.py`. **Cổng c:** rà đáp án AI. Append 1 dòng `state/session-log.md`.
+**P9 — README + commit:** README "⏳"→"✅". `feat(hsk2): buổi XX <chủ đề> — trọn gói`.
 
-**P9 — Cập nhật README + commit:** Đổi trạng thái buổi trong `output/hsk2/README.md` "⏳"→"✅". Commit:
-```bash
-git add output/hsk2/buoiXX_SLUG output/hsk2/README.md state/session-log.md
-git commit -m "feat(hsk2): buổi XX <chủ đề> — trọn gói (slide+audio+bài tập+bài đọc)"
-```
-
-**Verify hoàn thành buổi:** pptx mở được; số 生词 ~12–15 & khớp checklist & KHÔNG trùng HSK1; có block 10 câu khẩu ngữ; `doc/` có 課文 đã duyệt + audio; bài tập có **đủ phần Viết 3.0**; worksheet.docx KHÔNG chứa đáp án; dapan.docx có đáp án + 听力文本; audio đã soát 多音字/儿化.
+**Verify buổi:** pptx mở được; 生词 khớp bài sách & không trùng HSK1; có 10 câu khẩu ngữ; `doc/` có 課文 nguyên văn + audio; bài tập đủ **Viết 3.0**; worksheet KHÔNG có đáp án; dapan có đáp án + 听力文本; audio soát 多音字/儿化.
 
 ---
 
-## PHASE 1 — Pilot buổi 02 (比 · ngoại hình & trang phục)
+## PHASE 1 — Pilot Bài 1
 
-### Task 1: buoi02_ngoaihinh_trangphuc
+### Task 1: buoi01_moian_vitquay (Bài 1 她请我们吃了北京烤鸭)
+**Param:** `XX=01`, `SLUG=moian_vitquay`. Ngữ pháp: 语气助词"吧"(2) (phỏng đoán) · "是…的"句 · 请/让/叫 (biểu đạt nhờ vả). 生词: bài 1 (Task 0.1). 課文: 4 bài của Lesson 1 (trang 001+). Hán ngữ: L22 请…. Lỗi VN: 是…的 nhấn thời gian/nơi/cách; 吧 phỏng đoán vs đề nghị.
+- [ ] Step 1 P1 · Step 2 P2 · Step 3 P3 · Step 4 P4(+P5) · Step 5 P6+P7 · Step 6 P8 (Viết: 是…的) · Step 7 Verify · Step 8 P9.
 
-**Param:** `XX=02`, `SLUG=ngoaihinh_trangphuc`, `DIR=output/hsk2/buoi02_ngoaihinh_trangphuc`.
-- 生词 (§5 B2): 衣服, 穿, 帽子, 眼睛, 长, 短, 高, 白, 黑, 觉得, 比, 一样 (lọc trùng HSK1).
-- Ngữ pháp: **比 (so sánh 1: A比B+adj, KHÔNG dùng 很/非常)** · 跟…一样 · 觉得 · vị ngữ tính từ.
-- 課文: New HSK Course 2 bài ngoại hình/trang phục (P2 web-search/tự soạn).
-- Hán ngữ (第一册·下): L19 便宜一点儿 (⚠️ 比 có thể ở 第二册 — footer ghi rõ nếu thiếu).
-- Lỗi người Việt: 他比我很高 (thừa 很), lẫn 长 (cháng/zhǎng), thiếu 觉得.
+## PHASE 2 — Pilot Bài 7
 
-- [ ] **Step 1:** P1 — nội dung + 10 câu khẩu ngữ mô tả người/đồ.
-- [ ] **Step 2:** P2 — 課文 (duyệt text).
-- [ ] **Step 3:** P3 — `buoi02.json` đủ block đúng thứ tự.
-- [ ] **Step 4:** P4 (ảnh) + P5 (GIF nét tuỳ chọn).
-- [ ] **Step 5:** P6 (render+audio, soát) + P7 (audio 課文).
-- [ ] **Step 6:** P8 — bài tập trọn gói **có phần Viết 3.0** (sắp câu 比, điền chữ).
-- [ ] **Step 7:** Verify hoàn thành buổi.
-- [ ] **Step 8:** P9 — README ✅ + commit.
+### Task 2: buoi07_thethao (Bài 7 他篮球打得很好)
+**Param:** `XX=07`, `SLUG=thethao`. Ngữ pháp: **状态补语/得** (打得很好) · **比较句(1)(2)** (比). 生词: bài 7 (thể thao: 篮球/踢/打/运动…). 課文: Lesson 7 (trang 064+). Hán ngữ: L25 状态补语得. Lỗi VN: quên 得 (打篮球好→打得很好); 比 thừa 很 (他比我很高✗).
+- [ ] Step 1 P1 · Step 2 P2 · Step 3 P3 · Step 4 P4(+P5) · Step 5 P6+P7 · Step 6 P8 (Viết: câu 得/比) · Step 7 Verify · Step 8 P9.
 
-## PHASE 2 — Pilot buổi 05 (得 · thể thao)
-
-### Task 2: buoi05_thethao
-
-**Param:** `XX=05`, `SLUG=thethao`, `DIR=output/hsk2/buoi05_thethao`.
-- 生词 (§5 B5): 运动, 篮球, 足球, 游泳, 跑步, 踢, 打, 得, 累, 身体 (lọc trùng HSK1).
-- Ngữ pháp: **得 (bổ ngữ trình độ: 踢得很好/跑得很快)** · 正在…呢 (đang làm).
-- 課文: New HSK Course 2 bài thể thao/vận động.
-- Lỗi người Việt: quên 得 (他打篮球好→打得很好), lẫn 踢/打 (踢足球 vs 打篮球), vị trí 正在.
-
-- [ ] **Step 1:** P1. **Step 2:** P2. **Step 3:** P3. **Step 4:** P4(+P5). **Step 5:** P6+P7. **Step 6:** P8 (Viết: sắp câu có 得). **Step 7:** Verify. **Step 8:** P9.
-
-> **REVIEW GATE (bắt buộc):** Sau Task 1 + Task 2, **trình user 2 pilot** (pptx + worksheet + bài đọc). User duyệt khuôn (bố cục, chất lượng, phần Viết 3.0, độ khó) → mới sản xuất phần còn lại. Chỉnh khuôn nếu user yêu cầu.
+> **REVIEW GATE:** Sau Task 1+2, trình user 2 pilot (pptx + worksheet + bài đọc). Duyệt khuôn → sản xuất phần còn lại.
 
 ---
 
-## PHASE 3 — Sản xuất 14 buổi còn lại + 2 ôn (sau khi duyệt pilot)
+## PHASE 3 — 13 buổi còn lại + 2 ôn
 
-> Mỗi task chạy đúng **Procedure P** với Param của buổi. Thứ tự: 01 → 03 → 04 → 06 → 07 → 08 → **[Ôn 1]** → 09 → 10 → 11 → 12 → 13 → 14 → 15 → 16 → **[Ôn 2]**. Giao theo lô + review giữa các lô.
+> Procedure P với Param mỗi bài (ngữ pháp = 小语讲堂 bài đó, 生词/課文 từ PDF). Thứ tự: 02 → 03 → 04 → 05 → 06 → 08 → **[Ôn 1]** → 09 → 10 → 11 → 12 → 13 → 14 → 15 → **[Ôn 2]**.
 
-### Task 3: buoi01_thoiquen
-**Param:** `XX=01`, `SLUG=thoiquen`. 生词 (B1): 起床, 睡觉, 上班, 事情, 分钟, 小时, 时候, 以前, 以后, 一起, 正在. Ngữ pháp: 每 · thời lượng (V了+时间) · 从…到 (thời gian). 課文: routine. Lỗi VN: vị trí thời lượng, 以前/以后.
-- [ ] P1→P9 (không GIF bắt buộc).
+- [ ] **Task 3 — buoi02_giaothong** (Bài 2 还是打车去北大吧): 兼语句 · 还是…吧 · 多(概数) · cụm làm định ngữ. Hán ngữ L16/L17.
+- [ ] **Task 4 — buoi03_dulich_xian** (Bài 3 我想去西安旅游): 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因为…所以. Hán ngữ L29/L19/L27.
+- [ ] **Task 5 — buoi04_trangphuc_mausac** (Bài 4 你穿红色的很好看): "的"字短语 · 简单趋向补语(1)(2) · 都…了. Hán ngữ L19.
+- [ ] **Task 6 — buoi05_thamnha** (Bài 5 第一次去中国朋友家): 形容词重叠 · 什么的 · 结构助词"地" · 一…就…. **Lồng động vật/thú cưng (từ mở rộng ngoài 200).** Hán ngữ —.
+- [ ] **Task 7 — buoi06_sinhnhat** (Bài 6 小雪，生日快乐！): 状态补语(1)(2) [得]. Hán ngữ L25.
+- [ ] **Task 8 — buoi08_trinho_sosanh** (Bài 8 虽然你忘了，但是我记得): 虽然…但是 · 比较句(3) · 动词"离". Hán ngữ L28/L23.
+- [ ] **Task 9 — Ôn 1** (`on1_bai1-8`): ôn ngữ pháp bài 1–8 (是…的/吧, 结果补语/动词重叠/过/因为所以, 趋向补语, 形容词重叠/一…就, 得, 比较句1-3, 虽然但是/离). Slide ôn + bài tập tổng hợp (đủ 听/读/书写/HSKK). Không 生词 mới.
+- [ ] **Task 10 — buoi09_douong** (Bài 9 我去买杯奶茶): 时量补语(1) · 主谓谓语句 · 选择问句. Hán ngữ L30/L16.
+- [ ] **Task 11 — buoi10_thicu** (Bài 10 就要考试了): 要/快/快要/就要…了 · 动态助词"着"(1)(2). Hán ngữ —.
+- [ ] **Task 12 — buoi11_monan_yeuthich** (Bài 11 我最喜欢吃中国菜): 程度副词"最". Hán ngữ —.
+- [ ] **Task 13 — buoi12_thoitiet** (Bài 12 这里比北京冷多了): 比较句(4)(5)(6). Hán ngữ —.
+- [ ] **Task 14 — buoi13_hoctiengtrung** (Bài 13 我们爱上中文课): 双宾语句(2) · 比较句(7)(8). Hán ngữ L17.
+- [ ] **Task 15 — buoi14_letet** (Bài 14 一个人过年多没意思啊): 存现句 · 复合趋向补语. Hán ngữ L23.
+- [ ] **Task 16 — buoi15_kehoach** (Bài 15 我想再去一次中国): 动量补语(1)(2) · "有"字句(2). Hán ngữ —.
+- [ ] **Task 17 — Ôn 2** (`on2_bai9-15`): ôn ngữ pháp bài 9–15 (时量补语/选择问, 要快…了/着, 最, 比较句4-8, 双宾语, 存现/复合趋向, 动量补语/有字句) + từ vựng cụm + capstone hội thoại. Slide ôn + bài tập tổng hợp.
 
-### Task 4: buoi03_anuong
-**Param:** `XX=03`, `SLUG=anuong`. 生词 (B3, mở rộng, loại trùng HSK1): 鸡蛋, 羊肉, 鱼, 牛奶, 咖啡, 西瓜, 服务员, 餐厅, 完, 饱. Ngữ pháp: 了 (đổi trạng thái) · 太…了 · bổ ngữ kết quả 完 (吃完了). 課文: dietary habits. Lỗi VN: 了 lạm dụng, 完 vị trí.
-- [ ] P1→P9.
-
-### Task 5: buoi04_sothich_giaitri
-**Param:** `XX=04`, `SLUG=sothich_giaitri`. 生词 (B4): 爱好, 唱歌, 跳舞, 音乐, 玩(儿), 游戏, 有意思, 一边. Ngữ pháp: 喜欢/爱+V nâng cao · 一边…一边 · 会…的. 課文: hobbies & entertainment. Lỗi VN: 一边…一边 thiếu vế, 有意思/有意义.
-- [ ] P1→P9.
-
-### Task 6: buoi06_dongvat_thucung
-**Param:** `XX=06`, `SLUG=dongvat_thucung`. 生词 (B6): 猫, 狗, 鸟, 可爱, 养, 只, 大, 小, 比. Ngữ pháp: tồn tại 有/是 nâng cao · **比 (so sánh 2)** · tính từ mô tả. 課文: animals & pets. Lỗi VN: lượng từ 只, 比 thừa 很.
-- [ ] P1→P9. *(chủ đề mới user yêu cầu — chú ý vốn từ động vật thuộc 3.0, đối chiếu checklist)*
-
-### Task 7: buoi07_thoitiet
-**Param:** `XX=07`, `SLUG=thoitiet`. 生词 (B7, mở rộng, loại trùng HSK1): 晴, 阴, 雪, 春, 夏, 秋, 冬, 冷, 热, 最, 更. Ngữ pháp: **比 (so sánh 3, sâu: 比…更/一点儿/得多)** · 要…了 (sắp) · 最/更. 課文: weather & seasons. Lỗi VN: 比 + mức độ, 要…了.
-- [ ] P1→P9.
-
-### Task 8: buoi08_giaothong
-**Param:** `XX=08`, `SLUG=giaothong`. 生词 (B8): 火车, 出租车, 公共汽车, 飞机, 机场, 站, 路, 走, 离, 远, 近, 到. Ngữ pháp: 从…到 · 离 (khoảng cách) · bổ ngữ kết quả 到 (到 nơi). 課文: transport. Lỗi VN: 离 vs 从, 到 vị trí.
-- [ ] P1→P9.
-
-### Task 9: Ôn 1 (`on1_nguphap_1-8`)
-Ôn ngữ pháp buổi 1–8 (每/thời lượng, **比**, 了/太…了/完, 一边…一边/会…的, **得**/正在, 有/是, 要…了, 从…到/离/到). Slide ôn + bài tập tổng hợp (đủ 听/读/书写/HSKK). Không 生词 mới.
-- [ ] P1(ôn)→P3→P6→P8→P9.
-
-### Task 10: buoi09_dulich
-**Param:** `XX=09`, `SLUG=dulich`. 生词 (B9): 旅游, 照片, 地方, 过, 次, 回, 来, 去. Ngữ pháp: **过 (trải nghiệm)** · 了 (hoàn thành) · bổ ngữ xu hướng 来/去. 課文: travel experiences. Lỗi VN: 过 vs 了, 次/回.
-- [ ] P1→P9.
-
-### Task 11: buoi10_hoctap
-**Param:** `XX=10`, `SLUG=hoctap`. 生词 (B10): 课, 考试, 问题, 意思, 复习, 因为, 所以, 虽然, 但是, 懂. Ngữ pháp: **因为…所以** · **虽然…但是**. 課文: study experiences. Lỗi VN: dùng lẻ 1 vế liên từ.
-- [ ] P1→P9.
-
-### Task 12: buoi11_congviec_giaotiep
-**Param:** `XX=11`, `SLUG=congviec_giaotiep`. 生词 (B11): 公司, 帮, 帮助, 告诉, 介绍, 让, 给, 对, 回答, 打电话. Ngữ pháp: 给 sb V · 对 sb · 让 (khiến, cơ bản) · 帮. 課文: work & communication. Lỗi VN: vị trí 给/对, 让 cấu trúc.
-- [ ] P1→P9.
-
-### Task 13: buoi12_muasam
-**Param:** `XX=12`, `SLUG=muasam`. 生词 (B12, mở rộng, loại trùng HSK1): 卖, 贵, 便宜, 送, 千, 元, 又. Ngữ pháp: 多少钱 nâng cao · 千/元 · 又…又 · 有点儿 vs (一)点儿. 課文: shopping. Lỗi VN: 有点儿(chê)/一点儿, số lớn.
-- [ ] P1→P9.
-
-### Task 14: buoi13_suckhoe
-**Param:** `XX=13`, `SLUG=suckhoe`. 生词 (B13): 医院, 药, 生病, 休息, 累, 应该, 别, 疼(check). Ngữ pháp: 别 (khuyên/cấm) · 应该 · 快…了. 課文: health. Lỗi VN: 别 vs 不要, 应该 vị trí.
-- [ ] P1→P9.
-
-### Task 15: buoi14_camxuc
-**Param:** `XX=14`, `SLUG=camxuc`. 生词 (B14): 高兴, 快乐, 忙, 舒服, 聪明, 认真, 更, 非常, 还是. Ngữ pháp: 觉得 · 得 (ôn) · 更/最/非常 · 还是/或者 (lựa chọn). 課文: feelings & describing people. Lỗi VN: 还是 vs 或者.
-- [ ] P1→P9.
-
-### Task 16: buoi15_kehoach
-**Param:** `XX=15`, `SLUG=kehoach`. 生词 (B15): 打算, 希望, 准备, 第, 就, 才, 时间. Ngữ pháp: 打算 · 就/才 · 第 (thứ tự) · 会…的. 課文: plans & future. Lỗi VN: 就/才 sắc thái, 第 + 量词.
-- [ ] P1→P9.
-
-### Task 17: buoi16_capstone
-**Param:** `XX=16`, `SLUG=capstone`. Không 生词 mới lớn — hội thoại dài tổng hợp toàn khoá (mua sắm + du lịch + so sánh + trải nghiệm). Ngữ pháp: ôn tổng hợp. 課文: bài đọc dài tổng hợp. Bài tập mô phỏng đề HSK2 3.0 (đủ 听/读/书写/HSKK).
-- [ ] P1→P9.
-
-### Task 18: Ôn 2 (`on2_nguphap_9-16`)
-Ôn ngữ pháp buổi 9–16 (过, 因果/nhượng bộ, 给/对/让, 又…又/有点儿, 别/应该/快…了, 还是/或者, 就/才/第) + từ vựng theo cụm chủ đề. Slide ôn + bài tập tổng hợp.
-- [ ] P1(ôn)→P3→P6→P8→P9.
-
-> **FINAL GATE:** Sau tất cả buổi + 2 ôn, chạy verify tổng: `hsk2-vocab-grammar-checklist.md` mọi từ "✅ có buổi + đã soạn + không trùng HSK1"; 45 điểm ngữ pháp đã dạy; `output/hsk2/README.md` mọi buổi ✅; đối chiếu số từ ≈ mục tiêu sách chính. Trình user bàn giao.
+> **FINAL GATE:** verify tổng: `hsk2-vocab-grammar-checklist.md` mọi từ "✅ có bài + đã soạn + không trùng HSK1"; 45 ngữ pháp đã dạy; `output/hsk2/README.md` mọi buổi ✅; vocab khớp 词汇表 sách. Trình user bàn giao.
 
 ---
 
 ## Out of scope / follow-up
 
-**Phase từ vựng HSK2 theo buổi (§13 spec)** — trang `output/study/hsk2/buoiXX/tu-vung.html` kiểu Quizlet, bỏ neo Activation vault, Leitner box 1. **Tách plan riêng**, viết **sau khi vocab 16 buổi đã chốt** (nguồn = 生词 trong các `buoiXX.json`). Cần điều chỉnh tooling vocab-study (hardcode `hsk6`, đọc `raw/Từ vựng.xlsx`, đọc Activation) → quyết định adapter vs biến thể renderer khi tới nơi. Backlog, không chặn Phase 0–3.
-
-**Rebuild HSK1 lên 3.0** — việc riêng của user (đã nêu). Không thuộc plan này.
-
-**Seed kho đề `knowledge/hsk-exam-bank/hsk2.md`** — tách việc, không thuộc bộ giáo trình này.
+- **Trang từ vựng HSK2 theo buổi (§13 spec)** — `output/study/hsk2/buoiXX/tu-vung.html`, bỏ neo Activation, Leitner box 1. Tách plan riêng, sau khi vocab 15 buổi chốt. Cần chỉnh tooling vocab-study (hardcode hsk6, đọc xlsx, Activation).
+- **Rebuild HSK1 lên 3.0** — việc riêng của user.
+- **Seed kho đề `knowledge/hsk-exam-bank/hsk2.md`** — tách việc.
+- **第二册 Hán ngữ** — nếu user cấp, bổ sung footer cho các bài dùng 比较句/趋向补语/着/动量补语 (hiện 第一册·下 chỉ phủ một phần).
 
 ## Self-review notes
-- Spec §2 chuẩn 3.0 → Global Constraints + Task 0.1. §4 syllabus → Task 0.3 README + mọi task buổi. §5 vocab → Param từng task + Task 0.1 checklist (chống trùng HSK1). §6 block → Global Constraints + P3 (bỏ ngữ âm). §7 課文 → P2 (web-search→fallback tự soạn có ghi chú). §8 Hán ngữ (《汉语教程》第一册·下 L16–30, mục lục đã OCR) → P3 footer + Param (map đã có trong §4). §9 pipeline → Procedure P. §10 đặt tên → Global Constraints + tên folder từng task. §12 verify → "Verify hoàn thành buổi" + FINAL GATE. §13 vocab-study → follow-up. §14 rủi ro → Task 0.2 (schema Viết), P2 (課文 fallback), gap HSK1 đã giải quyết (user rebuild).
-- Điểm mới 3.0 so với plan HSK1: (a) phần Viết 3.0 bắt buộc trong P8/bài tập — cần Task 0.2 xác nhận schema; (b) chống trùng HSK1 thành ràng buộc cứng có checklist; (c) không có buổi/GIF ngữ âm; (d) 課文 sách mới → nhiều khả năng tự soạn có ghi chú.
-- Điểm cần user cấp: 第二册 Hán ngữ nếu muốn footer 比 (buổi 2/6/7) — hiện chỉ có 第一册·下; PDF/ảnh nội dung New HSK Course 2 để bóc doc-analyzer (hiện mới có bìa → 課文 dựa web-search→tự soạn).
+- Nguồn chân lý dời từ "web-search + tự nghĩ" → **PDF sách thật** (text layer). Task 0.1 bóc 词汇表 + 生词 + 45 ngữ pháp; P2 trích 課文 nguyên văn. Hết fallback tự soạn.
+- Syllabus = 15 bài thật (TOC). Pets lồng Bài 5. Pilot Bài 1 + Bài 7.
+- Điểm cần user (không chặn): MP3 gốc sách (nếu có, ưu tiên hơn edge-tts); 第二册 Hán ngữ (footer 比较句…); xác nhận schema Viết (Task 0.2).
