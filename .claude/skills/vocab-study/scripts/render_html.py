@@ -166,6 +166,12 @@ td.act{width:94px;text-align:center;padding:6px 4px;white-space:nowrap;}
 .st.a{background:#1e874b;}.st.b{background:#37a86a;}.st.c{background:#d1a015;}.st.d{background:#e8804a;}
 .rowedit{border:none;background:none;cursor:pointer;color:#aaa;font-size:14px;padding:2px 4px;margin-left:2px;}
 .rowedit:hover{color:var(--accent);}
+.flagbtn{border:none;background:none;cursor:pointer;color:#bbb;font-size:14px;padding:2px 3px;margin-left:2px;}
+.flagbtn:hover{color:#e2661c;}
+.flagbtn.on{color:#e2661c;}
+tr.flagged{background:#fff6e5!important;}
+tr.flagged td.w{border-left:3px solid #e2661c;}
+.flagcnt{margin-left:6px;font-size:11px;font-weight:600;color:#e2661c;background:#fff1de;border:1px solid #f3d9b8;border-radius:4px;padding:0 5px;white-space:nowrap;}
 td.w{font-weight:600;font-size:16px;}
 td:nth-child(2),td:nth-child(3),td:nth-child(4),td:nth-child(5){white-space:nowrap;}
 td:nth-child(3){color:#2f855a;}
@@ -275,9 +281,27 @@ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{};}catch(e){r
 function store(o){localStorage.setItem(KEY,JSON.stringify(o));}
 var DB=load();
 function rec(w){if(!DB[w])DB[w]={};return DB[w];}
-function initRow(tr){var w=tr.getAttribute('data-w');var r=DB[w];if(!r)return;
-  var c=tr.querySelectorAll('td.data');for(var i=0;i<c.length;i++){if(r[i]!=null)c[i].textContent=r[i];}
-  if(r._stale){tr.classList.add('stale');staleBadge(tr);}}
+/* ===== cờ đánh dấu dòng đang học (tracking vị trí dừng buổi trước) ===== */
+var FKEY='hsk6vocab_flag_v1';
+function fload(){try{return JSON.parse(localStorage.getItem(FKEY))||{};}catch(e){return {};}}
+function fsave(){localStorage.setItem(FKEY,JSON.stringify(FLAGS));}
+var FLAGS=fload();
+function applyFlag(tr){var w=tr.getAttribute('data-w');var on=!!FLAGS[w];
+  tr.classList.toggle('flagged',on);
+  var b=tr.querySelector('.flagbtn');if(!b)return;
+  b.textContent=on?'🚩':'⚑';b.classList.toggle('on',on);
+  b.title=on?'Bỏ đánh dấu (đang học tới đây)':'Đánh dấu: đang học tới đây';}
+function toggleFlag(btn){var tr=btn.closest('tr');var w=tr.getAttribute('data-w');
+  FLAGS[w]=!FLAGS[w];if(!FLAGS[w])delete FLAGS[w];fsave();
+  applyFlag(tr);updateBaiFlagCount(tr.closest('details'));}
+function updateBaiFlagCount(det){if(!det)return;
+  var n=det.querySelectorAll('.panel.p1 tbody tr.flagged').length;
+  var b=det.querySelector('.flagcnt');if(!b)return;
+  b.textContent=n?('🚩'+n):'';b.classList.toggle('hidden',!n);}
+function initRow(tr){var w=tr.getAttribute('data-w');var r=DB[w];
+  if(r){var c=tr.querySelectorAll('td.data');for(var i=0;i<c.length;i++){if(r[i]!=null)c[i].textContent=r[i];}
+    if(r._stale){tr.classList.add('stale');staleBadge(tr);}}
+  applyFlag(tr);}
 function staleBadge(tr){if(tr.querySelector('.stalebadge'))return;
   var b=document.createElement('span');b.className='stalebadge';
   b.title='Bạn đã sửa 生词 — Pinyin/释义/Nghĩa/例句 có thể chưa khớp. Chạy lại pipeline hoặc nhờ cập nhật.';
@@ -342,7 +366,10 @@ function speak(t){
   }catch(e){}
 }
 function spkRow(btn){speak(btn.closest('tr').getAttribute('data-w'));}
-document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('#root tbody tr').forEach(initRow);});
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('#root tbody tr').forEach(initRow);
+  document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
+});
 
 /* ===== 🎓 Học từ vựng: flashcard active-recall + Leitner ===== */
 var SKEY='hsk6srs_v1';
@@ -499,7 +526,7 @@ P = ['<!doctype html>', '<html lang="vi"><head><meta charset="utf-8">',
 for num, header, rows, exp, btitle in bai:
     cnt = ('%d từ · %d nhóm 拓展' % (len(rows), len(exp))) if exp else ('%d từ' % len(rows))
     tlabel = ('<span class="btitle"> — %s</span>' % esc(btitle)) if btitle else ''
-    P.append('<details data-bai="%d" data-baititle="%s"><summary><span class="arw">▸</span>Bài %d%s<span class="cnt">%s</span></summary>' % (num, esc(btitle), num, tlabel, cnt))
+    P.append('<details data-bai="%d" data-baititle="%s"><summary><span class="arw">▸</span>Bài %d%s<span class="flagcnt hidden"></span><span class="cnt">%s</span></summary>' % (num, esc(btitle), num, tlabel, cnt))
     P.append('<div class="baitools"><button class="studybtn" onclick="startStudy(this)">🎓 Học bài này</button>')
     if exp:
         P.append('<button class="tabbtn on" onclick="tab(this,1)">Từ vựng (%d)</button>'
@@ -511,6 +538,7 @@ for num, header, rows, exp, btitle in bai:
         w = r[0]
         cells = '<td class="w data">%s</td>' % esc(w) + "".join('<td class="data">%s</td>' % esc(c) for c in r[1:])
         act = ('<td class="act">%s<button class="spk" title="Nghe" onclick="spkRow(this)">🔊</button>'
+               '<button class="flagbtn" title="Đánh dấu: đang học tới đây" onclick="toggleFlag(this)">⚑</button>'
                '<button class="rowedit" title="Sửa dòng này" onclick="er(this)">✏️</button></td>') % status_cell(w)
         P.append('<tr data-w="%s" data-py="%s">%s%s</tr>' % (esc(w), esc(per_char_py(w)), act, cells))
     P.append('</tbody></table></div></div>')
