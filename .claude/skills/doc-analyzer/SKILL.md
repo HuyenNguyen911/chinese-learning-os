@@ -74,8 +74,13 @@ Output text được ghi cạnh file gốc: `{file_path}.txt` (text-PDF) hoặc 
 **Ngưỡng phát hiện scan:** trung bình < 25 ký tự/trang → coi là scan.
 **Số trang lớn:** scan > 100 trang → script cảnh báo `[doc-analyzer] Scan {N} trang, OCR có thể mất vài phút…` rồi vẫn chạy.
 **DPI:** mặc định 200. Nếu OCR ra chữ sai nhiều (chữ nhỏ/mờ) → chạy lại với `--dpi 300`.
+**OCR có target (`--pages`):** sách/PDF scan lớn (vài trăm trang) mà chỉ cần 1 chương → dùng `--pages START-END` (1-based, inclusive) để **chỉ OCR dải trang đó**, tránh OCR mù cả file:
+```bash
+python "{skill_dir}/pdf_to_text.py" "{file_path}" --pages 10-48
+```
+Output ghi ra tên có hậu tố dải trang, vd `{file_path}.p10-48.ocr.txt` (không đè cache OCR toàn bộ). Sai cú pháp → `ERROR BADPAGES`. Quy trình gợi ý: structure-scan (OCR vài trang mục lục) tìm dải trang cần → OCR target đúng dải đó.
 
-Nội dung file `pdf_to_text.py` (đặt trong thư mục skill):
+Nội dung file `pdf_to_text.py` (đặt trong thư mục skill — trích yếu; bản chạy có thêm hàm `parse_pages()` xử lý `--pages`):
 ```python
 import sys, os, subprocess, tempfile, argparse, shutil
 
@@ -84,6 +89,7 @@ ap.add_argument("pdf")
 ap.add_argument("--dpi", type=int, default=200)
 ap.add_argument("--lang", default="vie+eng+chi_sim")
 ap.add_argument("--scan-threshold", type=int, default=25)  # avg chars/page
+ap.add_argument("--pages", default=None)  # "5-48" (1-based, inclusive) → chỉ xử lý dải trang
 a = ap.parse_args()
 
 PDF = a.pdf

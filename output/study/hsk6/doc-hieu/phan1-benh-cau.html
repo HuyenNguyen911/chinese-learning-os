@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第一部分 · 找病句 · HSK6 阅读</title>
+</head>
+<body>
+<div class="wrap">
+<button class="themebtn" onclick="toggleTheme()" title="Đổi nền sáng/tối">◐</button>
+<header class="hero">
+  <h1>第一部分 · 找病句</h1>
+  <div class="sub">HSK6 阅读 · Câu 51–60 · Chọn câu SAI ngữ pháp</div>
+  <div class="src">Nguồn: 北大版《新HSK(六级)攻略·阅读》刘云主编 (2011) · bổ trợ: xulaoshiHSK (徐昌火) + thống kê học thuật</div>
+</header>
+
+<div class="tabwrap">
+  <div class="tabstrip" id="tabstrip"></div>
+  <div class="tabhint">◎ Cơ chế · 1–8 loại lỗi thường gặp · 9–12 môi trường dễ gài lỗi · chấm ✓ khi làm hết bài tập</div>
+</div>
+<div id="panel"></div>
+
+<div class="foot">Chinese Learning OS · Giáo án 阅读 HSK6 第一部分 · tự chứa, chạy offline · tiến độ lưu trên máy bạn</div>
+</div>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#1d2129; --muted:#6b7280; --line:#e6e8eb;
+  --brand:#c0392b; --brand-soft:#fdecea; --ok:#1a7f5a; --ok-soft:#e6f5ee;
+  --bad:#c0392b; --bad-soft:#fdecea; --warn:#b7791f; --warn-soft:#fdf3e2;
+  --zh:'Noto Serif SC','Songti SC','SimSun',serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#15171a;--card:#1e2126;--ink:#e8eaed;--muted:#9aa0a6;--line:#2c3036;
+        --brand:#ff6b5e;--brand-soft:#3a201d;--ok:#4ecb8d;--ok-soft:#17301f;
+        --bad:#ff6b5e;--bad-soft:#3a201d;--warn:#e0b060;--warn-soft:#332a15;}
+}
+:root[data-theme=dark]{--bg:#15171a;--card:#1e2126;--ink:#e8eaed;--muted:#9aa0a6;--line:#2c3036;
+        --brand:#ff6b5e;--brand-soft:#3a201d;--ok:#4ecb8d;--ok-soft:#17301f;
+        --bad:#ff6b5e;--bad-soft:#3a201d;--warn:#e0b060;--warn-soft:#332a15;}
+:root[data-theme=light]{--bg:#f6f7f9;--card:#fff;--ink:#1d2129;--muted:#6b7280;--line:#e6e8eb;
+        --brand:#c0392b;--brand-soft:#fdecea;--ok:#1a7f5a;--ok-soft:#e6f5ee;
+        --bad:#c0392b;--bad-soft:#fdecea;--warn:#b7791f;--warn-soft:#fdf3e2;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{max-width:820px;margin:0 auto;padding:16px 14px 90px}
+.zh{font-family:var(--zh)}
+header.hero{background:linear-gradient(135deg,var(--brand),#8e2a20);color:#fff;
+  border-radius:14px;padding:16px 18px;margin-bottom:12px}
+header.hero h1{margin:0 0 3px;font-size:1.3rem;letter-spacing:.5px}
+header.hero .sub{opacity:.92;font-size:.9rem}
+header.hero .src{opacity:.72;font-size:.74rem;margin-top:6px}
+.lead{color:var(--muted);font-size:.92rem;margin:-2px 0 12px}
+
+/* ---- tab strip ---- */
+.tabwrap{position:sticky;top:0;z-index:8;background:var(--bg);padding:6px 0 8px;margin-bottom:6px}
+.tabstrip{display:flex;gap:6px;overflow-x:auto;padding:2px;scrollbar-width:thin}
+.tabstrip::-webkit-scrollbar{height:6px}
+.tabstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:6px}
+.tab{flex:none;white-space:nowrap;font-size:.86rem;font-weight:600;padding:8px 12px;border-radius:10px;
+  border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer;
+  display:flex;align-items:center;gap:6px}
+.tab:hover{border-color:var(--brand)}
+.tab.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.tab .num{font-weight:800}
+.tab .dot{width:7px;height:7px;border-radius:50%;background:transparent;flex:none}
+.tab.done .dot{background:var(--ok)}
+.tab.active.done .dot{background:#fff}
+.tabhint{font-size:.75rem;color:var(--muted);margin:4px 4px 0;text-align:center}
+
+/* ---- panel content ---- */
+section.mv{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px}
+section.mv h2{margin:0 0 2px;font-size:1.3rem;font-family:var(--zh)}
+section.mv .h2vn{color:var(--muted);font-size:.88rem;margin-bottom:12px}
+.subhead{font-size:1rem;font-weight:700;margin:18px 0 8px;color:var(--brand);
+  display:flex;align-items:center;gap:8px}
+.subhead::before{content:'';width:4px;height:15px;background:var(--brand);border-radius:2px}
+.kv{display:flex;gap:10px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;
+  font-size:.92rem;margin-bottom:8px}
+.kv b{color:var(--brand);white-space:nowrap;flex:none}
+.bars{margin-top:6px}
+.bar{display:flex;align-items:center;gap:8px;font-size:.82rem;margin:4px 0}
+.bar .track{flex:1;height:9px;background:var(--line);border-radius:6px;overflow:hidden}
+.bar .fill{height:100%;background:var(--brand)}
+ol.steps{margin:0;padding-left:0;list-style:none;counter-reset:s}
+ol.steps li{position:relative;padding:10px 12px 10px 44px;border:1px solid var(--line);
+  border-radius:10px;margin-bottom:8px;counter-increment:s}
+ol.steps li::before{content:counter(s);position:absolute;left:10px;top:10px;background:var(--brand-soft);
+  color:var(--brand);width:24px;height:24px;border-radius:7px;display:flex;align-items:center;
+  justify-content:center;font-weight:700;font-size:.85rem}
+ol.steps li .t{font-weight:700;display:block;margin-bottom:2px}
+ol.steps li .c{font-size:.9rem}
+ol.steps li ul{margin:4px 0 0;padding-left:16px}
+ol.steps li ul li{all:unset;display:list-item;list-style:disc;margin:2px 0;font-size:.88rem}
+.callout{background:var(--brand-soft);border-left:4px solid var(--brand);border-radius:8px;
+  padding:10px 12px;font-size:.92rem;margin:6px 0 4px}
+.tbox .row{margin:9px 0;font-size:.94rem}
+.tbox .row b{color:var(--warn)}
+.ex-sai,.ex-dung{padding:8px 11px;border-radius:9px;margin-top:5px;font-family:var(--zh);font-size:1.02em}
+.ex-sai{background:var(--bad-soft)} .ex-dung{background:var(--ok-soft)}
+.ex-sai::before{content:'✗ ';color:var(--bad);font-family:sans-serif;font-weight:700}
+.ex-dung::before{content:'✓ ';color:var(--ok);font-family:sans-serif;font-weight:700}
+.worked{border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:10px}
+.worked .q{font-family:var(--zh);font-size:1.06em;margin-bottom:8px}
+.worked button.reveal{font-size:.82rem;background:var(--card);border:1px solid var(--brand);
+  color:var(--brand);border-radius:8px;padding:5px 12px;cursor:pointer}
+.worked .ans{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:.92rem}
+.worked.open .ans{display:block}
+.worked.open button.reveal{display:none}
+.scorebar{background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:9px 13px;
+  margin-bottom:12px;display:flex;align-items:center;gap:14px;font-size:.88rem;flex-wrap:wrap}
+.scorebar .big{font-size:1.1rem;font-weight:800}
+.scorebar .ok{color:var(--ok)} .scorebar .bad{color:var(--bad)}
+.scorebar button{margin-left:auto;font-size:.8rem;background:transparent;border:1px solid var(--line);
+  color:var(--muted);border-radius:8px;padding:5px 10px;cursor:pointer}
+.q{border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+.q .qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:.85rem;color:var(--muted)}
+.q .qhead .qn{background:var(--brand);color:#fff;width:23px;height:23px;border-radius:7px;
+  display:flex;align-items:center;justify-content:center;font-weight:700;flex:none}
+.q .prompt{font-size:.83rem;color:var(--muted);margin-bottom:6px}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;
+  padding:9px 11px;margin:6px 0;cursor:pointer;font-family:var(--zh);font-size:1.03em;
+  transition:.12s;background:var(--card)}
+.opt:hover{border-color:var(--brand)}
+.opt .let{font-family:sans-serif;font-weight:700;color:var(--muted);flex:none;width:20px}
+.opt.correct{background:var(--ok-soft);border-color:var(--ok)}
+.opt.correct .let{color:var(--ok)}
+.opt.wrong{background:var(--bad-soft);border-color:var(--bad)}
+.opt.wrong .let{color:var(--bad)}
+.opt.disabled{cursor:default}
+.q .explain{display:none;margin-top:10px;padding:10px 12px;border-radius:10px;
+  background:var(--brand-soft);font-size:.9rem}
+.q.answered .explain{display:block}
+.q .explain .lab{font-weight:700;color:var(--brand);margin-bottom:3px}
+.modnav{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+.modnav button{font-size:.86rem;font-weight:600;background:var(--card);border:1px solid var(--line);
+  color:var(--ink);border-radius:10px;padding:10px 14px;cursor:pointer;max-width:48%}
+.modnav button.next{background:var(--brand);color:#fff;border-color:var(--brand);margin-left:auto}
+.modnav button:disabled{opacity:.35;cursor:default}
+.foot{color:var(--muted);font-size:.78rem;text-align:center;margin-top:22px}
+.themebtn{position:fixed;right:14px;bottom:14px;z-index:9;background:var(--card);
+  border:1px solid var(--line);color:var(--ink);border-radius:999px;width:44px;height:44px;
+  font-size:1.2rem;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+</style>
+<script>
+const D = {"meta": {"phan": "第一部分 · 找病句", "phu_de": "HSK6 阅读 · Câu 51–60 · Chọn câu SAI ngữ pháp", "nguon": "北大版《新HSK(六级)攻略·阅读》刘云主编 (2011) · bổ trợ: xulaoshiHSK (徐昌火) + thống kê học thuật"}, "co_che": {"vi_tri": "Câu 51–60 (10 câu) của phần 阅读.", "yeu_cau": "4 phương án, chỉ 1 câu SAI ngữ pháp. Chọn câu SAI.", "do_dai": "Mỗi câu ~15–60 chữ. Nên ≤ 1 phút/câu.", "thoi_gian": "Cả phần 阅读 (50 câu) làm trong ~45 phút.", "ban_chat": "Chỉ cần PHÁT HIỆN câu sai — không phải chữa câu.", "uu_tien": "Phần lớn lỗi nằm ở thành phần câu (thiếu/thừa/sai vị trí) và 搭配 → luyện rút 主干 trước."}, "chien_thuat": [{"buoc": "Rút 主干", "noi_dung": "Tìm chủ–vị–tân. Đủ thành phần chưa? Chủ-vị-tân có hợp nhau không?"}, {"buoc": "Soi 枝叶", "noi_dung": "Định ngữ / trạng ngữ đặt đúng chỗ chưa? Tu sức có hợp trung tâm ngữ?"}, {"buoc": "Quét 5 từ khóa dễ gài bẫy", "noi_dung": "", "list": ["并列 (A、B、C…) → cùng loại? đúng thứ tự?", "否定 (不/没/避免/难道…吗) → đếm số phủ định", "介词 đầu câu (通过/根据/对于) → dễ mất chủ ngữ", "关联词 (因为…所以/只有…才) → đúng cặp, đúng logic?", "两面词 (能否/是否/好坏) → một mặt đối hai mặt?"]}, {"buoc": "Đọc lại nghĩa", "noi_dung": "Vẫn nghi → soi: logic ngược, mơ hồ 2 nghĩa, từ thừa trùng nghĩa."}, {"buoc": "Mẹo", "noi_dung": "Câu càng dài càng dễ sai. Không phân vân quá 1 phút."}], "trap_map": [{"id": 1, "nhom": "8 loại lỗi thường gặp", "ten_zh": "语序不当 (词序不当)", "ten_vi": "Sai trật tự từ", "dau_hieu": "Nhiều định ngữ/trạng ngữ; đọc nghe 'ngược tai'.", "cach_xu_ly": "Thứ tự định ngữ: của-ai → 这/那 → số lượng → tính chất → chất liệu. Trạng ngữ: thời gian trước, nơi chốn sau.", "vi_du_sai": "他率领岳家军打败敌人屡次。", "vi_du_dung": "他率领岳家军屡次打败敌人。 ('屡次' phải đứng trước động từ '打败')"}, {"id": 2, "nhom": "8 loại lỗi thường gặp", "ten_zh": "成分残缺 (成分缺失)", "ten_vi": "Thiếu thành phần câu", "dau_hieu": "Mở đầu bằng 在…下 / 经过 / 通过 + 使/让; hoặc câu rất dài.", "cach_xu_ly": "Rút 主干 xem đủ chủ–vị–tân chưa. Gặp '介词 + 使' → bỏ 1 trong 2.", "vi_du_sai": "在老师的教育下，使我提高了认识。", "vi_du_dung": "老师的教育使我提高了认识。 (bỏ '在…下') / 在老师的教育下，我提高了认识。 (bỏ '使')"}, {"id": 3, "nhom": "8 loại lỗi thường gặp", "ten_zh": "成分赘余 (成分冗余)", "ten_vi": "Thừa thành phần (trùng nghĩa)", "dau_hieu": "Hai từ trùng nghĩa nằm sát nhau: 约…左右, 特别…极了, 深爱…十分.", "cach_xu_ly": "Bỏ 1 từ bị trùng nghĩa.", "vi_du_sai": "他十分深爱他的祖国。", "vi_du_dung": "他深爱他的祖国。 ('深爱' đã có nghĩa 'yêu sâu đậm', '十分' thừa)"}, {"id": 4, "nhom": "8 loại lỗi thường gặp", "ten_zh": "句式杂糅", "ten_vi": "Lẫn lộn hai cấu trúc", "dau_hieu": "Trộn 2 cấu trúc: 对于…/在…上; 是为了…/以…为目的.", "cach_xu_ly": "Giữ 1 cấu trúc, bỏ 1.", "vi_du_sai": "对于中国经济出现的问题上，政府及时采取了措施。", "vi_du_dung": "对于中国经济出现的问题，政府… / 在中国经济出现的问题上，政府… (bỏ '对于' hoặc bỏ '上')"}, {"id": 5, "nhom": "8 loại lỗi thường gặp", "ten_zh": "逻辑不通", "ten_vi": "Sai logic / mâu thuẫn", "dau_hieu": "Đúng ngữ pháp nhưng vô lý: sai thứ tự, mâu thuẫn, đảo chủ–khách.", "cach_xu_ly": "Đọc nghĩa; xác định ai là chủ thể, ai là khách thể.", "vi_du_sai": "北京奥运会的成功举办，增强了中国人民无比的自信。", "vi_du_dung": "…增强了中国人民的自信。 ('无比' = tột cùng, đã tột cùng thì không 'tăng' thêm được → bỏ '无比')"}, {"id": 6, "nhom": "8 loại lỗi thường gặp", "ten_zh": "存在歧义", "ten_vi": "Mơ hồ (hiểu 2 nghĩa)", "dau_hieu": "Câu hiểu được 2 nghĩa: 数量词, đại từ 自己, từ đa nghĩa.", "cach_xu_ly": "Tự hỏi: có cách hiểu thứ hai không?", "vi_du_sai": "十几个学校的教授到北京大学参观学习。", "vi_du_dung": "Mơ hồ: '[十几个学校]的教授' hay '十几个[学校的教授]'? → viết rõ: 十几所学校的教授 / 十几位学校的教授."}, {"id": 7, "nhom": "8 loại lỗi thường gặp", "ten_zh": "词语搭配不当", "ten_vi": "Kết hợp từ không hợp", "dau_hieu": "Chủ–vị / vị–tân / tu sức–trung tâm không 'ăn' nhau.", "cach_xu_ly": "Rút 主干 ghép thử. Có 能否/是否 → coi chừng 'một mặt đối hai mặt'.", "vi_du_sai": "旅游业能够快速健康发展，取决于当地政府是否大力支持。", "vi_du_dung": "旅游业能否…发展，取决于…是否…支持。 ('能够' 1 mặt đối '是否' 2 mặt → đổi thành '能否')"}, {"id": 8, "nhom": "8 loại lỗi thường gặp", "ten_zh": "词语使用不当", "ten_vi": "Dùng sai từ", "dau_hieu": "Dùng nhầm từ: 只要↔只有, 对于↔对, giảm mà dùng '倍', thành ngữ sai.", "cach_xu_ly": "Nhớ các lỗi dùng từ điển hình.", "vi_du_sai": "只要准确用词，才能恰到好处地揭示事物特征。", "vi_du_dung": "只有准确用词，才能… ('…才' phải đi với '只有', không đi với '只要')"}, {"id": 9, "nhom": "4 môi trường dễ gài lỗi", "ten_zh": "并列结构", "ten_vi": "Cấu trúc liệt kê (A、B、C)", "dau_hieu": "Có dấu 、 liệt kê nhiều mục.", "cach_xu_ly": "Kiểm: cùng loại? cùng tầng? đúng thứ tự? có gây mơ hồ?", "vi_du_sai": "苹果、桃子、黄瓜等水果含有丰富的维生素。", "vi_du_dung": "'黄瓜' (dưa chuột) là rau, không phải '水果' → không được liệt kê chung."}, {"id": 10, "nhom": "4 môi trường dễ gài lỗi", "ten_zh": "多重否定", "ten_vi": "Phủ định nhiều lần", "dau_hieu": "不/没/避免/防止/切忌 + câu phản vấn 难道…吗.", "cach_xu_ly": "Đếm phủ định: 2 = khẳng định, 3 = phủ định. Ghép nghĩa cuối cùng.", "vi_du_sai": "我们应该尽量避免不犯错误或少犯错误。", "vi_du_dung": "'避免' + '不犯' = phủ định kép = 'nên phạm lỗi' (vô lý) → bỏ '避免': 我们应该尽量不犯错误或少犯错误。"}, {"id": 11, "nhom": "4 môi trường dễ gài lỗi", "ten_zh": "介词", "ten_vi": "Giới từ", "dau_hieu": "Câu có 通过/根据/由于/对于/从.", "cach_xu_ly": "Kiểm: thiếu chủ ngữ? đảo chủ–khách? dùng sai (对于→对)?", "vi_du_sai": "通过这次活动，使我明白了很多道理。", "vi_du_dung": "这次活动使我明白了… (bỏ '通过') / 通过这次活动，我明白了… (bỏ '使')"}, {"id": 12, "nhom": "4 môi trường dễ gài lỗi", "ten_zh": "关联词", "ten_vi": "Từ nối (quan hệ từ)", "dau_hieu": "Câu phức: 因为…所以 / 只有…才 / 虽然…但是.", "cach_xu_ly": "Kiểm: đúng cặp? đúng logic? thiếu vế? sai vị trí?", "vi_du_sai": "天然气的成因和石油相似，因为它分布的范围比石油广得多。", "vi_du_dung": "…相似，但是它分布的范围… (2 vế là quan hệ chuyển ý, không phải nhân quả → '因为' đổi '但是')"}], "vi_du_giai": [{"id": 1, "cau_zh": "岳飞是中国南宋时期的英雄，他率领岳家军打败敌人屡次。", "loai_bay": "语序不当", "giai_thich_vi": "'屡次' (nhiều lần) là trạng ngữ chỉ tần suất, phải đứng TRƯỚC động từ '打败': …屡次打败敌人. Đặt cuối câu là sai trật tự.", "trap_id": 1}, {"id": 2, "cau_zh": "在老师的教育下，使我提高了认识。", "loai_bay": "成分残缺 (thiếu chủ ngữ)", "giai_thich_vi": "'在…下' biến phần đầu thành trạng ngữ, rồi '使' lại đẩy 'chủ ngữ' xuống → cả câu KHÔNG có chủ ngữ. Sửa: bỏ '在…下' (老师的教育使我…) hoặc bỏ '使' (在老师的教育下，我提高了…). Đây là bẫy SỐ 1 hay gặp nhất.", "trap_id": 2}, {"id": 3, "cau_zh": "他十分深爱他的祖国。", "loai_bay": "成分赘余", "giai_thich_vi": "'深爱' bản thân đã có nghĩa 'yêu rất sâu (mức độ cao)'. Thêm '十分' phía trước là lặp nghĩa mức độ → thừa. Bỏ '十分'.", "trap_id": 3}, {"id": 4, "cau_zh": "我们在遇到问题时，应该多考虑考虑一下，不要盲目行事。", "loai_bay": "句式杂糅", "giai_thich_vi": "'考虑考虑' (láy động từ = làm nhẹ đi) và '考虑一下' là HAI cách nói cùng nghĩa, bị trộn vào nhau. Giữ 1 bỏ 1: 多考虑考虑 HOẶC 多考虑一下.", "trap_id": 4}, {"id": 5, "cau_zh": "北京奥运会的成功举办，增强了中国人民无比的自信。", "loai_bay": "逻辑不通 (mâu thuẫn trước–sau)", "giai_thich_vi": "'无比' nghĩa là 'không gì sánh được' = đã ở mức tột cùng. Cái gì đã tột cùng thì không thể '增强' (tăng thêm) nữa → mâu thuẫn logic. Bỏ '无比'.", "trap_id": 5}, {"id": 6, "cau_zh": "一个地区的旅游业能够快速健康发展，取决于当地政府是否大力支持。", "loai_bay": "搭配不当 (一面对两面)", "giai_thich_vi": "'能够…发展' chỉ nói MỘT mặt (phát triển được); '是否大力支持' nói HAI mặt (có/không). Một mặt ghép hai mặt → lệch nghĩa. Dấu hiệu: có '取决于' + '是否'. Sửa '能够' → '能否'.", "trap_id": 7}, {"id": 7, "cau_zh": "我们谁也不能否认地球不是圆的这个真理。", "loai_bay": "多重否定", "giai_thich_vi": "Đếm nhân tố phủ định: '不能' + '否认' + '不是' = BA lần phủ định = phủ định → thành 'địa cầu không tròn' (sai sự thật). Bỏ '不' trong '不是': …不能否认地球是圆的这个真理.", "trap_id": 10}], "drill": [{"id": 1, "trap_id": 1, "loai_bay": "语序不当", "options": ["合理安排时间，就等于节约时间。", "教师是一个需要不断学习的职业。", "你想提高汉语听力的话，应该看多点中文电影。", "在古代，人们把文学作品中除韵文以外的所有文章都称为散文。"], "dap_an_sai_index": 2, "giai_thich_vi": "“看多点” sai trật tự — phó từ “多” phải đứng TRƯỚC động từ: 应该多看点中文电影."}, {"id": 2, "trap_id": 1, "loai_bay": "语序不当", "options": ["我借了中文他的一本书。", "甲骨文是研究书法的宝贵材料。", "在一般的条件下，奇异果能保存20天左右。", "北极的环境变化会对中国气候产生很大的影响。"], "dap_an_sai_index": 0, "giai_thich_vi": "Định ngữ sở thuộc “他的” phải đứng trước, loại “中文” sát trung tâm: 我借了他的一本中文书."}, {"id": 3, "trap_id": 1, "loai_bay": "语序不当", "options": ["和成功一样，失败对于人们来说也是有价值的。", "景泰蓝又称珐琅，是传统北京著名的手工艺品。", "莲子对心和肾有益，吃莲子有缓解烦躁情绪的效果。", "一个人所属的社会阶层，主要由他受教育的程度、工作类型和经济收入等因素决定。"], "dap_an_sai_index": 1, "giai_thich_vi": "Định ngữ loạn thứ tự — sở thuộc “北京” phải lên trước: 北京著名的传统手工艺品."}, {"id": 4, "trap_id": 1, "loai_bay": "语序不当", "options": ["他对眼前的这个小镇忽然感到很陌生。", "他那光辉的大公无私形象，经常浮现在我的脑海中。", "汉字“土”最初的样子就像一棵苗破土而出。", "中国传统戏剧的舞台动作，可以通过高度的艺术真实来表现生活的真实。"], "dap_an_sai_index": 1, "giai_thich_vi": "Nhiều định ngữ sai thứ tự: 应“他那大公无私的光辉形象”."}, {"id": 5, "trap_id": 1, "loai_bay": "语序不当", "options": ["许多附近的公交车都能到达长城。", "在家人的悉心照料下，他很快恢复了健康。", "这栋建筑外观的颜色与周围草木的绿色相配合，能使人产生宁静的感觉。", "生命在进化中都有自身最适合的温度，进化程度越高，对最佳温度的要求越严格。"], "dap_an_sai_index": 0, "giai_thich_vi": "Định ngữ chỉ vị trí “附近的” phải đứng trước số lượng “许多”: 附近的许多公交车."}, {"id": 6, "trap_id": 2, "loai_bay": "成分残缺", "options": ["语言的起源和人类的起源一样久远。", "我们应该保护环境，废弃物的回收和利用。", "世界上本没有路，走的人多了，也就成了路。", "北京故宫是明清两朝皇帝的宫殿，是目前世界上最大的木结构建筑。"], "dap_an_sai_index": 1, "giai_thich_vi": "Vế sau chỉ là cụm danh từ, THIẾU vị ngữ: 应“做好废弃物的回收和利用”."}, {"id": 7, "trap_id": 2, "loai_bay": "成分残缺", "options": ["汉语是世界上历史最悠久的语言之一。", "他对儿童十分关注和喜爱，最终走上了儿童文学创作。", "科学上的许多重大突破，都是由一点点细微的成绩积累起来的。", "研究发现，90分钟的日间小睡对增强长期记忆力十分有效。"], "dap_an_sai_index": 1, "giai_thich_vi": "THIẾU tân ngữ: “走上了儿童文学创作” cần “…创作的道路”."}, {"id": 8, "trap_id": 2, "loai_bay": "成分残缺", "options": ["我们要像海绵一样吸收有用的知识。", "经过导游的介绍，使得我们对故宫有了更深的了解。", "现代的健康观主要包括身体健康、心理健康和良好的社会适应能力。", "严格控制地下水的过量抽取和及时回灌地下水，是防止地面塌陷最好的办法。"], "dap_an_sai_index": 1, "giai_thich_vi": "“经过…介绍” + “使得” → THIẾU chủ ngữ. Bỏ “经过” hoặc bỏ “使得”. (Bẫy hay gặp nhất!)"}, {"id": 9, "trap_id": 2, "loai_bay": "成分残缺", "options": ["灵感一般是在工作的时候产生的。", "教育对人的成长有非常重要，尤其在少儿时期。", "中国戏曲与希腊悲剧和喜剧、印度梵剧合称为世界三大古老戏剧。", "中国古代一直把园林看成一首诗或一幅画，而不是单纯的土木工程。"], "dap_an_sai_index": 1, "giai_thich_vi": "“有非常重要” THIẾU trung tâm ngữ: 应“有非常重要的作用/意义”."}, {"id": 10, "trap_id": 2, "loai_bay": "成分残缺", "options": ["“扬州八怪”是指清朝乾隆时期生活在江苏扬州的一批职业画家，他们有着相同的文艺思想和命运。", "将污染源从山区搬到近海，空气中的污染物就会大大减少，因为海陆风、季风会成为污染物扩散的有利条件。", "有很多人不开始行动，是因为觉得还缺少一些条件，但他们忘记了，其实很多条件是可以自己创造的。", "寓言故事大都篇幅短小、情节简单，讽刺意义和教育意义。"], "dap_an_sai_index": 3, "giai_thich_vi": "Vế cuối THIẾU vị ngữ: “讽刺意义和教育意义” cần “具有”: …具有讽刺意义和教育意义."}, {"id": 11, "trap_id": 3, "loai_bay": "成分赘余", "options": ["世界上最大的市场，在我们的脑袋里。", "中国著名画家徐悲鸿以骏马图闻名世界。", "为这种问题担心，实在是一种过虑的想法。", "一个好的教师，应该是一个懂得心理学和教育学的人。"], "dap_an_sai_index": 2, "giai_thich_vi": "“过虑” đã hàm nghĩa “lo nghĩ thái quá” — “的想法” thừa. Sửa: 实在是过虑了."}, {"id": 12, "trap_id": 3, "loai_bay": "成分赘余", "options": ["敦煌莫高窟里的塑像优美动人，艺术水平很高。", "每个人都拥有生命，但并非每个人都懂得生命、珍惜生命。", "音乐家用音乐表现丰富多彩的生活，是综合运用了不同手段的。", "根据统计，每年在上海“落脚”的鸟类至少有200多种、100万只以上。"], "dap_an_sai_index": 3, "giai_thich_vi": "“至少…多…以上” chồng nghĩa ước lượng, thừa. Giữ một: 至少有200种、100万只 / 有200多种、100多万只."}, {"id": 13, "trap_id": 3, "loai_bay": "成分赘余", "options": ["我们在纠正别人之前，应该先反省自己有没有犯错。", "在钟的王国里，可以堪称世界古钟之王的是北京大钟寺里的华严钟。", "柿子不能多吃，如果吃得过多，就有可能产生柿石，损害人体健康。", "楷书产生于汉代末期，成型于北魏，流行于东晋和南北朝，繁荣于唐代，并一直沿用至今。"], "dap_an_sai_index": 1, "giai_thich_vi": "“可以堪称” thừa — “堪称” = có thể gọi là, nên bỏ “可以”: 堪称世界古钟之王."}, {"id": 14, "trap_id": 3, "loai_bay": "成分赘余", "options": ["中国最早的雕塑是原始社会的陶制动物和商代的青铜器皿。", "比喻是语言之花，它能给语言增添色彩和芳香，使语言更吸引人。", "煮熟的米饭不宜久放，特别尤其在炎热的夏季，米饭很容易变馊。", "当我们劝告别人时，如果不顾及他的自尊心，那么再好的语言也是没有用的。"], "dap_an_sai_index": 2, "giai_thich_vi": "“特别尤其” trùng nghĩa (đều = đặc biệt). Giữ một: 特别在… / 尤其在…"}, {"id": 15, "trap_id": 3, "loai_bay": "成分赘余", "options": ["胡萝卜素和酒精一同进入人体会产生毒素，因此饮酒时不应吃胡萝卜。", "南戏是我国最早的剧种，大约有九百年左右的历史，是我国众多地方戏曲中年龄最大的剧种了。", "年画是中国特有的一种绘画体裁，一般在过年时张贴。", "我们不能认为学龄儿童的精神世界就是单纯地学习知识。"], "dap_an_sai_index": 1, "giai_thich_vi": "“大约…左右” chồng nghĩa ước lượng. Giữ một: 大约九百年 / 九百年左右."}, {"id": 16, "trap_id": 4, "loai_bay": "句式杂糅", "options": ["中国素有“瓷国”之称，在商代就已经开始生产瓷器。", "错误是不可避免的，但是我们不应该犯同样的错误。", "昆虫鸣叫是为了吸引异性同类，或对其他动物进行警告为目的。", "在切葱的时候，先把刀在冷水里浸一浸，就不会有蒜的气味刺激眼睛。"], "dap_an_sai_index": 2, "giai_thich_vi": "Lẫn “是为了…” và “以…为目的”. Giữ một: 是为了…警告 / 以…警告为目的."}, {"id": 17, "trap_id": 4, "loai_bay": "句式杂糅", "options": ["在过去，商店常将店名制作成牌匾，挂在店口，俗称招牌。", "一个常常说谎的人，即使有时说的是真话，人们也不会相信他。", "对于中国经济出现的问题上，中国政府及时发现苗头并采取了相应措施。", "存在生命现象是宇宙中的普遍规律，绝大多数科学家都认为确实有外星人存在。"], "dap_an_sai_index": 2, "giai_thich_vi": "Lẫn “对于…问题” và “在…问题上”. Bỏ “对于” hoặc bỏ “上”."}, {"id": 18, "trap_id": 4, "loai_bay": "句式杂糅", "options": ["这个世界并不缺少美，缺少的是发现美的眼睛。", "新中国发行的人物邮票大多以我国古今名人为主。", "从营养角度考虑，儿童的身高应从胎儿时期就开始重视。", "南拳是武术中的主要拳种之一，因流行于中国南方各省而得名。"], "dap_an_sai_index": 1, "giai_thich_vi": "Lẫn “大多是…” và “以…为主”. Giữ một: 大多是古今名人 / 以古今名人为主."}, {"id": 19, "trap_id": 4, "loai_bay": "句式杂糅", "options": ["书籍是全人类的营养品。", "交响乐通常有四个乐章组成。", "我国古代诗歌的特点是结构整齐、节奏鲜明。", "我们在吃蜂蜜时，最好用不超过60℃的温开水冲服。"], "dap_an_sai_index": 1, "giai_thich_vi": "Lẫn “有…” và “由…组成”. Sửa: 由四个乐章组成 / 有四个乐章."}, {"id": 20, "trap_id": 4, "loai_bay": "句式杂糅", "options": ["幻想一旦脱离了现实，神话也就不易广泛流传，小说创作也是如此。", "无论是在科学、艺术还是商业领域，均衡的法则总是偏爱那些执著的人。", "科学家发现，狮子往往从其他食肉动物那里窃取食物，而不乐意自己捕猎。", "小王在平凡的岗位上做出了不平凡的业绩，终于当上了全国劳动模范的光荣称号。"], "dap_an_sai_index": 3, "giai_thich_vi": "Lẫn “当上了…模范” và “获得…称号”. Sửa: 当上了全国劳动模范 / 获得了…光荣称号."}, {"id": 21, "trap_id": 5, "loai_bay": "逻辑不通", "options": ["我们学到的知识越多，就越知道自己的不足。", "农历由阴阳历、二十四节气和干支纪时三部分组成。", "营养平衡对维持中老年人的健康长寿起着重要作用。", "目前世界上除了多媒体形式的书以外，还有用纸印刷的书。"], "dap_an_sai_index": 3, "giai_thich_vi": "Logic ngược: sách giấy mới là chủ đạo. Nên: 除了纸质书以外，还有多媒体形式的书."}, {"id": 22, "trap_id": 5, "loai_bay": "逻辑不通", "options": ["重要的不是知识的数量，而是知识的质量。", "人们说话选词的时候总是尽可能地追求简短。", "在那种艰难的环境下，我对这些鼓励的话来说弥足珍贵。", "《甲骨文合集》是研究甲骨文的巨著，在国内外学术界享有极高声誉。"], "dap_an_sai_index": 2, "giai_thich_vi": "Đảo chủ–khách: chủ thể “quý giá” là “这些鼓励的话”. Sửa: 这些鼓励的话对我来说弥足珍贵."}, {"id": 23, "trap_id": 5, "loai_bay": "逻辑不通", "options": ["同一棵蔬菜的不同部位，由于颜色不同，维生素的含量也不同。", "中国画的绘画方法有工笔画法、写意画法和半工半写画法三种。", "北京市正在采用了立法的方式保护老祖宗留下来的历史文化遗产。", "今天要做的事情，我们不应留到明天。"], "dap_an_sai_index": 2, "giai_thich_vi": "Mâu thuẫn thì: “正在”(đang) + “了”(đã hoàn thành) chọi nhau. Bỏ “了”: 正在采用立法的方式."}, {"id": 24, "trap_id": 5, "loai_bay": "逻辑不通", "options": ["时间给我们经验，读书给我们知识。", "如果把森林比作语言，句子就是组成森林的树木。", "是饭前吃药还是饭后吃药，对药物的消化和吸收有重要影响。", "《离骚》是屈原的代表作，也是我国古典文学中最长的抒情诗。"], "dap_an_sai_index": 1, "giai_thich_vi": "Ví von lệch: 森林=语言 thì cây (树木) tương ứng “từ”, không phải “câu”. Logic không khớp."}, {"id": 25, "trap_id": 5, "loai_bay": "逻辑不通", "options": ["赋是一种很特别的体裁，它既像诗又像散文。赋发展成熟于汉代，在战国后期产生。", "我们只有心中先有目标，做事时才不会被各种现象迷惑。", "近半年的干旱和暴雨使西南地区地质塌陷现象更严重。", "鸡蛋与生姜、洋葱不宜放在一起，因为姜、葱气味会透过蛋壳进入鸡蛋。"], "dap_an_sai_index": 0, "giai_thich_vi": "Thứ tự thời gian ngược: “成熟于汉代” rồi “战国后期产生” — phải sinh ra trước, chín muồi sau."}, {"id": 26, "trap_id": 6, "loai_bay": "存在歧义", "options": ["十几个学校的教授到北京大学参观学习。", "只有真心爱人的人，才能获得别人的爱。", "画在墙壁或天花板上的壁画，可以说是世界上最早出现的图画。", "在中国园林里，山是永恒的象征，水是灵动的象征。"], "dap_an_sai_index": 0, "giai_thich_vi": "Mơ hồ: “[十几个学校]的教授” hay “十几个[学校的教授]”? Sửa rõ: 十几所学校的教授 / 十几位学校的教授."}, {"id": 27, "trap_id": 6, "loai_bay": "存在歧义", "options": ["生气是用别人的错误来惩罚自己。", "语言是作家与读者心灵沟通的桥梁。", "老师交代我们，今天下午要买好书。", "《山海经》保存了中国古代的许多神话。"], "dap_an_sai_index": 2, "giai_thich_vi": "Mơ hồ: “买好书” = mua (sách hay) / mua xong (sách). Hai nghĩa."}, {"id": 28, "trap_id": 6, "loai_bay": "存在歧义", "options": ["现在很多年轻人没有了解自己父母的想法。", "把语言转化为行动，比把行动转化为语言困难得多。", "颐和园西堤六桥中，玉带桥是拱桥，其余五座都是亭桥。", "冷冻食品会刺激咽喉部，使咳嗽加重。"], "dap_an_sai_index": 0, "giai_thich_vi": "Mơ hồ: “没有了解自己父母的想法” — chưa hiểu ý bố mẹ / bố mẹ chưa hiểu mình? “自己” chỉ ai không rõ."}, {"id": 29, "trap_id": 6, "loai_bay": "存在歧义", "options": ["每个人都希望他的朋友能严格要求自己。", "专家建议，不要在空腹或饱腹状态下晨练。", "判断一个人的价值，应看他奉献了什么，而不是取得了什么。", "有些演员脸上描绘出种种纹样的图案，称为脸谱。"], "dap_an_sai_index": 0, "giai_thich_vi": "Mơ hồ: “严格要求自己” — “自己” là bạn của anh ta hay chính anh ta? Đại từ chỉ không rõ."}, {"id": 30, "trap_id": 6, "loai_bay": "存在歧义", "options": ["科学不怕挑战，怕挑战的不是科学。", "张涛最近这段时间可烦了，公司里的同事谁也不搭理他。", "最佳生理状态和最不易受伤的时间是在黄昏前后。", "头发除了增加美感，还可以保护头脑。"], "dap_an_sai_index": 1, "giai_thich_vi": "Mơ hồ: “谁也不搭理他” — người khác không lý张涛, hay张涛không lý ai? Chủ–khách không rõ."}, {"id": 31, "trap_id": 7, "loai_bay": "词语搭配不当", "options": ["人们陶醉在这首优美的乐曲声中。", "我们可以通过快速走路的方式来消除疲劳。", "社会就像一艘船，我们每个人都应做好掌舵的准备。", "农历正月初一是中华民族最重大的传统节日“春节”。"], "dap_an_sai_index": 0, "giai_thich_vi": "Lượng từ lệch: “首” đi với “乐曲”, không với “声”. Sửa: 这首优美的乐曲 / 这优美的乐曲声."}, {"id": 32, "trap_id": 7, "loai_bay": "词语搭配不当", "options": ["我们要学会分享快乐，这样才能得到更多的快乐。", "绍兴属于很多名人的故乡，如鲁迅、蔡元培、周恩来等都是绍兴人。", "如果把语言比作高楼大厦，那么建筑这座大厦的材料就是词汇。", "戏曲在长期发展中逐渐形成唱、念、做、打等艺术手段。"], "dap_an_sai_index": 1, "giai_thich_vi": "Chủ–vị lệch: “绍兴属于…故乡” sai — Thiệu Hưng LÀ quê hương, không “thuộc về”. Sửa: 绍兴是很多名人的故乡."}, {"id": 33, "trap_id": 7, "loai_bay": "词语搭配不当", "options": ["北京大学图书馆是中国最早、藏书最多的大学图书馆。", "景德镇的瓷器造型轻巧、色彩绚丽、装饰精美，被称为中国的“瓷都”。", "没有友情的人是终身可怜的孤独者。", "文学是一种用语言塑造形象的艺术。"], "dap_an_sai_index": 1, "giai_thich_vi": "Chủ–tân lệch: “瓷器…被称为瓷都” — “瓷都” là nói về Cảnh Đức Trấn (nơi), không phải “瓷器”. Sửa: 景德镇被称为“瓷都”."}, {"id": 34, "trap_id": 7, "loai_bay": "词语搭配不当", "options": ["窑洞式住宅流行于河南、山西、陕西、甘肃等黄土地带。", "苏州的拙政园和无锡的寄畅园是中国江南私家园林的代表。", "是否具有积极的情绪，会对人体的生理功能起着良好的作用，有利于健康。", "青春在人的一生中只有一次。"], "dap_an_sai_index": 2, "giai_thich_vi": "Một mặt đối hai mặt: “是否具有…情绪”(2 mặt) chọi “起着良好的作用”(1 mặt). Sửa: “积极的情绪会对…起良好作用”."}, {"id": 35, "trap_id": 7, "loai_bay": "词语搭配不当", "options": ["没有受过伤的人才会讥笑别人身上的创痕。", "菊花是我国数千年来栽培历史最为漫长的一种花卉。", "先秦两汉的散文质朴自由，不受格式约束。", "叹气和正常呼吸在生理上不会造成影响，但在心理上却有极大差异。"], "dap_an_sai_index": 1, "giai_thich_vi": "Từ lệch: “历史” đi với “悠久”, không với “漫长”. Sửa: 栽培历史最为悠久的一种花卉."}, {"id": 36, "trap_id": 8, "loai_bay": "词语使用不当", "options": ["中国戏曲源于民间歌舞、说唱和滑稽戏。", "日本、朝鲜和越南都使用过汉字，因此情况各有不同。", "在造纸术产生之前，丝绸是最好的写字、绘画材料。", "生活就像一杯酒，不经多次提炼，就不会甘醇可口。"], "dap_an_sai_index": 1, "giai_thich_vi": "Dùng sai từ nối: dùng chữ Hán không phải nguyên nhân “tình hình khác nhau” → “因此” vô lý, đổi “但”."}, {"id": 37, "trap_id": 8, "loai_bay": "词语使用不当", "options": ["秦始皇陵兵马俑被称为世界第八大奇迹。", "各地民俗与当地的地域和气候有很大关系。", "只有到了冬天，人们才知道松树和柏树是最晚落叶的。", "在中国的一些景点，淡季的票价比旺季下降将近一倍。"], "dap_an_sai_index": 3, "giai_thich_vi": "Dùng sai “倍”: giảm/xuống KHÔNG dùng “倍”. Sửa: 下降将近一半 / 下降50%左右."}, {"id": 38, "trap_id": 8, "loai_bay": "词语使用不当", "options": ["我们如果不能创造幸福，就没有权利享受幸福。", "秦皇岛市评选十大历史遗迹，山海关长城首当其冲。", "适当晨练可使人全天充满活力，并可减少焦虑、改善睡眠质量。", "在戏曲中，“生”是男性角色的统称，“旦”是女性角色的统称。"], "dap_an_sai_index": 1, "giai_thich_vi": "Thành ngữ dùng sai: “首当其冲” = chịu tác động/tai họa ĐẦU TIÊN, không phải “đứng đầu/được chọn đầu”. Sửa: 名列榜首/位居第一."}, {"id": 39, "trap_id": 8, "loai_bay": "词语使用不当", "options": ["这个学校的氛围很好，老师非常敬爱学生。", "在中国，人们十分看重朋友或亲人的到来或离别。", "鬲在原始社会是烧煮食物的炊具。", "衣服沾上菜汁时，立即放入冷水，泡5到10分钟。"], "dap_an_sai_index": 0, "giai_thich_vi": "Dùng sai từ: “敬爱” dùng cho dưới→trên. Thầy với trò phải “关爱/爱护”: 老师非常关爱学生."}, {"id": 40, "trap_id": 8, "loai_bay": "词语使用不当", "options": ["不少人以为体格越小的狗危害越小，然而体型小的京巴狗很容易攻击人。", "这次选拔赛显示了女子体操队的冬训后果，虽然动作还不太稳定，但整体水平提高了。", "中国古代按钟的大小、音律把钟编成组，制成编钟。", "做菜用的酒称为“料酒”，能去腥增香。"], "dap_an_sai_index": 1, "giai_thich_vi": "Dùng sai từ: “后果” = hậu quả xấu. Ở đây nghĩa tốt → phải “成果/效果”: 显示了…冬训成果."}, {"id": 41, "trap_id": 9, "loai_bay": "并列结构", "options": ["女娲是中国上古神话中一位化育万物、造福人类的女神。", "你既然来到中国，就应该到北京、上海、昆明、长城去看一看。", "判断一个人时，我们不仅要看他说了什么，更要看他做了什么。", "《十面埋伏》是一首著名的琵琶独奏曲，16世纪以前就流传于中国民间。"], "dap_an_sai_index": 1, "giai_thich_vi": "Liệt kê lẫn loại: “北京、上海、昆明” là thành phố, “长城” là thắng cảnh — khác loại. Tách: …到北京、上海、昆明，去长城看看."}, {"id": 42, "trap_id": 9, "loai_bay": "并列结构", "options": ["根据绘画的内容，中国画大致可分为人物画、山水画、工笔画和花鸟画。", "中国是世界著名的产瓷国，也是最早制作瓷器的国家。", "许多词不只有一个意思，同一词在不同句子中可表示不同意义。", "中国古典园林以北方皇家园林和江南私家园林为代表。"], "dap_an_sai_index": 0, "giai_thich_vi": "Lẫn TIÊU CHÍ: 人物/山水/花鸟画 chia theo NỘI DUNG, còn 工笔画 chia theo KỸ PHÁP. Câu lại nói “根据内容” → 工笔画 lạc loài."}, {"id": 43, "trap_id": 9, "loai_bay": "并列结构", "options": ["我们的生命是前人生命的延续，也是后人生命的开端。", "中国诗歌源远流长，从《诗经》算起至今已有三千多年历史。", "在中国，汉白玉出产于北京、河北、辽宁、陕西等省份，大石窝镇最著名。", "发烧时不应喝茶，因为茶碱会升高体温并影响药效。"], "dap_an_sai_index": 2, "giai_thich_vi": "Lẫn loại: “北京” là thành phố trực thuộc TW, không phải “省份” — mâu thuẫn với chữ “等省份”. Sửa: …北京及河北、辽宁、陕西等省份."}, {"id": 44, "trap_id": 9, "loai_bay": "并列结构", "options": ["小孩子最好每天吃四餐，热量分配为：早餐20%，加餐15%，晚餐25%，午餐40%。", "知识就像人体的血液一样宝贵。", "热油快炒是我国传统的烹制技术。", "从市场买回的海带上一般附着一层白色粉末。"], "dap_an_sai_index": 0, "giai_thich_vi": "Liệt kê sai THỨ TỰ thời gian: 早餐→加餐→晚餐→午餐 lộn xộn; đúng phải 早餐→午餐→加餐→晚餐."}, {"id": 45, "trap_id": 9, "loai_bay": "并列结构", "options": ["花语是用花来表达人的感情或愿望，由社会历史条件逐渐形成而为大众公认。", "梦常能告诉我们一些醒着不能遇到的事情。", "春节期间，一只小羊风头正劲，吸引了电影界、电视界、传媒界、玩具界等各路专家的目光。", "地理气候条件对人的性格形成有较大影响。"], "dap_an_sai_index": 2, "giai_thich_vi": "Liệt kê CHỒNG TẦNG: “传媒界” bao trùm “电影界、电视界” — không cùng cấp, không nên liệt kê song song."}, {"id": 46, "trap_id": 10, "loai_bay": "多重否定", "options": ["谁也不能否认京剧不是中国最有名的剧种之一。", "儿童的心灵是敏感的，为着接受一切好东西而敞开。", "颐和园是中国皇家园林的代表作之一。", "学习汉字，只知读音不懂意思，就不能算真正掌握。"], "dap_an_sai_index": 0, "giai_thich_vi": "Ba lần phủ định: 不能+否认+不是 = phủ định → “Kinh kịch KHÔNG nổi tiếng” (ngược ý). Bỏ “不”: 不能否认京剧是…"}, {"id": 47, "trap_id": 10, "loai_bay": "多重否定", "options": ["难道我们应该禁止虐待宠物吗?", "中国古典舞讲究集中、夸张和虚拟。", "用加了面粉的热水洗碗，可把油腻的碗洗得很干净。", "科举制度是古代通过逐级考试选拔官员的制度。"], "dap_an_sai_index": 0, "giai_thich_vi": "Phản vấn + “禁止(虐待)” = phủ định kép → “nên ngược đãi thú cưng” (vô lý). Sửa: 难道我们应该虐待宠物吗? / 我们难道不应该禁止虐待宠物吗?"}, {"id": 48, "trap_id": 10, "loai_bay": "多重否定", "options": ["楼阁是中国风景名胜和园林中常出现的景观。", "我们应加强儿童安全教育，避免防止意外的发生。", "图腾是原始社会某民族或部落的崇拜物。", "榨菜是中国名特产之一，可用于佐餐、炒菜和做汤。"], "dap_an_sai_index": 1, "giai_thich_vi": "Chồng hai từ ngăn cản: “避免” và “防止” cùng nghĩa. Giữ một: 避免意外发生 / 防止意外发生."}, {"id": 49, "trap_id": 10, "loai_bay": "多重否定", "options": ["音乐的节奏、旋律、音色会影响人的情绪。", "苏州是一座水城，有“东方威尼斯”之称。", "乘飞机前不应吃得过饱，否则会加重心脏负担、引起恶心。", "拒绝别人邀请时应适当表达歉意，但切忌不要过分表达，以免对方觉得你不真诚。"], "dap_an_sai_index": 3, "giai_thich_vi": "“切忌” + “不要” = phủ định kép → “nên biểu lộ quá mức” (ngược ý). Bỏ “不要”: 切忌过分地表达."}, {"id": 50, "trap_id": 10, "loai_bay": "多重否定", "options": ["很多国家的专家提倡以大豆油代替动物油，以防止不发生心血管疾病，从而延长寿命。", "很多大型建筑如故宫、人民大会堂等使用汉白玉作建材。", "开朗的老师和严肃的老师都会影响学生。", "郊游时把锅烧热、涂姜汁再放油，鱼就不会粘锅。"], "dap_an_sai_index": 0, "giai_thich_vi": "“防止” + “不发生” = phủ định kép → “mong xảy ra bệnh” (ngược ý). Bỏ “不”: 以防止发生心血管疾病."}, {"id": 51, "trap_id": 11, "loai_bay": "介词", "options": ["苹果越新鲜营养越高，因此最好不要长期存放。", "经过历代茶农的辛勤培育，使得中国茶品种丰富、茶质精良。", "东城区有很多文化古迹，是反映北京古都风貌的地区。", "八大山人原名朱耷，是清代的一位大画家。"], "dap_an_sai_index": 1, "giai_thich_vi": "“经过…培育” + “使得” → THIẾU chủ ngữ (giới từ nuốt chủ ngữ). Bỏ “经过” hoặc “使得”."}, {"id": 52, "trap_id": 11, "loai_bay": "介词", "options": ["南京一直以来都有“六朝古都”之称。", "全球角度看，汽车是最严重的铅污染源。", "洗澡时水温应与体温接近，即40℃左右。", "《牡丹亭》是汤显祖的代表作，也是中国四大名剧之一。"], "dap_an_sai_index": 1, "giai_thich_vi": "THIẾU giới từ đầu câu: “全球角度看” cụt, cần “从”: 从全球角度看，汽车是…"}, {"id": 53, "trap_id": 11, "loai_bay": "介词", "options": ["中国早在七千年前就已开始种植水稻。", "关于同一句话的含义，我们在不同语境下可能有不同理解。", "颐和园十七孔桥是最长的园林桥，而苏州古园林多是小巧的曲桥。", "无论你什么时候开始，开始了就不要停止。"], "dap_an_sai_index": 1, "giai_thich_vi": "Dùng sai giới từ: “关于同一句话的含义” → nên “对于”: 对于同一句话的含义…"}, {"id": 54, "trap_id": 11, "loai_bay": "介词", "options": ["牡丹是中国的国花，河南洛阳的牡丹最出名。", "人在睡觉时对环境变化的适应能力会降低，容易受凉生病。", "从《红楼梦》中，让我们看到作家曹雪芹对那个时代的感受。", "很多人喜欢拿过去和现在作比较，许多痛苦就是这样产生的。"], "dap_an_sai_index": 2, "giai_thich_vi": "Giới từ “从…中” + “让” → THIẾU chủ ngữ. Sửa: 《红楼梦》让我们看到… / 从《红楼梦》中，我们看到…"}, {"id": 55, "trap_id": 11, "loai_bay": "介词", "options": ["蔬菜烹调时常损失大量维生素C，为减少损失，我们可以从菜里加点醋。", "行书是在楷书基础上产生的，实用性与艺术性结合得最好。", "中国文化遗产研究院收藏的古建筑木模型多制作于新中国成立初期。", "购物收据常含有一种化工原料双酚A，长期接触对健康不利。"], "dap_an_sai_index": 0, "giai_thich_vi": "Dùng sai giới từ: “从菜里加点醋” sai — “从” = ra khỏi. Phải “往/向菜里加点醋”."}, {"id": 56, "trap_id": 12, "loai_bay": "关联词", "options": ["人类不断地改造生物圈，生物圈只能按照自己的内在规律变化、发展。", "有的人本来很幸福却显得烦恼，有的人本来该烦恼却显得幸福。", "据统计，中国正在使用的方言就有80多种，已消亡的古代方言更难计算。", "糕点茶食是中国饮食文化的重要部分，有京式、广式和苏式。"], "dap_an_sai_index": 0, "giai_thich_vi": "THIẾU từ nối chuyển ý: hai vế đối lập, cần “虽然…但”: 人类虽然不断改造生物圈，但生物圈只能按自身规律…"}, {"id": 57, "trap_id": 12, "loai_bay": "关联词", "options": ["一个人只要真正了解一种艺术，才有资格判断其好坏。", "西安历史资源丰富，汉长安城遗址、大明宫都是古西安的一部分。", "啤酒最佳饮用温度为8—10℃，过量饮用冰镇啤酒会危害健康。", "有些东西拥有得过多，反而感觉不到它的美好。"], "dap_an_sai_index": 0, "giai_thich_vi": "Sai cặp: “…才” đi với “只有”, không đi với “只要”. Sửa: 一个人只有真正了解一种艺术，才有资格…"}, {"id": 58, "trap_id": 12, "loai_bay": "关联词", "options": ["铁的熔点比铜高，冶铁难度也大，然而铁器时代晚于青铜器时代。", "生豆浆加热到约90℃会起大量白沫，其实没熟，应再加热3—5分钟。", "调查显示，内科病人中近40%实际上是情绪或心理问题。", "词是中国文学史上一种重要的文学体裁。"], "dap_an_sai_index": 0, "giai_thich_vi": "Dùng sai từ nối: khó luyện sắt HƠN nên đồ sắt ra đời SAU — quan hệ nhân quả, không phải chuyển ý. “然而” đổi “因此/因而”."}, {"id": 59, "trap_id": 12, "loai_bay": "关联词", "options": ["文字是无声的，却能生动地刻画有声的音乐。", "将一捧盐放进一杯水里，杯中水平面不但不会升高，而且会有所降低。", "南瓜蔓梢由下垂转为上翘，就表明阴雨天气即将结束。", "在他面前你绝不会因他是名人而自卑，相反他会让你觉得彼此平等。"], "dap_an_sai_index": 1, "giai_thich_vi": "Sai cặp: “不但不…而且降低” —升高↔降低 là chuyển ý, không phải tăng tiến. Sửa: 非但不升高，反而会降低."}, {"id": 60, "trap_id": 12, "loai_bay": "关联词", "options": ["因为临时有事，我在长沙逗留了几天。", "蛙是水陆两栖动物，它们不仅在陆地上行动缓慢，但是到了水中就变得敏捷。", "入冬以来，天津水上公园开展了丰富多彩的冰上项目，深受市民欢迎。", "光合作用中，叶绿素对光能的吸收、传递和转化起着重要作用。"], "dap_an_sai_index": 1, "giai_thich_vi": "Sai cặp: “不仅…但是” không khớp. Sửa: 不仅…而且 (tăng tiến) hoặc 虽然…但是 (chuyển ý)."}]};
+const PKEY='benhcau_phan1_prog';
+const el=(t,c,txt)=>{const x=document.createElement(t);if(c)x.className=c;if(txt!=null)x.textContent=txt;return x;};
+const esc=s=>{const q=document.createElement('div');q.textContent=s;return q.innerHTML;};
+const LET=['A','B','C','D','E','F'];
+const TRAPS=D.trap_map;
+const ORDER=['co-che',...TRAPS.map(t=>t.id)];
+let CURRENT='co-che';
+
+const drillsFor=id=>D.drill.filter(q=>q.trap_id===id);
+const workedFor=id=>D.vi_du_giai.filter(v=>v.trap_id===id);
+const shortZh=z=>z.split(' (')[0];
+
+function loadProg(){try{return JSON.parse(localStorage.getItem(PKEY))||{};}catch(e){return {};}}
+function saveProg(p){try{localStorage.setItem(PKEY,JSON.stringify(p));}catch(e){}}
+let PROG=loadProg();
+function isDone(id){const t=drillsFor(id).length;const s=PROG[id];return t>0&&s&&s.ans>=t;}
+
+function toggleTheme(){const r=document.documentElement;
+  const cur=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+  r.setAttribute('data-theme',cur==='dark'?'light':'dark');}
+
+// ---------- TAB STRIP ----------
+function buildTabs(){
+  const strip=document.getElementById('tabstrip'); strip.innerHTML='';
+  ORDER.forEach(id=>{
+    const b=el('button','tab'); b.dataset.id=id;
+    let label;
+    if(id==='co-che') label='<span class="num">◎</span> Cơ chế';
+    else{const t=TRAPS.find(x=>x.id===id); label='<span class="num">'+id+'</span> <span class="zh">'+esc(shortZh(t.ten_zh))+'</span>';}
+    b.innerHTML=label+'<span class="dot"></span>';
+    b.onclick=()=>showModule(id);
+    strip.appendChild(b);
+  });
+  refreshTabs();
+}
+function refreshTabs(){
+  document.querySelectorAll('.tab').forEach(b=>{
+    const id=b.dataset.id==='co-che'?'co-che':+b.dataset.id;
+    b.classList.toggle('active',id===CURRENT);
+    b.classList.toggle('done',isDone(id));
+    if(id===CURRENT) b.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  });
+}
+
+// ---------- MODULE PANEL ----------
+function showModule(id){
+  CURRENT=id;
+  const panel=document.getElementById('panel'); panel.innerHTML='';
+  const sec=el('section','mv');
+  if(id==='co-che') buildOverview(sec); else buildTrap(sec,TRAPS.find(t=>t.id===id));
+  panel.appendChild(sec);
+  const idx=ORDER.indexOf(id);
+  const nav=el('div','modnav');
+  const prev=el('button',null,'‹ Phần trước');
+  if(idx>0) prev.onclick=()=>showModule(ORDER[idx-1]); else prev.disabled=true;
+  const next=el('button','next','Phần sau ›');
+  if(idx<ORDER.length-1) next.onclick=()=>showModule(ORDER[idx+1]); else next.disabled=true;
+  nav.appendChild(prev); nav.appendChild(next); panel.appendChild(nav);
+  refreshTabs();
+  window.scrollTo({top:0});
+}
+
+function buildOverview(sec){
+  sec.appendChild(Object.assign(el('h2'),{textContent:'Cơ chế thi & chiến thuật chung'}));
+  sec.appendChild(el('div','h2vn','Nắm luật chơi trước khi vào từng loại lỗi'));
+  const co=D.co_che;
+  [['Vị trí',co.vi_tri],['Yêu cầu',co.yeu_cau],['Độ dài',co.do_dai],['Thời gian',co.thoi_gian],['Bản chất',co.ban_chat]]
+    .forEach(([k,v])=>{const x=el('div','kv');x.innerHTML='<b>'+esc(k)+'</b><span>'+esc(v)+'</span>';sec.appendChild(x);});
+  const cal=el('div','callout'); cal.innerHTML='💡 '+esc(co.uu_tien); sec.appendChild(cal);
+  sec.appendChild(el('div','subhead','Quy trình làm bài (mọi loại)'));
+  const ol=el('ol','steps');
+  D.chien_thuat.forEach(s=>{const li=el('li');
+    let inner='<span class="t">'+esc(s.buoc)+'</span>';
+    if(s.noi_dung) inner+='<span class="c">'+esc(s.noi_dung)+'</span>';
+    if(s.list&&s.list.length){inner+='<ul>'+s.list.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';}
+    li.innerHTML=inner; ol.appendChild(li);});
+  sec.appendChild(ol);
+}
+
+function shuffled(n){const a=[...Array(n).keys()];
+  for(let i=n-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+function buildTrap(sec,t){
+  sec.appendChild(Object.assign(el('h2'),{textContent:t.ten_zh}));
+  sec.appendChild(el('div','h2vn',t.ten_vi+' · '+t.nhom));
+  const tbox=el('div','tbox');
+  tbox.innerHTML='<div class="row"><b>Dấu hiệu nhận biết:</b> '+esc(t.dau_hieu)+'</div>'+
+    '<div class="row"><b>Cách xử lý:</b> '+esc(t.cach_xu_ly)+'</div>'+
+    '<div class="ex-sai">'+esc(t.vi_du_sai)+'</div>'+
+    '<div class="ex-dung">'+esc(t.vi_du_dung)+'</div>';
+  sec.appendChild(tbox);
+  const wk=workedFor(t.id);
+  if(wk.length){
+    sec.appendChild(el('div','subhead','Ví dụ mẫu có lời giải'));
+    wk.forEach(v=>{const w=el('div','worked');
+      w.appendChild(el('div','q',v.cau_zh));
+      const b=el('button','reveal','Hiện lời giải ▾'); b.onclick=()=>w.classList.add('open'); w.appendChild(b);
+      const a=el('div','ans'); a.innerHTML=esc(v.giai_thich_vi); w.appendChild(a);
+      sec.appendChild(w);});
+  }
+  const ds=drillsFor(t.id);
+  sec.appendChild(el('div','subhead','Bài tập — chọn câu 病句 ('+ds.length+' câu)'));
+  sec.appendChild(Object.assign(el('p','lead'),{textContent:'Đề trích từ ngân hàng luyện thi 《6级攻略·阅读》. Vị trí A/B/C/D được xáo mỗi lần mở.'}));
+  const sb=el('div','scorebar');
+  sb.innerHTML='<span>Đã làm: <span class="big" id="ms-ans">0/'+ds.length+'</span></span>'+
+    '<span>Đúng: <span class="big ok" id="ms-ok">0</span></span>'+
+    '<span>Sai: <span class="big bad" id="ms-bad">0</span></span>';
+  const rb=el('button',null,'↻ Làm lại'); rb.onclick=()=>{delete PROG[t.id];saveProg(PROG);showModule(t.id);}; sb.appendChild(rb);
+  sec.appendChild(sb);
+  let ans=0,ok=0;
+  const upd=()=>{document.getElementById('ms-ans').textContent=ans+'/'+ds.length;
+    document.getElementById('ms-ok').textContent=ok;document.getElementById('ms-bad').textContent=(ans-ok);
+    PROG[t.id]={ans:ans,ok:ok,total:ds.length};saveProg(PROG);refreshTabs();};
+  ds.forEach((q,qi)=>{
+    const card=el('div','q'); card.dataset.done='0';
+    const hd=el('div','qhead'); hd.appendChild(el('span','qn',String(qi+1)));
+    const tg=el('span'); tg.innerHTML='<span class="lead" style="margin:0">'+esc(t.ten_vi)+'</span>'; hd.appendChild(tg);
+    card.appendChild(hd);
+    card.appendChild(el('div','prompt','Chọn câu CÓ lỗi ngữ pháp:'));
+    const order=shuffled(4);
+    order.forEach((origIdx,pos)=>{
+      const o=el('div','opt'); o.appendChild(el('span','let',LET[pos]));
+      o.appendChild(el('span',null,q.options[origIdx]));
+      o.onclick=()=>{
+        if(card.dataset.done==='1')return; card.dataset.done='1'; card.classList.add('answered');
+        card.querySelectorAll('.opt').forEach((n,i)=>{n.classList.add('disabled');
+          if(order[i]===q.dap_an_sai_index)n.classList.add('correct');
+          else if(i===pos)n.classList.add('wrong');});
+        ans++; if(origIdx===q.dap_an_sai_index)ok++; upd();
+      };
+      card.appendChild(o);
+    });
+    const correctPos=order.indexOf(q.dap_an_sai_index);
+    const ex=el('div','explain');
+    ex.innerHTML='<div class="lab">Đáp án: '+LET[correctPos]+' (câu SAI) — '+esc(t.ten_zh)+'</div>'+esc(q.giai_thich_vi);
+    card.appendChild(ex);
+    sec.appendChild(card);
+  });
+}
+
+buildTabs(); showModule('co-che');
+</script>
+</body>
+</html>
