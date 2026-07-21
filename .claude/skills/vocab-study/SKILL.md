@@ -36,6 +36,7 @@ author: Chinese Learning OS
 - **🧩 Chiết tự / mẹo nhớ**: phân rã bộ/thành phần + **mẹo nhớ tiếng Việt** (kể chuyện) + 🔍 HanziCraft.
 - **🔊 Phát âm** (Web Speech API, giọng zh-CN của máy) — bảng + thẻ học (auto đọc khi lật).
 - ✏️ Sửa nội dung tại chỗ (lưu localStorage).
+- **🚩 Đánh dấu dòng đang học**: cờ per-dòng (bật/tắt tự do, localStorage) để tracking vị trí dừng bài giữa các buổi; badge 🚩N hiện trên summary mỗi Bài.
 
 ## Pipeline (chạy từ gốc repo; `PY` = python có pypinyin + openpyxl)
 ```bash
@@ -62,13 +63,14 @@ Lần cập nhật thông thường (không có chữ/từ mới) chỉ cần **
 - `mnemonic.json` — mẹo nhớ tiếng Việt theo từ (~1301, sinh bằng workflow). **Tăng dần**.
 - `desc_override.json` — 释义 do hệ thống bổ sung cho từ có 描述 trống (vd Bài 1–2).
 - `exp_extra.json` — nhóm 生词拓展 thêm tay cho bài sheet 'Chung từ' thiếu (vd Bài 28).
+- `nghia_override.json` — Nghĩa Việt do hệ thống bổ sung cho từ có 意义 trống (~1166 từ, đã qua verify chéo). **Tăng dần**.
 - `bai_titles.json` — map `{"<N>": "<标题 bài khóa>"}`. build_md gắn tên vào heading `## Bài N — <title>`, render_html hiện cạnh mỗi bài + nhãn flashcard. lesson-prep tự ghi khi bóc bài mới.
 - `tv.json`, `ct.json` — trung gian, tái sinh mỗi lần chạy bước 1 (không cần giữ tay).
 
 ## Nguyên tắc
 - Pinyin auto (pypinyin) + luật sửa 多音字 (朴→pǔ…), 儿化 (…儿→r), dấu `'`, âm theo ngữ cảnh từ.
 - 释义 **ưu tiên cột 描述 của user**; chỉ tự sinh khi trống.
-- Nghĩa Việt giữ theo cột 意义.
+- Nghĩa Việt **ưu tiên cột 意义 của user**; chỉ tự sinh (qua `nghia_override.json`, có verify chéo trước khi merge) khi trống.
 - Chỉ **đọc** `knowledge/vocabulary/*` (Activation). Không ghi. State vocabulary do learning-strategist sở hữu (CLAUDE.md §6).
 - Mẹo nhớ: workflow cần user bật orchestration; **chỉ sinh cho từ mới** để tiết kiệm token.
 - **Mọi script phải `reconfigure(utf-8)` stdout/stderr ở đầu file** — console Windows mặc định cp1252, in 中文/tiếng Việt sẽ crash `UnicodeEncodeError` nếu thiếu.
