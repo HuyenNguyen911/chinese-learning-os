@@ -10,7 +10,7 @@ Xây **bộ HSK2 theo chuẩn mới HSK 3.0** (国际中文教育中文水平等
 
 Yêu cầu cốt lõi (theo phỏng vấn user):
 - Build theo **chuẩn 3.0**, KHÔNG phải 2.0.
-- **Sách chính** = giáo trình chuẩn 3.0 = **New HSK Course 2** (新HSK教程2, 主编 郭凤岚, NXB FLTRP/外研社, HSK官方认证教材 — user đã xác nhận bìa). **Sách tham khảo** = **Giáo trình Hán ngữ** (user cấp `raw/Hán ngữ 2.pdf` = 《汉语教程》第一册·下 修订本, 主编 杨寄洲, BLCU — **bài 16–30**, nối tiếp Quyển Thượng bài 1–15). Footer đối chiếu, list tên bài.
+- **Sách chính** = giáo trình chuẩn 3.0 = **New HSK Course 2** (新HSK教程2, 主编 **郭风岚** — GS ĐH Ngôn ngữ Bắc Kinh, chủ biên trọn bộ 新HSK教程 1–6; NXB FLTRP/外研社, HSK官方认证教材; user xác nhận bìa). Xác minh nguồn chính chủ (中国高校教材图书网): **15 课 · 200 từ mới + mở rộng · 45 điểm ngữ pháp**, đối tượng đã học ~30–36 tiết / ~300 từ. **Sách tham khảo** = **Giáo trình Hán ngữ** (user cấp `raw/Hán ngữ 2.pdf` = 《汉语教程》第一册·下 修订本, 主编 杨寄洲, BLCU, 2007 — **bài 16–30**, nối tiếp Quyển Thượng bài 1–15; là giáo trình Hán ngữ tổng hợp cũ, KHÔNG phải sách chuẩn HSK 3.0 → chỉ đóng vai footer đối chiếu). Footer list tên bài.
 - **Thêm chủ đề** Giải trí · Thể thao · Sở thích · Động vật · Thú cưng (3.0 có sẵn vốn từ các nhóm này — không phải "bổ sung ngoài chuẩn").
 - **Tránh trùng lặp với HSK1** để không gây chán — mỗi buổi chỉ dạy **từ MỚI**; chủ đề tái xuất thì **đào sâu bằng từ mới + ngữ pháp mới**, không lặp lại.
 - Deliverable mỗi buổi **trọn gói như HSK1**.
