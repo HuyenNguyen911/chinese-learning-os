@@ -1,3 +1,6 @@
+> ⚠️ **SUPERSEDED (2026-07-21)** — bản này theo HSK 2.0 / HSK Standard Course (150 từ). Đã thay bằng
+> `2026-07-21-hsk1-3.0-full-course-design.md` (HSK 3.0, ~300 từ, bám New HSK Course 1). Giữ để tham chiếu lịch sử.
+
 # HSK1 — Bộ giáo trình 12 buổi (design spec)
 
 **Ngày:** 2026-07-19
