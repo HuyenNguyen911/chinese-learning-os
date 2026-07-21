@@ -67,9 +67,11 @@ for sec in sections:
     header, rows, exp = None, [], []
     for ln in sec.splitlines():
         s = ln.strip()
-        if s.startswith("|") and "---" not in s:
+        if s.startswith("|"):
             cs = [c.strip() for c in s.strip("|").split("|")]
-            if len(cs) == 5:
+            # bỏ hàng phân cách markdown (mọi ô chỉ gồm ---/:) nhưng GIỮ dòng dữ liệu có '---' trong nội dung
+            is_sep = len(cs) == 5 and all(re.fullmatch(r":?-{3,}:?", c or "") for c in cs)
+            if len(cs) == 5 and not is_sep:
                 if header is None:
                     header = cs
                 else:

@@ -12,8 +12,12 @@ DATA = os.path.join(HERE, "..", "data")
 tv = json.load(open(os.path.join(DATA, "tv.json"), encoding="utf-8"))
 ct = json.load(open(os.path.join(DATA, "ct.json"), encoding="utf-8"))
 OV = json.load(open(os.path.join(DATA, "desc_override.json"), encoding="utf-8"))
-_nghia_path = os.path.join(DATA, "nghia_override.json")
-NV = json.load(open(_nghia_path, encoding="utf-8")) if os.path.exists(_nghia_path) else {}
+# Nghĩa Việt do hệ thống bổ sung cho từ có cột 意义 trống (song song desc_override cho 释义)
+_vi_ov = os.path.join(DATA, "vi_override.json")
+VI_OV = json.load(open(_vi_ov, encoding="utf-8")) if os.path.exists(_vi_ov) else {}
+# 例句 cá nhân hoá (bám user-profile) — ƯU TIÊN thay câu bài khóa cho từ có trong file
+_ex_ov = os.path.join(DATA, "ex_override.json")
+EX_OV = json.load(open(_ex_ov, encoding="utf-8")) if os.path.exists(_ex_ov) else {}
 # Tên mỗi bài khóa (标题) — hiển thị cạnh "Bài N". Thiếu file thì bỏ qua (tương thích ngược).
 _titles_path = os.path.join(DATA, "bai_titles.json")
 TITLES = json.load(open(_titles_path, encoding="utf-8")) if os.path.exists(_titles_path) else {}
@@ -124,8 +128,9 @@ def build_bai(n):
     for r in words:
         w = norm_w(r["w"])
         rj = r["desc"].strip() if r["desc"].strip() else OV.get(w, "")
-        vi = r["vi"].strip() if r["vi"].strip() else NV.get(w, "")
-        out.append("| %s | %s | %s | %s | %s |" % (cell(w), py(w), cell(rj), cell(vi), clean_ex(r["ex"])))
+        vv = r["vi"].strip() if r["vi"].strip() else VI_OV.get(w, "")
+        exv = EX_OV.get(w) or clean_ex(r["ex"])  # câu cá nhân hoá ưu tiên thay câu bài khóa
+        out.append("| %s | %s | %s | %s | %s |" % (cell(w), py(w), cell(rj), cell(vv), cell(exv)))
     # ---- 生词拓展 ----
     groups = []
     for g in ct.get(str(n), []):
@@ -153,7 +158,8 @@ def build_bai(n):
 HEAD = ("# 生词 tích lũy — HSK6 (theo bài khóa)\n\n"
         "> Nguồn: `raw/Từ vựng.xlsx` (sheet 'Từ vựng' = 生词, sheet 'Chung từ' = 生词拓展).\n"
         "> Cột 释义 lấy từ cột 描述 của bạn; Bài 1–2 và vài từ lẻ do hệ thống bổ sung. Pinyin auto (pypinyin — có thể sai vài chữ đa âm).\n"
-        "> Nghĩa Việt giữ theo cột 意义; chỗ nào Excel để trống thì lấy từ `nghia_override.json` (dịch bổ sung, review được).\n"
+        "> Nghĩa Việt giữ theo cột 意义; chỗ nào Excel để trống thì lấy từ `vi_override.json` (dịch bổ sung, review được).\n"
+        "> 例句 ưu tiên câu cá nhân hoá trong `ex_override.json` (bám user-profile); còn lại giữ câu bài khóa gốc.\n"
         "> Bài mới nhất hiển thị trên cùng trong bản HTML.\n\n---\n")
 
 parts = [HEAD]
