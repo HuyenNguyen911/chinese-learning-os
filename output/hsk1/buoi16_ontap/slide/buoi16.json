@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "lesson": "HSK1 · 总复习 (Ôn tập tổng hợp)",
+    "topic": "Ngữ pháp 15 bài · New HSK Course 1 (3.0)"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "HSK1 · 总复习",
+      "subtitle": "Ôn tập tổng hợp 15 bài · New HSK Course 1 (3.0)",
+      "footer": "Buổi 16 · trước khi thi HSK1"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Buổi này ôn gì",
+      "bullets": [
+        "Toàn bộ ngữ pháp trọng tâm của 15 bài sách New HSK Course 1 (3.0)",
+        "~247 từ vựng cốt lõi (nhắm ~300 từ chuẩn 3.0) — xem lại ở trang học từ vựng riêng",
+        "是/有/在 · 的 · 形容词谓语句 · 名词谓语句 · 非主谓句",
+        "7 cách hỏi: 吗 · 呢 · 什么 · 谁 · 哪 · 几/多少 · 怎么(样) · 正反问",
+        "能愿动词: 会 · 想 · 能 · 要 · 可以",
+        "Cấu trúc đặc biệt: 连动句 · 存现句 · 双宾语句 · 离合词 · 并列复句"
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第1课",
+      "title": "敬语 您 · 后缀 们",
+      "point": [
+        "您 (kính ngữ) khác 你 (thông thường) — dùng với người lớn tuổi/đáng kính",
+        "们: hậu tố số nhiều, gắn sau đại từ/danh từ CHỈ NGƯỜI"
+      ],
+      "examples": [
+        {
+          "hz": "您好，王老师！",
+          "py": "Nín hǎo, Wáng lǎoshī!",
+          "vn": "Em chào cô Vương ạ!"
+        },
+        {
+          "hz": "你们好！",
+          "py": "Nǐmen hǎo!",
+          "vn": "Chào các bạn!"
+        }
+      ],
+      "note": "谢谢！→ 不客气！là mẫu đáp lễ cơ bản nhất.",
+      "tip": "们 chỉ dùng với NGƯỜI: 学生们 ✔ — KHÔNG dùng với vật: 猫们 ❌.",
+      "audio": "assets/audio/slide03.mp3",
+      "image": "assets/b01_nin_men.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第2课",
+      "title": "基本语序：主 + 谓 + 宾",
+      "point": [
+        "Chủ ngữ + Vị ngữ (động từ) + Tân ngữ — trật tự cố định"
+      ],
+      "examples": [
+        {
+          "hz": "我叫陈天中。",
+          "py": "Wǒ jiào Chén Tiānzhōng.",
+          "vn": "Tôi tên là Trần Thiên Trung."
+        },
+        {
+          "hz": "我也认识他。",
+          "py": "Wǒ yě rènshi tā.",
+          "vn": "Tôi cũng quen anh ấy."
+        }
+      ],
+      "note": "也 (cũng) LUÔN đứng trước động từ, không đứng cuối câu.",
+      "tip": "Trật tự tiếng Trung không đổi theo thì — không chia động từ, chỉ thêm từ.",
+      "audio": "assets/audio/slide04.mp3",
+      "image": "assets/b02_word_order.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第3课",
+      "title": "是字句 · 的 · 吗",
+      "point": [
+        "是: A 是 B — đồng nhất/thuộc loại; phủ định 不是",
+        "的: định ngữ + 的 + danh từ (sở hữu)",
+        "吗: câu hỏi có/không, thêm 吗 cuối câu trần thuật"
+      ],
+      "examples": [
+        {
+          "hz": "我是中国人。",
+          "py": "Wǒ shì Zhōngguó rén.",
+          "vn": "Tôi là người Trung Quốc."
+        },
+        {
+          "hz": "这是我的女朋友。",
+          "py": "Zhè shì wǒ de nǚpéngyou.",
+          "vn": "Đây là bạn gái của tôi."
+        },
+        {
+          "hz": "你是法国人吗？",
+          "py": "Nǐ shì Fǎguó rén ma?",
+          "vn": "Bạn là người Pháp phải không?"
+        }
+      ],
+      "note": "的 có thể lược bỏ khi đi với người thân/tập thể: 我妈妈, 我们学校.",
+      "tip": "是 nối 2 danh từ (A là B) — không dùng để nối tính từ (xem 形容词谓语句, 第10课).",
+      "audio": "assets/audio/slide05.mp3",
+      "image": "assets/b03_shi_de_ma.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第4课",
+      "title": "有字句 · 数字 · 量词 · 呢",
+      "point": [
+        "有: sở hữu; phủ định 没/没有 (KHÔNG có 不有)",
+        "Số 2: 两 (trước lượng từ) vs 二 (số thứ tự)",
+        "Số + 量词 + 名词: 两个哥哥",
+        "呢(1): hỏi rút gọn — A呢?"
+      ],
+      "examples": [
+        {
+          "hz": "我有两个哥哥，你呢？",
+          "py": "Wǒ yǒu liǎng ge gēge, nǐ ne?",
+          "vn": "Mình có hai anh trai, còn bạn?"
+        },
+        {
+          "hz": "我家有四口人。",
+          "py": "Wǒ jiā yǒu sì kǒu rén.",
+          "vn": "Nhà mình có bốn người."
+        }
+      ],
+      "note": "口 đếm người trong nhà, 个 là lượng từ vạn năng.",
+      "tip": "两个 ✔ / 二个 ❌ — 两 luôn đứng trước lượng từ.",
+      "audio": "assets/audio/slide06.mp3",
+      "image": "assets/b04_you_liang.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第5课",
+      "title": "名词谓语句 · 能愿动词 会",
+      "point": [
+        "名词谓语句: vị ngữ chỉ là danh từ (ngày tháng/tuổi), có thể bỏ 是",
+        "会: biết làm gì (kỹ năng học được)"
+      ],
+      "examples": [
+        {
+          "hz": "今天星期一。",
+          "py": "Jīntiān xīngqīyī.",
+          "vn": "Hôm nay thứ Hai."
+        },
+        {
+          "hz": "我会做菜。",
+          "py": "Wǒ huì zuò cài.",
+          "vn": "Mình biết nấu ăn."
+        }
+      ],
+      "note": "今天星期一 hoặc 今天是星期一 đều đúng — câu vị ngữ danh từ thường bỏ 是 cho gọn.",
+      "tip": "会 = kỹ năng học được, khác 能 (điều kiện/khả năng, 第8课).",
+      "audio": "assets/audio/slide07.mp3",
+      "image": "assets/b05_noun_pred_hui.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第6课",
+      "title": "能愿动词 想 · 连动句 · 怎么",
+      "point": [
+        "想: muốn, dự định làm gì",
+        "连动句: 2 cụm động từ nối tiếp, cùng chủ ngữ, đúng trình tự hành động",
+        "怎么: hỏi CÁCH THỨC làm việc gì"
+      ],
+      "examples": [
+        {
+          "hz": "我想去超市买东西。",
+          "py": "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+          "vn": "Mình muốn đi siêu thị mua đồ."
+        },
+        {
+          "hz": "你怎么去？",
+          "py": "Nǐ zěnme qù?",
+          "vn": "Bạn đi bằng cách nào?"
+        }
+      ],
+      "note": "连动句: động từ 1 (đi) trước động từ 2 (mua) — đúng thứ tự làm thật.",
+      "tip": "怎么 hỏi CÁCH THỨC — khác 怎么样 hỏi TÌNH TRẠNG/Ý KIẾN (第10课).",
+      "audio": "assets/audio/slide08.mp3",
+      "image": "assets/b06_xiang_liandong.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第7课",
+      "title": "点/分 · 吧 · 呢(2)",
+      "point": [
+        "点/分: giờ cụ thể; 上午/下午/晚上: khoảng thời gian",
+        "吧: đề nghị/thương lượng cuối câu",
+        "呢(2): xác nhận sự việc đã biết"
+      ],
+      "examples": [
+        {
+          "hz": "现在三点半，我们六点见吧。",
+          "py": "Xiànzài sān diǎn bàn, wǒmen liù diǎn jiàn ba.",
+          "vn": "Bây giờ 3 rưỡi, 6 giờ mình gặp nhau nhé."
+        },
+        {
+          "hz": "我六点半下班呢。",
+          "py": "Wǒ liù diǎn bàn xiàbān ne.",
+          "vn": "Mình 6 rưỡi mới tan làm cơ."
+        }
+      ],
+      "note": "Từ chỉ thời gian LUÔN đứng trước động từ, giống mọi trạng ngữ khác.",
+      "tip": "吧 = rủ rê/đề nghị nhẹ nhàng — khác 吗 (hỏi thật, cần trả lời có/không).",
+      "audio": "assets/audio/slide09.mp3",
+      "image": "assets/b07_dian_fen_ba.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第8课",
+      "title": "方位词 · 介词在 · 能愿动词 能",
+      "point": [
+        "方位词: 上/下/里/外/前/后",
+        "在 + nơi chốn đứng TRƯỚC động từ (giới từ chỉ nơi diễn ra hành động)",
+        "能: có thể (năng lực/điều kiện khách quan)"
+      ],
+      "examples": [
+        {
+          "hz": "猫在桌子下。",
+          "py": "Māo zài zhuōzi xià.",
+          "vn": "Con mèo ở dưới bàn."
+        },
+        {
+          "hz": "我爸爸在医院工作。",
+          "py": "Wǒ bàba zài yīyuàn gōngzuò.",
+          "vn": "Bố mình làm việc ở bệnh viện."
+        },
+        {
+          "hz": "你能来吗？",
+          "py": "Nǐ néng lái ma?",
+          "vn": "Bạn có thể đến được không?"
+        }
+      ],
+      "note": "在 ở đây là GIỚI TỪ (trước động từ) — khác 在 phó từ chỉ đang diễn ra (第11课), cùng chữ 2 vai trò.",
+      "tip": "能 = điều kiện khách quan; 会 = kỹ năng học được — đừng nhầm.",
+      "audio": "assets/audio/slide10.mp3",
+      "image": "assets/b08_fangwei_zai_neng.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第9课",
+      "title": "存现句 · 第 · 时间+处所",
+      "point": [
+        "存现句: biểu thị có ai/cái gì tồn tại ở một nơi",
+        "第+số từ: số thứ tự",
+        "Khi cùng làm trạng ngữ: THỜI GIAN luôn đứng trước NƠI CHỐN"
+      ],
+      "examples": [
+        {
+          "hz": "前边有一只狗。",
+          "py": "Qiánbian yǒu yì zhī gǒu.",
+          "vn": "Đằng trước có một con chó."
+        },
+        {
+          "hz": "我明天上午在学校学习。",
+          "py": "Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.",
+          "vn": "Sáng mai mình học ở trường."
+        }
+      ],
+      "note": "明天(thời gian) đứng TRƯỚC 在学校(nơi chốn) trong câu ví dụ trên.",
+      "tip": "存现句 phủ định KHÔNG dùng số từ + lượng từ trước tân ngữ.",
+      "audio": "assets/audio/slide11.mp3",
+      "image": "assets/b09_cunxian_di.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第10课",
+      "title": "形容词谓语句 · 钱数 · 怎么样",
+      "point": [
+        "Tính từ làm vị ngữ trực tiếp (không cần 是), thường có 很/真",
+        "钱数: 元/块 — 角/毛 — 分",
+        "怎么样: hỏi ý kiến/tình trạng"
+      ],
+      "examples": [
+        {
+          "hz": "这儿的苹果真便宜！",
+          "py": "Zhèr de píngguǒ zhēn piányi!",
+          "vn": "Táo ở đây rẻ thật!"
+        },
+        {
+          "hz": "这件衣服三十五块。",
+          "py": "Zhè jiàn yīfu sānshíwǔ kuài.",
+          "vn": "Cái áo này 35 tệ."
+        },
+        {
+          "hz": "这个怎么样？",
+          "py": "Zhège zěnmeyàng?",
+          "vn": "Cái này thế nào?"
+        }
+      ],
+      "note": "元 (viết) = 块 (nói) — cùng nghĩa, khác văn phong.",
+      "tip": "SAI 我是好 ❌ → ĐÚNG 我很好 ✔ — tính từ vị ngữ không đi với 是.",
+      "audio": "assets/audio/slide12.mp3",
+      "image": "assets/b10_adj_pred_qian.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第11课",
+      "title": "正反问 · (正)在 · 能愿动词 要",
+      "point": [
+        "正反问: V不V / A不A",
+        "(正)在 + V (+呢): đang làm gì",
+        "要: muốn làm, định làm"
+      ],
+      "examples": [
+        {
+          "hz": "你去不去？",
+          "py": "Nǐ qù bu qù?",
+          "vn": "Bạn có đi không?"
+        },
+        {
+          "hz": "他正在看电视呢。",
+          "py": "Tā zhèngzài kàn diànshì ne.",
+          "vn": "Anh ấy đang xem tivi."
+        },
+        {
+          "hz": "我要学中文。",
+          "py": "Wǒ yào xué Zhōngwén.",
+          "vn": "Mình định học tiếng Trung."
+        }
+      ],
+      "note": "正反问 với tính từ cũng dùng 不: 忙不忙？",
+      "tip": "Phủ định 'đang làm': 没(有) + V — KHÔNG dùng 不.",
+      "audio": "assets/audio/slide13.mp3",
+      "image": "assets/b11_zhengfan_zai.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第12课",
+      "title": "非主谓句 · 了(1) · 太…了",
+      "point": [
+        "非主谓句: câu không phân chủ-vị, hay dùng trong khẩu ngữ",
+        "了(1) cuối câu: tình huống MỚI / thay đổi",
+        "太 + tính từ + 了: cảm thán mức độ cao"
+      ],
+      "examples": [
+        {
+          "hz": "下雨了！",
+          "py": "Xià yǔ le!",
+          "vn": "Trời mưa rồi!"
+        },
+        {
+          "hz": "太好了！",
+          "py": "Tài hǎo le!",
+          "vn": "Tuyệt quá!"
+        }
+      ],
+      "note": "非主谓句: 上课了。下雪了。— không có chủ ngữ rõ ràng, rất tự nhiên trong khẩu ngữ.",
+      "tip": "了(1) phủ định: bỏ 了, thêm 没: 没下雨 (không phải 不下雨了).",
+      "audio": "assets/audio/slide14.mp3",
+      "image": "assets/b12_feizhuwei_le_tai.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第13课",
+      "title": "可以 · 动词+一下 · 双宾语句",
+      "point": [
+        "可以: được phép / có thể",
+        "动词 + 一下: làm thử/một lần, ngắn gọn, lịch sự hơn",
+        "双宾语句: 1 động từ + 2 tân ngữ (给/问)"
+      ],
+      "examples": [
+        {
+          "hz": "我可以看一下吗？",
+          "py": "Wǒ kěyǐ kàn yíxià ma?",
+          "vn": "Mình xem thử một chút được không?"
+        },
+        {
+          "hz": "请给我一杯茶。",
+          "py": "Qǐng gěi wǒ yì bēi chá.",
+          "vn": "Cho tôi một cốc trà."
+        }
+      ],
+      "note": "双宾语句: 给 + người nhận + vật (给我一杯茶 = cho TÔI một cốc TRÀ).",
+      "tip": "一下 làm câu nhẹ nhàng/lịch sự hơn: 看一下 lịch sự hơn 看.",
+      "audio": "assets/audio/slide15.mp3",
+      "image": "assets/b13_keyi_yixia.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第14课",
+      "title": "了(2) · 离合词 · 都",
+      "point": [
+        "了(2) ngay sau động từ: hành động ĐÃ xảy ra/hoàn thành",
+        "离合词: 上课/下班/说话… có thể tách ra, chèn thành phần vào giữa",
+        "都: toàn bộ — đối tượng khái quát đứng TRƯỚC 都"
+      ],
+      "examples": [
+        {
+          "hz": "我看了一个电影。",
+          "py": "Wǒ kànle yí ge diànyǐng.",
+          "vn": "Mình đã xem một bộ phim."
+        },
+        {
+          "hz": "我们都是学生。",
+          "py": "Wǒmen dōu shì xuésheng.",
+          "vn": "Chúng mình đều là học sinh."
+        }
+      ],
+      "note": "离合词 tách được: 我上了两年学 (chèn '两年' vào giữa 上 và 学).",
+      "tip": "都/也 không đứng cuối câu — luôn ngay TRƯỚC động từ; phủ định thì từ phủ định đứng SAU 都.",
+      "audio": "assets/audio/slide16.mp3",
+      "image": "assets/b14_le_lihe_dou.jpg"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 第15课",
+      "title": "并列复句：……，还/也……",
+      "point": [
+        "Câu ghép đẳng lập: 2 mệnh đề liên quan lô-gích, kết cấu đối xứng"
+      ],
+      "examples": [
+        {
+          "hz": "我们去北京，还去西安。",
+          "py": "Wǒmen qù Běijīng, hái qù Xī'ān.",
+          "vn": "Chúng mình đi Bắc Kinh, còn đi cả Tây An."
+        },
+        {
+          "hz": "他喜欢旅游，我也喜欢。",
+          "py": "Tā xǐhuan lǚyóu, wǒ yě xǐhuan.",
+          "vn": "Anh ấy thích du lịch, mình cũng thích."
+        }
+      ],
+      "note": "还/也 nối 2 vế câu có cấu trúc song song, giúp câu mạch lạc hơn.",
+      "tip": "Đây là bài cuối cùng — câu ghép đơn giản là bước đệm chuẩn bị lên HSK2.",
+      "audio": "assets/audio/slide17.mp3",
+      "image": "assets/b15_bingliefu.jpg"
+    },
+    {
+      "type": "table",
+      "kicker": "对比",
+      "title": "不 vs 没",
+      "headers": [
+        "So sánh",
+        "不 bù",
+        "没 méi"
+      ],
+      "cjk_cols": [
+        1,
+        2
+      ],
+      "rows": [
+        [
+          "Nghĩa",
+          "không (chủ ý/thói quen)",
+          "chưa (việc đã qua)"
+        ],
+        [
+          "Dùng cho",
+          "hiện tại · tương lai · thói quen",
+          "quá khứ / chưa xảy ra"
+        ],
+        [
+          "Với 有",
+          "— (không có 不有)",
+          "没有 ✔"
+        ],
+        [
+          "Ví dụ",
+          "我不喝酒 (không uống rượu)",
+          "我没去 (chưa đi)"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "对比",
+      "title": "了(1) cuối câu vs 了(2) sau động từ",
+      "headers": [
+        "",
+        "了(1) cuối câu",
+        "了(2) sau động từ"
+      ],
+      "cjk_cols": [
+        1,
+        2
+      ],
+      "rows": [
+        [
+          "Vị trí",
+          "cuối câu / chỗ ngắt",
+          "ngay sau động từ"
+        ],
+        [
+          "Ý nghĩa",
+          "thay đổi / tình huống mới",
+          "hành động đã hoàn thành"
+        ],
+        [
+          "Ví dụ",
+          "下雨了 (trời mưa rồi)",
+          "看了电影 (đã xem phim)"
+        ],
+        [
+          "Phủ định",
+          "没 + bỏ 了: 没下雨",
+          "没 + bỏ 了: 没看电影"
+        ]
+      ]
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "Vận dụng tổng hợp",
+      "turns": [
+        {
+          "speaker": "A",
+          "hz": "你好！你是学生吗？",
+          "py": "Nǐ hǎo! Nǐ shì xuésheng ma?"
+        },
+        {
+          "speaker": "B",
+          "hz": "是，我在大学学习汉语。",
+          "py": "Shì, wǒ zài dàxué xuéxí Hànyǔ."
+        },
+        {
+          "speaker": "A",
+          "hz": "你家有几口人？",
+          "py": "Nǐ jiā yǒu jǐ kǒu rén?"
+        },
+        {
+          "speaker": "B",
+          "hz": "我家有四口人，爸爸在医院工作。",
+          "py": "Wǒ jiā yǒu sì kǒu rén, bàba zài yīyuàn gōngzuò."
+        },
+        {
+          "speaker": "A",
+          "hz": "现在十二点了，我请你吃饭吧。",
+          "py": "Xiànzài shí'èr diǎn le, wǒ qǐng nǐ chīfàn ba."
+        },
+        {
+          "speaker": "B",
+          "hz": "太好了！我们坐出租车去吧。",
+          "py": "Tài hǎo le! Wǒmen zuò chūzūchē qù ba."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "section",
+      "title": "辛苦了！祝考试顺利 🎉",
+      "subtitle": "15 bài ôn xong — chúc thi HSK1 tốt!"
+    }
+  ]
+}

@@ -28,7 +28,7 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 | 13 | Đại học & đang làm · 呢 | `buoi13_daihoc/` | L11 我读大学呢 | 正反问 · 时间副词"在/正在" · 能愿动词"要" | ⏳ chưa soạn |
 | 14 | Thời tiết & sức khỏe | `buoi14_thoitiet_suckhoe/` | L12 昨天下雪了 | 非主谓句 · 语气助词"了(1)" · "太……了" | ⏳ chưa soạn |
 | 15 | Đi lại & du lịch · hẹn gặp | `buoi15_dulai_dulich/` | L15 大兴机场见 | 并列复句"……，还/也……" | ⏳ chưa soạn |
-| 16 | Ôn tập tổng hợp | `buoi16_ontap/` | — (ôn ~243–300 từ đã học) | — | ⏳ chưa soạn |
+| 16 | Ôn tập tổng hợp | `buoi16_ontap/` | — (ôn ~243–300 từ đã học) | Đủ 15 điểm ngữ pháp trọng tâm của 15 bài sách 3.0 (không phải on1/on2 2.0 cũ) | ✅ slide + audio + ảnh xong (chưa có baitap/) |
 
 **15 buổi cần soạn** = vị trí 02–16 (buổi 01 ngữ âm đã xong). Trạng thái vocab: xem checklist
 `hsk1-3.0-checklist.md` — 243 từ distinct remap từ 15 课 sách (per-buổi 11–26 từ/buổi), 2 buổi
