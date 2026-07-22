@@ -1,0 +1,568 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 2",
+    "topic": "你好 · 我叫… — Chào hỏi & làm quen"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "你好 · 我叫…",
+      "subtitle": "Buổi 2 — Chào hỏi & làm quen: 你好 (Bài 1) + 我叫李文 (Bài 2)",
+      "footer": "HSK1 · Sơ cấp · Buổi 2"
+    },
+    {
+      "type": "bullets",
+      "kicker": "复习",
+      "title": "Nhắc lại buổi trước",
+      "image": "assets/stroke_hao.gif",
+      "bullets": [
+        "Buổi 1 đã học 4 thanh điệu + khinh thanh, biến điệu cơ bản (3+3, 一/不) — hôm nay dùng ngay vào câu chào hỏi thật.",
+        "你好 viết dấu thanh 3+3 nhưng ĐỌC \"ní hǎo\": 2 thanh 3 đứng liền nhau, thanh 3 đầu đổi thành thanh 2.",
+        "谢谢 — chữ 谢 thứ 2 đọc khinh thanh, nhẹ và ngắn (xièxie, không phải xiè xiè rõ 2 tiếng bằng nhau).",
+        "Hôm nay: dùng đúng ngữ điệu đó để chào hỏi và làm quen tự nhiên, không đọc phẳng/đọc sai biến điệu."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Mục tiêu hôm nay",
+      "bullets": [
+        "Chào hỏi đúng người, đúng hoàn cảnh: phân biệt 你/您 (thân mật/kính trọng), số ít/số nhiều (你/你们).",
+        "Hỏi & trả lời tên bằng 你叫什么名字？／我叫…",
+        "Dùng được 是 (khẳng định), 吗 (hỏi có/không), 呢 (hỏi lại rút gọn) để giới thiệu bản thân.",
+        "Nói được 10 câu giao tiếp chào hỏi/làm quen dùng ngay từ buổi học đầu tiên."
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Từ vựng ① — Chào hỏi (Bài 1)",
+      "image": "assets/stroke_ni.gif",
+      "items": [
+        {
+          "hz": "你好",
+          "py": "nǐ hǎo",
+          "vn": "xin chào"
+        },
+        {
+          "hz": "王老师",
+          "py": "Wáng lǎoshī",
+          "vn": "(riêng) cô/thầy Vương"
+        },
+        {
+          "hz": "大家",
+          "py": "dàjiā",
+          "vn": "mọi người"
+        },
+        {
+          "hz": "好",
+          "py": "hǎo",
+          "vn": "tốt, khỏe, ổn (tính từ)"
+        },
+        {
+          "hz": "学生",
+          "py": "xuésheng",
+          "vn": "học sinh"
+        },
+        {
+          "hz": "们",
+          "py": "men",
+          "vn": "hậu tố số nhiều (sau đại từ/danh từ chỉ người)"
+        },
+        {
+          "hz": "老师",
+          "py": "lǎoshī",
+          "vn": "giáo viên"
+        },
+        {
+          "hz": "您",
+          "py": "nín",
+          "vn": "ngài, bác (kính ngữ, ngôi 2)"
+        },
+        {
+          "hz": "你们",
+          "py": "nǐmen",
+          "vn": "các bạn (số nhiều)"
+        },
+        {
+          "hz": "谢谢",
+          "py": "xièxie",
+          "vn": "cảm ơn"
+        },
+        {
+          "hz": "不客气",
+          "py": "bú kèqi",
+          "vn": "không có gì"
+        },
+        {
+          "hz": "同学",
+          "py": "tóngxué",
+          "vn": "bạn học"
+        },
+        {
+          "hz": "再见",
+          "py": "zàijiàn",
+          "vn": "tạm biệt"
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Từ vựng ② — Làm quen (Bài 2)",
+      "image": "assets/stroke_wo.gif",
+      "items": [
+        {
+          "hz": "请问",
+          "py": "qǐngwèn",
+          "vn": "xin hỏi"
+        },
+        {
+          "hz": "你",
+          "py": "nǐ",
+          "vn": "bạn (số ít)"
+        },
+        {
+          "hz": "叫",
+          "py": "jiào",
+          "vn": "tên là, gọi là"
+        },
+        {
+          "hz": "什么",
+          "py": "shénme",
+          "vn": "gì, cái gì"
+        },
+        {
+          "hz": "名字",
+          "py": "míngzi",
+          "vn": "tên"
+        },
+        {
+          "hz": "我",
+          "py": "wǒ",
+          "vn": "tôi"
+        },
+        {
+          "hz": "是",
+          "py": "shì",
+          "vn": "là"
+        },
+        {
+          "hz": "没关系",
+          "py": "méi guānxi",
+          "vn": "không sao"
+        },
+        {
+          "hz": "没事儿",
+          "py": "méishìr",
+          "vn": "không sao, không có gì"
+        },
+        {
+          "hz": "很",
+          "py": "hěn",
+          "vn": "rất"
+        },
+        {
+          "hz": "高兴",
+          "py": "gāoxìng",
+          "vn": "vui, mừng"
+        },
+        {
+          "hz": "认识",
+          "py": "rènshi",
+          "vn": "quen biết"
+        },
+        {
+          "hz": "也",
+          "py": "yě",
+          "vn": "cũng"
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "是 — khẳng định A是B",
+      "image": "assets/stroke_shi.gif",
+      "point": "是 nối chủ ngữ với danh từ để nói \"A là B\" — phủ định thêm 不 trước 是 (不 đổi thanh: bú shì).",
+      "examples": [
+        {
+          "hz": "我是学生。",
+          "py": "Wǒ shì xuésheng.",
+          "vn": "Tôi là học sinh."
+        },
+        {
+          "hz": "我是老师。",
+          "py": "Wǒ shì lǎoshī.",
+          "vn": "Tôi là giáo viên."
+        },
+        {
+          "hz": "我不是老师。",
+          "py": "Wǒ bú shì lǎoshī.",
+          "vn": "Tôi không phải giáo viên."
+        }
+      ],
+      "note": "是字句 đầy đủ (quốc tịch, đồng nhất/loại) sẽ học kỹ ở buổi 3 — ở đây dùng để giới thiệu thân phận cơ bản.",
+      "tip": "不 đứng trước thanh 4 (是 shì) luôn đổi thành bú — đúng quy tắc biến điệu đã học buổi 1.",
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "叫 + 名字 — hỏi & nói tên",
+      "image": "assets/stroke_jiao.gif",
+      "point": "你叫什么名字？ = mẫu câu hỏi tên chuẩn; trả lời bằng 我叫 + tên riêng.",
+      "examples": [
+        {
+          "hz": "你叫什么名字？",
+          "py": "Nǐ jiào shénme míngzi?",
+          "vn": "Bạn tên là gì?"
+        },
+        {
+          "hz": "我叫李文。",
+          "py": "Wǒ jiào Lǐ Wén.",
+          "vn": "Tôi tên là Lý Văn."
+        },
+        {
+          "hz": "我叫陈天中。",
+          "py": "Wǒ jiào Chén Tiānzhōng.",
+          "vn": "Tôi tên là Trần Thiên Trung."
+        }
+      ],
+      "note": "叫 = \"tên là/gọi là\", chỉ dùng cho tên riêng — khác 是 (khẳng định chung: thân phận, nghề nghiệp…).",
+      "tip": "Người Việt hay nhầm 叫 với 是 khi giới thiệu tên: PHẢI nói 我叫…, KHÔNG nói 我是…(tên).",
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "吗 — câu hỏi có/không",
+      "point": "Thêm 吗 vào cuối câu khẳng định → thành câu hỏi có/không — KHÔNG đổi trật tự từ, không lên giọng thay 吗.",
+      "examples": [
+        {
+          "hz": "你是学生吗？",
+          "py": "Nǐ shì xuésheng ma?",
+          "vn": "Bạn là học sinh à?"
+        },
+        {
+          "hz": "你是老师吗？",
+          "py": "Nǐ shì lǎoshī ma?",
+          "vn": "Bạn là giáo viên à?"
+        },
+        {
+          "hz": "是，我是学生。／不是，我不是学生。",
+          "py": "Shì, wǒ shì xuésheng. / Bú shì, wǒ bú shì xuésheng.",
+          "vn": "Đúng vậy, tôi là học sinh. / Không, tôi không phải học sinh."
+        }
+      ],
+      "note": "吗 là trợ từ nghi vấn (đọc nhẹ) — 是非问句 đầy đủ học kỹ ở buổi 3, ở đây dùng ngay để hỏi thông tin khi làm quen.",
+      "tip": "Người Việt hay QUÊN 吗, chỉ lên giọng cuối câu kiểu tiếng Việt (\"你是学生?\") — tiếng Trung bắt buộc phải có 吗.",
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "呢 — hỏi lại rút gọn",
+      "point": "A + 呢？ = \"còn A thì sao?\" — hỏi lại nhanh, không cần lặp lại cả câu.",
+      "examples": [
+        {
+          "hz": "我是学生，你呢？",
+          "py": "Wǒ shì xuésheng, nǐ ne?",
+          "vn": "Tôi là học sinh, còn bạn?"
+        },
+        {
+          "hz": "我叫李文，你呢？",
+          "py": "Wǒ jiào Lǐ Wén, nǐ ne?",
+          "vn": "Tôi tên Lý Văn, còn bạn?"
+        }
+      ],
+      "note": "呢 chính thức là 生词 của buổi 4 (gia đình) — dùng trước ở đây vì rất tiện khi làm quen, hỏi ngược lại tên/thân phận.",
+      "tip": "Chỉ cần thêm 呢 ngay sau đại từ/danh từ, không cần nhắc lại động từ của câu trước.",
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "10 câu khẩu ngữ (1/2)",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "你好！",
+          "Nǐ hǎo!",
+          "Xin chào!"
+        ],
+        [
+          "您好！",
+          "Nín hǎo!",
+          "Xin chào (kính trọng)!"
+        ],
+        [
+          "你叫什么名字？",
+          "Nǐ jiào shénme míngzi?",
+          "Bạn tên là gì?"
+        ],
+        [
+          "我叫……。",
+          "Wǒ jiào ……",
+          "Tôi tên là…"
+        ],
+        [
+          "很高兴认识你！",
+          "Hěn gāoxìng rènshi nǐ!",
+          "Rất vui được quen bạn!"
+        ]
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "10 câu khẩu ngữ (2/2)",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "你是老师吗？",
+          "Nǐ shì lǎoshī ma?",
+          "Bạn là giáo viên à?"
+        ],
+        [
+          "我是学生，你呢？",
+          "Wǒ shì xuésheng, nǐ ne?",
+          "Tôi là học sinh, còn bạn?"
+        ],
+        [
+          "谢谢！／不客气！",
+          "Xièxie! / Bú kèqi!",
+          "Cảm ơn! / Không có gì!"
+        ],
+        [
+          "对不起！／没关系！",
+          "Duìbuqǐ! / Méi guānxi!",
+          "Xin lỗi! / Không sao!"
+        ],
+        [
+          "再见！",
+          "Zàijiàn!",
+          "Tạm biệt!"
+        ]
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 1 (Bài 1) — 你好 · 谢谢 · 再见",
+      "turns": [
+        {
+          "speaker": "王老师",
+          "hz": "AI小语，你好！",
+          "py": "AI Xiǎoyǔ, nǐ hǎo!"
+        },
+        {
+          "speaker": "小语",
+          "hz": "王老师，你好！",
+          "py": "Wáng lǎoshī, nǐ hǎo!"
+        },
+        {
+          "speaker": "王老师",
+          "hz": "大家好！",
+          "py": "Dàjiā hǎo!"
+        },
+        {
+          "speaker": "学生们",
+          "hz": "老师，您好！",
+          "py": "Lǎoshī, nín hǎo!"
+        },
+        {
+          "speaker": "小语",
+          "hz": "你们好！",
+          "py": "Nǐmen hǎo!"
+        },
+        {
+          "speaker": "学生们",
+          "hz": "你好，小语！",
+          "py": "Nǐ hǎo, Xiǎoyǔ!"
+        },
+        {
+          "speaker": "学生们",
+          "hz": "谢谢！",
+          "py": "Xièxie!"
+        },
+        {
+          "speaker": "小语",
+          "hz": "不客气！",
+          "py": "Bú kèqi!"
+        },
+        {
+          "speaker": "王老师",
+          "hz": "同学们，再见！",
+          "py": "Tóngxuémen, zàijiàn!"
+        },
+        {
+          "speaker": "学生们",
+          "hz": "老师，再见！",
+          "py": "Lǎoshī, zàijiàn!"
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 2 (Bài 2) — 请问，你叫什么名字？",
+      "turns": [
+        {
+          "speaker": "王老师",
+          "hz": "请问，你叫什么名字？",
+          "py": "Qǐngwèn, nǐ jiào shénme míngzi?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我叫陈天中。",
+          "py": "Wǒ jiào Chén Tiānzhōng."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 3 (Bài 2) — Nhận nhầm người, xin lỗi",
+      "turns": [
+        {
+          "speaker": "陈天中",
+          "hz": "你好，安妮！",
+          "py": "Nǐ hǎo, Ānnī!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "你好，陈天中！我不是安妮，我是白家月。",
+          "py": "Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "对不起！",
+          "py": "Duìbuqǐ!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "没关系！",
+          "py": "Méi guānxi!"
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 4 (Bài 2) — Làm quen lần đầu",
+      "turns": [
+        {
+          "speaker": "李文",
+          "hz": "你好！我叫李文。",
+          "py": "Nǐ hǎo! Wǒ jiào Lǐ Wén."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "你好！我叫白家月。很高兴认识你。",
+          "py": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè. Hěn gāoxìng rènshi nǐ."
+        },
+        {
+          "speaker": "李文",
+          "hz": "认识你，我也很高兴。",
+          "py": "Rènshi nǐ, wǒ yě hěn gāoxìng."
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "reading",
+      "kicker": "阅读",
+      "title": "Bài đọc — 课文 đầy đủ Bài 1 + Bài 2",
+      "groups": [
+        {
+          "label": "课文 sách (New HSK Course 1):",
+          "items": [
+            "Bài 1「AI小语，你好！」— 3 đoạn hội thoại chào hỏi (thầy↔AI, thầy↔trò, cảm ơn/tạm biệt)",
+            "Bài 2「我叫李文」— 3 đoạn hội thoại hỏi tên & làm quen",
+            "Đọc đầy đủ 汉字 + pinyin + dịch Việt tại doc/bai-doc-newhsk1.md (cùng buổi)"
+          ]
+        },
+        {
+          "label": "Nguồn luyện đọc thêm (trình độ HSK1):",
+          "items": [
+            "Du Chinese (app) — mục Newbie / HSK1",
+            "The Chairman's Bao — bài trình độ HSK1",
+            "Mandarin Companion — Readers Level 0",
+            "hsk.academy — HSK1 reading online"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "对照",
+      "title": "Đối chiếu: Giáo trình Hán ngữ Quyển 1",
+      "bullets": [
+        "Sách 《汉语教程》(Giáo trình Hán ngữ) Quyển 1 — Bài 1, 3, 5: phần hội thoại chào hỏi/làm quen cơ bản (你好 / 谢谢你 / 你叫什么名字).",
+        "Bạn đã có sẵn sách + audio gốc — mở đọc theo, nghe theo audio trong sách để luyện phản xạ nghe thêm ở nhà.",
+        "Nội dung buổi hôm nay (chào hỏi, làm quen, 是/吗/呢/叫) khớp với các bài này — dùng để ôn chéo 2 giáo trình.",
+        "Buổi sau (quốc tịch & bản thân) sẽ tiếp tục đối chiếu các bài kế tiếp của Hán ngữ Q1."
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "易错",
+      "title": "Lỗi người Việt hay mắc",
+      "headers": [
+        "Sai (thường gặp)",
+        "Đúng (nên làm)",
+        "Vì sao"
+      ],
+      "cjk_cols": [],
+      "rows": [
+        [
+          "Dùng 你 với người lớn tuổi/cấp trên (thầy cô, sếp)",
+          "Dùng 您 để thể hiện kính trọng",
+          "Tiếng Việt không phân biệt \"bạn\" thân mật/kính trọng bằng 2 đại từ khác nhau như tiếng Trung 你/您"
+        ],
+        [
+          "你是老师? — chỉ lên giọng cuối câu kiểu tiếng Việt",
+          "你是老师吗？— bắt buộc thêm 吗",
+          "Tiếng Trung không đổi ngữ điệu để tạo câu hỏi có/không — bắt buộc có trợ từ 吗 cuối câu"
+        ],
+        [
+          "Đọc 你好 thành 2 thanh 3 rời rạc, đầy đủ (\"nỉ hảo\")",
+          "Đọc thành \"ní hǎo\" (biến điệu 3+3 → 2+3)",
+          "2 âm tiết thanh 3 liền nhau, âm đầu bắt buộc đổi thành thanh 2 khi nói (buổi 1)"
+        ],
+        [
+          "我是李文 — dùng 是 để giới thiệu tên",
+          "我叫李文 — dùng 叫 để giới thiệu tên",
+          "叫 chuyên dùng cho tên riêng; 是 dùng để khẳng định thân phận/nghề nghiệp (我是学生)"
+        ],
+        [
+          "Đọc 名字 rõ dấu cả 2 âm (\"míng zì\")",
+          "Đọc \"míngzi\" — chữ 字 thứ 2 nhẹ, ngắn",
+          "字 trong 名字 đọc khinh thanh (mất dấu), giống quy tắc 谢谢/朋友 đã học ở buổi 1"
+        ]
+      ]
+    }
+  ]
+}
