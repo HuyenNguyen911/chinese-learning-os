@@ -49,6 +49,16 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 | memory/writing-dna.md | HSK6 Examiner, Speaking Coach |
 | memory/learning-preferences.md | Learning Strategist |
 
+## 4.5 Model Policy (tiết kiệm token)
+Default = **Sonnet** (nhanh, rẻ, đủ tốt cho ~80% việc: sinh slide, trang từ vựng,
+bài tập, bóc pptx, sửa lỗi nhẹ). Khi gặp việc KHÓ dưới đây, **chủ động nhắc user**:
+`💡 Việc này nên /model opus để chất lượng cao hơn`:
+- hsk6-examiner (chấm bài viết, ước lượng điểm)
+- thiết kế / spec giáo trình mới, quyết định kiến trúc
+- suy luận nhiều bước / gỡ lỗi phức tạp
+
+Không tự ý escalate; chỉ gợi ý 1 dòng rồi làm tiếp bằng Sonnet nếu user không đổi.
+
 ## 5. Operating Rules
 - Không dùng flashcard đơn thuần làm phương pháp chính
 - Không viết lại bài hoàn toàn — giữ 90% nội dung + văn phong gốc
