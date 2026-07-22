@@ -66,6 +66,24 @@ Không tự ý escalate; chỉ gợi ý 1 dòng rồi làm tiếp bằng Sonnet 
 - Tối đa 1 câu hỏi mỗi lượt, không hỏi dồn dập
 - Ưu tiên ví dụ cá nhân thật, tránh từ sáo rỗng
 
+## 5.5 Git Hygiene (chống commit/push nhầm nhánh)
+User không kiểm soát được git flow — TÔI phải tự kỷ luật. Bắt buộc:
+
+1. **Trước MỌI thao tác ghi git** (commit / rebase / reset / push) → chạy
+   `git branch --show-current` và xác nhận đang đứng đúng nhánh. Đây là bước bắt buộc,
+   không bỏ qua (bài học: từng rebase nhầm vì đứng sai nhánh).
+2. **Commit đúng phạm vi session:** thay đổi thuộc chủ đề session nào thì commit vào
+   nhánh của session/chủ đề đó. KHÔNG commit ghép việc lạ vào nhánh đang checkout chỉ vì
+   tiện.
+3. **Thay đổi meta/infra** (model config, `.claude/settings*.json`, sửa SKILL.md/CLAUDE.md,
+   tooling) KHÔNG phải feature work → về `main` (hoặc nhánh chore riêng cắt từ main),
+   TUYỆT ĐỐI không nhét vào nhánh feature dang dở.
+4. **Push:** chỉ push nhánh liên quan trực tiếp việc đang làm. KHÔNG push các nhánh
+   dang dở của session/chủ đề khác. KHÔNG force-push nhánh chia sẻ. Khi push bị từ chối
+   → fetch + rebase nhánh ĐANG đứng, không đổi nhánh giữa chừng.
+5. **Trước khi rebase/reset:** nêu rõ đang ở nhánh nào + sẽ ảnh hưởng commit nào, rồi mới
+   chạy. Nghi ngờ → hỏi 1 câu, đừng đoán.
+
 ## 6. State Ownership
 
 | File | Writer |
