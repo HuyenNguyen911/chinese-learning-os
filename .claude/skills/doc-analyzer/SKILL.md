@@ -160,6 +160,27 @@ pandoc "{file_path}" -t markdown --wrap=none -o "{file_path}.converted.md"
 ```
 Sau khi chạy xong → đọc file `{file_path}.converted.md` bằng Read tool.
 
+**Fallback khi pandoc chưa cài** (đã xác nhận môi trường này thường không có pandoc):
+dùng `python-docx`, nhưng **KHÔNG** dùng `paragraph.text`/`paragraph.runs` trực tiếp — file
+`.docx` xuất từ Google Docs hay bọc nội dung (đặc biệt câu trả lời user tự điền) trong
+`<w:sdt>` (content control, thường có `w:tag` dạng `goog_rdk_*`), mà `paragraph.text` chỉ đọc
+`w:r` là con trực tiếp của `w:p` nên **bỏ sót** phần nằm trong `w:sdt`. Phải duyệt toàn bộ
+`w:t` descendant:
+```python
+import docx
+from docx.oxml.ns import qn
+
+def para_full_text(p):
+    return "".join(t.text or "" for t in p._p.iter(qn("w:t")))
+
+d = docx.Document(file_path)
+paragraphs = [para_full_text(p) for p in d.paragraphs]
+tables = [[[para_full_text(p) for p in c.paragraphs] for c in row.cells]
+          for t in d.tables for row in t.rows]
+```
+Nếu nghi ngờ sót nội dung (vd tài liệu có vẻ có câu trả lời nhưng đọc ra trống) — luôn dùng
+cách duyệt `w:t` này thay vì tin `paragraph.text`, đặc biệt với file bài làm/bài tập học viên.
+
 ### Convert XLSX → CSV (mỗi sheet thành 1 file CSV)
 ```bash
 python -c "

@@ -97,9 +97,42 @@ Sinh tự động bằng helper:
 `edge-tts` (giọng `zh-CN-XiaoxiaoNeural`) sinh mp3 vào `assets/audio/` và tự gắn
 key `audio`. Cần internet; `--force` để sinh lại; `--voice=...` để đổi giọng.
 
+> **Console tiếng Trung trên Windows:** chạy với `PYTHONIOENCODING=utf-8` ở trước lệnh —
+> nếu không, script có thể crash `UnicodeEncodeError` giữa chừng khi `print` tiến độ (mp3
+> vẫn sinh ra bình thường trước khi crash; chạy lại với biến này thì các slide đã xong sẽ
+> tự skip, chỉ log bị mất dòng đó).
+
 > ⚠️ **Drive/Google Slides KHÔNG phát audio nhúng.** Chỉ nghe được khi mở bằng
 > **PowerPoint thật** (desktop hoặc app điện thoại) — tải file về rồi trình chiếu.
 > Trình xem trực tiếp trên Drive hoặc Google Slides sẽ không kêu.
+
+## Ảnh minh hoạ (Openverse CC)
+
+Sinh manifest `{name, query}` → chạy `fetch_images.py <manifest.json>` (xem docstring đầu
+file) → tải vào `out_dir`, ghi `credits.json`. Sau đó gắn `"image": "assets/<name>.jpg"` vào
+từng slide (chỉ `title/vocab/grammar/bullets/exercise` hỗ trợ `image` — `table`/`dialogue`
+không có).
+
+**Bắt buộc 2 bước trước khi `build_deck.py`:**
+1. **Convert non-JPEG → JPEG thật.** Openverse đôi khi trả ảnh WEBP nhưng script vẫn lưu
+   đuôi `.jpg` → `build_deck.py` sẽ crash `ValueError: unsupported image format ... WEBP`.
+   Kiểm tra + convert bằng Pillow trước khi build:
+   ```python
+   from PIL import Image
+   import glob
+   for f in glob.glob("assets/*.jpg"):
+       im = Image.open(f)
+       if im.format != "JPEG":
+           im.convert("RGB").save(f, "JPEG", quality=90)
+   ```
+2. **Xem lại từng ảnh bằng Read tool trước khi build.** Query CC stock photo cho khái niệm
+   ngữ pháp trừu tượng (vd "đang xem TV", "dưới bàn") tỷ lệ trả về ảnh lạc đề khá cao (ảnh
+   nghệ thuật, ảnh cũ sai bối cảnh, biểu đồ thay vì vật thể...) — đừng tin `OK` của
+   `fetch_images.py` là ảnh đúng nội dung. Ảnh nào sai → xoá file, đổi `query` cụ thể hơn,
+   chạy lại `fetch_images.py` (đã tải rồi sẽ `CACHED`, chỉ tải lại ảnh bị xoá).
+
+**`build_deck.py` báo `PermissionError` khi ghi file `.pptx`:** file đích đang mở trong
+PowerPoint (khoá file) — đóng cửa sổ PowerPoint rồi chạy lại.
 
 ## Nguyên tắc thiết kế (đã nhúng sẵn trong renderer)
 
