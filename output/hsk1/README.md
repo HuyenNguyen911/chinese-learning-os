@@ -28,7 +28,7 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 | 13 | Đại học & đang làm · 呢 | `buoi13_daihoc/` | L11 我读大学呢 | 正反问 · 时间副词"在/正在" · 能愿动词"要" | ⏳ chưa soạn |
 | 14 | Thời tiết & sức khỏe | `buoi14_thoitiet_suckhoe/` | L12 昨天下雪了 | 非主谓句 · 语气助词"了(1)" · "太……了" | ⏳ chưa soạn |
 | 15 | Đi lại & du lịch · hẹn gặp | `buoi15_dulai_dulich/` | L15 大兴机场见 | 并列复句"……，还/也……" | ⏳ chưa soạn |
-| 16 | Ôn tập tổng hợp | `buoi16_ontap/` | — (ôn ~243–300 từ đã học) | Đủ 15 điểm ngữ pháp trọng tâm của 15 bài sách 3.0 (không phải on1/on2 2.0 cũ) | ✅ slide + audio + ảnh xong (chưa có baitap/) |
+| 16 | Ôn tập tổng hợp | `buoi16_ontap/` | — (ôn ~243–300 từ đã học) | Phần 1: đủ 15 điểm ngữ pháp trọng tâm của 15 bài sách 3.0. Phần 2: 243 từ vựng theo chủ đề | ✅ phần 1 (`slide/`) + phần 2 (`slide2_tuvung/`) xong slide + audio + ảnh (chưa có baitap/) |
 
 **15 buổi cần soạn** = vị trí 02–16 (buổi 01 ngữ âm đã xong). Trạng thái vocab: xem checklist
 `hsk1-3.0-checklist.md` — 243 từ distinct remap từ 15 课 sách (per-buổi 11–26 từ/buổi), 2 buổi
@@ -51,8 +51,11 @@ chọn lọc:
 Nội dung 3 folder cũ KHÔNG bị xoá. Khi build buổi 3.0 tương ứng, copy phần hợp lệ sang folder
 mới (`buoi04_giadinh/`, `buoi08_nghe_vitri/`, `buoi10_muasam/`, `buoi13_daihoc/`,
 `buoi14_thoitiet_suckhoe/`, `buoi15_dulai_dulich/`) + đánh dấu rõ phần nào là "mở rộng" ngoài
-scope 300 từ. `on1_nguphap_dongtu/`, `on2_tuvung_chude/` (2.0) tham khảo khi build buổi 16 ôn
-tập, không map 1-1.
+scope 300 từ.
+
+`on1_nguphap_dongtu/` (2.0) đã xoá — thay bằng `buoi16_ontap/slide/` (phần 1, đúng 15 điểm
+ngữ pháp sách 3.0). `on2_tuvung_chude/` (2.0) đã được dựng lại thành `buoi16_ontap/slide2_tuvung/`
+(phần 2, 243 từ theo checklist 3.0, nhóm theo 14 chủ đề buổi 02–15, có ảnh minh hoạ + audio).
 
 ## Cấu trúc mỗi buổi
 
@@ -61,6 +64,14 @@ buoiXX_<slug>/
   slide/   buoiXX.json + Buoi-XX-*.pptx + assets/ (ảnh, GIF, audio/slideNN.mp3)
   baitap/  baitap-buoiXX.json + hocsinh/{worksheet.docx, audio/} + dapan/dapan.docx
   doc/     课文 sách (bóc từ newhsk1-book-content.md): 汉字+pinyin+dịch + audio edge-tts + footer đối chiếu Hán ngữ Q1
+```
+
+**Buổi 16 (ôn tập) là ngoại lệ 2 phần** — không có 课文/doc riêng, gồm 2 slide deck độc lập:
+```
+buoi16_ontap/
+  slide/            phần 1 — 15 điểm ngữ pháp trọng tâm (buoi16.json + Buoi-16-Ontap.pptx + assets/)
+  slide2_tuvung/    phần 2 — 243 từ vựng theo 14 chủ đề buổi 02-15 (buoi16-p2.json +
+                    Buoi-16-P2-Tuvung.pptx + assets/)
 ```
 
 Thứ tự block slide: `title → ôn buổi trước → mục tiêu → 生词 → ngữ pháp → 10 câu khẩu ngữ →

@@ -27,20 +27,20 @@ import subprocess
 import sys
 from pathlib import Path
 
-# Giọng luân phiên cho slide thường (nữ/nam xen kẽ cho đa dạng)
+# Giọng CHUẨN duy nhất cho slide thường — nhất quán, không luân phiên (tránh
+# cảm giác lúc nhanh lúc chậm khi đổi giọng liên tục giữa các slide).
 VOICE_POOL = [
-    "zh-CN-XiaoxiaoNeural",   # nữ, ấm
-    "zh-CN-YunxiNeural",      # nam, trẻ
-    "zh-CN-XiaoyiNeural",     # nữ, trong
-    "zh-CN-YunjianNeural",    # nam, trầm
+    "zh-CN-XiaoxiaoNeural",   # nữ, phát âm chuẩn, tự nhiên — dùng xuyên suốt
 ]
 # Giọng gán cho từng người trong hội thoại (theo thứ tự xuất hiện)
 DIALOGUE_VOICES = ["zh-CN-XiaoxiaoNeural", "zh-CN-YunxiNeural", "zh-CN-XiaoyiNeural"]
-RATE_DEFAULT = "-18%"
+RATE_DEFAULT = "-30%"
 
 
 def read_text(s):
-    """Chuỗi chữ Hán cần đọc cho slide thường (không phải dialogue)."""
+    """Chuỗi chữ Hán cần đọc cho slide thường (không phải dialogue).
+    Vocab: CHỈ đọc 生词 (items), KHÔNG đọc câu ví dụ — tránh lẫn nhịp đọc
+    (từ rời rạc xen với câu liền mạch nghe rối)."""
     t = s.get("type")
     if t == "vocab":
         xs = [it.get("hz", "") for it in s.get("items", [])]

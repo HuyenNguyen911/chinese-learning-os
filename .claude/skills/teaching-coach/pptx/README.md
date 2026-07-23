@@ -33,8 +33,14 @@ Lưu ý encoding console: nếu cần in tiếng Trung ra terminal để debug, 
 2. Ánh xạ nội dung sang các block JSON bên dưới — mỗi ý một slide, action title.
 3. Tạo folder buổi `output/hskN/buoiX_<chude>/slide/` rồi ghi `buoiX.json` vào đó
    (ảnh vào `assets/` cùng cấp; path ảnh trong JSON là `assets/<tên>.jpg`).
-4. Chạy `build_deck.py <slide/buoiX.json> <slide/Buoi-X-....pptx>`.
-5. Báo đường dẫn file cho học viên.
+4. **Duyệt nội dung với user trước khi sinh audio.** Trình bày nội dung text (title +
+   items/example từng slide, không cần build pptx) cho user xem — nhất là câu ví dụ (tự
+   nhiên/khớp ngữ cảnh chưa) và ảnh đã gắn (khớp nội dung slide chưa). Chờ user OK.
+5. Sau khi user duyệt, chạy `slide_audio.py <slide/buoiX.json>` rồi
+   `build_deck.py <slide/buoiX.json> <slide/Buoi-X-....pptx>` — **một lần**, tránh
+   rebuild lặp lại theo từng chỉnh sửa nhỏ (mỗi lần sinh audio gọi edge-tts qua mạng cho
+   toàn bộ slide, khá tốn thời gian/token nếu lặp lại nhiều vòng).
+6. Báo đường dẫn file cho học viên.
 
 > **Gom theo buổi:** mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` chứa `slide/`
 > (skill này) và `baitap/` (skill exercise-generator). `<chude>` = slug chủ đề,
@@ -64,7 +70,7 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 |---|---|---|
 | `title` | `title` (+ `subtitle`, `footer`, `image?`) | Slide bìa (nền accent) |
 | `section` | `title` (+ `subtitle`) | Chuyển mục |
-| `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); có `image` → ảnh + bảng |
+| `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); có `image` → ảnh + bảng; `example?` = `{hz,py,vn}` câu ví dụ — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn}`, `note?`, `source?`, `image?` | Giảng ngữ pháp |
 | `table` | `headers[]`, `rows[][]` (+ `cjk_cols[]`) | Bảng so sánh (vd 了 vs 过) |
 | `dialogue` | `turns[]` = `{speaker, hz, py, vn}` | Khung hội thoại (bong bóng chat 2 phía) |

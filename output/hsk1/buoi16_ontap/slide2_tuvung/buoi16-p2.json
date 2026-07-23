@@ -1,0 +1,1769 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Ôn tập 2/2",
+    "topic": "Từ vựng theo chủ đề — 243 từ New HSK Course 1 (3.0)"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "HSK1 · 词汇总复习",
+      "subtitle": "Cíhuì zǒng fùxí — ôn tập từ vựng theo chủ đề",
+      "footer": ""
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Buổi này ôn từ vựng theo chủ đề",
+      "image": "assets/v00.jpg",
+      "bullets": [
+        "Xưng hô, đại từ, hỏi đáp cơ bản",
+        "Gia đình, người thân, vai trò xã hội",
+        "Nơi chốn, phương hướng, quốc gia",
+        "Thời gian, số đếm, tiền bạc, lượng từ",
+        "Đồ vật, đồ ăn, con vật, giao thông",
+        "Tính từ, động từ, phó từ thường dùng",
+        "Ngữ pháp: liên từ, trợ từ, giới từ",
+        "Thời tiết, sức khỏe, học tập, công việc",
+        "Mỗi nhóm có câu ví dụ minh họa cách dùng"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Xưng hô & giao tiếp cơ bản",
+      "image": "assets/v01.jpg",
+      "items": [
+        {
+          "hz": "你好",
+          "py": "nǐ hǎo",
+          "vn": "xin chào"
+        },
+        {
+          "hz": "谢谢",
+          "py": "xièxie",
+          "vn": "cảm ơn"
+        },
+        {
+          "hz": "不客气",
+          "py": "bú kèqi",
+          "vn": "không có gì"
+        },
+        {
+          "hz": "再见",
+          "py": "zàijiàn",
+          "vn": "tạm biệt"
+        },
+        {
+          "hz": "请问",
+          "py": "qǐngwèn",
+          "vn": "xin hỏi"
+        },
+        {
+          "hz": "没关系",
+          "py": "méi guānxi",
+          "vn": "không sao"
+        },
+        {
+          "hz": "没事儿",
+          "py": "méishìr",
+          "vn": "không sao, không có gì"
+        },
+        {
+          "hz": "好的",
+          "py": "hǎode",
+          "vn": "được, ok"
+        },
+        {
+          "hz": "名字",
+          "py": "míngzi",
+          "vn": "tên"
+        }
+      ],
+      "example": {
+        "hz": "你叫什么名字？",
+        "py": "Nǐ jiào shénme míngzi?",
+        "vn": "Bạn tên là gì?"
+      },
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Đại từ nhân xưng",
+      "image": "assets/v02.jpg",
+      "items": [
+        {
+          "hz": "我",
+          "py": "wǒ",
+          "vn": "tôi"
+        },
+        {
+          "hz": "你",
+          "py": "nǐ",
+          "vn": "bạn (số ít)"
+        },
+        {
+          "hz": "您",
+          "py": "nín",
+          "vn": "ngài, bác (kính ngữ)"
+        },
+        {
+          "hz": "你们",
+          "py": "nǐmen",
+          "vn": "các bạn (số nhiều)"
+        },
+        {
+          "hz": "大家",
+          "py": "dàjiā",
+          "vn": "mọi người"
+        }
+      ],
+      "example": {
+        "hz": "大家好，我是老师，你们好吗？",
+        "py": "Dàjiā hǎo, wǒ shì lǎoshī, nǐmen hǎo ma?",
+        "vn": "Chào mọi người, tôi là giáo viên, các bạn khỏe không?"
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Đại từ nhân xưng (số nhiều & phi người)",
+      "image": "assets/v03.jpg",
+      "items": [
+        {
+          "hz": "它",
+          "py": "tā",
+          "vn": "nó"
+        },
+        {
+          "hz": "他们",
+          "py": "tāmen",
+          "vn": "họ (nam/chung)"
+        },
+        {
+          "hz": "她们",
+          "py": "tāmen",
+          "vn": "họ (nữ)"
+        },
+        {
+          "hz": "它们",
+          "py": "tāmen",
+          "vn": "chúng nó (vật)"
+        },
+        {
+          "hz": "们",
+          "py": "men",
+          "vn": "hậu tố số nhiều"
+        }
+      ],
+      "example": {
+        "hz": "他们是我的朋友，她们也是。",
+        "py": "Tāmen shì wǒ de péngyou, tāmen yě shì.",
+        "vn": "Họ (nam) là bạn của tôi, họ (nữ) cũng vậy."
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Đại từ chỉ định",
+      "image": "assets/v04.jpg",
+      "items": [
+        {
+          "hz": "这",
+          "py": "zhè",
+          "vn": "này"
+        },
+        {
+          "hz": "这个",
+          "py": "zhège",
+          "vn": "cái này"
+        },
+        {
+          "hz": "那个",
+          "py": "nàge",
+          "vn": "cái đó"
+        },
+        {
+          "hz": "这些",
+          "py": "zhèxiē",
+          "vn": "những cái này"
+        },
+        {
+          "hz": "那些",
+          "py": "nàxiē",
+          "vn": "những cái đó"
+        },
+        {
+          "hz": "这儿",
+          "py": "zhèr",
+          "vn": "ở đây"
+        }
+      ],
+      "example": {
+        "hz": "这个多少钱？那个呢？",
+        "py": "Zhège duōshao qián? Nàge ne?",
+        "vn": "Cái này bao nhiêu tiền? Còn cái kia?"
+      },
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Đại từ chỉ định (nơi chốn)",
+      "image": "assets/v05.jpg",
+      "items": [
+        {
+          "hz": "那儿",
+          "py": "nàr",
+          "vn": "ở đó"
+        },
+        {
+          "hz": "这里",
+          "py": "zhèlǐ",
+          "vn": "ở đây"
+        },
+        {
+          "hz": "那里",
+          "py": "nàlǐ",
+          "vn": "chỗ đó"
+        },
+        {
+          "hz": "这边",
+          "py": "zhèbian",
+          "vn": "bên này"
+        },
+        {
+          "hz": "那边",
+          "py": "nàbian",
+          "vn": "đằng kia"
+        }
+      ],
+      "example": {
+        "hz": "我在这儿，你呢？",
+        "py": "Wǒ zài zhèr, nǐ ne?",
+        "vn": "Tôi ở đây, còn bạn?"
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Đại từ nghi vấn",
+      "image": "assets/v06.jpg",
+      "items": [
+        {
+          "hz": "谁",
+          "py": "shéi",
+          "vn": "ai"
+        },
+        {
+          "hz": "什么",
+          "py": "shénme",
+          "vn": "gì, cái gì"
+        },
+        {
+          "hz": "哪",
+          "py": "nǎ",
+          "vn": "nào"
+        },
+        {
+          "hz": "哪个",
+          "py": "nǎge",
+          "vn": "cái nào"
+        },
+        {
+          "hz": "哪些",
+          "py": "nǎxiē",
+          "vn": "những cái nào"
+        },
+        {
+          "hz": "哪里",
+          "py": "nǎlǐ",
+          "vn": "chỗ nào, đâu"
+        },
+        {
+          "hz": "什么时候",
+          "py": "shénme shíhou",
+          "vn": "khi nào"
+        },
+        {
+          "hz": "怎么",
+          "py": "zěnme",
+          "vn": "thế nào, làm sao"
+        },
+        {
+          "hz": "怎么样",
+          "py": "zěnmeyàng",
+          "vn": "thế nào, ra sao"
+        }
+      ],
+      "example": {
+        "hz": "这是谁？叫什么名字？",
+        "py": "Zhè shì shéi? Jiào shénme míngzi?",
+        "vn": "Đây là ai vậy? Tên là gì?"
+      },
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Gia đình ruột thịt",
+      "image": "assets/v07.jpg",
+      "items": [
+        {
+          "hz": "爸爸",
+          "py": "bàba",
+          "vn": "bố"
+        },
+        {
+          "hz": "妈妈",
+          "py": "māma",
+          "vn": "mẹ"
+        },
+        {
+          "hz": "哥哥",
+          "py": "gēge",
+          "vn": "anh trai"
+        },
+        {
+          "hz": "妹妹",
+          "py": "mèimei",
+          "vn": "em gái"
+        },
+        {
+          "hz": "弟弟",
+          "py": "dìdi",
+          "vn": "em trai"
+        },
+        {
+          "hz": "儿子",
+          "py": "érzi",
+          "vn": "con trai"
+        },
+        {
+          "hz": "女儿",
+          "py": "nǚ'ér",
+          "vn": "con gái"
+        },
+        {
+          "hz": "家",
+          "py": "jiā",
+          "vn": "nhà, gia đình"
+        },
+        {
+          "hz": "家人",
+          "py": "jiārén",
+          "vn": "người nhà"
+        }
+      ],
+      "example": {
+        "hz": "你家有几口人？",
+        "py": "Nǐ jiā yǒu jǐ kǒu rén?",
+        "vn": "Nhà bạn có mấy người?"
+      },
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Tình cảm & giới tính",
+      "image": "assets/v08.jpg",
+      "items": [
+        {
+          "hz": "女朋友",
+          "py": "nǚpéngyou",
+          "vn": "bạn gái"
+        },
+        {
+          "hz": "男朋友",
+          "py": "nánpéngyou",
+          "vn": "bạn trai"
+        },
+        {
+          "hz": "多大",
+          "py": "duō dà",
+          "vn": "bao nhiêu tuổi"
+        },
+        {
+          "hz": "女",
+          "py": "nǚ",
+          "vn": "nữ"
+        },
+        {
+          "hz": "男",
+          "py": "nán",
+          "vn": "nam"
+        }
+      ],
+      "example": {
+        "hz": "我有一些好朋友，男的女的都有。",
+        "py": "Wǒ yǒu yìxiē hǎo péngyou, nán de nǚ de dōu yǒu.",
+        "vn": "Tôi có một nhóm bạn thân, nam nữ đều có."
+      },
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Vai trò - học đường",
+      "image": "assets/v09.jpg",
+      "items": [
+        {
+          "hz": "学生",
+          "py": "xuésheng",
+          "vn": "học sinh"
+        },
+        {
+          "hz": "老师",
+          "py": "lǎoshī",
+          "vn": "giáo viên"
+        },
+        {
+          "hz": "同学",
+          "py": "tóngxué",
+          "vn": "bạn học"
+        },
+        {
+          "hz": "王老师",
+          "py": "Wáng lǎoshī",
+          "vn": "(riêng) cô/thầy Vương"
+        },
+        {
+          "hz": "小学生",
+          "py": "xiǎoxuéshēng",
+          "vn": "học sinh tiểu học"
+        },
+        {
+          "hz": "中学生",
+          "py": "zhōngxuéshēng",
+          "vn": "học sinh trung học"
+        },
+        {
+          "hz": "大学生",
+          "py": "dàxuéshēng",
+          "vn": "sinh viên đại học"
+        }
+      ],
+      "example": {
+        "hz": "我是中学生，我哥哥是大学生。",
+        "py": "Wǒ shì zhōngxuéshēng, wǒ gēge shì dàxuéshēng.",
+        "vn": "Tôi là học sinh trung học, anh trai tôi là sinh viên đại học."
+      },
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Vai trò - dịch vụ & y tế",
+      "image": "assets/v10.jpg",
+      "items": [
+        {
+          "hz": "医生",
+          "py": "yīshēng",
+          "vn": "bác sĩ"
+        },
+        {
+          "hz": "服务员",
+          "py": "fúwùyuán",
+          "vn": "nhân viên phục vụ"
+        },
+        {
+          "hz": "售货员",
+          "py": "shòuhuòyuán",
+          "vn": "nhân viên bán hàng"
+        },
+        {
+          "hz": "女士",
+          "py": "nǚshì",
+          "vn": "quý bà, cô"
+        },
+        {
+          "hz": "朋友",
+          "py": "péngyou",
+          "vn": "bạn bè"
+        },
+        {
+          "hz": "小朋友",
+          "py": "xiǎopéngyou",
+          "vn": "em nhỏ, bạn nhỏ"
+        },
+        {
+          "hz": "医",
+          "py": "yī",
+          "vn": "y (ngành y)"
+        }
+      ],
+      "example": {
+        "hz": "医生，小朋友生病了。",
+        "py": "Yīshēng, xiǎopéngyou shēngbìng le.",
+        "vn": "Bác sĩ ơi, em bé bị ốm rồi."
+      },
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Lượng từ",
+      "image": "assets/v11.jpg",
+      "items": [
+        {
+          "hz": "个",
+          "py": "gè",
+          "vn": "cái (lượng từ vạn năng)"
+        },
+        {
+          "hz": "口",
+          "py": "kǒu",
+          "vn": "lượng từ đếm người trong nhà"
+        },
+        {
+          "hz": "只",
+          "py": "zhī",
+          "vn": "lượng từ (con — cho động vật)"
+        },
+        {
+          "hz": "件",
+          "py": "jiàn",
+          "vn": "lượng từ (bộ/chiếc quần áo)"
+        },
+        {
+          "hz": "杯",
+          "py": "bēi",
+          "vn": "cốc (lượng từ)"
+        },
+        {
+          "hz": "斤",
+          "py": "jīn",
+          "vn": "cân (~500g)"
+        }
+      ],
+      "example": {
+        "hz": "我要两个苹果，两斤水果。",
+        "py": "Wǒ yào liǎng ge píngguǒ, liǎng jīn shuǐguǒ.",
+        "vn": "Tôi muốn hai quả táo, hai cân hoa quả."
+      },
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Số & tiền",
+      "image": "assets/v12.jpg",
+      "items": [
+        {
+          "hz": "块",
+          "py": "kuài",
+          "vn": "đồng (đơn vị tiền)"
+        },
+        {
+          "hz": "元",
+          "py": "yuán",
+          "vn": "đồng (nguyên)"
+        },
+        {
+          "hz": "半",
+          "py": "bàn",
+          "vn": "nửa"
+        },
+        {
+          "hz": "多少",
+          "py": "duōshao",
+          "vn": "bao nhiêu"
+        },
+        {
+          "hz": "几",
+          "py": "jǐ",
+          "vn": "mấy"
+        },
+        {
+          "hz": "两",
+          "py": "liǎng",
+          "vn": "hai (trước lượng từ)"
+        },
+        {
+          "hz": "钱",
+          "py": "qián",
+          "vn": "tiền"
+        },
+        {
+          "hz": "第",
+          "py": "dì",
+          "vn": "thứ (số thứ tự)"
+        }
+      ],
+      "example": {
+        "hz": "这件衣服多少钱？两块钱。",
+        "py": "Zhè jiàn yīfu duōshao qián? Liǎng kuài qián.",
+        "vn": "Cái áo này bao nhiêu tiền? Hai đồng."
+      },
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Giờ giấc trong ngày",
+      "image": "assets/v13.jpg",
+      "items": [
+        {
+          "hz": "现在",
+          "py": "xiànzài",
+          "vn": "bây giờ"
+        },
+        {
+          "hz": "点",
+          "py": "diǎn",
+          "vn": "giờ (thời điểm)"
+        },
+        {
+          "hz": "分",
+          "py": "fēn",
+          "vn": "phút"
+        },
+        {
+          "hz": "分钟",
+          "py": "fēnzhōng",
+          "vn": "phút (khoảng thời gian)"
+        },
+        {
+          "hz": "早上",
+          "py": "zǎoshang",
+          "vn": "buổi sáng sớm"
+        }
+      ],
+      "example": {
+        "hz": "现在几点？",
+        "py": "Xiànzài jǐ diǎn?",
+        "vn": "Bây giờ mấy giờ?"
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Giờ giấc trong ngày (buổi & sớm/muộn)",
+      "image": "assets/v14.jpg",
+      "items": [
+        {
+          "hz": "上午",
+          "py": "shàngwǔ",
+          "vn": "buổi sáng"
+        },
+        {
+          "hz": "下午",
+          "py": "xiàwǔ",
+          "vn": "buổi chiều"
+        },
+        {
+          "hz": "白天",
+          "py": "báitiān",
+          "vn": "ban ngày"
+        },
+        {
+          "hz": "晚",
+          "py": "wǎn",
+          "vn": "muộn"
+        },
+        {
+          "hz": "早",
+          "py": "zǎo",
+          "vn": "sớm"
+        }
+      ],
+      "example": {
+        "hz": "白天我上课，我很早起床。",
+        "py": "Báitiān wǒ shàngkè, wǒ hěn zǎo qǐchuáng.",
+        "vn": "Ban ngày tôi đi học, tôi dậy rất sớm."
+      },
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Mốc thời gian & trạng từ",
+      "image": "assets/v15.jpg",
+      "items": [
+        {
+          "hz": "几号",
+          "py": "jǐ hào",
+          "vn": "ngày mấy"
+        },
+        {
+          "hz": "星期几",
+          "py": "xīngqī jǐ",
+          "vn": "thứ mấy"
+        },
+        {
+          "hz": "明年",
+          "py": "míngnián",
+          "vn": "năm sau"
+        },
+        {
+          "hz": "去年",
+          "py": "qùnián",
+          "vn": "năm ngoái"
+        },
+        {
+          "hz": "小时",
+          "py": "xiǎoshí",
+          "vn": "giờ (thời lượng)"
+        },
+        {
+          "hz": "时间",
+          "py": "shíjiān",
+          "vn": "thời gian"
+        },
+        {
+          "hz": "正在",
+          "py": "zhèngzài",
+          "vn": "đang"
+        },
+        {
+          "hz": "再",
+          "py": "zài",
+          "vn": "rồi, sau đó mới"
+        }
+      ],
+      "example": {
+        "hz": "现在几号？星期几？",
+        "py": "Xiànzài jǐ hào? Xīngqī jǐ?",
+        "vn": "Hôm nay ngày mấy? Thứ mấy?"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Nơi chốn",
+      "image": "assets/v16.jpg",
+      "items": [
+        {
+          "hz": "超市",
+          "py": "chāoshì",
+          "vn": "siêu thị"
+        },
+        {
+          "hz": "商店",
+          "py": "shāngdiàn",
+          "vn": "cửa hàng"
+        },
+        {
+          "hz": "医院",
+          "py": "yīyuàn",
+          "vn": "bệnh viện"
+        },
+        {
+          "hz": "电影院",
+          "py": "diànyǐngyuàn",
+          "vn": "rạp chiếu phim"
+        },
+        {
+          "hz": "店",
+          "py": "diàn",
+          "vn": "cửa hàng"
+        },
+        {
+          "hz": "房间",
+          "py": "fángjiān",
+          "vn": "phòng"
+        },
+        {
+          "hz": "机场",
+          "py": "jīchǎng",
+          "vn": "sân bay"
+        },
+        {
+          "hz": "大兴机场",
+          "py": "Dàxīng Jīchǎng",
+          "vn": "(riêng) Sân bay Đại Hưng"
+        },
+        {
+          "hz": "西安饭店",
+          "py": "Xī'ān Fàndiàn",
+          "vn": "(riêng) Nhà hàng Tây An"
+        }
+      ],
+      "example": {
+        "hz": "医院在哪里？",
+        "py": "Yīyuàn zài nǎlǐ?",
+        "vn": "Bệnh viện ở đâu?"
+      },
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Quốc gia & ngôn ngữ",
+      "image": "assets/v17.jpg",
+      "items": [
+        {
+          "hz": "中国",
+          "py": "Zhōngguó",
+          "vn": "(riêng) Trung Quốc"
+        },
+        {
+          "hz": "法国",
+          "py": "Fǎguó",
+          "vn": "(riêng) Pháp"
+        },
+        {
+          "hz": "泰国",
+          "py": "Tàiguó",
+          "vn": "(riêng) Thái Lan"
+        },
+        {
+          "hz": "中文",
+          "py": "Zhōngwén",
+          "vn": "(riêng) tiếng Trung"
+        },
+        {
+          "hz": "汉语",
+          "py": "Hànyǔ",
+          "vn": "(riêng) tiếng Trung (tiếng nói)"
+        },
+        {
+          "hz": "汉字",
+          "py": "Hànzì",
+          "vn": "(riêng) chữ Hán"
+        },
+        {
+          "hz": "西安",
+          "py": "Xī'ān",
+          "vn": "(riêng) Tây An"
+        },
+        {
+          "hz": "北京",
+          "py": "Běijīng",
+          "vn": "(riêng) Bắc Kinh"
+        },
+        {
+          "hz": "人",
+          "py": "rén",
+          "vn": "người"
+        }
+      ],
+      "example": {
+        "hz": "你是哪国人？",
+        "py": "Nǐ shì nǎ guó rén?",
+        "vn": "Bạn là người nước nào?"
+      },
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Phương hướng",
+      "image": "assets/v18.jpg",
+      "items": [
+        {
+          "hz": "前",
+          "py": "qián",
+          "vn": "trước"
+        },
+        {
+          "hz": "下",
+          "py": "xià",
+          "vn": "dưới"
+        },
+        {
+          "hz": "外",
+          "py": "wài",
+          "vn": "ngoài"
+        },
+        {
+          "hz": "前边",
+          "py": "qiánbian",
+          "vn": "phía trước"
+        },
+        {
+          "hz": "外边",
+          "py": "wàibian",
+          "vn": "bên ngoài"
+        },
+        {
+          "hz": "后边",
+          "py": "hòubian",
+          "vn": "phía sau"
+        },
+        {
+          "hz": "边",
+          "py": "bian",
+          "vn": "hậu tố chỉ phía/bên"
+        }
+      ],
+      "example": {
+        "hz": "妹妹坐在前边，弟弟坐在后边。",
+        "py": "Mèimei zuò zài qiánbian, dìdi zuò zài hòubian.",
+        "vn": "Em gái ngồi phía trước, em trai ngồi phía sau."
+      },
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Đồ vật & con vật",
+      "image": "assets/v19.jpg",
+      "items": [
+        {
+          "hz": "桌子",
+          "py": "zhuōzi",
+          "vn": "cái bàn"
+        },
+        {
+          "hz": "杯子",
+          "py": "bēizi",
+          "vn": "cái cốc/ly"
+        },
+        {
+          "hz": "衣服",
+          "py": "yīfu",
+          "vn": "quần áo"
+        },
+        {
+          "hz": "电脑",
+          "py": "diànnǎo",
+          "vn": "máy tính"
+        },
+        {
+          "hz": "电视",
+          "py": "diànshì",
+          "vn": "tivi"
+        },
+        {
+          "hz": "手机号",
+          "py": "shǒujīhào",
+          "vn": "số điện thoại di động"
+        },
+        {
+          "hz": "猫",
+          "py": "māo",
+          "vn": "mèo"
+        },
+        {
+          "hz": "狗",
+          "py": "gǒu",
+          "vn": "chó"
+        }
+      ],
+      "example": {
+        "hz": "你家有几只狗，几只猫？",
+        "py": "Nǐ jiā yǒu jǐ zhī gǒu, jǐ zhī māo?",
+        "vn": "Nhà bạn có mấy con chó, mấy con mèo?"
+      },
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Giao thông & di chuyển",
+      "image": "assets/v20.jpg",
+      "items": [
+        {
+          "hz": "车",
+          "py": "chē",
+          "vn": "xe"
+        },
+        {
+          "hz": "开车",
+          "py": "kāichē",
+          "vn": "lái xe"
+        },
+        {
+          "hz": "出租车",
+          "py": "chūzūchē",
+          "vn": "taxi"
+        },
+        {
+          "hz": "火车",
+          "py": "huǒchē",
+          "vn": "tàu hỏa"
+        },
+        {
+          "hz": "飞机",
+          "py": "fēijī",
+          "vn": "máy bay"
+        },
+        {
+          "hz": "坐",
+          "py": "zuò",
+          "vn": "ngồi, đi (bằng xe)"
+        },
+        {
+          "hz": "住",
+          "py": "zhù",
+          "vn": "ở, sống"
+        },
+        {
+          "hz": "到",
+          "py": "dào",
+          "vn": "đến, tới"
+        }
+      ],
+      "example": {
+        "hz": "我不会开车，坐车上学。",
+        "py": "Wǒ bú huì kāichē, zuò chē shàngxué.",
+        "vn": "Tôi không biết lái xe, đi xe đến trường."
+      },
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Đồ ăn",
+      "image": "assets/v21.jpg",
+      "items": [
+        {
+          "hz": "米饭",
+          "py": "mǐfàn",
+          "vn": "cơm (gạo)"
+        },
+        {
+          "hz": "饭",
+          "py": "fàn",
+          "vn": "cơm, bữa ăn"
+        },
+        {
+          "hz": "菜",
+          "py": "cài",
+          "vn": "món ăn"
+        },
+        {
+          "hz": "面包",
+          "py": "miànbāo",
+          "vn": "bánh mì"
+        },
+        {
+          "hz": "鸡蛋",
+          "py": "jīdàn",
+          "vn": "trứng gà"
+        },
+        {
+          "hz": "包子",
+          "py": "bāozi",
+          "vn": "bánh bao"
+        },
+        {
+          "hz": "晚饭",
+          "py": "wǎnfàn",
+          "vn": "cơm tối"
+        },
+        {
+          "hz": "午饭",
+          "py": "wǔfàn",
+          "vn": "cơm trưa"
+        }
+      ],
+      "example": {
+        "hz": "午饭你想吃什么？",
+        "py": "Wǔfàn nǐ xiǎng chī shénme?",
+        "vn": "Bữa trưa bạn muốn ăn gì?"
+      },
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Trái cây & đồ uống",
+      "image": "assets/v22.jpg",
+      "items": [
+        {
+          "hz": "水果",
+          "py": "shuǐguǒ",
+          "vn": "hoa quả"
+        },
+        {
+          "hz": "苹果",
+          "py": "píngguǒ",
+          "vn": "táo"
+        },
+        {
+          "hz": "牛奶",
+          "py": "niúnǎi",
+          "vn": "sữa bò"
+        },
+        {
+          "hz": "茶",
+          "py": "chá",
+          "vn": "trà"
+        },
+        {
+          "hz": "水",
+          "py": "shuǐ",
+          "vn": "nước"
+        }
+      ],
+      "example": {
+        "hz": "我想喝茶，也想吃水果。",
+        "py": "Wǒ xiǎng hē chá, yě xiǎng chī shuǐguǒ.",
+        "vn": "Tôi muốn uống trà, cũng muốn ăn hoa quả."
+      },
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Động từ ăn uống & mua sắm",
+      "image": "assets/v23.jpg",
+      "items": [
+        {
+          "hz": "吃",
+          "py": "chī",
+          "vn": "ăn"
+        },
+        {
+          "hz": "喝",
+          "py": "hē",
+          "vn": "uống"
+        },
+        {
+          "hz": "买",
+          "py": "mǎi",
+          "vn": "mua"
+        },
+        {
+          "hz": "卖",
+          "py": "mài",
+          "vn": "bán"
+        },
+        {
+          "hz": "穿",
+          "py": "chuān",
+          "vn": "mặc"
+        },
+        {
+          "hz": "做",
+          "py": "zuò",
+          "vn": "làm"
+        }
+      ],
+      "example": {
+        "hz": "你想买什么？",
+        "py": "Nǐ xiǎng mǎi shénme?",
+        "vn": "Bạn muốn mua gì?"
+      },
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Phó từ mức độ",
+      "image": "assets/v24.jpg",
+      "items": [
+        {
+          "hz": "一些",
+          "py": "yìxiē",
+          "vn": "một số, vài"
+        },
+        {
+          "hz": "一下",
+          "py": "yíxià",
+          "vn": "một chút, thử xem"
+        },
+        {
+          "hz": "一点儿",
+          "py": "yìdiǎnr",
+          "vn": "một chút"
+        },
+        {
+          "hz": "有点儿",
+          "py": "yǒudiǎnr",
+          "vn": "hơi, có chút"
+        },
+        {
+          "hz": "非常",
+          "py": "fēicháng",
+          "vn": "rất, vô cùng"
+        },
+        {
+          "hz": "真",
+          "py": "zhēn",
+          "vn": "thật là"
+        },
+        {
+          "hz": "很",
+          "py": "hěn",
+          "vn": "rất"
+        }
+      ],
+      "example": {
+        "hz": "这个，我要看一下。",
+        "py": "Zhège, wǒ yào kàn yíxià.",
+        "vn": "Cái này, để tôi xem một chút."
+      },
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Tính từ kích thước & giá cả",
+      "image": "assets/v25.jpg",
+      "items": [
+        {
+          "hz": "大",
+          "py": "dà",
+          "vn": "to, lớn"
+        },
+        {
+          "hz": "小",
+          "py": "xiǎo",
+          "vn": "nhỏ"
+        },
+        {
+          "hz": "多",
+          "py": "duō",
+          "vn": "nhiều"
+        },
+        {
+          "hz": "少",
+          "py": "shǎo",
+          "vn": "ít"
+        },
+        {
+          "hz": "便宜",
+          "py": "piányi",
+          "vn": "rẻ"
+        },
+        {
+          "hz": "新",
+          "py": "xīn",
+          "vn": "mới"
+        }
+      ],
+      "example": {
+        "hz": "这个大，那个小，哪个便宜？",
+        "py": "Zhège dà, nàge xiǎo, nǎge piányi?",
+        "vn": "Cái này to, cái kia nhỏ, cái nào rẻ?"
+      },
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Tính từ mô tả tích cực",
+      "image": "assets/v26.jpg",
+      "items": [
+        {
+          "hz": "好看",
+          "py": "hǎokàn",
+          "vn": "đẹp, dễ nhìn"
+        },
+        {
+          "hz": "漂亮",
+          "py": "piàoliang",
+          "vn": "đẹp"
+        },
+        {
+          "hz": "好吃",
+          "py": "hǎochī",
+          "vn": "ngon"
+        },
+        {
+          "hz": "好听",
+          "py": "hǎotīng",
+          "vn": "hay (nghe)"
+        },
+        {
+          "hz": "好玩儿",
+          "py": "hǎowánr",
+          "vn": "vui, thú vị"
+        }
+      ],
+      "example": {
+        "hz": "这里很好玩儿，也很漂亮。",
+        "py": "Zhèlǐ hěn hǎowánr, yě hěn piàoliang.",
+        "vn": "Ở đây rất vui, cũng rất đẹp."
+      },
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Cảm xúc",
+      "image": "assets/v27.jpg",
+      "items": [
+        {
+          "hz": "好",
+          "py": "hǎo",
+          "vn": "tốt, khỏe, ổn"
+        },
+        {
+          "hz": "高兴",
+          "py": "gāoxìng",
+          "vn": "vui, mừng"
+        },
+        {
+          "hz": "喜欢",
+          "py": "xǐhuan",
+          "vn": "thích"
+        },
+        {
+          "hz": "爱",
+          "py": "ài",
+          "vn": "yêu, thích"
+        },
+        {
+          "hz": "觉得",
+          "py": "juéde",
+          "vn": "cảm thấy"
+        },
+        {
+          "hz": "认识",
+          "py": "rènshi",
+          "vn": "quen biết"
+        }
+      ],
+      "example": {
+        "hz": "你觉得怎么样？",
+        "py": "Nǐ juéde zěnmeyàng?",
+        "vn": "Bạn thấy thế nào?"
+      },
+      "audio": "assets/audio/slide29.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Động từ hành động (nghe/nói/đọc/viết)",
+      "image": "assets/v28.jpg",
+      "items": [
+        {
+          "hz": "看",
+          "py": "kàn",
+          "vn": "xem, nhìn"
+        },
+        {
+          "hz": "听",
+          "py": "tīng",
+          "vn": "nghe"
+        },
+        {
+          "hz": "写",
+          "py": "xiě",
+          "vn": "viết"
+        },
+        {
+          "hz": "读",
+          "py": "dú",
+          "vn": "học, theo học"
+        },
+        {
+          "hz": "说",
+          "py": "shuō",
+          "vn": "nói"
+        },
+        {
+          "hz": "问",
+          "py": "wèn",
+          "vn": "hỏi"
+        },
+        {
+          "hz": "对",
+          "py": "duì",
+          "vn": "đối với, hướng về"
+        },
+        {
+          "hz": "知道",
+          "py": "zhīdào",
+          "vn": "biết"
+        },
+        {
+          "hz": "叫",
+          "py": "jiào",
+          "vn": "tên là, gọi là"
+        }
+      ],
+      "example": {
+        "hz": "老师说，请你们读这个。",
+        "py": "Lǎoshī shuō, qǐng nǐmen dú zhège.",
+        "vn": "Giáo viên nói: mời các em đọc cái này."
+      },
+      "audio": "assets/audio/slide30.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Động từ hành động khác",
+      "image": "assets/v29.jpg",
+      "items": [
+        {
+          "hz": "唱",
+          "py": "chàng",
+          "vn": "hát"
+        },
+        {
+          "hz": "歌",
+          "py": "gē",
+          "vn": "bài hát"
+        },
+        {
+          "hz": "听见",
+          "py": "tīngjiàn",
+          "vn": "nghe thấy"
+        },
+        {
+          "hz": "看见",
+          "py": "kànjiàn",
+          "vn": "nhìn thấy"
+        },
+        {
+          "hz": "玩儿",
+          "py": "wánr",
+          "vn": "chơi"
+        },
+        {
+          "hz": "打电话",
+          "py": "dǎ diànhuà",
+          "vn": "gọi điện thoại"
+        },
+        {
+          "hz": "回",
+          "py": "huí",
+          "vn": "về, trở về"
+        },
+        {
+          "hz": "见",
+          "py": "jiàn",
+          "vn": "gặp"
+        }
+      ],
+      "example": {
+        "hz": "弟弟在学唱歌，没听见我打电话。",
+        "py": "Dìdi zài xué chàng gē, méi tīngjiàn wǒ dǎ diànhuà.",
+        "vn": "Em trai đang học hát, không nghe thấy tôi gọi điện."
+      },
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Trợ động từ & phủ định",
+      "image": "assets/v30.jpg",
+      "items": [
+        {
+          "hz": "想",
+          "py": "xiǎng",
+          "vn": "muốn, định"
+        },
+        {
+          "hz": "会",
+          "py": "huì",
+          "vn": "biết (do học mà có)"
+        },
+        {
+          "hz": "能",
+          "py": "néng",
+          "vn": "có thể (năng lực/điều kiện)"
+        },
+        {
+          "hz": "可以",
+          "py": "kěyǐ",
+          "vn": "có thể, được phép"
+        },
+        {
+          "hz": "要",
+          "py": "yào",
+          "vn": "muốn, định"
+        },
+        {
+          "hz": "没有",
+          "py": "méiyǒu",
+          "vn": "không có"
+        },
+        {
+          "hz": "没",
+          "py": "méi",
+          "vn": "chưa"
+        },
+        {
+          "hz": "不要",
+          "py": "búyào",
+          "vn": "đừng, không được"
+        }
+      ],
+      "example": {
+        "hz": "我不会写这个，你能看一下吗？",
+        "py": "Wǒ bú huì xiě zhège, nǐ néng kàn yíxià ma?",
+        "vn": "Tôi không biết viết cái này, bạn xem giúp được không?"
+      },
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Học tập & trường lớp",
+      "image": "assets/v31.jpg",
+      "items": [
+        {
+          "hz": "上",
+          "py": "shàng",
+          "vn": "bắt đầu (đi học/lên lớp)"
+        },
+        {
+          "hz": "上课",
+          "py": "shàngkè",
+          "vn": "lên lớp, học"
+        },
+        {
+          "hz": "下课",
+          "py": "xiàkè",
+          "vn": "tan học"
+        },
+        {
+          "hz": "上学",
+          "py": "shàngxué",
+          "vn": "đi học"
+        },
+        {
+          "hz": "读书",
+          "py": "dúshū",
+          "vn": "đọc sách, đi học"
+        }
+      ],
+      "example": {
+        "hz": "你几点上课？几点下课？",
+        "py": "Nǐ jǐ diǎn shàngkè? Jǐ diǎn xiàkè?",
+        "vn": "Bạn mấy giờ vào học? Mấy giờ tan học?"
+      },
+      "audio": "assets/audio/slide33.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Học tập (bậc học)",
+      "image": "assets/v32.jpg",
+      "items": [
+        {
+          "hz": "学",
+          "py": "xué",
+          "vn": "học"
+        },
+        {
+          "hz": "课",
+          "py": "kè",
+          "vn": "tiết học"
+        },
+        {
+          "hz": "中学",
+          "py": "zhōngxué",
+          "vn": "trung học"
+        },
+        {
+          "hz": "小学",
+          "py": "xiǎoxué",
+          "vn": "tiểu học"
+        },
+        {
+          "hz": "大学",
+          "py": "dàxué",
+          "vn": "đại học"
+        }
+      ],
+      "example": {
+        "hz": "这个课，小学生、中学生、大学生都可以上。",
+        "py": "Zhège kè, xiǎoxuéshēng, zhōngxuéshēng, dàxuéshēng dōu kěyǐ shàng.",
+        "vn": "Khóa học này, học sinh tiểu học, trung học, sinh viên đại học đều có thể học."
+      },
+      "audio": "assets/audio/slide34.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Công việc & nghỉ ngơi",
+      "image": "assets/v33.jpg",
+      "items": [
+        {
+          "hz": "工作",
+          "py": "gōngzuò",
+          "vn": "công việc, làm việc"
+        },
+        {
+          "hz": "下班",
+          "py": "xiàbān",
+          "vn": "tan làm"
+        },
+        {
+          "hz": "休息",
+          "py": "xiūxi",
+          "vn": "nghỉ ngơi"
+        },
+        {
+          "hz": "起床",
+          "py": "qǐchuáng",
+          "vn": "ngủ dậy"
+        },
+        {
+          "hz": "睡",
+          "py": "shuì",
+          "vn": "ngủ"
+        }
+      ],
+      "example": {
+        "hz": "你几点起床？几点休息？",
+        "py": "Nǐ jǐ diǎn qǐchuáng? Jǐ diǎn xiūxi?",
+        "vn": "Bạn mấy giờ ngủ dậy? Mấy giờ nghỉ?"
+      },
+      "audio": "assets/audio/slide35.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Thời tiết",
+      "image": "assets/v34.jpg",
+      "items": [
+        {
+          "hz": "天气",
+          "py": "tiānqì",
+          "vn": "thời tiết"
+        },
+        {
+          "hz": "天",
+          "py": "tiān",
+          "vn": "trời; ngày"
+        },
+        {
+          "hz": "下雨",
+          "py": "xiàyǔ",
+          "vn": "mưa (động từ)"
+        },
+        {
+          "hz": "雨",
+          "py": "yǔ",
+          "vn": "mưa (danh từ)"
+        },
+        {
+          "hz": "冷",
+          "py": "lěng",
+          "vn": "lạnh"
+        },
+        {
+          "hz": "热",
+          "py": "rè",
+          "vn": "nóng"
+        }
+      ],
+      "example": {
+        "hz": "这里天气太热了，真想下雨。",
+        "py": "Zhèlǐ tiānqì tài rè le, zhēn xiǎng xiàyǔ.",
+        "vn": "Ở đây thời tiết nóng quá, thật muốn trời mưa."
+      },
+      "audio": "assets/audio/slide36.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Sức khỏe",
+      "image": "assets/v35.jpg",
+      "items": [
+        {
+          "hz": "生病",
+          "py": "shēngbìng",
+          "vn": "bị bệnh"
+        },
+        {
+          "hz": "看病",
+          "py": "kànbìng",
+          "vn": "khám bệnh"
+        },
+        {
+          "hz": "病",
+          "py": "bìng",
+          "vn": "bệnh, ốm"
+        },
+        {
+          "hz": "药",
+          "py": "yào",
+          "vn": "thuốc"
+        }
+      ],
+      "example": {
+        "hz": "小朋友生病了，要看病吃药。",
+        "py": "Xiǎopéngyou shēngbìng le, yào kànbìng chī yào.",
+        "vn": "Em nhỏ bị ốm rồi, cần đi khám và uống thuốc."
+      },
+      "audio": "assets/audio/slide37.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Liên từ nhẹ",
+      "image": "assets/v36.jpg",
+      "items": [
+        {
+          "hz": "和",
+          "py": "hé",
+          "vn": "và"
+        },
+        {
+          "hz": "也",
+          "py": "yě",
+          "vn": "cũng"
+        },
+        {
+          "hz": "都",
+          "py": "dōu",
+          "vn": "đều"
+        },
+        {
+          "hz": "呢",
+          "py": "ne",
+          "vn": "trợ từ hỏi rút gọn"
+        },
+        {
+          "hz": "吧",
+          "py": "ba",
+          "vn": "trợ từ đề nghị/thương lượng"
+        }
+      ],
+      "example": {
+        "hz": "我和小明都喜欢读书，你呢？",
+        "py": "Wǒ hé Xiǎo Míng dōu xǐhuan dúshū, nǐ ne?",
+        "vn": "Tôi và Tiểu Minh đều thích đọc sách, còn bạn?"
+      },
+      "audio": "assets/audio/slide38.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "Trợ từ & giới từ ngữ pháp lõi",
+      "image": "assets/v37.jpg",
+      "items": [
+        {
+          "hz": "的",
+          "py": "de",
+          "vn": "trợ từ sở hữu/định ngữ"
+        },
+        {
+          "hz": "那",
+          "py": "nà",
+          "vn": "vậy thì, thế thì (liên từ)"
+        },
+        {
+          "hz": "了",
+          "py": "le",
+          "vn": "trợ từ chỉ sự thay đổi"
+        },
+        {
+          "hz": "是",
+          "py": "shì",
+          "vn": "là"
+        },
+        {
+          "hz": "在",
+          "py": "zài",
+          "vn": "ở, tại"
+        }
+      ],
+      "example": {
+        "hz": "这是我家，现在大家都在房间。",
+        "py": "Zhè shì wǒ jiā, xiànzài dàjiā dōu zài fángjiān.",
+        "vn": "Đây là nhà tôi, hiện tại mọi người đều đang ở trong phòng."
+      },
+      "audio": "assets/audio/slide39.mp3"
+    },
+    {
+      "type": "section",
+      "title": "复习完成",
+      "subtitle": "Đã ôn xong từ vựng theo chủ đề (phần 2/2) → sẵn sàng thi HSK1"
+    }
+  ]
+}

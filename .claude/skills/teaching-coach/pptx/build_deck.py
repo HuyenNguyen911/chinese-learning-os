@@ -207,6 +207,25 @@ class DeckBuilder:
         self._set_run(p.add_run(), "🔑 Mẹo ghi nhớ: ", 15, color="accent", bold=True)
         self._set_run(p.add_run(), text, 15, color="ink", bold=False, cjk=True)
 
+    # -- auto-fit cho các slide dạng textbox (grammar/bullets/reading) -----
+    # Trước đây các slide này neo MSO_ANCHOR.MIDDLE với chiều cao cố định:
+    # ít nội dung thì chữ dồn giữa trang, nhiều nội dung thì tràn lên đè cả
+    # header. Dùng lại đúng ý tưởng đã chứng minh hiệu quả ở _slide_dialogue
+    # (ước lượng chiều cao "tự nhiên" rồi co font/spacing nếu vượt khung) +
+    # neo TOP để nội dung luôn bắt đầu ngay dưới header, nhất quán dù ít/nhiều.
+    def _line_h(self, pt):
+        return int(Pt(pt) * 1.28)
+
+    def _wrap_lines(self, text, width_emu, pt, cjk=False):
+        if not text:
+            return 1
+        avg_char_w = Pt(pt) * (1.0 if cjk else 0.52)
+        per_line = max(1, int(width_emu / avg_char_w))
+        return max(1, -(-len(str(text)) // per_line))
+
+    def _fit_scale(self, natural_h, avail_h):
+        return min(1.0, avail_h / natural_h) if natural_h else 1.0
+
     # -- render dispatch ---------------------------------------------------
     def render(self):
         for i, s in enumerate(self.spec.get("slides", [])):
@@ -262,9 +281,56 @@ class DeckBuilder:
         area_h = self._content_area_h()
         tleft, tw, img_left, img_w = self._split_image_col(
             s, Inches(4.2), default_side="left")
-        if s.get("image"):
-            self._place_image(slide, s["image"], img_left, top, img_w, area_h)
-        self._vocab_table(slide, items, tleft, top, tw, area_h)
+        example = s.get("example")
+        has_img = bool(s.get("image"))
+        table_h = area_h
+        if example and not has_img:
+            ex_h = Inches(0.85)
+            table_h = area_h - ex_h - Inches(0.14)
+        self._vocab_table(slide, items, tleft, top, tw, table_h)
+        if has_img:
+            img_h = self._image_fit_height(
+                s["image"], img_w,
+                int(area_h * 0.62) if example else area_h)
+            self._place_image(slide, s["image"], img_left, top, img_w, img_h)
+            if example:
+                ex_top = top + img_h + Inches(0.22)
+                ex_h = (top + area_h) - ex_top
+                if ex_h > Inches(0.35):
+                    self._vocab_example(slide, example, img_left, ex_top,
+                                        img_w, ex_h)
+        elif example:
+            ex_top = top + table_h + Inches(0.14)
+            self._vocab_example(slide, example, tleft, ex_top, tw, ex_h)
+
+    def _image_fit_height(self, rel_path, box_w, max_h):
+        """Chiều cao hiển thị THẬT của ảnh khi ép vừa bề rộng box_w (giữ tỉ lệ),
+        giới hạn tối đa max_h — để không kéo giãn ảnh lấp đầy hết cột dọc."""
+        path = self.base / rel_path
+        if not (path.exists() and _HAS_PIL):
+            return max_h
+        try:
+            with Image.open(str(path)) as im:
+                iw, ih = im.size
+        except Exception:
+            return max_h
+        h = int(box_w * ih / iw)
+        return min(h, max_h)
+
+    def _vocab_example(self, slide, example, left, top, width, height):
+        # Chữ thường, KHÔNG khung/nền — tránh lệch form khi cột ảnh hẹp hơn bảng.
+        box, tf = self._textbox(slide, left, top, width, height)
+        p = tf.paragraphs[0]
+        self._set_run(p.add_run(), "例句  ", 12, color="accent", bold=True)
+        self._set_run(p.add_run(), example.get("hz", ""), 15, color="ink",
+                      bold=True, cjk=True)
+        if example.get("py"):
+            p2 = tf.add_paragraph(); p2.space_before = Pt(3)
+            self._set_run(p2.add_run(), example["py"], 11, color="accent",
+                          italic=True)
+        if example.get("vn"):
+            p3 = tf.add_paragraph(); p3.space_before = Pt(3)
+            self._set_run(p3.add_run(), example["vn"], 12, color="muted")
 
     def _vocab_table(self, slide, items, left, top, width, height):
         # Nếu item có key "color" (hex) -> chèn cột "ô màu thật" (swatch) cho
