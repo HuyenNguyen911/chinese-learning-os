@@ -138,6 +138,14 @@ body{margin:0;font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,s
 .legend b{font-weight:700;border-radius:4px;padding:0 4px;margin:0 1px;}
 button{font-family:inherit;}
 .gostudy{background:var(--study);border:1px solid var(--study);color:#fff;padding:5px 12px;border-radius:6px;cursor:pointer;font-size:13px;white-space:nowrap;}
+.syncbtn{background:#fff;border:1px solid var(--bd);color:var(--head);padding:5px 10px;border-radius:6px;cursor:pointer;font-size:12.5px;white-space:nowrap;}
+.syncstatus{font-size:11px;color:#999;white-space:nowrap;margin-left:auto;}
+.syncbanner{background:#fff4e5;border-bottom:1px solid #f0c36d;color:#7a4a00;padding:8px 14px;font-size:13px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+.syncbanner button{background:#7a4a00;color:#fff;border:none;padding:4px 10px;border-radius:5px;cursor:pointer;font-size:12px;}
+.syncbanner .x{background:transparent;color:#7a4a00;border:none;font-size:14px;cursor:pointer;padding:2px 6px;margin-left:auto;}
+.syncbanner.info{background:#eaf2ff;border-bottom-color:#a9c9f5;color:#1a4a8a;}
+.syncbanner.info button{background:#1a4a8a;}
+.syncbanner.info .x{color:#1a4a8a;}
 main{padding:10px 14px 60px;}
 details{margin:8px 0;border:1px solid var(--bd);border-radius:8px;background:#fff;overflow:hidden;}
 summary{list-style:none;cursor:pointer;padding:9px 12px;font-size:16px;font-weight:600;color:var(--head);background:#eef1f8;display:flex;align-items:center;gap:8px;min-height:38px;}
@@ -294,7 +302,7 @@ function applyFlag(tr){var w=tr.getAttribute('data-w');var on=!!FLAGS[w];
   b.textContent=on?'🚩':'⚑';b.classList.toggle('on',on);
   b.title=on?'Bỏ đánh dấu (đang học tới đây)':'Đánh dấu: đang học tới đây';}
 function toggleFlag(btn){var tr=btn.closest('tr');var w=tr.getAttribute('data-w');
-  FLAGS[w]=!FLAGS[w];if(!FLAGS[w])delete FLAGS[w];fsave();
+  FLAGS[w]=!FLAGS[w];if(!FLAGS[w])delete FLAGS[w];fsave();markDirty();
   applyFlag(tr);updateBaiFlagCount(tr.closest('details'));}
 function updateBaiFlagCount(det){if(!det)return;
   var n=det.querySelectorAll('.panel.p1 tbody tr.flagged').length;
@@ -313,7 +321,7 @@ function er(btn){var tr=btn.closest('tr');var on=!tr.classList.contains('editing
   for(var i=0;i<c.length;i++){var td=c[i];td.contentEditable=on?'true':'false';
     /* sửa ô nào lưu ô đó; riêng ô 生词 (idx 0) đổi → đánh dấu dòng cần làm mới cột sau */
     if(on){td.oninput=(function(idx,cell,row){return function(){var r=rec(w);r[idx]=cell.textContent;
-      if(idx===0){r._stale=1;row.classList.add('stale');staleBadge(row);}store(DB);};})(i,td,tr);}}
+      if(idx===0){r._stale=1;row.classList.add('stale');staleBadge(row);}store(DB);markDirty();};})(i,td,tr);}}
   btn.textContent=on?'✅':'✏️';if(on)c[0].focus();}
 function tab(btn,which){var d=btn.closest('details');
   d.querySelectorAll('.tabbtn').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');
@@ -371,7 +379,58 @@ function spkRow(btn){speak(btn.closest('tr').getAttribute('data-w'));}
 document.addEventListener('DOMContentLoaded',function(){
   document.querySelectorAll('#root tbody tr').forEach(initRow);
   document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
+  updateSyncBar();
 });
+
+/* ===== Đồng bộ tiến độ giữa các máy (Export/Import thủ công, đẩy qua git) ===== */
+var SYNCKEY='hsk6vocab_syncmeta_v1';
+function syncMeta(){try{return JSON.parse(localStorage.getItem(SYNCKEY))||{};}catch(e){return {};}}
+function saveSyncMeta(m){localStorage.setItem(SYNCKEY,JSON.stringify(m));}
+function markDirty(){var m=syncMeta();m.dirty=true;saveSyncMeta(m);updateSyncBar();}
+function exportProgress(){
+  var payload={ver:1,exportedAt:new Date().toISOString(),db:DB,flags:FLAGS,srs:SRS};
+  var blob=new Blob([JSON.stringify(payload)],{type:'application/json'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');a.href=url;a.download='tu-vung-progress.json';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  var m=syncMeta();m.lastExport=payload.exportedAt;m.dirty=false;saveSyncMeta(m);
+  updateSyncBar();
+  alert('Đã tải tu-vung-progress.json.\nHãy chuyển/lưu file này đè vào output/study/hsk6/ trong repo rồi git add + commit + push, để máy khác git pull về và bấm "Nhập tiến độ".');
+}
+function importProgress(file){
+  var reader=new FileReader();
+  reader.onload=function(){
+    var payload;
+    try{payload=JSON.parse(reader.result);}catch(e){alert('File không hợp lệ.');return;}
+    if(!confirm('Nhập tiến độ từ file sẽ GHI ĐÈ toàn bộ cờ đánh dấu / tiến độ học (SRS) / ghi chú sửa trên máy này. Tiếp tục?'))return;
+    DB=payload.db||{};store(DB);
+    FLAGS=payload.flags||{};fsave();
+    SRS=payload.srs||{};ssave();
+    document.querySelectorAll('#root tbody tr').forEach(initRow);
+    document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
+    var m=syncMeta();m.lastImport=new Date().toISOString();m.dirty=false;saveSyncMeta(m);
+    sessionStorage.setItem('imported_this_session','1');
+    updateSyncBar();
+    alert('Đã nhập tiến độ'+(payload.exportedAt?(' (xuất lúc '+new Date(payload.exportedAt).toLocaleString('vi-VN')+').'):'.'));
+  };
+  reader.readAsText(file);
+}
+function dismissSyncBanner(){
+  document.getElementById('syncbanner').classList.add('hidden');
+  sessionStorage.setItem('syncbanner_dismissed','1');
+}
+function dismissImportBanner(){
+  document.getElementById('importbanner').classList.add('hidden');
+  sessionStorage.setItem('importbanner_dismissed','1');
+}
+function updateSyncBar(){
+  var m=syncMeta();
+  var banner=document.getElementById('syncbanner');
+  if(banner)banner.classList.toggle('hidden', !m.dirty || sessionStorage.getItem('syncbanner_dismissed')==='1');
+  var ibanner=document.getElementById('importbanner');
+  if(ibanner)ibanner.classList.toggle('hidden', !!sessionStorage.getItem('imported_this_session') || sessionStorage.getItem('importbanner_dismissed')==='1');
+}
 
 /* ===== 🎓 Học từ vựng: flashcard active-recall + Leitner ===== */
 var SKEY='hsk6srs_v1';
@@ -448,7 +507,7 @@ function sGrade(good){var w=Scur.w;if(!SRS[w])SRS[w]={box:Scur.lvl};
     SRS[w].box=Math.min(sbox(w)+1,cap);
     Sq.shift();Sdone++;
   }else{SRS[w].box=1;Sagain++;Sq.push(Sq.shift());}
-  ssave();sNext();}
+  ssave();markDirty();sNext();}
 function reading(p,hv){return esc(p||'')+(hv?' · <span class="hv">'+esc(hv)+'</span>':'');}
 var IDS={'⿰':'trái–phải','⿱':'trên–dưới','⿲':'trái–giữa–phải','⿳':'trên–giữa–dưới','⿴':'bao kín','⿵':'bao trên','⿶':'bao dưới','⿷':'bao trái','⿸':'góc trên-trái','⿹':'góc trên-phải','⿺':'góc dưới-trái','⿻':'lồng nhau'};
 function structLabel(dc){return (dc&&IDS[dc[0]])?IDS[dc[0]]:'';}
@@ -519,11 +578,19 @@ P = ['<!doctype html>', '<html lang="vi"><head><meta charset="utf-8">',
      '<div class="bar"><h1>生词 HSK6</h1>',
      '<input id="q" placeholder="Tìm từ / pinyin / nghĩa…" oninput="filt()">',
      '<button class="gostudy" onclick="startStudyAll()">🎓 Học</button>',
-     '<span class="legend">Ôn: <b class="st none" style="color:#aaa">○</b>kho '
-     '<b style="background:#e8804a;color:#fff">D</b><b style="background:#d1a015;color:#fff">C</b>'
-     '<b style="background:#37a86a;color:#fff">B</b><b style="background:#1e874b;color:#fff">A</b></span>',
-     '<span class="tip" title="🎓 Học = thẻ lật tự nhớ (active recall) + lặp ngắt quãng Leitner, tiến độ lưu trong trình duyệt. Trạng thái ôn ⚪/D/C/B/A suy từ knowledge/vocabulary. Mỗi bài có nút Học riêng; nút 🎓 Học trên đây học theo từ đang lọc/tất cả.">ⓘ</span>',
-     '</div>', '<main id="root">']
+     '<button class="syncbtn" onclick="exportProgress()" title="Tải file tiến độ (cờ đánh dấu, SRS, ghi chú sửa) để copy/git push sang máy khác">⬆️ Xuất tiến độ</button>',
+     '<button class="syncbtn" onclick="document.getElementById(\'importfile\').click()" title="Nạp file tiến độ đã đồng bộ từ máy khác — sẽ GHI ĐÈ tiến độ trên máy này">⬇️ Nhập tiến độ</button>',
+     '<input type="file" id="importfile" accept="application/json" style="display:none" onchange="if(this.files[0])importProgress(this.files[0]);this.value=\'\';">',
+     '</div>',
+     '<div id="syncbanner" class="syncbanner hidden">⚠️ Máy này có thay đổi (cờ đánh dấu / tiến độ học / ghi chú) chưa được xuất ra để đồng bộ sang máy khác.'
+     '<button onclick="exportProgress()">Xuất ngay</button>'
+     '<button class="x" onclick="dismissSyncBanner()" title="Ẩn tạm, sẽ nhắc lại khi mở trang lần sau nếu vẫn chưa xuất">✕</button>'
+     '</div>',
+     '<div id="importbanner" class="syncbanner info hidden">ℹ️ Phiên này bạn chưa bấm "Nhập tiến độ". Nếu vừa git pull từ máy khác, hãy nhập trước khi học để không học nhầm dữ liệu cũ.'
+     '<button onclick="document.getElementById(\'importfile\').click()">Nhập ngay</button>'
+     '<button class="x" onclick="dismissImportBanner()" title="Ẩn tạm cho phiên này">✕</button>'
+     '</div>',
+     '<main id="root">']
 
 for num, header, rows, exp, btitle in bai:
     cnt = ('%d từ · %d nhóm 拓展' % (len(rows), len(exp))) if exp else ('%d từ' % len(rows))
