@@ -63,5 +63,62 @@
       {"w": "百炼成钢", "g": "trăm luyện thành thép (tôi luyện nên người)"},
       {"w": "锤炼", "g": "tôi luyện, mài giũa"}
     ]}
+  ],
+  "30": [
+    {"root": "轨", "vi": "đường ray; quỹ đạo", "members": [
+      {"w": "铁轨", "g": "đường ray sắt"},
+      {"w": "无轨", "g": "không chạy trên ray (无轨电车 = xe điện bánh hơi)"},
+      {"w": "越轨", "g": "vượt rào, làm quá khuôn phép"},
+      {"w": "正轨", "g": "quỹ đạo đúng, nề nếp bình thường"},
+      {"w": "不轨", "g": "bất chính, phạm pháp"}
+    ]},
+    {"root": "毁", "vi": "hủy, phá hủy", "members": [
+      {"w": "毁约", "g": "hủy hợp đồng, bội ước"},
+      {"w": "撕毁", "g": "xé bỏ, hủy bỏ (hiệp ước...)"},
+      {"w": "炸毁", "g": "đánh bom phá hủy"},
+      {"w": "坠毁", "g": "rơi vỡ (máy bay)"}
+    ]},
+    {"root": "顽", "vi": "ngoan cố; nghịch ngợm", "members": [
+      {"w": "顽皮", "g": "nghịch ngợm, tinh nghịch"},
+      {"w": "顽童", "g": "đứa trẻ nghịch ngợm"},
+      {"w": "老顽固", "g": "kẻ bảo thủ già, người cứng đầu"},
+      {"w": "顽固不化", "g": "ngoan cố không chịu thay đổi"}
+    ]},
+    {"root": "奢", "vi": "xa xỉ, xa hoa", "members": [
+      {"w": "奢华", "g": "xa hoa, lộng lẫy"},
+      {"w": "奢靡", "g": "xa xỉ phung phí"},
+      {"w": "穷奢极侈", "g": "cực kỳ xa xỉ, hoang phí tột độ"},
+      {"w": "奢望", "g": "mong ước xa vời, hy vọng viển vông"}
+    ]},
+    {"root": "逆", "vi": "ngược, trái chiều", "members": [
+      {"w": "逆风", "g": "ngược gió"},
+      {"w": "逆光", "g": "ngược sáng"},
+      {"w": "逆耳", "g": "chói tai, khó nghe (忠言逆耳)"},
+      {"w": "倒行逆施", "g": "làm ngược đạo lý, hành động ngang ngược"}
+    ]},
+    {"root": "呆", "vi": "ngây, đờ đẫn; ngốc", "members": [
+      {"w": "呆板", "g": "cứng nhắc, máy móc, đờ đẫn"},
+      {"w": "书呆子", "g": "mọt sách, kẻ đọc sách cứng nhắc"},
+      {"w": "呆笨", "g": "ngốc nghếch, đần độn"},
+      {"w": "呆头呆脑", "g": "ngờ nghệch, đần độn"},
+      {"w": "呆滞", "g": "đờ đẫn, trì trệ (ánh mắt/hàng hóa)"}
+    ]},
+    {"root": "摧", "vi": "bẻ gãy, phá hủy", "members": [
+      {"w": "摧折", "g": "bẻ gãy, vùi dập"},
+      {"w": "摧毁", "g": "phá hủy, đánh sập"},
+      {"w": "坚不可摧", "g": "vững chắc không gì phá nổi"}
+    ]},
+    {"root": "瘤", "vi": "khối u", "members": [
+      {"w": "毒瘤", "g": "khối u độc; ung nhọt (của xã hội)"},
+      {"w": "根瘤", "g": "nốt sần ở rễ cây (họ đậu)"}
+    ]},
+    {"root": "衰", "vi": "suy, suy yếu", "members": [
+      {"w": "衰迈", "g": "già yếu"},
+      {"w": "衰弱", "g": "suy nhược, yếu ớt"},
+      {"w": "衰落", "g": "suy tàn, sa sút"},
+      {"w": "衰减", "g": "suy giảm, giảm sút"},
+      {"w": "衰微", "g": "suy vi, suy yếu (thế lực)"},
+      {"w": "衰败", "g": "suy bại, tàn lụi"}
+    ]}
   ]
 }

@@ -58,22 +58,39 @@ SK=".claude/skills/vocab-study/scripts"
 ```
 Lần cập nhật thông thường (không có chữ/từ mới) chỉ cần **1 → 3 → 5**.
 
+## Sinh override bằng workflow (nghĩa Việt / 例句 cá nhân hoá)
+Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu cá nhân hoá — dùng workflow (cần user bật orchestration):
+1. **Trích payload theo bài** ra scratchpad: mỗi bài 1 file JSON `[{w, zh(=释义), vi}]` (lọc bỏ seed 拓展).
+2. **Workflow**: `pipeline` theo bài, mỗi agent 1 bài, `schema` ép trả `{items:[{w, vi|ex}]}`.
+   - Nghĩa Việt: prompt "biên soạn từ điển Hán-Việt, chắt nghĩa cốt lõi từ 释义, ngắn gọn".
+   - 例句 cá nhân hoá: **nạp `memory/user-profile.md` vào prompt** làm bối cảnh; câu đủ chủ-vị, khẩu ngữ, bám đời sống user, ~12-22 chữ.
+3. **Merge** kết quả (đọc `result` trong task output) → ghi `vi_override.json` / `ex_override.json` (map `{w: value}`).
+4. Build lại **3 → 5**, rồi **verify**: `html.escape(value) in html` cho mọi entry (phải 100%); đếm 意义 trống = 0.
+
+> ⚠️ **Gotcha `user-profile` cho 例句:** bản đầy đủ (khối "Đời sống & Cá nhân") có thể nằm ở nhánh khác
+> (`feat/personalization-doc-hieu`). Nếu nhánh hiện tại chỉ có bản tối thiểu → đọc qua
+> `git show feat/personalization-doc-hieu:memory/user-profile.md` (CHỈ đọc, không ghi memory).
+
 ## Assets (đóng gói sẵn trong data/)
 - `hanzi.json` — chiết tự + bộ + 字源(sem/phon) + pinyin + Hán-Việt (~1861 chữ). Nguồn: Make Me a Hanzi + Unihan.
 - `mnemonic.json` — mẹo nhớ tiếng Việt theo từ (~1301, sinh bằng workflow). **Tăng dần**.
-- `desc_override.json` — 释义 do hệ thống bổ sung cho từ có 描述 trống (vd Bài 1–2).
+- `desc_override.json` — 释义 do hệ thống bổ sung cho từ có 描述 trống (vd Bài 1–2). **Chỉ lấp trống** (Excel ưu tiên).
+- `vi_override.json` — Nghĩa Việt do hệ thống bổ sung cho từ có 意义 trống. **Chỉ lấp trống** (Excel ưu tiên).
+- `ex_override.json` — 例句 cá nhân hoá (bám `memory/user-profile.md`). **GHI ĐÈ** câu bài khóa cho từ có trong file (vd Bài 15–28).
 - `exp_extra.json` — nhóm 生词拓展 thêm tay cho bài sheet 'Chung từ' thiếu (vd Bài 28).
-- `nghia_override.json` — Nghĩa Việt do hệ thống bổ sung cho từ có 意义 trống (~1166 từ, đã qua verify chéo). **Tăng dần**.
 - `bai_titles.json` — map `{"<N>": "<标题 bài khóa>"}`. build_md gắn tên vào heading `## Bài N — <title>`, render_html hiện cạnh mỗi bài + nhãn flashcard. lesson-prep tự ghi khi bóc bài mới.
 - `tv.json`, `ct.json` — trung gian, tái sinh mỗi lần chạy bước 1 (không cần giữ tay).
 
 ## Nguyên tắc
 - Pinyin auto (pypinyin) + luật sửa 多音字 (朴→pǔ…), 儿化 (…儿→r), dấu `'`, âm theo ngữ cảnh từ.
-- 释义 **ưu tiên cột 描述 của user**; chỉ tự sinh khi trống.
-- Nghĩa Việt **ưu tiên cột 意义 của user**; chỉ tự sinh (qua `nghia_override.json`, có verify chéo trước khi merge) khi trống.
+- 释义 **ưu tiên cột 描述 của user**; chỉ tự sinh khi trống (`desc_override.json`).
+- Nghĩa Việt **ưu tiên cột 意义**; chỉ tự sinh khi trống, có verify chéo trước khi merge (`vi_override.json`).
+- 例句 mặc định theo cột 例如; nếu từ có trong `ex_override.json` thì **ghi đè** bằng câu cá nhân hoá.
+- **Hàng phân cách bảng markdown** = mọi ô chỉ gồm `---`/`:`; render KHÔNG được bỏ dòng dữ liệu chỉ vì ô có chứa `---` (bug cũ đã sửa: 勉强 Bài 5).
 - Chỉ **đọc** `knowledge/vocabulary/*` (Activation). Không ghi. State vocabulary do learning-strategist sở hữu (CLAUDE.md §6).
 - Mẹo nhớ: workflow cần user bật orchestration; **chỉ sinh cho từ mới** để tiết kiệm token.
 - **Mọi script phải `reconfigure(utf-8)` stdout/stderr ở đầu file** — console Windows mặc định cp1252, in 中文/tiếng Việt sẽ crash `UnicodeEncodeError` nếu thiếu.
+- **Sau mỗi lần build, nhắc user `Ctrl+Shift+R`** — trình duyệt cache file HTML rất mạnh; mở lại/`start` chỉ focus tab cũ, dễ tưởng "update mất tiêu".
 
 ## Phụ thuộc
 - Python: `pypinyin`, `openpyxl`.

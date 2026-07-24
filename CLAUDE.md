@@ -49,12 +49,40 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 | memory/writing-dna.md | HSK6 Examiner, Speaking Coach |
 | memory/learning-preferences.md | Learning Strategist |
 
+## 4.5 Model Policy (tiết kiệm token)
+Default = **Sonnet** (nhanh, rẻ, đủ tốt cho ~80% việc: sinh slide, trang từ vựng,
+bài tập, bóc pptx, sửa lỗi nhẹ). Khi gặp việc KHÓ dưới đây, **chủ động nhắc user**:
+`💡 Việc này nên /model opus để chất lượng cao hơn`:
+- hsk6-examiner (chấm bài viết, ước lượng điểm)
+- thiết kế / spec giáo trình mới, quyết định kiến trúc
+- suy luận nhiều bước / gỡ lỗi phức tạp
+
+Không tự ý escalate; chỉ gợi ý 1 dòng rồi làm tiếp bằng Sonnet nếu user không đổi.
+
 ## 5. Operating Rules
 - Không dùng flashcard đơn thuần làm phương pháp chính
 - Không viết lại bài hoàn toàn — giữ 90% nội dung + văn phong gốc
 - Không biến bài thành văn mẫu
 - Tối đa 1 câu hỏi mỗi lượt, không hỏi dồn dập
 - Ưu tiên ví dụ cá nhân thật, tránh từ sáo rỗng
+
+## 5.5 Git Hygiene (chống commit/push nhầm nhánh)
+User không kiểm soát được git flow — TÔI phải tự kỷ luật. Bắt buộc:
+
+1. **Trước MỌI thao tác ghi git** (commit / rebase / reset / push) → chạy
+   `git branch --show-current` và xác nhận đang đứng đúng nhánh. Đây là bước bắt buộc,
+   không bỏ qua (bài học: từng rebase nhầm vì đứng sai nhánh).
+2. **Commit đúng phạm vi session:** thay đổi thuộc chủ đề session nào thì commit vào
+   nhánh của session/chủ đề đó. KHÔNG commit ghép việc lạ vào nhánh đang checkout chỉ vì
+   tiện.
+3. **Thay đổi meta/infra** (model config, `.claude/settings*.json`, sửa SKILL.md/CLAUDE.md,
+   tooling) KHÔNG phải feature work → về `main` (hoặc nhánh chore riêng cắt từ main),
+   TUYỆT ĐỐI không nhét vào nhánh feature dang dở.
+4. **Push:** chỉ push nhánh liên quan trực tiếp việc đang làm. KHÔNG push các nhánh
+   dang dở của session/chủ đề khác. KHÔNG force-push nhánh chia sẻ. Khi push bị từ chối
+   → fetch + rebase nhánh ĐANG đứng, không đổi nhánh giữa chừng.
+5. **Trước khi rebase/reset:** nêu rõ đang ở nhánh nào + sẽ ảnh hưởng commit nào, rồi mới
+   chạy. Nghi ngờ → hỏi 1 câu, đừng đoán.
 
 ## 6. State Ownership
 
@@ -71,7 +99,7 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 | output/hskN/buoiX_&lt;chude&gt;/baitap/ | Exercise Generator (baitap.json + hocsinh/worksheet.docx + audio + dapan/dapan.docx) |
 | knowledge/hsk-exam-bank/ | Exercise Generator (seed có review gate) |
 | output/study/hskN/tu-vung.{md,html} | Vocab Study (đọc raw/Từ vựng.xlsx; CHỈ ĐỌC knowledge/vocabulary để lấy Activation) |
-| .claude/skills/vocab-study/data/* | Vocab Study (hanzi.json, mnemonic.json — tích lũy; desc_override, exp_extra, nghia_override) |
+| .claude/skills/vocab-study/data/* | Vocab Study (hanzi.json, mnemonic.json — tích lũy; desc_override + vi_override = lấp 释义/意义 trống, ex_override = **ghi đè** 例句 cá nhân hoá; exp_extra) |
 | .claude/skills/**/SKILL.md, CLAUDE.md | Close Session (chỉ sửa sau khi user duyệt từng mục; không đụng memory) |
 | knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D; **ghi đè** luật tier-*.md ở trên cho riêng file này) |
 | raw/Từ vựng.xlsx | User / Lesson Prep (append dòng vocab mới) |
