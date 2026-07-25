@@ -23,9 +23,32 @@ Cần: edge-tts (internet). Không sinh lại file đã có trừ khi --force.
 """
 
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
+
+_CJK_RUN_RE = re.compile(r"[一-鿿]+")
+_VN_DIACRITIC_RE = re.compile(
+    "[đĐưƯơƠạảãắằẳẵặầấẩẫậẹẽềếểễệịĩọồốổỗộờớởỡợụũừứửữựỳỹỷ]"
+)
+_PINYIN_TOKEN_RE = re.compile(r"[a-zA-Zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜü]+")
+
+
+def _first_cjk_run(text):
+    m = _CJK_RUN_RE.search(str(text))
+    return m.group(0) if m else None
+
+
+def _pinyin_tokens(cell):
+    """Trích âm tiết pinyin (có dấu thanh) từ 1 ô — dùng cho bảng luyện đọc
+    thuần pinyin (không có chữ Hán làm neo, vd 辨别声母/辨别韵母). Ô nhãn tiếng
+    Việt (có dấu đặc trưng đ/ư/ơ/... hoặc dấu ngoặc mô tả nhóm) bị loại để
+    không đọc nhầm tiếng Việt bằng giọng tiếng Trung."""
+    text = str(cell)
+    if _VN_DIACRITIC_RE.search(text) or "(" in text:
+        return []
+    return _PINYIN_TOKEN_RE.findall(text)
 
 # Giọng CHUẨN duy nhất cho slide thường — nhất quán, không luân phiên (tránh
 # cảm giác lúc nhanh lúc chậm khi đổi giọng liên tục giữa các slide).
@@ -40,7 +63,13 @@ RATE_DEFAULT = "-30%"
 def read_text(s):
     """Chuỗi chữ Hán cần đọc cho slide thường (không phải dialogue).
     Vocab: CHỈ đọc 生词 (items), KHÔNG đọc câu ví dụ — tránh lẫn nhịp đọc
-    (từ rời rạc xen với câu liền mạch nghe rối)."""
+    (từ rời rạc xen với câu liền mạch nghe rối).
+
+    Buổi ngữ âm (hsk1) dùng schema riêng (table nhiều kicker khác nhau,
+    word_groups, stroke_group) không có field cố định như vocab/grammar —
+    xử lý thêm 3 nhánh: bảng bất kỳ (trích cụm CJK đầu tiên mỗi ô, ô thuần
+    pinyin tự động bị bỏ qua vì không match), word_groups (items[].hz),
+    stroke_group (chars[].hanzi)."""
     t = s.get("type")
     if t == "vocab":
         xs = [it.get("hz", "") for it in s.get("items", [])]
@@ -48,6 +77,29 @@ def read_text(s):
         xs = [ex.get("hz", "") for ex in s.get("examples", [])]
     elif t == "table" and s.get("kicker") == "口语":
         xs = [row[0] for row in s.get("rows", []) if row]
+    elif t == "table" and s.get("kicker") == "写字":
+        return None  # bảng tham chiếu nét/quy tắc viết chữ — không phải từ vựng để đọc
+    elif t == "table":
+        xs = []
+        for row in s.get("rows", []):
+            for cell in row:
+                hz = _first_cjk_run(cell)
+                if hz:
+                    xs.append(hz)
+        if not xs and s.get("kicker") == "练习":
+            # Bảng luyện đọc thuần pinyin (không có chữ Hán, vd 辨别声母/
+            # 辨别韵母/vần phức) — đọc trực tiếp âm tiết pinyin đã có dấu
+            # thanh thay vì bỏ qua hẳn.
+            for row in s.get("rows", []):
+                for cell in row:
+                    xs.extend(_pinyin_tokens(cell))
+    elif t == "word_groups":
+        xs = [it.get("hz", "") for grp in s.get("groups", []) for it in grp.get("items", [])]
+    elif t == "stroke_group":
+        xs = [c.get("hanzi", "") for c in s.get("chars", [])]
+    elif t == "bullets" and s.get("kicker") == "写字":
+        hz = _first_cjk_run(s.get("title", ""))
+        xs = [hz] if hz else []
     else:
         return None
     xs = [x.strip() for x in xs if x and x.strip()]

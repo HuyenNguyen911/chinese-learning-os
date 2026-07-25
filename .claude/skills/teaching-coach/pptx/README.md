@@ -78,12 +78,22 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `exercise` | `instructions?`, `items[]` (+ `image?`) | Slide bài tập (đánh số) |
 | `answers` | `items[]` | Slide đáp án (đánh số) |
 | `bullets` | `bullets[]` (+ `image?`) | Gạch đầu dòng thường |
+| `image` | `image`, `caption?`/`captions[]` | Ảnh lớn canh giữa (sơ đồ/biểu đồ tĩnh), không cần bảng/bullet |
 | `blank` | `title`, `placeholder?` | Slide để trống có chủ đích |
+| `word_groups` | `groups[]` = `{label, items[]}`, mỗi `item` = `{hz, py, vn}` | N nhóm xếp CẠNH NHAU (banner nhãn to 30pt + bảng con 汉字\|Pinyin\|Nghĩa mỗi dòng 1 ví dụ) — tự xếp lưới thích ứng theo số nhóm (≤3 → 1 hàng, 4 → 2×2, >4 → nhiều hàng x4 cột) để cột luôn đủ rộng, không rớt dòng. Dùng cho bảng luyện đọc theo nhóm 声母/韵母 thay vì nhồi nhiều ví dụ vào 1 ô |
+| `stroke_group` | `principle`, `chars[]` = `{hanzi, pinyin, meaning, image}` | N chữ Hán CÙNG minh hoạ 1 nguyên tắc viết nét, xếp thẻ ngang (ảnh GIF nét + nhãn) dưới 1 dòng nguyên tắc chung — tránh lặp nguyên tắc giống hệt nhau nhiều slide (vd 一/二/三 đều "nét ngang, trái→phải") |
 
 Ghi chú:
 - **`dialogue`**: speaker xuất hiện **đầu tiên** căn trái, các speaker khác căn phải.
 - **`table.cjk_cols`**: mảng chỉ số cột (0-based) dùng font CJK. Mặc định (khi bỏ trống): cột 0 là nhãn tiếng Việt, các cột còn lại là CJK.
-- **`image`**: đường dẫn ảnh **tương đối theo thư mục chứa file JSON**. Thiếu file → renderer vẽ khung xám placeholder (không lỗi). Cần `Pillow` để giữ đúng tỉ lệ ảnh (đã có sẵn).
+- **`image`**: đường dẫn ảnh **tương đối theo thư mục chứa file JSON**. Thiếu file → renderer vẽ khung xám placeholder (không lỗi). Cần `Pillow` để giữ đúng tỉ lệ ảnh (đã có sẵn). Hỗ trợ ở `title/vocab/grammar/bullets/exercise/table/image` (không có ở `dialogue`/`reading`).
+- **`footer_note`** (mọi type): 1 dòng chú thích nhỏ ở đáy slide (vd đối chiếu
+  giáo trình khác) — thay cho việc phải làm 1 slide `bullets` đứng riêng.
+- **`tip`** (`bullets`/`exercise`/`answers`/`grammar`): mẹo ghi nhớ, LUÔN render
+  ở dải footer riêng (đáy slide, có icon 🔑) — **tách khỏi luồng nội dung
+  chính**, không chèn vào cuối bullet/ví dụ như trước. Nếu slide có cả `tip`
+  và `footer_note`, `tip` nằm ngay trên `footer_note`. Vùng nội dung chính tự
+  trừ hao chỗ cho dải này (không cần tính tay).
 - Chữ Hán được gắn đúng thuộc tính font Đông Á (`a:ea`/`a:cs`) nên hiển thị chuẩn trong PowerPoint, không bị nhảy về font Latin.
 
 Xem [example-lesson.json](example-lesson.json) — mẫu bao trùm mọi loại slide.
@@ -99,9 +109,33 @@ Sinh tự động bằng helper:
 "$PY" .claude/skills/teaching-coach/pptx/slide_audio.py <lesson.json>
 ```
 
-→ đọc chữ Hán của các slide (vocab / grammar / dialogue / bảng `口语`), gọi
-`edge-tts` (giọng `zh-CN-XiaoxiaoNeural`) sinh mp3 vào `assets/audio/` và tự gắn
-key `audio`. Cần internet; `--force` để sinh lại; `--voice=...` để đổi giọng.
+→ gọi `edge-tts` (giọng `zh-CN-XiaoxiaoNeural`, mặc định `--rate=-30%`, buổi
+ngữ âm nhập môn nên dùng `--rate=-35%` cho rõ/chậm hơn) sinh mp3 vào
+`assets/audio/` và tự gắn key `audio`. Cần internet; `--force` để sinh lại.
+
+Text được đọc tự trích theo `type` của slide — không cần field `audio_text`
+riêng:
+- `vocab` → `hz` của từng `items[]` (không đọc câu ví dụ)
+- `grammar` → `hz` của từng `examples[]`
+- `dialogue` → từng `turns[].hz`, mỗi speaker 1 giọng riêng rồi ghép thành 1 mp3
+- `table` kicker `口语` → cột đầu mỗi hàng; kicker `写字` (bảng tham chiếu
+  nét/quy tắc) → **bỏ qua**, không phải từ vựng để đọc; các `table` khác →
+  quét MỌI ô, trích cụm chữ Hán liên tục đầu tiên trong ô (đủ dùng cho cả
+  bảng giới thiệu 声母/韵母 lẫn bảng luyện đọc 汉字/Pinyin/Nghĩa tách cột)
+- `table` kicker `练习` mà **không có chữ Hán** (bảng luyện đọc thuần pinyin,
+  vd 辨别声母/辨别韵母) → đọc trực tiếp các âm tiết pinyin (bỏ ô nhãn tiếng
+  Việt — nhận diện qua dấu đặc trưng đ/ư/ơ/... hoặc dấu ngoặc mô tả nhóm)
+- `word_groups` → `hz` của mọi `items[]` trong mọi `groups[]`
+- `stroke_group` → `hanzi` của từng `chars[]`
+- `bullets` kicker `写字` → cụm chữ Hán đầu tiên tìm được trong `title`
+- Còn lại (title/image/reading/blank/`bullets` khác…) → không sinh audio
+
+> ⚠️ **Pinyin PHẢI có dấu thanh mới đọc được.** edge-tts không xử lý tốt
+> pinyin không dấu (vd `"ba"` — không biết đọc thanh nào) nên bảng luyện đọc
+> kiểu `type: "table"` chứa pinyin trần bị bỏ qua ÂM THẦM (không lỗi, không
+> log) nếu không thêm dấu. Buổi ngữ âm chưa dạy thanh điệu thì mặc định gắn
+> dấu thanh 1 (ngang cao) cho toàn bộ — vừa nhất quán "ưu tiên thanh 1 khi
+> chưa học thanh điệu", vừa để audio đọc được.
 
 > **Console tiếng Trung trên Windows:** chạy với `PYTHONIOENCODING=utf-8` ở trước lệnh —
 > nếu không, script có thể crash `UnicodeEncodeError` giữa chừng khi `print` tiến độ (mp3
