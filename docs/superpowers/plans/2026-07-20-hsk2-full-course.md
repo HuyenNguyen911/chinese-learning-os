@@ -75,13 +75,15 @@ Vocab-study phase (§13 spec) **tách plan riêng** — xem "Out of scope".
 
 > ⚠️ **Git hygiene:** `exercise-generator` là tool dùng chung mọi cấp (HSK1/2/3/6), giống vocab-study (CLAUDE.md §5.5.6). Step 3–5 (sửa schema/build_worksheet.py) phải làm và commit trên **`main`** (hoặc nhánh chore riêng), KHÔNG commit vào `feat/hsk2-full-course`. Chỉ nội dung buổi HSK2 (JSON, docx sinh ra) mới ở nhánh này.
 
-### Task 0.3: README syllabus (source of truth)
+### Task 0.3: README syllabus (source of truth) — ✅ XONG (commit `a5cfb26`)
 
-**Files:** Create `output/hsk2/README.md`
+**Files:** `output/hsk2/README.md`
 
-- [ ] **Step 1:** Bảng 15 buổi + 2 ôn từ §4 spec: `# | Bài (课文) | Folder | Ngữ pháp (小语讲堂) | Chủ đề | Hán ngữ 第一册·下`. Header ghi rõ chuẩn 3.0, sách chính New HSK Course 2 (郭风岚/FLTRP), tham khảo Hán ngữ 第一册·下. Mục "Ghi chú kỹ thuật" (schema Viết, GIF nét). Buổi chưa làm "⏳".
-- [ ] **Step 2: Verify** — folder đúng convention; ôn 1 sau bài 8, ôn 2 sau bài 15.
-- [ ] **Step 3: Commit**
+- [x] **Step 1:** Bảng 15 buổi + 2 ôn (folder/课文/chủ đề/ngữ pháp/Hán ngữ/trạng thái). Header ghi rõ chuẩn 3.0 + sách chính/tham khảo. Ghi chú kỹ thuật (Viết 3.0, đọc thực tế, pinyin, GIF nét, trang từ vựng). Mọi buổi "⏳".
+- [x] **Step 2: Verify** — folder đúng convention; ôn 1 sau bài 8, ôn 2 sau bài 15.
+- [x] **Step 3: Commit** `docs(hsk2): Task 0.3 - README syllabus tổng (source of truth)`
+
+**PHASE 0 HOÀN TẤT** (Task 0.1 + 0.2 + 0.3). Bước tiếp theo: Task 1 (Procedure P cho Bài 1).
 
 ---
 
