@@ -5,7 +5,7 @@ build_worksheet.py — Data-driven renderer: baitap JSON -> worksheet.docx + dap
 
 Dùng bởi skill exercise-generator (Giai đoạn B). Nhận 1 file JSON mô tả bài tập
 (danh sách block: noi / dien_cho_trong / doc_hieu / sap_xep / dich_dat_cau /
-nghe / noi_hskk) và render ra:
+nghe / noi_hskk / grammar_note / writing_prompt / dien_bieu_mau) và render ra:
   - hocsinh/worksheet.docx : bản cho học viên (KHÔNG có đáp án, KHÔNG có 听力文本)
   - dapan/dapan.docx       : đáp án + 听力文本 + gợi ý chấm
 File nghe (audio/) do bước edge-tts sinh vào hocsinh/audio/ (cạnh worksheet).
@@ -400,6 +400,8 @@ class WorksheetBuilder:
     _ans_grammar_note = _grammar_note
 
     # -- writing_prompt (đề viết/HSKK + dàn ý) ----------------------------
+    # kind: tự do (vd "viết"/"HSKK"/"đoạn văn"/"lời nhắn"/"nhật ký") — không
+    # giới hạn danh sách cứng, chỉ hiển thị làm nhãn.
     def _writing_prompt(self, doc, block, idx):
         self._block_header(doc, idx, block.get("title", "Bài viết / HSKK"),
                            block.get("instructions"))
@@ -409,6 +411,9 @@ class WorksheetBuilder:
             if it.get("kind"):
                 self._run(p, "[%s] " % it["kind"], 11, color="muted", bold=True)
             self._run(p, it.get("prompt", ""), 13, cjk=True)
+            if it.get("target_length"):
+                self._run(p, "  (%s)" % it["target_length"], 11, color="muted",
+                          italic=True)
             for step in it.get("outline", []):
                 sp = doc.add_paragraph()
                 sp.paragraph_format.left_indent = Pt(18)
@@ -417,6 +422,26 @@ class WorksheetBuilder:
 
     _ws_writing_prompt = _writing_prompt
     _ans_writing_prompt = _writing_prompt
+
+    # -- dien_bieu_mau (điền biểu mẫu — Viết 3.0) --------------------------
+    # Form điền thông tin (không có 1 đáp án đúng duy nhất): worksheet in
+    # nhãn + dòng trống; đáp án in nhãn + "sample" (câu mẫu tham khảo) nếu có.
+    def _ws_dien_bieu_mau(self, doc, block, idx):
+        self._block_header(doc, idx, block.get("title", "Điền biểu mẫu"),
+                           block.get("instructions"))
+        for field in block.get("fields", []):
+            p = doc.add_paragraph()
+            self._run(p, field.get("label", ""), 13, bold=True, cjk=True)
+            self._run(p, "：" + BLANK, 12, color="muted")
+
+    def _ans_dien_bieu_mau(self, doc, block, idx):
+        self._block_header(doc, idx, block.get("title", "Điền biểu mẫu"))
+        for field in block.get("fields", []):
+            p = doc.add_paragraph()
+            self._run(p, field.get("label", ""), 13, bold=True, cjk=True)
+            if field.get("sample"):
+                self._run(p, "：", 12, color="muted")
+                self._run(p, field["sample"], 12, color="accent", cjk=True)
 
     # -- render_study: 1 doc gộp có đáp án (cho lesson-prep) ---------------
     def render_study(self, header_text="BÀI TẬP CHUẨN BỊ"):
