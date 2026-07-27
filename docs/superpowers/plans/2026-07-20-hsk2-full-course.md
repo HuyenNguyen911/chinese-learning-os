@@ -21,7 +21,7 @@
 - **Thứ tự block slide:** `title → ôn buổi trước → mục tiêu → 生词 → ngữ pháp (小语讲堂) → 10 câu khẩu ngữ → hội thoại/課文 → bài đọc → footer Hán ngữ 第一册·下 → lỗi người Việt → preview bài tập`. KHÔNG block ngữ âm.
 - **Bài tập đủ 4 phần 3.0:** 听 · 读 (+ **≥1 văn bản thực tế/buổi**: tin nhắn/biển báo/thực đơn/quảng cáo, tự soạn theo chủ đề, KHÔNG lấy từ sách) · **书写/Viết** (sắp câu, điền chữ, viết câu ngắn · **+ luân phiên đoạn 60–100 chữ / điền form / lời nhắn / nhật ký** qua các buổi) · HSKK.
 - **Ngữ pháp bổ sung ngoài sách (vá theo tiêu chuẩn đầu ra, không có trong 45 điểm New HSK Course 2), lồng vào buổi — KHÔNG dạy ở 2 buổi Ôn (Ôn chỉ ôn tập):** **把字句 cơ bản** lồng **Bài 4** (ghép 简单趋向补语 vốn có); **被字句 đơn giản** lồng **Bài 11**; **连…都/也** lồng **Bài 12**. Đánh dấu rõ "ngoài 45 điểm sách chính" trong slide buổi tương ứng.
-- **Giao tiếp thiếu (đặt lịch hẹn/hỏi đường/mặc cả/đặt khách sạn/giới thiệu bản thân sâu), lồng vào buổi — KHÔNG dồn vào Ôn:** hỏi đường → **Bài 2**; đặt khách sạn → **Bài 3**; giới thiệu bản thân/gia đình sâu → **Bài 5**; đặt lịch hẹn → **Bài 6**; mặc cả → **Bài 9**. Capstone Ôn 2 chỉ ôn/ứng dụng lại các kỹ năng này, không dạy mới.
+- **Giao tiếp thiếu, lồng vào buổi — KHÔNG dồn vào Ôn (đã đối chiếu HSK 二级考试大纲 chính thức, chinesetest.cn, 2026-07-27 — xem spec §16b):** hỏi đường → **Bài 2** (✅ chính thức); hỏi giá/so sánh giá (đổi tên từ "mặc cả") → **Bài 9** (✅ chính thức); giới thiệu bản thân/gia đình sâu → **Bài 5** (✅ chính thức); đặt khách sạn → **Bài 3** (⚠️ ngoài chuẩn thi, giữ theo yêu cầu cá nhân); đặt lịch hẹn → **Bài 10** (⚠️ ngoài chuẩn thi, ghép với 就要…了 — dời từ Bài 6 vì hợp ngữ pháp hơn). Capstone Ôn 2 chỉ ôn/ứng dụng lại các kỹ năng này, không dạy mới.
 - **Audio đọc chậm:** slide `--rate=-18%`; baitap `nghe --rate=-22%`, `noi_hskk --rate=-18%`. Giọng chính `zh-CN-XiaoxiaoNeural`. (Nếu user cấp MP3 gốc sách → ưu tiên.)
 - **Cổng duyệt:** (a) text 課文 trích từ PDF → trình user duyệt; (b) script 听力/HSKK trình user trước khi sinh MP3; (c) `check_baitap.py` + rà đáp án AI; (d) soát 多音字/儿化 mọi audio.
 - **Console Windows:** in 中文 debug đặt `PYTHONIOENCODING=utf-8`.
@@ -145,17 +145,17 @@ grep -ho '"hz": *"[^"]*"' output/hsk1/*/slide/*.json | sort -u
 - [ ] **Task 4 — buoi03_dulich_xian** (Bài 3 我想去西安旅游): 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因为…所以. **+ Lồng đặt khách sạn (bổ sung).** Hán ngữ L29/L19/L27.
 - [ ] **Task 5 — buoi04_trangphuc_mausac** (Bài 4 你穿红色的很好看): "的"字短语 · 简单趋向补语(1)(2) · 都…了 · **把字句 cơ bản (bổ sung, ghép tự nhiên với 简单趋向补语: 把衣服穿上/脱下来)**. Hán ngữ L19.
 - [ ] **Task 6 — buoi05_thamnha** (Bài 5 第一次去中国朋友家): 形容词重叠 · 什么的 · 结构助词"地" · 一…就…. **Lồng động vật/thú cưng (từ mở rộng ngoài 200) + giới thiệu bản thân/gia đình sâu 2-3 phút bằng ngữ pháp mới (bổ sung).** Hán ngữ —.
-- [ ] **Task 7 — buoi06_sinhnhat** (Bài 6 小雪，生日快乐！): 状态补语(1)(2) [得]. **+ Lồng đặt lịch hẹn (bổ sung).** Hán ngữ L25.
+- [ ] **Task 7 — buoi06_sinhnhat** (Bài 6 小雪，生日快乐！): 状态补语(1)(2) [得]. Hán ngữ L25.
 - [ ] **Task 8 — buoi08_trinho_sosanh** (Bài 8 虽然你忘了，但是我记得): 虽然…但是 · 比较句(3) · 动词"离". Hán ngữ L28/L23.
 - [ ] **Task 9 — Ôn 1** (`on1_bai1-8`): ôn ngữ pháp bài 1–8 (是…的/吧, 结果补语/动词重叠/过/因为所以, 趋向补语/把字句 Bài 4, 形容词重叠/一…就, 得, 比较句1-3, 虽然但是/离). Slide ôn + bài tập tổng hợp (đủ 听/读/书写/HSKK). CHỈ ôn tập — không 生词 mới, không ngữ pháp mới, không tình huống giao tiếp mới.
-- [ ] **Task 10 — buoi09_douong** (Bài 9 我去买杯奶茶): 时量补语(1) · 主谓谓语句 · 选择问句. **+ Lồng mặc cả (bổ sung).** Hán ngữ L30/L16.
-- [ ] **Task 11 — buoi10_thicu** (Bài 10 就要考试了): 要/快/快要/就要…了 · 动态助词"着"(1)(2). Hán ngữ —.
+- [ ] **Task 10 — buoi09_douong** (Bài 9 我去买杯奶茶): 时量补语(1) · 主谓谓语句 · 选择问句. **+ Lồng hỏi giá/so sánh giá (bổ sung, đã đối chiếu chính thức).** Hán ngữ L30/L16.
+- [ ] **Task 11 — buoi10_thicu** (Bài 10 就要考试了): 要/快/快要/就要…了 · 动态助词"着"(1)(2). **+ Lồng đặt lịch hẹn (bổ sung, ngoài chuẩn thi — vd 我跟老师约好了，下午两点就要见面了).** Hán ngữ —.
 - [ ] **Task 12 — buoi11_monan_yeuthich** (Bài 11 我最喜欢吃中国菜): 程度副词"最" · **被字句 đơn giản (bổ sung, vd 这道菜太好吃了都被吃光了)**. Hán ngữ —.
 - [ ] **Task 13 — buoi12_thoitiet** (Bài 12 这里比北京冷多了): 比较句(4)(5)(6) · **连…都/也 (bổ sung, ghép cùng 比较句: 冷得连水都能结冰)**. Hán ngữ —.
 - [ ] **Task 14 — buoi13_hoctiengtrung** (Bài 13 我们爱上中文课): 双宾语句(2) · 比较句(7)(8). Hán ngữ L17.
 - [ ] **Task 15 — buoi14_letet** (Bài 14 一个人过年多没意思啊): 存现句 · 复合趋向补语. Hán ngữ L23.
 - [ ] **Task 16 — buoi15_kehoach** (Bài 15 我想再去一次中国): 动量补语(1)(2) · "有"字句(2). Hán ngữ —.
-- [ ] **Task 17 — Ôn 2** (`on2_bai9-15`): ôn ngữ pháp bài 9–15 (时量补语/选择问, 要快…了/着, 最/被字句 Bài 11, 比较句4-8/连…都也 Bài 12, 双宾语, 存现/复合趋向, 动量补语/有字句) + từ vựng cụm + **capstone roleplay HSKK ôn tập tổng hợp** (thực hành lại: hỏi đường B2, đặt khách sạn B3, giới thiệu bản thân/gia đình B5, hẹn giờ B6, mặc cả B9 — CHỈ ôn/ứng dụng lại, không dạy từ/ngữ pháp/tình huống mới). Slide ôn + bài tập tổng hợp.
+- [ ] **Task 17 — Ôn 2** (`on2_bai9-15`): ôn ngữ pháp bài 9–15 (时量补语/选择问, 要快…了/着, 最/被字句 Bài 11, 比较句4-8/连…都也 Bài 12, 双宾语, 存现/复合趋向, 动量补语/有字句) + từ vựng cụm + **capstone roleplay HSKK ôn tập tổng hợp** (thực hành lại: hỏi đường B2, đặt khách sạn B3, giới thiệu bản thân/gia đình B5, hỏi giá/so sánh giá B9, đặt lịch hẹn B10 — CHỈ ôn/ứng dụng lại, không dạy từ/ngữ pháp/tình huống mới). Slide ôn + bài tập tổng hợp.
 
 > **FINAL GATE:** verify tổng: `hsk2-vocab-grammar-checklist.md` mọi từ "✅ có bài + đã soạn + không trùng HSK1"; 45 ngữ pháp đã dạy; `output/hsk2/README.md` mọi buổi ✅; vocab khớp 词汇表 sách. Trình user bàn giao.
 
@@ -173,4 +173,5 @@ grep -ho '"hz": *"[^"]*"' output/hsk1/*/slide/*.json | sort -u
 - Syllabus = 15 bài thật (TOC). Pets lồng Bài 5. Pilot Bài 1 + Bài 7.
 - Điểm cần user (không chặn): MP3 gốc sách (nếu có, ưu tiên hơn edge-tts); 第二册 Hán ngữ (footer 比较句…).
 - **Vá 2026-07-27 (theo tiêu chuẩn đầu ra HSK2, xem memory):** đã bổ sung 4 điểm — (1) 把 lồng Bài 4, 被 lồng Bài 11, 连…都/也 lồng Bài 12 (không dạy ở Ôn); (2) Viết 3.0 mở rộng thêm đoạn/form/note/nhật ký (Task 0.2 đổi từ "đánh giá" → "mở rộng schema", cần làm trên `main` vì exercise-generator dùng chung mọi cấp); (3) mỗi buổi bài tập thêm ≥1 văn bản đọc thực tế; (4) hỏi đường lồng Bài 2, khách sạn Bài 3, giới thiệu bản thân sâu Bài 5, hẹn giờ Bài 6, mặc cả Bài 9. Chưa build buổi nào nên vá trực tiếp vào spec+plan.
-- **Sửa lại 2026-07-27 (lần 2, theo phản hồi user):** ban đầu dồn cả 4 điểm trên vào 2 buổi Ôn — **sai**, vì Ôn chỉ để ôn tập nội dung đã học, không dạy cái mới. Đã rải lại vào đúng buổi nội dung phù hợp chủ đề (xem trên); Ôn 1/Ôn 2 quay về đúng vai trò ôn tập + capstone Ôn 2 chỉ ứng dụng lại kỹ năng đã dạy ở buổi 2/3/5/6/9.
+- **Sửa lại 2026-07-27 (lần 2, theo phản hồi user):** ban đầu dồn cả 4 điểm trên vào 2 buổi Ôn — **sai**, vì Ôn chỉ để ôn tập nội dung đã học, không dạy cái mới. Đã rải lại vào đúng buổi nội dung phù hợp chủ đề; Ôn 1/Ôn 2 quay về đúng vai trò ôn tập.
+- **Sửa lại 2026-07-27 (lần 3, theo phản hồi user + đối chiếu nguồn chính thống):** đổi tên "mặc cả" → "hỏi giá, so sánh giá" (Bài 9) để bám đúng khung chính thức. Dời "đặt lịch hẹn" từ Bài 6 (sinh nhật, khá gượng) → Bài 10 (ghép tự nhiên với 就要…了). Đã tra `download.chinesetest.cn/newhsk-site/Syllabus/H2_DG.pdf` (官方 HSK 二级考试大纲) xác nhận hỏi đường/hỏi giá/giới thiệu gia đình có căn cứ chính thống; đặt khách sạn + đặt lịch hẹn KHÔNG có trong chuẩn thi — giữ lại vì mục tiêu thực dụng cá nhân, đánh dấu rõ trong slide. Xem spec §16b.

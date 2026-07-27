@@ -53,12 +53,12 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 | 3 | 我想去西安旅游 | 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因为…所以 | du lịch (Tây An) ⟨**+ đặt khách sạn**⟩ | L29 结果补语 · L19 动词重叠 · L27 因为…所以 |
 | 4 | 你穿红色的很好看 | "的"字短语 · 简单趋向补语(1)(2) · 都…了 · **把字句 (cơ bản, bổ sung)** | trang phục, màu sắc | L19 便宜一点儿 · (趋向补语→第二册) |
 | 5 | 第一次去中国朋友家 | 形容词重叠 · 什么的 · 结构助词"地" · 一…就… | thăm nhà bạn ⟨**lồng động vật/thú cưng + giới thiệu bản thân/gia đình sâu**⟩ | — |
-| 6 | 小雪，生日快乐！ | 状态补语(1)(2) [bổ ngữ trình độ **得**] | sinh nhật, chúc mừng ⟨**+ đặt lịch hẹn**⟩ | **L25 状态补语 得** |
+| 6 | 小雪，生日快乐！ | 状态补语(1)(2) [bổ ngữ trình độ **得**] | sinh nhật, chúc mừng | **L25 状态补语 得** |
 | 7 | 他篮球打得很好 | 比较句(1)(2) [**比**] | **thể thao** (bóng rổ) | L25 得 · (比较句→第二册) |
 | 8 | 虽然你忘了，但是我记得 | 虽然…但是 · 比较句(3) · 动词"离" | trí nhớ, so sánh | **L28 虽然…但是** · **L23 离** |
 | — | **Ôn 1** (giữa khoá) | ôn bài 1–8 (chỉ ôn tập, không dạy mới) | — | — |
-| 9 | 我去买杯奶茶 | 时量补语(1) · 主谓谓语句 · 选择问句 | đồ uống, mua sắm ⟨**+ mặc cả**⟩ | **L30 时量补语** · L16 选择问 |
-| 10 | 就要考试了 | 要/快/快要/就要…了 · 动态助词"着"(1)(2) | thi cử, học tập | (快…了; 着→第二册) |
+| 9 | 我去买杯奶茶 | 时量补语(1) · 主谓谓语句 · 选择问句 | đồ uống, mua sắm ⟨**+ hỏi giá, so sánh giá**⟩ | **L30 时量补语** · L16 选择问 |
+| 10 | 就要考试了 | 要/快/快要/就要…了 · 动态助词"着"(1)(2) | thi cử, học tập ⟨**+ đặt lịch hẹn**⟩ | (快…了; 着→第二册) |
 | 11 | 我最喜欢吃中国菜 | 程度副词"最" · **被字句 (đơn giản, bổ sung)** | ăn uống, sở thích | L?? (最) |
 | 12 | 这里比北京冷多了 | 比较句(4)(5)(6) · **连…都/也 (bổ sung)** | thời tiết, so sánh | (比较句→第二册) |
 | 13 | 我们爱上中文课 | 双宾语句(2) · 比较句(7)(8) | học tiếng Trung | **L17 双宾语句** |
@@ -78,13 +78,13 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 > - **连…都/也** — lồng vào **Bài 12** (thời tiết, so sánh), nhấn mạnh mức độ cực đoan tự nhiên đi cùng 比较句: vd 这儿冷得连水都能结冰.
 > - Đánh dấu rõ trong slide buổi tương ứng: "ngữ pháp mở rộng ngoài 45 điểm sách chính, bổ sung theo yêu cầu đầu ra".
 
-> **Bổ sung giao tiếp còn thiếu, lồng vào buổi có sẵn — KHÔNG dồn vào Ôn:**
-> - **Hỏi đường (怎么走)** → lồng **Bài 2** (giao thông).
-> - **Đặt khách sạn** → lồng **Bài 3** (du lịch Tây An).
-> - **Đặt lịch hẹn** → lồng **Bài 6** (sinh nhật — hẹn giờ đến dự tiệc).
-> - **Mặc cả** → lồng **Bài 9** (mua trà sữa/đồ uống).
-> - **Giới thiệu bản thân/gia đình sâu (2-3 phút, dùng ngữ pháp mới)** → lồng **Bài 5** (thăm nhà bạn TQ).
-> - Ôn 2 vẫn giữ **capstone hội thoại** đã có trong thiết kế gốc, nhưng chỉ để **ôn tập/ứng dụng lại** các kỹ năng giao tiếp trên (đã dạy rải rác ở buổi 2/3/5/6/9), không dạy từ/ngữ pháp/tình huống mới.
+> **Bổ sung giao tiếp còn thiếu, lồng vào buổi có sẵn — KHÔNG dồn vào Ôn.** Đã đối chiếu nguồn chính thống (HSK 二级考试大纲, chinesetest.cn — xem §16b) trước khi chốt vị trí:
+> - **Hỏi đường (问路指路)** → lồng **Bài 2** (giao thông). ✅ Có trong 10 language task chính thức của HSK2.
+> - **Hỏi giá, so sánh giá (đổi tên từ "mặc cả" 2026-07-27 — bám đúng khung chính thức "讨论价格/质量/差异", không dạy hẳn kỹ năng trả giá kiểu chợ)** → lồng **Bài 9** (mua trà sữa/đồ uống). ✅ Khớp task chính thức "Shopping: discuss price/quality/differences".
+> - **Giới thiệu bản thân/gia đình sâu (2-3 phút, dùng ngữ pháp mới)** → lồng **Bài 5** (thăm nhà bạn TQ). ✅ Khớp topic chính thức "Family".
+> - **Đặt khách sạn** → lồng **Bài 3** (du lịch Tây An). ⚠️ **NGOÀI phạm vi chính thức HSK2** — không có trong 10 task/17 task đã tra được; giữ lại vì đây là mong muốn thực dụng cá nhân của user (không phải yêu cầu thi), đánh dấu rõ trong slide "kỹ năng thực tế bổ sung, ngoài chuẩn thi".
+> - **Đặt lịch hẹn (2026-07-27, dời từ Bài 6 → Bài 10)** → lồng **Bài 10** (thi cử, học tập), ghép tự nhiên với ngữ pháp 要/快/快要/就要…了 (vd 我跟老师约好了，下午两点就要见面了). ⚠️ **NGOÀI phạm vi chính thức HSK2** tương tự — lý do dời khỏi Bài 6: ghép với ngữ pháp "sắp diễn ra" hợp lý hơn hẳn so với bối cảnh sinh nhật (vốn khá gượng), đồng thời giữ Bài 6 gọn nhẹ (chỉ 1 điểm ngữ pháp 得).
+> - Ôn 2 vẫn giữ **capstone hội thoại** đã có trong thiết kế gốc, nhưng chỉ để **ôn tập/ứng dụng lại** các kỹ năng giao tiếp trên (đã dạy rải rác ở buổi 2/3/5/9/10), không dạy từ/ngữ pháp/tình huống mới.
 
 ## 5. Nguồn vocab mỗi bài (từ sách chính, không tự nghĩ)
 
@@ -197,7 +197,7 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 - [ ] `README.md` syllabus đầy đủ, ghi rõ chuẩn 3.0.
 - [ ] Trang từ vựng `output/study/hsk2/buoiXX/tu-vung.html` sinh đủ, flashcard + 🔊 chạy (Leitner trung tính, không neo Activation vault).
 - [ ] Bài 4 có dạy **把字句 cơ bản**; Bài 11 có **被字句 đơn giản**; Bài 12 có **连…都/也** (ngữ pháp bổ sung ngoài sách, đánh dấu rõ trong slide buổi tương ứng — KHÔNG ở 2 buổi Ôn).
-- [ ] Bài 2 (hỏi đường), Bài 3 (khách sạn), Bài 5 (giới thiệu bản thân/gia đình sâu), Bài 6 (đặt lịch hẹn), Bài 9 (mặc cả) có lồng đủ nội dung giao tiếp bổ sung.
+- [ ] Bài 2 (hỏi đường), Bài 3 (khách sạn — ngoài chuẩn), Bài 5 (giới thiệu bản thân/gia đình sâu), Bài 9 (hỏi giá/so sánh giá), Bài 10 (đặt lịch hẹn — ngoài chuẩn) có lồng đủ nội dung giao tiếp bổ sung; 2 mục ngoài chuẩn đánh dấu rõ trong slide.
 - [ ] Bài tập Viết luân phiên đủ 4 dạng bổ sung (đoạn 60–100 chữ, điền form, lời nhắn, nhật ký) qua các buổi — không chỉ dừng ở câu ngắn.
 - [ ] Mỗi buổi bài tập phần 读 có ≥1 văn bản thực tế (tin nhắn/biển báo/thực đơn/quảng cáo) tự soạn theo chủ đề, không lấy từ sách.
 - [ ] 2 buổi Ôn chỉ ôn tập nội dung đã học (kể cả capstone Ôn 2) — không xuất hiện từ/ngữ pháp/tình huống mới chưa dạy ở buổi trước đó.
@@ -216,13 +216,21 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 - **Audio gốc sách:** New HSK Course 2 có audio chính thức. Mặc định tự sinh edge-tts; nếu user cấp MP3 gốc → ưu tiên dùng.
 - **Phần Viết (书写) 3.0 — ĐÃ QUYẾT (2026-07-27):** ngoài sắp câu/điền chữ/viết câu ngắn, bổ sung 4 dạng mới — đoạn 60–100 chữ, điền form, lời nhắn, nhật ký — theo tiêu chuẩn đầu ra. Task 0.2 chuyển từ "đánh giá" sang "mở rộng schema exercise-generator" nếu chưa hỗ trợ.
 - **Ngữ pháp bổ sung ngoài sách — ĐÃ QUYẾT (2026-07-27, sửa lại):** 把 lồng Bài 4, 被 lồng Bài 11, 连…都/也 lồng Bài 12 — không có trong 45 điểm sách chính nhưng nằm trong tiêu chuẩn đầu ra user yêu cầu. **Không dạy ở Ôn** (Ôn chỉ ôn tập, không học mới — user chỉnh 2026-07-27).
-- **Giao tiếp thiếu (hẹn/hỏi đường/mặc cả/khách sạn/giới thiệu bản thân sâu) — ĐÃ QUYẾT (2026-07-27, sửa lại):** lồng vào buổi 2/3/5/6/9 tương ứng, không thêm buổi, không dồn vào Ôn.
+- **Giao tiếp thiếu (hẹn/hỏi đường/mặc cả/khách sạn/giới thiệu bản thân sâu) — ĐÃ QUYẾT (2026-07-27, sửa lại), ĐÃ ĐỐI CHIẾU NGUỒN CHÍNH THỐNG (2026-07-27, xem §16b):** lồng vào buổi 2/3/5/9/10 tương ứng, không thêm buổi, không dồn vào Ôn. 3/5 mục có trong chuẩn thi chính thức (hỏi đường, hỏi giá/so sánh giá, giới thiệu gia đình); 2/5 mục (khách sạn, đặt lịch hẹn) NGOÀI chuẩn thi — giữ lại theo yêu cầu thực dụng cá nhân của user, đánh dấu rõ trong slide.
 - **Đọc thực tế (tin nhắn/biển báo/thực đơn/quảng cáo) — ĐÃ QUYẾT (2026-07-27):** thêm ≥1 mục/buổi trong phần 读 của bài tập, tự soạn theo chủ đề (khác 課文 nguyên văn sách).
 - **Hán ngữ mapping — ĐÃ CÓ:** user cấp `raw/Hán ngữ 2.pdf` (=《汉语教程》第一册·下, L16–30); mục lục đã OCR + map vào §4/§8. Còn thiếu điểm **比** (khả năng ở 第二册) → nếu cần, user cấp thêm 第二册; nếu không, footer buổi 2/6/7 ghi rõ 比 ngoài phạm vi sách này.
 
 ## 15. Bước tiếp theo
 
 Sau khi user **duyệt spec này** → viết **implementation plan** (mô phỏng `2026-07-19-hsk1-full-course.md`): Phase 0 (checklist phủ từ 3.0 + chống trùng HSK1, README syllabus, đánh giá schema Viết) → Procedure P → 2 pilot → sản xuất lô → phase trang từ vựng.
+
+## 16b. Nguồn chính thống đối chiếu cho phần "bổ sung giao tiếp" (2026-07-27)
+
+Trước khi chốt vị trí lồng ghép ở §4, đã tra cứu để tránh tự bịa phạm vi:
+
+- **官方 HSK 二级考试大纲** (chinesetest.cn, tải và bóc trực tiếp bằng pypdf) — trang 3 xác nhận: *"HSK（二级）...涉及职业工作、文化、体验感悟等 6 大话题，涵盖**问路指路**、描述商品信息、**点菜**等 10 个语言任务"* → **问路指路 (hỏi đường) là 1 trong 10 task chính thức, có căn cứ vững**. Tài liệu này là bản đại cương chung (300 từ, khớp chuẩn 2.0 cũ hơn là 3.0 500 từ) — chỉ nêu tên 3/10 task, chưa chắc là bản 3.0 mới nhất.
+- **Nguồn phụ (passhsk.app, bên thứ 3, CHƯA verify với bản gốc 3.0):** liệt kê 17 task HSK2 3.0 — có "Travel: give/ask directions" và "Shopping: discuss price/quality/differences" (khớp hỏi giá/so sánh giá) và "Family: discuss relationships" (khớp giới thiệu gia đình); **không có** mục đặt khách sạn hay đặt lịch hẹn dịch vụ nào.
+- **Kết luận:** hỏi đường / hỏi giá-so sánh giá / giới thiệu gia đình sâu = có căn cứ chính thống. Đặt khách sạn / đặt lịch hẹn = ngoài phạm vi chuẩn thi, giữ lại vì mục tiêu "dùng được" thực dụng của user (không phải yêu cầu thi), đã đánh dấu rõ ở §4.
 
 ## 16. Nguồn tra cứu (3.0)
 
