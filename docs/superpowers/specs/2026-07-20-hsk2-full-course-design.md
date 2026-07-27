@@ -183,11 +183,8 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 
 ## 11. Chiến lược giao (de-risk)
 
-- **2 pilot trước:**
-  - `buoi01_moian_vitquay` (Bài 1) — chốt khuôn buổi mở đầu: 是…的 / 吧(2) / 请-让-叫, block đầy đủ, phần Viết 3.0.
-  - `buoi07_thethao` (Bài 7) — chốt khuôn buổi có **得 (bổ ngữ trình độ)** + **比较句** + chủ đề thể thao user quan tâm.
-- User duyệt 2 pilot → sản xuất phần còn lại theo lô + review.
-- Thứ tự sản xuất còn lại: theo syllabus (02 → 03 → 04 → 05 → 06 → 08 → [Ôn 1] → 09 → … → 15 → [Ôn 2]).
+- **Sản xuất tuần tự, KHÔNG làm 2 pilot rồi hàng loạt (quyết định 2026-07-27, theo user):** dù buổi nào user cũng phải review + điều chỉnh, nên đi từng buổi đúng thứ tự sách, **mỗi buổi có 1 cổng duyệt trọn gói riêng** (pptx + worksheet + bài đọc) trước khi bắt đầu buổi kế tiếp. Không có khái niệm "pilot" hay "sản xuất hàng loạt sau khi duyệt khuôn".
+- Thứ tự sản xuất: 01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → [Ôn 1] → 09 → 10 → 11 → 12 → 13 → 14 → 15 → [Ôn 2].
 - **Phase cuối:** trang từ vựng theo buổi (§14) sau khi vocab đã chốt.
 
 ## 12. Tiêu chí hoàn thành (verification)
@@ -229,7 +226,7 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 
 ## 15. Bước tiếp theo
 
-Sau khi user **duyệt spec này** → viết **implementation plan** (mô phỏng `2026-07-19-hsk1-full-course.md`): Phase 0 (checklist phủ từ 3.0 + chống trùng HSK1, README syllabus, đánh giá schema Viết) → Procedure P → 2 pilot → sản xuất lô → phase trang từ vựng.
+Sau khi user **duyệt spec này** → viết **implementation plan** (mô phỏng `2026-07-19-hsk1-full-course.md`): Phase 0 (checklist phủ từ 3.0 + chống trùng HSK1, README syllabus, đánh giá schema Viết) → Procedure P → sản xuất tuần tự từng buổi (mỗi buổi 1 cổng duyệt, xem §11) → phase trang từ vựng.
 
 ## 16b. Nguồn chính thống đối chiếu cho phần "bổ sung giao tiếp" (2026-07-27)
 
