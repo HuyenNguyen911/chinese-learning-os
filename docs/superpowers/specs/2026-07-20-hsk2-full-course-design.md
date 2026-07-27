@@ -56,7 +56,7 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 | 6 | 小雪，生日快乐！ | 状态补语(1)(2) [bổ ngữ trình độ **得**] | sinh nhật, chúc mừng | **L25 状态补语 得** |
 | 7 | 他篮球打得很好 | 比较句(1)(2) [**比**] | **thể thao** (bóng rổ) | L25 得 · (比较句→第二册) |
 | 8 | 虽然你忘了，但是我记得 | 虽然…但是 · 比较句(3) · 动词"离" | trí nhớ, so sánh | **L28 虽然…但是** · **L23 离** |
-| — | **Ôn 1** (giữa khoá) | ôn bài 1–8 (chỉ ôn tập, không dạy mới) | — | — |
+| — | **Ôn 1** (giữa khoá) | ôn bài 1–8 + **bảng hệ thống bổ ngữ (kết quả/xu hướng/得) + bảng so sánh 比较句(1)(2)(3)** (chỉ ôn tập, không dạy mới) | — | — |
 | 9 | 我去买杯奶茶 | 时量补语(1) · 主谓谓语句 · 选择问句 | đồ uống, mua sắm ⟨**+ hỏi giá, so sánh giá**⟩ | **L30 时量补语** · L16 选择问 |
 | 10 | 就要考试了 | 要/快/快要/就要…了 · 动态助词"着"(1)(2) | thi cử, học tập ⟨**+ đặt lịch hẹn**⟩ | (快…了; 着→第二册) |
 | 11 | 我最喜欢吃中国菜 | 程度副词"最" · **被字句 (đơn giản, bổ sung)** | ăn uống, sở thích | L?? (最) |
@@ -64,7 +64,7 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 | 13 | 我们爱上中文课 | 双宾语句(2) · 比较句(7)(8) | học tiếng Trung | **L17 双宾语句** |
 | 14 | 一个人过年多没意思啊 | 存现句 · 复合趋向补语 | lễ Tết, cảm xúc | L23 存在的表达 · (复合趋向→第二册) |
 | 15 | 我想再去一次中国 | 动量补语(1)(2) · "有"字句(2) | kế hoạch, quay lại TQ | (动量补语→第二册) |
-| — | **Ôn 2** (cuối khoá) | ôn bài 9–15 + capstone hội thoại tổng hợp (chỉ ôn tập, không dạy mới) | — | — |
+| — | **Ôn 2** (cuối khoá) | ôn bài 9–15 + **bảng hệ thống bổ ngữ đầy đủ 6 loại (nối Ôn 1) + bảng so sánh 比较句(1)-(8) đầy đủ** + capstone hội thoại tổng hợp (chỉ ôn tập, không dạy mới) | — | — |
 
 **Phủ ngữ pháp:** 45 điểm 小语讲堂 trải đều 15 bài (một số bài 2–3 điểm; bài nhiều nhất là các bài có nhiều 比较句). Danh sách 45 điểm đầy đủ ở file TOC.
 
@@ -85,6 +85,13 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 > - **Đặt khách sạn** → lồng **Bài 3** (du lịch Tây An). ⚠️ **NGOÀI phạm vi chính thức HSK2** — không có trong 10 task/17 task đã tra được; giữ lại vì đây là mong muốn thực dụng cá nhân của user (không phải yêu cầu thi), đánh dấu rõ trong slide "kỹ năng thực tế bổ sung, ngoài chuẩn thi".
 > - **Đặt lịch hẹn (2026-07-27, dời từ Bài 6 → Bài 10)** → lồng **Bài 10** (thi cử, học tập), ghép tự nhiên với ngữ pháp 要/快/快要/就要…了 (vd 我跟老师约好了，下午两点就要见面了). ⚠️ **NGOÀI phạm vi chính thức HSK2** tương tự — lý do dời khỏi Bài 6: ghép với ngữ pháp "sắp diễn ra" hợp lý hơn hẳn so với bối cảnh sinh nhật (vốn khá gượng), đồng thời giữ Bài 6 gọn nhẹ (chỉ 1 điểm ngữ pháp 得).
 > - Ôn 2 vẫn giữ **capstone hội thoại** đã có trong thiết kế gốc, nhưng chỉ để **ôn tập/ứng dụng lại** các kỹ năng giao tiếp trên (đã dạy rải rác ở buổi 2/3/5/9/10), không dạy từ/ngữ pháp/tình huống mới.
+
+> **Bảng hệ thống hoá trong 2 buổi Ôn (2026-07-27, theo góp ý user — KHÔNG gom lại thành buổi riêng vì phá vỡ "buổi=bài" và tăng nguy cơ nhiễu giữa các loại bổ ngữ; thay vào đó hệ thống hoá bằng bảng so sánh thuần ôn tập):**
+> - **Ôn 1 — bảng bổ ngữ (1/2):** đối chiếu 结果补语 (B3) · 简单趋向补语 (B4) · 状态补语/得 (B6) — cấu trúc, ý nghĩa, ví dụ đặt cạnh nhau.
+> - **Ôn 1 — bảng 比较句 (1/2):** 比较句(1)(2) (B7) + 比较句(3) (B8) — liệt kê cả 4 mẫu câu (A比B+adj, A比B+adj+bổ ngữ, A有/没有B, A比B+động từ+得+比+adj).
+> - **Ôn 2 — bảng bổ ngữ (2/2, nối Ôn 1 thành bảng tổng 6 loại):** + 时量补语 (B9) · 复合趋向补语 (B14) · 动量补语 (B15).
+> - **Ôn 2 — bảng 比较句 (2/2, nối thành bảng tổng 1-8):** + 比较句(4)(5)(6) (B12) + 比较句(7)(8) (B13).
+> - Cả 4 bảng đều là **tổng hợp lại nội dung đã dạy**, không giới thiệu cấu trúc/ví dụ mới chưa xuất hiện ở buổi trước đó.
 
 ## 5. Nguồn vocab mỗi bài (từ sách chính, không tự nghĩ)
 
@@ -231,6 +238,17 @@ Trước khi chốt vị trí lồng ghép ở §4, đã tra cứu để tránh 
 - **官方 HSK 二级考试大纲** (chinesetest.cn, tải và bóc trực tiếp bằng pypdf) — trang 3 xác nhận: *"HSK（二级）...涉及职业工作、文化、体验感悟等 6 大话题，涵盖**问路指路**、描述商品信息、**点菜**等 10 个语言任务"* → **问路指路 (hỏi đường) là 1 trong 10 task chính thức, có căn cứ vững**. Tài liệu này là bản đại cương chung (300 từ, khớp chuẩn 2.0 cũ hơn là 3.0 500 từ) — chỉ nêu tên 3/10 task, chưa chắc là bản 3.0 mới nhất.
 - **Nguồn phụ (passhsk.app, bên thứ 3, CHƯA verify với bản gốc 3.0):** liệt kê 17 task HSK2 3.0 — có "Travel: give/ask directions" và "Shopping: discuss price/quality/differences" (khớp hỏi giá/so sánh giá) và "Family: discuss relationships" (khớp giới thiệu gia đình); **không có** mục đặt khách sạn hay đặt lịch hẹn dịch vụ nào.
 - **Kết luận:** hỏi đường / hỏi giá-so sánh giá / giới thiệu gia đình sâu = có căn cứ chính thống. Đặt khách sạn / đặt lịch hẹn = ngoài phạm vi chuẩn thi, giữ lại vì mục tiêu "dùng được" thực dụng của user (không phải yêu cầu thi), đã đánh dấu rõ ở §4.
+
+## 16c. Xác minh 3 điểm ngữ pháp bị nghi thiếu — 一边…一边/越来越/又…又 (2026-07-27)
+
+Có ý kiến review cho rằng HSK2 "thiếu" 3 điểm ngữ pháp phổ biến này. Đã tải trực tiếp **văn bản gốc chính thức** để kiểm chứng thay vì suy đoán:
+
+- **Nguồn:** `新版HSK考试大纲（词汇、汉字、语法）.pdf` (中外语言交流合作中心/汉考国际 phát hành, host tại `hsk.cn-bj.ufileos.com/3.0/`, Last-Modified 2025-12-25 — đúng là **bản 3.0 chính thức**, 330 trang, bóc bằng pypdf).
+- **Kết quả:** cả 3 điểm đều nằm trong mục **"HSK（三级）语法"** (trang 316-318 của PDF — ngay sau khi mục "HSK（二级）语法" kết thúc ở trang 315), cụ thể:
+  - `越来越` — 固定短语, mục **HSK 三级**.
+  - `一边……，一边……` và `又……，又……` — 复句 (并列复句), mục **HSK 三级**.
+- **Kết luận: KHÔNG phải gap của HSK2 — đây là ngữ pháp cấp 3, HSK2 đúng khi không dạy.** Ý kiến review trước đó không chính xác; không cần vá thêm gì cho 3 điểm này.
+- **Lợi ích phụ:** đã đối chiếu toàn bộ mục "HSK（二级）语法" chính thức (trang 313-315) với 45 điểm của New HSK Course 2 — khớp tốt (还是…吧, 都…了, 兼语句, 双宾语句, 虽然…但是, 因为…所以, 一…就…, 着, 过, 比较句 nhóm 1, 是…的句, 有字句, 存现句... đều xuất hiện đúng cấp). Không phát hiện gap chính thức nào khác ngoài 4 điểm đã vá (把/被/连 + phần giao tiếp).
 
 ## 16. Nguồn tra cứu (3.0)
 
