@@ -49,22 +49,22 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 | # | Bài (课文 tiêu đề) | Ngữ pháp (小语讲堂) | Chủ đề | Hán ngữ 第一册·下 |
 |---|---|---|---|---|
 | 1 | 她请我们吃了北京烤鸭 | 语气助词"吧"(2) · "是…的"句 · 请/让/叫 (nhờ) | mời ăn, món BK, nhờ vả | L22 请… |
-| 2 | 还是打车去北大吧 | 兼语句 · 还是…吧 · 多 (概数) · cụm làm định ngữ | giao thông, đề nghị | L16 还是/或者 · L17 兼语 |
-| 3 | 我想去西安旅游 | 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因为…所以 | du lịch (Tây An) | L29 结果补语 · L19 动词重叠 · L27 因为…所以 |
-| 4 | 你穿红色的很好看 | "的"字短语 · 简单趋向补语(1)(2) · 都…了 | trang phục, màu sắc | L19 便宜一点儿 · (趋向补语→第二册) |
-| 5 | 第一次去中国朋友家 | 形容词重叠 · 什么的 · 结构助词"地" · 一…就… | thăm nhà bạn ⟨**lồng động vật/thú cưng**⟩ | — |
-| 6 | 小雪，生日快乐！ | 状态补语(1)(2) [bổ ngữ trình độ **得**] | sinh nhật, chúc mừng | **L25 状态补语 得** |
+| 2 | 还是打车去北大吧 | 兼语句 · 还是…吧 · 多 (概数) · cụm làm định ngữ | giao thông, đề nghị ⟨**+ hỏi đường 怎么走**⟩ | L16 还是/或者 · L17 兼语 |
+| 3 | 我想去西安旅游 | 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因为…所以 | du lịch (Tây An) ⟨**+ đặt khách sạn**⟩ | L29 结果补语 · L19 动词重叠 · L27 因为…所以 |
+| 4 | 你穿红色的很好看 | "的"字短语 · 简单趋向补语(1)(2) · 都…了 · **把字句 (cơ bản, bổ sung)** | trang phục, màu sắc | L19 便宜一点儿 · (趋向补语→第二册) |
+| 5 | 第一次去中国朋友家 | 形容词重叠 · 什么的 · 结构助词"地" · 一…就… | thăm nhà bạn ⟨**lồng động vật/thú cưng + giới thiệu bản thân/gia đình sâu**⟩ | — |
+| 6 | 小雪，生日快乐！ | 状态补语(1)(2) [bổ ngữ trình độ **得**] | sinh nhật, chúc mừng ⟨**+ đặt lịch hẹn**⟩ | **L25 状态补语 得** |
 | 7 | 他篮球打得很好 | 比较句(1)(2) [**比**] | **thể thao** (bóng rổ) | L25 得 · (比较句→第二册) |
 | 8 | 虽然你忘了，但是我记得 | 虽然…但是 · 比较句(3) · 动词"离" | trí nhớ, so sánh | **L28 虽然…但是** · **L23 离** |
-| — | **Ôn 1** (giữa khoá) | ôn bài 1–8 **+ 把字句 (bổ sung)** | — | — |
-| 9 | 我去买杯奶茶 | 时量补语(1) · 主谓谓语句 · 选择问句 | đồ uống, mua sắm | **L30 时量补语** · L16 选择问 |
+| — | **Ôn 1** (giữa khoá) | ôn bài 1–8 (chỉ ôn tập, không dạy mới) | — | — |
+| 9 | 我去买杯奶茶 | 时量补语(1) · 主谓谓语句 · 选择问句 | đồ uống, mua sắm ⟨**+ mặc cả**⟩ | **L30 时量补语** · L16 选择问 |
 | 10 | 就要考试了 | 要/快/快要/就要…了 · 动态助词"着"(1)(2) | thi cử, học tập | (快…了; 着→第二册) |
-| 11 | 我最喜欢吃中国菜 | 程度副词"最" | ăn uống, sở thích | L?? (最) |
-| 12 | 这里比北京冷多了 | 比较句(4)(5)(6) | thời tiết, so sánh | (比较句→第二册) |
+| 11 | 我最喜欢吃中国菜 | 程度副词"最" · **被字句 (đơn giản, bổ sung)** | ăn uống, sở thích | L?? (最) |
+| 12 | 这里比北京冷多了 | 比较句(4)(5)(6) · **连…都/也 (bổ sung)** | thời tiết, so sánh | (比较句→第二册) |
 | 13 | 我们爱上中文课 | 双宾语句(2) · 比较句(7)(8) | học tiếng Trung | **L17 双宾语句** |
 | 14 | 一个人过年多没意思啊 | 存现句 · 复合趋向补语 | lễ Tết, cảm xúc | L23 存在的表达 · (复合趋向→第二册) |
 | 15 | 我想再去一次中国 | 动量补语(1)(2) · "有"字句(2) | kế hoạch, quay lại TQ | (动量补语→第二册) |
-| — | **Ôn 2** (cuối khoá) | ôn bài 9–15 **+ 被字句/连…都也 (bổ sung)** + capstone hội thoại | — | — |
+| — | **Ôn 2** (cuối khoá) | ôn bài 9–15 + capstone hội thoại tổng hợp (chỉ ôn tập, không dạy mới) | — | — |
 
 **Phủ ngữ pháp:** 45 điểm 小语讲堂 trải đều 15 bài (một số bài 2–3 điểm; bài nhiều nhất là các bài có nhiều 比较句). Danh sách 45 điểm đầy đủ ở file TOC.
 
@@ -72,12 +72,19 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 
 **Ràng buộc chống trùng HSK1 (cứng):** 生词 mỗi bài loại mọi từ đã có trong HSK1 (đối chiếu checklist Task 0.1). Từ mở rộng (pets) cũng chọn từ ngoài HSK1.
 
-> **Ngữ pháp bổ sung ngoài sách (vá theo tiêu chuẩn đầu ra — 把/被/连…都/也 KHÔNG có trong 45 điểm 小语讲堂 của New HSK Course 2):**
-> - **把字句 (mức cơ bản)** — dạy trong **Ôn 1**, ghép cùng ôn 结果补语 (Bài 3): "把+O+V+bổ ngữ kết quả" (vd 把作业做完, 把衣服穿上).
-> - **被字句 (đơn giản)** + **连…都/也** — dạy trong **Ôn 2**, trước phần capstone hội thoại.
-> - Đánh dấu rõ trong slide ôn: "ngữ pháp mở rộng ngoài 45 điểm sách chính, bổ sung theo yêu cầu đầu ra".
+> **Ngữ pháp bổ sung ngoài sách (vá theo tiêu chuẩn đầu ra — 把/被/连…都/也 KHÔNG có trong 45 điểm 小语讲堂 của New HSK Course 2), lồng vào buổi có sẵn — KHÔNG dạy ở 2 buổi Ôn (Ôn chỉ ôn tập, không học nội dung mới):**
+> - **把字句 (mức cơ bản)** — lồng vào **Bài 4** (trang phục), ghép tự nhiên với 简单趋向补语 vốn có sẵn: "把+O+V+bổ ngữ xu hướng/kết quả" (vd 把衣服穿上, 把衣服脱下来).
+> - **被字句 (đơn giản)** — lồng vào **Bài 11** (món ăn yêu thích): vd 这道菜太好吃了，都被吃光了.
+> - **连…都/也** — lồng vào **Bài 12** (thời tiết, so sánh), nhấn mạnh mức độ cực đoan tự nhiên đi cùng 比较句: vd 这儿冷得连水都能结冰.
+> - Đánh dấu rõ trong slide buổi tương ứng: "ngữ pháp mở rộng ngoài 45 điểm sách chính, bổ sung theo yêu cầu đầu ra".
 
-> **Bổ sung giao tiếp còn thiếu (đặt lịch hẹn · hỏi đường 怎么走 · mặc cả · đặt khách sạn · giới thiệu bản thân/gia đình sâu bằng ngữ pháp mới):** dồn vào **capstone Ôn 2** dưới dạng roleplay tổng hợp (phần HSKK) — không thêm buổi riêng, không phá cấu trúc bám sách 15 bài.
+> **Bổ sung giao tiếp còn thiếu, lồng vào buổi có sẵn — KHÔNG dồn vào Ôn:**
+> - **Hỏi đường (怎么走)** → lồng **Bài 2** (giao thông).
+> - **Đặt khách sạn** → lồng **Bài 3** (du lịch Tây An).
+> - **Đặt lịch hẹn** → lồng **Bài 6** (sinh nhật — hẹn giờ đến dự tiệc).
+> - **Mặc cả** → lồng **Bài 9** (mua trà sữa/đồ uống).
+> - **Giới thiệu bản thân/gia đình sâu (2-3 phút, dùng ngữ pháp mới)** → lồng **Bài 5** (thăm nhà bạn TQ).
+> - Ôn 2 vẫn giữ **capstone hội thoại** đã có trong thiết kế gốc, nhưng chỉ để **ôn tập/ứng dụng lại** các kỹ năng giao tiếp trên (đã dạy rải rác ở buổi 2/3/5/6/9), không dạy từ/ngữ pháp/tình huống mới.
 
 ## 5. Nguồn vocab mỗi bài (từ sách chính, không tự nghĩ)
 
@@ -189,10 +196,11 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 - [ ] Bài tập qua cổng kiểm tra đáp án AI.
 - [ ] `README.md` syllabus đầy đủ, ghi rõ chuẩn 3.0.
 - [ ] Trang từ vựng `output/study/hsk2/buoiXX/tu-vung.html` sinh đủ, flashcard + 🔊 chạy (Leitner trung tính, không neo Activation vault).
-- [ ] Ôn 1 có dạy **把字句 cơ bản**; Ôn 2 có **被字句 đơn giản + 连…都/也** (ngữ pháp bổ sung ngoài sách, đánh dấu rõ trong slide).
+- [ ] Bài 4 có dạy **把字句 cơ bản**; Bài 11 có **被字句 đơn giản**; Bài 12 có **连…都/也** (ngữ pháp bổ sung ngoài sách, đánh dấu rõ trong slide buổi tương ứng — KHÔNG ở 2 buổi Ôn).
+- [ ] Bài 2 (hỏi đường), Bài 3 (khách sạn), Bài 5 (giới thiệu bản thân/gia đình sâu), Bài 6 (đặt lịch hẹn), Bài 9 (mặc cả) có lồng đủ nội dung giao tiếp bổ sung.
 - [ ] Bài tập Viết luân phiên đủ 4 dạng bổ sung (đoạn 60–100 chữ, điền form, lời nhắn, nhật ký) qua các buổi — không chỉ dừng ở câu ngắn.
 - [ ] Mỗi buổi bài tập phần 读 có ≥1 văn bản thực tế (tin nhắn/biển báo/thực đơn/quảng cáo) tự soạn theo chủ đề, không lấy từ sách.
-- [ ] Capstone Ôn 2 có roleplay bao phủ đặt lịch hẹn/hỏi đường/mặc cả/đặt khách sạn/giới thiệu bản thân mở rộng.
+- [ ] 2 buổi Ôn chỉ ôn tập nội dung đã học (kể cả capstone Ôn 2) — không xuất hiện từ/ngữ pháp/tình huống mới chưa dạy ở buổi trước đó.
 
 ## 13. Trang từ vựng HSK2 theo buổi (vocab-study-style)
 
@@ -207,8 +215,8 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 - **Con số 3.0:** chốt bằng 词汇表 sách (trang 141) + 小语讲堂 ở Task 0.1. (200 từ + mở rộng, 45 ngữ pháp — đã xác minh nguồn chính chủ.)
 - **Audio gốc sách:** New HSK Course 2 có audio chính thức. Mặc định tự sinh edge-tts; nếu user cấp MP3 gốc → ưu tiên dùng.
 - **Phần Viết (书写) 3.0 — ĐÃ QUYẾT (2026-07-27):** ngoài sắp câu/điền chữ/viết câu ngắn, bổ sung 4 dạng mới — đoạn 60–100 chữ, điền form, lời nhắn, nhật ký — theo tiêu chuẩn đầu ra. Task 0.2 chuyển từ "đánh giá" sang "mở rộng schema exercise-generator" nếu chưa hỗ trợ.
-- **Ngữ pháp bổ sung ngoài sách — ĐÃ QUYẾT (2026-07-27):** 把 (Ôn 1), 被+连…都/也 (Ôn 2) — không có trong 45 điểm sách chính nhưng nằm trong tiêu chuẩn đầu ra user yêu cầu.
-- **Giao tiếp thiếu (hẹn/hỏi đường/mặc cả/khách sạn/giới thiệu bản thân sâu) — ĐÃ QUYẾT (2026-07-27):** dồn vào capstone Ôn 2, không thêm buổi.
+- **Ngữ pháp bổ sung ngoài sách — ĐÃ QUYẾT (2026-07-27, sửa lại):** 把 lồng Bài 4, 被 lồng Bài 11, 连…都/也 lồng Bài 12 — không có trong 45 điểm sách chính nhưng nằm trong tiêu chuẩn đầu ra user yêu cầu. **Không dạy ở Ôn** (Ôn chỉ ôn tập, không học mới — user chỉnh 2026-07-27).
+- **Giao tiếp thiếu (hẹn/hỏi đường/mặc cả/khách sạn/giới thiệu bản thân sâu) — ĐÃ QUYẾT (2026-07-27, sửa lại):** lồng vào buổi 2/3/5/6/9 tương ứng, không thêm buổi, không dồn vào Ôn.
 - **Đọc thực tế (tin nhắn/biển báo/thực đơn/quảng cáo) — ĐÃ QUYẾT (2026-07-27):** thêm ≥1 mục/buổi trong phần 读 của bài tập, tự soạn theo chủ đề (khác 課文 nguyên văn sách).
 - **Hán ngữ mapping — ĐÃ CÓ:** user cấp `raw/Hán ngữ 2.pdf` (=《汉语教程》第一册·下, L16–30); mục lục đã OCR + map vào §4/§8. Còn thiếu điểm **比** (khả năng ở 第二册) → nếu cần, user cấp thêm 第二册; nếu không, footer buổi 2/6/7 ghi rõ 比 ngoài phạm vi sách này.
 
