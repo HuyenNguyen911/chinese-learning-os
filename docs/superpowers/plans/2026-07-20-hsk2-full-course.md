@@ -13,7 +13,7 @@
 ## Global Constraints
 
 - **Python:** `PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"`. Chạy từ gốc repo `c:/Tài liệu/ai-vault/CHINESE`.
-- **NGUỒN CHÂN LÝ = sách:** 生词/課文/45 ngữ pháp trích từ `raw/New HSK Course 2.pdf` (text layer sạch — dùng pypdf, KHÔNG bịa, KHÔNG web-search). Không tự nghĩ từ vựng.
+- **NGUỒN CHÂN LÝ = sách:** 生词/課文/45 ngữ pháp trích từ `raw/New HSK Course 2.pdf` (KHÔNG bịa, KHÔNG web-search). Không tự nghĩ từ vựng. Chữ Hán trích bằng pypdf sạch; **bảng/vùng layout phức tạp (nhiều cột) → render ảnh (PyMuPDF) rồi đọc trực tiếp bằng vision**, KHÔNG tin OCR/pypdf mù cho các vùng đó (đã xác nhận ở Task 0.1). **Pinyin in trong PDF bị lỗi mất dấu thanh toàn sách → LUÔN tự sinh bằng `pypinyin`** từ chữ Hán, không dùng pinyin PDF.
 - **Buổi = bài:** 15 buổi ↔ 15 bài sách (mục lục TOC). Ôn: `on1_bai1-8` (sau bài 8), `on2_bai9-15` (sau bài 15).
 - **CHỐNG TRÙNG HSK1 (cứng):** mọi 生词 loại/đánh dấu từ đã có trong 150 từ HSK1 (Task 0.1).
 - **Động vật/thú cưng:** lồng **từ mở rộng** vào Bài 5 (thăm nhà bạn), đánh dấu "ngoài 200 từ sách". Không thêm buổi.
@@ -49,27 +49,17 @@ Vocab-study phase (§13 spec) **tách plan riêng** — xem "Out of scope".
 
 ## PHASE 0 — Infrastructure
 
-### Task 0.1: Trích 词汇表 + 45 ngữ pháp từ sách + cờ trùng HSK1
+### Task 0.1: Trích 词汇表 + 45 ngữ pháp từ sách + cờ trùng HSK1 — ✅ XONG (commit `8f06202`)
 
-**Files:** Create `docs/superpowers/plans/hsk2-vocab-grammar-checklist.md`
+**Files:** `docs/superpowers/plans/hsk2-vocab-grammar-checklist.md`
 
-- [ ] **Step 1: Bóc 词汇表 tổng (trang 141) + 生词 từng bài từ PDF**
-```bash
-PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"
-"$PY" -c "import pypdf,sys;sys.stdout.reconfigure(encoding='utf-8');r=pypdf.PdfReader('raw/New HSK Course 2.pdf');[print(f'==P{i+1}==',(r.pages[i].extract_text() or '')) for i in range(140,164)]"
-```
-Trích bảng `汉字 | pinyin | 词性 | nghĩa | bài`. Đối chiếu 生词 đầu mỗi bài (bóc trang tương ứng theo TOC) để gán từ ↔ bài.
+- [x] **Step 1: Bóc 词语表 (trang 141-146 sách).** pypdf/OCR đều bị xáo cột — chuyển sang **render ảnh (PyMuPDF 250dpi) + đọc trực tiếp bằng vision**, chính xác 100%. 210 mục (207 từ + 3 tên riêng).
+- [x] **Step 2: Trích từ HSK1 để loại trùng** — lọc `output/hsk1/*/slide/*.json` field `hz`, bỏ câu ví dụ dài, còn ~160 mục dạng từ/cụm từ.
+- [x] **Step 3: Viết checklist** — bảng vocab theo bài (1-15) + cột từ loại/nghĩa/trùng HSK1. 45 điểm ngữ pháp đã có sẵn ở TOC file, không lặp lại.
+- [x] **Step 4: Verify** — tổng 210 khớp "200 từ + 略有扩展"; mọi từ có bài; **19 từ trùng HSK1** (đáng chú ý: Bài 4 có 5/16 từ trùng — cụm màu sắc, do HSK1 3.0 đã dạy màu riêng).
+- [x] **Step 5: Commit** `docs(hsk2): Task 0.1 - checklist 210 từ vựng, trích từ ảnh trang 141-146 sách`
 
-- [ ] **Step 2: Trích 150 từ HSK1 để loại trùng**
-```bash
-grep -ho '"hz": *"[^"]*"' output/hsk1/*/slide/*.json | sort -u
-```
-
-- [ ] **Step 3: Viết checklist** — bảng vocab (thêm cột `trùng HSK1?`) + bảng 45 ngữ pháp `điểm 小语讲堂 | bài`. Đánh dấu từ mở rộng động vật/thú cưng (Bài 5).
-
-- [ ] **Step 4: Verify** — tổng ≈ 200 (+扩展) khớp 词汇表; mọi từ có bài; 45 ngữ pháp đủ; không từ trùng HSK1 lọt vào cột 生词 chính.
-
-- [ ] **Step 5: Commit** `docs(hsk2): trích 200 từ + 45 ngữ pháp từ New HSK Course 2 + cờ trùng HSK1`
+**Phát hiện quan trọng cần áp dụng cho các Task sau:** pinyin in trong PDF (cả 課文 lẫn bảng từ) bị lỗi mất dấu thanh toàn sách → khi trích 課文 ở Procedure P (P2), **không dùng pinyin PDF — tự sinh bằng `pypinyin`** từ chữ Hán (chữ Hán trích pypdf vẫn sạch, chỉ pinyin lỗi).
 
 ### Task 0.2: Mở rộng schema Viết (书写) 3.0 trong exercise-generator (đã quyết — không chỉ đánh giá)
 
