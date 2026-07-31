@@ -83,6 +83,10 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
    → fetch + rebase nhánh ĐANG đứng, không đổi nhánh giữa chừng.
 5. **Trước khi rebase/reset:** nêu rõ đang ở nhánh nào + sẽ ảnh hưởng commit nào, rồi mới
    chạy. Nghi ngờ → hỏi 1 câu, đừng đoán.
+6. **Trước khi khẳng định "đã mới nhất" / "đã pull đủ":** bắt buộc `git fetch` rồi so
+   `git status -sb` hoặc `git log HEAD..origin/main --oneline` — KHÔNG chỉ dựa vào
+   `git status` sạch (bài học: `git status` chỉ cho biết thay đổi chưa commit ở máy này,
+   không cho biết máy có đang chậm hơn `origin/main` hay không).
 
 ## 6. State Ownership
 

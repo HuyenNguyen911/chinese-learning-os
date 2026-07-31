@@ -17,8 +17,11 @@ author: Chinese Learning OS
 File `.pptx` bài khóa của cô (mặc định tìm trong `raw/`, chọn file mới nhất nếu nhiều).
 
 ## Biến môi trường
+User dùng nhiều máy khác nhau — KHÔNG hardcode path Python theo 1 user/máy cụ thể.
+Trước khi chạy, dò python khả dụng trên máy hiện tại (thử lần lượt `python3`, `python`,
+`py -0` để liệt kê, hoặc các path thường gặp như
+`C:/Users/<user>/AppData/Local/Programs/Python/Python31x/python.exe`) rồi gán vào `$PY`.
 ```
-PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"
 DA=".claude/skills/doc-analyzer"
 VS=".claude/skills/vocab-study/scripts"
 LP=".claude/skills/lesson-prep/scripts"
@@ -99,4 +102,7 @@ Báo user: số từ mới thêm (tier-a + xlsx), đường dẫn `tu-vung.html`
 - Chỉ xử lý pptx trong V1.
 
 ## Phụ thuộc
-`python-pptx`, `python-docx`, `openpyxl`, `pypinyin` (đều đã có).
+`python-pptx`, `python-docx`, `openpyxl`, `pypinyin`. KHÔNG giả định "đều đã có" — máy
+khác nhau có thể thiếu (từng gặp máy không có `python-pptx`/`python-docx`). Kiểm tra
+trước bằng `python -c "import pptx, docx"`; nếu lỗi `ModuleNotFoundError` thì
+`pip install python-pptx python-docx openpyxl pypinyin` rồi chạy lại.
