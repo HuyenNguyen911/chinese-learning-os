@@ -1,124 +1,6856 @@
 {
   "28": [
-    {"grp": "涵-涵盖-内涵-海涵-包涵", "vi": ""},
-    {"grp": "朗-朗朗-开朗-爽朗-明朗-豁然开朗", "vi": ""},
-    {"grp": "妙-不妙-妙趣-锦囊妙计-莫名其妙", "vi": ""},
-    {"grp": "凡-平凡-非凡-不凡-凡人-凡夫俗子", "vi": ""},
-    {"grp": "谱-乐谱-食谱-谱曲-脸谱-谱写-靠谱儿", "vi": ""}
+    {
+      "root": "涵",
+      "vi": "bao hàm, chứa đựng; khoan dung",
+      "members": [
+        {
+          "w": "涵盖",
+          "g": "bao hàm, bao quát"
+        },
+        {
+          "w": "内涵",
+          "g": "nội hàm, ý nghĩa bên trong"
+        },
+        {
+          "w": "海涵",
+          "g": "xin lượng thứ (khiêm nhường, khẩu ngữ trang trọng)"
+        },
+        {
+          "w": "包涵",
+          "g": "thông cảm, bỏ qua cho"
+        }
+      ]
+    },
+    {
+      "root": "朗",
+      "vi": "sáng, rõ ràng; (tính cách) vui vẻ, cởi mở",
+      "members": [
+        {
+          "w": "朗朗",
+          "g": "(âm thanh) vang rõ; (trời) sáng rõ"
+        },
+        {
+          "w": "开朗",
+          "g": "cởi mở, vui vẻ, khoáng đạt (tính cách); sáng sủa, rộng rãi (không gian)"
+        },
+        {
+          "w": "爽朗",
+          "g": "sảng khoái, cởi mở, thẳng thắn"
+        },
+        {
+          "w": "明朗",
+          "g": "rõ ràng, sáng sủa; minh bạch"
+        },
+        {
+          "w": "豁然开朗",
+          "g": "bỗng nhiên sáng tỏ, hoát nhiên khai lãng"
+        }
+      ]
+    },
+    {
+      "root": "妙",
+      "vi": "hay, tuyệt diệu, khéo léo",
+      "members": [
+        {
+          "w": "不妙",
+          "g": "không hay, chẳng lành (tình huống)"
+        },
+        {
+          "w": "妙趣",
+          "g": "thú vị, hứng thú kỳ diệu"
+        },
+        {
+          "w": "锦囊妙计",
+          "g": "diệu kế, mẹo hay giấu kín (giải quyết bất ngờ)"
+        },
+        {
+          "w": "莫名其妙",
+          "g": "khó hiểu, không rõ lý do, vô lý"
+        }
+      ]
+    },
+    {
+      "root": "凡",
+      "vi": "phàm, bình thường; tất cả, hễ",
+      "members": [
+        {
+          "w": "平凡",
+          "g": "bình thường, tầm thường, giản dị"
+        },
+        {
+          "w": "非凡",
+          "g": "phi thường, khác thường, xuất sắc"
+        },
+        {
+          "w": "不凡",
+          "g": "không tầm thường, xuất chúng"
+        },
+        {
+          "w": "凡人",
+          "g": "người phàm, người bình thường"
+        },
+        {
+          "w": "凡夫俗子",
+          "g": "kẻ phàm tục, người bình thường"
+        }
+      ]
+    },
+    {
+      "root": "谱",
+      "vi": "bản phổ, phả, danh sách; sáng tác (nhạc)",
+      "members": [
+        {
+          "w": "乐谱",
+          "g": "bản nhạc, khuông nhạc"
+        },
+        {
+          "w": "食谱",
+          "g": "thực đơn, công thức nấu ăn"
+        },
+        {
+          "w": "谱曲",
+          "g": "phổ nhạc, soạn nhạc"
+        },
+        {
+          "w": "脸谱",
+          "g": "mặt nạ (kinh kịch); khuôn mẫu rập khuôn (nghĩa bóng)"
+        },
+        {
+          "w": "谱写",
+          "g": "sáng tác, viết nên (nhạc, thành tích)"
+        },
+        {
+          "w": "靠谱儿",
+          "g": "đáng tin cậy, chắc chắn (khẩu ngữ)"
+        }
+      ]
+    }
   ],
   "29": [
-    {"root": "庸", "vi": "tầm thường", "members": [
-      {"w": "平庸", "g": "tầm thường, xoàng xĩnh"},
-      {"w": "庸俗", "g": "dung tục"},
-      {"w": "昏庸", "g": "hôn ám, ngu muội (vua quan)"},
-      {"w": "庸才", "g": "kẻ bất tài"},
-      {"w": "庸医", "g": "lang băm, thầy thuốc kém"}
-    ]},
-    {"root": "诸", "vi": "chư, các (nhiều)", "members": [
-      {"w": "诸多", "g": "rất nhiều"},
-      {"w": "诸如", "g": "chẳng hạn như"},
-      {"w": "诸位", "g": "chư vị, các vị"},
-      {"w": "诸君", "g": "chư quân, các bạn"},
-      {"w": "付诸东流", "g": "đổ sông đổ bể, công cốc"}
-    ]},
-    {"root": "堪", "vi": "kham, chịu đựng", "members": [
-      {"w": "难堪", "g": "khó xử, bẽ bàng"},
-      {"w": "不堪", "g": "không chịu nổi; hết chỗ nói"},
-      {"w": "不堪回首", "g": "không dám nhớ lại (quá khứ đau buồn)"},
-      {"w": "不堪设想", "g": "hậu quả khôn lường"}
-    ]},
-    {"root": "斟", "vi": "rót; cân nhắc", "members": [
-      {"w": "斟茶", "g": "rót trà"},
-      {"w": "斟酒", "g": "rót rượu"},
-      {"w": "字斟句酌", "g": "cân nhắc từng câu từng chữ"}
-    ]},
-    {"root": "酌", "vi": "rót rượu; cân nhắc", "members": [
-      {"w": "对酌", "g": "đối ẩm (ngồi uống cùng nhau)"},
-      {"w": "自酌", "g": "tự rót tự uống"},
-      {"w": "酌情", "g": "tùy tình hình mà xử lý"},
-      {"w": "斟酌", "g": "cân nhắc, đắn đo"}
-    ]},
-    {"root": "径", "vi": "đường, lối", "members": [
-      {"w": "田径", "g": "điền kinh"},
-      {"w": "途径", "g": "con đường, phương thức"},
-      {"w": "直径", "g": "đường kính"},
-      {"w": "捷径", "g": "đường tắt"},
-      {"w": "小径", "g": "lối nhỏ"}
-    ]},
-    {"root": "苟", "vi": "cẩu thả, tạm bợ", "members": [
-      {"w": "一丝不苟", "g": "tỉ mỉ, không cẩu thả chút nào"},
-      {"w": "不苟言笑", "g": "nghiêm nghị, ít nói cười"},
-      {"w": "苟且", "g": "qua loa, tạm bợ; sống lay lắt"}
-    ]},
-    {"root": "倾", "vi": "nghiêng, dốc", "members": [
-      {"w": "倾听", "g": "lắng nghe"},
-      {"w": "倾向", "g": "khuynh hướng, nghiêng về"},
-      {"w": "倾斜", "g": "nghiêng, dốc"},
-      {"w": "倾覆", "g": "lật đổ, lật úp"},
-      {"w": "倾盆", "g": "(mưa) như trút nước"}
-    ]},
-    {"root": "炼", "vi": "luyện", "members": [
-      {"w": "锻炼", "g": "rèn luyện (thể chất)"},
-      {"w": "提炼", "g": "chắt lọc, tinh luyện"},
-      {"w": "百炼成钢", "g": "trăm luyện thành thép (tôi luyện nên người)"},
-      {"w": "锤炼", "g": "tôi luyện, mài giũa"}
-    ]}
+    {
+      "root": "庸",
+      "vi": "tầm thường",
+      "members": [
+        {
+          "w": "平庸",
+          "g": "tầm thường, xoàng xĩnh"
+        },
+        {
+          "w": "庸俗",
+          "g": "dung tục"
+        },
+        {
+          "w": "昏庸",
+          "g": "hôn ám, ngu muội (vua quan)"
+        },
+        {
+          "w": "庸才",
+          "g": "kẻ bất tài"
+        },
+        {
+          "w": "庸医",
+          "g": "lang băm, thầy thuốc kém"
+        }
+      ]
+    },
+    {
+      "root": "诸",
+      "vi": "chư, các (nhiều)",
+      "members": [
+        {
+          "w": "诸多",
+          "g": "rất nhiều"
+        },
+        {
+          "w": "诸如",
+          "g": "chẳng hạn như"
+        },
+        {
+          "w": "诸位",
+          "g": "chư vị, các vị"
+        },
+        {
+          "w": "诸君",
+          "g": "chư quân, các bạn"
+        },
+        {
+          "w": "付诸东流",
+          "g": "đổ sông đổ bể, công cốc"
+        }
+      ]
+    },
+    {
+      "root": "堪",
+      "vi": "kham, chịu đựng",
+      "members": [
+        {
+          "w": "难堪",
+          "g": "khó xử, bẽ bàng"
+        },
+        {
+          "w": "不堪",
+          "g": "không chịu nổi; hết chỗ nói"
+        },
+        {
+          "w": "不堪回首",
+          "g": "không dám nhớ lại (quá khứ đau buồn)"
+        },
+        {
+          "w": "不堪设想",
+          "g": "hậu quả khôn lường"
+        }
+      ]
+    },
+    {
+      "root": "斟",
+      "vi": "rót; cân nhắc",
+      "members": [
+        {
+          "w": "斟茶",
+          "g": "rót trà"
+        },
+        {
+          "w": "斟酒",
+          "g": "rót rượu"
+        },
+        {
+          "w": "字斟句酌",
+          "g": "cân nhắc từng câu từng chữ"
+        }
+      ]
+    },
+    {
+      "root": "酌",
+      "vi": "rót rượu; cân nhắc",
+      "members": [
+        {
+          "w": "对酌",
+          "g": "đối ẩm (ngồi uống cùng nhau)"
+        },
+        {
+          "w": "自酌",
+          "g": "tự rót tự uống"
+        },
+        {
+          "w": "酌情",
+          "g": "tùy tình hình mà xử lý"
+        },
+        {
+          "w": "斟酌",
+          "g": "cân nhắc, đắn đo"
+        }
+      ]
+    },
+    {
+      "root": "径",
+      "vi": "đường, lối",
+      "members": [
+        {
+          "w": "田径",
+          "g": "điền kinh"
+        },
+        {
+          "w": "途径",
+          "g": "con đường, phương thức"
+        },
+        {
+          "w": "直径",
+          "g": "đường kính"
+        },
+        {
+          "w": "捷径",
+          "g": "đường tắt"
+        },
+        {
+          "w": "小径",
+          "g": "lối nhỏ"
+        }
+      ]
+    },
+    {
+      "root": "苟",
+      "vi": "cẩu thả, tạm bợ",
+      "members": [
+        {
+          "w": "一丝不苟",
+          "g": "tỉ mỉ, không cẩu thả chút nào"
+        },
+        {
+          "w": "不苟言笑",
+          "g": "nghiêm nghị, ít nói cười"
+        },
+        {
+          "w": "苟且",
+          "g": "qua loa, tạm bợ; sống lay lắt"
+        }
+      ]
+    },
+    {
+      "root": "倾",
+      "vi": "nghiêng, dốc",
+      "members": [
+        {
+          "w": "倾听",
+          "g": "lắng nghe"
+        },
+        {
+          "w": "倾向",
+          "g": "khuynh hướng, nghiêng về"
+        },
+        {
+          "w": "倾斜",
+          "g": "nghiêng, dốc"
+        },
+        {
+          "w": "倾覆",
+          "g": "lật đổ, lật úp"
+        },
+        {
+          "w": "倾盆",
+          "g": "(mưa) như trút nước"
+        }
+      ]
+    },
+    {
+      "root": "炼",
+      "vi": "luyện",
+      "members": [
+        {
+          "w": "锻炼",
+          "g": "rèn luyện (thể chất)"
+        },
+        {
+          "w": "提炼",
+          "g": "chắt lọc, tinh luyện"
+        },
+        {
+          "w": "百炼成钢",
+          "g": "trăm luyện thành thép (tôi luyện nên người)"
+        },
+        {
+          "w": "锤炼",
+          "g": "tôi luyện, mài giũa"
+        }
+      ]
+    }
   ],
   "30": [
-    {"root": "轨", "vi": "đường ray; quỹ đạo", "members": [
-      {"w": "铁轨", "g": "đường ray sắt"},
-      {"w": "无轨", "g": "không chạy trên ray (无轨电车 = xe điện bánh hơi)"},
-      {"w": "越轨", "g": "vượt rào, làm quá khuôn phép"},
-      {"w": "正轨", "g": "quỹ đạo đúng, nề nếp bình thường"},
-      {"w": "不轨", "g": "bất chính, phạm pháp"}
-    ]},
-    {"root": "毁", "vi": "hủy, phá hủy", "members": [
-      {"w": "毁约", "g": "hủy hợp đồng, bội ước"},
-      {"w": "撕毁", "g": "xé bỏ, hủy bỏ (hiệp ước...)"},
-      {"w": "炸毁", "g": "đánh bom phá hủy"},
-      {"w": "坠毁", "g": "rơi vỡ (máy bay)"}
-    ]},
-    {"root": "顽", "vi": "ngoan cố; nghịch ngợm", "members": [
-      {"w": "顽皮", "g": "nghịch ngợm, tinh nghịch"},
-      {"w": "顽童", "g": "đứa trẻ nghịch ngợm"},
-      {"w": "老顽固", "g": "kẻ bảo thủ già, người cứng đầu"},
-      {"w": "顽固不化", "g": "ngoan cố không chịu thay đổi"}
-    ]},
-    {"root": "奢", "vi": "xa xỉ, xa hoa", "members": [
-      {"w": "奢华", "g": "xa hoa, lộng lẫy"},
-      {"w": "奢靡", "g": "xa xỉ phung phí"},
-      {"w": "穷奢极侈", "g": "cực kỳ xa xỉ, hoang phí tột độ"},
-      {"w": "奢望", "g": "mong ước xa vời, hy vọng viển vông"}
-    ]},
-    {"root": "逆", "vi": "ngược, trái chiều", "members": [
-      {"w": "逆风", "g": "ngược gió"},
-      {"w": "逆光", "g": "ngược sáng"},
-      {"w": "逆耳", "g": "chói tai, khó nghe (忠言逆耳)"},
-      {"w": "倒行逆施", "g": "làm ngược đạo lý, hành động ngang ngược"}
-    ]},
-    {"root": "呆", "vi": "ngây, đờ đẫn; ngốc", "members": [
-      {"w": "呆板", "g": "cứng nhắc, máy móc, đờ đẫn"},
-      {"w": "书呆子", "g": "mọt sách, kẻ đọc sách cứng nhắc"},
-      {"w": "呆笨", "g": "ngốc nghếch, đần độn"},
-      {"w": "呆头呆脑", "g": "ngờ nghệch, đần độn"},
-      {"w": "呆滞", "g": "đờ đẫn, trì trệ (ánh mắt/hàng hóa)"}
-    ]},
-    {"root": "摧", "vi": "bẻ gãy, phá hủy", "members": [
-      {"w": "摧折", "g": "bẻ gãy, vùi dập"},
-      {"w": "摧毁", "g": "phá hủy, đánh sập"},
-      {"w": "坚不可摧", "g": "vững chắc không gì phá nổi"}
-    ]},
-    {"root": "瘤", "vi": "khối u", "members": [
-      {"w": "毒瘤", "g": "khối u độc; ung nhọt (của xã hội)"},
-      {"w": "根瘤", "g": "nốt sần ở rễ cây (họ đậu)"}
-    ]},
-    {"root": "衰", "vi": "suy, suy yếu", "members": [
-      {"w": "衰迈", "g": "già yếu"},
-      {"w": "衰弱", "g": "suy nhược, yếu ớt"},
-      {"w": "衰落", "g": "suy tàn, sa sút"},
-      {"w": "衰减", "g": "suy giảm, giảm sút"},
-      {"w": "衰微", "g": "suy vi, suy yếu (thế lực)"},
-      {"w": "衰败", "g": "suy bại, tàn lụi"}
-    ]}
+    {
+      "root": "轨",
+      "vi": "đường ray; quỹ đạo",
+      "members": [
+        {
+          "w": "铁轨",
+          "g": "đường ray sắt"
+        },
+        {
+          "w": "无轨",
+          "g": "không chạy trên ray (无轨电车 = xe điện bánh hơi)"
+        },
+        {
+          "w": "越轨",
+          "g": "vượt rào, làm quá khuôn phép"
+        },
+        {
+          "w": "正轨",
+          "g": "quỹ đạo đúng, nề nếp bình thường"
+        },
+        {
+          "w": "不轨",
+          "g": "bất chính, phạm pháp"
+        }
+      ]
+    },
+    {
+      "root": "毁",
+      "vi": "hủy, phá hủy",
+      "members": [
+        {
+          "w": "毁约",
+          "g": "hủy hợp đồng, bội ước"
+        },
+        {
+          "w": "撕毁",
+          "g": "xé bỏ, hủy bỏ (hiệp ước...)"
+        },
+        {
+          "w": "炸毁",
+          "g": "đánh bom phá hủy"
+        },
+        {
+          "w": "坠毁",
+          "g": "rơi vỡ (máy bay)"
+        }
+      ]
+    },
+    {
+      "root": "顽",
+      "vi": "ngoan cố; nghịch ngợm",
+      "members": [
+        {
+          "w": "顽皮",
+          "g": "nghịch ngợm, tinh nghịch"
+        },
+        {
+          "w": "顽童",
+          "g": "đứa trẻ nghịch ngợm"
+        },
+        {
+          "w": "老顽固",
+          "g": "kẻ bảo thủ già, người cứng đầu"
+        },
+        {
+          "w": "顽固不化",
+          "g": "ngoan cố không chịu thay đổi"
+        }
+      ]
+    },
+    {
+      "root": "奢",
+      "vi": "xa xỉ, xa hoa",
+      "members": [
+        {
+          "w": "奢华",
+          "g": "xa hoa, lộng lẫy"
+        },
+        {
+          "w": "奢靡",
+          "g": "xa xỉ phung phí"
+        },
+        {
+          "w": "穷奢极侈",
+          "g": "cực kỳ xa xỉ, hoang phí tột độ"
+        },
+        {
+          "w": "奢望",
+          "g": "mong ước xa vời, hy vọng viển vông"
+        }
+      ]
+    },
+    {
+      "root": "逆",
+      "vi": "ngược, trái chiều",
+      "members": [
+        {
+          "w": "逆风",
+          "g": "ngược gió"
+        },
+        {
+          "w": "逆光",
+          "g": "ngược sáng"
+        },
+        {
+          "w": "逆耳",
+          "g": "chói tai, khó nghe (忠言逆耳)"
+        },
+        {
+          "w": "倒行逆施",
+          "g": "làm ngược đạo lý, hành động ngang ngược"
+        }
+      ]
+    },
+    {
+      "root": "呆",
+      "vi": "ngây, đờ đẫn; ngốc",
+      "members": [
+        {
+          "w": "呆板",
+          "g": "cứng nhắc, máy móc, đờ đẫn"
+        },
+        {
+          "w": "书呆子",
+          "g": "mọt sách, kẻ đọc sách cứng nhắc"
+        },
+        {
+          "w": "呆笨",
+          "g": "ngốc nghếch, đần độn"
+        },
+        {
+          "w": "呆头呆脑",
+          "g": "ngờ nghệch, đần độn"
+        },
+        {
+          "w": "呆滞",
+          "g": "đờ đẫn, trì trệ (ánh mắt/hàng hóa)"
+        }
+      ]
+    },
+    {
+      "root": "摧",
+      "vi": "bẻ gãy, phá hủy",
+      "members": [
+        {
+          "w": "摧折",
+          "g": "bẻ gãy, vùi dập"
+        },
+        {
+          "w": "摧毁",
+          "g": "phá hủy, đánh sập"
+        },
+        {
+          "w": "坚不可摧",
+          "g": "vững chắc không gì phá nổi"
+        }
+      ]
+    },
+    {
+      "root": "瘤",
+      "vi": "khối u",
+      "members": [
+        {
+          "w": "毒瘤",
+          "g": "khối u độc; ung nhọt (của xã hội)"
+        },
+        {
+          "w": "根瘤",
+          "g": "nốt sần ở rễ cây (họ đậu)"
+        }
+      ]
+    },
+    {
+      "root": "衰",
+      "vi": "suy, suy yếu",
+      "members": [
+        {
+          "w": "衰迈",
+          "g": "già yếu"
+        },
+        {
+          "w": "衰弱",
+          "g": "suy nhược, yếu ớt"
+        },
+        {
+          "w": "衰落",
+          "g": "suy tàn, sa sút"
+        },
+        {
+          "w": "衰减",
+          "g": "suy giảm, giảm sút"
+        },
+        {
+          "w": "衰微",
+          "g": "suy vi, suy yếu (thế lực)"
+        },
+        {
+          "w": "衰败",
+          "g": "suy bại, tàn lụi"
+        }
+      ]
+    }
+  ],
+  "31": [
+    {
+      "root": "徒",
+      "vi": "kẻ, người (chỉ người làm một việc gì đó, thường mang nghĩa xấu hoặc trung tính); cũng có nghĩa \"đồ đệ, học trò\"",
+      "members": [
+        {
+          "w": "歹徒",
+          "g": "kẻ xấu, tội phạm"
+        },
+        {
+          "w": "徒工",
+          "g": "thợ học việc"
+        },
+        {
+          "w": "师徒",
+          "g": "thầy trò"
+        },
+        {
+          "w": "赌徒",
+          "g": "con bạc, kẻ cờ bạc"
+        },
+        {
+          "w": "不法之徒",
+          "g": "kẻ phạm pháp, kẻ bất lương"
+        }
+      ]
+    },
+    {
+      "root": "剑",
+      "vi": "kiếm",
+      "members": [
+        {
+          "w": "剑术",
+          "g": "kiếm thuật"
+        },
+        {
+          "w": "宝剑",
+          "g": "bảo kiếm"
+        },
+        {
+          "w": "击剑",
+          "g": "đấu kiếm (môn thể thao)"
+        },
+        {
+          "w": "剑麻",
+          "g": "cây gai dầu / sợi sisal (lá hình giống lưỡi kiếm)"
+        },
+        {
+          "w": "唇枪舌剑",
+          "g": "đấu khẩu gay gắt, lời qua tiếng lại kịch liệt (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "劈",
+      "vi": "chẻ, bổ, chém thẳng vào",
+      "members": [
+        {
+          "w": "劈开",
+          "g": "chẻ ra, bổ ra"
+        },
+        {
+          "w": "劈柴",
+          "g": "chẻ củi"
+        },
+        {
+          "w": "劈面",
+          "g": "ngay trước mặt, đối diện"
+        },
+        {
+          "w": "劈头",
+          "g": "ngay từ đầu, thẳng vào đầu"
+        },
+        {
+          "w": "劈头盖脸",
+          "g": "(đánh/mắng) tới tấp vào đầu vào mặt"
+        }
+      ]
+    },
+    {
+      "root": "锈",
+      "vi": "gỉ, rỉ sét",
+      "members": [
+        {
+          "w": "铜锈",
+          "g": "gỉ đồng"
+        },
+        {
+          "w": "铁锈",
+          "g": "gỉ sắt"
+        },
+        {
+          "w": "防锈",
+          "g": "chống gỉ"
+        },
+        {
+          "w": "茶锈",
+          "g": "cặn trà (bám trong ấm/cốc)"
+        },
+        {
+          "w": "水锈",
+          "g": "cặn nước (đóng cặn do nước cứng)"
+        }
+      ]
+    },
+    {
+      "root": "扬",
+      "vi": "nâng lên, truyền ra, phát huy",
+      "members": [
+        {
+          "w": "扬帆",
+          "g": "giương buồm"
+        },
+        {
+          "w": "扬言",
+          "g": "tuyên bố (đe dọa), rêu rao"
+        },
+        {
+          "w": "颂扬",
+          "g": "ca ngợi, tán dương"
+        },
+        {
+          "w": "扬长避短",
+          "g": "phát huy sở trường, tránh sở đoản (thành ngữ)"
+        },
+        {
+          "w": "扬眉吐气",
+          "g": "hết bị chèn ép, nở mày nở mặt (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "韧",
+      "vi": "dẻo dai, bền, có tính đàn hồi",
+      "members": [
+        {
+          "w": "坚韧",
+          "g": "kiên cường, bền bỉ"
+        },
+        {
+          "w": "韧性",
+          "g": "tính dẻo dai, độ bền"
+        },
+        {
+          "w": "韧带",
+          "g": "dây chằng"
+        },
+        {
+          "w": "柔韧",
+          "g": "mềm dẻo"
+        },
+        {
+          "w": "坚韧不拔",
+          "g": "kiên cường bất khuất (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "虐",
+      "vi": "tàn bạo, ngược đãi",
+      "members": [
+        {
+          "w": "虐杀",
+          "g": "giết hại tàn bạo"
+        },
+        {
+          "w": "助纣为虐",
+          "g": "tiếp tay cho kẻ ác (thành ngữ)"
+        },
+        {
+          "w": "暴虐",
+          "g": "tàn bạo, bạo ngược"
+        },
+        {
+          "w": "肆虐",
+          "g": "hoành hành tàn bạo"
+        }
+      ]
+    }
+  ],
+  "32": [
+    {
+      "root": "魄",
+      "vi": "hồn phách; (nghĩa mở rộng) khí phách, khí thế",
+      "members": [
+        {
+          "w": "失魂落魄",
+          "g": "mất hồn mất vía, hoảng loạn, mất bình tĩnh (thành ngữ)"
+        },
+        {
+          "w": "惊心动魄",
+          "g": "kinh tâm động phách, gây chấn động lòng người (thành ngữ)"
+        },
+        {
+          "w": "气魄",
+          "g": "khí phách, khí thế mạnh mẽ"
+        }
+      ]
+    },
+    {
+      "root": "阔",
+      "vi": "rộng, khoáng đạt; (khẩu ngữ) giàu có, sang trọng",
+      "members": [
+        {
+          "w": "阔人",
+          "g": "người giàu có"
+        },
+        {
+          "w": "阔",
+          "g": "giàu có (cách nói khẩu ngữ)"
+        },
+        {
+          "w": "摆阔",
+          "g": "phô trương sự giàu có, ra vẻ nhà giàu"
+        },
+        {
+          "w": "阔气",
+          "g": "sang trọng, hào phóng, ra dáng giàu có"
+        }
+      ]
+    },
+    {
+      "root": "塌",
+      "vi": "sập, đổ; (nghĩa mở rộng) yên tâm, ổn định",
+      "members": [
+        {
+          "w": "死心塌地",
+          "g": "một lòng một dạ, cam tâm tình nguyện, trung thành tuyệt đối (thành ngữ)"
+        },
+        {
+          "w": "倒塌",
+          "g": "sụp đổ, đổ sập (nhà cửa, công trình)"
+        },
+        {
+          "w": "塌方",
+          "g": "sạt lở đất, sập hầm/đường"
+        },
+        {
+          "w": "塌心",
+          "g": "yên tâm, an lòng (cách nói khẩu ngữ vùng miền)"
+        }
+      ]
+    },
+    {
+      "root": "鄙",
+      "vi": "thấp kém, hèn hạ; khinh thường, coi rẻ",
+      "members": [
+        {
+          "w": "鄙俗",
+          "g": "thô tục, tầm thường, quê mùa"
+        },
+        {
+          "w": "卑鄙",
+          "g": "đê tiện, ti tiện, bỉ ổi"
+        },
+        {
+          "w": "粗鄙",
+          "g": "thô lỗ, thô tục"
+        },
+        {
+          "w": "可鄙",
+          "g": "đáng khinh, đáng chê trách"
+        }
+      ]
+    },
+    {
+      "root": "讥",
+      "vi": "chế giễu, châm biếm, mỉa mai",
+      "members": [
+        {
+          "w": "讥嘲",
+          "g": "chế giễu, giễu cợt"
+        },
+        {
+          "w": "讥刺",
+          "g": "châm biếm, mỉa mai sâu cay"
+        },
+        {
+          "w": "讥讽",
+          "g": "giễu cợt, châm biếm"
+        }
+      ]
+    }
+  ],
+  "33": [
+    {
+      "root": "为",
+      "vi": "vì, làm, coi là",
+      "members": [
+        {
+          "w": "为期",
+          "g": "kéo dài trong khoảng, có thời hạn"
+        },
+        {
+          "w": "为了",
+          "g": "vì, để (mục đích)"
+        },
+        {
+          "w": "作为",
+          "g": "coi là, với tư cách là"
+        },
+        {
+          "w": "为难",
+          "g": "làm khó, gây khó xử"
+        },
+        {
+          "w": "无能为力",
+          "g": "bất lực, không làm được gì"
+        }
+      ]
+    },
+    {
+      "root": "啸",
+      "vi": "rít, gào (âm thanh dài, the thé)",
+      "members": [
+        {
+          "w": "呼啸",
+          "g": "rít lên, gào rú (gió, xe cộ)"
+        },
+        {
+          "w": "海啸",
+          "g": "sóng thần"
+        },
+        {
+          "w": "虎啸",
+          "g": "tiếng hổ gầm"
+        }
+      ]
+    },
+    {
+      "root": "桥",
+      "vi": "cầu",
+      "members": [
+        {
+          "w": "桥梁",
+          "g": "cầu; (nghĩa bóng) cầu nối"
+        },
+        {
+          "w": "立交桥",
+          "g": "cầu vượt"
+        },
+        {
+          "w": "独木桥",
+          "g": "cầu độc mộc (một khúc gỗ)"
+        },
+        {
+          "w": "过河拆桥",
+          "g": "qua cầu rút ván (vô ơn)"
+        }
+      ]
+    },
+    {
+      "root": "梁",
+      "vi": "xà nhà, sống (mũi), trụ cột",
+      "members": [
+        {
+          "w": "脊梁",
+          "g": "xương sống, cột sống"
+        },
+        {
+          "w": "屋梁",
+          "g": "xà nhà"
+        },
+        {
+          "w": "鼻梁",
+          "g": "sống mũi"
+        },
+        {
+          "w": "顶梁柱",
+          "g": "trụ cột (gia đình, tổ chức)"
+        }
+      ]
+    },
+    {
+      "root": "喧",
+      "vi": "ồn ào, huyên náo",
+      "members": [
+        {
+          "w": "喧嚣",
+          "g": "ồn ào, huyên náo"
+        },
+        {
+          "w": "喧哗",
+          "g": "ồn ào, la ó"
+        },
+        {
+          "w": "喧闹",
+          "g": "náo nhiệt, ồn ào"
+        },
+        {
+          "w": "喧宾夺主",
+          "g": "khách lấn chủ (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "哗",
+      "vi": "ồn, xôn xao",
+      "members": [
+        {
+          "w": "喧哗",
+          "g": "ồn ào, la ó"
+        },
+        {
+          "w": "哗然",
+          "g": "xôn xao, ồn lên (dư luận)"
+        },
+        {
+          "w": "哗众取宠",
+          "g": "làm màu để lấy lòng đám đông"
+        }
+      ]
+    },
+    {
+      "root": "顾",
+      "vi": "nhìn lại, đoái hoài, quan tâm",
+      "members": [
+        {
+          "w": "回顾",
+          "g": "nhìn lại, hồi tưởng"
+        },
+        {
+          "w": "后顾之忧",
+          "g": "nỗi lo về sau"
+        },
+        {
+          "w": "奋不顾身",
+          "g": "xả thân, bất chấp nguy hiểm"
+        },
+        {
+          "w": "瞻前顾后",
+          "g": "trước sau đắn đo, do dự"
+        }
+      ]
+    },
+    {
+      "root": "塞",
+      "vi": "tắc, nhét, chặn",
+      "members": [
+        {
+          "w": "闭塞",
+          "g": "bế tắc, hẻo lánh (giao thông/thông tin)"
+        },
+        {
+          "w": "堵塞",
+          "g": "tắc nghẽn"
+        },
+        {
+          "w": "塞车",
+          "g": "kẹt xe"
+        },
+        {
+          "w": "边塞",
+          "g": "biên ải, biên cương"
+        },
+        {
+          "w": "茅塞顿开",
+          "g": "bỗng nhiên vỡ lẽ, sáng tỏ ra"
+        }
+      ]
+    },
+    {
+      "root": "捣",
+      "vi": "giã, quấy, phá",
+      "members": [
+        {
+          "w": "捣乱",
+          "g": "quấy phá, gây rối"
+        },
+        {
+          "w": "捣药",
+          "g": "giã thuốc"
+        },
+        {
+          "w": "捣碎",
+          "g": "giã nát, nghiền nát"
+        },
+        {
+          "w": "捣蛋",
+          "g": "quấy phá, nghịch ngợm"
+        },
+        {
+          "w": "捣毁",
+          "g": "đập phá, phá hủy"
+        }
+      ]
+    },
+    {
+      "root": "狼狈",
+      "vi": "lúng túng, thảm hại",
+      "members": [
+        {
+          "w": "狼狈不堪",
+          "g": "cực kỳ lúng túng, thảm hại"
+        },
+        {
+          "w": "狼狈为奸",
+          "g": "cấu kết làm điều xấu (như sói với nhau)"
+        }
+      ]
+    },
+    {
+      "root": "贤",
+      "vi": "hiền, giỏi, đức độ",
+      "members": [
+        {
+          "w": "贤惠",
+          "g": "hiền thục, đảm đang"
+        },
+        {
+          "w": "贤良",
+          "g": "hiền lương, đức hạnh"
+        },
+        {
+          "w": "贤明",
+          "g": "sáng suốt, anh minh"
+        },
+        {
+          "w": "先贤",
+          "g": "bậc hiền triết đời trước"
+        },
+        {
+          "w": "礼贤下士",
+          "g": "lễ độ, trọng dụng người tài"
+        }
+      ]
+    },
+    {
+      "root": "惠",
+      "vi": "ơn huệ, ưu đãi",
+      "members": [
+        {
+          "w": "优惠",
+          "g": "ưu đãi"
+        },
+        {
+          "w": "互惠",
+          "g": "cùng có lợi, hỗ tương"
+        },
+        {
+          "w": "惠顾",
+          "g": "chiếu cố, ghé mua (khách hàng)"
+        },
+        {
+          "w": "恩惠",
+          "g": "ân huệ"
+        },
+        {
+          "w": "惠赠",
+          "g": "kính tặng, biếu tặng (khiêm nhường)"
+        },
+        {
+          "w": "惠存",
+          "g": "xin lưu giữ (lời đề tặng, khiêm nhường)"
+        }
+      ]
+    }
+  ],
+  "34": [
+    {
+      "root": "颠",
+      "vi": "xóc nảy, đảo lộn, lung tung",
+      "members": [
+        {
+          "w": "颠簸",
+          "g": "xóc nảy, chòng chành (xe, thuyền...)"
+        },
+        {
+          "w": "跑跑颠颠",
+          "g": "chạy đôn chạy đáo, tất bật ngược xuôi"
+        },
+        {
+          "w": "颠倒是非",
+          "g": "đảo lộn phải trái, xuyên tạc đúng sai (thành ngữ)"
+        },
+        {
+          "w": "黑白颠倒",
+          "g": "trắng đen đảo lộn (thành ngữ)"
+        },
+        {
+          "w": "神魂颠倒",
+          "g": "mê mẩn tâm thần, mất hồn mất vía vì say mê ai/việc gì (thành ngữ)"
+        },
+        {
+          "w": "颠三倒四",
+          "g": "lộn xộn, nói năng lung tung, trước sau lẫn lộn (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "赠",
+      "vi": "tặng, biếu",
+      "members": [
+        {
+          "w": "转赠",
+          "g": "chuyển tặng (tặng lại cho người khác)"
+        },
+        {
+          "w": "赠品",
+          "g": "quà tặng kèm"
+        },
+        {
+          "w": "赠言",
+          "g": "lời tặng, lời nhắn khi chia tay"
+        },
+        {
+          "w": "捐赠",
+          "g": "quyên tặng, hiến tặng"
+        },
+        {
+          "w": "赠送",
+          "g": "tặng, biếu"
+        }
+      ]
+    },
+    {
+      "root": "搭",
+      "vi": "bắt chuyện, ghép/kết hợp, cùng nhau làm gì",
+      "members": [
+        {
+          "w": "搭茬儿",
+          "g": "nối lời, chen vào nói (khẩu ngữ)"
+        },
+        {
+          "w": "搭腔",
+          "g": "lên tiếng đáp lại"
+        },
+        {
+          "w": "搭话",
+          "g": "bắt chuyện"
+        },
+        {
+          "w": "搭理",
+          "g": "để ý, đáp lại (thường dùng ở dạng phủ định “không thèm để ý”)"
+        },
+        {
+          "w": "搭伙",
+          "g": "góp gạo thổi cơm chung, ăn chung"
+        },
+        {
+          "w": "搭个伴",
+          "g": "làm bạn đồng hành, đi cùng cho có bạn"
+        }
+      ]
+    },
+    {
+      "root": "晶",
+      "vi": "sáng lấp lánh, tinh thể",
+      "members": [
+        {
+          "w": "晶亮",
+          "g": "sáng bóng, sáng loáng"
+        },
+        {
+          "w": "晶莹",
+          "g": "trong suốt lấp lánh"
+        },
+        {
+          "w": "亮晶晶",
+          "g": "sáng lấp lánh (dạng láy)"
+        }
+      ]
+    },
+    {
+      "root": "泛",
+      "vi": "tràn lan, phiếm chỉ, rộng rãi",
+      "members": [
+        {
+          "w": "泛滥",
+          "g": "tràn lan, lũ lụt"
+        },
+        {
+          "w": "泛指",
+          "g": "chỉ chung chung, phiếm chỉ"
+        },
+        {
+          "w": "泛称",
+          "g": "gọi chung là"
+        },
+        {
+          "w": "广泛",
+          "g": "rộng rãi, rộng khắp"
+        },
+        {
+          "w": "泛读",
+          "g": "đọc lướt, đọc mở rộng (extensive reading)"
+        },
+        {
+          "w": "泛泛",
+          "g": "qua loa, sơ sài, chung chung"
+        }
+      ]
+    },
+    {
+      "root": "滥",
+      "vi": "lạm, bừa bãi, quá mức",
+      "members": [
+        {
+          "w": "滥收费",
+          "g": "thu phí bừa bãi, lạm thu"
+        },
+        {
+          "w": "宁缺毋滥",
+          "g": "thà thiếu còn hơn lạm dụng, thà không có còn hơn có bừa (thành ngữ)"
+        },
+        {
+          "w": "滥调",
+          "g": "luận điệu sáo rỗng, cũ rích"
+        },
+        {
+          "w": "陈词滥调",
+          "g": "lời sáo rỗng, luận điệu cũ rích (thành ngữ)"
+        },
+        {
+          "w": "滥用职权",
+          "g": "lạm dụng chức quyền"
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "root": "谅",
+      "vi": "thông cảm, tha thứ, lượng thứ",
+      "members": [
+        {
+          "w": "体谅",
+          "g": "thông cảm, thấu hiểu (hoàn cảnh người khác)"
+        },
+        {
+          "w": "谅解",
+          "g": "thông cảm, lượng thứ"
+        },
+        {
+          "w": "见谅",
+          "g": "xin thứ lỗi, mong lượng thứ"
+        },
+        {
+          "w": "原谅",
+          "g": "tha thứ"
+        },
+        {
+          "w": "互谅互让",
+          "g": "cùng thông cảm nhường nhịn lẫn nhau (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "埋",
+      "vi": "chôn, vùi lấp",
+      "members": [
+        {
+          "w": "埋怨",
+          "g": "oán trách, phàn nàn"
+        },
+        {
+          "w": "埋伏",
+          "g": "mai phục, phục kích"
+        },
+        {
+          "w": "埋没",
+          "g": "chôn vùi, mai một (tài năng)"
+        },
+        {
+          "w": "埋葬",
+          "g": "chôn cất, mai táng"
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "root": "迎",
+      "vi": "đón, nghênh đón",
+      "members": [
+        {
+          "w": "共迎新春",
+          "g": "cùng đón xuân mới"
+        },
+        {
+          "w": "送旧迎新",
+          "g": "tiễn cũ đón mới (thành ngữ, ý đổi mới)"
+        },
+        {
+          "w": "迎面",
+          "g": "đối diện, ngay trước mặt (đi tới)"
+        },
+        {
+          "w": "迎刃而解",
+          "g": "giải quyết dễ dàng như dao chẻ tre (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "搓",
+      "vi": "xoa, vò, chà xát",
+      "members": [
+        {
+          "w": "搓手",
+          "g": "xoa tay"
+        },
+        {
+          "w": "搓洗",
+          "g": "vò giặt (quần áo)"
+        },
+        {
+          "w": "揉搓",
+          "g": "vò, nhào nặn, chà xát"
+        }
+      ]
+    },
+    {
+      "root": "饱",
+      "vi": "no, đầy, trải qua nhiều",
+      "members": [
+        {
+          "w": "饱含水分",
+          "g": "chứa đầy nước, hàm lượng nước cao"
+        },
+        {
+          "w": "饱经风霜",
+          "g": "từng trải phong sương, dày dạn gió sương (thành ngữ)"
+        },
+        {
+          "w": "饱读诗书",
+          "g": "đọc rộng sách vở, học rộng biết nhiều (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "朴",
+      "vi": "chất phác, mộc mạc",
+      "members": [
+        {
+          "w": "朴素",
+          "g": "giản dị, mộc mạc"
+        },
+        {
+          "w": "淳朴",
+          "g": "thuần phác, chất phác"
+        },
+        {
+          "w": "古朴",
+          "g": "cổ kính, chất phác"
+        },
+        {
+          "w": "朴实",
+          "g": "chất phác, thật thà"
+        },
+        {
+          "w": "简朴",
+          "g": "giản dị, đơn sơ"
+        }
+      ]
+    },
+    {
+      "root": "誉",
+      "vi": "danh dự, danh tiếng, khen ngợi",
+      "members": [
+        {
+          "w": "信誉",
+          "g": "uy tín, chữ tín"
+        },
+        {
+          "w": "名誉",
+          "g": "danh dự, danh tiếng"
+        },
+        {
+          "w": "声誉",
+          "g": "thanh danh, tiếng tăm"
+        },
+        {
+          "w": "荣誉",
+          "g": "vinh dự, vinh quang"
+        },
+        {
+          "w": "过誉",
+          "g": "khen quá lời, quá khen"
+        },
+        {
+          "w": "赞誉",
+          "g": "khen ngợi, tán dương"
+        }
+      ]
+    },
+    {
+      "root": "干",
+      "vi": "làm (việc); thân, cán",
+      "members": [
+        {
+          "w": "白干",
+          "g": "làm công cốc, uổng công"
+        },
+        {
+          "w": "干劲",
+          "g": "nhiệt huyết, khí thế hăng say làm việc"
+        },
+        {
+          "w": "单干",
+          "g": "làm ăn riêng lẻ, đơn độc làm việc"
+        },
+        {
+          "w": "傻干",
+          "g": "làm liều, làm mù quáng không suy nghĩ"
+        },
+        {
+          "w": "骨干",
+          "g": "cốt cán, nòng cốt"
+        },
+        {
+          "w": "树干",
+          "g": "thân cây"
+        }
+      ]
+    },
+    {
+      "root": "负",
+      "vi": "gánh vác, chịu trách nhiệm",
+      "members": [
+        {
+          "w": "负担",
+          "g": "gánh nặng; đảm đương"
+        },
+        {
+          "w": "担负",
+          "g": "gánh vác, đảm nhận"
+        },
+        {
+          "w": "肩负",
+          "g": "gánh vác (trên vai), đảm đương"
+        },
+        {
+          "w": "忍辱负重",
+          "g": "nhẫn nhục chịu đựng trọng trách (thành ngữ)"
+        },
+        {
+          "w": "背负",
+          "g": "cõng, gánh vác (trách nhiệm)"
+        }
+      ]
+    },
+    {
+      "root": "悦",
+      "vi": "vui vẻ, hài lòng",
+      "members": [
+        {
+          "w": "和颜悦色",
+          "g": "nét mặt hòa nhã vui vẻ (thành ngữ)"
+        },
+        {
+          "w": "喜悦",
+          "g": "vui mừng, hân hoan"
+        },
+        {
+          "w": "愉悦",
+          "g": "vui vẻ, dễ chịu"
+        },
+        {
+          "w": "取悦",
+          "g": "lấy lòng, làm vừa lòng"
+        },
+        {
+          "w": "心悦诚服",
+          "g": "thật lòng khâm phục, tâm phục khẩu phục (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "⇄ so sánh",
+      "vi": "",
+      "members": [
+        {
+          "w": "迟疑",
+          "g": "chần chừ, do dự (nhất thời, thiếu quyết đoán)"
+        },
+        {
+          "w": "犹豫",
+          "g": "do dự, lưỡng lự (phân vân giữa các lựa chọn)"
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "root": "厌",
+      "vi": "chán ghét, chán",
+      "members": [
+        {
+          "w": "厌烦",
+          "g": "chán ghét, phiền chán"
+        },
+        {
+          "w": "厌倦",
+          "g": "chán nản, mệt mỏi (với việc lặp đi lặp lại)"
+        },
+        {
+          "w": "厌世",
+          "g": "chán đời, yếm thế"
+        },
+        {
+          "w": "贪得无厌",
+          "g": "tham lam vô độ (thành ngữ)"
+        },
+        {
+          "w": "学而不厌",
+          "g": "học không biết chán (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "恶",
+      "vi": "xấu, ác, ghét",
+      "members": [
+        {
+          "w": "好恶",
+          "g": "sự yêu ghét, thích và không thích"
+        },
+        {
+          "w": "恶心",
+          "g": "buồn nôn, kinh tởm"
+        },
+        {
+          "w": "可恶",
+          "g": "đáng ghét, đáng ghê tởm"
+        },
+        {
+          "w": "厌恶",
+          "g": "chán ghét, ghê tởm"
+        }
+      ]
+    },
+    {
+      "root": "诺",
+      "vi": "hứa, lời hứa",
+      "members": [
+        {
+          "w": "允诺",
+          "g": "ưng thuận, hứa hẹn"
+        },
+        {
+          "w": "许诺",
+          "g": "hứa hẹn"
+        },
+        {
+          "w": "承诺",
+          "g": "cam kết, hứa"
+        },
+        {
+          "w": "一诺千金",
+          "g": "một lời hứa đáng giá ngàn vàng (thành ngữ, giữ chữ tín)"
+        },
+        {
+          "w": "诺言",
+          "g": "lời hứa"
+        }
+      ]
+    },
+    {
+      "root": "乘",
+      "vi": "đi (xe); nhân lúc, lợi dụng",
+      "members": [
+        {
+          "w": "乘务员",
+          "g": "nhân viên phục vụ (trên tàu, xe)"
+        },
+        {
+          "w": "有机可乘",
+          "g": "có cơ hội để lợi dụng (thành ngữ)"
+        },
+        {
+          "w": "乘凉",
+          "g": "hóng mát"
+        },
+        {
+          "w": "乘机",
+          "g": "nhân cơ hội, thừa dịp"
+        },
+        {
+          "w": "乘虚而入",
+          "g": "thừa lúc sơ hở mà xâm nhập (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "饶",
+      "vi": "tha thứ; phong phú, giàu có",
+      "members": [
+        {
+          "w": "求饶",
+          "g": "cầu xin tha thứ, van xin tha mạng"
+        },
+        {
+          "w": "饶恕",
+          "g": "tha thứ, khoan dung"
+        },
+        {
+          "w": "富饶",
+          "g": "giàu có, trù phú (đất đai)"
+        },
+        {
+          "w": "丰饶",
+          "g": "phong phú, màu mỡ"
+        }
+      ]
+    },
+    {
+      "root": "恕",
+      "vi": "tha thứ, khoan thứ",
+      "members": [
+        {
+          "w": "饶恕",
+          "g": "tha thứ, khoan dung"
+        },
+        {
+          "w": "宽恕",
+          "g": "khoan thứ, tha thứ"
+        },
+        {
+          "w": "恕罪",
+          "g": "tha tội, xá tội"
+        },
+        {
+          "w": "恕难从命",
+          "g": "xin lỗi khó mà tuân theo được (cách nói lịch sự khi từ chối)"
+        }
+      ]
+    },
+    {
+      "root": "盲",
+      "vi": "mù",
+      "members": [
+        {
+          "w": "盲文",
+          "g": "chữ nổi (Braille)"
+        },
+        {
+          "w": "夜盲",
+          "g": "quáng gà, mù đêm"
+        },
+        {
+          "w": "盲目",
+          "g": "mù quáng"
+        },
+        {
+          "w": "色盲",
+          "g": "mù màu"
+        },
+        {
+          "w": "盲人摸象",
+          "g": "thầy bói xem voi (thành ngữ, phán đoán phiến diện)"
+        }
+      ]
+    },
+    {
+      "root": "⇄ so sánh",
+      "vi": "",
+      "members": [
+        {
+          "w": "正好",
+          "g": "vừa vặn, đúng lúc (nhấn mạnh mức độ/thời điểm trùng hợp)"
+        },
+        {
+          "w": "恰巧",
+          "g": "vừa khéo, tình cờ (nhấn mạnh sự ngẫu nhiên)"
+        }
+      ]
+    },
+    {
+      "root": "举",
+      "vi": "cả, toàn thể; nâng lên",
+      "members": [
+        {
+          "w": "举家",
+          "g": "cả nhà, toàn gia đình"
+        },
+        {
+          "w": "举国",
+          "g": "cả nước, toàn quốc"
+        },
+        {
+          "w": "举世",
+          "g": "cả thế giới"
+        },
+        {
+          "w": "举世闻名",
+          "g": "nổi tiếng khắp thế giới (thành ngữ)"
+        },
+        {
+          "w": "举世瞩目",
+          "g": "cả thế giới chú ý tới (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "瞩",
+      "vi": "nhìn, chú mục",
+      "members": [
+        {
+          "w": "瞩目",
+          "g": "chú mục, chú ý nhìn vào"
+        },
+        {
+          "w": "高瞻远瞩",
+          "g": "nhìn xa trông rộng (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "窜",
+      "vi": "chạy trốn; sửa đổi (lén lút)",
+      "members": [
+        {
+          "w": "抱头鼠窜",
+          "g": "ôm đầu chạy trốn như chuột (thành ngữ)"
+        },
+        {
+          "w": "东奔西窜",
+          "g": "chạy trốn tán loạn khắp nơi (thành ngữ)"
+        },
+        {
+          "w": "逃窜",
+          "g": "chạy trốn, tháo chạy"
+        },
+        {
+          "w": "窜改",
+          "g": "sửa đổi lén lút, xuyên tạc (văn bản)"
+        }
+      ]
+    },
+    {
+      "root": "锋",
+      "vi": "mũi nhọn, sắc bén",
+      "members": [
+        {
+          "w": "笔锋",
+          "g": "nét bút, văn phong sắc sảo"
+        },
+        {
+          "w": "锋利",
+          "g": "sắc bén, sắc sảo"
+        },
+        {
+          "w": "词锋",
+          "g": "lời lẽ sắc bén (khi tranh luận)"
+        },
+        {
+          "w": "针锋相对",
+          "g": "đối đầu gay gắt, kim đối kim (thành ngữ)"
+        },
+        {
+          "w": "锋芒",
+          "g": "mũi nhọn, sự sắc sảo bộc lộ ra ngoài"
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "root": "迫",
+      "vi": "bức bách, ép buộc",
+      "members": [
+        {
+          "w": "强迫",
+          "g": "ép buộc, cưỡng bức"
+        },
+        {
+          "w": "迫不得已",
+          "g": "bất đắc dĩ, không còn cách nào khác (thành ngữ)"
+        },
+        {
+          "w": "极寒交迫",
+          "g": "(nghi là biến thể của 饥寒交迫) đói rét bức bách cùng lúc — cần kiểm tra lại chính tả gốc"
+        },
+        {
+          "w": "迫切",
+          "g": "cấp bách, khẩn thiết"
+        },
+        {
+          "w": "急迫",
+          "g": "gấp gáp, cấp bách"
+        },
+        {
+          "w": "迫近",
+          "g": "đến gần, áp sát (thời gian/khoảng cách)"
+        }
+      ]
+    },
+    {
+      "root": "涉",
+      "vi": "liên quan; lội qua",
+      "members": [
+        {
+          "w": "干涉",
+          "g": "can thiệp, can dự"
+        },
+        {
+          "w": "牵涉",
+          "g": "liên quan, dính líu"
+        },
+        {
+          "w": "涉及",
+          "g": "liên quan đến, đề cập đến"
+        },
+        {
+          "w": "涉险",
+          "g": "gặp nguy hiểm, mạo hiểm"
+        },
+        {
+          "w": "跋山涉水",
+          "g": "trèo đèo lội suối (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "⇄ so sánh",
+      "vi": "",
+      "members": [
+        {
+          "w": "专门",
+          "g": "chuyên môn, chuyên về (một lĩnh vực/mục đích)"
+        },
+        {
+          "w": "专程",
+          "g": "đặc biệt đi (chuyến đi) chỉ vì mục đích đó"
+        }
+      ]
+    },
+    {
+      "root": "缓",
+      "vi": "chậm, hoãn, dịu",
+      "members": [
+        {
+          "w": "缓期",
+          "g": "hoãn kỳ hạn, gia hạn"
+        },
+        {
+          "w": "刻不容缓",
+          "g": "cấp bách không thể trì hoãn (thành ngữ)"
+        },
+        {
+          "w": "缓解",
+          "g": "giảm nhẹ, làm dịu"
+        },
+        {
+          "w": "缓和",
+          "g": "hòa hoãn, dịu bớt"
+        },
+        {
+          "w": "平缓",
+          "g": "bằng phẳng, êm dịu (dốc thoải, nhịp độ chậm)"
+        },
+        {
+          "w": "缓慢",
+          "g": "chậm chạp"
+        },
+        {
+          "w": "迟缓",
+          "g": "chậm trễ, chậm chạp"
+        }
+      ]
+    },
+    {
+      "root": "崩",
+      "vi": "sụp đổ, vỡ",
+      "members": [
+        {
+          "w": "崩伤",
+          "g": "(nghi vấn — không phải từ chuẩn thường gặp, có thể là lỗi chính tả của 崩塌: sụp lở; cần kiểm tra lại từ gốc)"
+        },
+        {
+          "w": "崩溃",
+          "g": "sụp đổ, suy sụp"
+        },
+        {
+          "w": "山崩",
+          "g": "núi lở, lở núi"
+        },
+        {
+          "w": "土崩瓦解",
+          "g": "đổ vỡ tan rã (thành ngữ, như đất lở ngói tan)"
+        },
+        {
+          "w": "谈崩",
+          "g": "đàm phán/nói chuyện đổ vỡ, không thành"
+        },
+        {
+          "w": "分崩离析",
+          "g": "tan rã, ly tán (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "溃",
+      "vi": "vỡ, lở loét, tan tác",
+      "members": [
+        {
+          "w": "溃决",
+          "g": "(đê) vỡ, bung vỡ"
+        },
+        {
+          "w": "溃败",
+          "g": "thua tan tác, tan rã (quân đội)"
+        },
+        {
+          "w": "溃不成军",
+          "g": "thua tan tác, không còn đội ngũ (thành ngữ)"
+        },
+        {
+          "w": "崩溃",
+          "g": "sụp đổ, suy sụp"
+        },
+        {
+          "w": "溃烂",
+          "g": "lở loét, thối rữa (vết thương)"
+        },
+        {
+          "w": "溃疡",
+          "g": "loét (y học, vd loét dạ dày)"
+        }
+      ]
+    },
+    {
+      "root": "搁",
+      "vi": "đặt, để; gác lại, mắc cạn",
+      "members": [
+        {
+          "w": "搁笔",
+          "g": "gác bút, ngừng viết"
+        },
+        {
+          "w": "搁浅",
+          "g": "mắc cạn (tàu thuyền); việc bị đình trệ"
+        },
+        {
+          "w": "搁置",
+          "g": "gác lại, để đó"
+        },
+        {
+          "w": "耽搁",
+          "g": "trì hoãn, chậm trễ"
+        }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "root": "就",
+      "vi": "đảm nhận, đi đến, tới",
+      "members": [
+        {
+          "w": "就职",
+          "g": "nhậm chức"
+        },
+        {
+          "w": "就位",
+          "g": "vào vị trí, an tọa"
+        },
+        {
+          "w": "就业",
+          "g": "có việc làm, đi làm"
+        },
+        {
+          "w": "就餐",
+          "g": "dùng bữa, ăn cơm"
+        },
+        {
+          "w": "高就",
+          "g": "(kính ngữ) làm việc ở nơi cao sang, chuyển công tác tốt hơn"
+        },
+        {
+          "w": "屈就",
+          "g": "hạ mình nhận (chức vụ thấp hơn khả năng), khiêm nhường nhận lời"
+        },
+        {
+          "w": "就学",
+          "g": "đi học, nhập học"
+        }
+      ]
+    },
+    {
+      "root": "溜",
+      "vi": "trơn, trượt, lẻn đi",
+      "members": [
+        {
+          "w": "光溜",
+          "g": "trơn nhẵn, trơn tru"
+        },
+        {
+          "w": "溜光",
+          "g": "nhẵn bóng, trơn láng"
+        },
+        {
+          "w": "溜冰",
+          "g": "trượt băng"
+        },
+        {
+          "w": "出溜",
+          "g": "trượt đi, tuột đi"
+        },
+        {
+          "w": "开溜",
+          "g": "lẻn đi, chuồn mất"
+        },
+        {
+          "w": "溜走",
+          "g": "lẻn đi mất, trốn đi"
+        },
+        {
+          "w": "溜达",
+          "g": "đi dạo, tản bộ"
+        }
+      ]
+    },
+    {
+      "root": "⇄ so sánh",
+      "vi": "",
+      "members": [
+        {
+          "w": "创立",
+          "g": "sáng lập, thành lập (tổ chức, học thuyết — trang trọng)"
+        },
+        {
+          "w": "创办",
+          "g": "sáng lập, mở ra (trường học, doanh nghiệp — nhấn mạnh hành động gây dựng)"
+        }
+      ]
+    },
+    {
+      "root": "赴",
+      "vi": "đi đến, tới (nơi nào đó)",
+      "members": [
+        {
+          "w": "赴汤蹈火",
+          "g": "xông pha nước sôi lửa bỏng (thành ngữ, không ngại hiểm nguy)"
+        },
+        {
+          "w": "赴宴",
+          "g": "đi dự tiệc"
+        },
+        {
+          "w": "前赴后继",
+          "g": "người trước ngã người sau tiến lên (thành ngữ)"
+        },
+        {
+          "w": "开赴",
+          "g": "tiến về, kéo tới (quân đội, đoàn người)"
+        },
+        {
+          "w": "赴会",
+          "g": "đi họp, dự họp"
+        },
+        {
+          "w": "奔赴",
+          "g": "gấp rút tiến tới, lao tới"
+        }
+      ]
+    },
+    {
+      "root": "怠",
+      "vi": "lười biếng, chểnh mảng",
+      "members": [
+        {
+          "w": "懈怠",
+          "g": "lười biếng, chểnh mảng, buông lỏng"
+        },
+        {
+          "w": "怠工",
+          "g": "lãn công"
+        },
+        {
+          "w": "怠慢",
+          "g": "thờ ơ, lơ là, thất lễ (với khách)"
+        }
+      ]
+    },
+    {
+      "root": "碌",
+      "vi": "bận rộn, tầm thường",
+      "members": [
+        {
+          "w": "庸庸碌碌",
+          "g": "tầm thường vô vị, sống mờ nhạt (thành ngữ)"
+        },
+        {
+          "w": "庸碌",
+          "g": "tầm thường, không có tài cán"
+        },
+        {
+          "w": "碌碌无为",
+          "g": "bận rộn mà chẳng làm nên trò trống gì (thành ngữ)"
+        },
+        {
+          "w": "劳碌",
+          "g": "vất vả bận rộn"
+        },
+        {
+          "w": "忙碌",
+          "g": "bận rộn"
+        }
+      ]
+    },
+    {
+      "root": "凑",
+      "vi": "gom góp, tụ lại",
+      "members": [
+        {
+          "w": "东拼西凑",
+          "g": "chắp vá góp nhặt lung tung (thành ngữ)"
+        },
+        {
+          "w": "凑数",
+          "g": "góp cho đủ số, cho có (chất lượng kém)"
+        },
+        {
+          "w": "拼凑",
+          "g": "chắp vá, ghép nhặt"
+        },
+        {
+          "w": "凑巧",
+          "g": "tình cờ, may sao lại đúng lúc"
+        },
+        {
+          "w": "凑趣",
+          "g": "góp vui, phụ họa cho vui"
+        },
+        {
+          "w": "凑热闹",
+          "g": "xem/góp cho vui náo nhiệt, ăn theo phong trào"
+        },
+        {
+          "w": "凑近",
+          "g": "xích lại gần, ghé sát vào"
+        }
+      ]
+    },
+    {
+      "root": "授",
+      "vi": "trao, dạy, truyền",
+      "members": [
+        {
+          "w": "授予",
+          "g": "trao tặng, ban cho (danh hiệu, bằng khen)"
+        },
+        {
+          "w": "授粉",
+          "g": "thụ phấn"
+        },
+        {
+          "w": "授课",
+          "g": "giảng dạy, lên lớp"
+        },
+        {
+          "w": "面授",
+          "g": "dạy trực tiếp, truyền đạt trực tiếp"
+        },
+        {
+          "w": "授意",
+          "g": "ngầm gợi ý, ngầm chỉ đạo"
+        },
+        {
+          "w": "传授",
+          "g": "truyền thụ, truyền dạy"
+        }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "root": "畏",
+      "vi": "sợ, sợ hãi, e sợ",
+      "members": [
+        {
+          "w": "畏惧",
+          "g": "sợ hãi, khiếp sợ"
+        },
+        {
+          "w": "畏罪",
+          "g": "sợ tội, sợ bị trừng phạt vì tội đã phạm"
+        },
+        {
+          "w": "畏罪",
+          "g": "sợ tội, sợ bị trừng phạt vì tội đã phạm"
+        },
+        {
+          "w": "畏首畏尾",
+          "g": "sợ đầu sợ đuôi, nhút nhát rụt rè, do dự vì sợ hãi (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "挫",
+      "vi": "thất bại, trở ngại, vấp váp",
+      "members": [
+        {
+          "w": "挫败",
+          "g": "đánh bại, làm thất bại; sự thất bại, trở ngại"
+        },
+        {
+          "w": "受挫",
+          "g": "bị thất bại, gặp trở ngại"
+        },
+        {
+          "w": "顿挫",
+          "g": "ngắt nhịp, trầm bổng (giọng điệu, âm nhạc)"
+        },
+        {
+          "w": "抑扬顿挫",
+          "g": "(giọng nói/nhạc) lên xuống trầm bổng du dương (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "躁",
+      "vi": "nóng nảy, bồn chồn, sốt ruột",
+      "members": [
+        {
+          "w": "躁动",
+          "g": "xáo động, náo động, bồn chồn không yên"
+        },
+        {
+          "w": "烦躁",
+          "g": "bực bội, bồn chồn khó chịu"
+        },
+        {
+          "w": "暴躁",
+          "g": "nóng nảy, cục cằn (tính khí)"
+        },
+        {
+          "w": "浮躁",
+          "g": "hấp tấp, nông nổi, bộp chộp"
+        },
+        {
+          "w": "急躁",
+          "g": "nóng vội, nôn nóng"
+        },
+        {
+          "w": "焦躁",
+          "g": "sốt ruột, lo lắng bồn chồn"
+        }
+      ]
+    },
+    {
+      "root": "擅",
+      "vi": "tự tiện; giỏi về",
+      "members": [
+        {
+          "w": "擅自",
+          "g": "tự tiện, tự ý (làm gì mà không xin phép)"
+        },
+        {
+          "w": "擅长",
+          "g": "giỏi, sở trường về"
+        },
+        {
+          "w": "擅于",
+          "g": "giỏi về, thạo về (= 擅长于)"
+        }
+      ]
+    },
+    {
+      "root": "燥",
+      "vi": "khô, khô ráo",
+      "members": [
+        {
+          "w": "干燥",
+          "g": "khô, khô ráo"
+        },
+        {
+          "w": "燥热",
+          "g": "oi bức, nóng bức khó chịu"
+        },
+        {
+          "w": "枯燥",
+          "g": "khô khan, nhàm chán"
+        },
+        {
+          "w": "口干舌燥",
+          "g": "khô miệng khô lưỡi (do nói nhiều/khát nước)"
+        }
+      ]
+    },
+    {
+      "root": "重重",
+      "vi": "chồng chất, đầy ắp (nhấn mạnh mức độ nhiều, đứng sau danh từ)",
+      "members": [
+        {
+          "w": "顾虑重重",
+          "g": "đầy rẫy lo lắng, lo lắng chồng chất"
+        },
+        {
+          "w": "困难重重",
+          "g": "khó khăn chồng chất"
+        },
+        {
+          "w": "心事重重",
+          "g": "tâm sự nặng nề, ưu tư trĩu nặng"
+        }
+      ]
+    },
+    {
+      "root": "确",
+      "vi": "chắc chắn, xác thực",
+      "members": [
+        {
+          "w": "确诊",
+          "g": "chẩn đoán xác định (bệnh)"
+        },
+        {
+          "w": "确立",
+          "g": "xác lập, thiết lập vững chắc"
+        },
+        {
+          "w": "确保",
+          "g": "đảm bảo chắc chắn"
+        },
+        {
+          "w": "确切",
+          "g": "xác đáng, chính xác rõ ràng"
+        },
+        {
+          "w": "的确",
+          "g": "quả thực, đích thực"
+        },
+        {
+          "w": "确信",
+          "g": "tin chắc, tin tưởng chắc chắn"
+        }
+      ]
+    },
+    {
+      "root": "悔",
+      "vi": "hối hận, ăn năn",
+      "members": [
+        {
+          "w": "忏悔",
+          "g": "sám hối, ăn năn"
+        },
+        {
+          "w": "悔改",
+          "g": "hối cải, sửa đổi"
+        },
+        {
+          "w": "悔过",
+          "g": "hối lỗi, nhận lỗi"
+        },
+        {
+          "w": "后悔",
+          "g": "hối hận"
+        },
+        {
+          "w": "反悔",
+          "g": "nuốt lời, hối lại (đổi ý sau khi đã hứa/quyết định)"
+        }
+      ]
+    },
+    {
+      "root": "昔",
+      "vi": "xưa, ngày trước",
+      "members": [
+        {
+          "w": "昔年",
+          "g": "những năm xưa, ngày trước"
+        },
+        {
+          "w": "昔日",
+          "g": "ngày xưa, trước đây"
+        },
+        {
+          "w": "今昔",
+          "g": "xưa và nay"
+        },
+        {
+          "w": "往昔",
+          "g": "dĩ vãng, ngày trước"
+        },
+        {
+          "w": "抚今追昔",
+          "g": "ôn chuyện xưa nhớ chuyện nay, hoài niệm quá khứ (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "稳",
+      "vi": "ổn định, vững vàng",
+      "members": [
+        {
+          "w": "沉稳",
+          "g": "trầm tĩnh, chín chắn"
+        },
+        {
+          "w": "稳重",
+          "g": "chín chắn, đứng đắn"
+        },
+        {
+          "w": "平稳",
+          "g": "bình ổn, êm ả"
+        },
+        {
+          "w": "安稳",
+          "g": "yên ổn, an toàn"
+        },
+        {
+          "w": "四平八稳",
+          "g": "ổn thỏa mọi bề; (nghĩa xấu) cẩn thận thái quá, máy móc (thành ngữ)"
+        }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "root": "疤",
+      "vi": "sẹo, vết sẹo",
+      "members": [
+        {
+          "w": "疮疤",
+          "g": "vết sẹo (do mụn nhọt/lở loét); nghĩa bóng: chuyện xấu hổ cũ"
+        },
+        {
+          "w": "刀疤",
+          "g": "sẹo do dao chém/cắt"
+        },
+        {
+          "w": "伤疤",
+          "g": "vết sẹo (do vết thương)"
+        }
+      ]
+    },
+    {
+      "root": "信",
+      "vi": "tin, chữ tín, tin tưởng",
+      "members": [
+        {
+          "w": "失信",
+          "g": "thất tín, mất lòng tin (không giữ lời hứa)"
+        },
+        {
+          "w": "守信",
+          "g": "giữ chữ tín, giữ lời hứa"
+        },
+        {
+          "w": "可信",
+          "g": "đáng tin"
+        },
+        {
+          "w": "亲信",
+          "g": "người thân tín, tay chân tin cẩn"
+        },
+        {
+          "w": "信守",
+          "g": "tuân thủ, giữ đúng (lời hứa/cam kết)"
+        }
+      ]
+    },
+    {
+      "root": "呈",
+      "vi": "trình, dâng, biểu hiện",
+      "members": [
+        {
+          "w": "呈露",
+          "g": "bộc lộ, biểu hiện ra"
+        },
+        {
+          "w": "呈上",
+          "g": "dâng lên, trình lên"
+        },
+        {
+          "w": "呈报",
+          "g": "trình báo (lên cấp trên)"
+        },
+        {
+          "w": "呈递",
+          "g": "đệ trình, trình nộp"
+        },
+        {
+          "w": "呈请",
+          "g": "trình xin, đệ đơn xin"
+        }
+      ]
+    },
+    {
+      "root": "阐",
+      "vi": "trình bày rõ, giải thích, thuyết minh",
+      "members": [
+        {
+          "w": "阐明",
+          "g": "trình bày rõ, làm sáng tỏ"
+        },
+        {
+          "w": "阐发",
+          "g": "trình bày phát triển (ý tưởng), luận giải sâu thêm"
+        },
+        {
+          "w": "阐释",
+          "g": "giải thích, luận giải"
+        }
+      ]
+    },
+    {
+      "root": "抒",
+      "vi": "bày tỏ, giãi bày (tình cảm)",
+      "members": [
+        {
+          "w": "抒发",
+          "g": "giãi bày, bộc lộ (tình cảm)"
+        },
+        {
+          "w": "抒情",
+          "g": "trữ tình, bộc lộ cảm xúc"
+        },
+        {
+          "w": "抒写",
+          "g": "viết ra để bày tỏ (tâm tư)"
+        },
+        {
+          "w": "直抒胸臆",
+          "g": "bộc bạch thẳng thắn tâm tư tình cảm (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "惩",
+      "vi": "trừng phạt, trừng trị",
+      "members": [
+        {
+          "w": "惩治",
+          "g": "trừng trị, xử phạt"
+        },
+        {
+          "w": "严惩不贷",
+          "g": "trừng trị nghiêm khắc không khoan nhượng (thành ngữ)"
+        },
+        {
+          "w": "奖惩",
+          "g": "thưởng phạt"
+        }
+      ]
+    },
+    {
+      "root": "忧",
+      "vi": "lo lắng, ưu sầu",
+      "members": [
+        {
+          "w": "担忧",
+          "g": "lo lắng, lo âu"
+        },
+        {
+          "w": "忧心如焚",
+          "g": "lòng như lửa đốt, lo lắng cháy ruột (thành ngữ)"
+        },
+        {
+          "w": "忧愁",
+          "g": "buồn rầu, lo buồn"
+        },
+        {
+          "w": "无忧无虑",
+          "g": "vô tư không lo nghĩ (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "昏",
+      "vi": "mê man, tối tăm, lú lẫn",
+      "members": [
+        {
+          "w": "发昏",
+          "g": "choáng váng, mê man, đầu óc quay cuồng"
+        },
+        {
+          "w": "昏睡",
+          "g": "ngủ mê man, hôn mê"
+        },
+        {
+          "w": "昏庸",
+          "g": "hôn quân, ngu muội bất tài (thường chỉ vua chúa)"
+        },
+        {
+          "w": "头昏脑涨",
+          "g": "đầu óc choáng váng quay cuồng (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "索",
+      "vi": "dây; tìm tòi, lần theo",
+      "members": [
+        {
+          "w": "绳索",
+          "g": "dây thừng"
+        },
+        {
+          "w": "线索",
+          "g": "manh mối, đầu mối"
+        },
+        {
+          "w": "摸索",
+          "g": "mò mẫm, dò dẫm"
+        },
+        {
+          "w": "探索",
+          "g": "thăm dò, khám phá, tìm tòi"
+        },
+        {
+          "w": "索取",
+          "g": "đòi hỏi, yêu cầu (được cấp/cho)"
+        },
+        {
+          "w": "索引",
+          "g": "mục lục tra cứu, chỉ mục"
+        }
+      ]
+    }
+  ],
+  "9": [
+    {
+      "root": "憋",
+      "vi": "nén, kìm nén, ngột ngạt trong lòng",
+      "members": [
+        {
+          "w": "憋闷",
+          "g": "ngột ngạt, bức bối (tâm trạng)"
+        },
+        {
+          "w": "憋醒",
+          "g": "tỉnh giấc vì khó chịu/nín nhịn (nín thở, tức bực)"
+        },
+        {
+          "w": "憋屈",
+          "g": "ấm ức, ức chế, bực bội vì bị oan"
+        },
+        {
+          "w": "憋足劲儿",
+          "g": "dồn hết sức, nén sức để bung ra (cố gắng hết mình)"
+        }
+      ]
+    },
+    {
+      "root": "防",
+      "vi": "phòng, đề phòng, phòng ngừa",
+      "members": [
+        {
+          "w": "防暑",
+          "g": "phòng chống nắng nóng, chống say nắng"
+        },
+        {
+          "w": "防护",
+          "g": "phòng hộ, bảo vệ"
+        },
+        {
+          "w": "防止",
+          "g": "phòng ngừa, ngăn ngừa"
+        },
+        {
+          "w": "消防",
+          "g": "phòng cháy chữa cháy"
+        },
+        {
+          "w": "预防",
+          "g": "dự phòng, phòng ngừa trước"
+        }
+      ]
+    },
+    {
+      "root": "止",
+      "vi": "dừng, ngăn lại; chỉ, chỉ có",
+      "members": [
+        {
+          "w": "禁止",
+          "g": "cấm, nghiêm cấm"
+        },
+        {
+          "w": "阻止",
+          "g": "ngăn cản, ngăn chặn"
+        },
+        {
+          "w": "不止",
+          "g": "không chỉ, không dừng lại ở (mức đó)"
+        },
+        {
+          "w": "截止",
+          "g": "kết thúc (thời hạn), hết hạn"
+        },
+        {
+          "w": "制止",
+          "g": "ngăn chặn, chế ngự, ngăn cấm"
+        }
+      ]
+    },
+    {
+      "root": "薄",
+      "vi": "mỏng; kém, yếu; nhạt",
+      "members": [
+        {
+          "w": "单薄",
+          "g": "mỏng manh, ít ỏi (thân hình/lập luận)"
+        },
+        {
+          "w": "浅薄",
+          "g": "nông cạn, hời hợt (kiến thức)"
+        },
+        {
+          "w": "稀薄",
+          "g": "loãng, thưa (không khí)"
+        },
+        {
+          "w": "淡薄",
+          "g": "nhạt nhòa, phai nhạt (tình cảm/ký ức); loãng nhạt"
+        },
+        {
+          "w": "薄弱",
+          "g": "yếu kém, mỏng manh (ý chí, cơ sở)"
+        }
+      ]
+    },
+    {
+      "root": "僵",
+      "vi": "cứng đờ; bế tắc, giằng co",
+      "members": [
+        {
+          "w": "冻僵",
+          "g": "cóng cứng (vì lạnh)"
+        },
+        {
+          "w": "僵死",
+          "g": "cứng đờ như chết; giáo điều cứng nhắc"
+        },
+        {
+          "w": "僵直",
+          "g": "cứng đờ, tê cứng"
+        },
+        {
+          "w": "僵持",
+          "g": "giằng co, bế tắc (không bên nào nhượng bộ)"
+        },
+        {
+          "w": "僵局",
+          "g": "cục diện bế tắc, thế bí"
+        }
+      ]
+    },
+    {
+      "root": "震",
+      "vi": "rung, chấn động, động đất",
+      "members": [
+        {
+          "w": "地震",
+          "g": "động đất"
+        },
+        {
+          "w": "余震",
+          "g": "dư chấn"
+        },
+        {
+          "w": "抗震性",
+          "g": "khả năng chống động đất, tính kháng chấn"
+        },
+        {
+          "w": "震动",
+          "g": "chấn động, rung động"
+        },
+        {
+          "w": "震荡",
+          "g": "chấn động, dao động (kinh tế/thị trường)"
+        }
+      ]
+    },
+    {
+      "root": "扰",
+      "vi": "quấy rầy, làm phiền, gây rối",
+      "members": [
+        {
+          "w": "骚扰",
+          "g": "quấy rối, quấy nhiễu"
+        },
+        {
+          "w": "干扰",
+          "g": "gây nhiễu, can nhiễu"
+        },
+        {
+          "w": "打扰",
+          "g": "làm phiền, quấy rầy"
+        },
+        {
+          "w": "扰乱",
+          "g": "gây rối loạn, làm rối"
+        },
+        {
+          "w": "叨扰",
+          "g": "làm phiền (khách sáo, cảm ơn vì được tiếp đãi)"
+        }
+      ]
+    }
+  ],
+  "10": [
+    {
+      "root": "蕴",
+      "vi": "chứa đựng, hàm chứa, ẩn chứa",
+      "members": [
+        {
+          "w": "蕴涵",
+          "g": "hàm chứa, bao hàm (ý nghĩa)"
+        },
+        {
+          "w": "蕴含",
+          "g": "chứa đựng, ẩn chứa (ý nghĩa/tình cảm)"
+        }
+      ]
+    },
+    {
+      "root": "蕴",
+      "vi": "chứa đựng, tiềm ẩn",
+      "members": [
+        {
+          "w": "蕴藏",
+          "g": "tàng trữ, tiềm ẩn (tài nguyên, tiềm năng)"
+        },
+        {
+          "w": "底蕴",
+          "g": "nội hàm sâu xa, hàm ý ẩn giấu bên trong"
+        }
+      ]
+    },
+    {
+      "root": "阔",
+      "vi": "rộng, rộng lớn, khoáng đạt",
+      "members": [
+        {
+          "w": "阔步",
+          "g": "sải bước, bước đi rộng rãi tự tin"
+        },
+        {
+          "w": "广阔",
+          "g": "rộng lớn, bao la"
+        },
+        {
+          "w": "开阔",
+          "g": "khoáng đạt, rộng mở (tầm nhìn/tâm hồn)"
+        },
+        {
+          "w": "辽阔",
+          "g": "bát ngát, mênh mông"
+        },
+        {
+          "w": "高谈阔论",
+          "g": "bàn luận huênh hoang, khoác lác (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "禽",
+      "vi": "loài chim, cầm thú",
+      "members": [
+        {
+          "w": "禽兽",
+          "g": "cầm thú (nghĩa đen: chim thú; nghĩa bóng: kẻ vô nhân tính)"
+        },
+        {
+          "w": "飞禽",
+          "g": "loài chim (biết bay)"
+        },
+        {
+          "w": "家禽",
+          "g": "gia cầm"
+        },
+        {
+          "w": "猛禽",
+          "g": "chim săn mồi (chim ưng, đại bàng...)"
+        },
+        {
+          "w": "珍禽",
+          "g": "chim quý hiếm"
+        }
+      ]
+    },
+    {
+      "root": "兽",
+      "vi": "thú, dã thú",
+      "members": [
+        {
+          "w": "兽心",
+          "g": "lòng dạ thú vật (tàn ác)"
+        },
+        {
+          "w": "兽皮",
+          "g": "da thú"
+        },
+        {
+          "w": "兽王",
+          "g": "chúa tể muôn loài"
+        },
+        {
+          "w": "兽医",
+          "g": "bác sĩ thú y"
+        },
+        {
+          "w": "怪兽",
+          "g": "quái thú"
+        },
+        {
+          "w": "猛兽",
+          "g": "mãnh thú, thú dữ"
+        }
+      ]
+    },
+    {
+      "root": "素",
+      "vi": "mộc mạc, trơn; chay; vốn dĩ",
+      "members": [
+        {
+          "w": "素净",
+          "g": "(màu sắc/trang phục) trang nhã, giản dị"
+        },
+        {
+          "w": "朴素",
+          "g": "giản dị, mộc mạc"
+        },
+        {
+          "w": "素来",
+          "g": "xưa nay, vốn dĩ"
+        },
+        {
+          "w": "素菜",
+          "g": "món chay"
+        },
+        {
+          "w": "素餐",
+          "g": "bữa ăn chay"
+        },
+        {
+          "w": "素食",
+          "g": "ăn chay"
+        }
+      ]
+    },
+    {
+      "root": "栽",
+      "vi": "trồng (cây); ngã, vấp",
+      "members": [
+        {
+          "w": "栽倒",
+          "g": "ngã lăn, ngã sấp"
+        },
+        {
+          "w": "栽赃",
+          "g": "vu khống, gài bẫy đổ tội (giấu tang vật để vu oan)"
+        },
+        {
+          "w": "栽秧",
+          "g": "cấy mạ (lúa)"
+        },
+        {
+          "w": "栽跟头",
+          "g": "vấp ngã, thất bại (nghĩa bóng: gặp thất bại/bẽ mặt)"
+        },
+        {
+          "w": "栽种",
+          "g": "trồng trọt, gieo trồng"
+        }
+      ]
+    },
+    {
+      "root": "辨",
+      "vi": "phân biệt, nhận biết rõ",
+      "members": [
+        {
+          "w": "分辨",
+          "g": "phân biệt, nhận rõ"
+        },
+        {
+          "w": "辨别",
+          "g": "phân biệt, nhận định"
+        },
+        {
+          "w": "辨认",
+          "g": "nhận ra, nhận dạng"
+        },
+        {
+          "w": "辨析",
+          "g": "phân tích so sánh (để phân biệt)"
+        },
+        {
+          "w": "辨正",
+          "g": "biện chính, sửa cho đúng (chỉnh sửa sai sót)"
+        }
+      ]
+    },
+    {
+      "root": "谐",
+      "vi": "hài hòa, hòa hợp",
+      "members": [
+        {
+          "w": "谐声",
+          "g": "hài thanh (chữ Hán hình thanh, mượn âm)"
+        },
+        {
+          "w": "谐音",
+          "g": "đồng âm, gần âm (chơi chữ)"
+        },
+        {
+          "w": "谐调",
+          "g": "hài hòa, ăn khớp"
+        },
+        {
+          "w": "和谐",
+          "g": "hài hòa"
+        }
+      ]
+    },
+    {
+      "root": "谐",
+      "vi": "hài hước, dí dỏm",
+      "members": [
+        {
+          "w": "诙谐",
+          "g": "hài hước, dí dỏm"
+        },
+        {
+          "w": "谐戏",
+          "g": "đùa cợt, giỡn hài hước"
+        },
+        {
+          "w": "谐谑",
+          "g": "bông đùa, trào lộng"
+        }
+      ]
+    },
+    {
+      "root": "餐",
+      "vi": "bữa ăn, ăn",
+      "members": [
+        {
+          "w": "餐风饮露",
+          "g": "dầm sương dãi gió (thành ngữ, chỉ cuộc sống gian khổ lữ hành)"
+        },
+        {
+          "w": "餐具",
+          "g": "dụng cụ ăn uống (bát đũa...)"
+        },
+        {
+          "w": "早餐",
+          "g": "bữa sáng"
+        },
+        {
+          "w": "晚餐",
+          "g": "bữa tối"
+        },
+        {
+          "w": "午餐",
+          "g": "bữa trưa"
+        }
+      ]
+    },
+    {
+      "root": "斥",
+      "vi": "mắng, quở trách; xua đuổi, gạt bỏ; tràn ngập",
+      "members": [
+        {
+          "w": "斥骂",
+          "g": "mắng chửi"
+        },
+        {
+          "w": "充斥",
+          "g": "tràn ngập, đầy rẫy"
+        },
+        {
+          "w": "排斥",
+          "g": "bài xích, loại trừ, gạt bỏ"
+        },
+        {
+          "w": "斥责",
+          "g": "quở trách, khiển trách"
+        },
+        {
+          "w": "痛斥",
+          "g": "mắng nhiếc thậm tệ, lên án gay gắt"
+        },
+        {
+          "w": "训斥",
+          "g": "quở mắng, la rầy"
+        }
+      ]
+    },
+    {
+      "root": "折",
+      "vi": "gãy, bẻ gập; chiết trung; xoay xở",
+      "members": [
+        {
+          "w": "折断",
+          "g": "bẻ gãy, làm gãy"
+        },
+        {
+          "w": "骨折",
+          "g": "gãy xương"
+        },
+        {
+          "w": "折中",
+          "g": "chiết trung, dung hòa (giữa hai ý kiến)"
+        },
+        {
+          "w": "折腾",
+          "g": "giày vò, hành hạ; xoay đi xoay lại, lãng phí công sức"
+        },
+        {
+          "w": "折算",
+          "g": "quy đổi, chuyển đổi (đơn vị, tiền tệ)"
+        }
+      ]
+    }
+  ],
+  "11": [
+    {
+      "root": "淋",
+      "vi": "dội nước, ướt đẫm, đầm đìa",
+      "members": [
+        {
+          "w": "淋雨",
+          "g": "dầm mưa, bị ướt mưa"
+        },
+        {
+          "w": "淋浴头",
+          "g": "vòi hoa sen (tắm)"
+        },
+        {
+          "w": "湿淋淋",
+          "g": "ướt sũng, ướt đẫm"
+        },
+        {
+          "w": "血淋淋",
+          "g": "đẫm máu (nghĩa đen và nghĩa bóng: tàn khốc trần trụi)"
+        },
+        {
+          "w": "淋漓",
+          "g": "đầm đìa, dầm dề (mồ hôi, mực...)"
+        }
+      ]
+    },
+    {
+      "root": "懒",
+      "vi": "lười, lười biếng",
+      "members": [
+        {
+          "w": "懒虫",
+          "g": "(đùa) đồ lười, con sâu lười"
+        },
+        {
+          "w": "懒惰",
+          "g": "lười biếng"
+        },
+        {
+          "w": "懒散",
+          "g": "uể oải, lười nhác, tản mạn"
+        },
+        {
+          "w": "偷懒",
+          "g": "trốn việc, lười biếng (tranh thủ nghỉ)"
+        },
+        {
+          "w": "好吃懒做",
+          "g": "tham ăn lười làm (thành ngữ)"
+        },
+        {
+          "w": "懒洋洋",
+          "g": "uể oải, lờ đờ"
+        }
+      ]
+    },
+    {
+      "root": "惰",
+      "vi": "lười, ì trệ",
+      "members": [
+        {
+          "w": "怠惰",
+          "g": "biếng nhác, trễ nải"
+        },
+        {
+          "w": "懒惰",
+          "g": "lười biếng"
+        },
+        {
+          "w": "惰性",
+          "g": "tính ì, thói quen trì trệ"
+        }
+      ]
+    },
+    {
+      "root": "馋",
+      "vi": "thèm ăn, tham ăn",
+      "members": [
+        {
+          "w": "馋嘴",
+          "g": "(người) tham ăn, thèm ăn vặt"
+        },
+        {
+          "w": "解馋",
+          "g": "cho đã thèm, thỏa cơn thèm ăn"
+        },
+        {
+          "w": "眼馋",
+          "g": "thèm thuồng (nhìn mà thèm), ganh tị"
+        }
+      ]
+    },
+    {
+      "root": "踪",
+      "vi": "dấu vết, tung tích",
+      "members": [
+        {
+          "w": "失踪",
+          "g": "mất tích"
+        },
+        {
+          "w": "追踪",
+          "g": "truy tìm dấu vết, theo dõi"
+        },
+        {
+          "w": "行踪",
+          "g": "hành tung, tung tích"
+        },
+        {
+          "w": "踪迹",
+          "g": "dấu vết, tung tích"
+        },
+        {
+          "w": "跟踪",
+          "g": "theo dõi, bám theo"
+        },
+        {
+          "w": "无影无踪",
+          "g": "biến mất không dấu vết (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "繁",
+      "vi": "nhiều, rậm rạp, phồn thịnh",
+      "members": [
+        {
+          "w": "繁星",
+          "g": "sao dày đặc (bầu trời đầy sao)"
+        },
+        {
+          "w": "繁荣",
+          "g": "phồn vinh, thịnh vượng"
+        },
+        {
+          "w": "繁多",
+          "g": "nhiều, đa dạng"
+        },
+        {
+          "w": "繁重",
+          "g": "nặng nề (công việc), gánh nặng"
+        },
+        {
+          "w": "繁茂",
+          "g": "um tùm, tươi tốt (cây cối)"
+        }
+      ]
+    },
+    {
+      "root": "捷",
+      "vi": "nhanh nhẹn; thắng lợi",
+      "members": [
+        {
+          "w": "捷径",
+          "g": "đường tắt, lối tắt"
+        },
+        {
+          "w": "便捷",
+          "g": "tiện lợi, nhanh gọn"
+        },
+        {
+          "w": "矫捷",
+          "g": "nhanh nhẹn khỏe khoắn (thân thủ)"
+        },
+        {
+          "w": "敏捷",
+          "g": "nhanh nhẹn, lanh lợi"
+        },
+        {
+          "w": "迅捷",
+          "g": "nhanh chóng, mau lẹ"
+        },
+        {
+          "w": "捷报",
+          "g": "tin thắng trận, tin vui chiến thắng"
+        },
+        {
+          "w": "告捷",
+          "g": "báo tin thắng lợi, giành thắng lợi"
+        }
+      ]
+    },
+    {
+      "root": "扑",
+      "vi": "xông tới, dập, phả vào",
+      "members": [
+        {
+          "w": "扑救",
+          "g": "xông vào cứu chữa (chữa cháy, cấp cứu)"
+        },
+        {
+          "w": "扑灭",
+          "g": "dập tắt (lửa, dịch bệnh)"
+        },
+        {
+          "w": "扑鼻",
+          "g": "xộc vào mũi (mùi thơm/hôi)"
+        },
+        {
+          "w": "扑面",
+          "g": "táp vào mặt, phả vào mặt (gió, mùi)"
+        },
+        {
+          "w": "扑哧",
+          "g": "(từ tượng thanh) tiếng bật cười phì"
+        }
+      ]
+    },
+    {
+      "root": "态",
+      "vi": "trạng thái, hình thái",
+      "members": [
+        {
+          "w": "动态",
+          "g": "động thái, trạng thái vận động"
+        },
+        {
+          "w": "变态",
+          "g": "biến thái, biến dạng (bất thường)"
+        },
+        {
+          "w": "液态",
+          "g": "thể lỏng"
+        },
+        {
+          "w": "静态",
+          "g": "tĩnh thái, trạng thái tĩnh"
+        },
+        {
+          "w": "固态",
+          "g": "thể rắn"
+        }
+      ]
+    },
+    {
+      "root": "遥",
+      "vi": "xa xôi, xa xăm",
+      "members": [
+        {
+          "w": "遥控",
+          "g": "điều khiển từ xa"
+        },
+        {
+          "w": "遥望",
+          "g": "nhìn xa, ngóng nhìn từ xa"
+        },
+        {
+          "w": "遥远",
+          "g": "xa xôi"
+        },
+        {
+          "w": "遥遥领先",
+          "g": "dẫn đầu vượt trội, bỏ xa (thành ngữ)"
+        },
+        {
+          "w": "遥不可及",
+          "g": "xa vời không với tới được (thành ngữ)"
+        }
+      ]
+    }
+  ],
+  "12": [
+    {
+      "root": "淘",
+      "vi": "vo, đãi, gạn lọc; nghịch ngợm",
+      "members": [
+        {
+          "w": "淘米",
+          "g": "vo gạo"
+        },
+        {
+          "w": "淘洗",
+          "g": "rửa, giặt sạch (bằng nước)"
+        },
+        {
+          "w": "淘金",
+          "g": "đãi vàng, đãi cát tìm vàng"
+        },
+        {
+          "w": "淘气",
+          "g": "nghịch ngợm, tinh nghịch"
+        }
+      ]
+    },
+    {
+      "root": "描",
+      "vi": "vẽ, miêu tả, phác họa",
+      "members": [
+        {
+          "w": "扫描仪",
+          "g": "máy quét (scanner)"
+        },
+        {
+          "w": "素描",
+          "g": "vẽ phác họa, ký họa"
+        },
+        {
+          "w": "描画",
+          "g": "vẽ, phác họa"
+        },
+        {
+          "w": "描绘",
+          "g": "miêu tả, khắc họa (vẽ nên hình ảnh sinh động)"
+        },
+        {
+          "w": "描述",
+          "g": "miêu tả, mô tả"
+        },
+        {
+          "w": "描写",
+          "g": "miêu tả (trong văn học)"
+        }
+      ]
+    },
+    {
+      "root": "绘",
+      "vi": "vẽ, họa",
+      "members": [
+        {
+          "w": "测绘",
+          "g": "đo đạc và vẽ bản đồ (trắc địa)"
+        },
+        {
+          "w": "绘制",
+          "g": "vẽ, thiết kế (bản vẽ)"
+        },
+        {
+          "w": "绘画",
+          "g": "hội họa, vẽ tranh"
+        },
+        {
+          "w": "彩绘",
+          "g": "vẽ màu, trang trí bằng màu sắc"
+        }
+      ]
+    },
+    {
+      "root": "抚",
+      "vi": "vỗ về, an ủi, nuôi dưỡng",
+      "members": [
+        {
+          "w": "安抚",
+          "g": "an ủi, vỗ về, trấn an"
+        },
+        {
+          "w": "抚摩",
+          "g": "vuốt ve, xoa nhẹ (bằng tay)"
+        },
+        {
+          "w": "抚慰",
+          "g": "an ủi, vỗ về"
+        },
+        {
+          "w": "抚养",
+          "g": "nuôi dưỡng, nuôi nấng"
+        }
+      ]
+    },
+    {
+      "root": "暴",
+      "vi": "dữ dội, đột ngột, bạo lực, phơi bày",
+      "members": [
+        {
+          "w": "暴力",
+          "g": "bạo lực"
+        },
+        {
+          "w": "残暴",
+          "g": "tàn bạo"
+        },
+        {
+          "w": "暴涨",
+          "g": "tăng vọt đột ngột"
+        },
+        {
+          "w": "暴跌",
+          "g": "giảm mạnh, sụt giá đột ngột"
+        },
+        {
+          "w": "暴利",
+          "g": "lợi nhuận kếch xù (bất chính)"
+        },
+        {
+          "w": "暴晒",
+          "g": "phơi nắng gắt"
+        },
+        {
+          "w": "暴发",
+          "g": "bùng phát đột ngột; phất lên nhanh"
+        },
+        {
+          "w": "风暴",
+          "g": "bão, phong ba"
+        },
+        {
+          "w": "暴躁",
+          "g": "nóng nảy, cục cằn"
+        },
+        {
+          "w": "暴跳如雷",
+          "g": "giận dữ đùng đùng (thành ngữ)"
+        },
+        {
+          "w": "粗暴",
+          "g": "thô bạo"
+        },
+        {
+          "w": "暴富",
+          "g": "giàu lên nhanh chóng"
+        },
+        {
+          "w": "暴露",
+          "g": "phơi bày, bộc lộ, lộ ra"
+        }
+      ]
+    },
+    {
+      "root": "惹",
+      "vi": "gây ra, chọc, dây vào (rắc rối)",
+      "members": [
+        {
+          "w": "惹祸",
+          "g": "gây họa, gây rắc rối lớn"
+        },
+        {
+          "w": "惹事",
+          "g": "gây chuyện, gây sự"
+        },
+        {
+          "w": "惹麻烦",
+          "g": "gây phiền phức, chuốc rắc rối"
+        },
+        {
+          "w": "惹乱子",
+          "g": "gây rối loạn, gây lộn xộn"
+        },
+        {
+          "w": "惹是生非",
+          "g": "gây chuyện thị phi, sinh sự (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "祸",
+      "vi": "tai họa, họa",
+      "members": [
+        {
+          "w": "天灾人祸",
+          "g": "thiên tai nhân họa (thành ngữ)"
+        },
+        {
+          "w": "惹祸",
+          "g": "gây họa, gây rắc rối lớn"
+        },
+        {
+          "w": "幸灾乐祸",
+          "g": "hả hê trước tai họa của người khác (thành ngữ)"
+        },
+        {
+          "w": "车祸",
+          "g": "tai nạn xe cộ, tai nạn giao thông"
+        }
+      ]
+    },
+    {
+      "root": "唤",
+      "vi": "gọi, kêu gọi, đánh thức",
+      "members": [
+        {
+          "w": "呼风唤雨",
+          "g": "hô mưa gọi gió (thành ngữ, chỉ quyền lực to lớn)"
+        },
+        {
+          "w": "唤起",
+          "g": "gợi lên, khơi dậy"
+        },
+        {
+          "w": "唤醒",
+          "g": "đánh thức, thức tỉnh"
+        },
+        {
+          "w": "呼唤",
+          "g": "gọi, kêu gọi"
+        }
+      ]
+    },
+    {
+      "root": "拢",
+      "vi": "tụ lại, khép lại, kéo gần",
+      "members": [
+        {
+          "w": "拉拢",
+          "g": "lôi kéo, kéo bè kéo cánh"
+        },
+        {
+          "w": "靠拢",
+          "g": "tiến sát lại gần, xích lại gần"
+        },
+        {
+          "w": "拢紧",
+          "g": "siết chặt, khép chặt lại"
+        },
+        {
+          "w": "合不拢",
+          "g": "không khép lại được (vd miệng cười không ngậm lại được)"
+        }
+      ]
+    },
+    {
+      "root": "暗",
+      "vi": "tối, ngầm, âm thầm",
+      "members": [
+        {
+          "w": "暗淡",
+          "g": "ảm đạm, mờ nhạt"
+        },
+        {
+          "w": "灰暗",
+          "g": "xám xịt, u ám"
+        },
+        {
+          "w": "阴暗",
+          "g": "âm u, tăm tối"
+        },
+        {
+          "w": "暗杀",
+          "g": "ám sát"
+        },
+        {
+          "w": "暗示",
+          "g": "ám chỉ, gợi ý ngầm"
+        },
+        {
+          "w": "暗想",
+          "g": "thầm nghĩ, nghĩ bụng"
+        },
+        {
+          "w": "天昏地暗",
+          "g": "trời đất tối sầm (thành ngữ, chỉ hỗn loạn)"
+        }
+      ]
+    },
+    {
+      "root": "患",
+      "vi": "mối họa, hoạn nạn, mắc (bệnh)",
+      "members": [
+        {
+          "w": "后患",
+          "g": "hậu họa, mối họa về sau"
+        },
+        {
+          "w": "水患",
+          "g": "nạn lụt, thủy tai"
+        },
+        {
+          "w": "患难与共",
+          "g": "cùng chia sẻ hoạn nạn (thành ngữ)"
+        },
+        {
+          "w": "内忧外患",
+          "g": "nội ưu ngoại hoạn, giặc trong thù ngoài (thành ngữ)"
+        },
+        {
+          "w": "忧患",
+          "g": "lo âu, hoạn nạn"
+        },
+        {
+          "w": "患病",
+          "g": "mắc bệnh, bị bệnh"
+        }
+      ]
+    },
+    {
+      "root": "愈",
+      "vi": "càng; khỏi, lành (bệnh/vết thương)",
+      "members": [
+        {
+          "w": "愈加",
+          "g": "càng thêm, càng"
+        },
+        {
+          "w": "愈战愈强",
+          "g": "càng đánh càng mạnh (thành ngữ)"
+        },
+        {
+          "w": "愈演愈烈",
+          "g": "càng diễn biến càng dữ dội, ngày càng nghiêm trọng"
+        },
+        {
+          "w": "痊愈",
+          "g": "bình phục hoàn toàn, khỏi bệnh"
+        },
+        {
+          "w": "病愈",
+          "g": "khỏi bệnh"
+        },
+        {
+          "w": "愈合",
+          "g": "lành (vết thương), liền da"
+        }
+      ]
+    }
+  ],
+  "13": [
+    {
+      "root": "迁",
+      "vi": "dời, di chuyển, thay đổi",
+      "members": [
+        {
+          "w": "迁居",
+          "g": "dời nhà, chuyển chỗ ở"
+        },
+        {
+          "w": "迁徙",
+          "g": "di cư, di trú"
+        },
+        {
+          "w": "搬迁",
+          "g": "dọn nhà, di dời"
+        },
+        {
+          "w": "见异思迁",
+          "g": "thấy cái khác lại đổi ý, không kiên định (thành ngữ)"
+        },
+        {
+          "w": "变迁",
+          "g": "biến đổi, thay đổi (theo thời gian)"
+        },
+        {
+          "w": "事过境迁",
+          "g": "việc qua cảnh đổi, mọi thứ đã đổi khác (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "携",
+      "vi": "mang theo, dắt, cùng nhau",
+      "members": [
+        {
+          "w": "携带",
+          "g": "mang theo, đem theo"
+        },
+        {
+          "w": "提携",
+          "g": "dìu dắt, nâng đỡ (giúp đỡ người khác)"
+        },
+        {
+          "w": "携手",
+          "g": "tay trong tay, cùng nhau hợp tác"
+        },
+        {
+          "w": "扶老携幼",
+          "g": "dắt già dắt trẻ (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "遍",
+      "vi": "khắp, đầy, khắp nơi",
+      "members": [
+        {
+          "w": "遍体鳞伤",
+          "g": "khắp mình đầy thương tích (thành ngữ)"
+        },
+        {
+          "w": "走遍",
+          "g": "đi khắp"
+        },
+        {
+          "w": "漫山遍野",
+          "g": "khắp núi khắp đồng, đầy khắp nơi (thành ngữ)"
+        },
+        {
+          "w": "遍布",
+          "g": "rải khắp, phân bố khắp nơi"
+        },
+        {
+          "w": "遍地",
+          "g": "khắp nơi, đầy mặt đất"
+        }
+      ]
+    },
+    {
+      "root": "千",
+      "vi": "nghìn (chỉ số nhiều, muôn vàn)",
+      "members": [
+        {
+          "w": "千方百计",
+          "g": "trăm phương nghìn kế (thành ngữ)"
+        },
+        {
+          "w": "千载难逢",
+          "g": "nghìn năm khó gặp, cơ hội hiếm có (thành ngữ)"
+        },
+        {
+          "w": "千变万化",
+          "g": "biến hóa muôn vàn (thành ngữ)"
+        },
+        {
+          "w": "千奇百怪",
+          "g": "kỳ lạ muôn hình muôn vẻ (thành ngữ)"
+        },
+        {
+          "w": "千言万语",
+          "g": "nghìn lời muôn ý, có rất nhiều điều muốn nói (thành ngữ)"
+        },
+        {
+          "w": "成千上万",
+          "g": "hàng nghìn hàng vạn, số lượng rất lớn (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "百",
+      "vi": "trăm (chỉ số nhiều, mọi bề)",
+      "members": [
+        {
+          "w": "百发百中",
+          "g": "trăm phát trăm trúng (thành ngữ)"
+        },
+        {
+          "w": "百感交集",
+          "g": "trăm mối cảm xúc đan xen (thành ngữ)"
+        },
+        {
+          "w": "百依百顺",
+          "g": "hoàn toàn vâng theo, chiều theo mọi ý (thành ngữ)"
+        },
+        {
+          "w": "百折不挠",
+          "g": "trăm lần vấp ngã không nản, kiên cường bất khuất (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "僻",
+      "vi": "hẻo lánh, lệch, hiếm gặp",
+      "members": [
+        {
+          "w": "僻静",
+          "g": "vắng vẻ, yên tĩnh hẻo lánh"
+        },
+        {
+          "w": "偏僻",
+          "g": "hẻo lánh, xa xôi"
+        },
+        {
+          "w": "穷乡僻壤",
+          "g": "vùng quê hẻo lánh nghèo khó (thành ngữ)"
+        },
+        {
+          "w": "孤僻",
+          "g": "cô độc, lập dị (tính cách khép kín)"
+        },
+        {
+          "w": "怪癖",
+          "g": "tật kỳ quái, thói quen kỳ lạ"
+        },
+        {
+          "w": "冷僻",
+          "g": "hiếm dùng, ít gặp (từ ngữ); hẻo lánh"
+        },
+        {
+          "w": "生僻",
+          "g": "hiếm dùng, ít gặp (từ ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "帐",
+      "vi": "màn, trướng, lều bạt",
+      "members": [
+        {
+          "w": "蚊帐",
+          "g": "màn (chống muỗi)"
+        },
+        {
+          "w": "营帐",
+          "g": "lều trại (quân đội)"
+        },
+        {
+          "w": "帐篷",
+          "g": "lều, trại"
+        },
+        {
+          "w": "青纱帐",
+          "g": "cánh đồng cao lương/ngô rậm rạp (như bức màn xanh, nơi ẩn náu)"
+        }
+      ]
+    }
+  ],
+  "14": [
+    {
+      "root": "察",
+      "vi": "xem xét, quan sát, dò xét",
+      "members": [
+        {
+          "w": "考察",
+          "g": "khảo sát, thị sát"
+        },
+        {
+          "w": "观察",
+          "g": "quan sát"
+        },
+        {
+          "w": "察觉",
+          "g": "phát hiện ra, nhận thấy"
+        },
+        {
+          "w": "侦察",
+          "g": "trinh sát, do thám"
+        },
+        {
+          "w": "察言观色",
+          "g": "xem lời nói sắc mặt, quan sát thái độ người khác (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "毅",
+      "vi": "kiên định, cương nghị, quả quyết",
+      "members": [
+        {
+          "w": "毅力",
+          "g": "nghị lực, ý chí"
+        },
+        {
+          "w": "沉毅",
+          "g": "trầm tĩnh cương nghị"
+        },
+        {
+          "w": "刚毅",
+          "g": "cương nghị, cứng cỏi"
+        },
+        {
+          "w": "坚毅",
+          "g": "kiên nghị, kiên định"
+        },
+        {
+          "w": "毅然决然",
+          "g": "kiên quyết dứt khoát (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "拓",
+      "vi": "mở rộng, khai phá",
+      "members": [
+        {
+          "w": "开拓",
+          "g": "khai phá, mở mang"
+        },
+        {
+          "w": "拓荒",
+          "g": "khai hoang"
+        },
+        {
+          "w": "拓宽",
+          "g": "mở rộng (đường, phạm vi)"
+        },
+        {
+          "w": "拓印",
+          "g": "in dập (kỹ thuật rập chữ/hình từ bia đá)"
+        }
+      ]
+    },
+    {
+      "root": "饥",
+      "vi": "đói",
+      "members": [
+        {
+          "w": "饥肠",
+          "g": "bụng đói, ruột đói (饥肠辘辘)"
+        },
+        {
+          "w": "饥寒",
+          "g": "đói rét"
+        },
+        {
+          "w": "饥渴",
+          "g": "đói khát"
+        },
+        {
+          "w": "饥不择食",
+          "g": "đói thì không kén ăn, cấp bách thì không lựa chọn (thành ngữ)"
+        },
+        {
+          "w": "充饥",
+          "g": "cho đỡ đói, lót dạ"
+        }
+      ]
+    }
+  ],
+  "15": [
+    {
+      "root": "脉",
+      "vi": "mạch (máu, núi, lá...)",
+      "members": [
+        {
+          "w": "山脉",
+          "g": "dãy núi"
+        },
+        {
+          "w": "动脉",
+          "g": "động mạch"
+        },
+        {
+          "w": "脉搏",
+          "g": "mạch đập"
+        },
+        {
+          "w": "号脉",
+          "g": "bắt mạch, xem mạch"
+        },
+        {
+          "w": "诊脉",
+          "g": "bắt mạch (khám bệnh theo Đông y)"
+        },
+        {
+          "w": "叶脉",
+          "g": "gân lá"
+        }
+      ]
+    },
+    {
+      "root": "卷",
+      "vi": "cuộn, cuốn",
+      "members": [
+        {
+          "w": "卷尺",
+          "g": "thước dây (cuộn được)"
+        },
+        {
+          "w": "胶卷",
+          "g": "cuộn phim (ảnh)"
+        },
+        {
+          "w": "舒卷",
+          "g": "cuộn lại và trải ra"
+        },
+        {
+          "w": "龙卷风",
+          "g": "lốc xoáy, vòi rồng"
+        },
+        {
+          "w": "卷铺盖儿",
+          "g": "cuốn gói (nghĩa bóng: bị đuổi việc/rời đi)"
+        }
+      ]
+    },
+    {
+      "root": "罕",
+      "vi": "hiếm, ít thấy",
+      "members": [
+        {
+          "w": "罕闻",
+          "g": "hiếm nghe thấy, ít nghe nói tới"
+        },
+        {
+          "w": "罕有",
+          "g": "hiếm có"
+        },
+        {
+          "w": "稀罕",
+          "g": "hiếm lạ, quý hiếm; (khẩu ngữ) thích, ham"
+        },
+        {
+          "w": "罕见",
+          "g": "hiếm thấy, hiếm gặp"
+        }
+      ]
+    },
+    {
+      "root": "辟",
+      "vi": "mở ra, khai phá; sâu sắc, xác đáng",
+      "members": [
+        {
+          "w": "开天辟地",
+          "g": "khai thiên lập địa (thành ngữ)"
+        },
+        {
+          "w": "独辟蹊径",
+          "g": "tự mở lối đi riêng, sáng tạo con đường mới (thành ngữ)"
+        },
+        {
+          "w": "精辟",
+          "g": "sâu sắc, xác đáng (lời nói/lý luận)"
+        },
+        {
+          "w": "开辟",
+          "g": "mở ra, khai phá (con đường, lĩnh vực mới)"
+        }
+      ]
+    }
+  ],
+  "16": [
+    {
+      "root": "鉴",
+      "vi": "soi xét, thẩm định, làm gương",
+      "members": [
+        {
+          "w": "鉴别",
+          "g": "phân biệt, giám định"
+        },
+        {
+          "w": "鉴于",
+          "g": "xét thấy, xét vì (do bởi)"
+        },
+        {
+          "w": "鉴定",
+          "g": "giám định, thẩm định"
+        },
+        {
+          "w": "鉴赏",
+          "g": "thưởng thức, thẩm định (nghệ thuật)"
+        },
+        {
+          "w": "借鉴",
+          "g": "lấy làm gương, tham khảo, rút kinh nghiệm"
+        }
+      ]
+    },
+    {
+      "root": "濒",
+      "vi": "gần kề, cận kề (nguy hiểm)",
+      "members": [
+        {
+          "w": "濒临",
+          "g": "cận kề, giáp ranh (nguy cơ)"
+        },
+        {
+          "w": "濒危",
+          "g": "nguy cấp, có nguy cơ (tuyệt chủng)"
+        },
+        {
+          "w": "濒死",
+          "g": "cận kề cái chết, hấp hối"
+        }
+      ]
+    },
+    {
+      "root": "压",
+      "vi": "đè, áp, ép",
+      "members": [
+        {
+          "w": "压抑",
+          "g": "đè nén, kìm nén (cảm xúc)"
+        },
+        {
+          "w": "压制",
+          "g": "đàn áp, kìm hãm"
+        },
+        {
+          "w": "压力",
+          "g": "áp lực"
+        },
+        {
+          "w": "压迫",
+          "g": "áp bức, đè nén"
+        }
+      ]
+    },
+    {
+      "root": "注",
+      "vi": "chú ý, dồn vào, chú trọng",
+      "members": [
+        {
+          "w": "注视",
+          "g": "nhìn chăm chú, dõi theo"
+        },
+        {
+          "w": "注意",
+          "g": "chú ý"
+        },
+        {
+          "w": "注目",
+          "g": "chú mục, dồn mắt nhìn vào"
+        },
+        {
+          "w": "注重",
+          "g": "coi trọng, chú trọng"
+        }
+      ]
+    },
+    {
+      "root": "斑",
+      "vi": "đốm, vằn, lốm đốm",
+      "members": [
+        {
+          "w": "斑点",
+          "g": "đốm, chấm"
+        },
+        {
+          "w": "斑纹",
+          "g": "vằn, vân"
+        },
+        {
+          "w": "斑斓",
+          "g": "sặc sỡ, rực rỡ (màu sắc)"
+        },
+        {
+          "w": "斑白",
+          "g": "hoa râm (tóc)"
+        },
+        {
+          "w": "斑马",
+          "g": "ngựa vằn"
+        }
+      ]
+    },
+    {
+      "root": "致",
+      "vi": "dẫn đến, đạt tới, gửi/bày tỏ",
+      "members": [
+        {
+          "w": "致力",
+          "g": "dốc sức, dồn sức (vào việc gì)"
+        },
+        {
+          "w": "致使",
+          "g": "khiến cho, dẫn đến (kết quả xấu)"
+        },
+        {
+          "w": "致辞",
+          "g": "đọc lời phát biểu, diễn từ"
+        },
+        {
+          "w": "致命",
+          "g": "chí mạng, gây chết người"
+        },
+        {
+          "w": "致谢",
+          "g": "bày tỏ lời cảm ơn"
+        }
+      ]
+    },
+    {
+      "root": "识",
+      "vi": "biết, nhận thức, hiểu biết",
+      "members": [
+        {
+          "w": "识别",
+          "g": "nhận biết, phân biệt"
+        },
+        {
+          "w": "认识",
+          "g": "nhận biết, quen biết, nhận thức"
+        },
+        {
+          "w": "知识",
+          "g": "tri thức, kiến thức"
+        },
+        {
+          "w": "意识",
+          "g": "ý thức"
+        }
+      ]
+    },
+    {
+      "root": "辨",
+      "vi": "phân biệt, biện biệt",
+      "members": [
+        {
+          "w": "辨认",
+          "g": "nhận ra, nhận diện"
+        },
+        {
+          "w": "辨别",
+          "g": "phân biệt"
+        },
+        {
+          "w": "分辨",
+          "g": "phân biệt, phân rõ"
+        },
+        {
+          "w": "辨析",
+          "g": "phân tích và phân biệt (nghĩa từ)"
+        }
+      ]
+    },
+    {
+      "root": "琢",
+      "vi": "mài giũa, trau chuốt; suy ngẫm",
+      "members": [
+        {
+          "w": "琢磨",
+          "g": "(zuómo) suy nghĩ, ngẫm nghĩ; (zhuómó) mài giũa, gọt giũa"
+        },
+        {
+          "w": "精雕细琢",
+          "g": "chạm trổ tinh xảo, trau chuốt tỉ mỉ (thành ngữ)"
+        }
+      ]
+    },
+    {
+      "root": "昼",
+      "vi": "ban ngày",
+      "members": [
+        {
+          "w": "昼夜",
+          "g": "ngày đêm"
+        },
+        {
+          "w": "白昼",
+          "g": "ban ngày"
+        }
+      ]
+    },
+    {
+      "root": "奔",
+      "vi": "chạy, lao đi, hướng tới",
+      "members": [
+        {
+          "w": "奔波",
+          "g": "bôn ba, vất vả ngược xuôi"
+        },
+        {
+          "w": "奔跑",
+          "g": "chạy"
+        },
+        {
+          "w": "奔驰",
+          "g": "phóng nhanh, phi nhanh"
+        },
+        {
+          "w": "奔赴",
+          "g": "lao tới, hướng tới (một nơi/nhiệm vụ)"
+        }
+      ]
+    },
+    {
+      "root": "畅",
+      "vi": "thông suốt, thoải mái, hả hê",
+      "members": [
+        {
+          "w": "畅销",
+          "g": "bán chạy"
+        },
+        {
+          "w": "畅快",
+          "g": "sảng khoái, thoải mái"
+        },
+        {
+          "w": "畅通",
+          "g": "thông suốt, lưu thông tốt"
+        },
+        {
+          "w": "畅谈",
+          "g": "nói chuyện thoải mái, hàn huyên thỏa thích"
+        }
+      ]
+    },
+    {
+      "root": "支",
+      "vi": "chống đỡ, chi ra, hỗ trợ",
+      "members": [
+        {
+          "w": "支撑",
+          "g": "chống đỡ, nâng đỡ"
+        },
+        {
+          "w": "支持",
+          "g": "ủng hộ, hỗ trợ"
+        },
+        {
+          "w": "支柱",
+          "g": "trụ cột"
+        },
+        {
+          "w": "支付",
+          "g": "chi trả, thanh toán"
+        }
+      ]
+    },
+    {
+      "root": "甘",
+      "vi": "cam tâm, sẵn lòng; ngọt bùi",
+      "members": [
+        {
+          "w": "心甘情愿",
+          "g": "cam tâm tình nguyện (thành ngữ)"
+        },
+        {
+          "w": "甘心",
+          "g": "cam tâm, cam lòng"
+        },
+        {
+          "w": "甘愿",
+          "g": "tình nguyện, cam nguyện"
+        },
+        {
+          "w": "甘苦",
+          "g": "ngọt bùi cay đắng, vui buồn sướng khổ"
+        }
+      ]
+    },
+    {
+      "root": "酬",
+      "vi": "thù lao, đáp lại, đối đãi",
+      "members": [
+        {
+          "w": "报酬",
+          "g": "thù lao, tiền công"
+        },
+        {
+          "w": "酬谢",
+          "g": "đền đáp, tạ ơn"
+        },
+        {
+          "w": "酬劳",
+          "g": "thù lao, trả công"
+        },
+        {
+          "w": "应酬",
+          "g": "giao tiếp xã giao, tiếp đãi qua lại"
+        }
+      ]
+    }
+  ],
+  "17": [
+    {
+      "root": "闷",
+      "vi": "buồn bực, ngột ngạt, bí bách",
+      "members": [
+        {
+          "w": "沉闷",
+          "g": "(không khí, bầu không khí) nặng nề, tẻ nhạt, ngột ngạt"
+        },
+        {
+          "w": "解闷",
+          "g": "giải khuây, giải buồn"
+        },
+        {
+          "w": "闷气",
+          "g": "ấm ức, bực bội nén trong lòng"
+        },
+        {
+          "w": "烦闷",
+          "g": "buồn bực, phiền muộn"
+        },
+        {
+          "w": "郁闷",
+          "g": "u uất, buồn bực, ngột ngạt trong lòng"
+        }
+      ]
+    },
+    {
+      "root": "筛",
+      "vi": "sàng, rây, lọc",
+      "members": [
+        {
+          "w": "筛选",
+          "g": "sàng lọc, chọn lọc"
+        },
+        {
+          "w": "筛子",
+          "g": "cái sàng, cái rây"
+        },
+        {
+          "w": "筛面",
+          "g": "rây bột (sàng bột mì)"
+        },
+        {
+          "w": "筛查",
+          "g": "sàng lọc, rà soát kiểm tra (thường dùng cho tầm soát y tế, an ninh)"
+        }
+      ]
+    },
+    {
+      "root": "慨",
+      "vi": "cảm thán; hào hiệp, khảng khái",
+      "members": [
+        {
+          "w": "感慨",
+          "g": "cảm khái, xúc động mà than thở"
+        },
+        {
+          "w": "慷慨",
+          "g": "khảng khái, hào phóng, rộng rãi"
+        },
+        {
+          "w": "愤慨",
+          "g": "phẫn nộ, căm phẫn, bất bình"
+        },
+        {
+          "w": "慷慨激昂",
+          "g": "hùng hồn, sôi nổi, đầy nhiệt huyết (lời nói)"
+        }
+      ]
+    },
+    {
+      "root": "雅",
+      "vi": "nhã, thanh nhã, tao nhã",
+      "members": [
+        {
+          "w": "雅观",
+          "g": "nhã nhặn, coi được, đẹp mắt (thường dùng phủ định 不雅观)"
+        },
+        {
+          "w": "淡雅",
+          "g": "thanh nhã, nhẹ nhàng (màu sắc, phong cách)"
+        },
+        {
+          "w": "雅兴",
+          "g": "hứng thú tao nhã"
+        },
+        {
+          "w": "雅座",
+          "g": "chỗ ngồi sang trọng, riêng tư (trong quán ăn)"
+        },
+        {
+          "w": "温文尔雅",
+          "g": "ôn hòa nhã nhặn, lịch thiệp nho nhã"
+        }
+      ]
+    },
+    {
+      "root": "谢",
+      "vi": "cảm ơn; tàn lụi, thay thế (chữ 谢 đa nghĩa)",
+      "members": [
+        {
+          "w": "谢幕",
+          "g": "ra chào khán giả, hạ màn cảm tạ (sau buổi diễn)"
+        },
+        {
+          "w": "答谢",
+          "g": "đáp tạ, cảm ơn đáp lại"
+        },
+        {
+          "w": "致谢",
+          "g": "bày tỏ lòng cảm ơn"
+        },
+        {
+          "w": "凋谢",
+          "g": "(hoa) tàn, héo rụng"
+        },
+        {
+          "w": "新陈代谢",
+          "g": "trao đổi chất, thay cũ đổi mới (sinh học)"
+        }
+      ]
+    },
+    {
+      "root": "颤",
+      "vi": "run, rung",
+      "members": [
+        {
+          "w": "颤抖",
+          "g": "run rẩy"
+        },
+        {
+          "w": "颤动",
+          "g": "rung động, rung lên"
+        },
+        {
+          "w": "颤颤悠悠",
+          "g": "run rẩy lảo đảo, dáng đi run run không vững"
+        }
+      ]
+    },
+    {
+      "root": "钝",
+      "vi": "cùn, đần, chậm chạp",
+      "members": [
+        {
+          "w": "迟钝",
+          "g": "chậm chạp, đần độn (phản ứng, tư duy chậm)"
+        },
+        {
+          "w": "钝器",
+          "g": "vật cùn, hung khí không sắc"
+        },
+        {
+          "w": "顽钝",
+          "g": "cùn lì, ngoan cố đần độn (ít gặp)"
+        },
+        {
+          "w": "愚钝",
+          "g": "ngu độn, đần độn"
+        }
+      ]
+    },
+    {
+      "root": "拙",
+      "vi": "vụng, kém",
+      "members": [
+        {
+          "w": "笨拙",
+          "g": "vụng về, ngu ngốc, chậm chạp"
+        },
+        {
+          "w": "拙见",
+          "g": "thiển kiến (khiêm từ: ý kiến hèn mọn của tôi)"
+        },
+        {
+          "w": "眼拙",
+          "g": "mắt kém, không nhận ra (khiêm từ khi không nhận ra người quen)"
+        },
+        {
+          "w": "弄巧成拙",
+          "g": "khéo hóa vụng, lợn lành chữa lợn què (định làm khéo hóa hỏng việc)"
+        }
+      ]
+    },
+    {
+      "root": "焦",
+      "vi": "cháy, khét; nóng lòng",
+      "members": [
+        {
+          "w": "焦急",
+          "g": "nóng lòng, sốt ruột"
+        },
+        {
+          "w": "焦点",
+          "g": "tiêu điểm, điểm mấu chốt"
+        },
+        {
+          "w": "焦虑",
+          "g": "lo lắng, lo âu"
+        },
+        {
+          "w": "焦黄",
+          "g": "vàng cháy, vàng sém"
+        },
+        {
+          "w": "焦头烂额",
+          "g": "đầu cháy trán bỏng, cực kỳ vất vả rối bời"
+        }
+      ]
+    }
+  ],
+  "18": [
+    {
+      "root": "即",
+      "vi": "ngay, liền, tức thì",
+      "members": [
+        {
+          "w": "即使",
+          "g": "cho dù, ngay cả khi (liên từ giả thiết)"
+        },
+        {
+          "w": "即日",
+          "g": "ngay trong ngày, hôm nay"
+        },
+        {
+          "w": "立即",
+          "g": "lập tức"
+        },
+        {
+          "w": "当即",
+          "g": "ngay lập tức, tức khắc"
+        },
+        {
+          "w": "一拍即合",
+          "g": "vừa khớp ngay, hợp ý nhau ngay lập tức"
+        }
+      ]
+    },
+    {
+      "root": "壤",
+      "vi": "đất",
+      "members": [
+        {
+          "w": "土壤",
+          "g": "đất, thổ nhưỡng"
+        },
+        {
+          "w": "接壤",
+          "g": "giáp ranh, tiếp giáp (biên giới đất liền kề)"
+        },
+        {
+          "w": "沃壤",
+          "g": "đất màu mỡ"
+        },
+        {
+          "w": "穷乡僻壤",
+          "g": "vùng quê hẻo lánh nghèo nàn"
+        },
+        {
+          "w": "天壤之别",
+          "g": "khác biệt một trời một vực"
+        }
+      ]
+    },
+    {
+      "root": "愣",
+      "vi": "ngẩn ra, đờ đẫn",
+      "members": [
+        {
+          "w": "发愣",
+          "g": "ngẩn người, thẫn thờ"
+        },
+        {
+          "w": "愣神儿",
+          "g": "thẫn thờ, đờ đẫn"
+        },
+        {
+          "w": "愣住",
+          "g": "sững sờ, đứng hình"
+        },
+        {
+          "w": "愣是",
+          "g": "cứ, nhất quyết (bất chấp, bướng bỉnh làm gì đó)"
+        },
+        {
+          "w": "愣头愣脑",
+          "g": "ngờ nghệch, đờ đẫn, hấp tấp vô tư"
+        }
+      ]
+    },
+    {
+      "root": "陡",
+      "vi": "dốc đứng; đột ngột",
+      "members": [
+        {
+          "w": "陡立",
+          "g": "dựng đứng, sừng sững"
+        },
+        {
+          "w": "陡然",
+          "g": "đột nhiên, bỗng nhiên"
+        },
+        {
+          "w": "陡变",
+          "g": "biến đổi đột ngột"
+        },
+        {
+          "w": "陡坡",
+          "g": "dốc đứng"
+        },
+        {
+          "w": "陡峭",
+          "g": "dốc đứng, hiểm trở"
+        },
+        {
+          "w": "陡降",
+          "g": "giảm mạnh đột ngột"
+        }
+      ]
+    },
+    {
+      "root": "茂",
+      "vi": "tươi tốt, sum suê, rậm rạp",
+      "members": [
+        {
+          "w": "茂盛",
+          "g": "tươi tốt, sum suê"
+        },
+        {
+          "w": "繁茂",
+          "g": "um tùm, rậm rạp"
+        },
+        {
+          "w": "根深叶茂",
+          "g": "rễ sâu lá tốt, nền tảng vững chắc"
+        },
+        {
+          "w": "图文并茂",
+          "g": "hình ảnh và chữ viết đều phong phú, sinh động"
+        }
+      ]
+    },
+    {
+      "root": "盛",
+      "vi": "thịnh, nhiều, mạnh",
+      "members": [
+        {
+          "w": "昌盛",
+          "g": "hưng thịnh, thịnh vượng"
+        },
+        {
+          "w": "盛怒",
+          "g": "giận dữ, thịnh nộ"
+        },
+        {
+          "w": "盛行",
+          "g": "thịnh hành, phổ biến"
+        },
+        {
+          "w": "盛开",
+          "g": "(hoa) nở rộ"
+        },
+        {
+          "w": "盛产",
+          "g": "sản xuất nhiều, có nhiều (đặc sản)"
+        },
+        {
+          "w": "丰盛",
+          "g": "phong phú, thịnh soạn (mâm cỗ)"
+        }
+      ]
+    },
+    {
+      "root": "覆",
+      "vi": "lật, phủ, che",
+      "members": [
+        {
+          "w": "覆灭",
+          "g": "diệt vong, sụp đổ hoàn toàn"
+        },
+        {
+          "w": "颠覆",
+          "g": "lật đổ"
+        },
+        {
+          "w": "覆盖",
+          "g": "che phủ, bao phủ"
+        },
+        {
+          "w": "天翻地覆",
+          "g": "trời long đất lở, thay đổi to lớn"
+        }
+      ]
+    }
+  ],
+  "19": [
+    {
+      "root": "恍",
+      "vi": "chợt, sực (tỉnh ngộ)",
+      "members": [
+        {
+          "w": "恍然",
+          "g": "chợt hiểu ra, sực tỉnh"
+        },
+        {
+          "w": "恍然大悟",
+          "g": "chợt tỉnh ngộ, hoát nhiên đại ngộ"
+        }
+      ]
+    },
+    {
+      "root": "裂",
+      "vi": "nứt, vỡ, tách rời",
+      "members": [
+        {
+          "w": "裂开",
+          "g": "nứt ra, vỡ ra"
+        },
+        {
+          "w": "裂缝",
+          "g": "khe nứt, vết nứt"
+        },
+        {
+          "w": "裂纹",
+          "g": "vết rạn, đường nứt"
+        },
+        {
+          "w": "身败名裂",
+          "g": "thân bại danh liệt"
+        },
+        {
+          "w": "心胆俱裂",
+          "g": "kinh hồn táng đởm, sợ hãi tột độ"
+        },
+        {
+          "w": "四分五裂",
+          "g": "chia năm xẻ bảy, tan rã"
+        },
+        {
+          "w": "山崩地裂",
+          "g": "núi lở đất nứt, chấn động dữ dội"
+        }
+      ]
+    },
+    {
+      "root": "透",
+      "vi": "thấm, xuyên qua, lộ ra",
+      "members": [
+        {
+          "w": "渗透",
+          "g": "thấm qua, thẩm thấu"
+        },
+        {
+          "w": "透气",
+          "g": "thoáng khí, thở"
+        },
+        {
+          "w": "透光",
+          "g": "thấu quang, cho ánh sáng xuyên qua"
+        },
+        {
+          "w": "透亮",
+          "g": "sáng trong, trong suốt"
+        },
+        {
+          "w": "透露",
+          "g": "tiết lộ, để lộ"
+        }
+      ]
+    },
+    {
+      "root": "潜",
+      "vi": "ngầm, tiềm ẩn, lặn",
+      "members": [
+        {
+          "w": "潜水",
+          "g": "lặn (dưới nước)"
+        },
+        {
+          "w": "潜力",
+          "g": "tiềm lực, tiềm năng"
+        },
+        {
+          "w": "潜伏",
+          "g": "tiềm phục, ẩn nấp, ủ bệnh"
+        },
+        {
+          "w": "潜移默化",
+          "g": "ảnh hưởng ngấm ngầm dần dần"
+        }
+      ]
+    },
+    {
+      "root": "⇄ so sánh",
+      "vi": "",
+      "members": [
+        {
+          "w": "有条不紊",
+          "g": "có trật tự, ngăn nắp, không rối loạn (làm việc theo thứ tự rõ ràng)"
+        },
+        {
+          "w": "井井有条",
+          "g": "ngăn nắp, trật tự, đâu ra đấy"
+        }
+      ]
+    }
+  ],
+  "20": [
+    {
+      "root": "勤",
+      "vi": "siêng năng, chuyên cần",
+      "members": [
+        {
+          "w": "勤快",
+          "g": "siêng năng, chăm chỉ (việc nhà, tay chân)"
+        },
+        {
+          "w": "勤恳",
+          "g": "cần cù, tận tụy chăm chỉ"
+        },
+        {
+          "w": "勤俭",
+          "g": "cần kiệm, chăm chỉ và tiết kiệm"
+        },
+        {
+          "w": "勤学苦练",
+          "g": "chăm học khổ luyện"
+        },
+        {
+          "w": "考勤",
+          "g": "điểm danh, chấm công"
+        },
+        {
+          "w": "出勤",
+          "g": "đi làm, có mặt làm việc"
+        },
+        {
+          "w": "缺勤",
+          "g": "vắng mặt, không đi làm"
+        }
+      ]
+    },
+    {
+      "root": "废",
+      "vi": "phế bỏ, hoang phế, hỏng",
+      "members": [
+        {
+          "w": "废墟",
+          "g": "đống đổ nát, phế tích"
+        },
+        {
+          "w": "废弃",
+          "g": "phế bỏ, vứt bỏ"
+        },
+        {
+          "w": "荒废",
+          "g": "bỏ hoang, sao nhãng"
+        },
+        {
+          "w": "百废待兴",
+          "g": "trăm việc chờ chấn hưng, mọi thứ đang chờ khôi phục"
+        },
+        {
+          "w": "废品",
+          "g": "phế phẩm, đồ phế thải"
+        },
+        {
+          "w": "废纸",
+          "g": "giấy vụn, giấy phế thải"
+        }
+      ]
+    },
+    {
+      "root": "怪",
+      "vi": "kỳ quái, lạ; trách (chữ 怪 đa nghĩa)",
+      "members": [
+        {
+          "w": "怪癖",
+          "g": "tật kỳ quặc, thói quen kỳ lạ"
+        },
+        {
+          "w": "怪事",
+          "g": "chuyện kỳ lạ"
+        },
+        {
+          "w": "怪异",
+          "g": "kỳ dị, quái lạ"
+        },
+        {
+          "w": "怪模怪样",
+          "g": "hình dáng kỳ quặc"
+        },
+        {
+          "w": "古怪",
+          "g": "cổ quái, kỳ quặc"
+        },
+        {
+          "w": "奇形怪状",
+          "g": "hình thù kỳ quái"
+        },
+        {
+          "w": "千奇百怪",
+          "g": "muôn hình vạn trạng kỳ lạ"
+        },
+        {
+          "w": "大惊小怪",
+          "g": "làm ầm ĩ lên, hốt hoảng thái quá"
+        },
+        {
+          "w": "怪罪",
+          "g": "trách cứ, đổ lỗi"
+        },
+        {
+          "w": "错怪",
+          "g": "trách oan, trách nhầm"
+        }
+      ]
+    },
+    {
+      "root": "窝",
+      "vi": "ổ, tổ, hốc",
+      "members": [
+        {
+          "w": "鸟窝",
+          "g": "tổ chim"
+        },
+        {
+          "w": "马蜂窝",
+          "g": "tổ ong bắp cày (chọc tổ ong = gây rắc rối)"
+        },
+        {
+          "w": "安乐窝",
+          "g": "tổ ấm an nhàn"
+        },
+        {
+          "w": "眼窝",
+          "g": "hốc mắt"
+        },
+        {
+          "w": "酒窝",
+          "g": "lúm đồng tiền"
+        },
+        {
+          "w": "山窝",
+          "g": "hốc núi, vùng núi hẻo lánh"
+        },
+        {
+          "w": "窝囊",
+          "g": "nhu nhược, bất tài, ấm ức bực bội"
+        }
+      ]
+    },
+    {
+      "root": "蔽",
+      "vi": "che, khuất, che lấp",
+      "members": [
+        {
+          "w": "隐蔽",
+          "g": "ẩn nấp, che giấu"
+        },
+        {
+          "w": "屏蔽",
+          "g": "che chắn, ngăn chặn (chắn tín hiệu)"
+        },
+        {
+          "w": "掩蔽",
+          "g": "che khuất, che chở"
+        },
+        {
+          "w": "遮蔽",
+          "g": "che khuất, che phủ"
+        },
+        {
+          "w": "浮云蔽日",
+          "g": "mây che mặt trời, ẩn dụ gian thần che lấp minh quân"
+        },
+        {
+          "w": "一言以蔽之",
+          "g": "tóm lại một câu, nói gọn lại"
+        }
+      ]
+    },
+    {
+      "root": "逢",
+      "vi": "gặp, gặp gỡ",
+      "members": [
+        {
+          "w": "每逢",
+          "g": "mỗi khi gặp, mỗi dịp"
+        },
+        {
+          "w": "相逢",
+          "g": "gặp gỡ nhau"
+        },
+        {
+          "w": "千载难逢",
+          "g": "nghìn năm khó gặp, cơ hội hiếm có"
+        },
+        {
+          "w": "久别重逢",
+          "g": "xa cách lâu ngày gặp lại"
+        },
+        {
+          "w": "逢山开路",
+          "g": "gặp núi mở đường, ý chí vượt khó"
+        }
+      ]
+    },
+    {
+      "root": "贿",
+      "vi": "hối lộ",
+      "members": [
+        {
+          "w": "贿赂",
+          "g": "hối lộ, đút lót"
+        },
+        {
+          "w": "受贿",
+          "g": "nhận hối lộ"
+        },
+        {
+          "w": "行贿",
+          "g": "đưa hối lộ"
+        },
+        {
+          "w": "贿选",
+          "g": "mua chuộc phiếu bầu, hối lộ bầu cử"
+        }
+      ]
+    }
+  ],
+  "21": [
+    {
+      "root": "剧",
+      "vi": "kịch; dữ dội, mạnh",
+      "members": [
+        {
+          "w": "戏剧",
+          "g": "kịch, sân khấu kịch nói"
+        },
+        {
+          "w": "编剧",
+          "g": "biên kịch, người viết kịch bản"
+        },
+        {
+          "w": "喜剧",
+          "g": "hài kịch"
+        },
+        {
+          "w": "话剧",
+          "g": "kịch nói"
+        },
+        {
+          "w": "剧烈",
+          "g": "kịch liệt, dữ dội, mạnh mẽ"
+        }
+      ]
+    },
+    {
+      "root": "息",
+      "vi": "nghỉ, ngừng; hơi thở; tin tức",
+      "members": [
+        {
+          "w": "川流不息",
+          "g": "dòng người/xe cộ không ngớt"
+        },
+        {
+          "w": "叹息",
+          "g": "than thở, thở dài"
+        },
+        {
+          "w": "自强不息",
+          "g": "tự cường không ngừng"
+        },
+        {
+          "w": "安息",
+          "g": "an nghỉ, yên nghỉ"
+        }
+      ]
+    },
+    {
+      "root": "把",
+      "vi": "nắm, cầm; tay cầm",
+      "members": [
+        {
+          "w": "把儿",
+          "g": "cái tay cầm, cái quai (đồ vật)"
+        },
+        {
+          "w": "把关",
+          "g": "giữ cửa ải, kiểm soát chặt chẽ (nghĩa bóng: kiểm tra chất lượng)"
+        },
+        {
+          "w": "把角",
+          "g": "trấn giữ, canh gác góc/nơi hiểm yếu"
+        },
+        {
+          "w": "车把",
+          "g": "tay lái xe, ghi đông (xe đạp, xe máy)"
+        }
+      ]
+    },
+    {
+      "root": "卸",
+      "vi": "dỡ, tháo, trút bỏ",
+      "members": [
+        {
+          "w": "卸载",
+          "g": "gỡ tải, dỡ hàng; gỡ cài đặt (phần mềm)"
+        },
+        {
+          "w": "拆卸",
+          "g": "tháo dỡ, tháo rời"
+        },
+        {
+          "w": "卸磨杀驴",
+          "g": "dỡ cối giết lừa, vắt chanh bỏ vỏ"
+        },
+        {
+          "w": "卸妆",
+          "g": "tẩy trang"
+        }
+      ]
+    },
+    {
+      "root": "应",
+      "vi": "nên, phải; đáp lại, ứng",
+      "members": [
+        {
+          "w": "应该",
+          "g": "nên, phải"
+        },
+        {
+          "w": "应有尽有",
+          "g": "có đầy đủ mọi thứ"
+        },
+        {
+          "w": "答应",
+          "g": "đáp ứng, đồng ý"
+        },
+        {
+          "w": "应当",
+          "g": "nên, cần phải"
+        },
+        {
+          "w": "对应",
+          "g": "tương ứng, ứng với"
+        }
+      ]
+    },
+    {
+      "root": "拟",
+      "vi": "dự định, mô phỏng, phỏng theo",
+      "members": [
+        {
+          "w": "虚拟",
+          "g": "hư cấu, ảo, mô phỏng (virtual)"
+        },
+        {
+          "w": "模拟",
+          "g": "mô phỏng, giả lập"
+        },
+        {
+          "w": "拟人",
+          "g": "nhân cách hóa (tu từ)"
+        },
+        {
+          "w": "拟物",
+          "g": "vật hóa, coi người như vật (tu từ)"
+        },
+        {
+          "w": "拟声词",
+          "g": "từ tượng thanh"
+        }
+      ]
+    },
+    {
+      "root": "插",
+      "vi": "cắm, chen, xen vào",
+      "members": [
+        {
+          "w": "插头",
+          "g": "phích cắm điện"
+        },
+        {
+          "w": "插秧",
+          "g": "cấy mạ"
+        },
+        {
+          "w": "插入",
+          "g": "chèn vào, cắm vào"
+        },
+        {
+          "w": "插嘴",
+          "g": "chen lời, xen vào nói"
+        },
+        {
+          "w": "插手",
+          "g": "nhúng tay vào, can thiệp"
+        },
+        {
+          "w": "安插",
+          "g": "cài cắm, sắp đặt người vào vị trí nào đó"
+        }
+      ]
+    },
+    {
+      "root": "馈",
+      "vi": "tặng, biếu; phản hồi",
+      "members": [
+        {
+          "w": "馈送",
+          "g": "tặng, biếu, gửi tặng"
+        },
+        {
+          "w": "馈赠",
+          "g": "biếu tặng, tặng quà"
+        },
+        {
+          "w": "反馈",
+          "g": "phản hồi"
+        },
+        {
+          "w": "回馈",
+          "g": "đáp lại, báo đáp ơn nghĩa, phản hồi lại"
+        }
+      ]
+    }
+  ],
+  "22": [
+    {
+      "root": "堵",
+      "vi": "chặn, bịt kín; (lượng từ: bức tường)",
+      "members": [
+        {
+          "w": "堵车",
+          "g": "kẹt xe, tắc đường"
+        },
+        {
+          "w": "堵得慌",
+          "g": "thấy bí bách, ngột ngạt trong lòng"
+        },
+        {
+          "w": "一堵墙",
+          "g": "một bức tường (堵 dùng làm lượng từ)"
+        },
+        {
+          "w": "堵塞",
+          "g": "tắc nghẽn, ùn tắc, bít lại"
+        },
+        {
+          "w": "围堵",
+          "g": "bao vây, ngăn chặn"
+        }
+      ]
+    },
+    {
+      "root": "滞",
+      "vi": "trì trệ, đình trệ, ứ đọng",
+      "members": [
+        {
+          "w": "滞留",
+          "g": "lưu lại, mắc kẹt lại (chưa đi được)"
+        },
+        {
+          "w": "滞销",
+          "g": "(hàng hóa) ế ẩm, khó tiêu thụ"
+        },
+        {
+          "w": "呆滞",
+          "g": "đờ đẫn, trì trệ (ánh mắt, thị trường)"
+        },
+        {
+          "w": "停滞不前",
+          "g": "dừng lại không tiến, giậm chân tại chỗ"
+        }
+      ]
+    },
+    {
+      "root": "谋",
+      "vi": "mưu, mưu kế, tính kế",
+      "members": [
+        {
+          "w": "阴谋诡计",
+          "g": "âm mưu quỷ kế"
+        },
+        {
+          "w": "有勇有谋",
+          "g": "vừa dũng cảm vừa có mưu lược"
+        },
+        {
+          "w": "足智多谋",
+          "g": "đa mưu túc trí, thông minh mưu lược"
+        },
+        {
+          "w": "深谋远虑",
+          "g": "mưu tính sâu xa, nhìn xa trông rộng"
+        }
+      ]
+    },
+    {
+      "root": "融",
+      "vi": "tan, hòa tan, dung hòa",
+      "members": [
+        {
+          "w": "融化",
+          "g": "tan chảy, tan ra"
+        },
+        {
+          "w": "融和",
+          "g": "ấm áp hòa hợp (khí hậu, không khí)"
+        },
+        {
+          "w": "融合",
+          "g": "hòa hợp, dung hợp, hợp nhất"
+        },
+        {
+          "w": "融汇",
+          "g": "hội tụ, dung hợp (kiến thức, dòng chảy)"
+        },
+        {
+          "w": "融会贯通",
+          "g": "thông hiểu thấu đáo, vận dụng nhuần nhuyễn"
+        },
+        {
+          "w": "水乳交融",
+          "g": "hòa quyện khăng khít như nước với sữa"
+        }
+      ]
+    },
+    {
+      "root": "珍",
+      "vi": "quý, trân quý",
+      "members": [
+        {
+          "w": "珍珠",
+          "g": "ngọc trai"
+        },
+        {
+          "w": "珍稀",
+          "g": "quý hiếm"
+        },
+        {
+          "w": "珍视",
+          "g": "coi trọng, trân trọng"
+        },
+        {
+          "w": "珍爱",
+          "g": "yêu quý, trân quý"
+        },
+        {
+          "w": "如数家珍",
+          "g": "kể vanh vách như đếm của báu nhà mình, rất am hiểu"
+        },
+        {
+          "w": "珍禽异兽",
+          "g": "chim quý thú lạ"
+        },
+        {
+          "w": "山珍海味",
+          "g": "sơn hào hải vị"
+        }
+      ]
+    },
+    {
+      "root": "珠",
+      "vi": "ngọc, hạt tròn nhỏ",
+      "members": [
+        {
+          "w": "珠子",
+          "g": "hạt (chuỗi), hạt cườm"
+        },
+        {
+          "w": "露珠",
+          "g": "giọt sương"
+        },
+        {
+          "w": "泪珠",
+          "g": "giọt lệ, giọt nước mắt"
+        },
+        {
+          "w": "圆珠笔",
+          "g": "bút bi"
+        },
+        {
+          "w": "鱼目混珠",
+          "g": "vàng thau lẫn lộn, hàng giả trà trộn hàng thật"
+        },
+        {
+          "w": "珠联璧合",
+          "g": "kết hợp hoàn hảo, xứng đôi vừa lứa"
+        }
+      ]
+    },
+    {
+      "root": "遏",
+      "vi": "ngăn chặn, kìm lại",
+      "members": [
+        {
+          "w": "怒不可遏",
+          "g": "giận không kìm được, giận tím người"
+        },
+        {
+          "w": "遏止",
+          "g": "ngăn chặn, chặn đứng"
+        },
+        {
+          "w": "遏制",
+          "g": "kiềm chế, khống chế"
+        },
+        {
+          "w": "阻遏",
+          "g": "ngăn cản, cản trở"
+        }
+      ]
+    },
+    {
+      "root": "昂",
+      "vi": "ngẩng lên; hăng hái, cao",
+      "members": [
+        {
+          "w": "昂首",
+          "g": "ngẩng đầu lên"
+        },
+        {
+          "w": "昂首阔步",
+          "g": "ngẩng đầu ưỡn ngực bước đi hiên ngang"
+        },
+        {
+          "w": "昂然",
+          "g": "hiên ngang, hùng dũng"
+        },
+        {
+          "w": "慷慨激昂",
+          "g": "hùng hồn sôi nổi, khảng khái hăng say"
+        },
+        {
+          "w": "高昂",
+          "g": "cao ngất (giá cả); phấn chấn cao độ (tinh thần)"
+        },
+        {
+          "w": "斗志昂然",
+          "g": "ý chí chiến đấu hăng hái sôi sục"
+        }
+      ]
+    }
+  ],
+  "23": [
+    {
+      "root": "堵",
+      "vi": "chặn, bịt kín; (lượng từ: bức tường)",
+      "members": [
+        {
+          "w": "堵车",
+          "g": "kẹt xe, tắc đường"
+        },
+        {
+          "w": "堵得慌",
+          "g": "thấy bí bách, ngột ngạt trong lòng"
+        },
+        {
+          "w": "一堵墙",
+          "g": "một bức tường (堵 dùng làm lượng từ)"
+        },
+        {
+          "w": "堵塞",
+          "g": "tắc nghẽn, ùn tắc, bít lại"
+        },
+        {
+          "w": "围堵",
+          "g": "bao vây, ngăn chặn"
+        }
+      ]
+    },
+    {
+      "root": "卓",
+      "vi": "xuất sắc, vượt trội",
+      "members": [
+        {
+          "w": "卓有成效",
+          "g": "rất hiệu quả, hiệu quả rõ rệt"
+        },
+        {
+          "w": "卓识",
+          "g": "kiến thức/nhận định sâu sắc, cao kiến"
+        },
+        {
+          "w": "卓著",
+          "g": "nổi bật, lừng lẫy (thành tích)"
+        },
+        {
+          "w": "艰苦卓绝",
+          "g": "gian khổ tột cùng"
+        },
+        {
+          "w": "卓越",
+          "g": "kiệt xuất, xuất sắc"
+        },
+        {
+          "w": "卓见",
+          "g": "cao kiến, kiến giải sâu sắc"
+        }
+      ]
+    },
+    {
+      "root": "遣",
+      "vi": "sai khiến, phái đi",
+      "members": [
+        {
+          "w": "派遣",
+          "g": "phái đi, cử đi"
+        },
+        {
+          "w": "调兵遣将",
+          "g": "điều binh khiển tướng"
+        },
+        {
+          "w": "消遣",
+          "g": "giải trí, tiêu khiển"
+        },
+        {
+          "w": "差遣",
+          "g": "sai phái"
+        },
+        {
+          "w": "自遣",
+          "g": "tự an ủi mình, tự giải khuây"
+        },
+        {
+          "w": "遣送",
+          "g": "trục xuất, đưa trả về nơi cũ"
+        }
+      ]
+    },
+    {
+      "root": "萌",
+      "vi": "nảy mầm, manh nha",
+      "members": [
+        {
+          "w": "萌生",
+          "g": "nảy sinh (ý nghĩ, tình cảm)"
+        },
+        {
+          "w": "萌发",
+          "g": "nảy mầm, phát sinh"
+        },
+        {
+          "w": "萌芽",
+          "g": "nảy mầm, chớm nở, mầm mống"
+        },
+        {
+          "w": "萌动",
+          "g": "manh nha, bắt đầu hình thành"
+        }
+      ]
+    },
+    {
+      "root": "谬",
+      "vi": "sai lầm, sai lệch",
+      "members": [
+        {
+          "w": "谬论",
+          "g": "luận điệu sai lầm, ngụy biện"
+        },
+        {
+          "w": "谬误",
+          "g": "sai lầm, sai sót"
+        },
+        {
+          "w": "失之毫厘,谬以千里",
+          "g": "sai một li đi một dặm"
+        },
+        {
+          "w": "荒谬",
+          "g": "hoang đường, vô lý"
+        }
+      ]
+    },
+    {
+      "root": "转",
+      "vi": "xoay, quay, chuyển",
+      "members": [
+        {
+          "w": "转变",
+          "g": "chuyển biến, thay đổi"
+        },
+        {
+          "w": "转弯",
+          "g": "rẽ, quẹo, ngoặt"
+        },
+        {
+          "w": "转学",
+          "g": "chuyển trường"
+        },
+        {
+          "w": "转眼",
+          "g": "trong chớp mắt, thoáng chốc"
+        },
+        {
+          "w": "转账",
+          "g": "chuyển khoản"
+        },
+        {
+          "w": "转危为安",
+          "g": "chuyển nguy thành an, thoát hiểm bình an"
+        },
+        {
+          "w": "目不转睛",
+          "g": "mắt không rời, chăm chú nhìn không chớp mắt"
+        },
+        {
+          "w": "转告",
+          "g": "chuyển lời, nhắn lại"
+        },
+        {
+          "w": "转达",
+          "g": "chuyển đạt, truyền đạt lại"
+        },
+        {
+          "w": "转让",
+          "g": "chuyển nhượng"
+        },
+        {
+          "w": "转播",
+          "g": "tiếp sóng, phát lại (đài/truyền hình)"
+        },
+        {
+          "w": "转租",
+          "g": "cho thuê lại"
+        }
+      ]
+    },
+    {
+      "root": "喻",
+      "vi": "ví von, hiểu rõ",
+      "members": [
+        {
+          "w": "譬喻",
+          "g": "ví dụ, ẩn dụ, thí dụ"
+        },
+        {
+          "w": "比喻",
+          "g": "so sánh, ví von, phép ẩn dụ"
+        },
+        {
+          "w": "隐喻",
+          "g": "ẩn dụ"
+        },
+        {
+          "w": "家喻户晓",
+          "g": "nhà nhà đều biết, ai cũng biết"
+        },
+        {
+          "w": "不言而喻",
+          "g": "hiển nhiên, không nói cũng hiểu"
+        },
+        {
+          "w": "不可理喻",
+          "g": "không thể lý giải, ương ngạnh không nghe lẽ phải"
+        },
+        {
+          "w": "喻之以理",
+          "g": "lấy lý lẽ giảng giải, thuyết phục bằng lý lẽ"
+        }
+      ]
+    },
+    {
+      "root": "为",
+      "vi": "làm, là, vì",
+      "members": [
+        {
+          "w": "为人",
+          "g": "cách cư xử, tính cách làm người"
+        },
+        {
+          "w": "为生",
+          "g": "mưu sinh, kiếm sống (以...为生)"
+        },
+        {
+          "w": "为非作歹",
+          "g": "làm điều càn quấy, xằng bậy"
+        },
+        {
+          "w": "有为",
+          "g": "có năng lực, có triển vọng"
+        },
+        {
+          "w": "无为",
+          "g": "vô vi, không hành động (Đạo gia)"
+        },
+        {
+          "w": "无能为力",
+          "g": "bất lực, không có khả năng làm"
+        },
+        {
+          "w": "大有作为",
+          "g": "có thể làm nên việc lớn, nhiều triển vọng"
+        },
+        {
+          "w": "胡作非为",
+          "g": "làm càn làm bậy"
+        }
+      ]
+    },
+    {
+      "root": "攒",
+      "vi": "dành dụm, tích góp",
+      "members": [
+        {
+          "w": "攒钱",
+          "g": "dành dụm tiền"
+        },
+        {
+          "w": "积攒",
+          "g": "tích góp, tích lũy dần"
+        }
+      ]
+    }
+  ],
+  "24": [
+    {
+      "root": "横",
+      "vi": "ngang; ngang ngược, hung bạo, bất ngờ",
+      "members": [
+        {
+          "w": "蛮横",
+          "g": "ngang ngược, hung hãn vô lý"
+        },
+        {
+          "w": "骄横",
+          "g": "kiêu ngạo hống hách"
+        },
+        {
+          "w": "专横",
+          "g": "chuyên quyền độc đoán"
+        },
+        {
+          "w": "横祸",
+          "g": "tai họa bất ngờ, họa vô đơn chí"
+        },
+        {
+          "w": "横财",
+          "g": "của cải bất chính, tiền của phi nghĩa"
+        },
+        {
+          "w": "横眉怒目",
+          "g": "mày ngang mắt trợn (vẻ giận dữ hung tợn)"
+        },
+        {
+          "w": "横行霸道",
+          "g": "hoành hành ngang ngược, ngang ngược bá đạo"
+        },
+        {
+          "w": "横七竖八",
+          "g": "ngổn ngang lộn xộn"
+        },
+        {
+          "w": "横冲直撞",
+          "g": "xông xáo húc càn, đâm ngang đâm dọc"
+        },
+        {
+          "w": "人行横道",
+          "g": "vạch qua đường dành cho người đi bộ"
+        }
+      ]
+    },
+    {
+      "root": "阴",
+      "vi": "âm u, ngầm, âm hiểm",
+      "members": [
+        {
+          "w": "阴雨",
+          "g": "mưa dầm trời âm u"
+        },
+        {
+          "w": "阴晴",
+          "g": "lúc nắng lúc râm"
+        },
+        {
+          "w": "阴云密布",
+          "g": "mây đen kéo đầy trời (điềm gở sắp xảy ra)"
+        },
+        {
+          "w": "阴暗",
+          "g": "tối tăm, u ám"
+        },
+        {
+          "w": "阴冷",
+          "g": "lạnh lẽo ẩm thấp; (thái độ) lạnh lùng"
+        },
+        {
+          "w": "阴面",
+          "g": "mặt khuất nắng"
+        },
+        {
+          "w": "阴险",
+          "g": "âm hiểm, thâm hiểm"
+        },
+        {
+          "w": "阴毒",
+          "g": "độc ác thâm hiểm"
+        },
+        {
+          "w": "阳奉阴违",
+          "g": "ngoài mặt vâng dạ trong bụng chống đối"
+        },
+        {
+          "w": "阴谋",
+          "g": "âm mưu"
+        },
+        {
+          "w": "阴谋诡计",
+          "g": "âm mưu quỷ kế"
+        }
+      ]
+    },
+    {
+      "root": "遮",
+      "vi": "che, che giấu",
+      "members": [
+        {
+          "w": "一手遮天",
+          "g": "một tay che trời, lộng quyền che giấu sự thật"
+        },
+        {
+          "w": "遮遮掩掩",
+          "g": "giấu giấu diếm diếm, úp úp mở mở"
+        },
+        {
+          "w": "遮挡",
+          "g": "che chắn"
+        },
+        {
+          "w": "遮蔽",
+          "g": "che khuất, che lấp"
+        },
+        {
+          "w": "遮盖",
+          "g": "che phủ, che đậy"
+        }
+      ]
+    },
+    {
+      "root": "哀",
+      "vi": "bi thương, đau buồn",
+      "members": [
+        {
+          "w": "哀伤",
+          "g": "đau buồn, bi thương"
+        },
+        {
+          "w": "哀泣",
+          "g": "khóc than bi ai"
+        },
+        {
+          "w": "哀叹",
+          "g": "than thở, thở than"
+        },
+        {
+          "w": "哀愁",
+          "g": "sầu muộn, buồn rầu"
+        },
+        {
+          "w": "哀痛",
+          "g": "đau đớn xót thương"
+        },
+        {
+          "w": "哀号",
+          "g": "gào khóc thảm thiết"
+        },
+        {
+          "w": "哀鸣",
+          "g": "kêu than bi thương (tiếng kêu ai oán)"
+        }
+      ]
+    },
+    {
+      "root": "酷",
+      "vi": "khắc nghiệt, tàn khốc; cực kỳ",
+      "members": [
+        {
+          "w": "冷酷",
+          "g": "lạnh lùng tàn nhẫn"
+        },
+        {
+          "w": "严酷",
+          "g": "nghiêm khắc, khắc nghiệt"
+        },
+        {
+          "w": "酷爱",
+          "g": "say mê, rất yêu thích"
+        },
+        {
+          "w": "酷寒",
+          "g": "rét cắt da cắt thịt, giá lạnh khắc nghiệt"
+        },
+        {
+          "w": "酷热",
+          "g": "nóng bức khắc nghiệt, nóng như thiêu"
+        },
+        {
+          "w": "酷似",
+          "g": "giống hệt, giống như đúc"
+        }
+      ]
+    },
+    {
+      "root": "凶",
+      "vi": "hung ác, dữ tợn",
+      "members": [
+        {
+          "w": "凶残",
+          "g": "hung tàn, hung ác tàn bạo"
+        },
+        {
+          "w": "凶狠",
+          "g": "hung dữ, hung ác"
+        },
+        {
+          "w": "凶恶",
+          "g": "hung ác, dữ tợn"
+        },
+        {
+          "w": "凶险",
+          "g": "nguy hiểm, hiểm ác"
+        },
+        {
+          "w": "凶猛",
+          "g": "hung mãnh, dữ tợn"
+        },
+        {
+          "w": "行凶",
+          "g": "hành hung, gây án"
+        },
+        {
+          "w": "凶器",
+          "g": "hung khí"
+        },
+        {
+          "w": "凶犯",
+          "g": "hung phạm, kẻ gây án"
+        },
+        {
+          "w": "帮凶",
+          "g": "đồng phạm, tòng phạm"
+        }
+      ]
+    },
+    {
+      "root": "冤",
+      "vi": "oan, oan ức",
+      "members": [
+        {
+          "w": "不白之冤",
+          "g": "nỗi oan không thể giãi bày, oan ức không rửa được"
+        },
+        {
+          "w": "冤屈",
+          "g": "oan ức, uất ức"
+        },
+        {
+          "w": "冤枉",
+          "g": "oan uổng, oan"
+        },
+        {
+          "w": "冤仇",
+          "g": "oan cừu, thù oán"
+        },
+        {
+          "w": "无冤无仇",
+          "g": "không oán không thù"
+        }
+      ]
+    },
+    {
+      "root": "雪",
+      "vi": "tuyết; rửa (oan, nhục)",
+      "members": [
+        {
+          "w": "雪花",
+          "g": "bông tuyết"
+        },
+        {
+          "w": "冰天雪地",
+          "g": "băng trời tuyết đất, trời đông giá rét"
+        },
+        {
+          "w": "雪崩",
+          "g": "tuyết lở"
+        },
+        {
+          "w": "雪耻",
+          "g": "rửa nhục"
+        },
+        {
+          "w": "雪冤",
+          "g": "rửa oan, giải oan"
+        },
+        {
+          "w": "报仇雪恨",
+          "g": "báo thù rửa hận"
+        },
+        {
+          "w": "雪亮",
+          "g": "sáng như tuyết, sáng quắc, tinh tường (mắt)"
+        },
+        {
+          "w": "雪中送炭",
+          "g": "giúp đỡ đúng lúc khó khăn (tặng than giữa trời tuyết)"
+        },
+        {
+          "w": "雪上加霜",
+          "g": "họa vô đơn chí, khó khăn chồng chất khó khăn"
+        }
+      ]
+    }
+  ],
+  "25": [
+    {
+      "root": "委",
+      "vi": "ủy thác, giao phó; uyển chuyển",
+      "members": [
+        {
+          "w": "委婉",
+          "g": "uyển chuyển, khéo léo (lời nói)"
+        },
+        {
+          "w": "委派",
+          "g": "cử, phái đi (giao nhiệm vụ)"
+        },
+        {
+          "w": "委托",
+          "g": "ủy thác, gửi gắm nhờ cậy"
+        },
+        {
+          "w": "委实",
+          "g": "quả thực, thực sự"
+        }
+      ]
+    },
+    {
+      "root": "款",
+      "vi": "khoản tiền; kiểu dáng; tiếp đãi",
+      "members": [
+        {
+          "w": "救灾款",
+          "g": "tiền cứu trợ thiên tai"
+        },
+        {
+          "w": "专款",
+          "g": "khoản tiền chuyên dụng"
+        },
+        {
+          "w": "赃款",
+          "g": "tiền phi pháp, tiền tham ô"
+        },
+        {
+          "w": "公款",
+          "g": "công quỹ, tiền công"
+        },
+        {
+          "w": "罚款",
+          "g": "tiền phạt"
+        },
+        {
+          "w": "筹款",
+          "g": "quyên góp tiền, gây quỹ"
+        },
+        {
+          "w": "捐款",
+          "g": "quyên góp, tiền quyên góp"
+        },
+        {
+          "w": "贷款",
+          "g": "khoản vay, cho vay"
+        },
+        {
+          "w": "款待",
+          "g": "tiếp đãi, khoản đãi"
+        },
+        {
+          "w": "款留",
+          "g": "giữ lại tiếp đãi (khách)"
+        },
+        {
+          "w": "款式",
+          "g": "kiểu dáng, mẫu mã"
+        },
+        {
+          "w": "落款",
+          "g": "đề tên, ký tên (trên thư/tranh)"
+        }
+      ]
+    },
+    {
+      "root": "叮",
+      "vi": "dặn dò; đốt, chích; leng keng",
+      "members": [
+        {
+          "w": "叮咛",
+          "g": "dặn dò ân cần"
+        },
+        {
+          "w": "叮嘱",
+          "g": "dặn dò, căn dặn"
+        },
+        {
+          "w": "千叮万嘱",
+          "g": "dặn đi dặn lại nhiều lần"
+        },
+        {
+          "w": "叮当",
+          "g": "leng keng (tiếng va chạm kim loại)"
+        },
+        {
+          "w": "叮咬",
+          "g": "đốt, chích, cắn (côn trùng)"
+        },
+        {
+          "w": "叮问",
+          "g": "gặng hỏi, hỏi dồn"
+        }
+      ]
+    },
+    {
+      "root": "嘱",
+      "vi": "dặn dò, ủy thác",
+      "members": [
+        {
+          "w": "嘱咐",
+          "g": "dặn dò"
+        },
+        {
+          "w": "遗嘱",
+          "g": "di chúc"
+        },
+        {
+          "w": "叮嘱",
+          "g": "dặn dò, căn dặn"
+        },
+        {
+          "w": "医嘱",
+          "g": "y lệnh, chỉ định của bác sĩ"
+        }
+      ]
+    },
+    {
+      "root": "逼",
+      "vi": "ép, bức, áp sát",
+      "members": [
+        {
+          "w": "逼债",
+          "g": "đòi nợ ráo riết, bức nợ"
+        },
+        {
+          "w": "威逼",
+          "g": "uy hiếp, đe dọa ép buộc"
+        },
+        {
+          "w": "逼迫",
+          "g": "ép buộc, bức bách"
+        },
+        {
+          "w": "逼视",
+          "g": "nhìn xoáy vào, nhìn chằm chằm áp sát"
+        },
+        {
+          "w": "逼近",
+          "g": "áp sát, tới gần"
+        },
+        {
+          "w": "逼真",
+          "g": "giống như thật, chân thực"
+        }
+      ]
+    },
+    {
+      "root": "保",
+      "vi": "bảo vệ, giữ gìn",
+      "members": [
+        {
+          "w": "保卫",
+          "g": "bảo vệ"
+        },
+        {
+          "w": "保养",
+          "g": "bảo dưỡng, chăm sóc giữ gìn"
+        },
+        {
+          "w": "保温",
+          "g": "giữ nhiệt, giữ ấm"
+        },
+        {
+          "w": "保险",
+          "g": "bảo hiểm; an toàn"
+        },
+        {
+          "w": "朝不保夕",
+          "g": "sớm không biết chiều, tình thế nguy cấp bấp bênh"
+        }
+      ]
+    },
+    {
+      "root": "漏",
+      "vi": "rò rỉ, lọt, hở",
+      "members": [
+        {
+          "w": "说漏了嘴",
+          "g": "lỡ lời, buột miệng nói ra"
+        },
+        {
+          "w": "漏网",
+          "g": "lọt lưới, thoát lưới pháp luật"
+        },
+        {
+          "w": "漏洞",
+          "g": "lỗ hổng, kẽ hở"
+        },
+        {
+          "w": "漏电",
+          "g": "rò điện"
+        },
+        {
+          "w": "漏风",
+          "g": "lọt gió, hở gió (cũng ý lộ chuyện)"
+        },
+        {
+          "w": "漏斗",
+          "g": "cái phễu"
+        }
+      ]
+    },
+    {
+      "root": "凌",
+      "vi": "lấn át, vượt lên; băng giá",
+      "members": [
+        {
+          "w": "盛气凌人",
+          "g": "hống hách lấn át người khác"
+        },
+        {
+          "w": "欺凌",
+          "g": "ức hiếp, bắt nạt"
+        },
+        {
+          "w": "凌晨",
+          "g": "rạng sáng, tờ mờ sáng"
+        },
+        {
+          "w": "凌驾",
+          "g": "vượt lên trên, lấn át (quyền lực)"
+        },
+        {
+          "w": "凌空",
+          "g": "vượt không trung, bay vút lên trời"
+        },
+        {
+          "w": "冰凌",
+          "g": "băng giá, cột băng"
+        },
+        {
+          "w": "冰激凌",
+          "g": "kem (món kem lạnh)"
+        },
+        {
+          "w": "壮志凌云",
+          "g": "chí lớn ngất trời, hoài bão lớn lao"
+        }
+      ]
+    },
+    {
+      "root": "涨",
+      "vi": "tăng, dâng lên",
+      "members": [
+        {
+          "w": "飞涨",
+          "g": "tăng vọt, tăng vùn vụt"
+        },
+        {
+          "w": "涨价",
+          "g": "tăng giá"
+        },
+        {
+          "w": "涨钱",
+          "g": "tăng tiền, tăng giá"
+        },
+        {
+          "w": "暴涨",
+          "g": "tăng vọt đột ngột"
+        },
+        {
+          "w": "猛涨",
+          "g": "tăng mạnh"
+        },
+        {
+          "w": "涨落",
+          "g": "lên xuống (giá cả, mực nước)"
+        },
+        {
+          "w": "涨跌",
+          "g": "tăng giảm (giá)"
+        },
+        {
+          "w": "水涨船高",
+          "g": "cái này tăng thì cái kia cũng tăng theo"
+        },
+        {
+          "w": "高涨",
+          "g": "dâng cao, lên cao (tinh thần, phong trào)"
+        },
+        {
+          "w": "看涨",
+          "g": "dự đoán sẽ tăng, có xu hướng tăng"
+        },
+        {
+          "w": "上涨",
+          "g": "tăng lên, lên giá"
+        }
+      ]
+    }
+  ],
+  "26": [
+    {
+      "root": "炎",
+      "vi": "nóng bức; viêm",
+      "members": [
+        {
+          "w": "炎热",
+          "g": "nóng bức, oi bức"
+        },
+        {
+          "w": "炎夏",
+          "g": "mùa hè nóng nực"
+        },
+        {
+          "w": "炎凉",
+          "g": "nóng lạnh (ví thói đời ấm lạnh)"
+        },
+        {
+          "w": "世态炎凉",
+          "g": "thói đời ấm lạnh, nhân tình thế thái"
+        },
+        {
+          "w": "炎炎夏季",
+          "g": "mùa hè nóng như thiêu đốt"
+        }
+      ]
+    },
+    {
+      "root": "乏",
+      "vi": "mệt mỏi; thiếu",
+      "members": [
+        {
+          "w": "解乏",
+          "g": "giải tỏa mệt mỏi, hết mệt"
+        },
+        {
+          "w": "人困马乏",
+          "g": "người mệt ngựa mỏi (kiệt sức vì đi đường xa)"
+        },
+        {
+          "w": "疲乏",
+          "g": "mệt mỏi, mệt nhoài"
+        },
+        {
+          "w": "倦乏",
+          "g": "mệt mỏi, uể oải"
+        },
+        {
+          "w": "劳乏",
+          "g": "mệt nhọc vì lao động"
+        }
+      ]
+    },
+    {
+      "root": "摊",
+      "vi": "sạp hàng, bày ra; chia sẻ (gánh)",
+      "members": [
+        {
+          "w": "报摊儿",
+          "g": "sạp bán báo"
+        },
+        {
+          "w": "均摊",
+          "g": "chia đều"
+        },
+        {
+          "w": "分摊",
+          "g": "chia sẻ, phân chia (chi phí, trách nhiệm)"
+        },
+        {
+          "w": "烂摊子",
+          "g": "cục diện bê bối, mớ hỗn độn để lại"
+        },
+        {
+          "w": "收摊儿",
+          "g": "dọn hàng, thu dọn sạp (kết thúc công việc)"
+        }
+      ]
+    },
+    {
+      "root": "叠词 AABB",
+      "vi": "dạng từ láy AABB — nhấn mạnh mức độ/tần suất động tác (không có chữ gốc chung)",
+      "members": [
+        {
+          "w": "来来回回",
+          "g": "đi đi lại lại nhiều lần"
+        },
+        {
+          "w": "打打闹闹",
+          "g": "đùa giỡn ầm ĩ, chành chọe đùa nghịch"
+        },
+        {
+          "w": "进进出出",
+          "g": "ra ra vào vào liên tục"
+        },
+        {
+          "w": "来来往往",
+          "g": "qua lại tấp nập, đi lại nhộn nhịp"
+        },
+        {
+          "w": "拉拉扯扯",
+          "g": "kéo lôi dây dưa (cũng ý quan hệ mập mờ không rõ ràng)"
+        },
+        {
+          "w": "比比划划",
+          "g": "khoa tay múa chân, ra dấu diễn tả"
+        },
+        {
+          "w": "嘻嘻哈哈",
+          "g": "cười đùa vui vẻ, hì hà hì hục"
+        },
+        {
+          "w": "磕磕碰碰",
+          "g": "va vấp lục đục (bất hòa nhỏ nhặt trong quan hệ)"
+        },
+        {
+          "w": "拖拖拉拉",
+          "g": "chần chừ lề mề, dây dưa chậm trễ"
+        }
+      ]
+    },
+    {
+      "root": "眯",
+      "vi": "nheo mắt, híp mắt",
+      "members": [
+        {
+          "w": "眯缝",
+          "g": "nheo mắt, híp mắt lại"
+        },
+        {
+          "w": "笑眯眯",
+          "g": "cười tủm tỉm, cười híp mắt"
+        },
+        {
+          "w": "迷瞪",
+          "g": "lim dim ngái ngủ, mơ màng buồn ngủ"
+        },
+        {
+          "w": "眯着",
+          "g": "nhắm hờ mắt, híp mắt lại"
+        }
+      ]
+    },
+    {
+      "root": "默",
+      "vi": "im lặng, ngầm",
+      "members": [
+        {
+          "w": "默哀",
+          "g": "mặc niệm"
+        },
+        {
+          "w": "默契",
+          "g": "ăn ý, ngầm hiểu nhau"
+        },
+        {
+          "w": "默认",
+          "g": "ngầm công nhận, mặc định"
+        },
+        {
+          "w": "默许",
+          "g": "ngầm cho phép, mặc nhận"
+        },
+        {
+          "w": "默默无言",
+          "g": "lặng thinh không nói, im lặng không lời"
+        }
+      ]
+    }
+  ],
+  "27": [
+    {
+      "root": "兑",
+      "vi": "đổi, quy đổi (tiền tệ)",
+      "members": [
+        {
+          "w": "兑现",
+          "g": "đổi thành tiền mặt; (nghĩa bóng) thực hiện lời hứa"
+        },
+        {
+          "w": "挤兑",
+          "g": "(ngân hàng) rút tiền ồ ạt; (khẩu ngữ) chèn ép, gây khó dễ"
+        },
+        {
+          "w": "汇兑",
+          "g": "chuyển đổi ngoại hối, chuyển tiền"
+        },
+        {
+          "w": "掺兑",
+          "g": "pha trộn, pha loãng (rượu, đồ uống)"
+        }
+      ]
+    },
+    {
+      "root": "妄",
+      "vi": "càn, bừa, vô căn cứ",
+      "members": [
+        {
+          "w": "胆大妄为",
+          "g": "cả gan làm liều, liều lĩnh làm bậy"
+        },
+        {
+          "w": "妄求",
+          "g": "đòi hỏi viển vông, cầu mong hão"
+        },
+        {
+          "w": "妄说",
+          "g": "nói bừa, nói càn"
+        },
+        {
+          "w": "轻举妄动",
+          "g": "hành động khinh suất, làm liều không suy nghĩ"
+        }
+      ]
+    },
+    {
+      "root": "磋",
+      "vi": "bàn bạc, trau dồi",
+      "members": [
+        {
+          "w": "磋商",
+          "g": "bàn bạc, thương lượng"
+        },
+        {
+          "w": "切磋",
+          "g": "trau dồi, học hỏi lẫn nhau"
+        }
+      ]
+    },
+    {
+      "root": "雄",
+      "vi": "hùng, mạnh mẽ",
+      "members": [
+        {
+          "w": "雄兵",
+          "g": "hùng binh, đội quân hùng mạnh"
+        },
+        {
+          "w": "雄伟",
+          "g": "hùng vĩ, to lớn đẹp đẽ"
+        },
+        {
+          "w": "雄健",
+          "g": "khỏe khoắn, mạnh mẽ (dáng đi, văn phong)"
+        },
+        {
+          "w": "雄心",
+          "g": "hùng tâm, chí lớn, hoài bão"
+        },
+        {
+          "w": "雄浑",
+          "g": "hùng hồn, mạnh mẽ phóng khoáng (văn phong, âm thanh, cảnh vật)"
+        },
+        {
+          "w": "雄师",
+          "g": "đội quân hùng mạnh, sư đoàn thiện chiến"
+        }
+      ]
+    },
+    {
+      "root": "履",
+      "vi": "giày; bước đi; thực hiện",
+      "members": [
+        {
+          "w": "步履蹒跚",
+          "g": "bước đi chậm chạp, loạng choạng (già yếu)"
+        },
+        {
+          "w": "履历",
+          "g": "lý lịch, sơ yếu lý lịch"
+        },
+        {
+          "w": "履约",
+          "g": "thực hiện hợp đồng/lời hứa"
+        },
+        {
+          "w": "如履薄冰",
+          "g": "như đi trên băng mỏng (thận trọng, lo sợ)"
+        }
+      ]
+    },
+    {
+      "root": "仪",
+      "vi": "nghi thức, dáng vẻ",
+      "members": [
+        {
+          "w": "威仪",
+          "g": "uy nghi, phong thái oai nghiêm"
+        },
+        {
+          "w": "司仪",
+          "g": "người dẫn chương trình (buổi lễ), MC"
+        },
+        {
+          "w": "礼仪",
+          "g": "lễ nghi, nghi thức"
+        },
+        {
+          "w": "仪表",
+          "g": "dáng vẻ, phong thái, tác phong"
+        },
+        {
+          "w": "贺仪",
+          "g": "quà mừng, lễ vật chúc mừng"
+        }
+      ]
+    },
+    {
+      "root": "撒",
+      "vi": "rải, tung, thả ra; (khẩu ngữ) bộc lộ, giở ra (một hành vi/trạng thái)",
+      "members": [
+        {
+          "w": "撒娇",
+          "g": "làm nũng, nũng nịu"
+        },
+        {
+          "w": "撒手",
+          "g": "buông tay, bỏ mặc, buông xuôi"
+        },
+        {
+          "w": "撒欢儿",
+          "g": "chạy nhảy tung tăng, vui đùa thỏa thích (trẻ con/con vật)"
+        },
+        {
+          "w": "撒泼",
+          "g": "làm ầm ĩ, ăn vạ, giở trò hung dữ"
+        },
+        {
+          "w": "撒气",
+          "g": "trút giận, xả giận"
+        }
+      ]
+    },
+    {
+      "root": "露",
+      "vi": "lộ ra, để lộ",
+      "members": [
+        {
+          "w": "暴露",
+          "g": "phơi bày, để lộ ra"
+        },
+        {
+          "w": "揭露",
+          "g": "vạch trần, phơi bày"
+        },
+        {
+          "w": "流露",
+          "g": "bộc lộ tự nhiên (tình cảm), không cố ý"
+        },
+        {
+          "w": "透露",
+          "g": "tiết lộ, để lộ (thông tin)"
+        },
+        {
+          "w": "吐露",
+          "g": "thổ lộ, giãi bày (tâm sự)"
+        },
+        {
+          "w": "披露",
+          "g": "công bố, tiết lộ (chính thức, trên báo chí)"
+        }
+      ]
+    }
   ]
 }

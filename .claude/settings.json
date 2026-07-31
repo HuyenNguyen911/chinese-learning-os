@@ -8,9 +8,12 @@
       "Bash(pip3 install *)"
     ],
     "allow": [
+      "Bash(cd *)",
       "Bash(python3 *)",
       "Bash(python *)",
-      "Bash(pandoc *)"
+      "Bash(pandoc *)",
+      "Bash(git config --global user.name)",
+      "Bash(git config --global user.email)"
     ]
   }
 }

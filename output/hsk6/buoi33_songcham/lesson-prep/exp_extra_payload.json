@@ -1,0 +1,124 @@
+[
+  {
+    "root": "为",
+    "vi": "vì, làm, coi là",
+    "members": [
+      {"w": "为期", "g": "kéo dài trong khoảng, có thời hạn"},
+      {"w": "为了", "g": "vì, để (mục đích)"},
+      {"w": "作为", "g": "coi là, với tư cách là"},
+      {"w": "为难", "g": "làm khó, gây khó xử"},
+      {"w": "无能为力", "g": "bất lực, không làm được gì"}
+    ]
+  },
+  {
+    "root": "啸",
+    "vi": "rít, gào (âm thanh dài, the thé)",
+    "members": [
+      {"w": "呼啸", "g": "rít lên, gào rú (gió, xe cộ)"},
+      {"w": "海啸", "g": "sóng thần"},
+      {"w": "虎啸", "g": "tiếng hổ gầm"}
+    ]
+  },
+  {
+    "root": "桥",
+    "vi": "cầu",
+    "members": [
+      {"w": "桥梁", "g": "cầu; (nghĩa bóng) cầu nối"},
+      {"w": "立交桥", "g": "cầu vượt"},
+      {"w": "独木桥", "g": "cầu độc mộc (một khúc gỗ)"},
+      {"w": "过河拆桥", "g": "qua cầu rút ván (vô ơn)"}
+    ]
+  },
+  {
+    "root": "梁",
+    "vi": "xà nhà, sống (mũi), trụ cột",
+    "members": [
+      {"w": "脊梁", "g": "xương sống, cột sống"},
+      {"w": "屋梁", "g": "xà nhà"},
+      {"w": "鼻梁", "g": "sống mũi"},
+      {"w": "顶梁柱", "g": "trụ cột (gia đình, tổ chức)"}
+    ]
+  },
+  {
+    "root": "喧",
+    "vi": "ồn ào, huyên náo",
+    "members": [
+      {"w": "喧嚣", "g": "ồn ào, huyên náo"},
+      {"w": "喧哗", "g": "ồn ào, la ó"},
+      {"w": "喧闹", "g": "náo nhiệt, ồn ào"},
+      {"w": "喧宾夺主", "g": "khách lấn chủ (thành ngữ)"}
+    ]
+  },
+  {
+    "root": "哗",
+    "vi": "ồn, xôn xao",
+    "members": [
+      {"w": "喧哗", "g": "ồn ào, la ó"},
+      {"w": "哗然", "g": "xôn xao, ồn lên (dư luận)"},
+      {"w": "哗众取宠", "g": "làm màu để lấy lòng đám đông"}
+    ]
+  },
+  {
+    "root": "顾",
+    "vi": "nhìn lại, đoái hoài, quan tâm",
+    "members": [
+      {"w": "回顾", "g": "nhìn lại, hồi tưởng"},
+      {"w": "后顾之忧", "g": "nỗi lo về sau"},
+      {"w": "奋不顾身", "g": "xả thân, bất chấp nguy hiểm"},
+      {"w": "瞻前顾后", "g": "trước sau đắn đo, do dự"}
+    ]
+  },
+  {
+    "root": "塞",
+    "vi": "tắc, nhét, chặn",
+    "members": [
+      {"w": "闭塞", "g": "bế tắc, hẻo lánh (giao thông/thông tin)"},
+      {"w": "堵塞", "g": "tắc nghẽn"},
+      {"w": "塞车", "g": "kẹt xe"},
+      {"w": "边塞", "g": "biên ải, biên cương"},
+      {"w": "茅塞顿开", "g": "bỗng nhiên vỡ lẽ, sáng tỏ ra"}
+    ]
+  },
+  {
+    "root": "捣",
+    "vi": "giã, quấy, phá",
+    "members": [
+      {"w": "捣乱", "g": "quấy phá, gây rối"},
+      {"w": "捣药", "g": "giã thuốc"},
+      {"w": "捣碎", "g": "giã nát, nghiền nát"},
+      {"w": "捣蛋", "g": "quấy phá, nghịch ngợm"},
+      {"w": "捣毁", "g": "đập phá, phá hủy"}
+    ]
+  },
+  {
+    "root": "狼狈",
+    "vi": "lúng túng, thảm hại",
+    "members": [
+      {"w": "狼狈不堪", "g": "cực kỳ lúng túng, thảm hại"},
+      {"w": "狼狈为奸", "g": "cấu kết làm điều xấu (như sói với nhau)"}
+    ]
+  },
+  {
+    "root": "贤",
+    "vi": "hiền, giỏi, đức độ",
+    "members": [
+      {"w": "贤惠", "g": "hiền thục, đảm đang"},
+      {"w": "贤良", "g": "hiền lương, đức hạnh"},
+      {"w": "贤明", "g": "sáng suốt, anh minh"},
+      {"w": "先贤", "g": "bậc hiền triết đời trước"},
+      {"w": "礼贤下士", "g": "lễ độ, trọng dụng người tài"}
+    ]
+  },
+  {
+    "root": "惠",
+    "vi": "ơn huệ, ưu đãi",
+    "members": [
+      {"w": "优惠", "g": "ưu đãi"},
+      {"w": "互惠", "g": "cùng có lợi, hỗ tương"},
+      {"w": "惠顾", "g": "chiếu cố, ghé mua (khách hàng)"},
+      {"w": "恩惠", "g": "ân huệ"},
+      {"w": "惠赠", "g": "kính tặng, biếu tặng (khiêm nhường)"},
+      {"w": "惠存", "g": "xin lưu giữ (lời đề tặng, khiêm nhường)"}
+    ]
+  }
+]

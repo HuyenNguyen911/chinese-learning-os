@@ -1,0 +1,69 @@
+[
+  {
+    "root": "颠",
+    "vi": "xóc nảy, đảo lộn, lung tung",
+    "members": [
+      {"w": "颠簸", "g": "xóc nảy, chòng chành (xe, thuyền...)"},
+      {"w": "跑跑颠颠", "g": "chạy đôn chạy đáo, tất bật ngược xuôi"},
+      {"w": "颠倒是非", "g": "đảo lộn phải trái, xuyên tạc đúng sai (thành ngữ)"},
+      {"w": "黑白颠倒", "g": "trắng đen đảo lộn (thành ngữ)"},
+      {"w": "神魂颠倒", "g": "mê mẩn tâm thần, mất hồn mất vía vì say mê ai/việc gì (thành ngữ)"},
+      {"w": "颠三倒四", "g": "lộn xộn, nói năng lung tung, trước sau lẫn lộn (thành ngữ)"}
+    ]
+  },
+  {
+    "root": "赠",
+    "vi": "tặng, biếu",
+    "members": [
+      {"w": "转赠", "g": "chuyển tặng (tặng lại cho người khác)"},
+      {"w": "赠品", "g": "quà tặng kèm"},
+      {"w": "赠言", "g": "lời tặng, lời nhắn khi chia tay"},
+      {"w": "捐赠", "g": "quyên tặng, hiến tặng"},
+      {"w": "赠送", "g": "tặng, biếu"}
+    ]
+  },
+  {
+    "root": "搭",
+    "vi": "bắt chuyện, ghép/kết hợp, cùng nhau làm gì",
+    "members": [
+      {"w": "搭茬儿", "g": "nối lời, chen vào nói (khẩu ngữ)"},
+      {"w": "搭腔", "g": "lên tiếng đáp lại"},
+      {"w": "搭话", "g": "bắt chuyện"},
+      {"w": "搭理", "g": "để ý, đáp lại (thường dùng ở dạng phủ định “không thèm để ý”)"},
+      {"w": "搭伙", "g": "góp gạo thổi cơm chung, ăn chung"},
+      {"w": "搭个伴", "g": "làm bạn đồng hành, đi cùng cho có bạn"}
+    ]
+  },
+  {
+    "root": "晶",
+    "vi": "sáng lấp lánh, tinh thể",
+    "members": [
+      {"w": "晶亮", "g": "sáng bóng, sáng loáng"},
+      {"w": "晶莹", "g": "trong suốt lấp lánh"},
+      {"w": "亮晶晶", "g": "sáng lấp lánh (dạng láy)"}
+    ]
+  },
+  {
+    "root": "泛",
+    "vi": "tràn lan, phiếm chỉ, rộng rãi",
+    "members": [
+      {"w": "泛滥", "g": "tràn lan, lũ lụt"},
+      {"w": "泛指", "g": "chỉ chung chung, phiếm chỉ"},
+      {"w": "泛称", "g": "gọi chung là"},
+      {"w": "广泛", "g": "rộng rãi, rộng khắp"},
+      {"w": "泛读", "g": "đọc lướt, đọc mở rộng (extensive reading)"},
+      {"w": "泛泛", "g": "qua loa, sơ sài, chung chung"}
+    ]
+  },
+  {
+    "root": "滥",
+    "vi": "lạm, bừa bãi, quá mức",
+    "members": [
+      {"w": "滥收费", "g": "thu phí bừa bãi, lạm thu"},
+      {"w": "宁缺毋滥", "g": "thà thiếu còn hơn lạm dụng, thà không có còn hơn có bừa (thành ngữ)"},
+      {"w": "滥调", "g": "luận điệu sáo rỗng, cũ rích"},
+      {"w": "陈词滥调", "g": "lời sáo rỗng, luận điệu cũ rích (thành ngữ)"},
+      {"w": "滥用职权", "g": "lạm dụng chức quyền"}
+    ]
+  }
+]

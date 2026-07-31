@@ -1,0 +1,50 @@
+[
+  {
+    "root": "魄",
+    "vi": "hồn phách; (nghĩa mở rộng) khí phách, khí thế",
+    "members": [
+      {"w": "失魂落魄", "g": "mất hồn mất vía, hoảng loạn, mất bình tĩnh (thành ngữ)"},
+      {"w": "惊心动魄", "g": "kinh tâm động phách, gây chấn động lòng người (thành ngữ)"},
+      {"w": "气魄", "g": "khí phách, khí thế mạnh mẽ"}
+    ]
+  },
+  {
+    "root": "阔",
+    "vi": "rộng, khoáng đạt; (khẩu ngữ) giàu có, sang trọng",
+    "members": [
+      {"w": "阔人", "g": "người giàu có"},
+      {"w": "阔", "g": "giàu có (cách nói khẩu ngữ)"},
+      {"w": "摆阔", "g": "phô trương sự giàu có, ra vẻ nhà giàu"},
+      {"w": "阔气", "g": "sang trọng, hào phóng, ra dáng giàu có"}
+    ]
+  },
+  {
+    "root": "塌",
+    "vi": "sập, đổ; (nghĩa mở rộng) yên tâm, ổn định",
+    "members": [
+      {"w": "死心塌地", "g": "một lòng một dạ, cam tâm tình nguyện, trung thành tuyệt đối (thành ngữ)"},
+      {"w": "倒塌", "g": "sụp đổ, đổ sập (nhà cửa, công trình)"},
+      {"w": "塌方", "g": "sạt lở đất, sập hầm/đường"},
+      {"w": "塌心", "g": "yên tâm, an lòng (cách nói khẩu ngữ vùng miền)"}
+    ]
+  },
+  {
+    "root": "鄙",
+    "vi": "thấp kém, hèn hạ; khinh thường, coi rẻ",
+    "members": [
+      {"w": "鄙俗", "g": "thô tục, tầm thường, quê mùa"},
+      {"w": "卑鄙", "g": "đê tiện, ti tiện, bỉ ổi"},
+      {"w": "粗鄙", "g": "thô lỗ, thô tục"},
+      {"w": "可鄙", "g": "đáng khinh, đáng chê trách"}
+    ]
+  },
+  {
+    "root": "讥",
+    "vi": "chế giễu, châm biếm, mỉa mai",
+    "members": [
+      {"w": "讥嘲", "g": "chế giễu, giễu cợt"},
+      {"w": "讥刺", "g": "châm biếm, mỉa mai sâu cay"},
+      {"w": "讥讽", "g": "giễu cợt, châm biếm"}
+    ]
+  }
+]

@@ -115,8 +115,8 @@
 
 ### 生词拓展
 
-- **谅**: 体谅 tǐliàng · 谅解 liàngjiě · 见谅 jiànliàng · 原谅 yuánliàng · 互谅 hùliàng (互谅互让)
-- **埋**: 埋怨 mányuàn · 埋伏 máifú · 埋没 máimò · 埋葬 máizàng
+- **谅** (thông cảm, tha thứ, lượng thứ): 体谅 tǐliàng〖thông cảm, thấu hiểu (hoàn cảnh người khác)〗 · 谅解 liàngjiě〖thông cảm, lượng thứ〗 · 见谅 jiànliàng〖xin thứ lỗi, mong lượng thứ〗 · 原谅 yuánliàng〖tha thứ〗 · 互谅互让 hùliànghùràng〖cùng thông cảm nhường nhịn lẫn nhau (thành ngữ)〗
+- **埋** (chôn, vùi lấp): 埋怨 mányuàn〖oán trách, phàn nàn〗 · 埋伏 máifú〖mai phục, phục kích〗 · 埋没 máimò〖chôn vùi, mai một (tài năng)〗 · 埋葬 máizàng〖chôn cất, mai táng〗
 - **宠**: 宠爱 chǒng'ài · 宠儿 chǒng'ér · 得宠 déchǒng · 失宠 shīchǒng · 受宠若惊 shòuchǒngruòjīng
 - **染**: 染色素 rǎnsèsù · 染色 rǎnsè · 染病 rǎnbìng · 一尘不染 yīchénbùrǎn
 - **恋**: 恋家 liànjiā · 恋恋不舍 liànliànbùshě · 留恋 liúliàn · 迷恋 míliàn · 恋爱 liàn'ài
@@ -176,15 +176,15 @@
 
 ### 生词拓展
 
-- **迎**: 共迎新春 gòngyíngxīnchūn · 送旧迎新 sòngjiùyíngxīn · 迎面 yíngmiàn · 迎刃而解 yíngrèn'érjiě
-- **搓**: 搓手 cuōshǒu · 搓洗 cuōxǐ · 揉搓 róucuō
-- **饱**: 饱含水分 bǎohánshuǐfèn · 饱经风霜 bǎojīngfēngshuāng · 饱读诗书 bǎodúshīshū
-- **朴**: 朴素 pǔsù · 淳朴 chúnpǔ · 古朴 gǔpǔ · 朴实 pǔshí · 简朴 jiǎnpǔ
-- **誉**: 信誉 xìnyù · 名誉 míngyù · 声誉 shēngyù · 荣誉 róngyù · 过誉 guòyù · 赞誉 zànyù
-- **干**: 白干 báigàn · 干劲 gànjìn · 单干 dāngàn · 傻干 shǎgàn · 骨干 gǔgàn · 树干 shùgàn
-- **负**: 负担 fùdān · 担负 dānfù · 肩负 jiānfù · 忍辱负重 rěnrǔfùzhòng · 背负 bēifù
-- **悦**: 和颜悦色 héyányuèsè · 喜悦 xǐyuè · 愉悦 yúyuè · 取悦 qǔyuè · 心悦诚服 xīnyuèchéngfú
-- **⇄ so sánh**: 迟疑 chíyí (Chíyí) và 犹豫 (Yóuyù)
+- **迎** (đón, nghênh đón): 共迎新春 gòngyíngxīnchūn〖cùng đón xuân mới〗 · 送旧迎新 sòngjiùyíngxīn〖tiễn cũ đón mới (thành ngữ, ý đổi mới)〗 · 迎面 yíngmiàn〖đối diện, ngay trước mặt (đi tới)〗 · 迎刃而解 yíngrèn'érjiě〖giải quyết dễ dàng như dao chẻ tre (thành ngữ)〗
+- **搓** (xoa, vò, chà xát): 搓手 cuōshǒu〖xoa tay〗 · 搓洗 cuōxǐ〖vò giặt (quần áo)〗 · 揉搓 róucuō〖vò, nhào nặn, chà xát〗
+- **饱** (no, đầy, trải qua nhiều): 饱含水分 bǎohánshuǐfèn〖chứa đầy nước, hàm lượng nước cao〗 · 饱经风霜 bǎojīngfēngshuāng〖từng trải phong sương, dày dạn gió sương (thành ngữ)〗 · 饱读诗书 bǎodúshīshū〖đọc rộng sách vở, học rộng biết nhiều (thành ngữ)〗
+- **朴** (chất phác, mộc mạc): 朴素 pǔsù〖giản dị, mộc mạc〗 · 淳朴 chúnpǔ〖thuần phác, chất phác〗 · 古朴 gǔpǔ〖cổ kính, chất phác〗 · 朴实 pǔshí〖chất phác, thật thà〗 · 简朴 jiǎnpǔ〖giản dị, đơn sơ〗
+- **誉** (danh dự, danh tiếng, khen ngợi): 信誉 xìnyù〖uy tín, chữ tín〗 · 名誉 míngyù〖danh dự, danh tiếng〗 · 声誉 shēngyù〖thanh danh, tiếng tăm〗 · 荣誉 róngyù〖vinh dự, vinh quang〗 · 过誉 guòyù〖khen quá lời, quá khen〗 · 赞誉 zànyù〖khen ngợi, tán dương〗
+- **干** (làm (việc); thân, cán): 白干 báigàn〖làm công cốc, uổng công〗 · 干劲 gànjìn〖nhiệt huyết, khí thế hăng say làm việc〗 · 单干 dāngàn〖làm ăn riêng lẻ, đơn độc làm việc〗 · 傻干 shǎgàn〖làm liều, làm mù quáng không suy nghĩ〗 · 骨干 gǔgàn〖cốt cán, nòng cốt〗 · 树干 shùgàn〖thân cây〗
+- **负** (gánh vác, chịu trách nhiệm): 负担 fùdān〖gánh nặng; đảm đương〗 · 担负 dānfù〖gánh vác, đảm nhận〗 · 肩负 jiānfù〖gánh vác (trên vai), đảm đương〗 · 忍辱负重 rěnrǔfùzhòng〖nhẫn nhục chịu đựng trọng trách (thành ngữ)〗 · 背负 bēifù〖cõng, gánh vác (trách nhiệm)〗
+- **悦** (vui vẻ, hài lòng): 和颜悦色 héyányuèsè〖nét mặt hòa nhã vui vẻ (thành ngữ)〗 · 喜悦 xǐyuè〖vui mừng, hân hoan〗 · 愉悦 yúyuè〖vui vẻ, dễ chịu〗 · 取悦 qǔyuè〖lấy lòng, làm vừa lòng〗 · 心悦诚服 xīnyuèchéngfú〖thật lòng khâm phục, tâm phục khẩu phục (thành ngữ)〗
+- **⇄ so sánh**: 迟疑 chíyí〖chần chừ, do dự (nhất thời, thiếu quyết đoán)〗 · 犹豫 yóuyù〖do dự, lưỡng lự (phân vân giữa các lựa chọn)〗
 
 ## Bài 4 — 完美的胜利
 
@@ -254,18 +254,18 @@
 
 ### 生词拓展
 
-- **厌**: 厌烦 yànfán · 厌倦 yànjuàn · 厌世 yànshì · 贪得无厌 tāndéwúyàn · 学而不厌 xué'érbùyàn
-- **恶**: 好恶 hàowù · 恶心 ěxīn · 可恶 kěwù · 厌恶 yànwù
-- **诺**: 允诺 yǔnnuò · 许诺 xǔnuò · 承诺 chéngnuò · 一诺千金 yínuòqiānjīn · 诺言 nuòyán
-- **乘**: 乘务员 chéngwùyuán · 有机可乘 yǒujīkěchéng · 乘凉 chéngliáng · 乘机 chéngjī · 乘虚而入 chéngxū'érrù
-- **饶**: 求饶 qiúráo · 饶恕 ráoshù · 富饶 fùráo · 丰饶 fēngráo
-- **恕**: 饶恕 ráoshù · 宽恕 kuānshù · 恕罪 shùzuì · 恕难从命 shùnáncóngmìng
-- **盲**: 盲文 mángwén · 夜盲 yèmáng · 盲目 mángmù · 色盲 sèmáng · 盲人摸象 mángrénmōxiàng
-- **⇄ so sánh**: 正好 zhènghǎo vs 恰巧
-- **举**: 举家 jǔjiā · 举国 jǔguó · 举世 jǔshì · 举世闻名 jǔshìwénmíng · 举世瞩目 jǔshìzhǔmù
-- **瞩**: 瞩目 zhǔmù · 高瞻远瞩 gāozhānyuǎnzhǔ
-- **窜**: 抱头鼠窜 bàotóushǔcuàn · 东奔西窜 dōngbēnxīcuàn · 逃窜 táocuàn · 窜改 cuàngǎi
-- **锋**: 笔锋 bǐfēng · 锋利 fēnglì · 词锋 cífēng · 针锋相对 zhēnfēngxiāngduì · 锋芒 fēngmáng
+- **厌** (chán ghét, chán): 厌烦 yànfán〖chán ghét, phiền chán〗 · 厌倦 yànjuàn〖chán nản, mệt mỏi (với việc lặp đi lặp lại)〗 · 厌世 yànshì〖chán đời, yếm thế〗 · 贪得无厌 tāndéwúyàn〖tham lam vô độ (thành ngữ)〗 · 学而不厌 xué'érbùyàn〖học không biết chán (thành ngữ)〗
+- **恶** (xấu, ác, ghét): 好恶 hàowù〖sự yêu ghét, thích và không thích〗 · 恶心 ěxīn〖buồn nôn, kinh tởm〗 · 可恶 kěwù〖đáng ghét, đáng ghê tởm〗 · 厌恶 yànwù〖chán ghét, ghê tởm〗
+- **诺** (hứa, lời hứa): 允诺 yǔnnuò〖ưng thuận, hứa hẹn〗 · 许诺 xǔnuò〖hứa hẹn〗 · 承诺 chéngnuò〖cam kết, hứa〗 · 一诺千金 yínuòqiānjīn〖một lời hứa đáng giá ngàn vàng (thành ngữ, giữ chữ tín)〗 · 诺言 nuòyán〖lời hứa〗
+- **乘** (đi (xe); nhân lúc, lợi dụng): 乘务员 chéngwùyuán〖nhân viên phục vụ (trên tàu, xe)〗 · 有机可乘 yǒujīkěchéng〖có cơ hội để lợi dụng (thành ngữ)〗 · 乘凉 chéngliáng〖hóng mát〗 · 乘机 chéngjī〖nhân cơ hội, thừa dịp〗 · 乘虚而入 chéngxū'érrù〖thừa lúc sơ hở mà xâm nhập (thành ngữ)〗
+- **饶** (tha thứ; phong phú, giàu có): 求饶 qiúráo〖cầu xin tha thứ, van xin tha mạng〗 · 饶恕 ráoshù〖tha thứ, khoan dung〗 · 富饶 fùráo〖giàu có, trù phú (đất đai)〗 · 丰饶 fēngráo〖phong phú, màu mỡ〗
+- **恕** (tha thứ, khoan thứ): 饶恕 ráoshù〖tha thứ, khoan dung〗 · 宽恕 kuānshù〖khoan thứ, tha thứ〗 · 恕罪 shùzuì〖tha tội, xá tội〗 · 恕难从命 shùnáncóngmìng〖xin lỗi khó mà tuân theo được (cách nói lịch sự khi từ chối)〗
+- **盲** (mù): 盲文 mángwén〖chữ nổi (Braille)〗 · 夜盲 yèmáng〖quáng gà, mù đêm〗 · 盲目 mángmù〖mù quáng〗 · 色盲 sèmáng〖mù màu〗 · 盲人摸象 mángrénmōxiàng〖thầy bói xem voi (thành ngữ, phán đoán phiến diện)〗
+- **⇄ so sánh**: 正好 zhènghǎo〖vừa vặn, đúng lúc (nhấn mạnh mức độ/thời điểm trùng hợp)〗 · 恰巧 qiàqiǎo〖vừa khéo, tình cờ (nhấn mạnh sự ngẫu nhiên)〗
+- **举** (cả, toàn thể; nâng lên): 举家 jǔjiā〖cả nhà, toàn gia đình〗 · 举国 jǔguó〖cả nước, toàn quốc〗 · 举世 jǔshì〖cả thế giới〗 · 举世闻名 jǔshìwénmíng〖nổi tiếng khắp thế giới (thành ngữ)〗 · 举世瞩目 jǔshìzhǔmù〖cả thế giới chú ý tới (thành ngữ)〗
+- **瞩** (nhìn, chú mục): 瞩目 zhǔmù〖chú mục, chú ý nhìn vào〗 · 高瞻远瞩 gāozhānyuǎnzhǔ〖nhìn xa trông rộng (thành ngữ)〗
+- **窜** (chạy trốn; sửa đổi (lén lút)): 抱头鼠窜 bàotóushǔcuàn〖ôm đầu chạy trốn như chuột (thành ngữ)〗 · 东奔西窜 dōngbēnxīcuàn〖chạy trốn tán loạn khắp nơi (thành ngữ)〗 · 逃窜 táocuàn〖chạy trốn, tháo chạy〗 · 窜改 cuàngǎi〖sửa đổi lén lút, xuyên tạc (văn bản)〗
+- **锋** (mũi nhọn, sắc bén): 笔锋 bǐfēng〖nét bút, văn phong sắc sảo〗 · 锋利 fēnglì〖sắc bén, sắc sảo〗 · 词锋 cífēng〖lời lẽ sắc bén (khi tranh luận)〗 · 针锋相对 zhēnfēngxiāngduì〖đối đầu gay gắt, kim đối kim (thành ngữ)〗 · 锋芒 fēngmáng〖mũi nhọn, sự sắc sảo bộc lộ ra ngoài〗
 
 ## Bài 5 — 学一门外语需要理由吗？
 
@@ -324,13 +324,13 @@
 
 ### 生词拓展
 
-- **迫**: 强迫 qiǎngpò · 迫不得已 pòbùdéyǐ · 极寒交迫 jíhánjiāopò · 迫切 pòqiè · 急迫 jípò · 迫近 pòjìn
-- **涉**: 干涉 gānshè · 牵涉 qiānshè · 涉及 shèjí · 涉险 shèxiǎn · 跋山涉水 báshānshèshuǐ
-- **⇄ so sánh**: 专门 zhuānmén vs 专程
-- **缓**: 缓期 huǎnqī · 刻不容缓 kèbùrónghuǎn · 缓解 huǎnjiě · 缓和 huǎnhé · 平缓 pínghuǎn · 缓慢 huǎnmàn · 迟缓 chíhuǎn
-- **崩**: 崩伤 bēngshāng · 崩溃 bēngkuì · 山崩 shānbēng · 土崩瓦解 tǔbēngwǎjiě · 谈崩 tánbēng · 分崩离析 fēnbēnglíxī
-- **溃**: 溃决 kuìjué · 溃败 kuìbài · 溃不成军 kuìbùchéngjūn · 崩溃 bēngkuì · 溃烂 kuìlàn · 溃疡 kuìyáng
-- **搁**: 搁 gē · 搁笔 gēbǐ · 搁浅 gēqiǎn · 搁置 gēzhì · 耽搁 dāngē
+- **迫** (bức bách, ép buộc): 强迫 qiǎngpò〖ép buộc, cưỡng bức〗 · 迫不得已 pòbùdéyǐ〖bất đắc dĩ, không còn cách nào khác (thành ngữ)〗 · 极寒交迫 jíhánjiāopò〖(nghi là biến thể của 饥寒交迫) đói rét bức bách cùng lúc — cần kiểm tra lại chính tả gốc〗 · 迫切 pòqiè〖cấp bách, khẩn thiết〗 · 急迫 jípò〖gấp gáp, cấp bách〗 · 迫近 pòjìn〖đến gần, áp sát (thời gian/khoảng cách)〗
+- **涉** (liên quan; lội qua): 干涉 gānshè〖can thiệp, can dự〗 · 牵涉 qiānshè〖liên quan, dính líu〗 · 涉及 shèjí〖liên quan đến, đề cập đến〗 · 涉险 shèxiǎn〖gặp nguy hiểm, mạo hiểm〗 · 跋山涉水 báshānshèshuǐ〖trèo đèo lội suối (thành ngữ)〗
+- **⇄ so sánh**: 专门 zhuānmén〖chuyên môn, chuyên về (một lĩnh vực/mục đích)〗 · 专程 zhuānchéng〖đặc biệt đi (chuyến đi) chỉ vì mục đích đó〗
+- **缓** (chậm, hoãn, dịu): 缓期 huǎnqī〖hoãn kỳ hạn, gia hạn〗 · 刻不容缓 kèbùrónghuǎn〖cấp bách không thể trì hoãn (thành ngữ)〗 · 缓解 huǎnjiě〖giảm nhẹ, làm dịu〗 · 缓和 huǎnhé〖hòa hoãn, dịu bớt〗 · 平缓 pínghuǎn〖bằng phẳng, êm dịu (dốc thoải, nhịp độ chậm)〗 · 缓慢 huǎnmàn〖chậm chạp〗 · 迟缓 chíhuǎn〖chậm trễ, chậm chạp〗
+- **崩** (sụp đổ, vỡ): 崩伤 bēngshāng〖(nghi vấn — không phải từ chuẩn thường gặp, có thể là lỗi chính tả của 崩塌: sụp lở; cần kiểm tra lại từ gốc)〗 · 崩溃 bēngkuì〖sụp đổ, suy sụp〗 · 山崩 shānbēng〖núi lở, lở núi〗 · 土崩瓦解 tǔbēngwǎjiě〖đổ vỡ tan rã (thành ngữ, như đất lở ngói tan)〗 · 谈崩 tánbēng〖đàm phán/nói chuyện đổ vỡ, không thành〗 · 分崩离析 fēnbēnglíxī〖tan rã, ly tán (thành ngữ)〗
+- **溃** (vỡ, lở loét, tan tác): 溃决 kuìjué〖(đê) vỡ, bung vỡ〗 · 溃败 kuìbài〖thua tan tác, tan rã (quân đội)〗 · 溃不成军 kuìbùchéngjūn〖thua tan tác, không còn đội ngũ (thành ngữ)〗 · 崩溃 bēngkuì〖sụp đổ, suy sụp〗 · 溃烂 kuìlàn〖lở loét, thối rữa (vết thương)〗 · 溃疡 kuìyáng〖loét (y học, vd loét dạ dày)〗
+- **搁** (đặt, để; gác lại, mắc cạn): 搁笔 gēbǐ〖gác bút, ngừng viết〗 · 搁浅 gēqiǎn〖mắc cạn (tàu thuyền); việc bị đình trệ〗 · 搁置 gēzhì〖gác lại, để đó〗 · 耽搁 dāngē〖trì hoãn, chậm trễ〗
 
 ## Bài 6 — 当好职场插班生
 
@@ -409,14 +409,14 @@
 
 ### 生词拓展
 
-- **就**: 就职 jiùzhí · 就位 jiùwèi · 就业 jiùyè · 就餐 jiùcān · 高就 gāojiù · 屈就 qūjiù · 就学 jiùxué
-- **溜**: 光溜 guāngliū · 溜光 liūguāng · 溜冰 liūbīng · 出溜 chūliū · 开溜 kāiliū · 溜走 liūzǒu · 溜达 liūdá
-- **⇄ so sánh**: 创立 chuànglì vs 创办
-- **赴**: 赴汤蹈火 fùtāngdǎohuǒ · 赴宴 fùyàn · 前赴后继 qiánfùhòujì · 开赴 kāifù · 赴会 fùhuì · 奔赴 bēnfù
-- **怠**: 懈怠 xièdài · 怠工 dàigōng · 怠慢 dàimàn
-- **碌**: 庸庸碌碌 yōngyōnglùlù · 庸碌 yōnglù · 碌碌无为 lùlùwúwéi · 劳碌 láolù · 忙碌 mánglù
-- **凑**: 东拼西凑 dōngpīnxīcòu · 凑 còu · 凑数 còushù · 拼凑 pīncòu · 凑巧 còuqiǎo · 凑趣 còuqù · 凑热闹 còurènào · 凑近 còujìn
-- **授**: 授予 shòuyǔ · 授粉 shòufěn · 授课 shòukè · 面授 miànshòu · 授意 shòuyì · 传授 chuánshòu
+- **就** (đảm nhận, đi đến, tới): 就职 jiùzhí〖nhậm chức〗 · 就位 jiùwèi〖vào vị trí, an tọa〗 · 就业 jiùyè〖có việc làm, đi làm〗 · 就餐 jiùcān〖dùng bữa, ăn cơm〗 · 高就 gāojiù〖(kính ngữ) làm việc ở nơi cao sang, chuyển công tác tốt hơn〗 · 屈就 qūjiù〖hạ mình nhận (chức vụ thấp hơn khả năng), khiêm nhường nhận lời〗 · 就学 jiùxué〖đi học, nhập học〗
+- **溜** (trơn, trượt, lẻn đi): 光溜 guāngliū〖trơn nhẵn, trơn tru〗 · 溜光 liūguāng〖nhẵn bóng, trơn láng〗 · 溜冰 liūbīng〖trượt băng〗 · 出溜 chūliū〖trượt đi, tuột đi〗 · 开溜 kāiliū〖lẻn đi, chuồn mất〗 · 溜走 liūzǒu〖lẻn đi mất, trốn đi〗 · 溜达 liūdá〖đi dạo, tản bộ〗
+- **⇄ so sánh**: 创立 chuànglì〖sáng lập, thành lập (tổ chức, học thuyết — trang trọng)〗 · 创办 chuàngbàn〖sáng lập, mở ra (trường học, doanh nghiệp — nhấn mạnh hành động gây dựng)〗
+- **赴** (đi đến, tới (nơi nào đó)): 赴汤蹈火 fùtāngdǎohuǒ〖xông pha nước sôi lửa bỏng (thành ngữ, không ngại hiểm nguy)〗 · 赴宴 fùyàn〖đi dự tiệc〗 · 前赴后继 qiánfùhòujì〖người trước ngã người sau tiến lên (thành ngữ)〗 · 开赴 kāifù〖tiến về, kéo tới (quân đội, đoàn người)〗 · 赴会 fùhuì〖đi họp, dự họp〗 · 奔赴 bēnfù〖gấp rút tiến tới, lao tới〗
+- **怠** (lười biếng, chểnh mảng): 懈怠 xièdài〖lười biếng, chểnh mảng, buông lỏng〗 · 怠工 dàigōng〖lãn công〗 · 怠慢 dàimàn〖thờ ơ, lơ là, thất lễ (với khách)〗
+- **碌** (bận rộn, tầm thường): 庸庸碌碌 yōngyōnglùlù〖tầm thường vô vị, sống mờ nhạt (thành ngữ)〗 · 庸碌 yōnglù〖tầm thường, không có tài cán〗 · 碌碌无为 lùlùwúwéi〖bận rộn mà chẳng làm nên trò trống gì (thành ngữ)〗 · 劳碌 láolù〖vất vả bận rộn〗 · 忙碌 mánglù〖bận rộn〗
+- **凑** (gom góp, tụ lại): 东拼西凑 dōngpīnxīcòu〖chắp vá góp nhặt lung tung (thành ngữ)〗 · 凑数 còushù〖góp cho đủ số, cho có (chất lượng kém)〗 · 拼凑 pīncòu〖chắp vá, ghép nhặt〗 · 凑巧 còuqiǎo〖tình cờ, may sao lại đúng lúc〗 · 凑趣 còuqù〖góp vui, phụ họa cho vui〗 · 凑热闹 còurènào〖xem/góp cho vui náo nhiệt, ăn theo phong trào〗 · 凑近 còujìn〖xích lại gần, ghé sát vào〗
+- **授** (trao, dạy, truyền): 授予 shòuyǔ〖trao tặng, ban cho (danh hiệu, bằng khen)〗 · 授粉 shòufěn〖thụ phấn〗 · 授课 shòukè〖giảng dạy, lên lớp〗 · 面授 miànshòu〖dạy trực tiếp, truyền đạt trực tiếp〗 · 授意 shòuyì〖ngầm gợi ý, ngầm chỉ đạo〗 · 传授 chuánshòu〖truyền thụ, truyền dạy〗
 
 ## Bài 7 — 我的人生我做主
 
@@ -465,16 +465,16 @@
 
 ### 生词拓展
 
-- **畏**: 畏惧 wèijù · 畏罪 wèizuì · 畏罪 wèizuì · 畏首畏尾 wèishǒuwèiwěi
-- **挫**: 挫败 cuòbài · 受挫 shòucuò · 顿挫 dùncuò · 抑扬顿挫 yìyángdùncuò
-- **躁**: 躁动 zàodòng · 烦躁 fánzào · 暴躁 bàozào · 浮躁 fúzào · 急躁 jízào · 焦躁 jiāozào
-- **擅**: 擅自 shànzì · 擅长 shàncháng · 擅于 shànyú
-- **燥**: 干燥 gānzào · 燥热 zàorè · 枯燥 kūzào · 口干舌燥 kǒugānshézào
-- **重**: 顾虑重重 gùlǜchóngchóng · 困难重重 kùnnánchóngchóng · 心事重重 xīnshìchóngchóng
-- **确**: 确诊 quèzhěn · 确立 quèlì · 确保 quèbǎo · 确切 quèqiè · 的确 díquè · 确信 quèxìn
-- **悔**: 忏悔 chànhuǐ · 悔改 huǐgǎi · 悔过 huǐguò · 后悔 hòuhuǐ · 反悔 fǎnhuǐ
-- **昔**: 昔年 xīnián · 昔日 xīrì · 今昔 jīnxī · 往昔 wǎngxī · 抚今追昔 fǔjīnzhuīxī
-- **稳**: 沉稳 chénwěn · 稳重 wěnzhòng · 平稳 píngwěn · 安稳 ānwěn · 四平八稳 sìpíngbāwěn
+- **畏** (sợ, sợ hãi, e sợ): 畏惧 wèijù〖sợ hãi, khiếp sợ〗 · 畏罪 wèizuì〖sợ tội, sợ bị trừng phạt vì tội đã phạm〗 · 畏罪 wèizuì〖sợ tội, sợ bị trừng phạt vì tội đã phạm〗 · 畏首畏尾 wèishǒuwèiwěi〖sợ đầu sợ đuôi, nhút nhát rụt rè, do dự vì sợ hãi (thành ngữ)〗
+- **挫** (thất bại, trở ngại, vấp váp): 挫败 cuòbài〖đánh bại, làm thất bại; sự thất bại, trở ngại〗 · 受挫 shòucuò〖bị thất bại, gặp trở ngại〗 · 顿挫 dùncuò〖ngắt nhịp, trầm bổng (giọng điệu, âm nhạc)〗 · 抑扬顿挫 yìyángdùncuò〖(giọng nói/nhạc) lên xuống trầm bổng du dương (thành ngữ)〗
+- **躁** (nóng nảy, bồn chồn, sốt ruột): 躁动 zàodòng〖xáo động, náo động, bồn chồn không yên〗 · 烦躁 fánzào〖bực bội, bồn chồn khó chịu〗 · 暴躁 bàozào〖nóng nảy, cục cằn (tính khí)〗 · 浮躁 fúzào〖hấp tấp, nông nổi, bộp chộp〗 · 急躁 jízào〖nóng vội, nôn nóng〗 · 焦躁 jiāozào〖sốt ruột, lo lắng bồn chồn〗
+- **擅** (tự tiện; giỏi về): 擅自 shànzì〖tự tiện, tự ý (làm gì mà không xin phép)〗 · 擅长 shàncháng〖giỏi, sở trường về〗 · 擅于 shànyú〖giỏi về, thạo về (= 擅长于)〗
+- **燥** (khô, khô ráo): 干燥 gānzào〖khô, khô ráo〗 · 燥热 zàorè〖oi bức, nóng bức khó chịu〗 · 枯燥 kūzào〖khô khan, nhàm chán〗 · 口干舌燥 kǒugānshézào〖khô miệng khô lưỡi (do nói nhiều/khát nước)〗
+- **重重** (chồng chất, đầy ắp (nhấn mạnh mức độ nhiều, đứng sau danh từ)): 顾虑重重 gùlǜchóngchóng〖đầy rẫy lo lắng, lo lắng chồng chất〗 · 困难重重 kùnnánchóngchóng〖khó khăn chồng chất〗 · 心事重重 xīnshìchóngchóng〖tâm sự nặng nề, ưu tư trĩu nặng〗
+- **确** (chắc chắn, xác thực): 确诊 quèzhěn〖chẩn đoán xác định (bệnh)〗 · 确立 quèlì〖xác lập, thiết lập vững chắc〗 · 确保 quèbǎo〖đảm bảo chắc chắn〗 · 确切 quèqiè〖xác đáng, chính xác rõ ràng〗 · 的确 díquè〖quả thực, đích thực〗 · 确信 quèxìn〖tin chắc, tin tưởng chắc chắn〗
+- **悔** (hối hận, ăn năn): 忏悔 chànhuǐ〖sám hối, ăn năn〗 · 悔改 huǐgǎi〖hối cải, sửa đổi〗 · 悔过 huǐguò〖hối lỗi, nhận lỗi〗 · 后悔 hòuhuǐ〖hối hận〗 · 反悔 fǎnhuǐ〖nuốt lời, hối lại (đổi ý sau khi đã hứa/quyết định)〗
+- **昔** (xưa, ngày trước): 昔年 xīnián〖những năm xưa, ngày trước〗 · 昔日 xīrì〖ngày xưa, trước đây〗 · 今昔 jīnxī〖xưa và nay〗 · 往昔 wǎngxī〖dĩ vãng, ngày trước〗 · 抚今追昔 fǔjīnzhuīxī〖ôn chuyện xưa nhớ chuyện nay, hoài niệm quá khứ (thành ngữ)〗
+- **稳** (ổn định, vững vàng): 沉稳 chénwěn〖trầm tĩnh, chín chắn〗 · 稳重 wěnzhòng〖chín chắn, đứng đắn〗 · 平稳 píngwěn〖bình ổn, êm ả〗 · 安稳 ānwěn〖yên ổn, an toàn〗 · 四平八稳 sìpíngbāwěn〖ổn thỏa mọi bề; (nghĩa xấu) cẩn thận thái quá, máy móc (thành ngữ)〗
 
 ## Bài 8 — 遇到原来的我
 
@@ -525,15 +525,15 @@
 
 ### 生词拓展
 
-- **疤**: 疮疤 chuāngbā · 刀疤 dāobā · 伤疤 shāngbā
-- **信**: 失信 shīxìn · 守信 shǒuxìn · 可信 kěxìn · 亲信 qīnxìn · 信守 xìnshǒu
-- **呈**: 呈露 chénglù · 呈上 chéngshàng · 呈报 chéngbào · 呈递 chéngdì · 呈请 chéngqǐng
-- **阐**: 阐明 chǎnmíng · 阐发 chǎnfā · 阐释 chǎnshì
-- **抒**: 抒发 shūfā · 抒情 shūqíng · 抒写 shūxiě · 直抒胸臆 zhíshūxiōngyì
-- **惩**: 惩治 chéngzhì · 严惩不贷 yánchéngbùdài · 奖惩 jiǎngchéng
-- **忧**: 担忧 dānyōu · 忧心如焚 yōuxīnrúfén · 忧愁 yōuchóu · 无忧无虑 wúyōuwúlǜ
-- **昏**: 发昏 fāhūn · 昏睡 hūnshuì · 昏庸 hūnyōng · 头昏脑涨 tóuhūnnǎozhàng
-- **索**: 绳索 shéngsuǒ · 线索 xiànsuǒ · 摸索 mōsuǒ · 探索 tànsuǒ · 索取 suǒqǔ · 索引 suǒyǐn
+- **疤** (sẹo, vết sẹo): 疮疤 chuāngbā〖vết sẹo (do mụn nhọt/lở loét); nghĩa bóng: chuyện xấu hổ cũ〗 · 刀疤 dāobā〖sẹo do dao chém/cắt〗 · 伤疤 shāngbā〖vết sẹo (do vết thương)〗
+- **信** (tin, chữ tín, tin tưởng): 失信 shīxìn〖thất tín, mất lòng tin (không giữ lời hứa)〗 · 守信 shǒuxìn〖giữ chữ tín, giữ lời hứa〗 · 可信 kěxìn〖đáng tin〗 · 亲信 qīnxìn〖người thân tín, tay chân tin cẩn〗 · 信守 xìnshǒu〖tuân thủ, giữ đúng (lời hứa/cam kết)〗
+- **呈** (trình, dâng, biểu hiện): 呈露 chénglù〖bộc lộ, biểu hiện ra〗 · 呈上 chéngshàng〖dâng lên, trình lên〗 · 呈报 chéngbào〖trình báo (lên cấp trên)〗 · 呈递 chéngdì〖đệ trình, trình nộp〗 · 呈请 chéngqǐng〖trình xin, đệ đơn xin〗
+- **阐** (trình bày rõ, giải thích, thuyết minh): 阐明 chǎnmíng〖trình bày rõ, làm sáng tỏ〗 · 阐发 chǎnfā〖trình bày phát triển (ý tưởng), luận giải sâu thêm〗 · 阐释 chǎnshì〖giải thích, luận giải〗
+- **抒** (bày tỏ, giãi bày (tình cảm)): 抒发 shūfā〖giãi bày, bộc lộ (tình cảm)〗 · 抒情 shūqíng〖trữ tình, bộc lộ cảm xúc〗 · 抒写 shūxiě〖viết ra để bày tỏ (tâm tư)〗 · 直抒胸臆 zhíshūxiōngyì〖bộc bạch thẳng thắn tâm tư tình cảm (thành ngữ)〗
+- **惩** (trừng phạt, trừng trị): 惩治 chéngzhì〖trừng trị, xử phạt〗 · 严惩不贷 yánchéngbùdài〖trừng trị nghiêm khắc không khoan nhượng (thành ngữ)〗 · 奖惩 jiǎngchéng〖thưởng phạt〗
+- **忧** (lo lắng, ưu sầu): 担忧 dānyōu〖lo lắng, lo âu〗 · 忧心如焚 yōuxīnrúfén〖lòng như lửa đốt, lo lắng cháy ruột (thành ngữ)〗 · 忧愁 yōuchóu〖buồn rầu, lo buồn〗 · 无忧无虑 wúyōuwúlǜ〖vô tư không lo nghĩ (thành ngữ)〗
+- **昏** (mê man, tối tăm, lú lẫn): 发昏 fāhūn〖choáng váng, mê man, đầu óc quay cuồng〗 · 昏睡 hūnshuì〖ngủ mê man, hôn mê〗 · 昏庸 hūnyōng〖hôn quân, ngu muội bất tài (thường chỉ vua chúa)〗 · 头昏脑涨 tóuhūnnǎozhàng〖đầu óc choáng váng quay cuồng (thành ngữ)〗
+- **索** (dây; tìm tòi, lần theo): 绳索 shéngsuǒ〖dây thừng〗 · 线索 xiànsuǒ〖manh mối, đầu mối〗 · 摸索 mōsuǒ〖mò mẫm, dò dẫm〗 · 探索 tànsuǒ〖thăm dò, khám phá, tìm tòi〗 · 索取 suǒqǔ〖đòi hỏi, yêu cầu (được cấp/cho)〗 · 索引 suǒyǐn〖mục lục tra cứu, chỉ mục〗
 
 ## Bài 9 — 不用手机的日子
 
@@ -589,13 +589,13 @@
 
 ### 生词拓展
 
-- **憋**: 憋闷 biēmèn · 憋醒 biēxǐng · 憋屈 biēqū · 憋足劲儿 biēzújìnr
-- **防**: 防暑 fángshǔ · 防护 fánghù · 防止 fángzhǐ · 消防 xiāofáng · 预防 yùfáng
-- **止**: 禁止 jìnzhǐ · 阻止 zǔzhǐ · 不止 bùzhǐ · 截止 jiézhǐ · 制止 zhìzhǐ
-- **薄**: 单薄 dānbó · 浅薄 qiǎnbó · 稀薄 xībó · 淡薄 dànbó · 薄弱 bóruò
-- **僵**: 冻僵 dòngjiāng · 僵死 jiāngsǐ · 僵直 jiāngzhí · 僵持 jiāngchí · 僵局 jiāngjú
-- **震**: 地震 dìzhèn · 余震 yúzhèn · 抗震性 kàngzhènxìng · 震动 zhèndòng · 震荡 zhèndàng
-- **扰**: 骚扰 sāorǎo · 干扰 gānrǎo · 打扰 dǎrǎo · 扰乱 rǎoluàn · 叨扰 tāorǎo
+- **憋** (nén, kìm nén, ngột ngạt trong lòng): 憋闷 biēmèn〖ngột ngạt, bức bối (tâm trạng)〗 · 憋醒 biēxǐng〖tỉnh giấc vì khó chịu/nín nhịn (nín thở, tức bực)〗 · 憋屈 biēqū〖ấm ức, ức chế, bực bội vì bị oan〗 · 憋足劲儿 biēzújìnr〖dồn hết sức, nén sức để bung ra (cố gắng hết mình)〗
+- **防** (phòng, đề phòng, phòng ngừa): 防暑 fángshǔ〖phòng chống nắng nóng, chống say nắng〗 · 防护 fánghù〖phòng hộ, bảo vệ〗 · 防止 fángzhǐ〖phòng ngừa, ngăn ngừa〗 · 消防 xiāofáng〖phòng cháy chữa cháy〗 · 预防 yùfáng〖dự phòng, phòng ngừa trước〗
+- **止** (dừng, ngăn lại; chỉ, chỉ có): 禁止 jìnzhǐ〖cấm, nghiêm cấm〗 · 阻止 zǔzhǐ〖ngăn cản, ngăn chặn〗 · 不止 bùzhǐ〖không chỉ, không dừng lại ở (mức đó)〗 · 截止 jiézhǐ〖kết thúc (thời hạn), hết hạn〗 · 制止 zhìzhǐ〖ngăn chặn, chế ngự, ngăn cấm〗
+- **薄** (mỏng; kém, yếu; nhạt): 单薄 dānbó〖mỏng manh, ít ỏi (thân hình/lập luận)〗 · 浅薄 qiǎnbó〖nông cạn, hời hợt (kiến thức)〗 · 稀薄 xībó〖loãng, thưa (không khí)〗 · 淡薄 dànbó〖nhạt nhòa, phai nhạt (tình cảm/ký ức); loãng nhạt〗 · 薄弱 bóruò〖yếu kém, mỏng manh (ý chí, cơ sở)〗
+- **僵** (cứng đờ; bế tắc, giằng co): 冻僵 dòngjiāng〖cóng cứng (vì lạnh)〗 · 僵死 jiāngsǐ〖cứng đờ như chết; giáo điều cứng nhắc〗 · 僵直 jiāngzhí〖cứng đờ, tê cứng〗 · 僵持 jiāngchí〖giằng co, bế tắc (không bên nào nhượng bộ)〗 · 僵局 jiāngjú〖cục diện bế tắc, thế bí〗
+- **震** (rung, chấn động, động đất): 地震 dìzhèn〖động đất〗 · 余震 yúzhèn〖dư chấn〗 · 抗震性 kàngzhènxìng〖khả năng chống động đất, tính kháng chấn〗 · 震动 zhèndòng〖chấn động, rung động〗 · 震荡 zhèndàng〖chấn động, dao động (kinh tế/thị trường)〗
+- **扰** (quấy rầy, làm phiền, gây rối): 骚扰 sāorǎo〖quấy rối, quấy nhiễu〗 · 干扰 gānrǎo〖gây nhiễu, can nhiễu〗 · 打扰 dǎrǎo〖làm phiền, quấy rầy〗 · 扰乱 rǎoluàn〖gây rối loạn, làm rối〗 · 叨扰 tāorǎo〖làm phiền (khách sáo, cảm ơn vì được tiếp đãi)〗
 
 ## Bài 10 — 全球化视野中的中国饮食
 
@@ -658,19 +658,19 @@
 
 ### 生词拓展
 
-- **蕴**: 蕴涵 yùnhán · 蕴含 yùnhán
-- **蕴**: 蕴藏 yùncáng · 底蕴 dǐyùn
-- **阔**: 阔步 kuòbù · 广阔 guǎngkuò · 开阔 kāikuò · 辽阔 liáokuò · 高谈阔论 gāotánkuòlùn
-- **禽**: 禽兽 qínshòu · 飞禽 fēiqín · 家禽 jiāqín · 猛禽 měngqín · 珍禽 zhēnqín
-- **兽**: 兽心 shòuxīn · 兽皮 shòupí · 兽王 shòuwáng · 兽医 shòuyī · 怪兽 guàishòu · 猛兽 měngshòu
-- **素**: 素净 sùjìng · 朴素 pǔsù · 素来 sùlái · 素菜 sùcài · 素餐 sùcān · 素食 sùshí
-- **栽**: 栽倒 zāidǎo · 栽赃 zāizāng · 栽秧 zāiyāng · 栽跟头 zāigēntou · 栽种 zāizhòng
-- **辨**: 分辨 fēnbiàn · 辨别 biànbié · 辨认 biànrèn · 辨析 biànxī · 辨正 biànzhèng
-- **谐**: 谐声 xiéshēng · 谐音 xiéyīn · 谐调 xiédiào · 和谐 héxié
-- **谐**: 诙谐 huīxié · 谐戏 xiéxì · 谐谑 xiéxuè
-- **餐**: 餐风饮露 cānfēngyǐnlù · 餐具 cānjù · 早餐 zǎocān · 晚餐 wǎncān · 午餐 wǔcān
-- **斥**: 斥骂 chìmà · 充斥 chōngchì · 排斥 páichì · 斥责 chìzé · 痛斥 tòngchì · 训斥 xùnchì
-- **折**: 折断 zhéduàn · 骨折 gǔzhé · 折中 zhézhōng · 折腾 zhēteng · 折算 zhésuàn
+- **蕴** (chứa đựng, hàm chứa, ẩn chứa): 蕴涵 yùnhán〖hàm chứa, bao hàm (ý nghĩa)〗 · 蕴含 yùnhán〖chứa đựng, ẩn chứa (ý nghĩa/tình cảm)〗
+- **蕴** (chứa đựng, tiềm ẩn): 蕴藏 yùncáng〖tàng trữ, tiềm ẩn (tài nguyên, tiềm năng)〗 · 底蕴 dǐyùn〖nội hàm sâu xa, hàm ý ẩn giấu bên trong〗
+- **阔** (rộng, rộng lớn, khoáng đạt): 阔步 kuòbù〖sải bước, bước đi rộng rãi tự tin〗 · 广阔 guǎngkuò〖rộng lớn, bao la〗 · 开阔 kāikuò〖khoáng đạt, rộng mở (tầm nhìn/tâm hồn)〗 · 辽阔 liáokuò〖bát ngát, mênh mông〗 · 高谈阔论 gāotánkuòlùn〖bàn luận huênh hoang, khoác lác (thành ngữ)〗
+- **禽** (loài chim, cầm thú): 禽兽 qínshòu〖cầm thú (nghĩa đen: chim thú; nghĩa bóng: kẻ vô nhân tính)〗 · 飞禽 fēiqín〖loài chim (biết bay)〗 · 家禽 jiāqín〖gia cầm〗 · 猛禽 měngqín〖chim săn mồi (chim ưng, đại bàng...)〗 · 珍禽 zhēnqín〖chim quý hiếm〗
+- **兽** (thú, dã thú): 兽心 shòuxīn〖lòng dạ thú vật (tàn ác)〗 · 兽皮 shòupí〖da thú〗 · 兽王 shòuwáng〖chúa tể muôn loài〗 · 兽医 shòuyī〖bác sĩ thú y〗 · 怪兽 guàishòu〖quái thú〗 · 猛兽 měngshòu〖mãnh thú, thú dữ〗
+- **素** (mộc mạc, trơn; chay; vốn dĩ): 素净 sùjìng〖(màu sắc/trang phục) trang nhã, giản dị〗 · 朴素 pǔsù〖giản dị, mộc mạc〗 · 素来 sùlái〖xưa nay, vốn dĩ〗 · 素菜 sùcài〖món chay〗 · 素餐 sùcān〖bữa ăn chay〗 · 素食 sùshí〖ăn chay〗
+- **栽** (trồng (cây); ngã, vấp): 栽倒 zāidǎo〖ngã lăn, ngã sấp〗 · 栽赃 zāizāng〖vu khống, gài bẫy đổ tội (giấu tang vật để vu oan)〗 · 栽秧 zāiyāng〖cấy mạ (lúa)〗 · 栽跟头 zāigēntou〖vấp ngã, thất bại (nghĩa bóng: gặp thất bại/bẽ mặt)〗 · 栽种 zāizhòng〖trồng trọt, gieo trồng〗
+- **辨** (phân biệt, nhận biết rõ): 分辨 fēnbiàn〖phân biệt, nhận rõ〗 · 辨别 biànbié〖phân biệt, nhận định〗 · 辨认 biànrèn〖nhận ra, nhận dạng〗 · 辨析 biànxī〖phân tích so sánh (để phân biệt)〗 · 辨正 biànzhèng〖biện chính, sửa cho đúng (chỉnh sửa sai sót)〗
+- **谐** (hài hòa, hòa hợp): 谐声 xiéshēng〖hài thanh (chữ Hán hình thanh, mượn âm)〗 · 谐音 xiéyīn〖đồng âm, gần âm (chơi chữ)〗 · 谐调 xiédiào〖hài hòa, ăn khớp〗 · 和谐 héxié〖hài hòa〗
+- **谐** (hài hước, dí dỏm): 诙谐 huīxié〖hài hước, dí dỏm〗 · 谐戏 xiéxì〖đùa cợt, giỡn hài hước〗 · 谐谑 xiéxuè〖bông đùa, trào lộng〗
+- **餐** (bữa ăn, ăn): 餐风饮露 cānfēngyǐnlù〖dầm sương dãi gió (thành ngữ, chỉ cuộc sống gian khổ lữ hành)〗 · 餐具 cānjù〖dụng cụ ăn uống (bát đũa...)〗 · 早餐 zǎocān〖bữa sáng〗 · 晚餐 wǎncān〖bữa tối〗 · 午餐 wǔcān〖bữa trưa〗
+- **斥** (mắng, quở trách; xua đuổi, gạt bỏ; tràn ngập): 斥骂 chìmà〖mắng chửi〗 · 充斥 chōngchì〖tràn ngập, đầy rẫy〗 · 排斥 páichì〖bài xích, loại trừ, gạt bỏ〗 · 斥责 chìzé〖quở trách, khiển trách〗 · 痛斥 tòngchì〖mắng nhiếc thậm tệ, lên án gay gắt〗 · 训斥 xùnchì〖quở mắng, la rầy〗
+- **折** (gãy, bẻ gập; chiết trung; xoay xở): 折断 zhéduàn〖bẻ gãy, làm gãy〗 · 骨折 gǔzhé〖gãy xương〗 · 折中 zhézhōng〖chiết trung, dung hòa (giữa hai ý kiến)〗 · 折腾 zhēteng〖giày vò, hành hạ; xoay đi xoay lại, lãng phí công sức〗 · 折算 zhésuàn〖quy đổi, chuyển đổi (đơn vị, tiền tệ)〗
 
 ## Bài 11 — 人不在家时猫在做什么
 
@@ -727,16 +727,16 @@
 
 ### 生词拓展
 
-- **淋**: 淋雨 línyǔ · 淋浴头 línyùtóu · 湿淋淋 shīlínlín · 血淋淋 xiělínlín · 淋漓 línlí
-- **懒**: 懒虫 lǎnchóng · 懒惰 lǎnduò · 懒散 lǎnsǎn · 偷懒 tōulǎn · 好吃懒做 hàochīlǎnzuò · 懒洋洋 lǎnyángyáng
-- **惰**: 怠惰 dàiduò · 懒惰 lǎnduò · 惰性 duòxìng
-- **馋**: 馋嘴 chánzuǐ · 解馋 jiěchán · 眼馋 yǎnchán
-- **踪**: 失踪 shīzōng · 追踪 zhuīzōng · 行踪 xíngzōng · 踪迹 zōngjì · 跟踪 gēnzōng · 无影无踪 wúyǐngwúzōng
-- **繁**: 繁星 fánxīng · 繁荣 fánróng · 繁多 fánduō · 繁重 fánzhòng · 繁茂 fánmào
-- **捷**: 捷径 jiéjìng · 便捷 biànjié · 矫捷 jiǎojié · 敏捷 mǐnjié · 迅捷 xùnjié · 捷报 jiébào · 告捷 gàojié
-- **扑**: 扑救 pūjiù · 扑灭 pūmiè · 扑鼻 pūbí · 扑面 pūmiàn · 扑哧 pūchī
-- **态**: 动态 dòngtài · 变态 biàntài · 液态 yètài · 静态 jìngtài · 固态 gùtài
-- **遥**: 遥控 yáokòng · 遥望 yáowàng · 遥远 yáoyuǎn · 遥遥领先 yáoyáolǐngxiān · 遥不可及 yáobùkějí
+- **淋** (dội nước, ướt đẫm, đầm đìa): 淋雨 línyǔ〖dầm mưa, bị ướt mưa〗 · 淋浴头 línyùtóu〖vòi hoa sen (tắm)〗 · 湿淋淋 shīlínlín〖ướt sũng, ướt đẫm〗 · 血淋淋 xiělínlín〖đẫm máu (nghĩa đen và nghĩa bóng: tàn khốc trần trụi)〗 · 淋漓 línlí〖đầm đìa, dầm dề (mồ hôi, mực...)〗
+- **懒** (lười, lười biếng): 懒虫 lǎnchóng〖(đùa) đồ lười, con sâu lười〗 · 懒惰 lǎnduò〖lười biếng〗 · 懒散 lǎnsǎn〖uể oải, lười nhác, tản mạn〗 · 偷懒 tōulǎn〖trốn việc, lười biếng (tranh thủ nghỉ)〗 · 好吃懒做 hàochīlǎnzuò〖tham ăn lười làm (thành ngữ)〗 · 懒洋洋 lǎnyángyáng〖uể oải, lờ đờ〗
+- **惰** (lười, ì trệ): 怠惰 dàiduò〖biếng nhác, trễ nải〗 · 懒惰 lǎnduò〖lười biếng〗 · 惰性 duòxìng〖tính ì, thói quen trì trệ〗
+- **馋** (thèm ăn, tham ăn): 馋嘴 chánzuǐ〖(người) tham ăn, thèm ăn vặt〗 · 解馋 jiěchán〖cho đã thèm, thỏa cơn thèm ăn〗 · 眼馋 yǎnchán〖thèm thuồng (nhìn mà thèm), ganh tị〗
+- **踪** (dấu vết, tung tích): 失踪 shīzōng〖mất tích〗 · 追踪 zhuīzōng〖truy tìm dấu vết, theo dõi〗 · 行踪 xíngzōng〖hành tung, tung tích〗 · 踪迹 zōngjì〖dấu vết, tung tích〗 · 跟踪 gēnzōng〖theo dõi, bám theo〗 · 无影无踪 wúyǐngwúzōng〖biến mất không dấu vết (thành ngữ)〗
+- **繁** (nhiều, rậm rạp, phồn thịnh): 繁星 fánxīng〖sao dày đặc (bầu trời đầy sao)〗 · 繁荣 fánróng〖phồn vinh, thịnh vượng〗 · 繁多 fánduō〖nhiều, đa dạng〗 · 繁重 fánzhòng〖nặng nề (công việc), gánh nặng〗 · 繁茂 fánmào〖um tùm, tươi tốt (cây cối)〗
+- **捷** (nhanh nhẹn; thắng lợi): 捷径 jiéjìng〖đường tắt, lối tắt〗 · 便捷 biànjié〖tiện lợi, nhanh gọn〗 · 矫捷 jiǎojié〖nhanh nhẹn khỏe khoắn (thân thủ)〗 · 敏捷 mǐnjié〖nhanh nhẹn, lanh lợi〗 · 迅捷 xùnjié〖nhanh chóng, mau lẹ〗 · 捷报 jiébào〖tin thắng trận, tin vui chiến thắng〗 · 告捷 gàojié〖báo tin thắng lợi, giành thắng lợi〗
+- **扑** (xông tới, dập, phả vào): 扑救 pūjiù〖xông vào cứu chữa (chữa cháy, cấp cứu)〗 · 扑灭 pūmiè〖dập tắt (lửa, dịch bệnh)〗 · 扑鼻 pūbí〖xộc vào mũi (mùi thơm/hôi)〗 · 扑面 pūmiàn〖táp vào mặt, phả vào mặt (gió, mùi)〗 · 扑哧 pūchī〖(từ tượng thanh) tiếng bật cười phì〗
+- **态** (trạng thái, hình thái): 动态 dòngtài〖động thái, trạng thái vận động〗 · 变态 biàntài〖biến thái, biến dạng (bất thường)〗 · 液态 yètài〖thể lỏng〗 · 静态 jìngtài〖tĩnh thái, trạng thái tĩnh〗 · 固态 gùtài〖thể rắn〗
+- **遥** (xa xôi, xa xăm): 遥控 yáokòng〖điều khiển từ xa〗 · 遥望 yáowàng〖nhìn xa, ngóng nhìn từ xa〗 · 遥远 yáoyuǎn〖xa xôi〗 · 遥遥领先 yáoyáolǐngxiān〖dẫn đầu vượt trội, bỏ xa (thành ngữ)〗 · 遥不可及 yáobùkějí〖xa vời không với tới được (thành ngữ)〗
 
 ## Bài 12 — 我们都爱白噪音
 
@@ -789,18 +789,18 @@
 
 ### 生词拓展
 
-- **淘**: 淘米 táomǐ · 淘洗 táoxǐ · 淘金 táojīn · 淘气 táoqì
-- **描**: 扫描仪 sǎomiáoyí · 素描 sùmiáo · 描画 miáohuà · 描绘 miáohuì · 描述 miáoshù · 描写 miáoxiě
-- **绘**: 测绘 cèhuì · 绘制 huìzhì · 绘画 huìhuà · 彩绘 cǎihuì
-- **抚**: 安抚 ānfǔ · 抚摩 fǔmó · 抚慰 fǔwèi · 抚养 fǔyǎng
-- **暴**: 暴力 bàolì · 残暴 cánbào · 暴涨 bàozhǎng · 暴跌 bàodiē · 暴利 bàolì · 暴晒 pùshài · 暴发 bàofā · 风暴 fēngbào · 暴躁 bàozào · 暴跳 bàotiào 如雷 · 粗暴 cūbào · 暴富 bàofù · 暴露 bàolù
-- **惹**: 惹祸 rěhuò · 惹事 rěshì · 惹麻烦 rěmáfán · 惹乱子 rěluànzi · 惹是生非 rěshìshēngfēi
-- **祸**: 天灾人祸 tiānzāirénhuò · 惹祸 rěhuò · 幸灾乐祸 xìngzāilèhuò · 车祸 chēhuò
-- **唤**: 呼风唤雨 hūfēnghuànyǔ · 唤起 huànqǐ · 唤醒 huànxǐng · 呼唤 hūhuàn
-- **拢**: 拉拢 lālǒng · 靠拢 kàolǒng · 拢紧 lǒngjǐn · 合不拢 hébùlǒng
-- **暗**: 暗淡 àndàn · 灰暗 huī'àn · 阴暗 yīn'àn · 暗杀 ànshā · 暗示 ànshì · 暗想 ànxiǎng · 天昏地暗 tiānhūndì'àn
-- **患**: 后患 hòuhuàn · 水患 shuǐhuàn · 患难与共 huànnànyǔgòng · 内忧外患 nèiyōuwàihuàn · 忧患 yōuhuàn · 患病 huànbìng
-- **愈**: 愈加 yùjiā · 愈战愈强 yùzhànyùqiáng · 愈演愈烈 yùyǎnyùliè · 痊愈 quányù · 病愈 bìngyù · 愈合 yùhé
+- **淘** (vo, đãi, gạn lọc; nghịch ngợm): 淘米 táomǐ〖vo gạo〗 · 淘洗 táoxǐ〖rửa, giặt sạch (bằng nước)〗 · 淘金 táojīn〖đãi vàng, đãi cát tìm vàng〗 · 淘气 táoqì〖nghịch ngợm, tinh nghịch〗
+- **描** (vẽ, miêu tả, phác họa): 扫描仪 sǎomiáoyí〖máy quét (scanner)〗 · 素描 sùmiáo〖vẽ phác họa, ký họa〗 · 描画 miáohuà〖vẽ, phác họa〗 · 描绘 miáohuì〖miêu tả, khắc họa (vẽ nên hình ảnh sinh động)〗 · 描述 miáoshù〖miêu tả, mô tả〗 · 描写 miáoxiě〖miêu tả (trong văn học)〗
+- **绘** (vẽ, họa): 测绘 cèhuì〖đo đạc và vẽ bản đồ (trắc địa)〗 · 绘制 huìzhì〖vẽ, thiết kế (bản vẽ)〗 · 绘画 huìhuà〖hội họa, vẽ tranh〗 · 彩绘 cǎihuì〖vẽ màu, trang trí bằng màu sắc〗
+- **抚** (vỗ về, an ủi, nuôi dưỡng): 安抚 ānfǔ〖an ủi, vỗ về, trấn an〗 · 抚摩 fǔmó〖vuốt ve, xoa nhẹ (bằng tay)〗 · 抚慰 fǔwèi〖an ủi, vỗ về〗 · 抚养 fǔyǎng〖nuôi dưỡng, nuôi nấng〗
+- **暴** (dữ dội, đột ngột, bạo lực, phơi bày): 暴力 bàolì〖bạo lực〗 · 残暴 cánbào〖tàn bạo〗 · 暴涨 bàozhǎng〖tăng vọt đột ngột〗 · 暴跌 bàodiē〖giảm mạnh, sụt giá đột ngột〗 · 暴利 bàolì〖lợi nhuận kếch xù (bất chính)〗 · 暴晒 pùshài〖phơi nắng gắt〗 · 暴发 bàofā〖bùng phát đột ngột; phất lên nhanh〗 · 风暴 fēngbào〖bão, phong ba〗 · 暴躁 bàozào〖nóng nảy, cục cằn〗 · 暴跳如雷 bàotiàorúléi〖giận dữ đùng đùng (thành ngữ)〗 · 粗暴 cūbào〖thô bạo〗 · 暴富 bàofù〖giàu lên nhanh chóng〗 · 暴露 bàolù〖phơi bày, bộc lộ, lộ ra〗
+- **惹** (gây ra, chọc, dây vào (rắc rối)): 惹祸 rěhuò〖gây họa, gây rắc rối lớn〗 · 惹事 rěshì〖gây chuyện, gây sự〗 · 惹麻烦 rěmáfán〖gây phiền phức, chuốc rắc rối〗 · 惹乱子 rěluànzi〖gây rối loạn, gây lộn xộn〗 · 惹是生非 rěshìshēngfēi〖gây chuyện thị phi, sinh sự (thành ngữ)〗
+- **祸** (tai họa, họa): 天灾人祸 tiānzāirénhuò〖thiên tai nhân họa (thành ngữ)〗 · 惹祸 rěhuò〖gây họa, gây rắc rối lớn〗 · 幸灾乐祸 xìngzāilèhuò〖hả hê trước tai họa của người khác (thành ngữ)〗 · 车祸 chēhuò〖tai nạn xe cộ, tai nạn giao thông〗
+- **唤** (gọi, kêu gọi, đánh thức): 呼风唤雨 hūfēnghuànyǔ〖hô mưa gọi gió (thành ngữ, chỉ quyền lực to lớn)〗 · 唤起 huànqǐ〖gợi lên, khơi dậy〗 · 唤醒 huànxǐng〖đánh thức, thức tỉnh〗 · 呼唤 hūhuàn〖gọi, kêu gọi〗
+- **拢** (tụ lại, khép lại, kéo gần): 拉拢 lālǒng〖lôi kéo, kéo bè kéo cánh〗 · 靠拢 kàolǒng〖tiến sát lại gần, xích lại gần〗 · 拢紧 lǒngjǐn〖siết chặt, khép chặt lại〗 · 合不拢 hébùlǒng〖không khép lại được (vd miệng cười không ngậm lại được)〗
+- **暗** (tối, ngầm, âm thầm): 暗淡 àndàn〖ảm đạm, mờ nhạt〗 · 灰暗 huī'àn〖xám xịt, u ám〗 · 阴暗 yīn'àn〖âm u, tăm tối〗 · 暗杀 ànshā〖ám sát〗 · 暗示 ànshì〖ám chỉ, gợi ý ngầm〗 · 暗想 ànxiǎng〖thầm nghĩ, nghĩ bụng〗 · 天昏地暗 tiānhūndì'àn〖trời đất tối sầm (thành ngữ, chỉ hỗn loạn)〗
+- **患** (mối họa, hoạn nạn, mắc (bệnh)): 后患 hòuhuàn〖hậu họa, mối họa về sau〗 · 水患 shuǐhuàn〖nạn lụt, thủy tai〗 · 患难与共 huànnànyǔgòng〖cùng chia sẻ hoạn nạn (thành ngữ)〗 · 内忧外患 nèiyōuwàihuàn〖nội ưu ngoại hoạn, giặc trong thù ngoài (thành ngữ)〗 · 忧患 yōuhuàn〖lo âu, hoạn nạn〗 · 患病 huànbìng〖mắc bệnh, bị bệnh〗
+- **愈** (càng; khỏi, lành (bệnh/vết thương)): 愈加 yùjiā〖càng thêm, càng〗 · 愈战愈强 yùzhànyùqiáng〖càng đánh càng mạnh (thành ngữ)〗 · 愈演愈烈 yùyǎnyùliè〖càng diễn biến càng dữ dội, ngày càng nghiêm trọng〗 · 痊愈 quányù〖bình phục hoàn toàn, khỏi bệnh〗 · 病愈 bìngyù〖khỏi bệnh〗 · 愈合 yùhé〖lành (vết thương), liền da〗
 
 ## Bài 13 — 从旅游指南看世事变迁
 
@@ -861,13 +861,13 @@
 
 ### 生词拓展
 
-- **迁**: 迁居 qiānjū · 迁徙 qiānxǐ · 搬迁 bānqiān · 见异思迁 jiànyìsīqiān · 变迁 biànqiān · 事过境迁 shìguòjìngqiān
-- **携**: 携带 xiédài · 提携 tíxié · 携手 xiéshǒu · 扶老携幼 fúlǎoxiéyòu
-- **遍**: 遍体鳞伤 biàntǐlínshāng · 走遍 zǒubiàn · 漫山遍野 mànshānbiànyě · 遍布 biànbù · 遍地 biàndì
-- **千**: 千方百计 qiānfāngbǎijì · 千载难逢 qiānzǎinánféng · 千变万化 qiānbiànwànhuà · 千奇百怪 qiānqíbǎiguài · 千言万语 qiānyánwànyǔ · 成千上万 chéngqiānshàngwàn
-- **百**: 百发百中 bǎifābǎizhòng · 百感交集 bǎigǎnjiāojí · 百依百顺 bǎiyībǎishùn · 百折不挠 bǎizhébùnáo
-- **僻**: 僻静 pìjìng · 偏僻 piānpì · 穷乡僻壤 qióngxiāngpìrǎng · 孤僻 gūpì · 怪癖 guàipǐ · 冷僻 lěngpì · 生僻 shēngpì
-- **帐**: 蚊帐 wénzhàng · 营帐 yíngzhàng · 帐篷 zhàngpéng · 青纱帐 qīngshāzhàng
+- **迁** (dời, di chuyển, thay đổi): 迁居 qiānjū〖dời nhà, chuyển chỗ ở〗 · 迁徙 qiānxǐ〖di cư, di trú〗 · 搬迁 bānqiān〖dọn nhà, di dời〗 · 见异思迁 jiànyìsīqiān〖thấy cái khác lại đổi ý, không kiên định (thành ngữ)〗 · 变迁 biànqiān〖biến đổi, thay đổi (theo thời gian)〗 · 事过境迁 shìguòjìngqiān〖việc qua cảnh đổi, mọi thứ đã đổi khác (thành ngữ)〗
+- **携** (mang theo, dắt, cùng nhau): 携带 xiédài〖mang theo, đem theo〗 · 提携 tíxié〖dìu dắt, nâng đỡ (giúp đỡ người khác)〗 · 携手 xiéshǒu〖tay trong tay, cùng nhau hợp tác〗 · 扶老携幼 fúlǎoxiéyòu〖dắt già dắt trẻ (thành ngữ)〗
+- **遍** (khắp, đầy, khắp nơi): 遍体鳞伤 biàntǐlínshāng〖khắp mình đầy thương tích (thành ngữ)〗 · 走遍 zǒubiàn〖đi khắp〗 · 漫山遍野 mànshānbiànyě〖khắp núi khắp đồng, đầy khắp nơi (thành ngữ)〗 · 遍布 biànbù〖rải khắp, phân bố khắp nơi〗 · 遍地 biàndì〖khắp nơi, đầy mặt đất〗
+- **千** (nghìn (chỉ số nhiều, muôn vàn)): 千方百计 qiānfāngbǎijì〖trăm phương nghìn kế (thành ngữ)〗 · 千载难逢 qiānzǎinánféng〖nghìn năm khó gặp, cơ hội hiếm có (thành ngữ)〗 · 千变万化 qiānbiànwànhuà〖biến hóa muôn vàn (thành ngữ)〗 · 千奇百怪 qiānqíbǎiguài〖kỳ lạ muôn hình muôn vẻ (thành ngữ)〗 · 千言万语 qiānyánwànyǔ〖nghìn lời muôn ý, có rất nhiều điều muốn nói (thành ngữ)〗 · 成千上万 chéngqiānshàngwàn〖hàng nghìn hàng vạn, số lượng rất lớn (thành ngữ)〗
+- **百** (trăm (chỉ số nhiều, mọi bề)): 百发百中 bǎifābǎizhòng〖trăm phát trăm trúng (thành ngữ)〗 · 百感交集 bǎigǎnjiāojí〖trăm mối cảm xúc đan xen (thành ngữ)〗 · 百依百顺 bǎiyībǎishùn〖hoàn toàn vâng theo, chiều theo mọi ý (thành ngữ)〗 · 百折不挠 bǎizhébùnáo〖trăm lần vấp ngã không nản, kiên cường bất khuất (thành ngữ)〗
+- **僻** (hẻo lánh, lệch, hiếm gặp): 僻静 pìjìng〖vắng vẻ, yên tĩnh hẻo lánh〗 · 偏僻 piānpì〖hẻo lánh, xa xôi〗 · 穷乡僻壤 qióngxiāngpìrǎng〖vùng quê hẻo lánh nghèo khó (thành ngữ)〗 · 孤僻 gūpì〖cô độc, lập dị (tính cách khép kín)〗 · 怪癖 guàipǐ〖tật kỳ quái, thói quen kỳ lạ〗 · 冷僻 lěngpì〖hiếm dùng, ít gặp (từ ngữ); hẻo lánh〗 · 生僻 shēngpì〖hiếm dùng, ít gặp (từ ngữ)〗
+- **帐** (màn, trướng, lều bạt): 蚊帐 wénzhàng〖màn (chống muỗi)〗 · 营帐 yíngzhàng〖lều trại (quân đội)〗 · 帐篷 zhàngpéng〖lều, trại〗 · 青纱帐 qīngshāzhàng〖cánh đồng cao lương/ngô rậm rạp (như bức màn xanh, nơi ẩn náu)〗
 
 ## Bài 14 — 背着电饭锅拍北极
 
@@ -936,10 +936,10 @@
 
 ### 生词拓展
 
-- **察**: 考察 kǎochá · 观察 guānchá · 察觉 chájué · 侦察 zhēnchá · 察言观色 cháyánguānsè
-- **毅**: 毅力 yìlì · 沉毅 chényì · 刚毅 gāngyì · 坚毅 jiānyì · 毅然决然 yìránjuérán
-- **拓**: 开拓 kāituò · 拓荒 tuòhuāng · 拓宽 tuòkuān · 拓印 tàyìn
-- **饥**: 饥肠 jīcháng · 饥寒 jīhán · 饥渴 jīkě · 饥不择食 jībùzéshí · 充饥 chōngjī
+- **察** (xem xét, quan sát, dò xét): 考察 kǎochá〖khảo sát, thị sát〗 · 观察 guānchá〖quan sát〗 · 察觉 chájué〖phát hiện ra, nhận thấy〗 · 侦察 zhēnchá〖trinh sát, do thám〗 · 察言观色 cháyánguānsè〖xem lời nói sắc mặt, quan sát thái độ người khác (thành ngữ)〗
+- **毅** (kiên định, cương nghị, quả quyết): 毅力 yìlì〖nghị lực, ý chí〗 · 沉毅 chényì〖trầm tĩnh cương nghị〗 · 刚毅 gāngyì〖cương nghị, cứng cỏi〗 · 坚毅 jiānyì〖kiên nghị, kiên định〗 · 毅然决然 yìránjuérán〖kiên quyết dứt khoát (thành ngữ)〗
+- **拓** (mở rộng, khai phá): 开拓 kāituò〖khai phá, mở mang〗 · 拓荒 tuòhuāng〖khai hoang〗 · 拓宽 tuòkuān〖mở rộng (đường, phạm vi)〗 · 拓印 tàyìn〖in dập (kỹ thuật rập chữ/hình từ bia đá)〗
+- **饥** (đói): 饥肠 jīcháng〖bụng đói, ruột đói (饥肠辘辘)〗 · 饥寒 jīhán〖đói rét〗 · 饥渴 jīkě〖đói khát〗 · 饥不择食 jībùzéshí〖đói thì không kén ăn, cấp bách thì không lựa chọn (thành ngữ)〗 · 充饥 chōngjī〖cho đỡ đói, lót dạ〗
 
 ## Bài 15 — 山脉上的雕刻
 
@@ -992,10 +992,10 @@
 
 ### 生词拓展
 
-- **脉**: 山脉 shānmài · 动脉 dòngmài · 脉搏 màibó · 号脉 hàomài · 诊脉 zhěnmài · 叶脉 yèmài
-- **卷**: 卷尺 juǎnchǐ · 胶卷 jiāojuǎn · 舒卷 shūjuǎn · 龙卷风 lóngjuǎnfēng · 卷铺盖儿 juǎnpūgàir
-- **罕**: 罕闻 hǎnwén · 罕有 hǎnyǒu · 稀罕 xīhǎn · 罕见 hǎnjiàn
-- **辟**: 开天辟地 kāitiānpìdì · 独辟蹊径 dúpìxījìng · 精辟 jīngpì · 开辟 kāipì
+- **脉** (mạch (máu, núi, lá...)): 山脉 shānmài〖dãy núi〗 · 动脉 dòngmài〖động mạch〗 · 脉搏 màibó〖mạch đập〗 · 号脉 hàomài〖bắt mạch, xem mạch〗 · 诊脉 zhěnmài〖bắt mạch (khám bệnh theo Đông y)〗 · 叶脉 yèmài〖gân lá〗
+- **卷** (cuộn, cuốn): 卷尺 juǎnchǐ〖thước dây (cuộn được)〗 · 胶卷 jiāojuǎn〖cuộn phim (ảnh)〗 · 舒卷 shūjuǎn〖cuộn lại và trải ra〗 · 龙卷风 lóngjuǎnfēng〖lốc xoáy, vòi rồng〗 · 卷铺盖儿 juǎnpūgàir〖cuốn gói (nghĩa bóng: bị đuổi việc/rời đi)〗
+- **罕** (hiếm, ít thấy): 罕闻 hǎnwén〖hiếm nghe thấy, ít nghe nói tới〗 · 罕有 hǎnyǒu〖hiếm có〗 · 稀罕 xīhǎn〖hiếm lạ, quý hiếm; (khẩu ngữ) thích, ham〗 · 罕见 hǎnjiàn〖hiếm thấy, hiếm gặp〗
+- **辟** (mở ra, khai phá; sâu sắc, xác đáng): 开天辟地 kāitiānpìdì〖khai thiên lập địa (thành ngữ)〗 · 独辟蹊径 dúpìxījìng〖tự mở lối đi riêng, sáng tạo con đường mới (thành ngữ)〗 · 精辟 jīngpì〖sâu sắc, xác đáng (lời nói/lý luận)〗 · 开辟 kāipì〖mở ra, khai phá (con đường, lĩnh vực mới)〗
 
 ## Bài 16 — 徐健和他的野生动物摄影师们
 
@@ -1050,21 +1050,21 @@
 
 ### 生词拓展
 
-- **鉴**: 鉴别 jiànbié · 鉴于 jiànyú · 鉴定 jiàndìng · 鉴赏 jiànshǎng · 借鉴 jièjiàn
-- **濒**: 濒临 bīnlín · 濒危 bīnwēi · 濒死 bīnsǐ
-- **压**: 压抑 yāyì · 压制 yāzhì · 压力 yālì · 压迫 yāpò
-- **注**: 注视 zhùshì · 注意 zhùyì · 注目 zhùmù · 注重 zhùzhòng
-- **斑**: 斑点 bāndiǎn · 斑纹 bānwén · 斑斓 bānlán · 斑白 bānbái · 斑马 bānmǎ
-- **致**: 致力 zhìlì · 致使 zhìshǐ · 致辞 zhìcí · 致命 zhìmìng · 致谢 zhìxiè
-- **识**: 识别 shíbié · 认识 rènshí · 知识 zhīshí · 意识 yìshí
-- **辨**: 辨认 biànrèn · 辨别 biànbié · 分辨 fēnbiàn · 辨析 biànxī
-- **琢**: 琢磨 zuómo · 精雕细琢 jīngdiāoxìzuó
-- **昼**: 昼夜 zhòuyè · 白昼 báizhòu
-- **奔**: 奔波 bēnbō · 奔跑 bēnpǎo · 奔驰 bēnchí · 奔赴 bēnfù
-- **畅**: 畅销 chàngxiāo · 畅快 chàngkuài · 畅通 chàngtōng · 畅谈 chàngtán
-- **支**: 支撑 zhīchēng · 支持 zhīchí · 支柱 zhīzhù · 支付 zhīfù
-- **甘**: 心甘情愿 xīngānqíngyuàn · 甘心 gānxīn · 甘愿 gānyuàn · 甘苦 gānkǔ
-- **酬**: 报酬 bàochóu · 酬谢 chóuxiè · 酬劳 chóuláo · 应酬 yìngchóu
+- **鉴** (soi xét, thẩm định, làm gương): 鉴别 jiànbié〖phân biệt, giám định〗 · 鉴于 jiànyú〖xét thấy, xét vì (do bởi)〗 · 鉴定 jiàndìng〖giám định, thẩm định〗 · 鉴赏 jiànshǎng〖thưởng thức, thẩm định (nghệ thuật)〗 · 借鉴 jièjiàn〖lấy làm gương, tham khảo, rút kinh nghiệm〗
+- **濒** (gần kề, cận kề (nguy hiểm)): 濒临 bīnlín〖cận kề, giáp ranh (nguy cơ)〗 · 濒危 bīnwēi〖nguy cấp, có nguy cơ (tuyệt chủng)〗 · 濒死 bīnsǐ〖cận kề cái chết, hấp hối〗
+- **压** (đè, áp, ép): 压抑 yāyì〖đè nén, kìm nén (cảm xúc)〗 · 压制 yāzhì〖đàn áp, kìm hãm〗 · 压力 yālì〖áp lực〗 · 压迫 yāpò〖áp bức, đè nén〗
+- **注** (chú ý, dồn vào, chú trọng): 注视 zhùshì〖nhìn chăm chú, dõi theo〗 · 注意 zhùyì〖chú ý〗 · 注目 zhùmù〖chú mục, dồn mắt nhìn vào〗 · 注重 zhùzhòng〖coi trọng, chú trọng〗
+- **斑** (đốm, vằn, lốm đốm): 斑点 bāndiǎn〖đốm, chấm〗 · 斑纹 bānwén〖vằn, vân〗 · 斑斓 bānlán〖sặc sỡ, rực rỡ (màu sắc)〗 · 斑白 bānbái〖hoa râm (tóc)〗 · 斑马 bānmǎ〖ngựa vằn〗
+- **致** (dẫn đến, đạt tới, gửi/bày tỏ): 致力 zhìlì〖dốc sức, dồn sức (vào việc gì)〗 · 致使 zhìshǐ〖khiến cho, dẫn đến (kết quả xấu)〗 · 致辞 zhìcí〖đọc lời phát biểu, diễn từ〗 · 致命 zhìmìng〖chí mạng, gây chết người〗 · 致谢 zhìxiè〖bày tỏ lời cảm ơn〗
+- **识** (biết, nhận thức, hiểu biết): 识别 shíbié〖nhận biết, phân biệt〗 · 认识 rènshí〖nhận biết, quen biết, nhận thức〗 · 知识 zhīshí〖tri thức, kiến thức〗 · 意识 yìshí〖ý thức〗
+- **辨** (phân biệt, biện biệt): 辨认 biànrèn〖nhận ra, nhận diện〗 · 辨别 biànbié〖phân biệt〗 · 分辨 fēnbiàn〖phân biệt, phân rõ〗 · 辨析 biànxī〖phân tích và phân biệt (nghĩa từ)〗
+- **琢** (mài giũa, trau chuốt; suy ngẫm): 琢磨 zuómo〖(zuómo) suy nghĩ, ngẫm nghĩ; (zhuómó) mài giũa, gọt giũa〗 · 精雕细琢 jīngdiāoxìzuó〖chạm trổ tinh xảo, trau chuốt tỉ mỉ (thành ngữ)〗
+- **昼** (ban ngày): 昼夜 zhòuyè〖ngày đêm〗 · 白昼 báizhòu〖ban ngày〗
+- **奔** (chạy, lao đi, hướng tới): 奔波 bēnbō〖bôn ba, vất vả ngược xuôi〗 · 奔跑 bēnpǎo〖chạy〗 · 奔驰 bēnchí〖phóng nhanh, phi nhanh〗 · 奔赴 bēnfù〖lao tới, hướng tới (một nơi/nhiệm vụ)〗
+- **畅** (thông suốt, thoải mái, hả hê): 畅销 chàngxiāo〖bán chạy〗 · 畅快 chàngkuài〖sảng khoái, thoải mái〗 · 畅通 chàngtōng〖thông suốt, lưu thông tốt〗 · 畅谈 chàngtán〖nói chuyện thoải mái, hàn huyên thỏa thích〗
+- **支** (chống đỡ, chi ra, hỗ trợ): 支撑 zhīchēng〖chống đỡ, nâng đỡ〗 · 支持 zhīchí〖ủng hộ, hỗ trợ〗 · 支柱 zhīzhù〖trụ cột〗 · 支付 zhīfù〖chi trả, thanh toán〗
+- **甘** (cam tâm, sẵn lòng; ngọt bùi): 心甘情愿 xīngānqíngyuàn〖cam tâm tình nguyện (thành ngữ)〗 · 甘心 gānxīn〖cam tâm, cam lòng〗 · 甘愿 gānyuàn〖tình nguyện, cam nguyện〗 · 甘苦 gānkǔ〖ngọt bùi cay đắng, vui buồn sướng khổ〗
+- **酬** (thù lao, đáp lại, đối đãi): 报酬 bàochóu〖thù lao, tiền công〗 · 酬谢 chóuxiè〖đền đáp, tạ ơn〗 · 酬劳 chóuláo〖thù lao, trả công〗 · 应酬 yìngchóu〖giao tiếp xã giao, tiếp đãi qua lại〗
 
 ## Bài 17 — 小动物眼中的慢世界
 
@@ -1118,15 +1118,15 @@
 
 ### 生词拓展
 
-- **闷**: 沉闷 chénmèn · 解闷 jiěmèn · 闷气 mēnqì · 烦闷 fánmèn · 郁闷 yùmèn
-- **筛**: 筛选 shāixuǎn · 筛子 shāizi · 筛面 shāimiàn · 筛查 shāichá
-- **慨**: 感慨 gǎnkǎi · 慷慨 kāngkǎi · 愤慨 fènkǎi · 慷慨激昂 kāngkǎijī'áng
-- **雅**: 雅观 yǎguān · 淡雅 dànyǎ · 雅兴 yǎxìng · 雅座 yǎzuò · 温文尔雅 wēnwén'ěryǎ
-- **谢**: 谢幕 xièmù · 答谢 dáxiè · 致谢 zhìxiè · 凋谢 diāoxiè · 新陈代谢 xīnchéndàixiè
-- **颤**: 颤抖 chàndǒu · 颤动 chàndòng · 颤颤悠悠 chànchànyōuyōu
-- **钝**: 迟钝 chídùn · 钝器 dùnqì · 顽钝 wándùn · 愚钝 yúdùn
-- **拙**: 笨拙 bènzhuō · 拙见 zhuōjiàn · 眼拙 yǎnzhuō · 弄巧成拙 nòngqiǎochéngzhuō
-- **焦**: 焦急 jiāojí · 焦点 jiāodiǎn · 焦虑 jiāolǜ · 焦黄 jiāohuáng · 焦头烂额 jiāotóulàn'é
+- **闷** (buồn bực, ngột ngạt, bí bách): 沉闷 chénmèn〖(không khí, bầu không khí) nặng nề, tẻ nhạt, ngột ngạt〗 · 解闷 jiěmèn〖giải khuây, giải buồn〗 · 闷气 mēnqì〖ấm ức, bực bội nén trong lòng〗 · 烦闷 fánmèn〖buồn bực, phiền muộn〗 · 郁闷 yùmèn〖u uất, buồn bực, ngột ngạt trong lòng〗
+- **筛** (sàng, rây, lọc): 筛选 shāixuǎn〖sàng lọc, chọn lọc〗 · 筛子 shāizi〖cái sàng, cái rây〗 · 筛面 shāimiàn〖rây bột (sàng bột mì)〗 · 筛查 shāichá〖sàng lọc, rà soát kiểm tra (thường dùng cho tầm soát y tế, an ninh)〗
+- **慨** (cảm thán; hào hiệp, khảng khái): 感慨 gǎnkǎi〖cảm khái, xúc động mà than thở〗 · 慷慨 kāngkǎi〖khảng khái, hào phóng, rộng rãi〗 · 愤慨 fènkǎi〖phẫn nộ, căm phẫn, bất bình〗 · 慷慨激昂 kāngkǎijī'áng〖hùng hồn, sôi nổi, đầy nhiệt huyết (lời nói)〗
+- **雅** (nhã, thanh nhã, tao nhã): 雅观 yǎguān〖nhã nhặn, coi được, đẹp mắt (thường dùng phủ định 不雅观)〗 · 淡雅 dànyǎ〖thanh nhã, nhẹ nhàng (màu sắc, phong cách)〗 · 雅兴 yǎxìng〖hứng thú tao nhã〗 · 雅座 yǎzuò〖chỗ ngồi sang trọng, riêng tư (trong quán ăn)〗 · 温文尔雅 wēnwén'ěryǎ〖ôn hòa nhã nhặn, lịch thiệp nho nhã〗
+- **谢** (cảm ơn; tàn lụi, thay thế (chữ 谢 đa nghĩa)): 谢幕 xièmù〖ra chào khán giả, hạ màn cảm tạ (sau buổi diễn)〗 · 答谢 dáxiè〖đáp tạ, cảm ơn đáp lại〗 · 致谢 zhìxiè〖bày tỏ lòng cảm ơn〗 · 凋谢 diāoxiè〖(hoa) tàn, héo rụng〗 · 新陈代谢 xīnchéndàixiè〖trao đổi chất, thay cũ đổi mới (sinh học)〗
+- **颤** (run, rung): 颤抖 chàndǒu〖run rẩy〗 · 颤动 chàndòng〖rung động, rung lên〗 · 颤颤悠悠 chànchànyōuyōu〖run rẩy lảo đảo, dáng đi run run không vững〗
+- **钝** (cùn, đần, chậm chạp): 迟钝 chídùn〖chậm chạp, đần độn (phản ứng, tư duy chậm)〗 · 钝器 dùnqì〖vật cùn, hung khí không sắc〗 · 顽钝 wándùn〖cùn lì, ngoan cố đần độn (ít gặp)〗 · 愚钝 yúdùn〖ngu độn, đần độn〗
+- **拙** (vụng, kém): 笨拙 bènzhuō〖vụng về, ngu ngốc, chậm chạp〗 · 拙见 zhuōjiàn〖thiển kiến (khiêm từ: ý kiến hèn mọn của tôi)〗 · 眼拙 yǎnzhuō〖mắt kém, không nhận ra (khiêm từ khi không nhận ra người quen)〗 · 弄巧成拙 nòngqiǎochéngzhuō〖khéo hóa vụng, lợn lành chữa lợn què (định làm khéo hóa hỏng việc)〗
+- **焦** (cháy, khét; nóng lòng): 焦急 jiāojí〖nóng lòng, sốt ruột〗 · 焦点 jiāodiǎn〖tiêu điểm, điểm mấu chốt〗 · 焦虑 jiāolǜ〖lo lắng, lo âu〗 · 焦黄 jiāohuáng〖vàng cháy, vàng sém〗 · 焦头烂额 jiāotóulàn'é〖đầu cháy trán bỏng, cực kỳ vất vả rối bời〗
 
 ## Bài 18 — 神奇的丝瓜
 
@@ -1184,13 +1184,13 @@
 
 ### 生词拓展
 
-- **即**: 即使 jíshǐ · 即日 jírì · 立即 lìjí · 当即 dāngjí · 一拍即合 yīpāijíhé
-- **壤**: 土壤 tǔrǎng · 接壤 jiērǎng · 沃壤 wòrǎng · 穷乡僻壤 qióngxiāngpìrǎng · 天壤之别 tiānrǎngzhībié
-- **愣**: 发愣 fālèng · 愣神儿 lèngshénr · 愣住 lèngzhù · 愣是 lèngshì · 愣头愣脑 lèngtóulèngnǎo
-- **陡**: 陡立 dǒulì · 陡然 dǒurán · 陡变 dǒubiàn · 陡坡 dǒupō · 陡峭 dǒuqiào · 陡降 dǒujiàng
-- **茂**: 茂盛 màoshèng · 繁茂 fánmào · 根深叶茂 gēnshēnyèmào · 图文并茂 túwénbìngmào
-- **盛**: 昌盛 chāngshèng · 盛怒 shèngnù · 盛行 shèngxíng · 盛开 shèngkāi · 盛产 shèngchǎn · 丰盛 fēngshèng
-- **覆**: 覆灭 fùmiè · 颠覆 diānfù · 覆盖 fùgài · 天翻地覆 tiānfāndìfù
+- **即** (ngay, liền, tức thì): 即使 jíshǐ〖cho dù, ngay cả khi (liên từ giả thiết)〗 · 即日 jírì〖ngay trong ngày, hôm nay〗 · 立即 lìjí〖lập tức〗 · 当即 dāngjí〖ngay lập tức, tức khắc〗 · 一拍即合 yīpāijíhé〖vừa khớp ngay, hợp ý nhau ngay lập tức〗
+- **壤** (đất): 土壤 tǔrǎng〖đất, thổ nhưỡng〗 · 接壤 jiērǎng〖giáp ranh, tiếp giáp (biên giới đất liền kề)〗 · 沃壤 wòrǎng〖đất màu mỡ〗 · 穷乡僻壤 qióngxiāngpìrǎng〖vùng quê hẻo lánh nghèo nàn〗 · 天壤之别 tiānrǎngzhībié〖khác biệt một trời một vực〗
+- **愣** (ngẩn ra, đờ đẫn): 发愣 fālèng〖ngẩn người, thẫn thờ〗 · 愣神儿 lèngshénr〖thẫn thờ, đờ đẫn〗 · 愣住 lèngzhù〖sững sờ, đứng hình〗 · 愣是 lèngshì〖cứ, nhất quyết (bất chấp, bướng bỉnh làm gì đó)〗 · 愣头愣脑 lèngtóulèngnǎo〖ngờ nghệch, đờ đẫn, hấp tấp vô tư〗
+- **陡** (dốc đứng; đột ngột): 陡立 dǒulì〖dựng đứng, sừng sững〗 · 陡然 dǒurán〖đột nhiên, bỗng nhiên〗 · 陡变 dǒubiàn〖biến đổi đột ngột〗 · 陡坡 dǒupō〖dốc đứng〗 · 陡峭 dǒuqiào〖dốc đứng, hiểm trở〗 · 陡降 dǒujiàng〖giảm mạnh đột ngột〗
+- **茂** (tươi tốt, sum suê, rậm rạp): 茂盛 màoshèng〖tươi tốt, sum suê〗 · 繁茂 fánmào〖um tùm, rậm rạp〗 · 根深叶茂 gēnshēnyèmào〖rễ sâu lá tốt, nền tảng vững chắc〗 · 图文并茂 túwénbìngmào〖hình ảnh và chữ viết đều phong phú, sinh động〗
+- **盛** (thịnh, nhiều, mạnh): 昌盛 chāngshèng〖hưng thịnh, thịnh vượng〗 · 盛怒 shèngnù〖giận dữ, thịnh nộ〗 · 盛行 shèngxíng〖thịnh hành, phổ biến〗 · 盛开 shèngkāi〖(hoa) nở rộ〗 · 盛产 shèngchǎn〖sản xuất nhiều, có nhiều (đặc sản)〗 · 丰盛 fēngshèng〖phong phú, thịnh soạn (mâm cỗ)〗
+- **覆** (lật, phủ, che): 覆灭 fùmiè〖diệt vong, sụp đổ hoàn toàn〗 · 颠覆 diānfù〖lật đổ〗 · 覆盖 fùgài〖che phủ, bao phủ〗 · 天翻地覆 tiānfāndìfù〖trời long đất lở, thay đổi to lớn〗
 
 ## Bài 19 — 无阳光的深海世界
 
@@ -1240,11 +1240,11 @@
 
 ### 生词拓展
 
-- **恍**: 恍然 huǎngrán · 恍然大悟 huǎngrándàwù
-- **裂**: 裂开 lièkāi · 裂缝 lièfèng · 裂纹 lièwén · 身败名裂 shēnbàimíngliè · 心胆俱裂 xīndǎnjùliè · 四分五裂 sìfēnwǔliè · 山崩地裂 shānbēngdìliè
-- **透**: 渗透 shèntòu · 透气 tòuqì · 透光 tòuguāng · 透亮 tòuliàng · 透露 tòulù
-- **潜**: 潜水 qiánshuǐ · 潜力 qiánlì · 潜伏 qiánfú · 潜移默化 qiányímòhuà
-- **有**: 有条不紊 yǒutiáobùwěn · 井井有条 jǐngjǐngyǒutiáo
+- **恍** (chợt, sực (tỉnh ngộ)): 恍然 huǎngrán〖chợt hiểu ra, sực tỉnh〗 · 恍然大悟 huǎngrándàwù〖chợt tỉnh ngộ, hoát nhiên đại ngộ〗
+- **裂** (nứt, vỡ, tách rời): 裂开 lièkāi〖nứt ra, vỡ ra〗 · 裂缝 lièfèng〖khe nứt, vết nứt〗 · 裂纹 lièwén〖vết rạn, đường nứt〗 · 身败名裂 shēnbàimíngliè〖thân bại danh liệt〗 · 心胆俱裂 xīndǎnjùliè〖kinh hồn táng đởm, sợ hãi tột độ〗 · 四分五裂 sìfēnwǔliè〖chia năm xẻ bảy, tan rã〗 · 山崩地裂 shānbēngdìliè〖núi lở đất nứt, chấn động dữ dội〗
+- **透** (thấm, xuyên qua, lộ ra): 渗透 shèntòu〖thấm qua, thẩm thấu〗 · 透气 tòuqì〖thoáng khí, thở〗 · 透光 tòuguāng〖thấu quang, cho ánh sáng xuyên qua〗 · 透亮 tòuliàng〖sáng trong, trong suốt〗 · 透露 tòulù〖tiết lộ, để lộ〗
+- **潜** (ngầm, tiềm ẩn, lặn): 潜水 qiánshuǐ〖lặn (dưới nước)〗 · 潜力 qiánlì〖tiềm lực, tiềm năng〗 · 潜伏 qiánfú〖tiềm phục, ẩn nấp, ủ bệnh〗 · 潜移默化 qiányímòhuà〖ảnh hưởng ngấm ngầm dần dần〗
+- **⇄ so sánh**: 有条不紊 yǒutiáobùwěn〖có trật tự, ngăn nắp, không rối loạn (làm việc theo thứ tự rõ ràng)〗 · 井井有条 jǐngjǐngyǒutiáo〖ngăn nắp, trật tự, đâu ra đấy〗
 
 ## Bài 20 — 金鸡窝
 
@@ -1298,13 +1298,13 @@
 
 ### 生词拓展
 
-- **勤**: 勤快 qínkuài · 勤恳 qínkěn · 勤俭 qínjiǎn · 勤学苦练 qínxuékǔliàn · 考勤 kǎoqín · 出勤 chūqín · 缺勤 quēqín
-- **废**: 废墟 fèixū · 废弃 fèiqì · 荒废 huāngfèi · 百废待兴 bǎifèidàixīng · 废品 fèipǐn · 废纸 fèizhǐ
-- **怪**: 怪癖 guàipǐ · 怪事 guàishì · 怪异 guàiyì · 怪模怪样 guàimóguàiyàng · 古怪 gǔguài · 奇形怪状 qíxíngguàizhuàng · 千奇百怪 qiānqíbǎiguài · 大惊小怪 dàjīngxiǎoguài · 怪罪 guàizuì · 错怪 cuòguài
-- **窝**: 鸟窝 niǎowō · 马蜂窝 mǎfēngwō · 安乐窝 ānlèwō · 眼窝 yǎnwō · 酒窝 jiǔwō · 山窝 shānwō · 窝囊 wōnāng
-- **蔽**: 隐蔽 yǐnbì · 屏蔽 píngbì · 掩蔽 yǎnbì · 遮蔽 zhēbì · 浮云蔽日 fúyúnbìrì · 一言以蔽之 yīyányǐbìzhī
-- **逢**: 每逢 měiféng · 相逢 xiāngféng · 千载难逢 qiānzǎinánféng · 久别重逢 jiǔbiéchóngféng · 逢山开路 féngshānkāilù
-- **贿**: 贿赂 huìlù · 受贿 shòuhuì · 行贿 xínghuì · 贿选 huìxuǎn
+- **勤** (siêng năng, chuyên cần): 勤快 qínkuài〖siêng năng, chăm chỉ (việc nhà, tay chân)〗 · 勤恳 qínkěn〖cần cù, tận tụy chăm chỉ〗 · 勤俭 qínjiǎn〖cần kiệm, chăm chỉ và tiết kiệm〗 · 勤学苦练 qínxuékǔliàn〖chăm học khổ luyện〗 · 考勤 kǎoqín〖điểm danh, chấm công〗 · 出勤 chūqín〖đi làm, có mặt làm việc〗 · 缺勤 quēqín〖vắng mặt, không đi làm〗
+- **废** (phế bỏ, hoang phế, hỏng): 废墟 fèixū〖đống đổ nát, phế tích〗 · 废弃 fèiqì〖phế bỏ, vứt bỏ〗 · 荒废 huāngfèi〖bỏ hoang, sao nhãng〗 · 百废待兴 bǎifèidàixīng〖trăm việc chờ chấn hưng, mọi thứ đang chờ khôi phục〗 · 废品 fèipǐn〖phế phẩm, đồ phế thải〗 · 废纸 fèizhǐ〖giấy vụn, giấy phế thải〗
+- **怪** (kỳ quái, lạ; trách (chữ 怪 đa nghĩa)): 怪癖 guàipǐ〖tật kỳ quặc, thói quen kỳ lạ〗 · 怪事 guàishì〖chuyện kỳ lạ〗 · 怪异 guàiyì〖kỳ dị, quái lạ〗 · 怪模怪样 guàimóguàiyàng〖hình dáng kỳ quặc〗 · 古怪 gǔguài〖cổ quái, kỳ quặc〗 · 奇形怪状 qíxíngguàizhuàng〖hình thù kỳ quái〗 · 千奇百怪 qiānqíbǎiguài〖muôn hình vạn trạng kỳ lạ〗 · 大惊小怪 dàjīngxiǎoguài〖làm ầm ĩ lên, hốt hoảng thái quá〗 · 怪罪 guàizuì〖trách cứ, đổ lỗi〗 · 错怪 cuòguài〖trách oan, trách nhầm〗
+- **窝** (ổ, tổ, hốc): 鸟窝 niǎowō〖tổ chim〗 · 马蜂窝 mǎfēngwō〖tổ ong bắp cày (chọc tổ ong = gây rắc rối)〗 · 安乐窝 ānlèwō〖tổ ấm an nhàn〗 · 眼窝 yǎnwō〖hốc mắt〗 · 酒窝 jiǔwō〖lúm đồng tiền〗 · 山窝 shānwō〖hốc núi, vùng núi hẻo lánh〗 · 窝囊 wōnāng〖nhu nhược, bất tài, ấm ức bực bội〗
+- **蔽** (che, khuất, che lấp): 隐蔽 yǐnbì〖ẩn nấp, che giấu〗 · 屏蔽 píngbì〖che chắn, ngăn chặn (chắn tín hiệu)〗 · 掩蔽 yǎnbì〖che khuất, che chở〗 · 遮蔽 zhēbì〖che khuất, che phủ〗 · 浮云蔽日 fúyúnbìrì〖mây che mặt trời, ẩn dụ gian thần che lấp minh quân〗 · 一言以蔽之 yīyányǐbìzhī〖tóm lại một câu, nói gọn lại〗
+- **逢** (gặp, gặp gỡ): 每逢 měiféng〖mỗi khi gặp, mỗi dịp〗 · 相逢 xiāngféng〖gặp gỡ nhau〗 · 千载难逢 qiānzǎinánféng〖nghìn năm khó gặp, cơ hội hiếm có〗 · 久别重逢 jiǔbiéchóngféng〖xa cách lâu ngày gặp lại〗 · 逢山开路 féngshānkāilù〖gặp núi mở đường, ý chí vượt khó〗
+- **贿** (hối lộ): 贿赂 huìlù〖hối lộ, đút lót〗 · 受贿 shòuhuì〖nhận hối lộ〗 · 行贿 xínghuì〖đưa hối lộ〗 · 贿选 huìxuǎn〖mua chuộc phiếu bầu, hối lộ bầu cử〗
 
 ## Bài 21 — 未来商店
 
@@ -1352,14 +1352,14 @@
 
 ### 生词拓展
 
-- **剧**: 剧 jù · 戏剧 xìjù · 编剧 biānjù · 喜剧 xǐjù · 话剧 huàjù · 剧烈 jùliè
-- **息**: 息 xī · 川流不息 chuānliúbùxī · 叹息 tànxī · 自强不息 zìqiángbùxī · 安息 ānxī
-- **把**: 把 bǎ · 把儿 bǎr · 把关 bǎguān · 把角 bǎjiǎo · 车把 chēbǎ
-- **卸**: 卸 xiè · 卸载 xièzài · 拆卸 chāixiè · 卸磨杀驴 xièmòshālǘ · 卸妆 xièzhuāng
-- **应**: 应 yīng · 应该 yīnggāi · 应有尽有 yīngyǒujìnyǒu · 答应 dāyìng · 应当 yīngdāng · 对应 duìyìng
-- **拟**: 拟 nǐ · 虚拟 xūnǐ · 模拟 mónǐ · 拟人 nǐrén · 拟物 nǐwù · 拟声词 nǐshēngcí
-- **插**: 插 chā · 插头 chātóu · 插秧 chāyāng · 插入 chārù · 插嘴 chāzuǐ · 插手 chāshǒu · 安插 ānchā
-- **馈**: 馈 kuì · 馈送 kuìsòng · 馈赠 kuìzèng · 反馈 fǎnkuì · 回馈 huíkuì
+- **剧** (kịch; dữ dội, mạnh): 戏剧 xìjù〖kịch, sân khấu kịch nói〗 · 编剧 biānjù〖biên kịch, người viết kịch bản〗 · 喜剧 xǐjù〖hài kịch〗 · 话剧 huàjù〖kịch nói〗 · 剧烈 jùliè〖kịch liệt, dữ dội, mạnh mẽ〗
+- **息** (nghỉ, ngừng; hơi thở; tin tức): 川流不息 chuānliúbùxī〖dòng người/xe cộ không ngớt〗 · 叹息 tànxī〖than thở, thở dài〗 · 自强不息 zìqiángbùxī〖tự cường không ngừng〗 · 安息 ānxī〖an nghỉ, yên nghỉ〗
+- **把** (nắm, cầm; tay cầm): 把儿 bǎr〖cái tay cầm, cái quai (đồ vật)〗 · 把关 bǎguān〖giữ cửa ải, kiểm soát chặt chẽ (nghĩa bóng: kiểm tra chất lượng)〗 · 把角 bǎjiǎo〖trấn giữ, canh gác góc/nơi hiểm yếu〗 · 车把 chēbǎ〖tay lái xe, ghi đông (xe đạp, xe máy)〗
+- **卸** (dỡ, tháo, trút bỏ): 卸载 xièzài〖gỡ tải, dỡ hàng; gỡ cài đặt (phần mềm)〗 · 拆卸 chāixiè〖tháo dỡ, tháo rời〗 · 卸磨杀驴 xièmòshālǘ〖dỡ cối giết lừa, vắt chanh bỏ vỏ〗 · 卸妆 xièzhuāng〖tẩy trang〗
+- **应** (nên, phải; đáp lại, ứng): 应该 yīnggāi〖nên, phải〗 · 应有尽有 yīngyǒujìnyǒu〖có đầy đủ mọi thứ〗 · 答应 dāyìng〖đáp ứng, đồng ý〗 · 应当 yīngdāng〖nên, cần phải〗 · 对应 duìyìng〖tương ứng, ứng với〗
+- **拟** (dự định, mô phỏng, phỏng theo): 虚拟 xūnǐ〖hư cấu, ảo, mô phỏng (virtual)〗 · 模拟 mónǐ〖mô phỏng, giả lập〗 · 拟人 nǐrén〖nhân cách hóa (tu từ)〗 · 拟物 nǐwù〖vật hóa, coi người như vật (tu từ)〗 · 拟声词 nǐshēngcí〖từ tượng thanh〗
+- **插** (cắm, chen, xen vào): 插头 chātóu〖phích cắm điện〗 · 插秧 chāyāng〖cấy mạ〗 · 插入 chārù〖chèn vào, cắm vào〗 · 插嘴 chāzuǐ〖chen lời, xen vào nói〗 · 插手 chāshǒu〖nhúng tay vào, can thiệp〗 · 安插 ānchā〖cài cắm, sắp đặt người vào vị trí nào đó〗
+- **馈** (tặng, biếu; phản hồi): 馈送 kuìsòng〖tặng, biếu, gửi tặng〗 · 馈赠 kuìzèng〖biếu tặng, tặng quà〗 · 反馈 fǎnkuì〖phản hồi〗 · 回馈 huíkuì〖đáp lại, báo đáp ơn nghĩa, phản hồi lại〗
 
 ## Bài 22 — 2050年的汽车什么样
 
@@ -1410,14 +1410,14 @@
 
 ### 生词拓展
 
-- **堵**: 堵 dǔ · 堵车 dǔchē · 堵得慌 dǔdehuāng · 一堵墙 yīdǔqiáng · 堵塞 dǔsè · 围堵 wéidǔ
-- **滞**: 滞 zhì · 滞留 zhìliú · 滞销 zhìxiāo · 呆滞 dāizhì · 停滞不前 tíngzhìbùqián
-- **谋**: 谋 móu · 阴谋诡计 yīnmóuguǐjì · 有勇有谋 yǒuyǒngyǒumóu · 足智多谋 zúzhìduōmóu · 深谋远虑 shēnmóuyuǎnlǜ
-- **融**: 融 róng · 融化 rónghuà · 融和 rónghé · 融合 rónghé · 融汇 rónghuì · 融会贯通 rónghuìguàntōng · 水乳交融 shuǐrǔjiāoróng
-- **珍**: 珍 zhēn · 珍珠 zhēnzhū · 珍稀 zhēnxī · 珍视 zhēnshì · 珍爱 zhēn'ài · 如数家珍 rúshǔjiāzhēn · 珍禽异兽 zhēnqínyìshòu · 山珍海味 shānzhēnhǎiwèi
-- **珠**: 珠 zhū · 珠子 zhūzi · 露珠 lùzhū · 泪珠 lèizhū · 圆珠笔 yuánzhūbǐ · 鱼目混珠 yúmùhùnzhū · 珠联璧合 zhūliánbìhé
-- **遏**: 遏 è · 怒不可遏 nùbùkěè · 遏止 èzhǐ · 遏制 èzhì · 阻遏 zǔè
-- **昂**: 昂 áng · 昂首 ángshǒu · 昂首阔步 ángshǒukuòbù · 昂然 ángrán · 慷慨激昂 kāngkǎijī'áng · 高昂 gāo'áng · 斗志昂然 dòuzhì'ángrán
+- **堵** (chặn, bịt kín; (lượng từ: bức tường)): 堵车 dǔchē〖kẹt xe, tắc đường〗 · 堵得慌 dǔdehuāng〖thấy bí bách, ngột ngạt trong lòng〗 · 一堵墙 yīdǔqiáng〖một bức tường (堵 dùng làm lượng từ)〗 · 堵塞 dǔsè〖tắc nghẽn, ùn tắc, bít lại〗 · 围堵 wéidǔ〖bao vây, ngăn chặn〗
+- **滞** (trì trệ, đình trệ, ứ đọng): 滞留 zhìliú〖lưu lại, mắc kẹt lại (chưa đi được)〗 · 滞销 zhìxiāo〖(hàng hóa) ế ẩm, khó tiêu thụ〗 · 呆滞 dāizhì〖đờ đẫn, trì trệ (ánh mắt, thị trường)〗 · 停滞不前 tíngzhìbùqián〖dừng lại không tiến, giậm chân tại chỗ〗
+- **谋** (mưu, mưu kế, tính kế): 阴谋诡计 yīnmóuguǐjì〖âm mưu quỷ kế〗 · 有勇有谋 yǒuyǒngyǒumóu〖vừa dũng cảm vừa có mưu lược〗 · 足智多谋 zúzhìduōmóu〖đa mưu túc trí, thông minh mưu lược〗 · 深谋远虑 shēnmóuyuǎnlǜ〖mưu tính sâu xa, nhìn xa trông rộng〗
+- **融** (tan, hòa tan, dung hòa): 融化 rónghuà〖tan chảy, tan ra〗 · 融和 rónghé〖ấm áp hòa hợp (khí hậu, không khí)〗 · 融合 rónghé〖hòa hợp, dung hợp, hợp nhất〗 · 融汇 rónghuì〖hội tụ, dung hợp (kiến thức, dòng chảy)〗 · 融会贯通 rónghuìguàntōng〖thông hiểu thấu đáo, vận dụng nhuần nhuyễn〗 · 水乳交融 shuǐrǔjiāoróng〖hòa quyện khăng khít như nước với sữa〗
+- **珍** (quý, trân quý): 珍珠 zhēnzhū〖ngọc trai〗 · 珍稀 zhēnxī〖quý hiếm〗 · 珍视 zhēnshì〖coi trọng, trân trọng〗 · 珍爱 zhēn'ài〖yêu quý, trân quý〗 · 如数家珍 rúshǔjiāzhēn〖kể vanh vách như đếm của báu nhà mình, rất am hiểu〗 · 珍禽异兽 zhēnqínyìshòu〖chim quý thú lạ〗 · 山珍海味 shānzhēnhǎiwèi〖sơn hào hải vị〗
+- **珠** (ngọc, hạt tròn nhỏ): 珠子 zhūzi〖hạt (chuỗi), hạt cườm〗 · 露珠 lùzhū〖giọt sương〗 · 泪珠 lèizhū〖giọt lệ, giọt nước mắt〗 · 圆珠笔 yuánzhūbǐ〖bút bi〗 · 鱼目混珠 yúmùhùnzhū〖vàng thau lẫn lộn, hàng giả trà trộn hàng thật〗 · 珠联璧合 zhūliánbìhé〖kết hợp hoàn hảo, xứng đôi vừa lứa〗
+- **遏** (ngăn chặn, kìm lại): 怒不可遏 nùbùkěè〖giận không kìm được, giận tím người〗 · 遏止 èzhǐ〖ngăn chặn, chặn đứng〗 · 遏制 èzhì〖kiềm chế, khống chế〗 · 阻遏 zǔè〖ngăn cản, cản trở〗
+- **昂** (ngẩng lên; hăng hái, cao): 昂首 ángshǒu〖ngẩng đầu lên〗 · 昂首阔步 ángshǒukuòbù〖ngẩng đầu ưỡn ngực bước đi hiên ngang〗 · 昂然 ángrán〖hiên ngang, hùng dũng〗 · 慷慨激昂 kāngkǎijī'áng〖hùng hồn sôi nổi, khảng khái hăng say〗 · 高昂 gāo'áng〖cao ngất (giá cả); phấn chấn cao độ (tinh thần)〗 · 斗志昂然 dòuzhì'ángrán〖ý chí chiến đấu hăng hái sôi sục〗
 
 ## Bài 23 — 大数据时代
 
@@ -1480,15 +1480,15 @@
 
 ### 生词拓展
 
-- **堵**: 堵 dǔ · 堵车 dǔchē · 堵得慌 dǔdehuāng · 一堵墙 yīdǔqiáng · 堵塞 dǔsè · 围堵 wéidǔ
-- **卓**: 卓 zhuó · 卓有成效 zhuóyǒuchéngxiào · 卓识 zhuóshí · 卓著 zhuózhù · 艰苦卓绝 jiānkǔzhuójué · 卓越 zhuóyuè · 卓见 zhuójiàn
-- **遣**: 遣 qiǎn · 派遣 pàiqiǎn · 调兵遣将 diàobīngqiǎnjiàng · 消遣 xiāoqiǎn · 差遣 chāiqiǎn · 自遣 zìqiǎn · 遣送 qiǎnsòng
-- **萌**: 萌 méng · 萌生 méngshēng · 萌发 méngfā · 萌芽 méngyá · 萌动 méngdòng
-- **谬**: 谬 miù · 谬论 miùlùn · 谬误 miùwù · 失之毫厘 shīzhīháolí ,谬以千里 · 荒谬 huāngmiù
-- **转**: 转 zhuǎn · 转变 zhuǎnbiàn · 转弯 zhuǎnwān · 转学 zhuǎnxué · 转眼 zhuǎnyǎn · 转账 zhuǎnzhàng · 转危为安 zhuǎnwēiwéi'ān · 目不转睛 mùbùzhuǎnjīng · 转告 zhuǎngào · 转达 zhuǎndá · 转让 zhuǎnràng · 转播 zhuǎnbō · 转租 zhuǎnzū
-- **喻**: 喻 yù · 譬喻 pìyù · 比喻 bǐyù · 隐喻 yǐnyù · 家喻户晓 jiāyùhùxiǎo · 不言而喻 bùyán'éryù · 不可理喻 bùkělǐyù · 喻之以理 yùzhīyǐlǐ
-- **为**: 为 wèi · 为人 wéirén · 为生 wéishēng · 为非作歹 wéifēizuòdǎi · 有为 yǒuwéi · 无为 wúwéi · 无能为力 wúnéngwéilì · 大有作为 dàyǒuzuòwéi · 胡作非为 húzuòfēiwéi
-- **攒**: 攒 zǎn · 攒钱 zǎnqián · 积攒 jīzǎn
+- **堵** (chặn, bịt kín; (lượng từ: bức tường)): 堵车 dǔchē〖kẹt xe, tắc đường〗 · 堵得慌 dǔdehuāng〖thấy bí bách, ngột ngạt trong lòng〗 · 一堵墙 yīdǔqiáng〖một bức tường (堵 dùng làm lượng từ)〗 · 堵塞 dǔsè〖tắc nghẽn, ùn tắc, bít lại〗 · 围堵 wéidǔ〖bao vây, ngăn chặn〗
+- **卓** (xuất sắc, vượt trội): 卓有成效 zhuóyǒuchéngxiào〖rất hiệu quả, hiệu quả rõ rệt〗 · 卓识 zhuóshí〖kiến thức/nhận định sâu sắc, cao kiến〗 · 卓著 zhuózhù〖nổi bật, lừng lẫy (thành tích)〗 · 艰苦卓绝 jiānkǔzhuójué〖gian khổ tột cùng〗 · 卓越 zhuóyuè〖kiệt xuất, xuất sắc〗 · 卓见 zhuójiàn〖cao kiến, kiến giải sâu sắc〗
+- **遣** (sai khiến, phái đi): 派遣 pàiqiǎn〖phái đi, cử đi〗 · 调兵遣将 diàobīngqiǎnjiàng〖điều binh khiển tướng〗 · 消遣 xiāoqiǎn〖giải trí, tiêu khiển〗 · 差遣 chāiqiǎn〖sai phái〗 · 自遣 zìqiǎn〖tự an ủi mình, tự giải khuây〗 · 遣送 qiǎnsòng〖trục xuất, đưa trả về nơi cũ〗
+- **萌** (nảy mầm, manh nha): 萌生 méngshēng〖nảy sinh (ý nghĩ, tình cảm)〗 · 萌发 méngfā〖nảy mầm, phát sinh〗 · 萌芽 méngyá〖nảy mầm, chớm nở, mầm mống〗 · 萌动 méngdòng〖manh nha, bắt đầu hình thành〗
+- **谬** (sai lầm, sai lệch): 谬论 miùlùn〖luận điệu sai lầm, ngụy biện〗 · 谬误 miùwù〖sai lầm, sai sót〗 · 失之毫厘 shīzhīháolí ,谬以千里〖sai một li đi một dặm〗 · 荒谬 huāngmiù〖hoang đường, vô lý〗
+- **转** (xoay, quay, chuyển): 转变 zhuǎnbiàn〖chuyển biến, thay đổi〗 · 转弯 zhuǎnwān〖rẽ, quẹo, ngoặt〗 · 转学 zhuǎnxué〖chuyển trường〗 · 转眼 zhuǎnyǎn〖trong chớp mắt, thoáng chốc〗 · 转账 zhuǎnzhàng〖chuyển khoản〗 · 转危为安 zhuǎnwēiwéi'ān〖chuyển nguy thành an, thoát hiểm bình an〗 · 目不转睛 mùbùzhuǎnjīng〖mắt không rời, chăm chú nhìn không chớp mắt〗 · 转告 zhuǎngào〖chuyển lời, nhắn lại〗 · 转达 zhuǎndá〖chuyển đạt, truyền đạt lại〗 · 转让 zhuǎnràng〖chuyển nhượng〗 · 转播 zhuǎnbō〖tiếp sóng, phát lại (đài/truyền hình)〗 · 转租 zhuǎnzū〖cho thuê lại〗
+- **喻** (ví von, hiểu rõ): 譬喻 pìyù〖ví dụ, ẩn dụ, thí dụ〗 · 比喻 bǐyù〖so sánh, ví von, phép ẩn dụ〗 · 隐喻 yǐnyù〖ẩn dụ〗 · 家喻户晓 jiāyùhùxiǎo〖nhà nhà đều biết, ai cũng biết〗 · 不言而喻 bùyán'éryù〖hiển nhiên, không nói cũng hiểu〗 · 不可理喻 bùkělǐyù〖không thể lý giải, ương ngạnh không nghe lẽ phải〗 · 喻之以理 yùzhīyǐlǐ〖lấy lý lẽ giảng giải, thuyết phục bằng lý lẽ〗
+- **为** (làm, là, vì): 为人 wéirén〖cách cư xử, tính cách làm người〗 · 为生 wéishēng〖mưu sinh, kiếm sống (以...为生)〗 · 为非作歹 wéifēizuòdǎi〖làm điều càn quấy, xằng bậy〗 · 有为 yǒuwéi〖có năng lực, có triển vọng〗 · 无为 wúwéi〖vô vi, không hành động (Đạo gia)〗 · 无能为力 wúnéngwéilì〖bất lực, không có khả năng làm〗 · 大有作为 dàyǒuzuòwéi〖có thể làm nên việc lớn, nhiều triển vọng〗 · 胡作非为 húzuòfēiwéi〖làm càn làm bậy〗
+- **攒** (dành dụm, tích góp): 攒钱 zǎnqián〖dành dụm tiền〗 · 积攒 jīzǎn〖tích góp, tích lũy dần〗
 
 ## Bài 24 — 体育明星们的离奇遭遇
 
@@ -1552,14 +1552,14 @@
 
 ### 生词拓展
 
-- **横**: 蛮横 mánhèng · 骄横 jiāohèng · 专横 zhuānhèng · 横祸 hènghuò · 横财 hèngcái · 横眉怒目 héngméinùmù · 横行霸道 héngxíngbàdào · 横七竖八 héngqīshùbā · 横冲直撞 héngchōngzhízhuàng · 人行横道 rénxínghéngdào
-- **阴**: 阴雨 yīnyǔ · 阴晴 yīnqíng · 阴云密布 yīnyúnmìbù · 阴暗 yīn'àn · 阴冷 yīnlěng · 阴面 yīnmiàn · 阴险 yīnxiǎn · 阴毒 yīndú · 阳奉阴违 yángfèngyīnwéi · 阴谋 yīnmóu · 阴谋诡计 yīnmóuguǐjì
-- **遮**: 一手遮天 yīshǒuzhētiān · 遮遮掩掩 zhēzhēyǎnyǎn · 遮挡 zhēdǎng · 遮蔽 zhēbì · 遮盖 zhēgài
-- **哀**: 哀伤 āishāng · 哀泣 āiqì · 哀叹 āitàn · 哀愁 āichóu · 哀痛 āitòng · 哀号 āiháo · 哀鸣 āimíng
-- **酷**: 冷酷 lěngkù · 严酷 yánkù · 酷爱 kù'ài · 酷寒 kùhán · 酷热 kùrè · 酷似 kùsì
-- **凶**: 凶残 xiōngcán · 凶狠 xiōnghěn · 凶恶 xiōngè · 凶险 xiōngxiǎn · 凶猛 xiōngměng · 行凶 xíngxiōng · 凶器 xiōngqì · 凶犯 xiōngfàn · 帮凶 bāngxiōng
-- **冤**: 不白之冤 bùbáizhīyuān · 冤屈 yuānqū · 冤枉 yuānwǎng · 冤仇 yuānchóu · 无冤无仇 wúyuānwúchóu
-- **雪**: 雪花 xuěhuā · 冰天雪地 bīngtiānxuědì · 雪崩 xuěbēng · 雪耻 xuěchǐ · 雪冤 xuěyuān · 报仇雪恨 bàochóuxuěhèn · 雪亮 xuěliàng · 雪中送炭 xuězhōngsòngtàn · 雪上加霜 xuěshàngjiāshuāng
+- **横** (ngang; ngang ngược, hung bạo, bất ngờ): 蛮横 mánhèng〖ngang ngược, hung hãn vô lý〗 · 骄横 jiāohèng〖kiêu ngạo hống hách〗 · 专横 zhuānhèng〖chuyên quyền độc đoán〗 · 横祸 hènghuò〖tai họa bất ngờ, họa vô đơn chí〗 · 横财 hèngcái〖của cải bất chính, tiền của phi nghĩa〗 · 横眉怒目 héngméinùmù〖mày ngang mắt trợn (vẻ giận dữ hung tợn)〗 · 横行霸道 héngxíngbàdào〖hoành hành ngang ngược, ngang ngược bá đạo〗 · 横七竖八 héngqīshùbā〖ngổn ngang lộn xộn〗 · 横冲直撞 héngchōngzhízhuàng〖xông xáo húc càn, đâm ngang đâm dọc〗 · 人行横道 rénxínghéngdào〖vạch qua đường dành cho người đi bộ〗
+- **阴** (âm u, ngầm, âm hiểm): 阴雨 yīnyǔ〖mưa dầm trời âm u〗 · 阴晴 yīnqíng〖lúc nắng lúc râm〗 · 阴云密布 yīnyúnmìbù〖mây đen kéo đầy trời (điềm gở sắp xảy ra)〗 · 阴暗 yīn'àn〖tối tăm, u ám〗 · 阴冷 yīnlěng〖lạnh lẽo ẩm thấp; (thái độ) lạnh lùng〗 · 阴面 yīnmiàn〖mặt khuất nắng〗 · 阴险 yīnxiǎn〖âm hiểm, thâm hiểm〗 · 阴毒 yīndú〖độc ác thâm hiểm〗 · 阳奉阴违 yángfèngyīnwéi〖ngoài mặt vâng dạ trong bụng chống đối〗 · 阴谋 yīnmóu〖âm mưu〗 · 阴谋诡计 yīnmóuguǐjì〖âm mưu quỷ kế〗
+- **遮** (che, che giấu): 一手遮天 yīshǒuzhētiān〖một tay che trời, lộng quyền che giấu sự thật〗 · 遮遮掩掩 zhēzhēyǎnyǎn〖giấu giấu diếm diếm, úp úp mở mở〗 · 遮挡 zhēdǎng〖che chắn〗 · 遮蔽 zhēbì〖che khuất, che lấp〗 · 遮盖 zhēgài〖che phủ, che đậy〗
+- **哀** (bi thương, đau buồn): 哀伤 āishāng〖đau buồn, bi thương〗 · 哀泣 āiqì〖khóc than bi ai〗 · 哀叹 āitàn〖than thở, thở than〗 · 哀愁 āichóu〖sầu muộn, buồn rầu〗 · 哀痛 āitòng〖đau đớn xót thương〗 · 哀号 āiháo〖gào khóc thảm thiết〗 · 哀鸣 āimíng〖kêu than bi thương (tiếng kêu ai oán)〗
+- **酷** (khắc nghiệt, tàn khốc; cực kỳ): 冷酷 lěngkù〖lạnh lùng tàn nhẫn〗 · 严酷 yánkù〖nghiêm khắc, khắc nghiệt〗 · 酷爱 kù'ài〖say mê, rất yêu thích〗 · 酷寒 kùhán〖rét cắt da cắt thịt, giá lạnh khắc nghiệt〗 · 酷热 kùrè〖nóng bức khắc nghiệt, nóng như thiêu〗 · 酷似 kùsì〖giống hệt, giống như đúc〗
+- **凶** (hung ác, dữ tợn): 凶残 xiōngcán〖hung tàn, hung ác tàn bạo〗 · 凶狠 xiōnghěn〖hung dữ, hung ác〗 · 凶恶 xiōngè〖hung ác, dữ tợn〗 · 凶险 xiōngxiǎn〖nguy hiểm, hiểm ác〗 · 凶猛 xiōngměng〖hung mãnh, dữ tợn〗 · 行凶 xíngxiōng〖hành hung, gây án〗 · 凶器 xiōngqì〖hung khí〗 · 凶犯 xiōngfàn〖hung phạm, kẻ gây án〗 · 帮凶 bāngxiōng〖đồng phạm, tòng phạm〗
+- **冤** (oan, oan ức): 不白之冤 bùbáizhīyuān〖nỗi oan không thể giãi bày, oan ức không rửa được〗 · 冤屈 yuānqū〖oan ức, uất ức〗 · 冤枉 yuānwǎng〖oan uổng, oan〗 · 冤仇 yuānchóu〖oan cừu, thù oán〗 · 无冤无仇 wúyuānwúchóu〖không oán không thù〗
+- **雪** (tuyết; rửa (oan, nhục)): 雪花 xuěhuā〖bông tuyết〗 · 冰天雪地 bīngtiānxuědì〖băng trời tuyết đất, trời đông giá rét〗 · 雪崩 xuěbēng〖tuyết lở〗 · 雪耻 xuěchǐ〖rửa nhục〗 · 雪冤 xuěyuān〖rửa oan, giải oan〗 · 报仇雪恨 bàochóuxuěhèn〖báo thù rửa hận〗 · 雪亮 xuěliàng〖sáng như tuyết, sáng quắc, tinh tường (mắt)〗 · 雪中送炭 xuězhōngsòngtàn〖giúp đỡ đúng lúc khó khăn (tặng than giữa trời tuyết)〗 · 雪上加霜 xuěshàngjiāshuāng〖họa vô đơn chí, khó khăn chồng chất khó khăn〗
 
 ## Bài 25 — 草船借箭
 
@@ -1621,15 +1621,15 @@
 
 ### 生词拓展
 
-- **委**: 委婉 wěiwǎn · 委派 wěipài · 委托 wěituō · 委实 wěishí
-- **款**: 救灾款 jiùzāikuǎn · 专款 zhuānkuǎn · 赃款 zāngkuǎn · 公款 gōngkuǎn · 罚款 fákuǎn · 筹款 chóukuǎn · 捐款 juānkuǎn · 贷款 dàikuǎn · 款待 kuǎndài · 款留 kuǎnliú · 款式 kuǎnshì · 落款 luòkuǎn
-- **叮**: 叮咛 dīngníng · 叮嘱 dīngzhǔ · 千叮万嘱 qiāndīngwànzhǔ · 叮当 dīngdāng · 叮咬 dīngyǎo · 叮问 dīngwèn
-- **嘱**: 嘱咐 zhǔfù · 遗嘱 yízhǔ · 叮嘱 dīngzhǔ · 医嘱 yīzhǔ
-- **逼**: 逼债 bīzhài · 威逼 wēibī · 逼迫 bīpò · 逼视 bīshì · 逼近 bījìn · 逼真 bīzhēn
-- **保**: 保卫 bǎowèi · 保养 bǎoyǎng · 保温 bǎowēn · 保险 bǎoxiǎn · 朝不保夕 zhāobùbǎoxī
-- **漏**: 说漏了嘴 shuōlòulezuǐ · 漏网 lòuwǎng · 漏洞 lòudòng · 漏电 lòudiàn · 漏风 lòufēng · 漏斗 lòudǒu
-- **凌**: 盛气凌人 shèngqìlíngrén · 欺凌 qīlíng · 凌晨 língchén · 凌驾 língjià · 凌空 língkōng · 冰凌 bīnglíng · 冰激凌 bīngjīlíng · 壮志凌云 zhuàngzhìlíngyún
-- **涨**: 飞涨 fēizhǎng · 涨价 zhǎngjià · 涨钱 zhǎngqián · 暴涨 bàozhǎng · 猛涨 měngzhǎng · 涨落 zhǎngluò · 涨跌 zhǎngdiē · 水涨船高 shuǐzhǎngchuángāo · 高涨 gāozhǎng · 看涨 kànzhǎng · 上涨 shàngzhǎng
+- **委** (ủy thác, giao phó; uyển chuyển): 委婉 wěiwǎn〖uyển chuyển, khéo léo (lời nói)〗 · 委派 wěipài〖cử, phái đi (giao nhiệm vụ)〗 · 委托 wěituō〖ủy thác, gửi gắm nhờ cậy〗 · 委实 wěishí〖quả thực, thực sự〗
+- **款** (khoản tiền; kiểu dáng; tiếp đãi): 救灾款 jiùzāikuǎn〖tiền cứu trợ thiên tai〗 · 专款 zhuānkuǎn〖khoản tiền chuyên dụng〗 · 赃款 zāngkuǎn〖tiền phi pháp, tiền tham ô〗 · 公款 gōngkuǎn〖công quỹ, tiền công〗 · 罚款 fákuǎn〖tiền phạt〗 · 筹款 chóukuǎn〖quyên góp tiền, gây quỹ〗 · 捐款 juānkuǎn〖quyên góp, tiền quyên góp〗 · 贷款 dàikuǎn〖khoản vay, cho vay〗 · 款待 kuǎndài〖tiếp đãi, khoản đãi〗 · 款留 kuǎnliú〖giữ lại tiếp đãi (khách)〗 · 款式 kuǎnshì〖kiểu dáng, mẫu mã〗 · 落款 luòkuǎn〖đề tên, ký tên (trên thư/tranh)〗
+- **叮** (dặn dò; đốt, chích; leng keng): 叮咛 dīngníng〖dặn dò ân cần〗 · 叮嘱 dīngzhǔ〖dặn dò, căn dặn〗 · 千叮万嘱 qiāndīngwànzhǔ〖dặn đi dặn lại nhiều lần〗 · 叮当 dīngdāng〖leng keng (tiếng va chạm kim loại)〗 · 叮咬 dīngyǎo〖đốt, chích, cắn (côn trùng)〗 · 叮问 dīngwèn〖gặng hỏi, hỏi dồn〗
+- **嘱** (dặn dò, ủy thác): 嘱咐 zhǔfù〖dặn dò〗 · 遗嘱 yízhǔ〖di chúc〗 · 叮嘱 dīngzhǔ〖dặn dò, căn dặn〗 · 医嘱 yīzhǔ〖y lệnh, chỉ định của bác sĩ〗
+- **逼** (ép, bức, áp sát): 逼债 bīzhài〖đòi nợ ráo riết, bức nợ〗 · 威逼 wēibī〖uy hiếp, đe dọa ép buộc〗 · 逼迫 bīpò〖ép buộc, bức bách〗 · 逼视 bīshì〖nhìn xoáy vào, nhìn chằm chằm áp sát〗 · 逼近 bījìn〖áp sát, tới gần〗 · 逼真 bīzhēn〖giống như thật, chân thực〗
+- **保** (bảo vệ, giữ gìn): 保卫 bǎowèi〖bảo vệ〗 · 保养 bǎoyǎng〖bảo dưỡng, chăm sóc giữ gìn〗 · 保温 bǎowēn〖giữ nhiệt, giữ ấm〗 · 保险 bǎoxiǎn〖bảo hiểm; an toàn〗 · 朝不保夕 zhāobùbǎoxī〖sớm không biết chiều, tình thế nguy cấp bấp bênh〗
+- **漏** (rò rỉ, lọt, hở): 说漏了嘴 shuōlòulezuǐ〖lỡ lời, buột miệng nói ra〗 · 漏网 lòuwǎng〖lọt lưới, thoát lưới pháp luật〗 · 漏洞 lòudòng〖lỗ hổng, kẽ hở〗 · 漏电 lòudiàn〖rò điện〗 · 漏风 lòufēng〖lọt gió, hở gió (cũng ý lộ chuyện)〗 · 漏斗 lòudǒu〖cái phễu〗
+- **凌** (lấn át, vượt lên; băng giá): 盛气凌人 shèngqìlíngrén〖hống hách lấn át người khác〗 · 欺凌 qīlíng〖ức hiếp, bắt nạt〗 · 凌晨 língchén〖rạng sáng, tờ mờ sáng〗 · 凌驾 língjià〖vượt lên trên, lấn át (quyền lực)〗 · 凌空 língkōng〖vượt không trung, bay vút lên trời〗 · 冰凌 bīnglíng〖băng giá, cột băng〗 · 冰激凌 bīngjīlíng〖kem (món kem lạnh)〗 · 壮志凌云 zhuàngzhìlíngyún〖chí lớn ngất trời, hoài bão lớn lao〗
+- **涨** (tăng, dâng lên): 飞涨 fēizhǎng〖tăng vọt, tăng vùn vụt〗 · 涨价 zhǎngjià〖tăng giá〗 · 涨钱 zhǎngqián〖tăng tiền, tăng giá〗 · 暴涨 bàozhǎng〖tăng vọt đột ngột〗 · 猛涨 měngzhǎng〖tăng mạnh〗 · 涨落 zhǎngluò〖lên xuống (giá cả, mực nước)〗 · 涨跌 zhǎngdiē〖tăng giảm (giá)〗 · 水涨船高 shuǐzhǎngchuángāo〖cái này tăng thì cái kia cũng tăng theo〗 · 高涨 gāozhǎng〖dâng cao, lên cao (tinh thần, phong trào)〗 · 看涨 kànzhǎng〖dự đoán sẽ tăng, có xu hướng tăng〗 · 上涨 shàngzhǎng〖tăng lên, lên giá〗
 
 ## Bài 26 — 奇异的灯光
 
@@ -1686,12 +1686,12 @@
 
 ### 生词拓展
 
-- **炎**: 炎热 yánrè · 炎夏 yánxià · 炎凉 yánliáng · 世态炎凉 shìtàiyánliáng · 炎炎夏季 yányánxiàjì
-- **乏**: 乏 fá · 解乏 jiěfá · 人困马乏 rénkùnmǎfá · 疲乏 pífá · 倦乏 juànfá · 劳乏 láofá
-- **摊**: 摊 tān · 报摊儿 bàotānr · 均摊 jūntān · 分摊 fēntān · 烂摊子 làntānzi · 收摊儿 shōutānr
-- **来**: 来来回回 láiláihuíhuí · 打打闹闹 dǎdǎnàonào · 进进出出 jìnjìnchūchū · 来来往往 láiláiwǎngwǎng · 拉拉扯扯 lālāchěchě · 比比划划 bǐbǐhuàhuà · 嘻嘻哈哈 xīxīhāhā · 磕磕碰碰 kēkēpèngpèng · 拖拖拉拉 tuōtuōlālā
-- **眯**: 眯 mī · 眯缝 mīfèng · 笑眯眯 xiàomīmī · 迷瞪 mídèng · 眯着 mīzhe
-- **默**: 默 mò · 默哀 mò'āi · 默契 mòqì · 默认 mòrèn · 默许 mòxǔ · 默默无言 mòmòwúyán
+- **炎** (nóng bức; viêm): 炎热 yánrè〖nóng bức, oi bức〗 · 炎夏 yánxià〖mùa hè nóng nực〗 · 炎凉 yánliáng〖nóng lạnh (ví thói đời ấm lạnh)〗 · 世态炎凉 shìtàiyánliáng〖thói đời ấm lạnh, nhân tình thế thái〗 · 炎炎夏季 yányánxiàjì〖mùa hè nóng như thiêu đốt〗
+- **乏** (mệt mỏi; thiếu): 解乏 jiěfá〖giải tỏa mệt mỏi, hết mệt〗 · 人困马乏 rénkùnmǎfá〖người mệt ngựa mỏi (kiệt sức vì đi đường xa)〗 · 疲乏 pífá〖mệt mỏi, mệt nhoài〗 · 倦乏 juànfá〖mệt mỏi, uể oải〗 · 劳乏 láofá〖mệt nhọc vì lao động〗
+- **摊** (sạp hàng, bày ra; chia sẻ (gánh)): 报摊儿 bàotānr〖sạp bán báo〗 · 均摊 jūntān〖chia đều〗 · 分摊 fēntān〖chia sẻ, phân chia (chi phí, trách nhiệm)〗 · 烂摊子 làntānzi〖cục diện bê bối, mớ hỗn độn để lại〗 · 收摊儿 shōutānr〖dọn hàng, thu dọn sạp (kết thúc công việc)〗
+- **叠词 AABB** (dạng từ láy AABB — nhấn mạnh mức độ/tần suất động tác (không có chữ gốc chung)): 来来回回 láiláihuíhuí〖đi đi lại lại nhiều lần〗 · 打打闹闹 dǎdǎnàonào〖đùa giỡn ầm ĩ, chành chọe đùa nghịch〗 · 进进出出 jìnjìnchūchū〖ra ra vào vào liên tục〗 · 来来往往 láiláiwǎngwǎng〖qua lại tấp nập, đi lại nhộn nhịp〗 · 拉拉扯扯 lālāchěchě〖kéo lôi dây dưa (cũng ý quan hệ mập mờ không rõ ràng)〗 · 比比划划 bǐbǐhuàhuà〖khoa tay múa chân, ra dấu diễn tả〗 · 嘻嘻哈哈 xīxīhāhā〖cười đùa vui vẻ, hì hà hì hục〗 · 磕磕碰碰 kēkēpèngpèng〖va vấp lục đục (bất hòa nhỏ nhặt trong quan hệ)〗 · 拖拖拉拉 tuōtuōlālā〖chần chừ lề mề, dây dưa chậm trễ〗
+- **眯** (nheo mắt, híp mắt): 眯缝 mīfèng〖nheo mắt, híp mắt lại〗 · 笑眯眯 xiàomīmī〖cười tủm tỉm, cười híp mắt〗 · 迷瞪 mídèng〖lim dim ngái ngủ, mơ màng buồn ngủ〗 · 眯着 mīzhe〖nhắm hờ mắt, híp mắt lại〗
+- **默** (im lặng, ngầm): 默哀 mò'āi〖mặc niệm〗 · 默契 mòqì〖ăn ý, ngầm hiểu nhau〗 · 默认 mòrèn〖ngầm công nhận, mặc định〗 · 默许 mòxǔ〖ngầm cho phép, mặc nhận〗 · 默默无言 mòmòwúyán〖lặng thinh không nói, im lặng không lời〗
 
 ## Bài 27 — 完璧归赵
 
@@ -1750,14 +1750,14 @@
 
 ### 生词拓展
 
-- **拓展**: 兑现 duìxiàn －挤兑－汇兑－掺兑
-- **拓展**: 胆大妄为 dǎndàwàngwéi －妄求－妄说－轻举妄动
-- **拓展**: 磋商 cuōshāng －切磋
-- **拓展**: 雄兵 xióngbīng －雄伟－雄健－雄心－雄浑－雄师
-- **拓展**: 步履蹒跚 bùlǚpánshān －履历－履约－如履薄冰
-- **拓展**: 威仪 wēiyí －司仪－礼仪－仪表－贺仪
-- **拓展**: 撒娇 sājiāo －撒手－撒欢儿－撒泼－撒气
-- **拓展**: 暴露 bàolù －揭露－流露－透露－吐露－披露
+- **兑** (đổi, quy đổi (tiền tệ)): 兑现 duìxiàn〖đổi thành tiền mặt; (nghĩa bóng) thực hiện lời hứa〗 · 挤兑 jǐduì〖(ngân hàng) rút tiền ồ ạt; (khẩu ngữ) chèn ép, gây khó dễ〗 · 汇兑 huìduì〖chuyển đổi ngoại hối, chuyển tiền〗 · 掺兑 cànduì〖pha trộn, pha loãng (rượu, đồ uống)〗
+- **妄** (càn, bừa, vô căn cứ): 胆大妄为 dǎndàwàngwéi〖cả gan làm liều, liều lĩnh làm bậy〗 · 妄求 wàngqiú〖đòi hỏi viển vông, cầu mong hão〗 · 妄说 wàngshuō〖nói bừa, nói càn〗 · 轻举妄动 qīngjǔwàngdòng〖hành động khinh suất, làm liều không suy nghĩ〗
+- **磋** (bàn bạc, trau dồi): 磋商 cuōshāng〖bàn bạc, thương lượng〗 · 切磋 qiēcuō〖trau dồi, học hỏi lẫn nhau〗
+- **雄** (hùng, mạnh mẽ): 雄兵 xióngbīng〖hùng binh, đội quân hùng mạnh〗 · 雄伟 xióngwěi〖hùng vĩ, to lớn đẹp đẽ〗 · 雄健 xióngjiàn〖khỏe khoắn, mạnh mẽ (dáng đi, văn phong)〗 · 雄心 xióngxīn〖hùng tâm, chí lớn, hoài bão〗 · 雄浑 xiónghún〖hùng hồn, mạnh mẽ phóng khoáng (văn phong, âm thanh, cảnh vật)〗 · 雄师 xióngshī〖đội quân hùng mạnh, sư đoàn thiện chiến〗
+- **履** (giày; bước đi; thực hiện): 步履蹒跚 bùlǚpánshān〖bước đi chậm chạp, loạng choạng (già yếu)〗 · 履历 lǚlì〖lý lịch, sơ yếu lý lịch〗 · 履约 lǚyuē〖thực hiện hợp đồng/lời hứa〗 · 如履薄冰 rúlǚbóbīng〖như đi trên băng mỏng (thận trọng, lo sợ)〗
+- **仪** (nghi thức, dáng vẻ): 威仪 wēiyí〖uy nghi, phong thái oai nghiêm〗 · 司仪 sīyí〖người dẫn chương trình (buổi lễ), MC〗 · 礼仪 lǐyí〖lễ nghi, nghi thức〗 · 仪表 yíbiǎo〖dáng vẻ, phong thái, tác phong〗 · 贺仪 hèyí〖quà mừng, lễ vật chúc mừng〗
+- **撒** (rải, tung, thả ra; (khẩu ngữ) bộc lộ, giở ra (một hành vi/trạng thái)): 撒娇 sājiāo〖làm nũng, nũng nịu〗 · 撒手 sāshǒu〖buông tay, bỏ mặc, buông xuôi〗 · 撒欢儿 sāhuānr〖chạy nhảy tung tăng, vui đùa thỏa thích (trẻ con/con vật)〗 · 撒泼 sāpō〖làm ầm ĩ, ăn vạ, giở trò hung dữ〗 · 撒气 sāqì〖trút giận, xả giận〗
+- **露** (lộ ra, để lộ): 暴露 bàolù〖phơi bày, để lộ ra〗 · 揭露 jiēlù〖vạch trần, phơi bày〗 · 流露 liúlù〖bộc lộ tự nhiên (tình cảm), không cố ý〗 · 透露 tòulù〖tiết lộ, để lộ (thông tin)〗 · 吐露 tǔlù〖thổ lộ, giãi bày (tâm sự)〗 · 披露 pīlù〖công bố, tiết lộ (chính thức, trên báo chí)〗
 
 ## Bài 28 — 高山流水遇知音
 
@@ -1826,11 +1826,11 @@
 
 ### 生词拓展
 
-- **涵**: 涵 hán · 涵盖 hángài · 内涵 nèihán · 海涵 hǎihán · 包涵 bāohán
-- **朗**: 朗 lǎng · 朗朗 lǎnglǎng · 开朗 kāilǎng · 爽朗 shuǎnglǎng · 明朗 mínglǎng · 豁然开朗 huòránkāilǎng
-- **妙**: 妙 miào · 不妙 bùmiào · 妙趣 miàoqù · 锦囊妙计 jǐnnángmiàojì · 莫名其妙 mòmíngqímiào
-- **凡**: 凡 fán · 平凡 píngfán · 非凡 fēifán · 不凡 bùfán · 凡人 fánrén · 凡夫俗子 fánfūsúzǐ
-- **谱**: 谱 pǔ · 乐谱 yuèpǔ · 食谱 shípǔ · 谱曲 pǔqǔ · 脸谱 liǎnpǔ · 谱写 pǔxiě · 靠谱儿 kàopǔr
+- **涵** (bao hàm, chứa đựng; khoan dung): 涵盖 hángài〖bao hàm, bao quát〗 · 内涵 nèihán〖nội hàm, ý nghĩa bên trong〗 · 海涵 hǎihán〖xin lượng thứ (khiêm nhường, khẩu ngữ trang trọng)〗 · 包涵 bāohán〖thông cảm, bỏ qua cho〗
+- **朗** (sáng, rõ ràng; (tính cách) vui vẻ, cởi mở): 朗朗 lǎnglǎng〖(âm thanh) vang rõ; (trời) sáng rõ〗 · 开朗 kāilǎng〖cởi mở, vui vẻ, khoáng đạt (tính cách); sáng sủa, rộng rãi (không gian)〗 · 爽朗 shuǎnglǎng〖sảng khoái, cởi mở, thẳng thắn〗 · 明朗 mínglǎng〖rõ ràng, sáng sủa; minh bạch〗 · 豁然开朗 huòránkāilǎng〖bỗng nhiên sáng tỏ, hoát nhiên khai lãng〗
+- **妙** (hay, tuyệt diệu, khéo léo): 不妙 bùmiào〖không hay, chẳng lành (tình huống)〗 · 妙趣 miàoqù〖thú vị, hứng thú kỳ diệu〗 · 锦囊妙计 jǐnnángmiàojì〖diệu kế, mẹo hay giấu kín (giải quyết bất ngờ)〗 · 莫名其妙 mòmíngqímiào〖khó hiểu, không rõ lý do, vô lý〗
+- **凡** (phàm, bình thường; tất cả, hễ): 平凡 píngfán〖bình thường, tầm thường, giản dị〗 · 非凡 fēifán〖phi thường, khác thường, xuất sắc〗 · 不凡 bùfán〖không tầm thường, xuất chúng〗 · 凡人 fánrén〖người phàm, người bình thường〗 · 凡夫俗子 fánfūsúzǐ〖kẻ phàm tục, người bình thường〗
+- **谱** (bản phổ, phả, danh sách; sáng tác (nhạc)): 乐谱 yuèpǔ〖bản nhạc, khuông nhạc〗 · 食谱 shípǔ〖thực đơn, công thức nấu ăn〗 · 谱曲 pǔqǔ〖phổ nhạc, soạn nhạc〗 · 脸谱 liǎnpǔ〖mặt nạ (kinh kịch); khuôn mẫu rập khuôn (nghĩa bóng)〗 · 谱写 pǔxiě〖sáng tác, viết nên (nhạc, thành tích)〗 · 靠谱儿 kàopǔr〖đáng tin cậy, chắc chắn (khẩu ngữ)〗
 
 ## Bài 29 — “笑”的备忘录
 
@@ -1968,3 +1968,261 @@
 - **摧** (bẻ gãy, phá hủy): 摧折 cuīzhé〖bẻ gãy, vùi dập〗 · 摧毁 cuīhuǐ〖phá hủy, đánh sập〗 · 坚不可摧 jiānbùkěcuī〖vững chắc không gì phá nổi〗
 - **瘤** (khối u): 毒瘤 dúliú〖khối u độc; ung nhọt (của xã hội)〗 · 根瘤 gēnliú〖nốt sần ở rễ cây (họ đậu)〗
 - **衰** (suy, suy yếu): 衰迈 shuāimài〖già yếu〗 · 衰弱 shuāiruò〖suy nhược, yếu ớt〗 · 衰落 shuāiluò〖suy tàn, sa sút〗 · 衰减 shuāijiǎn〖suy giảm, giảm sút〗 · 衰微 shuāiwēi〖suy vi, suy yếu (thế lực)〗 · 衰败 shuāibài〖suy bại, tàn lụi〗
+
+## Bài 31 — 运动的学问
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 忠实 | zhōngshí | 对人或事很真诚，一直不变心。 | trung thực, trung thành | 虽然工作很忙，我还是每天忠实地坚持背单词，准备HSK6考试。 |
+| 不敢当 | bùgǎndāng | 别人夸奖自己的时候，谦虚地说自己配不上这样的夸奖。 | không dám nhận (lời khen), quá khen rồi | 老板夸我中文说得像中国人一样，我连忙说："不敢当，不敢当，我还差得远呢。" |
+| 走廊 | zǒuláng | 房子里连接各个房间的长长的通道。 | hành lang | 公司的走廊上贴满了员工旅游的照片，每次经过我都会看一看。 |
+| 徒弟 | túdì | 跟着师父学手艺或本领的人。 | đồ đệ, học trò (học nghề) | 我教中文的时候，学生们总说自己是我的徒弟，让我教他们说地道的中文。 |
+| 气功 | qìgōng | 中国传统的一种通过呼吸和动作来锻炼身体的方法。 | khí công | 我们公司楼下的公园里，每天早上都有一群中国同事在练气功。 |
+| 剑 | jiàn | 一种古代的兵器，两边都很锋利。 | kiếm | 我在中国旅游的时候，在博物馆里看到了一把很古老的剑。 |
+| 协会 | xiéhuì | 一群有相同兴趣或目的的人组成的组织。 | hiệp hội | 我打算准备完HSK6之后加入汉语教师协会，认识更多同行。 |
+| 爆发 | bàofā | 突然猛烈地发生。 | bùng nổ, bộc phát | 上个月公司里因为一个项目的问题，同事之间的矛盾一下子爆发了。 |
+| 劈 | pī | 用刀、斧等工具把东西从中间用力分开。 | chẻ, bổ (củi...) | 小时候在乡下，我经常帮爷爷劈柴生火做饭。 |
+| 误解 | wùjiě | 理解得不对，把意思弄错了。 | hiểu lầm | 因为我的中文表达不够清楚，同事误解了我的意思，还好后来解释清楚了。 |
+| 群众 | qúnzhòng | 普通的老百姓，人民大众。 | quần chúng, dân chúng | 政府这次的新政策得到了广大群众的支持。 |
+| 逐年 | zhúnián | 一年一年地（变化）。 | từng năm, theo từng năm | 我的中文水平在这几年逐年提高，现在已经能和中国同事无障碍交流了。 |
+| 要素 | yàosù | 构成事物不可缺少的重要部分。 | yếu tố | 词汇量、语法和语感是学好HSK6的三个重要要素。 |
+| 智力 | zhìlì | 人认识、理解和解决问题的能力。 | trí lực, trí tuệ | 学外语不但需要努力，也需要一定的智力和好的学习方法。 |
+| 预期 | yùqī | 事先期望或估计会发生的情况。 | dự kiến, kỳ vọng trước | 这次HSK6考试的成绩比我预期的要好，我很开心。 |
+| 首要 | shǒuyào | 排在第一位的，最重要的。 | hàng đầu, quan trọng nhất | 对我来说，提高口语的自然度是目前学习中文的首要任务。 |
+| 生锈 | shēngxiù | 金属因为潮湿或长期接触空气而表面变质、变色。 | gỉ sét, hoen gỉ | 好久不用中文，我感觉自己的口语都要生锈了，得赶紧多练习。 |
+| 放射 | fàngshè | 向四周发出光、热等能量。 | phóng xạ, tỏa ra (ánh sáng...) | 老师讲课的时候眼睛里放射出对语言的热爱，让我也很受感染。 |
+| 夫人 | fūrén | 对已婚女人的尊称，也指自己或别人的妻子。 | phu nhân, vợ (cách gọi trang trọng) | 我们公司中国老板的夫人也是一位很优秀的汉语老师。 |
+| 归根到底 | guīgēndàodǐ | 从最根本的地方说，总结起来说。 | xét cho cùng, rốt cuộc | 归根到底，学好中文靠的还是每天坚持练习，而不是三天打鱼两天晒网。 |
+| 潜力 | qiánlì | 隐藏着的、还没有完全发挥出来的能力。 | tiềm lực, tiềm năng | 我的学生虽然现在只是HSK3水平，但我看得出他在口语方面很有潜力。 |
+| 端端正正 | duānduānzhèngzhèng | 形容摆放得很整齐、很正，一点儿也不歪斜（也形容坐、站的姿势很正）。 | ngay ngắn, đàng hoàng (dạng láy nhấn mạnh) | 我要求学生写汉字的时候一定要端端正正的，不能马虎。 |
+| 端正 | duānzhèng | 不歪斜，正；也指人的态度或品行正派。 | ngay ngắn, đứng đắn | 老师常常提醒我们坐姿要端正，学习态度也要端正。 |
+| 胡乱 | húluàn | 随随便便地、不认真、没有经过思考地（做事）。 | bừa bãi, tùy tiện, cẩu thả | 考试的时候不能胡乱写答案，一定要认真思考再作答。 |
+| 间接 | jiànjiē | 不是直接发生关系的，中间还经过别的环节。 | gián tiếp | 我是通过朋友介绍间接认识了现在的中文老师的。 |
+| 品行 | pǐnxíng | 一个人的道德行为和品质。 | phẩm hạnh, đạo đức | 我常常告诉学生，学好中文固然重要，但品行端正才是做人的根本。 |
+| 紫外线 | zǐwàixiàn | 太阳光里一种人的眼睛看不见、对皮肤有影响的光线。 | tia cực tím, tia tử ngoại | 夏天在外面运动，一定要做好防晒，避免紫外线伤害皮肤。 |
+| 消毒 | xiāodú | 用药物或高温等方法去掉物体上的细菌。 | khử trùng, tiệt trùng | 疫情期间，公司每天都会对办公室的桌椅进行消毒。 |
+| 钙 | gài | 一种人体骨骼需要的矿物质元素。 | canxi | 医生建议我多补钙，多喝牛奶，多晒太阳。 |
+| 二氧化碳 | èryǎnghuàtàn | 一种没有颜色的气体，人呼气时会排出这种气体。 | khí carbon dioxide (CO2) | 植物在白天会吸收二氧化碳，释放氧气。 |
+| 舒畅 | shūchàng | 心情很轻松、很愉快，没有烦恼。 | thoải mái, dễ chịu (tâm trạng) | 每次教完一堂课，看到学生学会了新知识，我心里就特别舒畅。 |
+| 宣扬 | xuānyáng | 广泛地宣传，让很多人知道（多指好的方面）。 | tuyên truyền, truyền bá, ca ngợi rộng rãi | 公司这次特意在朋友圈里宣扬新员工培训项目，希望吸引更多人才。 |
+| 孔 | kǒng | 小洞，窟窿。 | lỗ, hốc | 这件衣服穿的时间太长了，袖子上都磨出了一个小孔。 |
+| 循序渐进 | xúnxùjiànjìn | 按照一定的顺序，一步一步地向前发展，不能着急。 | tuần tự tiến lên, theo trình tự từng bước | 我教HSK1-3的学生时，一直强调学中文要循序渐进，不能一下子学太多语法点。 |
+| 急于求成 | jíyúqiúchéng | 急着想要马上取得成功，不愿意慢慢努力。 | nóng vội muốn thành công nhanh | 备考HSK6的时候我也曾经急于求成，后来才明白积累词汇才是王道。 |
+| 剧烈 | jùliè | （运动、变化等）非常猛烈，程度很深。 | kịch liệt, dữ dội, mạnh mẽ | 医生说我心脏不太好，不适合做剧烈运动，只能散步或游泳。 |
+| 幅度 | fúdù | 事物变化的大小、范围的宽窄。 | biên độ, mức độ (dao động) | 这个月公司的销售额有了很大幅度的提高，大家都很开心。 |
+| 迁就 | qiānjiù | 为了让别人满意，勉强按照对方的想法去做，降低自己的要求。 | nhân nhượng, chiều theo | 教学生的时候，我不会一味迁就他们不想背单词的想法，该要求的还是要要求。 |
+| 坚定 | jiāndìng | （信念、态度、立场等）稳定，不会轻易改变。 | kiên định, vững vàng | 我下定了坚定的决心，无论多忙，每天都要抽出时间学中文。 |
+| 坚韧 | jiānrèn | 坚固而有韧性，不容易被折断或打倒（多形容意志、精神）。 | kiên cường, bền bỉ, dẻo dai | 一个人要想学好一门外语，坚韧的毅力比聪明的头脑更重要。 |
+| 狠心 | hěnxīn | 下定决心不顾一切地（去做某件不容易或不忍心的事）。 | quyết tâm dứt khoát, cứng rắn với bản thân | 为了准备HSK6考试，我狠心推掉了很多朋友的聚会邀请，专心复习。 |
+| 半途而废 | bàntú'érfèi | 事情做到一半就停下来，不能坚持到最后。 | bỏ dở giữa chừng | 学中文最忌讳半途而废，很多人学了一半觉得难就放弃了，很可惜。 |
+| 衰退 | shuāituì | （身体、能力、经济等）逐渐变差、变弱。 | suy thoái, suy giảm | 好几年不怎么说英语了，我感觉自己的英语口语能力都衰退了。 |
+| 著作 | zhùzuò | 写出来的文章或书，多指有学术或文学价值的作品。 | trước tác, tác phẩm (sách vở) | 那位语言学家关于汉语语法的著作，对我教HSK1-3很有帮助。 |
+| 反射 | fǎnshè | 光、声音等碰到物体后又弹回来。 | phản xạ | 教室里的白板反射着阳光，有点儿刺眼，我只好把窗帘拉上了。 |
+| 弱点 | ruòdiǎn | 一个人或事物不够好、比较薄弱的地方。 | điểm yếu, nhược điểm | 语法是我教学生时发现他们最大的弱点，所以我会多花时间讲练习。 |
+| 虐待 | nüèdài | 用很残忍的方式对待人或动物，让对方受苦。 | ngược đãi, hành hạ | 新闻里报道有人虐待宠物，看了让人非常生气。 |
+
+### 生词拓展
+
+- **徒** (kẻ, người (chỉ người làm một việc gì đó, thường mang nghĩa xấu hoặc trung tính); cũng có nghĩa "đồ đệ, học trò"): 歹徒 dǎitú〖kẻ xấu, tội phạm〗 · 徒工 túgōng〖thợ học việc〗 · 师徒 shītú〖thầy trò〗 · 赌徒 dǔtú〖con bạc, kẻ cờ bạc〗 · 不法之徒 bùfǎzhītú〖kẻ phạm pháp, kẻ bất lương〗
+- **剑** (kiếm): 剑术 jiànshù〖kiếm thuật〗 · 宝剑 bǎojiàn〖bảo kiếm〗 · 击剑 jījiàn〖đấu kiếm (môn thể thao)〗 · 剑麻 jiànmá〖cây gai dầu / sợi sisal (lá hình giống lưỡi kiếm)〗 · 唇枪舌剑 chúnqiāngshéjiàn〖đấu khẩu gay gắt, lời qua tiếng lại kịch liệt (thành ngữ)〗
+- **劈** (chẻ, bổ, chém thẳng vào): 劈开 pīkāi〖chẻ ra, bổ ra〗 · 劈柴 pǐchái〖chẻ củi〗 · 劈面 pīmiàn〖ngay trước mặt, đối diện〗 · 劈头 pītóu〖ngay từ đầu, thẳng vào đầu〗 · 劈头盖脸 pītóugàiliǎn〖(đánh/mắng) tới tấp vào đầu vào mặt〗
+- **锈** (gỉ, rỉ sét): 铜锈 tóngxiù〖gỉ đồng〗 · 铁锈 tiěxiù〖gỉ sắt〗 · 防锈 fángxiù〖chống gỉ〗 · 茶锈 cháxiù〖cặn trà (bám trong ấm/cốc)〗 · 水锈 shuǐxiù〖cặn nước (đóng cặn do nước cứng)〗
+- **扬** (nâng lên, truyền ra, phát huy): 扬帆 yángfān〖giương buồm〗 · 扬言 yángyán〖tuyên bố (đe dọa), rêu rao〗 · 颂扬 sòngyáng〖ca ngợi, tán dương〗 · 扬长避短 yángchángbìduǎn〖phát huy sở trường, tránh sở đoản (thành ngữ)〗 · 扬眉吐气 yángméitǔqì〖hết bị chèn ép, nở mày nở mặt (thành ngữ)〗
+- **韧** (dẻo dai, bền, có tính đàn hồi): 坚韧 jiānrèn〖kiên cường, bền bỉ〗 · 韧性 rènxìng〖tính dẻo dai, độ bền〗 · 韧带 rèndài〖dây chằng〗 · 柔韧 róurèn〖mềm dẻo〗 · 坚韧不拔 jiānrènbùbá〖kiên cường bất khuất (thành ngữ)〗
+- **虐** (tàn bạo, ngược đãi): 虐杀 nüèshā〖giết hại tàn bạo〗 · 助纣为虐 zhùzhòuwéinüè〖tiếp tay cho kẻ ác (thành ngữ)〗 · 暴虐 bàonüè〖tàn bạo, bạo ngược〗 · 肆虐 sìnüè〖hoành hành tàn bạo〗
+
+## Bài 32 — 有时，不妨悲伤
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 背叛 | bèipàn | 违背原来的承诺或立场，站到对立的一方去。 | phản bội | 他为了升职背叛了一起共事多年的同事，这让我很失望。 |
+| 上进 | shàngjìn | 努力向更好的方向发展，不甘落后。 | cầu tiến, tiến bộ | 我教的HSK6学生虽然基础一般，但很上进，每天都主动复习生词。 |
+| 抱负 | bàofù | 远大的理想和志向。 | hoài bão | 我的抱负是通过HSK6考试，以后能在中国公司里用中文独立完成商务谈判。 |
+| 魄力 | pòlì | 做事果断、有胆量和决断力。 | khí phách, sự quyết đoán | 我们公司的中国老板做决定很有魄力，从不拖泥带水。 |
+| 开阔 | kāikuò | 心胸宽广，不计较小事；也指空间宽广。 | rộng mở, khoáng đạt | 在中国工作几年后，我的眼界变得比以前开阔多了。 |
+| 处境 | chǔjìng | 所处的境地或状况，多指不利的情况。 | hoàn cảnh, cảnh ngộ | 刚到中国工作时，我完全听不懂同事说话，处境很尴尬。 |
+| 打击 | dǎjī | 使受到严重的挫折或伤害。 | đả kích, giáng đòn | 第一次HSK6模拟考只考了180分，这对我是不小的打击。 |
+| 脆弱 | cuìruò | 禁不起挫折，意志薄弱。 | yếu đuối, mong manh | 教HSK1的孩子时，我发现有的孩子一被批评就哭，心理特别脆弱。 |
+| 榜样 | bǎngyàng | 值得别人学习的好例子。 | tấm gương | 那位坚持自学十年中文的网友，是我学习HSK6的榜样。 |
+| 光彩 | guāngcǎi | 光泽色彩，也指光荣、体面。 | vẻ vang, vinh dự | 能用中文给中国同事做培训，我觉得特别光彩。 |
+| 理智 | lǐzhì | 能用理性控制自己的情感和行为。 | lý trí, tỉnh táo | 面对客户的误解，我尽量保持理智，用中文慢慢解释清楚。 |
+| 哭泣 | kūqì | 因伤心而流泪。 | khóc | 收到HSKK没通过的成绩单那天，我一个人在办公室哭泣了很久。 |
+| 否决 | fǒujué | 不同意，使提议不能通过。 | phủ quyết, bác bỏ | 我提出的教学计划被中方负责人否决了，因为进度太快。 |
+| 出息 | chūxī | 前途，出路（多用于"有出息"）。 | tiền đồ, triển vọng | 妈妈常说，学好中文以后才会有出息。 |
+| 含糊 | hánhú | 不清楚，不明确。 | mập mờ, không rõ ràng | 学生问我这个语法点的用法，我不能含糊，得查清楚再回答。 |
+| 束缚 | shùfù | 限制约束，使不能自由行动。 | ràng buộc, trói buộc | 刚学中文时，我总被母语的语法习惯束缚，说话很不自然。 |
+| 魔鬼 | móguǐ | 传说中害人的恶鬼，也比喻凶恶的人。 | ác quỷ, ma quỷ | 那个中文老师批改作业特别严格，学生私下叫她"魔鬼老师"。 |
+| 神仙 | shénxiān | 神话中长生不老、法力无边的人物。 | thần tiên | 给HSK1的孩子们讲神仙的故事，比直接讲语法有意思多了。 |
+| 健全 | jiànquán | 完善，没有缺陷。 | hoàn thiện, kiện toàn | 一个健全的学习计划应该包括听说读写四个方面。 |
+| 塌 | tā | 陷下去，倒下来。 | sập, đổ | 老家的老房子年久失修，去年台风一来就塌了一角。 |
+| 反之 | fǎnzhī | 与此相反，从相反的方面说。 | ngược lại | 每天坚持读课文，中文水平就会进步；反之，三天打鱼两天晒网，很快就会退步。 |
+| 娃娃 | wáwá | 小孩子。 | em bé, đứa trẻ | 我教的HSK1班里最小的娃娃才五岁，发音却很标准。 |
+| 鞭策 | biāncè | 用言语或行动督促、激励人进步。 | thúc đẩy, khích lệ | 老师严格的要求一直鞭策着我坚持每天背生词。 |
+| 潜移默化 | qiányímòhuà | 在不知不觉中受到影响而发生变化。 | ảnh hưởng ngấm ngầm, thay đổi dần dần | 每天和中国同事一起吃饭聊天，我的口语在潜移默化中提高了不少。 |
+| 赋予 | fùyǔ | 交给，给予（多用于重要的责任、意义等）。 | trao cho, ban cho | 公司把培训新员工中文的重任赋予了我，我感到既有压力又很荣幸。 |
+| 鄙视 | bǐshì | 轻视，看不起。 | khinh miệt, coi thường | 我从不鄙视说错语法的学生，因为犯错才是学习的必经过程。 |
+| 扮演 | bànyǎn | 在戏剧或活动中充当某种角色。 | đóng vai | 在HSK1课堂上，我常常扮演不同的角色，跟孩子们做对话练习。 |
+| 讥笑 | jīxiào | 用言语讽刺、嘲笑别人。 | chế giễu, cười nhạo | 有些学生因为发音不标准被同学讥笑，从此就越来越不敢开口说中文了。 |
+| 恶心 | ěxīn | 使人想呕吐，也指令人厌恶。 | buồn nôn, ghê tởm | 第一次吃臭豆腐，那股味道让我觉得有点恶心，可吃惯了反而喜欢。 |
+| 体面 | tǐmiàn | 有面子，光彩；（外表）大方得体。 | thể diện, đàng hoàng | 通过HSK6以后，我终于能体面地跟中国客户全程用中文开会了。 |
+| 激素 | jīsù | 生物体内分泌的、能调节生理功能的物质。 | hormone, kích thích tố | 压力太大时，身体会分泌一种叫"压力激素"的物质，让人更容易疲劳。 |
+| 转移 | zhuǎnyí | 从一个地方或状态改变到另一个地方或状态。 | chuyển dời, chuyển hướng | 考试压力太大的时候，我会把注意力转移到运动上，跑完步心情就好多了。 |
+| 喉咙 | hóulóng | 咽喉，脖子里连接口腔和气管、食道的部位。 | cổ họng | 在办公室讲了一天中文，晚上喉咙常常又干又疼。 |
+| 鼻涕 | bítì | 鼻子里分泌的液体。 | nước mũi | 北方的冬天太干燥，我一到室外冷风一吹就直流鼻涕。 |
+| 之际 | zhījì | 表示正当某个时刻或阶段的时候，多用于书面语。 | vào lúc, đúng dịp (thời điểm, văn viết) | 期末考试之际，我把所有生词都重新整理了一遍。 |
+| 修复 | xiūfù | 修理使恢复原状。 | phục hồi, sửa chữa | 说错话伤了同事的心以后，我花了好几天时间才把关系修复好。 |
+| 宣泄 | xuānxiè | 把积压的情绪释放出来。 | giải tỏa, xả (cảm xúc) | 工作压力大的时候，我喜欢用写日记的方式宣泄情绪。 |
+| 许可 | xǔkě | 准许，同意（多用于正式、书面场合，也可作名词）。 | cho phép, giấy phép | 没有得到公司许可，我们不能随便把客户资料带出办公室。 |
+| 倡导 | chàngdǎo | 首先提出并加以提倡。 | đề xướng, cổ vũ | 这家公司一直倡导员工每天抽半小时学一门外语。 |
+| 情理 | qínglǐ | 人之常情和事情的道理。 | lẽ thường, đạo lý thông thường | 学生一时听不懂老师讲的语法，这是情理之中的事，不必着急。 |
+| 允许 | yǔnxǔ | 准许，同意（口语中常用，后面可以直接带宾语）。 | cho phép | 老师允许我们上课时用手机查生词的意思。 |
+
+### 生词拓展
+
+- **魄** (hồn phách; (nghĩa mở rộng) khí phách, khí thế): 失魂落魄 shīhúnluòpò〖mất hồn mất vía, hoảng loạn, mất bình tĩnh (thành ngữ)〗 · 惊心动魄 jīngxīndòngpò〖kinh tâm động phách, gây chấn động lòng người (thành ngữ)〗 · 气魄 qìpò〖khí phách, khí thế mạnh mẽ〗
+- **阔** (rộng, khoáng đạt; (khẩu ngữ) giàu có, sang trọng): 阔人 kuòrén〖người giàu có〗 · 阔 kuò〖giàu có (cách nói khẩu ngữ)〗 · 摆阔 bǎikuò〖phô trương sự giàu có, ra vẻ nhà giàu〗 · 阔气 kuòqì〖sang trọng, hào phóng, ra dáng giàu có〗
+- **塌** (sập, đổ; (nghĩa mở rộng) yên tâm, ổn định): 死心塌地 sǐxīntādì〖một lòng một dạ, cam tâm tình nguyện, trung thành tuyệt đối (thành ngữ)〗 · 倒塌 dǎotā〖sụp đổ, đổ sập (nhà cửa, công trình)〗 · 塌方 tāfāng〖sạt lở đất, sập hầm/đường〗 · 塌心 tāxīn〖yên tâm, an lòng (cách nói khẩu ngữ vùng miền)〗
+- **鄙** (thấp kém, hèn hạ; khinh thường, coi rẻ): 鄙俗 bǐsú〖thô tục, tầm thường, quê mùa〗 · 卑鄙 bēibǐ〖đê tiện, ti tiện, bỉ ổi〗 · 粗鄙 cūbǐ〖thô lỗ, thô tục〗 · 可鄙 kěbǐ〖đáng khinh, đáng chê trách〗
+- **讥** (chế giễu, châm biếm, mỉa mai): 讥嘲 jīcháo〖chế giễu, giễu cợt〗 · 讥刺 jīcì〖châm biếm, mỉa mai sâu cay〗 · 讥讽 jīfěng〖giễu cợt, châm biếm〗
+
+## Bài 33 — 怀念慢生活
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 为期 | wéiqī | 以某段时间为限度，从开始到结束共经历多长时间。 | kéo dài trong khoảng (thời hạn là) | 我报名参加了一个为期三个月的HSK6冲刺班，每天都要交口语作业。 |
+| 桥梁 | qiáoliáng | 架在河流、山谷或道路上方便通行的建筑物；也比喻沟通两者的中间事物。 | cầu; (nghĩa bóng) cầu nối | 我常跟中国同事说，语言是文化交流的桥梁，学好汉语能让我更好地融入这里的工作环境。 |
+| 平原 | píngyuán | 地势平坦、面积广阔的陆地。 | đồng bằng | 我工作的城市周围都是平原，没有山，所以我周末只能在公园里跑步锻炼。 |
+| 夹杂 | jiāzá | 别的事物混在主要事物里面。 | pha trộn, lẫn vào | 我说中文的时候，有时会不自觉地夹杂着一些越南语词，同事听了觉得很有意思。 |
+| 呼啸 | hūxiào | 发出高而长的声音，多形容风、车等。 | rít lên, gào rú (gió, xe...) | 冬天在中国北方，寒风呼啸着刮过窗户，我只能裹紧外套去上班。 |
+| 宽敞 | kuānchǎng | 地方很大，不狭窄。 | rộng rãi | 我们公司新办公室很宽敞，光线也好，我每天备课教HSK1-3的学生都很有心情。 |
+| 齐全 | qíquán | 应该有的东西都有，一样不缺。 | đầy đủ, hoàn chỉnh | 我教HSK1的教材和教具都很齐全，学生学拼音的时候用起来很方便。 |
+| 封闭 | fēngbì | 与外界隔绝，不让通行或接触。 | đóng kín, bế quan | 备考HSK6的最后一周，我把手机封闭起来，专心刷真题。 |
+| 符号 | fúhào | 记录、表示某种意义的记号或标志。 | ký hiệu | 拼音里的声调符号我教了很多遍，学生还是容易把二声和三声搞混。 |
+| 喧哗 | xuānhuá | 声音大而杂乱。 | ồn ào, huyên náo | 办公室太喧哗的时候，我就戴上耳机听HSK6听力真题，练耳朵也顺便屏蔽噪音。 |
+| 威风 | wēifēng | 使人敬畏、令人佩服的气势。 | oai phong, uy phong | 我教的一个HSK3小朋友说，学好汉语以后可以像电视里的将军一样威风，特别可爱。 |
+| 演绎 | yǎnyì | 展现、表演出来；也指由一般原理推出个别结论。 | diễn giải, diễn xuất | 这部电视剧演绎了一个普通中国家庭三代人的故事，我常拿来当口语课的听力材料。 |
+| 不屑一顾 | bùxièyīgù | 认为不值得一看，形容非常轻视。 | coi thường, chẳng thèm để mắt tới | 以前我对语法书不屑一顾，觉得靠语感就够了，考了几次HSK6作文才发现是自己太天真。 |
+| 电源 | diànyuán | 供电的来源，如插座、电池等。 | nguồn điện | 出差去中国上课前，我一定检查行李箱里有没有带转换插头，不然笔记本电脑找不到电源就麻烦了。 |
+| 闭塞 | bìsè | 交通不便，信息不流通。 | hẻo lánh, bế tắc (giao thông/thông tin) | 我第一次去的那个中国小城市有点闭塞，手机信号很差，反而让我认真复习了一整天HSK6词汇。 |
+| 久违 | jiǔwéi | 长时间没有见面或没有接触。 | đã lâu không gặp/không có | 上完HSK6课，我和久违的中国老同事视频聊天，久违的乡音让我特别开心。 |
+| 正义 | zhèngyì | 公正、公平，符合道理和良心。 | chính nghĩa, công lý | 我给HSK3学生讲“正义”这个词的时候，用了动画片里英雄打坏人的例子，他们一下子就理解了。 |
+| 见义勇为 | jiànyìyǒngwéi | 看到正义的事情，勇敢地去做。 | thấy việc nghĩa thì dũng cảm ra tay | 我看到一段新闻，一位路人见义勇为救了落水的孩子，就把这个当作HSK6写作的素材讲给学生听。 |
+| 洪水 | hóngshuǐ | 因大雨或江河泛滥而形成的大水。 | lũ lụt, nước lũ | 去年南方发洪水的新闻，我剪了一段当作HSK6听力理解的补充材料。 |
+| 英勇 | yīngyǒng | 勇敢出色，不怕危险。 | anh dũng, dũng cảm | 消防员英勇救火的视频，我常用来教HSK1-3的学生“勇敢”这个话题的词汇。 |
+| 贵族 | guìzú | 社会上享有特权的上层阶级。 | quý tộc | 我跟学生开玩笑说，学好汉语以后去中国点菜都不用看图片了，感觉自己像语言贵族一样自信。 |
+| 播种 | bōzhǒng | 把种子撒到土地里。 | gieo hạt, gieo trồng | 我常跟自己说，学外语就像播种，每天背几个词，慢慢才能等到HSK6高分的收获。 |
+| 承包 | chéngbāo | 依照合同承担、完成某项工作的任务。 | nhận thầu, nhận khoán | 这学期的HSK1-3口语课全部由我一个人承包，工作量不小，但很有成就感。 |
+| 方言 | fāngyán | 一个地区特有的、跟标准语不完全相同的语言。 | phương ngữ, tiếng địa phương | 我工作的城市同事说话夹杂很重的方言，刚开始我只能听懂普通话，现在慢慢也能猜出几句方言了。 |
+| 捣乱 | dǎoluàn | 故意扰乱秩序，找麻烦。 | quấy phá, gây rối | 我教HSK1的小朋友上课有时会捣乱，我就用游戏的方式把他们的注意力拉回来。 |
+| 狼狈 | lángbèi | 形容非常窘迫、难堪的样子。 | lúng túng, thảm hại | 我第一次用中文做HSK6口头报告，紧张得说错好几个词，狼狈极了。 |
+| 幼稚 | yòuzhì | 年纪小，思想或做法简单、不成熟。 | ấu trĩ, non nớt | 现在回头看自己刚学汉语时写的日记，觉得那些想法真幼稚，但也挺可爱的。 |
+| 双胞胎 | shuāngbāotāi | 同一次出生的两个孩子。 | cặp song sinh | 我教的学生里有一对双胞胎姐妹，两人的汉语水平差不多，考HSK3都是一次就过。 |
+| 家常 | jiācháng | 家庭日常生活中的琐事。 | chuyện thường ngày (trong gia đình) | 下课后我常跟中国同事聊家常，这也是我练口语最自然的机会。 |
+| 回顾 | huígù | 回过头来看过去发生的事情。 | hồi tưởng, nhìn lại | 每次考完HSK6，我都会回顾自己这段时间的学习计划，看看哪里还需要调整。 |
+| 往事 | wǎngshì | 过去发生的事情。 | chuyện xưa, chuyện đã qua | 跟中国朋友聊起刚来工作时闹的笑话，那些往事现在想起来都觉得好笑。 |
+| 方圆 | fāngyuán | 周围一定范围的地区。 | chu vi, xung quanh (trong phạm vi) | 我住的小区方圆几公里内就有三所汉语培训学校，竞争很激烈。 |
+| 爆炸 | bàozhà | 物体因剧烈反应而突然破裂、发出巨响。 | nổ, bùng nổ | 我用“信息爆炸”这个词给HSK6学生讲现代生活的话题，他们都能举出自己的例子。 |
+| 对联 | duìlián | 春节等场合贴在门两边、字数相等、意思相对的两句话。 | câu đối | 今年春节，中国同事教我写对联，我这才知道上联下联还要平仄相对，学问不小。 |
+| 拜年 | bàinián | 春节时向长辈或亲友祝贺新年。 | chúc Tết, đi chúc Tết | 在中国工作的第一个春节，我跟着同事去给他父母拜年，学到了不少年俗用语。 |
+| 元宵节 | yuánxiāojié | 农历正月十五的传统节日，有吃元宵、看花灯的习俗。 | Tết Nguyên tiêu | 元宵节那天办公室发了汤圆，同事顺便教我用汉语说“团团圆圆”祝福大家。 |
+| 天伦之乐 | tiānlúnzhīlè | 家人团聚在一起享受的快乐。 | niềm vui sum vầy gia đình | 每次视频通话看到家人围坐吃饭，我都特别想念那种天伦之乐的感觉。 |
+| 正月 | zhēngyuè | 农历一年的第一个月。 | tháng Giêng (âm lịch) | 中国同事告诉我，正月十五之前很多店铺还没正式开工，我备课的时候要提前问清楚放假安排。 |
+| 寺庙 | sìmiào | 供奉神佛、供人祭拜的建筑。 | chùa, đền, miếu | 周末我常去附近的寺庙走走，顺便跟卖香的老人练几句方言。 |
+| 眼神 | yǎnshén | 眼睛的神态，表达出的表情或含义。 | ánh mắt, thần thái của mắt | 学生答不出HSK6口语题的时候，眼神里都是紧张，我就先让他们放松深呼吸。 |
+| 新郎 | xīnláng | 结婚仪式上的男方。 | chú rể | 参加中国同事的婚礼，我才知道新郎接亲的时候还要回答伴娘团出的各种问题，特别有意思。 |
+| 新娘 | xīnniáng | 结婚仪式上的女方。 | cô dâu | 那天婚礼上新娘穿着红色的中式礼服，特别好看，我趁机学了不少婚俗词汇。 |
+| 响应 | xiǎngyìng | 对别人的号召、倡议做出反应，表示支持。 | hưởng ứng, đáp lại | 学校号召大家参加中文演讲比赛，我响应报了名，也顺便逼自己练一次公开表达。 |
+| 社区 | shèqū | 共同居住在一个地区、有共同生活联系的一群人。 | khu dân cư, cộng đồng dân cư | 我住的社区每个月都会组织中文角活动，附近不少外国人都来参加。 |
+| 物业 | wùyè | 负责管理小区、大楼日常事务的机构或人员。 | (đơn vị) quản lý tòa nhà | 家里的暖气坏了，我打电话给物业，用汉语说清楚问题，物业师傅当天就来修了。 |
+| 媳妇 | xífù | 儿子的妻子；口语中也指自己的妻子。 | con dâu; (khẩu ngữ) vợ | 同事总跟我夸他媳妇做的饭好吃，听得我都想跟他学几道家常菜的说法。 |
+| 贤惠 | xiánhuì | 形容女性心地善良、通情达理、善于持家。 | hiền thục, đảm đang | 同事总说他媳妇既贤惠又能干，家里家外都照顾得很好，这也是我学到的一个常用夸人词。 |
+| 现场 | xiànchǎng | 事情发生的地点，强调场地本身，后边常跟名词。 | hiện trường, tại chỗ (địa điểm) | 上周公司请了一位汉语老师现场教发音，我们几个同事都跟着现场练习。 |
+
+### 生词拓展
+
+- **为** (vì, làm, coi là): 为期 wéiqī〖kéo dài trong khoảng, có thời hạn〗 · 为了 wèile〖vì, để (mục đích)〗 · 作为 zuòwéi〖coi là, với tư cách là〗 · 为难 wéinán〖làm khó, gây khó xử〗 · 无能为力 wúnéngwéilì〖bất lực, không làm được gì〗
+- **啸** (rít, gào (âm thanh dài, the thé)): 呼啸 hūxiào〖rít lên, gào rú (gió, xe cộ)〗 · 海啸 hǎixiào〖sóng thần〗 · 虎啸 hǔxiào〖tiếng hổ gầm〗
+- **桥** (cầu): 桥梁 qiáoliáng〖cầu; (nghĩa bóng) cầu nối〗 · 立交桥 lìjiāoqiáo〖cầu vượt〗 · 独木桥 dúmùqiáo〖cầu độc mộc (một khúc gỗ)〗 · 过河拆桥 guòhéchāiqiáo〖qua cầu rút ván (vô ơn)〗
+- **梁** (xà nhà, sống (mũi), trụ cột): 脊梁 jíliáng〖xương sống, cột sống〗 · 屋梁 wūliáng〖xà nhà〗 · 鼻梁 bíliáng〖sống mũi〗 · 顶梁柱 dǐngliángzhù〖trụ cột (gia đình, tổ chức)〗
+- **喧** (ồn ào, huyên náo): 喧嚣 xuānxiāo〖ồn ào, huyên náo〗 · 喧哗 xuānhuá〖ồn ào, la ó〗 · 喧闹 xuānnào〖náo nhiệt, ồn ào〗 · 喧宾夺主 xuānbīnduózhǔ〖khách lấn chủ (thành ngữ)〗
+- **哗** (ồn, xôn xao): 喧哗 xuānhuá〖ồn ào, la ó〗 · 哗然 huárán〖xôn xao, ồn lên (dư luận)〗 · 哗众取宠 huázhòngqǔchǒng〖làm màu để lấy lòng đám đông〗
+- **顾** (nhìn lại, đoái hoài, quan tâm): 回顾 huígù〖nhìn lại, hồi tưởng〗 · 后顾之忧 hòugùzhīyōu〖nỗi lo về sau〗 · 奋不顾身 fènbùgùshēn〖xả thân, bất chấp nguy hiểm〗 · 瞻前顾后 zhānqiángùhòu〖trước sau đắn đo, do dự〗
+- **塞** (tắc, nhét, chặn): 闭塞 bìsè〖bế tắc, hẻo lánh (giao thông/thông tin)〗 · 堵塞 dǔsè〖tắc nghẽn〗 · 塞车 sāichē〖kẹt xe〗 · 边塞 biānsài〖biên ải, biên cương〗 · 茅塞顿开 máosèdùnkāi〖bỗng nhiên vỡ lẽ, sáng tỏ ra〗
+- **捣** (giã, quấy, phá): 捣乱 dǎoluàn〖quấy phá, gây rối〗 · 捣药 dǎoyào〖giã thuốc〗 · 捣碎 dǎosuì〖giã nát, nghiền nát〗 · 捣蛋 dǎodàn〖quấy phá, nghịch ngợm〗 · 捣毁 dǎohuǐ〖đập phá, phá hủy〗
+- **狼狈** (lúng túng, thảm hại): 狼狈不堪 lángbèibùkān〖cực kỳ lúng túng, thảm hại〗 · 狼狈为奸 lángbèiwéijiān〖cấu kết làm điều xấu (như sói với nhau)〗
+- **贤** (hiền, giỏi, đức độ): 贤惠 xiánhuì〖hiền thục, đảm đang〗 · 贤良 xiánliáng〖hiền lương, đức hạnh〗 · 贤明 xiánmíng〖sáng suốt, anh minh〗 · 先贤 xiānxián〖bậc hiền triết đời trước〗 · 礼贤下士 lǐxiánxiàshì〖lễ độ, trọng dụng người tài〗
+- **惠** (ơn huệ, ưu đãi): 优惠 yōuhuì〖ưu đãi〗 · 互惠 hùhuì〖cùng có lợi, hỗ tương〗 · 惠顾 huìgù〖chiếu cố, ghé mua (khách hàng)〗 · 恩惠 ēnhuì〖ân huệ〗 · 惠赠 huìzèng〖kính tặng, biếu tặng (khiêm nhường)〗 · 惠存 huìcún〖xin lưu giữ (lời đề tặng, khiêm nhường)〗
+
+## Bài 34 — 为文物而生的人
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 霞 | xiá | 日出或日落前后天空中出现的彩色云。 | ráng mây (ráng chiều, ráng sáng) | 我每天早上去中文中心的路上，都能看到满天的朝霞，心情特别好。 |
+| 朴素 | pǔsù | 生活简单，不奢侈，不讲究穿着打扮。 | giản dị, mộc mạc | 我教HSK1-3的时候，尽量用朴素的语言解释语法，让学生容易理解。 |
+| 温和 | wēnhé | （性情、态度、语言）不严厉，使人感到亲切；也可指气候不冷不热。 | ôn hòa (tính cách/khí hậu) | 我发现中国同事对新人说话都很温和，这让我在陌生的工作环境里没那么紧张。 |
+| 颠簸 | diānbǒ | （车、船等）上下震动，不平稳。 | xóc nảy, chòng chành | 从我住的地方到公司要坐一个小时的公交车，路上颠簸得厉害，我经常利用这段时间背HSK6生词。 |
+| 巷 | xiàng | 城市或乡镇中比较窄的街道。 | ngõ, hẻm | 我住的小区旁边有一条老巷子，周末我常常去那儿的小店买早饭。 |
+| 陶瓷 | táocí | 陶器和瓷器的统称。 | đồ gốm sứ | 上次去景德镇旅游，我买了几件陶瓷茶具，打算送给教我中文的老师。 |
+| 收藏 | shōucáng | 收集并保存有价值的东西。 | sưu tầm, cất giữ | 我的房东是个收藏爱好者，家里收藏了不少老照片和邮票。 |
+| 鉴定 | jiàndìng | 通过科学方法辨别事物的真假、好坏或年代。 | giám định, thẩm định | 为了准备HSK6考试，我经常请中国朋友帮我鉴定我写的作文有没有语法错误。 |
+| 无偿 | wúcháng | 不要报酬，不收取费用。 | vô thường, miễn phí | 我在语言交换活动上无偿教中国朋友学越南语，他们也教我中文。 |
+| 赠送 | zèngsòng | 无代价地把东西送给别人。 | tặng, biếu | 我通过HSK6考试后，打算把自己整理的生词笔记赠送给下一届的学生。 |
+| 络绎不绝 | luòyìbùjué | 形容行人、车马等前后相连，来往不断。 | nườm nượp không dứt | 每次学校放假的时候，来我们汉语角报名的学生都络绎不绝。 |
+| 文物 | wénwù | 历史遗留下来的、在文化发展史上有价值的东西。 | văn vật, di vật văn hóa | 我周末常去博物馆看文物展览，顺便练习用中文给自己讲解历史背景。 |
+| 同志 | tóngzhì | 为共同理想而奋斗的人，也用作对人的称呼。 | đồng chí | 我们公司里的中国同事互相开玩笑时，也会用“同志”来称呼对方，挺有意思的。 |
+| 打包 | dǎbāo | 把东西包装起来；也指把没吃完的食物包装带走。 | đóng gói, gói mang về | 在中国吃饭如果吃不完，我会不好意思地请服务员帮我打包带走。 |
+| 搭配 | dāpèi | 按一定的要求安排、配合。 | phối hợp, kết hợp | 备考HSK6的时候，我把语法和口语练习搭配起来学，效果比单独背语法好多了。 |
+| 图案 | tú'àn | 有装饰意味的花纹或图形。 | hoa văn, họa tiết | 我给HSK1的小朋友设计生词卡片时，喜欢加一些简单的图案帮助他们记忆。 |
+| 威望 | wēiwàng | 使人信服的名声和地位。 | uy tín, uy vọng | 那位教了三十年中文的老师在我们学校很有威望，学生都很尊敬她。 |
+| 吝啬 | lìnsè | 过分爱惜自己的财物，不肯拿出来帮助别人。 | keo kiệt, hà tiện | 我室友对钱很吝啬，但在买中文书和字典上却从不吝啬。 |
+| 尚且 | shàngqiě | 连词，用于让步，表示“甲事已如此，何况乙事”。 | hãy còn, huống hồ | 母语者尚且会写错这个汉字，何况我们这些学外语的人呢？ |
+| 不惜 | bùxī | 不顾惜（代价、力量等），舍得。 | không tiếc, bất chấp | 为了通过HSK6，我不惜每天早起一个小时背单词。 |
+| 可观 | kěguān | （数量、程度等）值得看重，不小。 | đáng kể | 这学期我教的HSK1-3学生已经有可观的进步，好几个都能简单对话了。 |
+| 皇帝 | huángdì | 古代帝制国家最高统治者的称号。 | hoàng đế | 学中国历史课文的时候，我才知道原来“陛下”是用来称呼皇帝的。 |
+| 皇后 | huánghòu | 皇帝的正妻。 | hoàng hậu | 上次课文里提到的那位皇后，让我想到很多中国古装剧的情节。 |
+| 销毁 | xiāohuǐ | 熔化毁掉或烧掉。 | tiêu hủy, thiêu hủy | 每次考完试，老师都会把不合格的答题纸集中销毁。 |
+| 手艺 | shǒuyì | 手工技术。 | tay nghề, thủ nghệ | 我的中国同事的妈妈手艺特别好，包的饺子比饭店做的还好吃。 |
+| 凝聚 | níngjù | （气体变成液体或液体变成固体）聚集；比喻力量、感情等聚集在一起。 | ngưng tụ, kết tụ | 这份生词表凝聚了我三年自学中文的心血。 |
+| 结晶 | jiéjīng | 物质从液态变成固态；比喻辛勤劳动获得的成果。 | kết tinh, thành quả | 我做的这套HSK6生词学习页是我多次备课经验的结晶。 |
+| 籍贯 | jíguàn | 祖居或个人出生的地方。 | nguyên quán, quê quán | 每次填中国的表格，籍贯那一栏我都要想一下该怎么解释我是越南人。 |
+| 采购 | cǎigòu | （为机关、企业等）选购物资，也指从事这项工作的人。 | mua sắm, thu mua | 我们公司的采购部门这周要跟一家中国供应商谈价格，我被叫去帮忙做口译。 |
+| 创业 | chuàngyè | 开创事业。 | khởi nghiệp, lập nghiệp | 我认识的一位中国朋友辞职后自己创业，开了一家小小的语言培训中心。 |
+| 神圣 | shénshèng | 极其崇高、庄严，不可亵渎。 | thần thánh, thiêng liêng | 我觉得教小朋友学中文是一件很神圣的工作，因为我在帮他们打开一扇新世界的门。 |
+| 使命 | shǐmìng | 重大的责任。 | sứ mệnh | 我给自己定的使命是三年内把HSK6考到220分以上。 |
+| 看待 | kàndài | 对待，对人或事物抱着某种看法。 | nhìn nhận, đối xử | 刚到中国工作的时候，我很担心同事会怎么看待我这个外国人。 |
+| 家属 | jiāshǔ | 家庭成员（多指职工本人以外的）。 | người thân, gia quyến | 公司春节聚餐的时候，也邀请了员工的家属一起参加。 |
+| 泛滥 | fànlàn | （水）漫溢；比喻坏的事物不受限制地传播。 | tràn lan, lũ lụt | 网上关于学中文“速成”的错误方法很泛滥，我都是靠踏实练习才进步的。 |
+| 表彰 | biǎozhāng | 表扬先进人物或事迹。 | biểu dương, tuyên dương | 这学期表现最好的HSK1学生，我打算在期末课上公开表彰他。 |
+| 荣誉 | róngyù | 光荣的名誉。 | vinh dự, danh dự | 能被邀请去帮公司培训新员工的中文，我觉得是一种荣誉。 |
+| 奖励 | jiǎnglì | 给予荣誉或财物来鼓励。 | khen thưởng | 为了鼓励学生认真背生词，我每周都会奖励表现最好的人一张小贴纸。 |
+| 称号 | chēnghào | 给予某人或某集体的名称（多为光荣的）。 | danh hiệu | 我给自己定了一个小目标——拿到“HSK6高分”这个称号。 |
+| 争气 | zhēngqì | 力求做好，不落后，不甘示弱。 | quyết chí phấn đấu, không chịu thua kém | 这次模拟考没考好，我告诉自己下次一定要争气。 |
+| 沾光 | zhānguāng | 因为跟别人或事物有关系而得到好处。 | được thơm lây, hưởng ké | 我教的一个学生HSK考了满分，同事都说我沾了学生的光。 |
+| 品质 | pǐnzhì | 人的行为、作风所表现的思想品格；也指物品的质量。 | phẩm chất, chất lượng | 我很欣赏那位老师认真负责的品质，所以一直把她当作自己教学的榜样。 |
+| 乐意 | lèyì | 愿意，心甘情愿。 | sẵn lòng, vui lòng | 只要学生有问题，我都很乐意用中文和越南语两种语言解释给他们听。 |
+| 次序 | cìxù | 事物在一定条件下的排列顺序。 | thứ tự, trình tự | 我把HSK6生词按难易次序排列，先学简单的，再挑战难的成语。 |
+| 精益求精 | jīngyìqiújīng | 已经很好了，还要求更好。 | cầu toàn, không ngừng hoàn thiện | 我的中文写作已经能拿高分了，但我还是想精益求精，继续减少小语法错误。 |
+| 朝代 | cháodài | 建立国号的君主或整个王朝所统治的时代。 | triều đại | 我教HSK1的孩子们唱一首关于中国朝代顺序的儿歌，帮助他们记忆。 |
+| 拥护 | yōnghù | 拥戴支持（某种主张、领导人或政党等）。 | ủng hộ | 老师提出增加口语练习的时间，我们全班同学都很拥护这个提议。 |
+| 威信 | wēixìn | 使人信服的力量和威望。 | uy tín | 一位老师要在学生心里树立威信，光靠严厉是不够的，还要靠专业和耐心。 |
+| 当代 | dāngdài | 当前这个时代。 | đương đại, đương thời | 我很喜欢读当代中国作家写的短篇小说，语言比较贴近日常生活。 |
+| 级别 | jíbié | 按等级划分的差别。 | cấp bậc, đẳng cấp | HSK考试分成好几个级别，我现在正在为最高级别HSK6努力。 |
+| 泰斗 | tàidǒu | 比喻在某一方面负有名望、为众人所敬仰的人。 | bậc thái đẩu, cây đa cây đề | 我很崇拜的一位汉语教学泰斗写了很多关于HSK6写作方法的书。 |
+| 温柔 | wēnróu | 形容脾气好，有不同意见时能顺从别人的意思，多用于形容女性的性情、语言。 | dịu dàng, ôn nhu | 我们班有位女同学说话总是温柔又有耐心，跟她一起练口语我一点也不紧张。 |
+
+### 生词拓展
+
+- **颠** (xóc nảy, đảo lộn, lung tung): 颠簸 diānbǒ〖xóc nảy, chòng chành (xe, thuyền...)〗 · 跑跑颠颠 pǎopǎodiāndiān〖chạy đôn chạy đáo, tất bật ngược xuôi〗 · 颠倒是非 diāndǎoshìfēi〖đảo lộn phải trái, xuyên tạc đúng sai (thành ngữ)〗 · 黑白颠倒 hēibáidiāndǎo〖trắng đen đảo lộn (thành ngữ)〗 · 神魂颠倒 shénhúndiāndǎo〖mê mẩn tâm thần, mất hồn mất vía vì say mê ai/việc gì (thành ngữ)〗 · 颠三倒四 diānsāndǎosì〖lộn xộn, nói năng lung tung, trước sau lẫn lộn (thành ngữ)〗
+- **赠** (tặng, biếu): 转赠 zhuǎnzèng〖chuyển tặng (tặng lại cho người khác)〗 · 赠品 zèngpǐn〖quà tặng kèm〗 · 赠言 zèngyán〖lời tặng, lời nhắn khi chia tay〗 · 捐赠 juānzèng〖quyên tặng, hiến tặng〗 · 赠送 zèngsòng〖tặng, biếu〗
+- **搭** (bắt chuyện, ghép/kết hợp, cùng nhau làm gì): 搭茬儿 dāchár〖nối lời, chen vào nói (khẩu ngữ)〗 · 搭腔 dāqiāng〖lên tiếng đáp lại〗 · 搭话 dāhuà〖bắt chuyện〗 · 搭理 dālǐ〖để ý, đáp lại (thường dùng ở dạng phủ định “không thèm để ý”)〗 · 搭伙 dāhuǒ〖góp gạo thổi cơm chung, ăn chung〗 · 搭个伴 dāgèbàn〖làm bạn đồng hành, đi cùng cho có bạn〗
+- **晶** (sáng lấp lánh, tinh thể): 晶亮 jīngliàng〖sáng bóng, sáng loáng〗 · 晶莹 jīngyíng〖trong suốt lấp lánh〗 · 亮晶晶 liàngjīngjīng〖sáng lấp lánh (dạng láy)〗
+- **泛** (tràn lan, phiếm chỉ, rộng rãi): 泛滥 fànlàn〖tràn lan, lũ lụt〗 · 泛指 fànzhǐ〖chỉ chung chung, phiếm chỉ〗 · 泛称 fànchēng〖gọi chung là〗 · 广泛 guǎngfàn〖rộng rãi, rộng khắp〗 · 泛读 fàndú〖đọc lướt, đọc mở rộng (extensive reading)〗 · 泛泛 fànfàn〖qua loa, sơ sài, chung chung〗
+- **滥** (lạm, bừa bãi, quá mức): 滥收费 lànshōufèi〖thu phí bừa bãi, lạm thu〗 · 宁缺毋滥 nìngquēwúlàn〖thà thiếu còn hơn lạm dụng, thà không có còn hơn có bừa (thành ngữ)〗 · 滥调 làndiào〖luận điệu sáo rỗng, cũ rích〗 · 陈词滥调 chéncílàndiào〖lời sáo rỗng, luận điệu cũ rích (thành ngữ)〗 · 滥用职权 lànyòngzhíquán〖lạm dụng chức quyền〗
