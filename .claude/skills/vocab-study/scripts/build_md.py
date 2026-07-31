@@ -21,12 +21,13 @@ EX_OV = json.load(open(_ex_ov, encoding="utf-8")) if os.path.exists(_ex_ov) else
 # Tên mỗi bài khóa (标题) — hiển thị cạnh "Bài N". Thiếu file thì bỏ qua (tương thích ngược).
 _titles_path = os.path.join(DATA, "bai_titles.json")
 TITLES = json.load(open(_titles_path, encoding="utf-8")) if os.path.exists(_titles_path) else {}
-# 拓展 bổ sung tay cho bài sheet 'Chung từ' thiếu (vd Bài 28)
+# 拓展 bổ sung tay: bài chưa có trong sheet 'Chung từ' (vd Bài 28+) thì thêm mới;
+# bài ĐÃ có (nhóm thô chưa có nghĩa) thì THAY THẾ bằng bản rich đã bổ sung nghĩa,
+# tránh nhân đôi nhóm cùng bài.
 _exp = os.path.join(DATA, "exp_extra.json")
 if os.path.exists(_exp):
     for k, v in json.load(open(_exp, encoding="utf-8")).items():
-        ct.setdefault(k, [])
-        ct[k].extend(v)
+        ct[k] = v
 OUT = "output/study/hsk6/tu-vung.md"
 
 HAN = r"[一-鿿]"

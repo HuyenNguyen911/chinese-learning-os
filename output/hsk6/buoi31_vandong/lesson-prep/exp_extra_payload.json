@@ -1,0 +1,78 @@
+[
+  {
+    "root": "徒",
+    "vi": "kẻ, người (chỉ người làm một việc gì đó, thường mang nghĩa xấu hoặc trung tính); cũng có nghĩa \"đồ đệ, học trò\"",
+    "members": [
+      {"w": "歹徒", "g": "kẻ xấu, tội phạm"},
+      {"w": "徒工", "g": "thợ học việc"},
+      {"w": "师徒", "g": "thầy trò"},
+      {"w": "赌徒", "g": "con bạc, kẻ cờ bạc"},
+      {"w": "不法之徒", "g": "kẻ phạm pháp, kẻ bất lương"}
+    ]
+  },
+  {
+    "root": "剑",
+    "vi": "kiếm",
+    "members": [
+      {"w": "剑术", "g": "kiếm thuật"},
+      {"w": "宝剑", "g": "bảo kiếm"},
+      {"w": "击剑", "g": "đấu kiếm (môn thể thao)"},
+      {"w": "剑麻", "g": "cây gai dầu / sợi sisal (lá hình giống lưỡi kiếm)"},
+      {"w": "唇枪舌剑", "g": "đấu khẩu gay gắt, lời qua tiếng lại kịch liệt (thành ngữ)"}
+    ]
+  },
+  {
+    "root": "劈",
+    "vi": "chẻ, bổ, chém thẳng vào",
+    "members": [
+      {"w": "劈开", "g": "chẻ ra, bổ ra"},
+      {"w": "劈柴", "g": "chẻ củi"},
+      {"w": "劈面", "g": "ngay trước mặt, đối diện"},
+      {"w": "劈头", "g": "ngay từ đầu, thẳng vào đầu"},
+      {"w": "劈头盖脸", "g": "(đánh/mắng) tới tấp vào đầu vào mặt"}
+    ]
+  },
+  {
+    "root": "锈",
+    "vi": "gỉ, rỉ sét",
+    "members": [
+      {"w": "铜锈", "g": "gỉ đồng"},
+      {"w": "铁锈", "g": "gỉ sắt"},
+      {"w": "防锈", "g": "chống gỉ"},
+      {"w": "茶锈", "g": "cặn trà (bám trong ấm/cốc)"},
+      {"w": "水锈", "g": "cặn nước (đóng cặn do nước cứng)"}
+    ]
+  },
+  {
+    "root": "扬",
+    "vi": "nâng lên, truyền ra, phát huy",
+    "members": [
+      {"w": "扬帆", "g": "giương buồm"},
+      {"w": "扬言", "g": "tuyên bố (đe dọa), rêu rao"},
+      {"w": "颂扬", "g": "ca ngợi, tán dương"},
+      {"w": "扬长避短", "g": "phát huy sở trường, tránh sở đoản (thành ngữ)"},
+      {"w": "扬眉吐气", "g": "hết bị chèn ép, nở mày nở mặt (thành ngữ)"}
+    ]
+  },
+  {
+    "root": "韧",
+    "vi": "dẻo dai, bền, có tính đàn hồi",
+    "members": [
+      {"w": "坚韧", "g": "kiên cường, bền bỉ"},
+      {"w": "韧性", "g": "tính dẻo dai, độ bền"},
+      {"w": "韧带", "g": "dây chằng"},
+      {"w": "柔韧", "g": "mềm dẻo"},
+      {"w": "坚韧不拔", "g": "kiên cường bất khuất (thành ngữ)"}
+    ]
+  },
+  {
+    "root": "虐",
+    "vi": "tàn bạo, ngược đãi",
+    "members": [
+      {"w": "虐杀", "g": "giết hại tàn bạo"},
+      {"w": "助纣为虐", "g": "tiếp tay cho kẻ ác (thành ngữ)"},
+      {"w": "暴虐", "g": "tàn bạo, bạo ngược"},
+      {"w": "肆虐", "g": "hoành hành tàn bạo"}
+    ]
+  }
+]

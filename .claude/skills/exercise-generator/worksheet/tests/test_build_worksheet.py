@@ -369,6 +369,43 @@ def test_hskk_repeat_audio_is_clickable_hyperlink():
     assert "audio\\hskk-1.mp3" in _external_hyperlink_targets(doc)
 
 
+# --- Viết 3.0 (HSK2+): writing_prompt target_length + dien_bieu_mau ---------
+def test_writing_prompt_shows_target_length_hint():
+    block = {"type": "writing_prompt", "title": "Viết đoạn văn",
+             "items": [{"prompt": "Viết về sở thích của bạn.", "kind": "đoạn văn",
+                        "target_length": "60-100 chữ",
+                        "outline": ["Bạn thích gì?", "Vì sao?"]}]}
+    text = _all_text(WorksheetBuilder(_spec(block)).render_worksheet())
+    assert "Viết về sở thích của bạn." in text
+    assert "60-100 chữ" in text
+    assert "đoạn văn" in text
+
+
+FORM_BLOCK = {
+    "type": "dien_bieu_mau", "title": "Điền thông tin đăng ký",
+    "instructions": "Điền thông tin của bạn.",
+    "fields": [
+        {"label": "姓名", "sample": "王小明"},
+        {"label": "电话", "sample": "123456789"},
+    ],
+}
+
+
+def test_form_worksheet_shows_labels_and_blanks_not_samples():
+    from build_worksheet import BLANK
+    doc = WorksheetBuilder(_spec(FORM_BLOCK)).render_worksheet()
+    text = _all_text(doc)
+    assert "姓名" in text and "电话" in text
+    assert BLANK in text
+    assert "王小明" not in text
+
+
+def test_form_answer_key_shows_sample_values():
+    doc = WorksheetBuilder(_spec(FORM_BLOCK)).render_answers()
+    text = _all_text(doc)
+    assert "王小明" in text and "123456789" in text
+
+
 def test_audio_url_when_present_wins_over_local_path():
     block = {"type": "nghe", "title": "Nghe", "items": [
         {"script": "你好？", "q": "?", "options": ["a", "b"], "answer": "A",

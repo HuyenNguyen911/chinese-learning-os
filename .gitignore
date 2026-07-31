@@ -6,3 +6,7 @@ __pycache__/
 # hsk1 GIF tooling — cache + spike scratch
 scripts/hsk1/_src/
 output/hsk1/_spike/
+
+# git worktree phụ (nested repo, không phải nội dung khóa học)
+output/hsk2-worktree/
+output/main-worktree/

@@ -83,6 +83,20 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
    → fetch + rebase nhánh ĐANG đứng, không đổi nhánh giữa chừng.
 5. **Trước khi rebase/reset:** nêu rõ đang ở nhánh nào + sẽ ảnh hưởng commit nào, rồi mới
    chạy. Nghi ngờ → hỏi 1 câu, đừng đoán.
+6. **Trước khi khẳng định "đã mới nhất" / "đã pull đủ":** bắt buộc `git fetch` rồi so
+   `git status -sb` hoặc `git log HEAD..origin/main --oneline` — KHÔNG chỉ dựa vào
+   `git status` sạch (bài học: `git status` chỉ cho biết thay đổi chưa commit ở máy này,
+   không cho biết máy có đang chậm hơn `origin/main` hay không).
+7. **Vocab-study / HSK6 là tool + data dùng chung mọi cấp**, không gắn riêng khóa nào.
+   Thay đổi `.claude/skills/vocab-study/**`, `output/study/hskN/**`,
+   `knowledge/vocabulary/**` → luôn về `main`, KHÔNG commit vào nhánh
+   `feat/hskN-full-course` (nhánh đó chỉ chứa nội dung khóa học N). Đã xảy ra 2 lần
+   (733ac6a, và 4 commit khác lỡ vào `feat/hsk2-full-course`) — user phải tự phát hiện.
+8. **Feature branch theo khóa học (`feat/hskN-full-course`) tách khỏi `main` và KHÔNG
+   tự nhận nội dung mới của `main`** (vd HSK6 bài mới, cập nhật vocab-study) — vì đó là
+   2 nhánh git riêng, không phải 2 thư mục con của cùng 1 cây. Muốn thấy nội dung mới
+   nhất của các phần dùng chung khi đang đứng trên nhánh feature → merge `main` vào
+   nhánh đang đứng (không tạo worktree/bản sao trừ khi thật sự cần xem song song).
 
 ## 6. State Ownership
 

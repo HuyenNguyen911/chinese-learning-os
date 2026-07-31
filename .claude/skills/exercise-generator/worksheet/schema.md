@@ -26,7 +26,15 @@
 - `grammar_note`: `{ "type":"grammar_note", "title", "instructions"?,
   "points":[{"pattern","explain"?,"example"?}] }` — hộp giải thích ngữ pháp (chỉ hiển thị).
 - `writing_prompt`: `{ "type":"writing_prompt", "title", "instructions"?,
-  "items":[{"prompt","kind"?:"viết|HSKK","outline"?:[str]}] }` — đề viết/HSKK + dàn ý.
+  "items":[{"prompt","kind"?:str,"target_length"?:str,"outline"?:[str]}] }` —
+  đề viết/HSKK + dàn ý. `kind` tự do (vd `"viết"`, `"HSKK"`, `"đoạn văn"`,
+  `"lời nhắn"`, `"nhật ký"` — dùng cho Viết 3.0 HSK2+). `target_length`
+  tự do (vd `"60-100 chữ"`) hiển thị ngay sau đề bài, không bắt buộc.
+- `dien_bieu_mau`: `{ "type":"dien_bieu_mau", "title", "instructions"?,
+  "fields":[{"label","sample"?}] }` — điền biểu mẫu (Viết 3.0 HSK2+, vd đăng
+  ký/form thông tin cá nhân). Không có 1 đáp án đúng duy nhất: worksheet in
+  nhãn + dòng trống; đáp án (nếu có `sample`) in câu mẫu tham khảo, không
+  phải đáp án bắt buộc.
 
 ## Đáp án 2 cấp (chỉ khối tự luận: viết + nói)
 Các khối `dich_dat_cau`, `sap_xep`, và `noi_hskk` (`回答问题`) hỗ trợ đáp án 2 cấp,
