@@ -97,6 +97,13 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
    2 nhánh git riêng, không phải 2 thư mục con của cùng 1 cây. Muốn thấy nội dung mới
    nhất của các phần dùng chung khi đang đứng trên nhánh feature → merge `main` vào
    nhánh đang đứng (không tạo worktree/bản sao trừ khi thật sự cần xem song song).
+   Nếu chính AI vừa tạo commit trên `main` trong cùng session mà nhánh đang đứng là
+   `feat/hskN-full-course` → tự động merge `main` vào ngay sau đó, không đợi user hỏi
+   lại "sao tôi không thấy" (đã xảy ra 2 lần trong 1 session — Bài 31-34, rồi Bài 30).
+9. **User tư duy theo thư mục nhìn thấy trên đĩa** (vd `output/hsk6`), không theo khái
+   niệm nhánh git — khi giải thích "X thuộc về đâu", luôn quy chiếu về đường dẫn thư mục
+   cụ thể, đừng chỉ nói tên nhánh (dễ hiểu lầm "H6" = tên nhánh trong khi user đang chỉ
+   đường dẫn `output/hsk6`).
 
 ## 6. State Ownership
 
