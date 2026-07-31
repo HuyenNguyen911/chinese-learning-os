@@ -189,9 +189,14 @@ class DeckBuilder:
 
     def _split_image_col(self, s, img_w, default_side="right", gap=Inches(0.4)):
         """Chia slide thành cột chữ + cột ảnh. `image_side` = 'left'|'right'
-        (tùy chọn trong JSON) để đổi bên cho đa dạng. Không có ảnh → chữ full."""
+        (tùy chọn trong JSON) để đổi bên cho đa dạng. `image_w_in` (số inch)
+        cho phép slide xin cột ẢNH HẸP HƠN mặc định — dùng khi ảnh chỉ là 1
+        icon nhỏ (không cần cả cột lớn), để dành chỗ cho bảng/nội dung dày
+        (vd bảng 生词 nhiều từ) mà vẫn có icon. Không có ảnh → chữ full."""
         if not s.get("image"):
             return MARGIN, SLIDE_W - 2 * MARGIN, None, img_w
+        if s.get("image_w_in"):
+            img_w = Inches(s["image_w_in"])
         side = s.get("image_side", default_side)
         if side == "left":
             img_left = MARGIN
@@ -378,15 +383,23 @@ class DeckBuilder:
         rh = int(height / nrow)
         for r in range(nrow):
             table.rows[r].height = rh
+        # Font co theo chiều cao hàng thực tế — nrow cố định 23/15pt tràn ô
+        # khi 1 slide nhồi nhiều từ (vd 13 từ); scale xuống cho hàng thấp,
+        # KHÔNG phóng to quá cỡ gốc khi hàng cao (nrow ít).
+        ideal_rh = Inches(0.52)
+        fscale = min(1.0, rh / ideal_rh) if ideal_rh else 1.0
+        hz_sz = max(14, int(23 * fscale))
+        py_sz = vn_sz = max(10, int(15 * fscale))
+        hdr_sz = max(11, int(15 * fscale))
         for c, h in enumerate(headers):
             cell = table.cell(0, c)
             cell.fill.solid(); cell.fill.fore_color.rgb = self._rgb("accent")
-            self._fill_cell(cell, h, 15, color="bg", bold=True, cjk=True,
+            self._fill_cell(cell, h, hdr_sz, color="bg", bold=True, cjk=True,
                             align=PP_ALIGN.CENTER)
         for r, it in enumerate(items, start=1):
             bg = "band" if r % 2 == 0 else "bg"
             c0 = table.cell(r, 0); c0.fill.solid(); c0.fill.fore_color.rgb = self._rgb(bg)
-            self._fill_cell(c0, it.get("hz", ""), 23, color="ink", bold=True,
+            self._fill_cell(c0, it.get("hz", ""), hz_sz, color="ink", bold=True,
                             cjk=True, align=PP_ALIGN.CENTER)
             ci = 1
             if has_sw:
@@ -410,10 +423,10 @@ class DeckBuilder:
                     chip.shadow.inherit = False
                 ci = 2
             cpy = table.cell(r, ci); cpy.fill.solid(); cpy.fill.fore_color.rgb = self._rgb(bg)
-            self._fill_cell(cpy, it.get("py", ""), 15, color="accent", italic=True,
+            self._fill_cell(cpy, it.get("py", ""), py_sz, color="accent", italic=True,
                             align=PP_ALIGN.LEFT)
             cvn = table.cell(r, ci + 1); cvn.fill.solid(); cvn.fill.fore_color.rgb = self._rgb(bg)
-            self._fill_cell(cvn, it.get("vn", ""), 15, color="ink", align=PP_ALIGN.LEFT)
+            self._fill_cell(cvn, it.get("vn", ""), vn_sz, color="ink", align=PP_ALIGN.LEFT)
 
     def _slide_grammar(self, s):
         slide = self._new_slide()
@@ -569,6 +582,17 @@ class DeckBuilder:
             self._set_run(p.add_run(), "🔍 So sánh: ", 13, color="accent", bold=True)
             self._set_run(p.add_run(), note, 13, color="ink", cjk=True)
 
+    def _speaker_icon(self, name):
+        # CHỈ dùng emoji 1 codepoint — chuỗi ghép ZWJ (vd 🧑‍🏫) PowerPoint
+        # không ráp được, hiển thị vỡ thành 2 icon rời (đã gặp ở review buổi 02).
+        if "老师" in name:
+            return "\U0001F469"  # 👩 teacher
+        if name in ("小语", "AI小语"):
+            return "\U0001F916"  # 🤖 AI
+        if "们" in name or "学生" in name:
+            return "\U0001F393"  # 🎓 students
+        return "\U0001F642"  # 🙂
+
     def _slide_dialogue(self, s):
         slide = self._new_slide()
         self._band_header(slide, s.get("title", "Hội thoại mẫu"), s.get("kicker"))
@@ -576,6 +600,87 @@ class DeckBuilder:
         top = self._content_top()
         if not turns:
             return
+        uniq_speakers = []
+        for t in turns:
+            spk = t.get("speaker")
+            if spk and spk not in uniq_speakers:
+                uniq_speakers.append(spk)
+        # >2 người nói thật (vd 王老师/小语/学生们): ép vào 2 cột trái/phải làm
+        # 2 người "phe phải" dồn chung 1 cột, không biết ai đang nói + để
+        # nhiều khoảng trắng giữa 2 cột trông như 2 hội thoại tách rời, RẤT
+        # khó đọc (review buổi 02, 2 lần). Chuyển sang danh sách 1 CỘT, đọc
+        # tuần tự trên→dưới như kịch bản — luôn rõ ràng bất kể bao nhiêu người.
+        if len(uniq_speakers) > 2:
+            self._dialogue_script(slide, turns, top, uniq_speakers)
+        else:
+            self._dialogue_bubbles(slide, turns, top)
+
+    def _dialogue_script(self, slide, turns, top, uniq_speakers):
+        # Swimlane: MỖI người nói 1 CỘT riêng, cùng hàng ngang = cùng lượt
+        # thoại — vừa thấy AI ai đang nói (cột) vừa thấy thứ tự trước/sau
+        # (hàng trên→dưới) cùng lúc, không cần đoán qua trái/phải hay icon
+        # nhỏ nữa (review buổi 02: 1-cột vẫn không rõ ai nói khi nào).
+        n_spk = len(uniq_speakers)
+        col_gap = Inches(0.2)
+        col_w = int((SLIDE_W - 2 * MARGIN - col_gap * (n_spk - 1)) / n_spk)
+        col_x = [int(MARGIN + i * (col_w + col_gap)) for i in range(n_spk)]
+        palette = ["F7E4E1", "E4EEF7", "FBF0D9", "E7F3E8"]
+        spk_color = {sp: palette[i % len(palette)] for i, sp in enumerate(uniq_speakers)}
+        spk_col = {sp: i for i, sp in enumerate(uniq_speakers)}
+
+        header_h = int(Inches(0.4))
+        for i, sp in enumerate(uniq_speakers):
+            hdr = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
+                                        col_x[i], int(top), col_w, header_h)
+            hdr.fill.solid(); hdr.fill.fore_color.rgb = RGBColor.from_string(spk_color[sp])
+            hdr.line.color.rgb = self._rgb("accent"); hdr.line.width = Pt(0.75)
+            hdr.shadow.inherit = False
+            tf = hdr.text_frame; tf.word_wrap = True
+            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+            self._set_run(p.add_run(), self._speaker_icon(sp) + " " + sp, 14,
+                          color="ink", bold=True, cjk=True)
+
+        y0 = int(top) + header_h + int(Inches(0.12))
+        avail_h = int(SLIDE_H - y0 - Inches(0.30))
+        n = len(turns)
+
+        def nlines(t):
+            return 1 + (1 if t.get("py") else 0) + (1 if t.get("vn") else 0)
+
+        gap0 = int(Inches(0.08)); pad0 = int(Inches(0.14)); line0 = int(Inches(0.30))
+        natural = sum(line0 * nlines(t) + pad0 for t in turns) + gap0 * (n - 1)
+        scale = min(1.0, avail_h / natural) if natural else 1.0
+        line_h = int(line0 * scale); pad = int(pad0 * scale); gap = int(gap0 * scale)
+        hz_sz = max(12, int(16 * scale)); py_sz = max(9, int(11 * scale))
+        vn_sz = max(8, int(10 * scale))
+
+        y = y0
+        for t in turns:
+            spk = t.get("speaker")
+            ci = spk_col.get(spk, 0)
+            row_h = line_h * nlines(t) + pad
+            card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
+                                        col_x[ci], Emu(y), col_w, Emu(row_h))
+            card.fill.solid()
+            card.fill.fore_color.rgb = RGBColor.from_string(spk_color.get(spk, "F4F5F7"))
+            card.line.color.rgb = self._rgb("muted"); card.line.width = Pt(0.5)
+            card.shadow.inherit = False
+            tf = card.text_frame; tf.word_wrap = True
+            tf.margin_left = Pt(8); tf.margin_right = Pt(6)
+            tf.margin_top = Pt(3); tf.margin_bottom = Pt(3)
+            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.LEFT
+            self._set_run(p.add_run(), t.get("hz", ""), hz_sz, color="ink", bold=True,
+                          cjk=True)
+            if t.get("py"):
+                p2 = tf.add_paragraph(); p2.alignment = PP_ALIGN.LEFT
+                self._set_run(p2.add_run(), t["py"], py_sz, color="accent", italic=True)
+            if t.get("vn"):
+                p3 = tf.add_paragraph(); p3.alignment = PP_ALIGN.LEFT
+                self._set_run(p3.add_run(), t["vn"], vn_sz, color="muted")
+            y = y + row_h + gap
+
+    def _dialogue_bubbles(self, slide, turns, top):
+        first_speaker = turns[0].get("speaker")
         n = len(turns)
         avail_h = int(SLIDE_H - top - Inches(0.30))
 
@@ -589,13 +694,27 @@ class DeckBuilder:
         scale = min(1.0, avail_h / natural) if natural else 1.0
         line_h = int(line0 * scale); pad = int(pad0 * scale); gap = int(gap0 * scale)
         hz_sz = max(15, int(22 * scale)); py_sz = max(11, int(14 * scale))
-        vn_sz = max(10, int(13 * scale)); spk_sz = max(11, int(13 * scale))
-        bubble_w = Inches(7.6)
-        first_speaker = turns[0].get("speaker")
+        vn_sz = max(10, int(13 * scale))
+        max_bubble_w = Inches(7.6); min_bubble_w = Inches(1.9)
+
+        def _bubble_w(t):
+            # Bề rộng RIÊNG mỗi bubble theo dòng dài nhất — câu ngắn (vd 你们好!)
+            # không bị kéo giãn hết cỡ như câu dài (review buổi 02: "nội dung
+            # ngắn mà khung dài").
+            def w(text, pt, cjk):
+                if not text:
+                    return 0
+                return len(text) * Pt(pt) * (1.0 if cjk else 0.55)
+            needed = max(w(t.get("hz", ""), hz_sz, True),
+                        w(t.get("py", ""), py_sz, False),
+                        w(t.get("vn", ""), vn_sz, False))
+            return int(min(max_bubble_w, max(min_bubble_w, needed + Inches(0.5))))
+
         y = int(top)
         for t in turns:
             is_left = t.get("speaker") == first_speaker
             bubble_h = line_h * nlines(t) + pad
+            bubble_w = _bubble_w(t)
             left = MARGIN if is_left else int(SLIDE_W - MARGIN - bubble_w)
             bubble = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
                                             Emu(left), Emu(y), bubble_w, Emu(bubble_h))
@@ -606,9 +725,6 @@ class DeckBuilder:
             tf = bubble.text_frame; tf.word_wrap = True
             tf.margin_left = Pt(12); tf.margin_top = Pt(5); tf.margin_bottom = Pt(5)
             p = tf.paragraphs[0]; p.alignment = PP_ALIGN.LEFT
-            spk = t.get("speaker", "")
-            if spk:
-                self._set_run(p.add_run(), spk + ": ", spk_sz, color="accent", bold=True)
             self._set_run(p.add_run(), t.get("hz", ""), hz_sz, color="ink", bold=True,
                           cjk=True)
             if t.get("py"):

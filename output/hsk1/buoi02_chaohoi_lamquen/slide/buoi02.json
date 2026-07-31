@@ -7,25 +7,15 @@
     {
       "type": "title",
       "title": "你好 · 我叫…",
-      "subtitle": "Buổi 2 — Chào hỏi & làm quen: 你好 (Bài 1) + 我叫李文 (Bài 2)",
-      "footer": "HSK1 · Sơ cấp · Buổi 2"
-    },
-    {
-      "type": "bullets",
-      "kicker": "复习",
-      "title": "Nhắc lại buổi trước",
-      "image": "assets/stroke_hao.gif",
-      "bullets": [
-        "Buổi 1 đã học 4 thanh điệu + khinh thanh, biến điệu cơ bản (3+3, 一/不) — hôm nay dùng ngay vào câu chào hỏi thật.",
-        "你好 viết dấu thanh 3+3 nhưng ĐỌC \"ní hǎo\": 2 thanh 3 đứng liền nhau, thanh 3 đầu đổi thành thanh 2.",
-        "谢谢 — chữ 谢 thứ 2 đọc khinh thanh, nhẹ và ngắn (xièxie, không phải xiè xiè rõ 2 tiếng bằng nhau).",
-        "Hôm nay: dùng đúng ngữ điệu đó để chào hỏi và làm quen tự nhiên, không đọc phẳng/đọc sai biến điệu."
-      ]
+      "subtitle": "Xin chào · Tôi tên là…",
+      "footer": "HSK1 · Buổi 2",
+      "image": "assets/icons/icon_wave.png"
     },
     {
       "type": "bullets",
       "kicker": "目标",
       "title": "Mục tiêu hôm nay",
+      "image": "assets/icons/icon_target.png",
       "bullets": [
         "Chào hỏi đúng người, đúng hoàn cảnh: phân biệt 你/您 (thân mật/kính trọng), số ít/số nhiều (你/你们).",
         "Hỏi & trả lời tên bằng 你叫什么名字？／我叫…",
@@ -37,7 +27,8 @@
       "type": "vocab",
       "kicker": "生词",
       "title": "Từ vựng ① — Chào hỏi (Bài 1)",
-      "image": "assets/stroke_ni.gif",
+      "image": "assets/icons/icon_raise_hand.png",
+      "image_w_in": 1.7,
       "items": [
         {
           "hz": "你好",
@@ -111,7 +102,8 @@
       "type": "vocab",
       "kicker": "生词",
       "title": "Từ vựng ② — Làm quen (Bài 2)",
-      "image": "assets/stroke_wo.gif",
+      "image": "assets/icons/icon_handshake.png",
+      "image_w_in": 1.7,
       "items": [
         {
           "hz": "请问",
@@ -183,6 +175,102 @@
     },
     {
       "type": "grammar",
+      "kicker": "变调",
+      "title": "变调 — Biến điệu",
+      "image": "assets/icons/icon_rollercoaster.png",
+      "point": "Một số thanh điệu THAY ĐỔI khi đọc liền với thanh khác — đọc đúng biến điệu thì nghe mới tự nhiên.",
+      "examples": [
+        {
+          "hz": "你好",
+          "py": "nǐ hǎo → đọc: ní hǎo",
+          "vn": "3+3 liền nhau: thanh 3 đầu tiên đổi thành thanh 2"
+        },
+        {
+          "hz": "一个",
+          "py": "yí gè",
+          "vn": "一 (yī) đứng trước thanh 4 → đổi thành thanh 2 (yí)"
+        },
+        {
+          "hz": "一起",
+          "py": "yì qǐ",
+          "vn": "一 đứng trước thanh 1/2/3 → đổi thành thanh 4 (yì)"
+        },
+        {
+          "hz": "不是",
+          "py": "bú shì",
+          "vn": "不 (bù) đứng trước thanh 4 → đổi thành thanh 2 (bú)"
+        },
+        {
+          "hz": "不客气",
+          "py": "bú kèqi",
+          "vn": "客气 (kèqi) = khách sáo — 不 đổi thanh vì 客 là thanh 4"
+        }
+      ],
+      "note": "你好 viết vẫn giữ dấu thanh 3+3, nhưng ĐỌC ní hǎo. 一 và 不 là 2 từ duy nhất tự đổi thanh theo âm đứng sau.",
+      "tip": "Học thuộc câu quen 你好 luôn đọc \"ní hǎo\" — nghe quen tai trước, hiểu quy tắc sau.",
+      "audio": "assets/audio/biendieu.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "轻声",
+      "title": "轻声 — Đọc nhẹ, không nhấn",
+      "image": "assets/icons/icon_shush.png",
+      "point": "Âm tiết thứ 2 (thường là hậu tố lặp lại/trợ từ) đọc NHẸ và NGẮN, mất dấu thanh riêng.",
+      "examples": [
+        {
+          "hz": "妈妈",
+          "py": "māma",
+          "vn": "mẹ — chữ 妈 thứ 2 đọc nhẹ"
+        },
+        {
+          "hz": "谢谢",
+          "py": "xièxie",
+          "vn": "cảm ơn — chữ 谢 thứ 2 đọc nhẹ, ngắn"
+        },
+        {
+          "hz": "朋友",
+          "py": "péngyou",
+          "vn": "bạn bè — 友 đọc nhẹ"
+        }
+      ],
+      "note": "Nhận biết trên chữ viết: âm tiết khinh thanh KHÔNG ghi dấu thanh trong pinyin (xièxie, không phải xièxiè).",
+      "tip": "谢谢 không phải 2 tiếng \"xiè xiè\" rõ ràng bằng nhau — tiếng sau lướt nhẹ và ngắn hơn hẳn.",
+      "audio": "assets/audio/khinhthanh.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "儿化",
+      "title": "儿化 — Cuốn lưỡi cuối âm tiết",
+      "image": "assets/icons/icon_tongue.png",
+      "point": "儿 (r) gắn vào cuối âm tiết trước, đọc CUỐN LƯỠI LIỀN thành 1 âm — không tách thành 2 tiếng.",
+      "examples": [
+        {
+          "hz": "这儿",
+          "py": "zhèr",
+          "vn": "ở đây (= 这里)"
+        },
+        {
+          "hz": "那儿",
+          "py": "nàr",
+          "vn": "ở đó (= 那里)"
+        },
+        {
+          "hz": "哪儿",
+          "py": "nǎr",
+          "vn": "ở đâu (= 哪里)"
+        },
+        {
+          "hz": "一点儿",
+          "py": "yìdiǎnr",
+          "vn": "một chút, một ít"
+        }
+      ],
+      "note": "儿化 phổ biến trong khẩu ngữ giọng Bắc Kinh; miền Nam Trung Quốc ít dùng hơn — nghe cả 2 kiểu đều được, nói theo kiểu nào cũng đúng.",
+      "tip": "Đừng đọc \"zhè-ơ\" thành 2 tiếng tách rời — lưỡi cuốn lên NGAY trong âm tiết 这, nghe liền một hơi \"zhèr\".",
+      "audio": "assets/audio/erhua.mp3"
+    },
+    {
+      "type": "grammar",
       "kicker": "语法",
       "title": "是 — khẳng định A是B",
       "image": "assets/stroke_shi.gif",
@@ -239,6 +327,7 @@
       "type": "grammar",
       "kicker": "语法",
       "title": "吗 — câu hỏi có/không",
+      "image": "assets/icons/icon_eyebrow.png",
       "point": "Thêm 吗 vào cuối câu khẳng định → thành câu hỏi có/không — KHÔNG đổi trật tự từ, không lên giọng thay 吗.",
       "examples": [
         {
@@ -265,6 +354,7 @@
       "type": "grammar",
       "kicker": "语法",
       "title": "呢 — hỏi lại rút gọn",
+      "image": "assets/icons/icon_thinking.png",
       "point": "A + 呢？ = \"còn A thì sao?\" — hỏi lại nhanh, không cần lặp lại cả câu.",
       "examples": [
         {
@@ -286,6 +376,7 @@
       "type": "table",
       "kicker": "口语",
       "title": "10 câu khẩu ngữ (1/2)",
+      "image": "assets/icons/icon_megaphone.png",
       "headers": [
         "中文",
         "Pinyin",
@@ -327,6 +418,7 @@
       "type": "table",
       "kicker": "口语",
       "title": "10 câu khẩu ngữ (2/2)",
+      "image": "assets/icons/icon_speechballoon.png",
       "headers": [
         "中文",
         "Pinyin",
@@ -492,44 +584,20 @@
       "audio": "assets/audio/slide15.mp3"
     },
     {
-      "type": "reading",
-      "kicker": "阅读",
-      "title": "Bài đọc — 课文 đầy đủ Bài 1 + Bài 2",
-      "groups": [
-        {
-          "label": "课文 sách (New HSK Course 1):",
-          "items": [
-            "Bài 1「AI小语，你好！」— 3 đoạn hội thoại chào hỏi (thầy↔AI, thầy↔trò, cảm ơn/tạm biệt)",
-            "Bài 2「我叫李文」— 3 đoạn hội thoại hỏi tên & làm quen",
-            "Đọc đầy đủ 汉字 + pinyin + dịch Việt tại doc/bai-doc-newhsk1.md (cùng buổi)"
-          ]
-        },
-        {
-          "label": "Nguồn luyện đọc thêm (trình độ HSK1):",
-          "items": [
-            "Du Chinese (app) — mục Newbie / HSK1",
-            "The Chairman's Bao — bài trình độ HSK1",
-            "Mandarin Companion — Readers Level 0",
-            "hsk.academy — HSK1 reading online"
-          ]
-        }
-      ]
-    },
-    {
       "type": "bullets",
       "kicker": "对照",
-      "title": "Đối chiếu: Giáo trình Hán ngữ Quyển 1",
+      "title": "Đọc thêm",
+      "image": "assets/icons/icon_book.png",
       "bullets": [
-        "Sách 《汉语教程》(Giáo trình Hán ngữ) Quyển 1 — Bài 1, 3, 5: phần hội thoại chào hỏi/làm quen cơ bản (你好 / 谢谢你 / 你叫什么名字).",
-        "Bạn đã có sẵn sách + audio gốc — mở đọc theo, nghe theo audio trong sách để luyện phản xạ nghe thêm ở nhà.",
-        "Nội dung buổi hôm nay (chào hỏi, làm quen, 是/吗/呢/叫) khớp với các bài này — dùng để ôn chéo 2 giáo trình.",
-        "Buổi sau (quốc tịch & bản thân) sẽ tiếp tục đối chiếu các bài kế tiếp của Hán ngữ Q1."
+        "Giáo trình Hán ngữ Quyển 1 — Bài 1, 3, 5"
       ]
     },
     {
       "type": "table",
       "kicker": "易错",
       "title": "Lỗi người Việt hay mắc",
+      "image": "assets/icons/icon_no.png",
+      "image_w_in": 1.5,
       "headers": [
         "Sai (thường gặp)",
         "Đúng (nên làm)",
