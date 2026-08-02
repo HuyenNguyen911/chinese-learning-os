@@ -29,6 +29,12 @@ format thi HSK và HSKK 初级.
   (`回答问题`) — điền `answer`/`hint` (Chuẩn, đủ điểm) + `answer_plus`/`hint_plus`
   (Nâng cao, điểm cao) theo band chấm thi. Xem `worksheet/schema.md`.
 - Chỉ **đọc** `memory/*`. Không tự sửa memory (CLAUDE.md §4).
+- **Tham khảo phong cách đề online (Pandarin):** trước khi soạn câu cho buổi
+  HSK*N*, fetch 1-2 trang tương ứng cấp đó tại `pandarin.net`
+  (`hsk/level{N}/` và/hoặc `belajar/hsk{N}-chapterX/`) để xem dạng câu/độ
+  khó/văn phong. CHỈ dùng làm cảm hứng — KHÔNG copy nguyên văn câu hỏi/đáp án
+  vào bài tập. Soạn câu mới bám vốn từ + ngữ pháp của buổi hiện tại theo
+  phong cách tham khảo được.
 
 ## Cấu trúc thư mục (gom theo buổi)
 Mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` (do teaching-coach tạo trước), gồm:

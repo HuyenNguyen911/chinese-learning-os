@@ -37,13 +37,13 @@ def _get(url, timeout=30):
         return r.read()
 
 
-def search(query, page_size=8):
+def search(query, page_size=8, orientation="wide"):
     qs = urllib.parse.urlencode({
         "q": query,
         "license_type": "commercial",   # cho phép dùng rộng rãi
         "mature": "false",
         "page_size": page_size,
-        "orientation": "wide",
+        "orientation": orientation,
     })
     # Openverse ẩn danh có rate-limit -> thử lại có backoff khi bị 403/429
     for attempt in range(4):
@@ -60,9 +60,9 @@ def search(query, page_size=8):
     return []
 
 
-def download(query, dest):
+def download(query, dest, orientation="wide"):
     """Thử lần lượt các kết quả cho tới khi tải + mở được 1 ảnh hợp lệ."""
-    for res in search(query):
+    for res in search(query, orientation=orientation):
         url = res.get("url") or res.get("thumbnail")
         if not url:
             continue
@@ -72,8 +72,13 @@ def download(query, dest):
                 continue
             dest.write_bytes(raw)
             if _HAS_PIL:
+                # Openverse trả về nhiều format (WEBP/PNG/GIF...) dù URL đuôi
+                # .jpg -> python-pptx chỉ nhận BMP/GIF/JPEG/PNG/TIFF/WMF, nên
+                # luôn ép về JPEG thật sau khi tải (re-encode, không chỉ đổi tên).
                 with Image.open(str(dest)) as im:
-                    im.verify()
+                    im.load()
+                    if im.format != "JPEG":
+                        im.convert("RGB").save(str(dest), "JPEG", quality=90)
             return {
                 "title": res.get("title"),
                 "creator": res.get("creator"),
@@ -100,11 +105,12 @@ def main(argv):
     ok = 0
     for img in spec.get("images", []):
         name, query = img["name"], img["query"]
+        orientation = img.get("orientation", "wide")
         dest = out_dir / (name + ".jpg")
         if dest.exists() and dest.stat().st_size > 4000:
             print("CACHED %s" % name); ok += 1
             continue
-        info = download(query, dest)
+        info = download(query, dest, orientation=orientation)
         if info:
             credits[name] = {**info, "query": query}
             print("OK     %s  <- %s" % (name, query))

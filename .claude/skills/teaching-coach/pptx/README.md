@@ -64,10 +64,12 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 |---|---|---|
 | `title` | `title` (+ `subtitle`, `footer`, `image?`) | Slide bìa (nền accent) |
 | `section` | `title` (+ `subtitle`) | Chuyển mục |
-| `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); có `image` → ảnh + bảng |
+| `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu**; nếu có `ex` (câu ví dụ dùng từ) → chèn cột **Ví dụ** cuối bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). |
+| `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn}`, `note?`, `source?`, `image?` | Giảng ngữ pháp |
 | `table` | `headers[]`, `rows[][]` (+ `cjk_cols[]`) | Bảng so sánh (vd 了 vs 过) |
-| `dialogue` | `turns[]` = `{speaker, hz, py, vn}` | Khung hội thoại (bong bóng chat 2 phía) |
+| `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` | Khung hội thoại (bong bóng chat 2 phía) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau |
+| `passage` | `title`, `sentences[]` = `{hz, py, vn}` (+ `note?`, `image?`, `image_side?`) | Đoạn văn tự sự/kể chuyện (课文 thể 叙述体, câu nối tiếp câu — KHÔNG phải hội thoại qua lại) — mỗi câu 1 khối, không dùng bong bóng thoại |
 | `reading` | `groups[]` = `{label, items[]}` | Nguồn đọc thêm (nhóm "trong sách" / "nguồn ngoài") |
 | `exercise` | `instructions?`, `items[]` (+ `image?`) | Slide bài tập (đánh số) |
 | `answers` | `items[]` | Slide đáp án (đánh số) |
@@ -93,8 +95,9 @@ Sinh tự động bằng helper:
 "$PY" .claude/skills/teaching-coach/pptx/slide_audio.py <lesson.json>
 ```
 
-→ đọc chữ Hán của các slide (vocab / grammar / dialogue / bảng `口语`), gọi
-`edge-tts` (giọng `zh-CN-XiaoxiaoNeural`) sinh mp3 vào `assets/audio/` và tự gắn
+→ đọc chữ Hán của các slide (vocab / wordcard / grammar / dialogue / passage /
+bảng `口语`), gọi `edge-tts` (giọng `zh-CN-XiaoxiaoNeural`) sinh mp3 vào
+`assets/audio/` và tự gắn
 key `audio`. Cần internet; `--force` để sinh lại; `--voice=...` để đổi giọng.
 
 > ⚠️ **Drive/Google Slides KHÔNG phát audio nhúng.** Chỉ nghe được khi mở bằng

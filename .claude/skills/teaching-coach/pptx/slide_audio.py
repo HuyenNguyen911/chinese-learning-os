@@ -48,6 +48,10 @@ def read_text(s):
         xs = [ex.get("hz", "") for ex in s.get("examples", [])]
     elif t == "table" and s.get("kicker") == "口语":
         xs = [row[0] for row in s.get("rows", []) if row]
+    elif t == "wordcard":
+        xs = [s.get("hz", "")] + [ex.get("hz", "") for ex in s.get("examples", [])]
+    elif t == "passage":
+        xs = [sent.get("hz", "") for sent in s.get("sentences", [])]
     else:
         return None
     xs = [x.strip() for x in xs if x and x.strip()]
