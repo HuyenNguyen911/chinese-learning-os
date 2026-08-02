@@ -24,10 +24,10 @@
 | 懂 | dǒng | v. | hiểu | 1 |  |
 | 给 | gěi | v./prep. | cho | 1 |  |
 | 接 | jiē | v. | đón, tiếp | 1 | vượt khung |
-| 介绍 | jièshào | v. | giới thiệu | 1 |  |
+| 介绍 | jièshào | v. | giới thiệu | 1 | không dạy lại (user đã biết) |
 | 就 | jiù | adv. | thì, liền (phó từ nhấn mạnh) | 1 |  |
 | 旅游 | lǚyóu | v. | du lịch | 1 |  |
-| 那 | nà | pron. | đó, kia | 1 |  |
+| 那 | nà | pron. | đó, kia | 1 | ⚠️ TRÙNG HSK1 (`on2_tuvung_chude`, cặp 这/那) |
 | 让 | ràng | v. | nhường, để cho, khiến | 1 |  |
 | 已经 | yǐjīng | adv. | đã, đã rồi | 1 |  |
 | 意思 | yìsi | n. | ý nghĩa, ý tứ | 1 |  |
@@ -308,7 +308,7 @@
 - [x] Tổng ≈ 200: **207 từ thường + 3 tên riêng = 210 mục**, khớp "200 từ chuẩn + 略有扩展" ghi trong sách.
 - [x] Mọi từ có gán bài (1-15), một số từ xuất hiện lại ở bài sau (vd 花 bài 8+13, 站 bài 12+14, 笔 bài 10+13, 还是 bài 2+10) — giữ nguyên vì sách lặp lại có chủ đích (ôn từ cũ trong bài mới), không tính trùng lặp lỗi.
 - [x] 10 từ đánh dấu ★ (vượt khung/超纲词 theo chính sách): 爱情片(8), 蛋糕(6), 房子(14), 更(4), 好像(15), 画笔(6), 礼物(5), 接(1), 试(4), 新年(13).
-- [x] **19 từ trùng HSK1** — liệt kê: 白色/黑色/红色/绿色/颜色 (cụm màu sắc, đều ở Bài 4) · 帮(10) · 包(14) · 本子(10) · 地铁(12) · 飞(15) · 高(9) · 好(12) · 花(8,13) · 咖啡(9) · 妻子(8) · 书包(4) · 踢(7) · 一起(3) · 走路(9).
+- [x] **20 từ trùng HSK1** — liệt kê: 白色/黑色/红色/绿色/颜色 (cụm màu sắc, đều ở Bài 4) · 帮(10) · 包(14) · 本子(10) · 地铁(12) · 飞(15) · 高(9) · 好(12) · 花(8,13) · 咖啡(9) · 妻子(8) · 书包(4) · 踢(7) · 一起(3) · 走路(9) · 那(1, phát hiện khi duyệt Bài 1 — bản gốc bỏ sót).
   - ⚠️ **Đáng chú ý:** Bài 4 (trang phục, màu sắc) có **5/16 từ trùng HSK1** (gần 1/3 bài) — vì HSK1 3.0 đã có buổi màu sắc riêng. Cần quyết định khi sản xuất buổi 4: thay các từ màu trùng bằng từ mở rộng khác (vd màu sắc nâng cao: 灰色/紫色 nếu chưa dạy, hoặc bỏ hẳn phần ôn màu, tập trung 把字句 + trang phục thời trang).
 - [ ] **Chưa xong:** đối chiếu HSK1 dùng danh sách tự lọc theo heuristic (loại câu ví dụ dài) — có thể sót/lẫn vài mục biên (vd buổi 1 ngữ âm có nhiều ký tự đơn lẻ luyện viết, chưa chắc phải "từ đã dạy"). Nên soát lại thủ công 19 dòng TRÙNG khi bắt đầu sản xuất Bài tương ứng, không chỉ tin tự động.
 

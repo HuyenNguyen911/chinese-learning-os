@@ -119,8 +119,9 @@ Vocab-study phase (§13 spec) **tách plan riêng** — xem "Out of scope".
 
 > Mỗi Task dưới đây dùng chung Procedure P (§ trên); step cuối luôn là **Verify + trình user duyệt trọn gói trước khi mở Task tiếp theo**.
 
-- [ ] **Task 1 — buoi01_moian_vitquay** (Bài 1 她请我们吃了北京烤鸭): 语气助词"吧"(2) (phỏng đoán) · "是…的"句 · 请/让/叫 (nhờ vả). 生词 bài 1 (Task 0.1). 課文: 4 bài Lesson 1 (trang 001+). Hán ngữ L22. Lỗi VN: 是…的 nhấn thời gian/nơi/cách; 吧 phỏng đoán vs đề nghị.
-  - [ ] Step 1 P1 · Step 2 P2 · Step 3 P3 · Step 4 P4(+P5) · Step 5 P6+P7 · Step 6 P8 (Viết: 是…的) · Step 7 Verify + trình user duyệt · Step 8 P9.
+- [x] **Task 1 — buoi01_moian_vitquay** (Bài 1 她请我们吃了北京烤鸭): 语气助词"吧"(2) (phỏng đoán) · "是…的"句 · 请/让/叫 (nhờ vả). 生词 bài 1 (Task 0.1). 課文: 4 bài Lesson 1 (trang 001+). Hán ngữ L22. Lỗi VN: 是…的 nhấn thời gian/nơi/cách; 吧 phỏng đoán vs đề nghị. — ✅ XONG (commit `e29c2da`)
+  - [x] Step 1 P1 · Step 2 P2 · Step 3 P3 · Step 4 P4(+P5) · Step 5 P6+P7 · Step 6 P8 (Viết: 是…的) · Step 7 Verify + trình user duyệt · Step 8 P9.
+  - **Duyệt 2026-08-02:** slide 12 wordcard + bài tập chỉ phủ 12/14 từ checklist Bài 1, thiếu 介绍/那. Đối chiếu HSK1: 那 xác nhận đã dạy ở `output/hsk1/on2_tuvung_chude` (cặp 这/那); 介绍 không thấy trong output/knowledge HSK1 nhưng user xác nhận đã học — quyết định KHÔNG vá thêm, giữ nguyên 12 từ.
 - [ ] **Task 2 — buoi02_giaothong** (Bài 2 还是打车去北大吧): 兼语句 · 还是…吧 · 多(概数) · cụm làm định ngữ. **+ Lồng hỏi đường (怎么走, bổ sung — đã đối chiếu chính thức).** Hán ngữ L16/L17.
   - [ ] Step 1-6 Procedure P (Viết: câu dùng 还是…吧) · Step 7 Verify + trình user duyệt · Step 8 P9.
 - [ ] **Task 3 — buoi03_dulich_xian** (Bài 3 我想去西安旅游): 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因为…所以. **+ Lồng đặt khách sạn (bổ sung, ngoài chuẩn thi).** Hán ngữ L29/L19/L27.
