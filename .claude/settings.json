@@ -13,7 +13,9 @@
       "Bash(python *)",
       "Bash(pandoc *)",
       "Bash(git config --global user.name)",
-      "Bash(git config --global user.email)"
+      "Bash(git config --global user.email)",
+      "Bash(git fetch *)",
+      "Bash(git merge-base *)"
     ]
   }
 }

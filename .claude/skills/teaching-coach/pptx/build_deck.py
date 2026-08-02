@@ -269,10 +269,18 @@ class DeckBuilder:
     def _vocab_table(self, slide, items, left, top, width, height):
         # Nếu item có key "color" (hex) -> chèn cột "ô màu thật" (swatch) cho
         # bài dạy màu sắc: từ Hán ↔ màu trực quan.
+        # Nếu item có key "ex" (câu ví dụ dùng từ) -> thêm cột "Ví dụ" cuối bảng.
         has_sw = any(it.get("color") for it in items)
-        if has_sw:
+        has_ex = any(it.get("ex") for it in items)
+        if has_sw and has_ex:
+            widths = [0.13, 0.09, 0.15, 0.23, 0.40]
+            headers = ["汉字", "Màu", "Pinyin", "Nghĩa", "Ví dụ"]
+        elif has_sw:
             widths = [0.22, 0.12, 0.28, 0.38]
             headers = ["汉字", "Màu", "Pinyin", "Nghĩa"]
+        elif has_ex:
+            widths = [0.14, 0.18, 0.26, 0.42]
+            headers = ["汉字", "Pinyin", "Nghĩa", "Ví dụ"]
         else:
             widths = [0.26, 0.36, 0.38]
             headers = ["汉字", "Pinyin", "Nghĩa"]
@@ -321,6 +329,66 @@ class DeckBuilder:
                             align=PP_ALIGN.LEFT)
             cvn = table.cell(r, ci + 1); cvn.fill.solid(); cvn.fill.fore_color.rgb = self._rgb(bg)
             self._fill_cell(cvn, it.get("vn", ""), 15, color="ink", align=PP_ALIGN.LEFT)
+            if has_ex:
+                cex = table.cell(r, ci + 2); cex.fill.solid()
+                cex.fill.fore_color.rgb = self._rgb(bg)
+                self._fill_cell(cex, it.get("ex", ""), 13, color="muted", cjk=True,
+                                align=PP_ALIGN.LEFT)
+
+    # -- wordcard: 1 từ / 1 slide — 2 CỘT dùng hết chiều ngang: trái = ảnh +
+    #    汉字/pinyin/nghĩa; phải = tối đa 3 câu ví dụ. Dùng khi cần đào sâu
+    #    từng từ (thay cho bảng vocab dồn nhiều từ/slide).
+    def _slide_wordcard(self, s):
+        slide = self._new_slide()
+        self._band_header(slide, s.get("title", s.get("hz", "生词")), s.get("kicker"))
+        top = self._content_top()
+        area_h = self._content_area_h()
+        content_w = SLIDE_W - 2 * MARGIN
+        gap = Inches(0.5)
+        left_w = int(content_w * 0.42)
+        right_left = MARGIN + left_w + gap
+        right_w = SLIDE_W - MARGIN - right_left
+
+        # --- Cột trái: ảnh vuông trên, 汉字/pinyin/nghĩa/từ loại dưới -------
+        has_img = bool(s.get("image"))
+        if has_img:
+            img_side = min(left_w, Inches(3.4))
+            img_left = MARGIN + (left_w - img_side) // 2
+            self._place_image(slide, s["image"], img_left, top, img_side, img_side)
+            info_top = top + img_side + Inches(0.15)
+        else:
+            info_top = top
+        info_h = top + area_h - info_top
+        box, tf = self._textbox(slide, MARGIN, info_top, left_w, info_h,
+                                anchor=MSO_ANCHOR.MIDDLE)
+        p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+        self._set_run(p.add_run(), s.get("hz", ""), 54, color="ink", bold=True, cjk=True)
+        if s.get("pos"):
+            self._set_run(p.add_run(), "  " + s["pos"], 16, color="muted", italic=True)
+        if s.get("py"):
+            p2 = tf.add_paragraph(); p2.alignment = PP_ALIGN.CENTER; p2.space_before = Pt(6)
+            self._set_run(p2.add_run(), s["py"], 22, color="accent", italic=True)
+        if s.get("vn"):
+            p3 = tf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER; p3.space_before = Pt(4)
+            self._set_run(p3.add_run(), s["vn"], 18, color="ink")
+
+        # --- Cột phải: tối đa 3 câu ví dụ, canh giữa theo chiều dọc --------
+        ebox, etf = self._textbox(slide, right_left, top, right_w, area_h,
+                                  anchor=MSO_ANCHOR.MIDDLE)
+        p = etf.paragraphs[0]
+        self._set_run(p.add_run(), "例句", 16, color="accent", bold=True, cjk=True)
+        for ex in s.get("examples", [])[:3]:
+            p = etf.add_paragraph(); p.space_before = Pt(22)
+            self._set_run(p.add_run(), "•  ", 18, color="accent", bold=True)
+            self._set_run(p.add_run(), ex.get("hz", ""), 20, color="ink", bold=True,
+                          cjk=True)
+            if ex.get("py"):
+                p2 = etf.add_paragraph(); p2.space_before = Pt(2)
+                self._set_run(p2.add_run(), "     " + ex["py"], 14, color="accent",
+                              italic=True)
+            if ex.get("vn"):
+                p3 = etf.add_paragraph(); p3.space_before = Pt(1)
+                self._set_run(p3.add_run(), "     " + ex["vn"], 14, color="muted")
 
     def _slide_grammar(self, s):
         slide = self._new_slide()
@@ -399,6 +467,33 @@ class DeckBuilder:
                 self._fill_cell(cell, text, 15, color="ink", bold=(c == 0),
                                 cjk=is_cjk, align=PP_ALIGN.LEFT)
 
+    AVATAR_PALETTE = ["2980B9", "27AE60", "D35400", "8E44AD", "C0392B", "16A085"]
+
+    def _avatar_color(self, speaker_colors, speaker):
+        if speaker not in speaker_colors:
+            speaker_colors[speaker] = self.AVATAR_PALETTE[
+                len(speaker_colors) % len(self.AVATAR_PALETTE)]
+        return speaker_colors[speaker]
+
+    def _place_avatar(self, slide, speaker, color_hex, cx, cy, d):
+        """Chấm tròn màu + chữ cái/ chữ Hán đầu tên nhân vật, đè lên góc bong
+        bóng thoại — thay cho ảnh chụp thật, giúp phân biệt nhân vật xuyên
+        suốt các 课文 mà không cần tải ảnh ngoài."""
+        circ = slide.shapes.add_shape(MSO_SHAPE.OVAL, Emu(int(cx)), Emu(int(cy)),
+                                      Emu(int(d)), Emu(int(d)))
+        circ.fill.solid(); circ.fill.fore_color.rgb = RGBColor.from_string(color_hex)
+        circ.line.color.rgb = self._rgb("bg"); circ.line.width = Pt(1.5)
+        circ.shadow.inherit = False
+        tf = circ.text_frame; tf.word_wrap = False
+        tf.margin_left = 0; tf.margin_right = 0
+        tf.margin_top = 0; tf.margin_bottom = 0
+        tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+        p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+        letter = (speaker or "?")[:1]
+        d_inches = d / 914400.0
+        self._set_run(p.add_run(), letter, max(12, int(d_inches * 30)),
+                      color="bg", bold=True, cjk=True)
+
     def _slide_dialogue(self, s):
         slide = self._new_slide()
         self._band_header(slide, s.get("title", "Hội thoại mẫu"), s.get("kicker"))
@@ -408,6 +503,7 @@ class DeckBuilder:
             return
         n = len(turns)
         avail_h = int(SLIDE_H - top - Inches(0.30))
+        speaker_colors = {}
 
         def nlines(t):
             return 1 + (1 if t.get("py") else 0) + (1 if t.get("vn") else 0)
@@ -447,7 +543,42 @@ class DeckBuilder:
             if t.get("vn"):
                 p = tf.add_paragraph(); p.alignment = PP_ALIGN.LEFT
                 self._set_run(p.add_run(), t["vn"], vn_sz, color="muted")
+            avatar_d = int(min(Inches(0.46), bubble_h * 0.62))
+            color_hex = self._avatar_color(speaker_colors, spk)
+            acx = (left - avatar_d * 0.42) if is_left else (left + bubble_w - avatar_d * 0.58)
+            acy = y - avatar_d * 0.28
+            self._place_avatar(slide, spk, color_hex, acx, acy, avatar_d)
             y = y + bubble_h + gap
+
+    # -- passage: đoạn văn tự sự/kể chuyện (课文 thể loại 叙述体), câu nối
+    #    tiếp nhau (không phải hội thoại qua lại) -> render như 1 đoạn đọc:
+    #    mỗi câu 1 khối 汉字 + pinyin + nghĩa, không dùng bong bóng thoại.
+    def _slide_passage(self, s):
+        slide = self._new_slide()
+        self._band_header(slide, s.get("title", "课文"), s.get("kicker"))
+        top = self._content_top(); area_h = self._content_area_h()
+        has_img = bool(s.get("image"))
+        txt_left, txt_w, img_left, img_w = self._split_image_col(s, Inches(4.2))
+        box, tf = self._textbox(slide, txt_left, top, txt_w, area_h,
+                                anchor=MSO_ANCHOR.MIDDLE)
+        first = True
+        for sent in s.get("sentences", []):
+            p = tf.paragraphs[0] if first else tf.add_paragraph()
+            first = False
+            p.space_before = Pt(16)
+            self._set_run(p.add_run(), sent.get("hz", ""), 22, color="ink", bold=True,
+                          cjk=True)
+            if sent.get("py"):
+                p2 = tf.add_paragraph(); p2.space_before = Pt(1)
+                self._set_run(p2.add_run(), sent["py"], 14, color="accent", italic=True)
+            if sent.get("vn"):
+                p3 = tf.add_paragraph(); p3.space_before = Pt(1)
+                self._set_run(p3.add_run(), sent["vn"], 14, color="muted")
+        if s.get("note"):
+            p = tf.add_paragraph(); p.space_before = Pt(14)
+            self._set_run(p.add_run(), "• " + s["note"], 14, color="ink", cjk=True)
+        if has_img:
+            self._place_image(slide, s["image"], img_left, top, img_w, area_h)
 
     def _slide_reading(self, s):
         slide = self._new_slide()
