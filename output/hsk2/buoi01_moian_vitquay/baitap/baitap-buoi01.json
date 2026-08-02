@@ -1,0 +1,105 @@
+{
+  "meta": { "lesson": "HSK2 · Buổi 1 — 她请我们吃了北京烤鸭", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối 汉字 với nghĩa",
+      "instructions": "Nối từ bên trái với nghĩa đúng bên phải.",
+      "pairs": [
+        {"left": "帮忙", "right": "giúp đỡ"},
+        {"left": "懂", "right": "hiểu"},
+        {"left": "给", "right": "cho"},
+        {"left": "接", "right": "đón, tiếp"},
+        {"left": "已经", "right": "đã, đã rồi"},
+        {"left": "有时", "right": "đôi khi, có lúc"}
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ đúng trong khung để điền vào chỗ trống.",
+      "word_bank": ["旅游", "不好意思", "让", "就"],
+      "items": [
+        {"q": "很多人放假喜欢去外国{}。", "answer": "旅游", "src": "[phỏng theo 真题]"},
+        {"q": "{}，我已经到了。", "answer": "不好意思", "src": "[phỏng theo 真题]"},
+        {"q": "老师{}我们多说中文。", "answer": "让", "src": "[phỏng theo 真题]"},
+        {"q": "你有事{}找我，别客气。", "answer": "就", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc đoạn tin nhắn",
+      "instructions": "Đọc đoạn tin nhắn rồi trả lời câu hỏi.",
+      "passage": "李文：天中，你今天有时间吗？\n陈天中：有，怎么了？\n李文：我一个朋友明天坐飞机来北京旅游，是第一次来，还不认识路。我想请你帮个忙，去机场接一下他。\n陈天中：没问题，几点到？\n李文：早上十点。你到了就给我打电话吧。\n陈天中：好，我知道了。",
+      "questions": [
+        {"q": "李文想请陈天中做什么？", "options": ["去机场接朋友", "一起去旅游", "教朋友中文"], "answer": "A", "src": "[phỏng theo 真题]"},
+        {"q": "李文的朋友以前来过北京吗？", "options": ["来过很多次", "这是第一次", "文中没说"], "answer": "B", "src": "[phỏng theo 真题]"},
+        {"q": "陈天中到机场以后要先做什么？", "options": ["先吃饭", "给李文打电话", "先回家"], "answer": "B", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ cho trước thành câu đúng.",
+      "items": [
+        {"words": ["我们", "是", "来", "北京", "旅游", "的"], "answer": "我们是来北京旅游的。", "answer_plus": "我们是特地坐飞机来北京旅游的。", "src": "[phỏng theo 真题]"},
+        {"words": ["你", "就", "是", "他", "的", "学生", "吧"], "answer": "你就是他的学生吧？", "answer_plus": "你就是他常常说起的那个学生吧？", "src": "[phỏng theo 真题]"},
+        {"words": ["妈妈", "让", "孩子", "早点儿", "回家"], "answer": "妈妈让孩子早点儿回家。", "answer_plus": "妈妈每天都让孩子早点儿回家写作业。", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu tiếng Việt sang tiếng Trung, dùng từ gợi ý.",
+      "items": [
+        {"prompt": "Đây là lần đầu mình đến Thượng Hải.", "given": ["第一次"], "answer": "这是我第一次来上海。", "answer_plus": "这是我第一次来上海，我还不认识路，有点儿紧张。", "src": "[phỏng theo 真题]"},
+        {"prompt": "Mình muốn nhờ bạn giúp một việc, được không?", "given": ["帮忙"], "answer": "我想请你帮个忙，可以吗？", "answer_plus": "不好意思，我想请你帮个忙，你现在有时间吗？", "src": "[phỏng theo 真题]"},
+        {"prompt": "Đôi khi mình không hiểu hết ý của anh ấy.", "given": ["有时", "懂"], "answer": "我有时不太懂他的意思。", "answer_plus": "他说得太快，我有时不太懂他的意思。", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe audio rồi chọn đáp án đúng.",
+      "items": [
+        {"script": "我们是坐火车来的，不是坐飞机来的。", "q": "他们怎么来的？", "options": ["火车", "飞机", "汽车"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "他已经走了，你可以明天再给他打电话。", "q": "他现在在不在？", "options": ["在", "不在", "文中没说"], "answer": "B", "audio": "audio/nghe-2.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "谢谢你来接我们，真是太麻烦你了。", "q": "说话的人为什么谢谢对方？", "options": ["请吃饭", "来接他们", "教中文"], "answer": "B", "audio": "audio/nghe-3.mp3", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "听后重复",
+      "part": "听后重复",
+      "instructions": "Nghe và nhắc lại theo đúng ngữ điệu.",
+      "items": [
+        {"script": "谢谢你的帮忙。", "audio": "audio/hskk-1.mp3"},
+        {"script": "我来接你们。", "audio": "audio/hskk-2.mp3"},
+        {"script": "有事就找我。", "audio": "audio/hskk-3.mp3"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "回答问题",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời.",
+      "items": [
+        {"script": "你是不是第一次来北京？", "hint": "是，这是我第一次来北京。", "hint_plus": "是，这是我第一次来北京，我还不认识路，有点儿紧张。", "audio": "audio/hskk-4.mp3"},
+        {"script": "你有时候会自己一个人去旅游吗？", "hint": "有时候会，我喜欢自己去旅游。", "hint_plus": "有时候会，我喜欢自己一个人去旅游，可以想去哪儿就去哪儿。", "audio": "audio/hskk-5.mp3"}
+      ]
+    },
+    {
+      "type": "writing_prompt",
+      "title": "Viết tin nhắn",
+      "instructions": "Viết theo yêu cầu, dùng ít nhất 3 từ mới bài 1 và 1 điểm ngữ pháp đã học.",
+      "items": [
+        {
+          "prompt": "Bạn vừa đến một thành phố mới, có người ra đón bạn ở sân bay/nhà ga. Viết 1 tin nhắn gửi cho bạn thân, kể lại việc đó — dùng ít nhất 3 từ mới bài 1 (旅游/接/已经/不好意思/帮忙…) và 1 điểm ngữ pháp (吧/是……的/兼语句 让).",
+          "kind": "lời nhắn",
+          "target_length": "60-100 chữ",
+          "outline": ["Bạn đến thành phố nào, bằng gì", "Ai đón bạn, chuyện gì đã xảy ra", "Cảm nhận của bạn"]
+        }
+      ]
+    }
+  ]
+}

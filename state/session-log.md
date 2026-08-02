@@ -51,3 +51,8 @@ _- Status: PENDING UPDATE_
 - §8 (trả lời tự do): mạnh nhất — dùng được, có 离…很远/送我/睡觉以前; đã gợi ý bản hay hơn giữ 90% câu gốc (nối 也/因为/这样, bỏ lặp)
 - Output: buoi1_nangnguyen_phuongtien/baitap/nhanxet.docx (nhận xét bôi đỏ)
 - Điểm mạnh cần theo dõi: nền 会/想/能 vững, output tự nhiên; cần nhắc viết giản thể nhất quán + hoàn thành đủ ô
+
+## 2026-08-01 · Exercise Generator · HSK2 Buổi 1 (她请我们吃了北京烤鸭)
+- Blocks: noi, dien_cho_trong, doc_hieu (tin nhắn tự soạn), sap_xep, dich_dat_cau, nghe, noi_hskk×2, writing_prompt (lời nhắn 60-100 chữ) — 28 mục (không câu trùng; phủ 12/12 từ vựng + đủ 3 điểm ngữ pháp 吧(2)/是……的/兼语句)
+- Output: buoi01_moian_vitquay/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
