@@ -1,0 +1,23 @@
+{
+  "out_dir": "assets",
+  "images": [
+    { "name": "campus", "query": "peking university campus autumn" },
+    { "name": "reception", "query": "hotel reception desk asking questions" },
+    { "name": "cinema", "query": "campus cinema movie theater entrance" },
+    { "name": "decision", "query": "fork in the road decision choice" },
+    { "name": "counting", "query": "counting numbers abacus classroom" },
+    { "name": "modifier", "query": "editing red pen grammar correction" },
+    { "name": "error1", "query": "confused thinking question mark cartoon" },
+    { "name": "error2", "query": "wrong number order mistake sign" },
+    { "name": "error3", "query": "missing puzzle piece grammar" },
+    { "name": "roleplay", "query": "tourist asking direction map street" },
+    { "name": "words/gongjiaoche", "query": "city bus street" },
+    { "name": "words/chezhan", "query": "bus stop sign" },
+    { "name": "words/yuan", "query": "long empty road distance" },
+    { "name": "words/dache", "query": "hailing taxi street" },
+    { "name": "words/wangshang", "query": "laptop browsing internet" },
+    { "name": "words/waiguo", "query": "world flags international students" },
+    { "name": "words/jiaoshi", "query": "university classroom" },
+    { "name": "words/piao", "query": "movie ticket" }
+  ]
+}

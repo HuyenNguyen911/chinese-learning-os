@@ -1,0 +1,106 @@
+{
+  "meta": { "lesson": "HSK2 · Buổi 2 — 还是打车去北大吧", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối 汉字 với nghĩa",
+      "instructions": "Nối từ bên trái với nghĩa đúng bên phải.",
+      "pairs": [
+        {"left": "车站", "right": "trạm/bến xe"},
+        {"left": "远", "right": "xa"},
+        {"left": "网上", "right": "trên mạng"},
+        {"left": "外国", "right": "nước ngoài"},
+        {"left": "教室", "right": "phòng học"},
+        {"left": "过来", "right": "đến đây, quay lại"}
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ đúng trong khung để điền vào chỗ trống.",
+      "word_bank": ["但", "还是", "打车", "啊", "别"],
+      "items": [
+        {"q": "这儿有公交车，{}车站有点儿远。", "answer": "但", "src": "[phỏng theo 真题]"},
+        {"q": "这儿好{}吗？", "answer": "打车", "src": "[phỏng theo 真题]"},
+        {"q": "路有点儿远，我们{}打车去吧。", "answer": "还是", "src": "[phỏng theo 真题]"},
+        {"q": "学校里人真多{}！", "answer": "啊", "src": "[phỏng theo 真题]"},
+        {"q": "电影票太贵了，我们{}买了。", "answer": "别", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc đoạn tin nhắn",
+      "instructions": "Đọc đoạn tin nhắn rồi trả lời câu hỏi.",
+      "passage": "安妮：家月，我到北京大学了，可是找不到你说的那间教室，附近有点儿远，我打车来的。你在哪儿？\n白家月：你从东门进来，一直走，看到一个电影院，那儿旁边有一间教室，我们在里边等你。\n安妮：好，我知道了，马上过来。\n白家月：好，我们在教室等你。",
+      "questions": [
+        {"q": "安妮是怎么到北京大学的？", "options": ["坐公交车", "打车", "走路"], "answer": "B", "src": "[phỏng theo 真题]"},
+        {"q": "白家月让安妮先做什么？", "options": ["从东门进来，一直走", "先打电话", "先去买电影票"], "answer": "A", "src": "[phỏng theo 真题]"},
+        {"q": "白家月和谁在教室等安妮？", "options": ["文中没说", "老师", "服务员"], "answer": "A", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ cho trước thành câu đúng.",
+      "items": [
+        {"words": ["我们", "还是", "打车", "去", "吧"], "answer": "我们还是打车去吧。", "answer_plus": "车站有点儿远，我们还是打车去吧。", "src": "[phỏng theo 真题]"},
+        {"words": ["北京大学", "有", "四万", "多", "名", "学生"], "answer": "北京大学有四万多名学生。", "answer_plus": "北京大学很大，有四万多名学生。", "src": "[phỏng theo 真题]"},
+        {"words": ["他们", "卖", "的", "电影票", "很", "便宜"], "answer": "他们卖的电影票很便宜。", "answer_plus": "他们卖的电影票也很便宜，才二十多块钱。", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu tiếng Việt sang tiếng Trung, dùng từ gợi ý.",
+      "items": [
+        {"prompt": "Trạm xe hơi xa, chúng ta bắt taxi đi thôi.", "given": ["还是"], "answer": "车站有点儿远，我们还是打车去吧。", "answer_plus": "车站有点儿远，路上也堵车，我们还是打车去吧。", "src": "[phỏng theo 真题]"},
+        {"prompt": "Trường có hơn năm mươi giáo viên.", "given": ["多"], "answer": "学校有五十多个老师。", "answer_plus": "学校不太大，有五十多个老师。", "src": "[phỏng theo 真题]"},
+        {"prompt": "Đây là vé bạn mua, rất rẻ.", "given": ["的"], "answer": "这是你买的票，很便宜。", "answer_plus": "这是你昨天买的票，很便宜，才十几块钱。", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe audio rồi chọn đáp án đúng.",
+      "items": [
+        {"script": "请问，这儿有到北京大学的公交车吗？有，但车站有点儿远。", "q": "车站远不远？", "options": ["很远", "不远", "文中没说"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "北京大学有四万多名学生，还有三千多名外国学生。", "q": "北京大学的外国学生大约有多少？", "options": ["四万多", "三千多", "五十多"], "answer": "B", "audio": "audio/nghe-2.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "电影票不贵，有的还不到二十块钱，不过还是别看电影了，我们去别的地方吧。", "q": "说话的人想不想去看电影？", "options": ["想", "不想", "文中没说"], "answer": "B", "audio": "audio/nghe-3.mp3", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "听后重复",
+      "part": "听后重复",
+      "instructions": "Nghe và nhắc lại theo đúng ngữ điệu.",
+      "items": [
+        {"script": "车站有点儿远。", "audio": "audio/hskk-1.mp3"},
+        {"script": "他们卖的电影票也很便宜。", "audio": "audio/hskk-2.mp3"},
+        {"script": "我也想来这儿学习。", "audio": "audio/hskk-3.mp3"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "回答问题",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời.",
+      "items": [
+        {"script": "你们学校附近好打车吗？", "hint": "好打车，车站也不远。", "hint_plus": "挺好打车的，车站离我们学校不远，走路五分钟就到。", "audio": "audio/hskk-4.mp3"},
+        {"script": "你们学校有多少学生？", "hint": "有两万多个学生。", "hint_plus": "我们学校不算大，大概有两万多个学生，外国学生也不少。", "audio": "audio/hskk-5.mp3"}
+      ]
+    },
+    {
+      "type": "writing_prompt",
+      "title": "Viết đoạn văn",
+      "instructions": "Viết theo yêu cầu, dùng ít nhất 3 từ mới bài 2 và 1 điểm ngữ pháp đã học.",
+      "items": [
+        {
+          "prompt": "Bạn dẫn một người bạn nước ngoài đi tham quan trường của bạn. Viết 1 đoạn ngắn kể lại: đi đến trường bằng gì, trường có gì đặc biệt (số sinh viên, tiện ích), bạn muốn quay lại làm gì — dùng ít nhất 3 từ mới bài 2 (公交车/打车/万/网上/教室/电影院…) và 1 điểm ngữ pháp (还是……吧 / 用「多」表达概数 / 动词作定语＋的).",
+          "kind": "đoạn văn",
+          "target_length": "60-100 chữ",
+          "outline": ["Đi đến trường bằng gì", "Trường có gì đặc biệt (số liệu, tiện ích)", "Muốn quay lại làm gì"]
+        }
+      ]
+    }
+  ]
+}

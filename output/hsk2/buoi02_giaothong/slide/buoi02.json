@@ -1,0 +1,690 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 2",
+    "topic": "还是打车去北大吧 — Giao thông, tham quan trường + hỏi đường"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "还是打车去北大吧",
+      "subtitle": "Buổi 2 · 还是……吧 · 用「多」表达概数 · 动词/主谓短语作定语",
+      "footer": "",
+      "image": "assets/campus.jpg"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么",
+      "image": "assets/campus.jpg",
+      "bullets": [
+        "固定格式「还是……吧」— đề nghị phương án tốt hơn",
+        "用「多」表达概数 — số lượng phỏng chừng (hơn/mấy)",
+        "动词/主谓短语作定语 — cụm động từ làm định ngữ (thêm 的)",
+        "Chủ đề: hỏi đường/bắt taxi, tham quan trường, đề nghị lựa chọn"
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 1/16",
+      "hz": "公交车",
+      "py": "gōngjiāochē",
+      "pos": "n.",
+      "vn": "xe buýt",
+      "image": "assets/words/gongjiaoche.jpg",
+      "examples": [
+        {
+          "hz": "这儿有到北京大学的公交车吗？",
+          "py": "Zhèr yǒu dào Běijīng Dàxué de gōngjiāochē ma?",
+          "vn": "Ở đây có xe buýt đến ĐH Bắc Kinh không?"
+        },
+        {
+          "hz": "附近有公交车站吗？",
+          "py": "Fùjìn yǒu gōngjiāo chēzhàn ma?",
+          "vn": "Gần đây có trạm xe buýt không?"
+        }
+      ],
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 2/16",
+      "hz": "车站",
+      "py": "chēzhàn",
+      "pos": "n.",
+      "vn": "trạm/bến xe",
+      "image": "assets/words/chezhan.jpg",
+      "examples": [
+        {
+          "hz": "有，但车站有点儿远。",
+          "py": "Yǒu, dàn chēzhàn yǒudiǎnr yuǎn.",
+          "vn": "Có, nhưng trạm xe hơi xa."
+        },
+        {
+          "hz": "公交车站在哪儿？",
+          "py": "Gōngjiāo chēzhàn zài nǎr?",
+          "vn": "Trạm xe buýt ở đâu?"
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 3/16",
+      "hz": "远",
+      "py": "yuǎn",
+      "pos": "adj.",
+      "vn": "xa",
+      "image": "assets/words/yuan.jpg",
+      "examples": [
+        {
+          "hz": "车站有点儿远。",
+          "py": "Chēzhàn yǒudiǎnr yuǎn.",
+          "vn": "Trạm xe hơi xa."
+        },
+        {
+          "hz": "学校离我家不远。",
+          "py": "Xuéxiào lí wǒ jiā bù yuǎn.",
+          "vn": "Trường cách nhà mình không xa."
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 4/16",
+      "hz": "打车",
+      "py": "dǎchē",
+      "pos": "v.",
+      "vn": "bắt taxi",
+      "image": "assets/words/dache.jpg",
+      "examples": [
+        {
+          "hz": "这儿好打车吗？",
+          "py": "Zhèr hǎo dǎchē ma?",
+          "vn": "Ở đây có dễ bắt taxi không?"
+        },
+        {
+          "hz": "我们还是打车去吧。",
+          "py": "Wǒmen háishi dǎchē qù ba.",
+          "vn": "Chúng ta bắt taxi đi thôi."
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 5/16",
+      "hz": "但",
+      "py": "dàn",
+      "pos": "conj.",
+      "vn": "nhưng",
+      "examples": [
+        {
+          "hz": "有，但车站有点儿远。",
+          "py": "Yǒu, dàn chēzhàn yǒudiǎnr yuǎn.",
+          "vn": "Có, nhưng trạm xe hơi xa."
+        },
+        {
+          "hz": "我很想去，但没有时间。",
+          "py": "Wǒ hěn xiǎng qù, dàn méiyǒu shíjiān.",
+          "vn": "Mình rất muốn đi, nhưng không có thời gian."
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 6/16",
+      "hz": "还是",
+      "py": "háishi",
+      "pos": "adv./conj.",
+      "vn": "hay là; nên (chọn phương án tốt hơn)",
+      "examples": [
+        {
+          "hz": "我们还是打车去吧。",
+          "py": "Wǒmen háishi dǎchē qù ba.",
+          "vn": "Chúng ta bắt taxi đi thôi."
+        },
+        {
+          "hz": "还是别看电影了。",
+          "py": "Háishi bié kàn diànyǐng le.",
+          "vn": "Thôi đừng xem phim nữa."
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 7/16",
+      "hz": "啊",
+      "py": "a",
+      "pos": "part.",
+      "vn": "trợ từ cuối câu (tán thưởng, đồng tình)",
+      "examples": [
+        {
+          "hz": "学校里人真多啊！",
+          "py": "Xuéxiào lǐ rén zhēn duō a!",
+          "vn": "Trong trường đông người thật đấy!"
+        },
+        {
+          "hz": "是啊，电影院还不小。",
+          "py": "Shì a, diànyǐngyuàn hái bù xiǎo.",
+          "vn": "Đúng vậy, rạp phim cũng không nhỏ."
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 8/16",
+      "hz": "万",
+      "py": "wàn",
+      "pos": "num.",
+      "vn": "vạn (10.000)",
+      "examples": [
+        {
+          "hz": "北京大学有四万多名学生呢！",
+          "py": "Běijīng Dàxué yǒu sìwàn duō míng xuéshēng ne!",
+          "vn": "ĐH Bắc Kinh có hơn bốn vạn sinh viên đấy!"
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 9/16",
+      "hz": "名",
+      "py": "míng",
+      "pos": "m.",
+      "vn": "(lượng từ chỉ người)",
+      "examples": [
+        {
+          "hz": "北京大学有四万多名学生。",
+          "py": "Běijīng Dàxué yǒu sìwàn duō míng xuéshēng.",
+          "vn": "ĐH Bắc Kinh có hơn bốn vạn sinh viên."
+        },
+        {
+          "hz": "网上还说有三千多名外国学生。",
+          "py": "Wǎngshang hái shuō yǒu sānqiān duō míng wàiguó xuéshēng.",
+          "vn": "Trên mạng còn nói có hơn ba nghìn sinh viên nước ngoài."
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 10/16",
+      "hz": "网上",
+      "py": "wǎngshang",
+      "pos": "n.",
+      "vn": "trên mạng",
+      "image": "assets/words/wangshang.jpg",
+      "examples": [
+        {
+          "hz": "是网上说的。",
+          "py": "Shì wǎngshang shuō de.",
+          "vn": "Là đọc trên mạng."
+        },
+        {
+          "hz": "网上说这家饭馆很不错。",
+          "py": "Wǎngshang shuō zhè jiā fànguǎn hěn búcuò.",
+          "vn": "Trên mạng nói quán ăn này khá ngon."
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 11/16",
+      "hz": "外国",
+      "py": "wàiguó",
+      "pos": "n.",
+      "vn": "nước ngoài",
+      "image": "assets/words/waiguo.jpg",
+      "examples": [
+        {
+          "hz": "网上还说北京大学有三千多名外国学生。",
+          "py": "Wǎngshang hái shuō Běijīng Dàxué yǒu sānqiān duō míng wàiguó xuéshēng.",
+          "vn": "Trên mạng còn nói ĐH Bắc Kinh có hơn ba nghìn sinh viên nước ngoài."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 12/16",
+      "hz": "间",
+      "py": "jiān",
+      "pos": "m.",
+      "vn": "(lượng từ chỉ phòng)",
+      "examples": [
+        {
+          "hz": "那边就有一间教室。",
+          "py": "Nàbiān jiù yǒu yì jiān jiàoshì.",
+          "vn": "Đằng kia có một phòng học."
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 13/16",
+      "hz": "教室",
+      "py": "jiàoshì",
+      "pos": "n.",
+      "vn": "phòng học",
+      "image": "assets/words/jiaoshi.jpg",
+      "examples": [
+        {
+          "hz": "那边就有一间教室，我们去看一下吧。",
+          "py": "Nàbiān jiù yǒu yì jiān jiàoshì, wǒmen qù kàn yíxià ba.",
+          "vn": "Đằng kia có một phòng học, chúng ta đi xem thử đi."
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 14/16",
+      "hz": "票",
+      "py": "piào",
+      "pos": "n.",
+      "vn": "vé",
+      "image": "assets/words/piao.jpg",
+      "examples": [
+        {
+          "hz": "他们卖的电影票也很便宜。",
+          "py": "Tāmen mài de diànyǐngpiào yě hěn piányi.",
+          "vn": "Vé phim họ bán cũng rất rẻ."
+        },
+        {
+          "hz": "电影票还不到二十块钱。",
+          "py": "Diànyǐngpiào hái bú dào èrshí kuài qián.",
+          "vn": "Vé phim còn chưa đến hai mươi tệ."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 15/16",
+      "hz": "别",
+      "py": "bié",
+      "pos": "adv.",
+      "vn": "đừng",
+      "examples": [
+        {
+          "hz": "还是别看电影了。",
+          "py": "Háishi bié kàn diànyǐng le.",
+          "vn": "Thôi đừng xem phim nữa."
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 16/16",
+      "hz": "过来",
+      "py": "guòlái",
+      "pos": "v.",
+      "vn": "đến đây, quay lại",
+      "examples": [
+        {
+          "hz": "我们有时间还想再过来看个电影。",
+          "py": "Wǒmen yǒu shíjiān hái xiǎng zài guòlái kàn ge diànyǐng.",
+          "vn": "Khi có thời gian chúng tôi còn muốn quay lại xem phim."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文1",
+      "title": "在宾馆前台 — hỏi đường, bắt taxi",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "请问，这儿有到北京大学的公交车吗？",
+          "py": "Qǐngwèn, zhèr yǒu dào Běijīng Dàxué de gōngjiāochē ma?"
+        },
+        {
+          "speaker": "服务员",
+          "hz": "有，但车站有点儿远。",
+          "py": "Yǒu, dàn chēzhàn yǒudiǎnr yuǎn."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "这儿好打车吗？",
+          "py": "Zhèr hǎo dǎchē ma?"
+        },
+        {
+          "speaker": "服务员",
+          "hz": "好打车。",
+          "py": "Hǎo dǎchē."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "谢谢。安妮，我们还是打车去吧。",
+          "py": "Xièxie. Ānnī, wǒmen háishi dǎchē qù ba."
+        },
+        {
+          "speaker": "安妮",
+          "hz": "好，没问题。",
+          "py": "Hǎo, méi wèntí."
+        }
+      ],
+      "note": "「好」ở đây nghĩa là \"dễ\" (好打车 = dễ bắt taxi).",
+      "source": "New HSK Course 2, Bài 2",
+      "image": "assets/reception.jpg",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文2",
+      "title": "在北京大学 — tham quan, số liệu",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "学校里人真多啊！",
+          "py": "Xuéxiào lǐ rén zhēn duō a!"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "是啊，北京大学有四万多名学生呢！",
+          "py": "Shì a, Běijīng Dàxué yǒu sìwàn duō míng xuéshēng ne!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "你是怎么知道的？",
+          "py": "Nǐ shì zěnme zhīdào de?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "是网上说的，网上还说北京大学有三千多名外国学生。",
+          "py": "Shì wǎngshang shuō de, wǎngshang hái shuō Běijīng Dàxué yǒu sānqiān duō míng wàiguó xuéshēng."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我也想来这儿学习。",
+          "py": "Wǒ yě xiǎng lái zhèr xuéxí."
+        },
+        {
+          "speaker": "安妮",
+          "hz": "那边就有一间教室，我们去看一下吧。",
+          "py": "Nàbiān jiù yǒu yì jiān jiàoshì, wǒmen qù kàn yíxià ba."
+        }
+      ],
+      "source": "New HSK Course 2, Bài 2",
+      "image": "assets/campus.jpg",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文3",
+      "title": "电影院 — rạp phim trong trường",
+      "turns": [
+        {
+          "speaker": "安妮",
+          "hz": "家月，你看，学校里有家电影院！",
+          "py": "Jiāyuè, nǐ kàn, xuéxiào lǐ yǒu jiā diànyǐngyuàn!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "是啊，电影院还不小。",
+          "py": "Shì a, diànyǐngyuàn hái bù xiǎo."
+        },
+        {
+          "speaker": "安妮",
+          "hz": "他们卖的电影票也很便宜。",
+          "py": "Tāmen mài de diànyǐngpiào yě hěn piányi."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "天啊！有的还不到二十块钱。",
+          "py": "Tiān a! Yǒude hái bú dào èrshí kuài qián."
+        },
+        {
+          "speaker": "安妮",
+          "hz": "那你想不想去看个电影？",
+          "py": "Nà nǐ xiǎng bu xiǎng qù kàn ge diànyǐng?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "还是别看电影了，北京大学就很好看！",
+          "py": "Háishi bié kàn diànyǐng le, Běijīng Dàxué jiù hěn hǎokàn!"
+        }
+      ],
+      "note": "「天啊」biểu thị ngạc nhiên; 「到」ở đây nghĩa là \"đạt tới/đủ\".",
+      "source": "New HSK Course 2, Bài 2",
+      "image": "assets/cinema.jpg",
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文4",
+      "title": "白家月给陈天中发信息",
+      "sentences": [
+        {
+          "hz": "北京大学很大，有四万多名学生。",
+          "py": "Běijīng Dàxué hěn dà, yǒu sìwàn duō míng xuéshēng.",
+          "vn": "ĐH Bắc Kinh rất lớn, có hơn bốn vạn sinh viên."
+        },
+        {
+          "hz": "学校很漂亮，里边还有家电影院，电影票也不贵，",
+          "py": "Xuéxiào hěn piàoliang, lǐbian hái yǒu jiā diànyǐngyuàn, diànyǐngpiào yě bú guì,",
+          "vn": "Trường rất đẹp, bên trong còn có rạp chiếu phim, vé phim cũng không đắt,"
+        },
+        {
+          "hz": "我们有时间还想再过来看个电影。",
+          "py": "wǒmen yǒu shíjiān hái xiǎng zài guòlái kàn ge diànyǐng.",
+          "vn": "khi có thời gian chúng tôi còn muốn quay lại xem phim."
+        }
+      ],
+      "source": "New HSK Course 2, Bài 2",
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "固定格式「还是……吧」",
+      "image": "assets/decision.jpg",
+      "point": [
+        "Biểu thị lựa chọn nghiêng về một phương án, mang ý \"làm thế này tốt hơn\".",
+        "Cấu trúc: 还是 + (chủ ngữ) + động từ... + 吧。"
+      ],
+      "examples": [
+        {
+          "hz": "我们还是打车去吧。",
+          "py": "Wǒmen háishi dǎchē qù ba.",
+          "vn": "Chúng ta bắt taxi đi thôi."
+        },
+        {
+          "hz": "那件衣服很好看，还是买那件吧。",
+          "py": "Nà jiàn yīfu hěn hǎokàn, háishi mǎi nà jiàn ba.",
+          "vn": "Cái áo đó đẹp lắm, mua cái đó đi."
+        },
+        {
+          "hz": "你第一次去北京，还是找个人接你吧。",
+          "py": "Nǐ dì-yī cì qù Běijīng, háishi zhǎo ge rén jiē nǐ ba.",
+          "vn": "Bạn lần đầu đến Bắc Kinh, nên tìm người đón bạn thì hơn."
+        }
+      ],
+      "source": "New HSK Course 2, Bài 2",
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "用「多」表达概数",
+      "image": "assets/counting.jpg",
+      "point": [
+        "「多」đứng sau số từ/số lượng từ, biểu thị có số lẻ (hơn/mấy).",
+        "Số là bội số của 10 → 多 đứng NGAY SAU số từ (trước lượng từ): 四万多名.",
+        "Số KHÔNG phải bội số của 10 → 多 đứng SAU lượng từ: 五块多钱."
+      ],
+      "examples": [
+        {
+          "hz": "北京大学有四万多名学生呢！",
+          "py": "Běijīng Dàxué yǒu sìwàn duō míng xuéshēng ne!",
+          "vn": "ĐH Bắc Kinh có hơn bốn vạn sinh viên đấy!"
+        },
+        {
+          "hz": "教室里有二十多个学生。",
+          "py": "Jiàoshì lǐ yǒu èrshí duō ge xuésheng.",
+          "vn": "Trong phòng học có hơn hai mươi học sinh."
+        },
+        {
+          "hz": "这两个苹果五块多钱。",
+          "py": "Zhè liǎng ge píngguǒ wǔ kuài duō qián.",
+          "vn": "Hai quả táo này hơn năm tệ."
+        }
+      ],
+      "source": "New HSK Course 2, Bài 2",
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "动词/主谓短语作定语",
+      "image": "assets/modifier.jpg",
+      "point": [
+        "Động từ, cụm động từ, hoặc cụm chủ-vị đứng trước danh từ để bổ nghĩa (đặc điểm/trạng thái).",
+        "Bắt buộc có 「的」nối giữa cụm bổ nghĩa và danh từ trung tâm."
+      ],
+      "examples": [
+        {
+          "hz": "他们卖的电影票也很便宜。",
+          "py": "Tāmen mài de diànyǐngpiào yě hěn piányi.",
+          "vn": "Vé phim họ bán cũng rất rẻ."
+        },
+        {
+          "hz": "现在学中文的学生很多。",
+          "py": "Xiànzài xué Zhōngwén de xuésheng hěn duō.",
+          "vn": "Hiện nay học sinh học tiếng Trung rất nhiều."
+        },
+        {
+          "hz": "这是朋友给我的杯子。",
+          "py": "Zhè shì péngyou gěi wǒ de bēizi.",
+          "vn": "Đây là cái cốc bạn tặng mình."
+        }
+      ],
+      "source": "New HSK Course 2, Bài 2",
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "10 câu khẩu ngữ dùng ngay",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "请问，这儿有到北京大学的公交车吗？",
+          "Qǐngwèn, zhèr yǒu dào Běijīng Dàxué de gōngjiāochē ma?",
+          "Xin hỏi, ở đây có xe buýt đến ĐH Bắc Kinh không?"
+        ],
+        [
+          "车站有点儿远，我们还是打车去吧。",
+          "Chēzhàn yǒudiǎnr yuǎn, wǒmen háishi dǎchē qù ba.",
+          "Trạm xe hơi xa, chúng ta bắt taxi đi thôi."
+        ],
+        [
+          "这儿好打车吗？",
+          "Zhèr hǎo dǎchē ma?",
+          "Ở đây có dễ bắt taxi không?"
+        ],
+        [
+          "学校里人真多啊！",
+          "Xuéxiào lǐ rén zhēn duō a!",
+          "Trong trường đông người thật đấy!"
+        ],
+        [
+          "你是怎么知道的？",
+          "Nǐ shì zěnme zhīdào de?",
+          "Bạn biết bằng cách nào vậy?"
+        ],
+        [
+          "网上说这家饭馆很不错。",
+          "Wǎngshang shuō zhè jiā fànguǎn hěn búcuò.",
+          "Trên mạng nói quán ăn này khá ngon."
+        ],
+        [
+          "这里有三十多个学生。",
+          "Zhèlǐ yǒu sānshí duō ge xuésheng.",
+          "Ở đây có hơn ba mươi học sinh."
+        ],
+        [
+          "他们卖的东西也很便宜。",
+          "Tāmen mài de dōngxi yě hěn piányi.",
+          "Đồ họ bán cũng rất rẻ."
+        ],
+        [
+          "电影票还不到二十块钱。",
+          "Diànyǐngpiào hái bú dào èrshí kuài qián.",
+          "Vé phim còn chưa đến hai mươi tệ."
+        ],
+        [
+          "还是别去了，太远了。",
+          "Háishi bié qù le, tài yuǎn le.",
+          "Thôi đừng đi nữa, xa quá."
+        ]
+      ],
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "易错点 1/3",
+      "title": "Lẫn 还是 (đề nghị) với 还是……还是 (câu hỏi lựa chọn)",
+      "image": "assets/error1.jpg",
+      "bullets": [
+        "❌ 你去还是不去还是吧？ (nhét thêm 吧 vào câu hỏi lựa chọn)",
+        "✔ 你去还是不去？ (hỏi lựa chọn, KHÔNG có 吧) — 你还是别去了吧。 (đề nghị, CÓ 吧)",
+        "Vì sao: 还是 có 2 vai trò khác nhau — trong câu hỏi A还是B là liên từ nối 2 lựa chọn ngang hàng; đứng đầu vế sau + 吧 cuối câu là đề nghị phương án tốt hơn. Người Việt hay lẫn vì cả hai đều dịch \"hay là\"."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "易错点 2/3",
+      "title": "Đặt sai vị trí 「多」",
+      "image": "assets/error2.jpg",
+      "bullets": [
+        "❌ 四万名多学生 (multi đặt sau lượng từ dù 四万 là bội số của 10)",
+        "✔ 四万多名学生 — vì 4万 là bội số của 10 nên 多 đứng NGAY SAU số từ, trước lượng từ 名",
+        "Vì sao: tiếng Việt luôn nói \"hơn\" ở cuối cụm số lượng (bốn vạn hơn), nên hay quen đặt 多 ở cuối bất kể số có phải bội số của 10 hay không."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "易错点 3/3",
+      "title": "Quên 「的」khi cụm động từ làm định ngữ",
+      "image": "assets/error3.jpg",
+      "bullets": [
+        "❌ 他们卖电影票也很便宜。 (thiếu 的 sau cụm động từ 卖电影票)",
+        "✔ 他们卖的电影票也很便宜。",
+        "Vì sao: khi cụm động từ đứng trước bổ nghĩa cho danh từ, bắt buộc có 的 nối; tiếng Việt không có trợ từ tương ứng (\"vé phim [mà] họ bán\") nên dễ bỏ sót."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "课堂活动",
+      "title": "Đóng vai: hỏi đường đến rạp chiếu phim",
+      "image": "assets/roleplay.jpg",
+      "bullets": [
+        "Chia nhóm 2 người: A = người hỏi đường, B = người trả lời (nguyên gốc sách, Classroom Activity Bài 2).",
+        "A hỏi:附近有没有到新新电影院的公交车？车站远不远？到电影院要多长时间？",
+        "Cố dùng lại: 还是……吧 đề nghị · 多 số phỏng chừng · từ vựng bài 2 (公交车/车站/远/打车).",
+        "Gợi ý câu mở đầu (vai A): 请问，这儿有到……的公交车吗？"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "谢谢！"
+    }
+  ]
+}
