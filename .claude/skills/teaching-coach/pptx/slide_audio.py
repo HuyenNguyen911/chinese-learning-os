@@ -50,14 +50,16 @@ def _pinyin_tokens(cell):
         return []
     return _PINYIN_TOKEN_RE.findall(text)
 
-# Luân phiên 2 giọng cho slide thường — user nghe thử 3 mẫu (Xiaoxiao/Xiaoyi ở
-# -15%, Xiaoyi ở -8%) đều thấy ổn và muốn linh hoạt thay vì ép 1 giọng xuyên
-# suốt (feedback buổi HSK2 Buổi 2: giọng cũ 1-voice + rate -30% nghe "mệt mệt,
-# như người máy đọc"). Xiaoxiao = "Warm", Xiaoyi = "Lively" (theo mô tả giọng
-# của edge-tts) — xen kẽ cho đỡ đơn điệu mà vẫn không đổi quá nhanh gây rối.
+# Luân phiên giọng cho slide thường — feedback buổi HSK2 Buổi 2: giọng cũ
+# 1-voice + rate -30% nghe "mệt mệt, như người máy đọc" → thêm Xiaoxiao/Xiaoyi.
+# Feedback buổi HSK2 Buổi 3: 2 giọng nữ (Xiaoxiao/Xiaoyi) nghe vẫn giống nhau,
+# muốn "nhiều lên" → mở thêm 2 giọng nam (Yunxi/Yunjian) xen kẽ nam/nữ mỗi
+# slide cho rõ khác biệt, không chỉ đổi màu giọng nữ với nhau.
 VOICE_POOL = [
     "zh-CN-XiaoxiaoNeural",
+    "zh-CN-YunxiNeural",
     "zh-CN-XiaoyiNeural",
+    "zh-CN-YunjianNeural",
 ]
 # Giọng gán cho từng người trong hội thoại (theo thứ tự xuất hiện)
 DIALOGUE_VOICES = ["zh-CN-XiaoxiaoNeural", "zh-CN-YunxiNeural", "zh-CN-XiaoyiNeural"]
