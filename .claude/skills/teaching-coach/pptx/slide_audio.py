@@ -50,14 +50,22 @@ def _pinyin_tokens(cell):
         return []
     return _PINYIN_TOKEN_RE.findall(text)
 
-# Giọng CHUẨN duy nhất cho slide thường — nhất quán, không luân phiên (tránh
-# cảm giác lúc nhanh lúc chậm khi đổi giọng liên tục giữa các slide).
+# Luân phiên 2 giọng cho slide thường — user nghe thử 3 mẫu (Xiaoxiao/Xiaoyi ở
+# -15%, Xiaoyi ở -8%) đều thấy ổn và muốn linh hoạt thay vì ép 1 giọng xuyên
+# suốt (feedback buổi HSK2 Buổi 2: giọng cũ 1-voice + rate -30% nghe "mệt mệt,
+# như người máy đọc"). Xiaoxiao = "Warm", Xiaoyi = "Lively" (theo mô tả giọng
+# của edge-tts) — xen kẽ cho đỡ đơn điệu mà vẫn không đổi quá nhanh gây rối.
 VOICE_POOL = [
-    "zh-CN-XiaoxiaoNeural",   # nữ, phát âm chuẩn, tự nhiên — dùng xuyên suốt
+    "zh-CN-XiaoxiaoNeural",
+    "zh-CN-XiaoyiNeural",
 ]
 # Giọng gán cho từng người trong hội thoại (theo thứ tự xuất hiện)
 DIALOGUE_VOICES = ["zh-CN-XiaoxiaoNeural", "zh-CN-YunxiNeural", "zh-CN-XiaoyiNeural"]
-RATE_DEFAULT = "-30%"
+# Rate mặc định theo loại nội dung — slide thường (từ vựng/ngữ pháp cần nghe rõ
+# từng chữ) chậm hơn hội thoại (ưu tiên nhịp tự nhiên, giống người thật nói
+# chuyện) một chút. -30% cũ bị chê quá chậm/không tự nhiên; hạ xuống -15%/-8%.
+RATE_DEFAULT = "-15%"
+DIALOGUE_RATE_DEFAULT = "-8%"
 
 
 def read_text(s):
@@ -151,10 +159,10 @@ def main(argv):
               file=sys.stderr)
         return 2
     src = Path(args[0])
-    rate = RATE_DEFAULT
+    rate_override = None
     for o in opts:
         if o.startswith("--rate="):
-            rate = o.split("=", 1)[1]
+            rate_override = o.split("=", 1)[1]
     force = "--force" in opts
 
     spec = json.loads(src.read_text(encoding="utf-8"))
@@ -175,11 +183,13 @@ def main(argv):
 
         if force or not out.exists():
             if is_dialogue:
+                rate = rate_override or DIALOGUE_RATE_DEFAULT
                 ok, voices = gen_dialogue(s["turns"], rate, audio_dir, out,
                                           tag="d%02d" % i)
                 label = "dialogue " + "/".join(
                     v.split("-")[-1].replace("Neural", "") for v in voices.values())
             else:
+                rate = rate_override or RATE_DEFAULT
                 voice = VOICE_POOL[pool_idx % len(VOICE_POOL)]
                 pool_idx += 1
                 ok = tts(text, voice, rate, out)
@@ -195,7 +205,8 @@ def main(argv):
 
     src.write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n",
                    encoding="utf-8")
-    print("DONE: %d mp3 mới (rate %s) -> %s" % (made, rate, audio_dir))
+    rate_note = rate_override or ("%s thường / %s hội thoại" % (RATE_DEFAULT, DIALOGUE_RATE_DEFAULT))
+    print("DONE: %d mp3 mới (rate %s) -> %s" % (made, rate_note, audio_dir))
     return 0
 
 
