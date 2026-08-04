@@ -101,7 +101,8 @@ def main(argv):
     spec = json.loads(Path(argv[1]).read_text(encoding="utf-8"))
     out_dir = Path(spec["out_dir"])
     out_dir.mkdir(parents=True, exist_ok=True)
-    credits = {}
+    credits_path = out_dir / "credits.json"
+    credits = json.loads(credits_path.read_text(encoding="utf-8")) if credits_path.exists() else {}
     ok = 0
     for img in spec.get("images", []):
         name, query = img["name"], img["query"]
@@ -118,7 +119,7 @@ def main(argv):
         else:
             print("FAIL   %s  (query: %s)" % (name, query))
         time.sleep(2)   # tránh rate-limit Openverse ẩn danh
-    (out_dir / "credits.json").write_text(
+    credits_path.write_text(
         json.dumps(credits, ensure_ascii=False, indent=2), encoding="utf-8")
     print("DONE: %d/%d images -> %s" % (ok, len(spec.get("images", [])), out_dir))
     return 0
