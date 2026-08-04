@@ -116,6 +116,15 @@ Sinh tự động bằng helper:
 bảng `口语`), gọi `edge-tts` sinh mp3 vào `assets/audio/` và tự gắn key `audio`.
 Cần internet; `--force` để sinh lại.
 
+**⚠️ Cổng duyệt bắt buộc (2026-08-04, user nhắc lại 2 lần trong 1 session):**
+KHÔNG chạy `slide_audio.py` cho tới khi user đã duyệt **TOÀN BỘ** nội dung JSON
+sẽ build (mọi slide, không chỉ phần vừa sửa). Duyệt 1 slide/1 phần nhỏ qua chat
+KHÔNG đồng nghĩa "sẵn sàng sinh audio cả deck" — đặc biệt vì chèn/xoá/reorder 1
+slide bắt buộc audio TOÀN BỘ phải sinh lại (xem cảnh báo vị trí bên dưới), nên
+"duyệt cục bộ" rồi chạy audio cho cả deck sẽ tốn công sinh lại nếu còn slide
+khác chưa chốt. Không chắc → hỏi thẳng "nội dung đã chốt hết chưa, sinh audio
+bản cuối được chưa?" trước khi chạy, đừng tự suy diễn từ 1 lời duyệt cục bộ.
+
 **Giọng & tốc độ (2026-08-04, sau feedback "giọng cũ nghe mệt/robot"):**
 - Slide thường (vocab/wordcard/grammar/table/passage): luân phiên 2 giọng
   `zh-CN-XiaoxiaoNeural` ("Warm") / `zh-CN-XiaoyiNeural` ("Lively"), mặc định
@@ -200,6 +209,51 @@ kết quả, rút ngắn lại trước khi đổi hẳn chủ đề tìm.
 
 **`build_deck.py` báo `PermissionError` khi ghi file `.pptx`:** file đích đang mở trong
 PowerPoint (khoá file) — đóng cửa sổ PowerPoint rồi chạy lại.
+
+**Mở lại file cho user xem sau khi rebuild dễ bị nhầm bản cache cũ:** nếu PowerPoint
+đang mở sẵn file đó (kể cả đã tưởng đóng), mở lại bằng script (vd `Invoke-Item`) đôi
+khi chỉ đưa cửa sổ CŨ đang mở lên trước, không load lại nội dung mới từ đĩa — user
+tưởng bug (audio/nội dung "chưa cập nhật") trong khi file trên đĩa đã đúng. Gặp báo
+lỗi kiểu "sao chưa đổi" sau rebuild → nhắc user **đóng hẳn toàn bộ cửa sổ PowerPoint**
+(không chỉ đóng tab) rồi mở lại, trước khi kết luận có bug thật.
+
+## Đồng bộ audio vào file .pptx đã bị sửa tay (không rebuild từ JSON)
+
+User có thể chỉnh tay trực tiếp file `.pptx` đã build (xoá/tách/dời slide, đổi ảnh)
+thay vì sửa JSON rồi build lại — hợp lý vì rebuild từ JSON sẽ **xoá sạch** các chỉnh
+sửa tay đó (ảnh/layout). Khi đó cần đồng bộ lại audio theo đúng nội dung/thứ tự HIỆN
+TẠI của file, không phải build lại.
+
+Cách làm: viết script Python riêng (không sửa `build_deck.py`) —
+1. Mở file bằng `Presentation(path)`, đọc text từng slide hiện tại (`shape.text_frame.text`)
+   để xác nhận đúng nội dung/thứ tự sau khi user sửa tay (đừng tin lại state cũ).
+2. Map từng slide về đúng object trong JSON gốc (theo `kicker`/`title`) để lấy lại text
+   cần đọc — nếu 1 slide bị TÁCH thành nhiều slide (vd 1 dialogue dài chia 2), đối
+   chiếu NGUYÊN VĂN từng dòng còn lại với `turns[]` gốc để biết chính xác đoạn nào
+   thuộc slide nào (khớp theo nội dung, không đoán theo vị trí).
+3. Sinh mp3 (dùng lại `slide_audio.tts`/`gen_dialogue` bằng cách `import slide_audio`).
+4. **Xoá shape audio cũ trên slide đó trước khi thêm mới** (`shape.shape_type ==
+   MSO_SHAPE_TYPE.MEDIA` → remove), rồi `slide.shapes.add_movie(...)`, cuối cùng
+   `prs.save()` đè lên chính file đó — KHÔNG gọi `build_deck.py`.
+
+**2 lỗi python-pptx đã gặp khi làm việc này (chỉ xảy ra trên file đã qua chỉnh tay
+nhiều lần, không xảy ra khi build từ JSON sạch):**
+- `add_movie(..., poster_frame_image=<path>)` crash `IndexError` ở
+  `_video_part_rIds[1]` → bỏ hẳn tham số này (`poster_frame_image=None`), PowerPoint
+  vẫn hiện icon mặc định, chỉ mất icon loa tuỳ biến.
+- `_find_by_sha1` (trong `pptx.package`) crash `AttributeError: 'Part' object has no
+  attribute 'sha1'` — do PowerPoint để lại 1 relationship MEDIA/VIDEO mồ côi (từ audio
+  đã bị xoá thủ công trước đó) trỏ tới part không phải `MediaPart` thật. Vá bằng
+  monkeypatch tại chỗ (không sửa thư viện cài đặt):
+  ```python
+  import pptx.package as _pptx_package
+  def _safe_find_by_sha1(self, sha1):
+      for media_part in self:
+          if getattr(media_part, "sha1", None) == sha1:
+              return media_part
+      return None
+  _pptx_package._MediaParts._find_by_sha1 = _safe_find_by_sha1
+  ```
 
 ## Nguyên tắc thiết kế (đã nhúng sẵn trong renderer)
 
