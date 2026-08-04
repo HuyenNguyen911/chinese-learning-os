@@ -11,31 +11,33 @@
         {"left": "网上", "right": "trên mạng"},
         {"left": "外国", "right": "nước ngoài"},
         {"left": "教室", "right": "phòng học"},
-        {"left": "过来", "right": "đến đây, quay lại"}
+        {"left": "过来", "right": "đến đây, quay lại"},
+        {"left": "十字路口", "right": "ngã tư"}
       ]
     },
     {
       "type": "dien_cho_trong",
       "title": "Điền từ vào chỗ trống",
       "instructions": "Chọn từ đúng trong khung để điền vào chỗ trống.",
-      "word_bank": ["但", "还是", "打车", "啊", "别"],
+      "word_bank": ["但", "还是", "打车", "啊", "别", "一直走"],
       "items": [
         {"q": "这儿有公交车，{}车站有点儿远。", "answer": "但", "src": "[phỏng theo 真题]"},
         {"q": "这儿好{}吗？", "answer": "打车", "src": "[phỏng theo 真题]"},
         {"q": "路有点儿远，我们{}打车去吧。", "answer": "还是", "src": "[phỏng theo 真题]"},
         {"q": "学校里人真多{}！", "answer": "啊", "src": "[phỏng theo 真题]"},
-        {"q": "电影票太贵了，我们{}买了。", "answer": "别", "src": "[phỏng theo 真题]"}
+        {"q": "电影票太贵了，我们{}买了。", "answer": "别", "src": "[phỏng theo 真题]"},
+        {"q": "他说的路很简单，你只要{}，五分钟就到了。", "answer": "一直走", "src": "[phỏng theo 真题]"}
       ]
     },
     {
       "type": "doc_hieu",
       "title": "Đọc đoạn tin nhắn",
       "instructions": "Đọc đoạn tin nhắn rồi trả lời câu hỏi.",
-      "passage": "安妮：家月，我到北京大学了，可是找不到你说的那间教室，附近有点儿远，我打车来的。你在哪儿？\n白家月：你从东门进来，一直走，看到一个电影院，那儿旁边有一间教室，我们在里边等你。\n安妮：好，我知道了，马上过来。\n白家月：好，我们在教室等你。",
+      "passage": "服务员：你去图书馆吗？从这儿一直走，看到红绿灯往左拐，图书馆附近有一个公交车站，很好认。",
       "questions": [
-        {"q": "安妮是怎么到北京大学的？", "options": ["坐公交车", "打车", "走路"], "answer": "B", "src": "[phỏng theo 真题]"},
-        {"q": "白家月让安妮先做什么？", "options": ["从东门进来，一直走", "先打电话", "先去买电影票"], "answer": "A", "src": "[phỏng theo 真题]"},
-        {"q": "白家月和谁在教室等安妮？", "options": ["文中没说", "老师", "服务员"], "answer": "A", "src": "[phỏng theo 真题]"}
+        {"q": "去图书馆要往哪儿拐？", "options": ["往左拐", "往右拐", "不用拐"], "answer": "A", "src": "[phỏng theo 真题]"},
+        {"q": "图书馆附近有什么？", "options": ["公交车站", "电影院", "教室"], "answer": "A", "src": "[phỏng theo 真题]"},
+        {"q": "服务员建议先怎么走？", "options": ["一直走", "打车去", "坐公交车"], "answer": "A", "src": "[phỏng theo 真题]"}
       ]
     },
     {
@@ -65,7 +67,7 @@
       "items": [
         {"script": "请问，这儿有到北京大学的公交车吗？有，但车站有点儿远。", "q": "车站远不远？", "options": ["很远", "不远", "文中没说"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "[phỏng theo 真题]"},
         {"script": "北京大学有四万多名学生，还有三千多名外国学生。", "q": "北京大学的外国学生大约有多少？", "options": ["四万多", "三千多", "五十多"], "answer": "B", "audio": "audio/nghe-2.mp3", "src": "[phỏng theo 真题]"},
-        {"script": "电影票不贵，有的还不到二十块钱，不过还是别看电影了，我们去别的地方吧。", "q": "说话的人想不想去看电影？", "options": ["想", "不想", "文中没说"], "answer": "B", "audio": "audio/nghe-3.mp3", "src": "[phỏng theo 真题]"}
+        {"script": "从车站一直走，到十字路口往左拐，附近就是你要找的地方。", "q": "怎么才能到那儿？", "options": ["从车站一直走，十字路口左拐", "打车去，不用问路", "坐公交车，在车站下车"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "[phỏng theo 真题]"}
       ]
     },
     {
@@ -87,19 +89,6 @@
       "items": [
         {"script": "你们学校附近好打车吗？", "hint": "好打车，车站也不远。", "hint_plus": "挺好打车的，车站离我们学校不远，走路五分钟就到。", "audio": "audio/hskk-4.mp3"},
         {"script": "你们学校有多少学生？", "hint": "有两万多个学生。", "hint_plus": "我们学校不算大，大概有两万多个学生，外国学生也不少。", "audio": "audio/hskk-5.mp3"}
-      ]
-    },
-    {
-      "type": "writing_prompt",
-      "title": "Viết đoạn văn",
-      "instructions": "Viết theo yêu cầu, dùng ít nhất 3 từ mới bài 2 và 1 điểm ngữ pháp đã học.",
-      "items": [
-        {
-          "prompt": "Bạn dẫn một người bạn nước ngoài đi tham quan trường của bạn. Viết 1 đoạn ngắn kể lại: đi đến trường bằng gì, trường có gì đặc biệt (số sinh viên, tiện ích), bạn muốn quay lại làm gì — dùng ít nhất 3 từ mới bài 2 (公交车/打车/万/网上/教室/电影院…) và 1 điểm ngữ pháp (还是……吧 / 用「多」表达概数 / 动词作定语＋的).",
-          "kind": "đoạn văn",
-          "target_length": "60-100 chữ",
-          "outline": ["Đi đến trường bằng gì", "Trường có gì đặc biệt (số liệu, tiện ích)", "Muốn quay lại làm gì"]
-        }
       ]
     }
   ]

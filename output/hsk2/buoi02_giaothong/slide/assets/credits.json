@@ -6,5 +6,29 @@
     "source": "https://www.flickr.com/photos/7171548@N04/1969185955",
     "attribution": "\"Brainstorming\" by Marco Arment is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
     "query": "pencil writing notebook"
+  },
+  "cinema": {
+    "title": "the old movie theater lobby",
+    "creator": "Tammy McGary",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/47152453@N07/6319641363",
+    "attribution": "\"the old movie theater lobby\" by Tammy McGary is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "movie theater lobby"
+  },
+  "taxi_cartoon_test": {
+    "title": "ST006: Figure 2.6",
+    "creator": "Rosenfeld Media",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/9411449@N05/4459197557",
+    "attribution": "\"ST006: Figure 2.6\" by Rosenfeld Media is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "taxi illustration cartoon"
+  },
+  "reception_test": {
+    "title": "Millenium Hotel Reception",
+    "creator": "cheetah100",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/58982967@N00/2113692798",
+    "attribution": "\"Millenium Hotel Reception\" by cheetah100 is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "hotel reception illustration"
   }
 }

@@ -7,7 +7,7 @@
     {
       "type": "title",
       "title": "还是打车去北大吧",
-      "subtitle": "Buổi 2 · 还是……吧 · 用「多」表达概数 · 动词/主谓短语作定语",
+      "subtitle": "Háishi dǎchē qù Běidà ba — Hay là bắt taxi đến Bắc Đại đi",
       "footer": "",
       "image": "assets/campus.jpg"
     },
@@ -15,7 +15,6 @@
       "type": "bullets",
       "kicker": "目标",
       "title": "今天学什么",
-      "image": "assets/campus.jpg",
       "bullets": [
         "固定格式「还是……吧」— đề nghị phương án tốt hơn",
         "用「多」表达概数 — số lượng phỏng chừng (hơn/mấy)",
@@ -137,6 +136,7 @@
       "kicker": "生词 6/16",
       "hz": "还是",
       "py": "háishi",
+      "image": "assets/words/haishi.jpg",
       "pos": "adv./conj.",
       "vn": "hay là; nên (chọn phương án tốt hơn)",
       "examples": [
@@ -181,6 +181,7 @@
       "py": "wàn",
       "pos": "num.",
       "vn": "vạn (10.000)",
+      "image": "assets/words/wan.jpg",
       "examples": [
         {
           "hz": "北京大学有四万多名学生呢！",
@@ -257,11 +258,17 @@
       "py": "jiān",
       "pos": "m.",
       "vn": "(lượng từ chỉ phòng)",
+      "image": "assets/words/jian.jpg",
       "examples": [
         {
           "hz": "那边就有一间教室。",
           "py": "Nàbiān jiù yǒu yì jiān jiàoshì.",
           "vn": "Đằng kia có một phòng học."
+        },
+        {
+          "hz": "这间房间不大，但很干净。",
+          "py": "Zhè jiān fángjiān bú dà, dàn hěn gānjìng.",
+          "vn": "Phòng này không lớn, nhưng rất sạch sẽ."
         }
       ],
       "audio": "assets/audio/slide14.mp3"
@@ -312,6 +319,7 @@
       "py": "bié",
       "pos": "adv.",
       "vn": "đừng",
+      "image": "assets/words/bie.jpg",
       "examples": [
         {
           "hz": "还是别看电影了。",
@@ -328,6 +336,7 @@
       "py": "guòlái",
       "pos": "v.",
       "vn": "đến đây, quay lại",
+      "image": "assets/words/guolai.jpg",
       "examples": [
         {
           "hz": "我们有时间还想再过来看个电影。",
@@ -336,6 +345,182 @@
         }
       ],
       "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "section",
+      "title": "生词拓展 · 问路",
+      "subtitle": "Hỏi đường — ngoài sách, theo yêu cầu 问路指路 của HSK2 chính thức"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 1/6",
+      "hz": "怎么走",
+      "py": "zěnme zǒu",
+      "pos": "phr.",
+      "vn": "đi thế nào (câu hỏi đường kinh điển)",
+      "image": "assets/words/zenmezou.jpg",
+      "examples": [
+        {
+          "hz": "请问，去北京大学怎么走？",
+          "py": "Qǐngwèn, qù Běijīng Dàxué zěnme zǒu?",
+          "vn": "Xin hỏi, đi ĐH Bắc Kinh thế nào ạ?"
+        },
+        {
+          "hz": "你知道电影院怎么走吗？",
+          "py": "Nǐ zhīdào diànyǐngyuàn zěnme zǒu ma?",
+          "vn": "Bạn biết đi rạp phim thế nào không?"
+        }
+      ],
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 2/6",
+      "hz": "一直走",
+      "py": "yīzhí zǒu",
+      "pos": "phr.",
+      "vn": "đi thẳng",
+      "image": "assets/words/yizhizou.jpg",
+      "examples": [
+        {
+          "hz": "一直走，就到车站了。",
+          "py": "Yīzhí zǒu, jiù dào chēzhàn le.",
+          "vn": "Đi thẳng là tới trạm xe."
+        },
+        {
+          "hz": "你一直走，不用拐弯。",
+          "py": "Nǐ yīzhí zǒu, bú yòng guǎiwān.",
+          "vn": "Bạn cứ đi thẳng, không cần rẽ."
+        }
+      ],
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 3/6",
+      "hz": "拐",
+      "py": "guǎi",
+      "pos": "v.",
+      "vn": "rẽ, quẹo (左拐 rẽ trái · 右拐 rẽ phải)",
+      "image": "assets/words/guai.jpg",
+      "examples": [
+        {
+          "hz": "到十字路口往右拐。",
+          "py": "Dào shízì lùkǒu wǎng yòu guǎi.",
+          "vn": "Đến ngã tư thì rẽ phải."
+        },
+        {
+          "hz": "前边左拐就是学校。",
+          "py": "Qiánbian zuǒ guǎi jiù shì xuéxiào.",
+          "vn": "Phía trước rẽ trái là tới trường."
+        }
+      ],
+      "audio": "assets/audio/slide33.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 4/6",
+      "hz": "十字路口",
+      "py": "shízì lùkǒu",
+      "pos": "n.",
+      "vn": "ngã tư",
+      "image": "assets/words/shizilukou.jpg",
+      "examples": [
+        {
+          "hz": "十字路口有红绿灯。",
+          "py": "Shízì lùkǒu yǒu hónglǜdēng.",
+          "vn": "Ở ngã tư có đèn giao thông."
+        },
+        {
+          "hz": "到了十字路口，你往左拐。",
+          "py": "Dàole shízì lùkǒu, nǐ wǎng zuǒ guǎi.",
+          "vn": "Đến ngã tư thì bạn rẽ trái."
+        }
+      ],
+      "audio": "assets/audio/slide34.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 5/6",
+      "hz": "红绿灯",
+      "py": "hónglǜdēng",
+      "pos": "n.",
+      "vn": "đèn giao thông",
+      "examples": [
+        {
+          "hz": "看到红绿灯就到了。",
+          "py": "Kàndào hónglǜdēng jiù dào le.",
+          "vn": "Thấy đèn giao thông là tới nơi."
+        },
+        {
+          "hz": "红绿灯那儿有一个公交车站。",
+          "py": "Hónglǜdēng nàr yǒu yí ge gōngjiāo chēzhàn.",
+          "vn": "Chỗ đèn giao thông có một trạm xe buýt."
+        }
+      ],
+      "audio": "assets/audio/slide35.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 6/6",
+      "hz": "附近",
+      "py": "fùjìn",
+      "image": "assets/words/fujin.jpg",
+      "pos": "n.",
+      "vn": "gần đây, xung quanh",
+      "examples": [
+        {
+          "hz": "附近有公交车站吗？",
+          "py": "Fùjìn yǒu gōngjiāo chēzhàn ma?",
+          "vn": "Gần đây có trạm xe buýt không?"
+        },
+        {
+          "hz": "学校附近有电影院。",
+          "py": "Xuéxiào fùjìn yǒu diànyǐngyuàn.",
+          "vn": "Gần trường có rạp chiếu phim."
+        }
+      ],
+      "audio": "assets/audio/slide36.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "情景对话",
+      "title": "问路 — Hỏi đường đến 中关村",
+      "image": "assets/words/shizilukou.jpg",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "请问，去中关村怎么走？",
+          "py": "Qǐngwèn, qù Zhōngguāncūn zěnme zǒu?"
+        },
+        {
+          "speaker": "路人",
+          "hz": "你一直走，到十字路口往右拐。",
+          "py": "Nǐ yīzhí zǒu, dào shízì lùkǒu wǎng yòu guǎi."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "右拐以后呢？",
+          "py": "Yòu guǎi yǐhòu ne?"
+        },
+        {
+          "speaker": "路人",
+          "hz": "右拐以后不远，附近就有红绿灯，你看到红绿灯就到了。",
+          "py": "Yòu guǎi yǐhòu bù yuǎn, fùjìn jiù yǒu hónglǜdēng, nǐ kàndào hónglǜdēng jiù dào le."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "谢谢你！",
+          "py": "Xièxie nǐ!"
+        },
+        {
+          "speaker": "路人",
+          "hz": "不客气。",
+          "py": "Bú kèqi."
+        }
+      ],
+      "source": "Tự soạn (bổ sung ngoài 課文 sách chính)",
+      "audio": "assets/audio/slide37.mp3"
     },
     {
       "type": "dialogue",
@@ -481,6 +666,7 @@
         }
       ],
       "source": "New HSK Course 2, Bài 2",
+      "image": "assets/texting.jpg",
       "audio": "assets/audio/slide22.mp3"
     },
     {
@@ -546,7 +732,6 @@
       "type": "grammar",
       "kicker": "语法",
       "title": "动词/主谓短语作定语",
-      "image": "assets/modifier.jpg",
       "point": [
         "Động từ, cụm động từ, hoặc cụm chủ-vị đứng trước danh từ để bổ nghĩa (đặc điểm/trạng thái).",
         "Bắt buộc có 「的」nối giữa cụm bổ nghĩa và danh từ trung tâm."
@@ -574,7 +759,7 @@
     {
       "type": "table",
       "kicker": "口语",
-      "title": "10 câu khẩu ngữ dùng ngay",
+      "title": "10 câu khẩu ngữ đời thường (đi xe · hỏi đường · tham quan)",
       "headers": [
         "中文",
         "Pinyin",
@@ -585,54 +770,54 @@
       ],
       "rows": [
         [
-          "请问，这儿有到北京大学的公交车吗？",
-          "Qǐngwèn, zhèr yǒu dào Běijīng Dàxué de gōngjiāochē ma?",
-          "Xin hỏi, ở đây có xe buýt đến ĐH Bắc Kinh không?"
+          "师傅，麻烦去北京大学。",
+          "Shīfu, máfan qù Běijīng Dàxué.",
+          "Bác tài, làm ơn cho tôi đến ĐH Bắc Kinh."
         ],
         [
-          "车站有点儿远，我们还是打车去吧。",
-          "Chēzhàn yǒudiǎnr yuǎn, wǒmen háishi dǎchē qù ba.",
-          "Trạm xe hơi xa, chúng ta bắt taxi đi thôi."
+          "打表吗？",
+          "Dǎbiǎo ma?",
+          "Tính theo đồng hồ à?"
         ],
         [
-          "这儿好打车吗？",
-          "Zhèr hǎo dǎchē ma?",
-          "Ở đây có dễ bắt taxi không?"
+          "麻烦在前面停一下。",
+          "Máfan zài qiánmiàn tíng yíxià.",
+          "Làm phiền dừng phía trước giúp tôi."
         ],
         [
-          "学校里人真多啊！",
-          "Xuéxiào lǐ rén zhēn duō a!",
-          "Trong trường đông người thật đấy!"
+          "劳驾，问一下，这儿怎么走？",
+          "Láojià, wèn yíxià, zhèr zěnme zǒu?",
+          "Phiền hỏi chút, đến đây đi thế nào?"
         ],
         [
-          "你是怎么知道的？",
-          "Nǐ shì zěnme zhīdào de?",
-          "Bạn biết bằng cách nào vậy?"
+          "顺着这条路一直走就到了。",
+          "Shùnzhe zhè tiáo lù yīzhí zǒu jiù dào le.",
+          "Cứ theo đường này đi thẳng là tới."
         ],
         [
-          "网上说这家饭馆很不错。",
-          "Wǎngshang shuō zhè jiā fànguǎn hěn búcuò.",
-          "Trên mạng nói quán ăn này khá ngon."
+          "大概要走多久？",
+          "Dàgài yào zǒu duōjiǔ?",
+          "Đi bộ mất khoảng bao lâu?"
         ],
         [
-          "这里有三十多个学生。",
-          "Zhèlǐ yǒu sānshí duō ge xuésheng.",
-          "Ở đây có hơn ba mươi học sinh."
+          "我好像迷路了。",
+          "Wǒ hǎoxiàng mílù le.",
+          "Hình như tôi bị lạc đường rồi."
         ],
         [
-          "他们卖的东西也很便宜。",
-          "Tāmen mài de dōngxi yě hěn piányi.",
-          "Đồ họ bán cũng rất rẻ."
+          "这儿有什么好玩的地方吗？",
+          "Zhèr yǒu shénme hǎowán de dìfang ma?",
+          "Ở đây có chỗ nào hay ho để chơi không?"
         ],
         [
-          "电影票还不到二十块钱。",
-          "Diànyǐngpiào hái bú dào èrshí kuài qián.",
-          "Vé phim còn chưa đến hai mươi tệ."
+          "门票多少钱一张？",
+          "Ménpiào duōshao qián yì zhāng?",
+          "Vé vào cổng bao nhiêu một vé?"
         ],
         [
-          "还是别去了，太远了。",
-          "Háishi bié qù le, tài yuǎn le.",
-          "Thôi đừng đi nữa, xa quá."
+          "可以在这儿拍照吗？",
+          "Kěyǐ zài zhèr pāizhào ma?",
+          "Ở đây có được chụp ảnh không?"
         ]
       ],
       "audio": "assets/audio/slide26.mp3"
@@ -640,19 +825,18 @@
     {
       "type": "bullets",
       "kicker": "易错点 1/3",
-      "title": "Lẫn 还是 (đề nghị) với 还是……还是 (câu hỏi lựa chọn)",
-      "image": "assets/error1.jpg",
+      "title": "Câu hỏi lựa chọn A还是B vs. câu đề nghị 还是……吧",
       "bullets": [
-        "❌ 你去还是不去还是吧？ (nhét thêm 吧 vào câu hỏi lựa chọn)",
-        "✔ 你去还是不去？ (hỏi lựa chọn, KHÔNG có 吧) — 你还是别去了吧。 (đề nghị, CÓ 吧)",
-        "Vì sao: 还是 có 2 vai trò khác nhau — trong câu hỏi A还是B là liên từ nối 2 lựa chọn ngang hàng; đứng đầu vế sau + 吧 cuối câu là đề nghị phương án tốt hơn. Người Việt hay lẫn vì cả hai đều dịch \"hay là\"."
+        "So sánh 2 câu: 你去还是不去？ (câu HỎI — bạn đi hay không đi?) và 你还是别去了吧。 (câu ĐỀ NGHỊ — thôi bạn đừng đi thì hơn.)",
+        "❌ 你去还是不去还是吧？ — lỗi: ghép cả 2 kiểu vào 1 câu, thừa 还是 lẫn 吧.",
+        "Cách phân biệt: câu HỎI lựa chọn → \"A还是B?\", có dấu ? , KHÔNG có 吧. Câu ĐỀ NGHỊ → \"还是 + hành động + 吧\", có 吧, không phải câu hỏi.",
+        "Vì sao hay lẫn: tiếng Việt dùng \"hay là\" cho CẢ 2 trường hợp (\"đi hay là không đi?\" / \"hay là đừng đi\"), nên dễ mang cả 还是 lẫn 吧 vào chung 1 câu."
       ]
     },
     {
       "type": "bullets",
       "kicker": "易错点 2/3",
       "title": "Đặt sai vị trí 「多」",
-      "image": "assets/error2.jpg",
       "bullets": [
         "❌ 四万名多学生 (multi đặt sau lượng từ dù 四万 là bội số của 10)",
         "✔ 四万多名学生 — vì 4万 là bội số của 10 nên 多 đứng NGAY SAU số từ, trước lượng từ 名",
@@ -663,23 +847,10 @@
       "type": "bullets",
       "kicker": "易错点 3/3",
       "title": "Quên 「的」khi cụm động từ làm định ngữ",
-      "image": "assets/error3.jpg",
       "bullets": [
         "❌ 他们卖电影票也很便宜。 (thiếu 的 sau cụm động từ 卖电影票)",
         "✔ 他们卖的电影票也很便宜。",
         "Vì sao: khi cụm động từ đứng trước bổ nghĩa cho danh từ, bắt buộc có 的 nối; tiếng Việt không có trợ từ tương ứng (\"vé phim [mà] họ bán\") nên dễ bỏ sót."
-      ]
-    },
-    {
-      "type": "bullets",
-      "kicker": "课堂活动",
-      "title": "Đóng vai: hỏi đường đến rạp chiếu phim",
-      "image": "assets/roleplay.jpg",
-      "bullets": [
-        "Chia nhóm 2 người: A = người hỏi đường, B = người trả lời (nguyên gốc sách, Classroom Activity Bài 2).",
-        "A hỏi:附近有没有到新新电影院的公交车？车站远不远？到电影院要多长时间？",
-        "Cố dùng lại: 还是……吧 đề nghị · 多 số phỏng chừng · từ vựng bài 2 (公交车/车站/远/打车).",
-        "Gợi ý câu mở đầu (vai A): 请问，这儿有到……的公交车吗？"
       ]
     },
     {

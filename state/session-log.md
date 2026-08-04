@@ -56,3 +56,8 @@ _- Status: PENDING UPDATE_
 - Blocks: noi, dien_cho_trong, doc_hieu (tin nhắn tự soạn), sap_xep, dich_dat_cau, nghe, noi_hskk×2, writing_prompt (lời nhắn 60-100 chữ) — 28 mục (không câu trùng; phủ 12/12 từ vựng + đủ 3 điểm ngữ pháp 吧(2)/是……的/兼语句)
 - Output: buoi01_moian_vitquay/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
 - Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
+
+## 2026-08-04 · Exercise Generator · HSK2 Buổi 2 (还是打车去北大吧)
+- Blocks: noi (8, có bổ sung 十字路口), dien_cho_trong (6, có bổ sung 一直走), doc_hieu (đường đến thư viện, tự soạn), sap_xep, dich_dat_cau, nghe, noi_hskk×2 (bỏ writing_prompt theo yêu cầu user) — 30 mục (hơi dài so chuẩn 29 nhưng không câu trùng; đã cập nhật phủ thêm nhóm từ 问路 mở rộng — 怎么走/一直走/拐/十字路口/红绿灯/附近 — mới thêm vào slide sau khi draft đầu; câu tránh trùng slide theo yêu cầu user, chỉ giữ chung từ vựng)
+- Output: buoi02_giaothong/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
