@@ -12,7 +12,7 @@
 
 **Ngữ pháp (45 điểm):** đã có sẵn, đủ dùng, tại bảng ở `docs/superpowers/specs/hsk2-new-hsk-course-2-toc.md` §"Master syllabus" — không lặp lại ở đây.
 
-**Tổng: 210 mục** (207 từ thường + 3 tên riêng) — 10 từ đánh dấu ★ (vượt khung/超纲词 theo sách) — **19 từ trùng HSK1** (đánh dấu bên dưới).
+**Tổng: 210 mục** (207 từ thường + 3 tên riêng) — 10 từ đánh dấu ★ (vượt khung/超纲词 theo sách) — **20 từ trùng HSK1** (đánh dấu bên dưới).
 
 ### Bài 1 (14 từ)
 
