@@ -821,8 +821,18 @@ class DeckBuilder:
         avail_h = int(SLIDE_H - y0 - Inches(0.30))
         n = len(turns)
 
+        # Số dòng THỰC TẾ sau khi wrap trong cột hẹp (không phải cứ 1 field =
+        # 1 dòng) — cột càng hẹp (vd có ảnh chiếm chỗ) câu càng dễ ngắt >1
+        # dòng; tính thiếu sẽ làm khung quá thấp, chữ tràn ra ngoài (review
+        # buổi 02). Dùng cỡ chữ GỐC (trước scale) để ước lượng, tránh vòng lặp
+        # phụ thuộc scale<->nlines.
         def nlines(t):
-            return 1 + (1 if t.get("py") else 0) + (1 if t.get("vn") else 0)
+            n_ = self._wrap_lines(t.get("hz", ""), col_w - Pt(14), 16, cjk=True, bold=True)
+            if t.get("py"):
+                n_ += self._wrap_lines(t["py"], col_w - Pt(14), 11, cjk=False)
+            if t.get("vn"):
+                n_ += self._wrap_lines(t["vn"], col_w - Pt(14), 10, cjk=False)
+            return n_
 
         gap0 = int(Inches(0.08)); pad0 = int(Inches(0.14)); line0 = int(Inches(0.30))
         natural = sum(line0 * nlines(t) + pad0 for t in turns) + gap0 * (n - 1)
