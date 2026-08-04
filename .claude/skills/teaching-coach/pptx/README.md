@@ -74,7 +74,7 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn}`, `note?`, `source?`, `image?` | Giảng ngữ pháp |
 | `table` | `headers[]`, `rows[][]` (+ `cjk_cols[]`) | Bảng so sánh (vd 了 vs 过) |
-| `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` | Khung hội thoại (bong bóng chat 2 phía) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau |
+| `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` (+ `image?`, `image_side?`) | Khung hội thoại (bong bóng chat 2 phía, hoặc swimlane 1-cột/người nếu >2 speaker) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau. Có `image` → ảnh ngữ cảnh 1 bên, khung thoại co vào bên còn lại (giúp liên tưởng bối cảnh thay vì chỉ thấy chữ nổi) |
 | `passage` | `title`, `sentences[]` = `{hz, py, vn}` (+ `note?`, `image?`, `image_side?`) | Đoạn văn tự sự/kể chuyện (课文 thể 叙述体, câu nối tiếp câu — KHÔNG phải hội thoại qua lại) — mỗi câu 1 khối, không dùng bong bóng thoại |
 | `reading` | `groups[]` = `{label, items[]}` | Nguồn đọc thêm (nhóm "trong sách" / "nguồn ngoài") |
 | `exercise` | `instructions?`, `items[]` (+ `image?`) | Slide bài tập (đánh số) |
@@ -89,7 +89,7 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 Ghi chú:
 - **`dialogue`**: speaker xuất hiện **đầu tiên** căn trái, các speaker khác căn phải.
 - **`table.cjk_cols`**: mảng chỉ số cột (0-based) dùng font CJK. Mặc định (khi bỏ trống/KHÔNG có field): cột 0 là nhãn tiếng Việt, các cột còn lại là CJK. ⚠️ `cjk_cols: []` (mảng RỖNG) khác với bỏ hẳn field — `[]` ép TOÀN BỘ cột về non-CJK, kể cả cột chứa câu Hán thuần. Hậu quả: renderer ước lượng độ rộng chữ theo font Latin (hẹp hơn CJK) → tính thiếu số dòng cần wrap → chữ tràn ô ("rớt dòng"). Bảng có cột chứa câu/từ tiếng Trung PHẢI khai đúng index cột đó vào `cjk_cols` (vd `[0, 1]`), không để `[]` nếu có cột CJK.
-- **`image`**: đường dẫn ảnh **tương đối theo thư mục chứa file JSON**. Thiếu file → renderer vẽ khung xám placeholder (không lỗi). Cần `Pillow` để giữ đúng tỉ lệ ảnh (đã có sẵn). Hỗ trợ ở `title/vocab/grammar/bullets/exercise/table/image` (không có ở `dialogue`/`reading`).
+- **`image`**: đường dẫn ảnh **tương đối theo thư mục chứa file JSON**. Thiếu file → renderer vẽ khung xám placeholder (không lỗi). Cần `Pillow` để giữ đúng tỉ lệ ảnh (đã có sẵn). Hỗ trợ ở `title/vocab/grammar/dialogue/bullets/exercise/table/image` (không có ở `reading`).
 - **`footer_note`** (mọi type): 1 dòng chú thích nhỏ ở đáy slide (vd đối chiếu
   giáo trình khác) — thay cho việc phải làm 1 slide `bullets` đứng riêng.
 - **`tip`** (`bullets`/`exercise`/`answers`/`grammar`): mẹo ghi nhớ, LUÔN render
@@ -164,8 +164,8 @@ riêng:
 
 Sinh manifest `{name, query}` → chạy `fetch_images.py <manifest.json>` (xem docstring đầu
 file) → tải vào `out_dir`, ghi `credits.json`. Sau đó gắn `"image": "assets/<name>.jpg"` vào
-từng slide (chỉ `title/vocab/grammar/bullets/exercise` hỗ trợ `image` — `table`/`dialogue`
-không có).
+từng slide (`title/vocab/grammar/dialogue/bullets/exercise/table/image` hỗ trợ `image` —
+`reading` không có).
 
 ⚠️ **Query ngắn mới ra kết quả:** `search()` lọc `license_type=commercial&orientation=wide`
 — query TIẾNG ANH dài (>3 từ, vd `"world flags icon simple"`) hay ra **0 kết quả** dù chủ đề
