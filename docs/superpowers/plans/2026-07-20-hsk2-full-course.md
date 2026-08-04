@@ -24,6 +24,12 @@
 - **Giao tiếp thiếu, lồng vào buổi — KHÔNG dồn vào Ôn (đã đối chiếu HSK 二级考试大纲 chính thức, chinesetest.cn, 2026-07-27 — xem spec §16b):** hỏi đường → **Bài 2** (✅ chính thức); hỏi giá/so sánh giá (đổi tên từ "mặc cả") → **Bài 9** (✅ chính thức); giới thiệu bản thân/gia đình sâu → **Bài 5** (✅ chính thức); đặt khách sạn → **Bài 3** (⚠️ ngoài chuẩn thi, giữ theo yêu cầu cá nhân); đặt lịch hẹn → **Bài 10** (⚠️ ngoài chuẩn thi, ghép với 就要…了 — dời từ Bài 6 vì hợp ngữ pháp hơn). Capstone Ôn 2 chỉ ôn/ứng dụng lại các kỹ năng này, không dạy mới.
 - **Audio đọc chậm:** slide `--rate=-18%`; baitap `nghe --rate=-22%`, `noi_hskk --rate=-18%`. Giọng chính `zh-CN-XiaoxiaoNeural`. (Nếu user cấp MP3 gốc sách → ưu tiên.)
 - **Cổng duyệt:** (a) text 課文 trích từ PDF → trình user duyệt; (b) script 听力/HSKK trình user trước khi sinh MP3; (c) `check_baitap.py` + rà đáp án AI; (d) soát 多音字/儿化 mọi audio.
+- **Sửa slide sau khi user đã tự sửa tay .pptx (bài học từ Buổi 3):** KHÔNG chạy lại
+  `build_deck.py` (rebuild toàn bộ từ JSON sẽ xoá mất mọi chỗ user đã tự sửa tay trực
+  tiếp trong file). Patch trực tiếp bằng `python-pptx`, tìm đúng slide cần sửa theo
+  **nội dung** (kicker + title/hz, không theo vị trí index) — vì user có thể đã tự xoá/
+  thêm slide làm lệch số thứ tự so với JSON gốc. Audio nhúng (🔊) cũng phải patch riêng
+  (thay `_blob` của media part liên kết qua `r:link`), không chỉ cập nhật file mp3 rời.
 - **Console Windows:** in 中文 debug đặt `PYTHONIOENCODING=utf-8`.
 - **Git:** commit sau mỗi task, message tiếng Việt + trailer `Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`. **Nhánh `feat/hsk2-full-course`** (lưu ý: môi trường user đôi khi tự `git checkout` về nhánh khác — verify `git branch --show-current` trước mỗi thao tác file/commit).
 
