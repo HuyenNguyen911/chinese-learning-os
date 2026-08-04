@@ -13,7 +13,7 @@
 | # | Buổi (folder) | 课文 | Chủ đề | Ngữ pháp (小语讲堂) | Hán ngữ 第一册·下 | Trạng thái |
 |---|---|---|---|---|---|---|
 | 1 | `buoi01_moian_vitquay` | 她请我们吃了北京烤鸭 | mời ăn, món BK, nhờ vả | 语气助词"吧"(2) · "是…的"句 · 兼语句 (请/让/叫) | — | ✅ |
-| 2 | `buoi02_giaothong` | 还是打车去北大吧 | giao thông, đề nghị **+ hỏi đường 怎么走** | 兼语句 · 还是…吧 · 多(概数) · cụm làm định ngữ | L16 · L17 | ⏳ |
+| 2 | `buoi02_giaothong` | 还是打车去北大吧 | giao thông, đề nghị **+ hỏi đường 怎么走** | 还是…吧 · 多(概数) · cụm làm định ngữ | L16 · L17 | ✅ |
 | 3 | `buoi03_dulich_xian` | 我想去西安旅游 | du lịch (Tây An) **+ đặt khách sạn**⚠️ | 结果补语 · 动词重叠(1)(2) · 过 · 因为…所以 | L29 · L19 · L27 | ⏳ |
 | 4 | `buoi04_trangphuc_mausac` | 你穿红色的很好看 | trang phục, màu sắc | 的字短语 · 简单趋向补语(1)(2) · 都…了 · **把字句 (bổ sung)** | L19 | ⏳ |
 | 5 | `buoi05_thamnha` | 第一次去中国朋友家 | thăm nhà bạn TQ **+ động vật/thú cưng + giới thiệu bản thân/gia đình sâu** | 形容词重叠 · 什么的 · 结构助词"地" · 一…就… | — | ⏳ |
@@ -44,4 +44,6 @@
 
 ## Trạng thái build
 
-Buổi 1 ✅ (slide + bài tập, đã duyệt 2026-08-02). Buổi 2-15 + Ôn 1 + Ôn 2 chưa build (⏳).
+Buổi 1 ✅ (slide + bài tập, đã duyệt 2026-08-02). Buổi 2 ✅ (slide + bài tập, đã duyệt
+2026-08-04 — có bổ sung nhóm từ 问路 ngoài 45 điểm sách, xem ghi chú kỹ thuật). Buổi
+3-15 + Ôn 1 + Ôn 2 chưa build (⏳).
