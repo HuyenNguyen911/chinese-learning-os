@@ -113,10 +113,18 @@ Sinh tự động bằng helper:
 ```
 
 → đọc chữ Hán của các slide (vocab / wordcard / grammar / dialogue / passage /
-bảng `口语`), gọi `edge-tts` (giọng `zh-CN-XiaoxiaoNeural`, mặc định `--rate=-30%`,
-buổi ngữ âm nhập môn nên dùng `--rate=-35%` cho rõ/chậm hơn) sinh mp3 vào
-`assets/audio/` và tự gắn key `audio`. Cần internet; `--force` để sinh lại;
-`--voice=...` để đổi giọng.
+bảng `口语`), gọi `edge-tts` sinh mp3 vào `assets/audio/` và tự gắn key `audio`.
+Cần internet; `--force` để sinh lại.
+
+**Giọng & tốc độ (2026-08-04, sau feedback "giọng cũ nghe mệt/robot"):**
+- Slide thường (vocab/wordcard/grammar/table/passage): luân phiên 2 giọng
+  `zh-CN-XiaoxiaoNeural` ("Warm") / `zh-CN-XiaoyiNeural` ("Lively"), mặc định
+  `--rate=-15%`.
+- Hội thoại (`dialogue`): 3 giọng theo người nói (`DIALOGUE_VOICES`), mặc định
+  `--rate=-8%` (gần tốc độ tự nhiên hơn — hội thoại ưu tiên nhịp giống người
+  thật, không cần chậm như từ vựng).
+- `--rate=...` (CLI) override cho CẢ HAI loại cùng lúc nếu cần đồng nhất (vd
+  buổi ngữ âm nhập môn muốn chậm hơn hẳn, `--rate=-30%`).
 
 Text được đọc tự trích theo `type` của slide — không cần field `audio_text`
 riêng:
