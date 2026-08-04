@@ -23,7 +23,7 @@ import subprocess
 from pathlib import Path
 
 from docx import Document
-from docx.shared import Pt, RGBColor
+from docx.shared import Pt, RGBColor, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
@@ -77,7 +77,7 @@ class WorksheetBuilder:
 
     def _block_header(self, doc, idx, title, instructions=None):
         p = doc.add_paragraph()
-        p.paragraph_format.space_before = Pt(14)
+        p.paragraph_format.space_before = Pt(10)
         self._run(p, "%d. " % idx, 15, color="accent", bold=True)
         self._run(p, title, 15, color="ink", bold=True, cjk=True)
         if instructions:
@@ -120,7 +120,22 @@ class WorksheetBuilder:
         return link
 
     # -- dispatch ----------------------------------------------------------
+    def _tighten_layout(self, doc):
+        """Giảm khoảng cách đoạn mặc định của Word + thu hẹp margin — nhiều
+        block/câu hỏi ngắn mỗi cái 1 paragraph cộng dồn spacing mặc định khiến
+        file dài/ngợp dù nội dung không đổi (feedback: 'trình bày gọn')."""
+        style = doc.styles["Normal"]
+        style.paragraph_format.space_before = Pt(0)
+        style.paragraph_format.space_after = Pt(2)
+        style.paragraph_format.line_spacing = 1.0
+        for section in doc.sections:
+            section.top_margin = Inches(0.6)
+            section.bottom_margin = Inches(0.6)
+            section.left_margin = Inches(0.7)
+            section.right_margin = Inches(0.7)
+
     def _render(self, doc, mode):
+        self._tighten_layout(doc)
         prefix = "_ws_" if mode == "worksheet" else "_ans_"
         self._title_block(doc, self.meta.get("lesson", "Bài tập"))
         for i, block in enumerate(self.spec.get("blocks", []), start=1):
