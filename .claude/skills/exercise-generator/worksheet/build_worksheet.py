@@ -263,8 +263,7 @@ class WorksheetBuilder:
             p = doc.add_paragraph()
             self._run(p, "%d) " % n, 12, color="accent", bold=True)
             self._run(p, " / ".join(chips), 14, cjk=True)
-            ans = doc.add_paragraph()
-            self._run(ans, "→ " + BLANK * 3, 12, color="muted")
+            self._run(p, "   → " + BLANK * 2, 12, color="muted")
 
     def _two_level_answer(self, doc, n, standard, advanced=None, src=None,
                           alts=None, std_label="Chuẩn (đủ điểm)",
@@ -305,8 +304,7 @@ class WorksheetBuilder:
             if it.get("given"):
                 self._run(p, "  (dùng: %s)" % " / ".join(it["given"]), 12,
                           color="muted", cjk=True)
-            ans = doc.add_paragraph()
-            self._run(ans, "→ " + BLANK * 3, 12, color="muted")
+            self._run(p, "   → " + BLANK * 2, 12, color="muted")
 
     def _ans_dich_dat_cau(self, doc, block, idx):
         self._block_header(doc, idx, block.get("title", "Dịch / Đặt câu"))
