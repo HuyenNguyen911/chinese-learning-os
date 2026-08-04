@@ -1,0 +1,93 @@
+{
+  "meta": { "lesson": "HSK2 · Buổi 3 — 我想去西安旅游", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối 汉字 với nghĩa",
+      "instructions": "Nối từ bên trái với nghĩa đúng bên phải.",
+      "pairs": [
+        {"left": "不错", "right": "khá tốt, không tệ"},
+        {"left": "回来", "right": "quay lại, trở về"},
+        {"left": "累", "right": "mệt"},
+        {"left": "拿", "right": "cầm, lấy"},
+        {"left": "送", "right": "đưa, tiễn; tặng"},
+        {"left": "自己", "right": "bản thân, tự mình"}
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ đúng trong khung để điền vào chỗ trống.",
+      "word_bank": ["完", "一起", "这么", "出去", "洗"],
+      "items": [
+        {"q": "工作太多了，下班的时候没做{}。", "answer": "完", "src": "[phỏng theo 真题]"},
+        {"q": "我们{}去看兵马俑吧。", "answer": "一起", "src": "[phỏng theo 真题]"},
+        {"q": "今天{}忙，我们明天再去吧。", "answer": "这么", "src": "[phỏng theo 真题]"},
+        {"q": "天气很好，我们{}走走吧。", "answer": "出去", "src": "[phỏng theo 真题]"},
+        {"q": "吃饭前要{}手。", "answer": "洗", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc tin nhắn xác nhận đặt phòng",
+      "instructions": "Đọc đoạn tin nhắn rồi trả lời câu hỏi.",
+      "passage": "尊敬的刘明先生：您已成功预订西安好运酒店单人间一间，入住日期为8月12日，退房日期为8月14日，共两晚，房费一晚380元。入住时间为下午2点以后，退房时间为中午12点前。如需帮助，请联系前台。祝您旅途愉快！",
+      "questions": [
+        {"q": "刘明预订了几晚？", "options": ["一晚", "两晚", "三晚"], "answer": "B", "src": "[tự soạn theo chủ đề đặt khách sạn]"},
+        {"q": "什么时候可以入住？", "options": ["中午12点前", "下午2点以后", "晚上8点后"], "answer": "B", "src": "[tự soạn theo chủ đề đặt khách sạn]"},
+        {"q": "有问题应该联系谁？", "options": ["前台", "服务员", "司机"], "answer": "A", "src": "[tự soạn theo chủ đề đặt khách sạn]"}
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ cho trước thành câu đúng.",
+      "items": [
+        {"words": ["菜", "都", "做好", "了"], "answer": "菜都做好了。", "answer_plus": "菜都做好了，你快过来吃饭吧。", "src": "[phỏng theo 真题]"},
+        {"words": ["我", "看了看", "网上", "的", "介绍"], "answer": "我看了看网上的介绍。", "answer_plus": "我看了看网上的介绍，这个时候去很不错。", "src": "[phỏng theo 真题]"},
+        {"words": ["你", "再", "想", "一", "想"], "answer": "你再想一想。", "answer_plus": "你再想一想，想好了告诉我。", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu tiếng Việt sang tiếng Trung, dùng từ gợi ý.",
+      "items": [
+        {"prompt": "Tôi chưa ăn xong cơm.", "given": ["完"], "answer": "我没吃完饭。", "answer_plus": "我工作太多，还没吃完饭。", "src": "[phỏng theo 真题]"},
+        {"prompt": "Bạn nghỉ ngơi một chút đi.", "given": ["休息休息"], "answer": "你休息休息吧。", "answer_plus": "你今天很累，休息休息吧。", "src": "[phỏng theo 真题]"},
+        {"prompt": "Bạn vì sao muốn đi Tây An du lịch?", "given": ["为什么"], "answer": "你为什么想去西安旅游？", "answer_plus": "你为什么这么想去西安旅游？", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe audio rồi chọn đáp án đúng.",
+      "items": [
+        {"script": "工作太多了，下班的时候没做完，菜都做好了，过来吃饭吧。", "q": "她做好了什么？", "options": ["工作", "菜", "票"], "answer": "B", "audio": "audio/nghe-1.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "我们找个时间去旅游，怎么样？好啊，我也很想一起出去玩。", "q": "他们商量做什么？", "options": ["去旅游", "去买菜", "去学校"], "answer": "A", "audio": "audio/nghe-2.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "我看了看网上的介绍，这个时候去西安很不错！", "q": "他们决定去哪儿？", "options": ["北京", "西安", "上海"], "answer": "B", "audio": "audio/nghe-3.mp3", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "听后重复",
+      "part": "听后重复",
+      "instructions": "Nghe và nhắc lại theo đúng ngữ điệu.",
+      "items": [
+        {"script": "菜都做好了，过来吃饭吧。", "audio": "audio/hskk-1.mp3"},
+        {"script": "你再想一想，想好了告诉我。", "audio": "audio/hskk-2.mp3"},
+        {"script": "几点可以入住？", "audio": "audio/hskk-3.mp3"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "回答问题",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời.",
+      "items": [
+        {"script": "你去旅游的时候，喜欢自己做计划还是让别人帮你订？", "hint": "我喜欢自己做计划。", "hint_plus": "我喜欢自己做计划，因为这样比较自由，想去哪儿就去哪儿。", "audio": "audio/hskk-4.mp3"},
+        {"script": "你最近去过什么地方旅游？那儿怎么样？", "hint": "我去过西安，很不错。", "hint_plus": "我去年去过西安，那儿的兵马俑很有名，我觉得很不错，下次还想再去。", "audio": "audio/hskk-5.mp3"}
+      ]
+    }
+  ]
+}

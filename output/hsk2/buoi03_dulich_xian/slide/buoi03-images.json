@@ -1,0 +1,25 @@
+{
+  "out_dir": "assets",
+  "images": [
+    { "name": "xian", "query": "xian city wall china tower" },
+    { "name": "hotel_call", "query": "phone call hotel booking reservation" },
+    { "name": "home_evening", "query": "tired person coming home evening" },
+    { "name": "travel_planning", "query": "trip planning map" },
+    { "name": "xian_online", "query": "laptop browsing internet" },
+    { "name": "hospital_call", "query": "phone call hospital worried" },
+    { "name": "checkmark", "query": "checkmark" },
+    { "name": "relax_break", "query": "person relaxing" },
+    { "name": "error1", "query": "confused thinking cartoon" },
+    { "name": "error2", "query": "clock time confusion" },
+    { "name": "error3", "query": "wrong mistake sign" },
+    { "name": "words/lei", "query": "tired exhausted person" },
+    { "name": "words/na", "query": "hand holding apple" },
+    { "name": "words/shou", "query": "human hand" },
+    { "name": "words/song", "query": "parent child school" },
+    { "name": "words/xi", "query": "washing hands" },
+    { "name": "words/fangjian", "query": "hotel room" },
+    { "name": "words/qiantai", "query": "hotel front desk" },
+    { "name": "words/ruzhu", "query": "hotel key card" },
+    { "name": "words/tuifang", "query": "hotel checkout" }
+  ]
+}

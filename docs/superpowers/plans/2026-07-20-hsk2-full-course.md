@@ -101,9 +101,14 @@ Vocab-study phase (§13 spec) **tách plan riêng** — xem "Out of scope".
 
 **P5 — GIF nét (tuỳ chọn):** chữ mới khó → `gen_stroke_gif.py`.
 
-**P6 — Render slide + audio:** `build_deck.py` + `slide_audio.py --rate=-18%`. Soát 多音字/儿化 (得/着/行/为/教/还/长…).
+**P6 — Render pptx (KHÔNG audio):** `build_deck.py` only.
 
-**P7 — Audio 課文:** edge-tts `--rate=-18%` → `DIR/doc/bai-doc.NN.mp3`. Soát như P6.
+**Cổng d — DỪNG, trình pptx cho user duyệt nội dung/khung slide.** Không chạy P7/P8 khi
+chưa qua cổng này — audio (slide + 課文) và bài tập chỉ tốn công sinh lại nếu nội dung
+slide còn đổi. Duyệt xong (hoặc chỉnh theo feedback rồi duyệt lại) mới sang P7.
+
+**P7 — Audio slide + 課文:** `slide_audio.py --rate=-18%` (audio slide) + edge-tts
+`--rate=-18%` → `DIR/doc/bai-doc.NN.mp3` (audio 課文). Soát 多音字/儿化 (得/着/行/为/教/还/长…).
 
 **P8 — Bài tập (cổng b/c):** `DIR/baitap/baitap-buoiXX.json` (~25–30 mục) đủ **听/读/书写(Viết 3.0)/HSKK**, không trùng câu, đáp án 2 cấp. Cổng b: trình script audio duyệt. `check_baitap.py`. Sinh audio (`nghe --rate=-22%`, `noi_hskk --rate=-18%`). `build_worksheet.py`. Cổng c: rà đáp án AI. Append `state/session-log.md`.
 
@@ -124,11 +129,11 @@ Vocab-study phase (§13 spec) **tách plan riêng** — xem "Out of scope".
   - **Duyệt 2026-08-02:** slide 12 wordcard + bài tập chỉ phủ 12/14 từ checklist Bài 1, thiếu 介绍/那. Đối chiếu HSK1: 那 xác nhận đã dạy ở `output/hsk1/on2_tuvung_chude` (cặp 这/那); 介绍 không thấy trong output/knowledge HSK1 nhưng user xác nhận đã học — quyết định KHÔNG vá thêm, giữ nguyên 12 từ.
 - [ ] **Task 2 — buoi02_giaothong** (Bài 2 还是打车去北大吧): 兼语句 · 还是…吧 · 多(概数) · cụm làm định ngữ. **+ Lồng hỏi đường (怎么走, bổ sung — đã đối chiếu chính thức).** Hán ngữ L16/L17.
   - [ ] Step 1-6 Procedure P (Viết: câu dùng 还是…吧) · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 3 — buoi03_dulich_xian** (Bài 3 我想去西安旅游): 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因为…所以. **+ Lồng đặt khách sạn (bổ sung, ngoài chuẩn thi).** Hán ngữ L29/L19/L27.
+- [ ] **Task 3 — buoi03_dulich_xian** (Bài 3 我想去西安旅游): 结果补语 · 动词重叠(1)(2). **+ Lồng đặt khách sạn (bổ sung, ngoài chuẩn thi).** Hán ngữ L29/L19/L27. **Sửa 2026-08-04:** 过/因为…所以 KHÔNG thuộc Bài 3 — đối chiếu PDF trang 019-036 xác nhận thuộc Bài 4, xem `output/hsk2/buoi03_dulich_xian/doc/bai-doc.md`.
   - [ ] Step 1-6 Procedure P (Viết: đoạn ngắn kể chuyện du lịch) · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 4 — buoi04_trangphuc_mausac** (Bài 4 你穿红色的很好看): "的"字短语 · 简单趋向补语(1)(2) · 都…了 · **把字句 cơ bản (bổ sung, ghép tự nhiên với 简单趋向补语: 把衣服穿上/脱下来)**. Hán ngữ L19.
+- [ ] **Task 4 — buoi04_trangphuc_mausac** (Bài 4 你穿红色的很好看): 动态助词"过" · 因为…所以 · "的"字短语 · **把字句 cơ bản (bổ sung, ghép tự nhiên với 简单趋向补语: 把衣服穿上/脱下来)**. Hán ngữ L19. **Sửa 2026-08-04:** 简单趋向补语(1)(2)/都…了 KHÔNG thuộc Bài 4 — thực ra thuộc Bài 5 (xác nhận trang objectives 053).
   - [ ] Step 1-6 Procedure P (Viết: câu 把) · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 5 — buoi05_thamnha** (Bài 5 第一次去中国朋友家): 形容词重叠 · 什么的 · 结构助词"地" · 一…就…. **Lồng động vật/thú cưng (từ mở rộng ngoài 200) + giới thiệu bản thân/gia đình sâu 2-3 phút bằng ngữ pháp mới (bổ sung, đã đối chiếu chính thức).** Hán ngữ —.
+- [ ] **Task 5 — buoi05_thamnha** (Bài 5 第一次去中国朋友家): 简单趋向补语(1)(2) · 都…了 · 形容词重叠 · 什么的 · 结构助词"地" · 一…就… (4 điểm cuối CHƯA xác minh lại, có thể lệch tiếp sang Bài 6 — soát khi sản xuất tới lượt). **Lồng động vật/thú cưng (từ mở rộng ngoài 200) + giới thiệu bản thân/gia đình sâu 2-3 phút bằng ngữ pháp mới (bổ sung, đã đối chiếu chính thức).** Hán ngữ —.
   - [ ] Step 1-6 Procedure P (HSKK: tự giới thiệu bản thân/gia đình) · Step 7 Verify + trình user duyệt · Step 8 P9.
 - [ ] **Task 6 — buoi06_sinhnhat** (Bài 6 小雪，生日快乐！): 状态补语(1)(2) [得]. Hán ngữ L25.
   - [ ] Step 1-6 Procedure P (Viết: câu 得) · Step 7 Verify + trình user duyệt · Step 8 P9.
@@ -174,3 +179,5 @@ Vocab-study phase (§13 spec) **tách plan riêng** — xem "Out of scope".
 - **Sửa lại 2026-07-27 (lần 2, theo phản hồi user):** ban đầu dồn cả 4 điểm trên vào 2 buổi Ôn — **sai**, vì Ôn chỉ để ôn tập nội dung đã học, không dạy cái mới. Đã rải lại vào đúng buổi nội dung phù hợp chủ đề; Ôn 1/Ôn 2 quay về đúng vai trò ôn tập.
 - **Sửa lại 2026-07-27 (lần 3, theo phản hồi user + đối chiếu nguồn chính thống):** đổi tên "mặc cả" → "hỏi giá, so sánh giá" (Bài 9) để bám đúng khung chính thức. Dời "đặt lịch hẹn" từ Bài 6 (sinh nhật, khá gượng) → Bài 10 (ghép tự nhiên với 就要…了). Đã tra `download.chinesetest.cn/newhsk-site/Syllabus/H2_DG.pdf` (官方 HSK 二级考试大纲) xác nhận hỏi đường/hỏi giá/giới thiệu gia đình có căn cứ chính thống; đặt khách sạn + đặt lịch hẹn KHÔNG có trong chuẩn thi — giữ lại vì mục tiêu thực dụng cá nhân, đánh dấu rõ trong slide. Xem spec §16b.
 - **Sửa lại 2026-07-27 (lần 4, phản hồi review độc lập của user):** (a) "Can-do mỗi buổi" — user xác nhận đã có sẵn qua block "mục tiêu" hiện hữu, không cần thêm gì. (b) "Spiral review" — user tự làm khi soạn bài tập (P8), không cần đổi kiến trúc slide, chỉ giữ 1 slide "ôn buổi trước" như cũ. (c) Đã tra `新版HSK考试大纲（词汇、汉字、语法）.pdf` (bản 3.0 chính thức, hsk.cn-bj.ufileos.com) xác nhận 一边…一边/越来越/又…又 thuộc **HSK 三级**, không phải 二级 → KHÔNG phải gap, không vá. (d) Thêm 4 slide bảng hệ thống hoá bổ ngữ + 比较句 vào Ôn 1/Ôn 2 (Task 9, 17) thay vì gom thành buổi riêng — giữ nguyên "buổi=bài", chỉ hệ thống hoá bằng ôn tập thuần. Xem spec §16c.
+- **Sửa lại 2026-08-04 (theo phản hồi user, phát hiện khi làm Bài 3):** Procedure P trước đó chỉ có 1 cổng duyệt trọn gói ở cuối buổi (Step 7) — nên buổi 3 đã render xong pptx + audio slide + audio 課文 + JSON bài tập liên tục, KHÔNG dừng lại để duyệt slide trước, khác với điều user nhớ đã thống nhất. Đã sửa: tách P6 (chỉ render pptx, không audio) và thêm **cổng d** — dừng trình pptx duyệt nội dung/khung slide TRƯỚC khi chạy P7 (audio slide + 課文) và P8 (bài tập). Lý do: audio + bài tập tốn công sinh lại nếu nội dung slide còn đổi sau duyệt.
+  **Áp dụng từ Task 4 (buổi 4) trở đi** — Task 3 (buổi 3) đã gần xong (pptx+audio+baitap JSON đã có), KHÔNG retro-fit cổng d, cứ hoàn thiện theo Step 7 Verify trọn gói như cũ rồi qua P9.

@@ -171,9 +171,9 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 1. **Master Teacher:** nội dung đúng-đủ — 生词 (đủ 汉字/pinyin/nghĩa, đã loại trùng HSK1), ngữ pháp giải thích bản chất, ví dụ khẩu ngữ đời thường, 10 câu khẩu ngữ dùng-ngay, 2–3 lỗi người Việt.
 2. **Nguồn 課文 (cổng a):** trích nguyên văn từ `raw/New HSK Course 2.pdf` (text layer) → cổng duyệt text đã trích.
 3. **Experience Designer:** map → `buoiXX.json` (đúng thứ tự block, action title, ghost-deck test).
-4. **Assets:** fetch ảnh · (GIF nét tuỳ chọn) · edge-tts audio → soát 多音字/儿化.
-5. **Render pptx:** `build_deck.py`.
-6. **Bài tập (cổng b/c):** exercise-generator — đủ 听/读/书写 + **Viết 3.0** + HSKK; cổng duyệt script audio; `check_baitap.py`; **cổng kiểm tra đáp án AI**.
+4. **Assets + render pptx:** fetch ảnh · (GIF nét tuỳ chọn) · `build_deck.py` — **KHÔNG sinh audio ở bước này**.
+5. **Cổng d:** dừng, trình pptx cho user duyệt nội dung/khung slide TRƯỚC khi sinh audio + bài tập (audio/bài tập tốn công sinh lại nếu nội dung slide còn đổi).
+6. **Audio + Bài tập (cổng b/c)**, sau khi qua cổng d: edge-tts audio slide + 課文 (soát 多音字/儿化) · exercise-generator — đủ 听/读/书写 + **Viết 3.0** + HSKK; cổng duyệt script audio; `check_baitap.py`; **cổng kiểm tra đáp án AI**.
 
 ## 10. Đặt tên & syllabus index
 

@@ -14,9 +14,9 @@
 |---|---|---|---|---|---|---|
 | 1 | `buoi01_moian_vitquay` | 她请我们吃了北京烤鸭 | mời ăn, món BK, nhờ vả | 语气助词"吧"(2) · "是…的"句 · 兼语句 (请/让/叫) | — | ✅ |
 | 2 | `buoi02_giaothong` | 还是打车去北大吧 | giao thông, đề nghị **+ hỏi đường 怎么走** | 还是…吧 · 多(概数) · cụm làm định ngữ | L16 · L17 | ✅ |
-| 3 | `buoi03_dulich_xian` | 我想去西安旅游 | du lịch (Tây An) **+ đặt khách sạn**⚠️ | 结果补语 · 动词重叠(1)(2) · 过 · 因为…所以 | L29 · L19 · L27 | ⏳ |
-| 4 | `buoi04_trangphuc_mausac` | 你穿红色的很好看 | trang phục, màu sắc | 的字短语 · 简单趋向补语(1)(2) · 都…了 · **把字句 (bổ sung)** | L19 | ⏳ |
-| 5 | `buoi05_thamnha` | 第一次去中国朋友家 | thăm nhà bạn TQ **+ động vật/thú cưng + giới thiệu bản thân/gia đình sâu** | 形容词重叠 · 什么的 · 结构助词"地" · 一…就… | — | ⏳ |
+| 3 | `buoi03_dulich_xian` | 我想去西安旅游 | du lịch (Tây An) **+ đặt khách sạn**⚠️ | 结果补语 · 动词重叠(1)(2) | L29 · L19 · L27 | ⏳ |
+| 4 | `buoi04_trangphuc_mausac` | 你穿红色的很好看 | trang phục, màu sắc | 动态助词"过" · 因为…所以 · 的字短语 · **把字句 (bổ sung)** | L19 | ⏳ |
+| 5 | `buoi05_thamnha` | 第一次去中国朋友家 | thăm nhà bạn TQ **+ động vật/thú cưng + giới thiệu bản thân/gia đình sâu** | 简单趋向补语(1)(2) · 都…了 · 形容词重叠 · 什么的 · 结构助词"地" · 一…就… | — | ⏳ |
 | 6 | `buoi06_sinhnhat` | 小雪，生日快乐！ | sinh nhật, chúc mừng | 状态补语(1)(2) [得] | L25 | ⏳ |
 | 7 | `buoi07_thethao` | 他篮球打得很好 | thể thao (bóng rổ) | 比较句(1)(2) [比] | L25 | ⏳ |
 | 8 | `buoi08_trinho_sosanh` | 虽然你忘了，但是我记得 | trí nhớ, so sánh | 虽然…但是 · 比较句(3) · 动词"离" | L28 · L23 | ⏳ |
@@ -31,6 +31,14 @@
 | — | `on2_bai9-15` | **Ôn 2** (cuối khoá) | ôn bài 9-15 + bảng hệ thống bổ ngữ đầy đủ 6 loại + bảng 比较句(1)-(8) đầy đủ + capstone roleplay (hỏi đường/khách sạn/giới thiệu bản thân/hỏi giá/đặt lịch hẹn — chỉ ứng dụng lại) | — | — | ⏳ |
 
 ⚠️ = ngoài phạm vi chuẩn thi chính thức HSK2 (đã đối chiếu HSK 二级考试大纲 chính thức), giữ lại theo yêu cầu thực dụng cá nhân — xem spec §16b.
+
+**Sửa 2026-08-04 (khi bóc Bài 3):** cột ngữ pháp Bài 3/4 bị lệch 1 bài so với sách
+thật (TOC gốc gán nhầm, cùng lỗi dạng đã sửa ở Bài 1/2 với 兼语句) — đã đối chiếu trực
+tiếp PDF trang 019-036 và sửa lại: Bài 3 chỉ có 结果补语+动词重叠(1)(2); 过 và 因为…
+所以 thực ra thuộc Bài 4. Bài 5 đã bổ sung 简单趋向补语(1)(2)+都…了 (xác nhận trực
+tiếp từ trang objectives 053) nhưng **4 điểm cũ (形容词重叠·什么的·地·一…就…) CHƯA
+được xác minh lại** — có thể đã lệch tiếp sang Bài 6, cần soát khi sản xuất tới Bài 5.
+Xem `output/hsk2/buoi03_dulich_xian/doc/bai-doc.md` để biết chi tiết đối chiếu.
 
 ## Ghi chú kỹ thuật
 

@@ -1,0 +1,857 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 3",
+    "topic": "我想去西安旅游 — Du lịch Tây An + đặt khách sạn"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我想去西安旅游",
+      "subtitle": "Wǒ xiǎng qù Xī'ān lǚyóu — Tôi muốn đi du lịch Tây An",
+      "footer": "",
+      "image": "assets/xian.jpg"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么",
+      "bullets": [
+        "结果补语 — mô tả KẾT QUẢ của hành động (làm xong / đến muộn...)",
+        "动词重叠(1)(2) — \"thử làm một chút\" (chưa xảy ra) và \"đã làm một chút\" (đã xảy ra)",
+        "为什么 — hỏi nguyên nhân sự việc",
+        "Chủ đề: bàn chuyện đi du lịch Tây An + đặt phòng khách sạn"
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 1/15",
+      "hz": "不错",
+      "py": "búcuò",
+      "pos": "adj.",
+      "vn": "khá tốt, không tệ",
+      "examples": [
+        {
+          "hz": "我看了看网上的介绍，这个时候去西安很不错！",
+          "py": "Wǒ kànle kàn wǎngshàng de jièshào, zhège shíhòu qù Xī'ān hěn búcuò!",
+          "vn": "Tôi xem qua giới thiệu trên mạng, đợt này đi Tây An là rất hợp!"
+        },
+        {
+          "hz": "这家饭馆的菜不错，你可以试试。",
+          "py": "Zhè jiā fànguǎn de cài búcuò, nǐ kěyǐ shìshi.",
+          "vn": "Món ở quán này khá ngon, bạn có thể thử xem."
+        }
+      ],
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 2/15",
+      "hz": "出去",
+      "py": "chūqù",
+      "pos": "v.",
+      "vn": "đi ra ngoài",
+      "examples": [
+        {
+          "hz": "好啊，我也很想一起出去玩。",
+          "py": "Hǎo a, wǒ yě hěn xiǎng yìqǐ chūqù wán.",
+          "vn": "Được đấy, tôi cũng rất muốn cùng đi chơi."
+        },
+        {
+          "hz": "天气这么好，我们出去走走吧。",
+          "py": "Tiānqì zhème hǎo, wǒmen chūqù zǒuzǒu ba.",
+          "vn": "Thời tiết đẹp thế này, chúng ta ra ngoài đi dạo đi."
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 3/15",
+      "hz": "回来",
+      "py": "huílái",
+      "pos": "v.",
+      "vn": "quay lại, trở về",
+      "examples": [
+        {
+          "hz": "今天回来这么晚啊！",
+          "py": "Jīntiān huílái zhème wǎn a!",
+          "vn": "Hôm nay về muộn thế!"
+        },
+        {
+          "hz": "你什么时候回来？",
+          "py": "Nǐ shénme shíhou huílái?",
+          "vn": "Bao giờ bạn về?"
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 4/15",
+      "hz": "回去",
+      "py": "huíqù",
+      "pos": "v.",
+      "vn": "quay về, trở lại đó",
+      "examples": [
+        {
+          "hz": "医院就来电话了，让他回去上班。",
+          "py": "Yīyuàn jiù lái diànhuà le, ràng tā huíqù shàngbān.",
+          "vn": "Bệnh viện gọi điện, bảo anh ấy về đi làm."
+        },
+        {
+          "hz": "已经晚了，我们该回去了。",
+          "py": "Yǐjīng wǎn le, wǒmen gāi huíqù le.",
+          "vn": "Muộn rồi, chúng ta nên về thôi."
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 5/15",
+      "hz": "累",
+      "py": "lèi",
+      "pos": "adj.",
+      "vn": "mệt",
+      "image": "assets/words/lei.jpg",
+      "examples": [
+        {
+          "hz": "我觉得他这个月每天都很累。",
+          "py": "Wǒ juéde tā zhège yuè měitiān dōu hěn lèi.",
+          "vn": "Tôi thấy tháng này ngày nào anh ấy cũng mệt."
+        },
+        {
+          "hz": "走了一天，我很累，想休息一下。",
+          "py": "Zǒule yì tiān, wǒ hěn lèi, xiǎng xiūxi yíxià.",
+          "vn": "Đi bộ cả ngày, tôi rất mệt, muốn nghỉ một chút."
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 6/15",
+      "hz": "每",
+      "py": "měi",
+      "pos": "pron.",
+      "vn": "mỗi",
+      "examples": [
+        {
+          "hz": "我觉得他这个月每天都很累。",
+          "py": "Wǒ juéde tā zhège yuè měitiān dōu hěn lèi.",
+          "vn": "Tôi thấy tháng này ngày nào anh ấy cũng mệt."
+        },
+        {
+          "hz": "我每天早上七点起床。",
+          "py": "Wǒ měitiān zǎoshang qī diǎn qǐchuáng.",
+          "vn": "Mỗi sáng tôi dậy lúc 7 giờ."
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 7/15",
+      "hz": "拿",
+      "py": "ná",
+      "pos": "v.",
+      "vn": "cầm, lấy",
+      "image": "assets/words/na.jpg",
+      "examples": [
+        {
+          "hz": "就在桌子上，你自己拿。",
+          "py": "Jiù zài zhuōzi shàng, nǐ zìjǐ ná.",
+          "vn": "Ở trên bàn đấy, bạn tự lấy."
+        },
+        {
+          "hz": "请把那本书拿给我。",
+          "py": "Qǐng bǎ nà běn shū ná gěi wǒ.",
+          "vn": "Làm ơn lấy cuốn sách đó đưa cho tôi."
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 8/15",
+      "hz": "手",
+      "py": "shǒu",
+      "pos": "n.",
+      "vn": "bàn tay",
+      "image": "assets/words/shou.jpg",
+      "examples": [
+        {
+          "hz": "我去洗洗手。",
+          "py": "Wǒ qù xǐxi shǒu.",
+          "vn": "Tôi đi rửa tay chút."
+        },
+        {
+          "hz": "请把手洗干净再吃饭。",
+          "py": "Qǐng bǎ shǒu xǐ gānjìng zài chīfàn.",
+          "vn": "Hãy rửa tay sạch rồi mới ăn cơm."
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 9/15",
+      "hz": "送",
+      "py": "sòng",
+      "pos": "v.",
+      "vn": "đưa, tiễn; tặng",
+      "image": "assets/words/song.jpg",
+      "examples": [
+        {
+          "hz": "早上，刘明开车送孩子去学校。",
+          "py": "Zǎoshang, Liú Míng kāichē sòng háizi qù xuéxiào.",
+          "vn": "Sáng nay, Lưu Minh lái xe đưa con đến trường."
+        },
+        {
+          "hz": "妈妈每天送我去学校。",
+          "py": "Māma měitiān sòng wǒ qù xuéxiào.",
+          "vn": "Mẹ tôi ngày nào cũng đưa tôi đến trường."
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 10/15",
+      "hz": "完",
+      "py": "wán",
+      "pos": "v.",
+      "vn": "xong, hết",
+      "examples": [
+        {
+          "hz": "工作太多了，下班的时候没做完。",
+          "py": "Gōngzuò tài duō le, xiàbān de shíhòu méi zuòwán.",
+          "vn": "Việc nhiều quá, lúc tan ca chưa làm xong."
+        },
+        {
+          "hz": "你的作业写完了吗？",
+          "py": "Nǐ de zuòyè xiěwán le ma?",
+          "vn": "Bạn viết xong bài tập chưa?"
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 11/15",
+      "hz": "为什么",
+      "py": "wèishénme",
+      "pos": "pron.",
+      "vn": "tại sao",
+      "examples": [
+        {
+          "hz": "王一雪为什么想去西安旅游？",
+          "py": "Wáng Yīxuě wèishénme xiǎng qù Xī'ān lǚyóu?",
+          "vn": "Vì sao Vương Nhất Tuyết muốn đi Tây An du lịch?"
+        },
+        {
+          "hz": "你为什么这么累？",
+          "py": "Nǐ wèishénme zhème lèi?",
+          "vn": "Sao bạn mệt vậy?"
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 12/15",
+      "hz": "洗",
+      "py": "xǐ",
+      "pos": "v.",
+      "vn": "rửa, giặt, tắm",
+      "image": "assets/words/xi.jpg",
+      "examples": [
+        {
+          "hz": "吃个苹果吧，我都洗好了。",
+          "py": "Chī gè píngguǒ ba, wǒ dōu xǐhǎo le.",
+          "vn": "Ăn quả táo đi, tôi rửa xong cả rồi."
+        },
+        {
+          "hz": "吃饭前要洗手。",
+          "py": "Chīfàn qián yào xǐ shǒu.",
+          "vn": "Trước khi ăn phải rửa tay."
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 13/15",
+      "hz": "一起",
+      "py": "yìqǐ",
+      "pos": "adv.",
+      "vn": "cùng nhau",
+      "examples": [
+        {
+          "hz": "好啊，我也很想一起出去玩。",
+          "py": "Hǎo a, wǒ yě hěn xiǎng yìqǐ chūqù wán.",
+          "vn": "Được đấy, tôi cũng rất muốn cùng đi chơi."
+        },
+        {
+          "hz": "我们一起去看电影吧。",
+          "py": "Wǒmen yìqǐ qù kàn diànyǐng ba.",
+          "vn": "Chúng ta cùng đi xem phim đi."
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 14/15",
+      "hz": "这么",
+      "py": "zhème",
+      "pos": "pron.",
+      "vn": "như thế này",
+      "examples": [
+        {
+          "hz": "今天回来这么晚啊！",
+          "py": "Jīntiān huílái zhème wǎn a!",
+          "vn": "Hôm nay về muộn thế!"
+        },
+        {
+          "hz": "天气这么好，我们出去走走吧。",
+          "py": "Tiānqì zhème hǎo, wǒmen chūqù zǒuzǒu ba.",
+          "vn": "Thời tiết đẹp thế này, chúng ta ra ngoài đi dạo đi."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 15/15",
+      "hz": "自己",
+      "py": "zìjǐ",
+      "pos": "pron.",
+      "vn": "bản thân, tự mình",
+      "examples": [
+        {
+          "hz": "就在桌子上，你自己拿。",
+          "py": "Jiù zài zhuōzi shàng, nǐ zìjǐ ná.",
+          "vn": "Ở trên bàn đấy, bạn tự lấy."
+        },
+        {
+          "hz": "这件事我自己可以做。",
+          "py": "Zhè jiàn shì wǒ zìjǐ kěyǐ zuò.",
+          "vn": "Việc này tôi tự mình có thể làm."
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "section",
+      "title": "生词拓展 · 订酒店",
+      "subtitle": "Đặt phòng khách sạn — ngoài sách chính, bổ sung theo yêu cầu thực dụng cá nhân (⚠️ ngoài chuẩn thi HSK2 chính thức)"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 1/6",
+      "hz": "预订",
+      "py": "yùdìng",
+      "pos": "v.",
+      "vn": "đặt trước (phòng/vé)",
+      "examples": [
+        {
+          "hz": "你好，我想预订一个房间。",
+          "py": "Nǐhǎo, wǒ xiǎng yùdìng yí ge fángjiān.",
+          "vn": "Xin chào, tôi muốn đặt một phòng."
+        },
+        {
+          "hz": "去西安旅游，最好提前预订酒店。",
+          "py": "Qù Xī'ān lǚyóu, zuìhǎo tíqián yùdìng jiǔdiàn.",
+          "vn": "Đi du lịch Tây An, tốt nhất nên đặt khách sạn trước."
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 2/6",
+      "hz": "房间",
+      "py": "fángjiān",
+      "pos": "n.",
+      "vn": "phòng",
+      "image": "assets/words/fangjian.jpg",
+      "examples": [
+        {
+          "hz": "请问您要预订什么时候的房间？",
+          "py": "Qǐngwèn nín yào yùdìng shénme shíhou de fángjiān?",
+          "vn": "Xin hỏi anh muốn đặt phòng lúc nào?"
+        },
+        {
+          "hz": "这个房间很干净。",
+          "py": "Zhège fángjiān hěn gānjìng.",
+          "vn": "Phòng này rất sạch."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 3/6",
+      "hz": "单人间",
+      "py": "dānrénjiān",
+      "pos": "n.",
+      "vn": "phòng đơn",
+      "examples": [
+        {
+          "hz": "您要单人间还是双人间？",
+          "py": "Nín yào dānrénjiān háishi shuāngrénjiān?",
+          "vn": "Anh muốn phòng đơn hay phòng đôi?"
+        },
+        {
+          "hz": "单人间一晚三百八十块钱。",
+          "py": "Dānrénjiān yì wǎn sānbǎi bāshí kuài qián.",
+          "vn": "Phòng đơn một đêm 380 tệ."
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 4/6",
+      "hz": "前台",
+      "py": "qiántái",
+      "pos": "n.",
+      "vn": "lễ tân, quầy tiếp tân",
+      "image": "assets/words/qiantai.jpg",
+      "examples": [
+        {
+          "hz": "有问题可以问前台。",
+          "py": "Yǒu wèntí kěyǐ wèn qiántái.",
+          "vn": "Có vấn đề gì có thể hỏi lễ tân."
+        },
+        {
+          "hz": "前台就在大门口。",
+          "py": "Qiántái jiù zài dàménkǒu.",
+          "vn": "Quầy lễ tân ở ngay cửa chính."
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 5/6",
+      "hz": "入住",
+      "py": "rùzhù",
+      "pos": "v.",
+      "vn": "nhận phòng, check-in",
+      "image": "assets/words/ruzhu.jpg",
+      "examples": [
+        {
+          "hz": "几点可以入住？",
+          "py": "Jǐ diǎn kěyǐ rùzhù?",
+          "vn": "Mấy giờ có thể check-in?"
+        },
+        {
+          "hz": "下午两点以后就能入住。",
+          "py": "Xiàwǔ liǎng diǎn yǐhòu jiù néng rùzhù.",
+          "vn": "Sau 2 giờ chiều là có thể check-in."
+        }
+      ],
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 6/6",
+      "hz": "退房",
+      "py": "tuìfáng",
+      "pos": "v.",
+      "vn": "trả phòng, check-out",
+      "image": "assets/words/tuifang.jpg",
+      "examples": [
+        {
+          "hz": "中午十二点前退房。",
+          "py": "Zhōngwǔ shí'èr diǎn qián tuìfáng.",
+          "vn": "Trước 12 giờ trưa phải check-out."
+        },
+        {
+          "hz": "我要退房，麻烦帮我看一下。",
+          "py": "Wǒ yào tuìfáng, máfan bāng wǒ kàn yíxià.",
+          "vn": "Tôi muốn check-out, làm ơn giúp tôi xem qua."
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "情景对话",
+      "title": "预订酒店房间 — Đặt phòng khách sạn qua điện thoại",
+      "image": "assets/hotel_call.jpg",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "你好，我想预订一个房间。",
+          "py": "Nǐhǎo, wǒ xiǎng yùdìng yí ge fángjiān."
+        },
+        {
+          "speaker": "前台",
+          "hz": "您好，请问您要预订什么时候的房间？",
+          "py": "Nínhǎo, qǐngwèn nín yào yùdìng shénme shíhou de fángjiān?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "下周三到下周五，住两晚。",
+          "py": "Xià zhōusān dào xià zhōuwǔ, zhù liǎng wǎn."
+        },
+        {
+          "speaker": "前台",
+          "hz": "好的，您要单人间还是双人间？",
+          "py": "Hǎo de, nín yào dānrénjiān háishi shuāngrénjiān?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "单人间，我一个人住。",
+          "py": "Dānrénjiān, wǒ yí ge rén zhù."
+        },
+        {
+          "speaker": "前台",
+          "hz": "没问题，一晚三百八十块钱，可以吗？",
+          "py": "Méi wèntí, yì wǎn sānbǎi bāshí kuài qián, kěyǐ ma?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "可以。几点可以入住？",
+          "py": "Kěyǐ. Jǐ diǎn kěyǐ rùzhù?"
+        },
+        {
+          "speaker": "前台",
+          "hz": "下午两点以后就能入住，中午十二点前退房。",
+          "py": "Xiàwǔ liǎng diǎn yǐhòu jiù néng rùzhù, zhōngwǔ shí'èr diǎn qián tuìfáng."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "好，谢谢你。",
+          "py": "Hǎo, xièxie nǐ."
+        }
+      ],
+      "note": "「双人间」(shuāngrénjiān, phòng đôi) chỉ xuất hiện trong hội thoại này, không có thẻ 生词 riêng.",
+      "source": "Tự soạn (bổ sung ngoài 課文 sách chính — đặt khách sạn, ⚠️ ngoài chuẩn thi HSK2)",
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文1",
+      "title": "刘明回家晚了 — Lưu Minh về nhà muộn",
+      "image": "assets/home_evening.jpg",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "今天回来这么晚啊！",
+          "py": "Jīntiān huílái zhème wǎn a!"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "工作太多了，下班的时候没做完。",
+          "py": "Gōngzuò tài duō le, xiàbān de shíhòu méi zuòwán."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "菜都做好了，过来吃饭吧。",
+          "py": "Cài dōu zuòhǎo le, guòlái chīfàn ba."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我想休息一下，喝杯水。",
+          "py": "Wǒ xiǎng xiūxi yíxià, hē bēi shuǐ."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "好的。",
+          "py": "Hǎo de."
+        }
+      ],
+      "source": "New HSK Course 2, Bài 3",
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文2",
+      "title": "商量去旅游 — Bàn chuyện đi du lịch",
+      "image": "assets/travel_planning.jpg",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "我们找个时间去旅游，怎么样？",
+          "py": "Wǒmen zhǎo gè shíjiān qù lǚyóu, zěnmeyàng?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "好啊，我也很想一起出去玩。",
+          "py": "Hǎo a, wǒ yě hěn xiǎng yìqǐ chūqù wán."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "你想去哪儿？",
+          "py": "Nǐ xiǎng qù nǎr?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我还没想好呢。",
+          "py": "Wǒ hái méi xiǎnghǎo ne."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "那你再想一想，你想好了，我来买票。",
+          "py": "Nà nǐ zài xiǎng yi xiǎng, nǐ xiǎnghǎo le, wǒ lái mǎi piào."
+        }
+      ],
+      "source": "New HSK Course 2, Bài 3",
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文3",
+      "title": "决定去西安 — Quyết định đi Tây An",
+      "image": "assets/xian_online.jpg",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "吃个苹果吧，我都洗好了。",
+          "py": "Chī gè píngguǒ ba, wǒ dōu xǐhǎo le."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "好的。",
+          "py": "Hǎo de."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "就在桌子上，你自己拿。",
+          "py": "Jiù zài zhuōzi shàng, nǐ zìjǐ ná."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我去洗洗手。对了，我们去西安旅游，怎么样？",
+          "py": "Wǒ qù xǐxi shǒu. Duìle, wǒmen qù Xī'ān lǚyóu, zěnmeyàng?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我看了看网上的介绍，这个时候去西安很不错！",
+          "py": "Wǒ kànle kàn wǎngshàng de jièshào, zhège shíhòu qù Xī'ān hěn búcuò!"
+        }
+      ],
+      "note": "⚠️ Vùng hội thoại PDF trang 040 bị xáo cột nặng khi trích bằng pypdf — thứ tự \"就在桌子上你自己拿\" và \"我看了看网上的介绍…\" suy từ ngữ cảnh + câu hỏi hiểu bài, CHƯA đối chiếu ảnh gốc 100%. Xem `doc/bai-doc.md`.",
+      "source": "New HSK Course 2, Bài 3",
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文4",
+      "title": "王一雪心疼刘明",
+      "image": "assets/hospital_call.jpg",
+      "sentences": [
+        {
+          "hz": "早上，刘明开车送孩子去学校，送完孩子回家后，医院就来电话了，",
+          "py": "Zǎoshang, Liú Míng kāichē sòng háizi qù xuéxiào, sòngwán háizi huí jiā hòu, yīyuàn jiù lái diànhuà le,",
+          "vn": "Sáng nay, Lưu Minh lái xe đưa con đến trường, đưa con xong về nhà thì bệnh viện gọi điện,"
+        },
+        {
+          "hz": "让他回去上班。我觉得他这个月每天都很累，真想让他休息休息。",
+          "py": "ràng tā huíqù shàngbān. Wǒ juéde tā zhège yuè měitiān dōu hěn lèi, zhēn xiǎng ràng tā xiūxi xiūxi.",
+          "vn": "bảo anh về đi làm. Tôi thấy tháng này ngày nào anh cũng mệt, thật muốn để anh nghỉ ngơi một chút."
+        }
+      ],
+      "source": "New HSK Course 2, Bài 3",
+      "audio": "assets/audio/slide29.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "结果补语",
+      "image": "assets/checkmark.jpg",
+      "point": [
+        "Một số động từ/tính từ đặt SAU động từ chính để biểu thị KẾT QUẢ của hành động.",
+        "Phủ định: thêm 「没(有)」trước động từ, đồng thời BỎ 「了」.",
+        "Nghi vấn có 3 cách: (1) thêm 「了吗」cuối câu; (2) thêm 「(了)没有」cuối câu; (3) V+没+V+bổ ngữ kết quả."
+      ],
+      "examples": [
+        {
+          "hz": "菜都做好了。",
+          "py": "Cài dōu zuòhǎo le.",
+          "vn": "Cơm nước xong cả rồi."
+        },
+        {
+          "hz": "我没吃完饭。",
+          "py": "Wǒ méi chīwán fàn.",
+          "vn": "Tôi chưa ăn xong cơm."
+        },
+        {
+          "hz": "小雪来晚了没有？",
+          "py": "Xiǎoxuě lái wǎn le méiyǒu?",
+          "vn": "Tiểu Tuyết có đến muộn không?"
+        }
+      ],
+      "source": "New HSK Course 2, Bài 3",
+      "audio": "assets/audio/slide30.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "动词重叠(1) — việc CHƯA xảy ra",
+      "image": "assets/relax_break.jpg",
+      "point": [
+        "Động từ có tính động tác, lặp lại/kéo dài được → trùng điệp để biểu thị: thời gian ngắn, số lượng ít, thử làm — giọng nhẹ nhàng, tuỳ ý, hay dùng khẩu ngữ.",
+        "Đơn âm tiết: A(一)A · Song âm tiết: ABAB · Từ ly hợp: AAB.",
+        "Dùng cho việc CHƯA xảy ra / sắp làm."
+      ],
+      "examples": [
+        {
+          "hz": "你再想一想。",
+          "py": "Nǐ zài xiǎng yi xiǎng.",
+          "vn": "Bạn nghĩ thêm chút xem."
+        },
+        {
+          "hz": "我想休息休息。",
+          "py": "Wǒ xiǎng xiūxi xiūxi.",
+          "vn": "Tôi muốn nghỉ ngơi một chút."
+        },
+        {
+          "hz": "你能过来帮帮忙吗？",
+          "py": "Nǐ néng guòlái bāngbāngmáng ma?",
+          "vn": "Bạn qua giúp một tay được không?"
+        }
+      ],
+      "source": "New HSK Course 2, Bài 3",
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "动词重叠(2) — việc ĐÃ xảy ra",
+      "point": [
+        "Biểu thị việc ĐÃ xảy ra: đơn âm tiết → A了A; song âm tiết KHÔNG trùng điệp được, dùng AB了一下; từ ly hợp → A了AB."
+      ],
+      "examples": [
+        {
+          "hz": "我看了看网上的介绍。",
+          "py": "Wǒ kànle kàn wǎngshàng de jièshào.",
+          "vn": "Tôi xem qua giới thiệu trên mạng."
+        },
+        {
+          "hz": "我休息了一下，现在不累了。",
+          "py": "Wǒ xiūxi le yíxià, xiànzài bú lèi le.",
+          "vn": "Tôi nghỉ một chút, giờ không mệt nữa."
+        },
+        {
+          "hz": "他昨天来帮了帮忙。",
+          "py": "Tā zuótiān lái bāngle bāngmáng.",
+          "vn": "Hôm qua anh ấy đến giúp một tay."
+        }
+      ],
+      "source": "New HSK Course 2, Bài 3",
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语",
+      "title": "10 câu khẩu ngữ đời thường (du lịch · đặt khách sạn)",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "您好，我想预订一个房间。",
+          "Nínhǎo, wǒ xiǎng yùdìng yí ge fángjiān.",
+          "Xin chào, tôi muốn đặt một phòng."
+        ],
+        [
+          "一晚多少钱？",
+          "Yì wǎn duōshao qián?",
+          "Một đêm bao nhiêu tiền?"
+        ],
+        [
+          "可以刷卡吗？",
+          "Kěyǐ shuākǎ ma?",
+          "Có thể quẹt thẻ không?"
+        ],
+        [
+          "我们几点能入住？",
+          "Wǒmen jǐ diǎn néng rùzhù?",
+          "Mấy giờ chúng tôi có thể check-in?"
+        ],
+        [
+          "我想退房，麻烦你了。",
+          "Wǒ xiǎng tuìfáng, máfan nǐ le.",
+          "Tôi muốn trả phòng, làm ơn giúp tôi."
+        ],
+        [
+          "附近有没有好吃的饭馆？",
+          "Fùjìn yǒu méiyǒu hǎochī de fànguǎn?",
+          "Gần đây có quán ăn ngon không?"
+        ],
+        [
+          "这儿有什么好玩儿的地方吗？",
+          "Zhèr yǒu shénme hǎowánr de dìfang ma?",
+          "Ở đây có chỗ nào hay để chơi không?"
+        ],
+        [
+          "这儿可以拍照吗？",
+          "Zhèr kěyǐ pāizhào ma?",
+          "Ở đây có được chụp ảnh không?"
+        ],
+        [
+          "今天会不会下雨？",
+          "Jīntiān huì bu huì xiàyǔ?",
+          "Hôm nay có mưa không?"
+        ],
+        [
+          "祝你旅途愉快！",
+          "Zhù nǐ lǚtú yúkuài!",
+          "Chúc bạn có chuyến đi vui vẻ!"
+        ]
+      ],
+      "audio": "assets/audio/slide33.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "易错点 1/3",
+      "title": "Quên/thừa 「了」với 结果补语",
+      "image": "assets/error1.jpg",
+      "bullets": [
+        "❌ 我吃完饭 — thiếu 了 khi câu khẳng định đã hoàn thành.",
+        "✔ 我吃完饭了。",
+        "❌ 我没吃完饭了 — câu PHỦ ĐỊNH KHÔNG được giữ 了.",
+        "✔ 我没吃完饭。",
+        "Vì sao hay lẫn: tiếng Việt \"đã ăn xong\" dùng \"đã\" cả câu khẳng định lẫn phủ định (\"tôi chưa ăn xong\" cũng có cấu trúc tương tự), nên hay quên rằng tiếng Trung phủ định phải bỏ 了."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "易错点 2/3",
+      "title": "Lẫn dạng 动词重叠 theo thời điểm",
+      "image": "assets/error2.jpg",
+      "bullets": [
+        "❌ 我昨天想想这个问题 — việc ĐÃ xảy ra (昨天) nhưng dùng dạng CHƯA xảy ra (想想).",
+        "✔ 我昨天想了想这个问题。",
+        "❌ 你想了想吧 — câu ĐỀ NGHỊ (chưa xảy ra) nhưng dùng dạng ĐÃ xảy ra (想了想).",
+        "✔ 你想一想吧。",
+        "Vì sao hay lẫn: tiếng Việt \"thử nghĩ nghĩ xem\" không đổi dạng theo thời điểm như tiếng Trung, nên dễ quên phải chọn A(一)A hay A了A cho đúng."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "易错点 3/3",
+      "title": "Sai dạng trùng điệp động từ song âm tiết",
+      "image": "assets/error3.jpg",
+      "bullets": [
+        "❌ 休休息息 — động từ song âm tiết KHÔNG trùng điệp theo kiểu AABB (như tính từ 高高兴兴).",
+        "✔ 休息休息 (chưa xảy ra, ABAB) / 休息了一下 (đã xảy ra, KHÔNG trùng điệp — dùng AB了一下).",
+        "Vì sao hay lẫn: người học đã quen dạng trùng điệp AABB của TÍNH TỪ (高高兴兴), nên áp nhầm sang ĐỘNG TỪ song âm tiết — quy tắc 2 loại từ khác nhau."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "谢谢！"
+    }
+  ]
+}
