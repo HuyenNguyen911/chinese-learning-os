@@ -67,6 +67,19 @@ Script in ra 1 dòng kết quả:
 - `SCAN_PDF <out.ocr.txt> <pages>` → PDF scan đã OCR → đọc file `<out.ocr.txt>`
 - `CACHED <path> <pages>` → dùng lại kết quả OCR đã cache (bỏ qua OCR)
 
+**Vùng layout phức tạp trong `TEXT_PDF` (khác scan-PDF):** một trang có avg chars/page
+đủ cao để qua nhánh `TEXT_PDF`, nhưng vài vùng cụ thể (bảng nhiều cột, bong bóng chat/
+hội thoại xếp cạnh nhau) vẫn bị `pypdf` xáo thứ tự chữ — không phải lỗi tool, không có
+`ERROR` code nào báo. Khi cần độ chính xác cao cho đúng những vùng đó (trích nguyên văn
+课文/hội thoại):
+- Ưu tiên render ảnh (PyMuPDF, ~200-250dpi) rồi đọc trực tiếp bằng vision cho riêng
+  vùng đó.
+- Nếu PyMuPDF chưa cài và không tự `pip install` được (thiếu quyền/mạng) — **không dừng
+  hẳn**: dùng text `pypdf` đã có, tự suy luận lại thứ tự bằng ngữ cảnh (câu hỏi hiểu bài,
+  câu trả lời gợi ý sẵn trong text), rồi **đánh dấu rõ** các đoạn suy luận chưa chắc 100%
+  (ví dụ ghi `[chưa chắc]` cạnh câu, kèm chú thích lý do) khi trình user duyệt — để user
+  tự đối chiếu bản giấy/gốc thay vì âm thầm nhận rủi ro sai.
+
 Output text được ghi cạnh file gốc: `{file_path}.txt` (text-PDF) hoặc `{file_path}.ocr.txt` (scan-PDF), phân trang bằng marker `===== PAGE n =====`.
 
 **Cache:** nếu `{file_path}.ocr.txt` đã tồn tại và mới hơn PDF → script trả `CACHED`, không OCR lại.
