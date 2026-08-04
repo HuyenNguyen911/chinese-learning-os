@@ -749,6 +749,18 @@ class DeckBuilder:
         top = self._content_top()
         if not turns:
             return
+        # Ảnh ngữ cảnh (vd cảnh đón taxi) đặt 1 bên, khung thoại co vào bên
+        # còn lại — cùng bố cục split-column đã dùng ở vocab/grammar/passage,
+        # giúp học viên hình dung bối cảnh thay vì chỉ thấy bong bóng chữ nổi
+        # trên nền trắng (review buổi 02: "khó xem, không liên tưởng").
+        has_img = bool(s.get("image"))
+        if has_img:
+            txt_left, txt_w, img_left, img_w = self._split_image_col(
+                s, Inches(4.2), default_side="left")
+            self._place_image(slide, s["image"], img_left, top, img_w,
+                              self._content_area_h())
+        else:
+            txt_left, txt_w = MARGIN, SLIDE_W - 2 * MARGIN
         uniq_speakers = []
         for t in turns:
             spk = t.get("speaker")
@@ -760,19 +772,21 @@ class DeckBuilder:
         # khó đọc (review buổi 02, 2 lần). Chuyển sang danh sách 1 CỘT, đọc
         # tuần tự trên→dưới như kịch bản — luôn rõ ràng bất kể bao nhiêu người.
         if len(uniq_speakers) > 2:
-            self._dialogue_script(slide, turns, top, uniq_speakers)
+            self._dialogue_script(slide, turns, top, uniq_speakers, txt_left, txt_w)
         else:
-            self._dialogue_bubbles(slide, turns, top)
+            self._dialogue_bubbles(slide, turns, top, txt_left, txt_w)
 
-    def _dialogue_script(self, slide, turns, top, uniq_speakers):
+    def _dialogue_script(self, slide, turns, top, uniq_speakers, txt_left=None, txt_w=None):
         # Swimlane: MỖI người nói 1 CỘT riêng, cùng hàng ngang = cùng lượt
         # thoại — vừa thấy AI ai đang nói (cột) vừa thấy thứ tự trước/sau
         # (hàng trên→dưới) cùng lúc, không cần đoán qua trái/phải hay icon
         # nhỏ nữa (review buổi 02: 1-cột vẫn không rõ ai nói khi nào).
+        if txt_left is None:
+            txt_left, txt_w = MARGIN, SLIDE_W - 2 * MARGIN
         n_spk = len(uniq_speakers)
         col_gap = Inches(0.2)
-        col_w = int((SLIDE_W - 2 * MARGIN - col_gap * (n_spk - 1)) / n_spk)
-        col_x = [int(MARGIN + i * (col_w + col_gap)) for i in range(n_spk)]
+        col_w = int((txt_w - col_gap * (n_spk - 1)) / n_spk)
+        col_x = [int(txt_left + i * (col_w + col_gap)) for i in range(n_spk)]
         palette = ["F7E4E1", "E4EEF7", "FBF0D9", "E7F3E8"]
         spk_color = {sp: palette[i % len(palette)] for i, sp in enumerate(uniq_speakers)}
         spk_col = {sp: i for i, sp in enumerate(uniq_speakers)}
@@ -828,7 +842,9 @@ class DeckBuilder:
                 self._set_run(p3.add_run(), t["vn"], vn_sz, color="muted")
             y = y + row_h + gap
 
-    def _dialogue_bubbles(self, slide, turns, top):
+    def _dialogue_bubbles(self, slide, turns, top, txt_left=None, txt_w=None):
+        if txt_left is None:
+            txt_left, txt_w = MARGIN, SLIDE_W - 2 * MARGIN
         first_speaker = turns[0].get("speaker")
         n = len(turns)
         avail_h = int(SLIDE_H - top - Inches(0.30))
@@ -845,7 +861,7 @@ class DeckBuilder:
         line_h = int(line0 * scale); pad = int(pad0 * scale); gap = int(gap0 * scale)
         hz_sz = max(15, int(22 * scale)); py_sz = max(11, int(14 * scale))
         vn_sz = max(10, int(13 * scale)); spk_sz = max(11, int(13 * scale))
-        max_bubble_w = Inches(7.6); min_bubble_w = Inches(1.9)
+        max_bubble_w = min(Inches(7.6), txt_w); min_bubble_w = min(Inches(1.9), txt_w)
 
         def _bubble_w(t):
             # Bề rộng RIÊNG mỗi bubble theo dòng dài nhất — câu ngắn (vd 你们好!)
@@ -865,7 +881,7 @@ class DeckBuilder:
             is_left = t.get("speaker") == first_speaker
             bubble_h = line_h * nlines(t) + pad
             bubble_w = _bubble_w(t)
-            left = MARGIN if is_left else int(SLIDE_W - MARGIN - bubble_w)
+            left = int(txt_left) if is_left else int(txt_left + txt_w - bubble_w)
             bubble = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
                                             Emu(left), Emu(y), bubble_w, Emu(bubble_h))
             bubble.fill.solid()
