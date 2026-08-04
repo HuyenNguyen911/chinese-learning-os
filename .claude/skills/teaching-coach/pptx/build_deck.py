@@ -243,10 +243,15 @@ class DeckBuilder:
     def _line_h(self, pt):
         return int(Pt(pt) * 1.28)
 
-    def _wrap_lines(self, text, width_emu, pt, cjk=False):
+    def _wrap_lines(self, text, width_emu, pt, cjk=False, bold=False):
         if not text:
             return 1
         avg_char_w = Pt(pt) * (1.0 if cjk else 0.52)
+        if bold:
+            # Chữ đậm rộng hơn chữ thường ~12% — không tính vào sẽ ước lượng
+            # thiếu số dòng cần wrap, khiến chiều cao hàng bảng bị co quá tay
+            # (review buổi 02: chữ Hán cột đậm bị rớt dòng dù đã tính wrap).
+            avg_char_w = int(avg_char_w * 1.12)
         per_line = max(1, int(width_emu / avg_char_w))
         return max(1, -(-len(str(text)) // per_line))
 
@@ -592,7 +597,10 @@ class DeckBuilder:
             for c, w in enumerate(widths_frac):
                 text = str(row[c]) if c < len(row) else ""
                 is_cjk = (c in (self._cur_cjk_cols or [])) if self._cur_cjk_cols is not None else (c > 0)
-                nlines = max(nlines, self._wrap_lines(text, int(width_emu * w) - Pt(16), 15, cjk=is_cjk))
+                # Cột 0 luôn render đậm (_fill_cell bold=(c==0)) — phải khớp
+                # bold=True ở đây để ước lượng đúng số dòng wrap thực tế.
+                nlines = max(nlines, self._wrap_lines(
+                    text, int(width_emu * w) - Pt(16), 15, cjk=is_cjk, bold=(c == 0)))
             heights.append(min(max_rh, max(min_rh, int(min_rh * (0.62 + 0.38 * nlines)))))
         return heights
 
@@ -616,10 +624,16 @@ class DeckBuilder:
         row_h = self._row_heights(headers, data, widths_frac, width, min_rh,
                                   int(Inches(1.55)))
         table_h = sum(row_h)
+        font_scale = 1.0
         if table_h > table_avail_h:
             shrink = table_avail_h / table_h
             row_h = [int(h * shrink) for h in row_h]
             table_h = sum(row_h)
+            # Nén chiều cao hàng mà giữ nguyên cỡ chữ sẽ tràn/rớt dòng — co cả
+            # font theo cùng hệ số (sàn 11pt để còn đọc được).
+            font_scale = shrink
+        hdr_sz = max(11, int(15 * font_scale))
+        cell_sz = max(11, int(15 * font_scale))
         # canh giữa theo chiều dọc để không thừa khoảng trống phía dưới
         ttop = top + max(0, int((table_avail_h - table_h) / 2))
         gfx = slide.shapes.add_table(nrow, ncol, tleft, ttop, width, table_h)
@@ -631,7 +645,7 @@ class DeckBuilder:
         for c, htext in enumerate(headers):
             cell = table.cell(0, c)
             cell.fill.solid(); cell.fill.fore_color.rgb = self._rgb("accent")
-            self._fill_cell(cell, htext, 15, color="bg", bold=True, cjk=True,
+            self._fill_cell(cell, htext, hdr_sz, color="bg", bold=True, cjk=True,
                             align=PP_ALIGN.CENTER)
         for r, row in enumerate(data, start=1):
             for c in range(ncol):
@@ -640,7 +654,7 @@ class DeckBuilder:
                 cell.fill.fore_color.rgb = self._rgb("band" if r % 2 == 0 else "bg")
                 text = row[c] if c < len(row) else ""
                 is_cjk = (c in cjk_cols) if cjk_cols is not None else (c > 0)
-                self._fill_cell(cell, text, 15, color="ink", bold=(c == 0),
+                self._fill_cell(cell, text, cell_sz, color="ink", bold=(c == 0),
                                 cjk=is_cjk, align=PP_ALIGN.LEFT)
         if note:
             note_top = ttop + table_h + Inches(0.1)
