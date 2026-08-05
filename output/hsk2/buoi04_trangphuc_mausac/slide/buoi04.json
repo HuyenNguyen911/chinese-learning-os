@@ -279,37 +279,6 @@
       "kicker": "生词拓展 3-4/7",
       "words": [
         {
-          "hz": "打折",
-          "py": "dǎzhé",
-          "vn": "giảm giá",
-          "pos": "v.",
-          "image": "assets/words/dazhe.jpg",
-          "example": {
-            "hz": "这件衣服打折吗？",
-            "py": "Zhè jiàn yīfú dǎzhé ma?",
-            "vn": "Áo này có giảm giá không?"
-          }
-        },
-        {
-          "hz": "试衣间",
-          "py": "shìyījiān",
-          "vn": "phòng thử đồ",
-          "pos": "n.",
-          "image": "assets/trying_clothes.jpg",
-          "example": {
-            "hz": "试衣间在那边，您可以试试。",
-            "py": "Shìyījiān zài nàbiān, nín kěyǐ shìshi.",
-            "vn": "Phòng thử đồ ở đằng kia, anh/chị thử xem."
-          }
-        }
-      ],
-      "audio": "assets/audio/slide15.mp3"
-    },
-    {
-      "type": "word_pair",
-      "kicker": "生词拓展 5-6/7",
-      "words": [
-        {
           "hz": "深色",
           "py": "shēnsè",
           "vn": "màu đậm",
@@ -334,12 +303,24 @@
           }
         }
       ],
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide15.mp3"
     },
     {
       "type": "word_pair",
-      "kicker": "生词拓展 7/7",
+      "kicker": "生词拓展 5-6/7",
       "words": [
+        {
+          "hz": "打折",
+          "py": "dǎzhé",
+          "vn": "giảm giá",
+          "pos": "v.",
+          "image": "assets/words/dazhe.jpg",
+          "example": {
+            "hz": "这件衣服打折吗？",
+            "py": "Zhè jiàn yīfú dǎzhé ma?",
+            "vn": "Áo này có giảm giá không?"
+          }
+        },
         {
           "hz": "换",
           "py": "huàn",
@@ -350,6 +331,25 @@
             "hz": "可以换一件吗？",
             "py": "Kěyǐ huàn yí jiàn ma?",
             "vn": "Đổi cái khác được không?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展 7/7",
+      "words": [
+        {
+          "hz": "试衣间",
+          "py": "shìyījiān",
+          "vn": "phòng thử đồ",
+          "pos": "n.",
+          "image": "assets/trying_clothes.jpg",
+          "example": {
+            "hz": "试衣间在那边，您可以试试。",
+            "py": "Shìyījiān zài nàbiān, nín kěyǐ shìshi.",
+            "vn": "Phòng thử đồ ở đằng kia, anh/chị thử xem."
           }
         }
       ],
@@ -364,28 +364,28 @@
       "kicker": "生词拓展 1-2/10",
       "words": [
         {
-          "hz": "外套",
-          "py": "wàitào",
-          "vn": "áo khoác",
+          "hz": "睡衣",
+          "py": "shuìyī",
+          "vn": "đồ ngủ, pyjama",
           "pos": "n.",
-          "image": "assets/wear_jacket.jpg",
+          "image": "assets/words/shuiyi.jpg",
           "example": {
-            "hz": "天太热了，把外套脱下来吧。",
-            "py": "Tiān tài rè le, bǎ wàitào tuō xiàlái ba.",
-            "vn": "Trời nóng quá, cởi áo khoác ra đi."
+            "hz": "我睡觉的时候喜欢穿睡衣。",
+            "py": "Wǒ shuìjiào de shíhou xǐhuān chuān shuìyī.",
+            "vn": "Lúc ngủ tôi thích mặc đồ ngủ."
           }
         },
         {
-          "hz": "衬衫",
-          "py": "chènshān",
-          "vn": "áo sơ mi",
-          "pos": "n.",
-          "image": "assets/words/chenshan.jpg",
+          "hz": "休闲",
+          "py": "xiūxián",
+          "vn": "thường ngày, thoải mái (casual)",
+          "pos": "adj.",
           "example": {
-            "hz": "他穿着一件白衬衫。",
-            "py": "Tā chuānzhe yí jiàn bái chènshān.",
-            "vn": "Anh ấy đang mặc áo sơ mi trắng."
-          }
+            "hz": "周末我喜欢穿得休闲一点儿。",
+            "py": "Zhōumò wǒ xǐhuān chuān de xiūxián yìdiǎnr.",
+            "vn": "Cuối tuần tôi thích ăn mặc thường ngày một chút."
+          },
+          "image": "assets/words/xiuxian.jpg"
         }
       ],
       "audio": "assets/audio/slide19.mp3"
@@ -395,16 +395,16 @@
       "kicker": "生词拓展 3-4/10",
       "words": [
         {
-          "hz": "T恤",
-          "py": "T-xù",
-          "vn": "áo thun",
-          "pos": "n.",
-          "image": "assets/words/tshirt.jpg",
+          "hz": "正式",
+          "py": "zhèngshì",
+          "vn": "trang trọng, chính thức",
+          "pos": "adj.",
           "example": {
-            "hz": "夏天我喜欢穿T恤。",
-            "py": "Xiàtiān wǒ xǐhuān chuān T-xù.",
-            "vn": "Mùa hè tôi thích mặc áo thun."
-          }
+            "hz": "这是正式场合，你得穿正式一点儿。",
+            "py": "Zhè shì zhèngshì chǎnghé, nǐ děi chuān zhèngshì yìdiǎnr.",
+            "vn": "Đây là dịp trang trọng, bạn phải ăn mặc trang trọng một chút."
+          },
+          "image": "assets/words/zhengshi.jpg"
         },
         {
           "hz": "西装",
@@ -426,15 +426,46 @@
       "kicker": "生词拓展 5-6/10",
       "words": [
         {
-          "hz": "睡衣",
-          "py": "shuìyī",
-          "vn": "đồ ngủ, pyjama",
+          "hz": "衬衫",
+          "py": "chènshān",
+          "vn": "áo sơ mi",
           "pos": "n.",
-          "image": "assets/words/shuiyi.jpg",
+          "image": "assets/words/chenshan.jpg",
           "example": {
-            "hz": "我睡觉的时候喜欢穿睡衣。",
-            "py": "Wǒ shuìjiào de shíhou xǐhuān chuān shuìyī.",
-            "vn": "Lúc ngủ tôi thích mặc đồ ngủ."
+            "hz": "他穿着一件白衬衫。",
+            "py": "Tā chuānzhe yí jiàn bái chènshān.",
+            "vn": "Anh ấy đang mặc áo sơ mi trắng."
+          }
+        },
+        {
+          "hz": "T恤",
+          "py": "T-xù",
+          "vn": "áo thun",
+          "pos": "n.",
+          "image": "assets/words/tshirt.jpg",
+          "example": {
+            "hz": "夏天我喜欢穿T恤。",
+            "py": "Xiàtiān wǒ xǐhuān chuān T-xù.",
+            "vn": "Mùa hè tôi thích mặc áo thun."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展 7-8/10",
+      "words": [
+        {
+          "hz": "外套",
+          "py": "wàitào",
+          "vn": "áo khoác",
+          "pos": "n.",
+          "image": "assets/wear_jacket.jpg",
+          "example": {
+            "hz": "天太热了，把外套脱下来吧。",
+            "py": "Tiān tài rè le, bǎ wàitào tuō xiàlái ba.",
+            "vn": "Trời nóng quá, cởi áo khoác ra đi."
           }
         },
         {
@@ -450,11 +481,11 @@
           }
         }
       ],
-      "audio": "assets/audio/slide21.mp3"
+      "audio": "assets/audio/slide22.mp3"
     },
     {
       "type": "word_pair",
-      "kicker": "生词拓展 7-8/10",
+      "kicker": "生词拓展 9-10/10",
       "words": [
         {
           "hz": "时尚",
@@ -479,37 +510,6 @@
             "vn": "Cái áo này hơi lỗi mốt rồi."
           },
           "image": "assets/words/guoshi2.jpg"
-        }
-      ],
-      "audio": "assets/audio/slide22.mp3"
-    },
-    {
-      "type": "word_pair",
-      "kicker": "生词拓展 9-10/10",
-      "words": [
-        {
-          "hz": "正式",
-          "py": "zhèngshì",
-          "vn": "trang trọng, chính thức",
-          "pos": "adj.",
-          "example": {
-            "hz": "这是正式场合，你得穿正式一点儿。",
-            "py": "Zhè shì zhèngshì chǎnghé, nǐ děi chuān zhèngshì yìdiǎnr.",
-            "vn": "Đây là dịp trang trọng, bạn phải ăn mặc trang trọng một chút."
-          },
-          "image": "assets/words/zhengshi.jpg"
-        },
-        {
-          "hz": "休闲",
-          "py": "xiūxián",
-          "vn": "thường ngày, thoải mái (casual)",
-          "pos": "adj.",
-          "example": {
-            "hz": "周末我喜欢穿得休闲一点儿。",
-            "py": "Zhōumò wǒ xǐhuān chuān de xiūxián yìdiǎnr.",
-            "vn": "Cuối tuần tôi thích ăn mặc thường ngày một chút."
-          },
-          "image": "assets/words/xiuxian.jpg"
         }
       ],
       "audio": "assets/audio/slide23.mp3"
@@ -554,17 +554,6 @@
       "kicker": "生词拓展 3-4/5",
       "words": [
         {
-          "hz": "内衣",
-          "py": "nèiyī",
-          "vn": "đồ lót",
-          "pos": "n.",
-          "example": {
-            "hz": "内衣要经常换洗。",
-            "py": "Nèiyī yào jīngcháng huànxǐ.",
-            "vn": "Đồ lót phải thường xuyên thay giặt."
-          }
-        },
-        {
           "hz": "运动鞋",
           "py": "yùndòngxié",
           "vn": "giày thể thao",
@@ -575,14 +564,7 @@
             "py": "Wǒ jīntiān chuān yùndòngxié qù shàngbān.",
             "vn": "Hôm nay tôi đi giày thể thao đi làm."
           }
-        }
-      ],
-      "audio": "assets/audio/slide26.mp3"
-    },
-    {
-      "type": "word_pair",
-      "kicker": "生词拓展 5/5",
-      "words": [
+        },
         {
           "hz": "制服",
           "py": "zhìfú",
@@ -593,6 +575,24 @@
             "hz": "他工作的地方要穿制服。",
             "py": "Tā gōngzuò de dìfang yào chuān zhìfú.",
             "vn": "Chỗ anh ấy làm việc phải mặc đồng phục."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展 5/5",
+      "words": [
+        {
+          "hz": "内衣",
+          "py": "nèiyī",
+          "vn": "đồ lót",
+          "pos": "n.",
+          "example": {
+            "hz": "内衣要经常换洗。",
+            "py": "Nèiyī yào jīngcháng huànxǐ.",
+            "vn": "Đồ lót phải thường xuyên thay giặt."
           }
         }
       ],
