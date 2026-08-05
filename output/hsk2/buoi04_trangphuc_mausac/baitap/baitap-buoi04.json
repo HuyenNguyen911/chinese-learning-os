@@ -1,0 +1,94 @@
+{
+  "meta": { "lesson": "HSK2 · Buổi 4 — 你穿红色的很好看", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối 汉字 với nghĩa",
+      "instructions": "Nối từ bên trái với nghĩa đúng bên phải.",
+      "pairs": [
+        {"left": "尺码", "right": "cỡ, size"},
+        {"left": "打折", "right": "giảm giá"},
+        {"left": "试衣间", "right": "phòng thử đồ"},
+        {"left": "配饰", "right": "phụ kiện"},
+        {"left": "经典", "right": "cổ điển"},
+        {"left": "百搭", "right": "dễ phối đồ"},
+        {"left": "合适", "right": "vừa vặn, phù hợp"}
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ đúng trong khung để điền vào chỗ trống.",
+      "word_bank": ["更", "过去", "因为", "所以", "条"],
+      "items": [
+        {"q": "我们{}看看那边的衣服吧。", "answer": "过去", "src": "[phỏng theo 真题]"},
+        {"q": "{}这件太贵了，所以我没买。", "answer": "因为", "src": "[phỏng theo 真题]"},
+        {"q": "这件衣服很贵，{}我没买。", "answer": "所以", "src": "[phỏng theo 真题]"},
+        {"q": "我想买{}裤子，我们一起去吧。", "answer": "条", "src": "[phỏng theo 真题]"},
+        {"q": "我觉得红色的{}好看，你觉得呢？", "answer": "更", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc tin nhắn xác nhận đặt hàng",
+      "instructions": "Đọc đoạn tin nhắn rồi trả lời câu hỏi.",
+      "passage": "妈妈在商场买了一件衬衫，是深色的，打八折，只要一百二十块。但尺码有点儿不合适，妈妈想去试衣间换一件。",
+      "questions": [
+        {"q": "妈妈买的衬衫是什么颜色的？", "options": ["深色", "浅色", "红色"], "answer": "A", "src": "[tự soạn theo chủ đề mua sắm]"},
+        {"q": "这件衬衫打几折？", "options": ["七折", "九折", "八折"], "answer": "C", "src": "[tự soạn theo chủ đề mua sắm]"},
+        {"q": "妈妈觉得这件衬衫怎么样？", "options": ["颜色不好看", "尺码不合适", "太贵了"], "answer": "B", "src": "[tự soạn theo chủ đề mua sắm]"}
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ cho trước thành câu đúng.",
+      "items": [
+        {"words": ["把", "衣服", "穿上", "快"], "answer": "快把衣服穿上。", "answer_plus": "太晚了，快把衣服穿上，我们要出门了。", "src": "[phỏng theo 真题]"},
+        {"words": ["穿", "红色", "没", "过", "我", "的"], "answer": "我没穿过红色的。", "answer_plus": "我没穿过红色的，不知道好不好看。", "src": "[phỏng theo 真题]"},
+        {"words": ["洗", "了", "把", "衣服", "干净", "你", "吗"], "answer": "你把衣服洗干净了吗？", "answer_plus": "你把衣服洗干净了吗？我明天要穿。", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu tiếng Việt sang tiếng Trung, dùng từ gợi ý.",
+      "items": [
+        {"prompt": "Vì trời nóng nên tôi cởi áo khoác ra.", "given": ["因为……所以……"], "answer": "因为天热，所以我脱外套。", "answer_plus": "因为今天天气很热，所以我把外套脱下来了。", "src": "[phỏng theo 真题]"},
+        {"prompt": "Bạn đã từng mặc màu đen chưa?", "given": ["过"], "answer": "你穿过黑色的吗？", "answer_plus": "你穿过黑色的衣服吗？我觉得黑色很百搭。", "src": "[phỏng theo 真题]"},
+        {"prompt": "Làm ơn để quần áo lên giường.", "given": ["把"], "answer": "请把衣服放在床上。", "answer_plus": "请把干净的衣服放在床上，谢谢你。", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe audio rồi chọn đáp án đúng.",
+      "items": [
+        {"script": "这件衬衫打八折，现在只要一百块钱。", "q": "这件衬衫打几折？", "options": ["七折", "八折", "九折"], "answer": "B", "audio": "audio/nghe-1.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "我觉得深色比较好看，我们买深色的裤子吧。", "q": "他们想买什么颜色的裤子？", "options": ["浅色", "深色", "红色"], "answer": "B", "audio": "audio/nghe-2.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "这条裤子有点儿长，能不能换小一点儿的？", "q": "他觉得裤子怎么样？", "options": ["太长", "太贵", "太小"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "听后重复",
+      "part": "听后重复",
+      "instructions": "Nghe và nhắc lại theo đúng ngữ điệu.",
+      "items": [
+        {"script": "你今天穿得很时尚。", "audio": "audio/hskk-1.mp3"},
+        {"script": "这条裤子的尺码不合适，能换一条吗？", "audio": "audio/hskk-2.mp3"},
+        {"script": "因为要面试，所以我想穿得正式一点儿。", "audio": "audio/hskk-3.mp3"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "回答问题",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời.",
+      "items": [
+        {"script": "你买衣服喜欢深色还是浅色？", "hint": "我喜欢深色，因为比较好看。", "hint_plus": "我买衣服比较喜欢深色，因为深色比较好看，也比较正式。", "audio": "audio/hskk-4.mp3"},
+        {"script": "你有没有穿过让你觉得很独特的衣服？", "hint": "我穿过，是我朋友送我的礼物。", "hint_plus": "我穿过一件很独特的衣服，是我朋友送我的礼物，我很喜欢。", "audio": "audio/hskk-5.mp3"}
+      ]
+    }
+  ]
+}

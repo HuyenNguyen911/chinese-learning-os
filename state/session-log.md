@@ -61,3 +61,8 @@ _- Status: PENDING UPDATE_
 - Blocks: noi (8, có bổ sung 十字路口), dien_cho_trong (6, có bổ sung 一直走), doc_hieu (đường đến thư viện, tự soạn), sap_xep, dich_dat_cau, nghe, noi_hskk×2 (bỏ writing_prompt theo yêu cầu user) — 30 mục (hơi dài so chuẩn 29 nhưng không câu trùng; đã cập nhật phủ thêm nhóm từ 问路 mở rộng — 怎么走/一直走/拐/十字路口/红绿灯/附近 — mới thêm vào slide sau khi draft đầu; câu tránh trùng slide theo yêu cầu user, chỉ giữ chung từ vựng)
 - Output: buoi02_giaothong/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
 - Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
+
+## 2026-08-05 · Exercise Generator · HSK2 Buổi 4 (你穿红色的很好看)
+- Blocks: noi (7: 尺码/打折/试衣间/配饰/经典/百搭/合适), dien_cho_trong (5: 更/过去/因为/所以/条), doc_hieu (tin nhắn mua sắm tự soạn), sap_xep (把字句/过), dich_dat_cau (因为…所以…/过/把), nghe, noi_hskk×2 — 29 mục, không câu trùng. Trước khi duyệt đã rà lại toàn bộ câu theo đúng từ vựng đã dạy buổi 1-4 (đối chiếu corpus 汉字 toàn bộ slide, không chỉ danh sách 生词) — phát hiện & thay 8 từ ngoài phạm vi (陪/顾客/购买/藏青色/商品/将/如需/耐脏/冷/暖和/平时/而且/看起来/不一样/国外/少见), viết lại đoạn đọc hiểu bằng từ đã học.
+- Output: buoi04_trangphuc_mausac/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
