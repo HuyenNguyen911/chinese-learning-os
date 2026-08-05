@@ -30,7 +30,16 @@ Lưu ý encoding console: nếu cần in tiếng Trung ra terminal để debug, 
 ## Quy trình chuẩn (Giai đoạn B của skill)
 
 1. Hoàn thành nội dung ở Giai đoạn A (vai Master Chinese Teacher).
+1b. **Chủ động mở rộng chủ đề trước khi soạn** (2026-08-05): dựa vào chủ đề
+   buổi học, tự tìm/nghĩ thêm từ vựng/nội dung liên quan có thể bổ sung (không
+   chỉ bó trong sách gốc) — rồi **trình danh sách mở rộng cho user duyệt**
+   trước, chỉ triển khai vào slide sau khi được đồng ý. Không tự ý thêm rồi
+   mới báo.
 2. Ánh xạ nội dung sang các block JSON bên dưới — mỗi ý một slide, action title.
+   Nếu dùng `word_pair` cho từ vựng mở rộng: ghép cặp theo **CÙNG CHỦ ĐỀ
+   NHỎ/LIÊN QUAN NHAU** (vd đối lập 深色/浅色, cùng nhóm trang phục ngủ+ở nhà),
+   không ghép máy móc theo thứ tự liệt kê có sẵn — thứ tự gốc thường xen kẽ
+   danh từ/tính từ không liên quan (xem ví dụ ở bảng loại slide bên dưới).
 3. Tạo folder buổi `output/hskN/buoiX_<chude>/slide/` rồi ghi `buoiX.json` vào đó
    (ảnh vào `assets/` cùng cấp; path ảnh trong JSON là `assets/<tên>.jpg`).
 4. **Duyệt nội dung với user trước khi sinh audio.** Trình bày nội dung text (title +
@@ -137,6 +146,9 @@ bản cuối được chưa?" trước khi chạy, đừng tự suy diễn từ 
   dù nhân vật đó là nữ (vd hội thoại 2 mẹ con đều nữ). Sai giới tính → thêm
   field `"voices": {"<tên speaker>": "zh-CN-XiaoyiNeural"}` vào slide
   `dialogue` đó để ghi đè, key phải khớp đúng chuỗi `speaker` trong `turns[]`.
+  **Chủ động kiểm tra TRƯỚC khi chạy `slide_audio.py`** (2026-08-05): với MỌI
+  slide `dialogue`, xác nhận giới tính từng speaker khớp giọng sẽ auto-assign
+  theo thứ tự xuất hiện — không đợi user nghe ra rồi mới sửa.
 - `--rate=...` (CLI) override cho CẢ HAI loại cùng lúc nếu cần đồng nhất (vd
   buổi ngữ âm nhập môn muốn chậm hơn hẳn, `--rate=-30%`).
 
@@ -195,6 +207,19 @@ từng slide (`title/vocab/grammar/dialogue/bullets/exercise/table/image` hỗ t
 phổ biến. Luôn dùng query 1-3 từ đơn giản (`"flags"`, `"Eiffel Tower"`, `"panda"`) — nếu 0
 kết quả, rút ngắn lại trước khi đổi hẳn chủ đề tìm.
 
+**Quy trình chọn query khi từ trừu tượng (2026-08-05):** thử query bám sát
+NGHĨA TỪ trước; nếu từ là tính từ/khái niệm trừu tượng khó minh hoạ trực tiếp
+(vd 过时, 迷人, 有品味, 流行) → đổi sang query bám theo NỘI DUNG CÂU VÍ DỤ của
+từ đó thay vì cố tìm ảnh literal cho khái niệm. Không cần hỏi user trước khi
+thử — chỉ cần Read lại ảnh tải về để soát (bước 2 dưới) trước khi gắn vào slide.
+
+⚠️ **Soát nội dung ảnh, không chỉ soát đúng chủ đề:** ngoài việc ảnh có khớp
+nghĩa từ hay không, phải loại các ảnh phản cảm/hở hang/có chữ không phù hợp
+in trên đồ vật, ảnh người mẫu ăn mặc hở dù đúng chủ đề (vd tìm "swimsuit" ra
+ảnh bikini người mẫu) — đổi query cụ thể hơn (vd "beach towel", "swim gear
+flatlay") thay vì chấp nhận ảnh không phù hợp cho lớp học. Riêng từ nhạy cảm
+tự thân (vd 内衣) — cân nhắc bỏ qua ảnh, không cần cố tìm bằng được.
+
 **Bắt buộc 2 bước trước khi `build_deck.py`:**
 1. **Convert non-JPEG → JPEG thật.** Openverse đôi khi trả ảnh WEBP nhưng script vẫn lưu
    đuôi `.jpg` → `build_deck.py` sẽ crash `ValueError: unsupported image format ... WEBP`.
@@ -224,6 +249,15 @@ lỗi kiểu "sao chưa đổi" sau rebuild → nhắc user **đóng hẳn toàn
 (không chỉ đóng tab) rồi mở lại, trước khi kết luận có bug thật.
 
 ## Đồng bộ audio vào file .pptx đã bị sửa tay (không rebuild từ JSON)
+
+⚠️ **Bắt buộc hỏi trước khi rebuild sau khi đã mở file cho user xem** (2026-08-05,
+sự cố thật: user sửa tay cả buổi sáng trong PowerPoint, bị AI rebuild đè mất — chỉ
+cứu được nhờ file autosave tình cờ còn sót lại trong `AppData/Roaming/Microsoft/
+PowerPoint/*.tmp`). Ngay khi đã dùng `Invoke-Item`/mở file `.pptx` cho user xem 1
+lần, coi như file đó có thể đang/đã bị sửa tay — **trước khi chạy `build_deck.py`
+lần tiếp theo, PHẢI hỏi thẳng "bạn có sửa tay gì trong PowerPoint và đã lưu chưa"**.
+Có → dừng, xử lý theo quy trình đồng bộ audio bên dưới (không rebuild từ JSON). Chỉ
+rebuild thẳng khi chắc chắn user chưa đụng vào file kể từ lần mở gần nhất.
 
 User có thể chỉnh tay trực tiếp file `.pptx` đã build (xoá/tách/dời slide, đổi ảnh)
 thay vì sửa JSON rồi build lại — hợp lý vì rebuild từ JSON sẽ **xoá sạch** các chỉnh

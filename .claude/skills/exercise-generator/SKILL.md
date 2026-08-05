@@ -58,6 +58,17 @@ Mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` (do teaching-coach tạo trư
    bước này): quét mọi câu sản sinh/nghe (dien/sap/dich/nghe/听后重复) →
    (a) KHÔNG câu nào trùng nguyên văn; (b) đếm độ phủ vốn từ đã dạy. Có lỗi thì
    sửa rồi mới đi tiếp. Xem `worksheet/check_baitap.py`.
+4b. **Đối chiếu từ vựng với TOÀN BỘ nội dung đã dạy, không chỉ 生词 card**
+   (2026-08-05, buổi 4: user tự phát hiện 8+ từ ngoài phạm vi mà bước 4 không
+   bắt được). Bước 4 chỉ đếm "phủ" chứ không chặn từ LẠ chưa dạy lọt vào câu tự
+   sinh — cần thêm: gom toàn bộ text (`hz`) từ MỌI `buoiX.json` từ buổi 1 tới
+   buổi hiện tại (không chỉ field từ vựng `wordcard`/`word_pair`/`vocab`, mà cả
+   `dialogue.turns[].hz`, `passage.sentences[].hz`, `grammar.examples[].hz`,
+   `bullets`/`table` có chữ Hán — học viên tiếp xúc từ qua ví dụ/hội thoại dù
+   không phải thẻ 生词 riêng), rồi rà từng câu vừa soạn xem có từ/cụm nào KHÔNG
+   xuất hiện trong kho văn bản đó không (trừ hư từ/đại từ/số đếm cơ bản HSK1
+   hiển nhiên đã biết trước khóa). Từ lạ → đổi sang từ đã có trong kho, không
+   giữ nguyên rồi hy vọng học viên đoán được nghĩa.
 5. **Với block `nghe` / `noi_hskk`:** trình 听力文本 / câu hỏi nói dạng text cho
    user duyệt. **KHÔNG sinh MP3 ngay.**
 
