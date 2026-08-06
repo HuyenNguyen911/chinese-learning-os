@@ -19,7 +19,7 @@
 | 5 | `buoi05_thamnha` | 第一次去中国朋友家 | thăm nhà bạn TQ **+ động vật/thú cưng + giới thiệu bản thân/gia đình sâu** | 简单趋向补语(1)(2) · 都…了 | — | ✅ |
 | 6 | `buoi06_sinhnhat` | 小雪，生日快乐！ | sinh nhật, chúc mừng | ~~形容词重叠 · "什么的" · "地"~~ → đã build 状态补语(1)(2)[得] (lệch, xem ghi chú "Sửa 2026-08-06 (khi bóc Bài 7)") | L25 | ✅ |
 | 7 | `buoi07_thethao` | 他篮球打得很好 | thể thao (bóng rổ) | 状态补语(1)(2) [得] (ôn lại, đã dạy ở Buổi 6) · 紧缩复句"一…就…" | L25 | ⏳ |
-| 8 | `buoi08_trinho_sosanh` | 虽然你忘了，但是我记得 | mua sắm (đồng hồ/xem phim/đặt món), sinh nhật, trí nhớ, so sánh **+ hỏi giá/so sánh giá**⚠️ | 比较句(1)(2) [比] · 虽然…但是 | L28 · L23 | ⏳ |
+| 8 | `buoi08_trinho_sosanh` | 虽然你忘了，但是我记得 | mua sắm (đồng hồ/xem phim/đặt món), sinh nhật, trí nhớ, so sánh **+ hỏi giá/so sánh giá**⚠️ **+ nhận lỗi/xin lỗi/hứa sửa**⚠️ | 比较句(1)(2)[比] tách 6 dạng (cơ bản/一点儿/số lượng/还-更/phủ định/nghi vấn) · 虽然…但是 | L28 · L23 | ✅ |
 | — | `on1_bai1-8` | **Ôn 1** (giữa khoá) | ôn bài 1-8 + bảng hệ thống bổ ngữ (kết quả/xu hướng/得) + bảng 比较句(1)(2)(3) — chỉ ôn tập | — | — | ⏳ |
 | 9 | `buoi09_douong` | 我去买杯奶茶 | mua sắm (quần áo) + đồ uống (cà phê/trà sữa) + so sánh khoảng cách, đi bộ | 比较句(3) [没有] · 动词"离" · 时量补语(1) | L30 · L16 | ⏳ |
 | 10 | `buoi10_thicu` | 就要考试了 | thi cử, học tập **+ đặt lịch hẹn**⚠️ | 要/快/快要/就要…了 · 着(1)(2) (⚠️ trang 099 目标 chỉ liệt kê 主谓谓语句·选择问句·要/快/快要/就要…了, KHÔNG thấy 着 — nghi 着(1)(2) cũng bị lệch bài, chưa verify hết Bài 10 nên giữ tạm, cần đối chiếu ảnh đầy đủ trước khi sản xuất buổi 10) | — | ⏳ |
@@ -107,5 +107,10 @@ và ngữ pháp:
 Buổi 1 ✅ (slide + bài tập, đã duyệt 2026-08-02). Buổi 2 ✅ (slide + bài tập, đã duyệt
 2026-08-04 — có bổ sung nhóm từ 问路 ngoài 45 điểm sách, xem ghi chú kỹ thuật). Buổi 5 ✅
 (slide + bài tập, đã duyệt 2026-08-06 — 生词 slide đổi sang 20 từ nâng cao + mở rộng
-复合趋向补语, xem ghi chú kỹ thuật). Buổi 3-15 (trừ 5) + Ôn 1 + Ôn 2 xem trạng thái ở
-bảng trên (⚠️ dòng này có thể chưa đồng bộ hết với bảng — bảng trên là nguồn chân lý).
+复合趋向补语, xem ghi chú kỹ thuật). Buổi 8 ✅ (slide + bài tập, đã duyệt
+2026-08-06 — 生词 gộp chung 1 khối đầu bài (13 chính + 6 mở rộng nhận lỗi/xin
+lỗi), 課文 1-4 gộp liền nhau, 比较句 tách 6 slide riêng theo dạng câu, mở rộng
+hỏi giá dời từ Bài 9 sang; đã sửa 2 lỗi audio ở tool dùng chung — xem
+`state/session-log.md`). Buổi 3-4, 6-7, 9-15 (trừ 8) + Ôn 1 + Ôn 2 xem trạng
+thái ở bảng trên (⚠️ dòng này có thể chưa đồng bộ hết với bảng — bảng trên là
+nguồn chân lý).
