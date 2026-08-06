@@ -46,19 +46,26 @@ Yêu cầu cốt lõi (theo phỏng vấn user):
 
 Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, §8) khớp **một phần** (điểm nâng cao như 比较句/趋向补语/着/动量补语 nằm ở 第二册 → đánh dấu). Footer để học viên tự mở đọc/nghe.
 
+> ⚠️ **2026-08-06: bảng dưới đã được sửa lại theo verify BẰNG ẢNH TRANG THẬT** (không còn
+> đúng với bản gốc 2026-07-20 nữa — bản gốc suy đoán cột ngữ pháp từ TOC/text-extract thô,
+> sai lệch liên tiếp ở ranh giới Bài 3/4, 5/6/7, 8/9/10). Nguồn xác nhận: từng buổi có file
+> `output/hsk2/buoiXX_*/doc/bai-doc.md` ghi rõ số trang PDF đã đối chiếu. Bảng chân lý vận
+> hành = `output/hsk2/README.md` (luôn đọc file đó trước khi sản xuất buổi mới, bảng ở đây
+> chỉ đồng bộ lại cho khỏi lạc giữa 2 nguồn).
+
 | # | Bài (课文 tiêu đề) | Ngữ pháp (小语讲堂) | Chủ đề | Hán ngữ 第一册·下 |
 |---|---|---|---|---|
 | 1 | 她请我们吃了北京烤鸭 | 语气助词"吧"(2) · "是…的"句 · 兼语句 (请/让/叫) | mời ăn, món BK, nhờ vả | — |
-| 2 | 还是打车去北大吧 | 兼语句 · 还是…吧 · 多 (概数) · cụm làm định ngữ | giao thông, đề nghị ⟨**+ hỏi đường 怎么走**⟩ | L16 还是/或者 · L17 兼语 |
-| 3 | 我想去西安旅游 | 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因为…所以 | du lịch (Tây An) ⟨**+ đặt khách sạn**⟩ | L29 结果补语 · L19 动词重叠 · L27 因为…所以 |
-| 4 | 你穿红色的很好看 | "的"字短语 · 简单趋向补语(1)(2) · 都…了 · **把字句 (cơ bản, bổ sung)** | trang phục, màu sắc | L19 便宜一点儿 · (趋向补语→第二册) |
-| 5 | 第一次去中国朋友家 | 形容词重叠 · 什么的 · 结构助词"地" · 一…就… | thăm nhà bạn ⟨**lồng động vật/thú cưng + giới thiệu bản thân/gia đình sâu**⟩ | — |
-| 6 | 小雪，生日快乐！ | 状态补语(1)(2) [bổ ngữ trình độ **得**] | sinh nhật, chúc mừng | **L25 状态补语 得** |
-| 7 | 他篮球打得很好 | 比较句(1)(2) [**比**] | **thể thao** (bóng rổ) | L25 得 · (比较句→第二册) |
-| 8 | 虽然你忘了，但是我记得 | 虽然…但是 · 比较句(3) · 动词"离" | trí nhớ, so sánh | **L28 虽然…但是** · **L23 离** |
-| — | **Ôn 1** (giữa khoá) | ôn bài 1–8 + **bảng hệ thống bổ ngữ (kết quả/xu hướng/得) + bảng so sánh 比较句(1)(2)(3)** (chỉ ôn tập, không dạy mới) | — | — |
-| 9 | 我去买杯奶茶 | 时量补语(1) · 主谓谓语句 · 选择问句 | đồ uống, mua sắm ⟨**+ hỏi giá, so sánh giá**⟩ | **L30 时量补语** · L16 选择问 |
-| 10 | 就要考试了 | 要/快/快要/就要…了 · 动态助词"着"(1)(2) | thi cử, học tập ⟨**+ đặt lịch hẹn**⟩ | (快…了; 着→第二册) |
+| 2 | 还是打车去北大吧 | 还是…吧 · 多 (概数) · cụm làm định ngữ | giao thông, đề nghị ⟨**+ hỏi đường 怎么走**⟩ | L16 · L17 |
+| 3 | 我想去西安旅游 | 结果补语 · 动词重叠(1)(2) | du lịch (Tây An) ⟨**+ đặt khách sạn**⟩⚠️ | L29 · L19 · L27 |
+| 4 | 你穿红色的很好看 | 动态助词"过" · 因为…所以 · "的"字短语 · **把字句 (cơ bản, bổ sung)** | trang phục, màu sắc | L19 |
+| 5 | 第一次去中国朋友家 | 简单趋向补语(1)(2) · 都…了 | thăm nhà bạn ⟨**lồng động vật/thú cưng + giới thiệu bản thân/gia đình sâu**⟩ | — |
+| 6 | 小雪，生日快乐！ | 形容词重叠 · 固定短语"什么的" · 结构助词"地" (⚠️ **đã build SAI thành 状态补语(得)** — xem note dưới, quyết định giữ nguyên không sửa lại) | sinh nhật, chúc mừng | L25 |
+| 7 | 他篮球打得很好 | 状态补语(1)(2) [**得**] (ôn lại — đã dạy nhầm ở Buổi 6, xem note) · 紧缩复句"一……就……" | **thể thao** (bóng rổ) | L25 |
+| 8 | 虽然你忘了，但是我记得 | 比较句(1)(2) [**比**] · 虽然…但是 | trí nhớ, so sánh ⟨**+ hỏi giá, so sánh giá**⟩⚠️ | L28 · L23 |
+| — | **Ôn 1** (giữa khoá) | ôn bài 1–8 + **bảng hệ thống bổ ngữ (kết quả/xu hướng/得) + bảng so sánh 比较句(1)(2)** (chỉ ôn tập, không dạy mới) | — | — |
+| 9 | 我去买杯奶茶 | 比较句(3) [没有] · 动词"离" · 时量补语(1) | mua sắm (quần áo) + đồ uống (cà phê/trà sữa) + so sánh khoảng cách | L30 · L16 |
+| 10 | 就要考试了 | 主谓谓语句 · 选择问句 · 要/快/快要/就要…了 · 动态助词"着"(1)(2)⚠️chưa verify hết, xem note ⟨**+ đặt lịch hẹn**⟩ | thi cử, học tập | — |
 | 11 | 我最喜欢吃中国菜 | 程度副词"最" · **被字句 (đơn giản, bổ sung)** | ăn uống, sở thích | L?? (最) |
 | 12 | 这里比北京冷多了 | 比较句(4)(5)(6) · **连…都/也 (bổ sung)** | thời tiết, so sánh | (比较句→第二册) |
 | 13 | 我们爱上中文课 | 双宾语句(2) · 比较句(7)(8) | học tiếng Trung | **L17 双宾语句** |
@@ -80,17 +87,18 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 
 > **Bổ sung giao tiếp còn thiếu, lồng vào buổi có sẵn — KHÔNG dồn vào Ôn.** Đã đối chiếu nguồn chính thống (HSK 二级考试大纲, chinesetest.cn — xem §16b) trước khi chốt vị trí:
 > - **Hỏi đường (问路指路)** → lồng **Bài 2** (giao thông). ✅ Có trong 10 language task chính thức của HSK2.
-> - **Hỏi giá, so sánh giá (đổi tên từ "mặc cả" 2026-07-27 — bám đúng khung chính thức "讨论价格/质量/差异", không dạy hẳn kỹ năng trả giá kiểu chợ)** → lồng **Bài 9** (mua trà sữa/đồ uống). ✅ Khớp task chính thức "Shopping: discuss price/quality/differences".
+> - **Hỏi giá, so sánh giá (đổi tên từ "mặc cả" 2026-07-27 — bám đúng khung chính thức "讨论价格/质量/差异", không dạy hẳn kỹ năng trả giá kiểu chợ)** → lồng **Bài 8** (dời từ Bài 9 sang Bài 8, 2026-08-06 — verify bằng ảnh cho thấy Bài 9 KHÔNG có đoạn hỏi giá nào, còn 课文1 của Bài 8 có sẵn đoạn hỏi giá đồng hồ "八千八！" gắn liền với 比较句, khớp tự nhiên hơn). ✅ Khớp task chính thức "Shopping: discuss price/quality/differences".
 > - **Giới thiệu bản thân/gia đình sâu (2-3 phút, dùng ngữ pháp mới)** → lồng **Bài 5** (thăm nhà bạn TQ). ✅ Khớp topic chính thức "Family".
 > - **Đặt khách sạn** → lồng **Bài 3** (du lịch Tây An). ⚠️ **NGOÀI phạm vi chính thức HSK2** — không có trong 10 task/17 task đã tra được; giữ lại vì đây là mong muốn thực dụng cá nhân của user (không phải yêu cầu thi), đánh dấu rõ trong slide "kỹ năng thực tế bổ sung, ngoài chuẩn thi".
-> - **Đặt lịch hẹn (2026-07-27, dời từ Bài 6 → Bài 10)** → lồng **Bài 10** (thi cử, học tập), ghép tự nhiên với ngữ pháp 要/快/快要/就要…了 (vd 我跟老师约好了，下午两点就要见面了). ⚠️ **NGOÀI phạm vi chính thức HSK2** tương tự — lý do dời khỏi Bài 6: ghép với ngữ pháp "sắp diễn ra" hợp lý hơn hẳn so với bối cảnh sinh nhật (vốn khá gượng), đồng thời giữ Bài 6 gọn nhẹ (chỉ 1 điểm ngữ pháp 得).
+> - **Đặt lịch hẹn (2026-07-27, dời từ Bài 6 → Bài 10)** → lồng **Bài 10** (thi cử, học tập), ghép tự nhiên với ngữ pháp 要/快/快要/就要…了 (vd 我跟老师约好了，下午两点就要见面了). ⚠️ **NGOÀI phạm vi chính thức HSK2** tương tự — lý do dời khỏi Bài 6 vẫn hợp lý (ghép với ngữ pháp "sắp diễn ra" tự nhiên hơn sinh nhật), dù lý do phụ nêu ban đầu ("giữ Bài 6 gọn nhẹ chỉ 1 điểm 得") đã lỗi thời — Bài 6 thật có 3 điểm (形容词重叠/什么的/地), không phải 得 (xem bảng §4 đã sửa 2026-08-06).
 > - Ôn 2 vẫn giữ **capstone hội thoại** đã có trong thiết kế gốc, nhưng chỉ để **ôn tập/ứng dụng lại** các kỹ năng giao tiếp trên (đã dạy rải rác ở buổi 2/3/5/9/10), không dạy từ/ngữ pháp/tình huống mới.
 
 > **Bảng hệ thống hoá trong 2 buổi Ôn (2026-07-27, theo góp ý user — KHÔNG gom lại thành buổi riêng vì phá vỡ "buổi=bài" và tăng nguy cơ nhiễu giữa các loại bổ ngữ; thay vào đó hệ thống hoá bằng bảng so sánh thuần ôn tập):**
-> - **Ôn 1 — bảng bổ ngữ (1/2):** đối chiếu 结果补语 (B3) · 简单趋向补语 (B4) · 状态补语/得 (B6) — cấu trúc, ý nghĩa, ví dụ đặt cạnh nhau.
-> - **Ôn 1 — bảng 比较句 (1/2):** 比较句(1)(2) (B7) + 比较句(3) (B8) — liệt kê cả 4 mẫu câu (A比B+adj, A比B+adj+bổ ngữ, A有/没有B, A比B+động từ+得+比+adj).
+> - **Ôn 1 — bảng bổ ngữ (1/2):** đối chiếu 结果补语 (B3) · 简单趋向补语 (B5) · 状态补语/得 (B7) — cấu trúc, ý nghĩa, ví dụ đặt cạnh nhau.
+> - **Ôn 1 — bảng 比较句 (1/2):** 比较句(1)(2) (B8) + 比较句(3) (B9) — liệt kê cả 4 mẫu câu (A比B+adj, A比B+adj+bổ ngữ, A有/没有B, A比B+động từ+得+比+adj).
 > - **Ôn 2 — bảng bổ ngữ (2/2, nối Ôn 1 thành bảng tổng 6 loại):** + 时量补语 (B9) · 复合趋向补语 (B14) · 动量补语 (B15).
 > - **Ôn 2 — bảng 比较句 (2/2, nối thành bảng tổng 1-8):** + 比较句(4)(5)(6) (B12) + 比较句(7)(8) (B13).
+> (Cập nhật 2026-08-06 theo bảng §4 đã verify bằng ảnh — B4/B6 không còn giữ điểm bổ ngữ/比较句 nào so với bản gốc, đã đổi số bài tương ứng ở trên.)
 > - Cả 4 bảng đều là **tổng hợp lại nội dung đã dạy**, không giới thiệu cấu trúc/ví dụ mới chưa xuất hiện ở buổi trước đó.
 
 ## 5. Nguồn vocab mỗi bài (từ sách chính, không tự nghĩ)

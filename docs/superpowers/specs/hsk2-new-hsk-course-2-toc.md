@@ -9,32 +9,43 @@
 
 ## 15 bài (课文 tiêu đề + trang + 小语讲堂 ngữ pháp)
 
-| Bài | 课文 (tiêu đề đại diện) | Nghĩa | Trang | Ngữ pháp (小语讲堂) |
-|---|---|---|---|---|
-| 1 | 她请我们吃了北京烤鸭 | Cô ấy mời chúng tôi ăn vịt quay BK | 001 | 语气助词"吧"(2) phỏng đoán · "是…的"句 |
-| 2 | 还是打车去北大吧 | Hay là bắt xe đến ĐH Bắc Kinh | 010 | 兼语句 · 固定格式"还是…吧" · 用"多"表达概数 · động từ/cụm chủ-vị làm định ngữ |
-| 3 | 我想去西安旅游 | Tôi muốn đi du lịch Tây An | 019 | 结果补语 · 动词重叠(1)(2) · 动态助词"过" · 因果复句"因为…所以" |
-| 4 | 你穿红色的很好看 | Cậu mặc đồ đỏ đẹp lắm | 029 | "的"字短语 · 简单趋向补语(1)(2) · 固定格式"都…了" |
-| 5 | 第一次去中国朋友家 | Lần đầu đến nhà bạn TQ | 037 | 形容词重叠 · 固定短语"什么的" · 结构助词"地" · 紧缩复句"一…就…" |
-| 6 | 小雪，生日快乐！ | Chúc mừng sinh nhật Tiểu Tuyết | 056 | 状态补语(1)(2) [bổ ngữ trình độ 得] |
-| 7 | 他篮球打得很好 | Cậu ấy chơi bóng rổ rất giỏi | 064 | 比较句(1)(2) [so sánh 比] |
-| 8 | 虽然你忘了，但是我记得 | Tuy cậu quên nhưng tớ nhớ | ~074 | 转折复句"虽然…但是" · 比较句(3) · 动词"离" |
-| 9 | 我去买杯奶茶 | Tớ đi mua ly trà sữa | 084 | 时量补语(1) · 主谓谓语句 · 选择问句 |
-| 10 | 就要考试了 | Sắp thi rồi | 093 | 固定格式"要/快/快要/就要…了" · 动态助词"着"(1)(2) |
-| 11 | 我最喜欢吃中国菜 | Tớ thích nhất ăn món TQ | ~??? | 程度副词"最" |
-| 12 | 这里比北京冷多了 | Ở đây lạnh hơn BK nhiều | 102 | 比较句(4)(5)(6) |
-| 13 | 我们爱上中文课 | Chúng tôi thích giờ học tiếng Trung | 112 | 双宾语句(2) · 比较句(7)(8) |
-| 14 | 一个人过年多没意思啊 | Ăn Tết một mình chán quá | 121 | 存现句 · 复合趋向补语 |
-| 15 | 我想再去一次中国 | Tôi muốn đi TQ thêm lần nữa | 130 | 动量补语(1)(2) · "有"字句(2) |
+> ⚠️ **Bảng này gán ngữ pháp theo thứ tự liệt kê trong 目录 (mục lục), KHÔNG phải đọc trực
+> tiếp từng bài** — đã chứng minh sai liên tiếp ở ranh giới Bài 3/4, 5/6/7, 8/9/10 khi đối
+> chiếu bằng ảnh trang thật (xem `output/hsk2/README.md`, luôn là nguồn chân lý cập nhật
+> nhất). Bảng dưới đã đồng bộ lại theo verify-bằng-ảnh tính đến 2026-08-06; cột "Trang" có
+> dấu `~`/`?` nghĩa là CHƯA verify bằng ảnh, chỉ suy từ mục lục — không dùng để bóc bài, phải
+> tự render ảnh trang xác nhận số trang thật trước khi bóc bất kỳ bài nào còn dấu này.
 
-> Gán ngữ pháp ↔ bài theo thứ tự 小语讲堂 trong 目录 (p13–15); tiêu đề + trang chắc chắn, một vài điểm ngữ pháp ranh giới bài cần soi lại khi bóc chi tiết bài (Task 0.1).
+| Bài | 课文 (tiêu đề đại diện) | Nghĩa | Trang (đã verify ảnh) | Ngữ pháp (小语讲堂) |
+|---|---|---|---|---|
+| 1 | 她请我们吃了北京烤鸭 | Cô ấy mời chúng tôi ăn vịt quay BK | 001 | 语气助词"吧"(2) phỏng đoán · "是…的"句 · 兼语句 |
+| 2 | 还是打车去北大吧 | Hay là bắt xe đến ĐH Bắc Kinh | 010 | 固定格式"还是…吧" · 用"多"表达概数 · động từ/cụm chủ-vị làm định ngữ |
+| 3 | 我想去西安旅游 | Tôi muốn đi du lịch Tây An | 019 | 结果补语 · 动词重叠(1)(2) |
+| 4 | 你穿红色的很好看 | Cậu mặc đồ đỏ đẹp lắm | 029 | 动态助词"过" · 因果复句"因为…所以" · "的"字短语 |
+| 5 | 第一次去中国朋友家 | Lần đầu đến nhà bạn TQ | 037–045 | 简单趋向补语(1)(2) · 固定格式"都…了" |
+| 6 | 小雪，生日快乐！ | Chúc mừng sinh nhật Tiểu Tuyết | ~046–062 | 形容词重叠 · 固定短语"什么的" · 结构助词"地" (⚠️ đã build sai thành 状态补语/得, xem README — quyết định giữ nguyên) |
+| 7 | 他篮球打得很好 | Cậu ấy chơi bóng rổ rất giỏi | 072–079 | 状态补语(1)(2) [bổ ngữ trình độ 得] · 紧缩复句"一…就…" |
+| 8 | 虽然你忘了，但是我记得 | Tuy cậu quên nhưng tớ nhớ | 079–087 | 比较句(1)(2) [so sánh 比] · 转折复句"虽然…但是" |
+| 9 | 我去买杯奶茶 | Tớ đi mua ly trà sữa | 088–098 | 比较句(3) [没有] · 动词"离" · 时量补语(1) |
+| 10 | 就要考试了 | Sắp thi rồi | 099–? | 主谓谓语句 · 选择问句 · 固定格式"要/快/快要/就要…了" · 动态助词"着"(1)(2) ⚠️CHƯA verify hết, nghi cũng lệch |
+| 11 | 我最喜欢吃中国菜 | Tớ thích nhất ăn món TQ | ~??? | 程度副词"最" |
+| 12 | 这里比北京冷多了 | Ở đây lạnh hơn BK nhiều | ~102 | 比较句(4)(5)(6) |
+| 13 | 我们爱上中文课 | Chúng tôi thích giờ học tiếng Trung | ~112 | 双宾语句(2) · 比较句(7)(8) |
+| 14 | 一个人过年多没意思啊 | Ăn Tết một mình chán quá | ~121 | 存现句 · 复合趋向补语 |
+| 15 | 我想再去一次中国 | Tôi muốn đi TQ thêm lần nữa | ~130 | 动量补语(1)(2) · "有"字句(2) |
+
+> Bài 1–9 đã verify bằng ảnh trang thật (chi tiết + trích 课文/生词 ở
+> `output/hsk2/buoiXX_*/doc/bai-doc.md` từng buổi). Bài 10 chỉ verify biên bắt đầu (trang
+> 099), NỘI DUNG + biên kết thúc CHƯA verify. Bài 11–15 CHƯA verify gì — số trang còn dấu
+> `~`/`?` là suy từ mục lục gốc, khả năng cao còn lệch tiếp giống các bài trước, **PHẢI
+> render ảnh xác nhận trước khi bóc**, không tự tin dùng bảng này làm nguồn cuối.
 
 ## Chủ đề bao phủ (đối chiếu yêu cầu user)
 
 - ✅ **Thể thao:** Bài 7 (篮球 bóng rổ).
 - ✅ **Giải trí/sở thích/ăn uống:** Bài 9 (trà sữa), 11 (món TQ), 1 (vịt quay), 13 (lớp học).
 - ✅ **Du lịch:** Bài 3 (Tây An), 15 (đi TQ), 2 (giao thông).
-- ✅ **So sánh 比:** Bài 7,8,12,13 (比较句 1–8) — **sách chính CÓ 比 đầy đủ** (Hán ngữ 第一册·下 thiếu, nhưng sách chính phủ đủ → hết lo).
+- ✅ **So sánh 比:** Bài 8,9,12,13 (比较句 1–8) — **sách chính CÓ 比 đầy đủ** (Hán ngữ 第一册·下 thiếu, nhưng sách chính phủ đủ → hết lo). (Sửa 2026-08-06: KHÔNG phải Bài 7 — verify bằng ảnh cho thấy Bài 7 = 状态补语/得 + 一…就…, xem `output/hsk2/README.md`.)
 - ⚠️ **Động vật & thú cưng:** **KHÔNG có bài riêng** trong 15 bài. → cần quyết: (a) bám sách 15 bài, bỏ pets; (b) thêm 1 buổi mở rộng pets ngoài sách; (c) lồng vài từ động vật vào bài phù hợp.
 
 ## Hệ quả cho spec

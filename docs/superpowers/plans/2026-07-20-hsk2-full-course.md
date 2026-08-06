@@ -140,19 +140,20 @@ slide còn đổi. Duyệt xong (hoặc chỉnh theo feedback rồi duyệt lạ
   - [ ] Step 1-6 Procedure P (Viết: đoạn ngắn kể chuyện du lịch) · Step 7 Verify + trình user duyệt · Step 8 P9.
 - [ ] **Task 4 — buoi04_trangphuc_mausac** (Bài 4 你穿红色的很好看): 动态助词"过" · 因为…所以 · "的"字短语 · **把字句 cơ bản (bổ sung, ghép tự nhiên với 简单趋向补语: 把衣服穿上/脱下来)**. Hán ngữ L19. **Sửa 2026-08-04:** 简单趋向补语(1)(2)/都…了 KHÔNG thuộc Bài 4 — thực ra thuộc Bài 5 (xác nhận trang objectives 053).
   - [ ] Step 1-6 Procedure P (Viết: câu 把) · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 5 — buoi05_thamnha** (Bài 5 第一次去中国朋友家): 简单趋向补语(1)(2) · 都…了 · 形容词重叠 · 什么的 · 结构助词"地" · 一…就… (4 điểm cuối CHƯA xác minh lại, có thể lệch tiếp sang Bài 6 — soát khi sản xuất tới lượt). **Lồng động vật/thú cưng (từ mở rộng ngoài 200) + giới thiệu bản thân/gia đình sâu 2-3 phút bằng ngữ pháp mới (bổ sung, đã đối chiếu chính thức).** Hán ngữ —.
-  - [ ] Step 1-6 Procedure P (HSKK: tự giới thiệu bản thân/gia đình) · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 6 — buoi06_sinhnhat** (Bài 6 小雪，生日快乐！): 状态补语(1)(2) [得]. Hán ngữ L25.
-  - [ ] Step 1-6 Procedure P (Viết: câu 得) · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 7 — buoi07_thethao** (Bài 7 他篮球打得很好): **状态补语/得** (打得很好) · **比较句(1)(2)** (比). Hán ngữ L25. Lỗi VN: quên 得 (打篮球好→打得很好); 比 thừa 很 (他比我很高✗).
-  - [ ] Step 1-6 Procedure P (Viết: câu 得/比) · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 8 — buoi08_trinho_sosanh** (Bài 8 虽然你忘了，但是我记得): 虽然…但是 · 比较句(3) · 动词"离". Hán ngữ L28/L23.
+- [ ] **Task 5 — buoi05_thamnha** (Bài 5 第一次去中国朋友家): 简单趋向补语(1)(2) · 都…了 (✅ đã verify bằng ảnh 2026-08-05/06 — CHỈ 2 điểm này, 形容词重叠/什么的/地 thuộc Bài 6, 一…就… thuộc Bài 7, không thuộc Bài 5). **Lồng động vật/thú cưng (từ mở rộng ngoài 200) + giới thiệu bản thân/gia đình sâu 2-3 phút bằng ngữ pháp mới (bổ sung, đã đối chiếu chính thức).** Hán ngữ —.
+  - [x] Step 1-6 Procedure P (HSKK: tự giới thiệu bản thân/gia đình) · Step 7 Verify + trình user duyệt · Step 8 P9. **XONG, đã duyệt 2026-08-06.**
+- [ ] **Task 6 — buoi06_sinhnhat** (Bài 6 小雪，生日快乐！): ngữ pháp THẬT theo sách = 形容词重叠 · 固定短语"什么的" · 结构助词"地" (verify ảnh trang 062-070, 2026-08-06) — nhưng **ĐÃ BUILD SAI** thành 状态补语(1)(2)[得] (ngữ pháp thật của Bài 7) do lúc build lấy nhầm dòng bảng cũ chưa đồng bộ. **Quyết định user (2026-08-06): KHÔNG sửa lại, giữ nguyên đã duyệt/push.** Hán ngữ L25 (khớp 得, không khớp nội dung thật của bài này).
+  - [x] Step 1-6 Procedure P (Viết: câu 得) · Step 7 Verify + trình user duyệt · Step 8 P9. **XONG (nội dung ngữ pháp lệch, đã chấp nhận).**
+- [ ] **Task 7 — buoi07_thethao** (Bài 7 他篮球打得很好): ngữ pháp THẬT = **状态补语(1)(2)/得** (打得很好 — ôn lại, đã dạy nhầm ở Buổi 6) · **紧缩复句"一……就……"** (mới). Hán ngữ L25. (✅ đã verify bằng ảnh trang 072-077, 2026-08-06 — KHÔNG có 比较句 ở bài này, xem `output/hsk2/buoi07_thethao/doc/bai-doc.md`.) Lỗi VN: quên 得 (打篮球好→打得很好).
+  - [ ] Step 1-6 Procedure P (Viết: câu 得, câu 一…就…) · Step 7 Verify + trình user duyệt · Step 8 P9.
+- [ ] **Task 8 — buoi08_trinho_sosanh** (Bài 8 虽然你忘了，但是我记得): ngữ pháp THẬT = **比较句(1)(2)/比** (trang 081/083) · **虽然…但是** (trang 084-085) — KHÔNG có 比较句(3)/动词"离" (thuộc Bài 9). **+ Lồng hỏi giá/so sánh giá (dời từ Bài 9 sang đây 2026-08-06 — 课文1 có sẵn đoạn hỏi giá đồng hồ "八千八！").** Hán ngữ L28/L23. Lỗi VN: 比 thừa 很 (他比我很高✗).
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 9 — Ôn 1** (`on1_bai1-8`): ôn ngữ pháp bài 1–8 (是…的/吧, 结果补语/动词重叠/过/因为所以, 趋向补语/把字句 Bài 4, 形容词重叠/一…就, 得, 比较句1-3, 虽然但是/离) **+ 2 slide bảng hệ thống hoá thuần ôn tập: (a) bảng bổ ngữ 结果补语 vs 简单趋向补语 vs 状态补语得; (b) bảng 比较句(1)(2)(3)**. Slide ôn + bài tập tổng hợp (đủ 听/读/书写/HSKK). CHỈ ôn tập.
+- [ ] **Task 9 — Ôn 1** (`on1_bai1-8`): ôn ngữ pháp bài 1–8 (是…的/吧·兼语句 B1, 还是…吧/多/định ngữ B2, 结果补语/动词重叠 B3, 过/因为所以/的字短语/把字句 B4, 简单趋向补语/都了 B5, 形容词重叠/什么的/地 B6(*), 状态补语得/一…就… B7, 比较句1-2/虽然但是 B8) **+ 2 slide bảng hệ thống hoá thuần ôn tập: (a) bảng bổ ngữ 结果补语(B3) vs 简单趋向补语(B5) vs 状态补语得(B7); (b) bảng 比较句(1)(2)(B8)+(3)(B9, xem trước)**. (*) B6 ôn theo nội dung ĐÃ DẠY THẬT (状态补语, trùng B7) vì quyết định không sửa lại B6 — tránh ôn nhầm nội dung chưa từng dạy. Slide ôn + bài tập tổng hợp (đủ 听/读/书写/HSKK). CHỈ ôn tập.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 10 — buoi09_douong** (Bài 9 我去买杯奶茶): 时量补语(1) · 主谓谓语句 · 选择问句. **+ Lồng hỏi giá/so sánh giá (bổ sung, đã đối chiếu chính thức).** Hán ngữ L30/L16.
+- [ ] **Task 10 — buoi09_douong** (Bài 9 我去买杯奶茶): ngữ pháp THẬT = **比较句(3)/没有** (trang 090-091) · **动词"离"** (trang 092) · **时量补语(1)** (trang 093-094) — KHÔNG có 主谓谓语句/选择问句 (thuộc Bài 10). Chủ đề đầy đủ: mua quần áo + mua đồ uống (cà phê/trà sữa) + so sánh khoảng cách/đi bộ. (Phần "hỏi giá" ĐÃ DỜI sang Task 8/Bài 8, xem note đó — Bài 9 không có đoạn giá cả nào.) Hán ngữ L30/L16.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 11 — buoi10_thicu** (Bài 10 就要考试了): 要/快/快要/就要…了 · 动态助词"着"(1)(2). **+ Lồng đặt lịch hẹn (bổ sung, ngoài chuẩn thi — vd 我跟老师约好了，下午两点就要见面了).** Hán ngữ —.
+- [ ] **Task 11 — buoi10_thicu** (Bài 10 就要考试了): ngữ pháp bắt đầu trang 099 = **主谓谓语句 · 选择问句** (dời từ Bài 9 sang đây) · 要/快/快要/就要…了. ⚠️ **动态助词"着"(1)(2) CHƯA thấy trong 目标 trang 099** (chỉ verify biên, chưa bóc hết bài) — nghi cũng lệch, PHẢI verify đầy đủ bằng ảnh trước khi bắt đầu task này. **+ Lồng đặt lịch hẹn (bổ sung, ngoài chuẩn thi — vd 我跟老师约好了，下午两点就要见面了).** Hán ngữ —.
+  - [ ] Step 0 (mới, bắt buộc): verify đầy đủ Bài 10 bằng ảnh trang 099-108(?) trước khi soạn nội dung — xác nhận 着(1)(2) có thật thuộc bài này không.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
 - [ ] **Task 12 — buoi11_monan_yeuthich** (Bài 11 我最喜欢吃中国菜): 程度副词"最" · **被字句 đơn giản (bổ sung, vd 这道菜太好吃了都被吃光了)**. Hán ngữ —.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
