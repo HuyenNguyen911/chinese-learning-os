@@ -1,0 +1,577 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 6",
+    "topic": "小雪，生日快乐！ — Sinh nhật, chúc mừng + 状态补语 (得)"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "小雪，生日快乐！",
+      "subtitle": "Xiǎoxuě, shēngrì kuàilè! — Chúc mừng sinh nhật Tiểu Tuyết",
+      "footer": "",
+      "image": "assets/birthday_party.jpg"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么",
+      "image": "assets/placeholder_goals.jpg",
+      "bullets": [
+        "状态补语 (得) — nói ai làm việc gì \"như thế nào\" (giỏi/dở/nhanh/chậm...)",
+        "Phân biệt 3 chữ \"de\": 的 · 地 · 得",
+        "Từ vựng: sinh nhật, tiệc, chúc mừng",
+        "Mở rộng: lời chúc theo đối tượng + phong tục sinh nhật ở Trung Quốc"
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 1/14",
+      "hz": "长",
+      "py": "cháng",
+      "pos": "adj.",
+      "vn": "dài",
+      "image": "assets/words/chang_adj.jpg",
+      "examples": [
+        {
+          "hz": "生日会开得时间不长，两个小时就结束了。",
+          "py": "Shēngrì huì kāi de shíjiān bù cháng, liǎng ge xiǎoshí jiù jiéshù le.",
+          "vn": "Tiệc sinh nhật tổ chức không lâu, hai tiếng là kết thúc."
+        },
+        {
+          "hz": "她的头发很长。",
+          "py": "Tā de tóufa hěn cháng.",
+          "vn": "Tóc cô ấy rất dài."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 2/14",
+      "hz": "蜡烛",
+      "py": "làzhú",
+      "pos": "n.",
+      "vn": "nến",
+      "image": "assets/words/lazhu.jpg",
+      "examples": [
+        {
+          "hz": "生日蛋糕上有几根蜡烛？",
+          "py": "Shēngrì dàngāo shàng yǒu jǐ gēn làzhú?",
+          "vn": "Trên bánh sinh nhật có mấy cây nến?"
+        },
+        {
+          "hz": "请你帮我点一下蜡烛。",
+          "py": "Qǐng nǐ bāng wǒ diǎn yíxià làzhú.",
+          "vn": "Bạn giúp tôi đốt nến nhé."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 3/14",
+      "hz": "打开",
+      "py": "dǎkāi",
+      "pos": "v.",
+      "vn": "mở ra",
+      "image": "assets/words/dakai.jpg",
+      "examples": [
+        {
+          "hz": "我们一起打开礼物吧！",
+          "py": "Wǒmen yìqǐ dǎkāi lǐwù ba!",
+          "vn": "Chúng ta cùng mở quà đi!"
+        },
+        {
+          "hz": "你可以帮我打开这个盒子吗？",
+          "py": "Nǐ kěyǐ bāng wǒ dǎkāi zhège hézi ma?",
+          "vn": "Bạn có thể giúp tôi mở cái hộp này không?"
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 4/14",
+      "hz": "蛋糕",
+      "py": "dàngāo",
+      "pos": "n.",
+      "vn": "bánh kem",
+      "image": "assets/words/dangao.jpg",
+      "examples": [
+        {
+          "hz": "妈妈给我买了一个巧克力蛋糕。",
+          "py": "Māma gěi wǒ mǎile yí ge qiǎokèlì dàngāo.",
+          "vn": "Mẹ mua cho tôi một cái bánh kem sô-cô-la."
+        },
+        {
+          "hz": "这个蛋糕看起来很好吃。",
+          "py": "Zhège dàngāo kànqǐlái hěn hǎochī.",
+          "vn": "Cái bánh kem này nhìn có vẻ rất ngon."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 5/14",
+      "hz": "地",
+      "py": "de",
+      "pos": "part.",
+      "vn": "trợ từ kết cấu (ôn lại từ bài 5, đứng trước động từ)",
+      "image": "assets/words/de_particle.jpg",
+      "examples": [
+        {
+          "hz": "大家高兴地唱生日歌。",
+          "py": "Dàjiā gāoxìng de chàng shēngrì gē.",
+          "vn": "Mọi người vui vẻ hát bài hát sinh nhật."
+        },
+        {
+          "hz": "她慢慢地走进来。",
+          "py": "Tā mànmàn de zǒu jìnlái.",
+          "vn": "Cô ấy chậm chậm bước vào."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 6/14",
+      "hz": "唱",
+      "py": "chàng",
+      "pos": "v.",
+      "vn": "hát",
+      "image": "assets/words/chang_v.jpg",
+      "examples": [
+        {
+          "hz": "我们一起唱生日歌吧！",
+          "py": "Wǒmen yìqǐ chàng shēngrì gē ba!",
+          "vn": "Chúng ta cùng hát bài sinh nhật đi!"
+        },
+        {
+          "hz": "你会唱这首歌吗？",
+          "py": "Nǐ huì chàng zhè shǒu gē ma?",
+          "vn": "Bạn biết hát bài này không?"
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 7/14",
+      "hz": "画",
+      "py": "huà",
+      "pos": "v./n.",
+      "vn": "vẽ; bức tranh",
+      "image": "assets/words/hua.jpg",
+      "examples": [
+        {
+          "hz": "我给你画了一张生日卡片。",
+          "py": "Wǒ gěi nǐ huàle yì zhāng shēngrì kǎpiàn.",
+          "vn": "Tôi vẽ cho bạn một tấm thiệp sinh nhật."
+        },
+        {
+          "hz": "墙上有一幅画。",
+          "py": "Qiáng shàng yǒu yì fú huà.",
+          "vn": "Trên tường có một bức tranh."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 8/14",
+      "hz": "画笔",
+      "py": "huàbǐ",
+      "pos": "n.",
+      "vn": "bút vẽ",
+      "image": "assets/words/huabi.jpg",
+      "examples": [
+        {
+          "hz": "这是我送你的生日礼物——一套画笔。",
+          "py": "Zhè shì wǒ sòng nǐ de shēngrì lǐwù — yí tào huàbǐ.",
+          "vn": "Đây là quà sinh nhật tôi tặng bạn — một bộ bút vẽ."
+        },
+        {
+          "hz": "这支画笔是新的。",
+          "py": "Zhè zhī huàbǐ shì xīn de.",
+          "vn": "Cây bút vẽ này còn mới."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 9/14",
+      "hz": "快乐",
+      "py": "kuàilè",
+      "pos": "adj.",
+      "vn": "vui vẻ",
+      "image": "assets/words/kuaile.jpg",
+      "examples": [
+        {
+          "hz": "祝你生日快乐！",
+          "py": "Zhù nǐ shēngrì kuàilè!",
+          "vn": "Chúc bạn sinh nhật vui vẻ!"
+        },
+        {
+          "hz": "今天大家都很快乐。",
+          "py": "Jīntiān dàjiā dōu hěn kuàilè.",
+          "vn": "Hôm nay mọi người đều rất vui."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 10/14",
+      "hz": "肉",
+      "py": "ròu",
+      "pos": "n.",
+      "vn": "thịt",
+      "image": "assets/words/rou.jpg",
+      "examples": [
+        {
+          "hz": "生日聚会上有很多肉和鱼。",
+          "py": "Shēngrì jùhuì shàng yǒu hěn duō ròu hé yú.",
+          "vn": "Tiệc sinh nhật có nhiều thịt và cá."
+        },
+        {
+          "hz": "我不太喜欢吃肉。",
+          "py": "Wǒ bú tài xǐhuan chī ròu.",
+          "vn": "Tôi không thích ăn thịt lắm."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 11/14",
+      "hz": "生日",
+      "py": "shēngrì",
+      "pos": "n.",
+      "vn": "sinh nhật",
+      "image": "assets/words/shengri.jpg",
+      "examples": [
+        {
+          "hz": "你的生日是几月几号？",
+          "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+          "vn": "Sinh nhật bạn là ngày mấy tháng mấy?"
+        },
+        {
+          "hz": "今天是我的生日。",
+          "py": "Jīntiān shì wǒ de shēngrì.",
+          "vn": "Hôm nay là sinh nhật của tôi."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 12/14",
+      "hz": "舒服",
+      "py": "shūfu",
+      "pos": "adj.",
+      "vn": "thoải mái, dễ chịu",
+      "image": "assets/words/shufu.jpg",
+      "examples": [
+        {
+          "hz": "过生日的时候，穿得舒服最重要。",
+          "py": "Guò shēngrì de shíhou, chuān de shūfu zuì zhòngyào.",
+          "vn": "Khi ăn mừng sinh nhật, mặc thoải mái là quan trọng nhất."
+        },
+        {
+          "hz": "你今天看起来不太舒服。",
+          "py": "Nǐ jīntiān kànqǐlái bú tài shūfu.",
+          "vn": "Hôm nay trông bạn không thoải mái lắm."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 13/14",
+      "hz": "忘",
+      "py": "wàng",
+      "pos": "v.",
+      "vn": "quên",
+      "image": "assets/words/wang.jpg",
+      "examples": [
+        {
+          "hz": "你忘了我的生日吗？",
+          "py": "Nǐ wàngle wǒ de shēngrì ma?",
+          "vn": "Bạn quên sinh nhật tôi rồi sao?"
+        },
+        {
+          "hz": "我忘了带钥匙。",
+          "py": "Wǒ wàngle dài yàoshi.",
+          "vn": "Tôi quên mang chìa khoá."
+        }
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 14/14",
+      "hz": "鱼",
+      "py": "yú",
+      "pos": "n.",
+      "vn": "con cá",
+      "image": "assets/words/yu.jpg",
+      "examples": [
+        {
+          "hz": "生日的时候，奶奶做了一条鱼。",
+          "py": "Shēngrì de shíhou, nǎinai zuòle yì tiáo yú.",
+          "vn": "Vào sinh nhật, bà làm một con cá."
+        },
+        {
+          "hz": "这条鱼很新鲜。",
+          "py": "Zhè tiáo yú hěn xīnxiān.",
+          "vn": "Con cá này rất tươi."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 生日聚会",
+      "title": "生词拓展",
+      "image": "assets/vocab_ext_candles.jpg",
+      "items": [
+        { "hz": "吹蜡烛", "py": "chuī làzhú", "vn": "thổi nến" },
+        { "hz": "生日歌", "py": "shēngrì gē", "vn": "bài hát sinh nhật" },
+        { "hz": "惊喜", "py": "jīngxǐ", "vn": "bất ngờ" },
+        { "hz": "聚会", "py": "jùhuì", "vn": "buổi tiệc, họp mặt" }
+      ],
+      "footer_note": "Mở rộng ngoài sách chính — nhóm từ thực dụng khi nói về tiệc sinh nhật."
+    },
+    {
+      "type": "vocab",
+      "kicker": "祝福语 · 对长辈",
+      "title": "Lời chúc — Với người lớn",
+      "image": "assets/greet_elder.jpg",
+      "items": [
+        { "hz": "祝您福如东海，寿比南山！", "py": "Zhù nín fú rú dōnghǎi, shòu bǐ nánshān!", "vn": "Chúc người phúc như biển Đông, thọ như núi Nam." },
+        { "hz": "祝您身体健康，万事如意！", "py": "Zhù nín shēntǐ jiànkāng, wànshì rúyì!", "vn": "Chúc người sức khoẻ dồi dào, mọi sự như ý." }
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "祝福语 · 对同龄人",
+      "title": "Lời chúc — Với bạn bè",
+      "image": "assets/greet_friend.jpg",
+      "items": [
+        { "hz": "祝你生日快乐，心想事成！", "py": "Zhù nǐ shēngrì kuàilè, xīnxiǎng shìchéng!", "vn": "Chúc sinh nhật vui vẻ, điều ước thành hiện thực." },
+        { "hz": "越长越漂亮（帅）！", "py": "Yuè zhǎng yuè piàoliang (shuài)!", "vn": "Càng lớn càng đẹp (đẹp trai)!" }
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "祝福语 · 对小朋友",
+      "title": "Lời chúc — Với em nhỏ",
+      "image": "assets/greet_kid.jpg",
+      "items": [
+        { "hz": "祝你生日快乐，快快长大！", "py": "Zhù nǐ shēngrì kuàilè, kuàikuài zhǎngdà!", "vn": "Chúc sinh nhật vui vẻ, mau ăn mau lớn." },
+        { "hz": "祝你天天开心，好好学习！", "py": "Zhù nǐ tiāntiān kāixīn, hǎohǎo xuéxí!", "vn": "Chúc ngày nào cũng vui, học tập chăm chỉ." }
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 1/6",
+      "title": "长寿面 (chángshòu miàn) — Mì trường thọ",
+      "image": "assets/culture_noodles.jpg",
+      "bullets": [
+        "Ăn một sợi mì dài không cắt đứt, biểu tượng cho tuổi thọ kéo dài."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 2/6",
+      "title": "红鸡蛋 (hóng jīdàn) — Trứng nhuộm đỏ",
+      "image": "assets/culture_egg.jpg",
+      "bullets": [
+        "Tượng trưng cho sự viên mãn, may mắn và đổi mới."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 3/6",
+      "title": "过农历生日 (guò nónglì shēngrì) — Sinh nhật âm lịch",
+      "image": "assets/culture_lunar.jpg",
+      "bullets": [
+        "Người lớn tuổi thường tổ chức sinh nhật theo ngày âm lịch truyền thống hơn dương lịch."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 4/6",
+      "title": "过大寿 (guò dàshòu) — Mừng thọ lớn",
+      "bullets": [
+        "Các mốc tuổi như 60, 70, 80 được tổ chức rất lớn để con cháu thể hiện lòng hiếu thảo."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 5/6",
+      "title": "送礼禁忌 (sònglǐ jìnjì) — Kiêng tặng quà",
+      "image": "assets/culture_gift.jpg",
+      "bullets": [
+        "不送钟/表 (zhōng/biǎo — đồng hồ) — âm giống 终 (zhōng, kết thúc)",
+        "不送毛巾 (máojīn — khăn) — gắn với tang lễ",
+        "不送鞋 (xié — giày) — âm giống 邪 (xié, xua đuổi/chia xa)",
+        "不送梨 (lí — lê) — âm giống 离 (lí, ly biệt)"
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 6/6",
+      "title": "本命年与忌讳数字 (běnmìngnián yǔ jìhuì shùzì) — Năm bổn mệnh & số kiêng",
+      "image": "assets/culture_zodiac.jpg",
+      "bullets": [
+        "本命年 (běnmìngnián) — năm trùng con giáp sinh (cứ 12 năm lặp lại, vd 12/24/36/48/60 tuổi), dân gian tin dễ gặp xui rủi → nhiều người mặc đồ đỏ/đeo dây đỏ để hoá giải.",
+        "Dân gian còn kiêng riêng theo tuổi: 女怕三十三，男怕三十四 (nǚ pà sānshísān, nán pà sānshísì — \"nữ sợ 33, nam sợ 34\") — mốc tuổi được cho là dễ gặp trắc trở, nên cẩn trọng hơn trong năm đó."
+      ]
+    },
+    {
+      "type": "dialogue",
+      "kicker": "情景对话",
+      "title": "生日惊喜 — Bất ngờ sinh nhật",
+      "image": "assets/birthday_surprise.jpg",
+      "turns": [
+        { "speaker": "王一雪", "hz": "小雪，生日快乐！", "py": "Xiǎoxuě, shēngrì kuàilè!" },
+        { "speaker": "刘小雪", "hz": "谢谢你还记得我的生日！", "py": "Xièxie nǐ hái jìde wǒ de shēngrì!" },
+        { "speaker": "王一雪", "hz": "我怎么会忘呢？这是我给你画的生日卡片。", "py": "Wǒ zěnme huì wàng ne? Zhè shì wǒ gěi nǐ huà de shēngrì kǎpiàn." },
+        { "speaker": "刘小雪", "hz": "哇，你画得真好！", "py": "Wa, nǐ huà de zhēn hǎo!" },
+        { "speaker": "王一雪", "hz": "我们一起打开这个蛋糕吧？", "py": "Wǒmen yìqǐ dǎkāi zhège dàngāo ba?" },
+        { "speaker": "刘小雪", "hz": "好啊，还有鱼和肉，今天可以吃得很开心！", "py": "Hǎo a, hái yǒu yú hé ròu, jīntiān kěyǐ chī de hěn kāixīn!" }
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "状态补语 (1) — V/Adj + 得 + tính từ",
+      "image": "assets/words/hua.jpg",
+      "point": [
+        "得 (dé/de) đặt SAU động từ, TRƯỚC tính từ, để nói hành động đó \"làm như thế nào\" (giỏi/nhanh/tốt...).",
+        "Cấu trúc: Chủ ngữ + Động từ + 得 + (很/太...) + Tính từ.",
+        "Đây là 1 trong 3 chữ \"de\" — khác 的 (的字短语, đứng trước danh từ) và 地 (đứng trước động từ, đã học bài 5)."
+      ],
+      "examples": [
+        { "hz": "她画得很好。", "py": "Tā huà de hěn hǎo.", "vn": "Cô ấy vẽ rất đẹp." },
+        { "hz": "蛋糕做得真漂亮！", "py": "Dàngāo zuò de zhēn piàoliang!", "vn": "Bánh kem làm đẹp thật!" },
+        { "hz": "你昨晚睡得舒服吗？", "py": "Nǐ zuówǎn shuì de shūfu ma?", "vn": "Đêm qua bạn ngủ ngon không?" }
+      ],
+      "source": "New HSK Course 2, Bài 6"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "状态补语 (2) — phủ định · câu hỏi · có tân ngữ",
+      "image": "assets/words/basketball.jpg",
+      "point": [
+        "Phủ định: Động từ + 得 + 不 + tính từ (không dùng 没).",
+        "Câu hỏi: thêm 吗 ở cuối, hoặc hỏi \"V 得怎么样？\"",
+        "Khi động từ có tân ngữ (kèm 1 danh từ theo sau), phải LẶP LẠI động từ trước 得: ...V + tân ngữ + V + 得 + tính từ."
+      ],
+      "examples": [
+        { "hz": "我昨天睡得不舒服。", "py": "Wǒ zuótiān shuì de bù shūfu.", "vn": "Hôm qua tôi ngủ không ngon." },
+        { "hz": "你打篮球打得怎么样？", "py": "Nǐ dǎ lánqiú dǎ de zěnmeyàng?", "vn": "Bạn chơi bóng rổ thế nào?" },
+        { "hz": "他画画画得很好，可是唱歌唱得不太好。", "py": "Tā huàhuà huà de hěn hǎo, kěshì chànggē chàng de bú tài hǎo.", "vn": "Anh ấy vẽ tranh vẽ rất đẹp, nhưng hát thì không hay lắm." }
+      ],
+      "source": "New HSK Course 2, Bài 6"
+    },
+    {
+      "type": "section",
+      "title": "的 · 地 · 得",
+      "subtitle": "Ôn lại 的 (đã học), 地 (bài 5), và học mới 得 (bài 6) — dễ nhầm vì cùng đọc \"de\"."
+    },
+    {
+      "type": "grammar",
+      "kicker": "的",
+      "title": "的 — đứng TRƯỚC danh từ",
+      "image": "assets/placeholder_de_word.jpg",
+      "point": [
+        "的 nối tính từ/sở hữu với DANH TỪ đứng ngay sau nó."
+      ],
+      "examples": [
+        { "hz": "我的书", "py": "wǒ de shū", "vn": "sách của tôi" },
+        { "hz": "红色的衣服", "py": "hóngsè de yīfu", "vn": "cái áo màu đỏ" },
+        { "hz": "她送的礼物", "py": "tā sòng de lǐwù", "vn": "món quà cô ấy tặng" }
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "地",
+      "title": "地 — đứng TRƯỚC động từ (ôn bài 5)",
+      "image": "assets/words/de_particle.jpg",
+      "point": [
+        "地 nối tính từ (làm trạng ngữ) với ĐỘNG TỪ đứng ngay sau nó."
+      ],
+      "examples": [
+        { "hz": "高兴地说", "py": "gāoxìng de shuō", "vn": "vui vẻ nói" },
+        { "hz": "慢慢地走", "py": "mànmàn de zǒu", "vn": "đi từ từ" },
+        { "hz": "大家高兴地唱生日歌。", "py": "Dàjiā gāoxìng de chàng shēngrì gē.", "vn": "Mọi người vui vẻ hát bài sinh nhật." }
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "得",
+      "title": "得 — đứng SAU động từ (mới, bài 6)",
+      "image": "assets/words/hua.jpg",
+      "point": [
+        "得 nối ĐỘNG TỪ với tính từ đứng sau nó, để nói KẾT QUẢ/MỨC ĐỘ của hành động."
+      ],
+      "examples": [
+        { "hz": "画得很好", "py": "huà de hěn hǎo", "vn": "vẽ rất đẹp" },
+        { "hz": "你猜得对不对？", "py": "Nǐ cāi de duì bu duì?", "vn": "Bạn đoán đúng không?" },
+        { "hz": "跑得很快", "py": "pǎo de hěn kuài", "vn": "chạy rất nhanh" }
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "对比",
+      "title": "的 · 地 · 得 — bảng so sánh",
+      "headers": ["Chữ", "Vị trí", "Ví dụ"],
+      "cjk_cols": [0, 2],
+      "rows": [
+        ["的", "trước DANH từ", "我的书"],
+        ["地", "trước ĐỘNG từ", "高兴地说"],
+        ["得", "sau ĐỘNG từ", "画得很好"]
+      ],
+      "footer_note": "Mẹo nhớ: 的 trước DANH từ · 地 trước ĐỘNG từ · 得 sau ĐỘNG từ."
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 1/2",
+      "instructions": "Điền 的, 地 hoặc 得 vào chỗ trống:",
+      "items": [
+        "1. 这是我___书。",
+        "2. 她高兴___唱着生日歌。",
+        "3. 你唱___真好听！"
+      ]
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 2/2",
+      "instructions": "Điền 的, 地 hoặc 得 vào chỗ trống:",
+      "items": [
+        "1. 蛋糕做___很漂亮。",
+        "2. 这是奶奶做___鱼。",
+        "3. 大家慢慢___走进房间，准备给她惊喜。"
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "口语 1/2",
+      "title": "5 câu khẩu ngữ — Sinh nhật",
+      "headers": ["中文", "Pinyin", "Nghĩa"],
+      "cjk_cols": [0],
+      "rows": [
+        ["蛋糕已经切好了，大家快过来吃吧！", "Dàngāo yǐjīng qiē hǎo le, dàjiā kuài guòlái chī ba!", "Bánh cắt xong rồi, mọi người mau qua ăn đi!"],
+        ["快把蜡烛吹了，许个愿吧！", "Kuài bǎ làzhú chuī le, xǔ ge yuàn ba!", "Mau thổi nến đi, ước một điều đi!"],
+        ["哎，别忘了给她拍张照片！", "Āi, bié wàngle gěi tā pāi zhāng zhàopiàn!", "Này, đừng quên chụp cho cô ấy một tấm ảnh!"],
+        ["这鱼做得也太香了吧！", "Zhè yú zuò de yě tài xiāng le ba!", "Cá này làm thơm quá đi!"],
+        ["你猜她会喜欢这个礼物吗？", "Nǐ cāi tā huì xǐhuan zhège lǐwù ma?", "Bạn đoán cô ấy có thích món quà này không?"]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "口语 2/2",
+      "title": "5 câu khẩu ngữ — Sinh nhật",
+      "headers": ["中文", "Pinyin", "Nghĩa"],
+      "cjk_cols": [0],
+      "rows": [
+        ["大家玩得开不开心？", "Dàjiā wán de kāi bu kāixīn?", "Mọi người chơi có vui không?"],
+        ["别客气，多吃点肉！", "Bié kèqi, duō chī diǎn ròu!", "Đừng ngại, ăn thêm chút thịt đi!"],
+        ["时间过得真快，你都长这么大了！", "Shíjiān guò de zhēn kuài, nǐ dōu zhǎng zhème dà le!", "Thời gian trôi nhanh thật, con đã lớn thế này rồi!"],
+        ["这张卡片是我自己画的，你喜欢吗？", "Zhè zhāng kǎpiàn shì wǒ zìjǐ huà de, nǐ xǐhuan ma?", "Thiệp này là mình tự vẽ đó, bạn có thích không?"],
+        ["今天真舒服，吃得饱，玩得开心！", "Jīntiān zhēn shūfu, chī de bǎo, wán de kāixīn!", "Hôm nay thật thoải mái, ăn no, chơi vui!"]
+      ]
+    }
+  ]
+}
