@@ -6,12 +6,63 @@
 > Bắc Kinh. **4 课文** nối tiếp trong 1 ngày: mua sắm → rủ xem phim → nhà hàng (lộ ra
 > là sinh nhật 王一雪) → 课文4 tường thuật lại cả câu chuyện.
 
-## Xác nhận lại cảnh báo từ Buổi 7
+## Xác nhận lại cảnh báo từ Buổi 7 (đã chốt, README đã sửa)
 
 Bài 07 (`buoi07_thethao/doc/bai-doc.md`) đã cảnh báo bảng syllabus cũ gán sai ngữ pháp
 Bài 8. Đối chiếu ảnh trang trực tiếp xác nhận: **Bài 8 đúng là 比较句(1)(2)[比] +
-转折复句"虽然…但是"** — không phải "比较句(3)·动词离" như README cũ ghi. Cột ngữ pháp
-Bài 8 trong `output/hsk2/README.md` cần sửa lại (xem mục cuối file này).
+转折复句"虽然…但是"** (đúng thứ tự: 比较句 trước, 虽然…但是 sau — khớp trình tự sách) —
+không phải "比较句(3)·动词离" như README cũ ghi. `output/hsk2/README.md` **đã được sửa**
+(commit `1e6dff7`, 2026-08-06) đồng bộ theo phát hiện này, đồng thời xác nhận biên trang
+Bài 8 = trang in sách 064-072 (8 課文 + 小语讲堂 + 综合练习 + 课堂活动 + 彩蛋).
+
+## Mở rộng giao tiếp #1 — Hỏi giá, so sánh giá (dời từ Bài 9 sang Bài 8, 2026-08-06)
+
+**Có căn cứ chính thức:** khớp 1 trong 17 task HSK2 3.0 — "Shopping: discuss price/quality/
+differences" (xem spec §16b). Không dạy trả giá kiểu chợ (mặc cả), chỉ dạy hỏi giá + so
+sánh giá bằng 比较句.
+
+Lý do dời: Bài 9 (đã verify bằng ảnh) **không có** đoạn hỏi giá nào trong 課文, còn 课文1
+của Bài 8 đã có sẵn nguyên đoạn hỏi giá đồng hồ gắn liền với 比较句(1): "你看看要多少钱！" →
+"真不便宜！八千八！" — khớp tự nhiên hơn nhiều, không cần dựng tình huống mới.
+
+**Không cần từ vựng mới** — tái dùng hoàn toàn vốn đã học: 多少钱 (hỏi giá, HSK1) ·
+贵/便宜 (đắt/rẻ, HSK1 — cũng chính là 反义词 ở phần 热身 trang 064 của bài này) · 比 (so
+sánh giá, ngữ pháp chính Bài 8) · 手表 (vật để hỏi giá, 生词 课文1).
+
+Mẫu câu mở rộng thêm (ngoài câu gốc sách) để luyện hỏi giá + so sánh giá bằng 比较句:
+- A：这块手表多少钱？ B：八千八。 A：有点儿贵！那块呢？ B：那块比这块便宜，六千五。
+- 我觉得左边的手表比右边的贵，但是左边的比右边的好看。(kết hợp giá + chất lượng, đúng tinh
+  thần "discuss price/quality/differences")
+
+## Mở rộng giao tiếp #2 — Nhận lỗi, xin lỗi, hứa sửa (thêm theo yêu cầu user, 2026-08-06)
+
+**⚠️ Ngoài 210 từ kế hoạch của khoá** (không phải gap chính thức — thêm vì mục đích thực
+dụng cá nhân, giống khách sạn Bài 3/hẹn giờ Bài 10), nhưng **bám sát chủ đề gốc của chính
+Bài 8** (vợ quên sinh nhật, chồng vẫn nhớ và bù đắp) — mở rộng thành kỹ năng chủ động:
+lỡ quên/làm sai việc gì đó thì xin lỗi và đề xuất cách sửa thế nào bằng tiếng Trung.
+
+6 từ mới, xếp theo thang độ khó tăng dần, đều tra trực tiếp đại cương HSK 3.0 chính thức:
+- **错** cuò (sai, adj./n.) — **HSK2 chính thức**. Vốn đã lên kế hoạch dạy ở Bài 10 của
+  khoá (`docs/superpowers/plans/hsk2-vocab-grammar-checklist.md`) → đưa sớm 2 bài, giống
+  tiền lệ 把 đưa sớm vào Bài 4, 被 vào Bài 11. Cho câu nhận lỗi tự nhiên nhất: **我错了**.
+- **以后** yǐhòu (từ giờ về sau, adv./n.) — HSK3.
+- **注意** zhùyì (chú ý, v.) — HSK3.
+- **一定** yídìng (nhất định, chắc chắn, adv.) — HSK3.
+- **答应** dāying (hứa, đồng ý làm gì, v.) — HSK4.
+- **负责** fùzé (chịu trách nhiệm, v. — ghép rõ nghĩa 负=gánh + 责=trách nhiệm) — HSK4.
+
+**Đã bỏ qua** (tra hết nhưng quá xa trình độ HSK2, cách 3-7 cấp): 承诺/教训/弥补/补偿/吸取
+(HSK6), 更正/辜负/检讨/整顿 (HSK7-9), 改正/克服 (HSK5).
+
+**Tái dùng từ đã học:** 对不起/没关系 (HSK1) · 忘(了) (Bài 6) · 下+次→下次 (ghép 2 từ đã
+học) · 虽然…但是 + 比较句 (ngữ pháp chính Bài 8) · 花 (Bài 8).
+
+Đoạn hội thoại mẫu (dùng đúng ngữ pháp Bài 8):
+> A：你怎么忘了我们的约会？
+> B：对不起，我错了，我忘了。虽然这次忘了，但是下次我一定注意，不会再忘了。我答应你，以后
+> 这种事我负责。
+> A：没关系，下次早点儿告诉我。
+> (Bonus 比较句): 我觉得先说"对不起"比先解释原因更重要。
 
 ## 课文1 — Trong商场 (trung tâm thương mại), 王一雪 và 刘明 đang mua sắm
 
@@ -172,19 +223,25 @@ Bóc được từ sách (4 khối 生词): 手表·左边·左·比·右边·�
 (妻子 trùng nghĩa "vợ", đã học ở HSK1 phần gia đình; 花 trùng mặt chữ nhưng khác nghĩa —
 HSK1 花 = hoa (n.), Bài 8 花 = tiêu tiền (v.) — cần làm rõ 2 nghĩa khi dạy để tránh nhầm).
 
+**+ 6 từ mở rộng giao tiếp #2 (⚠️ ngoài 210 từ kế hoạch):** 错·以后·注意·一定·答应·负责 —
+xem mục "Mở rộng giao tiếp #2" ở trên. Tổng 生词 slide Bài 8 = 16 từ chính + 6 từ mở rộng
+= 22 mục (giống cách Bài 5 tách 生词 chính vs 生词 mở rộng riêng khối).
+
 ---
 
 ## Đối chiếu Hán ngữ 第一册·下
 
-`output/hsk2/README.md` ghi Bài 8 nên đối chiếu **L28 · L23**. Cần grep trực tiếp
-`raw/Hán ngữ 2.pdf.ocr.txt` cho "比…" (so sánh) và "虽然…但是" trước khi điền — CHƯA làm
-ở bước này (ưu tiên chốt nội dung 課文/生词/ngữ pháp trước, đối chiếu Hán ngữ có thể bổ
-sung sau khi user duyệt nội dung, không chặn tiến độ).
+`output/hsk2/README.md` ghi Bài 8 nên đối chiếu **L28 · L23**. Grep trực tiếp
+`raw/Hán ngữ 2.pdf.ocr.txt`:
 
----
+- **L28 (dòng 7457-8050, "第二十八课 我吃了早饭就…") — KHỚP MẠNH với 虽然…但是:** có hẳn
+  mục ngữ pháp riêng "虽然……但是……连接两个分句，表示转折关系" + ví dụ 他虽然学的时间不长，
+  但是说得很不错 · 虽然贵了点儿，但是房子很好 · nhiều bài tập điền khuyết cùng mẫu.
+- **L23 (dòng 4178-4823, "第二十三课") — KHÔNG tìm thấy** điểm ngữ pháp 比较句 chính thức
+  (A比B+adj) nào, chỉ có từ "比较" dùng thường (không phải cấu trúc dạy). Để trống theo
+  convention (không có đối chiếu cho điểm 比较句 ở L23).
 
-## Cần sửa `output/hsk2/README.md`
+## README `output/hsk2/README.md` — đã đồng bộ (không cần sửa thêm)
 
-Theo cảnh báo từ Buổi 7, dòng Bài 8 trong bảng syllabus cần đổi ngữ pháp từ
-`比较句(3)·动词"离"` thành `虽然…但是 · 比较句(1)(2)[比]` — sẽ sửa cùng lúc khi chốt buổi
-này (không sửa vội để tránh phải sửa lại nếu phát hiện thêm sai lệch).
+Commit `1e6dff7` đã cập nhật đúng: Bài 8 = `比较句(1)(2)[比] · 虽然…但是` +
+`+ hỏi giá/so sánh giá⚠️`, biên trang 064-072. Không còn việc tồn đọng ở mục này.

@@ -1,0 +1,772 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 8",
+    "topic": "虽然你忘了，但是我记得 — Mua sắm, sinh nhật, so sánh (比较句) + 虽然…但是"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "虽然你忘了，但是我记得",
+      "subtitle": "Even though you forgot, I remembered",
+      "footer": "New HSK Course 2 · Bài 8",
+      "image": "assets/title_watch.jpg"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Hôm nay học gì",
+      "image": "assets/placeholder_goals_TODO.jpg",
+      "bullets": [
+        "Nghe hiểu và nói về hoạt động mừng sinh nhật",
+        "Nghe hiểu và dùng \"比\" để so sánh sự khác biệt giữa 2 sự vật",
+        "Nắm cấu trúc câu phức chuyển ý \"虽然……，但是……\"",
+        "Tìm hiểu sở thích của người Trung Quốc với một số con số (数字)",
+        "Mở rộng: hỏi giá/so sánh giá khi mua sắm · nhận lỗi, xin lỗi, hứa sửa"
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 1/13",
+      "hz": "手表",
+      "py": "shǒubiǎo",
+      "vn": "đồng hồ đeo tay",
+      "pos": "n.",
+      "image": "assets/title_watch.jpg",
+      "examples": [
+        {
+          "hz": "你看，这两块手表怎么样？",
+          "py": "Nǐ kàn, zhè liǎng kuài shǒubiǎo zěnmeyàng?",
+          "vn": "Cậu xem, hai cái đồng hồ này thế nào?"
+        }
+      ],
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 3/13",
+      "hz": "比",
+      "py": "bǐ",
+      "vn": "so với, so sánh",
+      "pos": "prep./v.",
+      "image": "assets/words/bi_compare.jpg",
+      "examples": [
+        {
+          "hz": "今天比昨天冷。",
+          "py": "Jīntiān bǐ zuótiān lěng.",
+          "vn": "Hôm nay lạnh hơn hôm qua."
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 4/13",
+      "hz": "记得",
+      "py": "jìde",
+      "vn": "nhớ, còn nhớ",
+      "pos": "v.",
+      "image": "assets/words/jide.jpg",
+      "examples": [
+        {
+          "hz": "我记得你喜欢看爱情片。",
+          "py": "Wǒ jìde nǐ xǐhuan kàn àiqíngpiàn.",
+          "vn": "Tớ nhớ cậu thích xem phim tình cảm."
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 5/13",
+      "hz": "爱情片",
+      "py": "àiqíngpiàn",
+      "vn": "phim tình cảm",
+      "pos": "n.",
+      "image": "assets/words/aiqingpian.jpg",
+      "examples": [
+        {
+          "hz": "我们看那个爱情片，怎么样？",
+          "py": "Wǒmen kàn nàge àiqíngpiàn, zěnmeyàng?",
+          "vn": "Mình xem phim tình cảm đó nhé?"
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 6/13",
+      "hz": "有意思",
+      "py": "yǒu yìsi",
+      "vn": "thú vị, hay",
+      "pos": "adj.",
+      "image": "assets/words/youyisi.jpg",
+      "examples": [
+        {
+          "hz": "这个电影比那个爱情片更有意思。",
+          "py": "Zhège diànyǐng bǐ nàge àiqíngpiàn gèng yǒu yìsi.",
+          "vn": "Phim này thú vị hơn phim tình cảm kia."
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 7/13",
+      "hz": "点",
+      "py": "diǎn",
+      "vn": "gọi (món ăn); chấm",
+      "pos": "v.",
+      "image": "assets/words/dian_order.jpg",
+      "examples": [
+        {
+          "hz": "怎么点这么多菜？",
+          "py": "Zěnme diǎn zhème duō cài?",
+          "vn": "Sao gọi nhiều món thế?"
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 8/13",
+      "hz": "虽然",
+      "py": "suīrán",
+      "vn": "tuy, mặc dù",
+      "pos": "conj.",
+      "image": "assets/words/suiran_TODO.jpg",
+      "examples": [
+        {
+          "hz": "虽然觉得有点儿累，我还是走回家了。",
+          "py": "Suīrán juéde yǒudiǎnr lèi, wǒ háishi zǒu huí jiā le.",
+          "vn": "Tuy thấy hơi mệt, tớ vẫn đi bộ về nhà."
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 9/13",
+      "hz": "但是",
+      "py": "dànshì",
+      "vn": "nhưng",
+      "pos": "conj.",
+      "image": "assets/words/danshi_TODO.jpg",
+      "examples": [
+        {
+          "hz": "外边下雪了，但是不太冷。",
+          "py": "Wàibian xiàxuě le, dànshì bú tài lěng.",
+          "vn": "Ngoài trời có tuyết, nhưng không lạnh lắm."
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 10/13",
+      "hz": "花",
+      "py": "huā",
+      "vn": "tiêu (tiền) — ⚠️ khác nghĩa \"hoa\" đã học ở HSK1",
+      "pos": "v.",
+      "image": "assets/words/hua_TODO.jpg",
+      "examples": [
+        {
+          "hz": "今天花了不少钱吧？",
+          "py": "Jīntiān huāle bù shǎo qián ba?",
+          "vn": "Hôm nay tiêu không ít tiền nhỉ?"
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 11/13",
+      "hz": "妻子",
+      "py": "qīzi",
+      "vn": "vợ",
+      "pos": "n.",
+      "image": "assets/words/qizi_TODO.jpg",
+      "examples": [
+        {
+          "hz": "妻子觉得今天很快乐。",
+          "py": "Qīzi juéde jīntiān hěn kuàilè.",
+          "vn": "Vợ cảm thấy hôm nay rất vui."
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 12/13",
+      "hz": "丈夫",
+      "py": "zhàngfu",
+      "vn": "chồng",
+      "pos": "n.",
+      "image": "assets/words/zhangfu.jpg",
+      "examples": [
+        {
+          "hz": "她的丈夫是医生。",
+          "py": "Tā de zhàngfu shì yīshēng.",
+          "vn": "Chồng cô ấy là bác sĩ."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 13/13",
+      "hz": "饭馆",
+      "py": "fànguǎn",
+      "vn": "quán ăn, nhà hàng",
+      "pos": "n.",
+      "image": "assets/words/fanguan.jpg",
+      "examples": [
+        {
+          "hz": "这家饭馆的菜很好吃。",
+          "py": "Zhè jiā fànguǎn de cài hěn hǎochī.",
+          "vn": "Quán ăn này món ăn rất ngon."
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 1/6 · 认错道歉",
+      "hz": "错",
+      "py": "cuò",
+      "vn": "sai",
+      "pos": "adj./n.",
+      "image": "assets/words/cuo_wrong.jpg",
+      "examples": [
+        {
+          "hz": "对不起，这次是我的错。",
+          "py": "Duìbuqǐ, zhè cì shì wǒ de cuò.",
+          "vn": "Xin lỗi, lần này là lỗi của tớ."
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 2/6 · 认错道歉",
+      "hz": "以后",
+      "py": "yǐhòu",
+      "vn": "từ giờ về sau",
+      "pos": "adv./n.",
+      "image": "assets/words/yihou.jpg",
+      "examples": [
+        {
+          "hz": "以后我每天都练习中文。",
+          "py": "Yǐhòu wǒ měitiān dōu liànxí Zhōngwén.",
+          "vn": "Từ giờ ngày nào tớ cũng luyện tiếng Trung."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 3/6 · 认错道歉",
+      "hz": "注意",
+      "py": "zhùyì",
+      "vn": "chú ý",
+      "pos": "v.",
+      "image": "assets/words/zhuyi.jpg",
+      "examples": [
+        {
+          "hz": "以后我一定注意。",
+          "py": "Yǐhòu wǒ yídìng zhùyì.",
+          "vn": "Từ giờ tớ nhất định sẽ chú ý."
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 4/6 · 认错道歉",
+      "hz": "一定",
+      "py": "yídìng",
+      "vn": "nhất định, chắc chắn",
+      "pos": "adv.",
+      "image": "assets/words/yiding_TODO.jpg",
+      "examples": [
+        {
+          "hz": "下次我一定记得。",
+          "py": "Xià cì wǒ yídìng jìde.",
+          "vn": "Lần sau tớ nhất định sẽ nhớ."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 5/6 · 认错道歉",
+      "hz": "答应",
+      "py": "dāying",
+      "vn": "hứa, đồng ý làm gì",
+      "pos": "v.",
+      "image": "assets/words/daying_TODO.jpg",
+      "examples": [
+        {
+          "hz": "我答应你，以后不会再忘了。",
+          "py": "Wǒ dāying nǐ, yǐhòu bú huì zài wàng le.",
+          "vn": "Tớ hứa với cậu, từ giờ sẽ không quên nữa."
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 6/6 · 认错道歉",
+      "hz": "负责",
+      "py": "fùzé",
+      "vn": "chịu trách nhiệm",
+      "pos": "v.",
+      "image": "assets/words/fuze_TODO.jpg",
+      "examples": [
+        {
+          "hz": "这次是我的错，我负责。",
+          "py": "Zhè cì shì wǒ de cuò, wǒ fùzé.",
+          "vn": "Lần này là lỗi của tớ, tớ chịu trách nhiệm."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "在商场 — 王一雪和刘明在购物",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "你看，这两块手表怎么样？",
+          "py": "Nǐ kàn, zhè liǎng kuài shǒubiǎo zěnmeyàng?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "都不错！",
+          "py": "Dōu búcuò!"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我喜欢左边这个。",
+          "py": "Wǒ xǐhuan zuǒbian zhège."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我也觉得左边的比右边的好看。",
+          "py": "Wǒ yě juéde zuǒbian de bǐ yòubian de hǎokàn."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "你看看要多少钱！",
+          "py": "Nǐ kànkan yào duōshao qián!"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "真不便宜！八千八！",
+          "py": "Zhēn bù piányi! Bā qiān bā!"
+        }
+      ],
+      "footer_note": "在商场，王一雪和刘明在购物。(In the mall, Wang Yixue and Liu Ming were shopping.)",
+      "image": "assets/title_watch.jpg",
+      "image_side": "right",
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "在电影院外面 — 王一雪和刘明在聊天儿",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "今天有不少电影，我们看个电影吧。",
+          "py": "Jīntiān yǒu bù shǎo diànyǐng, wǒmen kàn gè diànyǐng ba."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "好啊！我们看哪个？",
+          "py": "Hǎo a! Wǒmen kàn nǎge?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我记得你喜欢看爱情片，我们看那个爱情片，怎么样？",
+          "py": "Wǒ jìde nǐ xǐhuan kàn àiqíngpiàn, wǒmen kàn nàge àiqíngpiàn, zěnmeyàng?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "还是看这个吧，我看网上说这个电影比那个爱情片更有意思。",
+          "py": "Háishi kàn zhège ba, wǒ kàn wǎngshang shuō zhège diànyǐng bǐ nàge àiqíngpiàn gèng yǒu yìsi."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "好。我去买票。",
+          "py": "Hǎo. Wǒ qù mǎi piào."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "到网上买吧，网上买比在这里买便宜。",
+          "py": "Dào wǎngshang mǎi ba, wǎngshang mǎi bǐ zài zhèli mǎi piányi."
+        }
+      ],
+      "footer_note": "在电影院外面，王一雪和刘明在聊天儿。(Outside the cinema, Wang Yixue and Liu Ming were chatting.)",
+      "image": "assets/cinema2.jpg",
+      "image_side": "right",
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "在饭馆 — 王一雪和刘明在点菜",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "您好！就要这几个菜吧，谢谢！",
+          "py": "Nín hǎo! Jiù yào zhè jǐ gè cài ba, xièxie!"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "怎么点这么多菜？",
+          "py": "Zěnme diǎn zhème duō cài?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "你想想，今天是几月几号？",
+          "py": "Nǐ xiǎngxiang, jīntiān shì jǐ yuè jǐ hào?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "8月27号。啊！我的生日！",
+          "py": "Bā yuè èrshíqī hào. À! Wǒ de shēngrì!"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "生日快乐！虽然你忘了，但是我记得。看看这是什么？",
+          "py": "Shēngrì kuàilè! Suīrán nǐ wàng le, dànshì wǒ jìde. Kànkan zhè shì shénme?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "手表！吃饭、看电影、买手表，今天花了不少钱吧？",
+          "py": "Shǒubiǎo! Chī fàn, kàn diànyǐng, mǎi shǒubiǎo, jīntiān huāle bù shǎo qián ba?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "虽然花了一些钱，但是我们过了一个快乐的生日。",
+          "py": "Suīrán huāle yìxiē qián, dànshì wǒmen guòle yí gè kuàilè de shēngrì."
+        }
+      ],
+      "footer_note": "在饭馆，王一雪和刘明在点菜。(At the restaurant, Wang Yixue and Liu Ming were ordering food.)",
+      "image": "assets/dinner_candle.jpg",
+      "image_side": "right",
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "情景对话",
+      "title": "认错 · 道歉 · 保证改",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "你怎么忘了我们的约会？",
+          "py": "Nǐ zěnme wàngle wǒmen de yuēhuì?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "对不起，我错了。虽然这次忘了，但是下次我一定注意，不会再忘了。",
+          "py": "Duìbuqǐ, wǒ cuò le. Suīrán zhè cì wàng le, dànshì xià cì wǒ yídìng zhùyì, bú huì zài wàng le."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "没关系，下次早点儿告诉我。",
+          "py": "Méi guānxi, xià cì zǎo diǎnr gàosu wǒ."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我答应你，以后这种事我负责。",
+          "py": "Wǒ dāying nǐ, yǐhòu zhè zhǒng shì wǒ fùzé."
+        }
+      ],
+      "footer_note": "Bonus 比较句: 我觉得先说\"对不起\"比先解释原因更重要。(Xin lỗi trước quan trọng hơn giải thích lý do trước.)",
+      "image": "assets/bouquet.jpg",
+      "image_side": "right",
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 4",
+      "title": "小语讲述王一雪和刘明的一天",
+      "sentences": [
+        {
+          "hz": "虽然妻子忘了今天是自己的生日，但是丈夫记得。",
+          "py": "Suīrán qīzi wàngle jīntiān shì zìjǐ de shēngrì, dànshì zhàngfu jìde.",
+          "vn": "Tuy vợ quên hôm nay là sinh nhật mình, nhưng chồng nhớ."
+        },
+        {
+          "hz": "丈夫请妻子去饭馆吃饭、去电影院看电影，还给妻子买了一块非常漂亮的手表。",
+          "py": "Zhàngfu qǐng qīzi qù fànguǎn chī fàn, qù diànyǐngyuàn kàn diànyǐng, hái gěi qīzi mǎile yí kuài fēicháng piàoliang de shǒubiǎo.",
+          "vn": "Chồng mời vợ đi ăn nhà hàng, đi rạp xem phim, còn mua tặng vợ một chiếc đồng hồ rất đẹp."
+        },
+        {
+          "hz": "妻子觉得今天很快乐。",
+          "py": "Qīzi juéde jīntiān hěn kuàilè.",
+          "vn": "Vợ cảm thấy hôm nay rất vui."
+        }
+      ],
+      "note": "小语助力: 这里\"请\"是\"请客\"的意思 — mời/đãi khách, không phải nghĩa \"xin/mời làm gì\" thông thường.",
+      "image": "assets/couple_gift.jpg",
+      "image_side": "right",
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/7",
+      "point": "比较句 — cơ bản nhất: A + 比 + B + tính từ",
+      "examples": [
+        {
+          "hz": "我也觉得左边的比右边的好看。",
+          "py": "Wǒ yě juéde zuǒbian de bǐ yòubian de hǎokàn.",
+          "vn": "Tớ cũng thấy cái bên trái đẹp hơn cái bên phải."
+        },
+        {
+          "hz": "今天比昨天冷。",
+          "py": "Jīntiān bǐ zuótiān lěng.",
+          "vn": "Hôm nay lạnh hơn hôm qua."
+        },
+        {
+          "hz": "他觉得踢足球比打篮球有意思。",
+          "py": "Tā juéde tī zúqiú bǐ dǎ lánqiú yǒu yìsi.",
+          "vn": "Cậu ấy thấy đá bóng thú vị hơn chơi bóng rổ."
+        }
+      ],
+      "note": "Cấu trúc cơ bản nhất: A + 比 + B + tính từ (cụm tính từ) — dùng giới từ \"比\" để so sánh sự khác biệt về tính chất/trạng thái giữa A và B.",
+      "image": "assets/words/bi_compare.jpg",
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/7",
+      "point": "比较句 — chênh lệch nhẹ: A + 比 + B + tính từ + 一点儿/一些",
+      "examples": [
+        {
+          "hz": "这块手表比那块贵一点儿。",
+          "py": "Zhè kuài shǒubiǎo bǐ nà kuài guì yìdiǎnr.",
+          "vn": "Cái đồng hồ này đắt hơn cái kia một chút."
+        },
+        {
+          "hz": "今天比昨天冷一点儿。",
+          "py": "Jīntiān bǐ zuótiān lěng yìdiǎnr.",
+          "vn": "Hôm nay lạnh hơn hôm qua một chút."
+        },
+        {
+          "hz": "我姐姐比我大一点儿。",
+          "py": "Wǒ jiějie bǐ wǒ dà yìdiǎnr.",
+          "vn": "Chị tớ hơn tuổi tớ một chút."
+        }
+      ],
+      "note": "\"一点儿\"/\"一些\" đặt SAU tính từ để chỉ mức chênh lệch NHỎ giữa A và B — khác với 还/更 (nhấn mạnh mức độ, không phải chênh lệch cụ thể).",
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 3/7",
+      "point": "比较句 — số lượng cụ thể: A + 比 + B + tính từ + số lượng",
+      "examples": [
+        {
+          "hz": "我姐姐比我大三岁。",
+          "py": "Wǒ jiějie bǐ wǒ dà sān suì.",
+          "vn": "Chị tớ hơn tớ 3 tuổi."
+        },
+        {
+          "hz": "这块手表比那块贵五百块钱。",
+          "py": "Zhè kuài shǒubiǎo bǐ nà kuài guì wǔbǎi kuài qián.",
+          "vn": "Đồng hồ này đắt hơn cái kia 500 tệ."
+        },
+        {
+          "hz": "他比我高十厘米。",
+          "py": "Tā bǐ wǒ gāo shí límǐ.",
+          "vn": "Cậu ấy cao hơn tớ 10cm."
+        }
+      ],
+      "note": "Số lượng cụ thể (tuổi/tiền/chiều cao...) đặt SAU tính từ để nói rõ A hơn B chính xác bao nhiêu — khác \"一点儿\" (chỉ chung chung là ít).",
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 4/7",
+      "point": "比较句 — 还/更: dùng khi cả A và B đều đã ở mức cao",
+      "examples": [
+        {
+          "hz": "我看网上说这个电影比那个爱情片更有意思。",
+          "py": "Wǒ kàn wǎngshang shuō zhège diànyǐng bǐ nàge àiqíngpiàn gèng yǒu yìsi.",
+          "vn": "Tớ thấy trên mạng nói phim này thú vị hơn phim tình cảm kia."
+        },
+        {
+          "hz": "今天比昨天更热。",
+          "py": "Jīntiān bǐ zuótiān gèng rè.",
+          "vn": "Hôm nay nóng hơn hôm qua."
+        },
+        {
+          "hz": "我觉得奶茶比牛奶还好喝。",
+          "py": "Wǒ juéde nǎichá bǐ niúnǎi hái hǎohē.",
+          "vn": "Tớ thấy trà sữa ngon hơn sữa."
+        }
+      ],
+      "note": "Trong câu so sánh dùng \"比\", KHÔNG dùng phó từ mức độ như \"很\"/\"非常\" trước tính từ — dùng \"还\" hoặc \"更\" khi cả A và B đều đã ở mức cao, muốn nhấn A còn cao hơn nữa.",
+      "image": "assets/words/aiqingpian.jpg",
+      "audio": "assets/audio/slide29.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 5/7",
+      "point": "比较句 — dạng phủ định: A + 没有 + B + (这么/那么) + tính từ",
+      "examples": [
+        {
+          "hz": "这块手表没有那块贵。",
+          "py": "Zhè kuài shǒubiǎo méiyǒu nà kuài guì.",
+          "vn": "Đồng hồ này không đắt bằng cái kia."
+        },
+        {
+          "hz": "今天没有昨天冷。",
+          "py": "Jīntiān méiyǒu zuótiān lěng.",
+          "vn": "Hôm nay không lạnh bằng hôm qua."
+        },
+        {
+          "hz": "我没有他那么高。",
+          "py": "Wǒ méiyǒu tā nàme gāo.",
+          "vn": "Tớ không cao bằng cậu ấy."
+        }
+      ],
+      "note": "Phủ định câu so sánh KHÔNG dùng \"不比\" — dùng \"A + 没有 + B + (这么/那么) + tính từ\" = A kém B về mặt này.",
+      "footer_note": "⚠️ Cấu trúc \"没有\" so sánh chính thức là 比较句(3), sách xếp học kỹ ở Bài 9 — ở đây giới thiệu trước để hệ thống đủ các dạng câu so sánh, Bài 9 sẽ luyện sâu thêm.",
+      "audio": "assets/audio/slide30.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 6/7",
+      "point": "比较句 — dạng nghi vấn: 3 cách hỏi",
+      "examples": [
+        {
+          "hz": "这块手表比那块贵吗？",
+          "py": "Zhè kuài shǒubiǎo bǐ nà kuài guì ma?",
+          "vn": "Đồng hồ này có đắt hơn cái kia không?"
+        },
+        {
+          "hz": "这块手表比那块贵不贵？",
+          "py": "Zhè kuài shǒubiǎo bǐ nà kuài guì bu guì?",
+          "vn": "Đồng hồ này so với cái kia có đắt không?"
+        },
+        {
+          "hz": "这块手表比那块怎么样？",
+          "py": "Zhè kuài shǒubiǎo bǐ nà kuài zěnmeyàng?",
+          "vn": "Đồng hồ này so với cái kia thế nào?"
+        }
+      ],
+      "note": "3 cách hỏi trong câu so sánh: (1) thêm \"吗\" cuối câu; (2) tính từ + 不 + tính từ; (3) A + 比 + B + 怎么样。",
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 7/7",
+      "point": "转折复句「虽然……，但是……」",
+      "examples": [
+        {
+          "hz": "虽然你忘了，但是我记得。",
+          "py": "Suīrán nǐ wàng le, dànshì wǒ jìde.",
+          "vn": "Tuy cậu quên nhưng tớ nhớ."
+        },
+        {
+          "hz": "外边下雪了，但是不太冷。",
+          "py": "Wàibian xiàxuě le, dànshì bú tài lěng.",
+          "vn": "Ngoài trời có tuyết, nhưng không lạnh lắm. (chỉ dùng 但是)"
+        },
+        {
+          "hz": "虽然觉得有点儿累，我还是走回家了。",
+          "py": "Suīrán juéde yǒudiǎnr lèi, wǒ háishi zǒu huí jiā le.",
+          "vn": "Tuy thấy hơi mệt, tớ vẫn đi bộ về nhà. (chỉ dùng 虽然)"
+        }
+      ],
+      "note": "\"虽然\" và \"但是\" tạo thành câu phức chỉ sự chuyển ý/tương phản — có thể dùng cặp hoặc chỉ dùng một trong hai từ.",
+      "image": "assets/dinner_candle.jpg",
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "彩蛋 · 文化",
+      "title": "中国人对数字的喜好",
+      "image": "assets/culture_number8_TODO.jpg",
+      "bullets": [
+        "数字 8 (八 bā) phát âm gần giống 发 (fā, trong 发财 \"phát tài\") → người Trung Quốc coi 8 là số may mắn",
+        "Giá cả, biển số xe, số điện thoại có số 8 thường được ưa chuộng hơn",
+        "Liên hệ: giá đồng hồ trong 课文1 là 八千八 (8800 tệ) — không phải ngẫu nhiên, sách cố ý gài số 8 xuyên bài!"
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "口语 1/2",
+      "title": "5 câu khẩu ngữ — Hỏi giá & So sánh",
+      "headers": [
+        "Câu",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "这个多少钱？",
+          "Cái này giá bao nhiêu?"
+        ],
+        [
+          "有点儿贵，便宜一点儿吧。",
+          "Hơi đắt, bớt chút đi."
+        ],
+        [
+          "这个比那个好看/便宜。",
+          "Cái này đẹp/rẻ hơn cái kia."
+        ],
+        [
+          "这个比那个有意思多了。",
+          "Cái này thú vị hơn cái kia nhiều."
+        ],
+        [
+          "祝你生日快乐！",
+          "Chúc mừng sinh nhật!"
+        ]
+      ],
+      "audio": "assets/audio/slide34.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语 2/2",
+      "title": "5 câu khẩu ngữ — Nhận lỗi & Xin lỗi",
+      "headers": [
+        "Câu",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "对不起，我错了。",
+          "Xin lỗi, tôi sai rồi."
+        ],
+        [
+          "下次我一定注意。",
+          "Lần sau tôi nhất định chú ý."
+        ],
+        [
+          "我请客，你随便点。",
+          "Để tôi mời, cậu gọi món thoải mái."
+        ],
+        [
+          "我答应你，以后一定注意。",
+          "Tôi hứa với bạn, từ giờ nhất định sẽ chú ý."
+        ],
+        [
+          "没关系，下次早点儿告诉我。",
+          "Không sao, lần sau báo tôi sớm hơn."
+        ]
+      ],
+      "audio": "assets/audio/slide35.mp3"
+    }
+  ]
+}
