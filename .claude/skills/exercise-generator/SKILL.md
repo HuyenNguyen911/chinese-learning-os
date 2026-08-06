@@ -28,20 +28,28 @@ format thi HSK và HSKK 初级.
 - **Đáp án 2 cấp (khối tự luận):** với `dich_dat_cau`, `sap_xep`, `noi_hskk`
   (`回答问题`) — điền `answer`/`hint` (Chuẩn, đủ điểm) + `answer_plus`/`hint_plus`
   (Nâng cao, điểm cao) theo band chấm thi. Xem `worksheet/schema.md`.
-- **Dàn bài chuẩn HSKK 初级 cho `noi_hskk` part `回答问题`** (mặc định mọi buổi,
-  **đổi 2026-08-06 — buổi 8 HSK2, user thấy dàn bài 3-câu cũ "hơi khó"/khô,
-  yêu cầu đổi hẳn sang kiểu mở bài/thân bài/kết bài với câu hỏi gợi ý cho từng
-  phần**): `instructions` của block ghi chung 1 dòng ngắn `"Nghe câu hỏi rồi trả
-  lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài)."`; còn dàn
-  bài CHI TIẾT (3 câu hỏi gợi mở, riêng theo từng câu hỏi nói) đặt vào field
-  `hint` của chính item đó — mẫu:
-  `"开头 (Mở bài): <câu hỏi gợi ai/việc gì/ở đâu> — 主体 (Thân bài): <câu hỏi
-  gợi lý do/chi tiết/cảm giác> — 结尾 (Kết bài): <câu hỏi gợi kết quả/bài học>"`.
-  `hint_plus` đổi thành 1 đoạn văn mẫu HOÀN CHỈNH (3-5 câu) đi theo đúng 3 phần
-  mở-thân-kết đó, không còn là "1 câu cảm nghĩ thêm" như kiểu cũ. Câu hỏi nói
-  (`script`) nên là câu hỏi trải nghiệm cá nhân cụ thể (vd "bạn gần đây đã làm
-  gì/mua gì/gặp chuyện gì") thay vì câu hỏi giả định trừu tượng ("nếu...")
-  — dễ trả lời và tự nhiên hơn cho người mới.
+- **Dàn bài cho `noi_hskk` part `回答问题`** (mặc định mọi buổi — đổi 2026-08-06,
+  2 session độc lập cùng ngày (buổi 7 + buổi 8) đều bị user sửa khỏi bản dàn bài
+  3-câu cũ, xem lịch sử ở cuối mục này): **KHÔNG** đưa câu mẫu tiếng Trung vào
+  `instructions` (đó là đáp án, chỉ để trong `hint`/`hint_plus` cho `dapan.docx`,
+  không hiện trên worksheet). `instructions` chỉ chứa **câu hỏi gợi mở bằng tiếng
+  Việt** theo khung Mở bài/Thân bài/Kết bài, để học viên tự nghĩ câu trả lời —
+  không gợi ý sẵn nội dung. Mẫu:
+  `"开头 (Mở bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>? 主体 (Thân bài): <câu hỏi nhỏ
+  1>? <câu hỏi nhỏ 2>? 结尾 (Kết bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>?"` — nội
+  dung từng câu hỏi nhỏ bám sát chủ đề CÂU HỎI CHÍNH của item đó (không dùng 1
+  khung chung mơ hồ cho mọi buổi).
+  **Khi block có ≥2 câu hỏi 回答问题:** tách thành **nhiều block riêng, mỗi block
+  1 câu hỏi** (đặt `title` là "Câu hỏi 1"/"Câu hỏi 2"... để tránh lặp chữ "回答问题"
+  trong header do renderer tự ghép `"🗣 %s (%s)" % (title, part)`) — vì mỗi câu cần
+  3 cặp câu hỏi gợi mở khác nhau bám đúng nội dung câu đó, không thể dùng chung 1
+  `instructions` cho nhiều câu hỏi có chủ đề khác nhau.
+  `hint` = câu trả lời Chuẩn (đủ điểm, thường chỉ cần Mở+Thân), `hint_plus` = câu
+  trả lời Nâng cao (đủ Mở-Thân-Kết, dài hơn) — cả hai chỉ vào `dapan.docx`.
+  **Lịch sử:** bản gốc dùng dàn bài 3 bước chung ("(1) trả lời ngắn, (2) mô tả
+  thêm, (3) mở rộng không bắt buộc") kèm câu mẫu ngay trên worksheet — user phản
+  hồi 2 lần độc lập (buổi 7, buổi 8) rằng dàn bài phải là câu hỏi gợi mở tiếng
+  Việt để tự nghĩ, không phải đáp án mẫu; buổi 7 thêm bước tách block/câu hỏi.
 - Chỉ **đọc** `memory/*`. Không tự sửa memory (CLAUDE.md §4).
 - **Tham khảo phong cách đề online (Pandarin):** trước khi soạn câu cho buổi
   HSK*N*, fetch 1-2 trang tương ứng cấp đó tại `pandarin.net`
@@ -145,6 +153,38 @@ Renderer tự tạo 2 thư mục con. PDF tự xuất nếu có LibreOffice, kh�
 - **worksheet.docx KHÔNG BAO GIỜ chứa đáp án hay 听力文本** (renderer đã tách).
 - Chiếu lớp (tùy chọn): có thể tái dùng `teaching-coach/pptx/build_deck.py` với
   một deck riêng — không bắt buộc trong luồng bài tập.
+
+⚠️ **`instructions` (mọi block type) KHÔNG xuống dòng được** (2026-08-06):
+`_block_header`/`_run` trong `build_worksheet.py` ghi text thành 1 run duy nhất,
+không xử lý `\n` (python-docx escape thành `_x000A_` nếu nhét trực tiếp — không
+tạo dòng mới). Khi cần `instructions` nhiều dòng (vd dàn bài Mở/Thân/Kết bài của
+`回答问题`, xem mục dàn bài phía trên), soạn text với dấu phân cách riêng (vd `§`)
+rồi chạy hậu xử lý sau khi build xong — KHÔNG sửa `build_worksheet.py` nếu đang ở
+nhánh feature (renderer là shared code, đổi phải làm trên `main`):
+```python
+from docx import Document
+from docx.enum.text import WD_BREAK
+from docx.oxml.ns import qn
+doc = Document(path)
+for p in doc.paragraphs:
+    if "§" not in p.text: continue
+    run0 = p.runs[0]
+    size, bold, italic, name = run0.font.size, run0.font.bold, run0.font.italic, run0.font.name
+    color = run0.font.color.rgb if run0.font.color and run0.font.color.type is not None else None
+    eastasia = run0._element.rPr.rFonts.get(qn('w:eastAsia')) if run0._element.rPr is not None and run0._element.rPr.rFonts is not None else None
+    segs = run0.text.split("§")
+    for r in list(p.runs): r._element.getparent().remove(r._element)
+    for i, seg in enumerate(segs):
+        r = p.add_run(seg)
+        r.font.size, r.font.bold, r.font.italic, r.font.name = size, bold, italic, name
+        if color is not None: r.font.color.rgb = color
+        if eastasia: r._element.rPr.rFonts.set(qn('w:eastAsia'), eastasia)
+        if i < len(segs) - 1: r.add_break(WD_BREAK.LINE)
+doc.save(path)
+```
+Việc đúng lâu dài là sửa `_block_header`/`_run` để tự nhận `\n`/`§` và tách
+paragraph — nhưng đó là sửa code renderer dùng chung, để dành làm trên `main`
+khi có nhiều buổi cùng cần, không vá lẻ tẻ trên từng nhánh feature.
 
 ## Gây dựng kho đề (1 lần, có review gate)
 Khi kho `knowledge/hsk-exam-bank/hskN.md` còn trống:
