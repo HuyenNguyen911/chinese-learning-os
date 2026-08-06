@@ -40,6 +40,12 @@ Lưu ý encoding console: nếu cần in tiếng Trung ra terminal để debug, 
    NHỎ/LIÊN QUAN NHAU** (vd đối lập 深色/浅色, cùng nhóm trang phục ngủ+ở nhà),
    không ghép máy móc theo thứ tự liệt kê có sẵn — thứ tự gốc thường xen kẽ
    danh từ/tính từ không liên quan (xem ví dụ ở bảng loại slide bên dưới).
+2b. **Thứ tự khối nội dung trong 1 buổi (chốt theo Buổi 8, 2026-08-06):**
+   Title → 目标 (mục tiêu) → **toàn bộ 生词** (chính rồi tới mở rộng, theo thứ tự
+   xuất hiện trong 课文 1→2→3→4) → **课文/hội thoại** (theo đúng thứ tự sách) →
+   **语法** (theo đúng thứ tự sách) → luyện tập/口语. Tức là dạy hết từ mới TRƯỚC
+   khi học viên gặp trong bài, không xen kẽ "hết 1 đoạn文 → ra từ luôn" theo thứ
+   tự sách gốc (cách đó từng bị coi là sai khi làm Buổi 9).
 3. Tạo folder buổi `output/hskN/buoiX_<chude>/slide/` rồi ghi `buoiX.json` vào đó
    (ảnh vào `assets/` cùng cấp; path ảnh trong JSON là `assets/<tên>.jpg`).
 4. **Duyệt nội dung với user trước khi sinh audio.** Trình bày nội dung text (title +
@@ -81,7 +87,7 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `section` | `title` (+ `subtitle`) | Chuyển mục |
 | `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); nếu item có `ex` (câu ví dụ riêng từng từ) → chèn cột **Ví dụ** cuối bảng; `example?` (cấp SLIDE, không phải item) = `{hz,py,vn}` 1 câu ví dụ chung — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). Dùng được cho CẢ CÂU dài, không chỉ từ đơn (vd mỗi item là 1 lời chúc/câu nói) — cột 汉字 tự đủ rộng + hàng tự cao theo số dòng 汉字 cần wrap, Pinyin/Nghĩa co lại/rớt dòng trước (xem lessons learned bên dưới). |
 | `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). |
-| `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}` | ⚠️ **CHƯA triển khai trong `build_deck.py`** (2026-08-06: không có handler `_slide_word_pair` → crash `ValueError: type 'word_pair' không hỗ trợ`) — README mô tả schema dự kiến nhưng renderer chưa làm. Dùng tạm `wordcard` (1 từ/1 slide) thay thế cho tới khi triển khai xong. Ý định gốc: **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. |
+| `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}` | **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. ⚠️ **Lịch sử (đã sửa 2026-08-06):** handler `_slide_word_pair` được thêm ở `5a2a154`, rồi bị **âm thầm xoá** ở `619229b` (commit message chỉ nói "sửa 3 lỗi renderer", không nhắc việc xoá này) — các bản README trước đó ghi nhầm là "chưa triển khai", thực ra là đã cài rồi bị mất. Đã khôi phục lại nguyên trạng handler. |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn}`, `note?`, `source?`, `image?` | Giảng ngữ pháp |
 | `table` | `headers[]`, `rows[][]` (+ `cjk_cols[]`) | Bảng so sánh (vd 了 vs 过) |
 | `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` (+ `image?`, `image_side?`) | Khung hội thoại (bong bóng chat 2 phía, hoặc swimlane 1-cột/người nếu >2 speaker) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau. Có `image` → ảnh ngữ cảnh 1 bên, khung thoại co vào bên còn lại (giúp liên tưởng bối cảnh thay vì chỉ thấy chữ nổi) |
@@ -108,6 +114,16 @@ Ghi chú:
   và `footer_note`, `tip` nằm ngay trên `footer_note`. Vùng nội dung chính tự
   trừ hao chỗ cho dải này (không cần tính tay).
 - Chữ Hán được gắn đúng thuộc tính font Đông Á (`a:ea`/`a:cs`) nên hiển thị chuẩn trong PowerPoint, không bị nhảy về font Latin.
+
+**Chọn `vocab` (bảng) hay `wordcard`/`word_pair` (1-2 từ/slide) cho 生词 chính (2026-08-06):**
+`references/slide-design-best-practices.md` (đóng gói trong `chinese-teaching.skill`) ghi
+"từ vựng = BẢNG cân cột, dùng type `vocab`" — quy tắc này có từ trước khi `wordcard`/
+`word_pair` tồn tại, chưa từng được đối chiếu lại sau khi 2 type mới ra đời. Thực tế sản
+xuất gần đây (Buổi 8, 9) dùng `wordcard`/`word_pair` cho **toàn bộ 生词** (kể cả mở rộng),
+đi sâu từng từ + ví dụ + ảnh riêng — quyết định giữ theo hướng này (user chốt 2026-08-06).
+Dùng `vocab` (bảng) khi: liệt kê nhanh không cần ảnh/ví dụ riêng từng từ (vd bảng tổng kết
+cuối buổi, bảng đối chiếu). Mặc định cho 生词 dạy mới trong 1 buổi: `wordcard` (1 từ, cần
+đào sâu) hoặc `word_pair` (2 từ liên quan/slide, khi số lượng lớn cần nén gọn).
 
 Xem [example-lesson.json](example-lesson.json) — mẫu bao trùm mọi loại slide.
 
