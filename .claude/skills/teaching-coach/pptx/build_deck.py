@@ -18,6 +18,7 @@ Cần: python-pptx, Pillow. Không cần internet lúc render.
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -77,6 +78,31 @@ class DeckBuilder:
         rect.shadow.inherit = False
         rect._element.addprevious(rect._element)
         return slide
+
+    def _set_run_highlighted(self, p, text, keywords, size, color="ink",
+                              bold=False, cjk=False, hl_color="accent"):
+        """Như _set_run nhưng tô màu `hl_color` cho mọi chỗ khớp `keywords`
+        (str hoặc list[str]) trong `text` — dùng để làm nổi bật từ ngữ pháp
+        chính (vd "没有"/"离") giữa câu ví dụ thay vì cả câu 1 màu, giúp học
+        viên nhận ra ngay từ đang học nằm ở đâu trong câu."""
+        if isinstance(keywords, str):
+            keywords = [keywords]
+        keywords = [k for k in (keywords or []) if k]
+        if not keywords or not text:
+            self._set_run(p.add_run(), text, size, color=color, bold=bold, cjk=cjk)
+            return
+        pattern = "|".join(re.escape(k) for k in sorted(keywords, key=len, reverse=True))
+        pos = 0
+        for m in re.finditer(pattern, text):
+            if m.start() > pos:
+                self._set_run(p.add_run(), text[pos:m.start()], size, color=color,
+                              bold=bold, cjk=cjk)
+            self._set_run(p.add_run(), m.group(), size, color=hl_color, bold=bold,
+                          cjk=cjk)
+            pos = m.end()
+        if pos < len(text):
+            self._set_run(p.add_run(), text[pos:], size, color=color, bold=bold,
+                          cjk=cjk)
 
     def _textbox(self, slide, left, top, width, height, anchor=None):
         box = slide.shapes.add_textbox(left, top, width, height)
@@ -629,6 +655,7 @@ class DeckBuilder:
         point_lines = ([point] if isinstance(point, str) else point) if point else []
         examples = s.get("examples", [])
         note = s.get("note"); source = s.get("source")
+        highlight = s.get("highlight")
 
         # Ước lượng chiều cao "tự nhiên" ở cỡ chữ gốc rồi co scale nếu vượt
         # khung (xem _fit_scale) — tránh vừa dồn giữa trang (ít nội dung) vừa
@@ -671,8 +698,8 @@ class DeckBuilder:
             p = tf.paragraphs[0] if first else tf.add_paragraph()
             first = False
             p.space_before = Pt(20 * scale)
-            self._set_run(p.add_run(), ex.get("hz", ""), sz(26, 16), color="ink",
-                          bold=True, cjk=True)
+            self._set_run_highlighted(p, ex.get("hz", ""), ex.get("highlight", highlight),
+                                      sz(26, 16), color="ink", bold=True, cjk=True)
             if ex.get("py"):
                 self._set_run(p.add_run(), "  " + ex["py"], sz(15, 11), color="accent",
                               italic=True)
