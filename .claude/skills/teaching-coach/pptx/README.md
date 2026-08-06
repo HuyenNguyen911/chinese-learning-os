@@ -79,7 +79,7 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 |---|---|---|
 | `title` | `title` (+ `subtitle`, `footer`, `image?`) | Slide bìa (nền accent) |
 | `section` | `title` (+ `subtitle`) | Chuyển mục |
-| `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); nếu item có `ex` (câu ví dụ riêng từng từ) → chèn cột **Ví dụ** cuối bảng; `example?` (cấp SLIDE, không phải item) = `{hz,py,vn}` 1 câu ví dụ chung — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). |
+| `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); nếu item có `ex` (câu ví dụ riêng từng từ) → chèn cột **Ví dụ** cuối bảng; `example?` (cấp SLIDE, không phải item) = `{hz,py,vn}` 1 câu ví dụ chung — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). Dùng được cho CẢ CÂU dài, không chỉ từ đơn (vd mỗi item là 1 lời chúc/câu nói) — cột 汉字 tự đủ rộng + hàng tự cao theo số dòng 汉字 cần wrap, Pinyin/Nghĩa co lại/rớt dòng trước (xem lessons learned bên dưới). |
 | `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). |
 | `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}` | **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn}`, `note?`, `source?`, `image?` | Giảng ngữ pháp |
@@ -212,6 +212,10 @@ NGHĨA TỪ trước; nếu từ là tính từ/khái niệm trừu tượng kh�
 (vd 过时, 迷人, 有品味, 流行) → đổi sang query bám theo NỘI DUNG CÂU VÍ DỤ của
 từ đó thay vì cố tìm ảnh literal cho khái niệm. Không cần hỏi user trước khi
 thử — chỉ cần Read lại ảnh tải về để soát (bước 2 dưới) trước khi gắn vào slide.
+**Bước cuối nếu cả 2 lượt đều không ra ảnh phù hợp/đứng đắn (2026-08-06):** dừng
+lại, KHÔNG cố đổi query thêm nhiều vòng — bỏ hẳn field `"image"` cho slide đó
+(để trống, renderer tự vẽ khung xám placeholder), báo user để họ tự tìm/gắn ảnh
+tay sau. Đừng chấp nhận ảnh "tạm được" chỉ để có ảnh — khung trống còn hơn ảnh sai.
 
 ⚠️ **Soát nội dung ảnh, không chỉ soát đúng chủ đề:** ngoài việc ảnh có khớp
 nghĩa từ hay không, phải loại các ảnh phản cảm/hở hang/có chữ không phù hợp
@@ -247,6 +251,27 @@ khi chỉ đưa cửa sổ CŨ đang mở lên trước, không load lại nội
 tưởng bug (audio/nội dung "chưa cập nhật") trong khi file trên đĩa đã đúng. Gặp báo
 lỗi kiểu "sao chưa đổi" sau rebuild → nhắc user **đóng hẳn toàn bộ cửa sổ PowerPoint**
 (không chỉ đóng tab) rồi mở lại, trước khi kết luận có bug thật.
+
+⚠️ **`dialogue` bong bóng rớt/tràn chữ khi câu dài (2026-08-06):** renderer cũ tính
+chiều cao bubble giả định hz/py/vn LUÔN chỉ 1 dòng — sai khi câu dài chạm mức
+`max_bubble_w` (7.6in), buộc phải tự wrap xuống ≥2 dòng nhưng bubble vẫn thấp như
+1 dòng → chữ tràn/mất ở đáy. Đã sửa: tính lại `bubble_w` trước, rồi dùng
+`_wrap_lines` để đếm số dòng THẬT trong đúng bề rộng đó mới suy ra `bubble_h`
+(không còn giả định số dòng cố định).
+
+⚠️ **Slide ít nội dung dồn lên đầu, trống cả mảng dưới (2026-08-06):** `grammar`/
+`bullets`/`exercise` neo cố định `MSO_ANCHOR.TOP` (để tránh đè header khi nội
+dung nhiều) — nhưng khi nội dung ÍT hơn khung (`scale == 1.0`, không cần co),
+neo TOP làm chữ dồn hết lên đầu, để trống hẳn nửa dưới slide. Đã sửa: chỉ neo
+TOP khi `scale < 1.0` (nội dung thật sự vượt khung); còn lại neo MIDDLE để
+phân bổ đều theo chiều dọc.
+
+⚠️ **Bảng `vocab` (hz/py/nghĩa) rớt dòng cột 汉字 khi item là CẢ CÂU (2026-08-06):**
+cột 汉字 mặc định chỉ 26% bề rộng — đủ cho 1-2 từ nhưng câu dài (vd lời chúc
+"祝您福如东海，寿比南山！") wrap quá nhiều dòng so với chiều cao hàng chia đều
+`height/nrow`, chữ Hán bị tràn đáy ô. Đã sửa: cột 汉字 lên 40% + chiều cao mỗi
+hàng tính theo số dòng 汉字 THẬT cần wrap (dùng `_wrap_lines`), Pinyin/Nghĩa
+được PHÉP hẹp/rớt dòng trước (ưu tiên 汉字 không bao giờ mất chữ).
 
 ## Đồng bộ audio vào file .pptx đã bị sửa tay (không rebuild từ JSON)
 
