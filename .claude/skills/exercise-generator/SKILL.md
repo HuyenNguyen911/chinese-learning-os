@@ -69,6 +69,13 @@ Mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` (do teaching-coach tạo trư
    xuất hiện trong kho văn bản đó không (trừ hư từ/đại từ/số đếm cơ bản HSK1
    hiển nhiên đã biết trước khóa). Từ lạ → đổi sang từ đã có trong kho, không
    giữ nguyên rồi hy vọng học viên đoán được nghĩa.
+4c. **Đối chiếu câu nghe/HSKK với câu ĐÃ DÙNG ở slide buổi đó (課文 + 口语 khẩu
+   ngữ)** (2026-08-06, buổi 5 HSK2: user phát hiện `听后重复` lặp gần nguyên văn
+   câu 課文/khẩu ngữ — `check_baitap.py` chỉ soát trùng NỘI BỘ baitap, không so
+   với slide). Gom text `hz` của mọi `dialogue.turns[]`, `passage.sentences[]`,
+   và block `bullets`/`grammar` kicker `口语` trong `buoiX.json` của buổi đang
+   soạn → rà từng câu `nghe`/`听后重复` xem có trùng/gần trùng nguyên văn không.
+   Trùng → viết lại bằng từ vựng tương đương nhưng diễn đạt khác.
 5. **Với block `nghe` / `noi_hskk`:** trình 听力文本 / câu hỏi nói dạng text cho
    user duyệt. **KHÔNG sinh MP3 ngay.**
 
