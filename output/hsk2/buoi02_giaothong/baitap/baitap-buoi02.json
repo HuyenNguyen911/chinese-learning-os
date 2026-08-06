@@ -85,7 +85,7 @@
       "type": "noi_hskk",
       "title": "回答问题",
       "part": "回答问题",
-      "instructions": "Nghe câu hỏi rồi trả lời.",
+      "instructions": "Nghe câu hỏi rồi trả lời. Dàn bài chuẩn HSKK 初级: (1) Trả lời thẳng câu hỏi bằng 1 câu ngắn — đúng ngữ pháp hơn là nói dài; (2) Thêm 1 câu mô tả/giải thích cụ thể hơn (làm gì, với ai, thế nào); (3) (không bắt buộc, để đạt điểm cao) thêm 1 câu cảm nghĩ hoặc mở rộng.",
       "items": [
         {"script": "你们学校附近好打车吗？", "hint": "好打车，车站也不远。", "hint_plus": "挺好打车的，车站离我们学校不远，走路五分钟就到。", "audio": "audio/hskk-4.mp3"},
         {"script": "你们学校有多少学生？", "hint": "有两万多个学生。", "hint_plus": "我们学校不算大，大概有两万多个学生，外国学生也不少。", "audio": "audio/hskk-5.mp3"}

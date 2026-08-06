@@ -83,7 +83,7 @@
       "type": "noi_hskk",
       "title": "回答问题",
       "part": "回答问题",
-      "instructions": "Nghe câu hỏi rồi trả lời.",
+      "instructions": "Nghe câu hỏi rồi trả lời. Dàn bài chuẩn HSKK 初级: (1) Trả lời thẳng câu hỏi bằng 1 câu ngắn — đúng ngữ pháp hơn là nói dài; (2) Thêm 1 câu mô tả/giải thích cụ thể hơn (làm gì, với ai, thế nào); (3) (không bắt buộc, để đạt điểm cao) thêm 1 câu cảm nghĩ hoặc mở rộng.",
       "items": [
         {"script": "你去旅游的时候，喜欢自己做计划还是让别人帮你订？", "hint": "我喜欢自己做计划。", "hint_plus": "我喜欢自己做计划，因为这样比较自由，想去哪儿就去哪儿。", "audio": "audio/hskk-4.mp3"},
         {"script": "你最近去过什么地方旅游？那儿怎么样？", "hint": "我去过西安，很不错。", "hint_plus": "我去年去过西安，那儿的兵马俑很有名，我觉得很不错，下次还想再去。", "audio": "audio/hskk-5.mp3"}

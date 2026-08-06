@@ -84,7 +84,7 @@
       "type": "noi_hskk",
       "title": "回答问题",
       "part": "回答问题",
-      "instructions": "Nghe câu hỏi rồi trả lời.",
+      "instructions": "Nghe câu hỏi rồi trả lời. Dàn bài chuẩn HSKK 初级: (1) Trả lời thẳng câu hỏi bằng 1 câu ngắn — đúng ngữ pháp hơn là nói dài; (2) Thêm 1 câu mô tả/giải thích cụ thể hơn (làm gì, với ai, thế nào); (3) (không bắt buộc, để đạt điểm cao) thêm 1 câu cảm nghĩ hoặc mở rộng.",
       "items": [
         {"script": "你买衣服喜欢深色还是浅色？", "hint": "我喜欢深色，因为比较好看。", "hint_plus": "我买衣服比较喜欢深色，因为深色比较好看，也比较正式。", "audio": "audio/hskk-4.mp3"},
         {"script": "你有没有穿过让你觉得很独特的衣服？", "hint": "我穿过，是我朋友送我的礼物。", "hint_plus": "我穿过一件很独特的衣服，是我朋友送我的礼物，我很喜欢。", "audio": "audio/hskk-5.mp3"}

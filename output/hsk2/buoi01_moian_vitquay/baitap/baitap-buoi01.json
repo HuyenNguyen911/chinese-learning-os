@@ -82,7 +82,7 @@
       "type": "noi_hskk",
       "title": "回答问题",
       "part": "回答问题",
-      "instructions": "Nghe câu hỏi rồi trả lời.",
+      "instructions": "Nghe câu hỏi rồi trả lời. Dàn bài chuẩn HSKK 初级: (1) Trả lời thẳng câu hỏi bằng 1 câu ngắn — đúng ngữ pháp hơn là nói dài; (2) Thêm 1 câu mô tả/giải thích cụ thể hơn (làm gì, với ai, thế nào); (3) (không bắt buộc, để đạt điểm cao) thêm 1 câu cảm nghĩ hoặc mở rộng.",
       "items": [
         {"script": "你是不是第一次来北京？", "hint": "是，这是我第一次来北京。", "hint_plus": "是，这是我第一次来北京，我还不认识路，有点儿紧张。", "audio": "audio/hskk-4.mp3"},
         {"script": "你有时候会自己一个人去旅游吗？", "hint": "有时候会，我喜欢自己去旅游。", "hint_plus": "有时候会，我喜欢自己一个人去旅游，可以想去哪儿就去哪儿。", "audio": "audio/hskk-5.mp3"}
