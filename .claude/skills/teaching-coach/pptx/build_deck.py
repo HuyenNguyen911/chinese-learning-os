@@ -102,24 +102,6 @@ class DeckBuilder:
         for tag in ("a:ea", "a:cs"):
             rPr.append(rPr.makeelement(qn(tag), {"typeface": self.theme["cjk_font"]}))
 
-    def _is_wide_char(self, ch):
-        """CJK/fullwidth char chiếm ~1 em ngang, thay vì ~0.52em như Latin —
-        dùng để ước lượng độ rộng tiêu đề mix Hán tự + tiếng Việt chính xác
-        hơn coi cả chuỗi là 1 loại font-width duy nhất."""
-        cp = ord(ch)
-        return (0x2E80 <= cp <= 0xA4CF or 0xAC00 <= cp <= 0xD7A3 or
-                0xF900 <= cp <= 0xFAFF or 0xFF00 <= cp <= 0xFFEF)
-
-    def _text_width_pt(self, text, pt, bold=False):
-        w = 0.0
-        wide = pt * 1.0
-        narrow = pt * 0.52
-        if bold:
-            wide *= 1.12; narrow *= 1.12
-        for ch in text:
-            w += wide if self._is_wide_char(ch) else narrow
-        return w
-
     def _band_header(self, slide, title, kicker=None):
         band = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, SLIDE_W, BAND_H)
         band.fill.solid()
@@ -146,14 +128,7 @@ class DeckBuilder:
                                 SLIDE_W - 2 * MARGIN, Inches(0.62),
                                 anchor=MSO_ANCHOR.MIDDLE)
         p = tf.paragraphs[0]
-        # Tiêu đề dài (vd bảng khẩu ngữ ghi rõ chủ đề trong ngoặc) ở cỡ chữ cố
-        # định 27pt dễ wrap 2 dòng nhưng khung chỉ đủ cao 1 dòng -> tràn xuống
-        # khỏi dải màu, đè lên nội dung bên dưới. Co chữ để LUÔN vừa 1 dòng
-        # thay vì chấp nhận wrap (band header không có chỗ cho 2 dòng).
-        title_w_pt = (SLIDE_W - 2 * MARGIN) / Pt(1)
-        needed_pt = self._text_width_pt(title, 27, bold=True)
-        sz = 27 if needed_pt <= title_w_pt else max(16, int(27 * title_w_pt / needed_pt))
-        self._set_run(p.add_run(), title, sz, color="bg", bold=True, cjk=True)
+        self._set_run(p.add_run(), title, 27, color="bg", bold=True, cjk=True)
 
     def _place_audio(self, slide, rel_path):
         """Nhúng audio (mp3) làm nút 🔊 ở góc phải dải header. PowerPoint nhận
@@ -410,7 +385,11 @@ class DeckBuilder:
             widths = [0.14, 0.18, 0.26, 0.42]
             headers = ["汉字", "Pinyin", "Nghĩa", "Ví dụ"]
         else:
-            widths = [0.26, 0.36, 0.38]
+            # 汉字 PHẢI đủ rộng — bảng này còn dùng cho câu dài (vd lời chúc),
+            # không chỉ 1-2 từ như vocab thường; cột hẹp cố định làm chữ Hán
+            # rớt dòng dưới đáy ô (review buổi 06: "cột hán tự đừng rớt hàng,
+            # cột khác có thể rớt").
+            widths = [0.40, 0.26, 0.34]
             headers = ["汉字", "Pinyin", "Nghĩa"]
         ncol = len(headers)
         nrow = len(items) + 1
@@ -418,17 +397,34 @@ class DeckBuilder:
         table = gfx.table
         for i, w in enumerate(widths):
             table.columns[i].width = int(width * w)
-        rh = int(height / nrow)
-        for r in range(nrow):
-            table.rows[r].height = rh
         # Font co theo chiều cao hàng thực tế — nrow cố định 23/15pt tràn ô
         # khi 1 slide nhồi nhiều từ (vd 13 từ); scale xuống cho hàng thấp,
         # KHÔNG phóng to quá cỡ gốc khi hàng cao (nrow ít).
         ideal_rh = Inches(0.52)
+        rh = int(height / nrow)
         fscale = min(1.0, rh / ideal_rh) if ideal_rh else 1.0
         hz_sz = max(14, int(23 * fscale))
         py_sz = vn_sz = max(10, int(15 * fscale))
         hdr_sz = max(11, int(15 * fscale))
+        if has_sw:
+            for r in range(nrow):
+                table.rows[r].height = rh
+        else:
+            # Hàng cao theo ĐÚNG số dòng 汉字 cần wrap ở cột đã cho — hàng có
+            # câu Hán dài (vd lời chúc) cao hơn, hàng ngắn giữ compact, thay
+            # vì chia đều height/nrow rồi chữ Hán tràn đáy ô khi câu dài.
+            hz_col_w = int(width * widths[0])
+            row_h = [rh]
+            for it in items:
+                lines = self._wrap_lines(it.get("hz", ""), hz_col_w - Pt(20),
+                                         hz_sz, cjk=True, bold=True)
+                row_h.append(max(rh, int(self._line_h(hz_sz) * lines) + Pt(10)))
+            total_h = sum(row_h)
+            if total_h > height:
+                shrink = height / total_h
+                row_h = [int(h * shrink) for h in row_h]
+            for r, h in enumerate(row_h):
+                table.rows[r].height = h
         for c, h in enumerate(headers):
             cell = table.cell(0, c)
             cell.fill.solid(); cell.fill.fore_color.rgb = self._rgb("accent")
@@ -526,80 +522,6 @@ class DeckBuilder:
                 p3 = etf.add_paragraph(); p3.space_before = Pt(1)
                 self._set_run(p3.add_run(), "     " + ex["vn"], 14, color="muted")
 
-    # -- word_pair: 2 từ / 1 slide xếp CẠNH NHAU, mỗi cột tự chứa ảnh +
-    #    汉字/pinyin/nghĩa + 1 câu ví dụ — dùng cho từ vựng mở rộng số lượng
-    #    lớn (thay cho wordcard 1 từ/slide khi cần nén gọn buổi học).
-    def _slide_word_pair(self, s):
-        slide = self._new_slide()
-        words = s.get("words", [])[:2]
-        default_title = " · ".join(w.get("hz", "") for w in words) or "生词"
-        self._band_header(slide, s.get("title", default_title), s.get("kicker"))
-        top = self._content_top()
-        area_h = self._content_area_h()
-        content_w = SLIDE_W - 2 * MARGIN
-        n = max(1, len(words))
-        gap = Inches(0.6)
-        col_w = int((content_w - gap * (n - 1)) / n)
-
-        for i, w in enumerate(words):
-            col_left = MARGIN + i * (col_w + gap)
-            cur_top = top
-            if w.get("image"):
-                img_side = min(col_w, Inches(2.1))
-                img_left = col_left + (col_w - img_side) // 2
-                self._place_image(slide, w["image"], img_left, cur_top,
-                                  img_side, img_side)
-                cur_top = cur_top + img_side + Inches(0.12)
-
-            info_h = Inches(1.3)
-            box, tf = self._textbox(slide, col_left, cur_top, col_w, info_h,
-                                    anchor=MSO_ANCHOR.TOP)
-            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
-            self._set_run(p.add_run(), w.get("hz", ""), 40, color="ink",
-                          bold=True, cjk=True)
-            if w.get("pos"):
-                self._set_run(p.add_run(), "  " + w["pos"], 14, color="muted",
-                              italic=True)
-            if w.get("py"):
-                p2 = tf.add_paragraph(); p2.alignment = PP_ALIGN.CENTER
-                p2.space_before = Pt(4)
-                self._set_run(p2.add_run(), w["py"], 18, color="accent",
-                              italic=True)
-            if w.get("vn"):
-                p3 = tf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
-                p3.space_before = Pt(3)
-                self._set_run(p3.add_run(), w["vn"], 15, color="ink")
-            cur_top = cur_top + info_h
-
-            ex = w.get("example")
-            if ex:
-                ex_h = top + area_h - cur_top
-                ebox, etf = self._textbox(slide, col_left, cur_top, col_w, ex_h,
-                                          anchor=MSO_ANCHOR.TOP)
-                p = etf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
-                self._set_run(p.add_run(), "例句", 13, color="accent",
-                              bold=True, cjk=True)
-                p2 = etf.add_paragraph(); p2.alignment = PP_ALIGN.CENTER
-                p2.space_before = Pt(6)
-                self._set_run(p2.add_run(), ex.get("hz", ""), 17, color="ink",
-                              bold=True, cjk=True)
-                if ex.get("py"):
-                    p3 = etf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
-                    p3.space_before = Pt(2)
-                    self._set_run(p3.add_run(), ex["py"], 13, color="accent",
-                                  italic=True)
-                if ex.get("vn"):
-                    p4 = etf.add_paragraph(); p4.alignment = PP_ALIGN.CENTER
-                    p4.space_before = Pt(2)
-                    self._set_run(p4.add_run(), ex["vn"], 13, color="muted")
-
-        if n == 2:
-            divider_x = MARGIN + col_w + gap // 2
-            line = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, divider_x, top,
-                                          Inches(0.015), area_h)
-            line.fill.solid(); line.fill.fore_color.rgb = self._rgb("band")
-            line.line.fill.background(); line.shadow.inherit = False
-
     def _slide_grammar(self, s):
         slide = self._new_slide()
         self._band_header(slide, s.get("title", "Ngữ pháp"), s.get("kicker"))
@@ -633,8 +555,13 @@ class DeckBuilder:
         def sz(pt, floor):
             return max(floor, int(pt * scale))
 
+        # scale == 1.0 -> nội dung ít hơn khung, canh GIỮA để không dồn hết
+        # lên đầu + để trống mảng lớn phía dưới (review buổi 06: "chỗ nội
+        # dung quá dày, chỗ thì trống"). scale < 1.0 -> nội dung đã vượt
+        # khung tự nhiên, giữ neo TOP để không đè lên header (rule cũ).
+        anchor = MSO_ANCHOR.TOP if scale < 1.0 else MSO_ANCHOR.MIDDLE
         box, tf = self._textbox(slide, txt_left, top, txt_w, area_h,
-                                anchor=MSO_ANCHOR.TOP)
+                                anchor=anchor)
         first = True
         for i, line in enumerate(point_lines):
             p = tf.paragraphs[0] if first else tf.add_paragraph()
@@ -686,13 +613,10 @@ class DeckBuilder:
         total = sum(weights)
         return [w / total for w in weights]
 
-    def _row_heights(self, headers, data, widths_frac, width_emu, pt, min_rh, max_rh):
-        """Chiều cao MỖI HÀNG ước theo số dòng wrap thực tế TẠI cỡ chữ `pt`
-        (kế thừa _wrap_lines dùng ở list/grammar). Nhận thẳng cỡ chữ cuối cùng
-        sẽ render (thay vì ước ở 15pt cố định rồi co đều theo 1 hệ số) — co
-        chữ làm tăng số ký tự/dòng nên số dòng cần giảm theo, không co tuyến
-        tính cùng chiều cao được (review: hàng 2 dòng Hán tự dài vẫn bị thiếu
-        cao dù đã "co cả font lẫn hàng theo cùng hệ số")."""
+    def _row_heights(self, headers, data, widths_frac, width_emu, min_rh, max_rh):
+        """Chiều cao MỖI HÀNG ước theo số dòng wrap thực tế (kế thừa
+        _wrap_lines dùng ở list/grammar) — hàng nội dung dài cao hơn, hàng
+        ngắn giữ compact, tránh chữ bị rớt/dồn khi ép 1 chiều cao cố định."""
         heights = []
         for row in [headers] + data:
             nlines = 1
@@ -702,9 +626,8 @@ class DeckBuilder:
                 # Cột 0 luôn render đậm (_fill_cell bold=(c==0)) — phải khớp
                 # bold=True ở đây để ước lượng đúng số dòng wrap thực tế.
                 nlines = max(nlines, self._wrap_lines(
-                    text, int(width_emu * w) - Pt(16), pt, cjk=is_cjk, bold=(c == 0)))
-            h = nlines * self._line_h(pt) + Pt(6)
-            heights.append(min(max_rh, max(min_rh, h)))
+                    text, int(width_emu * w) - Pt(16), 15, cjk=is_cjk, bold=(c == 0)))
+            heights.append(min(max_rh, max(min_rh, int(min_rh * (0.62 + 0.38 * nlines)))))
         return heights
 
     def _slide_table(self, s):
@@ -724,25 +647,19 @@ class DeckBuilder:
         table_avail_h = area_h - note_h
         widths_frac = self._col_weights(headers, data, cjk_cols)
         min_rh = int(min(Inches(0.82), table_avail_h / nrow))
-        max_rh = int(Inches(1.55))
-        # Giảm dần cỡ chữ và tính LẠI số dòng wrap ở đúng cỡ đó mỗi bước —
-        # co nhỏ chữ giúp nhiều ký tự/dòng hơn nên số dòng cần giảm theo,
-        # không thể co đều chiều cao*font theo 1 hệ số duy nhất (review: bảng
-        # 12 câu khẩu ngữ vẫn rớt dòng vì hàng 2 dòng Hán tự dài bị thiếu cao
-        # sau khi co theo cách cũ).
-        cell_pt = 15
-        while True:
-            row_h = self._row_heights(headers, data, widths_frac, width, cell_pt,
-                                      min_rh, max_rh)
-            table_h = sum(row_h)
-            if table_h <= table_avail_h or cell_pt <= 11:
-                break
-            cell_pt -= 1
+        row_h = self._row_heights(headers, data, widths_frac, width, min_rh,
+                                  int(Inches(1.55)))
+        table_h = sum(row_h)
+        font_scale = 1.0
         if table_h > table_avail_h:
             shrink = table_avail_h / table_h
-            row_h = [max(min_rh, int(h * shrink)) for h in row_h]
+            row_h = [int(h * shrink) for h in row_h]
             table_h = sum(row_h)
-        hdr_sz = cell_sz = cell_pt
+            # Nén chiều cao hàng mà giữ nguyên cỡ chữ sẽ tràn/rớt dòng — co cả
+            # font theo cùng hệ số (sàn 11pt để còn đọc được).
+            font_scale = shrink
+        hdr_sz = max(11, int(15 * font_scale))
+        cell_sz = max(11, int(15 * font_scale))
         # canh giữa theo chiều dọc để không thừa khoảng trống phía dưới
         ttop = top + max(0, int((table_avail_h - table_h) / 2))
         gfx = slide.shapes.add_table(nrow, ncol, tleft, ttop, width, table_h)
@@ -982,49 +899,42 @@ class DeckBuilder:
         n = len(turns)
         avail_h = int(SLIDE_H - top - Inches(0.30))
         speaker_colors = {}
-
-        # Bề rộng RIÊNG mỗi bubble theo dòng dài nhất — câu ngắn (vd 你们好!)
-        # không bị kéo giãn hết cỡ như câu dài (review buổi 02: "nội dung
-        # ngắn mà khung dài").
         max_bubble_w = min(Inches(7.6), txt_w); min_bubble_w = min(Inches(1.9), txt_w)
-        inner_pad = Pt(20)  # margin_left(12pt) + margin_right ước lượng
-
-        def _hz_line(t):
-            # 汉字 render CÙNG DÒNG với nhãn "speaker: " (cùng 1 run/paragraph)
-            # — bubble_w PHẢI tính luôn độ rộng nhãn này, không chỉ riêng hz,
-            # nếu không bubble hẹp hơn nội dung thật -> chữ tràn ra ngoài khung
-            # (review: "红色的、绿色的、黑色的，你想买哪个？" bị cắt/tràn).
-            spk = t.get("speaker", "")
-            return (spk + ": " if spk else "") + t.get("hz", "")
 
         def _bubble_w(t, hz_sz, py_sz, vn_sz):
+            # Bề rộng RIÊNG mỗi bubble theo dòng dài nhất — câu ngắn (vd 你们好!)
+            # không bị kéo giãn hết cỡ như câu dài (review buổi 02: "nội dung
+            # ngắn mà khung dài").
             def w(text, pt, cjk):
                 if not text:
                     return 0
                 return len(text) * Pt(pt) * (1.0 if cjk else 0.55)
-            needed = max(w(_hz_line(t), hz_sz, True),
+            needed = max(w(t.get("hz", ""), hz_sz, True),
                         w(t.get("py", ""), py_sz, False),
                         w(t.get("vn", ""), vn_sz, False))
             return int(min(max_bubble_w, max(min_bubble_w, needed + Inches(0.5))))
 
-        def _lines_at(t, bubble_w, hz_sz, py_sz, vn_sz):
-            # Số dòng THỰC TẾ ở đúng cỡ chữ + bề rộng bubble cuối cùng — chỉ
-            # >1 khi nội dung dài hơn max_bubble_w (bubble_w bị ép co lại),
-            # không giả định cố định 1 dòng/hz như trước (gây thiếu cao).
-            inner_w = bubble_w - inner_pad
-            n_hz = self._wrap_lines(_hz_line(t), inner_w, hz_sz, cjk=True, bold=True)
-            n_py = self._wrap_lines(t["py"], inner_w, py_sz, cjk=False) if t.get("py") else 0
-            n_vn = self._wrap_lines(t["vn"], inner_w, vn_sz, cjk=False) if t.get("vn") else 0
-            return n_hz + n_py + n_vn
+        # Số dòng THỰC TẾ sau khi wrap trong bề rộng bubble THẬT (không phải
+        # cứ 1 field = 1 dòng) — bubble bị ép về max_bubble_w khi câu dài, nên
+        # hz/py/vn có thể tự xuống dòng; đếm thiếu sẽ làm bubble thấp hơn nội
+        # dung thật, chữ bị tràn/rớt dòng ở đáy (review buổi 06).
+        def nlines(t, bubble_w, hz_sz, py_sz, vn_sz):
+            inner_w = bubble_w - Pt(20)
+            n_ = self._wrap_lines(t.get("hz", ""), inner_w, hz_sz, cjk=True, bold=True)
+            if t.get("py"):
+                n_ += self._wrap_lines(t["py"], inner_w, py_sz, cjk=False)
+            if t.get("vn"):
+                n_ += self._wrap_lines(t["vn"], inner_w, vn_sz, cjk=False)
+            return n_
 
-        # Kích thước "tự nhiên"; nếu tổng cao hơn khung thì co lại theo hệ số
-        # scale (cả chiều cao lẫn cỡ chữ) để KHÔNG tràn khung dù nhiều lượt.
-        # Ước lượng vòng 1 ở font gốc (22/14/13pt) để tính scale tổng thể.
-        gap0 = int(Inches(0.16)); pad0 = int(Inches(0.30)); line0 = int(Inches(0.40))
-        natural = sum(
-            line0 * _lines_at(t, _bubble_w(t, 22, 14, 13), 22, 14, 13) + pad0
-            for t in turns
-        ) + gap0 * (n - 1)
+        # Kích thước "tự nhiên" ở cỡ chữ GỐC (chưa scale) để tính hệ số scale;
+        # nếu tổng cao hơn khung thì co lại (cả chiều cao lẫn cỡ chữ) để KHÔNG
+        # tràn khung dù nhiều lượt.
+        gap0 = int(Inches(0.16)); line0 = int(Inches(0.40)); pad0 = int(Inches(0.30))
+        hz0, py0, vn0 = 22, 14, 13
+        bw0 = {id(t): _bubble_w(t, hz0, py0, vn0) for t in turns}
+        natural = sum(line0 * nlines(t, bw0[id(t)], hz0, py0, vn0) + pad0
+                     for t in turns) + gap0 * (n - 1)
         scale = min(1.0, avail_h / natural) if natural else 1.0
         line_h = int(line0 * scale); pad = int(pad0 * scale); gap = int(gap0 * scale)
         hz_sz = max(15, int(22 * scale)); py_sz = max(11, int(14 * scale))
@@ -1034,7 +944,7 @@ class DeckBuilder:
         for t in turns:
             is_left = t.get("speaker") == first_speaker
             bubble_w = _bubble_w(t, hz_sz, py_sz, vn_sz)
-            bubble_h = line_h * _lines_at(t, bubble_w, hz_sz, py_sz, vn_sz) + pad
+            bubble_h = line_h * nlines(t, bubble_w, hz_sz, py_sz, vn_sz) + pad
             left = int(txt_left) if is_left else int(txt_left + txt_w - bubble_w)
             bubble = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
                                             Emu(left), Emu(y), bubble_w, Emu(bubble_h))
@@ -1070,48 +980,24 @@ class DeckBuilder:
         top = self._content_top(); area_h = self._content_area_h()
         has_img = bool(s.get("image"))
         txt_left, txt_w, img_left, img_w = self._split_image_col(s, Inches(4.2))
-        sentences = s.get("sentences", [])
-        note = s.get("note")
-
-        # Câu tự sự dài (nhiều mệnh đề nối bằng vì/nên...) ở cỡ chữ cố định dễ
-        # tràn khỏi khung khi có ảnh chiếm nửa slide (thu hẹp txt_w) — auto-
-        # shrink theo chiều cao thực tế cần, giống _slide_grammar/_slide_reading.
-        natural = 0
-        for i, sent in enumerate(sentences):
-            natural += 0 if i == 0 else Pt(16)
-            natural += self._wrap_lines(sent.get("hz", ""), txt_w, 22, cjk=True,
-                                        bold=True) * self._line_h(22)
-            if sent.get("py"):
-                natural += Pt(1) + self._line_h(14)
-            if sent.get("vn"):
-                natural += Pt(1) + self._line_h(14)
-        if note:
-            natural += Pt(14) + self._wrap_lines(note, txt_w, 14, cjk=True) * self._line_h(14)
-        scale = self._fit_scale(natural, area_h)
-
-        def sz(pt, floor):
-            return max(floor, int(pt * scale))
-
         box, tf = self._textbox(slide, txt_left, top, txt_w, area_h,
                                 anchor=MSO_ANCHOR.MIDDLE)
         first = True
-        for sent in sentences:
+        for sent in s.get("sentences", []):
             p = tf.paragraphs[0] if first else tf.add_paragraph()
-            if not first:
-                p.space_before = Pt(16 * scale)
             first = False
-            self._set_run(p.add_run(), sent.get("hz", ""), sz(22, 14), color="ink",
-                          bold=True, cjk=True)
+            p.space_before = Pt(16)
+            self._set_run(p.add_run(), sent.get("hz", ""), 22, color="ink", bold=True,
+                          cjk=True)
             if sent.get("py"):
-                p2 = tf.add_paragraph(); p2.space_before = Pt(1 * scale)
-                self._set_run(p2.add_run(), sent["py"], sz(14, 10), color="accent",
-                              italic=True)
+                p2 = tf.add_paragraph(); p2.space_before = Pt(1)
+                self._set_run(p2.add_run(), sent["py"], 14, color="accent", italic=True)
             if sent.get("vn"):
-                p3 = tf.add_paragraph(); p3.space_before = Pt(1 * scale)
-                self._set_run(p3.add_run(), sent["vn"], sz(14, 10), color="muted")
-        if note:
-            p = tf.add_paragraph(); p.space_before = Pt(14 * scale)
-            self._set_run(p.add_run(), "• " + note, sz(14, 10), color="ink", cjk=True)
+                p3 = tf.add_paragraph(); p3.space_before = Pt(1)
+                self._set_run(p3.add_run(), sent["vn"], 14, color="muted")
+        if s.get("note"):
+            p = tf.add_paragraph(); p.space_before = Pt(14)
+            self._set_run(p.add_run(), "• " + s["note"], 14, color="ink", cjk=True)
         if has_img:
             self._place_image(slide, s["image"], img_left, top, img_w, area_h)
 
@@ -1402,8 +1288,11 @@ class DeckBuilder:
         def sz(pt, floor):
             return max(floor, int(pt * scale))
 
+        # Xem giải thích ở _slide_grammar: ít nội dung (scale==1.0) canh GIỮA
+        # thay vì dồn lên đầu để trống cả mảng dưới; nhiều nội dung giữ TOP.
+        anchor = MSO_ANCHOR.TOP if scale < 1.0 else MSO_ANCHOR.MIDDLE
         box, tf = self._textbox(slide, txt_left, top, txt_w, area_h,
-                                anchor=MSO_ANCHOR.TOP)
+                                anchor=anchor)
         first = True
         if instructions:
             p = tf.paragraphs[0]
