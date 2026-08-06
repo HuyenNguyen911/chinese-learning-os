@@ -28,6 +28,14 @@ format thi HSK và HSKK 初级.
 - **Đáp án 2 cấp (khối tự luận):** với `dich_dat_cau`, `sap_xep`, `noi_hskk`
   (`回答问题`) — điền `answer`/`hint` (Chuẩn, đủ điểm) + `answer_plus`/`hint_plus`
   (Nâng cao, điểm cao) theo band chấm thi. Xem `worksheet/schema.md`.
+- **Dàn bài chuẩn HSKK 初级 cho `noi_hskk` part `回答问题`** (mặc định mọi buổi,
+  2026-08-06 — user yêu cầu áp lại cho buổi 1-6): luôn điền `instructions` của
+  block đó bằng dàn bài 3 bước (hiện ngay trên worksheet, không chỉ đáp án):
+  `"Nghe câu hỏi rồi trả lời. Dàn bài chuẩn HSKK 初级: (1) Trả lời thẳng câu hỏi
+  bằng 1 câu ngắn — đúng ngữ pháp hơn là nói dài; (2) Thêm 1 câu mô tả/giải thích
+  cụ thể hơn (làm gì, với ai, thế nào); (3) (không bắt buộc, để đạt điểm cao)
+  thêm 1 câu cảm nghĩ hoặc mở rộng."` `hint` nên khớp bước (1)-(2), `hint_plus`
+  khớp thêm bước (3).
 - Chỉ **đọc** `memory/*`. Không tự sửa memory (CLAUDE.md §4).
 - **Tham khảo phong cách đề online (Pandarin):** trước khi soạn câu cho buổi
   HSK*N*, fetch 1-2 trang tương ứng cấp đó tại `pandarin.net`
@@ -69,6 +77,19 @@ Mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` (do teaching-coach tạo trư
    xuất hiện trong kho văn bản đó không (trừ hư từ/đại từ/số đếm cơ bản HSK1
    hiển nhiên đã biết trước khóa). Từ lạ → đổi sang từ đã có trong kho, không
    giữ nguyên rồi hy vọng học viên đoán được nghĩa.
+4c. **Đối chiếu MỌI câu tự soạn (không riêng nghe/HSKK) với TOÀN BỘ câu trong
+   slide buổi đó** (2026-08-06, buổi 5 HSK2 rồi lại buổi 6: user phát hiện lần 2
+   — buổi 5 chỉ vá phạm vi `听后重复`/课文/口语, buổi 6 lại lộ trùng ở cả
+   `dien_cho_trong`, `sap_xep`, `dich_dat_cau` với ví dụ trong `wordcard`/`vocab`/
+   `grammar.examples` — không riêng `dialogue`/`口语`. `check_baitap.py` chỉ soát
+   trùng NỘI BỘ baitap, không so với slide). Gom TOÀN BỘ chuỗi `hz` xuất hiện bất
+   kỳ đâu trong `buoiX.json` (đệ quy mọi field `hz`, cộng `table.rows`) thành 1
+   tập câu/cụm slide → rà từng câu vừa soạn ở MỌI block sản sinh (`dien_cho_trong`,
+   `sap_xep`, `dich_dat_cau`, `nghe`, `noi_hskk`, cả câu trong `doc_hieu.passage`)
+   xem có **trùng nguyên văn HOẶC gần trùng** (chỉ đổi 1-2 chữ, giữ nguyên khung
+   câu) với câu nào trong slide không — không chỉ so từ vựng dùng chung. Trùng/
+   gần trùng → đổi tình huống/chủ ngữ/động từ để thành câu mới, chỉ giữ chung
+   từ vựng + điểm ngữ pháp, không giữ khung câu.
 5. **Với block `nghe` / `noi_hskk`:** trình 听力文本 / câu hỏi nói dạng text cho
    user duyệt. **KHÔNG sinh MP3 ngay.**
 

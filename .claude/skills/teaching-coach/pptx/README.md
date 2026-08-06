@@ -301,6 +301,17 @@ Cách làm: viết script Python riêng (không sửa `build_deck.py`) —
    MSO_SHAPE_TYPE.MEDIA` → remove), rồi `slide.shapes.add_movie(...)`, cuối cùng
    `prs.save()` đè lên chính file đó — KHÔNG gọi `build_deck.py`.
 
+**Script mẫu có sẵn:** [sync_audio_to_pptx.py](sync_audio_to_pptx.py) — dùng ngay
+khi thứ tự/nội dung slide KHÔNG đổi (chỉ sửa layout/ảnh/format), map audio theo
+INDEX trực tiếp (không cần đối chiếu `kicker`/`title`):
+```bash
+"$PY" .claude/skills/teaching-coach/pptx/slide_audio.py <slide/buoiX.json>   # sinh mp3 trước
+"$PY" .claude/skills/teaching-coach/pptx/sync_audio_to_pptx.py <slide/buoiX.json> <slide/Buoi-X-....pptx>
+```
+Script tự chặn (báo lỗi, không ghi) nếu số slide trong pptx khác số slide trong JSON —
+dấu hiệu slide đã bị tách/xoá, khi đó phải làm theo quy trình đối chiếu NGUYÊN VĂN ở
+bước 1-4 phía trên (viết script riêng cho trường hợp đó, không dùng file mẫu này).
+
 **2 lỗi python-pptx đã gặp khi làm việc này (chỉ xảy ra trên file đã qua chỉnh tay
 nhiều lần, không xảy ra khi build từ JSON sạch):**
 - `add_movie(..., poster_frame_image=<path>)` crash `IndexError` ở
