@@ -16,7 +16,7 @@
 | 2 | `buoi02_giaothong` | 还是打车去北大吧 | giao thông, đề nghị **+ hỏi đường 怎么走** | 还是…吧 · 多(概数) · cụm làm định ngữ | L16 · L17 | ✅ |
 | 3 | `buoi03_dulich_xian` | 我想去西安旅游 | du lịch (Tây An) **+ đặt khách sạn**⚠️ | 结果补语 · 动词重叠(1)(2) | L29 · L19 · L27 | ⏳ |
 | 4 | `buoi04_trangphuc_mausac` | 你穿红色的很好看 | trang phục, màu sắc | 动态助词"过" · 因为…所以 · 的字短语 · **把字句 (bổ sung)** | L19 | ⏳ |
-| 5 | `buoi05_thamnha` | 第一次去中国朋友家 | thăm nhà bạn TQ **+ động vật/thú cưng + giới thiệu bản thân/gia đình sâu** | 简单趋向补语(1)(2) · 都…了 · 形容词重叠 · 什么的 · 结构助词"地" · 一…就… | — | ⏳ |
+| 5 | `buoi05_thamnha` | 第一次去中国朋友家 | thăm nhà bạn TQ **+ động vật/thú cưng + giới thiệu bản thân/gia đình sâu** | 简单趋向补语(1)(2) · 都…了 | — | ✅ |
 | 6 | `buoi06_sinhnhat` | 小雪，生日快乐！ | sinh nhật, chúc mừng | 状态补语(1)(2) [得] | L25 | ⏳ |
 | 7 | `buoi07_thethao` | 他篮球打得很好 | thể thao (bóng rổ) | 比较句(1)(2) [比] | L25 | ⏳ |
 | 8 | `buoi08_trinho_sosanh` | 虽然你忘了，但是我记得 | trí nhớ, so sánh | 虽然…但是 · 比较句(3) · 动词"离" | L28 · L23 | ⏳ |
@@ -35,14 +35,20 @@
 **Sửa 2026-08-04 (khi bóc Bài 3):** cột ngữ pháp Bài 3/4 bị lệch 1 bài so với sách
 thật (TOC gốc gán nhầm, cùng lỗi dạng đã sửa ở Bài 1/2 với 兼语句) — đã đối chiếu trực
 tiếp PDF trang 019-036 và sửa lại: Bài 3 chỉ có 结果补语+动词重叠(1)(2); 过 và 因为…
-所以 thực ra thuộc Bài 4. Bài 5 đã bổ sung 简单趋向补语(1)(2)+都…了 (xác nhận trực
-tiếp từ trang objectives 053) nhưng **4 điểm cũ (形容词重叠·什么的·地·一…就…) CHƯA
-được xác minh lại** — có thể đã lệch tiếp sang Bài 6, cần soát khi sản xuất tới Bài 5.
-Xem `output/hsk2/buoi03_dulich_xian/doc/bai-doc.md` để biết chi tiết đối chiếu.
+所以 thực ra thuộc Bài 4. Xem `output/hsk2/buoi03_dulich_xian/doc/bai-doc.md` để biết
+chi tiết đối chiếu.
+
+**Sửa 2026-08-05/06 (khi bóc Bài 5):** đã xác minh lại 4 điểm cũ còn hedge ở trên —
+**KHÔNG thuộc Bài 5**, đúng là bị lệch tiếp: 形容词重叠 · 固定短语"什么的" · 结构助词
+"地" thực ra thuộc **Bài 6** (objectives trang 062 xác nhận), 紧缩复句"一…就…" thuộc
+**Bài 7** (objectives trang 072 xác nhận). Bài 5 CHỈ có 简单趋向补语(1)(2) + 都…了
+(đã sửa lại bảng syllabus ở trên). Khi sản xuất Bài 6/7 nhớ đối chiếu lại các điểm này
+đã đúng vị trí trong TOC hiện tại chưa trước khi bóc.
 
 ## Ghi chú kỹ thuật
 
-- **Ngữ pháp bổ sung ngoài 45 điểm sách** (把 Bài 4, 被 Bài 11, 连…都/也 Bài 12): đánh dấu rõ trong slide buổi tương ứng "ngữ pháp mở rộng ngoài sách chính".
+- **Ngữ pháp bổ sung ngoài 45 điểm sách** (把 Bài 4, 被 Bài 11, 连…都/也 Bài 12, 复合趋向补语 Bài 5 — đưa sớm từ Bài 14 vì học viên đã nắm chắc 简单趋向补语): đánh dấu rõ trong slide buổi tương ứng "ngữ pháp mở rộng ngoài sách chính".
+- **Buổi 5 nâng độ khó từ vựng** (2026-08-06, theo yêu cầu user — học viên đã vượt xa mức 18 từ gốc sách): 生词 slide đổi hẳn sang 20 từ động từ nâng cao (拿/带/搬/寄/扔/摆/放/挂/抬/抱/提/借/还/卖/爬/跳/倒/退/躲/传) để luyện 简单/复合趋向补语, không dùng 18 từ gốc sách nữa (18 từ gốc vẫn xuất hiện tự nhiên qua 課文). Bài tập (`baitap-buoi05.json`) vẫn bám 18 từ gốc + 3 điểm ngữ pháp chính theo đúng chuẩn Bài 5. Cân nhắc áp dụng tương tự (khảo sát trình độ trước khi bám 100% sách) cho các buổi sau nếu học viên tiếp tục vượt tiến độ.
 - **Viết 3.0:** mỗi buổi bài tập có sắp câu/điền chữ/câu ngắn + luân phiên đoạn 60-100 chữ / điền form (`dien_bieu_mau`) / lời nhắn / nhật ký (`writing_prompt` với `kind` + `target_length`) — schema đã mở rộng ở exercise-generator (`main`, commit `021493e`).
 - **Đọc thực tế:** mỗi buổi bài tập phần 读 có ≥1 văn bản tự soạn theo chủ đề (tin nhắn/biển báo/thực đơn/quảng cáo), không lấy từ sách.
 - **Từ vựng:** 210 mục (207 từ + 3 tên riêng), 19 từ trùng HSK1 cần xử lý khi sản xuất buổi tương ứng (đáng chú ý: Bài 4 trùng 5/16 từ — cụm màu sắc) — xem `hsk2-vocab-grammar-checklist.md`.
@@ -53,5 +59,7 @@ Xem `output/hsk2/buoi03_dulich_xian/doc/bai-doc.md` để biết chi tiết đ�
 ## Trạng thái build
 
 Buổi 1 ✅ (slide + bài tập, đã duyệt 2026-08-02). Buổi 2 ✅ (slide + bài tập, đã duyệt
-2026-08-04 — có bổ sung nhóm từ 问路 ngoài 45 điểm sách, xem ghi chú kỹ thuật). Buổi
-3-15 + Ôn 1 + Ôn 2 chưa build (⏳).
+2026-08-04 — có bổ sung nhóm từ 问路 ngoài 45 điểm sách, xem ghi chú kỹ thuật). Buổi 5 ✅
+(slide + bài tập, đã duyệt 2026-08-06 — 生词 slide đổi sang 20 từ nâng cao + mở rộng
+复合趋向补语, xem ghi chú kỹ thuật). Buổi 3-15 (trừ 5) + Ôn 1 + Ôn 2 xem trạng thái ở
+bảng trên (⚠️ dòng này có thể chưa đồng bộ hết với bảng — bảng trên là nguồn chân lý).

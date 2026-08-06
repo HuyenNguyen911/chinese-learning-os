@@ -1,0 +1,97 @@
+{
+  "meta": { "lesson": "HSK2 · Buổi 5 — 第一次去中国朋友家", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối 汉字 với nghĩa",
+      "pairs": [
+        {"left": "爷爷", "right": "ông nội"},
+        {"left": "奶奶", "right": "bà nội"},
+        {"left": "礼物", "right": "quà tặng"},
+        {"left": "酒店", "right": "khách sạn"},
+        {"left": "奶茶", "right": "trà sữa"}
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "word_bank": ["快", "等", "跟", "一会儿", "走"],
+      "items": [
+        {"q": "你{}点儿吧，我们要晚了。", "answer": "快"},
+        {"q": "我在楼下{}你，你快下来。", "answer": "等"},
+        {"q": "你可以{}我一起去朋友家吗？", "answer": "跟"},
+        {"q": "我{}就回来，你等我一下。", "answer": "一会儿"},
+        {"q": "他们{}回家了，路上很累。", "answer": "走"}
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc tin nhắn hẹn giờ đến nhà bạn",
+      "passage": "家月：明天几点去你家？\n王一雪：下午两点，你们坐公交车来就行，我在楼下等你们。\n家月：好的，我们会带一点儿礼物去，你喜欢喝奶茶吗？\n王一雪：喜欢！你们别买太多，人来就好。",
+      "questions": [
+        {"q": "王一雪什么时候在楼下等她们？", "options": ["明天上午", "明天下午两点", "明天晚上"], "answer": "B"},
+        {"q": "家月准备带什么去？", "options": ["奶茶", "水果", "礼物"], "answer": "C"},
+        {"q": "王一雪希望她们怎么样？", "options": ["别买太多东西", "早点儿来", "带很多朋友来"], "answer": "A"}
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "items": [
+        {"words": ["你", "快", "吧", "进来"], "answer": "你快进来吧。", "answer_plus": "你快进来吧，别站在门口了。"},
+        {"words": ["都", "了", "我们", "八点", "吃饭", "吧"], "answer": "都八点了，我们吃饭吧。", "answer_plus": "都八点了，我们快吃饭吧，别等了。"},
+        {"words": ["他", "下去", "一会儿", "就"], "answer": "他一会儿就下去。", "answer_plus": "他说一会儿就下去，你们别着急。"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "items": [
+        {"prompt": "Dịch: Anh ấy đã chuẩn bị quà cho ông bà.", "answer": "他给爷爷奶奶准备了礼物。", "answer_plus": "他特意给爷爷奶奶准备了一份礼物。"},
+        {"prompt": "Đặt 1 câu dùng \"酒店\".", "answer": "我们住在这家酒店。", "answer_plus": "我们这次旅游住在市中心的酒店，很方便。"},
+        {"prompt": "Dịch: Đã 9 giờ rồi, cậu còn chưa đi ngủ à?", "answer": "都九点了，你还不睡觉吗？", "answer_plus": "都九点了，你还不睡觉吗？明天还要早起呢。"}
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "items": [
+        {"script": "安妮：你什么时候到？ 白家月：我一会儿就到，你再等我五分钟。", "q": "白家月大概什么时候到？", "options": ["马上", "一会儿", "明天"], "answer": "B", "audio": "audio/nghe-1.mp3"},
+        {"script": "妈妈：孩子们，快下来吃饭！ 孩子：好，我们马上下去。", "q": "孩子们要做什么？", "options": ["上去", "下去吃饭", "出去玩"], "answer": "B", "audio": "audio/nghe-2.mp3"},
+        {"script": "他把礼物准备好了，准备明天送给奶奶。", "q": "他准备把礼物送给谁？", "options": ["爷爷", "奶奶", "朋友"], "answer": "B", "audio": "audio/nghe-3.mp3"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "听后重复",
+      "part": "听后重复",
+      "items": [
+        {"script": "他一会儿就准备好了。", "audio": "audio/hskk-1.mp3"},
+        {"script": "奶奶在酒店等我们吃饭。", "audio": "audio/hskk-2.mp3"},
+        {"script": "你跟我一起上去看看吧。", "audio": "audio/hskk-3.mp3"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "回答问题",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời. Dàn bài chuẩn HSKK 初级: (1) Trả lời thẳng câu hỏi bằng 1 câu ngắn — đúng ngữ pháp hơn là nói dài; (2) Thêm 1 câu mô tả/giải thích cụ thể hơn (làm gì, với ai, thế nào); (3) (không bắt buộc, để đạt điểm cao) thêm 1 câu cảm nghĩ hoặc mở rộng.",
+      "items": [
+        {"script": "如果你第一次去中国朋友家做客，你会准备什么礼物？", "hint": "我会准备一些水果或者奶茶给他们。", "hint_plus": "我会准备一些家乡特产，因为这样更有意义，也能让他们了解我的文化。", "audio": "audio/hskk-4.mp3"},
+        {"script": "你的朋友请你介绍一下你的家人，你会怎么说？", "hint": "我家有爸爸、妈妈和我，我们很幸福。", "hint_plus": "我家有爸爸、妈妈和一个弟弟，我们周末常常一起吃饭、聊天，感情很好。", "audio": "audio/hskk-5.mp3"}
+      ]
+    },
+    {
+      "type": "writing_prompt",
+      "title": "Viết đoạn văn ngắn",
+      "items": [
+        {
+          "prompt": "Kể lại một lần bạn (hoặc người bạn biết) đến nhà người khác chơi lần đầu — dùng ít nhất 1 câu có 简单趋向补语 (来/去) và 1 câu có \"都……了\".",
+          "kind": "đoạn văn",
+          "target_length": "60-100 chữ",
+          "outline": ["Bạn đến nhà ai, khi nào", "Ai ra đón, chào hỏi thế nào", "Ăn/uống gì, cảm nhận ra sao", "Kết thúc buổi thế nào"]
+        }
+      ]
+    }
+  ]
+}

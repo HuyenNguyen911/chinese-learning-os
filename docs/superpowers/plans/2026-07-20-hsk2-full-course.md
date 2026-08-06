@@ -18,7 +18,7 @@
 - **CHỐNG TRÙNG HSK1 (cứng):** mọi 生词 loại/đánh dấu từ đã có trong 150 từ HSK1 (Task 0.1).
 - **Động vật/thú cưng:** lồng **từ mở rộng** vào Bài 5 (thăm nhà bạn), đánh dấu "ngoài 200 từ sách". Không thêm buổi.
 - **Mọi từ/câu tiếng Trung** đủ **汉字 + pinyin + nghĩa Việt**.
-- **Thứ tự block slide:** `title → ôn buổi trước → mục tiêu → 生词 → ngữ pháp (小语讲堂) → 10 câu khẩu ngữ → hội thoại/課文 → bài đọc → footer Hán ngữ 第一册·下 → lỗi người Việt → preview bài tập`. KHÔNG block ngữ âm.
+- **Thứ tự block slide (sửa 2026-08-06, sau Buổi 5 — bỏ "ôn buổi trước" và tách "lỗi người Việt" khỏi vị trí cố định cuối, đây là feedback user đã nhắc từ trước):** `title → mục tiêu → 生词 → [ngữ pháp (小语讲堂) → lỗi người Việt liên quan]` (lặp lại theo từng nhóm ngữ pháp, lỗi thường gặp đặt NGAY SAU nhóm ngữ pháp sinh ra nó, không dồn hết xuống cuối) `→ 10 câu khẩu ngữ → hội thoại/課文 → bài đọc → footer Hán ngữ 第一册·下 → preview bài tập`. KHÔNG block ngữ âm. KHÔNG có slide "ôn buổi trước" đầu mỗi buổi.
 - **Bài tập đủ 4 phần 3.0:** 听 · 读 (+ **≥1 văn bản thực tế/buổi**: tin nhắn/biển báo/thực đơn/quảng cáo, tự soạn theo chủ đề, KHÔNG lấy từ sách) · **书写/Viết** (sắp câu, điền chữ, viết câu ngắn · **+ luân phiên đoạn 60–100 chữ / điền form / lời nhắn / nhật ký** qua các buổi) · HSKK.
 - **Ngữ pháp bổ sung ngoài sách (vá theo tiêu chuẩn đầu ra, không có trong 45 điểm New HSK Course 2), lồng vào buổi — KHÔNG dạy ở 2 buổi Ôn (Ôn chỉ ôn tập):** **把字句 cơ bản** lồng **Bài 4** (ghép 简单趋向补语 vốn có); **被字句 đơn giản** lồng **Bài 11**; **连…都/也** lồng **Bài 12**. Đánh dấu rõ "ngoài 45 điểm sách chính" trong slide buổi tương ứng.
 - **Giao tiếp thiếu, lồng vào buổi — KHÔNG dồn vào Ôn (đã đối chiếu HSK 二级考试大纲 chính thức, chinesetest.cn, 2026-07-27 — xem spec §16b):** hỏi đường → **Bài 2** (✅ chính thức); hỏi giá/so sánh giá (đổi tên từ "mặc cả") → **Bài 9** (✅ chính thức); giới thiệu bản thân/gia đình sâu → **Bài 5** (✅ chính thức); đặt khách sạn → **Bài 3** (⚠️ ngoài chuẩn thi, giữ theo yêu cầu cá nhân); đặt lịch hẹn → **Bài 10** (⚠️ ngoài chuẩn thi, ghép với 就要…了 — dời từ Bài 6 vì hợp ngữ pháp hơn). Capstone Ôn 2 chỉ ôn/ứng dụng lại các kỹ năng này, không dạy mới.
@@ -102,6 +102,7 @@ Vocab-study phase (§13 spec) **tách plan riêng** — xem "Out of scope".
 **P2 — 課文 (cổng a):** Trích **nguyên văn** 課文 bài N từ `raw/New HSK Course 2.pdf` (pypdf, theo trang trong TOC). Chọn 課文 phù hợp (đối thoại chính + bài tự sự). **Trình user duyệt text đã trích** → ghi `DIR/doc/bai-doc.md` (汉字 nguyên văn + pinyin + dịch Việt).
 
 **P3 — Experience Designer:** Map → `DIR/slide/buoiXX.json` (schema teaching-coach, đúng thứ tự block). Footer Hán ngữ 第一册·下 (bullets/reading); lỗi VN (table). Action title + ghost-deck test.
+**Nếu học viên phản hồi 生词/ngữ pháp gốc sách quá cơ bản** (đã học/vượt trình độ) — KHÔNG mặc định bám 100% sách: chủ động đề xuất nâng cấp (vd đổi 生词 sang nhóm từ nâng cao liên quan ngữ pháp buổi, thêm điểm ngữ pháp bậc cao hơn từ bài sau đưa sớm), đánh dấu rõ "mở rộng ngoài sách chính" (sửa 2026-08-06, Buổi 5).
 
 **P4 — Ảnh:** `DIR/slide/buoiXX-images.json` → `fetch_images.py`. Expected `DONE: N/N`.
 

@@ -66,3 +66,14 @@ _- Status: PENDING UPDATE_
 - Blocks: noi (7: 尺码/打折/试衣间/配饰/经典/百搭/合适), dien_cho_trong (5: 更/过去/因为/所以/条), doc_hieu (tin nhắn mua sắm tự soạn), sap_xep (把字句/过), dich_dat_cau (因为…所以…/过/把), nghe, noi_hskk×2 — 29 mục, không câu trùng. Trước khi duyệt đã rà lại toàn bộ câu theo đúng từ vựng đã dạy buổi 1-4 (đối chiếu corpus 汉字 toàn bộ slide, không chỉ danh sách 生词) — phát hiện & thay 8 từ ngoài phạm vi (陪/顾客/购买/藏青色/商品/将/如需/耐脏/冷/暖和/平时/而且/看起来/不一样/国外/少见), viết lại đoạn đọc hiểu bằng từ đã học.
 - Output: buoi04_trangphuc_mausac/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
 - Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
+
+## 2026-08-06 · Exercise Generator · HSK2 Buổi 5 (第一次去中国朋友家)
+- Blocks: noi (5: 爷爷/奶奶/礼物/酒店/奶茶), dien_cho_trong (5: 快/等/跟/一会儿/走), doc_hieu (tin nhắn hẹn giờ đến nhà bạn tự soạn), sap_xep (简单趋向补语/都……了), dich_dat_cau, nghe, noi_hskk×2 (听后重复 + 回答问题) — 28 mục, không câu trùng. Bám 18 từ gốc sách + 3 điểm ngữ pháp chính (简单趋向补语(1)(2), 都……了), không dùng 20 từ nâng cao mở rộng của slide. 听后重复 lần đầu soạn bị trùng câu 課文/khẩu ngữ — user phát hiện, đã đổi 3 câu khác dùng cùng từ vựng nhưng cách diễn đạt mới.
+- Output: buoi05_thamnha/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%)
+
+## 2026-08-06 · Exercise Generator · HSK2 Buổi 6 (小雪，生日快乐！)
+- Blocks: noi (7: 蜡烛/打开/蛋糕/画笔/快乐/舒服/惊喜), dien_cho_trong (4: 的/地/得), doc_hieu (tiệc sinh nhật bất ngờ, tự soạn), sap_xep (状态补语 得, gồm dạng lặp động từ có tân ngữ + phủ định), dich_dat_cau, nghe, noi_hskk×2 (听后重复 + 回答问题) — 28 mục, không câu trùng. Lần soạn đầu bị 5 câu trùng nguyên văn + nhiều câu gần trùng với slide (user phát hiện, đối chiếu bằng script so khớp câu) — đã viết lại toàn bộ câu trùng bằng tình huống/cách diễn đạt mới, chỉ giữ chung từ vựng + điểm ngữ pháp.
+- **Phần 回答问题 (mọi buổi 1-6):** bổ sung dàn bài chuẩn HSKK 初级 vào `instructions` (hiện ngay trên worksheet, không chỉ đáp án): (1) trả lời thẳng 1 câu ngắn, (2) thêm 1 câu mô tả/giải thích, (3) không bắt buộc — 1 câu cảm nghĩ/mở rộng để đạt điểm cao. Đã rebuild lại worksheet+dapan buổi 1-4 để đồng bộ (buổi 5 chưa render nên chỉ cập nhật JSON).
+- Output: buoi06_sinhnhat/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)

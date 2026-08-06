@@ -1,0 +1,389 @@
+{
+  "meta": { "title": "第一次去中国朋友家", "lesson": "HSK2 · Bài 5" },
+  "slides": [
+    {
+      "type": "title",
+      "title": "第一次去中国朋友家",
+      "subtitle": "Dì-yī cì qù Zhōngguó péngyou jiā · Lần đầu đến nhà bạn Trung Quốc",
+      "footer": "HSK2 · Bài 5 · New HSK Course 2"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Mục tiêu Buổi 5",
+      "bullets": [
+        "趋向补语 — nói được hướng đi (来/去, đơn + kép)",
+        "都……了 — nhấn mạnh \"đã/đến mức\"",
+        "做客文化 — chào hỏi, ứng xử khi làm khách"
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 1/20",
+      "hz": "拿", "py": "ná", "vn": "cầm, mang",
+      "image": "assets/img_na.jpg",
+      "examples": [{"hz": "你把书拿过来。", "py": "Nǐ bǎ shū ná guòlái.", "vn": "Cầm sách qua đây."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 2/20",
+      "hz": "带", "py": "dài", "vn": "mang theo, dẫn theo",
+      "image": "assets/img_dai.jpg",
+      "examples": [{"hz": "别忘了带雨伞出去。", "py": "Bié wàng le dài yǔsǎn chūqù.", "vn": "Đừng quên mang dù ra ngoài."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 3/20",
+      "hz": "搬", "py": "bān", "vn": "khiêng, dọn (đồ nặng)",
+      "image": "assets/img_ban.jpg",
+      "examples": [{"hz": "我们把桌子搬进来吧。", "py": "Wǒmen bǎ zhuōzi bān jìnlái ba.", "vn": "Mình khiêng cái bàn vào đây đi."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 4/20",
+      "hz": "寄", "py": "jì", "vn": "gửi (bưu kiện)",
+      "image": "assets/img_ji.jpg",
+      "examples": [{"hz": "我把礼物寄回家了。", "py": "Wǒ bǎ lǐwù jì huí jiā le.", "vn": "Tôi gửi quà về nhà rồi."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 5/20",
+      "hz": "扔", "py": "rēng", "vn": "vứt, ném",
+      "image": "assets/img_reng.jpg",
+      "examples": [{"hz": "别把垃圾扔出去！", "py": "Bié bǎ lājī rēng chūqù!", "vn": "Đừng vứt rác ra ngoài!"}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 6/20",
+      "hz": "摆", "py": "bǎi", "vn": "xếp, bày",
+      "image": "assets/img_bai.jpg",
+      "examples": [{"hz": "把花摆上去。", "py": "Bǎ huā bǎi shàngqù.", "vn": "Bày hoa lên đó."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 7/20",
+      "hz": "放", "py": "fàng", "vn": "để, đặt",
+      "image": "assets/img_fang.jpg",
+      "examples": [{"hz": "请把书放回去。", "py": "Qǐng bǎ shū fàng huíqù.", "vn": "Xin để sách về lại chỗ cũ."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 8/20",
+      "hz": "挂", "py": "guà", "vn": "treo",
+      "image": "assets/img_gua.jpg",
+      "examples": [{"hz": "把画挂起来。", "py": "Bǎ huà guà qǐlái.", "vn": "Treo tranh lên."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 9/20",
+      "hz": "抬", "py": "tái", "vn": "khiêng, nâng",
+      "image": "assets/img_tai.jpg",
+      "examples": [{"hz": "大家一起把箱子抬上去。", "py": "Dàjiā yìqǐ bǎ xiāngzi tái shàngqù.", "vn": "Mọi người cùng khiêng thùng lên."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 10/20",
+      "hz": "抱", "py": "bào", "vn": "bế, ôm",
+      "image": "assets/img_bao.jpg",
+      "examples": [{"hz": "妈妈把孩子抱起来。", "py": "Māma bǎ háizi bào qǐlái.", "vn": "Mẹ bế con lên."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 11/20",
+      "hz": "提", "py": "tí", "vn": "xách",
+      "image": "assets/img_ti.jpg",
+      "examples": [{"hz": "他提着包走进来。", "py": "Tā tízhe bāo zǒu jìnlái.", "vn": "Anh ấy xách túi đi vào."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 12/20",
+      "hz": "借", "py": "jiè", "vn": "mượn",
+      "image": "assets/img_jie.jpg",
+      "examples": [{"hz": "我想把这本书借回去看。", "py": "Wǒ xiǎng bǎ zhè běn shū jiè huíqù kàn.", "vn": "Tôi muốn mượn cuốn sách này về xem."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 13/20",
+      "hz": "还", "py": "huán", "vn": "trả lại, hoàn trả",
+      "image": "assets/img_huan.jpg",
+      "examples": [{"hz": "明天把书还回来。", "py": "Míngtiān bǎ shū huán huílái.", "vn": "Ngày mai trả sách lại."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 14/20",
+      "hz": "卖", "py": "mài", "vn": "bán",
+      "image": "assets/img_mai.jpg",
+      "examples": [{"hz": "他把车卖出去了。", "py": "Tā bǎ chē mài chūqù le.", "vn": "Anh ấy bán xe đi rồi."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 15/20",
+      "hz": "爬", "py": "pá", "vn": "trèo, bò",
+      "image": "assets/img_pa.jpg",
+      "examples": [{"hz": "孩子爬上去了。", "py": "Háizi pá shàngqù le.", "vn": "Đứa bé trèo lên rồi."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 16/20",
+      "hz": "跳", "py": "tiào", "vn": "nhảy",
+      "image": "assets/img_tiao.jpg",
+      "examples": [{"hz": "他跳下去了。", "py": "Tā tiào xiàqù le.", "vn": "Anh ấy nhảy xuống rồi."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 17/20",
+      "hz": "倒", "py": "dǎo", "vn": "ngã, đổ",
+      "image": "assets/img_dao.jpg",
+      "examples": [{"hz": "椅子倒下来了。", "py": "Yǐzi dǎo xiàlái le.", "vn": "Cái ghế đổ xuống rồi."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 18/20",
+      "hz": "退", "py": "tuì", "vn": "lùi, thoái",
+      "image": "assets/img_tui.jpg",
+      "examples": [{"hz": "车慢慢地退回来了。", "py": "Chē mànmàn de tuì huílái le.", "vn": "Xe chầm chậm lùi lại."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 19/20",
+      "hz": "躲", "py": "duǒ", "vn": "tránh, trốn, ẩn",
+      "image": "assets/img_duo.jpg",
+      "examples": [{"hz": "他躲进去了。", "py": "Tā duǒ jìnqù le.", "vn": "Anh ấy trốn vào trong rồi."}]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 20/20",
+      "hz": "传", "py": "chuán", "vn": "truyền, chuyền",
+      "image": "assets/img_chuan.jpg",
+      "examples": [{"hz": "请把手机传过来。", "py": "Qǐng bǎ shǒujī chuán guòlái.", "vn": "Xin chuyền điện thoại qua đây."}]
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/4",
+      "point": "简单趋向补语(1) — Bổ ngữ xu hướng đơn (1)",
+      "examples": [
+        {"hz": "我不上去了，就在下面等你。", "py": "Wǒ bú shàngqù le, jiù zài xiàmiàn děng nǐ.", "vn": "Tôi không lên nữa, tôi đợi ở dưới."},
+        {"hz": "你起来吧，让小妹妹坐这儿。", "py": "Nǐ qǐlái ba, ràng xiǎo mèimei zuò zhèr.", "vn": "Cậu dậy đi, để em bé ngồi đây."}
+      ],
+      "note": "Cấu trúc: động từ + 来/去. 来 = hướng VỀ người nói, 去 = hướng RA XA người nói. Ghép được với 8 tổ hợp: 上/下/进/出/回/过/起 (+来/去, riêng 起 không có 起去)."
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/4",
+      "point": "简单趋向补语(2) — Bổ ngữ xu hướng đơn (2)",
+      "examples": [
+        {"hz": "上课了，你们快进教室来吧。", "py": "Shàngkè le, nǐmen kuài jìn jiàoshì lái ba.", "vn": "Vào học rồi, các bạn nhanh vào lớp đi."},
+        {"hz": "家月给我送来了一本书。", "py": "Jiāyuè gěi wǒ sòngláile yì běn shū.", "vn": "Gia Nguyệt gửi cho tôi một cuốn sách."}
+      ],
+      "note": "Có cả bổ ngữ xu hướng + tân ngữ: tân ngữ NƠI CHỐN → đặt TRƯỚC 来/去 (进教室来); tân ngữ SỰ VẬT → trước hoặc sau đều được (送来一本书 = 送一本书来)."
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 3/4 · 拓展",
+      "point": "复合趋向补语 — Bổ ngữ xu hướng KÉP",
+      "examples": [
+        {"hz": "她笑着走出来了。", "py": "Tā xiàozhe zǒu chūlái le.", "vn": "Cô ấy vừa cười vừa đi ra (về hướng người nói)."},
+        {"hz": "孩子们跑过去看看。", "py": "Háizimen pǎo guòqù kànkan.", "vn": "Các bé chạy qua đó xem thử (hướng ra xa người nói)."},
+        {"hz": "奶奶慢慢地站起来了。", "py": "Nǎinai mànmàn de zhàn qǐlái le.", "vn": "Bà nội chầm chậm đứng dậy."},
+        {"hz": "你坐下来吧。", "py": "Nǐ zuò xiàlái ba.", "vn": "Cậu ngồi xuống đi."},
+        {"hz": "小鸟飞回来了。", "py": "Xiǎo niǎo fēi huílái le.", "vn": "Con chim nhỏ bay về rồi."}
+      ],
+      "note": "Cấu trúc: động từ + bổ ngữ xu hướng ĐƠN (上/下/进/出/回/过/起) + 来/去. 5 câu trên dùng động từ ĐÃ HỌC (走/跑/站/坐/飞) — chỉ nâng độ khó ở phần bổ ngữ."
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 4/4",
+      "point": "固定格式\"都……了\" — Mẫu câu nhấn mạnh",
+      "examples": [
+        {"hz": "都12点了，我们吃饭吧。", "py": "Dōu shí'èr diǎn le, wǒmen chī fàn ba.", "vn": "Đã 12 giờ rồi, ăn cơm thôi."},
+        {"hz": "都8点半了，你还不起床吗？", "py": "Dōu bā diǎn bàn le, nǐ hái bù qǐchuáng ma?", "vn": "Đã 8 giờ rưỡi rồi, cậu còn chưa dậy à?"}
+      ],
+      "note": "Diễn tả \"đã/đến mức\", thường mang giọng nhấn mạnh hoặc không hài lòng — khác \"已经……了\" trung tính. Đây là điểm ngữ pháp riêng, KHÔNG cùng nhóm 趋向补语 ở 3 slide trước."
+    },
+    {
+      "type": "bullets",
+      "kicker": "语法难点",
+      "title": "Lỗi người Việt thường gặp",
+      "bullets": [
+        "❌ 你在上面，说\"你下来\" cho người ở dưới   →   ✅ 你下去 (mình ở trên → hướng ra xa mình = 去)",
+        "❌ 进来教室   →   ✅ 进教室来 (nơi chốn luôn đứng TRƯỚC 来/去)",
+        "❌ 都8点了 chỉ hiểu đơn thuần là \"đã 8 giờ\"   →   ✅ thực ra mang giọng nhắc nhở/sốt ruột, không chỉ báo giờ"
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "口语 1/2",
+      "point": "10 câu khẩu ngữ dùng ngay (1/2)",
+      "examples": [
+        {"hz": "麻烦你把箱子搬进来。", "py": "Máfan nǐ bǎ xiāngzi bān jìnlái.", "vn": "Làm ơn khiêng thùng vào đây."},
+        {"hz": "出门别忘带钥匙。", "py": "Chūmén bié wàng dài yàoshi.", "vn": "Ra ngoài đừng quên mang chìa khoá."},
+        {"hz": "这本书你什么时候还回来？", "py": "Zhè běn shū nǐ shénme shíhou huán huílái?", "vn": "Cuốn sách này khi nào cậu trả lại?"},
+        {"hz": "帮我把外套挂起来。", "py": "Bāng wǒ bǎ wàitào guà qǐlái.", "vn": "Giúp tôi treo áo khoác lên."},
+        {"hz": "你的东西卖出去了吗？", "py": "Nǐ de dōngxi mài chūqù le ma?", "vn": "Đồ của cậu bán đi chưa?"}
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "口语 2/2",
+      "point": "10 câu khẩu ngữ dùng ngay (2/2)",
+      "examples": [
+        {"hz": "小心，别摔倒了！", "py": "Xiǎoxīn, bié shuāi dǎo le!", "vn": "Cẩn thận, đừng ngã!"},
+        {"hz": "猫爬到树上去了。", "py": "Māo pá dào shù shàng qù le.", "vn": "Con mèo trèo lên cây rồi."},
+        {"hz": "别往后退，危险！", "py": "Bié wǎng hòu tuì, wēixiǎn!", "vn": "Đừng lùi về sau, nguy hiểm!"},
+        {"hz": "请把球传过去。", "py": "Qǐng bǎ qiú chuán guòqù.", "vn": "Xin chuyền bóng qua đó."},
+        {"hz": "别躲了，快出来吧！", "py": "Bié duǒ le, kuài chūlái ba!", "vn": "Đừng trốn nữa, ra đây nhanh đi!"}
+      ]
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "在宾馆楼下 — Dưới sảnh khách sạn",
+      "image": "assets/img_hoithoai1.jpg",
+      "turns": [
+        {"speaker": "安妮", "hz": "家月，快下来吧，第一次去中国朋友家，别晚了。"},
+        {"speaker": "白家月", "hz": "还有时间，你上来吧。"},
+        {"speaker": "安妮", "hz": "我不上去了，就在下面等你。"},
+        {"speaker": "白家月", "hz": "那我一会儿就下去。"},
+        {"speaker": "安妮", "hz": "你快点儿吧。"},
+        {"speaker": "白家月", "hz": "没事，一雪姐说11点前到就可以。"}
+      ]
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2a",
+      "title": "在王一雪家 — Giới thiệu gia đình",
+      "image": "assets/img_hoithoai2a.jpg",
+      "turns": [
+        {"speaker": "王一雪", "hz": "家月、安妮，快进来！我给你们介绍一下，这是孩子们的爷爷、奶奶。"},
+        {"speaker": "白家月", "hz": "你们好！"},
+        {"speaker": "王一雪", "hz": "爸，妈，这是白家月，这是安妮。她们都是一飞的学生。"}
+      ]
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2b",
+      "title": "在王一雪家 — Chào ông bà, tặng quà",
+      "image": "assets/img_hoithoai2b.jpg",
+      "turns": [
+        {"speaker": "刘爷爷", "hz": "家月、安妮，你们好！"},
+        {"speaker": "白家月", "hz": "这是送你们的礼物。"},
+        {"speaker": "刘爷爷", "hz": "你们太客气了，还拿这么多礼物来！"},
+        {"speaker": "白家月", "hz": "一雪姐，这是给孩子们准备的礼物。"}
+      ]
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "吃饭 — Ăn cơm",
+      "image": "assets/img_hoithoai3.jpg",
+      "turns": [
+        {"speaker": "王一雪", "hz": "谢谢！你们别客气，快坐吧！"},
+        {"speaker": "王一雪", "hz": "都12点了，我们吃饭吧。"},
+        {"speaker": "白家月", "hz": "这么多好吃的，您太客气了！"},
+        {"speaker": "王一雪", "hz": "都是我自己做的，你们多吃点儿。"},
+        {"speaker": "白家月", "hz": "奶茶也很好喝，是您自己做的吗？"},
+        {"speaker": "王一雪", "hz": "不是，奶茶是爷爷买的。"},
+        {"speaker": "白家月", "hz": "在哪儿买的？我还没喝过这么好喝的奶茶。"},
+        {"speaker": "王一雪", "hz": "就在前边的商场，吃完饭你们可以跟我去看看。"}
+      ]
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 4",
+      "title": "白家月给李文发信息",
+      "image": "assets/img_hoithoai4.jpg",
+      "sentences": [
+        {"hz": "回国前一天，我们去一雪姐家了。", "py": "Huí guó qián yì tiān, wǒmen qù Yīxuě jiě jiā le.", "vn": "Ngày trước khi về nước, chúng tớ đến nhà chị Nhất Tuyết."},
+        {"hz": "到她家的时候，饭菜都做好了。", "py": "Dào tā jiā de shíhou, fàncài dōu zuòhǎo le.", "vn": "Lúc đến nhà chị, cơm đã nấu xong rồi."},
+        {"hz": "刘爷爷还准备了奶茶。", "py": "Liú yéye hái zhǔnbèi le nǎichá.", "vn": "Ông Lưu còn chuẩn bị cả trà sữa."},
+        {"hz": "因为吃了太多东西，我们吃完饭是走回酒店的。", "py": "Yīnwèi chīle tài duō dōngxi, wǒmen chīwán fàn shì zǒuhuí jiǔdiàn de.", "vn": "Vì ăn quá nhiều, ăn xong chúng tớ đi bộ về khách sạn."}
+      ]
+    },
+    {
+      "type": "section",
+      "kicker": "文化",
+      "title": "做客文化：8个小习惯",
+      "subtitle": "Văn hoá làm khách — 8 câu dùng ngay"
+    },
+    {
+      "type": "grammar",
+      "kicker": "文化 1/8",
+      "point": "称呼长辈",
+      "image": "assets/van1_danhxung.jpg",
+      "examples": [
+        {"hz": "叫\"爷爷、奶奶\"，不叫名字。", "py": "Jiào \"yéye, nǎinai\", bú jiào míngzi.", "vn": "Gọi \"ông, bà\", không gọi tên riêng."}
+      ],
+      "note": "🇻🇳 giống nhau: cũng gọi ông/bà/chú/cô, không gọi tên khi mới gặp."
+    },
+    {
+      "type": "grammar",
+      "kicker": "文化 2/8",
+      "point": "第一次做客",
+      "image": "assets/van2_qualanD.jpg",
+      "examples": [
+        {"hz": "第一次做客要带礼物。", "py": "Dì-yī cì zuòkè yào dài lǐwù.", "vn": "Lần đầu làm khách phải mang quà."}
+      ],
+      "note": "🇻🇳 tương tự nhưng ít bắt buộc hơn, thường chỉ mang khi có lý do (lễ, Tết)."
+    },
+    {
+      "type": "grammar",
+      "kicker": "文化 3/8",
+      "point": "谦虚回应",
+      "image": "assets/van3_khiemnhuong.jpg",
+      "examples": [
+        {"hz": "都是我自己做的。", "py": "Dōu shì wǒ zìjǐ zuò de.", "vn": "Đều là tự tôi làm thôi."}
+      ],
+      "note": "🇻🇳 giống nhau: \"có gì đâu\" — khiêm nhường khi được khen món ăn."
+    },
+    {
+      "type": "grammar",
+      "kicker": "文化 4/8",
+      "point": "让客人多吃",
+      "image": "assets/van4_moianthem.jpg",
+      "examples": [
+        {"hz": "你们多吃点儿。", "py": "Nǐmen duō chī diǎnr.", "vn": "Các bạn ăn thêm chút đi."}
+      ],
+      "note": "🇻🇳 giống nhau: \"ăn thêm đi\" mời liên tục suốt bữa."
+    },
+    {
+      "type": "grammar",
+      "kicker": "文化 5/8",
+      "point": "坐的位置",
+      "image": "assets/van5_vitrigngoi.jpg",
+      "examples": [
+        {"hz": "长辈坐在对着门的位置。", "py": "Zhǎngbèi zuò zài duìzhe mén de wèizhì.", "vn": "Người lớn tuổi ngồi vị trí đối diện cửa."}
+      ],
+      "note": "🇻🇳 chỉ nhường ngồi giữa/đầu bàn, không xét hướng cửa."
+    },
+    {
+      "type": "grammar",
+      "kicker": "文化 6/8",
+      "point": "夸赞食物",
+      "image": "assets/van6_khenmonan.jpg",
+      "examples": [
+        {"hz": "这么好喝的奶茶！", "py": "Zhème hǎohē de nǎichá!", "vn": "Trà sữa ngon thế!"}
+      ],
+      "note": "🇻🇳 giống nhau: khen món ăn cụ thể là phép lịch sự cơ bản."
+    },
+    {
+      "type": "grammar",
+      "kicker": "文化 7/8",
+      "point": "双手送礼",
+      "image": "assets/van7_qua2tay.jpg",
+      "examples": [
+        {"hz": "双手把礼物送给长辈。", "py": "Shuāngshǒu bǎ lǐwù sòng gěi zhǎngbèi.", "vn": "Dùng hai tay tặng quà cho người lớn tuổi."}
+      ],
+      "note": "🇻🇳 giống nhau: cũng dùng hai tay tặng/nhận quà, nhất là ngày Tết."
+    },
+    {
+      "type": "grammar",
+      "kicker": "文化 8/8",
+      "point": "给长辈倒茶",
+      "image": "assets/van8_rottra.jpg",
+      "examples": [
+        {"hz": "先给长辈倒茶，自己再喝。", "py": "Xiān gěi zhǎngbèi dào chá, zìjǐ zài hē.", "vn": "Rót trà cho người lớn trước, mình mới uống."}
+      ],
+      "note": "🇻🇳 cũng rót trà mời người lớn trước, nhưng không có tục gõ ngón tay cảm ơn."
+    }
+  ]
+}
