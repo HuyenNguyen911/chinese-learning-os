@@ -77,3 +77,16 @@ _- Status: PENDING UPDATE_
 - **Phần 回答问题 (mọi buổi 1-6):** bổ sung dàn bài chuẩn HSKK 初级 vào `instructions` (hiện ngay trên worksheet, không chỉ đáp án): (1) trả lời thẳng 1 câu ngắn, (2) thêm 1 câu mô tả/giải thích, (3) không bắt buộc — 1 câu cảm nghĩ/mở rộng để đạt điểm cao. Đã rebuild lại worksheet+dapan buổi 1-4 để đồng bộ (buổi 5 chưa render nên chỉ cập nhật JSON).
 - Output: buoi06_sinhnhat/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
 - Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
+
+## 2026-08-06 · Exercise Generator · HSK2 Buổi 8 (虽然你忘了，但是我记得)
+- Blocks: noi (7: 手表/记得/有意思/虽然/花/错/一定), dien_cho_trong (4: 比/虽然/但是/一点儿), doc_hieu (mua tặng mẹ đồng hồ nhân sinh nhật, tự soạn), sap_xep (比较句 一点儿/số lượng cụ thể + 虽然…但是), dich_dat_cau (3), nghe (3: hỏi giá/xin lỗi/so sánh sách), noi_hskk 听后重复 (3), noi_hskk 回答问题 (2, dàn bài mở-thân-kết theo yêu cầu riêng của user thay vì dàn bài 3-câu mặc định) — 29 mục, không câu trùng (đã đối chiếu cả nội bộ lẫn với toàn bộ slide buổi 8).
+- **回答问题 buổi 8 dùng dàn bài khác 2 kiểu trước (mặc định 1-2-3 câu ngắn):** user yêu cầu kiểu gợi ý mở bài/thân bài/kết bài (câu hỏi gợi mở từng phần) thay vì 3 câu mẫu ngắn — áp dụng riêng cho buổi này, chưa đổi mặc định của skill.
+- Output: buoi08_trinho_sosanh/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ tự soạn (kho hsk2.md chưa seed)
+
+## 2026-08-06 · Exercise Generator · HSK2 Buổi 7 (他篮球打得很好)
+- Blocks: noi (7: 从/往/跑步/游泳/爱好/开始/运动), dien_cho_trong (4, điền 得 ôn 状态补语), doc_hieu (刘明 thích thể thao, tự soạn), sap_xep (3, 得 + 一…就…), dich_dat_cau (3), nghe (3), noi_hskk 听后重复 (3), noi_hskk 回答问题 tách 2 block riêng theo 2 câu hỏi (mỗi câu 1 dàn bài 开头/主体/结尾 riêng, bám sát nội dung câu đó — theo mẫu user cung cấp) — 28 mục, không trùng nội bộ/slide (đã check_baitap.py + đối chiếu thủ công).
+- **Bỏ block `writing_prompt`** theo yêu cầu user (không muốn phần Viết nhật ký ở buổi này).
+- **回答问题 tách thành 2 block riêng (không dùng 1 block chung 2 câu)** — vì mỗi câu cần dàn bài 开头/主体/结尾 khác nhau bám đúng nội dung câu đó (không phải 1 dàn bài chung cho cả 2 câu). Khớp pattern đã dùng ở Buổi 8 (đổi từ dàn bài 3-câu mặc định sang mở-thân-kết), nhưng buổi 7 đi xa hơn: tách block + dàn bài riêng từng câu.
+- Output: buoi07_thethao/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ tự soạn (kho hsk2.md chưa seed)

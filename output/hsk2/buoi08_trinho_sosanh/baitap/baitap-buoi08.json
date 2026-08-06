@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 8 — 虽然你忘了，但是我记得",
+    "hsk": 2
+  },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối 汉字 với nghĩa",
+      "pairs": [
+        {
+          "left": "手表",
+          "right": "đồng hồ đeo tay"
+        },
+        {
+          "left": "记得",
+          "right": "nhớ, còn nhớ"
+        },
+        {
+          "left": "有意思",
+          "right": "thú vị, hay"
+        },
+        {
+          "left": "虽然",
+          "right": "tuy, mặc dù"
+        },
+        {
+          "left": "花",
+          "right": "tiêu (tiền)"
+        },
+        {
+          "left": "错",
+          "right": "sai"
+        },
+        {
+          "left": "一定",
+          "right": "nhất định, chắc chắn"
+        }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ trong ngân hàng từ điền vào chỗ trống cho phù hợp.",
+      "word_bank": [
+        "比",
+        "虽然",
+        "但是",
+        "一点儿"
+      ],
+      "items": [
+        {
+          "q": "这本书{}那本有意思。",
+          "answer": "比"
+        },
+        {
+          "q": "{}外面下雨，我还是去上课了。",
+          "answer": "虽然"
+        },
+        {
+          "q": "他很忙，{}还是来帮我了。",
+          "answer": "但是"
+        },
+        {
+          "q": "这件衣服比那件贵{}。",
+          "answer": "一点儿"
+        }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc đoạn văn",
+      "instructions": "Đọc đoạn văn rồi trả lời câu hỏi.",
+      "passage": "上个星期五是我妈妈的生日。虽然我很忙，但是我还是回家给她过生日。我给她买了一块手表，这块手表比商店里别的贵一点儿，但是很漂亮。妈妈说，虽然手表贵，但是她很喜欢。",
+      "questions": [
+        {
+          "q": "上个星期五是谁的生日？",
+          "options": [
+            "妈妈",
+            "爸爸",
+            "我"
+          ],
+          "answer": "A"
+        },
+        {
+          "q": "我买的手表怎么样？",
+          "options": [
+            "很便宜",
+            "比别的贵一点儿",
+            "不漂亮"
+          ],
+          "answer": "B"
+        },
+        {
+          "q": "妈妈觉得手表怎么样？",
+          "options": [
+            "太贵了，不喜欢",
+            "虽然贵，但是喜欢",
+            "还没看过"
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "items": [
+        {
+          "words": [
+            "这条",
+            "裤子",
+            "比",
+            "那条",
+            "便宜",
+            "一点儿"
+          ],
+          "answer": "这条裤子比那条便宜一点儿。"
+        },
+        {
+          "words": [
+            "这本",
+            "书",
+            "比",
+            "那本",
+            "贵",
+            "十块钱"
+          ],
+          "answer": "这本书比那本贵十块钱。",
+          "answer_plus": "这本书比那本贵十块钱，但是更有意思。"
+        },
+        {
+          "words": [
+            "虽然",
+            "那件",
+            "衣服",
+            "很贵",
+            "但是",
+            "我",
+            "还是",
+            "买",
+            "了"
+          ],
+          "answer": "虽然那件衣服很贵，但是我还是买了。"
+        }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch câu / Đặt câu",
+      "instructions": "Dịch các câu sau sang tiếng Trung.",
+      "items": [
+        {
+          "prompt": "Dịch: \"Món này ngon hơn món kia một chút.\"",
+          "given": [
+            "这个菜",
+            "比",
+            "那个菜",
+            "好吃",
+            "一点儿"
+          ],
+          "answer": "这个菜比那个菜好吃一点儿。",
+          "answer_plus": "这个菜比那个菜好吃一点儿，我们多点儿这个吧。"
+        },
+        {
+          "prompt": "Dịch: \"Xin lỗi, tôi đã làm sai rồi.\"",
+          "given": [
+            "对不起",
+            "做错",
+            "我",
+            "了"
+          ],
+          "answer": "对不起，我做错了。",
+          "answer_plus": "对不起，我做错了，以后我一定注意。"
+        },
+        {
+          "prompt": "Đặt 1 câu dùng \"虽然……，但是……\" nói về một món đồ đắt nhưng bạn vẫn thích.",
+          "answer": "虽然这块手表很贵，但是我很喜欢。",
+          "answer_plus": "虽然这块手表很贵，但是我很喜欢，所以还是买了。"
+        }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe đoạn hội thoại rồi chọn đáp án đúng.",
+      "items": [
+        {
+          "script": "女：这块手表多少钱？ 男：六千五，有点儿贵，但是很好看。",
+          "q": "男的觉得这块手表怎么样？",
+          "options": [
+            "很便宜",
+            "有点儿贵但是好看",
+            "不好看"
+          ],
+          "answer": "B",
+          "audio": "audio/nghe-1.mp3"
+        },
+        {
+          "script": "男：对不起，我又忘了你的生日。 女：没事，我知道你最近很忙。",
+          "q": "女的是什么意思？",
+          "options": [
+            "她很生气",
+            "她说没关系",
+            "她让他别再来"
+          ],
+          "answer": "B",
+          "audio": "audio/nghe-2.mp3"
+        },
+        {
+          "script": "女：你觉得这本书怎么样？ 男：这本书比那本书有意思多了。",
+          "q": "男的觉得这本书怎么样？",
+          "options": [
+            "没有意思",
+            "比另一本有意思",
+            "没看过"
+          ],
+          "answer": "B",
+          "audio": "audio/nghe-3.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "part": "听后重复",
+      "title": "听后重复 (Nghe và nhắc lại)",
+      "items": [
+        {
+          "script": "我觉得这件衣服比那件好看。",
+          "audio": "audio/hskk-1.mp3"
+        },
+        {
+          "script": "虽然他很忙，但是他还是来了。",
+          "audio": "audio/hskk-2.mp3"
+        },
+        {
+          "script": "他答应我，以后一定负责。",
+          "audio": "audio/hskk-3.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "part": "回答问题",
+      "title": "回答问题 (Trả lời câu hỏi)",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        {
+          "script": "你最近买了什么东西？贵不贵？",
+          "hint": "开头 (Mở bài): Bạn gần đây mua gì? Ở đâu? — 主体 (Thân bài): Giá thế nào? Vì sao bạn mua nó? — 结尾 (Kết bài): Bạn cảm thấy thế nào về nó? Có đáng tiền không?",
+          "hint_plus": "我上个星期买了一块手表，是在商场买的。这块手表有点儿贵，但是我很喜欢它的样子，所以就买了。我觉得虽然贵了一点儿，但是很值得，我每天戴着都很开心。",
+          "audio": "audio/hskk-4.mp3"
+        },
+        {
+          "script": "你最近做错了一件什么事？",
+          "hint": "开头 (Mở bài): Bạn gần đây đã làm sai việc gì? Với ai? — 主体 (Thân bài): Lý do là gì? Hậu quả thế nào? Bạn cảm thấy thế nào? — 结尾 (Kết bài): Sau đó bạn có xin lỗi không? Bài học là gì?",
+          "hint_plus": "上个星期，我忘了朋友的生日，没有告诉她生日快乐。因为最近工作太忙，我把这件事忘了。她有点儿不高兴，我也觉得很不好意思。后来我给她打电话说对不起，还请她吃饭。我觉得以后应该把重要的日子记在手机里，这样才能记得清楚。",
+          "audio": "audio/hskk-5.mp3"
+        }
+      ]
+    },
+    {
+      "type": "writing_prompt",
+      "title": "Viết nhật ký",
+      "items": [
+        {
+          "prompt": "写一篇日记，说说你有一次虽然忘了做什么事，但是最后是怎么解决的，或者朋友是怎么帮你的。",
+          "kind": "nhật ký",
+          "target_length": "60-100 chữ",
+          "outline": [
+            "Chuyện gì đã xảy ra (bạn quên làm gì?)",
+            "Sau đó thế nào — ai giúp bạn nhớ/sửa, bạn đã làm gì (dùng \"虽然……，但是……\")",
+            "Cảm nghĩ của bạn về chuyện đó"
+          ]
+        }
+      ]
+    }
+  ]
+}
