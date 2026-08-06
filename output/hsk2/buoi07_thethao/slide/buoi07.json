@@ -1,0 +1,686 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 7",
+    "topic": "他篮球打得很好 — Thể thao (bóng rổ) + 状态补语 (得) + 一…就…"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "他篮球打得很好",
+      "subtitle": "Tā lánqiú dǎ de hěn hǎo — Cậu ấy chơi bóng rổ rất giỏi",
+      "footer": "",
+      "image": "assets/basketball_cover.jpg"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么",
+      "image": "assets/placeholder_goals.jpg",
+      "bullets": [
+        "状态补语 (得) — nói ai làm việc gì \"giỏi/dở/nhanh/chậm\" thế nào (ôn lại, học sâu hơn)",
+        "紧缩复句 一…就… — nối 2 hành động liên tiếp nhau",
+        "Từ vựng: thể thao, các môn bóng, vận động"
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 1/13",
+      "hz": "从",
+      "py": "cóng",
+      "vn": "từ (nơi chốn/thời gian)",
+      "pos": "prep.",
+      "image": "assets/words/vcong_PLACEHOLDER.jpg",
+      "examples": [
+        {
+          "hz": "你是什么时候从北京回来的？",
+          "py": "Nǐ shì shénme shíhou cóng Běijīng huílái de?",
+          "vn": "Cậu từ Bắc Kinh về khi nào vậy?"
+        }
+      ],
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 2/13",
+      "hz": "往",
+      "py": "wǎng",
+      "vn": "hướng về; đi",
+      "pos": "prep./v.",
+      "image": "assets/words/vwang_PLACEHOLDER.jpg",
+      "examples": [
+        {
+          "hz": "你怎么一下课就往外跑？",
+          "py": "Nǐ zěnme yí xiàkè jiù wǎng wài pǎo?",
+          "vn": "Sao vừa hết tiết là cậu chạy ra ngoài vậy?"
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 3/13",
+      "hz": "跑",
+      "py": "pǎo",
+      "vn": "chạy",
+      "pos": "v.",
+      "image": "assets/words/vpao_PLACEHOLDER.jpg",
+      "examples": [
+        {
+          "hz": "你跑得快不快？",
+          "py": "Nǐ pǎo de kuài bu kuài?",
+          "vn": "Cậu chạy nhanh không?"
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 4/13",
+      "hz": "打",
+      "py": "dǎ",
+      "vn": "chơi (thể thao); đánh",
+      "pos": "v.",
+      "image": "assets/words/vda_PLACEHOLDER.jpg",
+      "examples": [
+        {
+          "hz": "我跟同学说好了，一起去打篮球。",
+          "py": "Wǒ gēn tóngxué shuōhǎo le, yìqǐ qù dǎ lánqiú.",
+          "vn": "Tớ hẹn với bạn học rồi, cùng đi chơi bóng rổ."
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 5/13",
+      "hz": "篮球",
+      "py": "lánqiú",
+      "vn": "bóng rổ",
+      "pos": "n.",
+      "image": "assets/words/vlanqiu.jpg",
+      "examples": [
+        {
+          "hz": "你篮球打得怎么样？",
+          "py": "Nǐ lánqiú dǎ de zěnmeyàng?",
+          "vn": "Cậu chơi bóng rổ thế nào?"
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 6/13",
+      "hz": "运动",
+      "py": "yùndòng",
+      "vn": "vận động, thể thao",
+      "pos": "v./n.",
+      "image": "assets/words/vyundong.jpg",
+      "examples": [
+        {
+          "hz": "我的爱好是运动。",
+          "py": "Wǒ de àihào shì yùndòng.",
+          "vn": "Sở thích của tớ là thể thao."
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 7/13",
+      "hz": "踢",
+      "py": "tī",
+      "vn": "đá (⚠️ trùng HSK1)",
+      "pos": "v.",
+      "image": "assets/words/vti_PLACEHOLDER.jpg",
+      "examples": [
+        {
+          "hz": "你踢得怎么样？",
+          "py": "Nǐ tī de zěnmeyàng?",
+          "vn": "Cậu đá được không?"
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 8/13",
+      "hz": "足球",
+      "py": "zúqiú",
+      "vn": "bóng đá",
+      "pos": "n.",
+      "image": "assets/words/vzuqiu.jpg",
+      "examples": [
+        {
+          "hz": "我还喜欢踢足球，一到星期天就跟朋友们去踢球。",
+          "py": "Wǒ hái xǐhuan tī zúqiú, yí dào xīngqītiān jiù gēn péngyoumen qù tī qiú.",
+          "vn": "Tớ còn thích đá bóng, cứ đến Chủ nhật là tớ đi đá bóng với bạn bè."
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 9/13",
+      "hz": "球",
+      "py": "qiú",
+      "vn": "quả bóng",
+      "pos": "n.",
+      "image": "assets/words/vqiu_PLACEHOLDER.jpg",
+      "examples": [
+        {
+          "hz": "一到星期天就跟朋友们去踢球。",
+          "py": "Yí dào xīngqītiān jiù gēn péngyoumen qù tī qiú.",
+          "vn": "Cứ đến Chủ nhật là đi đá bóng với bạn bè."
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 10/13",
+      "hz": "跑步",
+      "py": "pǎobù",
+      "vn": "chạy bộ",
+      "pos": "v.",
+      "image": "assets/words/vpaobu_PLACEHOLDER.jpg",
+      "examples": [
+        {
+          "hz": "跑步呢？你跑得快不快？",
+          "py": "Pǎobù ne? Nǐ pǎo de kuài bu kuài?",
+          "vn": "Còn chạy bộ thì sao? Cậu chạy nhanh không?"
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 11/13",
+      "hz": "游泳",
+      "py": "yóuyǒng",
+      "vn": "bơi lội",
+      "pos": "v.",
+      "image": "assets/words/vyouyong.jpg",
+      "examples": [
+        {
+          "hz": "那你喜欢游泳吗？",
+          "py": "Nà nǐ xǐhuan yóuyǒng ma?",
+          "vn": "Vậy cậu có thích bơi không?"
+        },
+        {
+          "hz": "喜欢，但我游泳游得不快。",
+          "py": "Xǐhuan, dàn wǒ yóuyǒng yóu de bú kuài.",
+          "vn": "Có, nhưng tớ bơi không nhanh."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 12/13",
+      "hz": "爱好",
+      "py": "àihào",
+      "vn": "sở thích; thích",
+      "pos": "n./v.",
+      "image": "assets/words/vaihao_PLACEHOLDER.jpg",
+      "examples": [
+        {
+          "hz": "你有什么爱好？",
+          "py": "Nǐ yǒu shénme àihào?",
+          "vn": "Cậu có sở thích gì?"
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 13/13",
+      "hz": "开始",
+      "py": "kāishǐ",
+      "vn": "bắt đầu",
+      "pos": "v./n.",
+      "image": "assets/words/vkaishi_PLACEHOLDER.jpg",
+      "examples": [
+        {
+          "hz": "从上小学开始，我每天都跟爸爸去运动。",
+          "py": "Cóng shàng xiǎoxué kāishǐ, wǒ měi tiān dōu gēn bàba qù yùndòng.",
+          "vn": "Từ khi vào tiểu học, ngày nào tớ cũng đi tập thể thao cùng ba."
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 1/6 · Bóng vợt trong nhà",
+      "hz": "乒乓球",
+      "py": "pīngpāngqiú",
+      "vn": "bóng bàn",
+      "pos": "n.",
+      "image": "assets/words/pingpang.jpg",
+      "examples": [
+        {
+          "hz": "他乒乓球打得很好。",
+          "py": "Tā pīngpāngqiú dǎ de hěn hǎo.",
+          "vn": "Cậu ấy chơi bóng bàn rất giỏi."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 2/6 · Bóng vợt trong nhà",
+      "hz": "羽毛球",
+      "py": "yǔmáoqiú",
+      "vn": "cầu lông",
+      "pos": "n.",
+      "image": "assets/words/yumaoqiu.jpg",
+      "examples": [
+        {
+          "hz": "我们周末一起打羽毛球吧。",
+          "py": "Wǒmen zhōumò yìqǐ dǎ yǔmáoqiú ba.",
+          "vn": "Cuối tuần chúng ta cùng đánh cầu lông đi."
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 3/6 · Bóng ngoài trời",
+      "hz": "网球",
+      "py": "wǎngqiú",
+      "vn": "tennis",
+      "pos": "n.",
+      "image": "assets/words/wangqiu.jpg",
+      "examples": [
+        {
+          "hz": "她网球打得不错。",
+          "py": "Tā wǎngqiú dǎ de búcuò.",
+          "vn": "Cô ấy chơi tennis khá đấy."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 4/6 · Bóng ngoài trời",
+      "hz": "排球",
+      "py": "páiqiú",
+      "vn": "bóng chuyền",
+      "pos": "n.",
+      "image": "assets/words/paiqiu.jpg",
+      "examples": [
+        {
+          "hz": "我排球打得不怎么样。",
+          "py": "Wǒ páiqiú dǎ de bù zěnmeyàng.",
+          "vn": "Tớ chơi bóng chuyền không giỏi lắm."
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 5/6 · Vận động ngoài trời",
+      "hz": "骑自行车",
+      "py": "qí zìxíngchē",
+      "vn": "đạp xe",
+      "pos": "v.",
+      "image": "assets/words/qizixingche.jpg",
+      "examples": [
+        {
+          "hz": "我每天骑自行车上学。",
+          "py": "Wǒ měitiān qí zìxíngchē shàngxué.",
+          "vn": "Ngày nào tớ cũng đạp xe đi học."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 6/6 · Vận động ngoài trời",
+      "hz": "爬山",
+      "py": "páshān",
+      "vn": "leo núi",
+      "pos": "v.",
+      "image": "assets/words/pashan.jpg",
+      "examples": [
+        {
+          "hz": "一有时间我就去爬山。",
+          "py": "Yì yǒu shíjiān wǒ jiù qù páshān.",
+          "vn": "Hễ có thời gian là tớ đi leo núi."
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 状态补语 (得)",
+      "point": [
+        "Cấu trúc: Động từ + 得 + Cụm tính từ — bổ sung trạng thái của hành động.",
+        "Phủ định: thêm 不 trước tính từ.",
+        "3 dạng câu hỏi: (1) thêm 吗 cuối câu; (2) Động từ+得+Adj+不+Adj; (3) Động từ+得+怎么样.",
+        "Động từ có tân ngữ / từ ly hợp → lặp lại động từ: 你篮球打得怎么样？(không nói 你打篮球得怎么样)"
+      ],
+      "examples": [
+        {
+          "hz": "我踢得还可以。",
+          "py": "Wǒ tī de hái kěyǐ.",
+          "vn": "Tớ đá cũng tạm được."
+        },
+        {
+          "hz": "你跑得快不快？",
+          "py": "Nǐ pǎo de kuài bu kuài?",
+          "vn": "Cậu chạy nhanh không?"
+        },
+        {
+          "hz": "你篮球打得怎么样？",
+          "py": "Nǐ lánqiú dǎ de zěnmeyàng?",
+          "vn": "Cậu chơi bóng rổ thế nào?"
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 一…就… (1/2)",
+      "point": [
+        "紧缩复句 \"一……就……\" — hành động sau nối tiếp NGAY hành động trước, thường mang nghĩa điều kiện/nguyên nhân → kết quả.",
+        "Chủ ngữ GIỐNG NHAU → đặt 1 lần trước 一 (hoặc trước 就), chủ ngữ dùng chung cho cả câu.",
+        "Chủ ngữ KHÁC NHAU → mỗi chủ ngữ đặt riêng trước 一 và trước 就."
+      ],
+      "examples": [
+        {
+          "hz": "你怎么一下课就往外跑？",
+          "py": "Nǐ zěnme yí xiàkè jiù wǎng wài pǎo?",
+          "vn": "Sao vừa hết tiết là cậu chạy ra ngoài luôn vậy?"
+        },
+        {
+          "hz": "一到星期天，陈天中就跟同学去打篮球。",
+          "py": "Yí dào xīngqītiān, Chén Tiānzhōng jiù gēn tóngxué qù dǎ lánqiú.",
+          "vn": "Cứ đến Chủ nhật là Trần Thiên Trung lại đi chơi bóng rổ với bạn học."
+        }
+      ],
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 · 一…就… (2/2)",
+      "point": [
+        "Ví dụ thêm — chủ ngữ khác nhau (mỗi người 1 vị trí):"
+      ],
+      "examples": [
+        {
+          "hz": "我一有时间就去运动。",
+          "py": "Wǒ yì yǒu shíjiān jiù qù yùndòng.",
+          "vn": "Hễ có thời gian là tớ lại đi tập thể thao."
+        },
+        {
+          "hz": "我一到家，妈妈就打来电话了。",
+          "py": "Wǒ yí dào jiā, māma jiù dǎ lái diànhuà le.",
+          "vn": "Tớ vừa về đến nhà là mẹ gọi điện tới ngay."
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "语法难点",
+      "title": "Lỗi người Việt hay mắc",
+      "bullets": [
+        "✗ 他打篮球好 → ✓ 他打得很好 (quên 得, dịch thẳng từ tiếng Việt \"chơi bóng rổ giỏi\")",
+        "✗ 你打篮球得怎么样 → ✓ 你篮球打得怎么样 (động từ có tân ngữ phải lặp lại động từ, không chèn 得 giữa động từ và tân ngữ)",
+        "✗ 一下课就他走了 → ✓ 他一下课就走了 (chủ ngữ phải đứng trước 一, không chèn sau 就)"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "Trong lớp học",
+      "voices": {
+        "陈天中": "zh-CN-YunxiNeural",
+        "安妮": "zh-CN-XiaoxiaoNeural"
+      },
+      "turns": [
+        {
+          "speaker": "陈天中",
+          "hz": "安妮，你是什么时候从北京回来的？",
+          "py": "Ānnī, nǐ shì shénme shíhou cóng Běijīng huílái de?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "昨天下午。天中，你怎么一下课就往外跑？",
+          "py": "Zuótiān xiàwǔ. Tiānzhōng, nǐ zěnme yí xiàkè jiù wǎng wài pǎo?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我跟同学说好了，一起去打篮球。",
+          "py": "Wǒ gēn tóngxué shuōhǎo le, yìqǐ qù dǎ lánqiú."
+        },
+        {
+          "speaker": "安妮",
+          "hz": "我也想跟你们一起玩。",
+          "py": "Wǒ yě xiǎng gēn nǐmen yìqǐ wán."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "没问题，走吧。",
+          "py": "Méi wèntí, zǒu ba."
+        }
+      ],
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "Trên sân trường",
+      "voices": {
+        "安妮": "zh-CN-XiaoxiaoNeural",
+        "陈天中": "zh-CN-YunxiNeural"
+      },
+      "turns": [
+        {
+          "speaker": "安妮",
+          "hz": "天中，你是不是很喜欢打篮球？",
+          "py": "Tiānzhōng, nǐ shì bu shì hěn xǐhuan dǎ lánqiú?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "没错。",
+          "py": "Méi cuò."
+        },
+        {
+          "speaker": "安妮",
+          "hz": "你还喜欢什么运动？",
+          "py": "Nǐ hái xǐhuan shénme yùndòng?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我还喜欢踢足球，一到星期天就跟朋友们去踢球。",
+          "py": "Wǒ hái xǐhuan tī zúqiú, yí dào xīngqītiān jiù gēn péngyoumen qù tī qiú."
+        },
+        {
+          "speaker": "安妮",
+          "hz": "你踢得怎么样？",
+          "py": "Nǐ tī de zěnmeyàng?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我踢得还可以。",
+          "py": "Wǒ tī de hái kěyǐ."
+        }
+      ],
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "Tiếp tục trên sân trường",
+      "image": "assets/basketball_court.jpg",
+      "voices": {
+        "陈天中": "zh-CN-YunxiNeural",
+        "安妮": "zh-CN-XiaoxiaoNeural"
+      },
+      "turns": [
+        {
+          "speaker": "陈天中",
+          "hz": "你篮球打得怎么样？",
+          "py": "Nǐ lánqiú dǎ de zěnmeyàng?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "打得还可以。",
+          "py": "Dǎ de hái kěyǐ."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "跑步呢？你跑得快不快？",
+          "py": "Pǎobù ne? Nǐ pǎo de kuài bu kuài?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "我跑得不快，也不太喜欢跑步。",
+          "py": "Wǒ pǎo de bú kuài, yě bú tài xǐhuan pǎobù."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "那你喜欢游泳吗？",
+          "py": "Nà nǐ xǐhuan yóuyǒng ma?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "喜欢，但我游泳游得不快。",
+          "py": "Xǐhuan, dàn wǒ yóuyǒng yóu de bú kuài."
+        }
+      ],
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 4",
+      "title": "陈天中写日记",
+      "sentences": [
+        {
+          "hz": "我的爱好是运动。",
+          "py": "Wǒ de àihào shì yùndòng.",
+          "vn": "Sở thích của tớ là thể thao."
+        },
+        {
+          "hz": "从上小学开始，我每天都跟爸爸去运动。",
+          "py": "Cóng shàng xiǎoxué kāishǐ, wǒ měi tiān dōu gēn bàba qù yùndòng.",
+          "vn": "Từ khi vào tiểu học, ngày nào tớ cũng đi tập thể thao cùng ba."
+        },
+        {
+          "hz": "现在我篮球打得很好，足球踢得不错，游泳游得也很快。",
+          "py": "Xiànzài wǒ lánqiú dǎ de hěn hǎo, zúqiú tī de búcuò, yóuyǒng yóu de yě hěn kuài.",
+          "vn": "Bây giờ tớ chơi bóng rổ rất giỏi, đá bóng cũng khá, bơi cũng nhanh."
+        },
+        {
+          "hz": "我一有时间就去运动。",
+          "py": "Wǒ yì yǒu shíjiān jiù qù yùndòng.",
+          "vn": "Hễ có thời gian là tớ lại đi tập thể thao."
+        }
+      ],
+      "audio": "assets/audio/slide29.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 1/2",
+      "instructions": "Điền 得 vào chỗ trống cho đúng (chú ý động từ có tân ngữ phải lặp lại động từ):",
+      "items": [
+        "1. 他篮球打___很好。",
+        "2. 你___跑___快不快？",
+        "3. 我游泳游___不太快。"
+      ]
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 2/2",
+      "instructions": "Sắp xếp lại thành câu đúng dùng 一…就…:",
+      "items": [
+        "1. 就 / 下课 / 他 / 一 / 回家",
+        "2. 就 / 有时间 / 我 / 一 / 去运动",
+        "3. 就 / 星期天 / 到 / 一 / 我们 / 去踢球"
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "口语 1/2",
+      "title": "10 câu khẩu ngữ dùng ngay — Thể thao (1/2)",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "你打得怎么样？",
+          "Nǐ dǎ de zěnmeyàng?",
+          "Cậu chơi thế nào?"
+        ],
+        [
+          "加油，你可以的！",
+          "Jiāyóu, nǐ kěyǐ de!",
+          "Cố lên, cậu làm được!"
+        ],
+        [
+          "周末一起打球吧！",
+          "Zhōumò yìqǐ dǎqiú ba!",
+          "Cuối tuần đi chơi bóng cùng nhau đi!"
+        ],
+        [
+          "我们先热身一下。",
+          "Wǒmen xiān rèshēn yíxià.",
+          "Chúng ta khởi động một chút trước đã."
+        ],
+        [
+          "你今天打得真不错！",
+          "Nǐ jīntiān dǎ de zhēn búcuò!",
+          "Hôm nay cậu chơi khá đấy!"
+        ]
+      ],
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语 2/2",
+      "title": "10 câu khẩu ngữ dùng ngay — Thể thao (2/2)",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "我们分成两队吧。",
+          "Wǒmen fēnchéng liǎng duì ba.",
+          "Chúng ta chia thành 2 đội đi."
+        ],
+        [
+          "该你发球了。",
+          "Gāi nǐ fāqiú le.",
+          "Đến lượt cậu giao bóng rồi."
+        ],
+        [
+          "别灰心，再来一次！",
+          "Bié huīxīn, zài lái yí cì!",
+          "Đừng chán, chơi lại lần nữa!"
+        ],
+        [
+          "我们赢了！",
+          "Wǒmen yíng le!",
+          "Chúng ta thắng rồi!"
+        ],
+        [
+          "运动完了要多喝水。",
+          "Yùndòng wán le yào duō hē shuǐ.",
+          "Vận động xong phải uống nhiều nước."
+        ]
+      ],
+      "audio": "assets/audio/slide33.mp3"
+    }
+  ]
+}

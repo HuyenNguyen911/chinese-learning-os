@@ -1,0 +1,101 @@
+{
+  "meta": { "lesson": "HSK2 · Buổi 7 — 他篮球打得很好", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối 汉字 với nghĩa",
+      "instructions": "Nối từ bên trái với nghĩa đúng bên phải.",
+      "pairs": [
+        {"left": "从", "right": "từ (nơi chốn/thời gian)"},
+        {"left": "往", "right": "hướng về; đi"},
+        {"left": "跑步", "right": "chạy bộ"},
+        {"left": "游泳", "right": "bơi lội"},
+        {"left": "爱好", "right": "sở thích"},
+        {"left": "开始", "right": "bắt đầu"},
+        {"left": "运动", "right": "vận động, thể thao"}
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền 得",
+      "instructions": "Điền 得 vào chỗ trống (chú ý động từ có tân ngữ phải lặp lại động từ).",
+      "word_bank": ["得"],
+      "items": [
+        {"q": "李文跑{}很快。", "answer": "得", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"q": "你游泳游{}怎么样？", "answer": "得", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"q": "刘明打篮球打{}不错。", "answer": "得", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"q": "白家月踢足球踢{}还可以。", "answer": "得", "src": "[tự soạn theo chủ đề thể thao]"}
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc đoạn văn về sở thích thể thao",
+      "instructions": "Đọc đoạn văn rồi trả lời câu hỏi.",
+      "passage": "刘明是我的好朋友。他从小学开始就喜欢运动，篮球打得很好，足球踢得也不错。他不太喜欢跑步，但是很喜欢游泳。他一下课就去游泳，游得很快。他说，运动是他最大的爱好。",
+      "questions": [
+        {"q": "刘明什么运动打得很好？", "options": ["篮球", "跑步", "排球"], "answer": "A", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"q": "刘明比较喜欢什么运动？", "options": ["跑步", "游泳", "网球"], "answer": "B", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"q": "刘明一下课就去做什么？", "options": ["打篮球", "去游泳", "回家"], "answer": "B", "src": "[tự soạn theo chủ đề thể thao]"}
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ cho trước thành câu đúng.",
+      "items": [
+        {"words": ["李文", "篮球", "打", "得", "不错"], "answer": "李文篮球打得不错。", "answer_plus": "李文篮球打得不错，我们都很佩服他。", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"words": ["他", "一", "放假", "就", "去", "打篮球"], "answer": "他一放假就去打篮球。", "answer_plus": "他一放假就去打篮球，跟朋友们玩得很开心。", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"words": ["妹妹", "跑步", "跑", "得", "很慢"], "answer": "妹妹跑步跑得很慢。", "answer_plus": "妹妹跑步跑得很慢，但是她每天都坚持跑。", "src": "[tự soạn theo chủ đề thể thao]"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu tiếng Việt sang tiếng Trung, dùng từ gợi ý.",
+      "items": [
+        {"prompt": "Anh trai tôi thích bơi, bơi rất nhanh.", "given": ["得"], "answer": "我哥哥喜欢游泳，游得很快。", "answer_plus": "我哥哥喜欢游泳，游得很快，还想参加比赛。", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"prompt": "Cứ đến Chủ nhật là tôi lại đi chạy bộ.", "given": ["一……就……"], "answer": "一到星期天我就去跑步。", "answer_plus": "一到星期天我就去跑步，运动完了觉得很舒服。", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"prompt": "Cậu ấy thích bóng rổ từ khi còn nhỏ.", "given": ["从……开始"], "answer": "他从小时候开始就喜欢篮球。", "answer_plus": "他从小时候开始就喜欢篮球，现在打得很好。", "src": "[tự soạn theo chủ đề thể thao]"}
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe audio rồi chọn đáp án đúng.",
+      "items": [
+        {"script": "我姐姐每天早上都去跑步，跑得很快。", "q": "姐姐每天早上做什么？", "options": ["跑步", "游泳", "打篮球"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"script": "小明一下课就去踢足球，他踢得很好。", "q": "小明踢得怎么样？", "options": ["不好", "很好", "还可以"], "answer": "B", "audio": "audio/nghe-2.mp3", "src": "[tự soạn theo chủ đề thể thao]"},
+        {"script": "我爸爸最大的爱好是打网球，他从年轻的时候就开始打了。", "q": "爸爸的爱好是什么？", "options": ["打网球", "踢足球", "游泳"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "[tự soạn theo chủ đề thể thao]"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "听后重复",
+      "part": "听后重复",
+      "instructions": "Nghe và nhắc lại theo đúng ngữ điệu.",
+      "items": [
+        {"script": "你跑得真快！", "audio": "audio/hskk-1.mp3"},
+        {"script": "我们一起去打羽毛球吧。", "audio": "audio/hskk-2.mp3"},
+        {"script": "他一有空就去运动。", "audio": "audio/hskk-3.mp3"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 1",
+      "part": "回答问题",
+      "instructions": "开头 (Mở bài): Bạn thích môn thể thao nào nhất?§Bạn biết/chơi từ khi nào?§主体 (Thân bài): Bạn chơi mấy lần 1 tuần?§Với ai? Cảm thấy thế nào?§结尾 (Kết bài): Môn đó giúp được gì cho bạn?§Bạn có định chơi tiếp không?",
+      "items": [
+        {"script": "你最喜欢什么运动？", "hint": "我最喜欢打篮球，从小学就开始打了。", "hint_plus": "我最喜欢打篮球，从小学就开始打了。我一星期打三次，一般跟同学一起打，打得很开心。打篮球让我身体更好，我打算一直打下去。", "audio": "audio/hskk-4.mp3"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 2",
+      "part": "回答问题",
+      "instructions": "开头 (Mở bài): Bạn học bơi từ khi nào?§Ai dạy bạn?§主体 (Thân bài): Bạn bơi giỏi hay dở?§Bạn bơi mấy lần 1 tuần?§结尾 (Kết bài): Bơi giúp được gì cho bạn?§Bạn có muốn bơi giỏi hơn không?",
+      "items": [
+        {"script": "你游泳游得怎么样？", "hint": "我游泳游得还可以，是我哥哥教我的。", "hint_plus": "我游泳游得还可以，是我哥哥教我的。我不算特别厉害，一星期游两次。游泳对身体很好，也能让我放松。以后我想游得更快一点。", "audio": "audio/hskk-5.mp3"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "basketball_cover": {
+    "title": "basketball hoop",
+    "creator": "CubesAndPiii",
+    "license": "by-nd 2.0",
+    "source": "https://www.flickr.com/photos/59557206@N08/5931986666",
+    "attribution": "\"basketball hoop\" by CubesAndPiii is licensed under CC BY-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/2.0/.",
+    "query": "basketball hoop"
+  },
+  "basketball_court": {
+    "title": "Basketball court on Unmer",
+    "creator": "ivanlanin",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/81434456@N00/1515728044",
+    "attribution": "\"Basketball court on Unmer\" by ivanlanin is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "basketball court"
+  },
+  "test_basketball2": {
+    "title": "Basketball and Puppy",
+    "creator": "Wootang01",
+    "license": "by-nd 2.0",
+    "source": "https://www.flickr.com/photos/7310714@N06/3549239184",
+    "attribution": "\"Basketball and Puppy\" by Wootang01 is licensed under CC BY-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/2.0/.",
+    "query": "basketball"
+  },
+  "t_ping-pong": {
+    "title": "ping pong oyster card holder",
+    "creator": "osde8info",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/8764442@N07/4332280690",
+    "attribution": "\"ping pong oyster card holder\" by osde8info is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "ping-pong"
+  },
+  "t_badminton": {
+    "title": "Badminton Final Play",
+    "creator": "llee_wu",
+    "license": "by-nd 2.0",
+    "source": "https://www.flickr.com/photos/13523064@N03/4337899232",
+    "attribution": "\"Badminton Final Play\" by llee_wu is licensed under CC BY-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/2.0/.",
+    "query": "badminton"
+  },
+  "t_tennis": {
+    "title": "Windsor Tennis Club Belfast July 2013 Tennis ITF Junior Tournament 011",
+    "creator": "Windsor Tennis Club, Belfast",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/60893625@N06/9682631535",
+    "attribution": "\"Windsor Tennis Club Belfast July 2013 Tennis ITF Junior Tournament 011\" by Windsor Tennis Club, Belfast is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "tennis"
+  },
+  "t_volleyball": {
+    "title": "2017-08-07-Matt_Duboff-Women's Volleyball-108",
+    "creator": "2017 Canada Games // Jeux du Canada 2017",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/133711121@N07/36449484641",
+    "attribution": "\"2017-08-07-Matt_Duboff-Women's Volleyball-108\" by 2017 Canada Games // Jeux du Canada 2017 is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "volleyball"
+  },
+  "t_bicycle": {
+    "title": "Tandem bicycle",
+    "creator": "State Library Victoria Collections",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/60849810@N05/6758058469",
+    "attribution": "\"Tandem bicycle\" by State Library Victoria Collections is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "bicycle"
+  },
+  "t_hiking": {
+    "title": "Hiking, Majorca, Spain",
+    "creator": "Kristoffer Trolle",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/126744325@N07/16591479139",
+    "attribution": "\"Hiking, Majorca, Spain\" by Kristoffer Trolle is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "hiking"
+  },
+  "words/pingpang": {
+    "title": "Adoni Maropis of '24' was an *excellent* Table Tennis Player",
+    "creator": "JoeDuck",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/53175402@N00/3676373078",
+    "attribution": "\"Adoni Maropis of '24' was an *excellent* Table Tennis Player\" by JoeDuck is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "table tennis player"
+  },
+  "words/yumaoqiu": {
+    "title": "Badminton Final Play",
+    "creator": "llee_wu",
+    "license": "by-nd 2.0",
+    "source": "https://www.flickr.com/photos/13523064@N03/4337899232",
+    "attribution": "\"Badminton Final Play\" by llee_wu is licensed under CC BY-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/2.0/.",
+    "query": "badminton"
+  },
+  "words/wangqiu": {
+    "title": "Windsor Tennis Club Belfast July 2013 Tennis ITF Junior Tournament 011",
+    "creator": "Windsor Tennis Club, Belfast",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/60893625@N06/9682631535",
+    "attribution": "\"Windsor Tennis Club Belfast July 2013 Tennis ITF Junior Tournament 011\" by Windsor Tennis Club, Belfast is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "tennis"
+  },
+  "words/paiqiu": {
+    "title": "Ansel Adams: Volleyball game at Manzanar, 1943",
+    "creator": "trialsanderrors",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/76204898@N00/2772054744",
+    "attribution": "\"Ansel Adams: Volleyball game at Manzanar, 1943\" by trialsanderrors is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "volleyball game"
+  },
+  "words/qizixingche": {
+    "title": "Elderly person cycling",
+    "creator": "Dave Shaver",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/7642177@N05/26880869663",
+    "attribution": "\"Elderly person cycling\" by Dave Shaver is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "person cycling"
+  },
+  "words/pashan": {
+    "title": "Hiking, Majorca, Spain",
+    "creator": "Kristoffer Trolle",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/126744325@N07/16591479139",
+    "attribution": "\"Hiking, Majorca, Spain\" by Kristoffer Trolle is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "hiking"
+  },
+  "words/vpao": {
+    "title": "Old person running 2015",
+    "creator": "Kishannageswaran",
+    "license": "by-sa 4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=45829083",
+    "attribution": "\"Old person running 2015\" by Kishannageswaran is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/.",
+    "query": "person running"
+  },
+  "words/vda": {
+    "title": "Kids Playing Basketball",
+    "creator": "Rivard",
+    "license": "by-nd 2.0",
+    "source": "https://www.flickr.com/photos/64714602@N00/67699808",
+    "attribution": "\"Kids Playing Basketball\" by Rivard is licensed under CC BY-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/2.0/.",
+    "query": "playing basketball"
+  },
+  "words/vlanqiu": {
+    "title": "Basketball Ball Icon",
+    "creator": "Mazenl77",
+    "license": "by 3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=15721819",
+    "attribution": "\"Basketball Ball Icon\" by Mazenl77 is licensed under CC BY 3.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/3.0/.",
+    "query": "basketball ball"
+  },
+  "words/vyundong": {
+    "title": "Soccer - Army Youth Sports and Fitness - CYSS - Camp Humphreys, South Korea - 111001",
+    "creator": "USAG-Humphreys",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/31687107@N07/6206013520",
+    "attribution": "\"Soccer - Army Youth Sports and Fitness - CYSS - Camp Humphreys, South Korea - 111001\" by USAG-Humphreys is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "sport"
+  },
+  "words/vti": {
+    "title": "Soccer Player",
+    "creator": "Tobyotter",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/78428166@N00/8629140787",
+    "attribution": "\"Soccer Player\" by Tobyotter is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "soccer player"
+  },
+  "words/vzuqiu": {
+    "title": "contested soccer ball",
+    "creator": "woodleywonderworks",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/73645804@N00/6203802230",
+    "attribution": "\"contested soccer ball\" by woodleywonderworks is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "soccer ball"
+  },
+  "words/vqiu": {
+    "title": "The Very Worst Stress-Ball(s) Ever",
+    "creator": "Zak Greant",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/91083986@N00/1302599251",
+    "attribution": "\"The Very Worst Stress-Ball(s) Ever\" by Zak Greant is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "balls"
+  },
+  "words/vpaobu": {
+    "title": "Jogging in Amsterdam",
+    "creator": "Davide Gabino (aka Stròlic Furlàn)",
+    "license": "by-nd 2.0",
+    "source": "https://www.flickr.com/photos/56743832@N04/8658209286",
+    "attribution": "\"Jogging in Amsterdam\" by Davide Gabino (aka Stròlic Furlàn) is licensed under CC BY-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/2.0/.",
+    "query": "jogging"
+  },
+  "words/vyouyong": {
+    "title": "Schwimmbahn / Swimming lane",
+    "creator": "7C0",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/39453974@N04/38169755285",
+    "attribution": "\"Schwimmbahn / Swimming lane\" by 7C0 is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "swimming lane"
+  },
+  "words/vaihao": {
+    "title": "IconsEtc's Amber Glossy Chrome Icons - Sports and Hobbies",
+    "creator": "webtreats",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/44071822@N08/4919121950",
+    "attribution": "\"IconsEtc's Amber Glossy Chrome Icons - Sports and Hobbies\" by webtreats is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "hobby"
+  },
+  "words/vkaishi": {
+    "title": "Rubber Duck Race Starting Line",
+    "creator": "Suzie T",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/23727257@N00/3536954912",
+    "attribution": "\"Rubber Duck Race Starting Line\" by Suzie T is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "race start line"
+  }
+}
