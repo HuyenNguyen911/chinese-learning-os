@@ -31,6 +31,21 @@ from pptx.util import Inches
 SLIDE_W = Inches(13.333)
 MARGIN = Inches(0.6)
 
+# Vá lỗi python-pptx khi file .pptx có relationship MEDIA/VIDEO mồ côi (từ
+# audio đã bị xoá thủ công trước đó) — _find_by_sha1 gốc giả định mọi phần tử
+# trong _MediaParts đều có .sha1, crash AttributeError nếu gặp Part thường.
+import pptx.package as _pptx_package
+
+
+def _safe_find_by_sha1(self, sha1):
+    for media_part in self:
+        if getattr(media_part, "sha1", None) == sha1:
+            return media_part
+    return None
+
+
+_pptx_package._MediaParts._find_by_sha1 = _safe_find_by_sha1
+
 
 def remove_old_audio(slide):
     for shape in list(slide.shapes):
