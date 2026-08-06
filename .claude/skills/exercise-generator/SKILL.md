@@ -29,13 +29,19 @@ format thi HSK và HSKK 初级.
   (`回答问题`) — điền `answer`/`hint` (Chuẩn, đủ điểm) + `answer_plus`/`hint_plus`
   (Nâng cao, điểm cao) theo band chấm thi. Xem `worksheet/schema.md`.
 - **Dàn bài chuẩn HSKK 初级 cho `noi_hskk` part `回答问题`** (mặc định mọi buổi,
-  2026-08-06 — user yêu cầu áp lại cho buổi 1-6): luôn điền `instructions` của
-  block đó bằng dàn bài 3 bước (hiện ngay trên worksheet, không chỉ đáp án):
-  `"Nghe câu hỏi rồi trả lời. Dàn bài chuẩn HSKK 初级: (1) Trả lời thẳng câu hỏi
-  bằng 1 câu ngắn — đúng ngữ pháp hơn là nói dài; (2) Thêm 1 câu mô tả/giải thích
-  cụ thể hơn (làm gì, với ai, thế nào); (3) (không bắt buộc, để đạt điểm cao)
-  thêm 1 câu cảm nghĩ hoặc mở rộng."` `hint` nên khớp bước (1)-(2), `hint_plus`
-  khớp thêm bước (3).
+  **đổi 2026-08-06 — buổi 8 HSK2, user thấy dàn bài 3-câu cũ "hơi khó"/khô,
+  yêu cầu đổi hẳn sang kiểu mở bài/thân bài/kết bài với câu hỏi gợi ý cho từng
+  phần**): `instructions` của block ghi chung 1 dòng ngắn `"Nghe câu hỏi rồi trả
+  lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài)."`; còn dàn
+  bài CHI TIẾT (3 câu hỏi gợi mở, riêng theo từng câu hỏi nói) đặt vào field
+  `hint` của chính item đó — mẫu:
+  `"开头 (Mở bài): <câu hỏi gợi ai/việc gì/ở đâu> — 主体 (Thân bài): <câu hỏi
+  gợi lý do/chi tiết/cảm giác> — 结尾 (Kết bài): <câu hỏi gợi kết quả/bài học>"`.
+  `hint_plus` đổi thành 1 đoạn văn mẫu HOÀN CHỈNH (3-5 câu) đi theo đúng 3 phần
+  mở-thân-kết đó, không còn là "1 câu cảm nghĩ thêm" như kiểu cũ. Câu hỏi nói
+  (`script`) nên là câu hỏi trải nghiệm cá nhân cụ thể (vd "bạn gần đây đã làm
+  gì/mua gì/gặp chuyện gì") thay vì câu hỏi giả định trừu tượng ("nếu...")
+  — dễ trả lời và tự nhiên hơn cho người mới.
 - Chỉ **đọc** `memory/*`. Không tự sửa memory (CLAUDE.md §4).
 - **Tham khảo phong cách đề online (Pandarin):** trước khi soạn câu cho buổi
   HSK*N*, fetch 1-2 trang tương ứng cấp đó tại `pandarin.net`
