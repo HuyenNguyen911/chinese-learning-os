@@ -85,7 +85,7 @@ def read_text(s):
         xs = [it.get("hz", "") for it in s.get("items", [])]
     elif t == "grammar":
         xs = [ex.get("hz", "") for ex in s.get("examples", [])]
-    elif t == "table" and s.get("kicker") == "口语":
+    elif t == "table" and str(s.get("kicker", "")).startswith("口语"):
         xs = [row[0] for row in s.get("rows", []) if row]
     elif t == "wordcard":
         xs = [s.get("hz", "")] + [ex.get("hz", "") for ex in s.get("examples", [])]
