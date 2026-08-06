@@ -89,6 +89,13 @@ def read_text(s):
         xs = [row[0] for row in s.get("rows", []) if row]
     elif t == "wordcard":
         xs = [s.get("hz", "")] + [ex.get("hz", "") for ex in s.get("examples", [])]
+    elif t == "word_pair":
+        xs = []
+        for w in s.get("words", []):
+            xs.append(w.get("hz", ""))
+            ex = w.get("example")
+            if ex:
+                xs.append(ex.get("hz", ""))
     elif t == "passage":
         xs = [sent.get("hz", "") for sent in s.get("sentences", [])]
     elif t == "table" and s.get("kicker") == "写字":
@@ -130,13 +137,20 @@ def tts(text, voice, rate, out):
     return r.returncode == 0 and out.exists()
 
 
-def gen_dialogue(turns, rate, audio_dir, out, tag):
-    """Mỗi speaker 1 giọng riêng; ghép các lượt thành 1 mp3."""
+def gen_dialogue(turns, rate, audio_dir, out, tag, voice_overrides=None):
+    """Mỗi speaker 1 giọng riêng; ghép các lượt thành 1 mp3.
+
+    `voice_overrides` (optional, key = tên speaker đúng như trong `turns`) ghi
+    đè giọng auto-assign theo thứ tự xuất hiện — cần khi giới tính nhân vật
+    không khớp giọng mặc định ở vị trí đó (vd DIALOGUE_VOICES[1] là giọng
+    nam nhưng speaker thứ 2 trong hội thoại là nữ, như 2 mẹ con)."""
+    voice_overrides = voice_overrides or {}
     voices, order = {}, []
     for tn in turns:
         spk = tn.get("speaker", "")
         if spk not in voices:
-            voices[spk] = DIALOGUE_VOICES[len(voices) % len(DIALOGUE_VOICES)]
+            voices[spk] = voice_overrides.get(
+                spk, DIALOGUE_VOICES[len(voices) % len(DIALOGUE_VOICES)])
         order.append((tn.get("hz", "").strip(), voices[spk]))
     data = b""
     for j, (text, voice) in enumerate(order):
@@ -187,7 +201,8 @@ def main(argv):
             if is_dialogue:
                 rate = rate_override or DIALOGUE_RATE_DEFAULT
                 ok, voices = gen_dialogue(s["turns"], rate, audio_dir, out,
-                                          tag="d%02d" % i)
+                                          tag="d%02d" % i,
+                                          voice_overrides=s.get("voices"))
                 label = "dialogue " + "/".join(
                     v.split("-")[-1].replace("Neural", "") for v in voices.values())
             else:

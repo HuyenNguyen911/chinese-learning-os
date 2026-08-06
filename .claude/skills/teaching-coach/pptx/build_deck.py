@@ -385,7 +385,11 @@ class DeckBuilder:
             widths = [0.14, 0.18, 0.26, 0.42]
             headers = ["汉字", "Pinyin", "Nghĩa", "Ví dụ"]
         else:
-            widths = [0.26, 0.36, 0.38]
+            # 汉字 PHẢI đủ rộng — bảng này còn dùng cho câu dài (vd lời chúc),
+            # không chỉ 1-2 từ như vocab thường; cột hẹp cố định làm chữ Hán
+            # rớt dòng dưới đáy ô (review buổi 06: "cột hán tự đừng rớt hàng,
+            # cột khác có thể rớt").
+            widths = [0.40, 0.26, 0.34]
             headers = ["汉字", "Pinyin", "Nghĩa"]
         ncol = len(headers)
         nrow = len(items) + 1
@@ -393,17 +397,34 @@ class DeckBuilder:
         table = gfx.table
         for i, w in enumerate(widths):
             table.columns[i].width = int(width * w)
-        rh = int(height / nrow)
-        for r in range(nrow):
-            table.rows[r].height = rh
         # Font co theo chiều cao hàng thực tế — nrow cố định 23/15pt tràn ô
         # khi 1 slide nhồi nhiều từ (vd 13 từ); scale xuống cho hàng thấp,
         # KHÔNG phóng to quá cỡ gốc khi hàng cao (nrow ít).
         ideal_rh = Inches(0.52)
+        rh = int(height / nrow)
         fscale = min(1.0, rh / ideal_rh) if ideal_rh else 1.0
         hz_sz = max(14, int(23 * fscale))
         py_sz = vn_sz = max(10, int(15 * fscale))
         hdr_sz = max(11, int(15 * fscale))
+        if has_sw:
+            for r in range(nrow):
+                table.rows[r].height = rh
+        else:
+            # Hàng cao theo ĐÚNG số dòng 汉字 cần wrap ở cột đã cho — hàng có
+            # câu Hán dài (vd lời chúc) cao hơn, hàng ngắn giữ compact, thay
+            # vì chia đều height/nrow rồi chữ Hán tràn đáy ô khi câu dài.
+            hz_col_w = int(width * widths[0])
+            row_h = [rh]
+            for it in items:
+                lines = self._wrap_lines(it.get("hz", ""), hz_col_w - Pt(20),
+                                         hz_sz, cjk=True, bold=True)
+                row_h.append(max(rh, int(self._line_h(hz_sz) * lines) + Pt(10)))
+            total_h = sum(row_h)
+            if total_h > height:
+                shrink = height / total_h
+                row_h = [int(h * shrink) for h in row_h]
+            for r, h in enumerate(row_h):
+                table.rows[r].height = h
         for c, h in enumerate(headers):
             cell = table.cell(0, c)
             cell.fill.solid(); cell.fill.fore_color.rgb = self._rgb("accent")
@@ -534,8 +555,13 @@ class DeckBuilder:
         def sz(pt, floor):
             return max(floor, int(pt * scale))
 
+        # scale == 1.0 -> nội dung ít hơn khung, canh GIỮA để không dồn hết
+        # lên đầu + để trống mảng lớn phía dưới (review buổi 06: "chỗ nội
+        # dung quá dày, chỗ thì trống"). scale < 1.0 -> nội dung đã vượt
+        # khung tự nhiên, giữ neo TOP để không đè lên header (rule cũ).
+        anchor = MSO_ANCHOR.TOP if scale < 1.0 else MSO_ANCHOR.MIDDLE
         box, tf = self._textbox(slide, txt_left, top, txt_w, area_h,
-                                anchor=MSO_ANCHOR.TOP)
+                                anchor=anchor)
         first = True
         for i, line in enumerate(point_lines):
             p = tf.paragraphs[0] if first else tf.add_paragraph()
@@ -873,21 +899,9 @@ class DeckBuilder:
         n = len(turns)
         avail_h = int(SLIDE_H - top - Inches(0.30))
         speaker_colors = {}
-
-        def nlines(t):
-            return 1 + (1 if t.get("py") else 0) + (1 if t.get("vn") else 0)
-
-        # Kích thước "tự nhiên"; nếu tổng cao hơn khung thì co lại theo hệ số
-        # scale (cả chiều cao lẫn cỡ chữ) để KHÔNG tràn khung dù nhiều lượt.
-        gap0 = int(Inches(0.16)); line0 = int(Inches(0.40)); pad0 = int(Inches(0.30))
-        natural = sum(line0 * nlines(t) + pad0 for t in turns) + gap0 * (n - 1)
-        scale = min(1.0, avail_h / natural) if natural else 1.0
-        line_h = int(line0 * scale); pad = int(pad0 * scale); gap = int(gap0 * scale)
-        hz_sz = max(15, int(22 * scale)); py_sz = max(11, int(14 * scale))
-        vn_sz = max(10, int(13 * scale)); spk_sz = max(11, int(13 * scale))
         max_bubble_w = min(Inches(7.6), txt_w); min_bubble_w = min(Inches(1.9), txt_w)
 
-        def _bubble_w(t):
+        def _bubble_w(t, hz_sz, py_sz, vn_sz):
             # Bề rộng RIÊNG mỗi bubble theo dòng dài nhất — câu ngắn (vd 你们好!)
             # không bị kéo giãn hết cỡ như câu dài (review buổi 02: "nội dung
             # ngắn mà khung dài").
@@ -900,11 +914,37 @@ class DeckBuilder:
                         w(t.get("vn", ""), vn_sz, False))
             return int(min(max_bubble_w, max(min_bubble_w, needed + Inches(0.5))))
 
+        # Số dòng THỰC TẾ sau khi wrap trong bề rộng bubble THẬT (không phải
+        # cứ 1 field = 1 dòng) — bubble bị ép về max_bubble_w khi câu dài, nên
+        # hz/py/vn có thể tự xuống dòng; đếm thiếu sẽ làm bubble thấp hơn nội
+        # dung thật, chữ bị tràn/rớt dòng ở đáy (review buổi 06).
+        def nlines(t, bubble_w, hz_sz, py_sz, vn_sz):
+            inner_w = bubble_w - Pt(20)
+            n_ = self._wrap_lines(t.get("hz", ""), inner_w, hz_sz, cjk=True, bold=True)
+            if t.get("py"):
+                n_ += self._wrap_lines(t["py"], inner_w, py_sz, cjk=False)
+            if t.get("vn"):
+                n_ += self._wrap_lines(t["vn"], inner_w, vn_sz, cjk=False)
+            return n_
+
+        # Kích thước "tự nhiên" ở cỡ chữ GỐC (chưa scale) để tính hệ số scale;
+        # nếu tổng cao hơn khung thì co lại (cả chiều cao lẫn cỡ chữ) để KHÔNG
+        # tràn khung dù nhiều lượt.
+        gap0 = int(Inches(0.16)); line0 = int(Inches(0.40)); pad0 = int(Inches(0.30))
+        hz0, py0, vn0 = 22, 14, 13
+        bw0 = {id(t): _bubble_w(t, hz0, py0, vn0) for t in turns}
+        natural = sum(line0 * nlines(t, bw0[id(t)], hz0, py0, vn0) + pad0
+                     for t in turns) + gap0 * (n - 1)
+        scale = min(1.0, avail_h / natural) if natural else 1.0
+        line_h = int(line0 * scale); pad = int(pad0 * scale); gap = int(gap0 * scale)
+        hz_sz = max(15, int(22 * scale)); py_sz = max(11, int(14 * scale))
+        vn_sz = max(10, int(13 * scale)); spk_sz = max(11, int(13 * scale))
+
         y = int(top)
         for t in turns:
             is_left = t.get("speaker") == first_speaker
-            bubble_h = line_h * nlines(t) + pad
-            bubble_w = _bubble_w(t)
+            bubble_w = _bubble_w(t, hz_sz, py_sz, vn_sz)
+            bubble_h = line_h * nlines(t, bubble_w, hz_sz, py_sz, vn_sz) + pad
             left = int(txt_left) if is_left else int(txt_left + txt_w - bubble_w)
             bubble = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
                                             Emu(left), Emu(y), bubble_w, Emu(bubble_h))
@@ -1248,8 +1288,11 @@ class DeckBuilder:
         def sz(pt, floor):
             return max(floor, int(pt * scale))
 
+        # Xem giải thích ở _slide_grammar: ít nội dung (scale==1.0) canh GIỮA
+        # thay vì dồn lên đầu để trống cả mảng dưới; nhiều nội dung giữ TOP.
+        anchor = MSO_ANCHOR.TOP if scale < 1.0 else MSO_ANCHOR.MIDDLE
         box, tf = self._textbox(slide, txt_left, top, txt_w, area_h,
-                                anchor=MSO_ANCHOR.TOP)
+                                anchor=anchor)
         first = True
         if instructions:
             p = tf.paragraphs[0]

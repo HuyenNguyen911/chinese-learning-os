@@ -30,7 +30,16 @@ Lưu ý encoding console: nếu cần in tiếng Trung ra terminal để debug, 
 ## Quy trình chuẩn (Giai đoạn B của skill)
 
 1. Hoàn thành nội dung ở Giai đoạn A (vai Master Chinese Teacher).
+1b. **Chủ động mở rộng chủ đề trước khi soạn** (2026-08-05): dựa vào chủ đề
+   buổi học, tự tìm/nghĩ thêm từ vựng/nội dung liên quan có thể bổ sung (không
+   chỉ bó trong sách gốc) — rồi **trình danh sách mở rộng cho user duyệt**
+   trước, chỉ triển khai vào slide sau khi được đồng ý. Không tự ý thêm rồi
+   mới báo.
 2. Ánh xạ nội dung sang các block JSON bên dưới — mỗi ý một slide, action title.
+   Nếu dùng `word_pair` cho từ vựng mở rộng: ghép cặp theo **CÙNG CHỦ ĐỀ
+   NHỎ/LIÊN QUAN NHAU** (vd đối lập 深色/浅色, cùng nhóm trang phục ngủ+ở nhà),
+   không ghép máy móc theo thứ tự liệt kê có sẵn — thứ tự gốc thường xen kẽ
+   danh từ/tính từ không liên quan (xem ví dụ ở bảng loại slide bên dưới).
 3. Tạo folder buổi `output/hskN/buoiX_<chude>/slide/` rồi ghi `buoiX.json` vào đó
    (ảnh vào `assets/` cùng cấp; path ảnh trong JSON là `assets/<tên>.jpg`).
 4. **Duyệt nội dung với user trước khi sinh audio.** Trình bày nội dung text (title +
@@ -72,6 +81,7 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `section` | `title` (+ `subtitle`) | Chuyển mục |
 | `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); nếu item có `ex` (câu ví dụ riêng từng từ) → chèn cột **Ví dụ** cuối bảng; `example?` (cấp SLIDE, không phải item) = `{hz,py,vn}` 1 câu ví dụ chung — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). |
 | `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). |
+| `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}` | **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn}`, `note?`, `source?`, `image?` | Giảng ngữ pháp |
 | `table` | `headers[]`, `rows[][]` (+ `cjk_cols[]`) | Bảng so sánh (vd 了 vs 过) |
 | `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` (+ `image?`, `image_side?`) | Khung hội thoại (bong bóng chat 2 phía, hoặc swimlane 1-cột/người nếu >2 speaker) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau. Có `image` → ảnh ngữ cảnh 1 bên, khung thoại co vào bên còn lại (giúp liên tưởng bối cảnh thay vì chỉ thấy chữ nổi) |
@@ -131,7 +141,14 @@ bản cuối được chưa?" trước khi chạy, đừng tự suy diễn từ 
   `--rate=-15%`.
 - Hội thoại (`dialogue`): 3 giọng theo người nói (`DIALOGUE_VOICES`), mặc định
   `--rate=-8%` (gần tốc độ tự nhiên hơn — hội thoại ưu tiên nhịp giống người
-  thật, không cần chậm như từ vựng).
+  thật, không cần chậm như từ vựng). Auto-assign theo THỨ TỰ xuất hiện, không
+  theo giới tính — người nói thứ 2 luôn ra giọng thứ 2 cố định (`Yunxi`, nam)
+  dù nhân vật đó là nữ (vd hội thoại 2 mẹ con đều nữ). Sai giới tính → thêm
+  field `"voices": {"<tên speaker>": "zh-CN-XiaoyiNeural"}` vào slide
+  `dialogue` đó để ghi đè, key phải khớp đúng chuỗi `speaker` trong `turns[]`.
+  **Chủ động kiểm tra TRƯỚC khi chạy `slide_audio.py`** (2026-08-05): với MỌI
+  slide `dialogue`, xác nhận giới tính từng speaker khớp giọng sẽ auto-assign
+  theo thứ tự xuất hiện — không đợi user nghe ra rồi mới sửa.
 - `--rate=...` (CLI) override cho CẢ HAI loại cùng lúc nếu cần đồng nhất (vd
   buổi ngữ âm nhập môn muốn chậm hơn hẳn, `--rate=-30%`).
 
@@ -139,6 +156,7 @@ Text được đọc tự trích theo `type` của slide — không cần field 
 riêng:
 - `vocab` → `hz` của từng `items[]` (không đọc câu ví dụ)
 - `wordcard` → `hz` của từ + `hz` của từng `examples[]`
+- `word_pair` → `hz` của từng `words[]` + `hz` của `example` (nếu có), theo thứ tự cột trái→phải
 - `passage` → `hz` của từng `sentences[]`
 - `grammar` → `hz` của từng `examples[]`
 - `dialogue` → từng `turns[].hz`, mỗi speaker 1 giọng riêng rồi ghép thành 1 mp3
@@ -189,6 +207,19 @@ từng slide (`title/vocab/grammar/dialogue/bullets/exercise/table/image` hỗ t
 phổ biến. Luôn dùng query 1-3 từ đơn giản (`"flags"`, `"Eiffel Tower"`, `"panda"`) — nếu 0
 kết quả, rút ngắn lại trước khi đổi hẳn chủ đề tìm.
 
+**Quy trình chọn query khi từ trừu tượng (2026-08-05):** thử query bám sát
+NGHĨA TỪ trước; nếu từ là tính từ/khái niệm trừu tượng khó minh hoạ trực tiếp
+(vd 过时, 迷人, 有品味, 流行) → đổi sang query bám theo NỘI DUNG CÂU VÍ DỤ của
+từ đó thay vì cố tìm ảnh literal cho khái niệm. Không cần hỏi user trước khi
+thử — chỉ cần Read lại ảnh tải về để soát (bước 2 dưới) trước khi gắn vào slide.
+
+⚠️ **Soát nội dung ảnh, không chỉ soát đúng chủ đề:** ngoài việc ảnh có khớp
+nghĩa từ hay không, phải loại các ảnh phản cảm/hở hang/có chữ không phù hợp
+in trên đồ vật, ảnh người mẫu ăn mặc hở dù đúng chủ đề (vd tìm "swimsuit" ra
+ảnh bikini người mẫu) — đổi query cụ thể hơn (vd "beach towel", "swim gear
+flatlay") thay vì chấp nhận ảnh không phù hợp cho lớp học. Riêng từ nhạy cảm
+tự thân (vd 内衣) — cân nhắc bỏ qua ảnh, không cần cố tìm bằng được.
+
 **Bắt buộc 2 bước trước khi `build_deck.py`:**
 1. **Convert non-JPEG → JPEG thật.** Openverse đôi khi trả ảnh WEBP nhưng script vẫn lưu
    đuôi `.jpg` → `build_deck.py` sẽ crash `ValueError: unsupported image format ... WEBP`.
@@ -218,6 +249,15 @@ lỗi kiểu "sao chưa đổi" sau rebuild → nhắc user **đóng hẳn toàn
 (không chỉ đóng tab) rồi mở lại, trước khi kết luận có bug thật.
 
 ## Đồng bộ audio vào file .pptx đã bị sửa tay (không rebuild từ JSON)
+
+⚠️ **Bắt buộc hỏi trước khi rebuild sau khi đã mở file cho user xem** (2026-08-05,
+sự cố thật: user sửa tay cả buổi sáng trong PowerPoint, bị AI rebuild đè mất — chỉ
+cứu được nhờ file autosave tình cờ còn sót lại trong `AppData/Roaming/Microsoft/
+PowerPoint/*.tmp`). Ngay khi đã dùng `Invoke-Item`/mở file `.pptx` cho user xem 1
+lần, coi như file đó có thể đang/đã bị sửa tay — **trước khi chạy `build_deck.py`
+lần tiếp theo, PHẢI hỏi thẳng "bạn có sửa tay gì trong PowerPoint và đã lưu chưa"**.
+Có → dừng, xử lý theo quy trình đồng bộ audio bên dưới (không rebuild từ JSON). Chỉ
+rebuild thẳng khi chắc chắn user chưa đụng vào file kể từ lần mở gần nhất.
 
 User có thể chỉnh tay trực tiếp file `.pptx` đã build (xoá/tách/dời slide, đổi ảnh)
 thay vì sửa JSON rồi build lại — hợp lý vì rebuild từ JSON sẽ **xoá sạch** các chỉnh
