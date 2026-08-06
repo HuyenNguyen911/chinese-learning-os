@@ -81,7 +81,7 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `section` | `title` (+ `subtitle`) | Chuyển mục |
 | `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); nếu item có `ex` (câu ví dụ riêng từng từ) → chèn cột **Ví dụ** cuối bảng; `example?` (cấp SLIDE, không phải item) = `{hz,py,vn}` 1 câu ví dụ chung — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). Dùng được cho CẢ CÂU dài, không chỉ từ đơn (vd mỗi item là 1 lời chúc/câu nói) — cột 汉字 tự đủ rộng + hàng tự cao theo số dòng 汉字 cần wrap, Pinyin/Nghĩa co lại/rớt dòng trước (xem lessons learned bên dưới). |
 | `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). |
-| `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}` | **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. |
+| `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}` | ⚠️ **CHƯA triển khai trong `build_deck.py`** (2026-08-06: không có handler `_slide_word_pair` → crash `ValueError: type 'word_pair' không hỗ trợ`) — README mô tả schema dự kiến nhưng renderer chưa làm. Dùng tạm `wordcard` (1 từ/1 slide) thay thế cho tới khi triển khai xong. Ý định gốc: **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn}`, `note?`, `source?`, `image?` | Giảng ngữ pháp |
 | `table` | `headers[]`, `rows[][]` (+ `cjk_cols[]`) | Bảng so sánh (vd 了 vs 过) |
 | `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` (+ `image?`, `image_side?`) | Khung hội thoại (bong bóng chat 2 phía, hoặc swimlane 1-cột/người nếu >2 speaker) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau. Có `image` → ảnh ngữ cảnh 1 bên, khung thoại co vào bên còn lại (giúp liên tưởng bối cảnh thay vì chỉ thấy chữ nổi) |
@@ -283,6 +283,15 @@ lần, coi như file đó có thể đang/đã bị sửa tay — **trước khi
 lần tiếp theo, PHẢI hỏi thẳng "bạn có sửa tay gì trong PowerPoint và đã lưu chưa"**.
 Có → dừng, xử lý theo quy trình đồng bộ audio bên dưới (không rebuild từ JSON). Chỉ
 rebuild thẳng khi chắc chắn user chưa đụng vào file kể từ lần mở gần nhất.
+
+⚠️ **Không suy diễn "an toàn" từ lời user tóm tắt phạm vi sửa (2026-08-06, lặp lại
+sự cố trên):** user báo "chỉ xoá 1 slide" (không nhắc ảnh) → tin lời đó là đủ để
+`build_deck.py` rebuild lại cho "đồng bộ" → xoá mất ~8 ảnh dán tay không được nhắc
+tới trong câu trả lời. Lời tóm tắt của user về phạm vi sửa **không đáng tin bằng
+chính file trên đĩa** — luôn coi MỌI hand-edit là có thể kèm ảnh/thay đổi khác chưa
+được kể ra, dùng quy trình đồng bộ audio riêng (add_movie trực tiếp vào file hiện
+có) thay vì `build_deck.py`, trừ khi đã tự mở file kiểm tra từng slide và xác nhận
+không có ảnh/nội dung nào khác ngoài phạm vi họ nói.
 
 User có thể chỉnh tay trực tiếp file `.pptx` đã build (xoá/tách/dời slide, đổi ảnh)
 thay vì sửa JSON rồi build lại — hợp lý vì rebuild từ JSON sẽ **xoá sạch** các chỉnh
