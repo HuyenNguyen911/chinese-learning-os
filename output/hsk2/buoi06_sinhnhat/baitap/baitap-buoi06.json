@@ -1,0 +1,93 @@
+{
+  "meta": { "lesson": "HSK2 · Buổi 6 — 小雪，生日快乐！", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối 汉字 với nghĩa",
+      "instructions": "Nối từ bên trái với nghĩa đúng bên phải.",
+      "pairs": [
+        {"left": "蜡烛", "right": "nến"},
+        {"left": "打开", "right": "mở ra"},
+        {"left": "蛋糕", "right": "bánh kem"},
+        {"left": "画笔", "right": "bút vẽ"},
+        {"left": "快乐", "right": "vui vẻ"},
+        {"left": "舒服", "right": "thoải mái, dễ chịu"},
+        {"left": "惊喜", "right": "bất ngờ"}
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền 的, 地 hoặc 得",
+      "instructions": "Chọn đúng chữ trong khung để điền vào chỗ trống.",
+      "word_bank": ["的", "地", "得"],
+      "items": [
+        {"q": "这是我___画笔。", "answer": "的", "src": "[phỏng theo 真题]"},
+        {"q": "她快乐___打开礼物。", "answer": "地", "src": "[phỏng theo 真题]"},
+        {"q": "她唱___真好听。", "answer": "得", "src": "[phỏng theo 真题]"},
+        {"q": "这张卡片画___很好看。", "answer": "得", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc đoạn văn về tiệc sinh nhật",
+      "instructions": "Đọc đoạn văn rồi trả lời câu hỏi.",
+      "passage": "今天是小雪的生日，朋友们给她准备了一个惊喜聚会。大家一起唱生日歌，还买了一个巧克力蛋糕。小雪打开礼物的时候很开心，她说：\"我真的很惊喜，谢谢大家！\"",
+      "questions": [
+        {"q": "朋友们给小雪准备了什么？", "options": ["惊喜聚会", "生日歌", "画笔"], "answer": "A", "src": "[tự soạn theo chủ đề sinh nhật]"},
+        {"q": "他们买了什么样的蛋糕？", "options": ["肉味蛋糕", "巧克力蛋糕", "鱼味蛋糕"], "answer": "B", "src": "[tự soạn theo chủ đề sinh nhật]"},
+        {"q": "小雪打开礼物的时候心情怎么样？", "options": ["不舒服", "很开心", "忘了"], "answer": "B", "src": "[tự soạn theo chủ đề sinh nhật]"}
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ cho trước thành câu đúng.",
+      "items": [
+        {"words": ["奶奶", "坐", "得", "很", "舒服"], "answer": "奶奶坐得很舒服。", "answer_plus": "奶奶坐得很舒服，她很喜欢这个聚会。", "src": "[phỏng theo 真题]"},
+        {"words": ["妈妈", "切", "蛋糕", "切", "得", "很快"], "answer": "妈妈切蛋糕切得很快。", "answer_plus": "妈妈切蛋糕切得很快，大家都等不及要吃了。", "src": "[phỏng theo 真题]"},
+        {"words": ["他", "唱", "得", "不太好"], "answer": "他唱得不太好。", "answer_plus": "他唱得不太好，但是大家还是很开心。", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu tiếng Việt sang tiếng Trung, dùng từ gợi ý.",
+      "items": [
+        {"prompt": "Bạn đoán xem họ đã chuẩn bị bất ngờ gì?", "given": ["猜"], "answer": "你猜他们准备了什么惊喜？", "answer_plus": "你猜他们准备了什么惊喜？我一点儿都不知道。", "src": "[phỏng theo 真题]"},
+        {"prompt": "Các bạn hát có vui không?", "given": ["得"], "answer": "你们唱得开心不开心？", "answer_plus": "你们唱得开心不开心？下次也叫我一起唱。", "src": "[phỏng theo 真题]"},
+        {"prompt": "Vì quên mang bút vẽ nên tôi phải mua một cái mới.", "given": ["因为……所以……"], "answer": "因为我忘了带画笔，所以我买了一个新的。", "answer_plus": "因为我忘了带画笔，所以我只能去商店买了一个新的画笔。", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe và chọn đáp án đúng",
+      "instructions": "Nghe audio rồi chọn đáp án đúng.",
+      "items": [
+        {"script": "生日聚会上有蛋糕、肉和鱼，大家吃得很开心。", "q": "聚会上没有什么？", "options": ["蛋糕", "水果", "肉"], "answer": "B", "audio": "audio/nghe-1.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "她画得很好，大家都很喜欢她画的生日卡片。", "q": "大家喜欢什么？", "options": ["她画的卡片", "她唱的歌", "她做的蛋糕"], "answer": "A", "audio": "audio/nghe-2.mp3", "src": "[phỏng theo 真题]"},
+        {"script": "妹妹的生日蛋糕是巧克力味的，她很喜欢。", "q": "妹妹的蛋糕是什么味的？", "options": ["巧克力", "肉", "鱼"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "[phỏng theo 真题]"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "听后重复",
+      "part": "听后重复",
+      "instructions": "Nghe và nhắc lại theo đúng ngữ điệu.",
+      "items": [
+        {"script": "蜡烛已经放好了，可以点了。", "audio": "audio/hskk-1.mp3"},
+        {"script": "他今天很快乐，因为过生日。", "audio": "audio/hskk-2.mp3"},
+        {"script": "这个惊喜聚会办得很好。", "audio": "audio/hskk-3.mp3"}
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "回答问题",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời. Dàn bài chuẩn HSKK 初级: (1) Trả lời thẳng câu hỏi bằng 1 câu ngắn — đúng ngữ pháp hơn là nói dài; (2) Thêm 1 câu mô tả/giải thích cụ thể hơn (làm gì, với ai, thế nào); (3) (không bắt buộc, để đạt điểm cao) thêm 1 câu cảm nghĩ hoặc mở rộng.",
+      "items": [
+        {"script": "你的生日一般怎么过？", "hint": "我一般跟家人一起吃蛋糕。", "hint_plus": "我的生日一般会跟家人和朋友一起吃蛋糕、唱生日歌，有时候还会收到惊喜礼物。", "audio": "audio/hskk-4.mp3"},
+        {"script": "如果朋友生日，你会祝他什么？", "hint": "我会说祝你生日快乐。", "hint_plus": "我会说祝你生日快乐，天天开心，心想事成！", "audio": "audio/hskk-5.mp3"}
+      ]
+    }
+  ]
+}
