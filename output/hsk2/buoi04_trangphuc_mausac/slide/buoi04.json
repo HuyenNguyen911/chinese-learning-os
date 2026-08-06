@@ -41,7 +41,8 @@
           "py": "Zhège gèng piányi, wǒmen mǎi zhège ba.",
           "vn": "Cái này rẻ hơn, ta mua cái này đi."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide03.mp3"
     },
     {
       "type": "wordcard",
@@ -62,7 +63,8 @@
           "py": "Nǐ zìjǐ guòqù ba, wǒ zài zhèr děng nǐ.",
           "vn": "Bạn tự qua đó đi, tôi đợi bạn ở đây."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide04.mp3"
     },
     {
       "type": "wordcard",
@@ -82,7 +84,8 @@
           "py": "Nǐ chīguò Běijīng kǎoyā ma?",
           "vn": "Bạn ăn vịt quay Bắc Kinh chưa?"
         }
-      ]
+      ],
+      "audio": "assets/audio/slide05.mp3"
     },
     {
       "type": "wordcard",
@@ -103,7 +106,8 @@
           "py": "Lǐbian rén tài duō le, wǒmen bié jìnqù le.",
           "vn": "Bên trong đông người quá, chúng ta đừng vào nữa."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide06.mp3"
     },
     {
       "type": "wordcard",
@@ -124,7 +128,8 @@
           "py": "Zhè tiáo kùzi yǒudiǎnr cháng, néng bu néng huàn xiǎo yìdiǎnr de?",
           "vn": "Cái quần này hơi dài, có thể đổi cái nhỏ hơn không?"
         }
-      ]
+      ],
+      "audio": "assets/audio/slide07.mp3"
     },
     {
       "type": "wordcard",
@@ -145,7 +150,8 @@
           "py": "Zhège shāngchǎng zhōumò rén tèbié duō.",
           "vn": "Trung tâm thương mại này cuối tuần rất đông người."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide08.mp3"
     },
     {
       "type": "wordcard",
@@ -166,7 +172,8 @@
           "py": "Nǐ kěyǐ xiān shìchuān, zài juédìng mǎi bu mǎi.",
           "vn": "Bạn có thể mặc thử trước, rồi quyết định mua hay không."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide09.mp3"
     },
     {
       "type": "wordcard",
@@ -186,7 +193,8 @@
           "py": "Jīntiān xiàyǔ, suǒyǐ wǒmen méi qù gōngyuán.",
           "vn": "Hôm nay mưa nên chúng tôi không đi công viên."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide10.mp3"
     },
     {
       "type": "wordcard",
@@ -207,7 +215,8 @@
           "py": "Nà tiáo lù hěn cháng, zǒu guòqù yào èrshí fēnzhōng.",
           "vn": "Con đường đó rất dài, đi bộ qua đó mất 20 phút."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide11.mp3"
     },
     {
       "type": "wordcard",
@@ -227,736 +236,530 @@
           "py": "Yīnwèi xiàyǔ, suǒyǐ wǒ méi chūmén.",
           "vn": "Vì trời mưa nên tôi không ra ngoài."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide12.mp3"
     },
     {
       "type": "section",
       "title": "生词拓展 · 购物进阶"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 1/7",
-      "hz": "尺码",
-      "py": "chǐmǎ",
-      "pos": "n.",
-      "vn": "cỡ, size",
-      "image": "assets/words/chima.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 1-2/7",
+      "words": [
         {
-          "hz": "您穿多大尺码？",
-          "py": "Nín chuān duōdà chǐmǎ?",
-          "vn": "Anh/chị mặc size bao nhiêu?"
+          "hz": "尺码",
+          "py": "chǐmǎ",
+          "vn": "cỡ, size",
+          "pos": "n.",
+          "image": "assets/words/chima2.jpg",
+          "example": {
+            "hz": "您穿多大尺码？",
+            "py": "Nín chuān duōdà chǐmǎ?",
+            "vn": "Anh/chị mặc size bao nhiêu?"
+          }
         },
         {
-          "hz": "这件衣服没有我的尺码。",
-          "py": "Zhè jiàn yīfú méiyǒu wǒ de chǐmǎ.",
-          "vn": "Áo này không có size của tôi."
+          "hz": "合适",
+          "py": "héshì",
+          "vn": "vừa vặn, phù hợp",
+          "pos": "adj.",
+          "image": "assets/words/heshi.jpg",
+          "example": {
+            "hz": "这条裤子的大小很合适。",
+            "py": "Zhè tiáo kùzi de dàxiǎo hěn héshì.",
+            "vn": "Cái quần này kích cỡ vừa vặn lắm."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide14.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 2/7",
-      "hz": "合适",
-      "py": "héshì",
-      "pos": "adj.",
-      "vn": "vừa vặn, phù hợp",
-      "image": "assets/words/chima.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 3-4/7",
+      "words": [
         {
-          "hz": "这条裤子的大小很合适。",
-          "py": "Zhè tiáo kùzi de dàxiǎo hěn héshì.",
-          "vn": "Cái quần này kích cỡ vừa vặn lắm."
+          "hz": "深色",
+          "py": "shēnsè",
+          "vn": "màu đậm",
+          "pos": "n.",
+          "image": "assets/words/shense.jpg",
+          "example": {
+            "hz": "我不喜欢深色的衣服。",
+            "py": "Wǒ bù xǐhuān shēnsè de yīfú.",
+            "vn": "Tôi không thích đồ màu đậm."
+          }
         },
         {
-          "hz": "黑色的鞋跟这件衣服很合适。",
-          "py": "Hēisè de xié gēn zhè jiàn yīfú hěn héshì.",
-          "vn": "Giày đen rất hợp với cái áo này."
+          "hz": "浅色",
+          "py": "qiǎnsè",
+          "vn": "màu nhạt",
+          "pos": "n.",
+          "image": "assets/words/qianse.jpg",
+          "example": {
+            "hz": "浅色比较适合夏天。",
+            "py": "Qiǎnsè bǐjiào shìhé xiàtiān.",
+            "vn": "Màu nhạt hợp mùa hè hơn."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide15.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 3/7",
-      "hz": "打折",
-      "py": "dǎzhé",
-      "pos": "v.",
-      "vn": "giảm giá",
-      "image": "assets/words/dazhe.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 5-6/7",
+      "words": [
         {
-          "hz": "这件衣服打折吗？",
-          "py": "Zhè jiàn yīfú dǎzhé ma?",
-          "vn": "Áo này có giảm giá không?"
+          "hz": "打折",
+          "py": "dǎzhé",
+          "vn": "giảm giá",
+          "pos": "v.",
+          "image": "assets/words/dazhe.jpg",
+          "example": {
+            "hz": "这件衣服打折吗？",
+            "py": "Zhè jiàn yīfú dǎzhé ma?",
+            "vn": "Áo này có giảm giá không?"
+          }
         },
         {
-          "hz": "现在买大衣打八折。",
-          "py": "Xiànzài mǎi dàyī dǎ bā zhé.",
-          "vn": "Mua áo khoác bây giờ được giảm 20%."
+          "hz": "换",
+          "py": "huàn",
+          "vn": "đổi",
+          "pos": "v.",
+          "image": "assets/words/exchange.jpg",
+          "example": {
+            "hz": "可以换一件吗？",
+            "py": "Kěyǐ huàn yí jiàn ma?",
+            "vn": "Đổi cái khác được không?"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide16.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 4/7",
-      "hz": "试衣间",
-      "py": "shìyījiān",
-      "pos": "n.",
-      "vn": "phòng thử đồ",
-      "image": "assets/trying_clothes.jpg",
-      "examples": [
-        {
-          "hz": "试衣间在那边，您可以试试。",
-          "py": "Shìyījiān zài nàbiān, nín kěyǐ shìshi.",
-          "vn": "Phòng thử đồ ở đằng kia, anh/chị thử xem."
-        },
-        {
-          "hz": "试衣间里人有点儿多。",
-          "py": "Shìyījiān lǐ rén yǒudiǎnr duō.",
-          "vn": "Phòng thử đồ hơi đông người."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 5/7",
-      "hz": "深色",
-      "py": "shēnsè",
-      "pos": "n.",
-      "vn": "màu đậm",
-      "image": "assets/words/clothes_colors.jpg",
-      "examples": [
-        {
-          "hz": "我不喜欢深色的衣服。",
-          "py": "Wǒ bù xǐhuān shēnsè de yīfú.",
-          "vn": "Tôi không thích đồ màu đậm."
-        },
-        {
-          "hz": "深色比较耐脏。",
-          "py": "Shēnsè bǐjiào nàizāng.",
-          "vn": "Màu đậm đỡ bẩn hơn."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 6/7",
-      "hz": "浅色",
-      "py": "qiǎnsè",
-      "pos": "n.",
-      "vn": "màu nhạt",
-      "image": "assets/words/clothes_colors.jpg",
-      "examples": [
-        {
-          "hz": "浅色比较适合夏天。",
-          "py": "Qiǎnsè bǐjiào shìhé xiàtiān.",
-          "vn": "Màu nhạt hợp mùa hè hơn."
-        },
-        {
-          "hz": "这条浅色的裤子很好看。",
-          "py": "Zhè tiáo qiǎnsè de kùzi hěn hǎokàn.",
-          "vn": "Cái quần màu nhạt này đẹp lắm."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
+      "type": "word_pair",
       "kicker": "生词拓展 7/7",
-      "hz": "换",
-      "py": "huàn",
-      "pos": "v.",
-      "vn": "đổi",
-      "image": "assets/words/exchange.jpg",
-      "examples": [
+      "words": [
         {
-          "hz": "可以换一件吗？",
-          "py": "Kěyǐ huàn yí jiàn ma?",
-          "vn": "Đổi cái khác được không?"
-        },
-        {
-          "hz": "大小不合适，我想换一个尺码。",
-          "py": "Dàxiǎo bù héshì, wǒ xiǎng huàn yí ge chǐmǎ.",
-          "vn": "Kích cỡ không vừa, tôi muốn đổi size khác."
+          "hz": "试衣间",
+          "py": "shìyījiān",
+          "vn": "phòng thử đồ",
+          "pos": "n.",
+          "image": "assets/trying_clothes.jpg",
+          "example": {
+            "hz": "试衣间在那边，您可以试试。",
+            "py": "Shìyījiān zài nàbiān, nín kěyǐ shìshi.",
+            "vn": "Phòng thử đồ ở đằng kia, anh/chị thử xem."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide17.mp3"
     },
     {
       "type": "section",
       "title": "生词拓展 · 服装种类与风格"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 1/10",
-      "hz": "外套",
-      "py": "wàitào",
-      "pos": "n.",
-      "vn": "áo khoác",
-      "image": "assets/wear_jacket.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 1-2/10",
+      "words": [
         {
-          "hz": "天太热了，把外套脱下来吧。",
-          "py": "Tiān tài rè le, bǎ wàitào tuō xiàlái ba.",
-          "vn": "Trời nóng quá, cởi áo khoác ra đi."
+          "hz": "睡衣",
+          "py": "shuìyī",
+          "vn": "đồ ngủ, pyjama",
+          "pos": "n.",
+          "image": "assets/words/shuiyi.jpg",
+          "example": {
+            "hz": "我睡觉的时候喜欢穿睡衣。",
+            "py": "Wǒ shuìjiào de shíhou xǐhuān chuān shuìyī.",
+            "vn": "Lúc ngủ tôi thích mặc đồ ngủ."
+          }
         },
         {
-          "hz": "这件外套很暖和。",
-          "py": "Zhè jiàn wàitào hěn nuǎnhuo.",
-          "vn": "Cái áo khoác này rất ấm."
+          "hz": "休闲",
+          "py": "xiūxián",
+          "vn": "thường ngày, thoải mái (casual)",
+          "pos": "adj.",
+          "example": {
+            "hz": "周末我喜欢穿得休闲一点儿。",
+            "py": "Zhōumò wǒ xǐhuān chuān de xiūxián yìdiǎnr.",
+            "vn": "Cuối tuần tôi thích ăn mặc thường ngày một chút."
+          },
+          "image": "assets/words/xiuxian.jpg"
         }
-      ]
+      ],
+      "audio": "assets/audio/slide19.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 2/10",
-      "hz": "衬衫",
-      "py": "chènshān",
-      "pos": "n.",
-      "vn": "áo sơ mi",
-      "image": "assets/words/chenshan.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 3-4/10",
+      "words": [
         {
-          "hz": "他穿着一件白衬衫。",
-          "py": "Tā chuānzhe yí jiàn bái chènshān.",
-          "vn": "Anh ấy đang mặc áo sơ mi trắng."
+          "hz": "正式",
+          "py": "zhèngshì",
+          "vn": "trang trọng, chính thức",
+          "pos": "adj.",
+          "example": {
+            "hz": "这是正式场合，你得穿正式一点儿。",
+            "py": "Zhè shì zhèngshì chǎnghé, nǐ děi chuān zhèngshì yìdiǎnr.",
+            "vn": "Đây là dịp trang trọng, bạn phải ăn mặc trang trọng một chút."
+          },
+          "image": "assets/words/zhengshi.jpg"
         },
         {
-          "hz": "这件衬衫是正式场合穿的。",
-          "py": "Zhè jiàn chènshān shì zhèngshì chǎnghé chuān de.",
-          "vn": "Áo sơ mi này mặc trong dịp trang trọng."
+          "hz": "西装",
+          "py": "xīzhuāng",
+          "vn": "vest, âu phục",
+          "pos": "n.",
+          "image": "assets/words/xizhuang.jpg",
+          "example": {
+            "hz": "面试的时候要穿西装。",
+            "py": "Miànshì de shíhou yào chuān xīzhuāng.",
+            "vn": "Lúc phỏng vấn phải mặc vest."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide20.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 3/10",
-      "hz": "T恤",
-      "py": "T-xù",
-      "pos": "n.",
-      "vn": "áo thun",
-      "image": "assets/words/tshirt.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 5-6/10",
+      "words": [
         {
-          "hz": "夏天我喜欢穿T恤。",
-          "py": "Xiàtiān wǒ xǐhuān chuān T-xù.",
-          "vn": "Mùa hè tôi thích mặc áo thun."
+          "hz": "衬衫",
+          "py": "chènshān",
+          "vn": "áo sơ mi",
+          "pos": "n.",
+          "image": "assets/words/chenshan.jpg",
+          "example": {
+            "hz": "他穿着一件白衬衫。",
+            "py": "Tā chuānzhe yí jiàn bái chènshān.",
+            "vn": "Anh ấy đang mặc áo sơ mi trắng."
+          }
         },
         {
-          "hz": "这件T恤是浅色的，很好看。",
-          "py": "Zhè jiàn T-xù shì qiǎnsè de, hěn hǎokàn.",
-          "vn": "Cái áo thun này màu nhạt, đẹp lắm."
+          "hz": "T恤",
+          "py": "T-xù",
+          "vn": "áo thun",
+          "pos": "n.",
+          "image": "assets/words/tshirt.jpg",
+          "example": {
+            "hz": "夏天我喜欢穿T恤。",
+            "py": "Xiàtiān wǒ xǐhuān chuān T-xù.",
+            "vn": "Mùa hè tôi thích mặc áo thun."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide21.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 4/10",
-      "hz": "西装",
-      "py": "xīzhuāng",
-      "pos": "n.",
-      "vn": "vest, âu phục",
-      "image": "assets/words/xizhuang.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 7-8/10",
+      "words": [
         {
-          "hz": "面试的时候要穿西装。",
-          "py": "Miànshì de shíhou yào chuān xīzhuāng.",
-          "vn": "Lúc phỏng vấn phải mặc vest."
+          "hz": "外套",
+          "py": "wàitào",
+          "vn": "áo khoác",
+          "pos": "n.",
+          "image": "assets/wear_jacket.jpg",
+          "example": {
+            "hz": "天太热了，把外套脱下来吧。",
+            "py": "Tiān tài rè le, bǎ wàitào tuō xiàlái ba.",
+            "vn": "Trời nóng quá, cởi áo khoác ra đi."
+          }
         },
         {
-          "hz": "他的西装是黑色的。",
-          "py": "Tā de xīzhuāng shì hēisè de.",
-          "vn": "Bộ vest của anh ấy màu đen."
+          "hz": "配饰",
+          "py": "pèishì",
+          "vn": "phụ kiện",
+          "pos": "n.",
+          "image": "assets/words/peishi.jpg",
+          "example": {
+            "hz": "这个配饰跟你的衣服很配。",
+            "py": "Zhège pèishì gēn nǐ de yīfú hěn pèi.",
+            "vn": "Phụ kiện này rất hợp với quần áo của bạn."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide22.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 5/10",
-      "hz": "睡衣",
-      "py": "shuìyī",
-      "pos": "n.",
-      "vn": "đồ ngủ, pyjama",
-      "image": "assets/words/shuiyi.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 9-10/10",
+      "words": [
         {
-          "hz": "我睡觉的时候喜欢穿睡衣。",
-          "py": "Wǒ shuìjiào de shíhou xǐhuān chuān shuìyī.",
-          "vn": "Lúc ngủ tôi thích mặc đồ ngủ."
+          "hz": "时尚",
+          "py": "shíshàng",
+          "vn": "thời trang, hợp mốt",
+          "pos": "adj./n.",
+          "image": "assets/words/shishang.jpg",
+          "example": {
+            "hz": "你今天穿得很时尚。",
+            "py": "Nǐ jīntiān chuān de hěn shíshàng.",
+            "vn": "Hôm nay bạn mặc rất thời trang."
+          }
         },
         {
-          "hz": "这套睡衣很舒服。",
-          "py": "Zhè tào shuìyī hěn shūfu.",
-          "vn": "Bộ đồ ngủ này rất thoải mái."
+          "hz": "过时",
+          "py": "guòshí",
+          "vn": "lỗi mốt, lạc hậu",
+          "pos": "adj.",
+          "example": {
+            "hz": "这件衣服有点儿过时了。",
+            "py": "Zhè jiàn yīfú yǒudiǎnr guòshí le.",
+            "vn": "Cái áo này hơi lỗi mốt rồi."
+          },
+          "image": "assets/words/guoshi2.jpg"
         }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 6/10",
-      "hz": "配饰",
-      "py": "pèishì",
-      "pos": "n.",
-      "vn": "phụ kiện",
-      "image": "assets/words/peishi.jpg",
-      "examples": [
-        {
-          "hz": "这个配饰跟你的衣服很配。",
-          "py": "Zhège pèishì gēn nǐ de yīfú hěn pèi.",
-          "vn": "Phụ kiện này rất hợp với quần áo của bạn."
-        },
-        {
-          "hz": "她很喜欢买配饰。",
-          "py": "Tā hěn xǐhuān mǎi pèishì.",
-          "vn": "Cô ấy rất thích mua phụ kiện."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 7/10",
-      "hz": "时尚",
-      "py": "shíshàng",
-      "pos": "adj./n.",
-      "vn": "thời trang, hợp mốt",
-      "image": "assets/words/shishang.jpg",
-      "examples": [
-        {
-          "hz": "你今天穿得很时尚。",
-          "py": "Nǐ jīntiān chuān de hěn shíshàng.",
-          "vn": "Hôm nay bạn mặc rất thời trang."
-        },
-        {
-          "hz": "这个牌子很时尚。",
-          "py": "Zhège páizi hěn shíshàng.",
-          "vn": "Thương hiệu này rất thời trang."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 8/10",
-      "hz": "过时",
-      "py": "guòshí",
-      "pos": "adj.",
-      "vn": "lỗi mốt, lạc hậu",
-      "examples": [
-        {
-          "hz": "这件衣服有点儿过时了。",
-          "py": "Zhè jiàn yīfú yǒudiǎnr guòshí le.",
-          "vn": "Cái áo này hơi lỗi mốt rồi."
-        },
-        {
-          "hz": "这种颜色现在过时了吗？",
-          "py": "Zhè zhǒng yánsè xiànzài guòshí le ma?",
-          "vn": "Màu này bây giờ lỗi mốt chưa?"
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 9/10",
-      "hz": "正式",
-      "py": "zhèngshì",
-      "pos": "adj.",
-      "vn": "trang trọng, chính thức",
-      "examples": [
-        {
-          "hz": "这是正式场合，你得穿正式一点儿。",
-          "py": "Zhè shì zhèngshì chǎnghé, nǐ děi chuān zhèngshì yìdiǎnr.",
-          "vn": "Đây là dịp trang trọng, bạn phải ăn mặc trang trọng một chút."
-        },
-        {
-          "hz": "因为要面试，所以我想穿得正式一点儿。",
-          "py": "Yīnwèi yào miànshì, suǒyǐ wǒ xiǎng chuān de zhèngshì yìdiǎnr.",
-          "vn": "Vì phải phỏng vấn nên tôi muốn mặc trang trọng một chút."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 10/10",
-      "hz": "休闲",
-      "py": "xiūxián",
-      "pos": "adj.",
-      "vn": "thường ngày, thoải mái (casual)",
-      "examples": [
-        {
-          "hz": "周末我喜欢穿得休闲一点儿。",
-          "py": "Zhōumò wǒ xǐhuān chuān de xiūxián yìdiǎnr.",
-          "vn": "Cuối tuần tôi thích ăn mặc thường ngày một chút."
-        },
-        {
-          "hz": "休闲鞋比皮鞋舒服。",
-          "py": "Xiūxián xié bǐ píxié shūfu.",
-          "vn": "Giày thường ngày thoải mái hơn giày da."
-        }
-      ]
+      ],
+      "audio": "assets/audio/slide23.mp3"
     },
     {
       "type": "section",
       "title": "生词拓展 · 服装种类 (2)"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 1/5",
-      "hz": "背心",
-      "py": "bèixīn",
-      "pos": "n.",
-      "vn": "áo ba lỗ, áo gile không tay",
-      "image": "assets/words/beixin.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 1-2/5",
+      "words": [
         {
-          "hz": "夏天运动的时候我喜欢穿背心。",
-          "py": "Xiàtiān yùndòng de shíhou wǒ xǐhuān chuān bèixīn.",
-          "vn": "Mùa hè lúc tập thể thao tôi thích mặc áo ba lỗ."
+          "hz": "背心",
+          "py": "bèixīn",
+          "vn": "áo ba lỗ, áo gile không tay",
+          "pos": "n.",
+          "image": "assets/words/beixin2.jpg",
+          "example": {
+            "hz": "夏天运动的时候我喜欢穿背心。",
+            "py": "Xiàtiān yùndòng de shíhou wǒ xǐhuān chuān bèixīn.",
+            "vn": "Mùa hè lúc tập thể thao tôi thích mặc áo ba lỗ."
+          }
         },
         {
-          "hz": "这件背心是白色的。",
-          "py": "Zhè jiàn bèixīn shì báisè de.",
-          "vn": "Cái áo ba lỗ này màu trắng."
+          "hz": "泳衣",
+          "py": "yǒngyī",
+          "vn": "đồ bơi",
+          "pos": "n.",
+          "example": {
+            "hz": "去海边要带泳衣。",
+            "py": "Qù hǎibiān yào dài yǒngyī.",
+            "vn": "Đi biển phải mang đồ bơi."
+          },
+          "image": "assets/words/yongyi.jpg"
         }
-      ]
+      ],
+      "audio": "assets/audio/slide25.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 2/5",
-      "hz": "泳衣",
-      "py": "yǒngyī",
-      "pos": "n.",
-      "vn": "đồ bơi",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 3-4/5",
+      "words": [
         {
-          "hz": "去海边要带泳衣。",
-          "py": "Qù hǎibiān yào dài yǒngyī.",
-          "vn": "Đi biển phải mang đồ bơi."
+          "hz": "运动鞋",
+          "py": "yùndòngxié",
+          "vn": "giày thể thao",
+          "pos": "n.",
+          "image": "assets/words/yundongxie.jpg",
+          "example": {
+            "hz": "我今天穿运动鞋去上班。",
+            "py": "Wǒ jīntiān chuān yùndòngxié qù shàngbān.",
+            "vn": "Hôm nay tôi đi giày thể thao đi làm."
+          }
         },
         {
-          "hz": "这件泳衣是深色的。",
-          "py": "Zhè jiàn yǒngyī shì shēnsè de.",
-          "vn": "Bộ đồ bơi này màu đậm."
+          "hz": "制服",
+          "py": "zhìfú",
+          "vn": "đồng phục",
+          "pos": "n.",
+          "image": "assets/words/zhifu.jpg",
+          "example": {
+            "hz": "他工作的地方要穿制服。",
+            "py": "Tā gōngzuò de dìfang yào chuān zhìfú.",
+            "vn": "Chỗ anh ấy làm việc phải mặc đồng phục."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide26.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 3/5",
-      "hz": "内衣",
-      "py": "nèiyī",
-      "pos": "n.",
-      "vn": "đồ lót",
-      "examples": [
-        {
-          "hz": "内衣要经常换洗。",
-          "py": "Nèiyī yào jīngcháng huànxǐ.",
-          "vn": "Đồ lót phải thường xuyên thay giặt."
-        },
-        {
-          "hz": "这个牌子的内衣很舒服。",
-          "py": "Zhège páizi de nèiyī hěn shūfu.",
-          "vn": "Đồ lót hãng này rất thoải mái."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 4/5",
-      "hz": "运动鞋",
-      "py": "yùndòngxié",
-      "pos": "n.",
-      "vn": "giày thể thao",
-      "image": "assets/words/yundongxie.jpg",
-      "examples": [
-        {
-          "hz": "我今天穿运动鞋去上班。",
-          "py": "Wǒ jīntiān chuān yùndòngxié qù shàngbān.",
-          "vn": "Hôm nay tôi đi giày thể thao đi làm."
-        },
-        {
-          "hz": "这双运动鞋很合适。",
-          "py": "Zhè shuāng yùndòngxié hěn héshì.",
-          "vn": "Đôi giày thể thao này vừa vặn lắm."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
+      "type": "word_pair",
       "kicker": "生词拓展 5/5",
-      "hz": "制服",
-      "py": "zhìfú",
-      "pos": "n.",
-      "vn": "đồng phục",
-      "image": "assets/words/zhifu.jpg",
-      "examples": [
+      "words": [
         {
-          "hz": "他工作的地方要穿制服。",
-          "py": "Tā gōngzuò de dìfang yào chuān zhìfú.",
-          "vn": "Chỗ anh ấy làm việc phải mặc đồng phục."
-        },
-        {
-          "hz": "这套制服是蓝色的。",
-          "py": "Zhè tào zhìfú shì lánsè de.",
-          "vn": "Bộ đồng phục này màu xanh dương."
+          "hz": "内衣",
+          "py": "nèiyī",
+          "vn": "đồ lót",
+          "pos": "n.",
+          "example": {
+            "hz": "内衣要经常换洗。",
+            "py": "Nèiyī yào jīngcháng huànxǐ.",
+            "vn": "Đồ lót phải thường xuyên thay giặt."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide27.mp3"
     },
     {
       "type": "section",
       "title": "生词拓展 · 面料"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 1/4",
-      "hz": "棉",
-      "py": "mián",
-      "pos": "n.",
-      "vn": "vải bông, cotton",
-      "image": "assets/words/mian.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 1-2/4",
+      "words": [
         {
-          "hz": "这件T恤是棉的，很舒服。",
-          "py": "Zhè jiàn T-xù shì mián de, hěn shūfu.",
-          "vn": "Cái áo thun này là vải cotton, rất thoải mái."
+          "hz": "棉",
+          "py": "mián",
+          "vn": "vải bông, cotton",
+          "pos": "n.",
+          "image": "assets/words/mian.jpg",
+          "example": {
+            "hz": "这件T恤是棉的，很舒服。",
+            "py": "Zhè jiàn T-xù shì mián de, hěn shūfu.",
+            "vn": "Cái áo thun này là vải cotton, rất thoải mái."
+          }
         },
         {
-          "hz": "我喜欢穿棉做的衣服。",
-          "py": "Wǒ xǐhuān chuān mián zuò de yīfú.",
-          "vn": "Tôi thích mặc quần áo làm từ cotton."
+          "hz": "牛仔",
+          "py": "niúzǎi",
+          "vn": "denim, bò (牛仔裤 = quần jean)",
+          "pos": "n.",
+          "image": "assets/words/niuzai.jpg",
+          "example": {
+            "hz": "这条牛仔裤很合适。",
+            "py": "Zhè tiáo niúzǎikù hěn héshì.",
+            "vn": "Cái quần jean này vừa vặn lắm."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide29.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 2/4",
-      "hz": "牛仔",
-      "py": "niúzǎi",
-      "pos": "n.",
-      "vn": "denim, bò (牛仔裤 = quần jean)",
-      "image": "assets/words/niuzai.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 3-4/4",
+      "words": [
         {
-          "hz": "这条牛仔裤很合适。",
-          "py": "Zhè tiáo niúzǎikù hěn héshì.",
-          "vn": "Cái quần jean này vừa vặn lắm."
+          "hz": "丝绸",
+          "py": "sīchóu",
+          "vn": "lụa",
+          "pos": "n.",
+          "image": "assets/words/sichou.jpg",
+          "example": {
+            "hz": "这条丝绸的裙子很漂亮。",
+            "py": "Zhè tiáo sīchóu de qúnzi hěn piàoliang.",
+            "vn": "Cái váy lụa này rất đẹp."
+          }
         },
         {
-          "hz": "牛仔外套配T恤很好看。",
-          "py": "Niúzǎi wàitào pèi T-xù hěn hǎokàn.",
-          "vn": "Áo khoác denim phối với áo thun rất đẹp."
+          "hz": "羊毛",
+          "py": "yángmáo",
+          "vn": "len",
+          "pos": "n.",
+          "image": "assets/words/yangmao.jpg",
+          "example": {
+            "hz": "冬天我喜欢穿羊毛衣服。",
+            "py": "Dōngtiān wǒ xǐhuān chuān yángmáo yīfú.",
+            "vn": "Mùa đông tôi thích mặc đồ len."
+          }
         }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 3/4",
-      "hz": "丝绸",
-      "py": "sīchóu",
-      "pos": "n.",
-      "vn": "lụa",
-      "image": "assets/words/sichou.jpg",
-      "examples": [
-        {
-          "hz": "这条丝绸的裙子很漂亮。",
-          "py": "Zhè tiáo sīchóu de qúnzi hěn piàoliang.",
-          "vn": "Cái váy lụa này rất đẹp."
-        },
-        {
-          "hz": "丝绸摸起来很舒服。",
-          "py": "Sīchóu mō qǐlái hěn shūfu.",
-          "vn": "Lụa sờ vào rất mịn, thoải mái."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 4/4",
-      "hz": "羊毛",
-      "py": "yángmáo",
-      "pos": "n.",
-      "vn": "len",
-      "image": "assets/words/yangmao.jpg",
-      "examples": [
-        {
-          "hz": "冬天我喜欢穿羊毛衣服。",
-          "py": "Dōngtiān wǒ xǐhuān chuān yángmáo yīfú.",
-          "vn": "Mùa đông tôi thích mặc đồ len."
-        },
-        {
-          "hz": "这件外套是羊毛做的，很暖和。",
-          "py": "Zhè jiàn wàitào shì yángmáo zuò de, hěn nuǎnhuo.",
-          "vn": "Cái áo khoác này làm từ len, rất ấm."
-        }
-      ]
+      ],
+      "audio": "assets/audio/slide30.mp3"
     },
     {
       "type": "section",
       "title": "生词拓展 · 风格与潮流"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 1/6",
-      "hz": "经典",
-      "py": "jīngdiǎn",
-      "pos": "adj.",
-      "vn": "cổ điển",
-      "image": "assets/words/jingdian.jpg",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 1-2/6",
+      "words": [
         {
-          "hz": "黑色西装是很经典的选择。",
-          "py": "Hēisè xīzhuāng shì hěn jīngdiǎn de xuǎnzé.",
-          "vn": "Vest đen là lựa chọn rất cổ điển."
+          "hz": "经典",
+          "py": "jīngdiǎn",
+          "vn": "cổ điển",
+          "pos": "adj.",
+          "image": "assets/words/jingdian2.jpg",
+          "example": {
+            "hz": "黑色西装是很经典的选择。",
+            "py": "Hēisè xīzhuāng shì hěn jīngdiǎn de xuǎnzé.",
+            "vn": "Vest đen là lựa chọn rất cổ điển."
+          }
         },
         {
-          "hz": "这个牌子的衣服很经典。",
-          "py": "Zhège páizi de yīfú hěn jīngdiǎn.",
-          "vn": "Quần áo hãng này rất cổ điển."
+          "hz": "独特",
+          "py": "dútè",
+          "vn": "độc đáo",
+          "pos": "adj.",
+          "example": {
+            "hz": "她的穿衣风格很独特。",
+            "py": "Tā de chuānyī fēnggé hěn dútè.",
+            "vn": "Phong cách ăn mặc của cô ấy rất độc đáo."
+          },
+          "image": "assets/words/dute.jpg"
         }
-      ]
+      ],
+      "audio": "assets/audio/slide32.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 2/6",
-      "hz": "独特",
-      "py": "dútè",
-      "pos": "adj.",
-      "vn": "độc đáo",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 3-4/6",
+      "words": [
         {
-          "hz": "她的穿衣风格很独特。",
-          "py": "Tā de chuānyī fēnggé hěn dútè.",
-          "vn": "Phong cách ăn mặc của cô ấy rất độc đáo."
+          "hz": "迷人",
+          "py": "mírén",
+          "vn": "cuốn hút, mê hoặc",
+          "pos": "adj.",
+          "example": {
+            "hz": "你今天穿得很迷人。",
+            "py": "Nǐ jīntiān chuān de hěn mírén.",
+            "vn": "Hôm nay bạn mặc rất cuốn hút."
+          },
+          "image": "assets/words/miren.jpg"
         },
         {
-          "hz": "这件衣服的颜色很独特。",
-          "py": "Zhè jiàn yīfú de yánsè hěn dútè.",
-          "vn": "Màu của cái áo này rất độc đáo."
+          "hz": "流行",
+          "py": "liúxíng",
+          "vn": "thịnh hành, phổ biến",
+          "pos": "adj./v.",
+          "example": {
+            "hz": "这种颜色现在很流行。",
+            "py": "Zhè zhǒng yánsè xiànzài hěn liúxíng.",
+            "vn": "Màu này bây giờ đang rất thịnh hành."
+          },
+          "image": "assets/words/liuxing.jpg"
         }
-      ]
+      ],
+      "audio": "assets/audio/slide33.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词拓展 3/6",
-      "hz": "迷人",
-      "py": "mírén",
-      "pos": "adj.",
-      "vn": "cuốn hút, mê hoặc",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词拓展 5-6/6",
+      "words": [
         {
-          "hz": "你今天穿得很迷人。",
-          "py": "Nǐ jīntiān chuān de hěn mírén.",
-          "vn": "Hôm nay bạn mặc rất cuốn hút."
+          "hz": "有品味",
+          "py": "yǒu pǐnwèi",
+          "vn": "có gu, sành điệu",
+          "pos": "phr.",
+          "example": {
+            "hz": "他穿衣服很有品味。",
+            "py": "Tā chuān yīfú hěn yǒu pǐnwèi.",
+            "vn": "Anh ấy ăn mặc rất có gu."
+          },
+          "image": "assets/words/youpinwei.jpg"
         },
         {
-          "hz": "这条红色的裙子很迷人。",
-          "py": "Zhè tiáo hóngsè de qúnzi hěn mírén.",
-          "vn": "Cái váy đỏ này rất cuốn hút."
+          "hz": "百搭",
+          "py": "bǎidā",
+          "vn": "dễ phối đồ",
+          "pos": "adj.",
+          "example": {
+            "hz": "白色很百搭。",
+            "py": "Báisè hěn bǎidā.",
+            "vn": "Màu trắng rất dễ phối đồ."
+          },
+          "image": "assets/words/baida.jpg"
         }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 4/6",
-      "hz": "流行",
-      "py": "liúxíng",
-      "pos": "adj./v.",
-      "vn": "thịnh hành, phổ biến",
-      "examples": [
-        {
-          "hz": "这种颜色现在很流行。",
-          "py": "Zhè zhǒng yánsè xiànzài hěn liúxíng.",
-          "vn": "Màu này bây giờ đang rất thịnh hành."
-        },
-        {
-          "hz": "今年流行穿深色的衣服。",
-          "py": "Jīnnián liúxíng chuān shēnsè de yīfú.",
-          "vn": "Năm nay thịnh hành mặc đồ màu đậm."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 5/6",
-      "hz": "有品味",
-      "py": "yǒu pǐnwèi",
-      "pos": "phr.",
-      "vn": "có gu, sành điệu",
-      "examples": [
-        {
-          "hz": "他穿衣服很有品味。",
-          "py": "Tā chuān yīfú hěn yǒu pǐnwèi.",
-          "vn": "Anh ấy ăn mặc rất có gu."
-        },
-        {
-          "hz": "有品味的人不一定穿得贵。",
-          "py": "Yǒu pǐnwèi de rén bù yídìng chuān de guì.",
-          "vn": "Người có gu không nhất định phải mặc đồ đắt tiền."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 6/6",
-      "hz": "百搭",
-      "py": "bǎidā",
-      "pos": "adj.",
-      "vn": "dễ phối đồ",
-      "examples": [
-        {
-          "hz": "白色很百搭。",
-          "py": "Báisè hěn bǎidā.",
-          "vn": "Màu trắng rất dễ phối đồ."
-        },
-        {
-          "hz": "这条裤子很百搭，配什么都好看。",
-          "py": "Zhè tiáo kùzi hěn bǎidā, pèi shénme dōu hǎokàn.",
-          "vn": "Cái quần này rất dễ phối, phối với gì cũng đẹp."
-        }
-      ]
-    },
-    {
-      "type": "word_groups",
-      "kicker": "延伸",
-      "title": "衣橱必备 — Tủ đồ cơ bản theo hoàn cảnh",
-      "groups": [
-        {
-          "label": "正式场合",
-          "items": [
-            { "hz": "衬衫", "py": "chènshān", "vn": "áo sơ mi" },
-            { "hz": "西装", "py": "xīzhuāng", "vn": "vest" }
-          ]
-        },
-        {
-          "label": "休闲日常",
-          "items": [
-            { "hz": "T恤", "py": "T-xù", "vn": "áo thun" },
-            { "hz": "牛仔裤", "py": "niúzǎikù", "vn": "quần jean" }
-          ]
-        },
-        {
-          "label": "运动",
-          "items": [
-            { "hz": "运动鞋", "py": "yùndòngxié", "vn": "giày thể thao" },
-            { "hz": "背心", "py": "bèixīn", "vn": "áo ba lỗ" }
-          ]
-        },
-        {
-          "label": "保暖",
-          "items": [
-            { "hz": "外套", "py": "wàitào", "vn": "áo khoác" },
-            { "hz": "羊毛衣", "py": "yángmáoyī", "vn": "áo len" }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "bullets",
-      "kicker": "延伸",
-      "title": "Trang phục nói lên điều gì?",
-      "bullets": [
-        "Chức năng gốc: bảo vệ cơ thể — giữ ấm (外套/羊毛), che nắng, thoải mái khi ngủ (睡衣).",
-        "Thể hiện phong cách, sự tự tin: 时尚/流行 (hợp mốt) khác hẳn 过时 (lỗi mốt); 独特/迷人 là cá tính riêng.",
-        "Phản ánh hoàn cảnh: 正式 (họp, phỏng vấn, tiệc) khác 休闲 (cuối tuần, ở nhà).",
-        "Nói lên nghề nghiệp/địa vị — vd 西装 công sở, 制服 theo ngành nghề.",
-        "配饰 và màu sắc (深色/浅色) là chi tiết nhỏ nhưng đổi cả tổng thể; đồ 百搭 dễ phối hơn đồ cầu kỳ; 有品味 không đồng nghĩa với đắt tiền."
-      ]
+      ],
+      "audio": "assets/audio/slide34.mp3"
     },
     {
       "type": "dialogue",
@@ -995,7 +798,12 @@
           "py": "Méi wèntí."
         }
       ],
-      "source": "New HSK Course 2, Bài 4"
+      "source": "New HSK Course 2, Bài 4",
+      "audio": "assets/audio/slide35.mp3",
+      "voices": {
+        "刘小雪": "zh-CN-XiaoyiNeural",
+        "王一雪": "zh-CN-XiaoxiaoNeural"
+      }
     },
     {
       "type": "dialogue",
@@ -1034,7 +842,12 @@
           "py": "Jiùshì yīnwèi méi chuānguò, suǒyǐ yào shìshi a!"
         }
       ],
-      "source": "New HSK Course 2, Bài 4"
+      "source": "New HSK Course 2, Bài 4",
+      "audio": "assets/audio/slide36.mp3",
+      "voices": {
+        "刘小雪": "zh-CN-XiaoyiNeural",
+        "王一雪": "zh-CN-XiaoxiaoNeural"
+      }
     },
     {
       "type": "dialogue",
@@ -1073,7 +886,12 @@
           "py": "Búcuò, wǒ yě juéde lǜsè de gèng hǎokàn."
         }
       ],
-      "source": "New HSK Course 2, Bài 4"
+      "source": "New HSK Course 2, Bài 4",
+      "audio": "assets/audio/slide37.mp3",
+      "voices": {
+        "刘小雪": "zh-CN-XiaoyiNeural",
+        "王一雪": "zh-CN-XiaoxiaoNeural"
+      }
     },
     {
       "type": "passage",
@@ -1092,7 +910,8 @@
           "vn": "Quần áo trong đó có rất nhiều màu. Tôi chưa mặc màu đỏ bao giờ, mẹ bảo tôi thử xem, tôi thấy mình mặc màu đỏ cũng rất đẹp."
         }
       ],
-      "source": "New HSK Course 2, Bài 4"
+      "source": "New HSK Course 2, Bài 4",
+      "audio": "assets/audio/slide38.mp3"
     },
     {
       "type": "grammar",
@@ -1121,7 +940,20 @@
           "vn": "Bạn xem chưa xem phim đó rồi?"
         }
       ],
-      "source": "New HSK Course 2, Bài 4"
+      "source": "New HSK Course 2, Bài 4",
+      "audio": "assets/audio/slide39.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "易错点 1/3",
+      "title": "Lẫn 「了」 và 「过」khi nói \"đã từng\"",
+      "image": "assets/error1.jpg",
+      "bullets": [
+        "❌ 我去了法国，你呢？ — khi ý muốn hỏi \"bạn đã TỪNG đi Pháp chưa\" nghe như đang kể 1 chuyến đi cụ thể vừa xảy ra.",
+        "✔ 我去过法国，你呢？ — kinh nghiệm: đã từng đi Pháp.",
+        "✔ 我去了法国，明天回来。 — hoàn thành: 1 chuyến đi cụ thể, đang/vừa diễn ra.",
+        "Vì sao hay lẫn: tiếng Việt chỉ có 1 chữ \"đã\" cho cả 2 nghĩa, còn tiếng Trung phải chọn đúng 了 hay 过."
+      ]
     },
     {
       "type": "grammar",
@@ -1149,7 +981,8 @@
           "vn": "Vì tôi bị bệnh nên hôm nay không đi làm."
         }
       ],
-      "source": "New HSK Course 2, Bài 4"
+      "source": "New HSK Course 2, Bài 4",
+      "audio": "assets/audio/slide41.mp3"
     },
     {
       "type": "grammar",
@@ -1177,7 +1010,19 @@
           "vn": "Cái áo này đắt quá, thôi mua cái rẻ kia đi."
         }
       ],
-      "source": "New HSK Course 2, Bài 4"
+      "source": "New HSK Course 2, Bài 4",
+      "audio": "assets/audio/slide42.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "易错点 2/3",
+      "title": "Lặp lại thừa danh từ sau「的」字短语",
+      "image": "assets/error2.jpg",
+      "bullets": [
+        "❌ 我要红色的裤子，不要绿色的裤子。 — lặp lại \"裤子\" 2 lần dù ngữ cảnh đã rõ, không tự nhiên.",
+        "✔ 我要红色的，不要绿色的。 — bỏ hẳn danh từ, 「的」đã đủ nghĩa.",
+        "Vì sao hay lẫn: tiếng Việt vẫn nói rõ tên đồ vật, nên hay quên tiếng Trung chỉ cần 的 là đủ."
+      ]
     },
     {
       "type": "grammar",
@@ -1211,7 +1056,8 @@
           "py": "Māma bǎ xīn mǎi de kùzi ná dào wǒ fángjiān le.",
           "vn": "Mẹ đã mang cái quần mới mua vào phòng tôi."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide44.mp3"
     },
     {
       "type": "grammar",
@@ -1238,6 +1084,18 @@
           "py": "Wǒ hái méi bǎ kùzi shìchuān yíxià ne.",
           "vn": "Tôi vẫn chưa thử cái quần đó."
         }
+      ],
+      "audio": "assets/audio/slide45.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "易错点 3/3",
+      "title": "Tránh dùng hoặc đặt sai trật tự 把字句",
+      "image": "assets/error3.jpg",
+      "bullets": [
+        "❌ 我穿把衣服。 / 穿把衣服上。 — đặt「把」sai vị trí, ghép lộn xộn vì không quen cấu trúc.",
+        "✔ 快把衣服穿上。 — 把 + đồ vật cụ thể + động từ + phần còn lại, luôn đặt「把+đồ vật」TRƯỚC động từ.",
+        "Vì sao hay lẫn: tiếng Việt không có cấu trúc tương đương (chỉ nói \"mặc áo vào\" theo thứ tự thường), nên hay tránh dùng 把 hoặc đặt sai vị trí."
       ]
     },
     {
@@ -1313,41 +1171,8 @@
           "Wǒ juéde hēisè de gèng shìhé zhège chǎnghé.",
           "Tôi thấy màu đen hợp với dịp này hơn."
         ]
-      ]
-    },
-    {
-      "type": "bullets",
-      "kicker": "易错点 1/3",
-      "title": "Lẫn 「了」 và 「过」khi nói \"đã từng\"",
-      "image": "assets/error1.jpg",
-      "bullets": [
-        "❌ 我去了法国，你呢？ — khi ý muốn hỏi \"bạn đã TỪNG đi Pháp chưa\" nghe như đang kể 1 chuyến đi cụ thể vừa xảy ra.",
-        "✔ 我去过法国，你呢？ — kinh nghiệm: đã từng đi Pháp.",
-        "✔ 我去了法国，明天回来。 — hoàn thành: 1 chuyến đi cụ thể, đang/vừa diễn ra.",
-        "Vì sao hay lẫn: tiếng Việt chỉ có 1 chữ \"đã\" cho cả 2 nghĩa, còn tiếng Trung phải chọn đúng 了 hay 过."
-      ]
-    },
-    {
-      "type": "bullets",
-      "kicker": "易错点 2/3",
-      "title": "Lặp lại thừa danh từ sau「的」字短语",
-      "image": "assets/error2.jpg",
-      "bullets": [
-        "❌ 我要红色的裤子，不要绿色的裤子。 — lặp lại \"裤子\" 2 lần dù ngữ cảnh đã rõ, không tự nhiên.",
-        "✔ 我要红色的，不要绿色的。 — bỏ hẳn danh từ, 「的」đã đủ nghĩa.",
-        "Vì sao hay lẫn: tiếng Việt vẫn nói rõ tên đồ vật, nên hay quên tiếng Trung chỉ cần 的 là đủ."
-      ]
-    },
-    {
-      "type": "bullets",
-      "kicker": "易错点 3/3",
-      "title": "Tránh dùng hoặc đặt sai trật tự 把字句",
-      "image": "assets/error3.jpg",
-      "bullets": [
-        "❌ 我穿把衣服。 / 穿把衣服上。 — đặt「把」sai vị trí, ghép lộn xộn vì không quen cấu trúc.",
-        "✔ 快把衣服穿上。 — 把 + đồ vật cụ thể + động từ + phần còn lại, luôn đặt「把+đồ vật」TRƯỚC động từ.",
-        "Vì sao hay lẫn: tiếng Việt không có cấu trúc tương đương (chỉ nói \"mặc áo vào\" theo thứ tự thường), nên hay tránh dùng 把 hoặc đặt sai vị trí."
-      ]
+      ],
+      "audio": "assets/audio/slide47.mp3"
     },
     {
       "type": "section",
