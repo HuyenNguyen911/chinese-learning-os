@@ -25,31 +25,37 @@ format thi HSK và HSKK 初级.
 - **Phủ rộng vốn từ để nhớ:** trải câu qua NHIỀU từ đã dạy (nhiều màu, nhiều
   lượng từ, nhiều từ thời tiết…), đừng chỉ xoay quanh 3–4 từ. Ít câu + mỗi câu
   một từ mới = phủ rộng hơn mà vẫn ngắn.
-- **Đáp án 2 cấp (khối tự luận):** với `dich_dat_cau`, `sap_xep`, `noi_hskk`
-  (`回答问题`) — điền `answer`/`hint` (Chuẩn, đủ điểm) + `answer_plus`/`hint_plus`
-  (Nâng cao, điểm cao) theo band chấm thi. Xem `worksheet/schema.md`.
-- **Dàn bài cho `noi_hskk` part `回答问题`** (mặc định mọi buổi — đổi 2026-08-06,
-  2 session độc lập cùng ngày (buổi 7 + buổi 8) đều bị user sửa khỏi bản dàn bài
-  3-câu cũ, xem lịch sử ở cuối mục này): **KHÔNG** đưa câu mẫu tiếng Trung vào
-  `instructions` (đó là đáp án, chỉ để trong `hint`/`hint_plus` cho `dapan.docx`,
-  không hiện trên worksheet). `instructions` chỉ chứa **câu hỏi gợi mở bằng tiếng
-  Việt** theo khung Mở bài/Thân bài/Kết bài, để học viên tự nghĩ câu trả lời —
-  không gợi ý sẵn nội dung. Mẫu:
-  `"开头 (Mở bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>? 主体 (Thân bài): <câu hỏi nhỏ
-  1>? <câu hỏi nhỏ 2>? 结尾 (Kết bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>?"` — nội
-  dung từng câu hỏi nhỏ bám sát chủ đề CÂU HỎI CHÍNH của item đó (không dùng 1
-  khung chung mơ hồ cho mọi buổi).
+- **Đáp án 2 cấp (khối tự luận viết):** với `dich_dat_cau`, `sap_xep` — điền
+  `answer` (Chuẩn, đủ điểm) + `answer_plus` (Nâng cao, điểm cao) theo band chấm
+  thi. Xem `worksheet/schema.md`. **Riêng `noi_hskk` (`回答问题`) KHÔNG dùng 2 cấp
+  này nữa** — xem mục dàn bài ngay dưới đây.
+- **Dàn bài cho `noi_hskk` part `回答问题`** (mặc định mọi buổi — đổi lần 2 ở
+  2026-08-07 khi làm Buổi 9, xem lịch sử ở cuối mục này):
+  - `instructions`: **1 dòng chung, ngắn gọn** cho cả block, không đổi theo từng
+    câu — mẫu: `"Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài
+    - thân bài - kết bài)."`.
+  - `hint`: chứa **dàn bài gợi mở bằng tiếng Việt** theo khung Mở bài/Thân bài/Kết
+    bài, để học viên tự nghĩ câu trả lời — không gợi ý sẵn nội dung. Mẫu:
+    `"开头 (Mở bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>? — 主体 (Thân bài): <câu hỏi
+    nhỏ 1>? <câu hỏi nhỏ 2>? — 结尾 (Kết bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>?"`
+    — nội dung từng câu hỏi nhỏ bám sát chủ đề CÂU HỎI CHÍNH (`script`) của item đó
+    (không dùng 1 khung chung mơ hồ cho mọi buổi).
+  - `hint_plus`: **KHÔNG dùng** — không kèm đáp án mẫu/câu trả lời hoàn chỉnh nào
+    cho phần 回答问题, kể cả trong `dapan.docx`. Chỉ để học viên tự trả lời dựa trên
+    dàn bài; giáo viên chấm trực tiếp khi nghe, không cần văn bản mẫu để đối chiếu.
   **Khi block có ≥2 câu hỏi 回答问题:** tách thành **nhiều block riêng, mỗi block
   1 câu hỏi** (đặt `title` là "Câu hỏi 1"/"Câu hỏi 2"... để tránh lặp chữ "回答问题"
   trong header do renderer tự ghép `"🗣 %s (%s)" % (title, part)`) — vì mỗi câu cần
-  3 cặp câu hỏi gợi mở khác nhau bám đúng nội dung câu đó, không thể dùng chung 1
-  `instructions` cho nhiều câu hỏi có chủ đề khác nhau.
-  `hint` = câu trả lời Chuẩn (đủ điểm, thường chỉ cần Mở+Thân), `hint_plus` = câu
-  trả lời Nâng cao (đủ Mở-Thân-Kết, dài hơn) — cả hai chỉ vào `dapan.docx`.
+  1 dàn bài riêng bám đúng nội dung câu đó, không thể dùng chung 1 `hint` cho
+  nhiều câu hỏi có chủ đề khác nhau.
   **Lịch sử:** bản gốc dùng dàn bài 3 bước chung ("(1) trả lời ngắn, (2) mô tả
   thêm, (3) mở rộng không bắt buộc") kèm câu mẫu ngay trên worksheet — user phản
   hồi 2 lần độc lập (buổi 7, buổi 8) rằng dàn bài phải là câu hỏi gợi mở tiếng
   Việt để tự nghĩ, không phải đáp án mẫu; buổi 7 thêm bước tách block/câu hỏi.
+  Buổi 8 đặt dàn bài vào `instructions` + vẫn giữ `hint`/`hint_plus` là 2 cấp
+  đáp án mẫu thật (Chuẩn/Nâng cao) — buổi 9 (2026-08-07) user sửa lần nữa: dàn
+  bài chuyển hẳn vào `hint` (không phải `instructions`), `instructions` rút gọn
+  về 1 dòng chung, và bỏ hẳn `hint_plus`/đáp án mẫu — chốt làm mặc định mới.
 - Chỉ **đọc** `memory/*`. Không tự sửa memory (CLAUDE.md §4).
 - **Tham khảo phong cách đề online (Pandarin):** trước khi soạn câu cho buổi
   HSK*N*, fetch 1-2 trang tương ứng cấp đó tại `pandarin.net`
