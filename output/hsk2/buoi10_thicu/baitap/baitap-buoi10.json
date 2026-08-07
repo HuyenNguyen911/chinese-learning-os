@@ -1,0 +1,99 @@
+{
+  "meta": { "lesson": "Buổi 10: 就要考试了 — 选择问句(还是) / 连…都·也", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối từ với nghĩa",
+      "instructions": "Nối 汉字 bên trái với nghĩa tiếng Việt đúng bên phải.",
+      "pairs": [
+        { "left": "请教", "right": "học hỏi, xin chỉ giáo" },
+        { "left": "天赋", "right": "năng khiếu" },
+        { "left": "室友", "right": "bạn cùng phòng" },
+        { "left": "成绩单", "right": "bảng điểm" },
+        { "left": "奖学金", "right": "học bổng" },
+        { "left": "能力评估", "right": "đánh giá năng lực" }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ đúng trong ngân hàng từ điền vào chỗ trống.",
+      "word_bank": ["还是", "连", "紧张", "复习"],
+      "items": [
+        { "q": "你打算周末去爬山{}想待在家里休息？", "answer": "还是", "src": "phỏng theo 真题" },
+        { "q": "他紧张得{}名字都写错了。", "answer": "连", "src": "phỏng theo 真题" },
+        { "q": "快考试了，我心里很{}。", "answer": "紧张", "src": "phỏng theo 真题" },
+        { "q": "放学以后，我要在家{}功课。", "answer": "复习", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc hiểu",
+      "instructions": "Đọc đoạn văn rồi trả lời câu hỏi.",
+      "passage": "陈天中下个星期就要考试了，他每天晚上都复习到很晚，连电视都不看了。他的室友说他太紧张了，让他放松一下。考试那天，陈天中比平时冷静，答题很顺利。三天后，成绩单发下来了，他考得比上次好，看到成绩单，他很高兴。",
+      "questions": [
+        { "q": "陈天中晚上做什么，连电视都不看？", "options": ["复习功课", "打游戏", "看电视"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "谁让陈天中放松一下？", "options": ["室友", "老师", "妈妈"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "陈天中看到成绩单，心情怎么样？", "options": ["很高兴", "很失望", "很紧张"], "answer": "A", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ dưới đây thành câu hoàn chỉnh.",
+      "items": [
+        { "words": ["你", "要", "选", "这门课", "还是", "那门课"], "answer": "你要选这门课还是那门课？", "src": "phỏng theo 真题" },
+        { "words": ["她", "紧张", "得", "连", "话", "都", "说不出来"], "answer": "她紧张得连话都说不出来。", "src": "phỏng theo 真题" },
+        { "words": ["我", "想", "跟", "老师", "请教", "这个问题"], "answer": "我想跟老师请教这个问题。", "answer_plus": "我想找时间跟老师请教这个问题，一直没弄懂。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu sau sang tiếng Trung, có dùng từ gợi ý.",
+      "items": [
+        { "prompt": "Cậu ấy hồi hộp đến mức tay đều run.", "given": ["紧张", "连"], "answer": "他紧张得连手都在抖。", "answer_plus": "他紧张得连手都在抖，说话也不利索了。", "src": "phỏng theo 真题" },
+        { "prompt": "Bạn muốn học chương trình cũ hay học chương trình mới?", "given": ["课程", "还是"], "answer": "你想学旧课程还是新课程？", "answer_plus": "你想学旧课程还是新课程？新课程听说更有意思。", "src": "phỏng theo 真题" },
+        { "prompt": "Sau khi tốt nghiệp, tôi muốn tìm một công việc tốt.", "given": ["毕业"], "answer": "毕业以后，我想找一个好工作。", "answer_plus": "毕业以后，我想找一个好工作，好好照顾自己。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe hiểu",
+      "instructions": "Nghe đoạn ghi âm rồi chọn đáp án đúng.",
+      "items": [
+        { "script": "他天天在家学习，连朋友都不见了。", "q": "他为什么不见朋友？", "options": ["忙着学习", "生病了", "搬家了"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "phỏng theo 真题" },
+        { "script": "你想喝奶茶还是咖啡？", "q": "说话人在问什么？", "options": ["选择喝什么", "问价钱", "问地址"], "answer": "A", "audio": "audio/nghe-2.mp3", "src": "phỏng theo 真题" },
+        { "script": "他这次考得很好，妈妈看了成绩单以后特别开心。", "q": "妈妈看了成绩单感觉怎么样？", "options": ["特别开心", "很失望", "很紧张"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Nghe và nhắc lại",
+      "part": "听后重复",
+      "instructions": "Nghe rồi nhắc lại nguyên câu.",
+      "items": [
+        { "script": "明天就要考试了，我们要好好复习。", "audio": "audio/hskk-1.mp3" },
+        { "script": "毕业以后，你想做什么工作？", "audio": "audio/hskk-2.mp3" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 1",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        { "script": "考试前你会紧张吗？你怎么让自己放松？", "hint": "开头 (Mở bài): Trước mỗi kỳ thi bạn cảm thấy thế nào? Có hồi hộp không? — 主体 (Thân bài): Bạn thường làm gì để bớt căng thẳng (nghe nhạc, đi dạo, nói chuyện với bạn...)? Cách đó có hiệu quả không? — 结尾 (Kết bài): Bạn có lời khuyên gì cho người dễ bị áp lực thi cử không?" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 2",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        { "script": "你想做什么？为什么？", "hint": "开头 (Mở bài): Bạn sắp thi đại học rồi phải không? Bạn đã nghĩ kỹ mình muốn học ngành gì chưa? — 主体 (Thân bài): Bạn muốn thi vào trường/ngành nào? Vì sao bạn thích ngành đó (sở thích, năng khiếu, hay lý do khác)? — 结尾 (Kết bài): Nếu thi đỗ, bạn sẽ chuẩn bị gì cho ngành học đó? Sau này bạn muốn làm công việc gì?" }
+      ]
+    }
+  ]
+}

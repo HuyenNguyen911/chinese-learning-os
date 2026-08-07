@@ -1,0 +1,638 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 10",
+    "topic": "就要考试了 — Thi cử, học tập nâng cao, cảm xúc thi cử + 选择问句 + 连…都/也",
+    "title": "就要考试了"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "就要考试了",
+      "subtitle": "Jiù yào kǎoshì le — Sắp thi rồi",
+      "footer": "HSK2 · Buổi 10"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Hôm nay học gì",
+      "bullets": [
+        "Nghe hiểu và nói về việc chuẩn bị thi cử, học tập, và cảm xúc trước/sau kỳ thi",
+        "Mở rộng từ vựng chủ đề học tập nâng cao (chương trình học, học từ xa, tốt nghiệp, học bổng...)",
+        "Dùng \"还是\" trong câu hỏi lựa chọn (选择问句)",
+        "Dùng \"连…都/也\" để nhấn mạnh mức độ (căng thẳng, áp lực...)"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 1/13",
+      "items": [
+        {
+          "hz": "开学",
+          "py": "kāixué",
+          "vn": "khai giảng"
+        },
+        {
+          "hz": "住校",
+          "py": "zhùxiào",
+          "vn": "ở nội trú"
+        }
+      ],
+      "image": "assets/dorm_room.jpg",
+      "example": {
+        "hz": "开学以后，我就要住校了。",
+        "py": "Kāixué yǐhòu, wǒ jiù yào zhùxiào le.",
+        "vn": "Sau khi khai giảng, tớ sẽ ở ký túc xá."
+      },
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 2/13",
+      "items": [
+        {
+          "hz": "课程",
+          "py": "kèchéng",
+          "vn": "chương trình học"
+        },
+        {
+          "hz": "听课",
+          "py": "tīngkè",
+          "vn": "dự giờ, nghe giảng"
+        }
+      ],
+      "image": "assets/students_classroom.jpg",
+      "example": {
+        "hz": "这门课程很有意思，大家都在认真听课。",
+        "py": "Zhè mén kèchéng hěn yǒu yìsi, dàjiā dōu zài rènzhēn tīngkè.",
+        "vn": "Môn học này rất thú vị, mọi người đều đang chăm chú nghe giảng."
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 3/13",
+      "items": [
+        {
+          "hz": "远程学习",
+          "py": "yuǎnchéng xuéxí",
+          "vn": "học từ xa"
+        },
+        {
+          "hz": "室友",
+          "py": "shìyǒu",
+          "vn": "bạn cùng phòng"
+        }
+      ],
+      "image": "assets/words/yuanchengxuexi_TODO.jpg",
+      "example": {
+        "hz": "虽然我们在家远程学习，但我很想念我的室友。",
+        "py": "Suīrán wǒmen zài jiā yuǎnchéng xuéxí, dàn wǒ hěn xiǎngniàn wǒ de shìyǒu.",
+        "vn": "Dù chúng tớ học từ xa ở nhà, nhưng tớ rất nhớ bạn cùng phòng của mình."
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 4/13",
+      "items": [
+        {
+          "hz": "词",
+          "py": "cí",
+          "vn": "từ (ngôn ngữ)"
+        },
+        {
+          "hz": "帮",
+          "py": "bāng",
+          "vn": "giúp"
+        }
+      ],
+      "image": "assets/dictionary.jpg",
+      "example": {
+        "hz": "这个词我不懂，你能帮我一下吗？",
+        "py": "Zhè ge cí wǒ bù dǒng, nǐ néng bāng wǒ yīxià ma?",
+        "vn": "Từ này tớ không hiểu, cậu có thể giúp tớ một chút không?"
+      },
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 5/13",
+      "items": [
+        {
+          "hz": "请教",
+          "py": "qǐngjiào",
+          "vn": "học hỏi, xin chỉ giáo"
+        },
+        {
+          "hz": "天赋",
+          "py": "tiānfù",
+          "vn": "năng khiếu"
+        }
+      ],
+      "image": "assets/math_talent.jpg",
+      "example": {
+        "hz": "我去向他请教，因为他在数学方面很有天赋。",
+        "py": "Wǒ qù xiàng tā qǐngjiào, yīnwèi tā zài shùxué fāngmiàn hěn yǒu tiānfù.",
+        "vn": "Tớ đi hỏi cậu ấy, vì cậu ấy rất có thiên phú về môn Toán."
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 6/13",
+      "items": [
+        {
+          "hz": "作业",
+          "py": "zuòyè",
+          "vn": "bài tập"
+        },
+        {
+          "hz": "错",
+          "py": "cuò",
+          "vn": "sai"
+        }
+      ],
+      "image": "assets/words/zuoye_TODO.jpg",
+      "example": {
+        "hz": "今天的作业太多了，我做错了很多。",
+        "py": "Jīntiān de zuòyè tài duō le, wǒ zuò cuò le hěn duō.",
+        "vn": "Bài tập hôm nay nhiều quá, tớ làm sai mất nhiều câu rồi."
+      },
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 7/13",
+      "items": [
+        {
+          "hz": "复习",
+          "py": "fùxí",
+          "vn": "ôn tập"
+        },
+        {
+          "hz": "题",
+          "py": "tí",
+          "vn": "đề bài, câu hỏi"
+        }
+      ],
+      "image": "assets/studying_textbook.jpg",
+      "example": {
+        "hz": "明天要考试，今天我要复习这些题。",
+        "py": "Míngtiān yào kǎoshì, jīntiān wǒ yào fùxí zhèxiē tí.",
+        "vn": "Ngày mai phải thi rồi, hôm nay tớ phải ôn tập những câu hỏi này."
+      },
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 8/13",
+      "items": [
+        {
+          "hz": "紧张",
+          "py": "jǐnzhāng",
+          "vn": "hồi hộp, căng thẳng"
+        },
+        {
+          "hz": "压力",
+          "py": "yālì",
+          "vn": "áp lực"
+        }
+      ],
+      "image": "assets/stressed_exam.jpg",
+      "example": {
+        "hz": "马上要考试了，我觉得很紧张，压力很大。",
+        "py": "Mǎshàng yào kǎoshì le, wǒ juéde hěn jǐnzhāng, yālì hěn dà.",
+        "vn": "Sắp thi rồi, tớ cảm thấy rất căng thẳng, áp lực rất lớn."
+      },
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 9/13",
+      "items": [
+        {
+          "hz": "能力评估",
+          "py": "nénglì pínggū",
+          "vn": "đánh giá năng lực"
+        },
+        {
+          "hz": "自信",
+          "py": "zìxìn",
+          "vn": "tự tin"
+        }
+      ],
+      "image": "assets/confident_student.jpg",
+      "example": {
+        "hz": "这次考试只是一次能力评估，我们要有自信。",
+        "py": "Zhè cì kǎoshì zhǐshì yī cì nénglì pínggū, wǒmen yào yǒu zìxìn.",
+        "vn": "Kỳ thi này chỉ là một lần đánh giá năng lực thôi, chúng ta phải tự tin lên."
+      },
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 10/13",
+      "items": [
+        {
+          "hz": "考",
+          "py": "kǎo",
+          "vn": "thi"
+        },
+        {
+          "hz": "笑",
+          "py": "xiào",
+          "vn": "cười"
+        }
+      ],
+      "image": "assets/words/kao_xiao_TODO.jpg",
+      "example": {
+        "hz": "我今天考得很好，所以大家都笑得很开心。",
+        "py": "Wǒ jīntiān kǎo de hěn hǎo, suǒyǐ dàjiā dōu xiào de hěn kāixīn.",
+        "vn": "Hôm nay tớ thi rất tốt, nên mọi người đều cười rất vui vẻ."
+      },
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 11/13",
+      "items": [
+        {
+          "hz": "考试",
+          "py": "kǎoshì",
+          "vn": "kỳ thi, thi cử"
+        },
+        {
+          "hz": "奖学金",
+          "py": "jiǎngxuéjīn",
+          "vn": "học bổng"
+        }
+      ],
+      "image": "assets/scholarship.jpg",
+      "example": {
+        "hz": "如果这次考试第一名，我就能拿到奖学金。",
+        "py": "Rúguǒ zhè cì kǎoshì dì-yī míng, wǒ jiù néng ná dào jiǎngxuéjīn.",
+        "vn": "Nếu kỳ thi này đứng nhất, tớ sẽ nhận được học bổng."
+      },
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 12/13",
+      "items": [
+        {
+          "hz": "成绩单",
+          "py": "chéngjìdān",
+          "vn": "bảng điểm"
+        },
+        {
+          "hz": "满意",
+          "py": "mǎnyì",
+          "vn": "hài lòng"
+        },
+        {
+          "hz": "失望",
+          "py": "shīwàng",
+          "vn": "thất vọng"
+        }
+      ],
+      "image": "assets/words/chengjidan_TODO.jpg",
+      "example": {
+        "hz": "无论成绩单怎么样，只要努力了就不用失望，要对自己满意。",
+        "py": "Wúlùn chéngjìdān zěnmeyàng, zhǐyào nǔlì le jiù bùyòng shīwàng, yào duì zìjǐ mǎnyì.",
+        "vn": "Bất kể bảng điểm thế nào, chỉ cần cố gắng rồi thì không cần phải thất vọng, phải tự hài lòng với bản thân."
+      },
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 13/13",
+      "items": [
+        {
+          "hz": "放松",
+          "py": "fàngsōng",
+          "vn": "thư giãn, thả lỏng"
+        },
+        {
+          "hz": "毕业",
+          "py": "bìyè",
+          "vn": "tốt nghiệp"
+        }
+      ],
+      "image": "assets/graduation_relax.jpg",
+      "example": {
+        "hz": "毕业以后，我终于可以好好放松一下了。",
+        "py": "Bìyè yǐhòu, wǒ zhōngyú kěyǐ hǎohǎo fàngsōng yīxià le.",
+        "vn": "Sau khi tốt nghiệp, cuối cùng tớ cũng có thể thư giãn một chút rồi."
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "在房间 — 刘明帮刘小明准备开学",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "小明，你们明天开学，你准备好了吗？",
+          "py": "Xiǎomíng, nǐmen míngtiān kāixué, nǐ zhǔnbèi hǎo le ma?"
+        },
+        {
+          "speaker": "刘小明",
+          "hz": "明天就开学啊？爸爸，我的书包你看见了吗？",
+          "py": "Míngtiān jiù kāixué a? Bàba, wǒ de shūbāo nǐ kànjiàn le ma?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "书包在门后面。",
+          "py": "Shūbāo zài mén hòumiàn."
+        },
+        {
+          "speaker": "刘小明",
+          "hz": "书在哪儿呢？笔呢？",
+          "py": "Shū zài nǎr ne? Bǐ ne?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "书在床上，笔在桌子上。",
+          "py": "Shū zài chuáng shang, bǐ zài zhuōzi shang."
+        },
+        {
+          "speaker": "刘小明",
+          "hz": "太好了！现在都准备好了。",
+          "py": "Tài hǎo le! Xiànzài dōu zhǔnbèi hǎo le."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "这次爸爸帮你，下次你自己准备，好不好？",
+          "py": "Zhè cì bàba bāng nǐ, xià cì nǐ zìjǐ zhǔnbèi, hǎo bu hǎo?"
+        },
+        {
+          "speaker": "刘小明",
+          "hz": "好！",
+          "py": "Hǎo!"
+        }
+      ],
+      "footer_note": "在房间，刘明在帮刘小明准备开学的东西。",
+      "image": "assets/father_son_backpack.jpg",
+      "image_side": "right",
+      "voices": {
+        "刘明": "zh-CN-YunyangNeural",
+        "刘小明": "zh-CN-YunxiaNeural"
+      },
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "在房间 — 王一雪提醒刘小雪复习",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "小雪，你在做什么呢？",
+          "py": "Xiǎoxuě, nǐ zài zuò shénme ne?"
+        },
+        {
+          "speaker": "刘小雪",
+          "hz": "明天考试，我在看书呢。",
+          "py": "Míngtiān kǎoshì, wǒ zài kàn shū ne."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "这些词要好好看看。",
+          "py": "Zhèxiē cí yào hǎohǎo kànkan."
+        },
+        {
+          "speaker": "刘小雪",
+          "hz": "我看过了，意思也都懂了。",
+          "py": "Wǒ kànguo le, yìsi yě dōu dǒng le."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "你的本子呢？本子上做错的题也要看一看。",
+          "py": "Nǐ de běnzi ne? Běnzi shang zuòcuò de tí yě yào kàn yi kàn."
+        },
+        {
+          "speaker": "刘小雪",
+          "hz": "妈妈，是您准备考试还是我准备考试？",
+          "py": "Māma, shì nín zhǔnbèi kǎoshì háishi wǒ zhǔnbèi kǎoshì?",
+          "highlight": "还是"
+        }
+      ],
+      "footer_note": "在房间，王一雪和刘小雪在聊学习。",
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "刘小雪": "zh-CN-XiaoyiNeural"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "在房间 — 一家人聊考试",
+      "turns": [
+        {
+          "speaker": "刘小雪",
+          "hz": "妈妈，我回来了！",
+          "py": "Māma, wǒ huílái le!"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我买了奶茶，就在桌子上，自己去拿吧。",
+          "py": "Wǒ mǎile nǎichá, jiù zài zhuōzi shang, zìjǐ qù ná ba."
+        },
+        {
+          "speaker": "刘小雪",
+          "hz": "谢谢妈妈！",
+          "py": "Xièxie māma!"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "今天考试考得怎么样？",
+          "py": "Jīntiān kǎoshì kǎo de zěnmeyàng?"
+        },
+        {
+          "speaker": "刘小雪",
+          "hz": "我觉得比上次好。",
+          "py": "Wǒ juéde bǐ shàng cì hǎo."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "真不错！饭菜快要做好了，你叫弟弟一起去洗手吧。",
+          "py": "Zhēn búcuò! Fàncài kuàiyào zuòhǎo le, nǐ jiào dìdi yìqǐ qù xǐshǒu ba."
+        },
+        {
+          "speaker": "刘小明",
+          "hz": "妈妈，我是第一名，姐姐还没洗完呢。",
+          "py": "Māma, wǒ shì dì-yī míng, jiějie hái méi xǐwán ne."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "你洗得真快啊！",
+          "py": "Nǐ xǐ de zhēn kuài a!"
+        }
+      ],
+      "footer_note": "在房间，王一雪和孩子们在聊天儿。",
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "刘小雪": "zh-CN-XiaoyiNeural",
+        "刘小明": "zh-CN-YunxiaNeural"
+      },
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 4",
+      "title": "刘小雪的日记",
+      "image": "assets/diary_writing.jpg",
+      "image_side": "right",
+      "sentences": [
+        {
+          "hz": "快要开学了，爸爸帮弟弟准备书包、本子和笔。",
+          "py": "Kuàiyào kāixué le, bàba bāng dìdi zhǔnbèi shūbāo, běnzi hé bǐ.",
+          "vn": "Sắp khai giảng rồi, bố giúp em trai chuẩn bị cặp sách, vở và bút."
+        },
+        {
+          "hz": "我就要考试了，妈妈让我看书、看做错的题。",
+          "py": "Wǒ jiù yào kǎoshì le, māma ràng wǒ kàn shū, kàn zuòcuò de tí.",
+          "vn": "Tớ sắp thi rồi, mẹ bảo tớ xem sách, xem lại những câu làm sai."
+        },
+        {
+          "hz": "我们上学，爸爸、妈妈比我们还忙。",
+          "py": "Wǒmen shàngxué, bàba, māma bǐ wǒmen hái máng.",
+          "vn": "Chúng tớ đi học, mà bố mẹ còn bận hơn cả chúng tớ."
+        },
+        {
+          "hz": "我问他们：\"是我和弟弟上学还是你们上学？\"",
+          "py": "Wǒ wèn tāmen: \"Shì wǒ hé dìdi shàngxué háishi nǐmen shàngxué?\"",
+          "vn": "Tớ hỏi họ: \"Là con với em đi học hay là bố mẹ đi học vậy?\""
+        },
+        {
+          "hz": "我问完，他们都笑了。",
+          "py": "Wǒ wènwán, tāmen dōu xiào le.",
+          "vn": "Hỏi xong, cả nhà đều cười."
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/2",
+      "point": "选择问句 — dùng \"还是\" nối 2 lựa chọn trong câu hỏi",
+      "highlight": "还是",
+      "examples": [
+        {
+          "hz": "妈妈，是您准备考试还是我准备考试？",
+          "py": "Māma, shì nín zhǔnbèi kǎoshì háishi wǒ zhǔnbèi kǎoshì?",
+          "vn": "Mẹ ơi, là mẹ chuẩn bị thi hay con chuẩn bị thi vậy?"
+        },
+        {
+          "hz": "你更喜欢学新课程还是喜欢在家远程学习？",
+          "py": "Nǐ gèng xǐhuan xué xīn kèchéng háishi xǐhuan zài jiā yuǎnchéng xuéxí?",
+          "vn": "Cậu thích học chương trình mới hơn hay thích học từ xa ở nhà hơn?"
+        },
+        {
+          "hz": "明天你想复习功课还是先放松一下？",
+          "py": "Míngtiān nǐ xiǎng fùxí gōngkè háishi xiān fàngsōng yíxià?",
+          "vn": "Mai cậu muốn ôn bài hay thư giãn một chút trước đã?"
+        }
+      ],
+      "note": "Cấu trúc: (是) A + 还是 + B？ — chỉ dùng trong CÂU HỎI để hỏi chọn 1 trong các lựa chọn đã nêu. Người Việt hay nhầm dùng \"或者\" ở đây — \"或者\" chỉ dùng trong câu KHẲNG ĐỊNH (vd 你可以喝奶茶或者咖啡), không dùng trong câu hỏi lựa chọn kiểu này.",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/2",
+      "point": "连…都/也 — nhấn mạnh mức độ, thường là trường hợp cực đoan nhất",
+      "examples": [
+        {
+          "hz": "考试压力大的时候，我紧张得连饭都不想吃。",
+          "py": "Kǎoshì yālì dà de shíhou, wǒ jǐnzhāng de lián fàn dōu bù xiǎng chī.",
+          "vn": "Lúc áp lực thi cử lớn, tớ căng thẳng đến mức cơm cũng không muốn ăn.",
+          "highlight": "连饭都不想吃"
+        },
+        {
+          "hz": "他复习得很认真，连一个字都没忘。",
+          "py": "Tā fùxí de hěn rènzhēn, lián yí ge zì dōu méi wàng.",
+          "vn": "Cậu ấy ôn tập rất chăm, đến một chữ cũng không quên.",
+          "highlight": "连一个字都没忘"
+        },
+        {
+          "hz": "这次考试太难了，连老师也说不简单。",
+          "py": "Zhè cì kǎoshì tài nán le, lián lǎoshī yě shuō bù jiǎndān.",
+          "vn": "Kỳ thi lần này khó quá, đến cả thầy giáo cũng nói là không đơn giản.",
+          "highlight": "连老师也说不简单"
+        }
+      ],
+      "note": "Cấu trúc: 连 + (thứ được nhấn mạnh: người/vật/số lượng nhỏ nhất) + 都/也 + động từ. \"连\" đặt NGAY TRƯỚC phần muốn nhấn mạnh (không phải trước động từ) — lỗi hay gặp: quên mất \"都/也\" (chỉ nói \"连…不\" là thiếu, phải có \"连…都/也…\").",
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "口语 1/2",
+      "title": "Trước kỳ thi — động viên nhau",
+      "image": "assets/words/oral_before_exam_TODO.jpg",
+      "examples": [
+        {
+          "hz": "加油，你一定没问题的！",
+          "py": "Jiāyóu, nǐ yídìng méi wèntí de!",
+          "vn": "Cố lên, cậu chắc chắn ổn thôi!"
+        },
+        {
+          "hz": "别紧张，正常发挥就行。",
+          "py": "Bié jǐnzhāng, zhèngcháng fāhuī jiù xíng.",
+          "vn": "Đừng căng thẳng, phát huy bình thường là được."
+        },
+        {
+          "hz": "我昨晚开夜车复习到两点。",
+          "py": "Wǒ zuówǎn kāiyèchē fùxí dào liǎng diǎn.",
+          "vn": "Tối qua tớ cày đêm ôn bài tới 2 giờ."
+        },
+        {
+          "hz": "别临时抱佛脚了，早点儿准备吧。",
+          "py": "Bié línshí bàofójiǎo le, zǎodiǎnr zhǔnbèi ba.",
+          "vn": "Đừng nước đến chân mới nhảy, chuẩn bị sớm đi."
+        },
+        {
+          "hz": "考完就轻松了！",
+          "py": "Kǎo wán jiù qīngsōng le!",
+          "vn": "Thi xong là nhẹ nhõm rồi!"
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "口语 2/2",
+      "title": "Sau kỳ thi — kể lại kết quả",
+      "image": "assets/words/oral_after_exam_TODO.jpg",
+      "examples": [
+        {
+          "hz": "这次考砸了，唉。",
+          "py": "Zhè cì kǎo zá le, āi.",
+          "vn": "Lần này thi tệ rồi, haiz."
+        },
+        {
+          "hz": "还好，感觉发挥得不错。",
+          "py": "Hái hǎo, gǎnjué fāhuī de búcuò.",
+          "vn": "Cũng ổn, cảm giác làm bài không tệ."
+        },
+        {
+          "hz": "谢天谢地，终于考完了！",
+          "py": "Xiètiānxièdì, zhōngyú kǎo wán le!",
+          "vn": "Ơn trời, cuối cùng cũng thi xong!"
+        },
+        {
+          "hz": "这道题我蒙对了！",
+          "py": "Zhè dào tí wǒ méng duì le!",
+          "vn": "Câu này tớ đoán trúng rồi!"
+        },
+        {
+          "hz": "下次我一定好好复习。",
+          "py": "Xià cì wǒ yídìng hǎohǎo fùxí.",
+          "vn": "Lần sau tớ nhất định ôn tập cho kỹ."
+        }
+      ],
+      "audio": "assets/audio/slide23.mp3"
+    }
+  ]
+}

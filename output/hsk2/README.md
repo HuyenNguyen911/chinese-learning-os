@@ -14,17 +14,17 @@
 |---|---|---|---|---|---|---|
 | 1 | `buoi01_moian_vitquay` | 她请我们吃了北京烤鸭 | mời ăn, món BK, nhờ vả | 语气助词"吧"(2) · "是…的"句 · 兼语句 (请/让/叫) | — | ✅ |
 | 2 | `buoi02_giaothong` | 还是打车去北大吧 | giao thông, đề nghị **+ hỏi đường 怎么走** | 还是…吧 · 多(概数) · cụm làm định ngữ | L16 · L17 | ✅ |
-| 3 | `buoi03_dulich_xian` | 我想去西安旅游 | du lịch (Tây An) **+ đặt khách sạn**⚠️ | 结果补语 · 动词重叠(1)(2) | L29 · L19 · L27 | ⏳ |
-| 4 | `buoi04_trangphuc_mausac` | 你穿红色的很好看 | trang phục, màu sắc | 动态助词"过" · 因为…所以 · 的字短语 · **把字句 (bổ sung)** | L19 | ⏳ |
+| 3 | `buoi03_dulich_xian` | 我想去西安旅游 | du lịch (Tây An) **+ đặt khách sạn**⚠️ | 结果补语 · 动词重叠(1)(2) | L29 · L19 · L27 | ✅ |
+| 4 | `buoi04_trangphuc_mausac` | 你穿红色的很好看 | trang phục, màu sắc | 动态助词"过" · 因为…所以 · 的字短语 · **把字句 (bổ sung)** | L19 | ✅ |
 | 5 | `buoi05_thamnha` | 第一次去中国朋友家 | thăm nhà bạn TQ **+ động vật/thú cưng + giới thiệu bản thân/gia đình sâu** | 简单趋向补语(1)(2) · 都…了 | — | ✅ |
 | 6 | `buoi06_sinhnhat` | 小雪，生日快乐！ | sinh nhật, chúc mừng | ~~形容词重叠 · "什么的" · "地"~~ → đã build 状态补语(1)(2)[得] (lệch, xem ghi chú "Sửa 2026-08-06 (khi bóc Bài 7)") | L25 | ✅ |
-| 7 | `buoi07_thethao` | 他篮球打得很好 | thể thao (bóng rổ) | 状态补语(1)(2) [得] (ôn lại, đã dạy ở Buổi 6) · 紧缩复句"一…就…" | L25 | ⏳ |
+| 7 | `buoi07_thethao` | 他篮球打得很好 | thể thao (bóng rổ) | 状态补语(1)(2) [得] (ôn lại, đã dạy ở Buổi 6) · 紧缩复句"一…就…" | L25 | ✅ |
 | 8 | `buoi08_trinho_sosanh` | 虽然你忘了，但是我记得 | mua sắm (đồng hồ/xem phim/đặt món), sinh nhật, trí nhớ, so sánh **+ hỏi giá/so sánh giá**⚠️ **+ nhận lỗi/xin lỗi/hứa sửa**⚠️ | 比较句(1)(2)[比] tách 6 dạng (cơ bản/一点儿/số lượng/还-更/phủ định/nghi vấn) · 虽然…但是 | L28 · L23 | ✅ |
 | — | `on1_bai1-8` | **Ôn 1** (giữa khoá) | ôn bài 1-8 + bảng hệ thống bổ ngữ (kết quả/xu hướng/得) + bảng 比较句(1)(2)(3) — chỉ ôn tập | — | — | ⏳ |
-| 9 | `buoi09_douong` | 我去买杯奶茶 | mua sắm (quần áo) + đồ uống (cà phê/trà sữa) + so sánh khoảng cách, đi bộ | 比较句(3) [没有] · 动词"离" · 时量补语(1) | L30 · L16 | ⏳ |
-| 10 | `buoi10_thicu` | 就要考试了 | thi cử, học tập **+ đặt lịch hẹn**⚠️ | 要/快/快要/就要…了 · 着(1)(2) (⚠️ trang 099 目标 chỉ liệt kê 主谓谓语句·选择问句·要/快/快要/就要…了, KHÔNG thấy 着 — nghi 着(1)(2) cũng bị lệch bài, chưa verify hết Bài 10 nên giữ tạm, cần đối chiếu ảnh đầy đủ trước khi sản xuất buổi 10) | — | ⏳ |
-| 11 | `buoi11_monan_yeuthich` | 我最喜欢吃中国菜 | ăn uống, sở thích | 程度副词"最" · **被字句 (bổ sung)** | — | ⏳ |
-| 12 | `buoi12_thoitiet` | 这里比北京冷多了 | thời tiết, so sánh | 比较句(4)(5)(6) · **连…都/也 (bổ sung)** | — | ⏳ |
+| 9 | `buoi09_douong` | 我去买杯奶茶 | mua sắm (quần áo) + đồ uống (cà phê/trà sữa) + so sánh khoảng cách, đi bộ | 比较句(3) [没有] · 动词"离" · 时量补语(1) | L30 · L16 | ✅ |
+| 10 | `buoi10_thicu` | 就要考试了 | thi cử, học tập, cảm xúc thi cử **+ đặt lịch hẹn**⚠️ | 选择问句(还是) · **连…都/也 (bổ sung, dời từ Bài 12)** | — | ✅ |
+| 11 | `buoi11_monan_yeuthich` | 我最喜欢吃中国菜 | ăn uống, sở thích, sức khoẻ (đau đầu, hiệu thuốc) | 动态助词"着"(1)(2) · 程度副词"最" · **被字句 (bổ sung)** | — | ⏳ |
+| 12 | `buoi12_thoitiet` | 这里比北京冷多了 | thời tiết, so sánh | 比较句(4)(5)(6) | — | ⏳ |
 | 13 | `buoi13_hoctiengtrung` | 我们爱上中文课 | học tiếng Trung | 双宾语句(2) · 比较句(7)(8) | L17 | ⏳ |
 | 14 | `buoi14_letet` | 一个人过年多没意思啊 | lễ Tết, cảm xúc | 存现句 · 复合趋向补语 | L23 | ⏳ |
 | 15 | `buoi15_kehoach` | 我想再去一次中国 | kế hoạch, quay lại TQ | 动量补语(1)(2) · 有字句(2) | — | ⏳ |
@@ -96,9 +96,33 @@ và ngữ pháp:
   nhận trước khi đổi**, hiện bảng trên đã tạm bỏ ghi chú "hỏi giá" khỏi cả 2 dòng Bài 8/9
   chờ quyết định.
 
+**Sửa 2026-08-07 (verify đầy đủ Bài 10 bằng ảnh, trước khi bóc buổi 10):** đối chiếu
+trực tiếp ảnh PDF trang 099-109 (`output/hsk2/buoi10_thicu/doc/_tmp/p99-109.png`) —
+xác nhận hedge cũ đúng: **Bài 10 thật = PDF trang 100-108 (in 084-092)**, 目标 chỉ có
+3 điểm **主谓谓语句** (trang 086) + **选择问句 dùng "还是"** (trang 088) + **要/快/快要/
+就要…了** (trang 090) — **KHÔNG có 着**. 着(1)(2) xác nhận thuộc **Bài 11** (目标 trang
+093, cùng với 程度副词"最"). Khớp 100% với checklist từ vựng (`hsk2-vocab-grammar-checklist.md`
+mục Bài 10 không có 着, mục Bài 11 có 着). 生词 Bài 10 đối chiếu đủ 13 từ trong checklist
+(开学·门·后面·笔·帮·考试·词·本子·错·题·考·快要·笑, cộng 还是 là từ chức năng không tính vào
+checklist) — khớp 100%, xuất hiện đúng trong 4 khối 课文1-4. Chủ đề: 课文1 chuẩn bị khai
+giảng (đồ dùng học tập), 课文2-3 chuẩn bị thi, 课文4 nhật ký con so bì bố mẹ — đã cập nhật
+bảng ở trên, xoá hedge.
+
+**Sửa 2026-08-07 (san bớt ngữ pháp nặng sang Buổi 10 — rồi phát hiện Bài 4 đã build):**
+Ban đầu định dời **把字句** (Bài 4, 4 điểm — nặng nhất khoá cùng Bài 12) sang Buổi 10 vì
+Buổi 10 sau khi bỏ 主谓谓语句+快要/就要了 (học viên đã học ở HSK1) và bỏ luôn 双宾语句(2)
+(giữ nguyên ở Bài 13 theo đúng sách) chỉ còn 1 điểm ngữ pháp core (选择问句), hơi mỏng so
+với 27 từ vựng mới. **Nhưng kiểm tra lại phát hiện Bài 4 ĐÃ BUILD XONG từ trước** (cùng
+Bài 3, 6, 7 — README từng ghi ⏳ sai, đã sửa lại ✅ ở bảng trên) và 把字句 đã có sẵn 2 slide
+ngữ pháp đầy đủ trong đó rồi → không "dời" được nữa (không thể un-teach nội dung đã dạy).
+Xử lý: giữ 把字句 ở Bài 4 như cũ (không dời, không nhắc lại ở Buổi 10 nữa — user quyết định
+bỏ hẳn phần ôn lại cho gọn). Riêng **连…都/也** (Bài 12, thật sự CHƯA build) vẫn dời hẳn
+sang Buổi 10 được (khớp mạch nhấn mạnh cảm xúc căng thẳng: 连一道题都不会/紧张得连饭都不想吃)
+— Bài 12 hạ còn 3 điểm. **Buổi 10 ngữ pháp cuối cùng (2 điểm): 选择问句(mới) + 连…都/也(mới, dời từ Bài 12).**
+
 ## Ghi chú kỹ thuật
 
-- **Ngữ pháp bổ sung ngoài 45 điểm sách** (把 Bài 4, 被 Bài 11, 连…都/也 Bài 12, 复合趋向补语 Bài 5 — đưa sớm từ Bài 14 vì học viên đã nắm chắc 简单趋向补语): đánh dấu rõ trong slide buổi tương ứng "ngữ pháp mở rộng ngoài sách chính".
+- **Ngữ pháp bổ sung ngoài 45 điểm sách** (把 Bài 4 — ôn lại thêm ở Buổi 10, 连…都/也 dời hẳn từ Bài 12 sang Buổi 10, xem "Sửa 2026-08-07", 被 Bài 11, 复合趋向补语 Bài 5 — đưa sớm từ Bài 14 vì học viên đã nắm chắc 简单趋向补语): đánh dấu rõ trong slide buổi tương ứng "ngữ pháp mở rộng ngoài sách chính".
 - **Buổi 5 nâng độ khó từ vựng** (2026-08-06, theo yêu cầu user — học viên đã vượt xa mức 18 từ gốc sách): 生词 slide đổi hẳn sang 20 từ động từ nâng cao (拿/带/搬/寄/扔/摆/放/挂/抬/抱/提/借/还/卖/爬/跳/倒/退/躲/传) để luyện 简单/复合趋向补语, không dùng 18 từ gốc sách nữa (18 từ gốc vẫn xuất hiện tự nhiên qua 課文). Bài tập (`baitap-buoi05.json`) vẫn bám 18 từ gốc + 3 điểm ngữ pháp chính theo đúng chuẩn Bài 5. Cân nhắc áp dụng tương tự (khảo sát trình độ trước khi bám 100% sách) cho các buổi sau nếu học viên tiếp tục vượt tiến độ.
 - **Viết 3.0:** mỗi buổi bài tập có sắp câu/điền chữ/câu ngắn + luân phiên đoạn 60-100 chữ / điền form (`dien_bieu_mau`) / lời nhắn / nhật ký (`writing_prompt` với `kind` + `target_length`) — schema đã mở rộng ở exercise-generator (`main`, commit `021493e`).
 - **Đọc thực tế:** mỗi buổi bài tập phần 读 có ≥1 văn bản tự soạn theo chủ đề (tin nhắn/biển báo/thực đơn/quảng cáo), không lấy từ sách.
@@ -116,6 +140,14 @@ Buổi 1 ✅ (slide + bài tập, đã duyệt 2026-08-02). Buổi 2 ✅ (slide 
 2026-08-06 — 生词 gộp chung 1 khối đầu bài (13 chính + 6 mở rộng nhận lỗi/xin
 lỗi), 課文 1-4 gộp liền nhau, 比较句 tách 6 slide riêng theo dạng câu, mở rộng
 hỏi giá dời từ Bài 9 sang; đã sửa 2 lỗi audio ở tool dùng chung — xem
-`state/session-log.md`). Buổi 3-4, 6-7, 9-15 (trừ 8) + Ôn 1 + Ôn 2 xem trạng
-thái ở bảng trên (⚠️ dòng này có thể chưa đồng bộ hết với bảng — bảng trên là
-nguồn chân lý).
+`state/session-log.md`). **Buổi 3, 4, 6, 7 cũng đã ✅ build xong** (slide+bài tập có sẵn
+trong thư mục từng buổi) — README từng ghi ⏳ nhầm cho cả 4 buổi này (giống lỗi đã gặp ở
+Bài 3 lúc bóc Bài 4, xem "Sửa 2026-08-04"), phát hiện lại và sửa 2026-08-07 khi rà cho
+Buổi 10. Buổi 9 ✅ (slide + audio + bài tập trọn gói, build sáng 2026-08-07, commit
+`7db6228` trên origin — đã merge về worktree). Buổi 10 ✅ (slide + audio + bài tập,
+2026-08-07 — 生词 gộp 27 từ thành 13 cụm ví dụ + 1 từ lẻ theo yêu cầu user, ngữ pháp
+选择问句 + 连…都/也 dời từ Bài 12; layout `vocab` đổi sang chế độ thẻ ảnh to+ví dụ
+highlight, `passage` đổi layout full-width đánh số, giọng trẻ con dùng riêng
+`YunxiaNeural` — xem chi tiết ở `pptx/README.md` và `state/session-log.md`).
+**Tóm lại đã build xong: Buổi 1-10 (toàn bộ)**. Buổi 11-15 + Ôn 1 + Ôn 2 xem trạng
+thái ở bảng trên (nguồn chân lý).
