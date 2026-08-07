@@ -1,0 +1,42 @@
+{
+  "title_naicha": {
+    "title": "Boba Tea Company",
+    "creator": "Suzy S Photography",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/12376611@N05/3060963364",
+    "attribution": "\"Boba Tea Company\" by Suzy S Photography is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "boba tea"
+  },
+  "pants_store": {
+    "title": "Woman's clothing store - Bargains",
+    "creator": "My name's axel",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/37611179@N00/2168051341",
+    "attribution": "\"Woman's clothing store - Bargains\" by My name's axel is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "clothing store"
+  },
+  "coffee_cup": {
+    "title": "Caffe Latte - The Maling Room",
+    "creator": "avlxyz",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/10559879@N00/2427469950",
+    "attribution": "\"Caffe Latte - The Maling Room\" by avlxyz is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "latte"
+  },
+  "couple_walking": {
+    "title": "Roma Street Railway Station looking towards Mt Coot-tha, Brisbane, 1898",
+    "creator": "Queensland State Archives",
+    "license": "pdm 1.0",
+    "source": "https://www.flickr.com/photos/60455048@N02/8278600947",
+    "attribution": "\"Roma Street Railway Station looking towards Mt Coot-tha, Brisbane, 1898\" by Queensland State Archives is marked with Public Domain Mark 1.0. To view the terms, visit https://creativecommons.org/publicdomain/mark/1.0/.",
+    "query": "walking home street"
+  },
+  "distance_map": {
+    "title": "Walking distance...",
+    "creator": "Meneer Zjeroen",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/75467759@N00/14985425760",
+    "attribution": "\"Walking distance...\" by Meneer Zjeroen is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "walking distance"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "meta": { "lesson": "Buổi 9: 我去买杯奶茶 — 没有/离/时量补语(1)", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối từ với nghĩa",
+      "instructions": "Nối 汉字 bên trái với nghĩa tiếng Việt đúng bên phải.",
+      "pairs": [
+        { "left": "坏", "right": "hỏng, xấu" },
+        { "left": "个子", "right": "vóc dáng" },
+        { "left": "离", "right": "cách, khoảng cách" },
+        { "left": "推荐", "right": "khuyên dùng, gợi ý" },
+        { "left": "打包", "right": "mang đi, gói mang về" },
+        { "left": "几分熟", "right": "hỏi độ chín (món ăn)" }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ đúng trong ngân hàng từ điền vào chỗ trống.",
+      "word_bank": ["没有", "离", "那么"],
+      "items": [
+        { "q": "这个手机{}那个贵。", "answer": "没有", "src": "phỏng theo 真题" },
+        { "q": "银行{}超市很近，走路就到。", "answer": "离", "src": "phỏng theo 真题" },
+        { "q": "我从来没见过{}高的人。", "answer": "那么", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc hiểu",
+      "instructions": "Đọc đoạn văn rồi trả lời câu hỏi.",
+      "passage": "田方下班以后去逛商店。她想给女儿买条裤子，可是没找到喜欢的颜色，只好再去别的商店看看。逛完以后，她觉得有点儿累，就去附近新开的奶茶店买了一杯大杯的奶茶，还加了珍珠。她朋友的家离奶茶店很近，走路只要十分钟，所以她决定走路过去找朋友聊天儿。",
+      "questions": [
+        { "q": "田方想给女儿买什么？", "options": ["裤子", "衣服", "手表"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "田方买的奶茶是什么杯型？", "options": ["大杯", "小杯", "中杯"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "从奶茶店走到朋友家要多长时间？", "options": ["十分钟", "半个小时", "一个小时"], "answer": "A", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ dưới đây thành câu hoàn chỉnh.",
+      "items": [
+        { "words": ["这台", "电脑", "没有", "那台", "快"], "answer": "这台电脑没有那台快。", "src": "phỏng theo 真题" },
+        { "words": ["他的", "家", "离", "公司", "很近"], "answer": "他的家离公司很近。", "src": "phỏng theo 真题" },
+        { "words": ["我们", "在", "饭馆", "坐了", "一个", "下午"], "answer": "我们在饭馆坐了一个下午。", "answer_plus": "我们在饭馆坐了一个下午，一直聊天儿，没注意时间。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu sau sang tiếng Trung, có dùng từ gợi ý.",
+      "items": [
+        { "prompt": "Con mèo của tôi không to bằng con mèo của bạn.", "given": ["没有", "那么"], "answer": "我的猫没有你的猫那么大。", "answer_plus": "我的猫没有你的猫那么大，因为它才三个月。", "src": "phỏng theo 真题" },
+        { "prompt": "Bệnh viện cách nhà tôi không xa.", "given": ["离"], "answer": "医院离我家不远。", "answer_plus": "医院离我家不远，走路十分钟就到了。", "src": "phỏng theo 真题" },
+        { "prompt": "Anh ấy đợi tôi nửa tiếng rồi (vẫn đang đợi).", "given": ["等", "了...了"], "answer": "他等我等了半个小时了。", "answer_plus": "他等我等了半个小时了，我们得快点儿走了。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe hiểu",
+      "instructions": "Nghe đoạn ghi âm rồi chọn đáp án đúng.",
+      "items": [
+        { "script": "老板，这个甜点多少钱？", "q": "他们想知道什么？", "options": ["甜点多少钱", "主菜多少钱", "开胃菜多少钱"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "phỏng theo 真题" },
+        { "script": "我家离学校不太远，走路十五分钟就到。", "q": "从他家到学校要走多长时间？", "options": ["十五分钟", "三十分钟", "一个小时"], "answer": "A", "audio": "audio/nghe-2.mp3", "src": "phỏng theo 真题" },
+        { "script": "他打篮球打了两个小时了，还在打。", "q": "他现在还在做什么？", "options": ["打篮球", "跑步", "游泳"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Nghe và nhắc lại",
+      "part": "听后重复",
+      "instructions": "Nghe rồi nhắc lại nguyên câu.",
+      "items": [
+        { "script": "这儿离超市不太远。", "audio": "audio/hskk-1.mp3" },
+        { "script": "我要一杯小杯的奶茶。", "audio": "audio/hskk-2.mp3" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 1",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        { "script": "你觉得走路和坐车，哪个更方便？为什么？", "hint": "开头 (Mở bài): Bạn thường đi bằng gì để đến những nơi gần nhà? Bạn có thích đi bộ không? — 主体 (Thân bài): Đi bộ có gì tiện, có gì bất tiện? Ngồi xe thì sao? — 结尾 (Kết bài): Bạn thường chọn cách nào khi khoảng cách gần? Vì sao?" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 2",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        { "script": "你去饭馆的时候，喜欢点什么样的菜？", "hint": "开头 (Mở bài): Bạn có thường đi ăn ở nhà hàng không? Bạn thích ăn món Trung Quốc hay món khác? — 主体 (Thân bài): Bạn thường gọi món khai vị, món chính hay món tráng miệng? Có món nào bạn hay gọi vì được nhân viên gợi ý không? — 结尾 (Kết bài): Bạn thích ăn tại nhà hàng hay mang về nhà ăn hơn? Vì sao?" }
+      ]
+    }
+  ]
+}

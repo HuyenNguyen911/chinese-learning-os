@@ -1,0 +1,794 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 9",
+    "topic": "我去买杯奶茶 — Mua sắm, so sánh 没有, 动词离, 时量补语(1)"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我去买杯奶茶",
+      "subtitle": "Wǒ qù mǎi bēi nǎichá · Tớ đi mua một cốc trà sữa",
+      "footer": "New HSK Course 2 · Bài 9",
+      "image": "assets/title_naicha_TODO.jpg"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Hôm nay học gì",
+      "image": "assets/placeholder_goals_TODO.jpg",
+      "bullets": [
+        "Nghe hiểu và dùng \"没有\" để so sánh, nói một thứ không bằng thứ khác",
+        "Dùng động từ \"离\" để nói khoảng cách nơi chốn/thời gian",
+        "Dùng thời lượng bổ ngữ (1) để nói một việc kéo dài bao lâu",
+        "Mở rộng: gọi đồ uống theo size/đá/đường + gọi món ở nhà hàng"
+      ]
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 1/6",
+      "hz": "坏",
+      "py": "huài",
+      "vn": "hỏng, xấu",
+      "pos": "adj.",
+      "image": "assets/words/huai_TODO.jpg",
+      "examples": [
+        {
+          "hz": "儿子的裤子坏了。",
+          "py": "Érzi de kùzi huài le.",
+          "vn": "Quần của con trai hỏng rồi."
+        }
+      ],
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 2/6",
+      "hz": "个子",
+      "py": "gèzi",
+      "vn": "vóc dáng",
+      "pos": "n.",
+      "image": "assets/words/gezi.jpg",
+      "examples": [
+        {
+          "hz": "儿子的个子没有他那么高。",
+          "py": "Érzi de gèzi méiyǒu tā nàme gāo.",
+          "vn": "Con vóc dáng không cao bằng cậu ấy."
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 3/6",
+      "hz": "那么",
+      "py": "nàme",
+      "vn": "như thế đó",
+      "pos": "pron.",
+      "image": "assets/words/name_TODO.jpg",
+      "examples": [
+        {
+          "hz": "这条裤子没有那么贵。",
+          "py": "Zhè tiáo kùzi méiyǒu nàme guì.",
+          "vn": "Cái quần này không đắt đến thế."
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 4/6",
+      "hz": "门口",
+      "py": "ménkǒu",
+      "vn": "cửa ra vào",
+      "pos": "n.",
+      "image": "assets/words/menkou_TODO.jpg",
+      "examples": [
+        {
+          "hz": "门口有家奶茶店。",
+          "py": "Ménkǒu yǒu jiā nǎichádiàn.",
+          "vn": "Ở cửa ra vào có một tiệm trà sữa."
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 5/6",
+      "hz": "离",
+      "py": "lí",
+      "vn": "cách, khoảng cách",
+      "pos": "v./prep.",
+      "image": "assets/distance_map.jpg",
+      "examples": [
+        {
+          "hz": "咖啡店离这儿有点儿远。",
+          "py": "Kāfēidiàn lí zhèr yǒudiǎnr yuǎn.",
+          "vn": "Tiệm cà phê cách đây hơi xa."
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 6/6",
+      "hz": "近",
+      "py": "jìn",
+      "vn": "gần",
+      "pos": "adj.",
+      "image": "assets/words/jin.jpg",
+      "examples": [
+        {
+          "hz": "这里离家很近。",
+          "py": "Zhèlǐ lí jiā hěn jìn.",
+          "vn": "Chỗ này cách nhà gần lắm."
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 1/14 · 点饮料",
+      "hz": "大杯",
+      "py": "dàbēi",
+      "vn": "cỡ lớn",
+      "pos": "n.",
+      "image": "assets/words/dabei_TODO.jpg",
+      "examples": [
+        {
+          "hz": "我要一杯大杯的奶茶。",
+          "py": "Wǒ yào yì bēi dàbēi de nǎichá.",
+          "vn": "Tôi muốn một cốc trà sữa cỡ lớn."
+        },
+        {
+          "hz": "小杯",
+          "py": "xiǎobēi",
+          "vn": "cỡ nhỏ (gộp chung slide này)"
+        },
+        {
+          "hz": "小杯的够了，谢谢。",
+          "py": "Xiǎobēi de gòu le, xièxie.",
+          "vn": "Cỡ nhỏ là đủ rồi, cảm ơn."
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 2/14 · 点饮料",
+      "hz": "去冰",
+      "py": "qùbīng",
+      "vn": "bỏ đá",
+      "pos": "v.",
+      "image": "assets/words/qubing_TODO.jpg",
+      "examples": [
+        {
+          "hz": "帮我去冰，谢谢。",
+          "py": "Bāng wǒ qùbīng, xièxie.",
+          "vn": "Giúp tôi bỏ đá nhé, cảm ơn."
+        },
+        {
+          "hz": "正常冰",
+          "py": "zhèngcháng bīng",
+          "vn": "đá bình thường"
+        },
+        {
+          "hz": "少冰",
+          "py": "shǎo bīng",
+          "vn": "70% đá"
+        },
+        {
+          "hz": "微冰",
+          "py": "wēi bīng",
+          "vn": "30% đá"
+        },
+        {
+          "hz": "天气热，加冰吧。",
+          "py": "Tiānqì rè, jiābīng ba.",
+          "vn": "Trời nóng, thêm đá đi (加冰 gộp chung slide này)."
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 3/14 · 点饮料",
+      "hz": "糖",
+      "py": "táng",
+      "vn": "đường",
+      "pos": "n.",
+      "image": "assets/words/bantang_TODO.jpg",
+      "examples": [
+        {
+          "hz": "半糖就可以了。",
+          "py": "Bàntáng jiù kěyǐ le.",
+          "vn": "Nửa đường là được rồi."
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 4/14 · 点饮料",
+      "hz": "无糖",
+      "py": "wútáng",
+      "vn": "không đường",
+      "pos": "n.",
+      "image": "assets/words/wutang.jpg",
+      "examples": [
+        {
+          "hz": "我不能喝糖，无糖的吧。",
+          "py": "Wǒ bù néng hē táng, wútáng de ba.",
+          "vn": "Tôi không uống được đường, cho loại không đường nhé."
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 5/14 · 点菜",
+      "hz": "菜单",
+      "py": "càidān",
+      "vn": "thực đơn, menu",
+      "pos": "n.",
+      "image": "assets/words/caidan.jpg",
+      "examples": [
+        {
+          "hz": "服务员，给我看看菜单。",
+          "py": "Fúwùyuán, gěi wǒ kànkan càidān.",
+          "vn": "Phục vụ ơi, cho tôi xem thực đơn."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 6/14 · 点菜",
+      "hz": "开胃菜",
+      "py": "kāiwèicài",
+      "vn": "món khai vị",
+      "pos": "n.",
+      "image": "assets/words/kaiweicai.jpg",
+      "examples": [
+        {
+          "hz": "我们先点一个开胃菜吧。",
+          "py": "Wǒmen xiān diǎn yí gè kāiwèicài ba.",
+          "vn": "Mình gọi món khai vị trước đi."
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 7/14 · 点菜",
+      "hz": "主菜",
+      "py": "zhǔcài",
+      "vn": "món chính",
+      "pos": "n.",
+      "image": "assets/words/zhucai.jpg",
+      "examples": [
+        {
+          "hz": "主菜你想吃什么？",
+          "py": "Zhǔcài nǐ xiǎng chī shénme?",
+          "vn": "Món chính cậu muốn ăn gì?"
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 8/14 · 点菜",
+      "hz": "甜点",
+      "py": "tiándiǎn",
+      "vn": "món tráng miệng",
+      "pos": "n.",
+      "image": "assets/words/tiandian.jpg",
+      "examples": [
+        {
+          "hz": "最后来个甜点吧。",
+          "py": "Zuìhòu lái gè tiándiǎn ba.",
+          "vn": "Cuối cùng gọi món tráng miệng đi."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 9/14 · 点菜",
+      "hz": "特色菜",
+      "py": "tèsècài",
+      "vn": "đặc sản, món đặc trưng",
+      "pos": "n.",
+      "image": "assets/words/tesecai_TODO.jpg",
+      "examples": [
+        {
+          "hz": "这家饭馆的特色菜是什么？",
+          "py": "Zhè jiā fànguǎn de tèsècài shì shénme?",
+          "vn": "Món đặc sản của quán này là gì?"
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 10/14 · 点菜",
+      "hz": "推荐",
+      "py": "tuījiàn",
+      "vn": "khuyên dùng, gợi ý",
+      "pos": "v.",
+      "image": "assets/words/tuijian_TODO.jpg",
+      "examples": [
+        {
+          "hz": "你推荐哪个菜？",
+          "py": "Nǐ tuījiàn nǎge cài?",
+          "vn": "Bạn gợi ý món nào?"
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 11/14 · 点菜",
+      "hz": "几分熟",
+      "py": "jǐ fēn shú",
+      "vn": "(hỏi) độ chín",
+      "pos": "phr.",
+      "image": "assets/words/jifenshu.jpg",
+      "examples": [
+        {
+          "hz": "牛排你要几分熟？",
+          "py": "Niúpái nǐ yào jǐ fēn shú?",
+          "vn": "Bò bít-tết bạn muốn chín mức nào?"
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 12/14 · 点菜",
+      "hz": "打包",
+      "py": "dǎbāo",
+      "vn": "mang đi, gói mang về",
+      "pos": "v.",
+      "image": "assets/words/dabao_TODO.jpg",
+      "examples": [
+        {
+          "hz": "吃不完，打包吧。",
+          "py": "Chībuwán, dǎbāo ba.",
+          "vn": "Ăn không hết, gói mang về đi."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 13/14 · 点菜",
+      "hz": "堂食",
+      "py": "tángshí",
+      "vn": "dùng tại chỗ",
+      "pos": "v./n.",
+      "image": "assets/words/tangshi.jpg",
+      "examples": [
+        {
+          "hz": "堂食还是打包？",
+          "py": "Tángshí háishi dǎbāo?",
+          "vn": "Dùng tại chỗ hay mang đi?"
+        },
+        {
+          "hz": "在这里吃",
+          "py": "zài zhèlǐ chī",
+          "vn": "ăn ở đây (đồng nghĩa 堂食)"
+        },
+        {
+          "hz": "在这吃",
+          "py": "zài zhè chī",
+          "vn": "ăn ở đây (nói tắt)"
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 14/14 · 点菜",
+      "hz": "加料",
+      "py": "jiāliào",
+      "vn": "thêm topping",
+      "pos": "v.",
+      "image": "assets/words/jialiao.jpg",
+      "examples": [
+        {
+          "hz": "配料",
+          "py": "pèiliào",
+          "vn": "nguyên liệu/topping (danh từ, gộp chung slide này)"
+        },
+        {
+          "hz": "可以加料吗？",
+          "py": "Kěyǐ jiāliào ma?",
+          "vn": "Có thể thêm topping không?"
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文1",
+      "title": "在商店 — 王一雪和刘明在看裤子",
+      "image": "assets/pants_store.jpg",
+      "image_side": "right",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "儿子的裤子坏了，我们给他买条新的吧。",
+          "py": "Érzi de kùzi huài le, wǒmen gěi tā mǎi tiáo xīn de ba."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "好啊。",
+          "py": "Hǎo a."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "你看这条黑色的怎么样？",
+          "py": "Nǐ kàn zhè tiáo hēisè de zěnmeyàng?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "没有你上次买的那条好看。",
+          "py": "Méiyǒu nǐ shàng cì mǎi de nà tiáo hǎokàn."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "旁边那个男孩儿就穿了这样的裤子，我觉得很好看啊！",
+          "py": "Pángbiān nàge nánháir jiù chuānle zhèyàng de kùzi, wǒ juéde hěn hǎokàn a!"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "儿子的个子没有他那么高，穿上就不会太好看。",
+          "py": "Érzi de gèzi méiyǒu tā nàme gāo, chuānshang jiù bú huì tài hǎokàn."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "好吧，我们再去那边看看。",
+          "py": "Hǎo ba, wǒmen zài qù nàbiān kànkan."
+        }
+      ],
+      "footer_note": "小语的提示: \"会\" ở đây nghĩa \"có thể/khả năng\" (không phải \"biết\").",
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文2",
+      "title": "在商店门口 — 王一雪和刘明往外走",
+      "image": "assets/coffee_cup.jpg",
+      "image_side": "left",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "门口有家奶茶店。你想喝杯奶茶吗？",
+          "py": "Ménkǒu yǒu jiā nǎichádiàn. Nǐ xiǎng hē bēi nǎichá ma?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我想喝咖啡，还是去咖啡店吧。",
+          "py": "Wǒ xiǎng hē kāfēi, háishi qù kāfēidiàn ba."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "咖啡店离这儿有点儿远。",
+          "py": "Kāfēidiàn lí zhèr yǒudiǎnr yuǎn."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "没关系，那家店的咖啡很好喝。",
+          "py": "Méi guānxi, nà jiā diàn de kāfēi hěn hǎohē."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "那你等一下，我去买杯奶茶。",
+          "py": "Nà nǐ děng yíxià, wǒ qù mǎi bēi nǎichá."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "你不想喝咖啡吗？",
+          "py": "Nǐ bù xiǎng hē kāfēi ma?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "喝了咖啡，晚上就别想睡觉了。",
+          "py": "Hēle kāfēi, wǎnshang jiù bié xiǎng shuìjiào le."
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文3",
+      "title": "在咖啡店门口 — 王一雪和刘明在聊天儿",
+      "image": "assets/walking_TODO.jpg",
+      "image_side": "right",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "我们打车回去吧。",
+          "py": "Wǒmen dǎchē huíqù ba."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "这里离家很近，还是走路吧。",
+          "py": "Zhèlǐ lí jiā hěn jìn, háishi zǒulù ba."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "要走多长时间？",
+          "py": "Yào zǒu duō cháng shíjiān?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "走半个多小时就到了。",
+          "py": "Zǒu bàn gè duō xiǎoshí jiù dào le."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "好的。每天上下班都坐车，今天运动运动吧。",
+          "py": "Hǎo de. Měi tiān shàng xià bān dōu zuò chē, jīntiān yùndòng yùndòng ba."
+        }
+      ],
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文4",
+      "title": "王一雪 的日记",
+      "image": "assets/diary_TODO.jpg",
+      "image_side": "right",
+      "sentences": [
+        {
+          "hz": "这周刘明休息，我下班后跟他去了一家商店。",
+          "py": "Zhè zhōu Liú Míng xiūxi, wǒ xiàbān hòu gēn tā qùle yì jiā shāngdiàn.",
+          "vn": "Tuần này Lưu Minh nghỉ, tan làm tớ với anh ấy đi đến một cửa hàng."
+        },
+        {
+          "hz": "商店里边的衣服没有大商场里的好看。",
+          "py": "Shāngdiàn lǐbian de yīfu méiyǒu dà shāngchǎng lǐ de hǎokàn.",
+          "vn": "Quần áo trong cửa hàng không đẹp bằng ở trung tâm thương mại lớn."
+        },
+        {
+          "hz": "我们没有买到喜欢的衣服，从商店出来就到咖啡店坐了坐。",
+          "py": "Wǒmen méiyǒu mǎidào xǐhuan de yīfu, cóng shāngdiàn chūlái jiù dào kāfēidiàn zuòle zuò.",
+          "vn": "Bọn tớ không mua được bộ nào ưng ý, ra khỏi cửa hàng liền ghé quán cà phê ngồi một lát."
+        },
+        {
+          "hz": "因为想运动运动，所以喝完东西，我们就走回家了。",
+          "py": "Yīnwèi xiǎng yùndòng yùndòng, suǒyǐ hēwán dōngxi, wǒmen jiù zǒuhuí jiā le.",
+          "vn": "Vì muốn vận động chút nên uống xong đồ, bọn tớ đi bộ về nhà."
+        }
+      ],
+      "note": "小语助力: \"动词+到\" (vd 买到) diễn đạt hành động đã đạt được mục đích — khác với chỉ \"买\" (hành động mua, chưa chắc có được).",
+      "footer_note": "生词: 周 zhōu (tuần, n.)",
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/3 · 没有",
+      "point": "没有 — dạng hỏi: A + 有 + B + tính từ + 吗？",
+      "highlight": "有",
+      "examples": [
+        {
+          "hz": "妹妹有姐姐高吗？",
+          "py": "Mèimei yǒu jiějie gāo ma?",
+          "vn": "Em gái có cao bằng chị không?"
+        },
+        {
+          "hz": "那件衣服有这件好看吗？",
+          "py": "Nà jiàn yīfu yǒu zhè jiàn hǎokàn ma?",
+          "vn": "Cái áo đó có đẹp bằng cái này không?"
+        }
+      ],
+      "note": "Câu hỏi so sánh thường dùng dạng khẳng định \"有\" (tự nhiên hơn), không phải bắt buộc — vẫn có thể hỏi bằng \"没有...吗？\".",
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/3 · 离",
+      "point": "动词\"离\"：A + 离 + B",
+      "image": "assets/grammar_shiliang_TODO.jpg",
+      "highlight": "离",
+      "examples": [
+        {
+          "hz": "咖啡店离这儿有点儿远。",
+          "py": "Kāfēidiàn lí zhèr yǒudiǎnr yuǎn.",
+          "vn": "Quán cà phê cách đây hơi xa."
+        },
+        {
+          "hz": "学校离医院不远。",
+          "py": "Xuéxiào lí yīyuàn bù yuǎn.",
+          "vn": "Trường học cách bệnh viện không xa."
+        },
+        {
+          "hz": "现在离我的生日还有三天。",
+          "py": "Xiànzài lí wǒ de shēngrì hái yǒu sān tiān.",
+          "vn": "Bây giờ còn cách sinh nhật tôi ba ngày nữa."
+        }
+      ],
+      "note": "\"离\" diễn đạt khoảng cách — có thể là nơi chốn hoặc thời gian.",
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 3/3 · 时量补语 (a)",
+      "point": "时量补语（1）：Chủ ngữ + Động từ + Bổ ngữ thời lượng",
+      "examples": [
+        {
+          "hz": "走半个多小时就到了。",
+          "py": "Zǒu bàn gè duō xiǎoshí jiù dào le.",
+          "vn": "Đi bộ hơn nửa tiếng là tới.",
+          "highlight": "半个多小时"
+        },
+        {
+          "hz": "陈天中跑步跑了两个小时了。",
+          "py": "Chén Tiānzhōng pǎobù pǎole liǎng ge xiǎoshí le.",
+          "vn": "Trần Thiên Trung chạy bộ đã hai tiếng rồi — vẫn đang chạy.",
+          "highlight": "两个小时了"
+        }
+      ],
+      "note": "\"động từ + 了\" + bổ ngữ + \"了\" cuối câu → hành động VẪN ĐANG tiếp diễn.",
+      "audio": "assets/audio/slide29.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "语法 3/3 · 时量补语 (b)",
+      "title": "时量补语（1）— Tân ngữ đứng ở đâu?",
+      "headers": [
+        "Trường hợp",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        1
+      ],
+      "rows": [
+        [
+          "Tân ngữ là SỰ VẬT → đứng SAU bổ ngữ",
+          "我看了一个晚上电视。"
+        ],
+        [
+          "Tân ngữ là ĐẠI TỪ/xưng hô → đứng TRƯỚC bổ ngữ",
+          "李文等了她一个小时。"
+        ],
+        [
+          "Có tân ngữ → có thể LẶP động từ rồi thêm bổ ngữ",
+          "他们学中文学了两年。"
+        ],
+        [
+          "Động từ LY HỢP (离合词) → bắt buộc lặp ngữ tố",
+          "安妮游泳游了一个下午。"
+        ]
+      ],
+      "audio": "assets/audio/slide30.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语 1/3",
+      "title": "Gọi đồ uống",
+      "image": "assets/oral_drinks_TODO.jpg",
+      "headers": [
+        "Câu",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "你想喝点儿什么？",
+          "Nǐ xiǎng hē diǎnr shénme?",
+          "Cậu muốn uống gì?"
+        ],
+        [
+          "大杯，去冰，半糖，谢谢。",
+          "Dàbēi, qùbīng, bàntáng, xièxie.",
+          "Cỡ lớn, bỏ đá, nửa đường, cảm ơn."
+        ],
+        [
+          "可以帮我加珍珠吗？",
+          "Kěyǐ bāng wǒ jiā zhēnzhū ma?",
+          "Có thể thêm trân châu cho tôi không?"
+        ],
+        [
+          "我不要加冰，谢谢。",
+          "Wǒ bú yào jiābīng, xièxie.",
+          "Tôi không muốn thêm đá, cảm ơn."
+        ],
+        [
+          "这杯咖啡很好喝。",
+          "Zhè bēi kāfēi hěn hǎohē.",
+          "Ly cà phê này ngon lắm."
+        ]
+      ],
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语 2/3",
+      "title": "Gọi món nhà hàng",
+      "image": "assets/oral_restaurant_TODO.jpg",
+      "headers": [
+        "Câu",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "我们要一个开胃菜、两个主菜。",
+          "Wǒmen yào yí gè kāiwèicài, liǎng gè zhǔcài.",
+          "Chúng tôi muốn 1 món khai vị, 2 món chính."
+        ],
+        [
+          "这道甜点很有名，一定要试试。",
+          "Zhè dào tiándiǎn hěn yǒumíng, yídìng yào shìshi.",
+          "Món tráng miệng này rất nổi tiếng, nhất định phải thử."
+        ],
+        [
+          "我要五分熟的牛排。",
+          "Wǒ yào wǔ fēn shú de niúpái.",
+          "Tôi muốn bò bít-tết chín 5 phần."
+        ],
+        [
+          "我们打包剩下的菜吧。",
+          "Wǒmen dǎbāo shèngxià de cài ba.",
+          "Mình gói mang về phần còn lại đi."
+        ],
+        [
+          "今天堂食，谢谢。",
+          "Jīntiān tángshí, xièxie.",
+          "Hôm nay dùng tại chỗ, cảm ơn."
+        ]
+      ],
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "口语 3/3",
+      "title": "So sánh & khoảng cách/thời gian",
+      "image": "assets/oral_compare_TODO.jpg",
+      "headers": [
+        "Câu",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "我觉得走路没有坐车方便。",
+          "Wǒ juéde zǒulù méiyǒu zuòchē fāngbiàn.",
+          "Tớ thấy đi bộ không tiện bằng đi xe."
+        ],
+        [
+          "这儿离你家远吗？",
+          "Zhèr lí nǐ jiā yuǎn ma?",
+          "Chỗ này cách nhà cậu xa không?"
+        ],
+        [
+          "走路要多长时间？",
+          "Zǒulù yào duō cháng shíjiān?",
+          "Đi bộ mất bao lâu?"
+        ],
+        [
+          "他学中文学了三年了。",
+          "Tā xué Zhōngwén xuéle sān nián le.",
+          "Cậu ấy học tiếng Trung đã ba năm rồi."
+        ],
+        [
+          "现在离下班还有多久？",
+          "Xiànzài lí xiàbān hái yǒu duōjiǔ?",
+          "Bây giờ còn cách giờ tan làm bao lâu?"
+        ]
+      ],
+      "audio": "assets/audio/slide33.mp3"
+    }
+  ]
+}

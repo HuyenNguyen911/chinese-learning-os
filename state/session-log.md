@@ -84,6 +84,12 @@ _- Status: PENDING UPDATE_
 - Output: buoi08_trinho_sosanh/baitap/ → hocsinh/{worksheet.docx + audio 8 MP3} + dapan/dapan.docx
 - Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 5 noi_hskk rate -18%); toàn bộ tự soạn (kho hsk2.md chưa seed)
 
+## 2026-08-07 · Exercise Generator · HSK2 Buổi 9 (我去买杯奶茶)
+- Blocks: noi (6: 坏/个子/离/推荐/打包/几分熟), dien_cho_trong (3: 没有/离/那么), doc_hieu (Điền Phương đi mua quần cho con gái + mua trà sữa, tự soạn, 3 câu hỏi), sap_xep (3: 没有/离/时量补语 không lặp động từ), dich_dat_cau (3: 没有…那么/离/等…了…了), nghe (3), noi_hskk 听后重复 (2), noi_hskk 回答问题 tách 2 block riêng (đi bộ hay đi xe tiện hơn / thích gọi món gì ở nhà hàng) — 25 mục, không trùng nội bộ lẫn với slide buổi 9 (check_baitap.py + đối chiếu script so khớp toàn bộ hz trong buoi09.json).
+- **回答问题 buổi 9: chỉ để dàn bài gợi mở trong `hint`, KHÔNG kèm đáp án mẫu (`hint_plus`)** — theo yêu cầu user, khác buổi 7/8 (có đáp án mẫu ở hint_plus); `instructions` rút gọn về 1 dòng chung, dàn bài Mở/Thân/Kết chuyển hẳn vào `hint`.
+- Output: buoi09_douong/baitap/ → hocsinh/{worksheet.docx + audio 5 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 2 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
+
 ## 2026-08-06 · Exercise Generator · HSK2 Buổi 7 (他篮球打得很好)
 - Blocks: noi (7: 从/往/跑步/游泳/爱好/开始/运动), dien_cho_trong (4, điền 得 ôn 状态补语), doc_hieu (刘明 thích thể thao, tự soạn), sap_xep (3, 得 + 一…就…), dich_dat_cau (3), nghe (3), noi_hskk 听后重复 (3), noi_hskk 回答问题 tách 2 block riêng theo 2 câu hỏi (mỗi câu 1 dàn bài 开头/主体/结尾 riêng, bám sát nội dung câu đó — theo mẫu user cung cấp) — 28 mục, không trùng nội bộ/slide (đã check_baitap.py + đối chiếu thủ công).
 - **Bỏ block `writing_prompt`** theo yêu cầu user (không muốn phần Viết nhật ký ở buổi này).
