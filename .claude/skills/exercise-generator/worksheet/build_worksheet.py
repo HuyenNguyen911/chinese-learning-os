@@ -334,6 +334,28 @@ class WorksheetBuilder:
                           italic=True)
             else:
                 self._run(p, it.get("script", ""), 13, cjk=True)
+            # 回答问题 (2026-08-07): dàn bài gợi mở PHẢI ở worksheet (học viên
+            # cần thấy để tự trả lời khi làm bài), không phải ở dapan — dapan
+            # chỉ dành cho đáp án/tham khảo của giáo viên. `hint` ở đây không
+            # phải đáp án nên không in nhãn "Gợi ý — Chuẩn/Nâng cao" kiểu cũ.
+            # Tách theo " — " thành 3 dòng riêng (开头/主体/结尾) thay vì dồn
+            # 1 đoạn dài — dồn chung nhìn rối, khó phân biệt 3 phần (2026-08-07,
+            # feedback "trình bày xấu quá").
+            if it.get("hint"):
+                for seg in it["hint"].split(" — "):
+                    seg = seg.strip()
+                    if not seg:
+                        continue
+                    hp = doc.add_paragraph()
+                    hp.paragraph_format.left_indent = Pt(18)
+                    hp.paragraph_format.space_before = Pt(2)
+                    label, sep, rest = seg.partition(": ")
+                    if sep:
+                        self._run(hp, label + ": ", 12, color="accent",
+                                  bold=True, cjk=True)
+                        self._run(hp, rest, 12, color="ink", cjk=True)
+                    else:
+                        self._run(hp, seg, 12, color="ink", cjk=True)
 
     def _ans_noi_hskk(self, doc, block, idx):
         part = block.get("part", "")
@@ -343,18 +365,6 @@ class WorksheetBuilder:
             p = doc.add_paragraph()
             self._run(p, "%d) " % n, 12, color="accent", bold=True)
             self._run(p, it.get("script", ""), 13, cjk=True)
-            if it.get("hint"):
-                hp = doc.add_paragraph()
-                hp.paragraph_format.left_indent = Pt(18)
-                self._run(hp, "Gợi ý — Chuẩn (đạt): ", 11, color="muted",
-                          bold=True)
-                self._run(hp, it["hint"], 12, cjk=True)
-            if it.get("hint_plus"):
-                hp2 = doc.add_paragraph()
-                hp2.paragraph_format.left_indent = Pt(18)
-                self._run(hp2, "Gợi ý — Nâng cao (điểm cao): ", 11,
-                          color="accent", bold=True)
-                self._run(hp2, it["hint_plus"], 12, cjk=True)
 
     # -- nghe (listening) -------------------------------------------------
     def _ws_nghe(self, doc, block, idx):

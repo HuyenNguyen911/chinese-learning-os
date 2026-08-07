@@ -72,8 +72,11 @@ DIALOGUE_RATE_DEFAULT = "-8%"
 
 def read_text(s):
     """Chuỗi chữ Hán cần đọc cho slide thường (không phải dialogue).
-    Vocab: CHỈ đọc 生词 (items), KHÔNG đọc câu ví dụ — tránh lẫn nhịp đọc
-    (từ rời rạc xen với câu liền mạch nghe rối).
+    Vocab chế độ BẢNG (không `example` cấp slide): CHỈ đọc 生词 (items),
+    KHÔNG đọc câu ví dụ — tránh lẫn nhịp đọc (từ rời rạc xen với câu liền
+    mạch nghe rối). Vocab chế độ THẺ (2026-08-07, có `example` cấp slide —
+    layout ảnh to + câu ví dụ nổi bật) → đọc thêm câu ví dụ sau khi đọc hết
+    từ, vì ví dụ là nội dung chính hiển thị to trên slide, bỏ qua sẽ thiếu.
 
     Buổi ngữ âm (hsk1) dùng schema riêng (table nhiều kicker khác nhau,
     word_groups, stroke_group) không có field cố định như vocab/grammar —
@@ -83,6 +86,12 @@ def read_text(s):
     t = s.get("type")
     if t == "vocab":
         xs = [it.get("hz", "") for it in s.get("items", [])]
+        ex = s.get("example")
+        if ex:
+            # Chế độ THẺ (2026-08-07, có `image`/`example` cấp slide) hiển
+            # thị ví dụ to/nổi bật ngay dưới ảnh — khác chế độ bảng cũ (chỉ
+            # liệt kê nhanh) nên đọc luôn câu ví dụ thay vì chỉ đọc từ rời.
+            xs.append(ex.get("hz", ""))
     elif t == "grammar":
         xs = [ex.get("hz", "") for ex in s.get("examples", [])]
     elif t == "table" and str(s.get("kicker", "")).startswith("口语"):
