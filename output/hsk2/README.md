@@ -68,7 +68,12 @@ và ngữ pháp:
   thứ tự). Không có điểm thứ 3 nào lẫn vào cuối Bài 8 — 比较句(3)/动词"离" hoàn toàn không
   xuất hiện ở Bài 8.
 - **Bài 9** thật = trang **088-098** (không phải trang 089-095 như gợi ý cũ dựa text
-  extract thô): tên bài 我去买杯奶茶 ĐÚNG như README đã ghi, nhưng ngữ pháp 3 điểm là
+  extract thô) — ⚠️ **sửa lại 2026-08-06 (khi bóc Bài 9):** con số này lệch 1, giống lỗi
+  đã xảy ra với Bài 8 ở mục ngay trên (079-087 lệch 1 so với 080-088 xác nhận sau này).
+  Đối chiếu trực tiếp ảnh trang (`output/hsk2/buoi09_douong/doc/bai-doc.md`): trang bìa
+  "Lesson 9 我去买杯奶茶" là **PDF index 89 = trang in sách 073**; toàn bộ nội dung Bài 9
+  nằm ở **PDF index 89-98 = trang in sách 073-082** (PDF index 88/trang 072 vẫn là 课堂
+  活动 cuối Bài 8). Tên bài 我去买杯奶茶 ĐÚNG như README đã ghi, ngữ pháp 3 điểm là
   **比较句(3)[没有]** (trang 090-091) + **动词"离"** (trang 092) + **时量补语(1)** (trang
   093-094) — HOÀN TOÀN KHÔNG có 主谓谓语句/选择问句 (2 điểm đó thuộc **Bài 10**, xác nhận ở
   trang 099 目标). 生词 đối chiếu checklist 13 từ (`hsk2-vocab-grammar-checklist.md` mục
