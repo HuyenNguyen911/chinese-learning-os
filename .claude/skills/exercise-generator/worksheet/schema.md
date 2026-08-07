@@ -36,15 +36,18 @@
   nhãn + dòng trống; đáp án (nếu có `sample`) in câu mẫu tham khảo, không
   phải đáp án bắt buộc.
 
-## Đáp án 2 cấp (chỉ khối tự luận: viết + nói)
-Các khối `dich_dat_cau`, `sap_xep`, và `noi_hskk` (`回答问题`) hỗ trợ đáp án 2 cấp,
-khớp cách chấm band điểm HSK/HSKK. Bản đáp án (`dapan.docx`) in cả hai; worksheet
-không đổi:
-- **Chuẩn (đủ điểm)** = trường `answer` / `hint` — câu tối thiểu đúng, đạt điểm.
-- **Nâng cao (điểm cao)** = trường `answer_plus` / `hint_plus` (tùy chọn) — câu
-  dài hơn, tự nhiên hơn, dùng thêm từ nối/vốn từ (thường chạm HSK cao hơn 1 bậc).
+## Đáp án 2 cấp (chỉ khối viết: `dich_dat_cau`, `sap_xep`)
+2 khối này hỗ trợ đáp án 2 cấp, khớp cách chấm band điểm HSK. Bản đáp án
+(`dapan.docx`) in cả hai; worksheet không đổi:
+- **Chuẩn (đủ điểm)** = trường `answer` — câu tối thiểu đúng, đạt điểm.
+- **Nâng cao (điểm cao)** = trường `answer_plus` (tùy chọn) — câu dài hơn, tự
+  nhiên hơn, dùng thêm từ nối/vốn từ (thường chạm HSK cao hơn 1 bậc).
 Nếu bỏ trường `_plus` thì chỉ in mức chuẩn (tương thích ngược). Khối trắc nghiệm /
 điền / nghe / nối chỉ có 1 đáp án đúng nên không dùng cơ chế này.
+
+**`noi_hskk` (`回答问题`) KHÔNG dùng cơ chế 2 cấp này** (đổi 2026-08-07, xem
+`SKILL.md`) — `hint` chỉ chứa dàn bài gợi mở (Mở/Thân/Kết), không phải đáp án;
+`hint_plus`/đáp án mẫu không còn dùng cho phần này.
 
 `dich_dat_cau`/`sap_xep` có thêm field tùy chọn `answer_alts:[str]` — in dưới
 nhãn "Phương án khác" (dùng cho lesson-prep khi muốn ~3 phương án). Ghi chú:

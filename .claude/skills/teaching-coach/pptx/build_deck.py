@@ -18,6 +18,7 @@ Cần: python-pptx, Pillow. Không cần internet lúc render.
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -78,6 +79,31 @@ class DeckBuilder:
         rect._element.addprevious(rect._element)
         return slide
 
+    def _set_run_highlighted(self, p, text, keywords, size, color="ink",
+                              bold=False, cjk=False, hl_color="accent"):
+        """Như _set_run nhưng tô màu `hl_color` cho mọi chỗ khớp `keywords`
+        (str hoặc list[str]) trong `text` — dùng để làm nổi bật từ ngữ pháp
+        chính (vd "没有"/"离") giữa câu ví dụ thay vì cả câu 1 màu, giúp học
+        viên nhận ra ngay từ đang học nằm ở đâu trong câu."""
+        if isinstance(keywords, str):
+            keywords = [keywords]
+        keywords = [k for k in (keywords or []) if k]
+        if not keywords or not text:
+            self._set_run(p.add_run(), text, size, color=color, bold=bold, cjk=cjk)
+            return
+        pattern = "|".join(re.escape(k) for k in sorted(keywords, key=len, reverse=True))
+        pos = 0
+        for m in re.finditer(pattern, text):
+            if m.start() > pos:
+                self._set_run(p.add_run(), text[pos:m.start()], size, color=color,
+                              bold=bold, cjk=cjk)
+            self._set_run(p.add_run(), m.group(), size, color=hl_color, bold=bold,
+                          cjk=cjk)
+            pos = m.end()
+        if pos < len(text):
+            self._set_run(p.add_run(), text[pos:], size, color=color, bold=bold,
+                          cjk=cjk)
+
     def _textbox(self, slide, left, top, width, height, anchor=None):
         box = slide.shapes.add_textbox(left, top, width, height)
         tf = box.text_frame
@@ -101,6 +127,24 @@ class DeckBuilder:
         rPr = run._r.get_or_add_rPr()
         for tag in ("a:ea", "a:cs"):
             rPr.append(rPr.makeelement(qn(tag), {"typeface": self.theme["cjk_font"]}))
+
+    def _is_wide_char(self, ch):
+        """CJK/fullwidth char chiếm ~1 em ngang, thay vì ~0.52em như Latin —
+        dùng để ước lượng độ rộng tiêu đề mix Hán tự + tiếng Việt chính xác
+        hơn coi cả chuỗi là 1 loại font-width duy nhất."""
+        cp = ord(ch)
+        return (0x2E80 <= cp <= 0xA4CF or 0xAC00 <= cp <= 0xD7A3 or
+                0xF900 <= cp <= 0xFAFF or 0xFF00 <= cp <= 0xFFEF)
+
+    def _text_width_pt(self, text, pt, bold=False):
+        w = 0.0
+        wide = pt * 1.0
+        narrow = pt * 0.52
+        if bold:
+            wide *= 1.12; narrow *= 1.12
+        for ch in text:
+            w += wide if self._is_wide_char(ch) else narrow
+        return w
 
     def _band_header(self, slide, title, kicker=None):
         band = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, SLIDE_W, BAND_H)
@@ -128,7 +172,10 @@ class DeckBuilder:
                                 SLIDE_W - 2 * MARGIN, Inches(0.62),
                                 anchor=MSO_ANCHOR.MIDDLE)
         p = tf.paragraphs[0]
-        self._set_run(p.add_run(), title, 27, color="bg", bold=True, cjk=True)
+        title_w_pt = (SLIDE_W - 2 * MARGIN) / Pt(1)
+        needed_pt = self._text_width_pt(title, 27, bold=True)
+        sz = 27 if needed_pt <= title_w_pt else max(16, int(27 * title_w_pt / needed_pt))
+        self._set_run(p.add_run(), title, sz, color="bg", bold=True, cjk=True)
 
     def _place_audio(self, slide, rel_path):
         """Nhúng audio (mp3) làm nút 🔊 ở góc phải dải header. PowerPoint nhận
@@ -522,6 +569,80 @@ class DeckBuilder:
                 p3 = etf.add_paragraph(); p3.space_before = Pt(1)
                 self._set_run(p3.add_run(), "     " + ex["vn"], 14, color="muted")
 
+    # -- word_pair: 2 từ / 1 slide xếp CẠNH NHAU, mỗi cột tự chứa ảnh +
+    #    汉字/pinyin/nghĩa + 1 câu ví dụ — dùng cho từ vựng mở rộng số lượng
+    #    lớn (thay cho wordcard 1 từ/slide khi cần nén gọn buổi học).
+    def _slide_word_pair(self, s):
+        slide = self._new_slide()
+        words = s.get("words", [])[:2]
+        default_title = " · ".join(w.get("hz", "") for w in words) or "生词"
+        self._band_header(slide, s.get("title", default_title), s.get("kicker"))
+        top = self._content_top()
+        area_h = self._content_area_h()
+        content_w = SLIDE_W - 2 * MARGIN
+        n = max(1, len(words))
+        gap = Inches(0.6)
+        col_w = int((content_w - gap * (n - 1)) / n)
+
+        for i, w in enumerate(words):
+            col_left = MARGIN + i * (col_w + gap)
+            cur_top = top
+            if w.get("image"):
+                img_side = min(col_w, Inches(2.1))
+                img_left = col_left + (col_w - img_side) // 2
+                self._place_image(slide, w["image"], img_left, cur_top,
+                                  img_side, img_side)
+                cur_top = cur_top + img_side + Inches(0.12)
+
+            info_h = Inches(1.3)
+            box, tf = self._textbox(slide, col_left, cur_top, col_w, info_h,
+                                    anchor=MSO_ANCHOR.TOP)
+            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+            self._set_run(p.add_run(), w.get("hz", ""), 40, color="ink",
+                          bold=True, cjk=True)
+            if w.get("pos"):
+                self._set_run(p.add_run(), "  " + w["pos"], 14, color="muted",
+                              italic=True)
+            if w.get("py"):
+                p2 = tf.add_paragraph(); p2.alignment = PP_ALIGN.CENTER
+                p2.space_before = Pt(4)
+                self._set_run(p2.add_run(), w["py"], 18, color="accent",
+                              italic=True)
+            if w.get("vn"):
+                p3 = tf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
+                p3.space_before = Pt(3)
+                self._set_run(p3.add_run(), w["vn"], 15, color="ink")
+            cur_top = cur_top + info_h
+
+            ex = w.get("example")
+            if ex:
+                ex_h = top + area_h - cur_top
+                ebox, etf = self._textbox(slide, col_left, cur_top, col_w, ex_h,
+                                          anchor=MSO_ANCHOR.TOP)
+                p = etf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+                self._set_run(p.add_run(), "例句", 13, color="accent",
+                              bold=True, cjk=True)
+                p2 = etf.add_paragraph(); p2.alignment = PP_ALIGN.CENTER
+                p2.space_before = Pt(6)
+                self._set_run(p2.add_run(), ex.get("hz", ""), 17, color="ink",
+                              bold=True, cjk=True)
+                if ex.get("py"):
+                    p3 = etf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
+                    p3.space_before = Pt(2)
+                    self._set_run(p3.add_run(), ex["py"], 13, color="accent",
+                                  italic=True)
+                if ex.get("vn"):
+                    p4 = etf.add_paragraph(); p4.alignment = PP_ALIGN.CENTER
+                    p4.space_before = Pt(2)
+                    self._set_run(p4.add_run(), ex["vn"], 13, color="muted")
+
+        if n == 2:
+            divider_x = MARGIN + col_w + gap // 2
+            line = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, divider_x, top,
+                                          Inches(0.015), area_h)
+            line.fill.solid(); line.fill.fore_color.rgb = self._rgb("band")
+            line.line.fill.background(); line.shadow.inherit = False
+
     def _slide_grammar(self, s):
         slide = self._new_slide()
         self._band_header(slide, s.get("title", "Ngữ pháp"), s.get("kicker"))
@@ -534,6 +655,7 @@ class DeckBuilder:
         point_lines = ([point] if isinstance(point, str) else point) if point else []
         examples = s.get("examples", [])
         note = s.get("note"); source = s.get("source")
+        highlight = s.get("highlight")
 
         # Ước lượng chiều cao "tự nhiên" ở cỡ chữ gốc rồi co scale nếu vượt
         # khung (xem _fit_scale) — tránh vừa dồn giữa trang (ít nội dung) vừa
@@ -576,8 +698,8 @@ class DeckBuilder:
             p = tf.paragraphs[0] if first else tf.add_paragraph()
             first = False
             p.space_before = Pt(20 * scale)
-            self._set_run(p.add_run(), ex.get("hz", ""), sz(26, 16), color="ink",
-                          bold=True, cjk=True)
+            self._set_run_highlighted(p, ex.get("hz", ""), ex.get("highlight", highlight),
+                                      sz(26, 16), color="ink", bold=True, cjk=True)
             if ex.get("py"):
                 self._set_run(p.add_run(), "  " + ex["py"], sz(15, 11), color="accent",
                               italic=True)
@@ -980,24 +1102,48 @@ class DeckBuilder:
         top = self._content_top(); area_h = self._content_area_h()
         has_img = bool(s.get("image"))
         txt_left, txt_w, img_left, img_w = self._split_image_col(s, Inches(4.2))
+        sentences = s.get("sentences", [])
+        note = s.get("note")
+
+        # Câu tự sự dài (nhiều mệnh đề nối bằng vì/nên...) ở cỡ chữ cố định dễ
+        # tràn khỏi khung khi có ảnh chiếm nửa slide (thu hẹp txt_w) — auto-
+        # shrink theo chiều cao thực tế cần, giống _slide_grammar/_slide_reading.
+        natural = 0
+        for i, sent in enumerate(sentences):
+            natural += 0 if i == 0 else Pt(16)
+            natural += self._wrap_lines(sent.get("hz", ""), txt_w, 22, cjk=True,
+                                        bold=True) * self._line_h(22)
+            if sent.get("py"):
+                natural += Pt(1) + self._line_h(14)
+            if sent.get("vn"):
+                natural += Pt(1) + self._line_h(14)
+        if note:
+            natural += Pt(14) + self._wrap_lines(note, txt_w, 14, cjk=True) * self._line_h(14)
+        scale = self._fit_scale(natural, area_h)
+
+        def sz(pt, floor):
+            return max(floor, int(pt * scale))
+
         box, tf = self._textbox(slide, txt_left, top, txt_w, area_h,
                                 anchor=MSO_ANCHOR.MIDDLE)
         first = True
-        for sent in s.get("sentences", []):
+        for sent in sentences:
             p = tf.paragraphs[0] if first else tf.add_paragraph()
+            if not first:
+                p.space_before = Pt(16 * scale)
             first = False
-            p.space_before = Pt(16)
-            self._set_run(p.add_run(), sent.get("hz", ""), 22, color="ink", bold=True,
-                          cjk=True)
+            self._set_run(p.add_run(), sent.get("hz", ""), sz(22, 14), color="ink",
+                          bold=True, cjk=True)
             if sent.get("py"):
-                p2 = tf.add_paragraph(); p2.space_before = Pt(1)
-                self._set_run(p2.add_run(), sent["py"], 14, color="accent", italic=True)
+                p2 = tf.add_paragraph(); p2.space_before = Pt(1 * scale)
+                self._set_run(p2.add_run(), sent["py"], sz(14, 10), color="accent",
+                              italic=True)
             if sent.get("vn"):
-                p3 = tf.add_paragraph(); p3.space_before = Pt(1)
-                self._set_run(p3.add_run(), sent["vn"], 14, color="muted")
-        if s.get("note"):
-            p = tf.add_paragraph(); p.space_before = Pt(14)
-            self._set_run(p.add_run(), "• " + s["note"], 14, color="ink", cjk=True)
+                p3 = tf.add_paragraph(); p3.space_before = Pt(1 * scale)
+                self._set_run(p3.add_run(), sent["vn"], sz(14, 10), color="muted")
+        if note:
+            p = tf.add_paragraph(); p.space_before = Pt(14 * scale)
+            self._set_run(p.add_run(), "• " + note, sz(14, 10), color="ink", cjk=True)
         if has_img:
             self._place_image(slide, s["image"], img_left, top, img_w, area_h)
 
