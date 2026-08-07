@@ -218,6 +218,29 @@ file) → tải vào `out_dir`, ghi `credits.json`. Sau đó gắn `"image": "as
 từng slide (`title/vocab/grammar/dialogue/bullets/exercise/table/image` hỗ trợ `image` —
 `reading` không có).
 
+**Bắt buộc gen ảnh theo TỪNG từ vựng trước khi để trống (2026-08-07):** với mọi
+slide có field `image` (đặc biệt `wordcard`/`word_pair` — thiết kế vốn có ảnh sticker
+riêng từng từ), luôn chủ động chạy `fetch_images.py` thử tải ảnh thật TRƯỚC — không
+được nhảy thẳng sang placeholder chỉ vì tiện. Chỉ sau khi đã đổi query thử **đủ 2 lượt**
+(xem mục "Query ngắn mới ra kết quả"/"Quy tắc chọn query khi từ trừu tượng" bên dưới) mà
+vẫn không ra ảnh phù hợp/đứng đắn thì mới bỏ field `image` (hoặc gắn placeholder
+`assets/words/<slug>_TODO.jpg` theo quy ước ở mục word_pair phía trên) — để chỗ trống
+đúng nghĩa "đã cố nhưng không có", không phải "chưa thử".
+
+**Known issues chờ điều tra kỹ hơn (2026-08-07, phát hiện khi làm Buổi 9):**
+- **Bong bóng hội thoại (`_slide_dialogue`) quá khổ**: chiều rộng/chiều cao bubble hiện
+  rộng rãi hơn cần thiết so với nội dung thật — user phải tự canh lại tay. Cần xem lại
+  công thức `_bubble_w`/`_lines_at` để bubble ôm sát nội dung hơn, không chỉ tránh tràn.
+- **Header (`_band_header`) vẫn tràn** dù đã khôi phục auto-shrink theo bề rộng ký tự
+  ước lượng (`_text_width_pt`) — nghĩa là bản khôi phục đó (xem mục lịch sử `word_pair`
+  ở trên) chưa xử lý hết mọi trường hợp tràn thật. Cần đo lại bằng ảnh xuất thật
+  (`Slide.Export` qua PowerPoint COM, xem mục QA trong best-practices) thay vì chỉ tin
+  công thức ước lượng ký tự.
+- **`highlight` (tô đỏ từ ngữ pháp chính) mới chỉ có ở `type: grammar`** — slide
+  `table` dùng để so sánh nhiều quy tắc (vd 时量补语 "Tân ngữ đứng ở đâu") chưa hỗ trợ
+  tô đỏ từ khoá trong cột Ví dụ. Cân nhắc mở rộng `_set_run_highlighted` sang
+  `_fill_cell`/`_slide_table` ở phiên sau.
+
 ⚠️ **Query ngắn mới ra kết quả:** `search()` lọc `license_type=commercial&orientation=wide`
 — query TIẾNG ANH dài (>3 từ, vd `"world flags icon simple"`) hay ra **0 kết quả** dù chủ đề
 phổ biến. Luôn dùng query 1-3 từ đơn giản (`"flags"`, `"Eiffel Tower"`, `"panda"`) — nếu 0
