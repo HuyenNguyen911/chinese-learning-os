@@ -39,7 +39,11 @@ format thi HSK và HSKK 初级.
     `"开头 (Mở bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>? — 主体 (Thân bài): <câu hỏi
     nhỏ 1>? <câu hỏi nhỏ 2>? — 结尾 (Kết bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>?"`
     — nội dung từng câu hỏi nhỏ bám sát chủ đề CÂU HỎI CHÍNH (`script`) của item đó
-    (không dùng 1 khung chung mơ hồ cho mọi buổi).
+    (không dùng 1 khung chung mơ hồ cho mọi buổi). **`hint` PHẢI hiển thị trong
+    `worksheet.docx`** (học viên cần thấy dàn bài để tự trả lời khi làm bài),
+    **KHÔNG phải chỉ trong `dapan.docx`** — dapan chỉ dành cho đáp án/tham khảo
+    của giáo viên (2026-08-07, `build_worksheet.py` từng có bug chỉ render `hint`
+    vào dapan, học viên không thấy được dàn bài lúc làm bài).
   - `hint_plus`: **KHÔNG dùng** — không kèm đáp án mẫu/câu trả lời hoàn chỉnh nào
     cho phần 回答问题, kể cả trong `dapan.docx`. Chỉ để học viên tự trả lời dựa trên
     dàn bài; giáo viên chấm trực tiếp khi nghe, không cần văn bản mẫu để đối chiếu.

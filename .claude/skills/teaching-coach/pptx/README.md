@@ -115,6 +115,17 @@ Ghi chú:
   trừ hao chỗ cho dải này (không cần tính tay).
 - Chữ Hán được gắn đúng thuộc tính font Đông Á (`a:ea`/`a:cs`) nên hiển thị chuẩn trong PowerPoint, không bị nhảy về font Latin.
 
+**`vocab` — 2 chế độ render (2026-08-07):** nếu slide có `image` hoặc `example`
+cấp SLIDE → tự chuyển sang **chế độ thẻ**: ảnh to (bên trái mặc định, `image_side`
+đổi được) + câu ví dụ dùng chung ngay dưới ảnh (cỡ chữ ~28pt, tự co nếu câu dài,
+**tự tô đỏ mọi từ trong `items[].hz` xuất hiện trong câu ví dụ** — không cần khai
+`highlight` tay), bên phải là danh sách thẻ từ (không bảng) canh GIỮA theo cả
+nhóm dù 1-3 từ. Không có `image`/`example` → giữ bảng cũ (`_vocab_table`, hợp
+cho liệt kê nhanh nhiều từ không cần ảnh/ví dụ riêng, vd bảng tổng kết cuối
+buổi). Thay thế `word_pair` cho trường hợp "2-3 từ ghép chung 1 câu ví dụ tự
+nhiên" (khác `word_pair` gốc — mỗi từ ảnh/ví dụ RIÊNG, hợp khi 2 từ không liên
+quan nhau).
+
 **Chọn `vocab` (bảng) hay `wordcard`/`word_pair` (1-2 từ/slide) cho 生词 chính (2026-08-06):**
 `references/slide-design-best-practices.md` (đóng gói trong `chinese-teaching.skill`) ghi
 "từ vựng = BẢNG cân cột, dùng type `vocab`" — quy tắc này có từ trước khi `wordcard`/
@@ -165,12 +176,20 @@ bản cuối được chưa?" trước khi chạy, đừng tự suy diễn từ 
   **Chủ động kiểm tra TRƯỚC khi chạy `slide_audio.py`** (2026-08-05): với MỌI
   slide `dialogue`, xác nhận giới tính từng speaker khớp giọng sẽ auto-assign
   theo thứ tự xuất hiện — không đợi user nghe ra rồi mới sửa.
+  **Nhân vật TRẺ CON (2026-08-07):** 4 giọng nam/nữ hay dùng (Xiaoxiao/Xiaoyi/
+  Yunxi/Yunyang/Yunjian) đều là giọng NGƯỜI LỚN — kể cả Yunxi nghe "trẻ trung"
+  vẫn là giọng thanh niên, không phải trẻ em. Dùng riêng **`zh-CN-YunxiaNeural`**
+  (mô tả chính thức "Cartoon, Cute", đã xác nhận có trên edge-tts) cho nhân vật
+  là trẻ em. **Nhân vật xuất hiện ở NHIỀU 课文 trong cùng 1 buổi phải liệt kê
+  hết trước khi gán `voices`** — tránh 2 nhân vật khác nhau (vd bố ở 课文1,
+  con ở 课文3) vô tình trùng giọng do chỉ xét từng 课文 riêng lẻ.
 - `--rate=...` (CLI) override cho CẢ HAI loại cùng lúc nếu cần đồng nhất (vd
   buổi ngữ âm nhập môn muốn chậm hơn hẳn, `--rate=-30%`).
 
 Text được đọc tự trích theo `type` của slide — không cần field `audio_text`
 riêng:
-- `vocab` → `hz` của từng `items[]` (không đọc câu ví dụ)
+- `vocab` → `hz` của từng `items[]`; nếu có `example` cấp SLIDE (chế độ THẺ,
+  xem mục audio) → đọc thêm `hz` của câu ví dụ đó sau cùng
 - `wordcard` → `hz` của từ + `hz` của từng `examples[]`
 - `word_pair` → `hz` của từng `words[]` + `hz` của `example` (nếu có), theo thứ tự cột trái→phải
 - `passage` → `hz` của từng `sentences[]`
@@ -201,6 +220,13 @@ riêng:
 > tên đó nhưng giờ ứng với slide khác — script thấy file "đã tồn tại" nên BỎ QUA, khiến slide
 > mới phát nhầm audio cũ, không có cảnh báo. Luôn `rm assets/audio/*.mp3` rồi chạy lại từ đầu
 > (không cần `--force`) sau khi đổi thứ tự slide.
+>
+> ⚠️ **Biến thể khác gây cùng hậu quả (2026-08-07): `slide_audio.py` bị timeout/kill
+> giữa chừng.** Các slide đã xử lý XONG trước khi bị kill vẫn ghi mp3 ra đĩa bình
+> thường — chạy lại (kể cả chạy nền) thấy file "đã tồn tại" nên bỏ qua y hệt lỗi
+> trên, dù không hề đổi thứ tự slide. Sau bất kỳ lần `slide_audio.py` bị timeout/
+> kill giữa chừng, PHẢI coi như đã đổi thứ tự slide — `rm assets/audio/*.mp3` rồi
+> chạy lại TOÀN BỘ, không tin file "đã tồn tại" là file đúng/đủ.
 
 > **Console tiếng Trung trên Windows:** chạy với `PYTHONIOENCODING=utf-8` ở trước lệnh —
 > nếu không, script có thể crash `UnicodeEncodeError` giữa chừng khi `print` tiến độ (mp3
@@ -304,6 +330,19 @@ dung nhiều) — nhưng khi nội dung ÍT hơn khung (`scale == 1.0`, không c
 neo TOP làm chữ dồn hết lên đầu, để trống hẳn nửa dưới slide. Đã sửa: chỉ neo
 TOP khi `scale < 1.0` (nội dung thật sự vượt khung); còn lại neo MIDDLE để
 phân bổ đều theo chiều dọc.
+
+⚠️ **`passage` đổi layout — bỏ chia cột trái/phải (2026-08-07):** layout cũ (ảnh
+1 bên, câu tự sự 1 bên hẹp) khiến câu dài phải wrap nhiều dòng trong cột hẹp,
+nhìn như bị "xé thành nhiều cột". Đã đổi: ảnh (nếu có) lên dải TRÊN full-width
+(≤32% chiều cao khung), câu văn xuống 1 CỘT RỘNG full-width bên dưới, mỗi câu
+đánh số ①②③ ở đầu để tách bạch.
+
+**口语 (khẩu ngữ tự nhiên, cuối buổi) — dùng `type: "grammar"` thay vì `table`
+(2026-08-07):** `table` với `image` từng bị hiểu nhầm/khó kiểm soát chiều cao
+khi có 5+ hàng ngắn; `grammar` (không cần `point`, chỉ `image` + `examples[]`
+= các cụm câu khẩu ngữ) tái dùng đúng layout "ảnh 1 bên + danh sách cụm câu
+(Hán tự đậm + pinyin cùng dòng, nghĩa xuống dòng, giãn cách rộng)" đã ổn định
+sẵn — không cần code mới, tránh trùng khẩu ngữ với 生词/语法 đã dạy trong buổi.
 
 ⚠️ **Bảng `vocab` (hz/py/nghĩa) rớt dòng cột 汉字 khi item là CẢ CÂU (2026-08-06):**
 cột 汉字 mặc định chỉ 26% bề rộng — đủ cho 1-2 từ nhưng câu dài (vd lời chúc
