@@ -101,3 +101,10 @@ _- Status: PENDING UPDATE_
 - Blocks: noi (6: 请教/天赋/室友/成绩单/奖学金/能力评估), dien_cho_trong (4: 还是/连/紧张/复习), doc_hieu (陈天中 ôn thi, tự soạn), sap_xep (3), dich_dat_cau (3), nghe (3), noi_hskk 听后重复 (2), noi_hskk 回答问题 tách 2 block riêng (câu 1: chuẩn bị/căng thẳng thi cử; câu 2: đổi theo yêu cầu user từ "毕业以后 làm gì" sang "你想做什么？为什么？" — cá nhân hoá theo bối cảnh học viên đang ôn thi đại học, dàn bài hỏi về ngành/trường mong muốn) — 26 mục, không trùng nội bộ/slide (check_baitap.py + đối chiếu thủ công toàn bộ hz trong slide).
 - Output: buoi10_thicu/baitap/ → hocsinh/{worksheet.docx + audio 5 MP3} + dapan/dapan.docx
 - Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 2 noi_hskk rate -18%); toàn bộ tự soạn (kho hsk2.md chưa seed)
+
+## 2026-08-10 · Exercise Generator · HSK2 Buổi 13 (我们爱上中文课)
+- Bối cảnh đặc biệt: học viên đã biết hết 11 từ gốc sách (班/告诉/教/可能/里面/那样/上面/上网/希望/洗手间/新年) nên slide buổi này (teaching-coach) đổi hẳn sang 29 từ nâng cao chủ đề tặng quà Tết/春节 (10 từ chính nuôi ngữ pháp + 19 từ mở rộng theo 4 nhánh: mốc thời gian/biểu tượng/món ăn/hoạt động) — **bài tập bám 100% bộ 29 từ mới, không dùng 11 từ gốc sách** (khác Buổi 5 — buổi đó vẫn giữ bài tập theo 18 từ gốc dù slide nâng cấp).
+- Blocks: noi (6: 赠送/交换/明显/差不多/团圆/压岁钱), dien_cho_trong (4: 收到/祝福/稍微/辛苦), doc_hieu (gia đình chuẩn bị đón Tết — viết春联/gói饺子/团圆饭/放鞭炮, tự soạn), sap_xep (3: 双宾语句 + 比较句(7) + 比较句(8)), dich_dat_cau (3), nghe (3), noi_hskk 听后重复 (2), noi_hskk 回答问题 tách 2 block riêng (quà Tết muốn nhận / hoạt động Tết ý nghĩa nhất) — 26 mục, không trùng nội bộ (check_baitap.py) lẫn với slide (đối chiếu script so khớp toàn bộ hz trong buoi13.json).
+- User tự phát hiện 2 câu "nâng cao" (`answer_plus`) vượt cả ngữ pháp chưa dạy (bổ ngữ xu hướng phức hợp "跳了起来" — ngữ pháp Bài 14, chưa học) sau khi hỏi "đề này có khó với HSK2 không" — đã sửa lại trong phạm vi ngữ pháp đã học, chỉ giữ nâng ở mức từ vựng.
+- Output: buoi13_hoctiengtrung/baitap/ → hocsinh/{worksheet.docx + audio 5 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 2 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)

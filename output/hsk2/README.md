@@ -25,7 +25,7 @@
 | 10 | `buoi10_thicu` | 就要考试了 | thi cử, học tập, cảm xúc thi cử **+ đặt lịch hẹn**⚠️ | 选择问句(还是) · **连…都/也 (bổ sung, dời từ Bài 12)** | — | ✅ |
 | 11 | `buoi11_monan_yeuthich` | 我最喜欢吃中国菜 | ăn uống, sở thích, sức khoẻ (đau đầu, hiệu thuốc) | 动态助词"着"(1)(2) · 程度副词"最" · **被字句 (bổ sung)** | — | ⏳ |
 | 12 | `buoi12_thoitiet` | 这里比北京冷多了 | thời tiết, so sánh | 比较句(4)(5)(6) | — | ⏳ |
-| 13 | `buoi13_hoctiengtrung` | 我们爱上中文课 | học tiếng Trung | 双宾语句(2) · 比较句(7)(8) | L17 | ⏳ |
+| 13 | `buoi13_hoctiengtrung` | 我们爱上中文课 | học tiếng Trung + tặng quà năm mới/春节 | 双宾语句(2) · 比较句(7)(8) | L17 | ✅ |
 | 14 | `buoi14_letet` | 一个人过年多没意思啊 | lễ Tết, cảm xúc | 存现句 · 复合趋向补语 | L23 | ⏳ |
 | 15 | `buoi15_kehoach` | 我想再去一次中国 | kế hoạch, quay lại TQ | 动量补语(1)(2) · 有字句(2) | — | ⏳ |
 | — | `on2_bai9-15` | **Ôn 2** (cuối khoá) | ôn bài 9-15 + bảng hệ thống bổ ngữ đầy đủ 6 loại + bảng 比较句(1)-(8) đầy đủ + capstone roleplay (hỏi đường/khách sạn/giới thiệu bản thân/hỏi giá/đặt lịch hẹn — chỉ ứng dụng lại) | — | — | ⏳ |
@@ -124,6 +124,8 @@ sang Buổi 10 được (khớp mạch nhấn mạnh cảm xúc căng thẳng: �
 
 - **Ngữ pháp bổ sung ngoài 45 điểm sách** (把 Bài 4 — ôn lại thêm ở Buổi 10, 连…都/也 dời hẳn từ Bài 12 sang Buổi 10, xem "Sửa 2026-08-07", 被 Bài 11, 复合趋向补语 Bài 5 — đưa sớm từ Bài 14 vì học viên đã nắm chắc 简单趋向补语): đánh dấu rõ trong slide buổi tương ứng "ngữ pháp mở rộng ngoài sách chính".
 - **Buổi 5 nâng độ khó từ vựng** (2026-08-06, theo yêu cầu user — học viên đã vượt xa mức 18 từ gốc sách): 生词 slide đổi hẳn sang 20 từ động từ nâng cao (拿/带/搬/寄/扔/摆/放/挂/抬/抱/提/借/还/卖/爬/跳/倒/退/躲/传) để luyện 简单/复合趋向补语, không dùng 18 từ gốc sách nữa (18 từ gốc vẫn xuất hiện tự nhiên qua 課文). Bài tập (`baitap-buoi05.json`) vẫn bám 18 từ gốc + 3 điểm ngữ pháp chính theo đúng chuẩn Bài 5. Cân nhắc áp dụng tương tự (khảo sát trình độ trước khi bám 100% sách) cho các buổi sau nếu học viên tiếp tục vượt tiến độ.
+- **Buổi 13 nâng độ khó từ vựng — đi xa hơn Buổi 5** (2026-08-10, học viên xác nhận đã biết hết 11 từ gốc sách): 生词 slide đổi hẳn sang 29 từ chủ đề tặng quà Tết/春节 (10 từ chính nuôi 双宾语句/比较句(7)(8) + 19 từ mở rộng theo sơ đồ cây 4 nhánh: mốc thời gian/biểu tượng/món ăn/hoạt động), mỗi slide 2 từ (riêng 1 slide 3 từ cho nhóm cây/hoa) kèm 1 câu ví dụ dùng cả 2-3 từ. **Khác Buổi 5: bài tập (`baitap-buoi13.json`) cũng bỏ hẳn 11 từ gốc, bám 100% theo 29 từ mới** — 11 từ gốc chỉ còn xuất hiện tự nhiên qua 課文 (nguyên văn sách), không kiểm tra riêng trong bài tập. Lưu ý khi soạn `answer_plus` (đáp án nâng cao): chỉ được nâng TỪ VỰNG, không được lỡ dùng ngữ pháp của bài SAU chưa dạy (từng lọt "跳了起来" — 复合趋向补语 Bài 14 — vào bản nháp, đã sửa trước khi chốt).
+- **Buổi 11-12 bị bỏ qua tạm thời** (2026-08-10): user chủ động chọn làm Buổi 13 trước dù Buổi 11 (我最喜欢吃中国菜) và Buổi 12 (这里比北京冷多了) chưa build — lệch quy tắc "sản xuất tuần tự" ở đầu file. Cần quay lại làm Buổi 11-12 trước khi làm Buổi 14 trở đi để không bỏ sót ngữ pháp 着(1)(2)/被字句 (Bài 11) và 比较句(4)(5)(6) (Bài 12).
 - **Viết 3.0:** mỗi buổi bài tập có sắp câu/điền chữ/câu ngắn + luân phiên đoạn 60-100 chữ / điền form (`dien_bieu_mau`) / lời nhắn / nhật ký (`writing_prompt` với `kind` + `target_length`) — schema đã mở rộng ở exercise-generator (`main`, commit `021493e`).
 - **Đọc thực tế:** mỗi buổi bài tập phần 读 có ≥1 văn bản tự soạn theo chủ đề (tin nhắn/biển báo/thực đơn/quảng cáo), không lấy từ sách.
 - **Từ vựng:** 210 mục (207 từ + 3 tên riêng), 19 từ trùng HSK1 cần xử lý khi sản xuất buổi tương ứng (đáng chú ý: Bài 4 trùng 5/16 từ — cụm màu sắc) — xem `hsk2-vocab-grammar-checklist.md`.
@@ -149,5 +151,9 @@ Buổi 10. Buổi 9 ✅ (slide + audio + bài tập trọn gói, build sáng 202
 选择问句 + 连…都/也 dời từ Bài 12; layout `vocab` đổi sang chế độ thẻ ảnh to+ví dụ
 highlight, `passage` đổi layout full-width đánh số, giọng trẻ con dùng riêng
 `YunxiaNeural` — xem chi tiết ở `pptx/README.md` và `state/session-log.md`).
-**Tóm lại đã build xong: Buổi 1-10 (toàn bộ)**. Buổi 11-15 + Ôn 1 + Ôn 2 xem trạng
-thái ở bảng trên (nguồn chân lý).
+**Tóm lại đã build xong: Buổi 1-10 (toàn bộ)**. Buổi 13 ✅ (slide + audio + bài tập,
+2026-08-10 — bỏ qua Buổi 11-12 theo yêu cầu user, xem "Buổi 11-12 bị bỏ qua tạm thời"
+ở Ghi chú kỹ thuật; 生词 đổi hẳn sang 29 từ nâng cao chủ đề tặng quà Tết, bài tập cũng
+bám 29 từ mới chứ không giữ 11 từ gốc như cách làm ở Buổi 5). **Buổi 11-12 vẫn ⏳, cần
+làm trước khi mở Buổi 14.** Buổi 14-15 + Ôn 1 + Ôn 2 xem trạng thái ở bảng trên (nguồn
+chân lý).
