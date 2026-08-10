@@ -183,6 +183,19 @@ bản cuối được chưa?" trước khi chạy, đừng tự suy diễn từ 
   là trẻ em. **Nhân vật xuất hiện ở NHIỀU 课文 trong cùng 1 buổi phải liệt kê
   hết trước khi gán `voices`** — tránh 2 nhân vật khác nhau (vd bố ở 课文1,
   con ở 课文3) vô tình trùng giọng do chỉ xét từng 课文 riêng lẻ.
+  **⚠️ `zh-CN-YunxiaNeural` là giọng NAM** (2026-08-10, xác nhận qua
+  `edge_tts --list-voices`: `Male, Cartoon, Cute`) — dù mô tả nghe "trẻ con"
+  chung chung dễ tưởng trung tính, gán cho nhân vật NỮ trẻ em sẽ đọc sai giới
+  tính. Toàn bộ giọng `zh-CN-*` cơ bản (không kể phương ngữ) chỉ có:
+  Nữ = `XiaoxiaoNeural` (Warm), `XiaoyiNeural` (Lively/Cartoon); Nam =
+  `YunyangNeural` (Professional), `YunjianNeural` (Passion), `YunxiNeural`
+  (Lively/Sunshine), `YunxiaNeural` (Cute/trẻ em, CHỈ nam). **Không có giọng
+  nữ trẻ em riêng** — nếu cần nhân vật nữ trẻ em, dùng tạm `XiaoyiNeural`
+  (gần "cartoon" nhất trong 2 giọng nữ) và chấp nhận không phân biệt hẳn với
+  giọng nữ người lớn. **Hội thoại ≥3 người CÙNG giới tính bắt buộc phải share
+  giọng** (vd 3 nhân vật nữ chỉ có 2 giọng nữ để chia) — ưu tiên để 2 nhân vật
+  không nói liên tiếp nhau dùng chung 1 giọng, người còn lại (vd giáo viên/vai
+  trung tâm) giữ giọng riêng để dễ phân biệt nhất trong hội thoại đó.
 - `--rate=...` (CLI) override cho CẢ HAI loại cùng lúc nếu cần đồng nhất (vd
   buổi ngữ âm nhập môn muốn chậm hơn hẳn, `--rate=-30%`).
 
@@ -398,6 +411,38 @@ INDEX trực tiếp (không cần đối chiếu `kicker`/`title`):
 Script tự chặn (báo lỗi, không ghi) nếu số slide trong pptx khác số slide trong JSON —
 dấu hiệu slide đã bị tách/xoá, khi đó phải làm theo quy trình đối chiếu NGUYÊN VĂN ở
 bước 1-4 phía trên (viết script riêng cho trường hợp đó, không dùng file mẫu này).
+
+**Thêm 1 slide MỚI vào file đã bị sửa tay, không rebuild toàn bộ** (2026-08-10,
+buổi 13 HSK2: user tự thêm ảnh tay + lưu vào 5 slide, sau đó muốn thêm slide 口语
+2/2 — rebuild từ JSON lúc này sẽ xoá sạch ảnh tay). Cách làm: dùng lại đúng
+class `DeckBuilder` (cùng style/renderer với các slide khác) nhưng gắn `.prs`
+của nó vào file ĐANG có thay vì để nó tự tạo Presentation() rỗng, rồi gọi thẳng
+method `_slide_<type>` cho MỖI slide mới cần thêm:
+```python
+import sys, json
+sys.path.insert(0, ".claude/skills/teaching-coach/pptx")
+import build_deck as bd
+from pptx import Presentation
+
+path = "output/hskN/buoiX_.../slide/Buoi-X-....pptx"
+spec = json.loads(open("output/hskN/buoiX_.../slide/buoiX.json", encoding="utf-8").read())
+spec.setdefault("_base", "output/hskN/buoiX_.../slide")   # để resolve path ảnh
+
+builder = bd.DeckBuilder(spec)
+builder.prs = Presentation(path)              # nạp file HIỆN CÓ, không tạo mới
+builder.blank = builder.prs.slide_layouts[6]  # lấy lại layout blank từ chính file đó
+
+new_slide_spec = spec["slides"][-1]           # slide mới, đã thêm vào cuối JSON
+builder._slide_grammar(new_slide_spec)        # gọi đúng handler theo "type"
+builder.prs.save(path)
+```
+Muốn đổi 1 kicker/text có sẵn (vd đổi "口语" thành "口语 1/2" khi tách thêm
+slide 2/2) thì sửa trực tiếp run text qua `slide.shapes` (đối chiếu
+`shape.text_frame.text` để tìm đúng shape) TRƯỚC khi gọi `_slide_<type>` thêm
+slide mới, cùng 1 lần mở file — không cần `build_deck.py`. Kỹ thuật tương tự
+dùng được để thêm số thứ tự ①②③ vào từng lượt thoại của 1 slide `dialogue` có
+sẵn (sửa `p.runs[0].text` của từng bubble) khi cần đánh số hội thoại ≥3 người
+cho dễ theo dõi — schema `dialogue` hiện chưa có field numbering riêng.
 
 **2 lỗi python-pptx đã gặp khi làm việc này (chỉ xảy ra trên file đã qua chỉnh tay
 nhiều lần, không xảy ra khi build từ JSON sạch):**
