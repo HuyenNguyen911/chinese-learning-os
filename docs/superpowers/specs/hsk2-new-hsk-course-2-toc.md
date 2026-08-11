@@ -31,14 +31,17 @@
 | 11 | 我最喜欢吃中国菜 | Tớ thích nhất ăn món TQ | ~??? | 程度副词"最" |
 | 12 | 这里比北京冷多了 | Ở đây lạnh hơn BK nhiều | ~102 | 比较句(4)(5)(6) |
 | 13 | 我们爱上中文课 | Chúng tôi thích giờ học tiếng Trung | ~112 | 双宾语句(2) · 比较句(7)(8) |
-| 14 | 一个人过年多没意思啊 | Ăn Tết một mình chán quá | ~121 | 存现句 · 复合趋向补语 |
+| 14 | 一个人过年多没意思啊 | Ăn Tết một mình chán quá | 137-145 (verify text-layer, xem `output/hsk2/README.md`) | 存现句(2) · 复合趋向补语 · 程度副词"多" |
 | 15 | 我想再去一次中国 | Tôi muốn đi TQ thêm lần nữa | ~130 | 动量补语(1)(2) · "有"字句(2) |
 
 > Bài 1–9 đã verify bằng ảnh trang thật (chi tiết + trích 课文/生词 ở
 > `output/hsk2/buoiXX_*/doc/bai-doc.md` từng buổi). Bài 10 chỉ verify biên bắt đầu (trang
-> 099), NỘI DUNG + biên kết thúc CHƯA verify. Bài 11–15 CHƯA verify gì — số trang còn dấu
-> `~`/`?` là suy từ mục lục gốc, khả năng cao còn lệch tiếp giống các bài trước, **PHẢI
-> render ảnh xác nhận trước khi bóc**, không tự tin dùng bảng này làm nguồn cuối.
+> 099), NỘI DUNG + biên kết thúc CHƯA verify. Bài 14 đã verify biên + nội dung nhưng
+> BẰNG TEXT-LAYER (không phải ảnh — pymupdf không cài được trong session đó), xem
+> `output/hsk2/buoi14_letet/doc/bai-doc.md`. Bài 11–13, 15 CHƯA verify gì — số trang còn
+> dấu `~`/`?` là suy từ mục lục gốc, khả năng cao còn lệch tiếp giống các bài trước,
+> **PHẢI render ảnh (hoặc tối thiểu text-layer + đối chiếu checklist kỹ) xác nhận trước
+> khi bóc**, không tự tin dùng bảng này làm nguồn cuối.
 
 ## Chủ đề bao phủ (đối chiếu yêu cầu user)
 
