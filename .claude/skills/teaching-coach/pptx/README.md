@@ -478,6 +478,22 @@ slide 2/2) thì sửa trực tiếp run text qua `slide.shapes` (đối chiếu
 `shape.text_frame.text` để tìm đúng shape) TRƯỚC khi gọi `_slide_<type>` thêm
 slide mới, cùng 1 lần mở file — không cần `build_deck.py`.
 
+⚠️ **Sau khi thêm slide mới, user tự DỜI VỊ TRÍ slide đó trong PowerPoint —
+phải đánh số lại TOÀN BỘ kicker theo đúng thứ tự VẬT LÝ mới, không phải thứ tự
+lúc thêm** (2026-08-11, Buổi 14 HSK2: thêm slide `语法 5/5` ở cuối, user dời nó
+lên nằm cạnh `语法 2/5` trong PowerPoint). Quy trình:
+1. Quét lại text từng slide hiện tại (`shape.text_frame.text`) để biết đúng
+   thứ tự VẬT LÝ mới — đừng tin lại thứ tự lúc build.
+2. Đánh số lại kicker theo thứ tự đó bằng **rename 2-pass qua nhãn tạm**
+   (`"语法 3/5" -> "__TMP__0__" -> "语法 4/5"`, vv.) — bắt buộc 2 pass vì nhiều
+   kicker đổi số CHÉO nhau cùng lúc (vd slide cũ 3→4 và 4→5), rename thẳng 1
+   pass sẽ ghi đè nhầm giá trị đã đổi của slide khác.
+3. **Đồng bộ lại thứ tự phần tử trong `buoiX.json` cho khớp** (di chuyển phần
+   tử trong mảng `slides`, không chỉ sửa text kicker) — bỏ qua bước này để lại
+   sai lệch thứ tự JSON ≠ thứ tự pptx thật, tái diễn đúng lớp lỗi audio bị lệch
+   nội dung đã ghi ở mục "Đồng bộ audio" phía trên (`slide_audio.py` đặt tên
+   file mp3 theo thứ tự JSON, không phải thứ tự pptx).
+
 ✅ **Đánh số lượt thoại ≥3 người — đã tự động hoá trong renderer (2026-08-11,
 Buổi 14):** `_dialogue_script` (swimlane, kích hoạt khi >2 speaker) giờ tự in
 số thứ tự `"1. "/"2. "/...` trước mỗi lượt thoại khi build từ JSON — không cần
