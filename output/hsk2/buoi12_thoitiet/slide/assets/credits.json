@@ -1,0 +1,74 @@
+{
+  "rain_shower": {
+    "title": "... should have brought my umbrella...",
+    "creator": "christian.senger",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/30928442@N08/6031080243",
+    "attribution": "\"... should have brought my umbrella...\" by christian.senger is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "heavy rain umbrella"
+  },
+  "avalanche": {
+    "title": "Mount Sir Donald, Uto Peak, Avalanche Mountain from Purcells Lodge area",
+    "creator": "Murray Foubister",
+    "license": "by-sa 4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=77586468",
+    "attribution": "\"Mount Sir Donald, Uto Peak, Avalanche Mountain from Purcells Lodge area\" by Murray Foubister is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/.",
+    "query": "avalanche mountain"
+  },
+  "tornado": {
+    "title": "Tornado Funnel Cloud, Buckland Hills Mall Connecticut, CT, July 27 about 6:20 PM Manchester CT. By Mike Mozart of TheToyChannel and JeepersMedia on YouTube.",
+    "creator": "JeepersMedia",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/39160147@N03/14575735809",
+    "attribution": "\"Tornado Funnel Cloud, Buckland Hills Mall Connecticut, CT, July 27 about 6:20 PM Manchester CT. By Mike Mozart of TheToyChannel and JeepersMedia on YouTube.\" by JeepersMedia is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "supercell tornado funnel"
+  },
+  "lightning_storm": {
+    "title": "Lightning storm over Berlin",
+    "creator": "Matt Biddulph",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/51035707449@N01/4788080904",
+    "attribution": "\"Lightning storm over Berlin\" by Matt Biddulph is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "lightning storm"
+  },
+  "typhoon": {
+    "title": "'Midget typhoon' in the western Pacific Ocean",
+    "creator": "NASA Goddard Photo and Video",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/24662369@N07/9501980757",
+    "attribution": "\"'Midget typhoon' in the western Pacific Ocean\" by NASA Goddard Photo and Video is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "typhoon satellite"
+  },
+  "landslide": {
+    "title": "arriving at porto venere",
+    "creator": "scott1346",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/42549779@N06/41689665204",
+    "attribution": "\"arriving at porto venere\" by scott1346 is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "mudslide hillside"
+  },
+  "wildfire": {
+    "title": "Uncontrollable wildfire, forest fire",
+    "creator": null,
+    "license": "cc0 1.0",
+    "source": "https://www.rawpixel.com/image/8752742/photo-image-smoke-fire-trees",
+    "attribution": "\"Uncontrollable wildfire, forest fire\" is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.",
+    "query": "wildfire forest"
+  },
+  "tsunami": {
+    "title": "Tsunami wave hit hotel in Thailand 2004",
+    "creator": "Khao Lak Ausflüge",
+    "license": "by-sa 4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=136600602",
+    "attribution": "\"Tsunami wave hit hotel in Thailand 2004\" by Khao Lak Ausflüge is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/.",
+    "query": "tsunami wave"
+  },
+  "drought": {
+    "title": "Plant in dried cracked mud",
+    "creator": "Aproximando Ciência e Pessoas",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/97513256@N06/9044202624",
+    "attribution": "\"Plant in dried cracked mud\" by Aproximando Ciência e Pessoas is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "drought cracked land"
+  }
+}

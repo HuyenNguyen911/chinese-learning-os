@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "lesson": "Buổi 12: 这里比北京冷多了 — 比较句 (4)(5)(6)",
+    "hsk": 2
+  },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối từ với nghĩa",
+      "instructions": "Nối từ tiếng Trung bên trái với nghĩa tiếng Việt bên phải.",
+      "pairs": [
+        {
+          "left": "毛毛雨",
+          "right": "mưa phùn"
+        },
+        {
+          "left": "龙卷风",
+          "right": "lốc xoáy"
+        },
+        {
+          "left": "火山爆发",
+          "right": "núi lửa phun trào"
+        },
+        {
+          "left": "山体滑坡",
+          "right": "sạt lở đất"
+        },
+        {
+          "left": "海啸",
+          "right": "sóng thần"
+        },
+        {
+          "left": "干旱",
+          "right": "hạn hán"
+        }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ trong ngân hàng từ điền vào chỗ trống cho phù hợp.",
+      "word_bank": [
+        "阵雨",
+        "打雷",
+        "闪电",
+        "洪水",
+        "地震"
+      ],
+      "items": [
+        {
+          "q": "昨天晚上突然{}，把我吓醒了。",
+          "answer": "打雷",
+          "src": "[phỏng theo 真题]"
+        },
+        {
+          "q": "外面正下着{}，我们出门要带伞。",
+          "answer": "阵雨",
+          "src": "[phỏng theo 真题]"
+        },
+        {
+          "q": "天空中出现了{}，说明马上要下雨了。",
+          "answer": "闪电",
+          "src": "[phỏng theo 真题]"
+        },
+        {
+          "q": "那条河的水太多，村子里发生了{}。",
+          "answer": "洪水",
+          "src": "[phỏng theo 真题]"
+        }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc hiểu",
+      "instructions": "Đọc đoạn văn rồi chọn đáp án đúng.",
+      "passage": "上周，小薇家附近发生了台风。台风来的时候，阵风很大，还打雷、打闪电。爸爸说，这次台风比去年那次大多了。他们提前收拾了东西，所以没有出什么大事。虽然停电了一天，但是全家人都很平安。",
+      "questions": [
+        {
+          "q": "这次台风跟去年那次比怎么样？",
+          "options": [
+            "比去年小",
+            "比去年大多了",
+            "跟去年一样"
+          ],
+          "answer": "B",
+          "src": "[phỏng theo 真题]"
+        },
+        {
+          "q": "台风来的时候，天气怎么样？",
+          "options": [
+            "晴天，很暖和",
+            "阵风很大，打雷打闪电",
+            "下着毛毛雨"
+          ],
+          "answer": "B",
+          "src": "[phỏng theo 真题]"
+        },
+        {
+          "q": "他们家后来怎么样了？",
+          "options": [
+            "房子被淹了",
+            "全家都很平安",
+            "有人受伤了"
+          ],
+          "answer": "B",
+          "src": "[phỏng theo 真题]"
+        }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ dưới đây thành câu đúng.",
+      "items": [
+        {
+          "words": [
+            "南方",
+            "比",
+            "北方",
+            "暖和",
+            "得多"
+          ],
+          "answer": "南方比北方暖和得多。",
+          "answer_plus": "今年南方的天气比北方暖和得多。",
+          "src": "[phỏng theo 真题]"
+        },
+        {
+          "words": [
+            "今天",
+            "阵雨",
+            "下",
+            "得",
+            "比",
+            "昨天",
+            "大"
+          ],
+          "answer": "今天阵雨下得比昨天大。",
+          "answer_plus": "今天的阵雨下得比昨天大很多。",
+          "src": "[phỏng theo 真题]"
+        },
+        {
+          "words": [
+            "她",
+            "唱歌",
+            "唱",
+            "得",
+            "比",
+            "我",
+            "好"
+          ],
+          "answer": "她唱歌唱得比我好。",
+          "answer_plus": "她从小就喜欢唱歌，唱得比我好多了。",
+          "src": "[phỏng theo 真题]"
+        }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu tiếng Việt sang tiếng Trung, dùng từ gợi ý.",
+      "items": [
+        {
+          "prompt": "Hôm nay lạnh hơn hôm qua nhiều.",
+          "given": [
+            "比",
+            "多了"
+          ],
+          "answer": "今天比昨天冷多了。",
+          "answer_plus": "今天的天气比昨天冷多了，大家要多穿衣服。",
+          "src": "[phỏng theo 真题]"
+        },
+        {
+          "prompt": "Anh ấy chạy nhanh hơn tôi.",
+          "given": [
+            "跑",
+            "得",
+            "比"
+          ],
+          "answer": "他跑得比我快。",
+          "answer_plus": "他从小就喜欢运动，跑得比我快很多。",
+          "src": "[phỏng theo 真题]"
+        },
+        {
+          "prompt": "Cô ấy nói tiếng Trung nói hay hơn tôi.",
+          "given": [
+            "说",
+            "得",
+            "比"
+          ],
+          "answer": "她说汉语说得比我好。",
+          "answer_plus": "她在中国学习过，说汉语说得比我好多了。",
+          "src": "[phỏng theo 真题]"
+        }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe hiểu",
+      "instructions": "Nghe đoạn ghi âm rồi chọn đáp án đúng.",
+      "items": [
+        {
+          "script": "小兰说，山上正在发生山体滑坡，大家不要过去。",
+          "q": "小兰说山上正在发生什么？",
+          "options": [
+            "地震",
+            "山体滑坡",
+            "森林大火"
+          ],
+          "answer": "B",
+          "src": "[phỏng theo 真题]",
+          "audio": "audio/nghe1.mp3"
+        },
+        {
+          "script": "妈妈说，今年干旱得很厉害，好几个月没下雨了。",
+          "q": "今年天气怎么样？",
+          "options": [
+            "下雨很多",
+            "很干旱",
+            "经常打雷"
+          ],
+          "answer": "B",
+          "src": "[phỏng theo 真题]",
+          "audio": "audio/nghe2.mp3"
+        },
+        {
+          "script": "哥哥说，这次台风比上次大多了，大家要提前准备。",
+          "q": "这次台风跟上次比怎么样？",
+          "options": [
+            "比上次小",
+            "跟上次一样",
+            "比上次大多了"
+          ],
+          "answer": "C",
+          "src": "[phỏng theo 真题]",
+          "audio": "audio/nghe3.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "听后重复",
+      "part": "听后重复",
+      "instructions": "Nghe và lặp lại theo đúng ngữ điệu.",
+      "items": [
+        {
+          "script": "外面正打雷，还看得见闪电。",
+          "audio": "audio/hskk1.mp3"
+        },
+        {
+          "script": "这次台风比去年那次大多了。",
+          "audio": "audio/hskk2.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 1",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        {
+          "script": "你那儿冬天会下雪吗？下雪的时候，你喜欢做什么？",
+          "hint": "开头 (Mở bài): Chỗ bạn mùa đông có lạnh không? Có tuyết rơi không? — 主体 (Thân bài): Khi có tuyết, bạn thích làm gì? Cùng với ai? — 结尾 (Kết bài): Bạn có thích thời tiết có tuyết không? Vì sao?",
+          "audio": "audio/hskk3.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 2",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        {
+          "script": "如果听说要来台风，你会提前做什么准备？",
+          "hint": "开头 (Mở bài): Chỗ bạn có thường xảy ra bão không? — 主体 (Thân bài): Trước khi bão đến, bạn sẽ chuẩn bị gì (mua đồ, thu dọn đồ đạc...)? — 结尾 (Kết bài): Bạn thấy việc chuẩn bị trước có quan trọng không? Vì sao?",
+          "audio": "audio/hskk4.mp3"
+        }
+      ]
+    }
+  ]
+}

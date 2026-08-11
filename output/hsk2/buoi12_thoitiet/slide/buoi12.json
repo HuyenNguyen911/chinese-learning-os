@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 12",
+    "topic": "这里比北京冷多了 — 课文 gốc giữ nguyên (thời tiết BK/chạy bộ) + 生词 đổi sang thời tiết mạnh/thiên tai + 比较句(4)(5)(6)",
+    "title": "这里比北京冷多了"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "这里比北京冷多了",
+      "subtitle": "Zhèlǐ bǐ Běijīng lěng duō le — Ở đây lạnh hơn Bắc Kinh nhiều",
+      "footer": "HSK2 · Buổi 12"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Hôm nay học gì",
+      "bullets": [
+        "Nói chuyện điện thoại/hội thoại về thời tiết ở những nơi khác nhau",
+        "Từ vựng thời tiết mạnh + thiên tai: 毛毛雨/阵雨/下雪/阵风/打雷/闪电 + 自然灾害 (地震/台风/海啸/洪水/干旱/火山爆发/龙卷风/雪崩/山体滑坡/森林大火)",
+        "比较句 (4)(5)(6): diễn tả chênh lệch LỚN (多了/得多), động từ có bổ ngữ trạng thái, câu có cả tân ngữ + bổ ngữ trạng thái"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 1/9",
+      "items": [
+        {
+          "hz": "毛毛雨",
+          "py": "máomaoyǔ",
+          "vn": "mưa phùn"
+        },
+        {
+          "hz": "阵雨",
+          "py": "zhènyǔ",
+          "vn": "mưa rào"
+        }
+      ],
+      "example": {
+        "hz": "小薇出门的时候下毛毛雨，回来的时候变成阵雨了。",
+        "py": "Xiǎowēi chūmén de shíhou xià máomaoyǔ, huílái de shíhou biànchéng zhènyǔ le.",
+        "vn": "Lúc Tiểu Vy ra ngoài thì mưa phùn, lúc về thì đã thành mưa rào."
+      },
+      "image": "assets/rain_shower.jpg",
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 2/9",
+      "items": [
+        {
+          "hz": "下雪",
+          "py": "xiàxuě",
+          "vn": "tuyết rơi"
+        },
+        {
+          "hz": "雪崩",
+          "py": "xuěbēng",
+          "vn": "tuyết lở"
+        }
+      ],
+      "example": {
+        "hz": "爸爸说，他老家下雪下得太大，去年冬天发生过雪崩。",
+        "py": "Bàba shuō, tā lǎojiā xiàxuě xià de tài dà, qùnián dōngtiān fāshēngguo xuěbēng.",
+        "vn": "Bố nói, quê bố tuyết rơi to quá, mùa đông năm ngoái từng xảy ra tuyết lở."
+      },
+      "image": "assets/avalanche.jpg",
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 3/9",
+      "items": [
+        {
+          "hz": "阵风",
+          "py": "zhènfēng",
+          "vn": "cuồng phong (gió giật mạnh)"
+        },
+        {
+          "hz": "龙卷风",
+          "py": "lóngjuǎnfēng",
+          "vn": "lốc xoáy"
+        }
+      ],
+      "example": {
+        "hz": "小兰看电视的时候，阵风刮得很大，主持人说可能会有龙卷风。",
+        "py": "Xiǎolán kàn diànshì de shíhou, zhènfēng guā de hěn dà, zhǔchírén shuō kěnéng huì yǒu lóngjuǎnfēng.",
+        "vn": "Lúc Tiểu Lan xem TV, gió giật thổi rất mạnh, người dẫn chương trình nói có thể sẽ có lốc xoáy."
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 4/9",
+      "items": [
+        {
+          "hz": "打雷",
+          "py": "dǎléi",
+          "vn": "có sấm (nổ sấm)"
+        },
+        {
+          "hz": "闪电",
+          "py": "shǎndiàn",
+          "vn": "chớp"
+        }
+      ],
+      "example": {
+        "hz": "妈妈正打电话，外面突然打雷，还看到了闪电，她吓了一下。",
+        "py": "Māma zhèng dǎ diànhuà, wàimiàn tūrán dǎléi, hái kàndàole shǎndiàn, tā xiàle yíxià.",
+        "vn": "Mẹ đang gọi điện, ngoài trời bất chợt có sấm, còn thấy cả chớp nữa, mẹ giật cả người."
+      },
+      "image": "assets/lightning_storm.jpg",
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 5/9",
+      "items": [
+        {
+          "hz": "自然灾害",
+          "py": "zìrán zāihài",
+          "vn": "thảm họa thiên nhiên"
+        },
+        {
+          "hz": "台风",
+          "py": "táifēng",
+          "vn": "bão"
+        }
+      ],
+      "example": {
+        "hz": "小薇告诉爸爸，台风是我们那儿最常见的自然灾害。",
+        "py": "Xiǎowēi gàosu bàba, táifēng shì wǒmen nàr zuì chángjiàn de zìrán zāihài.",
+        "vn": "Tiểu Vy nói với bố, bão là thảm họa thiên nhiên thường gặp nhất ở nhà mình."
+      },
+      "image": "assets/typhoon.jpg",
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 6/9",
+      "items": [
+        {
+          "hz": "地震",
+          "py": "dìzhèn",
+          "vn": "động đất"
+        },
+        {
+          "hz": "山体滑坡",
+          "py": "shāntǐ huápō",
+          "vn": "sạt lở đất"
+        }
+      ],
+      "example": {
+        "hz": "哥哥说，那次地震以后，他们村子发生了山体滑坡。",
+        "py": "Gēge shuō, nà cì dìzhèn yǐhòu, tāmen cūnzi fāshēngle shāntǐ huápō.",
+        "vn": "Anh trai nói, sau lần động đất đó, làng của họ đã xảy ra sạt lở đất."
+      },
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 7/9",
+      "items": [
+        {
+          "hz": "火山爆发",
+          "py": "huǒshān bàofā",
+          "vn": "núi lửa phun trào"
+        },
+        {
+          "hz": "森林大火",
+          "py": "sēnlín dàhuǒ",
+          "vn": "cháy rừng"
+        }
+      ],
+      "example": {
+        "hz": "姐姐在新闻里看到，火山爆发以后，山上发生了森林大火。",
+        "py": "Jiějie zài xīnwén lǐ kàndào, huǒshān bàofā yǐhòu, shānshang fāshēngle sēnlín dàhuǒ.",
+        "vn": "Chị gái xem trên tin tức, sau khi núi lửa phun trào, trên núi đã bốc cháy thành cháy rừng."
+      },
+      "image": "assets/wildfire.jpg",
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 8/9",
+      "items": [
+        {
+          "hz": "洪水",
+          "py": "hóngshuǐ",
+          "vn": "lũ lụt"
+        },
+        {
+          "hz": "海啸",
+          "py": "hǎixiào",
+          "vn": "sóng thần"
+        }
+      ],
+      "example": {
+        "hz": "小兰的老家发生海啸，还带来了很大的洪水。",
+        "py": "Xiǎolán de lǎojiā fāshēng hǎixiào, hái dàiláile hěn dà de hóngshuǐ.",
+        "vn": "Quê Tiểu Lan xảy ra sóng thần, còn mang đến cả lũ lụt rất lớn."
+      },
+      "image": "assets/tsunami.jpg",
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 9/9",
+      "items": [
+        {
+          "hz": "干旱",
+          "py": "gānhàn",
+          "vn": "hạn hán"
+        }
+      ],
+      "example": {
+        "hz": "妈妈说，她老家最近很干旱，好几个月没下雨了。",
+        "py": "Māma shuō, tā lǎojiā zuìjìn hěn gānhàn, hǎo jǐ ge yuè méi xiàyǔ le.",
+        "vn": "Mẹ nói, gần đây quê mẹ hạn hán lắm, mấy tháng nay không có mưa."
+      },
+      "image": "assets/drought.jpg",
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "阅读",
+      "title": "天气预报",
+      "sentences": [
+        {
+          "hz": "明天南方有台风，会下大雨。",
+          "py": "Míngtiān nánfāng yǒu táifēng, huì xià dàyǔ.",
+          "vn": "Ngày mai miền Nam có bão, sẽ có mưa to."
+        },
+        {
+          "hz": "山里可能发生山体滑坡，大家要小心。",
+          "py": "Shān lǐ kěnéng fāshēng shāntǐ huápō, dàjiā yào xiǎoxīn.",
+          "vn": "Trong núi có thể xảy ra sạt lở đất, mọi người cần cẩn thận."
+        },
+        {
+          "hz": "北方最近很干旱，好几个月没下雨了。",
+          "py": "Běifāng zuìjìn hěn gānhàn, hǎo jǐ ge yuè méi xiàyǔ le.",
+          "vn": "Miền Bắc gần đây rất hạn hán, mấy tháng rồi không có mưa."
+        },
+        {
+          "hz": "如果听到打雷、看到闪电，就不要在外面走路。",
+          "py": "Rúguǒ tīngdào dǎléi, kàndào shǎndiàn, jiù búyào zài wàimiàn zǒulù.",
+          "vn": "Nếu nghe thấy sấm, thấy chớp, thì đừng đi bộ ở ngoài."
+        },
+        {
+          "hz": "这些都是自然灾害，我们要提前做好准备。",
+          "py": "Zhèxiē dōu shì zìrán zāihài, wǒmen yào tíqián zuòhǎo zhǔnbèi.",
+          "vn": "Đây đều là thiên tai, chúng ta cần chuẩn bị trước."
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "打电话 — 王一雪接到白家月的电话",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "喂，家月，是你啊！有什么事情吗？",
+          "py": "Wèi, Jiāyuè, shì nǐ a! Yǒu shénme shìqing ma?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "没什么事，就想跟您说说话。",
+          "py": "Méi shénme shì, jiù xiǎng gēn nín shuōshuo huà."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "好啊。你今天没课吗？",
+          "py": "Hǎo a. Nǐ jīntiān méi kè ma?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "下午有课。您那里天气怎么样？",
+          "py": "Xiàwǔ yǒu kè. Nín nàlǐ tiānqì zěnmeyàng?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "北京这几天虽然是晴天，但是有点儿冷。",
+          "py": "Běijīng zhè jǐ tiān suīrán shì qíngtiān, dànshì yǒudiǎnr lěng."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我这里比北京冷多了，外边还正下着雪呢！",
+          "py": "Wǒ zhèlǐ bǐ Běijīng lěng duō le, wàibian hái zhèng xiàzhe xuě ne!"
+        }
+      ],
+      "footer_note": "在房间，王一雪接到白家月的电话。",
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "白家月": "zh-CN-XiaoyiNeural"
+      },
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "打电话 — 王一雪给王一飞打电话",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "喂，一飞，听家月说你那边下雪了，下得大不大？",
+          "py": "Wèi, Yīfēi, tīng Jiāyuè shuō nǐ nàbiān xiàxuě le, xià de dà bu dà?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "今天不大，昨天比今天下得大。",
+          "py": "Jīntiān bú dà, zuótiān bǐ jīntiān xià de dà."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "天气不好，你去外面的时候多穿点儿衣服。",
+          "py": "Tiānqì bù hǎo, nǐ qù wàimiàn de shíhou duō chuān diǎnr yīfu."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "这几天我在网上上课，没出去过。",
+          "py": "Zhè jǐ tiān wǒ zài wǎngshang shàngkè, méi chūqùguo."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "那就好，有事记得给我打电话。",
+          "py": "Nà jiù hǎo, yǒu shì jìde gěi wǒ dǎ diànhuà."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "好的。现在不下雪了，我出去买点儿吃的。",
+          "py": "Hǎo de. Xiànzài bú xiàxuě le, wǒ chūqù mǎi diǎnr chī de."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "一次多买点儿，阴天下雪什么的就少出去吧。",
+          "py": "Yí cì duō mǎi diǎnr, yīntiān xiàxuě shénmede jiù shǎo chūqù ba."
+        }
+      ],
+      "footer_note": "在客厅，王一雪给王一飞打电话。",
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "王一飞": "zh-CN-YunyangNeural"
+      },
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "约跑步 — 李文给白家月打电话",
+      "turns": [
+        {
+          "speaker": "李文",
+          "hz": "喂，家月，今天天气不错，我们去跑步吧！",
+          "py": "Wèi, Jiāyuè, jīntiān tiānqì búcuò, wǒmen qù pǎobù ba!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "你跑步跑得比我快，我们能一起跑吗？",
+          "py": "Nǐ pǎobù pǎo de bǐ wǒ kuài, wǒmen néng yìqǐ pǎo ma?"
+        },
+        {
+          "speaker": "李文",
+          "hz": "可以的，我慢慢跑，等着你。",
+          "py": "Kěyǐ de, wǒ mànmàn pǎo, děngzhe nǐ."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "好吧。你真爱跑步啊！",
+          "py": "Hǎo ba. Nǐ zhēn ài pǎobù a!"
+        },
+        {
+          "speaker": "李文",
+          "hz": "我从小就经常跟爸爸跑步，跑步能让人快乐！",
+          "py": "Wǒ cóngxiǎo jiù jīngcháng gēn bàba pǎobù, pǎobù néng ràng rén kuàilè!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "好，那我准备一下。",
+          "py": "Hǎo, nà wǒ zhǔnbèi yíxià."
+        },
+        {
+          "speaker": "李文",
+          "hz": "我现在坐地铁去找你，一会儿楼下见。",
+          "py": "Wǒ xiànzài zuò dìtiě qù zhǎo nǐ, yíhuìr lóu xià jiàn."
+        }
+      ],
+      "footer_note": "在房间，李文给白家月打电话。",
+      "voices": {
+        "李文": "zh-CN-YunxiNeural",
+        "白家月": "zh-CN-XiaoyiNeural"
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 4",
+      "title": "白家月的日记",
+      "sentences": [
+        {
+          "hz": "前几天天气不好，我没走路，每天坐两站地铁去学校。",
+          "py": "Qián jǐ tiān tiānqì bù hǎo, wǒ méi zǒulù, měitiān zuò liǎng zhàn dìtiě qù xuéxiào.",
+          "vn": "Mấy hôm trước thời tiết không tốt, tớ không đi bộ, ngày nào cũng đi 2 trạm tàu điện ngầm đến trường."
+        },
+        {
+          "hz": "今天是个大晴天，李文让我跟他去外面跑步。",
+          "py": "Jīntiān shì ge dà qíngtiān, Lǐ Wén ràng wǒ gēn tā qù wàimiàn pǎobù.",
+          "vn": "Hôm nay nắng to, Lý Văn bảo tớ đi chạy bộ ngoài trời cùng anh ấy."
+        },
+        {
+          "hz": "他小时候经常跑步，跑得比我快，但是他会等我。",
+          "py": "Tā xiǎoshíhou jīngcháng pǎobù, pǎo de bǐ wǒ kuài, dànshì tā huì děng wǒ.",
+          "vn": "Lúc nhỏ anh ấy hay chạy bộ, chạy nhanh hơn tớ, nhưng anh ấy sẽ chờ tớ."
+        },
+        {
+          "hz": "跟李文一起跑步，我好高兴啊！",
+          "py": "Gēn Lǐ Wén yìqǐ pǎobù, wǒ hǎo gāoxìng a!",
+          "vn": "Chạy bộ cùng Lý Văn, tớ vui quá đi!"
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/3",
+      "point": "比较句 (4) — \"多了/得多\": chênh lệch LỚN. Cấu trúc: A比B + tính từ + 多了/得多",
+      "highlight": [
+        "多了",
+        "得多"
+      ],
+      "examples": [
+        {
+          "hz": "我这里比北京冷多了。",
+          "py": "Wǒ zhèlǐ bǐ Běijīng lěng duō le.",
+          "vn": "Ở đây (tớ) lạnh hơn Bắc Kinh nhiều."
+        },
+        {
+          "hz": "坐飞机比坐火车快得多。",
+          "py": "Zuò fēijī bǐ zuò huǒchē kuài de duō.",
+          "vn": "Đi máy bay nhanh hơn đi tàu hỏa nhiều."
+        },
+        {
+          "hz": "他觉得红茶比绿茶好喝得多。",
+          "py": "Tā juéde hóngchá bǐ lǜchá hǎohē de duō.",
+          "vn": "Anh ấy thấy trà đen ngon hơn trà xanh nhiều."
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/3",
+      "point": "比较句 (5) — Động từ có bổ ngữ trạng thái (得): \"比\" đặt trước hoặc sau động từ đều được",
+      "highlight": "比",
+      "examples": [
+        {
+          "hz": "昨天比今天下得大。",
+          "py": "Zuótiān bǐ jīntiān xià de dà.",
+          "vn": "Hôm qua mưa/tuyết to hơn hôm nay."
+        },
+        {
+          "hz": "妈妈比我睡得晚。",
+          "py": "Māma bǐ wǒ shuì de wǎn.",
+          "vn": "Mẹ ngủ muộn hơn tớ."
+        },
+        {
+          "hz": "李文跑得比白家月快。",
+          "py": "Lǐ Wén pǎo de bǐ Bái Jiāyuè kuài.",
+          "vn": "Lý Văn chạy nhanh hơn Bạch Gia Nguyệt."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 3/3",
+      "point": "比较句 (6) — Động từ vừa có tân ngữ vừa có bổ ngữ trạng thái: đảo tân ngữ lên đầu HOẶC lặp động từ (ly hợp từ lặp phần động từ)",
+      "examples": [
+        {
+          "hz": "你跑步跑得比我快。",
+          "py": "Nǐ pǎobù pǎo de bǐ wǒ kuài.",
+          "vn": "Bạn chạy bộ nhanh hơn tớ.",
+          "highlight": "跑步跑"
+        },
+        {
+          "hz": "白家月汉字写得比陈天中好。",
+          "py": "Bái Jiāyuè hànzì xiě de bǐ Chén Tiānzhōng hǎo.",
+          "vn": "Bạch Gia Nguyệt viết chữ Hán đẹp hơn Trần Thiên Trung.",
+          "highlight": "汉字"
+        },
+        {
+          "hz": "他踢足球比我踢得好。",
+          "py": "Tā tī zúqiú bǐ wǒ tī de hǎo.",
+          "vn": "Anh ấy đá bóng giỏi hơn tớ đá."
+        }
+      ],
+      "note": "离合词 (vd 打雷 vừa học ở 生词) cũng theo quy tắc lặp động từ này: \"他打雷打得很响\" — lặp phần động từ \"打\".",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "口语 1/2",
+      "examples": [
+        {
+          "hz": "这天气真要命！",
+          "py": "Zhè tiānqì zhēn yàomìng!",
+          "vn": "Thời tiết này thật kinh khủng quá!"
+        },
+        {
+          "hz": "小心点儿，别出事！",
+          "py": "Xiǎoxīn diǎnr, bié chūshì!",
+          "vn": "Cẩn thận đấy, đừng để xảy ra chuyện gì!"
+        },
+        {
+          "hz": "还好，没什么大事。",
+          "py": "Hái hǎo, méi shénme dàshì.",
+          "vn": "May mà, không có gì to tát."
+        },
+        {
+          "hz": "太吓人了！",
+          "py": "Tài xiàrén le!",
+          "vn": "Sợ quá đi mất!"
+        },
+        {
+          "hz": "听说要来台风了，真的吗？",
+          "py": "Tīngshuō yào lái táifēng le, zhēn de ma?",
+          "vn": "Nghe nói bão sắp đến rồi, có thật không?"
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "口语 2/2",
+      "examples": [
+        {
+          "hz": "又开始下雨了。",
+          "py": "Yòu kāishǐ xiàyǔ le.",
+          "vn": "Lại bắt đầu mưa rồi."
+        },
+        {
+          "hz": "这种天气就别出门了。",
+          "py": "Zhè zhǒng tiānqì jiù bié chūmén le.",
+          "vn": "Thời tiết này thì đừng ra ngoài nữa."
+        },
+        {
+          "hz": "大家都没事吧？",
+          "py": "Dàjiā dōu méishì ba?",
+          "vn": "Mọi người không sao chứ?"
+        },
+        {
+          "hz": "赶紧收拾东西吧！",
+          "py": "Gǎnjǐn shōushi dōngxi ba!",
+          "vn": "Mau thu dọn đồ đi!"
+        },
+        {
+          "hz": "幸好提前准备了。",
+          "py": "Xìnghǎo tíqián zhǔnbèi le.",
+          "vn": "May mà đã chuẩn bị trước rồi."
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    }
+  ]
+}

@@ -24,7 +24,7 @@
 | 9 | `buoi09_douong` | 我去买杯奶茶 | mua sắm (quần áo) + đồ uống (cà phê/trà sữa) + so sánh khoảng cách, đi bộ | 比较句(3) [没有] · 动词"离" · 时量补语(1) | L30 · L16 | ✅ |
 | 10 | `buoi10_thicu` | 就要考试了 | thi cử, học tập, cảm xúc thi cử **+ đặt lịch hẹn**⚠️ | 选择问句(还是) · **连…都/也 (bổ sung, dời từ Bài 12)** | — | ✅ |
 | 11 | `buoi11_monan_yeuthich` | 我最喜欢吃中国菜 | ăn uống, sở thích, sức khoẻ (đau đầu, hiệu thuốc) | 动态助词"着"(1)(2) · 程度副词"最" · **被字句 (bổ sung)** | — | ✅ |
-| 12 | `buoi12_thoitiet` | 这里比北京冷多了 | thời tiết, so sánh | 比较句(4)(5)(6) | — | ⏳ |
+| 12 | `buoi12_thoitiet` | 这里比北京冷多了 | thời tiết + thiên tai (自然灾害) | 比较句(4)(5)(6) | — | ✅ |
 | 13 | `buoi13_hoctiengtrung` | 我们爱上中文课 | học tiếng Trung + tặng quà năm mới/春节 | 双宾语句(2) · 比较句(7)(8) | L17 | ✅ |
 | 14 | `buoi14_letet` | 一个人过年多没意思啊 | Tết + giới thiệu bạn trai/người yêu + nhà cửa/hàng xóm | 存现句(2) · 程度副词"多" · 复合趋向补语 (mục tiêu sách; KHÔNG dạy lại trên slide vì đã dạy đủ ở Buổi 5, xem ghi chú kỹ thuật) | L23 | ✅ |
 | 15 | `buoi15_kehoach` | 我想再去一次中国 | kế hoạch, quay lại TQ | 动量补语(1)(2) · 有字句(2) | — | ⏳ |
