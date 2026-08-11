@@ -1,0 +1,99 @@
+{
+  "meta": { "lesson": "Buổi 13: 我们爱上中文课 — 双宾语句(2)/比较句(7)(8) + từ vựng tặng quà Tết nâng cao", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối từ với nghĩa",
+      "instructions": "Nối 汉字 bên trái với nghĩa tiếng Việt đúng bên phải.",
+      "pairs": [
+        { "left": "赠送", "right": "tặng (trang trọng)" },
+        { "left": "交换", "right": "trao đổi" },
+        { "left": "明显", "right": "rõ rệt" },
+        { "left": "差不多", "right": "xấp xỉ, gần bằng" },
+        { "left": "团圆", "right": "đoàn tụ" },
+        { "left": "压岁钱", "right": "tiền lì xì" }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ đúng trong ngân hàng từ điền vào chỗ trống.",
+      "word_bank": ["收到", "祝福", "稍微", "辛苦"],
+      "items": [
+        { "q": "他{}了朋友寄来的新年礼物，非常开心。", "answer": "收到", "src": "phỏng theo 真题" },
+        { "q": "老师给我们送上新年的{}，希望大家学习进步。", "answer": "祝福", "src": "phỏng theo 真题" },
+        { "q": "这件衣服比那件{}贵一点儿，但是质量更好。", "answer": "稍微", "src": "phỏng theo 真题" },
+        { "q": "打扫完整个院子真{}，但是看到干净的家很值得。", "answer": "辛苦", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc hiểu",
+      "instructions": "Đọc đoạn văn rồi trả lời câu hỏi.",
+      "passage": "除夕那天，小美一家人很忙。爸爸认真地写春联，贴在门上；妈妈耐心地教小美包饺子，虽然小美包得不太好看，但是很开心。晚上，他们一起吃团圆饭，饭后还放了鞭炮，庆祝新年的到来。",
+      "questions": [
+        { "q": "除夕那天，爸爸在做什么？", "options": ["写春联", "包饺子", "放鞭炮"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "谁教小美包饺子？", "options": ["爸爸", "妈妈", "奶奶"], "answer": "B", "src": "phỏng theo 真题" },
+        { "q": "他们吃完团圆饭以后做了什么？", "options": ["写春联", "放鞭炮", "送礼物"], "answer": "B", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ dưới đây thành câu hoàn chỉnh.",
+      "items": [
+        { "words": ["奶奶", "送给", "我", "一件", "新衣服"], "answer": "奶奶送给我一件新衣服。", "answer_plus": "奶奶送给我一件新衣服，颜色是我最喜欢的红色。", "src": "phỏng theo 真题" },
+        { "words": ["今年的春联", "比", "去年的", "多", "一些"], "answer": "今年的春联比去年的多一些。", "answer_plus": "今年的春联比去年的多一些，因为奶奶今年买了两副。", "src": "phỏng theo 真题" },
+        { "words": ["弟弟的", "压岁钱", "比我", "多", "五十块"], "answer": "弟弟的压岁钱比我多五十块。", "answer_plus": "弟弟的压岁钱比我多五十块，因为他年纪小，大家给他的更多。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu sau sang tiếng Trung, có dùng từ gợi ý.",
+      "items": [
+        { "prompt": "Chú tôi tặng cho em trai tôi một chiếc xe đạp mới.", "given": ["赠送", "给"], "answer": "叔叔赠送给弟弟一辆新自行车。", "answer_plus": "叔叔赠送给弟弟一辆新自行车，弟弟高兴得不得了。", "src": "phỏng theo 真题" },
+        { "prompt": "Nhà tôi mua pháo nhiều hơn nhà hàng xóm mười hộp.", "given": ["比"], "answer": "我们买的鞭炮比邻居家多十盒。", "answer_plus": "我们买的鞭炮比邻居家多十盒，除夕夜特别热闹。", "src": "phỏng theo 真题" },
+        { "prompt": "Bọn trẻ trao đổi bao lì xì với nhau cho vui.", "given": ["交换"], "answer": "孩子们互相交换红包，觉得很好玩。", "answer_plus": "孩子们互相交换红包，觉得很好玩，还比谁的红包多。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe hiểu",
+      "instructions": "Nghe đoạn ghi âm rồi chọn đáp án đúng.",
+      "items": [
+        { "script": "他收到了老师送的新年礼物，很感动。", "q": "他收到了谁送的礼物？", "options": ["老师", "同学", "邻居"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "phỏng theo 真题" },
+        { "script": "除夕晚上，一家人团圆，一起吃饺子。", "q": "除夕晚上，他们一起做什么？", "options": ["吃饺子", "看电视", "打扫房子"], "answer": "A", "audio": "audio/nghe-2.mp3", "src": "phỏng theo 真题" },
+        { "script": "外面的鞭炮声很大，孩子们都跑出去看。", "q": "孩子们为什么跑出去？", "options": ["看鞭炮", "买糖果", "找朋友"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Nghe và nhắc lại",
+      "part": "听后重复",
+      "instructions": "Nghe rồi nhắc lại nguyên câu.",
+      "items": [
+        { "script": "妈妈耐心地教我包春卷。", "audio": "audio/hskk-1.mp3" },
+        { "script": "过年的时候，商店里的糖果卖得很快。", "audio": "audio/hskk-2.mp3" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 1",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        { "script": "过年的时候，你最想收到什么礼物？为什么？", "hint": "开头 (Mở bài): Gia đình bạn thường tặng quà gì vào dịp Tết? Bạn có thích nhận quà không? — 主体 (Thân bài): Món quà bạn muốn nhận là gì? Vì sao bạn thích món đó? — 结尾 (Kết bài): Nếu nhận được món quà đó, bạn sẽ cảm thấy thế nào?" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 2",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        { "script": "你觉得过年最重要的活动是什么（比如吃团圆饭、拜年、放鞭炮）？说说你的想法。", "hint": "开头 (Mở bài): Dịp Tết nhà bạn thường có những hoạt động gì? — 主体 (Thân bài): Trong số đó, bạn thích nhất hoạt động nào — ăn cơm đoàn viên, đi chúc Tết, hay đốt pháo? Vì sao? — 结尾 (Kết bài): Bạn nghĩ hoạt động đó có ý nghĩa gì với gia đình bạn?" }
+      ]
+    }
+  ]
+}

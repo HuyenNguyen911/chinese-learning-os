@@ -29,6 +29,13 @@ format thi HSK và HSKK 初级.
   `answer` (Chuẩn, đủ điểm) + `answer_plus` (Nâng cao, điểm cao) theo band chấm
   thi. Xem `worksheet/schema.md`. **Riêng `noi_hskk` (`回答问题`) KHÔNG dùng 2 cấp
   này nữa** — xem mục dàn bài ngay dưới đây.
+  **`answer_plus` chỉ được nâng TỪ VỰNG, không được nâng NGỮ PHÁP** (2026-08-10,
+  buổi 13 HSK2: bản nháp lỡ dùng "跳了起来" — 复合趋向补语 của Bài 14, chưa dạy tới —
+  trong lúc chỉ định làm câu dài/tự nhiên hơn cho điểm cao; user tự hỏi "đề này có
+  khó với HSK2 không" mới lộ ra). Trước khi chốt `answer_plus`, kiểm tra câu chỉ
+  dùng ngữ pháp đã dạy tính đến buổi hiện tại trong lộ trình — được phép dùng từ
+  vựng/cụm từ cao hơn 1 bậc HSK, nhưng KHÔNG được đưa cấu trúc ngữ pháp của bài/
+  buổi sau (dù chỉ 1 câu, dù chỉ ở bản "nâng cao" không bắt buộc).
 - **Dàn bài cho `noi_hskk` part `回答问题`** (mặc định mọi buổi — đổi lần 2 ở
   2026-08-07 khi làm Buổi 9, xem lịch sử ở cuối mục này):
   - `instructions`: **1 dòng chung, ngắn gọn** cho cả block, không đổi theo từng

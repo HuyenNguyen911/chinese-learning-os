@@ -1,0 +1,663 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 13",
+    "topic": "我们爱上中文课 — Học tiếng Trung, tặng quà năm mới + 双宾语句(2) + 比较句(7)(8)",
+    "title": "我们爱上中文课"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我们爱上中文课",
+      "subtitle": "Wǒmen ài shàng Zhōngwén kè — Chúng ta yêu thích tiết học tiếng Trung",
+      "footer": "HSK2 · Buổi 13"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Hôm nay học gì",
+      "bullets": [
+        "Nghe hiểu và kể chuyện tặng quà, chúc Tết bằng 双宾语句 (tặng/bán/đưa cho ai cái gì)",
+        "Dùng 比较句(7) để nêu khác biệt CỤ THỂ bằng số lượng (A比B+adj+số lượng)",
+        "Dùng 比较句(8) để nêu khác biệt NHỎ (A比B+adj+一点儿/一些)",
+        "Mở rộng từ vựng chủ đề tặng quà + phong tục 春节 (nâng cao, thay từ cơ bản đã học)"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 1/14",
+      "items": [
+        {
+          "hz": "赠送",
+          "py": "zèngsòng",
+          "vn": "tặng (trang trọng)"
+        },
+        {
+          "hz": "红包",
+          "py": "hóngbāo",
+          "vn": "bao lì xì"
+        }
+      ],
+      "example": {
+        "hz": "过年的时候，爷爷赠送给我一个红包，祝我新的一年学习进步。",
+        "py": "Guònián de shíhou, yéye zèngsòng gěi wǒ yí ge hóngbāo, zhù wǒ xīn de yì nián xuéxí jìnbù.",
+        "vn": "Lúc ăn Tết, ông nội tặng cho tớ một bao lì xì, chúc tớ năm mới học tập tiến bộ."
+      },
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 2/14",
+      "items": [
+        {
+          "hz": "收到",
+          "py": "shōudào",
+          "vn": "nhận được"
+        },
+        {
+          "hz": "压岁钱",
+          "py": "yāsuìqián",
+          "vn": "tiền lì xì"
+        }
+      ],
+      "example": {
+        "hz": "大年初一早上，我收到了奶奶给的压岁钱，心里特别开心。",
+        "py": "Dànián chūyī zǎoshang, wǒ shōudào le nǎinai gěi de yāsuìqián, xīnli tèbié kāixīn.",
+        "vn": "Sáng mùng 1 Tết, tớ nhận được tiền lì xì bà nội cho, trong lòng đặc biệt vui."
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 3/14",
+      "items": [
+        {
+          "hz": "交换",
+          "py": "jiāohuàn",
+          "vn": "trao đổi"
+        },
+        {
+          "hz": "春联",
+          "py": "chūnlián",
+          "vn": "câu đối Tết"
+        }
+      ],
+      "image": "assets/tet_chunlian.jpg",
+      "example": {
+        "hz": "春节前，我们和邻居互相交换了春联，贴在自己家的门上。",
+        "py": "Chūnjié qián, wǒmen hé línjū hùxiāng jiāohuàn le chūnlián, tiē zài zìjǐ jiā de mén shàng.",
+        "vn": "Trước Tết, chúng tôi và hàng xóm trao đổi câu đối Tết cho nhau, dán lên cửa nhà mình."
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 4/14",
+      "items": [
+        {
+          "hz": "祝福",
+          "py": "zhùfú",
+          "vn": "lời chúc, chúc phúc"
+        },
+        {
+          "hz": "拜年",
+          "py": "bàinián",
+          "vn": "chúc Tết"
+        }
+      ],
+      "example": {
+        "hz": "春节的时候，我们去亲戚家拜年，给他们送上新年的祝福。",
+        "py": "Chūnjié de shíhou, wǒmen qù qīnqi jiā bàinián, gěi tāmen sòng shàng xīnnián de zhùfú.",
+        "vn": "Dịp Tết, chúng tôi đến nhà họ hàng chúc Tết, gửi tới họ lời chúc năm mới."
+      },
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 5/14",
+      "items": [
+        {
+          "hz": "明显",
+          "py": "míngxiǎn",
+          "vn": "rõ rệt"
+        },
+        {
+          "hz": "年糕",
+          "py": "niángāo",
+          "vn": "bánh tổ, bánh nếp Tết"
+        }
+      ],
+      "image": "assets/tet_niangao.jpg",
+      "example": {
+        "hz": "妈妈做的年糕比外面买的明显甜一些，因为她放了很多糖。",
+        "py": "Māma zuò de niángāo bǐ wàimiàn mǎi de míngxiǎn tián yìxiē, yīnwèi tā fàng le hěn duō táng.",
+        "vn": "Bánh tổ mẹ làm ngọt hơn rõ rệt so với bánh mua ngoài, vì mẹ cho rất nhiều đường."
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 6/14",
+      "items": [
+        {
+          "hz": "稍微",
+          "py": "shāowēi",
+          "vn": "hơi, một chút"
+        },
+        {
+          "hz": "饺子",
+          "py": "jiǎozi",
+          "vn": "sủi cảo"
+        }
+      ],
+      "image": "assets/tet_jiaozi.jpg",
+      "example": {
+        "hz": "这次奶奶包的饺子比上次的稍微咸一点儿，但是还是很好吃。",
+        "py": "Zhè cì nǎinai bāo de jiǎozi bǐ shàng cì de shāowēi xián yìdiǎnr, dànshì háishi hěn hǎochī.",
+        "vn": "Lần này sủi cảo bà gói mặn hơn lần trước một chút, nhưng vẫn rất ngon."
+      },
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 7/14",
+      "items": [
+        {
+          "hz": "差不多",
+          "py": "chàbuduō",
+          "vn": "xấp xỉ, gần bằng"
+        },
+        {
+          "hz": "糖果",
+          "py": "tángguǒ",
+          "vn": "kẹo, mứt Tết"
+        }
+      ],
+      "example": {
+        "hz": "这两种过年糖果的味道差不多，我都很喜欢吃。",
+        "py": "Zhè liǎng zhǒng guònián tángguǒ de wèidao chàbuduō, wǒ dōu hěn xǐhuan chī.",
+        "vn": "Hai loại kẹo Tết này vị gần giống nhau, tớ đều thích ăn."
+      },
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 8/14",
+      "items": [
+        {
+          "hz": "认真",
+          "py": "rènzhēn",
+          "vn": "nghiêm túc, tận tâm"
+        },
+        {
+          "hz": "春卷",
+          "py": "chūnjuǎn",
+          "vn": "nem rán, chả giò"
+        }
+      ],
+      "image": "assets/tet_chunjuan.jpg",
+      "example": {
+        "hz": "除夕那天，妈妈很认真地包春卷，准备了一大盘。",
+        "py": "Chúxī nà tiān, māma hěn rènzhēn de bāo chūnjuǎn, zhǔnbèi le yí dà pán.",
+        "vn": "Hôm giao thừa, mẹ gói nem rất tận tâm, chuẩn bị cả một đĩa to."
+      },
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 9/14",
+      "items": [
+        {
+          "hz": "耐心",
+          "py": "nàixīn",
+          "vn": "kiên nhẫn"
+        },
+        {
+          "hz": "小年",
+          "py": "xiǎonián",
+          "vn": "ngày ông Công ông Táo"
+        }
+      ],
+      "image": "assets/tet_house_cleaning.jpg",
+      "example": {
+        "hz": "小年那天，妈妈耐心地打扫房子，房间变得干干净净。",
+        "py": "Xiǎonián nà tiān, māma nàixīn de dǎsǎo fángzi, fángjiān biàn de gāngānjìngjìng.",
+        "vn": "Hôm ông Công ông Táo, mẹ kiên nhẫn dọn dẹp nhà cửa, phòng trở nên sạch sẽ."
+      },
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 10/14",
+      "items": [
+        {
+          "hz": "辛苦",
+          "py": "xīnkǔ",
+          "vn": "vất vả"
+        },
+        {
+          "hz": "大扫除",
+          "py": "dàsǎochú",
+          "vn": "tổng vệ sinh nhà cửa"
+        }
+      ],
+      "image": "assets/tet_big_cleaning.jpg",
+      "example": {
+        "hz": "春节前的大扫除真辛苦，但是打扫完以后，大家都很开心。",
+        "py": "Chūnjié qián de dàsǎochú zhēn xīnkǔ, dànshì dǎsǎo wán yǐhòu, dàjiā dōu hěn kāixīn.",
+        "vn": "Tổng vệ sinh trước Tết thật vất vả, nhưng dọn xong rồi, ai cũng vui."
+      },
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 11/14",
+      "items": [
+        {
+          "hz": "春节",
+          "py": "chūnjié",
+          "vn": "Tết Nguyên Đán"
+        },
+        {
+          "hz": "团圆",
+          "py": "tuányuán",
+          "vn": "đoàn tụ"
+        }
+      ],
+      "image": "assets/tet_reunion_dinner.jpg",
+      "example": {
+        "hz": "春节是一家人团圆的日子，大家从外地回来一起吃饭。",
+        "py": "Chūnjié shì yì jiā rén tuányuán de rìzi, dàjiā cóng wàidì huílái yìqǐ chīfàn.",
+        "vn": "Tết Nguyên Đán là ngày cả nhà đoàn tụ, mọi người từ xa về ăn cơm cùng nhau."
+      },
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 12/14",
+      "items": [
+        {
+          "hz": "除夕",
+          "py": "chúxī",
+          "vn": "đêm giao thừa"
+        },
+        {
+          "hz": "鞭炮",
+          "py": "biānpào",
+          "vn": "pháo (pháo tép/pháo hoa)"
+        }
+      ],
+      "image": "assets/tet_firecrackers.jpg",
+      "example": {
+        "hz": "除夕的时候，我们放了很多鞭炮，非常热闹。",
+        "py": "Chúxī de shíhou, wǒmen fàng le hěn duō biānpào, fēicháng rènao.",
+        "vn": "Vào đêm giao thừa, chúng tôi đốt rất nhiều pháo, náo nhiệt lắm."
+      },
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 13/14",
+      "items": [
+        {
+          "hz": "大年初一",
+          "py": "dànián chūyī",
+          "vn": "mùng 1 Tết"
+        },
+        {
+          "hz": "发红包",
+          "py": "fā hóngbāo",
+          "vn": "phát bao lì xì"
+        }
+      ],
+      "example": {
+        "hz": "大年初一，爷爷叫我们过去，给每个孩子都发红包。",
+        "py": "Dànián chūyī, yéye jiào wǒmen guòqù, gěi měi ge háizi dōu fā hóngbāo.",
+        "vn": "Mùng 1 Tết, ông nội gọi chúng tôi lại, phát bao lì xì cho từng đứa trẻ."
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 14/14",
+      "items": [
+        {
+          "hz": "桃花",
+          "py": "táohuā",
+          "vn": "hoa đào"
+        },
+        {
+          "hz": "梅花",
+          "py": "méihuā",
+          "vn": "hoa mai"
+        },
+        {
+          "hz": "金桔树",
+          "py": "jīnjú shù",
+          "vn": "cây quất"
+        }
+      ],
+      "image": "assets/tet_flowers_kumquat.jpg",
+      "example": {
+        "hz": "过年的时候，家里摆着桃花、梅花和金桔树，看起来很有过年的气氛。",
+        "py": "Guònián de shíhou, jiā li bǎi zhe táohuā, méihuā hé jīnjú shù, kànqǐlái hěn yǒu guònián de qìfēn.",
+        "vn": "Lúc ăn Tết, trong nhà bày hoa đào, hoa mai và cây quất, trông rất có không khí Tết."
+      },
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "在教室 — 白家月和陈天中商量新年礼物",
+      "turns": [
+        {
+          "speaker": "陈天中",
+          "hz": "这一年，王老师教我们中文，她每天工作都很累。",
+          "py": "Zhè yì nián, Wáng lǎoshī jiāo wǒmen Zhōngwén, tā měitiān gōngzuò dōu hěn lèi."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "是啊，她教得很好。因为她，我们都爱上中文课。",
+          "py": "Shì a, tā jiāo de hěn hǎo. Yīnwèi tā, wǒmen dōu ài shàng Zhōngwén kè."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我们给她准备个新年礼物吧。你觉得送给她什么好呢？",
+          "py": "Wǒmen gěi tā zhǔnbèi ge xīnnián lǐwù ba. Nǐ juéde sòng gěi tā shénme hǎo ne?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "王老师喜欢花，就送给她花吧。",
+          "py": "Wáng lǎoshī xǐhuan huā, jiù sòng gěi tā huā ba."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "那我们去花店看看，现在买花的人多，希望花店还有漂亮的花。",
+          "py": "Nà wǒmen qù huādiàn kànkan, xiànzài mǎi huā de rén duō, xīwàng huādiàn hái yǒu piàoliang de huā."
+        }
+      ],
+      "footer_note": "在教室，白家月和陈天中在聊天儿，商量给王老师准备新年礼物。",
+      "image": "assets/tet_flower_shop.jpg",
+      "image_side": "right",
+      "voices": {
+        "陈天中": "zh-CN-YunxiaNeural",
+        "白家月": "zh-CN-XiaoyiNeural"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "在教室 — 王老师纠正\"洗手间\"的写法",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "王老师，今天的词比昨天多了十个。",
+          "py": "Wáng lǎoshī, jīntiān de cí bǐ zuótiān duō le shí ge."
+        },
+        {
+          "speaker": "王老师",
+          "hz": "是啊！你们都学会了吗？",
+          "py": "Shì a! Nǐmen dōu xuéhuì le ma?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "学会了，没有问题。",
+          "py": "Xuéhuì le, méiyǒu wèntí."
+        },
+        {
+          "speaker": "王老师",
+          "hz": "好，现在我来说，你们在本子上面写。",
+          "py": "Hǎo, xiànzài wǒ lái shuō, nǐmen zài běnzi shàngmiàn xiě."
+        },
+        {
+          "speaker": "王老师",
+          "hz": "同学们，\"洗手间\"的\"间\"字写错了，它的里面是\"日\"，不是\"口\"。",
+          "py": "Tóngxuémen, \"xǐshǒujiān\" de \"jiān\" zì xiě cuò le, tā de lǐmiàn shì \"rì\", bú shì \"kǒu\"."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "\"日\"比\"口\"多一笔，写成\"口\"就变成\"问题\"的\"问\"字了。",
+          "py": "\"Rì\" bǐ \"kǒu\" duō yì bǐ, xiě chéng \"kǒu\" jiù biàn chéng \"wèntí\" de \"wèn\" zì le.",
+          "highlight": "比"
+        },
+        {
+          "speaker": "王老师",
+          "hz": "没错，你说得很对。",
+          "py": "Méi cuò, nǐ shuō de hěn duì."
+        }
+      ],
+      "footer_note": "在教室，王老师在上课，纠正\"洗手间\"的\"间\"字写法。",
+      "voices": {
+        "白家月": "zh-CN-XiaoyiNeural",
+        "王老师": "zh-CN-XiaoxiaoNeural",
+        "安妮": "zh-CN-XiaoyiNeural"
+      },
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "在教室 — 安妮和白家月互送新年礼物",
+      "turns": [
+        {
+          "speaker": "安妮",
+          "hz": "家月，你觉得这个本子怎么样？",
+          "py": "Jiāyuè, nǐ juéde zhège běnzi zěnmeyàng?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "很漂亮，多少钱一个？",
+          "py": "Hěn piàoliang, duōshao qián yí ge?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "比我们一起买的那个本子贵一点儿。",
+          "py": "Bǐ wǒmen yìqǐ mǎi de nàge běnzi guì yìdiǎnr."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "这么漂亮的本子，不可能太贵吧？",
+          "py": "Zhème piàoliang de běnzi, bù kěnéng tài guì ba?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "我是上网买的，真没那么贵，我买了两个。",
+          "py": "Wǒ shì shàngwǎng mǎi de, zhēn méi nàme guì, wǒ mǎi le liǎng ge."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "谢谢！那我送给你什么呢？",
+          "py": "Xièxie! Nà wǒ sòng gěi nǐ shénme ne?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "咖啡杯吧，我最喜欢喝咖啡。",
+          "py": "Kāfēibēi ba, wǒ zuì xǐhuan hē kāfēi."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "好，那样我们就都有新年礼物了！",
+          "py": "Hǎo, nàyàng wǒmen jiù dōu yǒu xīnnián lǐwù le!"
+        }
+      ],
+      "footer_note": "在教室，安妮和白家月在聊新买的本子，互相准备新年礼物。",
+      "voices": {
+        "安妮": "zh-CN-XiaoxiaoNeural",
+        "白家月": "zh-CN-XiaoyiNeural"
+      },
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 4",
+      "title": "白家月的日记",
+      "image": "assets/tet_diary.jpg",
+      "image_side": "right",
+      "sentences": [
+        {
+          "hz": "新年就要到了，安妮送给我一个新本子。",
+          "py": "Xīnnián jiù yào dào le, Ānnī sòng gěi wǒ yí ge xīn běnzi.",
+          "vn": "Năm mới sắp đến rồi, Annie tặng cho tớ một cuốn sổ mới."
+        },
+        {
+          "hz": "她告诉我是在网上买的，比我的本子贵一点儿。",
+          "py": "Tā gàosu wǒ shì zài wǎngshàng mǎi de, bǐ wǒ de běnzi guì yìdiǎnr.",
+          "vn": "Cậu ấy nói cho tớ biết là mua trên mạng, đắt hơn cuốn sổ của tớ một chút."
+        },
+        {
+          "hz": "我们班同学也送了王老师漂亮的花，希望她高高兴兴地过个新年。",
+          "py": "Wǒmen bān tóngxué yě sòng le Wáng lǎoshī piàoliang de huā, xīwàng tā gāogāoxìngxìng de guò ge xīnnián.",
+          "vn": "Các bạn cùng lớp cũng tặng cô Vương những bông hoa đẹp, mong cô đón năm mới thật vui vẻ."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/3",
+      "point": "双宾语句(2) — 拿/送/卖 + 给 + người nhận + vật",
+      "highlight": "给",
+      "examples": [
+        {
+          "hz": "王老师喜欢花，就送给她花吧。",
+          "py": "Wáng lǎoshī xǐhuan huā, jiù sòng gěi tā huā ba.",
+          "vn": "Cô Vương thích hoa, vậy tặng cô hoa đi."
+        },
+        {
+          "hz": "她拿给我一杯水。",
+          "py": "Tā ná gěi wǒ yì bēi shuǐ.",
+          "vn": "Cô ấy đưa cho tớ một cốc nước."
+        },
+        {
+          "hz": "他卖给我一本中文书。",
+          "py": "Tā mài gěi wǒ yì běn Zhōngwén shū.",
+          "vn": "Anh ấy bán cho tớ một quyển sách tiếng Trung."
+        }
+      ],
+      "note": "Cấu trúc: A + 动词(拿/送/卖…) + 给 + người nhận + vật. \"给\" đặt ngay sau động từ để chỉ rõ AI là người nhận, tân ngữ chỉ vật luôn đứng sau cùng — không đảo ngược thứ tự người/vật.",
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/3",
+      "point": "比较句(7) — A比B+形容词+số lượng cụ thể (khác biệt CỤ THỂ)",
+      "examples": [
+        {
+          "hz": "今天的词比昨天多了十个。",
+          "py": "Jīntiān de cí bǐ zuótiān duō le shí ge.",
+          "vn": "Từ vựng hôm nay nhiều hơn hôm qua 10 từ.",
+          "highlight": "十个"
+        },
+        {
+          "hz": "姐姐比我大三岁。",
+          "py": "Jiějie bǐ wǒ dà sān suì.",
+          "vn": "Chị gái hơn tớ 3 tuổi.",
+          "highlight": "三岁"
+        },
+        {
+          "hz": "坐飞机比坐火车快五个多小时。",
+          "py": "Zuò fēijī bǐ zuò huǒchē kuài wǔ ge duō xiǎoshí.",
+          "vn": "Đi máy bay nhanh hơn đi tàu hoả hơn 5 tiếng.",
+          "highlight": "五个多小时"
+        }
+      ],
+      "note": "Cấu trúc: A比B+形容词+số lượng cụ thể — số lượng đặt SAU tính từ để nói RÕ chênh lệch bao nhiêu (khác 比较句(4)(5)(6) chỉ nói chung chung 多了/得多).",
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 3/3",
+      "point": "比较句(8) — A比B+形容词+一点儿/一些 (khác biệt NHỎ)",
+      "examples": [
+        {
+          "hz": "比我们一起买的那个本子贵一点儿。",
+          "py": "Bǐ wǒmen yìqǐ mǎi de nàge běnzi guì yìdiǎnr.",
+          "vn": "Đắt hơn cuốn sổ mà chúng tớ mua chung một chút.",
+          "highlight": "一点儿"
+        },
+        {
+          "hz": "姐姐比我高一点儿。",
+          "py": "Jiějie bǐ wǒ gāo yìdiǎnr.",
+          "vn": "Chị cao hơn tớ một chút.",
+          "highlight": "一点儿"
+        },
+        {
+          "hz": "那间教室比这间大一些。",
+          "py": "Nà jiān jiàoshì bǐ zhè jiān dà yìxiē.",
+          "vn": "Phòng học đó lớn hơn phòng này một chút.",
+          "highlight": "一些"
+        }
+      ],
+      "note": "Cấu trúc: A比B+形容词+一点儿/一些 — chỉ khác biệt NHỎ, không nói rõ số lượng cụ thể như 比较句(7).",
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "口语 1/2",
+      "title": "拜年吉祥话 — Lời chúc Tết thông dụng",
+      "image": "assets/tet_greeting.jpg",
+      "examples": [
+        {
+          "hz": "新年快乐！",
+          "py": "Xīnnián kuàilè!",
+          "vn": "Chúc mừng năm mới!"
+        },
+        {
+          "hz": "恭喜发财！",
+          "py": "Gōngxǐ fācái!",
+          "vn": "Chúc phát tài!"
+        },
+        {
+          "hz": "万事如意！",
+          "py": "Wànshì rúyì!",
+          "vn": "Vạn sự như ý!"
+        },
+        {
+          "hz": "身体健康！",
+          "py": "Shēntǐ jiànkāng!",
+          "vn": "Chúc sức khoẻ dồi dào!"
+        },
+        {
+          "hz": "心想事成！",
+          "py": "Xīnxiǎng shìchéng!",
+          "vn": "Cầu được ước thấy!"
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "口语 2/2",
+      "title": "拜年吉祥话 (tiếp) — 5 câu chúc phổ biến khác",
+      "image": "assets/tet_lanterns.jpg",
+      "examples": [
+        {
+          "hz": "阖家欢乐！",
+          "py": "Héjiā huānlè!",
+          "vn": "Chúc cả nhà vui vẻ, hạnh phúc!"
+        },
+        {
+          "hz": "年年有余！",
+          "py": "Niánnián yǒuyú!",
+          "vn": "Năm nào cũng dư dả, sung túc!"
+        },
+        {
+          "hz": "步步高升！",
+          "py": "Bùbù gāoshēng!",
+          "vn": "Thăng tiến từng bước!"
+        },
+        {
+          "hz": "大吉大利！",
+          "py": "Dàjí dàlì!",
+          "vn": "Đại cát đại lợi!"
+        },
+        {
+          "hz": "吉祥如意！",
+          "py": "Jíxiáng rúyì!",
+          "vn": "Cát tường như ý!"
+        }
+      ],
+      "audio": "assets/audio/slide25.mp3"
+    }
+  ]
+}

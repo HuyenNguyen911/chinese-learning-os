@@ -1,0 +1,476 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 14",
+    "topic": "一个人过年多没意思啊 — Giới thiệu bạn trai + nhà cửa/hàng xóm · 存现句(2) · 程度副词\"多\" · 已经…没…了 · 动词+上",
+    "title": "一个人过年多没意思啊"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "一个人过年多没意思啊",
+      "subtitle": "Yí ge rén guònián duō méiyìsi a — Ăn Tết một mình chán quá",
+      "footer": "HSK2 · Buổi 14"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Hôm nay học gì",
+      "bullets": [
+        "Nghe hiểu và miêu tả có ai/vật gì tồn tại ở một nơi bằng 存现句(2) — 处所 + động từ + 着 + người/vật",
+        "Dùng phó từ mức độ \"多\" trong câu cảm thán để diễn đạt mức độ rất cao",
+        "Dùng \"已经 + khoảng thời gian + 没 + động từ + 了\" để nói đã lâu không làm gì",
+        "Nhận diện \"动词 + 上\" mang nghĩa mở rộng (bắt đầu và duy trì một trạng thái) — khác nghĩa chỉ hướng đã học ở Buổi 5",
+        "Mở rộng từ vựng chủ đề nhà cửa/phòng ốc/việc nhà (nâng cao, thay 21 từ cơ bản đã học)"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 1/13",
+      "items": [
+        { "hz": "没意思", "py": "méiyìsi", "vn": "chán, vô vị" },
+        { "hz": "跳舞", "py": "tiàowǔ", "vn": "nhảy múa" }
+      ],
+      "example": {
+        "hz": "一个人在家看电视，多没意思啊，还是找朋友一起跳舞吧。",
+        "py": "Yí ge rén zài jiā kàn diànshì, duō méiyìsi a, háishi zhǎo péngyou yìqǐ tiàowǔ ba.",
+        "vn": "Một mình ở nhà xem tivi thì chán biết bao, thôi rủ bạn cùng đi nhảy đi."
+      },
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 2/13",
+      "items": [
+        { "hz": "眼睛", "py": "yǎnjing", "vn": "con mắt" }
+      ],
+      "example": {
+        "hz": "杨同乐有一双大眼睛，笑起来特别好看。",
+        "py": "Yáng Tónglè yǒu yì shuāng dà yǎnjing, xiào qǐlái tèbié hǎokàn.",
+        "vn": "Dương Đồng Nhạc có đôi mắt to, cười lên rất đẹp."
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 3/13",
+      "items": [
+        { "hz": "公寓", "py": "gōngyù", "vn": "căn hộ, chung cư" },
+        { "hz": "别墅", "py": "biéshù", "vn": "biệt thự" }
+      ],
+      "image": "assets/house_apartment.jpg",
+      "example": {
+        "hz": "王一飞住的不是别墅，是一套小公寓，不过离学校很近。",
+        "py": "Wáng Yīfēi zhù de bú shì biéshù, shì yí tào xiǎo gōngyù, búguò lí xuéxiào hěn jìn.",
+        "vn": "Chỗ Vương Nhất Phi ở không phải biệt thự, mà là một căn hộ nhỏ, nhưng cách trường rất gần."
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 4/13",
+      "items": [
+        { "hz": "宿舍", "py": "sùshè", "vn": "ký túc xá" },
+        { "hz": "平房", "py": "píngfáng", "vn": "nhà một tầng" }
+      ],
+      "example": {
+        "hz": "杨同乐大学的时候住宿舍，毕业以后才搬进一间平房。",
+        "py": "Yáng Tónglè dàxué de shíhou zhù sùshè, bìyè yǐhòu cái bān jìn yì jiān píngfáng.",
+        "vn": "Hồi đại học Dương Đồng Nhạc ở ký túc xá, sau khi tốt nghiệp mới chuyển vào một căn nhà một tầng."
+      },
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 5/13",
+      "items": [
+        { "hz": "客厅", "py": "kètīng", "vn": "phòng khách" },
+        { "hz": "卧室", "py": "wòshì", "vn": "phòng ngủ" }
+      ],
+      "image": "assets/living_room.jpg",
+      "example": {
+        "hz": "这套公寓不大，只有一个客厅和一个卧室。",
+        "py": "Zhè tào gōngyù bú dà, zhǐ yǒu yí ge kètīng hé yí ge wòshì.",
+        "vn": "Căn hộ này không lớn, chỉ có một phòng khách và một phòng ngủ."
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 6/13",
+      "items": [
+        { "hz": "厨房", "py": "chúfáng", "vn": "phòng bếp" },
+        { "hz": "卫生间", "py": "wèishēngjiān", "vn": "phòng vệ sinh" }
+      ],
+      "example": {
+        "hz": "厨房和卫生间都在客厅旁边，用起来很方便。",
+        "py": "Chúfáng hé wèishēngjiān dōu zài kètīng pángbiān, yòng qǐlái hěn fāngbiàn.",
+        "vn": "Phòng bếp và phòng vệ sinh đều ở cạnh phòng khách, dùng rất tiện."
+      },
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 7/13",
+      "items": [
+        { "hz": "阳台", "py": "yángtái", "vn": "ban công" },
+        { "hz": "打扫", "py": "dǎsǎo", "vn": "quét dọn" }
+      ],
+      "image": "assets/balcony_plants.jpg",
+      "example": {
+        "hz": "阳台上摆着几盆花，妈妈每天都打扫得干干净净。",
+        "py": "Yángtái shàng bǎizhe jǐ pén huā, māma měitiān dōu dǎsǎo de gāngānjìngjìng.",
+        "vn": "Trên ban công bày mấy chậu hoa, mẹ ngày nào cũng quét dọn sạch sẽ."
+      },
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 8/13",
+      "items": [
+        { "hz": "收拾", "py": "shōushi", "vn": "thu dọn, sắp xếp" },
+        { "hz": "擦窗户", "py": "cā chuānghu", "vn": "lau cửa sổ" }
+      ],
+      "example": {
+        "hz": "收拾完房间、擦好窗户以后，家里多干净啊！",
+        "py": "Shōushi wán fángjiān, cā hǎo chuānghu yǐhòu, jiā li duō gānjìng a!",
+        "vn": "Dọn xong phòng, lau xong cửa sổ rồi, nhà cửa sạch biết bao!"
+      },
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 9/13",
+      "items": [
+        { "hz": "拖地", "py": "tuō dì", "vn": "lau nhà" },
+        { "hz": "倒垃圾", "py": "dào lājī", "vn": "đổ rác" }
+      ],
+      "example": {
+        "hz": "他每天回家先拖地、倒垃圾，然后才做饭。",
+        "py": "Tā měitiān huí jiā xiān tuō dì, dào lājī, ránhòu cái zuò fàn.",
+        "vn": "Ngày nào anh ấy về nhà cũng lau nhà, đổ rác trước, rồi mới nấu cơm."
+      },
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 10/13",
+      "items": [
+        { "hz": "洗衣服", "py": "xǐ yīfu", "vn": "giặt quần áo" },
+        { "hz": "晒衣服", "py": "shài yīfu", "vn": "phơi quần áo" }
+      ],
+      "image": "assets/laundry_balcony.jpg",
+      "example": {
+        "hz": "妈妈洗衣服洗得很快，洗完就拿到阳台上晒衣服。",
+        "py": "Māma xǐ yīfu xǐ de hěn kuài, xǐ wán jiù ná dào yángtái shàng shài yīfu.",
+        "vn": "Mẹ giặt đồ rất nhanh, giặt xong là mang ra ban công phơi luôn."
+      },
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 11/13",
+      "items": [
+        { "hz": "烹饪", "py": "pēngrèn", "vn": "nấu nướng" },
+        { "hz": "洗碗", "py": "xǐ wǎn", "vn": "rửa bát" }
+      ],
+      "example": {
+        "hz": "爸爸喜欢烹饪，可是从来不洗碗，都是妈妈洗。",
+        "py": "Bàba xǐhuan pēngrèn, kěshì cónglái bù xǐ wǎn, dōu shì māma xǐ.",
+        "vn": "Bố thích nấu nướng, nhưng chẳng bao giờ rửa bát, toàn mẹ rửa."
+      },
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 12/13",
+      "items": [
+        { "hz": "搬家", "py": "bānjiā", "vn": "chuyển nhà" },
+        { "hz": "浇花", "py": "jiāo huā", "vn": "tưới hoa" }
+      ],
+      "example": {
+        "hz": "他们搬家的时候，我送给他们几盆花，希望他们常常浇花。",
+        "py": "Tāmen bānjiā de shíhou, wǒ sòng gěi tāmen jǐ pén huā, xīwàng tāmen chángcháng jiāo huā.",
+        "vn": "Lúc họ chuyển nhà, tôi tặng họ mấy chậu hoa, mong họ hay tưới hoa."
+      },
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 13/13",
+      "items": [
+        { "hz": "修东西", "py": "xiū dōngxi", "vn": "sửa đồ đạc" }
+      ],
+      "example": {
+        "hz": "水管坏了，他自己在家修东西，修了一个下午。",
+        "py": "Shuǐguǎn huài le, tā zìjǐ zài jiā xiū dōngxi, xiū le yí ge xiàwǔ.",
+        "vn": "Ống nước hỏng rồi, anh ấy tự sửa đồ ở nhà, sửa mất cả buổi chiều."
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "回家路上 — 李文发现楼下站着一个人",
+      "turns": [
+        {
+          "speaker": "李文",
+          "hz": "王老师，你家楼下站着一个人。",
+          "py": "Wáng lǎoshī, nǐ jiā lóuxià zhànzhe yí ge rén."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "我家楼下？我看看。",
+          "py": "Wǒ jiā lóuxià? Wǒ kànkan."
+        },
+        {
+          "speaker": "李文",
+          "hz": "那个人穿着黑色的裤子，手里还拿着一个黑色的包。",
+          "py": "Nàge rén chuānzhe hēisè de kùzi, shǒulǐ hái názhe yí ge hēisè de bāo.",
+          "highlight": "站着"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "我看见那个人了，他是我男朋友。",
+          "py": "Wǒ kànjiàn nàge rén le, tā shì wǒ nánpéngyou."
+        },
+        {
+          "speaker": "李文",
+          "hz": "那我们快过去吧。",
+          "py": "Nà wǒmen kuài guòqù ba."
+        }
+      ],
+      "footer_note": "在回家路上，李文和王一飞边走边聊，发现楼下站着一个陌生人。",
+      "voices": {
+        "李文": "zh-CN-YunxiNeural",
+        "王一飞": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "楼下 — 王一飞见到男朋友杨同乐",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "同乐，真是你啊！上次打电话，你说有时间过来看我，没想到这么快就来了！",
+          "py": "Tóngle, zhēnshi nǐ a! Shàng cì dǎ diànhuà, nǐ shuō yǒu shíjiān guòlái kàn wǒ, méi xiǎngdào zhème kuài jiù lái le!"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "就要过年了，你一个人在这儿多没意思啊，所以我就早早过来了。",
+          "py": "Jiù yào guònián le, nǐ yí ge rén zài zhèr duō méiyìsi a, suǒyǐ wǒ jiù zǎozǎo guòlái le.",
+          "highlight": "多没意思啊"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "你能来，我太高兴了！",
+          "py": "Nǐ néng lái, wǒ tài gāoxìng le!"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "一飞，你旁边这位是？",
+          "py": "Yīfēi, nǐ pángbiān zhè wèi shì?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "同乐，这是李文，他在我们学校学医。李文，这是我男朋友杨同乐。",
+          "py": "Tóngle, zhè shì Lǐ Wén, tā zài wǒmen xuéxiào xué yī. Lǐ Wén, zhè shì wǒ nánpéngyou Yáng Tónglè."
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "李文，很高兴认识你！",
+          "py": "Lǐ Wén, hěn gāoxìng rènshi nǐ!"
+        },
+        {
+          "speaker": "李文",
+          "hz": "认识你我也很高兴！我家就在前面那个楼，有时间来玩。",
+          "py": "Rènshi nǐ wǒ yě hěn gāoxìng! Wǒ jiā jiù zài qiánmiàn nàge lóu, yǒu shíjiān lái wán."
+        }
+      ],
+      "footer_note": "在楼下，王一飞见到从外地赶来过年的男朋友杨同乐，并介绍给李文认识。",
+      "voices": {
+        "王一飞": "zh-CN-XiaoxiaoNeural",
+        "杨同乐": "zh-CN-YunyangNeural",
+        "李文": "zh-CN-YunxiNeural"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "王一飞家客厅 — 杨同乐和王一飞聊房子",
+      "image": "assets/bedroom.jpg",
+      "image_side": "right",
+      "turns": [
+        {
+          "speaker": "杨同乐",
+          "hz": "一飞，你住的房子真不错，很大，离学校也不远。",
+          "py": "Yīfēi, nǐ zhù de fángzi zhēn búcuò, hěn dà, lí xuéxiào yě bù yuǎn."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "是啊！我楼下还住着一家中国人，他们人很好。",
+          "py": "Shì a! Wǒ lóuxià hái zhùzhe yì jiā Zhōngguó rén, tāmen rén hěn hǎo.",
+          "highlight": "住着"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "这样你有事情就可以找他们帮忙。",
+          "py": "Zhèyàng nǐ yǒu shìqing jiù kěyǐ zhǎo tāmen bāngmáng."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "对，我也帮他们家的小孩儿学中文。",
+          "py": "Duì, wǒ yě bāng tāmen jiā de xiǎoháir xué Zhōngwén."
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "我记得你跟我说过，是个女孩儿，学得也很好。",
+          "py": "Wǒ jìde nǐ gēn wǒ shuōguo, shì ge nǚháir, xué de yě hěn hǎo."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "没错，她经常跑上来找我玩。",
+          "py": "Méi cuò, tā jīngcháng pǎo shànglái zhǎo wǒ wán.",
+          "highlight": "跑上来"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "你问问他们什么时候有时间，我请他们吃个饭。",
+          "py": "Nǐ wènwen tāmen shénme shíhou yǒu shíjiān, wǒ qǐng tāmen chī ge fàn."
+        }
+      ],
+      "footer_note": "在王一飞家客厅，杨同乐和王一飞聊起房子和楼下热心的中国邻居一家。",
+      "voices": {
+        "杨同乐": "zh-CN-YunyangNeural",
+        "王一飞": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 4",
+      "title": "王一飞的日记",
+      "sentences": [
+        {
+          "hz": "我男朋友姓杨，叫杨同乐。他高个子、大眼睛，唱歌唱得很好，跳舞跳得也不错。",
+          "py": "Wǒ nánpéngyou xìng Yáng, jiào Yáng Tónglè. Tā gāo gèzi, dà yǎnjing, chàng gē chàng de hěn hǎo, tiàowǔ tiào de yě búcuò.",
+          "vn": "Bạn trai tôi họ Dương, tên Dương Đồng Nhạc. Anh ấy cao, mắt to, hát hay, nhảy cũng đẹp."
+        },
+        {
+          "hz": "他和我姐姐一起工作，是姐姐介绍我们认识的。",
+          "py": "Tā hé wǒ jiějie yìqǐ gōngzuò, shì jiějie jièshào wǒmen rènshi de.",
+          "vn": "Anh ấy làm cùng chỗ chị gái tôi, chính chị giới thiệu chúng tôi quen nhau."
+        },
+        {
+          "hz": "他告诉我，从见到我的第一天开始，他就喜欢上我了。",
+          "py": "Tā gàosu wǒ, cóng jiàndào wǒ de dì-yī tiān kāishǐ, tā jiù xǐhuan shàng wǒ le.",
+          "vn": "Anh ấy kể với tôi, từ ngày đầu gặp tôi là đã thích tôi rồi."
+        }
+      ],
+      "footer_note": "小语的提示：\"喜欢上\" 表示开始喜欢，并一直喜欢下去 — mở rộng nghĩa của bổ ngữ xu hướng.",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/4",
+      "point": "存现句(2) — 处所 + động từ + 着 + người/vật phiếm chỉ",
+      "highlight": "着",
+      "examples": [
+        {
+          "hz": "你家楼下站着一个人。",
+          "py": "Nǐ jiā lóuxià zhànzhe yí ge rén.",
+          "vn": "Dưới nhà cậu có một người đang đứng đó."
+        },
+        {
+          "hz": "阳台上摆着几盆花。",
+          "py": "Yángtái shàng bǎizhe jǐ pén huā.",
+          "vn": "Trên ban công bày mấy chậu hoa."
+        },
+        {
+          "hz": "客厅里坐着两个客人。",
+          "py": "Kètīng lǐ zuòzhe liǎng ge kèrén.",
+          "vn": "Trong phòng khách có hai vị khách đang ngồi."
+        }
+      ],
+      "note": "Cấu trúc: 处所 + động từ + 着 + người/vật (phiếm chỉ, không xác định cụ thể là ai/cái gì). Trợ từ động thái \"着\" đứng sau động từ để tạo thành câu tồn hiện, mô tả TRẠNG THÁI có ai/vật gì đó tồn tại ở một nơi.",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/4",
+      "point": "程度副词\"多\" — dùng trong câu cảm thán, diễn đạt mức độ rất cao",
+      "highlight": "多",
+      "examples": [
+        {
+          "hz": "你一个人在这儿多没意思啊！",
+          "py": "Nǐ yí ge rén zài zhèr duō méiyìsi a!",
+          "vn": "Cậu ở đây một mình chán biết bao!"
+        },
+        {
+          "hz": "我们一起去多好啊！",
+          "py": "Wǒmen yìqǐ qù duō hǎo a!",
+          "vn": "Mình cùng đi thì tốt biết mấy!"
+        },
+        {
+          "hz": "这个客厅多干净啊！",
+          "py": "Zhège kètīng duō gānjìng a!",
+          "vn": "Phòng khách này sạch sẽ biết bao!"
+        }
+      ],
+      "note": "Cấu trúc: \"多\" + tính từ + \"啊\" (câu cảm thán). Diễn đạt mức độ rất cao của tính chất được nói tới, thường mang sắc thái cảm xúc mạnh (khen/than).",
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 3/4 · 拓展",
+      "point": "已经 + khoảng thời gian + 没 + động từ + 了 — đã lâu không làm gì",
+      "highlight": ["已经", "没"],
+      "examples": [
+        {
+          "hz": "他已经几年没回国了，今年想回国过年。",
+          "py": "Tā yǐjīng jǐ nián méi huíguó le, jīnnián xiǎng huíguó guònián.",
+          "vn": "Anh ấy đã mấy năm không về nước rồi, năm nay muốn về nước ăn Tết."
+        },
+        {
+          "hz": "我已经好几个月没打扫阳台了，今天该收拾一下了。",
+          "py": "Wǒ yǐjīng hǎo jǐ ge yuè méi dǎsǎo yángtái le, jīntiān gāi shōushi yíxià le.",
+          "vn": "Tôi đã mấy tháng rồi không dọn ban công, hôm nay nên thu dọn một chút."
+        },
+        {
+          "hz": "他们已经三年没搬家了，一直住在这套公寓里。",
+          "py": "Tāmen yǐjīng sān nián méi bānjiā le, yìzhí zhù zài zhè tào gōngyù lǐ.",
+          "vn": "Họ đã 3 năm không chuyển nhà rồi, vẫn ở mãi trong căn hộ này."
+        }
+      ],
+      "note": "Cấu trúc: 已经 + khoảng thời gian + 没 + động từ + 了 — diễn tả một khoảng thời gian khá lâu đã trôi qua mà chưa/không làm việc gì, thường kèm ý định/kế hoạch ở vế câu sau. Nguồn: 综合练习 nguyên văn sách Bài 14.",
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 4/4 · 拓展",
+      "point": "动词 + \"上\" (nghĩa mở rộng) — bắt đầu và duy trì một trạng thái",
+      "highlight": "上",
+      "examples": [
+        {
+          "hz": "他告诉我，从见到我的第一天开始，他就喜欢上我了。",
+          "py": "Tā gàosu wǒ, cóng jiàndào wǒ de dì-yī tiān kāishǐ, tā jiù xǐhuan shàng wǒ le.",
+          "vn": "Anh ấy kể, từ ngày đầu gặp tôi là đã thích tôi rồi (và cứ thích mãi)."
+        },
+        {
+          "hz": "我们爱上了中文课。",
+          "py": "Wǒmen ài shàng le Zhōngwén kè.",
+          "vn": "Chúng tôi đã yêu thích tiết học tiếng Trung (Buổi 13)."
+        },
+        {
+          "hz": "我一进这套公寓就看上了阳台。",
+          "py": "Wǒ yí jìn zhè tào gōngyù jiù kànshàng le yángtái.",
+          "vn": "Vừa bước vào căn hộ này là tôi đã ưng ngay cái ban công."
+        }
+      ],
+      "note": "\"động từ + 上\" ở đây KHÔNG chỉ hướng như 复合趋向补语 đã học ở Buổi 5 (上/下/进/出/回/过 + 来/去), mà mang nghĩa MỞ RỘNG: bắt đầu một trạng thái/cảm xúc và duy trì nó về sau. Thường gặp: 喜欢上 · 爱上 · 迷上 · 看上.",
+      "audio": "assets/audio/slide23.mp3"
+    }
+  ]
+}

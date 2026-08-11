@@ -1,0 +1,42 @@
+{
+  "house_apartment": {
+    "title": "Cairo Apartment Building",
+    "creator": "NCinDC",
+    "license": "by-nd 2.0",
+    "source": "https://www.flickr.com/photos/11897392@N04/2727275056",
+    "attribution": "\"Cairo Apartment Building\" by NCinDC is licensed under CC BY-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/2.0/.",
+    "query": "modern apartment building exterior"
+  },
+  "living_room": {
+    "title": "Blue Banquette",
+    "creator": "army.arch",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/45923298@N00/3163318058",
+    "attribution": "\"Blue Banquette\" by army.arch is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "living room sofa coffee table home"
+  },
+  "balcony_plants": {
+    "title": "alone",
+    "creator": "jenny downing",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/7941044@N06/4841476440",
+    "attribution": "\"alone\" by jenny downing is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "apartment balcony potted plants"
+  },
+  "laundry_balcony": {
+    "title": "hanging laundry out to dry.",
+    "creator": "alyssaBLACK.",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/91997239@N08/12864418173",
+    "attribution": "\"hanging laundry out to dry.\" by alyssaBLACK. is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "clothes drying on balcony line"
+  },
+  "bedroom": {
+    "title": "big bed",
+    "creator": "Joelk75",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/75001512@N00/198784420",
+    "attribution": "\"big bed\" by Joelk75 is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "bed pillows bedroom home interior"
+  }
+}
