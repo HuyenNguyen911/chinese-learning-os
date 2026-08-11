@@ -77,6 +77,9 @@ class DeckBuilder:
         rect.line.fill.background()
         rect.shadow.inherit = False
         rect._element.addprevious(rect._element)
+        # Chiều cao dải header CỦA SLIDE NÀY — mặc định BAND_H, có thể bị
+        # _band_header nới rộng ra nếu title dài phải xuống 2 dòng (xem đó).
+        self._band_h = BAND_H
         return slide
 
     def _set_run_highlighted(self, p, text, keywords, size, color="ink",
@@ -112,8 +115,24 @@ class DeckBuilder:
             tf.vertical_anchor = anchor
         return box, tf
 
+    def _no_bullet(self, run):
+        """Tắt bullet cho ĐOẠN chứa run này. Textbox/shape tự do (không phải
+        placeholder) lẽ ra không có bullet, nhưng PowerPoint thật vẫn áp
+        list style mặc định của theme (otherStyle) cho các đoạn không khai
+        báo rõ — hiện ra 1 dấu "•"/"◦" trơ trọi ở đoạn thứ 2+ (vd dòng pinyin
+        dưới ví dụ 生词). Chèn <a:buNone/> tường minh vào pPr để chặn hẳn,
+        idempotent (không chèn trùng nếu đoạn đã được xử lý)."""
+        pPr = run._r.getparent().get_or_add_pPr()
+        if pPr.find(qn("a:buNone")) is None:
+            for tag in ("a:buChar", "a:buAutoNum"):
+                el = pPr.find(qn(tag))
+                if el is not None:
+                    pPr.remove(el)
+            pPr.append(pPr.makeelement(qn("a:buNone"), {}))
+
     def _set_run(self, run, text, size, color="ink", bold=False,
                  font=None, italic=False, cjk=False):
+        self._no_bullet(run)
         run.text = text
         f = run.font
         f.size = Pt(size)
@@ -147,34 +166,61 @@ class DeckBuilder:
         return w
 
     def _band_header(self, slide, title, kicker=None):
-        band = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, SLIDE_W, BAND_H)
+        title_top = Inches(0.62) if kicker else Inches(0.30)
+        title_box_w = SLIDE_W - 2 * MARGIN
+
+        # Co cỡ chữ theo bề rộng 1 dòng trước (như cũ) — NHƯNG bề rộng ước
+        # lượng bằng _text_width_pt không luôn khớp font thật render trong
+        # PowerPoint, nên vẫn có trường hợp title dài (đặc biệt mix Hán+Việt,
+        # hoặc title 課文ghép 2 vế bằng "—") vẫn wrap xuống 2 dòng dù đã co
+        # chữ. Band/khung tiêu đề trước đây LUÔN giả định 1 dòng (`BAND_H` cố
+        # định) → 2 dòng đó TRÀN ra ngoài dải màu, đè lên nội dung (báo cáo
+        # lặp lại nhiều buổi, khác với bug tràn do KICKER dài đã sửa ở trên).
+        # Fix: đo lại SỐ DÒNG THỰC bằng _wrap_lines (cùng công cụ dùng cho
+        # mọi nội dung khác) ở cỡ chữ đã co, rồi NỚI RỘNG cả `band` và khung
+        # tiêu đề đủ chỗ cho đúng số dòng đó thay vì giả định luôn 1 dòng.
+        title_w_pt = title_box_w / Pt(1)
+        needed_pt = self._text_width_pt(title, 27, bold=True)
+        sz = 27 if needed_pt <= title_w_pt else max(16, int(27 * title_w_pt / needed_pt))
+        nlines = self._wrap_lines(title, title_box_w, sz, cjk=True, bold=True)
+        line_h = self._line_h(sz)
+        title_box_h = max(Inches(0.62), int(line_h * nlines) + Pt(16))
+        band_h = max(BAND_H, title_top + title_box_h + Inches(0.14))
+        self._band_h = band_h
+
+        band = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, SLIDE_W, band_h)
         band.fill.solid()
         band.fill.fore_color.rgb = self._rgb("accent")
         band.line.fill.background()
         band.shadow.inherit = False
         if kicker:
+            # Bề rộng tab CO GIÃN theo độ dài kicker (thay vì cố định 1.5in) —
+            # kicker dài (vd "语法 3/4 · 拓展") từng bị wrap 2 dòng và tràn ra
+            # ngoài khung cố định (review Buổi 14). Ưu tiên nới rộng tab; nếu
+            # vượt trần thì mới co cỡ chữ, để không lấn vào tiêu đề bên cạnh.
+            kicker_sz = 16
+            needed_w = Pt(self._text_width_pt(kicker, kicker_sz, bold=True)) + Pt(28)
+            tab_w = max(Inches(1.5), needed_w)
+            max_tab_w = Inches(3.6)
+            if tab_w > max_tab_w:
+                kicker_sz = max(11, int(kicker_sz * max_tab_w / tab_w))
+                tab_w = max_tab_w
             tab = slide.shapes.add_shape(
                 MSO_SHAPE.ROUNDED_RECTANGLE, MARGIN, Inches(0.16),
-                Inches(1.5), Inches(0.42))
+                tab_w, Inches(0.42))
             tab.fill.solid()
             tab.fill.fore_color.rgb = self._rgb("accent_dark")
             tab.line.fill.background()
             tab.shadow.inherit = False
             tf = tab.text_frame
-            tf.word_wrap = True
+            tf.word_wrap = False
             tf.margin_top = Pt(2); tf.margin_bottom = Pt(2)
             p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
-            self._set_run(p.add_run(), kicker, 16, color="bg", bold=True, cjk=True)
-            title_top = Inches(0.62)
-        else:
-            title_top = Inches(0.30)
+            self._set_run(p.add_run(), kicker, kicker_sz, color="bg", bold=True, cjk=True)
         box, tf = self._textbox(slide, MARGIN, title_top,
-                                SLIDE_W - 2 * MARGIN, Inches(0.62),
+                                title_box_w, title_box_h,
                                 anchor=MSO_ANCHOR.MIDDLE)
         p = tf.paragraphs[0]
-        title_w_pt = (SLIDE_W - 2 * MARGIN) / Pt(1)
-        needed_pt = self._text_width_pt(title, 27, bold=True)
-        sz = 27 if needed_pt <= title_w_pt else max(16, int(27 * title_w_pt / needed_pt))
         self._set_run(p.add_run(), title, sz, color="bg", bold=True, cjk=True)
 
     def _place_audio(self, slide, rel_path):
@@ -206,7 +252,7 @@ class DeckBuilder:
                       cjk=True)
 
     def _content_top(self):
-        return BAND_H + Inches(0.30)
+        return getattr(self, "_band_h", BAND_H) + Inches(0.30)
 
     def _content_area_h(self):
         return SLIDE_H - self._content_top() - Inches(0.4)
@@ -738,6 +784,8 @@ class DeckBuilder:
             natural += 0 if i == 0 else Pt(4)
         for ex in examples:
             natural += Pt(20) + self._line_h(26)
+            if ex.get("py"):
+                natural += Pt(3) + self._line_h(15)
             if ex.get("vn"):
                 natural += Pt(3) + self._line_h(15)
         if note:
@@ -765,15 +813,18 @@ class DeckBuilder:
                           cjk=True)
             first = False
         for ex in examples:
-            # Pinyin nằm CÙNG DÒNG với Hán tự (theo ý user), nghĩa xuống dòng;
-            # giãn RỘNG giữa các ví dụ để tách cụm cho dễ đọc.
+            # Pinyin xuống DÒNG RIÊNG ngay dưới Hán tự (đổi lại 2026-08-11,
+            # review Buổi 14: để cùng dòng làm hàng chữ quá dài/khó đọc) —
+            # nghĩa tiếng Việt tiếp tục xuống dòng của nó; giãn RỘNG giữa các
+            # ví dụ để tách cụm cho dễ đọc.
             p = tf.paragraphs[0] if first else tf.add_paragraph()
             first = False
             p.space_before = Pt(20 * scale)
             self._set_run_highlighted(p, ex.get("hz", ""), ex.get("highlight", highlight),
                                       sz(26, 16), color="ink", bold=True, cjk=True)
             if ex.get("py"):
-                self._set_run(p.add_run(), "  " + ex["py"], sz(15, 11), color="accent",
+                p1 = tf.add_paragraph(); p1.space_before = Pt(3 * scale)
+                self._set_run(p1.add_run(), ex["py"], sz(15, 11), color="accent",
                               italic=True)
             if ex.get("vn"):
                 p2 = tf.add_paragraph(); p2.space_before = Pt(3 * scale)
@@ -1055,16 +1106,31 @@ class DeckBuilder:
             return n_
 
         gap0 = int(Inches(0.08)); pad0 = int(Inches(0.14)); line0 = int(Inches(0.30))
-        natural = sum(line0 * nlines(t) + pad0 for t in turns) + gap0 * (n - 1)
+        # BUG (2026-08-10, chưa được bản đánh số Buổi 14 xử lý): trước đây
+        # dùng 1 biến `y` DÙNG CHUNG cho mọi cột, cộng dồn theo đúng thứ tự
+        # lượt thoại trong `turns` bất kể lượt đó thuộc cột nào — nghĩa là
+        # lượt của cột B cũng đẩy con trỏ y xuống, để lại khoảng trống "ma"
+        # trong cột A đúng bằng chiều cao lượt cột B đó (card cùng cột cách
+        # nhau xa gần không đều). Fix: mỗi cột (người nói) có timeline riêng,
+        # `natural`/scale tính theo cột CAO NHẤT thay vì tổng tất cả lượt.
+        turns_by_col = {}
+        for t in turns:
+            ci = spk_col.get(t.get("speaker"), 0)
+            turns_by_col.setdefault(ci, []).append(t)
+        natural = max(
+            (sum(line0 * nlines(t) + pad0 for t in col_turns) + gap0 * (len(col_turns) - 1)
+             for col_turns in turns_by_col.values()),
+            default=0)
         scale = min(1.0, avail_h / natural) if natural else 1.0
         line_h = int(line0 * scale); pad = int(pad0 * scale); gap = int(gap0 * scale)
         hz_sz = max(12, int(16 * scale)); py_sz = max(9, int(11 * scale))
         vn_sz = max(8, int(10 * scale))
 
-        y = y0
-        for t in turns:
+        y_col = {ci: y0 for ci in range(n_spk)}
+        for turn_no, t in enumerate(turns, 1):
             spk = t.get("speaker")
             ci = spk_col.get(spk, 0)
+            y = y_col[ci]
             row_h = line_h * nlines(t) + pad
             card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
                                         col_x[ci], Emu(y), col_w, Emu(row_h))
@@ -1076,6 +1142,12 @@ class DeckBuilder:
             tf.margin_left = Pt(8); tf.margin_right = Pt(6)
             tf.margin_top = Pt(3); tf.margin_bottom = Pt(3)
             p = tf.paragraphs[0]; p.alignment = PP_ALIGN.LEFT
+            # Đánh số thứ tự lượt thoại (vd "1. ") — swimlane >2 người xếp mỗi
+            # người 1 cột nên thứ tự trước/sau giữa các cột không còn hiển
+            # nhiên chỉ nhìn vị trí (review Buổi 14: "hội thoại 3 người chưa
+            # đánh số"); số này neo đúng cách đọc tuần tự trên→dưới toàn bài.
+            self._set_run(p.add_run(), "%d. " % turn_no, hz_sz, color="accent",
+                          bold=True)
             self._set_run(p.add_run(), t.get("hz", ""), hz_sz, color="ink", bold=True,
                           cjk=True)
             if t.get("py"):
@@ -1084,7 +1156,7 @@ class DeckBuilder:
             if t.get("vn"):
                 p3 = tf.add_paragraph(); p3.alignment = PP_ALIGN.LEFT
                 self._set_run(p3.add_run(), t["vn"], vn_sz, color="muted")
-            y = y + row_h + gap
+            y_col[ci] = y + row_h + gap
 
     def _dialogue_bubbles(self, slide, turns, top, txt_left=None, txt_w=None):
         if txt_left is None:
