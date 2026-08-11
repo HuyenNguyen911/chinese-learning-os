@@ -401,6 +401,43 @@ dụng mọi slide, không riêng 1 chỗ): `_set_run` giờ gọi `_no_bullet(r
 khi gán text — chèn tường minh `<a:buNone/>` vào `pPr` của đoạn chứa run đó
 (idempotent, không chèn trùng nếu đoạn đã xử lý).
 
+⚠️ **Xóa slide khỏi file `.pptx` đã build KHÔNG được chỉ gỡ khỏi `sldIdLst`
+(2026-08-11, Buổi 12 HSK2):** cách làm nhanh `xml_slides = prs.slides._sldIdLst;
+xml_slides.remove(...)` (recipe phổ biến trên mạng) chỉ bỏ slide khỏi thứ tự
+hiển thị — **không xóa relationship** tương ứng trong `presentation.xml.rels`,
+để lại 1 quan hệ "mồ côi" vẫn trỏ tới đúng file `slideN.xml` đang được slide
+khác dùng chung tên. Hậu quả xuất hiện ở lần `prs.save()` KẾ TIẾP (không phải
+ngay lúc xóa): python-pptx tự tính lại partname cho mọi part, đếm nhầm số
+lượng do quan hệ mồ côi này → 2 slide khác nhau bị gán cùng tên file trong zip
+(vd `slide13.xml` xuất hiện 2 lần với nội dung khác nhau) → PowerPoint/
+python-pptx đọc lại chỉ thấy 1 trong 2 (thường là bản sai), nội dung slide còn
+lại coi như mất. Xảy ra 2 lần liên tiếp trong 1 session (lần đầu khi xóa+thêm
+slide cùng lúc, lần hai chỉ vì sửa 1 chữ rồi save lại) — phải vá tay ở tầng
+zip/XML (gỡ trùng tên, xóa hẳn relationship mồ côi) mới ổn định.
+**Quy tắc:** khi cần xóa slide khỏi 1 file `.pptx` đã build (đặc biệt file đã
+có ảnh/audio dán tay, không rebuild được từ JSON):
+1. Xóa CẢ HAI: entry trong `sldIdLst` **và** relationship tương ứng trong
+   `presentation.xml.rels` (regex xóa nguyên `<Relationship Id="rIdX".*?/>`).
+2. Sau khi xóa, KHÔNG gọi thêm `add_slide()`/sửa run text nào trong CÙNG 1 lần
+   `Presentation()...save()` — mở lại file, kiểm tra `zipfile.namelist()` không
+   có tên trùng, rồi mới làm bước tiếp theo (add/edit) ở 1 lần mở file MỚI.
+3. Sau MỌI lần `save()` trên file đã qua thao tác này, luôn tự kiểm tra lại
+   bằng `collections.Counter(ZipFile(path).namelist())` tìm entry có count > 1
+   trước khi báo user là xong — im lặng không kiểm tra dễ báo "xong" nhưng thực
+   ra đã mất nội dung.
+
+⚠️ **生词 tách hoàn toàn khỏi 课文 gốc → cần hoạt động nhận diện, không bắt
+production (2026-08-11, Buổi 12 HSK2):** khi user muốn đổi nhóm 生词 sang chủ đề
+khác (vd từ thời tiết cơ bản sang thời tiết mạnh/thiên tai) nhưng **giữ nguyên
+课文** gốc sách (không viết lại hội thoại), 生词 mới sẽ không xuất hiện trong bất
+kỳ câu 课文 nào của buổi — đặc biệt rủi ro nếu từ mới khó/trừu tượng hơn hẳn cấp
+học (vd HSK2 học từ thiên tai như 火山爆发/山体滑坡). Bắt học viên tự đặt câu
+比较句 với những từ này ngay là quá tải. Giải pháp đã áp dụng: thêm 1-2 hoạt động
+CHỈ nhận diện (ghép tranh-từ kiểu 热身 gốc sách, hoặc đoạn đọc ngắn tự viết sẵn
+câu hoàn chỉnh + hỏi đúng/sai) ngay sau phần 生词, trước khi vào 课文 — học viên
+chỉ cần HIỂU câu có sẵn, không phải tự sản sinh câu với từ khó. Tránh dùng
+flashcard đơn thuần (liệt kê từ không có hoạt động) khi rơi vào tình huống này.
+
 ## Đồng bộ audio vào file .pptx đã bị sửa tay (không rebuild từ JSON)
 
 ⚠️ **Bắt buộc hỏi trước khi rebuild sau khi đã mở file cho user xem** (2026-08-05,
@@ -477,6 +514,22 @@ Muốn đổi 1 kicker/text có sẵn (vd đổi "口语" thành "口语 1/2" kh
 slide 2/2) thì sửa trực tiếp run text qua `slide.shapes` (đối chiếu
 `shape.text_frame.text` để tìm đúng shape) TRƯỚC khi gọi `_slide_<type>` thêm
 slide mới, cùng 1 lần mở file — không cần `build_deck.py`.
+
+⚠️ **Sau khi thêm slide mới, user tự DỜI VỊ TRÍ slide đó trong PowerPoint —
+phải đánh số lại TOÀN BỘ kicker theo đúng thứ tự VẬT LÝ mới, không phải thứ tự
+lúc thêm** (2026-08-11, Buổi 14 HSK2: thêm slide `语法 5/5` ở cuối, user dời nó
+lên nằm cạnh `语法 2/5` trong PowerPoint). Quy trình:
+1. Quét lại text từng slide hiện tại (`shape.text_frame.text`) để biết đúng
+   thứ tự VẬT LÝ mới — đừng tin lại thứ tự lúc build.
+2. Đánh số lại kicker theo thứ tự đó bằng **rename 2-pass qua nhãn tạm**
+   (`"语法 3/5" -> "__TMP__0__" -> "语法 4/5"`, vv.) — bắt buộc 2 pass vì nhiều
+   kicker đổi số CHÉO nhau cùng lúc (vd slide cũ 3→4 và 4→5), rename thẳng 1
+   pass sẽ ghi đè nhầm giá trị đã đổi của slide khác.
+3. **Đồng bộ lại thứ tự phần tử trong `buoiX.json` cho khớp** (di chuyển phần
+   tử trong mảng `slides`, không chỉ sửa text kicker) — bỏ qua bước này để lại
+   sai lệch thứ tự JSON ≠ thứ tự pptx thật, tái diễn đúng lớp lỗi audio bị lệch
+   nội dung đã ghi ở mục "Đồng bộ audio" phía trên (`slide_audio.py` đặt tên
+   file mp3 theo thứ tự JSON, không phải thứ tự pptx).
 
 ✅ **Đánh số lượt thoại ≥3 người — đã tự động hoá trong renderer (2026-08-11,
 Buổi 14):** `_dialogue_script` (swimlane, kích hoạt khi >2 speaker) giờ tự in
