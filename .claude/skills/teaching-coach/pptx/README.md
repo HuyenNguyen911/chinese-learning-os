@@ -270,11 +270,12 @@ vẫn không ra ảnh phù hợp/đứng đắn thì mới bỏ field `image` (h
 - **Bong bóng hội thoại (`_slide_dialogue`) quá khổ**: chiều rộng/chiều cao bubble hiện
   rộng rãi hơn cần thiết so với nội dung thật — user phải tự canh lại tay. Cần xem lại
   công thức `_bubble_w`/`_lines_at` để bubble ôm sát nội dung hơn, không chỉ tránh tràn.
-- **Header (`_band_header`) vẫn tràn** dù đã khôi phục auto-shrink theo bề rộng ký tự
-  ước lượng (`_text_width_pt`) — nghĩa là bản khôi phục đó (xem mục lịch sử `word_pair`
-  ở trên) chưa xử lý hết mọi trường hợp tràn thật. Cần đo lại bằng ảnh xuất thật
-  (`Slide.Export` qua PowerPoint COM, xem mục QA trong best-practices) thay vì chỉ tin
-  công thức ước lượng ký tự.
+- ✅ **Header (`_band_header`) tràn khi kicker dài — đã sửa (2026-08-11, Buổi 14):**
+  nguyên nhân thật là tab kicker có bề rộng CỐ ĐỊNH `Inches(1.5)` bất kể độ dài chữ —
+  kicker ngắn (`"语法 1/4"`) vừa khít, nhưng kicker dài (`"语法 3/4 · 拓展"`) bị wrap 2
+  dòng và tràn khỏi khung (auto-shrink cũ chỉ áp dụng cho TITLE, không áp dụng cho tab
+  kicker). Đã sửa: bề rộng tab co giãn theo `_text_width_pt(kicker, ...)` ước lượng
+  (floor 1.5in, trần 3.6in), vượt trần mới co cỡ chữ kicker xuống tối thiểu 11pt.
 - **`highlight` (tô đỏ từ ngữ pháp chính) mới chỉ có ở `type: grammar`** — slide
   `table` dùng để so sánh nhiều quy tắc (vd 时量补语 "Tân ngữ đứng ở đâu") chưa hỗ trợ
   tô đỏ từ khoá trong cột Ví dụ. Cân nhắc mở rộng `_set_run_highlighted` sang
@@ -354,7 +355,9 @@ nhìn như bị "xé thành nhiều cột". Đã đổi: ảnh (nếu có) lên 
 (2026-08-07):** `table` với `image` từng bị hiểu nhầm/khó kiểm soát chiều cao
 khi có 5+ hàng ngắn; `grammar` (không cần `point`, chỉ `image` + `examples[]`
 = các cụm câu khẩu ngữ) tái dùng đúng layout "ảnh 1 bên + danh sách cụm câu
-(Hán tự đậm + pinyin cùng dòng, nghĩa xuống dòng, giãn cách rộng)" đã ổn định
+(Hán tự đậm, pinyin XUỐNG DÒNG RIÊNG ngay dưới — đổi lại 2026-08-11, review
+Buổi 14: để cùng dòng làm hàng quá dài/khó đọc khi câu ví dụ dài — nghĩa Việt
+tiếp tục xuống dòng của nó, giãn cách rộng)" đã ổn định
 sẵn — không cần code mới, tránh trùng khẩu ngữ với 生词/语法 đã dạy trong buổi.
 
 ⚠️ **Bảng `vocab` (hz/py/nghĩa) rớt dòng cột 汉字 khi item là CẢ CÂU (2026-08-06):**
@@ -439,10 +442,15 @@ builder.prs.save(path)
 Muốn đổi 1 kicker/text có sẵn (vd đổi "口语" thành "口语 1/2" khi tách thêm
 slide 2/2) thì sửa trực tiếp run text qua `slide.shapes` (đối chiếu
 `shape.text_frame.text` để tìm đúng shape) TRƯỚC khi gọi `_slide_<type>` thêm
-slide mới, cùng 1 lần mở file — không cần `build_deck.py`. Kỹ thuật tương tự
-dùng được để thêm số thứ tự ①②③ vào từng lượt thoại của 1 slide `dialogue` có
-sẵn (sửa `p.runs[0].text` của từng bubble) khi cần đánh số hội thoại ≥3 người
-cho dễ theo dõi — schema `dialogue` hiện chưa có field numbering riêng.
+slide mới, cùng 1 lần mở file — không cần `build_deck.py`.
+
+✅ **Đánh số lượt thoại ≥3 người — đã tự động hoá trong renderer (2026-08-11,
+Buổi 14):** `_dialogue_script` (swimlane, kích hoạt khi >2 speaker) giờ tự in
+số thứ tự `"1. "/"2. "/...` trước mỗi lượt thoại khi build từ JSON — không cần
+sửa tay `p.runs[0].text` như trước nữa (thứ tự đọc trước/sau giữa các cột dễ bị
+mất khi chỉ nhìn vị trí, xem review Buổi 14: "hội thoại 3 người chưa đánh số").
+Kỹ thuật sửa tay ở trên chỉ còn cần khi thao tác trên file ĐÃ QUA CHỈNH TAY
+(không rebuild từ JSON sạch).
 
 **2 lỗi python-pptx đã gặp khi làm việc này (chỉ xảy ra trên file đã qua chỉnh tay
 nhiều lần, không xảy ra khi build từ JSON sạch):**

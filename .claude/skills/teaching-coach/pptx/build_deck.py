@@ -153,18 +153,29 @@ class DeckBuilder:
         band.line.fill.background()
         band.shadow.inherit = False
         if kicker:
+            # Bề rộng tab CO GIÃN theo độ dài kicker (thay vì cố định 1.5in) —
+            # kicker dài (vd "语法 3/4 · 拓展") từng bị wrap 2 dòng và tràn ra
+            # ngoài khung cố định (review Buổi 14). Ưu tiên nới rộng tab; nếu
+            # vượt trần thì mới co cỡ chữ, để không lấn vào tiêu đề bên cạnh.
+            kicker_sz = 16
+            needed_w = Pt(self._text_width_pt(kicker, kicker_sz, bold=True)) + Pt(28)
+            tab_w = max(Inches(1.5), needed_w)
+            max_tab_w = Inches(3.6)
+            if tab_w > max_tab_w:
+                kicker_sz = max(11, int(kicker_sz * max_tab_w / tab_w))
+                tab_w = max_tab_w
             tab = slide.shapes.add_shape(
                 MSO_SHAPE.ROUNDED_RECTANGLE, MARGIN, Inches(0.16),
-                Inches(1.5), Inches(0.42))
+                tab_w, Inches(0.42))
             tab.fill.solid()
             tab.fill.fore_color.rgb = self._rgb("accent_dark")
             tab.line.fill.background()
             tab.shadow.inherit = False
             tf = tab.text_frame
-            tf.word_wrap = True
+            tf.word_wrap = False
             tf.margin_top = Pt(2); tf.margin_bottom = Pt(2)
             p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
-            self._set_run(p.add_run(), kicker, 16, color="bg", bold=True, cjk=True)
+            self._set_run(p.add_run(), kicker, kicker_sz, color="bg", bold=True, cjk=True)
             title_top = Inches(0.62)
         else:
             title_top = Inches(0.30)
@@ -738,6 +749,8 @@ class DeckBuilder:
             natural += 0 if i == 0 else Pt(4)
         for ex in examples:
             natural += Pt(20) + self._line_h(26)
+            if ex.get("py"):
+                natural += Pt(3) + self._line_h(15)
             if ex.get("vn"):
                 natural += Pt(3) + self._line_h(15)
         if note:
@@ -765,15 +778,18 @@ class DeckBuilder:
                           cjk=True)
             first = False
         for ex in examples:
-            # Pinyin nằm CÙNG DÒNG với Hán tự (theo ý user), nghĩa xuống dòng;
-            # giãn RỘNG giữa các ví dụ để tách cụm cho dễ đọc.
+            # Pinyin xuống DÒNG RIÊNG ngay dưới Hán tự (đổi lại 2026-08-11,
+            # review Buổi 14: để cùng dòng làm hàng chữ quá dài/khó đọc) —
+            # nghĩa tiếng Việt tiếp tục xuống dòng của nó; giãn RỘNG giữa các
+            # ví dụ để tách cụm cho dễ đọc.
             p = tf.paragraphs[0] if first else tf.add_paragraph()
             first = False
             p.space_before = Pt(20 * scale)
             self._set_run_highlighted(p, ex.get("hz", ""), ex.get("highlight", highlight),
                                       sz(26, 16), color="ink", bold=True, cjk=True)
             if ex.get("py"):
-                self._set_run(p.add_run(), "  " + ex["py"], sz(15, 11), color="accent",
+                p1 = tf.add_paragraph(); p1.space_before = Pt(3 * scale)
+                self._set_run(p1.add_run(), ex["py"], sz(15, 11), color="accent",
                               italic=True)
             if ex.get("vn"):
                 p2 = tf.add_paragraph(); p2.space_before = Pt(3 * scale)
@@ -1062,7 +1078,7 @@ class DeckBuilder:
         vn_sz = max(8, int(10 * scale))
 
         y = y0
-        for t in turns:
+        for turn_no, t in enumerate(turns, 1):
             spk = t.get("speaker")
             ci = spk_col.get(spk, 0)
             row_h = line_h * nlines(t) + pad
@@ -1076,6 +1092,12 @@ class DeckBuilder:
             tf.margin_left = Pt(8); tf.margin_right = Pt(6)
             tf.margin_top = Pt(3); tf.margin_bottom = Pt(3)
             p = tf.paragraphs[0]; p.alignment = PP_ALIGN.LEFT
+            # Đánh số thứ tự lượt thoại (vd "1. ") — swimlane >2 người xếp mỗi
+            # người 1 cột nên thứ tự trước/sau giữa các cột không còn hiển
+            # nhiên chỉ nhìn vị trí (review Buổi 14: "hội thoại 3 người chưa
+            # đánh số"); số này neo đúng cách đọc tuần tự trên→dưới toàn bài.
+            self._set_run(p.add_run(), "%d. " % turn_no, hz_sz, color="accent",
+                          bold=True)
             self._set_run(p.add_run(), t.get("hz", ""), hz_sz, color="ink", bold=True,
                           cjk=True)
             if t.get("py"):
