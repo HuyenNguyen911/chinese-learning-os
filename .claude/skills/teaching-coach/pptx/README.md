@@ -401,6 +401,43 @@ dụng mọi slide, không riêng 1 chỗ): `_set_run` giờ gọi `_no_bullet(r
 khi gán text — chèn tường minh `<a:buNone/>` vào `pPr` của đoạn chứa run đó
 (idempotent, không chèn trùng nếu đoạn đã xử lý).
 
+⚠️ **Xóa slide khỏi file `.pptx` đã build KHÔNG được chỉ gỡ khỏi `sldIdLst`
+(2026-08-11, Buổi 12 HSK2):** cách làm nhanh `xml_slides = prs.slides._sldIdLst;
+xml_slides.remove(...)` (recipe phổ biến trên mạng) chỉ bỏ slide khỏi thứ tự
+hiển thị — **không xóa relationship** tương ứng trong `presentation.xml.rels`,
+để lại 1 quan hệ "mồ côi" vẫn trỏ tới đúng file `slideN.xml` đang được slide
+khác dùng chung tên. Hậu quả xuất hiện ở lần `prs.save()` KẾ TIẾP (không phải
+ngay lúc xóa): python-pptx tự tính lại partname cho mọi part, đếm nhầm số
+lượng do quan hệ mồ côi này → 2 slide khác nhau bị gán cùng tên file trong zip
+(vd `slide13.xml` xuất hiện 2 lần với nội dung khác nhau) → PowerPoint/
+python-pptx đọc lại chỉ thấy 1 trong 2 (thường là bản sai), nội dung slide còn
+lại coi như mất. Xảy ra 2 lần liên tiếp trong 1 session (lần đầu khi xóa+thêm
+slide cùng lúc, lần hai chỉ vì sửa 1 chữ rồi save lại) — phải vá tay ở tầng
+zip/XML (gỡ trùng tên, xóa hẳn relationship mồ côi) mới ổn định.
+**Quy tắc:** khi cần xóa slide khỏi 1 file `.pptx` đã build (đặc biệt file đã
+có ảnh/audio dán tay, không rebuild được từ JSON):
+1. Xóa CẢ HAI: entry trong `sldIdLst` **và** relationship tương ứng trong
+   `presentation.xml.rels` (regex xóa nguyên `<Relationship Id="rIdX".*?/>`).
+2. Sau khi xóa, KHÔNG gọi thêm `add_slide()`/sửa run text nào trong CÙNG 1 lần
+   `Presentation()...save()` — mở lại file, kiểm tra `zipfile.namelist()` không
+   có tên trùng, rồi mới làm bước tiếp theo (add/edit) ở 1 lần mở file MỚI.
+3. Sau MỌI lần `save()` trên file đã qua thao tác này, luôn tự kiểm tra lại
+   bằng `collections.Counter(ZipFile(path).namelist())` tìm entry có count > 1
+   trước khi báo user là xong — im lặng không kiểm tra dễ báo "xong" nhưng thực
+   ra đã mất nội dung.
+
+⚠️ **生词 tách hoàn toàn khỏi 课文 gốc → cần hoạt động nhận diện, không bắt
+production (2026-08-11, Buổi 12 HSK2):** khi user muốn đổi nhóm 生词 sang chủ đề
+khác (vd từ thời tiết cơ bản sang thời tiết mạnh/thiên tai) nhưng **giữ nguyên
+课文** gốc sách (không viết lại hội thoại), 生词 mới sẽ không xuất hiện trong bất
+kỳ câu 课文 nào của buổi — đặc biệt rủi ro nếu từ mới khó/trừu tượng hơn hẳn cấp
+học (vd HSK2 học từ thiên tai như 火山爆发/山体滑坡). Bắt học viên tự đặt câu
+比较句 với những từ này ngay là quá tải. Giải pháp đã áp dụng: thêm 1-2 hoạt động
+CHỈ nhận diện (ghép tranh-từ kiểu 热身 gốc sách, hoặc đoạn đọc ngắn tự viết sẵn
+câu hoàn chỉnh + hỏi đúng/sai) ngay sau phần 生词, trước khi vào 课文 — học viên
+chỉ cần HIỂU câu có sẵn, không phải tự sản sinh câu với từ khó. Tránh dùng
+flashcard đơn thuần (liệt kê từ không có hoạt động) khi rơi vào tình huống này.
+
 ## Đồng bộ audio vào file .pptx đã bị sửa tay (không rebuild từ JSON)
 
 ⚠️ **Bắt buộc hỏi trước khi rebuild sau khi đã mở file cho user xem** (2026-08-05,

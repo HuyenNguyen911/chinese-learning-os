@@ -42,9 +42,15 @@ format thi HSK và HSKK 初级.
     câu — mẫu: `"Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài
     - thân bài - kết bài)."`.
   - `hint`: chứa **dàn bài gợi mở bằng tiếng Việt** theo khung Mở bài/Thân bài/Kết
-    bài, để học viên tự nghĩ câu trả lời — không gợi ý sẵn nội dung. Mẫu:
-    `"开头 (Mở bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>? — 主体 (Thân bài): <câu hỏi
-    nhỏ 1>? <câu hỏi nhỏ 2>? — 结尾 (Kết bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>?"`
+    bài, để học viên tự nghĩ câu trả lời — không gợi ý sẵn nội dung. Chỉ 2 nhãn
+    开头/主体/结尾 (+ "Mở bài"/"Thân bài"/"Kết bài" trong ngoặc) là song ngữ để neo
+    cấu trúc; **các câu hỏi gợi mở bên trong PHẢI viết bằng tiếng Việt**, không
+    viết bằng tiếng Trung (2026-08-11, buổi 12 HSK2: bản nháp lỡ viết câu hỏi nhỏ
+    bằng tiếng Trung — dù rule này đã có ở trên, làm chưa để ý — user phải tự sửa
+    lại toàn bộ, nên viết rõ luôn trong mẫu để không lặp lại). Mẫu:
+    `"开头 (Mở bài): <câu hỏi nhỏ 1, viết bằng tiếng Việt>? <câu hỏi nhỏ 2>? —
+    主体 (Thân bài): <câu hỏi nhỏ 1>? <câu hỏi nhỏ 2>? — 结尾 (Kết bài): <câu hỏi
+    nhỏ 1>? <câu hỏi nhỏ 2>?"`
     — nội dung từng câu hỏi nhỏ bám sát chủ đề CÂU HỎI CHÍNH (`script`) của item đó
     (không dùng 1 khung chung mơ hồ cho mọi buổi). **`hint` PHẢI hiển thị trong
     `worksheet.docx`** (học viên cần thấy dàn bài để tự trả lời khi làm bài),
