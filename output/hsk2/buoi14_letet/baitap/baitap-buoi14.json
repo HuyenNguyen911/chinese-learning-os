@@ -1,0 +1,116 @@
+{
+  "meta": { "lesson": "Buổi 14: 一个人过年多没意思啊 — 存现句(2)/程度副词\"多\"+tính từ/phó từ\"多\"+động từ/已经…没…了/动词+上 + từ vựng nhà cửa", "hsk": 2 },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối từ với nghĩa",
+      "instructions": "Nối 汉字 bên trái với nghĩa tiếng Việt đúng bên phải.",
+      "pairs": [
+        { "left": "没意思", "right": "chán, vô vị" },
+        { "left": "跳舞", "right": "nhảy múa" },
+        { "left": "眼睛", "right": "con mắt" },
+        { "left": "别墅", "right": "biệt thự" },
+        { "left": "宿舍", "right": "ký túc xá" },
+        { "left": "平房", "right": "nhà một tầng" }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ đúng trong ngân hàng từ điền vào chỗ trống.",
+      "word_bank": ["打扫", "拖地", "倒垃圾", "洗碗"],
+      "items": [
+        { "q": "地上全是灰，你能帮我{}一下客厅吗？", "answer": "打扫", "src": "phỏng theo 真题" },
+        { "q": "妈妈觉得地上很脏，让我马上去{}。", "answer": "拖地", "src": "phỏng theo 真题" },
+        { "q": "你出门的时候记得先{}，垃圾桶已经满了。", "answer": "倒垃圾", "src": "phỏng theo 真题" },
+        { "q": "吃完晚饭，弟弟负责{}，我负责收拾桌子。", "answer": "洗碗", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc hiểu",
+      "instructions": "Đọc đoạn văn rồi trả lời câu hỏi.",
+      "passage": "小美和男朋友上个星期搬进了一套新公寓。房子虽然没有阳台，但是客厅很大，厨房也很干净，还有一个单独的卫生间。小美每天下班回家就先打扫客厅，然后才做饭。她说：\"公寓虽然小，但是离男朋友的学校很近，我们都很满意。\"",
+      "questions": [
+        { "q": "小美和男朋友搬到了哪儿？", "options": ["一套新公寓", "一间宿舍", "一栋别墅"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "这套公寓有阳台吗？", "options": ["没有", "有一个很大的", "有两个"], "answer": "A", "src": "phỏng theo 真题" },
+        { "q": "小美每天下班回家先做什么？", "options": ["打扫客厅", "做饭", "洗衣服"], "answer": "A", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ dưới đây thành câu hoàn chỉnh.",
+      "items": [
+        { "words": ["沙发上", "坐着", "一只", "猫"], "answer": "沙发上坐着一只猫。", "answer_plus": "沙发上坐着一只猫，看起来很舒服。", "src": "phỏng theo 真题" },
+        { "words": ["这套", "公寓", "多", "漂亮", "啊"], "answer": "这套公寓多漂亮啊！", "answer_plus": "这套公寓多漂亮啊，我真想住在这儿！", "src": "phỏng theo 真题" },
+        { "words": ["你", "应该", "多", "收拾", "收拾", "房间"], "answer": "你应该多收拾收拾房间。", "answer_plus": "你应该多收拾收拾房间，客人快要来了。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dịch câu sau sang tiếng Trung, có dùng từ gợi ý.",
+      "items": [
+        { "prompt": "Tôi đã ba tháng không lau nhà rồi, hôm nay phải lau một chút.", "given": ["已经", "没"], "answer": "我已经三个月没拖地了，今天得拖一下。", "answer_plus": "我已经三个月没拖地了，今天必须好好拖一下，不然太脏了。", "src": "phỏng theo 真题" },
+        { "prompt": "Cô ấy chuyển nhà xong liền yêu thích việc nấu nướng.", "given": ["爱上"], "answer": "她搬家以后就爱上了烹饪。", "answer_plus": "她搬家以后就爱上了烹饪，现在每天都自己做饭。", "src": "phỏng theo 真题" },
+        { "prompt": "Bố tôi rất giỏi sửa đồ, đồ hỏng trong nhà đều do ông ấy sửa xong.", "given": ["修东西"], "answer": "我爸爸很会修东西，家里坏的东西都是他修好的。", "answer_plus": "我爸爸很会修东西，家里坏的东西都是他修好的，从来不用找师傅。", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "writing_prompt",
+      "title": "Viết đoạn văn",
+      "instructions": "Viết một đoạn văn ngắn theo gợi ý dưới đây.",
+      "items": [
+        {
+          "prompt": "Miêu tả căn nhà/phòng bạn đang ở: có mấy phòng, mỗi phòng dùng để làm gì, trong phòng có gì (thử dùng câu tồn hiện 存现句: 处所 + động từ + 着 + người/vật), và gần đây có việc nhà nào bạn đã lâu chưa làm (thử dùng 已经 + khoảng thời gian + 没 + động từ + 了).",
+          "kind": "đoạn văn",
+          "target_length": "60-100 chữ",
+          "outline": [
+            "Nhà/phòng bạn có mấy phòng, mỗi phòng dùng để làm gì?",
+            "Trong phòng có gì đang tồn tại ở đó (处所 + động từ + 着 + người/vật)?",
+            "Có việc nhà nào bạn đã lâu chưa làm (已经…没…了)?"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe hiểu",
+      "instructions": "Nghe đoạn ghi âm rồi chọn đáp án đúng.",
+      "items": [
+        { "script": "他住在宿舍，没有阳台，只好在房间里晒衣服。", "q": "他为什么在房间里晒衣服？", "options": ["宿舍没有阳台", "他喜欢在房间里", "房间比较大"], "answer": "A", "audio": "audio/nghe-1.mp3", "src": "phỏng theo 真题" },
+        { "script": "这套别墅有五个卧室，还有一个很大的厨房。", "q": "这套别墅有几个卧室？", "options": ["五个", "三个", "两个"], "answer": "A", "audio": "audio/nghe-2.mp3", "src": "phỏng theo 真题" },
+        { "script": "他先打扫卫生间，然后擦窗户，最后倒垃圾，一个人做完了所有家务。", "q": "他最后做的家务是什么？", "options": ["倒垃圾", "擦窗户", "打扫卫生间"], "answer": "A", "audio": "audio/nghe-3.mp3", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Nghe và nhắc lại",
+      "part": "听后重复",
+      "instructions": "Nghe rồi nhắc lại nguyên câu.",
+      "items": [
+        { "script": "我们家客厅不大，但是收拾得很整齐。", "audio": "audio/hskk-1.mp3" },
+        { "script": "奶奶每天早上都去阳台浇花。", "audio": "audio/hskk-2.mp3" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 1",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        { "script": "你家有几个房间？平时是谁打扫房间、做家务？", "hint": "开头 (Mở bài): Nhà bạn có mấy phòng? Đó là những phòng nào? — 主体 (Thân bài): Trong nhà ai thường phụ trách việc gì (nấu ăn/dọn dẹp/giặt đồ...)? — 结尾 (Kết bài): Bạn thấy công việc đó có vất vả không? Vì sao?" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 2",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        { "script": "如果可以选择，你想住公寓、别墅还是宿舍？为什么？", "hint": "开头 (Mở bài): Bạn hiện đang sống ở loại nhà nào? — 主体 (Thân bài): Nếu được chọn, bạn muốn ở căn hộ, biệt thự hay ký túc xá? Vì sao (diện tích/vị trí/chi phí...)? — 结尾 (Kết bài): Bạn nghĩ ngôi nhà mơ ước của mình sẽ như thế nào?" }
+      ]
+    }
+  ]
+}

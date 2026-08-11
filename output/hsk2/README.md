@@ -23,7 +23,7 @@
 | — | `on1_bai1-8` | **Ôn 1** (giữa khoá) | ôn bài 1-8 + bảng hệ thống bổ ngữ (kết quả/xu hướng/得) + bảng 比较句(1)(2)(3) — chỉ ôn tập | — | — | ⏳ |
 | 9 | `buoi09_douong` | 我去买杯奶茶 | mua sắm (quần áo) + đồ uống (cà phê/trà sữa) + so sánh khoảng cách, đi bộ | 比较句(3) [没有] · 动词"离" · 时量补语(1) | L30 · L16 | ✅ |
 | 10 | `buoi10_thicu` | 就要考试了 | thi cử, học tập, cảm xúc thi cử **+ đặt lịch hẹn**⚠️ | 选择问句(还是) · **连…都/也 (bổ sung, dời từ Bài 12)** | — | ✅ |
-| 11 | `buoi11_monan_yeuthich` | 我最喜欢吃中国菜 | ăn uống, sở thích, sức khoẻ (đau đầu, hiệu thuốc) | 动态助词"着"(1)(2) · 程度副词"最" · **被字句 (bổ sung)** | — | ⏳ |
+| 11 | `buoi11_monan_yeuthich` | 我最喜欢吃中国菜 | ăn uống, sở thích, sức khoẻ (đau đầu, hiệu thuốc) | 动态助词"着"(1)(2) · 程度副词"最" · **被字句 (bổ sung)** | — | ✅ |
 | 12 | `buoi12_thoitiet` | 这里比北京冷多了 | thời tiết, so sánh | 比较句(4)(5)(6) | — | ⏳ |
 | 13 | `buoi13_hoctiengtrung` | 我们爱上中文课 | học tiếng Trung + tặng quà năm mới/春节 | 双宾语句(2) · 比较句(7)(8) | L17 | ✅ |
 | 14 | `buoi14_letet` | 一个人过年多没意思啊 | Tết + giới thiệu bạn trai/người yêu + nhà cửa/hàng xóm | 存现句(2) · 程度副词"多" · 复合趋向补语 (mục tiêu sách; KHÔNG dạy lại trên slide vì đã dạy đủ ở Buổi 5, xem ghi chú kỹ thuật) | L23 | ✅ |
@@ -154,12 +154,16 @@ Buổi 10. Buổi 9 ✅ (slide + audio + bài tập trọn gói, build sáng 202
 选择问句 + 连…都/也 dời từ Bài 12; layout `vocab` đổi sang chế độ thẻ ảnh to+ví dụ
 highlight, `passage` đổi layout full-width đánh số, giọng trẻ con dùng riêng
 `YunxiaNeural` — xem chi tiết ở `pptx/README.md` và `state/session-log.md`).
-**Tóm lại đã build xong: Buổi 1-10 (toàn bộ)**. Buổi 13 ✅ (slide + audio + bài tập,
-2026-08-10 — bỏ qua Buổi 11-12 theo yêu cầu user, xem "Buổi 11-12 bị bỏ qua tạm thời"
+**Tóm lại đã build xong: Buổi 1-11 (toàn bộ)**. Buổi 11 ✅ (slide + audio + bài tập,
+đã build trước đó nhưng cột Trạng thái từng ghi sai ⏳ — sửa lại 2026-08-11 sau khi
+ls trực tiếp thư mục xác nhận có đủ slide+baitap). Buổi 13 ✅ (slide + audio + bài tập,
+2026-08-10 — bỏ qua Buổi 12 theo yêu cầu user, xem "Buổi 11-12 bị bỏ qua tạm thời"
 ở Ghi chú kỹ thuật; 生词 đổi hẳn sang 29 từ nâng cao chủ đề tặng quà Tết, bài tập cũng
-bám 29 từ mới chứ không giữ 11 từ gốc như cách làm ở Buổi 5). Buổi 14 ✅ (slide xong,
-2026-08-11 — bóc bài lại biên trang + phát hiện thiếu 1 điểm ngữ pháp, xem "Ghi chú kỹ
-thuật"; 生词 đổi hẳn sang 24 từ chủ đề nhà cửa dùng đủ danh sách user cung cấp; **audio +
-bài tập CHƯA làm, đang chờ duyệt slide**). **Buổi 11-12 vẫn ⏳** — user chủ động chọn bỏ
-qua tiếp tục, cần làm bù trước khi mở Ôn 2. Buổi 15 + Ôn 1 + Ôn 2 xem trạng thái ở bảng
-trên (nguồn chân lý).
+bám 29 từ mới chứ không giữ 11 từ gốc như cách làm ở Buổi 5). Buổi 14 ✅ (slide + audio +
+bài tập xong, 2026-08-11 — bóc bài lại biên trang + phát hiện thiếu 1 điểm ngữ pháp, xem
+"Ghi chú kỹ thuật"; 生词 đổi hẳn sang 24 từ chủ đề nhà cửa dùng đủ danh sách user cung cấp;
+sau khi duyệt slide, user tự thêm 1 điểm ngữ pháp mới trên PowerPoint — 副词"多"+động từ —
+và dời vị trí slide, đã đánh số lại header + patch audio không rebuild; bài tập 27 mục,
+phủ 24/24 từ vựng). **Buổi 12 vẫn ⏳** — user chủ động chọn bỏ qua tiếp tục, cần làm bù
+trước khi mở Ôn 2 (着(1)(2)/被字句 đã dạy bù ở Buổi 11; 比较句(4)(5)(6) của Bài 12 vẫn
+chưa dạy ở đâu). Buổi 15 + Ôn 1 + Ôn 2 xem trạng thái ở bảng trên (nguồn chân lý).

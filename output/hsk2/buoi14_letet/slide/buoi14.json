@@ -27,8 +27,16 @@
       "type": "vocab",
       "kicker": "生词 1/13",
       "items": [
-        { "hz": "没意思", "py": "méiyìsi", "vn": "chán, vô vị" },
-        { "hz": "跳舞", "py": "tiàowǔ", "vn": "nhảy múa" }
+        {
+          "hz": "没意思",
+          "py": "méiyìsi",
+          "vn": "chán, vô vị"
+        },
+        {
+          "hz": "跳舞",
+          "py": "tiàowǔ",
+          "vn": "nhảy múa"
+        }
       ],
       "example": {
         "hz": "一个人在家看电视，多没意思啊，还是找朋友一起跳舞吧。",
@@ -41,7 +49,11 @@
       "type": "vocab",
       "kicker": "生词 2/13",
       "items": [
-        { "hz": "眼睛", "py": "yǎnjing", "vn": "con mắt" }
+        {
+          "hz": "眼睛",
+          "py": "yǎnjing",
+          "vn": "con mắt"
+        }
       ],
       "example": {
         "hz": "杨同乐有一双大眼睛，笑起来特别好看。",
@@ -54,8 +66,16 @@
       "type": "vocab",
       "kicker": "生词 3/13",
       "items": [
-        { "hz": "公寓", "py": "gōngyù", "vn": "căn hộ, chung cư" },
-        { "hz": "别墅", "py": "biéshù", "vn": "biệt thự" }
+        {
+          "hz": "公寓",
+          "py": "gōngyù",
+          "vn": "căn hộ, chung cư"
+        },
+        {
+          "hz": "别墅",
+          "py": "biéshù",
+          "vn": "biệt thự"
+        }
       ],
       "image": "assets/house_apartment.jpg",
       "example": {
@@ -69,8 +89,16 @@
       "type": "vocab",
       "kicker": "生词 4/13",
       "items": [
-        { "hz": "宿舍", "py": "sùshè", "vn": "ký túc xá" },
-        { "hz": "平房", "py": "píngfáng", "vn": "nhà một tầng" }
+        {
+          "hz": "宿舍",
+          "py": "sùshè",
+          "vn": "ký túc xá"
+        },
+        {
+          "hz": "平房",
+          "py": "píngfáng",
+          "vn": "nhà một tầng"
+        }
       ],
       "example": {
         "hz": "杨同乐大学的时候住宿舍，毕业以后才搬进一间平房。",
@@ -83,8 +111,16 @@
       "type": "vocab",
       "kicker": "生词 5/13",
       "items": [
-        { "hz": "客厅", "py": "kètīng", "vn": "phòng khách" },
-        { "hz": "卧室", "py": "wòshì", "vn": "phòng ngủ" }
+        {
+          "hz": "客厅",
+          "py": "kètīng",
+          "vn": "phòng khách"
+        },
+        {
+          "hz": "卧室",
+          "py": "wòshì",
+          "vn": "phòng ngủ"
+        }
       ],
       "image": "assets/living_room.jpg",
       "example": {
@@ -98,8 +134,16 @@
       "type": "vocab",
       "kicker": "生词 6/13",
       "items": [
-        { "hz": "厨房", "py": "chúfáng", "vn": "phòng bếp" },
-        { "hz": "卫生间", "py": "wèishēngjiān", "vn": "phòng vệ sinh" }
+        {
+          "hz": "厨房",
+          "py": "chúfáng",
+          "vn": "phòng bếp"
+        },
+        {
+          "hz": "卫生间",
+          "py": "wèishēngjiān",
+          "vn": "phòng vệ sinh"
+        }
       ],
       "example": {
         "hz": "厨房和卫生间都在客厅旁边，用起来很方便。",
@@ -112,8 +156,16 @@
       "type": "vocab",
       "kicker": "生词 7/13",
       "items": [
-        { "hz": "阳台", "py": "yángtái", "vn": "ban công" },
-        { "hz": "打扫", "py": "dǎsǎo", "vn": "quét dọn" }
+        {
+          "hz": "阳台",
+          "py": "yángtái",
+          "vn": "ban công"
+        },
+        {
+          "hz": "打扫",
+          "py": "dǎsǎo",
+          "vn": "quét dọn"
+        }
       ],
       "image": "assets/balcony_plants.jpg",
       "example": {
@@ -127,8 +179,16 @@
       "type": "vocab",
       "kicker": "生词 8/13",
       "items": [
-        { "hz": "收拾", "py": "shōushi", "vn": "thu dọn, sắp xếp" },
-        { "hz": "擦窗户", "py": "cā chuānghu", "vn": "lau cửa sổ" }
+        {
+          "hz": "收拾",
+          "py": "shōushi",
+          "vn": "thu dọn, sắp xếp"
+        },
+        {
+          "hz": "擦窗户",
+          "py": "cā chuānghu",
+          "vn": "lau cửa sổ"
+        }
       ],
       "example": {
         "hz": "收拾完房间、擦好窗户以后，家里多干净啊！",
@@ -141,8 +201,16 @@
       "type": "vocab",
       "kicker": "生词 9/13",
       "items": [
-        { "hz": "拖地", "py": "tuō dì", "vn": "lau nhà" },
-        { "hz": "倒垃圾", "py": "dào lājī", "vn": "đổ rác" }
+        {
+          "hz": "拖地",
+          "py": "tuō dì",
+          "vn": "lau nhà"
+        },
+        {
+          "hz": "倒垃圾",
+          "py": "dào lājī",
+          "vn": "đổ rác"
+        }
       ],
       "example": {
         "hz": "他每天回家先拖地、倒垃圾，然后才做饭。",
@@ -155,8 +223,16 @@
       "type": "vocab",
       "kicker": "生词 10/13",
       "items": [
-        { "hz": "洗衣服", "py": "xǐ yīfu", "vn": "giặt quần áo" },
-        { "hz": "晒衣服", "py": "shài yīfu", "vn": "phơi quần áo" }
+        {
+          "hz": "洗衣服",
+          "py": "xǐ yīfu",
+          "vn": "giặt quần áo"
+        },
+        {
+          "hz": "晒衣服",
+          "py": "shài yīfu",
+          "vn": "phơi quần áo"
+        }
       ],
       "image": "assets/laundry_balcony.jpg",
       "example": {
@@ -170,8 +246,16 @@
       "type": "vocab",
       "kicker": "生词 11/13",
       "items": [
-        { "hz": "烹饪", "py": "pēngrèn", "vn": "nấu nướng" },
-        { "hz": "洗碗", "py": "xǐ wǎn", "vn": "rửa bát" }
+        {
+          "hz": "烹饪",
+          "py": "pēngrèn",
+          "vn": "nấu nướng"
+        },
+        {
+          "hz": "洗碗",
+          "py": "xǐ wǎn",
+          "vn": "rửa bát"
+        }
       ],
       "example": {
         "hz": "爸爸喜欢烹饪，可是从来不洗碗，都是妈妈洗。",
@@ -184,8 +268,16 @@
       "type": "vocab",
       "kicker": "生词 12/13",
       "items": [
-        { "hz": "搬家", "py": "bānjiā", "vn": "chuyển nhà" },
-        { "hz": "浇花", "py": "jiāo huā", "vn": "tưới hoa" }
+        {
+          "hz": "搬家",
+          "py": "bānjiā",
+          "vn": "chuyển nhà"
+        },
+        {
+          "hz": "浇花",
+          "py": "jiāo huā",
+          "vn": "tưới hoa"
+        }
       ],
       "example": {
         "hz": "他们搬家的时候，我送给他们几盆花，希望他们常常浇花。",
@@ -198,7 +290,11 @@
       "type": "vocab",
       "kicker": "生词 13/13",
       "items": [
-        { "hz": "修东西", "py": "xiū dōngxi", "vn": "sửa đồ đạc" }
+        {
+          "hz": "修东西",
+          "py": "xiū dōngxi",
+          "vn": "sửa đồ đạc"
+        }
       ],
       "example": {
         "hz": "水管坏了，他自己在家修东西，修了一个下午。",
@@ -374,7 +470,7 @@
     },
     {
       "type": "grammar",
-      "kicker": "语法 1/4",
+      "kicker": "语法 1/5",
       "point": "存现句(2) — 处所 + động từ + 着 + người/vật phiếm chỉ",
       "highlight": "着",
       "examples": [
@@ -399,7 +495,7 @@
     },
     {
       "type": "grammar",
-      "kicker": "语法 2/4",
+      "kicker": "语法 2/5",
       "point": "程度副词\"多\" — dùng trong câu cảm thán, diễn đạt mức độ rất cao",
       "highlight": "多",
       "examples": [
@@ -424,9 +520,37 @@
     },
     {
       "type": "grammar",
-      "kicker": "语法 3/4 · 拓展",
+      "kicker": "语法 3/5 · 拓展",
+      "point": "副词\"多\" + động từ — làm (nhiều) hơn, phân biệt với \"多\" + tính từ ở 语法 2",
+      "highlight": "多",
+      "examples": [
+        {
+          "hz": "房间脏了，你多打扫打扫吧。",
+          "py": "Fángjiān zāng le, nǐ duō dǎsǎo dǎsǎo ba.",
+          "vn": "Phòng bẩn rồi, cậu dọn dẹp nhiều hơn đi."
+        },
+        {
+          "hz": "阳台上的花，你要多浇点水。",
+          "py": "Yángtái shàng de huā, nǐ yào duō jiāo diǎn shuǐ.",
+          "vn": "Hoa trên ban công, cậu phải tưới nhiều nước hơn."
+        },
+        {
+          "hz": "天冷了，多穿点衣服。",
+          "py": "Tiān lěng le, duō chuān diǎn yīfu.",
+          "vn": "Trời lạnh rồi, mặc thêm quần áo vào."
+        }
+      ],
+      "note": "So sánh với 语法 2 (\"多\" + tính từ trong câu cảm thán, vd 多好啊!): ở đây \"多\" đứng TRƯỚC ĐỘNG TỪ, nghĩa là làm động tác đó NHIỀU HƠN/THÊM — thường dùng trong câu khuyên nhủ, đề nghị (多 + V + (点) + O). Không mang sắc thái cảm thán như 语法 2.",
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 4/5 · 拓展",
       "point": "已经 + khoảng thời gian + 没 + động từ + 了 — đã lâu không làm gì",
-      "highlight": ["已经", "没"],
+      "highlight": [
+        "已经",
+        "没"
+      ],
       "examples": [
         {
           "hz": "他已经几年没回国了，今年想回国过年。",
@@ -449,7 +573,7 @@
     },
     {
       "type": "grammar",
-      "kicker": "语法 4/4 · 拓展",
+      "kicker": "语法 5/5 · 拓展",
       "point": "动词 + \"上\" (nghĩa mở rộng) — bắt đầu và duy trì một trạng thái",
       "highlight": "上",
       "examples": [

@@ -113,3 +113,9 @@ _- Status: PENDING UPDATE_
 - User tự phát hiện 2 câu "nâng cao" (`answer_plus`) vượt cả ngữ pháp chưa dạy (bổ ngữ xu hướng phức hợp "跳了起来" — ngữ pháp Bài 14, chưa học) sau khi hỏi "đề này có khó với HSK2 không" — đã sửa lại trong phạm vi ngữ pháp đã học, chỉ giữ nâng ở mức từ vựng.
 - Output: buoi13_hoctiengtrung/baitap/ → hocsinh/{worksheet.docx + audio 5 MP3} + dapan/dapan.docx
 - Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 2 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
+
+## 2026-08-11 · Exercise Generator · HSK2 Buổi 14 (一个人过年多没意思啊)
+- Slide buổi này sau khi user duyệt đã thêm 1 điểm ngữ pháp mới (phó từ "多" + động từ — làm nhiều/thêm hơn, câu khuyên nhủ, phân biệt với 程度副词"多"+tính từ đã có) và dời vị trí gần 语法 2 trong PowerPoint (đánh số lại header thành 1/5→5/5 cho khớp thứ tự vật lý, không rebuild JSON→pptx vì file đã qua chỉnh tay ảnh + fix line-wrap).
+- Blocks: noi (6: 没意思/跳舞/眼睛/别墅/宿舍/平房), dien_cho_trong (4: 打扫/拖地/倒垃圾/洗碗), doc_hieu (小美 chuyển nhà mới, tự soạn), sap_xep (3: 存现句/多+tính từ/多+động từ), dich_dat_cau (3: 已经…没…了/动词+上 爱上/修东西), writing_prompt (1: đoạn văn 60-100 chữ miêu tả nhà, gợi ý dùng 存现句 + 已经…没…了), nghe (3), noi_hskk 听后重复 (2), noi_hskk 回答问题 tách 2 block riêng (số phòng+ai làm việc nhà / chọn loại nhà nào nếu được) — 27 mục, phủ 24/24 từ vựng (check script), không trùng nội bộ (check_baitap.py) lẫn với slide (đối chiếu thủ công từng câu ví dụ/hội thoại/ngữ pháp trong buoi14.json).
+- Output: buoi14_letet/baitap/ → hocsinh/{worksheet.docx + audio 5 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 2 noi_hskk rate -18%); toàn bộ [phỏng theo 真题] (kho hsk2.md chưa seed)
