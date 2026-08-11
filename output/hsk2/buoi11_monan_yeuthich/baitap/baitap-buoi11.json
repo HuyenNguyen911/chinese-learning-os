@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "lesson": "Buổi 11: 我最喜欢吃中国菜 — 着(1)(2) / 程度副词最 / 被字句 (mở rộng)",
+    "hsk": 2
+  },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối từ với nghĩa",
+      "instructions": "Nối 汉字 bên trái với nghĩa tiếng Việt đúng bên phải.",
+      "pairs": [
+        { "left": "疼", "right": "đau" },
+        { "left": "经常", "right": "thường xuyên" },
+        { "left": "慢", "right": "chậm" },
+        { "left": "药店", "right": "hiệu thuốc" },
+        { "left": "嘴", "right": "miệng" },
+        { "left": "背", "right": "lưng" },
+        { "left": "肩膀", "right": "vai" },
+        { "left": "心脏", "right": "tim" }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "instructions": "Chọn từ đúng trong khung để điền vào chỗ trống.",
+      "word_bank": ["经常", "着", "最", "身体"],
+      "items": [
+        { "q": "她{}感冒，一到换季就不舒服。", "answer": "经常", "src": "phỏng theo 真题" },
+        { "q": "她正拿{}一本书，看得很认真。", "answer": "着", "src": "phỏng theo 真题" },
+        { "q": "小明是我们班{}聪明的学生。", "answer": "最", "src": "phỏng theo 真题" },
+        { "q": "我{}不舒服，想去医院看看。", "answer": "身体", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc hiểu",
+      "instructions": "Đọc đoạn văn rồi trả lời câu hỏi.",
+      "passage": "陈天中这几天经常肚子疼，还有点儿发烧。他没去药店买药，直接去医院看病了。医生检查后说他可能是吃坏了东西，中毒了，让他多喝水、好好休息。陈天中回家以后，一直躺着睡觉，现在身体好多了。",
+      "questions": [
+        { "q": "陈天中怎么了？", "options": ["头疼", "肚子疼、发烧", "感冒"], "answer": "B", "src": "phỏng theo 真题" },
+        { "q": "医生说他为什么不舒服？", "options": ["吃坏了东西", "天气太冷", "没睡好"], "answer": "A", "src": "phỏng theo 真题" }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Sắp xếp các từ dưới đây thành câu đúng.",
+      "items": [
+        {
+          "words": ["检查", "了", "眼睛", "医生", "我的"],
+          "answer": "医生检查了我的眼睛。",
+          "answer_plus": "医生检查了我的眼睛，说没什么问题，让我放心。",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "words": ["从", "药店", "买", "感冒药", "了", "他"],
+          "answer": "他从药店买了感冒药。",
+          "answer_plus": "他从药店买了感冒药，吃完就不发烧了。",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "words": ["最", "羽毛球", "打", "得", "好", "我"],
+          "answer": "我打羽毛球打得最好。",
+          "answer_plus": "在我们班，我打羽毛球打得最好，大家都想跟我学。",
+          "src": "phỏng theo 真题"
+        }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "instructions": "Dùng từ cho trước để dịch câu sau sang tiếng Trung.",
+      "items": [
+        {
+          "prompt": "Tay và chân của tớ đều đau.",
+          "given": ["手", "腿", "疼"],
+          "answer": "我的手和腿都疼。",
+          "answer_plus": "我的手和腿都疼，可能是昨天运动太累了。",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "prompt": "Tay của anh ấy bị viêm, phải đi khám.",
+          "given": ["发炎", "看病", "手"],
+          "answer": "他的手发炎了，得去看病。",
+          "answer_plus": "他的手发炎了，得赶紧去看病。",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "prompt": "Bác ấy mỗi năm đều phải đi khám sức khỏe định kỳ.",
+          "given": ["每年", "体检"],
+          "answer": "他每年都要体检一次。",
+          "answer_plus": "他每年都要体检一次，检查身体健康不健康。",
+          "src": "phỏng theo 真题"
+        }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe hiểu",
+      "instructions": "Nghe đoạn ghi âm rồi chọn đáp án đúng.",
+      "items": [
+        {
+          "script": "我肚子有点儿疼，还有点儿发烧，可能是感冒了。",
+          "q": "他怎么了？",
+          "options": ["感冒", "中毒", "受伤了"],
+          "answer": "A",
+          "audio": "audio/nghe-1.mp3",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "script": "医生说，这个药要一天吃三次，吃完了要多喝水。",
+          "q": "这个药一天吃几次？",
+          "options": ["一次", "两次", "三次"],
+          "answer": "C",
+          "audio": "audio/nghe-2.mp3",
+          "src": "phỏng theo 真题"
+        },
+        {
+          "script": "她的耳朵不舒服，去医院检查了一下，医生说没什么大问题。",
+          "q": "她去医院检查了哪里？",
+          "options": ["眼睛", "耳朵", "鼻子"],
+          "answer": "B",
+          "audio": "audio/nghe-3.mp3",
+          "src": "phỏng theo 真题"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "听后重复",
+      "part": "听后重复",
+      "instructions": "Nghe và nhắc lại theo đúng ngữ điệu.",
+      "items": [
+        { "script": "我最近身体不太好，经常头疼。", "audio": "audio/hskk-1.mp3" },
+        { "script": "你要多喝水，好好休息。", "audio": "audio/hskk-2.mp3" },
+        { "script": "我们一起去医院看病吧。", "audio": "audio/hskk-3.mp3" }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 1",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        {
+          "script": "你最近身体怎么样？有没有经常不舒服的地方？",
+          "hint": "开头 (Mở bài): Dạo này sức khỏe của bạn thế nào? Bạn có hay bị khó chịu ở đâu không? — 主体 (Thân bài): Bạn thường khó chịu ở đâu (đau đầu, đau bụng, hay chỗ khác)? Bắt đầu từ khi nào? — 结尾 (Kết bài): Sau đó bạn thế nào rồi? Bây giờ đã đỡ hơn chưa?"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 2",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        {
+          "script": "你生病的时候，一般会先做什么？",
+          "hint": "开头 (Mở bài): Khi bị ốm bạn cảm thấy thế nào? — 主体 (Thân bài): Bạn thường làm gì trước tiên (tự nghỉ ở nhà, uống thuốc, hay đi bệnh viện luôn)? Nếu nặng hơn thì bạn làm gì? — 结尾 (Kết bài): Ai thường lo cho bạn lúc đó? Bạn nghĩ làm sao để ít bị ốm hơn?"
+        }
+      ]
+    },
+    {
+      "type": "dien_bieu_mau",
+      "title": "Điền phiếu đăng ký khám bệnh",
+      "instructions": "Điền thông tin của bạn (hoặc tình huống giả định) vào phiếu đăng ký khám bệnh dưới đây.",
+      "fields": [
+        { "label": "姓名 (Họ tên)" },
+        { "label": "哪里不舒服？(Chỗ nào khó chịu?)", "sample": "头疼、肚子疼" },
+        { "label": "什么时候开始的？(Bắt đầu khi nào?)", "sample": "三天前" },
+        { "label": "吃过药吗？吃了什么药？(Đã uống thuốc chưa? Thuốc gì?)" }
+      ]
+    }
+  ]
+}

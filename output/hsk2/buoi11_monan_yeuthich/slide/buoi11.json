@@ -1,0 +1,659 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 11",
+    "topic": "我最喜欢吃中国菜 — Sức khỏe (đau đầu, khám bệnh, mua thuốc) + sở thích ăn uống + 着(1)(2) + 最 + 被字句 (mở rộng)",
+    "title": "我最喜欢吃中国菜"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我最喜欢吃中国菜",
+      "subtitle": "Wǒ zuì xǐhuan chī Zhōngguó cài — Tôi thích ăn món Trung Quốc nhất",
+      "footer": "HSK2 · Buổi 11"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Hôm nay học gì",
+      "bullets": [
+        "Nghe hiểu và mô tả tình trạng sức khỏe, bệnh tình (đau đầu, đi khám, mua thuốc)",
+        "Mở rộng từ vựng bộ phận cơ thể + các loại bệnh thường gặp",
+        "Dùng động thái trợ từ \"着\" để diễn tả hành động/trạng thái đang tiếp diễn",
+        "Dùng phó từ mức độ \"最\" (nhất)",
+        "Mở rộng: câu bị động \"被\" (ngoài phạm vi sách chính)"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 1/6",
+      "items": [
+        {
+          "hz": "头",
+          "py": "tóu",
+          "vn": "đầu"
+        },
+        {
+          "hz": "疼",
+          "py": "téng",
+          "vn": "đau"
+        }
+      ],
+      "image": "assets/headache.jpg",
+      "example": {
+        "hz": "我头疼，不太舒服。",
+        "py": "Wǒ tóu téng, bú tài shūfu.",
+        "vn": "Tớ đau đầu, không được khỏe lắm."
+      },
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 2/6",
+      "items": [
+        {
+          "hz": "经常",
+          "py": "jīngcháng",
+          "vn": "thường xuyên"
+        },
+        {
+          "hz": "动",
+          "py": "dòng",
+          "vn": "cử động, di chuyển"
+        }
+      ],
+      "example": {
+        "hz": "我经常头疼，一动就疼。",
+        "py": "Wǒ jīngcháng tóu téng, yí dòng jiù téng.",
+        "vn": "Tớ hay đau đầu, cử động là đau ngay."
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 3/6",
+      "items": [
+        {
+          "hz": "着",
+          "py": "zhe",
+          "vn": "(trợ từ chỉ sự tiếp diễn)"
+        },
+        {
+          "hz": "慢",
+          "py": "màn",
+          "vn": "chậm"
+        }
+      ],
+      "example": {
+        "hz": "路上车多，还下着雪，我开慢点儿。",
+        "py": "Lùshang chē duō, hái xiàzhe xuě, wǒ kāi màn diǎnr.",
+        "vn": "Đường đông xe, lại đang có tuyết rơi, tớ lái chậm chút."
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 4/6",
+      "items": [
+        {
+          "hz": "身体",
+          "py": "shēntǐ",
+          "vn": "cơ thể, sức khỏe"
+        },
+        {
+          "hz": "药",
+          "py": "yào",
+          "vn": "thuốc"
+        }
+      ],
+      "image": "assets/medicine_pills.jpg",
+      "example": {
+        "hz": "身体不舒服，吃完药就好多了。",
+        "py": "Shēntǐ bù shūfu, chīwán yào jiù hǎoduō le.",
+        "vn": "Người không khỏe, uống xong thuốc thấy đỡ hơn nhiều."
+      },
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 5/6",
+      "items": [
+        {
+          "hz": "药店",
+          "py": "yàodiàn",
+          "vn": "hiệu thuốc"
+        }
+      ],
+      "example": {
+        "hz": "我从药店买了点儿药，没去医院。",
+        "py": "Wǒ cóng yàodiàn mǎile diǎnr yào, méi qù yīyuàn.",
+        "vn": "Tớ mua ít thuốc ở hiệu thuốc, không đi bệnh viện."
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 6/6",
+      "items": [
+        {
+          "hz": "最",
+          "py": "zuì",
+          "vn": "nhất"
+        }
+      ],
+      "image": "assets/favorite_chinese_food.jpg",
+      "example": {
+        "hz": "你最喜欢吃中国菜。",
+        "py": "Nǐ zuì xǐhuan chī Zhōngguó cài.",
+        "vn": "Cậu thích ăn món Trung Quốc nhất."
+      },
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 身体部位 1/5",
+      "items": [
+        {
+          "hz": "眼睛",
+          "py": "yǎnjing",
+          "vn": "mắt"
+        },
+        {
+          "hz": "耳朵",
+          "py": "ěrduo",
+          "vn": "tai"
+        }
+      ],
+      "image": "assets/eye_ear_checkup.jpg",
+      "example": {
+        "hz": "医生检查了我的眼睛和耳朵。",
+        "py": "Yīshēng jiǎnchále wǒ de yǎnjing hé ěrduo.",
+        "vn": "Bác sĩ đã kiểm tra mắt và tai của tớ."
+      },
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 身体部位 2/5",
+      "items": [
+        {
+          "hz": "鼻子",
+          "py": "bízi",
+          "vn": "mũi"
+        },
+        {
+          "hz": "嘴",
+          "py": "zuǐ",
+          "vn": "miệng"
+        }
+      ],
+      "example": {
+        "hz": "感冒了，鼻子不舒服，嘴也没味道。",
+        "py": "Gǎnmào le, bízi bù shūfu, zuǐ yě méi wèidao.",
+        "vn": "Bị cảm rồi, mũi khó chịu, miệng cũng chẳng có vị gì."
+      },
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 身体部位 3/5",
+      "items": [
+        {
+          "hz": "手",
+          "py": "shǒu",
+          "vn": "tay"
+        },
+        {
+          "hz": "腿",
+          "py": "tuǐ",
+          "vn": "chân"
+        }
+      ],
+      "image": "assets/fall_injury.jpg",
+      "example": {
+        "hz": "摔倒的时候，我的手和腿都受伤了。",
+        "py": "Shuāidǎo de shíhou, wǒ de shǒu hé tuǐ dōu shòushāng le.",
+        "vn": "Lúc bị ngã, tay và chân tớ đều bị thương."
+      },
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 身体部位 4/5",
+      "items": [
+        {
+          "hz": "背",
+          "py": "bèi",
+          "vn": "lưng"
+        },
+        {
+          "hz": "肩膀",
+          "py": "jiānbǎng",
+          "vn": "vai"
+        }
+      ],
+      "example": {
+        "hz": "坐了一天车，我的背和肩膀都很酸。",
+        "py": "Zuòle yì tiān chē, wǒ de bèi hé jiānbǎng dōu hěn suān.",
+        "vn": "Ngồi xe cả ngày, lưng và vai tớ đều mỏi nhừ."
+      },
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 身体部位 5/5",
+      "items": [
+        {
+          "hz": "心脏",
+          "py": "xīnzàng",
+          "vn": "tim"
+        },
+        {
+          "hz": "肚子",
+          "py": "dùzi",
+          "vn": "bụng"
+        }
+      ],
+      "example": {
+        "hz": "我一紧张，心脏跳得快，肚子也疼。",
+        "py": "Wǒ yì jǐnzhāng, xīnzàng tiào de kuài, dùzi yě téng.",
+        "vn": "Tớ hễ hồi hộp là tim đập nhanh, bụng cũng đau."
+      },
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 疾病 1/3",
+      "items": [
+        {
+          "hz": "感冒",
+          "py": "gǎnmào",
+          "vn": "cảm"
+        },
+        {
+          "hz": "发烧",
+          "py": "fāshāo",
+          "vn": "sốt"
+        }
+      ],
+      "example": {
+        "hz": "弟弟感冒发烧了，妈妈很担心。",
+        "py": "Dìdi gǎnmào fāshāo le, māma hěn dānxīn.",
+        "vn": "Em trai bị cảm sốt, mẹ rất lo lắng."
+      },
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 疾病 2/3",
+      "items": [
+        {
+          "hz": "中毒",
+          "py": "zhòngdú",
+          "vn": "ngộ độc"
+        },
+        {
+          "hz": "看病",
+          "py": "kànbìng",
+          "vn": "khám bệnh, xem bệnh"
+        }
+      ],
+      "example": {
+        "hz": "我肚子疼，可能中毒了，得去看病。",
+        "py": "Wǒ dùzi téng, kěnéng zhòngdú le, děi qù kànbìng.",
+        "vn": "Tớ đau bụng, có thể bị ngộ độc rồi, phải đi khám."
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 疾病 3/3",
+      "items": [
+        {
+          "hz": "发炎",
+          "py": "fāyán",
+          "vn": "viêm"
+        },
+        {
+          "hz": "体检",
+          "py": "tǐjiǎn",
+          "vn": "khám sức khỏe (định kỳ)"
+        }
+      ],
+      "example": {
+        "hz": "医生在体检时发现我的牙齿发炎了。",
+        "py": "Yīshēng zài tǐjiǎn shí fāxiàn wǒ de yáchǐ fāyán le.",
+        "vn": "Bác sĩ khi khám sức khỏe phát hiện răng tớ bị viêm."
+      },
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "在教室 — 白家月头疼，王一飞送她去医院",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "家月，都下课了，你怎么还不回家？",
+          "py": "Jiāyuè, dōu xiàkè le, nǐ zěnme hái bù huí jiā?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我头疼，不太舒服。",
+          "py": "Wǒ tóu téng, bú tài shūfu."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "你这几天经常头疼，去医院看看吧。",
+          "py": "Nǐ zhè jǐ tiān jīngcháng tóu téng, qù yīyuàn kànkan ba."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我想休息一下，现在不能动，一动就疼。",
+          "py": "Wǒ xiǎng xiūxi yíxià, xiànzài bù néng dòng, yí dòng jiù téng."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "那你在这儿坐着，我去开车，一会儿送你去医院。",
+          "py": "Nà nǐ zài zhèr zuòzhe, wǒ qù kāichē, yíhuìr sòng nǐ qù yīyuàn."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "谢谢王老师。",
+          "py": "Xièxie Wáng lǎoshī."
+        }
+      ],
+      "footer_note": "在教室，王一飞和白家月在聊天儿。",
+      "voices": {
+        "王一飞": "zh-CN-YunyangNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "在车里 — 李文打来电话",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "现在路上车多，还下着雪，我开慢一点儿。",
+          "py": "Xiànzài lùshang chē duō, hái xiàzhe xuě, wǒ kāi màn yìdiǎnr."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "没问题，现在头没那么疼了。",
+          "py": "Méi wèntí, xiànzài tóu méi nàme téng le."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "好。李文来电话了，你帮我接一下。",
+          "py": "Hǎo. Lǐ Wén lái diànhuà le, nǐ bāng wǒ jiē yíxià."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "喂，李文，王老师开着车呢，你找她有事吗？",
+          "py": "Wèi, Lǐ Wén. Wáng lǎoshī kāizhe chē ne, nǐ zhǎo tā yǒu shì ma?"
+        },
+        {
+          "speaker": "李文",
+          "hz": "没什么事。今天雪这么大，你们开车去哪儿啊？",
+          "py": "Méi shénme shì. Jīntiān xuě zhème dà, nǐmen kāichē qù nǎr a?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "去医院，我头有点儿疼。",
+          "py": "Qù yīyuàn, wǒ tóu yǒudiǎnr téng."
+        },
+        {
+          "speaker": "李文",
+          "hz": "那我一会儿去看看你。",
+          "py": "Nà wǒ yíhuìr qù kànkan nǐ."
+        }
+      ],
+      "footer_note": "在王一飞车里，王一飞和白家月在聊天儿，李文打来一个电话。",
+      "voices": {
+        "王一飞": "zh-CN-YunyangNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural",
+        "李文": "zh-CN-YunxiNeural"
+      },
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "在房间 — 李文来看望白家月",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "李文，快请进！",
+          "py": "Lǐ Wén, kuài qǐng jìn!"
+        },
+        {
+          "speaker": "李文",
+          "hz": "家月，你怎么样了？头还疼吗？",
+          "py": "Jiāyuè, nǐ zěnmeyàng le? Tóu hái téng ma?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "不那么疼了。医生开了一些药，吃完就好多了。",
+          "py": "Bú nàme téng le. Yīshēng kāile yìxiē yào, chīwán jiù hǎoduō le."
+        },
+        {
+          "speaker": "李文",
+          "hz": "那就好！",
+          "py": "Nà jiù hǎo!"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "家月，你想不想吃点儿东西？",
+          "py": "Jiāyuè, nǐ xiǎng bu xiǎng chī diǎnr dōngxi?"
+        },
+        {
+          "speaker": "李文",
+          "hz": "吃点儿吧，身体不舒服时更要好好吃饭。",
+          "py": "Chī diǎnr ba, shēntǐ bù shūfu shí gèng yào hǎohǎo chī fàn."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "吃点儿什么呢？",
+          "py": "Chī diǎnr shénme ne?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "你最喜欢吃中国菜，我做几个中国菜吧。",
+          "py": "Nǐ zuì xǐhuan chī Zhōngguó cài, wǒ zuò jǐ ge Zhōngguó cài ba."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "好的，谢谢王老师。",
+          "py": "Hǎo de, xièxie Wáng lǎoshī."
+        }
+      ],
+      "footer_note": "在房间，李文来看望白家月。",
+      "voices": {
+        "王一飞": "zh-CN-YunyangNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural",
+        "李文": "zh-CN-YunxiNeural"
+      },
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 4",
+      "title": "白家月的日记",
+      "sentences": [
+        {
+          "hz": "我这几天经常头疼，从药店买了点儿药，没去医院。",
+          "py": "Wǒ zhè jǐ tiān jīngcháng tóu téng, cóng yàodiàn mǎile diǎnr yào, méi qù yīyuàn.",
+          "vn": "Mấy hôm nay tớ hay đau đầu, tớ đã mua ít thuốc ở hiệu thuốc, không đi bệnh viện."
+        },
+        {
+          "hz": "今天下课后，王老师看我不舒服，就送我去医院了。",
+          "py": "Jīntiān xiàkè hòu, Wáng lǎoshī kàn wǒ bù shūfu, jiù sòng wǒ qù yīyuàn le.",
+          "vn": "Hôm nay sau khi tan học, cô Vương thấy tớ không khỏe nên đã đưa tớ đi bệnh viện."
+        },
+        {
+          "hz": "从医院回来，李文也来看我了。",
+          "py": "Cóng yīyuàn huílái, Lǐ Wén yě lái kàn wǒ le.",
+          "vn": "Từ bệnh viện về, Lý Văn cũng đến thăm tớ."
+        },
+        {
+          "hz": "现在他们都回去了，我也要睡觉了。",
+          "py": "Xiànzài tāmen dōu huíqù le, wǒ yě yào shuìjiào le.",
+          "vn": "Bây giờ mọi người đều về rồi, tớ cũng đi ngủ đây."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/3",
+      "point": "动态助词\"着\" (1) — diễn tả hành động/trạng thái đang tiếp diễn",
+      "highlight": "着",
+      "examples": [
+        {
+          "hz": "那你在这儿坐着。",
+          "py": "Nà nǐ zài zhèr zuòzhe.",
+          "vn": "Vậy cậu cứ ngồi đây."
+        },
+        {
+          "hz": "教室的门开着。",
+          "py": "Jiàoshì de mén kāizhe.",
+          "vn": "Cửa lớp học đang mở."
+        },
+        {
+          "hz": "教室的门没开着。",
+          "py": "Jiàoshì de mén méi kāizhe.",
+          "vn": "Cửa lớp học không mở."
+        }
+      ],
+      "note": "V + 着: hành động/trạng thái đang diễn ra, tiếp diễn. Phủ định: thêm \"没(有)\" trước động từ (bỏ 着 hoặc giữ 着 đều được tùy ngữ cảnh, dạng phủ định phổ biến nhất là 没 + V + 着).",
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/3",
+      "point": "动态助词\"着\" (2) — câu có tân ngữ",
+      "examples": [
+        {
+          "hz": "她穿着白色的裤子。",
+          "py": "Tā chuānzhe báisè de kùzi.",
+          "vn": "Cô ấy đang mặc quần màu trắng.",
+          "highlight": "穿着"
+        },
+        {
+          "hz": "教室的门开着吗？",
+          "py": "Jiàoshì de mén kāizhe ma?",
+          "vn": "Cửa lớp học có đang mở không?",
+          "highlight": "开着吗"
+        },
+        {
+          "hz": "她拿没拿着手机？",
+          "py": "Tā ná méi názhe shǒujī?",
+          "vn": "Cô ấy có đang cầm điện thoại không?",
+          "highlight": "拿没拿着"
+        }
+      ],
+      "note": "Câu có tân ngữ: tân ngữ đứng SAU \"着\" (V + 着 + O). 3 dạng nghi vấn: (1) thêm \"吗\" cuối câu; (2) thêm \"没有\" cuối câu; (3) V + 没 + V + 着.",
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 3/3",
+      "point": "程度副词\"最\" — mức độ cao nhất, so với mọi thứ cùng loại",
+      "highlight": "最",
+      "examples": [
+        {
+          "hz": "你最喜欢吃中国菜。",
+          "py": "Nǐ zuì xǐhuan chī Zhōngguó cài.",
+          "vn": "Cậu thích ăn món Trung Quốc nhất."
+        },
+        {
+          "hz": "在我们家，爸爸最高。",
+          "py": "Zài wǒmen jiā, bàba zuì gāo.",
+          "vn": "Trong nhà tớ, bố cao nhất."
+        },
+        {
+          "hz": "你们班谁说中文说得最好？",
+          "py": "Nǐmen bān shéi shuō Zhōngwén shuō de zuì hǎo?",
+          "vn": "Lớp cậu ai nói tiếng Trung giỏi nhất?"
+        }
+      ],
+      "note": "\"最\" đứng TRƯỚC tính từ hoặc động từ tâm lý (喜欢, 想, 爱...), diễn tả một thuộc tính vượt trên tất cả những người/vật cùng loại.",
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法拓展 · ngoài sách",
+      "point": "被字句 — câu bị động với \"被\"",
+      "highlight": "被",
+      "examples": [
+        {
+          "hz": "药已经被他吃完了。",
+          "py": "Yào yǐjīng bèi tā chīwán le.",
+          "vn": "Thuốc đã bị anh ấy uống hết rồi."
+        },
+        {
+          "hz": "我的病被医生治好了。",
+          "py": "Wǒ de bìng bèi yīshēng zhìhǎo le.",
+          "vn": "Bệnh của tớ đã được bác sĩ chữa khỏi."
+        },
+        {
+          "hz": "那本关于健康的书被我借走了。",
+          "py": "Nà běn guānyú jiànkāng de shū bèi wǒ jièzǒu le.",
+          "vn": "Quyển sách về sức khỏe đó đã bị tớ mượn mất rồi."
+        }
+      ],
+      "note": "Cấu trúc: A (bị tác động) + 被 + B (chủ thể gây tác động, có thể lược bỏ) + V + thành phần khác (了/过/kết quả...). Đây là ngữ pháp MỞ RỘNG NGOÀI 45 điểm chính của sách (không có trong 目标 Bài 11) — bổ sung theo nhu cầu thực dụng cá nhân.",
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 1/5",
+      "title": "Thói quen tốt cho sức khỏe (1)",
+      "image": "assets/warm_water_tea.jpg",
+      "bullets": [
+        "Luôn uống nước ấm: tránh hoàn toàn nước đá, uống nước/trà ấm để không làm \"lạnh\" dạ dày và giúp tuần hoàn máu.",
+        "Thêm kỷ tử, táo đỏ vào nước uống: pha trà dưỡng sinh từ kỷ tử, táo đỏ, hoàng kỳ để bổ khí huyết, chống lão hóa."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 2/5",
+      "title": "Thói quen tốt cho sức khỏe (2)",
+      "image": "assets/congee_breakfast.jpg",
+      "bullets": [
+        "Ăn đồ ăn nóng vào bữa sáng: ưu tiên cháo, mì nóng hoặc bánh bao để làm ấm tỳ vị, hỗ trợ tiêu hóa đầu ngày.",
+        "Ăn thực phẩm theo mùa: theo nguyên tắc \"thiên nhân hợp nhất\", mùa nào thức nấy để cơ thể thích nghi với thời tiết."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 3/5",
+      "title": "Thói quen tốt cho sức khỏe (3)",
+      "bullets": [
+        "Không cho muối vào cơm: luộc/hấp cơm trắng nguyên bản, giảm tối đa natri để làm chậm quá trình lão hóa.",
+        "Quy tắc ăn uống \"Ít – Chậm – Kỹ\": ăn thanh đạm không quá no, nhai thật kỹ để giảm tải cho dạ dày."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 4/5",
+      "title": "Thói quen tốt cho sức khỏe (4)",
+      "image": "assets/sleep_before_11pm.jpg",
+      "bullets": [
+        "Sinh hoạt theo đồng hồ sinh học Trung y: đi ngủ trước 11 giờ đêm (giờ kinh Đởm/Gan hoạt động) để cơ thể thải độc tốt nhất.",
+        "Tập luyện nhẹ nhàng dưỡng khí: chọn Thái Cực Quyền, Khí Công hoặc thiền định thay vì bài tập quá sức."
+      ]
+    },
+    {
+      "type": "bullets",
+      "kicker": "文化 5/5",
+      "title": "Thói quen tốt cho sức khỏe (5)",
+      "bullets": [
+        "Ngâm chân nước ấm trước khi ngủ: giúp đả thông kinh mạch, giữ ấm lòng bàn chân để có giấc ngủ sâu.",
+        "Tự bấm các huyệt vị cơ bản: xoa bóp huyệt Hợp Cốc (bàn tay) hay Túc Tam Lý (chân) để giảm căng thẳng, tăng miễn dịch."
+      ]
+    }
+  ]
+}

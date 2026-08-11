@@ -101,3 +101,8 @@ _- Status: PENDING UPDATE_
 - Blocks: noi (6: 请教/天赋/室友/成绩单/奖学金/能力评估), dien_cho_trong (4: 还是/连/紧张/复习), doc_hieu (陈天中 ôn thi, tự soạn), sap_xep (3), dich_dat_cau (3), nghe (3), noi_hskk 听后重复 (2), noi_hskk 回答问题 tách 2 block riêng (câu 1: chuẩn bị/căng thẳng thi cử; câu 2: đổi theo yêu cầu user từ "毕业以后 làm gì" sang "你想做什么？为什么？" — cá nhân hoá theo bối cảnh học viên đang ôn thi đại học, dàn bài hỏi về ngành/trường mong muốn) — 26 mục, không trùng nội bộ/slide (check_baitap.py + đối chiếu thủ công toàn bộ hz trong slide).
 - Output: buoi10_thicu/baitap/ → hocsinh/{worksheet.docx + audio 5 MP3} + dapan/dapan.docx
 - Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 2 noi_hskk rate -18%); toàn bộ tự soạn (kho hsk2.md chưa seed)
+
+## 2026-08-10 — Exercise Generator: HSK2 Buổi 11 (我最喜欢吃中国菜)
+- Blocks: noi (8: 疼/经常/慢/药店/嘴/背/肩膀/心脏), dien_cho_trong (4: 经常/着/最/身体), doc_hieu (陈天中 đau bụng sốt đi khám, tự soạn), sap_xep (3), dich_dat_cau (3), nghe (3), noi_hskk 听后重复 (3), noi_hskk 回答问题 tách 2 block riêng (câu 1: tình trạng sức khỏe gần đây; câu 2: thường làm gì khi bị ốm), dien_bieu_mau (4 trường: phiếu đăng ký khám bệnh — writing 3.0 luân phiên, lần đầu dùng dạng điền form) — 28 mục, phủ 26/26 từ vựng buổi (check_baitap.py), không trùng nội bộ/slide.
+- Output: buoi11_monan_yeuthich/baitap/ → hocsinh/{worksheet.docx + audio 6 MP3} + dapan/dapan.docx
+- Audio: zh-CN-XiaoxiaoNeural (3 nghe rate -25% + 3 noi_hskk 听后重复 rate -18%); toàn bộ tự soạn (kho hsk2.md chưa seed)
