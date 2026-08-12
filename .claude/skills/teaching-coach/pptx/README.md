@@ -153,14 +153,19 @@ Sinh tự động bằng helper:
 bảng `口语`), gọi `edge-tts` sinh mp3 vào `assets/audio/` và tự gắn key `audio`.
 Cần internet; `--force` để sinh lại.
 
-**⚠️ Cổng duyệt bắt buộc (2026-08-04, user nhắc lại 2 lần trong 1 session):**
-KHÔNG chạy `slide_audio.py` cho tới khi user đã duyệt **TOÀN BỘ** nội dung JSON
-sẽ build (mọi slide, không chỉ phần vừa sửa). Duyệt 1 slide/1 phần nhỏ qua chat
-KHÔNG đồng nghĩa "sẵn sàng sinh audio cả deck" — đặc biệt vì chèn/xoá/reorder 1
-slide bắt buộc audio TOÀN BỘ phải sinh lại (xem cảnh báo vị trí bên dưới), nên
-"duyệt cục bộ" rồi chạy audio cho cả deck sẽ tốn công sinh lại nếu còn slide
-khác chưa chốt. Không chắc → hỏi thẳng "nội dung đã chốt hết chưa, sinh audio
+**⚠️ Cổng duyệt bắt buộc (2026-08-04, user nhắc lại 2 lần trong 1 session; TÁI DIỄN
+2026-08-12 Buổi 15 — lần thứ 3):** KHÔNG chạy `slide_audio.py` cho tới khi user đã
+duyệt **TOÀN BỘ** nội dung JSON sẽ build (mọi slide, không chỉ phần vừa sửa). Duyệt
+1 slide/1 phần nhỏ qua chat KHÔNG đồng nghĩa "sẵn sàng sinh audio cả deck" — đặc biệt
+vì chèn/xoá/reorder 1 slide bắt buộc audio TOÀN BỘ phải sinh lại (xem cảnh báo vị trí
+bên dưới), nên "duyệt cục bộ" rồi chạy audio cho cả deck sẽ tốn công sinh lại nếu còn
+slide khác chưa chốt. Không chắc → hỏi thẳng "nội dung đã chốt hết chưa, sinh audio
 bản cuối được chưa?" trước khi chạy, đừng tự suy diễn từ 1 lời duyệt cục bộ.
+**Cụ thể tái diễn ở Buổi 15:** user chỉ trả lời 2 câu hỏi trắc nghiệm hẹp (giữ/bỏ
+danh sách từ mở rộng, có/không thêm 1 slide) — KHÔNG phải trình bày rồi hỏi "chốt
+chưa" — nhưng bị hiểu lầm là đã duyệt xong cả deck, build luôn pptx+audio. Trả lời
+1-2 câu hỏi lựa chọn hẹp KHÔNG đồng nghĩa duyệt toàn văn; phải trình đủ text mọi
+slide (title + mọi item/ví dụ) rồi hỏi thẳng mới được sinh audio.
 
 **Giọng & tốc độ (2026-08-04, sau feedback "giọng cũ nghe mệt/robot"):**
 - Slide thường (vocab/wordcard/grammar/table/passage): luân phiên 2 giọng
@@ -265,6 +270,14 @@ riêng từng từ), luôn chủ động chạy `fetch_images.py` thử tải �
 vẫn không ra ảnh phù hợp/đứng đắn thì mới bỏ field `image` (hoặc gắn placeholder
 `assets/words/<slug>_TODO.jpg` theo quy ước ở mục word_pair phía trên) — để chỗ trống
 đúng nghĩa "đã cố nhưng không có", không phải "chưa thử".
+
+**Đừng quên gắn ảnh cho `vocab` chủ đề thực dụng (2026-08-12, Buổi 15):** khác
+`wordcard`/`word_pair` (vốn ép có ảnh theo thiết kế), `image` ở `vocab` chỉ là field
+tùy chọn nên dễ bị bỏ sót hoàn toàn nếu không tự nhắc — buổi 15 đã soạn xong 12 slide
+`vocab` không có ảnh nào, phải đợi user nhắc mới bổ sung. Mặc định: nếu từ vựng có vật/
+cảnh thực tế minh hoạ được (đồ vật, địa danh, hoạt động — không phải hư từ/khái niệm
+ngữ pháp), chủ động gen ảnh trước khi trình user duyệt, trừ khi có quyết định rõ ràng
+bỏ ảnh cho buổi đó (vd buổi quá dày chữ, muốn gọn).
 
 **Known issues chờ điều tra kỹ hơn (2026-08-07, phát hiện khi làm Buổi 9):**
 - **Bong bóng hội thoại (`_slide_dialogue`) quá khổ**: chiều rộng/chiều cao bubble hiện
@@ -376,6 +389,17 @@ cột 汉字 mặc định chỉ 26% bề rộng — đủ cho 1-2 từ nhưng c
 `height/nrow`, chữ Hán bị tràn đáy ô. Đã sửa: cột 汉字 lên 40% + chiều cao mỗi
 hàng tính theo số dòng 汉字 THẬT cần wrap (dùng `_wrap_lines`), Pinyin/Nghĩa
 được PHÉP hẹp/rớt dòng trước (ưu tiên 汉字 không bao giờ mất chữ).
+
+⚠️ **`vocab` chế độ THẺ (`_slide_vocab_cards`) — cột ví dụ rớt dòng khi không có
+`image` (2026-08-12, Buổi 15 HSK2):** cột thẻ từ (bên phải, chỉ chứa 1-2 chữ Hán
+to + pinyin + nghĩa) trước đây LUÔN chiếm cố định `min(3.8in, 32%)` bất kể có
+ảnh hay không — khi slide chỉ có `example` (không `image`), cột ví dụ bên trái
+bị ép hẹp lại theo phần còn dư, ví dụ dài (2 dòng 汉字 + pinyin + nghĩa Việt)
+tính `natural_h` vượt `ex_h` nhưng `sz()` có floor cứng (16/11/11pt) chặn không
+co xuống được nữa → chữ tràn xuống dưới khung, mất dòng cuối. Đã sửa: thêm
+nhánh riêng khi KHÔNG có `image` — cột thẻ từ hẹp lại `min(2.4in, 19%)` (vẫn đủ
+rộng cho từ 3 âm tiết như 登机牌/登机口 không bị tách đôi), nhường phần dư cho
+cột ví dụ (từ ~66% lên ~77% content width).
 
 ⚠️ **Hội thoại ≥3 người (`_dialogue_script`, swimlane nhiều cột) — bug lệch
 khoảng cách giữa các thẻ cùng cột (2026-08-10, KHÁC với việc đánh số thứ tự
