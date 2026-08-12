@@ -1,0 +1,545 @@
+{
+  "meta": {
+    "lesson": "HSK2 · Buổi 15",
+    "topic": "我想再去一次中国 — Kế hoạch quay lại Trung Quốc + thủ tục bay/nhập cảnh · 动量补语(1)(2) · 有字句(2)",
+    "title": "我想再去一次中国"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我想再去一次中国",
+      "subtitle": "Wǒ xiǎng zài qù yí cì Zhōngguó — Tôi muốn đi Trung Quốc thêm một lần nữa",
+      "footer": "HSK2 · Buổi 15"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "Hôm nay học gì",
+      "bullets": [
+        "Nghe hiểu và bàn về kế hoạch du lịch",
+        "Dùng động lượng bổ ngữ \"数词+次\" để diễn đạt số lần một hành động xảy ra",
+        "Dùng \"有\" + số lượng để diễn đạt đã đạt tới một mức độ/số lượng nhất định",
+        "Mở rộng từ vựng chủ đề thủ tục bay/nhập cảnh — thực dụng cho ai sắp đi Trung Quốc thật"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 1/6",
+      "items": [
+        {
+          "hz": "姓名",
+          "py": "xìngmíng",
+          "vn": "họ tên"
+        },
+        {
+          "hz": "机场",
+          "py": "jīchǎng",
+          "vn": "sân bay"
+        }
+      ],
+      "example": {
+        "hz": "订机票的时候，姓名一定要跟护照上的完全一样，不然到机场可能不能登机。",
+        "py": "Dìng jīpiào de shíhou, xìngmíng yídìng yào gēn hùzhào shàng de wánquán yíyàng, bùrán dào jīchǎng kěnéng bù néng dēngjī.",
+        "vn": "Đặt vé máy bay thì họ tên nhất định phải khớp y hệt hộ chiếu, không thì tới sân bay có thể không được lên máy bay."
+      },
+      "audio": "assets/audio/slide03.mp3",
+      "image": "assets/checkin_counter.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 2/6",
+      "items": [
+        {
+          "hz": "出国",
+          "py": "chūguó",
+          "vn": "xuất ngoại, ra nước ngoài"
+        },
+        {
+          "hz": "门票",
+          "py": "ménpiào",
+          "vn": "vé vào cửa"
+        }
+      ],
+      "example": {
+        "hz": "出国旅游前，热门景点的门票最好提前在网上订好，不然到了可能要排很久的队。",
+        "py": "Chūguó lǚyóu qián, rèmén jǐngdiǎn de ménpiào zuìhǎo tíqián zài wǎngshàng dìnghǎo, bùrán dàole kěnéng yào pái hěn jiǔ de duì.",
+        "vn": "Trước khi xuất ngoại du lịch, vé những điểm tham quan hot nên đặt trước trên mạng, không thì tới nơi có thể phải xếp hàng rất lâu."
+      },
+      "audio": "assets/audio/slide04.mp3",
+      "image": "assets/airplane_window.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 3/6",
+      "items": [
+        {
+          "hz": "高中",
+          "py": "gāozhōng",
+          "vn": "trung học phổ thông"
+        },
+        {
+          "hz": "颐和园",
+          "py": "Yíhé Yuán",
+          "vn": "Di Hòa Viên (địa danh ở Bắc Kinh)"
+        }
+      ],
+      "example": {
+        "hz": "我的高中同学就在颐和园上班，可以让他给你好好介绍介绍。",
+        "py": "Wǒ de gāozhōng tóngxué jiù zài Yíhé Yuán shàngbān, kěyǐ ràng tā gěi nǐ hǎohǎo jièshào jièshào.",
+        "vn": "Bạn học cấp 3 của tôi làm việc ngay tại Di Hòa Viên, có thể nhờ bạn ấy giới thiệu cho em thật kỹ."
+      },
+      "audio": "assets/audio/slide05.mp3",
+      "image": "assets/summer_palace.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 4/6",
+      "items": [
+        {
+          "hz": "出门",
+          "py": "chūmén",
+          "vn": "ra khỏi nhà, ra ngoài"
+        },
+        {
+          "hz": "路",
+          "py": "lù",
+          "vn": "con đường"
+        }
+      ],
+      "example": {
+        "hz": "出门旅游，多个朋友多条路。",
+        "py": "Chūmén lǚyóu, duō ge péngyou duō tiáo lù.",
+        "vn": "Đi du lịch, có thêm bạn là có thêm thuận lợi."
+      },
+      "audio": "assets/audio/slide06.mp3",
+      "image": "assets/friends_travel.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 5/6",
+      "items": [
+        {
+          "hz": "机票",
+          "py": "jīpiào",
+          "vn": "vé máy bay"
+        },
+        {
+          "hz": "飞",
+          "py": "fēi",
+          "vn": "bay"
+        }
+      ],
+      "example": {
+        "hz": "买机票的时候多比较几个网站，同一天飞的机票价格可能差很多。",
+        "py": "Mǎi jīpiào de shíhou duō bǐjiào jǐ ge wǎngzhàn, tóng yì tiān fēi de jīpiào jiàgé kěnéng chà hěn duō.",
+        "vn": "Mua vé máy bay nên so sánh vài trang web, cùng ngày bay mà giá vé có thể chênh nhau nhiều."
+      },
+      "audio": "assets/audio/slide07.mp3",
+      "image": "assets/airplane_flying.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 6/6",
+      "items": [
+        {
+          "hz": "好像",
+          "py": "hǎoxiàng",
+          "vn": "hình như, giống như"
+        },
+        {
+          "hz": "鸟",
+          "py": "niǎo",
+          "vn": "chim"
+        }
+      ],
+      "example": {
+        "hz": "从地上往天上看，飞机好像一只鸟一样。",
+        "py": "Cóng dìshang wǎng tiānshang kàn, fēijī hǎoxiàng yì zhī niǎo yīyàng.",
+        "vn": "Từ mặt đất nhìn lên trời, máy bay trông giống như một con chim vậy."
+      },
+      "audio": "assets/audio/slide08.mp3",
+      "image": "assets/bird_flying.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 1/6",
+      "items": [
+        {
+          "hz": "签证",
+          "py": "qiānzhèng",
+          "vn": "visa"
+        },
+        {
+          "hz": "护照",
+          "py": "hùzhào",
+          "vn": "hộ chiếu"
+        }
+      ],
+      "example": {
+        "hz": "出国前一定要检查护照有没有过期，签证最好提前一个月就开始办，免得来不及。",
+        "py": "Chūguó qián yídìng yào jiǎnchá hùzhào yǒu méiyǒu guòqī, qiānzhèng zuìhǎo tíqián yí ge yuè jiù kāishǐ bàn, miǎnde láibùjí.",
+        "vn": "Trước khi xuất ngoại phải kiểm tra hộ chiếu có hết hạn không, visa nên xin trước cả tháng kẻo không kịp."
+      },
+      "audio": "assets/audio/slide09.mp3",
+      "image": "assets/passport_visa.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 2/6",
+      "items": [
+        {
+          "hz": "免签",
+          "py": "miǎnqiān",
+          "vn": "miễn visa"
+        },
+        {
+          "hz": "过境",
+          "py": "guòjìng",
+          "vn": "quá cảnh"
+        }
+      ],
+      "example": {
+        "hz": "过境免签政策很方便，不过一定要看清楚最多能待多少个小时，超时可能会有麻烦。",
+        "py": "Guòjìng miǎnqiān zhèngcè hěn fāngbiàn, bùguò yídìng yào kàn qīngchu zuìduō néng dāi duōshao ge xiǎoshí, chāoshí kěnéng huì yǒu máfan.",
+        "vn": "Chính sách miễn visa quá cảnh rất tiện, nhưng phải xem kỹ tối đa được ở bao nhiêu giờ, quá giờ có thể rắc rối."
+      },
+      "audio": "assets/audio/slide10.mp3",
+      "image": "assets/airport_transit.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 3/6",
+      "items": [
+        {
+          "hz": "值机",
+          "py": "zhíjī",
+          "vn": "làm thủ tục check-in"
+        },
+        {
+          "hz": "登机牌",
+          "py": "dēngjīpái",
+          "vn": "thẻ lên máy bay"
+        }
+      ],
+      "example": {
+        "hz": "现在很多航班可以提前在手机上值机，拿到电子登机牌，不用到机场再排队。",
+        "py": "Xiànzài hěn duō hángbān kěyǐ tíqián zài shǒujī shàng zhíjī, nádào diànzǐ dēngjīpái, búyòng dào jīchǎng zài páiduì.",
+        "vn": "Giờ nhiều chuyến bay có thể check-in trước trên điện thoại, lấy thẻ lên máy bay điện tử, khỏi phải xếp hàng ở sân bay."
+      },
+      "audio": "assets/audio/slide11.mp3",
+      "image": "assets/boarding_pass.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 4/6",
+      "items": [
+        {
+          "hz": "安检",
+          "py": "ānjiǎn",
+          "vn": "an ninh soi chiếu"
+        },
+        {
+          "hz": "登机口",
+          "py": "dēngjīkǒu",
+          "vn": "cổng lên máy bay"
+        }
+      ],
+      "example": {
+        "hz": "过安检前最好把水喝完，登机口最好提前半个小时到，免得错过登机时间。",
+        "py": "Guò ānjiǎn qián zuìhǎo bǎ shuǐ hēwán, dēngjīkǒu zuìhǎo tíqián bàn ge xiǎoshí dào, miǎnde cuòguò dēngjī shíjiān.",
+        "vn": "Trước khi qua an ninh nên uống hết nước, nên tới cổng ra máy bay sớm nửa tiếng kẻo lỡ giờ lên máy bay."
+      },
+      "audio": "assets/audio/slide12.mp3",
+      "image": "assets/security_check.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 5/6",
+      "items": [
+        {
+          "hz": "转机",
+          "py": "zhuǎnjī",
+          "vn": "chuyển chuyến bay"
+        },
+        {
+          "hz": "入境",
+          "py": "rùjìng",
+          "vn": "nhập cảnh"
+        }
+      ],
+      "example": {
+        "hz": "转机的时候，要看清楚是不是需要先入境，不然可能会跟不上下一趟航班。",
+        "py": "Zhuǎnjī de shíhou, yào kàn qīngchu shì bù shì xūyào xiān rùjìng, bùrán kěnéng huì gēnbushàng xià yí tàng hángbān.",
+        "vn": "Lúc chuyển chuyến bay phải xem kỹ có cần nhập cảnh trước không, không thì có thể lỡ chuyến bay tiếp theo."
+      },
+      "audio": "assets/audio/slide13.mp3",
+      "image": "assets/departure_gate.jpg"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 6/6",
+      "items": [
+        {
+          "hz": "行李",
+          "py": "xíngli",
+          "vn": "hành lý"
+        }
+      ],
+      "example": {
+        "hz": "行李最好别超过规定的重量，不然要多付很多钱，出发前先在家称一下比较保险。",
+        "py": "Xíngli zuìhǎo bié chāoguò guīdìng de zhòngliàng, bùrán yào duō fù hěn duō qián, chūfā qián xiān zài jiā chēng yíxià bǐjiào bǎoxiǎn.",
+        "vn": "Hành lý tốt nhất đừng vượt cân quy định, không thì phải trả thêm nhiều tiền, trước khi đi nên cân thử ở nhà cho chắc."
+      },
+      "audio": "assets/audio/slide14.mp3",
+      "image": "assets/suitcase_luggage.jpg"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "教室 — 王一飞 (老师) 监考，白家月/陈天中 考完试",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "考试就要开始了，请大家写上姓名，写好后就可以做题了。",
+          "py": "Kǎoshì jiù yào kāishǐ le, qǐng dàjiā xiěshàng xìngmíng, xiěhǎo hòu jiù kěyǐ zuò tí le."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "老师，我做完了。",
+          "py": "Lǎoshī, wǒ zuòwán le."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "老师，我也做完了。",
+          "py": "Lǎoshī, wǒ yě zuòwán le."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "……对了，你们考完试想做什么？",
+          "py": "...Duìle, nǐmen kǎowán shì xiǎng zuò shénme?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我很想去中国，虽然去过一次，但是很想再去一次。",
+          "py": "Wǒ hěn xiǎng qù Zhōngguó, suīrán qùguo yí cì, dànshì hěn xiǎng zài qù yí cì.",
+          "highlight": "去过一次...再去一次"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "不错，到中国后你就可以经常说中文了。",
+          "py": "Búcuò, dào Zhōngguó hòu nǐ jiù kěyǐ jīngcháng shuō Zhōngwén le."
+        }
+      ],
+      "footer_note": "白家月 vừa thi xong đã nói tới kế hoạch đi Trung Quốc lần nữa — mở đầu mạch chuyện cả buổi.",
+      "voices": {
+        "王一飞": "zh-CN-XiaoxiaoNeural",
+        "白家月": "zh-CN-XiaoyiNeural",
+        "陈天中": "zh-CN-YunxiaNeural"
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "咖啡店 — 李文 và 白家月 bàn kế hoạch đi Bắc Kinh",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "考完试了，我现在可以出国旅游了。",
+          "py": "Kǎowán shì le, wǒ xiànzài kěyǐ chūguó lǚyóu le."
+        },
+        {
+          "speaker": "李文",
+          "hz": "你要去哪儿？",
+          "py": "Nǐ yào qù nǎr?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我要再去一次北京。",
+          "py": "Wǒ yào zài qù yí cì Běijīng."
+        },
+        {
+          "speaker": "李文",
+          "hz": "为什么还去北京？",
+          "py": "Wèi shénme hái qù Běijīng?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "因为我想再吃一次烤鸭，再喝一次奶茶，再去北京大学看一次电影……",
+          "py": "Yīnwèi wǒ xiǎng zài chī yí cì kǎoyā, zài hē yí cì nǎichá, zài qù Běijīng Dàxué kàn yí cì diànyǐng...",
+          "highlight": "再...一次"
+        },
+        {
+          "speaker": "李文",
+          "hz": "你想做的事情很多啊！",
+          "py": "Nǐ xiǎng zuò de shìqing hěn duō a!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "是啊，你看，我还在网上买好颐和园的门票了呢。",
+          "py": "Shì a, nǐ kàn, wǒ hái zài wǎngshàng mǎihǎo Yíhé Yuán de ménpiào le ne."
+        },
+        {
+          "speaker": "李文",
+          "hz": "我的高中同学就在颐和园上班，可以让他给你好好介绍介绍。",
+          "py": "Wǒ de gāozhōng tóngxué jiù zài Yíhé Yuán shàngbān, kěyǐ ràng tā gěi nǐ hǎohǎo jièshào jièshào."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "太好了！出门旅游，多个朋友多条路。",
+          "py": "Tài hǎo le! Chūmén lǚyóu, duō ge péngyou duō tiáo lù."
+        }
+      ],
+      "footer_note": "小语的例子：\"多个朋友多条路\" là tục ngữ, giữ nguyên văn sách.",
+      "voices": {
+        "白家月": "zh-CN-XiaoyiNeural",
+        "李文": "zh-CN-YunxiaNeural"
+      },
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "咖啡店 — 白家月 hỏi 李文 chuyện về nước lần trước",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "李文，你有一年没回国了吧？",
+          "py": "Lǐ Wén, nǐ yǒu yì nián méi huíguó le ba?",
+          "highlight": "有一年没...了"
+        },
+        {
+          "speaker": "李文",
+          "hz": "不到一年。我六月的时候回去了一次。",
+          "py": "Bú dào yì nián. Wǒ Liùyuè de shíhou huíqùle yí cì."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我怎么忘了？还是我送你去的机场呢。",
+          "py": "Wǒ zěnme wàng le? Háishì wǒ sòng nǐ qù de jīchǎng ne."
+        },
+        {
+          "speaker": "李文",
+          "hz": "是啊。",
+          "py": "Shì a."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我记得你那次的机票很便宜。",
+          "py": "Wǒ jìde nǐ nà cì de jīpiào hěn piányi."
+        },
+        {
+          "speaker": "李文",
+          "hz": "没错，可能因为那个时候去北京的人不多吧。",
+          "py": "Méi cuò, kěnéng yīnwèi nàge shíhou qù Běijīng de rén bù duō ba."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "这次的机票虽然有点儿贵，但想到就要飞北京了，我还是很高兴的。",
+          "py": "Zhè cì de jīpiào suīrán yǒudiǎnr guì, dàn xiǎngdào jiù yào fēi Běijīng le, wǒ hái shì hěn gāoxìng de."
+        }
+      ],
+      "footer_note": "\"有一年没回国了\" là câu mẫu chuẩn của 有字句(2), xuất hiện đúng ngay câu mở đầu 课文.",
+      "voices": {
+        "白家月": "zh-CN-XiaoyiNeural",
+        "李文": "zh-CN-YunxiaNeural"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 4",
+      "title": "李文的日记",
+      "sentences": [
+        {
+          "hz": "我六月的时候回过一次北京，现在有半年多没回去了，我有点儿想家。",
+          "py": "Wǒ Liùyuè de shíhou huíguo yí cì Běijīng, xiànzài yǒu bàn nián duō méi huíqù le, wǒ yǒudiǎnr xiǎng jiā.",
+          "vn": "Tháng 6 tôi có về Bắc Kinh một lần, giờ đã hơn nửa năm chưa về, tôi hơi nhớ nhà."
+        },
+        {
+          "hz": "就要过年了，我要回家过年。家月这次也要去北京，我们都是星期五的飞机。",
+          "py": "Jiù yào guònián le, wǒ yào huí jiā guònián. Jiāyuè zhè cì yě yào qù Běijīng, wǒmen dōu shì Xīngqīwǔ de fēijī.",
+          "vn": "Sắp Tết rồi, tôi sẽ về nhà ăn Tết. Lần này Gia Nguyệt cũng đi Bắc Kinh, chúng tôi đều bay chuyến thứ Sáu."
+        },
+        {
+          "hz": "家月说我们好像小鸟，一起飞到北京，再一起飞回这里。",
+          "py": "Jiāyuè shuō wǒmen hǎoxiàng xiǎoniǎo, yìqǐ fēidào Běijīng, zài yìqǐ fēihuí zhèlǐ.",
+          "vn": "Gia Nguyệt bảo chúng tôi giống như chim nhỏ, cùng bay tới Bắc Kinh, rồi lại cùng bay về đây."
+        }
+      ],
+      "footer_note": "\"有半年多没回去了\" — 有字句(2) xuất hiện lần 2, củng cố mẫu câu.",
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/2",
+      "point": "动量补语(1)(2) — \"数词+次\" sau động từ, diễn đạt số lần",
+      "highlight": "次",
+      "examples": [
+        {
+          "hz": "我想去中国，虽然去过一次，但是很想再去一次。",
+          "py": "Wǒ xiǎng qù Zhōngguó, suīrán qùguo yí cì, dànshì hěn xiǎng zài qù yí cì.",
+          "vn": "Tôi muốn đi Trung Quốc, tuy đã đi một lần nhưng rất muốn đi thêm một lần nữa."
+        },
+        {
+          "hz": "安妮去过一次北京。",
+          "py": "Ānnī qùguo yí cì Běijīng.",
+          "vn": "Anne đã đi Bắc Kinh một lần. (tân ngữ là địa danh → đặt trước/sau bổ ngữ đều được)"
+        },
+        {
+          "hz": "因为我想再吃一次烤鸭，再喝一次奶茶。",
+          "py": "Yīnwèi wǒ xiǎng zài chī yí cì kǎoyā, zài hē yí cì nǎichá.",
+          "vn": "Vì tôi muốn ăn vịt quay thêm một lần, uống trà sữa thêm một lần. (tân ngữ là đồ vật → đặt sau bổ ngữ)"
+        },
+        {
+          "hz": "我想找他一次。",
+          "py": "Wǒ xiǎng zhǎo tā yí cì.",
+          "vn": "Tôi muốn tìm anh ấy một lần. (tân ngữ là đại từ → đặt trước bổ ngữ)"
+        }
+      ],
+      "note": "Cấu trúc: động từ + 数词 + 次 (+ tân ngữ). Tân ngữ là tên người/địa danh: đặt trước hoặc sau bổ ngữ đều được. Tân ngữ là đồ vật: đặt SAU bổ ngữ. Tân ngữ là đại từ: đặt TRƯỚC bổ ngữ.",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/2",
+      "point": "有字句(2) — \"有\" + số lượng, diễn đạt đạt tới một mức độ nhất định",
+      "highlight": "有",
+      "examples": [
+        {
+          "hz": "你有一年没回国了吧？",
+          "py": "Nǐ yǒu yì nián méi huíguó le ba?",
+          "vn": "Cậu cả năm rồi chưa về nước phải không?"
+        },
+        {
+          "hz": "你女儿今年有10岁了吗？",
+          "py": "Nǐ nǚ'ér jīnnián yǒu shí suì le ma?",
+          "vn": "Con gái cậu năm nay đã 10 tuổi chưa?"
+        },
+        {
+          "hz": "我有一个月没给家里打电话了。",
+          "py": "Wǒ yǒu yí ge yuè méi gěi jiā lǐ dǎ diànhuà le.",
+          "vn": "Tôi cả tháng rồi chưa gọi điện về nhà."
+        },
+        {
+          "hz": "现在有半年多没回去了。",
+          "py": "Xiànzài yǒu bàn nián duō méi huíqù le.",
+          "vn": "Giờ đã hơn nửa năm chưa về."
+        }
+      ],
+      "note": "Cấu trúc: 有 + số lượng (thời gian/tuổi/...) + (没 + động từ + 了). Dùng để nhấn mạnh một khoảng thời gian/số lượng đã ĐẠT TỚI mức nào đó — khác \"是\" chỉ đơn thuần khẳng định.",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "小知识",
+      "title": "中国240小时过境免签政策",
+      "bullets": [
+        "Nhiều nước hiện được miễn 签证 (visa) nếu chỉ 过境 (quá cảnh) Trung Quốc dưới 240 giờ (10 ngày) trước khi đi tiếp nước thứ 3",
+        "Muốn dùng chính sách 免签 này: hộ chiếu (护照) còn hạn + vé máy bay (机票) đi tiếp nước khác trong 240 giờ",
+        "Vẫn phải làm thủ tục 入境 bình thường ở 机场 khi tới, chỉ là không cần xin 签证 trước",
+        "Ứng dụng thực tế: nếu quá cảnh Bắc Kinh/Thượng Hải/Quảng Châu... trên đường đi nước khác, có thể tranh thủ ra khỏi sân bay chơi vài ngày mà không cần visa"
+      ]
+    }
+  ]
+}

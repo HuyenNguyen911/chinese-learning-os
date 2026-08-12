@@ -14,14 +14,14 @@
 
 - **Python:** `PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"`. Chạy từ gốc repo `c:/Tài liệu/ai-vault/CHINESE`.
 - **NGUỒN CHÂN LÝ = sách:** 生词/課文/45 ngữ pháp trích từ `raw/New HSK Course 2.pdf` (KHÔNG bịa, KHÔNG web-search). Không tự nghĩ từ vựng. Chữ Hán trích bằng pypdf sạch; **bảng/vùng layout phức tạp (nhiều cột) → render ảnh (PyMuPDF) rồi đọc trực tiếp bằng vision**, KHÔNG tin OCR/pypdf mù cho các vùng đó (đã xác nhận ở Task 0.1). **Pinyin in trong PDF bị lỗi mất dấu thanh toàn sách → LUÔN tự sinh bằng `pypinyin`** từ chữ Hán, không dùng pinyin PDF.
-- **Buổi = bài:** 15 buổi ↔ 15 bài sách (mục lục TOC). Ôn: `on1_bai1-8` (sau bài 8), `on2_bai9-15` (sau bài 15).
+- **Buổi = bài:** 15 buổi ↔ 15 bài sách (mục lục TOC). Ôn tập tổng hợp cuối khoá (sau bài 15) = `on_ontap/`, 2 phần độc lập: `slide/` (ngữ pháp) + `slide2_tuvung/` (từ vựng) — y hệt mẫu HSK1 Buổi 16 (đổi 2026-08-12, gộp từ phương án cũ 2 buổi Ôn giữa/cuối khoá).
 - **CHỐNG TRÙNG HSK1 (cứng):** mọi 生词 loại/đánh dấu từ đã có trong 150 từ HSK1 (Task 0.1).
 - **Động vật/thú cưng:** lồng **từ mở rộng** vào Bài 5 (thăm nhà bạn), đánh dấu "ngoài 200 từ sách". Không thêm buổi.
 - **Mọi từ/câu tiếng Trung** đủ **汉字 + pinyin + nghĩa Việt**.
 - **Thứ tự block slide (sửa 2026-08-06, sau Buổi 5 — bỏ "ôn buổi trước" và tách "lỗi người Việt" khỏi vị trí cố định cuối, đây là feedback user đã nhắc từ trước):** `title → mục tiêu → 生词 → [ngữ pháp (小语讲堂) → lỗi người Việt liên quan]` (lặp lại theo từng nhóm ngữ pháp, lỗi thường gặp đặt NGAY SAU nhóm ngữ pháp sinh ra nó, không dồn hết xuống cuối) `→ 10 câu khẩu ngữ → hội thoại/課文 → bài đọc → footer Hán ngữ 第一册·下 → preview bài tập`. KHÔNG block ngữ âm. KHÔNG có slide "ôn buổi trước" đầu mỗi buổi.
 - **Bài tập đủ 4 phần 3.0:** 听 · 读 (+ **≥1 văn bản thực tế/buổi**: tin nhắn/biển báo/thực đơn/quảng cáo, tự soạn theo chủ đề, KHÔNG lấy từ sách) · **书写/Viết** (sắp câu, điền chữ, viết câu ngắn · **+ luân phiên đoạn 60–100 chữ / điền form / lời nhắn / nhật ký** qua các buổi) · HSKK.
-- **Ngữ pháp bổ sung ngoài sách (vá theo tiêu chuẩn đầu ra, không có trong 45 điểm New HSK Course 2), lồng vào buổi — KHÔNG dạy ở 2 buổi Ôn (Ôn chỉ ôn tập):** **把字句 cơ bản** lồng **Bài 4** (ghép 简单趋向补语 vốn có); **被字句 đơn giản** lồng **Bài 11**; **连…都/也** lồng **Bài 12**. Đánh dấu rõ "ngoài 45 điểm sách chính" trong slide buổi tương ứng.
-- **Giao tiếp thiếu, lồng vào buổi — KHÔNG dồn vào Ôn (đã đối chiếu HSK 二级考试大纲 chính thức, chinesetest.cn, 2026-07-27 — xem spec §16b):** hỏi đường → **Bài 2** (✅ chính thức); hỏi giá/so sánh giá (đổi tên từ "mặc cả") → **Bài 9** (✅ chính thức); giới thiệu bản thân/gia đình sâu → **Bài 5** (✅ chính thức); đặt khách sạn → **Bài 3** (⚠️ ngoài chuẩn thi, giữ theo yêu cầu cá nhân); đặt lịch hẹn → **Bài 10** (⚠️ ngoài chuẩn thi, ghép với 就要…了 — dời từ Bài 6 vì hợp ngữ pháp hơn). Capstone Ôn 2 chỉ ôn/ứng dụng lại các kỹ năng này, không dạy mới.
+- **Ngữ pháp bổ sung ngoài sách (vá theo tiêu chuẩn đầu ra, không có trong 45 điểm New HSK Course 2), lồng vào buổi — KHÔNG dạy ở buổi Ôn tập tổng hợp (Ôn chỉ ôn tập):** **把字句 cơ bản** lồng **Bài 4** (ghép 简单趋向补语 vốn có); **被字句 đơn giản** lồng **Bài 11**; **连…都/也** lồng **Bài 12**. Đánh dấu rõ "ngoài 45 điểm sách chính" trong slide buổi tương ứng.
+- **Giao tiếp thiếu, lồng vào buổi — KHÔNG dồn vào Ôn (đã đối chiếu HSK 二级考试大纲 chính thức, chinesetest.cn, 2026-07-27 — xem spec §16b):** hỏi đường → **Bài 2** (✅ chính thức); hỏi giá/so sánh giá (đổi tên từ "mặc cả") → **Bài 9** (✅ chính thức); giới thiệu bản thân/gia đình sâu → **Bài 5** (✅ chính thức); đặt khách sạn → **Bài 3** (⚠️ ngoài chuẩn thi, giữ theo yêu cầu cá nhân); đặt lịch hẹn → **Bài 10** (⚠️ ngoài chuẩn thi, ghép với 就要…了 — dời từ Bài 6 vì hợp ngữ pháp hơn). Capstone ở Phần 1 buổi Ôn tập tổng hợp chỉ ôn/ứng dụng lại các kỹ năng này, không dạy mới.
 - **Audio đọc chậm:** slide `--rate=-18%`; baitap `nghe --rate=-22%`, `noi_hskk --rate=-18%`. Giọng chính `zh-CN-XiaoxiaoNeural`. (Nếu user cấp MP3 gốc sách → ưu tiên.)
 - **Cổng duyệt:** (a) text 課文 trích từ PDF → trình user duyệt; (b) script 听力/HSKK trình user trước khi sinh MP3; (c) `check_baitap.py` + rà đáp án AI; (d) soát 多音字/儿化 mọi audio.
 - **Sửa slide sau khi user đã tự sửa tay .pptx (bài học từ Buổi 3):** KHÔNG chạy lại
@@ -125,9 +125,11 @@ slide còn đổi. Duyệt xong (hoặc chỉnh theo feedback rồi duyệt lạ
 
 ---
 
-## PHASE 1 — Sản xuất tuần tự 15 buổi + 2 ôn (mỗi buổi 1 cổng duyệt riêng)
+## PHASE 1 — Sản xuất tuần tự 15 buổi + 1 buổi ôn tập tổng hợp cuối khoá (mỗi buổi 1 cổng duyệt riêng)
 
-> **Quyết định (2026-07-27, theo user):** bỏ mô hình "2 pilot rồi sản xuất hàng loạt". Lý do: dù buổi nào user cũng phải review + điều chỉnh nội dung, nên **đi tuần tự từng buổi đúng thứ tự sách**, mỗi buổi xong đều **trình user duyệt trọn gói (pptx + worksheet + bài đọc)** trước khi bắt đầu buổi kế tiếp — không có khái niệm "pilot" riêng hay "sản xuất hàng loạt" sau khi duyệt khuôn. Thứ tự: 01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → **[Ôn 1]** → 09 → 10 → 11 → 12 → 13 → 14 → 15 → **[Ôn 2]**.
+> **Quyết định (2026-07-27, theo user):** bỏ mô hình "2 pilot rồi sản xuất hàng loạt". Lý do: dù buổi nào user cũng phải review + điều chỉnh nội dung, nên **đi tuần tự từng buổi đúng thứ tự sách**, mỗi buổi xong đều **trình user duyệt trọn gói (pptx + worksheet + bài đọc)** trước khi bắt đầu buổi kế tiếp — không có khái niệm "pilot" riêng hay "sản xuất hàng loạt" sau khi duyệt khuôn. Thứ tự: 01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09 → 10 → 11 → 12 → 13 → 14 → 15 → **[Ôn tập tổng hợp]**.
+
+> **Đổi 2026-08-12 (theo yêu cầu user):** bỏ mốc Ôn giữa khoá (cũ: Task 9 "Ôn 1" sau Bài 8) — gộp toàn bộ nội dung ôn tập (ngữ pháp + từ vựng của cả 15 bài) vào **1 buổi ôn tập tổng hợp duy nhất ở cuối khoá**, tách 2 phần độc lập `slide/` (ngữ pháp) + `slide2_tuvung/` (từ vựng), y hệt mẫu HSK1 Buổi 16. Task 9 (Ôn 1) và Task 17 (Ôn 2) cũ gộp lại thành Task 16 mới bên dưới; các Task buổi 09-15 dịch số xuống 9-15 (trước là Task 10-16).
 
 > Mỗi Task dưới đây dùng chung Procedure P (§ trên); step cuối luôn là **Verify + trình user duyệt trọn gói trước khi mở Task tiếp theo**.
 
@@ -148,25 +150,26 @@ slide còn đổi. Duyệt xong (hoặc chỉnh theo feedback rồi duyệt lạ
   - [ ] Step 1-6 Procedure P (Viết: câu 得, câu 一…就…) · Step 7 Verify + trình user duyệt · Step 8 P9.
 - [ ] **Task 8 — buoi08_trinho_sosanh** (Bài 8 虽然你忘了，但是我记得): ngữ pháp THẬT = **比较句(1)(2)/比** (trang 081/083) · **虽然…但是** (trang 084-085) — KHÔNG có 比较句(3)/动词"离" (thuộc Bài 9). **+ Lồng hỏi giá/so sánh giá (dời từ Bài 9 sang đây 2026-08-06 — 课文1 có sẵn đoạn hỏi giá đồng hồ "八千八！").** Hán ngữ L28/L23. Lỗi VN: 比 thừa 很 (他比我很高✗).
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 9 — Ôn 1** (`on1_bai1-8`): ôn ngữ pháp bài 1–8 (是…的/吧·兼语句 B1, 还是…吧/多/định ngữ B2, 结果补语/动词重叠 B3, 过/因为所以/的字短语/把字句 B4, 简单趋向补语/都了 B5, 形容词重叠/什么的/地 B6(*), 状态补语得/一…就… B7, 比较句1-2/虽然但是 B8) **+ 2 slide bảng hệ thống hoá thuần ôn tập: (a) bảng bổ ngữ 结果补语(B3) vs 简单趋向补语(B5) vs 状态补语得(B7); (b) bảng 比较句(1)(2)(B8)+(3)(B9, xem trước)**. (*) B6 ôn theo nội dung ĐÃ DẠY THẬT (状态补语, trùng B7) vì quyết định không sửa lại B6 — tránh ôn nhầm nội dung chưa từng dạy. Slide ôn + bài tập tổng hợp (đủ 听/读/书写/HSKK). CHỈ ôn tập.
+- [ ] **Task 9 — buoi09_douong** (Bài 9 我去买杯奶茶): ngữ pháp THẬT = **比较句(3)/没有** (trang 090-091) · **动词"离"** (trang 092) · **时量补语(1)** (trang 093-094) — KHÔNG có 主谓谓语句/选择问句 (thuộc Bài 10). Chủ đề đầy đủ: mua quần áo + mua đồ uống (cà phê/trà sữa) + so sánh khoảng cách/đi bộ. (Phần "hỏi giá" ĐÃ DỜI sang Task 8/Bài 8, xem note đó — Bài 9 không có đoạn giá cả nào.) Hán ngữ L30/L16.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 10 — buoi09_douong** (Bài 9 我去买杯奶茶): ngữ pháp THẬT = **比较句(3)/没有** (trang 090-091) · **动词"离"** (trang 092) · **时量补语(1)** (trang 093-094) — KHÔNG có 主谓谓语句/选择问句 (thuộc Bài 10). Chủ đề đầy đủ: mua quần áo + mua đồ uống (cà phê/trà sữa) + so sánh khoảng cách/đi bộ. (Phần "hỏi giá" ĐÃ DỜI sang Task 8/Bài 8, xem note đó — Bài 9 không có đoạn giá cả nào.) Hán ngữ L30/L16.
-  - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 11 — buoi10_thicu** (Bài 10 就要考试了): ngữ pháp bắt đầu trang 099 = **主谓谓语句 · 选择问句** (dời từ Bài 9 sang đây) · 要/快/快要/就要…了. ⚠️ **动态助词"着"(1)(2) CHƯA thấy trong 目标 trang 099** (chỉ verify biên, chưa bóc hết bài) — nghi cũng lệch, PHẢI verify đầy đủ bằng ảnh trước khi bắt đầu task này. **+ Lồng đặt lịch hẹn (bổ sung, ngoài chuẩn thi — vd 我跟老师约好了，下午两点就要见面了).** Hán ngữ —.
+- [ ] **Task 10 — buoi10_thicu** (Bài 10 就要考试了): ngữ pháp bắt đầu trang 099 = **主谓谓语句 · 选择问句** (dời từ Bài 9 sang đây) · 要/快/快要/就要…了. ⚠️ **动态助词"着"(1)(2) CHƯA thấy trong 目标 trang 099** (chỉ verify biên, chưa bóc hết bài) — nghi cũng lệch, PHẢI verify đầy đủ bằng ảnh trước khi bắt đầu task này. **+ Lồng đặt lịch hẹn (bổ sung, ngoài chuẩn thi — vd 我跟老师约好了，下午两点就要见面了).** Hán ngữ —.
   - [ ] Step 0 (mới, bắt buộc): verify đầy đủ Bài 10 bằng ảnh trang 099-108(?) trước khi soạn nội dung — xác nhận 着(1)(2) có thật thuộc bài này không.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 12 — buoi11_monan_yeuthich** (Bài 11 我最喜欢吃中国菜): 程度副词"最" · **被字句 đơn giản (bổ sung, vd 这道菜太好吃了都被吃光了)**. Hán ngữ —.
+- [ ] **Task 11 — buoi11_monan_yeuthich** (Bài 11 我最喜欢吃中国菜): 程度副词"最" · **被字句 đơn giản (bổ sung, vd 这道菜太好吃了都被吃光了)**. Hán ngữ —.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 13 — buoi12_thoitiet** (Bài 12 这里比北京冷多了): 比较句(4)(5)(6) · **连…都/也 (bổ sung, ghép cùng 比较句: 冷得连水都能结冰)**. Hán ngữ —.
+- [ ] **Task 12 — buoi12_thoitiet** (Bài 12 这里比北京冷多了): 比较句(4)(5)(6) · **连…都/也 (bổ sung, ghép cùng 比较句: 冷得连水都能结冰)**. Hán ngữ —.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 14 — buoi13_hoctiengtrung** (Bài 13 我们爱上中文课): 双宾语句(2) · 比较句(7)(8). Hán ngữ L17.
+- [ ] **Task 13 — buoi13_hoctiengtrung** (Bài 13 我们爱上中文课): 双宾语句(2) · 比较句(7)(8). Hán ngữ L17.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 15 — buoi14_letet** (Bài 14 一个人过年多没意思啊): 存现句 · 复合趋向补语. Hán ngữ L23.
+- [ ] **Task 14 — buoi14_letet** (Bài 14 一个人过年多没意思啊): 存现句 · 复合趋向补语. Hán ngữ L23.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 16 — buoi15_kehoach** (Bài 15 我想再去一次中国): 动量补语(1)(2) · "有"字句(2). Hán ngữ —.
+- [ ] **Task 15 — buoi15_kehoach** (Bài 15 我想再去一次中国): 动量补语(1)(2) · "有"字句(2). Hán ngữ —.
   - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
-- [ ] **Task 17 — Ôn 2** (`on2_bai9-15`): ôn ngữ pháp bài 9–15 (时量补语/选择问, 要快…了/着, 最/被字句 Bài 11, 比较句4-8/连…都也 Bài 12, 双宾语, 存现/复合趋向, 动量补语/有字句) **+ 2 slide bảng hệ thống hoá nối Ôn 1: (a) bảng bổ ngữ đầy đủ 6 loại (+ 时量/复合趋向/动量补语); (b) bảng 比较句 đầy đủ (1)-(8)** + từ vựng cụm + **capstone roleplay HSKK ôn tập tổng hợp** (thực hành lại: hỏi đường B2, đặt khách sạn B3, giới thiệu bản thân/gia đình B5, hỏi giá/so sánh giá B9, đặt lịch hẹn B10 — CHỈ ôn/ứng dụng lại, không dạy từ/ngữ pháp/tình huống mới). Slide ôn + bài tập tổng hợp.
-  - [ ] Step 1-6 Procedure P · Step 7 Verify + trình user duyệt · Step 8 P9.
+- [ ] **Task 16 — Ôn tập tổng hợp** (`on_ontap`, 2 phần độc lập như HSK1 Buổi 16 — gộp nội dung 2 Task Ôn 1/Ôn 2 cũ, đổi 2026-08-12):
+  - **Phần 1 — ngữ pháp** (`on_ontap/slide/`): hệ thống hoá toàn bộ 45 điểm ngữ pháp bài 1-15 (是…的/吧·兼语句 B1, 还是…吧/多/định ngữ B2, 结果补语/动词重叠 B3, 过/因为所以/的字短语/把字句 B4, 简单趋向补语/都了 B5, 形容词重叠/什么的/地 B6(*), 状态补语得/一…就… B7, 比较句1-2/虽然但是 B8, 比较句3/没有·动词离·时量补语 B9, 主谓谓语句/选择问句/要快就要了 B10, 最/被字句 B11, 比较句4-6/连…都也 B12, 双宾语句2/比较句7-8 B13, 存现句/复合趋向补语 B14, 动量补语/有字句 B15) + bảng hệ thống hoá bổ ngữ đầy đủ 6 loại (结果/简单趋向/状态得/时量/复合趋向/动量) + bảng 比较句 đầy đủ (1)-(8) + **capstone roleplay HSKK ôn tập tổng hợp** ở cuối (thực hành lại: hỏi đường B2, đặt khách sạn B3, giới thiệu bản thân/gia đình B5, hỏi giá/so sánh giá B8, đặt lịch hẹn B10 — CHỈ ôn/ứng dụng lại, không dạy từ/ngữ pháp/tình huống mới). (*) B6 ôn theo nội dung ĐÃ DẠY THẬT (状态补语, trùng B7) vì quyết định không sửa lại B6.
+  - **Phần 2 — từ vựng** (`on_ontap/slide2_tuvung/`): ~210 từ của 15 bài, nhóm theo chủ đề buổi (giống `slide2_tuvung` HSK1 Buổi 16).
+  - Bài tập tổng hợp (đủ 听/读/书写/HSKK) đi kèm cả 2 phần. CHỈ ôn tập, không dạy mới.
+  - [ ] Step 1-6 Procedure P (chạy riêng cho Phần 1 và Phần 2) · Step 7 Verify + trình user duyệt · Step 8 P9.
 
 > **FINAL GATE:** verify tổng: `hsk2-vocab-grammar-checklist.md` mọi từ "✅ có bài + đã soạn + không trùng HSK1"; 45 ngữ pháp đã dạy; `output/hsk2/README.md` mọi buổi ✅; vocab khớp 词汇表 sách. Trình user bàn giao.
 

@@ -63,7 +63,6 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 | 6 | 小雪，生日快乐！ | 形容词重叠 · 固定短语"什么的" · 结构助词"地" (⚠️ **đã build SAI thành 状态补语(得)** — xem note dưới, quyết định giữ nguyên không sửa lại) | sinh nhật, chúc mừng | L25 |
 | 7 | 他篮球打得很好 | 状态补语(1)(2) [**得**] (ôn lại — đã dạy nhầm ở Buổi 6, xem note) · 紧缩复句"一……就……" | **thể thao** (bóng rổ) | L25 |
 | 8 | 虽然你忘了，但是我记得 | 比较句(1)(2) [**比**] · 虽然…但是 | trí nhớ, so sánh ⟨**+ hỏi giá, so sánh giá**⟩⚠️ | L28 · L23 |
-| — | **Ôn 1** (giữa khoá) | ôn bài 1–8 + **bảng hệ thống bổ ngữ (kết quả/xu hướng/得) + bảng so sánh 比较句(1)(2)** (chỉ ôn tập, không dạy mới) | — | — |
 | 9 | 我去买杯奶茶 | 比较句(3) [没有] · 动词"离" · 时量补语(1) | mua sắm (quần áo) + đồ uống (cà phê/trà sữa) + so sánh khoảng cách | L30 · L16 |
 | 10 | 就要考试了 | 主谓谓语句 · 选择问句 · 要/快/快要/就要…了 · 动态助词"着"(1)(2)⚠️chưa verify hết, xem note ⟨**+ đặt lịch hẹn**⟩ | thi cử, học tập | — |
 | 11 | 我最喜欢吃中国菜 | 程度副词"最" · **被字句 (đơn giản, bổ sung)** | ăn uống, sở thích | L?? (最) |
@@ -71,7 +70,7 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 | 13 | 我们爱上中文课 | 双宾语句(2) · 比较句(7)(8) | học tiếng Trung | **L17 双宾语句** |
 | 14 | 一个人过年多没意思啊 | 存现句 · 复合趋向补语 | lễ Tết, cảm xúc | L23 存在的表达 · (复合趋向→第二册) |
 | 15 | 我想再去一次中国 | 动量补语(1)(2) · "有"字句(2) | kế hoạch, quay lại TQ | (动量补语→第二册) |
-| — | **Ôn 2** (cuối khoá) | ôn bài 9–15 + **bảng hệ thống bổ ngữ đầy đủ 6 loại (nối Ôn 1) + bảng so sánh 比较句(1)-(8) đầy đủ** + capstone hội thoại tổng hợp (chỉ ôn tập, không dạy mới) | — | — |
+| — | **Ôn tập tổng hợp** (cuối khoá, 2 phần độc lập như HSK1 Buổi 16) | **Phần 1 (ngữ pháp):** hệ thống hoá 45 điểm 小语讲堂 của 15 bài + bảng bổ ngữ đầy đủ 6 loại + bảng so sánh 比较句(1)-(8) đầy đủ + capstone hội thoại tổng hợp (ứng dụng lại kỹ năng giao tiếp đã dạy rải rác). **Phần 2 (từ vựng):** ~210 từ theo 15 bài/chủ đề. Chỉ ôn tập, không dạy mới | — | — |
 
 **Phủ ngữ pháp:** 45 điểm 小语讲堂 trải đều 15 bài (một số bài 2–3 điểm; bài nhiều nhất là các bài có nhiều 比较句). Danh sách 45 điểm đầy đủ ở file TOC.
 
@@ -79,7 +78,7 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 
 **Ràng buộc chống trùng HSK1 (cứng):** 生词 mỗi bài loại mọi từ đã có trong HSK1 (đối chiếu checklist Task 0.1). Từ mở rộng (pets) cũng chọn từ ngoài HSK1.
 
-> **Ngữ pháp bổ sung ngoài sách (vá theo tiêu chuẩn đầu ra — 把/被/连…都/也 KHÔNG có trong 45 điểm 小语讲堂 của New HSK Course 2), lồng vào buổi có sẵn — KHÔNG dạy ở 2 buổi Ôn (Ôn chỉ ôn tập, không học nội dung mới):**
+> **Ngữ pháp bổ sung ngoài sách (vá theo tiêu chuẩn đầu ra — 把/被/连…都/也 KHÔNG có trong 45 điểm 小语讲堂 của New HSK Course 2), lồng vào buổi có sẵn — KHÔNG dạy ở buổi Ôn tập tổng hợp (Ôn chỉ ôn tập, không học nội dung mới):**
 > - **把字句 (mức cơ bản)** — lồng vào **Bài 4** (trang phục), ghép tự nhiên với 简单趋向补语 vốn có sẵn: "把+O+V+bổ ngữ xu hướng/kết quả" (vd 把衣服穿上, 把衣服脱下来).
 > - **被字句 (đơn giản)** — lồng vào **Bài 11** (món ăn yêu thích): vd 这道菜太好吃了，都被吃光了.
 > - **连…都/也** — lồng vào **Bài 12** (thời tiết, so sánh), nhấn mạnh mức độ cực đoan tự nhiên đi cùng 比较句: vd 这儿冷得连水都能结冰.
@@ -91,13 +90,12 @@ Cột "Hán ngữ" = bài trong 《汉语教程》第一册·下 (bài 16–30, 
 > - **Giới thiệu bản thân/gia đình sâu (2-3 phút, dùng ngữ pháp mới)** → lồng **Bài 5** (thăm nhà bạn TQ). ✅ Khớp topic chính thức "Family".
 > - **Đặt khách sạn** → lồng **Bài 3** (du lịch Tây An). ⚠️ **NGOÀI phạm vi chính thức HSK2** — không có trong 10 task/17 task đã tra được; giữ lại vì đây là mong muốn thực dụng cá nhân của user (không phải yêu cầu thi), đánh dấu rõ trong slide "kỹ năng thực tế bổ sung, ngoài chuẩn thi".
 > - **Đặt lịch hẹn (2026-07-27, dời từ Bài 6 → Bài 10)** → lồng **Bài 10** (thi cử, học tập), ghép tự nhiên với ngữ pháp 要/快/快要/就要…了 (vd 我跟老师约好了，下午两点就要见面了). ⚠️ **NGOÀI phạm vi chính thức HSK2** tương tự — lý do dời khỏi Bài 6 vẫn hợp lý (ghép với ngữ pháp "sắp diễn ra" tự nhiên hơn sinh nhật), dù lý do phụ nêu ban đầu ("giữ Bài 6 gọn nhẹ chỉ 1 điểm 得") đã lỗi thời — Bài 6 thật có 3 điểm (形容词重叠/什么的/地), không phải 得 (xem bảng §4 đã sửa 2026-08-06).
-> - Ôn 2 vẫn giữ **capstone hội thoại** đã có trong thiết kế gốc, nhưng chỉ để **ôn tập/ứng dụng lại** các kỹ năng giao tiếp trên (đã dạy rải rác ở buổi 2/3/5/9/10), không dạy từ/ngữ pháp/tình huống mới.
+> - Buổi Ôn tập tổng hợp vẫn giữ **capstone hội thoại** đã có trong thiết kế gốc, đặt cuối Phần 1 (ngữ pháp), nhưng chỉ để **ôn tập/ứng dụng lại** các kỹ năng giao tiếp trên (đã dạy rải rác ở buổi 2/3/5/9/10), không dạy từ/ngữ pháp/tình huống mới.
 
-> **Bảng hệ thống hoá trong 2 buổi Ôn (2026-07-27, theo góp ý user — KHÔNG gom lại thành buổi riêng vì phá vỡ "buổi=bài" và tăng nguy cơ nhiễu giữa các loại bổ ngữ; thay vào đó hệ thống hoá bằng bảng so sánh thuần ôn tập):**
-> - **Ôn 1 — bảng bổ ngữ (1/2):** đối chiếu 结果补语 (B3) · 简单趋向补语 (B5) · 状态补语/得 (B7) — cấu trúc, ý nghĩa, ví dụ đặt cạnh nhau.
-> - **Ôn 1 — bảng 比较句 (1/2):** 比较句(1)(2) (B8) + 比较句(3) (B9) — liệt kê cả 4 mẫu câu (A比B+adj, A比B+adj+bổ ngữ, A有/没有B, A比B+động từ+得+比+adj).
-> - **Ôn 2 — bảng bổ ngữ (2/2, nối Ôn 1 thành bảng tổng 6 loại):** + 时量补语 (B9) · 复合趋向补语 (B14) · 动量补语 (B15).
-> - **Ôn 2 — bảng 比较句 (2/2, nối thành bảng tổng 1-8):** + 比较句(4)(5)(6) (B12) + 比较句(7)(8) (B13).
+> **Cấu trúc buổi Ôn tập tổng hợp (đổi 2026-08-12, theo yêu cầu user — gộp về 1 buổi cuối khoá, 2 phần độc lập, y hệt mẫu HSK1 Buổi 16, thay cho phương án cũ 2 buổi Ôn giữa/cuối khoá):**
+> - **Phần 1 — ngữ pháp** (`on_ontap/slide/`): hệ thống hoá 45 điểm 小语讲堂 của cả 15 bài, gồm bảng bổ ngữ đầy đủ 6 loại (结果补语 B3 · 简单趋向补语 B5 · 状态补语/得 B7 · 时量补语 B9 · 复合趋向补语 B14 · 动量补语 B15) + bảng so sánh 比较句 đầy đủ 1-8 (B8/B9/B12/B13) + capstone hội thoại tổng hợp ở cuối.
+> - **Phần 2 — từ vựng** (`on_ontap/slide2_tuvung/`): ~210 từ của 15 bài, nhóm theo chủ đề buổi (giống cách làm `slide2_tuvung` của HSK1 Buổi 16).
+> - Lý do đổi: đơn giản hoá thành 1 cổng duyệt cuối khoá thay vì 2 mốc giữa/cuối, đồng bộ format với HSK1 để dễ tái dùng script/pattern.
 > (Cập nhật 2026-08-06 theo bảng §4 đã verify bằng ảnh — B4/B6 không còn giữ điểm bổ ngữ/比较句 nào so với bản gốc, đã đổi số bài tương ứng ở trên.)
 > - Cả 4 bảng đều là **tổng hợp lại nội dung đã dạy**, không giới thiệu cấu trúc/ví dụ mới chưa xuất hiện ở buổi trước đó.
 
@@ -192,7 +190,7 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 ## 11. Chiến lược giao (de-risk)
 
 - **Sản xuất tuần tự, KHÔNG làm 2 pilot rồi hàng loạt (quyết định 2026-07-27, theo user):** dù buổi nào user cũng phải review + điều chỉnh, nên đi từng buổi đúng thứ tự sách, **mỗi buổi có 1 cổng duyệt trọn gói riêng** (pptx + worksheet + bài đọc) trước khi bắt đầu buổi kế tiếp. Không có khái niệm "pilot" hay "sản xuất hàng loạt sau khi duyệt khuôn".
-- Thứ tự sản xuất: 01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → [Ôn 1] → 09 → 10 → 11 → 12 → 13 → 14 → 15 → [Ôn 2].
+- Thứ tự sản xuất: 01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09 → 10 → 11 → 12 → 13 → 14 → 15 → [Ôn tập tổng hợp].
 - **Phase cuối:** trang từ vựng theo buổi (§14) sau khi vocab đã chốt.
 
 ## 12. Tiêu chí hoàn thành (verification)
@@ -208,11 +206,11 @@ Giống HSK1 (P1–P9), điều chỉnh cho 3.0:
 - [ ] Bài tập qua cổng kiểm tra đáp án AI.
 - [ ] `README.md` syllabus đầy đủ, ghi rõ chuẩn 3.0.
 - [ ] Trang từ vựng `output/study/hsk2/buoiXX/tu-vung.html` sinh đủ, flashcard + 🔊 chạy (Leitner trung tính, không neo Activation vault).
-- [ ] Bài 4 có dạy **把字句 cơ bản**; Bài 11 có **被字句 đơn giản**; Bài 12 có **连…都/也** (ngữ pháp bổ sung ngoài sách, đánh dấu rõ trong slide buổi tương ứng — KHÔNG ở 2 buổi Ôn).
+- [ ] Bài 4 có dạy **把字句 cơ bản**; Bài 11 có **被字句 đơn giản**; Bài 12 có **连…都/也** (ngữ pháp bổ sung ngoài sách, đánh dấu rõ trong slide buổi tương ứng — KHÔNG ở buổi Ôn tập tổng hợp).
 - [ ] Bài 2 (hỏi đường), Bài 3 (khách sạn — ngoài chuẩn), Bài 5 (giới thiệu bản thân/gia đình sâu), Bài 9 (hỏi giá/so sánh giá), Bài 10 (đặt lịch hẹn — ngoài chuẩn) có lồng đủ nội dung giao tiếp bổ sung; 2 mục ngoài chuẩn đánh dấu rõ trong slide.
 - [ ] Bài tập Viết luân phiên đủ 4 dạng bổ sung (đoạn 60–100 chữ, điền form, lời nhắn, nhật ký) qua các buổi — không chỉ dừng ở câu ngắn.
 - [ ] Mỗi buổi bài tập phần 读 có ≥1 văn bản thực tế (tin nhắn/biển báo/thực đơn/quảng cáo) tự soạn theo chủ đề, không lấy từ sách.
-- [ ] 2 buổi Ôn chỉ ôn tập nội dung đã học (kể cả capstone Ôn 2) — không xuất hiện từ/ngữ pháp/tình huống mới chưa dạy ở buổi trước đó.
+- [ ] Buổi Ôn tập tổng hợp (cả 2 phần) chỉ ôn tập nội dung đã học (kể cả capstone) — không xuất hiện từ/ngữ pháp/tình huống mới chưa dạy ở buổi trước đó.
 
 ## 13. Trang từ vựng HSK2 theo buổi (vocab-study-style)
 

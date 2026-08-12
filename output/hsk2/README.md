@@ -8,7 +8,7 @@
 
 **Sản xuất tuần tự** — mỗi buổi 1 cổng duyệt riêng trước khi mở buổi kế tiếp (không làm pilot rồi hàng loạt).
 
-## Syllabus 15 buổi + 2 ôn
+## Syllabus 15 buổi + 1 buổi ôn tập tổng hợp cuối khoá
 
 | # | Buổi (folder) | 课文 | Chủ đề | Ngữ pháp (小语讲堂) | Hán ngữ 第一册·下 | Trạng thái |
 |---|---|---|---|---|---|---|
@@ -20,15 +20,14 @@
 | 6 | `buoi06_sinhnhat` | 小雪，生日快乐！ | sinh nhật, chúc mừng | ~~形容词重叠 · "什么的" · "地"~~ → đã build 状态补语(1)(2)[得] (lệch, xem ghi chú "Sửa 2026-08-06 (khi bóc Bài 7)") | L25 | ✅ |
 | 7 | `buoi07_thethao` | 他篮球打得很好 | thể thao (bóng rổ) | 状态补语(1)(2) [得] (ôn lại, đã dạy ở Buổi 6) · 紧缩复句"一…就…" | L25 | ✅ |
 | 8 | `buoi08_trinho_sosanh` | 虽然你忘了，但是我记得 | mua sắm (đồng hồ/xem phim/đặt món), sinh nhật, trí nhớ, so sánh **+ hỏi giá/so sánh giá**⚠️ **+ nhận lỗi/xin lỗi/hứa sửa**⚠️ | 比较句(1)(2)[比] tách 6 dạng (cơ bản/一点儿/số lượng/还-更/phủ định/nghi vấn) · 虽然…但是 | L28 · L23 | ✅ |
-| — | `on1_bai1-8` | **Ôn 1** (giữa khoá) | ôn bài 1-8 + bảng hệ thống bổ ngữ (kết quả/xu hướng/得) + bảng 比较句(1)(2)(3) — chỉ ôn tập | — | — | ⏳ |
 | 9 | `buoi09_douong` | 我去买杯奶茶 | mua sắm (quần áo) + đồ uống (cà phê/trà sữa) + so sánh khoảng cách, đi bộ | 比较句(3) [没有] · 动词"离" · 时量补语(1) | L30 · L16 | ✅ |
 | 10 | `buoi10_thicu` | 就要考试了 | thi cử, học tập, cảm xúc thi cử **+ đặt lịch hẹn**⚠️ | 选择问句(还是) · **连…都/也 (bổ sung, dời từ Bài 12)** | — | ✅ |
 | 11 | `buoi11_monan_yeuthich` | 我最喜欢吃中国菜 | ăn uống, sở thích, sức khoẻ (đau đầu, hiệu thuốc) | 动态助词"着"(1)(2) · 程度副词"最" · **被字句 (bổ sung)** | — | ✅ |
 | 12 | `buoi12_thoitiet` | 这里比北京冷多了 | thời tiết + thiên tai (自然灾害) | 比较句(4)(5)(6) | — | ✅ |
 | 13 | `buoi13_hoctiengtrung` | 我们爱上中文课 | học tiếng Trung + tặng quà năm mới/春节 | 双宾语句(2) · 比较句(7)(8) | L17 | ✅ |
 | 14 | `buoi14_letet` | 一个人过年多没意思啊 | Tết + giới thiệu bạn trai/người yêu + nhà cửa/hàng xóm | 存现句(2) · 程度副词"多" · 复合趋向补语 (mục tiêu sách; KHÔNG dạy lại trên slide vì đã dạy đủ ở Buổi 5, xem ghi chú kỹ thuật) | L23 | ✅ |
-| 15 | `buoi15_kehoach` | 我想再去一次中国 | kế hoạch, quay lại TQ | 动量补语(1)(2) · 有字句(2) | — | ⏳ |
-| — | `on2_bai9-15` | **Ôn 2** (cuối khoá) | ôn bài 9-15 + bảng hệ thống bổ ngữ đầy đủ 6 loại + bảng 比较句(1)-(8) đầy đủ + capstone roleplay (hỏi đường/khách sạn/giới thiệu bản thân/hỏi giá/đặt lịch hẹn — chỉ ứng dụng lại) | — | — | ⏳ |
+| 15 | `buoi15_kehoach` | 我想再去一次中国 | kế hoạch, quay lại TQ + thủ tục bay/nhập cảnh | 动量补语(1)(2) · 有字句(2) | — | ✅ |
+| — | `on_ontap` | **Ôn tập tổng hợp** (cuối khoá, 2 phần độc lập như HSK1 Buổi 16) | **Phần 1** (`slide/`, ngữ pháp): hệ thống hoá 45 điểm ngữ pháp bài 1-15 + bảng bổ ngữ đầy đủ 6 loại + bảng 比较句(1)-(8) đầy đủ + capstone roleplay (hỏi đường/khách sạn/giới thiệu bản thân/hỏi giá/đặt lịch hẹn — chỉ ứng dụng lại). **Phần 2** (`slide2_tuvung/`, từ vựng): ~210 từ theo 15 bài/chủ đề | — | — | ⏳ |
 
 ⚠️ = ngoài phạm vi chuẩn thi chính thức HSK2 (đã đối chiếu HSK 二级考试大纲 chính thức), giữ lại theo yêu cầu thực dụng cá nhân — xem spec §16b.
 
@@ -134,7 +133,8 @@ sang Buổi 10 được (khớp mạch nhấn mạnh cảm xúc căng thẳng: �
 - **Từ vựng:** 210 mục (207 từ + 3 tên riêng), 19 từ trùng HSK1 cần xử lý khi sản xuất buổi tương ứng (đáng chú ý: Bài 4 trùng 5/16 từ — cụm màu sắc) — xem `hsk2-vocab-grammar-checklist.md`.
 - **Pinyin:** PDF gốc lỗi mất dấu thanh toàn sách → luôn tự sinh bằng `pypinyin` từ chữ Hán, không tin pinyin in kèm.
 - **GIF thứ tự nét:** tuỳ chọn cho chữ mới khó, tái dùng `gen_stroke_gif.py` của HSK1 — không bắt buộc mỗi buổi.
-- **Trang từ vựng** (`output/study/hsk2/buoiXX/tu-vung.html`): làm ở phase cuối, sau khi cả 15 buổi + 2 ôn chốt xong vocab.
+- **Trang từ vựng** (`output/study/hsk2/buoiXX/tu-vung.html`): làm ở phase cuối, sau khi cả 15 buổi + buổi ôn tập tổng hợp chốt xong vocab.
+- **Ôn tập tổng hợp gộp về 1 buổi cuối khoá, 2 phần (đổi 2026-08-12, theo yêu cầu user):** trước đó thiết kế 2 buổi Ôn riêng (Ôn 1 giữa khoá sau Bài 8, Ôn 2 cuối khoá sau Bài 15), mỗi buổi trộn chung ngữ pháp+từ vựng. Nay gộp thành **1 buổi `on_ontap` duy nhất ở cuối khoá**, tách 2 phần độc lập `slide/` (ngữ pháp) + `slide2_tuvung/` (từ vựng) — y hệt cấu trúc HSK1 Buổi 16. Chưa build nội dung nào của buổi này (kể cả khi còn ở dạng Ôn 1/Ôn 2 cũ).
 
 ## Trạng thái build
 
@@ -165,5 +165,6 @@ bài tập xong, 2026-08-11 — bóc bài lại biên trang + phát hiện thi�
 sau khi duyệt slide, user tự thêm 1 điểm ngữ pháp mới trên PowerPoint — 副词"多"+động từ —
 và dời vị trí slide, đã đánh số lại header + patch audio không rebuild; bài tập 27 mục,
 phủ 24/24 từ vựng). **Buổi 12 vẫn ⏳** — user chủ động chọn bỏ qua tiếp tục, cần làm bù
-trước khi mở Ôn 2 (着(1)(2)/被字句 đã dạy bù ở Buổi 11; 比较句(4)(5)(6) của Bài 12 vẫn
-chưa dạy ở đâu). Buổi 15 + Ôn 1 + Ôn 2 xem trạng thái ở bảng trên (nguồn chân lý).
+trước khi mở buổi Ôn tập tổng hợp (着(1)(2)/被字句 đã dạy bù ở Buổi 11; 比较句(4)(5)(6)
+của Bài 12 vẫn chưa dạy ở đâu). Buổi 15 + Ôn tập tổng hợp xem trạng thái ở bảng trên
+(nguồn chân lý).

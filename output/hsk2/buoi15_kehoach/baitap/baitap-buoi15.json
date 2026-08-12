@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "lesson": "HSK2 Buổi 15: 我想再去一次中国 — 动量补语(1)(2) · 有字句(2)",
+    "hsk": 2
+  },
+  "blocks": [
+    {
+      "type": "noi",
+      "title": "Nối từ với nghĩa",
+      "pairs": [
+        {
+          "left": "姓名",
+          "right": "họ tên"
+        },
+        {
+          "left": "出国",
+          "right": "xuất ngoại"
+        },
+        {
+          "left": "机票",
+          "right": "vé máy bay"
+        },
+        {
+          "left": "签证",
+          "right": "visa"
+        },
+        {
+          "left": "护照",
+          "right": "hộ chiếu"
+        },
+        {
+          "left": "行李",
+          "right": "hành lý"
+        },
+        {
+          "left": "登机牌",
+          "right": "thẻ lên máy bay"
+        },
+        {
+          "left": "过境",
+          "right": "quá cảnh"
+        }
+      ]
+    },
+    {
+      "type": "dien_cho_trong",
+      "title": "Điền từ vào chỗ trống",
+      "word_bank": [
+        "签证",
+        "护照",
+        "机票",
+        "行李",
+        "登机牌",
+        "姓名"
+      ],
+      "items": [
+        {
+          "q": "去中国旅游以前，我先上网办了{}，等了三天就办好了。",
+          "answer": "签证"
+        },
+        {
+          "q": "我的{}太多了，得多付一点儿钱。",
+          "answer": "行李"
+        },
+        {
+          "q": "工作人员看了看我的护照，又问了我的{}。",
+          "answer": "姓名"
+        },
+        {
+          "q": "值机以后，我拿到了一张{}，可以直接去登机口了。",
+          "answer": "登机牌"
+        }
+      ]
+    },
+    {
+      "type": "doc_hieu",
+      "title": "Đọc hiểu",
+      "passage": "陈天中要去泰国旅游，得先在上海转机。他已经有一年没出国了，这次特别高兴。出发前，他检查了护照，发现还没过期，又上网办好了签证。到机场后，他先值机，拿到登机牌，然后排队过安检，最后去29号登机口等飞机。",
+      "questions": [
+        {
+          "q": "陈天中这次旅游最后要去哪个国家？",
+          "options": [
+            "中国",
+            "泰国",
+            "美国"
+          ],
+          "answer": "B"
+        },
+        {
+          "q": "陈天中有多长时间没出国了？",
+          "options": [
+            "半年",
+            "一年",
+            "两年"
+          ],
+          "answer": "B"
+        },
+        {
+          "q": "根据这段话，陈天中到机场以后先做了什么？",
+          "options": [
+            "过安检",
+            "值机",
+            "去登机口"
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "type": "sap_xep",
+      "title": "Sắp xếp thành câu đúng",
+      "instructions": "Chú ý vị trí 数词+次 khi tân ngữ là địa danh/đại từ (động lượng补语).",
+      "items": [
+        {
+          "words": [
+            "他",
+            "去",
+            "过",
+            "一次",
+            "泰国"
+          ],
+          "answer": "他去过一次泰国。",
+          "answer_plus": "他去过一次泰国，还想再去一次。"
+        },
+        {
+          "words": [
+            "我",
+            "朋友",
+            "有",
+            "两年",
+            "没",
+            "回国",
+            "了"
+          ],
+          "answer": "我朋友有两年没回国了。",
+          "answer_plus": "我朋友有两年没回国了，她很想家。"
+        },
+        {
+          "words": [
+            "我",
+            "想",
+            "找",
+            "他",
+            "一次"
+          ],
+          "answer": "我想找他一次。",
+          "answer_plus": "我想找他一次，问问签证的事情。"
+        }
+      ]
+    },
+    {
+      "type": "dich_dat_cau",
+      "title": "Dịch và đặt câu",
+      "items": [
+        {
+          "prompt": "Dịch: Tôi đã nửa năm chưa gọi điện về nhà rồi.",
+          "given": [
+            "打电话"
+          ],
+          "answer": "我有半年没给家里打电话了。",
+          "answer_plus": "我有半年没给家里打电话了，有点儿想家。"
+        },
+        {
+          "prompt": "Đặt câu dùng 行李 và 机场",
+          "answer": "我到机场的时候，行李还没到。",
+          "answer_plus": "我到机场的时候，行李还没到，只好在那儿等了半个小时。"
+        },
+        {
+          "prompt": "Dịch: Anh ấy quá cảnh ở Bắc Kinh, định ra ngoài chơi hai ngày.",
+          "given": [
+            "过境"
+          ],
+          "answer": "他在北京过境，打算出去玩两天。",
+          "answer_plus": "他这次在北京过境，因为免签，所以打算出去玩两天。"
+        }
+      ]
+    },
+    {
+      "type": "nghe",
+      "title": "Nghe hiểu",
+      "items": [
+        {
+          "script": "我打算下个月再去一次中国，这已经是我第二次去了。",
+          "q": "她这次是第几次去中国？",
+          "options": [
+            "第一次",
+            "第二次",
+            "第三次"
+          ],
+          "answer": "B",
+          "audio": "audio/nghe-1.mp3"
+        },
+        {
+          "script": "我姐姐有半年没回国了，她很想家，打算下星期回去。",
+          "q": "姐姐多长时间没回国了？",
+          "options": [
+            "一个月",
+            "半年",
+            "一年"
+          ],
+          "answer": "B",
+          "audio": "audio/nghe-2.mp3"
+        },
+        {
+          "script": "过了安检以后，请大家去32号登机口等飞机。",
+          "q": "过了安检以后要去哪儿？",
+          "options": [
+            "32号登机口",
+            "办公室",
+            "咖啡店"
+          ],
+          "answer": "A",
+          "audio": "audio/nghe-3.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Nghe và nhắc lại",
+      "part": "听后重复",
+      "instructions": "Nghe rồi nhắc lại nguyên câu.",
+      "items": [
+        {
+          "script": "我已经有一年没出国旅游了。",
+          "audio": "audio/hskk-1.mp3"
+        },
+        {
+          "script": "这是我第二次来北京，还想再来一次。",
+          "audio": "audio/hskk-2.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 1",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        {
+          "script": "你多久没去旅游了？如果有机会，你想再去哪里旅游一次？",
+          "hint": "开头 (Mở bài): Lần gần nhất em đi du lịch là khi nào? Đã bao lâu rồi em chưa đi du lịch? — 主体 (Thân bài): Nếu có cơ hội, em muốn đi đâu thêm một lần nữa? Vì sao lại chọn nơi đó? — 结尾 (Kết bài): Em nghĩ chuyến đi đó sẽ có gì thú vị?"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Câu hỏi 2",
+      "part": "回答问题",
+      "instructions": "Nghe câu hỏi rồi trả lời theo dàn bài gợi ý dưới mỗi câu (mở bài - thân bài - kết bài).",
+      "items": [
+        {
+          "script": "出国旅游以前，你觉得需要准备什么（护照、签证、机票等）？",
+          "hint": "开头 (Mở bài): Em đã từng chuẩn bị đi xuất ngoại chưa? — 主体 (Thân bài): Theo em cần chuẩn bị những giấy tờ/đồ gì (hộ chiếu/visa/vé máy bay/hành lý...)? Vì sao mỗi thứ lại quan trọng? — 结尾 (Kết bài): Nếu ngày mai phải xuất phát, em còn thiếu thứ gì chưa chuẩn bị?"
+        }
+      ]
+    }
+  ]
+}
