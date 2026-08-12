@@ -433,7 +433,11 @@ class DeckBuilder:
         # hết khoảng trống bên trái mới đủ chỗ, không bị rớt chữ ở đáy).
         gap = Inches(0.5)
         content_w = SLIDE_W - 2 * MARGIN
-        words_w = min(Inches(3.8), int(content_w * 0.32))
+        # Không ảnh (chỉ ví dụ) -> cột thẻ từ hẹp hơn (chỉ cần đủ cho 1-2 chữ to),
+        # nhường bề rộng còn lại cho ví dụ để câu dài không bị rớt dòng cuối.
+        words_ratio = 0.32 if s.get("image") else 0.19
+        words_cap = Inches(3.8) if s.get("image") else Inches(2.4)
+        words_w = min(words_cap, int(content_w * words_ratio))
         left_col_w = content_w - words_w - gap
         side = s.get("image_side", "left")
         if side == "right":
