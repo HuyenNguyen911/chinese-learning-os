@@ -27,7 +27,7 @@
 | 13 | `buoi13_hoctiengtrung` | 我们爱上中文课 | học tiếng Trung + tặng quà năm mới/春节 | 双宾语句(2) · 比较句(7)(8) | L17 | ✅ |
 | 14 | `buoi14_letet` | 一个人过年多没意思啊 | Tết + giới thiệu bạn trai/người yêu + nhà cửa/hàng xóm | 存现句(2) · 程度副词"多" · 复合趋向补语 (mục tiêu sách; KHÔNG dạy lại trên slide vì đã dạy đủ ở Buổi 5, xem ghi chú kỹ thuật) | L23 | ✅ |
 | 15 | `buoi15_kehoach` | 我想再去一次中国 | kế hoạch, quay lại TQ + thủ tục bay/nhập cảnh | 动量补语(1)(2) · 有字句(2) | — | ✅ |
-| — | `on_ontap` | **Ôn tập tổng hợp** (cuối khoá, 2 phần độc lập như HSK1 Buổi 16) | **Phần 1** (`slide/`, ngữ pháp): hệ thống hoá 45 điểm ngữ pháp bài 1-15 + bảng bổ ngữ đầy đủ 6 loại + bảng 比较句(1)-(8) đầy đủ + capstone roleplay (hỏi đường/khách sạn/giới thiệu bản thân/hỏi giá/đặt lịch hẹn — chỉ ứng dụng lại). **Phần 2** (`slide2_tuvung/`, từ vựng): ~210 từ theo 15 bài/chủ đề | — | — | ⏳ |
+| — | `on_ontap` | **Ôn tập tổng hợp** (cuối khoá, 2 phần độc lập như HSK1 Buổi 16) | **Phần 1** (`slide/` + `baitap/`, ngữ pháp): 17 nhóm ngữ pháp (tóm tắt ngắn + bài tập đa dạng dạng ngay dưới, đáp án tách riêng ở `baitap/dapan/`) + bảng bổ ngữ đầy đủ 6 loại + bảng 比较句(1)-(8) đầy đủ + bài tập NGHE riêng 14 câu (4 dạng như đề thi thật, có audio + ảnh). **Phần 2** (`slide2_tuvung/`, từ vựng): ~210 từ theo 15 bài/chủ đề — CHƯA làm | — | — | 🔶 Phần 1 xong, Phần 2 ⏳ |
 
 ⚠️ = ngoài phạm vi chuẩn thi chính thức HSK2 (đã đối chiếu HSK 二级考试大纲 chính thức), giữ lại theo yêu cầu thực dụng cá nhân — xem spec §16b.
 
@@ -164,7 +164,42 @@ bài tập xong, 2026-08-11 — bóc bài lại biên trang + phát hiện thi�
 "Ghi chú kỹ thuật"; 生词 đổi hẳn sang 24 từ chủ đề nhà cửa dùng đủ danh sách user cung cấp;
 sau khi duyệt slide, user tự thêm 1 điểm ngữ pháp mới trên PowerPoint — 副词"多"+động từ —
 và dời vị trí slide, đã đánh số lại header + patch audio không rebuild; bài tập 27 mục,
-phủ 24/24 từ vựng). **Buổi 12 vẫn ⏳** — user chủ động chọn bỏ qua tiếp tục, cần làm bù
-trước khi mở buổi Ôn tập tổng hợp (着(1)(2)/被字句 đã dạy bù ở Buổi 11; 比较句(4)(5)(6)
-của Bài 12 vẫn chưa dạy ở đâu). Buổi 15 + Ôn tập tổng hợp xem trạng thái ở bảng trên
-(nguồn chân lý).
+phủ 24/24 từ vựng). **Sửa 2026-08-12 (rà lại trước khi build Ôn tập tổng hợp):** dòng
+"Buổi 12 vẫn ⏳" ở trên là SAI — `ls` trực tiếp `output/hsk2/buoi12_thoitiet/` xác nhận
+đã build trọn gói từ trước (commit `6f1fc04`): slide 21 trang đủ 比较句(4)(5)(6) đúng
+ngữ pháp thật + bài tập trọn gói. **Buổi 1-15 đã build xong toàn bộ**, chỉ còn buổi Ôn
+tập tổng hợp (`on_ontap`) — xem trạng thái ở bảng trên (nguồn chân lý).
+
+**Ôn tập tổng hợp — Phần 1 (ngữ pháp) ✅ xong (2026-08-13):** `on_ontap/slide/on_ontap.json`
++ `Buoi-Ontap-P1-NguPhap.pptx` (22 slide: title, mục tiêu, 17 nhóm ngữ pháp — mỗi nhóm 1
+slide dạng "[ngữ pháp — mục đích — cách dùng] (in đậm) → bài tập ngay dưới (chữ thường)",
+KHÔNG có slide đáp án nhúng trong pptx theo yêu cầu user, chỉ 1 dạng bài tập khác nhau/nhóm
+(sắp câu/điền từ/trắc nghiệm/tìm lỗi/dịch/đúng-sai) + 2 bảng hệ thống (bổ ngữ 6 loại,
+比较句 1-8). Một số câu bài tập trích nguyên từ **HSK(二级)样卷 官方** (đã seed
+`knowledge/hsk-exam-bank/hsk2.md`, PDF gốc `raw/HSK2-样卷-官方.pdf`) — đánh dấu
+`【官方样卷】`; điểm ngoài phạm vi 样卷 (把/被/连…都/也/存现句/有字句...) tự soạn.
+Đáp án 17 nhóm để RIÊNG ở `baitap/dapan/dapan-tonghop.docx` (không nhúng slide).
+Đã bổ sung `baitap/` phần **Nghe** (14 câu, mô phỏng đủ 4 dạng 听力 thật của đề — phần
+1/2 cần ảnh CC thật + phần 3/4 kiểu hội thoại+câu hỏi, nội dung TỰ SOẠN dùng đúng từ
+vựng/ngữ pháp đã học, không lấy từ 样卷 vì 样卷 dùng từ vựng chuẩn 2.0 lệch phạm vi khoá
+3.0 đang dạy) — audio ở `baitap/hocsinh/audio/`, ảnh ở `baitap/hocsinh/assets/`,
+worksheet không đáp án `baitap/hocsinh/worksheet-nghe.docx`, đáp án gộp chung
+`dapan-tonghop.docx`. **Phần 2 (từ vựng, `slide2_tuvung/`) CHƯA làm.**
+
+**Bài học rút ra khi làm Ôn tập tổng hợp Phần 1:**
+- Rà lại danh sách 45 điểm ngữ pháp SAU KHI soạn xong bản đầu phát hiện thiếu 3 điểm
+  (虽然…但是 Bài 8, 程度副词"最" Bài 11, 副词"多"+động từ Bài 14) — luôn đối chiếu lại
+  đủ 45 điểm trước khi chốt, đừng tin bản nháp đầu đã đủ.
+- `_list_slide` (dùng cho `exercise`/`answers`/`bullets` trong `build_deck.py`) đã sửa
+  để hỗ trợ item 2 dòng `"nhãn\ncâu"` — dòng nhãn in đậm/cỡ lớn hơn dòng còn lại, khoảng
+  cách giữa các item (cụm) giãn hơn khoảng cách nội bộ 2 dòng cùng 1 item — dùng lại được
+  cho mọi buổi sau cần format "tóm tắt ngắn ngay trên bài tập" kiểu này.
+- Bài "sắp xếp câu" (word order) PHẢI xáo từ thật — soạn nhanh dễ vô tình liệt kê đúng
+  thứ tự luôn (không phải bài tập), phải tự kiểm lại từng câu trước khi build.
+- Ảnh CC (Openverse) tỷ lệ trả sai/lạc đề/phản cảm khá cao với query đơn giản (vd "car"
+  ra ảnh graffiti, "coffee cup" ra tranh vẽ, "jogging" ra ảnh cởi trần) — PHẢI tự Read
+  lại từng ảnh trước khi gắn vào bài, đổi query cụ thể hơn khi sai, không tin kết quả
+  "OK" của `fetch_images.py` là ảnh đúng.
+- Nội dung sinh audio/ảnh PHẢI trình bày dạng text cho user duyệt TRƯỚC khi chạy TTS/tải
+  ảnh — làm ngược lại 1 lần trong buổi này bị nhắc lại đúng quy tắc đã ghi ở
+  `pptx/README.md`.

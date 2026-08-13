@@ -1,0 +1,98 @@
+{
+  "p1_1_jogging": {
+    "title": "Hyde Park Jogger",
+    "creator": "Waterford_Man",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/47121377@N00/24349654182",
+    "attribution": "\"Hyde Park Jogger\" by Waterford_Man is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "woman running park path"
+  },
+  "p1_2_beach": {
+    "title": "Sunny beach bench",
+    "creator": "kismihok",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/91702123@N00/3692098066",
+    "attribution": "\"Sunny beach bench\" by kismihok is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "sunny beach"
+  },
+  "p1_3_library": {
+    "title": "A girl in a library",
+    "creator": "freestocks.org",
+    "license": "cc0 1.0",
+    "source": "https://www.flickr.com/photos/135396164@N05/31981589415",
+    "attribution": "\"A girl in a library\" by freestocks.org is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.",
+    "query": "girl reading bookshelf library"
+  },
+  "p2_1a_coffee": {
+    "title": "Waffle House Coffee",
+    "creator": "Sam Howzit",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/12508217@N08/9593471149",
+    "attribution": "\"Waffle House Coffee\" by Sam Howzit is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "coffee mug table"
+  },
+  "p2_1b_tea": {
+    "title": "Green Tea Cup",
+    "creator": "kewpiedollchan",
+    "license": "by-nd 2.0",
+    "source": "https://www.flickr.com/photos/131840349@N06/17078002969",
+    "attribution": "\"Green Tea Cup\" by kewpiedollchan is licensed under CC BY-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/2.0/.",
+    "query": "green tea cup"
+  },
+  "p2_1c_juice": {
+    "title": "Glass orange juice table",
+    "creator": null,
+    "license": "cc0 1.0",
+    "source": "https://www.rawpixel.com/image/6027562/photo-image-public-domain-glass-table",
+    "attribution": "\"Glass orange juice table\" is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.",
+    "query": "glass orange juice"
+  },
+  "p2_2a_car": {
+    "title": "FORD Automobile",
+    "creator": "Prayitno / Thank you for (12 millions +) view",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/34128007@N04/5749995251",
+    "attribution": "\"FORD Automobile\" by Prayitno / Thank you for (12 millions +) view is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "automobile"
+  },
+  "p2_2b_bike": {
+    "title": "Bicycle",
+    "creator": "Conal Gallagher",
+    "license": "by 2.0",
+    "source": "https://www.flickr.com/photos/75083336@N00/14909247947",
+    "attribution": "\"Bicycle\" by Conal Gallagher is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.",
+    "query": "bicycle"
+  },
+  "p2_2c_bus": {
+    "title": "School Bus",
+    "creator": "dhendrix73",
+    "license": "by-nd 2.0",
+    "source": "https://www.flickr.com/photos/32217894@N03/6906652333",
+    "attribution": "\"School Bus\" by dhendrix73 is licensed under CC BY-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/2.0/.",
+    "query": "bus"
+  },
+  "p2_3a_sunny": {
+    "title": "Have a sunny day!",
+    "creator": "Activ Solar",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/92075126@N04/9094451068",
+    "attribution": "\"Have a sunny day!\" by Activ Solar is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "sunny day"
+  },
+  "p2_3b_rain": {
+    "title": "Rain",
+    "creator": "tchandok",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/52187819@N05/4811498597",
+    "attribution": "\"Rain\" by tchandok is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "rain"
+  },
+  "p2_3c_snow": {
+    "title": "Snow",
+    "creator": "matsuyuki",
+    "license": "by-sa 2.0",
+    "source": "https://www.flickr.com/photos/12173213@N00/16016515988",
+    "attribution": "\"Snow\" by matsuyuki is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.",
+    "query": "snow"
+  }
+}

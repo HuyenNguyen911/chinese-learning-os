@@ -1584,11 +1584,19 @@ class DeckBuilder:
         items = s.get("items", s.get("bullets", []))
         prefix_w = Inches(0.45)
 
+        # item có thể là 2 dòng "nhãn\ncâu" (vd tóm tắt ngữ pháp + bài tập của
+        # điểm đó) — dòng nhãn in đậm/cỡ lớn hơn, dòng còn lại cỡ thường, và
+        # khoảng cách giữa các item (cụm) giãn rộng hơn khoảng cách nội bộ
+        # 2 dòng trong cùng 1 item, để mắt phân biệt được cụm nào với cụm nào.
         natural = 0
         if instructions:
             natural += self._wrap_lines(instructions, txt_w, 16, cjk=True) * self._line_h(16)
         for item in items:
-            natural += Pt(13) + self._wrap_lines(str(item), txt_w - prefix_w, 20, cjk=True) * self._line_h(20)
+            parts = str(item).split("\n", 1)
+            natural += Pt(26)  # khoảng cách trước mỗi cụm
+            natural += self._wrap_lines(parts[0], txt_w - prefix_w, 20, cjk=True) * self._line_h(20)
+            if len(parts) > 1:
+                natural += Pt(4) + self._wrap_lines(parts[1], txt_w - prefix_w, 17, cjk=True) * self._line_h(17)
         scale = self._fit_scale(natural, area_h)
 
         def sz(pt, floor):
@@ -1606,12 +1614,18 @@ class DeckBuilder:
                           italic=True)
             first = False
         for i, item in enumerate(items):
+            parts = str(item).split("\n", 1)
             p = tf.paragraphs[0] if first else tf.add_paragraph()
             first = False
-            p.space_before = Pt(13 * scale)
+            p.space_before = Pt(26 * scale)
             prefix = ("%d. " % (i + 1)) if numbered else "•  "
-            self._set_run(p.add_run(), prefix, sz(20, 14), color="accent", bold=True)
-            self._set_run(p.add_run(), str(item), sz(20, 14), color="ink", cjk=True)
+            self._set_run(p.add_run(), prefix, sz(22, 15), color="accent", bold=True)
+            self._set_run(p.add_run(), parts[0], sz(22, 15), color="ink", bold=True, cjk=True)
+            if len(parts) > 1:
+                p2 = tf.add_paragraph()
+                p2.space_before = Pt(4 * scale)
+                self._set_run(p2.add_run(), " " * len(prefix), sz(17, 13), color="ink")
+                self._set_run(p2.add_run(), parts[1], sz(17, 13), color="ink", cjk=True)
         if has_img:
             self._place_image(slide, s["image"], img_left, top, img_w, area_h)
 

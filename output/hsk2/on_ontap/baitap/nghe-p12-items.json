@@ -1,0 +1,54 @@
+{
+ "part1": [
+  {
+   "id": 1,
+   "hz": "他正在公园里跑步。",
+   "image": "p1_1_jogging.jpg",
+   "answer": "ĐÚNG"
+  },
+  {
+   "id": 2,
+   "hz": "外面下雪了，很冷。",
+   "image": "p1_2_beach.jpg",
+   "answer": "SAI"
+  },
+  {
+   "id": 3,
+   "hz": "她在图书馆看书呢。",
+   "image": "p1_3_library.jpg",
+   "answer": "ĐÚNG"
+  }
+ ],
+ "part2": [
+  {
+   "id": 1,
+   "hz": "我想喝一杯咖啡。",
+   "images": [
+    "p2_1a_coffee.jpg",
+    "p2_1b_tea.jpg",
+    "p2_1c_juice.jpg"
+   ],
+   "answer": "A"
+  },
+  {
+   "id": 2,
+   "hz": "他每天骑自行车上班。",
+   "images": [
+    "p2_2a_car.jpg",
+    "p2_2b_bike.jpg",
+    "p2_2c_bus.jpg"
+   ],
+   "answer": "B"
+  },
+  {
+   "id": 3,
+   "hz": "今天天气很好，太阳很大。",
+   "images": [
+    "p2_3a_sunny.jpg",
+    "p2_3b_rain.jpg",
+    "p2_3c_snow.jpg"
+   ],
+   "answer": "A"
+  }
+ ]
+}
