@@ -86,6 +86,14 @@ Vocab:
 ```
 → `output/study/hsk6/tu-vung.html` (từ mới hiện trạng thái D vì đọc tier-a).
 
+**Chạy lại (redo) một bài đã có dữ liệu sai/thiếu:** `append_xlsx.py` dedup theo 生词 —
+nếu từ đã có trong xlsx (kể cả đang thiếu pinyin/nghĩa/ví dụ) thì **bỏ qua luôn, không
+sửa**. Phải tự viết script match theo 生词 để cập nhật tại chỗ các dòng cũ trước, rồi mới
+chạy `append_xlsx.py` cho từ thật sự mới. Đồng thời kiểm tra thứ tự các dòng của bài đó
+trong xlsx có khớp thứ tự slide (`vocab_payload.json`) không — dòng bulk-import cũ có thể
+bị xáo trộn, mà `extract_xlsx.py` giữ nguyên thứ tự gặp trong file (không tự sort) nên
+`tu-vung.html` sẽ hiện sai thứ tự học nếu không sắp lại trước khi build.
+
 Bài tập/viết (theo mẫu — writing đầu, tô đỏ từ trọng tâm):
 ```
 "$PY" "$LP/render_baitap.py" \
