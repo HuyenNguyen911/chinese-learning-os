@@ -100,6 +100,10 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
    Nếu chính AI vừa tạo commit trên `main` trong cùng session mà nhánh đang đứng là
    `feat/hskN-full-course` → tự động merge `main` vào ngay sau đó, không đợi user hỏi
    lại "sao tôi không thấy" (đã xảy ra 2 lần trong 1 session — Bài 31-34, rồi Bài 30).
+   **Ngoại lệ HSK2 (từ 2026-08-12):** đã merge hẳn `feat/hsk2-full-course` vào `main`
+   và xoá nhánh — HSK2 giờ build THẲNG trên `main` (không còn nhánh riêng), theo yêu
+   cầu user vì nhánh/worktree riêng gây rối khi xem trên VS Code. Mục 8 này chỉ còn áp
+   dụng cho HSK1 và các khoá tương lai chưa đổi mô hình.
 9. **User tư duy theo thư mục nhìn thấy trên đĩa** (vd `output/hsk6`), không theo khái
    niệm nhánh git — khi giải thích "X thuộc về đâu", luôn quy chiếu về đường dẫn thư mục
    cụ thể, đừng chỉ nói tên nhánh (dễ hiểu lầm "H6" = tên nhánh trong khi user đang chỉ

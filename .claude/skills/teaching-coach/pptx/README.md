@@ -96,6 +96,15 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `exercise` | `instructions?`, `items[]` (+ `image?`) | Slide bài tập (đánh số) |
 | `answers` | `items[]` | Slide đáp án (đánh số) |
 | `bullets` | `bullets[]` (+ `image?`) | Gạch đầu dòng thường |
+
+**`exercise`/`answers`/`bullets` — item 2 dòng "nhãn\ncâu" (2026-08-13):** mỗi phần tử
+trong `items[]`/`bullets[]` có thể là 1 chuỗi chứa `\n` — dòng ĐẦU (trước `\n`) render
+đậm + cỡ lớn hơn (vai trò nhãn/tóm tắt ngắn), dòng SAU render cỡ thường (vai trò nội
+dung chi tiết/bài tập của nhãn đó). Khoảng cách TRƯỚC mỗi item (cụm) rộng hơn khoảng
+cách nội bộ giữa 2 dòng trong cùng 1 item, để mắt phân biệt được cụm nào với cụm nào —
+dùng khi cần format "tóm tắt ngắn gọn ngay trên đầu bài tập/gạch đầu dòng của chính nó"
+(vd buổi ôn tập tổng hợp: mỗi điểm ngữ pháp 1 dòng tóm tắt + 1 dòng bài tập kiểm tra).
+Item chỉ 1 dòng (không có `\n`) vẫn hoạt động như cũ, không bị ảnh hưởng.
 | `image` | `image`, `caption?`/`captions[]` | Ảnh lớn canh giữa (sơ đồ/biểu đồ tĩnh), không cần bảng/bullet |
 | `blank` | `title`, `placeholder?` | Slide để trống có chủ đích |
 | `word_groups` | `groups[]` = `{label, items[]}`, mỗi `item` = `{hz, py, vn}` | N nhóm xếp CẠNH NHAU (banner nhãn to 30pt + bảng con 汉字\|Pinyin\|Nghĩa mỗi dòng 1 ví dụ) — tự xếp lưới thích ứng theo số nhóm (≤3 → 1 hàng, 4 → 2×2, >4 → nhiều hàng x4 cột) để cột luôn đủ rộng, không rớt dòng. Dùng cho bảng luyện đọc theo nhóm 声母/韵母 thay vì nhồi nhiều ví dụ vào 1 ô |
