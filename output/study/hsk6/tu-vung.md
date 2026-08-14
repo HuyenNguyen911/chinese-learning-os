@@ -1312,43 +1312,59 @@
 
 | 生词 | Pinyin | 释义 | Nghĩa | 例句 |
 | --- | --- | --- | --- | --- |
-| 急剧 | jíjù | 变化很快 | nhanh chóng, đột ngột (biến đổi mạnh và nhanh) | 这个月我的HSK6模考分数急剧上升，连老师都觉得意外。 |
-| 川流不息 | chuānliúbùxī | 人车很多 | nườm nượp không ngớt; dòng người/xe qua lại liên tục (đen: chảy như sông không dứt) | 下班高峰期，胡志明市的摩托车川流不息，我堵在路上拍了张照。 |
-| 把手 | bǎshǒu | 门的手柄 | tay nắm, tay cầm (của cửa, đồ vật) | 瑜伽馆的门把手坏了，我拉了半天才推开。 |
-| 装卸 | zhuāngxiè | 装货卸货 | bốc dỡ; xếp và dỡ hàng | 我妈周六去批发市场，看着工人们忙着装卸新鲜蔬菜。 |
-| 相应 | xiāngyìng | 对应的 | tương ứng, phù hợp với | 需求文档一改，开发那边就得做出相应的调整。 |
-| 着重 | zhuózhòng | 重点说 | chú trọng, nhấn mạnh | 写BRD的时候，我着重描述了用户最关心的那几个流程。 |
-| 虚拟 | xūnǐ | 不是真的 | ảo, hư cấu; mô phỏng (không có thật) | 我把AI当成虚拟的中文老师，每天下班陪我练口语。 |
-| 插座 | chāzuò | 插电的地方 | ổ cắm điện | 咖啡馆靠窗那个位置有插座，我最喜欢坐那儿备考。 |
-| 反馈 | fǎnkuì | 回馈意见 | phản hồi (ý kiến, thông tin) | 测试同事的反馈很及时，帮我少踩了不少坑。 |
-| 无微不至 | wúwēibùzhì | 照顾很细心 | chu đáo tỉ mỉ, chăm sóc đến từng chi tiết | 男朋友总是无微不至地提醒我多吃青菜、早点睡觉。 |
-| 便利 | biànlì | 很方便 | tiện lợi, thuận tiện | 用AI自动整理会议记录，真的给我的工作带来了很多便利。 |
-| 把关 | bǎguān | 检查控制 | kiểm soát, kiểm duyệt (canh giữ khâu quan trọng) | 文档交给开发前，我会自己先把好关，检查有没有逻辑漏洞。 |
-| 人工 | réngōng | 用人做事 | nhân công, sức người; nhân tạo | 很多重复的活儿其实不用人工，交给脚本处理更省心。 |
-| 总和 | zǒnghé | 加起来的数量 | tổng, tổng số cộng lại | 这个月的加班时间加起来，总和差不多等于多上了一周班。 |
-| 模式 | móshì | 做事的方式 | mô thức, kiểu cách, phương thức | 我不想一直当只会埋头干活的"牛马"，得换一种活法和工作模式。 |
-| 清理 | qīnglǐ | 打扫干净 | dọn dẹp, thanh lý, làm sạch | 周末我把手机里几千张照片清理了一遍，只留下最满意的。 |
+| 急剧 | jíjù | 变化得很快、很剧烈 | dữ dội, nhanh chóng, đột ngột | 这个月我的HSK6模考分数急剧上升，连老师都觉得意外。 |
+| 川流不息 | chuānliúbùxī | 像水流一样连续不断，形容人或车很多 | (dòng người/xe) không ngớt, liên tục | 下班高峰期，胡志明市的摩托车川流不息，我堵在路上拍了张照。 |
+| 登录 | dēnglù | 打开账号进入系统或网站 | đăng nhập | 我每天登录网课平台打卡，坚持背单词。 |
+| 指令 | zhǐlìng | 上级下达的命令 | chỉ thị, mệnh lệnh | 老板用中文给我下了一条指令，我愣了两秒才反应过来意思。 |
+| 根深蒂固 | gēnshēndìgù | 存在已久，扎根很深，很难改变 | ăn sâu bén rễ, cố hữu | “学中文一定要先学拼音”这个想法在我脑子里根深蒂固，后来才发现直接学汉字也可以。 |
+| 不免 | bùmiǎn | 在某种情况下很自然地会产生某种结果，很难避免 | không tránh khỏi, tất nhiên sẽ | 第一次用中文跟客户开会，我不免有点紧张。 |
+| 预言 | yùyán | 事先说出以后会发生的事 | lời tiên đoán, dự ngôn | 老师预言我这次HSK6能考到220分以上，希望她说得准。 |
+| 革命 | gémìng | 根本性的、彻底的大改变 | cách mạng, thay đổi căn bản | AI工具的出现，对我们做需求分析的方式简直是一场革命。 |
+| 改良 | gǎiliáng | 改进，使更好一些 | cải tiến, cải lương | 我把给小学生上课的方法改良了一下，他现在明显爱学多了。 |
+| 欣欣向荣 | xīnxīnxiàngróng | 很兴旺，蓬勃发展的样子 | phồn vinh, phát triển mạnh mẽ | 这几年国产剧越来越好看，整个市场一片欣欣向荣的样子。 |
+| 仓库 | cāngkù | 存放东西的地方 | kho, nhà kho | 我把学过的生词都存进一个电子仓库里，随时能拿出来复习。 |
+| 相应 | xiāngyìng | 跟某种情况互相对应的 | tương ứng | 需求文档一改，开发那边就得做出相应的调整。 |
+| 仪器 | yíqì | 用来测量、做实验的精密设备 | thiết bị, máy móc (dụng cụ đo/thí nghiệm) | 车间里那些精密仪器的说明书全是中文，我得一边学一边翻译给同事听。 |
+| 以免 | yǐmiǎn | 用在后一句，表示前面的做法是为了避免发生不希望的情况 | để tránh, kẻo | 我把每天的学习计划写在本子上，以免自己偷懒。 |
+| 储备 | chǔbèi | 提前准备好，存起来以后用 | dự trữ | 考HSK6之前，我得多储备一些成语和固定搭配。 |
+| 结算 | jiésuàn | 把账目算清楚 | thanh toán, quyết toán | 月底跟中国供应商结算货款时，我得用中文确认好几遍数字。 |
+| 模式 | móshì | 做事的方式、样式 | mô hình, khuôn mẫu | 我不想一直当只会埋头干活的"牛马"，得换一种活法和工作模式。 |
+| 嫌 | xián | 觉得不满意、不喜欢 | chê, không thích | 我嫌自己发音不够标准，每天都对着录音练一遍。 |
+| 腥 | xīng | 鱼、肉一类的难闻气味 | tanh | 中国同事请我吃鱼，我嫌腥，只夹了一小块。 |
+| 清理 | qīnglǐ | 打扫、整理干净 | dọn dẹp, xử lý sạch sẽ | 周末我把手机里几千张照片清理了一遍，只留下最满意的。 |
 | 等候 | děnghòu | 等待 | chờ đợi | 约了一起打羽毛球的朋友迟到，我在球馆门口等候了二十分钟。 |
-| 勘探 | kāntàn | 去找矿 | thăm dò (khoáng sản, địa chất) | 看纪录片时才知道，地质队要花好几年在山里勘探。 |
-| 矿产 | kuàngchǎn | 地下的矿 | khoáng sản | 那部中国纪录片讲的是西部地区丰富的矿产资源。 |
-| 款式 | kuǎnshì | 衣服的样子 | kiểu dáng, mẫu mã | 逛街时我看中一件大衣，款式简单，正合我的风格。 |
-| 主导 | zhǔdǎo | 主要引导 | chủ đạo, dẫn dắt (giữ vai trò chính) | 这个项目一直是业务需求在主导，技术方案得跟着走。 |
-| 兴隆 | xīnglóng | 生意好 | hưng thịnh, phát đạt (buôn bán) | 我常去的那家奶茶店生意特别兴隆，每次都要排队。 |
-| 羽绒服 | yǔróngfú | 羽绒衣服 | áo lông vũ, áo phao | 去东北旅游前，我特意买了件厚羽绒服，怕冷得受不了。 |
-| 旗袍 | qípáo | 旗袍 | sườn xám (áo dài truyền thống của phụ nữ Trung Quốc) | 看《琅琊榜》那种古装剧，我总忍不住想穿旗袍拍一组照片。 |
-| 音响 | yīnxiǎng | 声音设备 | dàn âm thanh, thiết bị âm thanh | 在家练唱歌的时候，我会把音响声音开大一点，特别放松。 |
-| 收音机 | shōuyīnjī | 听广播的机器 | radio, máy thu thanh | 早上读《心流》累了，我就打开收音机听听中文广播。 |
-| 水龙头 | shuǐlóngtóu | 出水的开关 | vòi nước | 游泳完冲澡时，那个水龙头的水忽冷忽热，太折磨人了。 |
-| 纽扣儿 | niǔkòur | 衣服扣子 | khuy áo, cúc áo | 这件旗袍最好看的就是领口那几颗手工做的纽扣儿。 |
-| 革命 | gémìng | 大改变 | cách mạng; sự thay đổi lớn triệt để | AI工具的出现，对我们做需求分析的方式简直是一场革命。 |
-| 改良 | gǎiliáng | 改进 | cải tiến, cải lương | 我把给小学生上课的方法改良了一下，他现在明显爱学多了。 |
-| 欣欣向荣 | xīnxīnxiàngróng | 很兴旺 | phồn vinh, phát triển mạnh mẽ (đâm chồi nảy lộc tươi tốt) | 这几年国产剧越来越好看，整个市场一片欣欣向荣的样子。 |
-| 仓库 | cāngkù | 存东西的地方 | kho, nhà kho | 我把学过的生词都存进一个电子仓库里，随时能拿出来复习。 |
-| 投票 | tóupiào | 投票选举 | bỏ phiếu, bầu cử | 公司团建去哪儿玩，最后是大家投票决定的。 |
-| 保管 | bǎoguǎn | 保证 | bảo quản, trông giữ; đảm bảo, chắc chắn | 我把存款和知识看作最靠得住的依靠，得好好保管。 |
-| 新颖 | xīnyǐng | 新样子 | mới mẻ, mới lạ (kiểu dáng, ý tưởng) | 这次拍照我换了个很新颖的角度，朋友都说眼前一亮。 |
-| 中意 | zhōngyì | 喜欢 | ưng ý, vừa lòng | 逛了一下午，我终于找到一家自己特别中意的小众咖啡馆。 |
-| 关怀 | guānhuái | 关心照顾 | quan tâm, chăm lo (ân cần) | 妹妹又送了我一只熊娃娃，那种默默的关怀让我很暖心。 |
+| 把手 | bǎshǒu | 门、抽屉等上面用手拿的部分 | tay nắm, tay cầm | 瑜伽馆的门把手坏了，我拉了半天才推开。 |
+| 装卸 | zhuāngxiè | 装上和卸下，如装货卸货 | lắp và tháo (hàng hóa/thiết bị) | 我妈周六去批发市场，看着工人们忙着装卸新鲜蔬菜。 |
+| 屏幕 | píngmù | 电视、电脑等用来显示画面的部分 | màn hình | 我把生词表设成手机屏幕的锁屏壁纸，随时能看到。 |
+| 性能 | xìngnéng | 机器或产品的功能和效果 | tính năng | 这个词典软件的性能不错，查生词特别快。 |
+| 运算 | yùnsuàn | 按数学方法进行计算 | tính toán, vận toán | HSK听力里出现数学运算的题目时，我总是反应慢半拍。 |
+| 需求 | xūqiú | 需要的东西或程度 | nhu cầu | 根据学生的需求，我把HSK1的课调整得更简单一些。 |
+| 新颖 | xīnyǐng | 新的、有创意的样子 | mới lạ, độc đáo | 这次拍照我换了个很新颖的角度，朋友都说眼前一亮。 |
+| 便利 | biànlì | 很方便 | tiện lợi | 用AI自动整理会议记录，真的给我的工作带来了很多便利。 |
+| 把关 | bǎguān | 严格检查，把好质量这一关 | kiểm soát chặt chẽ, gác cổng chất lượng | 文档交给开发前，我会自己先把好关，检查有没有逻辑漏洞。 |
+| 人工 | réngōng | 人做的，不是天然的 | nhân tạo | 很多重复的活儿其实不用人工，交给脚本处理更省心。 |
+| 秤 | chèng | 称重量的工具 | cái cân | 在中国的菜市场买菜，老板会用秤称重量，我得听懂数字才能付对钱。 |
+| 总和 | zǒnghé | 加起来的总数量 | tổng số, tổng cộng | 这个月的加班时间加起来，总和差不多等于多上了一周班。 |
+| 着重 | zhuózhòng | 把重点放在某方面，重点强调 | nhấn mạnh, chú trọng | 写BRD的时候，我着重描述了用户最关心的那几个流程。 |
+| 反馈 | fǎnkuì | 把意见或结果回复给对方 | phản hồi | 测试同事的反馈很及时，帮我少踩了不少坑。 |
+| 虚拟 | xūnǐ | 不是真的，假设出来的 | ảo, hư cấu | 我把AI当成虚拟的中文老师，每天下班陪我练口语。 |
+| 投票 | tóupiào | 用投票的方式表达自己的选择 | bỏ phiếu | 公司团建去哪儿玩，最后是大家投票决定的。 |
+| 保管 | bǎoguǎn | 口语说法，等于“一定、保证” | chắc chắn, bảo đảm (khẩu ngữ) | 我把存款和知识看作最靠得住的依靠，得好好保管。 |
+| 中意 | zhōngyì | 很喜欢，觉得合心意 | vừa ý, ưng ý | 逛了一下午，我终于找到一家自己特别中意的小众咖啡馆。 |
+| 关怀 | guānhuái | 关心、照顾 | quan tâm, chăm sóc | 妹妹又送了我一只熊娃娃，那种默默的关怀让我很暖心。 |
+| 无微不至 | wúwēibùzhì | 照顾得非常细心、周到，没有一点疏忽 | chăm sóc chu đáo tỉ mỉ | 男朋友总是无微不至地提醒我多吃青菜、早点睡觉。 |
+| 羽绒服 | yǔróngfú | 里面装有羽毛、很保暖的外套 | áo lông vũ, áo phao | 去东北旅游前，我特意买了件厚羽绒服，怕冷得受不了。 |
+| 旗袍 | qípáo | 中国传统的女式长衫 | sườn xám (áo dài truyền thống Trung Quốc) | 看《琅琊榜》那种古装剧，我总忍不住想穿旗袍拍一组照片。 |
+| 音响 | yīnxiǎng | 播放声音的电器设备 | dàn âm thanh, loa | 在家练唱歌的时候，我会把音响声音开大一点，特别放松。 |
+| 收音机 | shōuyīnjī | 听广播的机器 | radio | 早上读《心流》累了，我就打开收音机听听中文广播。 |
+| 水龙头 | shuǐlóngtóu | 控制出水的开关 | vòi nước | 游泳完冲澡时，那个水龙头的水忽冷忽热，太折磨人了。 |
+| 纽扣儿 | niǔkòur | 衣服上用来扣紧的小圆片 | cúc áo, khuy áo | 这件旗袍最好看的就是领口那几颗手工做的纽扣儿。 |
+| 插座 | chāzuò | 插电的地方 | ổ cắm điện | 咖啡馆靠窗那个位置有插座，我最喜欢坐那儿备考。 |
+| 勘探 | kāntàn | 到野外寻找、勘察矿产资源 | thăm dò (khoáng sản) | 看纪录片时才知道，地质队要花好几年在山里勘探。 |
+| 矿产 | kuàngchǎn | 地下埋藏的矿物资源 | khoáng sản | 那部中国纪录片讲的是西部地区丰富的矿产资源。 |
+| 款式 | kuǎnshì | 衣服等物品的样式 | kiểu dáng | 逛街时我看中一件大衣，款式简单，正合我的风格。 |
+| 主导 | zhǔdǎo | 起主要、引导作用的 | chủ đạo, dẫn dắt | 这个项目一直是业务需求在主导，技术方案得跟着走。 |
+| 兴隆 | xīnglóng | 生意好，很兴旺 | thịnh vượng, phát đạt | 我常去的那家奶茶店生意特别兴隆，每次都要排队。 |
 
 ### 生词拓展
 
@@ -2226,3 +2242,403 @@
 - **晶** (sáng lấp lánh, tinh thể): 晶亮 jīngliàng〖sáng bóng, sáng loáng〗 · 晶莹 jīngyíng〖trong suốt lấp lánh〗 · 亮晶晶 liàngjīngjīng〖sáng lấp lánh (dạng láy)〗
 - **泛** (tràn lan, phiếm chỉ, rộng rãi): 泛滥 fànlàn〖tràn lan, lũ lụt〗 · 泛指 fànzhǐ〖chỉ chung chung, phiếm chỉ〗 · 泛称 fànchēng〖gọi chung là〗 · 广泛 guǎngfàn〖rộng rãi, rộng khắp〗 · 泛读 fàndú〖đọc lướt, đọc mở rộng (extensive reading)〗 · 泛泛 fànfàn〖qua loa, sơ sài, chung chung〗
 - **滥** (lạm, bừa bãi, quá mức): 滥收费 lànshōufèi〖thu phí bừa bãi, lạm thu〗 · 宁缺毋滥 nìngquēwúlàn〖thà thiếu còn hơn lạm dụng, thà không có còn hơn có bừa (thành ngữ)〗 · 滥调 làndiào〖luận điệu sáo rỗng, cũ rích〗 · 陈词滥调 chéncílàndiào〖lời sáo rỗng, luận điệu cũ rích (thành ngữ)〗 · 滥用职权 lànyòngzhíquán〖lạm dụng chức quyền〗
+
+## Bài 35 — 走进木板年画
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 起源 | qǐyuán | 事情开始的地方或原因 | nguồn gốc, khởi nguyên | 老师说汉字的起源要从甲骨文讲起，我这才第一次认真了解。 |
+| 文献 | wénxiàn | 记录知识、历史的书面资料 | văn hiến, tài liệu (sách vở) | 写HSK6作文找不到灵感时，我会翻翻中国文化方面的文献找素材。 |
+| 凶恶 | xiōngè | 样子很可怕，让人害怕 | hung ác, dữ tợn | 门神画上的门神表情都很凶恶，据说是为了吓跑妖怪。 |
+| 揭露 | jiēlù | 把隐藏的事情或真相说出来 | vạch trần, phơi bày | 这篇阅读理解揭露了古代年画背后的一个有趣传说。 |
+| 昌盛 | chāngshèng | 国家、事业很兴旺发达 | hưng thịnh, phồn vinh | 唐宋时期文化昌盛，很多传统艺术都是那时候发展起来的。 |
+| 题材 | tícái | 写作、绘画等作品选用的内容 | đề tài (sáng tác) | 这次HSK6作文的题材是传统文化，正好我最近在学年画。 |
+| 驱逐 | qūzhú | 用力量把人或东西赶走 | trục xuất, xua đuổi | 传说门神的作用是驱逐鬼怪，保护家里平安。 |
+| 吉祥 | jíxiáng | 好运气，会带来好事的 | may mắn, cát tường | 过年时，中国朋友教我说几句吉祥话，讨个好彩头。 |
+| 里程碑 | lǐchéngbēi | 标志着重要发展阶段的事件 | cột mốc, dấu mốc quan trọng | 考过HSK5那天，对我来说是学中文路上的一个里程碑。 |
+| 墨水儿 | mòshuǐr | 写字画画用的黑色液体 | mực (nước mực) | 毛笔字课上，我不小心把墨水儿滴到了作业本上。 |
+| 盖章 | gàizhāng | 在文件上按印章 | đóng dấu | 办居留证的时候，工作人员在我的材料上盖章确认。 |
+| 联想 | liánxiǎng | 由一件事想到另一件事 | liên tưởng | 一看到年画上的老虎，我就联想到小时候过年贴的门神。 |
+| 涂抹 | túmǒ | 把东西涂在别的东西上面 | quét, bôi (màu, mực...) | 老师示范怎么在版上涂抹墨汁，再印到纸上。 |
+| 终究 | zhōngjiū | 不管怎样，最后一定会……（书面） | rốt cuộc, cuối cùng vẫn | 背单词再难，只要坚持下去，终究会看到进步的。 |
+| 烟花爆竹 | yānhuābàozhú | 过年放的烟火和鞭炮 | pháo hoa và pháo nổ | 过年那几天，小区外面的烟花爆竹声响个不停。 |
+| 寄托 | jìtuō | 把希望、感情放在某人或某事上 | gửi gắm (hy vọng, tình cảm) | 妈妈把很大的期望寄托在我考过HSK6这件事上。 |
+| 增添 | zēngtiān | 使更多，增加一些 | thêm vào, tăng thêm | 学了几个成语以后，我的作文一下子增添了不少文采。 |
+| 丰收 | fēngshōu | 收获的东西很多，成果很好 | được mùa, thu hoạch tốt | 这学期我背了上千个生词，也算是一次学习上的丰收。 |
+| 发财 | fācái | 得到很多钱，变得富有 | phát tài | 中国朋友教我过年要说“恭喜发财”，这样才吉利。 |
+| 连年 | liánnián | 一年接一年（多年连续） | liên tiếp nhiều năm | 这家书店连年举办年画展，我每年都去看。 |
+| 寓言 | yùyán | 带有教育意义的假想故事 | truyện ngụ ngôn | 小时候老师用寓言故事教我们做人的道理，现在我教学生也常用这个方法。 |
+| 信仰 | xìnyǎng | 对某种思想或宗教坚定的相信 | tín ngưỡng, niềm tin | 年画里常有跟民间信仰有关的内容，比如财神、门神。 |
+| 神气 | shénqì | 得意、有精神的样子 | vẻ đắc ý, oai vệ | 学生考了满分，一脸神气地跑来告诉我。 |
+| 翘 | qiào | 一头向上仰起 | vểnh lên, nhổng lên | 年画上的布老虎尾巴翘得高高的，看起来很有精神。 |
+| 神态 | shéntài | 脸上表现出来的样子和心情 | thần thái, vẻ mặt | 画家笔下的老虎神态特别逼真，好像真的会动一样。 |
+| 盛开 | shèngkāi | 花开得很茂盛 | nở rộ | 年画里常画着盛开的花朵，象征着好日子。 |
+| 散发 | sànfà | （气味、光等）向外发出 | tỏa ra, phát ra (mùi, ánh sáng...) | 刚印好的年画还散发着淡淡的墨香。 |
+| 喜闻乐见 | xǐwénlèjiàn | 大家都喜欢看、喜欢听的 | được mọi người ưa thích, hoan nghênh | 年画是老百姓喜闻乐见的一种民间艺术。 |
+| 扎实 | zhāshí | 基础打得很牢固、很稳 | vững chắc, chắc chắn (kiến thức, nền tảng) | 老师说我的语法基础挺扎实，接下来要多练写作。 |
+| 塑造 | sùzào | 通过描写创造出人物形象 | khắc họa, xây dựng (hình tượng) | 这篇课文塑造了一个热爱年画艺术的手艺人形象。 |
+| 手法 | shǒufǎ | 做事或写作、创作用的方法 | thủ pháp, cách thức (sáng tác) | 年画常用夸张的手法，把老虎画得又威武又可爱。 |
+| 派别 | pàibié | 同一领域里因主张不同而分成的小组 | phe phái, trường phái | 中国书法有很多不同的派别，我最喜欢的是行书。 |
+| 借鉴 | jièjiàn | 参考别人的经验用在自己身上 | tham khảo, học hỏi (kinh nghiệm) | 我借鉴了其他老师的教学方法，课堂气氛好了不少。 |
+| 再接再厉 | zàijiēzàilì | 取得成绩后继续努力，不骄傲 | tiếp tục cố gắng, thừa thắng xông lên | 这次模拟考进步了不少，老师让我再接再厉，继续加油。 |
+| 心得 | xīndé | 学习或工作后自己体会到的东西 | kinh nghiệm, tâm đắc | 每次备考HSK6，我都会写一点学习心得，方便以后复习。 |
+| 缺席 | quēxí | 应该到场却没有到 | vắng mặt | 那天我发烧了，只好跟中心请假，缺席了一节课。 |
+| 干劲 | gànjìn | 做事的积极性和力气 | nhiệt huyết, hăng hái làm việc | 看到自己的HSK5成绩后，我学中文的干劲更足了。 |
+| 占据 | zhànjù | 占有、拥有（位置、时间等） | chiếm giữ, chiếm lĩnh | 备考期间，背单词几乎占据了我一半的学习时间。 |
+| 确立 | quèlì | 明确地建立起来 | xác lập, xác định rõ | 我给自己确立了一个目标：这次一定要考到HSK6高分。 |
+| 信念 | xìnniàn | 对某件事坚定不移的信心 | niềm tin, tín niệm | “坚持就能进步”是我学中文这几年的信念。 |
+| 任重道远 | rènzhòngdàoyuǎn | 责任重大，需要走的路还很长 | nhiệm vụ nặng nề, đường còn dài | 要教好HSK1的学生，又要顾好自己的HSK6备考，说实话任重道远。 |
+| 一帆风顺 | yīfānfēngshùn | 事情进行得很顺利，没有阻碍 | thuận buồm xuôi gió | 祝自己这次HSK6备考一帆风顺，顺利拿到理想的分数。 |
+
+### 生词拓展
+
+- **揭** (vén lên, phơi bày, vạch trần): 揭开 jiēkāi〖mở ra, vén lên, phanh phui〗 · 揭发 jiēfā〖tố giác, vạch trần〗 · 揭露 jiēlù〖vạch trần, phơi bày (sự thật)〗 · 揭晓 jiēxiǎo〖công bố (kết quả)〗 · 揭示 jiēshì〖nêu rõ, chỉ rõ〗 · 揭穿 jiēchuān〖lột mặt nạ, vạch trần〗
+- **逐** (đuổi theo; dần dần): 逐步 zhúbù〖từng bước〗 · 逐个 zhúgè〖từng cái một〗 · 逐句 zhújù〖từng câu một〗 · 随波逐流 suíbōzhúliú〖trôi theo dòng, ai sao mình vậy〗
+- **涂** (bôi, quét, xóa): 糊涂 hútú〖hồ đồ, lú lẫn〗 · 涂料 túliào〖sơn, vật liệu quét phủ〗 · 涂饰 túshì〖quét sơn trang trí〗 · 一败涂地 yībàitúdì〖thua tan tác, thất bại thảm hại〗 · 涂抹 túmǒ〖quét, bôi (màu, mực...)〗
+- **添** (thêm vào): 增添 zēngtiān〖thêm vào, tăng thêm〗 · 锦上添花 jǐnshàngtiānhuā〖thêm hoa vào gấm, càng thêm tốt đẹp〗 · 添油加醋 tiānyóujiācù〖thêm mắm thêm muối〗 · 如虎添翼 rúhǔtiānyì〖như hổ mọc thêm cánh, thêm sức mạnh〗
+- **寓** (gửi gắm; ở, ngụ): 寓所 yùsuǒ〖nơi ở, chỗ ở〗 · 寓意 yùyì〖hàm ý, ý nghĩa ngụ ý〗 · 公寓 gōngyù〖chung cư, căn hộ〗 · 寓居 yùjū〖cư ngụ, sinh sống (xa quê)〗 · 寓教于乐 yùjiàoyúlè〖vừa học vừa chơi (giáo dục qua giải trí)〗
+- **耸** (cao vút; giật gân; nhún (vai)): 耸立 sǒnglì〖sừng sững, cao vút〗 · 高耸 gāosǒng〖cao chót vót〗 · 危言耸听 wēiyánsǒngtīng〖nói lời giật gân dọa người〗 · 耸人听闻 sǒngréntīngwén〖chuyện giật gân gây chấn động dư luận〗
+- **谢** (từ chối; tàn (hoa); cảm ơn): 谢绝 xièjué〖từ chối (khéo léo)〗 · 谢世 xièshì〖từ trần, qua đời〗 · 凋谢 diāoxiè〖(hoa) tàn, héo úa〗 · 致谢 zhìxiè〖gửi lời cảm ơn〗 · 谢礼 xièlǐ〖quà cảm ơn, lễ tạ ơn〗
+- **故** (cũ, xưa; nguyên cớ): 故交 gùjiāo〖bạn cũ, tri kỷ lâu năm〗 · 病故 bìnggù〖mất vì bệnh〗 · 温故知新 wēngùzhīxīn〖ôn cũ biết mới〗 · 故土 gùtǔ〖quê cha đất tổ〗 · 缘故 yuángù〖nguyên cớ, lý do〗
+
+## Bài 36 — 中国古代书院
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 官方 | guānfāng | 政府或权威机构方面（不是私人的） | chính thức, quan phương | 关于书院历史，官方文献里的记载最权威，我常拿来当作文素材。 |
+| 透露 | tòulù | 把消息或想法说出一部分 | tiết lộ, bật mí | 老师透露这次模拟考会考到成语改写，我赶紧多复习了几个。 |
+| 命名 | mìngmíng | 给人或事物起名字 | đặt tên, mệnh danh | 这家书店以一位古代书院命名，很有文化气息。 |
+| 规章 | guīzhāng | 规定的章程、制度 | quy chương, quy định | 培训中心的规章要求学生请假必须提前一天通知。 |
+| 截止 | jiézhǐ | 到一定时间就停止（多用于时间） | hết hạn, kết thúc (đến hạn) | HSK6报名截止那天，我差点忘了交材料。 |
+| 终止 | zhōngzhǐ | 停止，结束（不限于时间） | chấm dứt, kết thúc | 因为搬家，我不得不终止了跟那家培训中心的合作。 |
+| 完备 | wánbèi | 各方面都准备齐全，没有欠缺 | hoàn bị, đầy đủ | 备考HSK6前，我先做了一份完备的复习计划。 |
+| 立足 | lìzú | 在某个地方站稳、依靠着生存 | đứng vững, lập chân | 在中国工作，光会说日常用语还不够，得靠专业中文才能立足。 |
+| 灵魂 | línghún | 人的精神、思想部分 | linh hồn, tâm hồn | 老师常说，语法是句子的灵魂，用错了整句话就变味。 |
+| 颁布 | bānbù | 正式公布（法令、规定等） | ban hành, công bố | 学校颁布了新的请假规定，我得重新看一遍。 |
+| 品德 | pǐndé | 一个人的道德品质 | phẩm đức, đạo đức | 我很佩服那位老师的品德，对每个学生都一视同仁。 |
+| 过失 | guòshī | 做错的事，失误 | sai sót, lỗi lầm | 批改作业时，我会先指出学生的过失，再鼓励他们改正。 |
+| 无耻 | wúchǐ | 一点也不知道羞耻 | vô liêm sỉ, trơ trẽn | 抄袭别人的作文还理直气壮，这种行为太无耻了。 |
+| 容纳 | róngnà | 在空间上装得下，能接受 | chứa đựng, dung nạp | 这间教室最多能容纳二十个学生。 |
+| 层出不穷 | céngchūbùqióng | 一个接一个不断出现，很多 | xuất hiện liên tục không ngớt | 备考期间，各种模拟题层出不穷，我都做不完。 |
+| 治理 | zhìlǐ | 管理、整顿使变好 | quản lý, chỉnh trị | 老师把班级纪律治理得很好，上课再也没人迟到了。 |
+| 树立 | shùlì | 建立起（好的形象、榜样等） | xây dựng, thiết lập (hình tượng, tấm gương) | 我想在学生面前树立一个认真负责的老师形象。 |
+| 正气 | zhèngqì | 正直、光明的作风精神 | chính khí, tinh thần ngay thẳng | 这位老师一身正气，从不徇私。 |
+| 唾弃 | tuòqì | 十分看不起，抛弃不理 | khinh bỉ, ruồng bỏ | 考试作弊这种行为，一直被大家所唾弃。 |
+| 卑鄙 | bēibǐ | 人品低下，手段不光明 | đê tiện, hèn hạ | 为了成绩去打小报告，我觉得这种做法挺卑鄙的。 |
+| 堕落 | duòluò | 思想、行为渐渐变坏 | sa đọa, sa ngã | 他一放假就整天打游戏，我提醒他别就这样堕落下去。 |
+| 腐败 | fǔbài | （制度、作风）腐化、不清廉 | tham nhũng, thối nát | 课文里讲的官场腐败问题，跟现代新闻里的话题很像。 |
+| 崇高 | chónggāo | 十分高尚、值得尊敬 | cao cả, cao thượng | 老师甘愿留在山区教书，这种精神很崇高。 |
+| 境界 | jìngjiè | 事物达到的程度或水平 | cảnh giới, mức độ | 学中文学到能用成语聊天，我觉得自己进入了一个新境界。 |
+| 攀登 | pāndēng | 向上爬，努力达到更高目标 | leo lên, trèo lên (nghĩa bóng: phấn đấu) | 备考HSK6就像攀登一座高峰，一步一步来。 |
+| 窍门 | qiàomén | 解决问题的巧妙方法 | bí quyết, mẹo | 老师教了我一个记成语的窍门，比死记硬背有效多了。 |
+| 发扬 | fāyáng | 使（优良传统、精神）更加发展 | phát huy | 我想把老师教我的耐心，也发扬到自己教HSK1学生上。 |
+| 敞开 | chǎngkāi | 把门、心扉等完全打开 | mở rộng, mở toang (cửa, lòng) | 第一次跟中国同事吃饭，我敞开心扉聊了很多自己的想法。 |
+| 招收 | zhāoshōu | 招募、接收（学生、员工） | tuyển sinh, tuyển dụng | 这个学期中心招收了不少零基础的HSK1学生，我要多备点课。 |
+| 开明 | kāimíng | 思想跟得上时代，愿意接受新事物 | cởi mở, tiến bộ | 我的中国同事很开明，很乐意教我地道的说法。 |
+| 倡议 | chàngyì | 首先提出建议，希望大家响应 | đề xướng, khởi xướng | 我倡议大家每周找一天用中文互相聊天练口语。 |
+| 杜绝 | dùjué | 彻底禁止，不让发生 | tuyệt đối cấm, ngăn chặn hoàn toàn | 为了杜绝上课迟到，我给学生定了个小小的奖励制度。 |
+| 干涉 | gānshè | 过问、插手别人的事 | can thiệp, xen vào | 学生自己选题写作文，我一般不干涉他们的想法。 |
+| 过问 | guòwèn | 关心、了解一下（某件事） | hỏi han, để mắt đến | 只要学生按时交作业，具体怎么安排时间我不太过问。 |
+| 激发 | jīfā | 引起、激起（兴趣、热情等） | khơi dậy, kích thích | 用游戏教HSK1生词，能激发学生的学习兴趣。 |
+| 多元化 | duōyuánhuà | 多种多样，不单一 | đa dạng hóa | 我教课的方法比较多元化，有游戏、有歌曲，也有传统讲解。 |
+| 开展 | kāizhǎn | 使活动逐渐展开、进行 | triển khai, tổ chức (hoạt động) | 这学期中心打算开展一次中文角活动。 |
+| 对立 | duìlì | 意见、立场完全相反 | đối lập | 我们对这次作文题目的看法有点对立，讨论了很久。 |
+| 分歧 | fēnqí | 意见不一致的地方 | sự bất đồng, mâu thuẫn ý kiến | 我和同事在教学方法上有点分歧，不过讨论完就统一了。 |
+| 保守 | bǎoshǒu | 思想陈旧，不愿意接受新事物 | bảo thủ | 有些老一辈的想法比较保守，觉得学中文就该死记硬背。 |
+| 较量 | jiàoliàng | 比一比谁更强、更好 | so tài, đọ sức | HSKK考试就像一场跟自己较量的比赛。 |
+| 论坛 | lùntán | 大家一起讨论问题的场合 | diễn đàn | 我常在中文学习论坛上找HSK6真题资源。 |
+| 激励 | jīlì | 鼓励，使人更有干劲 | khích lệ, động viên | 学生的一点点进步，都能激励我继续认真备课。 |
+| 礼节 | lǐjié | 待人接物的礼貌规矩 | lễ tiết, phép tắc xã giao | 去中国朋友家做客前，我特意问了几个饭桌上的礼节。 |
+| 衷心 | zhōngxīn | 发自内心的，真诚的 | chân thành, tự đáy lòng | 我衷心希望这次HSK6能考到理想的分数。 |
+| 爱戴 | àidài | 尊敬并喜爱（多用于对长辈、领导） | kính yêu, mến mộ | 那位老师很受学生爱戴，毕业多年大家还常回来看她。 |
+| 示范 | shìfàn | 做出样子给别人看，让人学习 | làm mẫu, thị phạm | 教发音的时候，我会先示范一遍，再让学生跟读。 |
+| 崇敬 | chóngjìng | 非常尊敬 | sùng kính, ngưỡng mộ | 我一直很崇敬那种坚持教育多年的老师。 |
+| 偶像 | ǒuxiàng | 被崇拜、模仿的对象 | thần tượng | 那位翻译老师是我学中文路上的偶像。 |
+| 封建 | fēngjiàn | 中国古代的一种社会制度（比喻思想守旧） | phong kiến | 课文里讲的封建社会科举制度，跟现在的教育体系很不一样。 |
+
+### 生词拓展
+
+- **官** (quan; thuộc về nhà nước, chính thức): 官司 guānsī〖vụ kiện, việc kiện tụng〗 · 官方 guānfāng〖chính thức, quan phương〗 · 官邸 guāndǐ〖dinh thự, quan để〗 · 官阶 guānjiē〖phẩm hàm, cấp bậc quan chức〗 · 官吏 guānlì〖quan lại〗
+- **截** (cắt, chặn; đến (một mốc thời gian)): 截儿 jiér〖đoạn, khúc (cắt ra)〗 · 截肢 jiézhī〖cắt cụt chi〗 · 截断 jiéduàn〖cắt đứt, ngắt lời〗 · 截止 jiézhǐ〖hết hạn, kết thúc〗 · 斩钉截铁 zhǎndīngjiétiě〖dứt khoát, quyết đoán〗
+- **足** (chân; đủ, đầy đủ): 心满意足 xīnmǎnyìzú〖mãn nguyện, hài lòng〗 · 不足为奇 bùzúwéiqí〖không có gì lạ〗 · 足智多谋 zúzhìduōmóu〖mưu trí đa mưu〗 · 品头论足 pǐntóulùnzú〖bình phẩm, xét nét vẻ ngoài người khác〗
+- **耻** (xấu hổ, nhục nhã): 可耻 kěchǐ〖đáng xấu hổ〗 · 羞耻 xiūchǐ〖xấu hổ, tủi nhục〗 · 雪耻 xuěchǐ〖rửa nhục〗 · 奇耻大辱 qíchǐdàrǔ〖nỗi nhục lớn〗
+- **穷** (nghèo; cùng, hết): 其乐无穷 qílèwúqióng〖niềm vui vô tận〗 · 穷讲究 qióngjiǎngjiū〖nghèo mà vẫn chuộng hình thức〗 · 贫穷 pínqióng〖nghèo khó〗 · 穷酸 qióngsuān〖nghèo mà ra vẻ nho nhã (mỉa mai)〗
+- **攀** (leo, trèo; cầu cạnh): 高攀 gāopān〖cầu cạnh (người địa vị cao hơn)〗 · 攀谈 pāntán〖bắt chuyện, trò chuyện〗 · 攀附 pānfù〖bám víu, dựa dẫm〗 · 攀亲 pānqīn〖nhận bà con, cầu thân〗
+- **歧** (khác nhau, rẽ nhánh): 分歧 fēnqí〖sự bất đồng〗 · 歧视 qíshì〖kỳ thị, phân biệt đối xử〗 · 歧途 qítú〖con đường lầm lạc〗 · 歧见 qíjiàn〖ý kiến khác biệt〗
+
+## Bài 37 — 警察的故事
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 化妆 | huàzhuāng | 用化妆品让脸变得更好看 | trang điểm | 我今天要去见新同事，特意化了个淡妆。 |
+| 屑 | xiè | 细碎的小渣、碎末 | vụn, mảnh vụn | 写完汉字练习，橡皮擦下来的屑撒了一桌子。 |
+| 抢劫 | qiǎngjié | 用暴力手段抢走别人的东西 | cướp giật, cướp bóc | 这篇HSK6阅读讲的是一起抢劫案，生词特别多。 |
+| 痕迹 | hénjì | 留下的印记或迹象 | dấu vết, vết tích | 这本旧词典上还留着我大学时代做笔记的痕迹。 |
+| 停顿 | tíngdùn | 暂时停下来 | dừng lại, ngừng lại (tạm thời) | 朗读课文遇到逗号，我都会稍微停顿一下。 |
+| 嫌疑 | xiányí | 被怀疑做了坏事的可能性 | sự nghi ngờ, tình nghi | 看完这篇侦探小说，我才知道原来嫌疑人不止一个。 |
+| 线索 | xiànsuǒ | 帮助找到答案或真相的信息 | manh mối, đầu mối | 写作文没思路的时候，我会先从题目里找线索。 |
+| 歹徒 | dǎitú | 做坏事、犯罪的人 | kẻ xấu, tội phạm | 警匪片里，警察最后总能抓住歹徒。 |
+| 恐惧 | kǒngjù | 心里非常害怕 | sợ hãi, khiếp sợ | 第一次用中文打电话给客户时，我心里还有点恐惧。 |
+| 铜 | tóng | 一种红黄色的金属 | đồng (kim loại) | 博物馆里那尊铜像，据说有上百年历史了。 |
+| 框架 | kuāngjià | 事物的基本结构 | khung, kết cấu, khuôn khổ | 写作文前，我先列一个框架，再往里面填内容。 |
+| 残留 | cánliú | 剩下一部分留在那里 | còn sót lại, tồn dư | 这道菜里残留着一点辣味，我吃得直冒汗。 |
+| 刑事 | xíngshì | 跟犯罪、判刑有关的（事） | hình sự | 这部刑事案件的电视剧台词很多，正好拿来练听力。 |
+| 监狱 | jiānyù | 关押犯人的地方 | nhà tù, nhà giam | 课文里那个走私犯最后被送进了监狱。 |
+| 慎重 | shènzhòng | 认真小心，不随便 | thận trọng, cẩn trọng | 决定要不要辞职去中国工作，我考虑得非常慎重。 |
+| 麻痹 | mábì | 疏忽大意，警惕性不够 | chủ quan, mất cảnh giác | 考试前我不敢有一点麻痹，越到最后越要认真复习。 |
+| 失误 | shīwù | 做错的地方，失手 | sai sót, sai lầm | 这次口语考试我有一个小失误，语序说反了。 |
+| 考验 | kǎoyàn | 通过困难来检验一个人或事 | thử thách | 连续三个月每天背单词，对我的毅力真是一种考验。 |
+| 检验 | jiǎnyàn | 检查、验证是否合格、正确 | kiểm nghiệm, kiểm chứng | 模拟考成绩能检验我这个月的学习效果。 |
+| 沉着 | chénzhuó | 遇到事情不慌张，很镇定 | điềm tĩnh, bình tĩnh | 口语考试时就算一时忘词，我也告诉自己要沉着。 |
+| 暂且 | zànqiě | 暂时先这样（书面） | tạm thời, hãy cứ | 这个语法点有点复杂，我们暂且放一放，先把生词背熟。 |
+| 查获 | cháhuò | 调查后发现并抓获（罪犯、违禁品） | điều tra và bắt giữ, phát hiện và thu giữ | 新闻里说警方查获了一批假HSK证书，我看了很惊讶。 |
+| 制裁 | zhìcái | 用强制手段惩罚、约束 | chế tài, trừng phạt | 作弊被发现的学生会受到学校的制裁。 |
+| 公安局 | gōng'ānjú | 负责社会治安的政府机构 | công an, sở công an | 办居留证那次，我去公安局排了很久的队。 |
+| 情报 | qíngbào | 有关某事的消息、资料 | tình báo, thông tin | 备考群里大家常互相分享HSK6考试的最新情报。 |
+| 毒品 | dúpǐn | 会让人上瘾、危害身体的违禁物品 | ma túy | 这篇课文讲的是警察打击毒品犯罪的故事。 |
+| 带领 | dàilǐng | 领着大家一起做某事 | dẫn dắt, dẫn đầu | 老师带领我们分角色朗读课文，气氛特别活跃。 |
+| 部署 | bùshǔ | 安排、布置（人力、任务等） | bố trí, sắp xếp (kế hoạch, lực lượng) | 备考最后一个月，我重新部署了自己的复习计划。 |
+| 埋伏 | máifú | 预先躲藏起来等待时机 | mai phục, ẩn nấp | 这篇故事里警察埋伏了一整夜才抓到犯人。 |
+| 布置 | bùzhì | 安排、摆放使整齐、有条理 | bố trí, sắp đặt | 过年前，我帮中国朋友一起布置了家里的装饰。 |
+| 反抗 | fǎnkàng | 用行动对抗、不服从 | phản kháng, chống lại | 小时候不想学习，我也反抗过妈妈让我背单词的安排。 |
+| 逮捕 | dàibǔ | 依法把犯罪嫌疑人抓起来 | bắt giữ, bắt bớ (theo pháp luật) | 新闻报道说警方逮捕了那伙贩卖毒品的人。 |
+| 非法 | fēifǎ | 不合法，违反法律的 | bất hợp pháp, phi pháp | 在国外打工要小心，别不小心做了非法的事。 |
+| 贩卖 | fànmài | 做买卖（多指违禁品） | buôn bán (thường chỉ hàng cấm) | 课文讲的是警察抓获贩卖毒品团伙的故事。 |
+| 平面 | píngmiàn | 没有高低起伏的平的面 | mặt phẳng | 老师用平面图给我们讲解句子结构，一下就明白了。 |
+| 平行 | píngxíng | 两条线永远保持相同距离，不相交 | song song | 备考和教课这两件事，我尽量让它们平行进行，互不耽误。 |
+| 并列 | bìngliè | 地位、等级相同，排在一起 | ngang hàng, xếp cùng hạng | 这次模拟考，我和另一个同学并列第一。 |
+| 交叉 | jiāochā | 两条线、道路等相交 | giao nhau, cắt nhau | 我把教HSK1和自己学HSK6的时间安排得有点交叉，得重新调整。 |
+| 包袱 | bāofú | 心理上的负担（比喻） | gánh nặng tâm lý | 一开始考HSK6压力很大，后来我试着放下包袱，反而考得更好。 |
+| 胆怯 | dǎnqiè | 害怕，不敢做某事 | nhút nhát, sợ sệt | 刚开始跟中国同事开会，我说中文还有点胆怯。 |
+| 哄 | hǒng | 用好话让人高兴或听话 | dỗ dành | 学生考试没考好，我会先哄一哄他，再帮他分析问题出在哪儿。 |
+| 信赖 | xìnlài | 相信并依靠 | tin cậy, tín nhiệm | 教了几年HSK1，学生和家长都挺信赖我的。 |
+| 忠诚 | zhōngchéng | 始终如一，不背叛 | trung thành | 对学中文这件事，我这几年一直很忠诚，从没想过放弃。 |
+| 舌头 | shétou | 嘴里能尝味道、帮助发音的器官 | cái lưỡi | 练习卷舌音的时候，我的舌头总是不听使唤。 |
+| 舔 | tiǎn | 用舌头碰、沾 | liếm | 我家猫每次吃完饭都会舔舔嘴巴，特别可爱。 |
+| 空隙 | kòngxì | 两个东西之间的空间；空闲的时间 | khoảng trống, khe hở; thời gian rảnh | 我利用上班的空隙时间，用手机背几个生词。 |
+| 扒 | bā | 偷偷从别人身上摸走东西 | móc túi, ăn cắp (từ trên người) | 新闻里说地铁上有人扒窃乘客的手机，大家都很小心。 |
+| 垫 | diàn | 垫在下面的东西，比如坐垫 | miếng đệm, tấm lót | 我在椅子上放了个垫子，坐着学习更舒服。 |
+| 叼 | diāo | 用嘴咬住并叼起来 | ngậm, tha (trong miệng) | 我家狗每次看到我拿书包，就会叼着自己的玩具跑过来。 |
+| 粉末 | fěnmò | 很细的粉状物质 | bột, dạng bột | 冲奶茶的时候，我常常把粉末撒到桌子上。 |
+| 口腔 | kǒuqiāng | 嘴巴里面的空间 | khoang miệng | 练习发音之前，老师让我们先做几个口腔操。 |
+
+### 生词拓展
+
+- **劫** (cướp; kiếp nạn): 洗劫 xǐjié〖cướp sạch, vơ vét〗 · 劫狱 jiéyù〖cướp ngục〗 · 打劫 dǎjié〖cướp bóc〗 · 抢劫 qiǎngjié〖cướp giật〗 · 浩劫 hàojié〖kiếp nạn lớn, tai họa lớn〗 · 趁火打劫 chènhuǒdǎjié〖thừa nước đục thả câu〗
+- **痕** (vết, dấu): 痕迹 hénjì〖dấu vết〗 · 水痕 shuǐhén〖vết nước〗 · 泪痕 lèihén〖vết nước mắt〗 · 血痕 xuèhén〖vết máu〗 · 伤痕 shānghén〖vết thương, sẹo〗 · 裂痕 lièhén〖vết nứt, rạn nứt〗
+- **歹** (xấu, ác): 好歹 hǎodǎi〖dù sao; tốt xấu〗 · 好说歹说 hǎoshuōdǎishuō〖nói hết lời〗 · 歹毒 dǎidú〖độc ác, thâm hiểm〗 · 歹人 dǎirén〖kẻ xấu〗 · 歹徒 dǎitú〖kẻ xấu, tội phạm〗 · 歹意 dǎiyì〖ý xấu, ác ý〗 · 为非作歹 wéifēizuòdǎi〖làm điều xấu xa〗
+- **慎** (cẩn thận, thận trọng): 不慎 bùshèn〖không cẩn thận, sơ suất〗 · 审慎 shěnshèn〖thận trọng, cân nhắc kỹ〗 · 慎重 shènzhòng〖thận trọng〗 · 谦虚谨慎 qiānxūjǐnshèn〖khiêm tốn cẩn trọng〗 · 谨小慎微 jǐnxiǎoshènwēi〖quá cẩn thận, rụt rè tỉ mỉ〗 · 谨言慎行 jǐnyánshènxíng〖thận trọng lời nói việc làm〗
+- **怯** (sợ, nhút nhát): 怯色 qièsè〖vẻ sợ hãi〗 · 羞怯 xiūqiè〖e thẹn, rụt rè〗 · 怯懦 qiènuò〖nhút nhát, hèn nhát〗 · 怯生生 qièshēngshēng〖rụt rè, e dè〗 · 怯场 qièchǎng〖sợ sân khấu, khớp khi biểu diễn〗 · 怯阵 qièzhèn〖khớp trận, sợ trận〗 · 胆怯 dǎnqiè〖nhút nhát, sợ sệt〗 · 露怯 lòuqiè〖lộ vẻ quê mùa/kém cỏi〗
+- **隙** (khe hở, kẽ hở): 缝隙 fèngxì〖khe hở, kẽ hở〗 · 空隙 kòngxì〖khoảng trống〗 · 间隙 jiànxì〖khoảng cách, khe hở thời gian〗 · 有隙可乘 yǒuxìkěchéng〖có kẽ hở để lợi dụng〗 · 无隙可乘 wúxìkěchéng〖không có kẽ hở để lợi dụng〗
+- **垫** (đệm, lót): 垫付 diànfù〖trả hộ, ứng trước〗 · 靠垫 kàodiàn〖gối tựa〗 · 垫子 diànzi〖tấm đệm, miếng lót〗 · 软垫 ruǎndiàn〖đệm mềm〗 · 垫高 diàngāo〖kê cao, lót cao lên〗 · 垫平 diànpíng〖lót cho bằng phẳng〗 · 垫背 diànbèi〖làm bia đỡ đạn, chịu tội thay〗 · 坐垫 zuòdiàn〖đệm ngồi〗
+- **腔** (khoang; giọng điệu): 鼻腔 bíqiāng〖khoang mũi〗 · 口腔 kǒuqiāng〖khoang miệng〗 · 胸腔 xiōngqiāng〖khoang ngực〗 · 南腔北调 nánqiāngběidiào〖giọng lai tạp vùng miền〗 · 油腔滑调 yóuqiānghuádiào〖giọng điệu trơn tru dối trá〗 · 装腔作势 zhuāngqiāngzuòshì〖làm bộ làm tịch〗 · 满腔 mǎnqiāng〖đầy lòng, tràn ngập (tình cảm)〗
+
+## Bài 38 — 慧眼捕捉商机
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 屡次 | lǚcì | 一次又一次，多次重复 | nhiều lần, lặp đi lặp lại | 备考HSK6，我屡次卡在写作这一项，得多花时间练习。 |
+| 依据 | yījù | 以某事物为根据、前提 | căn cứ vào, dựa theo | 我依据老师的建议，重新调整了自己的复习计划。 |
+| 罐 | guàn | 装东西用的圆筒形容器 | cái lọ, cái hũ, cái lon | 我买了一罐蜂蜜，每天早上冲一杯蜂蜜水。 |
+| 数额 | shù'é | 规定或计算出来的数目 | số lượng, hạn mức | 报名HSK6的名额有数额限制，我早早就交了材料。 |
+| 永恒 | yǒnghéng | 永远不变，一直存在 | vĩnh hằng, mãi mãi | 老师说“坚持”是学好一门语言永恒的道理。 |
+| 遵循 | zūnxún | 按照（原则、规律）去做 | tuân theo, tuân thủ | 学中文我一直遵循“先输入后输出”的原则。 |
+| 不屑 | bùxiè | 认为不值得，看不上 | coi thường, không thèm để ý | 以前我不屑背语法书里的例句，后来才发现那些例句很有用。 |
+| 孕育 | yùnyù | 在其中逐渐形成、酝酿 | ấp ủ, thai nghén (ý tưởng, sự việc) | 每天听中文播客的习惯，孕育了我现在还不错的听力水平。 |
+| 博览会 | bólǎnhuì | 大型展览会 | hội chợ triển lãm | 上次我去参观了一个中国文化博览会，学到不少新词。 |
+| 耐用 | nàiyòng | 使用时间长，不容易坏 | bền, dùng được lâu | 这本词典虽然旧了，但很耐用，我还在用它查生词。 |
+| 魔术 | móshù | 变戏法的表演 | ảo thuật | 教HSK1的时候，我常用小魔术吸引学生的注意力。 |
+| 扣 | kòu | 从原有数量中减去、扣除 | trừ, khấu trừ | 作文里语法错了一个，老师就扣了我半分。 |
+| 季度 | jìdù | 一年分成的四个三个月阶段 | quý (ba tháng) | 我给自己定了一个季度目标：这个季度背完一千个生词。 |
+| 本钱 | běnqián | 做生意用的资金；比喻依靠的条件 | vốn liếng (tiền); điều kiện làm vốn | 年轻是我学语言最大的本钱，得抓紧时间多学点。 |
+| 通货膨胀 | tōnghuòpéngzhàng | 物价普遍上涨，钱变得不值钱 | lạm phát | 新闻里常提到通货膨胀，这个词HSK6作文也很常用。 |
+| 平庸 | píngyōng | 普普通通，没有特色和才能 | tầm thường, xoàng xĩnh | 我不甘心自己的中文永远停留在平庸的水平，所以一直坚持学。 |
+| 捏 | niē | 用手指夹住、按压 | nặn, bóp, kẹp (bằng ngón tay) | 写汉字握笔的时候，我总是捏得太紧，手会酸。 |
+| 环节 | huánjié | 整体中相互连接的一部分 | khâu, mắt xích (trong một quá trình) | 备考计划里，听力是我最薄弱的一个环节。 |
+| 兴旺 | xīngwàng | 发展得好，很繁荣 | hưng thịnh, phát đạt | 这几年学中文的人越来越多，中文培训市场很兴旺。 |
+| 垄断 | lǒngduàn | 一家独占，不让别人参与 | độc quyền | 以前觉得只有名校才能垄断好老师资源，后来发现网课打破了这个限制。 |
+| 扩充 | kuòchōng | 扩大充实（内容、规模等） | mở rộng, bổ sung (quy mô, nội dung) | 这学期我打算扩充一下自己的成语库，争取用到写作里。 |
+| 掏 | tāo | 伸手到里面取东西 | móc, thò tay lấy (ra) | 上课铃一响，我赶紧从包里掏出课本。 |
+| 布局 | bùjú | 对全局做出安排、设计 | bố cục, sắp xếp tổng thể | 写作文前，我会先布局一下段落顺序，再动笔。 |
+| 拟定 | nǐdìng | 起草、制定（计划等） | dự thảo, đặt ra (kế hoạch) | 我给自己拟定了一份三个月的HSK6冲刺计划。 |
+| 策略 | cèlüè | 做事的方法和对策 | chiến lược, sách lược | 考前我调整了答题策略，先做拿手的阅读题。 |
+| 咀嚼 | jǔjué | 用牙齿磨碎食物 | nhai | 吃饭时慢慢咀嚼，边吃边跟中国同事聊天，是我练口语的好机会。 |
+| 可口 | kěkǒu | 食物味道好，吃起来舒服 | ngon miệng | 食堂今天的菜特别可口，我一下子吃了两碗。 |
+| 物美价廉 | wùměijiàlián | 东西好，价格又便宜 | vật đẹp giá rẻ, chất lượng tốt giá cả phải chăng | 这家文具店的中文练习本物美价廉，我常去那儿买。 |
+| 风味 | fēngwèi | 食物或事物独有的特色 | hương vị, phong vị đặc trưng | 第一次吃到地道的四川风味小吃，我辣得直流眼泪。 |
+| 吹捧 | chuīpěng | 过分地夸奖、赞美 | tâng bốc, ca ngợi thái quá | 我不太喜欢那种互相吹捧的应酬场合。 |
+| 品尝 | pǐncháng | 尝一尝味道 | nếm thử, thưởng thức | 中国同事请我品尝了他们家乡的特产，味道很特别。 |
+| 踊跃 | yǒngyuè | 积极热情地参加、争先恐后 | hăng hái, sôi nổi (tham gia) | 中心组织中文角活动，学生们报名都很踊跃。 |
+| 井 | jǐng | 从地下打出的取水或取油的洞 | cái giếng | 课文里那句成语“坐井观天”，让我想起小时候老家院子里的井。 |
+| 财务 | cáiwù | 关于资金、账目的事务 | tài chính, kế toán | 中心的财务每个月都会核对一次学费收支。 |
+| 局部 | júbù | 整体中的一部分 | cục bộ, một phần | 这篇作文整体不错，只是局部的用词需要调整一下。 |
+| 关照 | guānzhào | 关心、照顾 | quan tâm, chiếu cố | 谢谢老师这学期对我的关照，帮我改了不少作文。 |
+| 观光 | guānguāng | 游览、参观风景名胜 | tham quan, du lịch (ngắm cảnh) | 考完HSK6，我打算去中国观光顺便练口语。 |
+| 就近 | jiùjìn | 在附近，不去远处 | gần đó, ngay gần | 没时间去大书店的时候，我就就近在小卖部买本练习册。 |
+| 肖像 | xiàoxiàng | 画的或照的人物形象 | chân dung | 美术课上，我照着课本上的肖像画了一幅老师的画像。 |
+| 纺织 | fǎngzhī | 把纤维加工成纱、布 | dệt (vải, sợi) | 课文里提到的纺织厂，让我想起小时候奶奶在家纺线的样子。 |
+| 留念 | liúniàn | 留下来作为纪念 | lưu niệm, giữ làm kỷ niệm | 结课那天，我和学生们拍照留念。 |
+| 对照 | duìzhào | 放在一起比较 | đối chiếu, so sánh | 改作文的时候，我常把学生的原句和正确说法对照着看。 |
+| 齐心协力 | qíxīnxiélì | 大家一条心，共同努力 | đồng tâm hiệp lực | 备考小组的同学齐心协力，互相分享资料，进步都很快。 |
+| 专长 | zhuāncháng | 特别擅长的技能 | sở trường, chuyên môn | 我的专长是教发音，同事的专长是教写作，我们常互相请教。 |
+| 资本 | zīběn | 做事业用的钱或条件 | vốn (tiền, điều kiện) | 耐心和坚持，是我学中文这几年最大的资本。 |
+| 以往 | yǐwǎng | 过去，从前 | trước đây, trước kia | 跟以往相比，我现在读HSK6课文顺多了。 |
+| 淡季 | dànjì | 生意不好、需求少的季节 | mùa thấp điểm, mùa ế ẩm | 暑假是培训中心的旺季，寒假前反而是淡季。 |
+| 制服 | zhìfú | 规定统一穿的衣服 | đồng phục | 以前上学的时候，我们每天都要穿校服制服。 |
+| 规格 | guīgé | 规定的标准、样式 | quy cách, tiêu chuẩn | 写HSK6作文要按照规定的字数规格来写，不能太短。 |
+| 递增 | dìzēng | 一点一点地增加 | tăng dần | 这几个月我的听写正确率在递增，进步挺明显的。 |
+| 周期 | zhōuqī | 事情重复出现的一个时间段 | chu kỳ | 我把复习安排成两周一个周期，方便检查自己的进度。 |
+| 赌博 | dǔbó | 用钱做输赢的游戏 | cờ bạc, đánh bạc | 课文里说创业不是赌博，我觉得学语言也是，急不来。 |
+| 空想 | kōngxiǎng | 不切实际地瞎想，不付诸行动 | viển vông, tưởng tượng suông | 光空想自己中文变流利没有用，还是得每天开口练习。 |
+
+### 生词拓展
+
+- **额** (trán; số lượng, ngạch): 额外 éwài〖ngoài ra, thêm vào〗 · 名额 míng'é〖chỉ tiêu, suất (số lượng người)〗 · 数额 shù'é〖số lượng, hạn mức〗 · 前额 qián'é〖trán〗 · 匾额 biǎn'é〖hoành phi, biển đề chữ〗 · 超额 chāo'é〖vượt mức, vượt chỉ tiêu〗
+- **扣** (trừ, khấu trừ; cài, gài): 紧扣 jǐnkòu〖gắn chặt, bám sát〗 · 扣留 kòuliú〖tạm giữ, câu lưu〗 · 扣除 kòuchú〖khấu trừ, trừ bớt〗 · 折扣 zhékòu〖chiết khấu, giảm giá〗 · 扣球 kòuqiú〖đập bóng (bóng chuyền)〗
+- **捏** (nặn, bóp; bịa đặt): 捏造 niēzào〖bịa đặt, dựng chuyện〗 · 捏把汗 niēbǎhàn〖toát mồ hôi lo lắng〗 · 专拣软柿子捏 zhuānjiǎnruǎnshìziniē〖chỉ bắt nạt kẻ yếu〗
+- **旺** (thịnh vượng, hưng thịnh): 旺季 wàngjì〖mùa cao điểm, mùa đắt khách〗 · 旺盛 wàngshèng〖sung mãn, thịnh vượng〗 · 兴旺 xīngwàng〖hưng thịnh, phát đạt〗
+- **廉** (liêm khiết; rẻ): 清廉 qīnglián〖liêm khiết, trong sạch〗 · 廉正 liánzhèng〖liêm chính, ngay thẳng〗 · 廉耻 liánchǐ〖liêm sỉ〗 · 廉价 liánjià〖giá rẻ〗 · 低廉 dīlián〖rẻ, giá thấp〗 · 廉洁 liánjié〖liêm khiết, trong sạch〗
+- **井** (cái giếng): 水井 shuǐjǐng〖giếng nước〗 · 油井 yóujǐng〖giếng dầu〗 · 钻井 zuānjǐng〖khoan giếng〗 · 坐井观天 zuòjǐngguāntiān〖ngồi đáy giếng xem trời (tầm nhìn hẹp)〗 · 井底之蛙 jǐngdǐzhīwā〖ếch ngồi đáy giếng〗
+- **赌** (cờ bạc, cá cược): 赌棍 dǔgùn〖con bạc chuyên nghiệp〗 · 赌钱 dǔqián〖đánh bạc ăn tiền〗 · 赌徒 dǔtú〖con bạc〗 · 赌气 dǔqì〖hờn dỗi, làm liều vì tức giận〗 · 打赌 dǎdǔ〖đánh cược, cá cược〗
+
+## Bài 39 — 互联网时代的生活
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 日新月异 | rìxīnyuèyì | 变化非常快，天天都有新的样子 | thay đổi từng ngày, đổi mới không ngừng | 这几年翻译软件的发展真是日新月异，学中文方便多了。 |
+| 沉闷 | chénmèn | 心情不舒畅，气氛不活跃 | u ám, nặng nề, ngột ngạt (tâm trạng, không khí) | 考砸了那天，我一整天心情都很沉闷。 |
+| 充实 | chōngshí | 内容丰富，过得很满足 | sung túc, đầy đủ, ý nghĩa (cuộc sống) | 每天学习加教课，虽然忙，但过得很充实。 |
+| 交易 | jiāoyì | 买卖，双方进行商品或利益交换 | giao dịch, mua bán | 我在网上跟卖家交易的时候，会先确认好价格再付款。 |
+| 任意 | rènyì | 想怎样就怎样，不受限制 | tùy ý, tự do (không giới hạn) | 这个练习可以任意选一篇课文来复述。 |
+| 乐趣 | lèqù | 使人感到快乐的趣味 | niềm vui, thú vui | 教会学生一个新句型，是我教课最大的乐趣。 |
+| 设立 | shèlì | 建立、成立（机构、组织等） | thành lập, thiết lập | 中心打算设立一个免费的口语角，给学生多练习机会。 |
+| 虚荣 | xūróng | 表面上的光彩，爱面子 | hư vinh, sĩ diện | 买东西别只为了满足虚荣心，实用才最重要。 |
+| 珍贵 | zhēnguì | 很宝贵，值得珍惜 | quý giá, đáng trân trọng | 学生毕业时送我的贺卡，是我最珍贵的纪念品。 |
+| 合伙 | héhuǒ | 跟别人一起做（生意等） | hợp tác, cùng góp vốn làm ăn | 我和另一位老师合伙开了一个线上中文角。 |
+| 筹备 | chóubèi | 为某件事提前准备 | chuẩn bị, trù bị | 为了这次期末考试，我提前一个月就开始筹备复习资料。 |
+| 成员 | chéngyuán | 一个组织、团体里的人 | thành viên | 我是学习小组里唯一一个非中文专业出身的成员。 |
+| 初步 | chūbù | 刚开始阶段的，还不完全 | bước đầu, sơ bộ | 我对这次作文题目已经有了初步的想法。 |
+| 合算 | hésuàn | 花的代价小，收获大，划算 | đáng, hời (về mặt lợi ích/chi phí) | 报名年卡比每次单独买课划算，我觉得挺合算的。 |
+| 渠道 | qúdào | 获得信息或资源的途径 | kênh, con đường (thông tin, tiếp cận) | 我学中文的渠道除了课本，还有播客和短视频。 |
+| 审查 | shěnchá | 检查、核实是否合格、正确 | thẩm tra, kiểm duyệt | 交作文前，我都会自己审查一遍语法有没有错。 |
+| 缴纳 | jiǎonà | 按规定交付（钱款） | nộp, đóng (tiền, thuế theo quy định) | 报名HSK6考试要先缴纳考试费才能确认名额。 |
+| 摸索 | mōsuǒ | 在不清楚的情况下试着寻找方法 | dò dẫm, mày mò (tìm phương pháp) | 刚开始教HSK1的时候，我也是慢慢摸索出适合学生的教法。 |
+| 层次 | céngcì | 事物的先后顺序或高低等级 | tầng bậc, thứ tự, cấp độ | 写作文要注意层次分明，别把想法都堆在一段里。 |
+| 阶层 | jiēcéng | 社会中地位、职业相近的一类人 | tầng lớp (xã hội) | 这篇阅读讲的是不同阶层的人对教育的看法。 |
+| 政策 | zhèngcè | 国家或机构制定的行动方针 | chính sách | 了解一点中国的教育政策，对我理解课文很有帮助。 |
+| 欢乐 | huānlè | 高兴，快乐 | vui vẻ, hân hoan | 过年那几天，中国朋友家里都是欢乐的气氛。 |
+| 上瘾 | shàngyǐn | 对某事产生依赖，离不开 | nghiện, ghiền | 自从开始用中文软件打卡，我已经对每天签到上瘾了。 |
+| 慈善 | císhàn | 有同情心，愿意帮助别人（多指公益） | từ thiện | 学校组织了一次慈善义卖，学生们捐了不少旧书。 |
+| 股份 | gǔfèn | 公司资本中平均分成的份额 | cổ phần | 这篇课文讲的是有人靠卖公司股份筹到了创业资金。 |
+| 股东 | gǔdōng | 拥有公司股份的人 | cổ đông | 小时候看电视剧，我一直搞不清楚股东和员工有什么区别。 |
+| 钞票 | chāopiào | 纸币，钱 | tiền giấy, tiền | 去中国之前，我特意换了一些钞票，方便应急用。 |
+| 苦尽甘来 | kǔjìngānlái | 苦日子过去，好日子到来了 | khổ tận cam lai, hết khổ đến sướng | 备考三个月终于通过HSK6，那一刻真是苦尽甘来的感觉。 |
+| 尴尬 | gāngà | 处境或心情不自然，难为情 | ngượng ngùng, khó xử | 上课时说错一个声调，被学生笑了，我有点尴尬。 |
+| 抛弃 | pāoqì | 丢掉、舍弃不要 | vứt bỏ, từ bỏ | 我早就抛弃了死记硬背的老方法，改用场景记忆。 |
+| 坦白 | tǎnbái | 说真话，不隐瞒 | thành thật, thẳng thắn | 坦白地说，这次模拟考我发挥得不太好。 |
+| 急功近利 | jígōngjìnlì | 急于求成，只顾眼前利益 | nóng vội cầu lợi trước mắt | 学语言不能急功近利，得慢慢积累。 |
+| 进展 | jìnzhǎn | 事情向前发展，有新的进步 | tiến triển | 这个月我的听力进展挺明显的，能听懂更多新闻了。 |
+| 牢骚 | láosāo | 不满的抱怨话 | lời than phiền, lời cằn nhằn | 作业太多的时候，学生难免会发点牢骚。 |
+| 迄今为止 | qìjīnwéizhǐ | 到现在为止 | cho đến nay | 迄今为止，我已经坚持每天背单词三百多天了。 |
+| 吃力 | chīlì | 需要花很大力气，很费劲 | vất vả, tốn sức | 刚开始读HSK6课文，我觉得挺吃力的，现在顺多了。 |
+| 家喻户晓 | jiāyùhùxiǎo | 人人都知道，非常出名 | ai ai cũng biết, nổi tiếng khắp nơi | 这个成语故事在中国是家喻户晓的。 |
+| 无穷无尽 | wúqióngwújìn | 没有尽头，非常多 | vô cùng vô tận | 网络上的中文学习资源简直无穷无尽，我都学不完。 |
+| 罪犯 | zuìfàn | 犯了罪的人 | tội phạm | 这篇报道讲的是警方抓获网络诈骗罪犯的故事。 |
+| 盗窃 | dàoqiè | 偷偷地拿走别人的东西 | trộm cắp | 新闻说有人盗窃了大量用户的账号密码，我赶紧改了密码。 |
+| 公然 | gōngrán | 毫不隐瞒地，公开地（做坏事） | công khai, ngang nhiên | 有人公然在网上冒充老师招生骗钱，我提醒学生要小心。 |
+| 冒充 | màochōng | 假装成另一种身份来欺骗 | giả mạo, mạo danh | 对方冒充客服打电话给我，好在我及时识破了。 |
+| 大肆 | dàsì | 毫无顾忌地大规模做（多指坏事） | ra sức, tràn lan (thường chỉ việc xấu) | 网上大肆传播的假消息，一定要多方核实再相信。 |
+| 诈骗 | zhàpiàn | 用欺骗手段骗取财物 | lừa đảo | 备考群里有人提醒大家小心网络诈骗，别乱转账。 |
+| 拘留 | jūliú | 依法暂时限制人身自由 | tạm giữ, câu lưu | 新闻里说那个诈骗犯已经被警方依法拘留了。 |
+| 败坏 | bàihuài | 损害、破坏（名誉、风气等） | làm tổn hại, làm hư hỏng (danh dự, phong khí) | 抄袭这种事会败坏一个学生的名誉。 |
+| 名誉 | míngyù | 社会对一个人或组织的评价 | danh dự, danh tiếng | 老师很看重自己的教学名誉，从不敷衍学生。 |
+| 曝光 | bàoguāng | 被公开揭露（多指坏事） | bị phơi bày, phanh phui (trước công luận) | 那家假培训机构被曝光以后，很快就关门了。 |
+
+### 生词拓展
+
+- **纳** (nộp, thu vào; đón nhận): 缴纳 jiǎonà〖nộp, đóng (tiền)〗 · 采纳 cǎinà〖tiếp thu, chấp nhận (ý kiến)〗 · 纳闷儿 nàmènr〖băn khoăn, thắc mắc〗 · 容纳 róngnà〖chứa đựng, dung nạp〗 · 纳凉 nàliáng〖hóng mát〗
+- **坦** (thẳng thắn; bằng phẳng): 坦白 tǎnbái〖thành thật, thẳng thắn〗 · 坦率 tǎnshuài〖thẳng thắn, chân thật〗 · 平坦 píngtǎn〖bằng phẳng〗
+- **晓** (biết rõ; rạng sáng): 家喻户晓 jiāyùhùxiǎo〖ai ai cũng biết〗 · 破晓 pòxiǎo〖rạng sáng, tảng sáng〗 · 揭晓 jiēxiǎo〖công bố (kết quả)〗
+- **盗** (trộm cắp): 盗窃 dàoqiè〖trộm cắp〗 · 偷盗 tōudào〖trộm cắp〗 · 盗贼 dàozéi〖kẻ trộm, đạo tặc〗 · 强盗 qiángdào〖kẻ cướp, cường đạo〗
+- **冒** (giả mạo; xông ra, liều): 冒充 màochōng〖giả mạo, mạo danh〗 · 感冒 gǎnmào〖cảm cúm, cảm lạnh〗 · 冒烟 màoyān〖bốc khói〗 · 冒险 màoxiǎn〖mạo hiểm, liều lĩnh〗 · 冒牌 màopái〖hàng nhái, giả nhãn hiệu〗 · 假冒 jiǎmào〖giả mạo, nhái〗
+- **诈** (lừa gạt): 诈骗 zhàpiàn〖lừa đảo〗 · 敲诈 qiāozhà〖tống tiền, bóc lột〗 · 讹诈 ézhà〖tống tiền, hù dọa lừa gạt〗 · 诈死 zhàsǐ〖giả chết〗
+- **拘** (bắt giữ; gò bó): 拘留 jūliú〖tạm giữ, câu lưu〗 · 拘束 jūshù〖gò bó, câu nệ, ngại ngùng〗 · 拘谨 jūjǐn〖rụt rè, câu nệ〗
+
+## Bài 40 — 人类超能力会改变世界纪录吗？
+
+### 生词
+
+| 生词 | Pinyin | 释义 | Nghĩa | 例句 |
+| --- | --- | --- | --- | --- |
+| 引用 | yǐnyòng | 把别人说过的话、写过的内容拿来用 | trích dẫn | 写HSK6作文时，我喜欢引用一两句名言，让文章更有说服力。 |
+| 截至 | jiézhì | 到某个时间点为止 | tính đến (một mốc thời gian) | 截至今天，我已经连续打卡背单词一百天了。 |
+| 力争 | lìzhēng | 努力争取达到某个目标 | cố gắng giành lấy, nỗ lực đạt được | 这次HSK6我力争考到220分以上。 |
+| 亚军 | yàjūn | 比赛中获得第二名 | á quân, hạng nhì | 这次演讲比赛我拿了亚军，虽然不是第一，但也很满意。 |
+| 季军 | jìjūn | 比赛中获得第三名 | hạng ba | 上次班级朗读比赛，我的学生拿了季军。 |
+| 极限 | jíxiàn | 能达到的最高、最大程度 | giới hạn, cực hạn | 每天背单词的数量，我也在慢慢试探自己的极限。 |
+| 狭窄 | xiázhǎi | 范围或空间很小 | hẹp, chật hẹp | 只靠课本学中文，视野会比较狭窄，得多看点课外材料。 |
+| 任性 | rènxìng | 只按自己的想法做，不听劝 | bướng bỉnh, tùy tiện | 备考计划定好了就别任性不执行，要坚持下去。 |
+| 田径 | tiánjìng | 跑跳投掷类的体育运动项目 | điền kinh | 这篇HSK6阅读讲的是田径运动员的训练故事。 |
+| 选手 | xuǎnshǒu | 参加比赛的人 | vận động viên, người dự thi | 看完这篇课文，我发现自己也算是备考路上的一名选手。 |
+| 同胞 | tóngbāo | 同一个国家或民族的人 | đồng bào | 在国外遇到中国同胞，用中文聊天特别亲切。 |
+| 直播 | zhíbō | 实时播出，不是录播 | phát trực tiếp, livestream | 我常看中文老师的直播课，跟着一起练发音。 |
+| 旗帜 | qízhì | 有代表意义的旗子 | cờ, ngọn cờ (biểu tượng) | 运动会开幕式上，各班举着自己的旗帜入场。 |
+| 领先 | lǐngxiān | 走在最前面，超过别人 | dẫn đầu, đi trước | 这次模拟考，我的阅读成绩在班里领先。 |
+| 分解 | fēnjiě | 把整体拆分成几个部分 | phân giải, chia nhỏ ra | 把长句子分解成几个短句，理解语法就容易多了。 |
+| 公式 | gōngshì | 固定的计算方法或格式 | công thức | 老师教了我一个写作文开头的公式，挺好用的。 |
+| 精密 | jīngmì | 非常准确、细致 | chính xác, tinh vi | 翻译软件现在越来越精密，但语感还是得靠自己练。 |
+| 悬殊 | xuánshū | 差别很大 | chênh lệch rất lớn | 刚开始学中文和现在比，水平差距真是悬殊。 |
+| 迷信 | míxìn | 盲目相信，不讲科学道理 | mê tín | 别迷信什么“速成班”，学语言还是得靠日积月累。 |
+| 舆论 | yúlùn | 公众普遍的看法、议论 | dư luận | 网上关于学外语最佳年龄的舆论，各种说法都有。 |
+| 自发 | zìfā | 自己主动产生，不是被要求的 | tự phát | 我们班的同学自发组织了一个周末中文角。 |
+| 掀起 | xiānqǐ | 引起，兴起（热潮、活动等） | dấy lên, khởi lên (phong trào) | 这几年中心掀起了一股学中文的热潮。 |
+| 空洞 | kōngdòng | 内容空虚，没有实质内容 | trống rỗng, sáo rỗng | 写作文别用太空洞的话，要有具体的例子。 |
+| 制约 | zhìyuē | 限制、约束（另一事物的发展） | kiềm chế, ràng buộc | 时间不够是制约我练习口语的最大因素。 |
+| 原理 | yuánlǐ | 事物运作的基本道理 | nguyên lý | 弄懂语法背后的原理，比死记规则更容易记住。 |
+| 冷酷 | lěngkù | 没有感情，很无情 | lạnh lùng, tàn nhẫn | 备考的日子有点冷酷，每天都逼自己坐下来学习。 |
+| 动员 | dòngyuán | 发动、号召大家参加 | động viên, huy động | 我动员班里的学生一起参加中文朗诵比赛。 |
+| 牵扯 | qiānchě | 牵连、涉及到 | liên can, dính líu tới | 这道阅读题牵扯到好几个语法点，我得一个一个理清楚。 |
+| 胸膛 | xiōngtáng | 胸部 | lồng ngực | 跑完步，我能感觉到自己的心在胸膛里怦怦直跳。 |
+| 管辖 | guǎnxiá | 负责管理（某个范围） | quản lý, quản hạt | 这个考点归教育局管辖，报名规则都得按他们的要求来。 |
+| 故障 | gùzhàng | 设备出现的问题、毛病 | sự cố, trục trặc (thiết bị) | 上网课时电脑突然出故障，我只好赶紧换手机继续听课。 |
+| 严禁 | yánjìn | 严格禁止 | nghiêm cấm | 考场严禁携带手机，我进去前特意检查了一遍包。 |
+| 猝死 | cùsǐ | 突然发生的死亡（多因心脏等疾病） | đột tử | 这篇课文提醒我们运动过量可能引发猝死，要量力而行。 |
+| 正规 | zhèngguī | 符合正式标准，规范 | chính quy, bài bản | 跟着正规的教材学发音，比自己瞎练靠谱多了。 |
+| 演习 | yǎnxí | 预先练习、模拟实际情况 | diễn tập, tập dượt | 考前老师带我们演习了一次完整的HSKK流程。 |
+| 弹性 | tánxìng | 可以灵活调整的性质 | tính linh hoạt, độ đàn hồi | 我的复习计划留了点弹性，万一哪天忙也不至于全乱。 |
+| 竞赛 | jìngsài | 比赛，争胜负 | thi đấu, cuộc thi | 学校举办了一次中文朗诵竞赛，我的学生也报名了。 |
+| 优先 | yōuxiān | 排在最前面，先考虑 | ưu tiên | 时间不够的时候，我会优先复习自己最薄弱的听力。 |
+| 选拔 | xuǎnbá | 从很多人中挑选出优秀的 | tuyển chọn, chọn lọc | 学校选拔了几个学生代表去参加中文演讲比赛。 |
+| 资产 | zīchǎn | 拥有的财产、资源 | tài sản | 老师常说，语言能力是最保值的个人资产。 |
+| 得天独厚 | détiāndúhòu | 先天条件特别优越 | có điều kiện thiên phú, ưu thế bẩm sinh | 从小在双语环境长大的孩子，学外语真的得天独厚。 |
+| 作风 | zuòfēng | 一贯表现出来的态度、行事方式 | tác phong, phong cách làm việc | 那位老师做事认真严谨的作风，一直是我学习的榜样。 |
+| 顽强 | wánqiáng | 坚持不懈，不轻易屈服 | kiên cường, ngoan cường | 备考这几个月，靠的就是一股顽强的劲头。 |
+| 志气 | zhìqì | 积极向上、想要成功的决心 | chí khí, ý chí phấn đấu | 老师常鼓励我们，别看基础差，要有志气坚持下去。 |
+| 屈服 | qūfú | 在压力下放弃抵抗，妥协 | khuất phục, chịu thua | 遇到难的语法点，我从不轻易屈服，一定要弄懂才罢休。 |
+| 依托 | yītuō | 依靠、凭借某种条件 | dựa vào, nương tựa | 我学口语主要依托跟中国同事日常聊天的机会。 |
+| 装备 | zhuāngbèi | 配备（工具、设备） | trang bị | 备考期间，我给自己装备了好几本真题集和一个复习APP。 |
+| 战术 | zhànshù | 具体的作战或应对方法 | chiến thuật | 考试时间不够用的话，我会用先易后难的答题战术。 |
+| 悬崖峭壁 | xuányáqiàobì | 又高又陡的山崖，比喻极大的困难 | vách núi dựng đứng (ví khó khăn lớn) | 对我来说，HSK6写作曾经就像一道悬崖峭壁，怎么也翻不过去。 |
+| 涌现 | yǒngxiàn | 大量、集中地出现 | xuất hiện hàng loạt, nổi lên | 这几年网上涌现出不少优质的中文学习资源。 |
+| 相辅相成 | xiāngfǔxiāngchéng | 两件事互相配合、互相促进 | hỗ trợ lẫn nhau, tương hỗ | 背单词和多读课文相辅相成，缺一个进步都会慢。 |
+
+### 生词拓展
+
+- **殊** (khác biệt; đặc biệt): 殊途同归 shūtútóngguī〖khác đường cùng đích〗 · 悬殊 xuánshū〖chênh lệch rất lớn〗 · 殊荣 shūróng〖vinh dự đặc biệt〗 · 特殊 tèshū〖đặc biệt〗 · 殊不知 shūbùzhī〖nào ngờ, ai ngờ〗
+- **酷** (khắc nghiệt; rất, cực kỳ; mê): 严酷 yánkù〖khắc nghiệt, nghiêm khắc〗 · 酷爱 kù'ài〖rất yêu thích, say mê〗 · 酷寒 kùhán〖lạnh giá khắc nghiệt〗 · 酷暑 kùshǔ〖nóng bức khắc nghiệt〗 · 酷似 kùsì〖giống hệt, rất giống〗
+- **扯** (kéo, lôi; nói lan man): 扯谎 chěhuǎng〖nói dối〗 · 瞎扯 xiāchě〖nói bậy, nói linh tinh〗 · 闲扯 xiánchě〖tán gẫu, chuyện phiếm〗 · 牵扯 qiānchě〖liên can, dính líu〗 · 扯后腿 chěhòutuǐ〖kéo chân, cản trở〗 · 胡扯 húchě〖nói bừa, nói nhảm〗 · 东拉西扯 dōnglāxīchě〖nói lan man, chuyện nọ xọ chuyện kia〗
+- **辖** (quản lý, cai quản): 管辖 guǎnxiá〖quản lý, quản hạt〗 · 辖区 xiáqū〖khu vực quản lý〗 · 统辖 tǒngxiá〖thống quản, cai quản chung〗 · 直辖 zhíxiá〖trực thuộc trung ương quản lý〗 · 直辖市 zhíxiáshì〖thành phố trực thuộc trung ương〗
+- **顽** (ngoan cường; ngoan cố): 顽强 wánqiáng〖kiên cường, ngoan cường〗 · 顽固 wángù〖ngoan cố, cố chấp〗 · 顽症 wánzhèng〖bệnh nan y〗 · 顽石 wánshí〖đá cứng (ví người cứng đầu)〗 · 顽固不化 wángùbùhuà〖ngoan cố không chịu thay đổi〗
+- **屈** (chịu thiệt, khuất phục; gập lại): 屈就 qūjiù〖hạ mình nhận (chức vụ thấp hơn khả năng)〗 · 屈才 qūcái〖chôn vùi tài năng, phí tài〗 · 屈指可数 qūzhǐkěshǔ〖đếm trên đầu ngón tay, rất ít〗 · 首屈一指 shǒuqūyīzhǐ〖đứng đầu, số một〗 · 不屈不挠 bùqūbùnáo〖không khuất phục, kiên cường bất khuất〗 · 理屈词穷 lǐqūcíqióng〖đuối lý, hết lời để biện minh〗
+- **峭** (dốc đứng, hiểm trở): 陡峭 dǒuqiào〖dốc đứng〗 · 峭直 qiàozhí〖ngay thẳng, cương trực〗 · 峭壁 qiàobì〖vách đá dựng đứng〗 · 悬崖峭壁 xuányáqiàobì〖vách núi dựng đứng〗
+- **涌** (trào, tuôn ra): 汹涌 xiōngyǒng〖cuồn cuộn, dữ dội (sóng nước)〗 · 涌泉 yǒngquán〖suối trào, mạch nước phun〗 · 泉涌 quányǒng〖tuôn trào như suối〗 · 汹涌澎湃 xiōngyǒngpéngpài〖sóng cuộn cuồn cuộn dữ dội〗 · 泪如泉涌 lèirúquányǒng〖nước mắt tuôn như suối〗

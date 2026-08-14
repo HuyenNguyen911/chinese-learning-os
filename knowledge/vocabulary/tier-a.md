@@ -4271,4 +4271,4528 @@ _Không thêm field `Tier:` vào entry — tier được xác định bởi tên
 
 ---
 
+## 急剧
+- Pinyin: jíjù
+- Nghĩa: dữ dội, nhanh chóng, đột ngột
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 川流不息
+- Pinyin: chuānliúbùxī
+- Nghĩa: (dòng người/xe) không ngớt, liên tục
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 登录
+- Pinyin: dēnglù
+- Nghĩa: đăng nhập
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 指令
+- Pinyin: zhǐlìng
+- Nghĩa: chỉ thị, mệnh lệnh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 根深蒂固
+- Pinyin: gēnshēndìgù
+- Nghĩa: ăn sâu bén rễ, cố hữu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 不免
+- Pinyin: bùmiǎn
+- Nghĩa: không tránh khỏi, tất nhiên sẽ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 预言
+- Pinyin: yùyán
+- Nghĩa: lời tiên đoán, dự ngôn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 革命
+- Pinyin: gémìng
+- Nghĩa: cách mạng, thay đổi căn bản
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 改良
+- Pinyin: gǎiliáng
+- Nghĩa: cải tiến, cải lương
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 欣欣向荣
+- Pinyin: xīnxīnxiàngróng
+- Nghĩa: phồn vinh, phát triển mạnh mẽ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 仓库
+- Pinyin: cāngkù
+- Nghĩa: kho, nhà kho
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 相应
+- Pinyin: xiāngyìng
+- Nghĩa: tương ứng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 仪器
+- Pinyin: yíqì
+- Nghĩa: thiết bị, máy móc (dụng cụ đo/thí nghiệm)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 以免
+- Pinyin: yǐmiǎn
+- Nghĩa: để tránh, kẻo
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 储备
+- Pinyin: chǔbèi
+- Nghĩa: dự trữ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 结算
+- Pinyin: jiésuàn
+- Nghĩa: thanh toán, quyết toán
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 模式
+- Pinyin: móshì
+- Nghĩa: mô hình, khuôn mẫu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 嫌
+- Pinyin: xián
+- Nghĩa: chê, không thích
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 腥
+- Pinyin: xīng
+- Nghĩa: tanh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 清理
+- Pinyin: qīnglǐ
+- Nghĩa: dọn dẹp, xử lý sạch sẽ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 等候
+- Pinyin: děnghòu
+- Nghĩa: chờ đợi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 把手
+- Pinyin: bǎshou
+- Nghĩa: tay nắm, tay cầm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 装卸
+- Pinyin: zhuāngxiè
+- Nghĩa: lắp và tháo (hàng hóa/thiết bị)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 屏幕
+- Pinyin: píngmù
+- Nghĩa: màn hình
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 性能
+- Pinyin: xìngnéng
+- Nghĩa: tính năng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 运算
+- Pinyin: yùnsuàn
+- Nghĩa: tính toán, vận toán
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 需求
+- Pinyin: xūqiú
+- Nghĩa: nhu cầu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 新颖
+- Pinyin: xīnyǐng
+- Nghĩa: mới lạ, độc đáo
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 便利
+- Pinyin: biànlì
+- Nghĩa: tiện lợi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 把关
+- Pinyin: bǎguān
+- Nghĩa: kiểm soát chặt chẽ, gác cổng chất lượng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 人工
+- Pinyin: réngōng
+- Nghĩa: nhân tạo
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 秤
+- Pinyin: chèng
+- Nghĩa: cái cân
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 总和
+- Pinyin: zǒnghé
+- Nghĩa: tổng số, tổng cộng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 着重
+- Pinyin: zhuózhòng
+- Nghĩa: nhấn mạnh, chú trọng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 反馈
+- Pinyin: fǎnkuì
+- Nghĩa: phản hồi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 虚拟
+- Pinyin: xūnǐ
+- Nghĩa: ảo, hư cấu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 投票
+- Pinyin: tóupiào
+- Nghĩa: bỏ phiếu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 保管
+- Pinyin: bǎoguǎn
+- Nghĩa: chắc chắn, bảo đảm (khẩu ngữ)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 中意
+- Pinyin: zhòngyì
+- Nghĩa: vừa ý, ưng ý
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 关怀
+- Pinyin: guānhuái
+- Nghĩa: quan tâm, chăm sóc
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 无微不至
+- Pinyin: wúwēibùzhì
+- Nghĩa: chăm sóc chu đáo tỉ mỉ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 羽绒服
+- Pinyin: yǔróngfú
+- Nghĩa: áo lông vũ, áo phao
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 旗袍
+- Pinyin: qípáo
+- Nghĩa: sườn xám (áo dài truyền thống Trung Quốc)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 音响
+- Pinyin: yīnxiǎng
+- Nghĩa: dàn âm thanh, loa
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 收音机
+- Pinyin: shōuyīnjī
+- Nghĩa: radio
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 水龙头
+- Pinyin: shuǐlóngtóu
+- Nghĩa: vòi nước
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 纽扣儿
+- Pinyin: niǔkòur
+- Nghĩa: cúc áo, khuy áo
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 插座
+- Pinyin: chāzuò
+- Nghĩa: ổ cắm điện
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 勘探
+- Pinyin: kāntàn
+- Nghĩa: thăm dò (khoáng sản)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 矿产
+- Pinyin: kuàngchǎn
+- Nghĩa: khoáng sản
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 款式
+- Pinyin: kuǎnshì
+- Nghĩa: kiểu dáng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 主导
+- Pinyin: zhǔdǎo
+- Nghĩa: chủ đạo, dẫn dắt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 兴隆
+- Pinyin: xīnglóng
+- Nghĩa: thịnh vượng, phát đạt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 起源
+- Pinyin: qǐyuán
+- Nghĩa: nguồn gốc, khởi nguyên
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 文献
+- Pinyin: wénxiàn
+- Nghĩa: văn hiến, tài liệu (sách vở)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 凶恶
+- Pinyin: xiōng'è
+- Nghĩa: hung ác, dữ tợn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 揭露
+- Pinyin: jiēlù
+- Nghĩa: vạch trần, phơi bày
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 昌盛
+- Pinyin: chāngshèng
+- Nghĩa: hưng thịnh, phồn vinh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 题材
+- Pinyin: tícái
+- Nghĩa: đề tài (sáng tác)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 驱逐
+- Pinyin: qūzhú
+- Nghĩa: trục xuất, xua đuổi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 吉祥
+- Pinyin: jíxiáng
+- Nghĩa: may mắn, cát tường
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 里程碑
+- Pinyin: lǐchéngbēi
+- Nghĩa: cột mốc, dấu mốc quan trọng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 墨水儿
+- Pinyin: mòshuǐr
+- Nghĩa: mực (nước mực)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 盖章
+- Pinyin: gàizhāng
+- Nghĩa: đóng dấu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 联想
+- Pinyin: liánxiǎng
+- Nghĩa: liên tưởng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 涂抹
+- Pinyin: túmǒ
+- Nghĩa: quét, bôi (màu, mực...)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 终究
+- Pinyin: zhōngjiū
+- Nghĩa: rốt cuộc, cuối cùng vẫn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 烟花爆竹
+- Pinyin: yānhuā bàozhú
+- Nghĩa: pháo hoa và pháo nổ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 寄托
+- Pinyin: jìtuō
+- Nghĩa: gửi gắm (hy vọng, tình cảm)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 增添
+- Pinyin: zēngtiān
+- Nghĩa: thêm vào, tăng thêm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 丰收
+- Pinyin: fēngshōu
+- Nghĩa: được mùa, thu hoạch tốt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 发财
+- Pinyin: fācái
+- Nghĩa: phát tài
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 连年
+- Pinyin: liánnián
+- Nghĩa: liên tiếp nhiều năm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 寓言
+- Pinyin: yùyán
+- Nghĩa: truyện ngụ ngôn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 信仰
+- Pinyin: xìnyǎng
+- Nghĩa: tín ngưỡng, niềm tin
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 神气
+- Pinyin: shénqì
+- Nghĩa: vẻ đắc ý, oai vệ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 翘
+- Pinyin: qiào
+- Nghĩa: vểnh lên, nhổng lên
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 神态
+- Pinyin: shéntài
+- Nghĩa: thần thái, vẻ mặt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 盛开
+- Pinyin: shèngkāi
+- Nghĩa: nở rộ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 散发
+- Pinyin: sànfā
+- Nghĩa: tỏa ra, phát ra (mùi, ánh sáng...)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 喜闻乐见
+- Pinyin: xǐwénlèjiàn
+- Nghĩa: được mọi người ưa thích, hoan nghênh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 扎实
+- Pinyin: zhāshi
+- Nghĩa: vững chắc, chắc chắn (kiến thức, nền tảng)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 塑造
+- Pinyin: sùzào
+- Nghĩa: khắc họa, xây dựng (hình tượng)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 手法
+- Pinyin: shǒufǎ
+- Nghĩa: thủ pháp, cách thức (sáng tác)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 派别
+- Pinyin: pàibié
+- Nghĩa: phe phái, trường phái
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 借鉴
+- Pinyin: jièjiàn
+- Nghĩa: tham khảo, học hỏi (kinh nghiệm)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 再接再厉
+- Pinyin: zàijiēzàilì
+- Nghĩa: tiếp tục cố gắng, thừa thắng xông lên
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 心得
+- Pinyin: xīndé
+- Nghĩa: kinh nghiệm, tâm đắc
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 缺席
+- Pinyin: quēxí
+- Nghĩa: vắng mặt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 干劲
+- Pinyin: gànjìn
+- Nghĩa: nhiệt huyết, hăng hái làm việc
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 占据
+- Pinyin: zhànjù
+- Nghĩa: chiếm giữ, chiếm lĩnh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 确立
+- Pinyin: quèlì
+- Nghĩa: xác lập, xác định rõ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 信念
+- Pinyin: xìnniàn
+- Nghĩa: niềm tin, tín niệm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 任重道远
+- Pinyin: rènzhòngdàoyuǎn
+- Nghĩa: nhiệm vụ nặng nề, đường còn dài
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 一帆风顺
+- Pinyin: yīfānfēngshùn
+- Nghĩa: thuận buồm xuôi gió
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 官方
+- Pinyin: guānfāng
+- Nghĩa: chính thức, quan phương
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 透露
+- Pinyin: tòulù
+- Nghĩa: tiết lộ, bật mí
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 命名
+- Pinyin: mìngmíng
+- Nghĩa: đặt tên, mệnh danh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 规章
+- Pinyin: guīzhāng
+- Nghĩa: quy chương, quy định
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 截止
+- Pinyin: jiézhǐ
+- Nghĩa: hết hạn, kết thúc (đến hạn)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 终止
+- Pinyin: zhōngzhǐ
+- Nghĩa: chấm dứt, kết thúc
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 完备
+- Pinyin: wánbèi
+- Nghĩa: hoàn bị, đầy đủ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 立足
+- Pinyin: lìzú
+- Nghĩa: đứng vững, lập chân
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 灵魂
+- Pinyin: línghún
+- Nghĩa: linh hồn, tâm hồn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 颁布
+- Pinyin: bānbù
+- Nghĩa: ban hành, công bố
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 品德
+- Pinyin: pǐndé
+- Nghĩa: phẩm đức, đạo đức
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 过失
+- Pinyin: guòshī
+- Nghĩa: sai sót, lỗi lầm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 无耻
+- Pinyin: wúchǐ
+- Nghĩa: vô liêm sỉ, trơ trẽn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 容纳
+- Pinyin: róngnà
+- Nghĩa: chứa đựng, dung nạp
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 层出不穷
+- Pinyin: céngchūbùqióng
+- Nghĩa: xuất hiện liên tục không ngớt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 治理
+- Pinyin: zhìlǐ
+- Nghĩa: quản lý, chỉnh trị
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 树立
+- Pinyin: shùlì
+- Nghĩa: xây dựng, thiết lập (hình tượng, tấm gương)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 正气
+- Pinyin: zhèngqì
+- Nghĩa: chính khí, tinh thần ngay thẳng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 唾弃
+- Pinyin: tuòqì
+- Nghĩa: khinh bỉ, ruồng bỏ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 卑鄙
+- Pinyin: bēibǐ
+- Nghĩa: đê tiện, hèn hạ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 堕落
+- Pinyin: duòluò
+- Nghĩa: sa đọa, sa ngã
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 腐败
+- Pinyin: fǔbài
+- Nghĩa: tham nhũng, thối nát
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 崇高
+- Pinyin: chónggāo
+- Nghĩa: cao cả, cao thượng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 境界
+- Pinyin: jìngjiè
+- Nghĩa: cảnh giới, mức độ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 攀登
+- Pinyin: pāndēng
+- Nghĩa: leo lên, trèo lên (nghĩa bóng: phấn đấu)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 窍门
+- Pinyin: qiàomén
+- Nghĩa: bí quyết, mẹo
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 发扬
+- Pinyin: fāyáng
+- Nghĩa: phát huy
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 敞开
+- Pinyin: chǎngkāi
+- Nghĩa: mở rộng, mở toang (cửa, lòng)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 招收
+- Pinyin: zhāoshōu
+- Nghĩa: tuyển sinh, tuyển dụng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 开明
+- Pinyin: kāimíng
+- Nghĩa: cởi mở, tiến bộ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 倡议
+- Pinyin: chàngyì
+- Nghĩa: đề xướng, khởi xướng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 杜绝
+- Pinyin: dùjué
+- Nghĩa: tuyệt đối cấm, ngăn chặn hoàn toàn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 干涉
+- Pinyin: gānshè
+- Nghĩa: can thiệp, xen vào
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 过问
+- Pinyin: guòwèn
+- Nghĩa: hỏi han, để mắt đến
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 激发
+- Pinyin: jīfā
+- Nghĩa: khơi dậy, kích thích
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 多元化
+- Pinyin: duōyuánhuà
+- Nghĩa: đa dạng hóa
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 开展
+- Pinyin: kāizhǎn
+- Nghĩa: triển khai, tổ chức (hoạt động)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 对立
+- Pinyin: duìlì
+- Nghĩa: đối lập
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 分歧
+- Pinyin: fēnqí
+- Nghĩa: sự bất đồng, mâu thuẫn ý kiến
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 保守
+- Pinyin: bǎoshǒu
+- Nghĩa: bảo thủ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 较量
+- Pinyin: jiàoliàng
+- Nghĩa: so tài, đọ sức
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 论坛
+- Pinyin: lùntán
+- Nghĩa: diễn đàn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 激励
+- Pinyin: jīlì
+- Nghĩa: khích lệ, động viên
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 礼节
+- Pinyin: lǐjié
+- Nghĩa: lễ tiết, phép tắc xã giao
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 衷心
+- Pinyin: zhōngxīn
+- Nghĩa: chân thành, tự đáy lòng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 爱戴
+- Pinyin: àidài
+- Nghĩa: kính yêu, mến mộ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 示范
+- Pinyin: shìfàn
+- Nghĩa: làm mẫu, thị phạm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 崇敬
+- Pinyin: chóngjìng
+- Nghĩa: sùng kính, ngưỡng mộ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 偶像
+- Pinyin: ǒuxiàng
+- Nghĩa: thần tượng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 封建
+- Pinyin: fēngjiàn
+- Nghĩa: phong kiến
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 化妆
+- Pinyin: huàzhuāng
+- Nghĩa: trang điểm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 屑
+- Pinyin: xiè
+- Nghĩa: vụn, mảnh vụn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 抢劫
+- Pinyin: qiǎngjié
+- Nghĩa: cướp giật, cướp bóc
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 痕迹
+- Pinyin: hénjì
+- Nghĩa: dấu vết, vết tích
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 停顿
+- Pinyin: tíngdùn
+- Nghĩa: dừng lại, ngừng lại (tạm thời)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 嫌疑
+- Pinyin: xiányí
+- Nghĩa: sự nghi ngờ, tình nghi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 线索
+- Pinyin: xiànsuǒ
+- Nghĩa: manh mối, đầu mối
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 歹徒
+- Pinyin: dǎitú
+- Nghĩa: kẻ xấu, tội phạm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 恐惧
+- Pinyin: kǒngjù
+- Nghĩa: sợ hãi, khiếp sợ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 铜
+- Pinyin: tóng
+- Nghĩa: đồng (kim loại)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 框架
+- Pinyin: kuàngjià
+- Nghĩa: khung, kết cấu, khuôn khổ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 残留
+- Pinyin: cánliú
+- Nghĩa: còn sót lại, tồn dư
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 刑事
+- Pinyin: xíngshì
+- Nghĩa: hình sự
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 监狱
+- Pinyin: jiānyù
+- Nghĩa: nhà tù, nhà giam
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 慎重
+- Pinyin: shènzhòng
+- Nghĩa: thận trọng, cẩn trọng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 麻痹
+- Pinyin: mábì
+- Nghĩa: chủ quan, mất cảnh giác
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 失误
+- Pinyin: shīwù
+- Nghĩa: sai sót, sai lầm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 考验
+- Pinyin: kǎoyàn
+- Nghĩa: thử thách
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 检验
+- Pinyin: jiǎnyàn
+- Nghĩa: kiểm nghiệm, kiểm chứng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 沉着
+- Pinyin: chénzhuó
+- Nghĩa: điềm tĩnh, bình tĩnh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 暂且
+- Pinyin: zànqiě
+- Nghĩa: tạm thời, hãy cứ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 查获
+- Pinyin: cháhuò
+- Nghĩa: điều tra và bắt giữ, phát hiện và thu giữ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 制裁
+- Pinyin: zhìcái
+- Nghĩa: chế tài, trừng phạt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 公安局
+- Pinyin: gōng'ānjú
+- Nghĩa: công an, sở công an
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 情报
+- Pinyin: qíngbào
+- Nghĩa: tình báo, thông tin
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 毒品
+- Pinyin: dúpǐn
+- Nghĩa: ma túy
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 带领
+- Pinyin: dàilǐng
+- Nghĩa: dẫn dắt, dẫn đầu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 部署
+- Pinyin: bùshǔ
+- Nghĩa: bố trí, sắp xếp (kế hoạch, lực lượng)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 埋伏
+- Pinyin: máifú
+- Nghĩa: mai phục, ẩn nấp
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 布置
+- Pinyin: bùzhì
+- Nghĩa: bố trí, sắp đặt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 反抗
+- Pinyin: fǎnkàng
+- Nghĩa: phản kháng, chống lại
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 逮捕
+- Pinyin: dàibǔ
+- Nghĩa: bắt giữ, bắt bớ (theo pháp luật)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 非法
+- Pinyin: fēifǎ
+- Nghĩa: bất hợp pháp, phi pháp
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 贩卖
+- Pinyin: fànmài
+- Nghĩa: buôn bán (thường chỉ hàng cấm)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 平面
+- Pinyin: píngmiàn
+- Nghĩa: mặt phẳng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 平行
+- Pinyin: píngxíng
+- Nghĩa: song song
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 并列
+- Pinyin: bìngliè
+- Nghĩa: ngang hàng, xếp cùng hạng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 交叉
+- Pinyin: jiāochā
+- Nghĩa: giao nhau, cắt nhau
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 包袱
+- Pinyin: bāofu
+- Nghĩa: gánh nặng tâm lý
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 胆怯
+- Pinyin: dǎnqiè
+- Nghĩa: nhút nhát, sợ sệt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 哄
+- Pinyin: hǒng
+- Nghĩa: dỗ dành
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 信赖
+- Pinyin: xìnlài
+- Nghĩa: tin cậy, tín nhiệm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 忠诚
+- Pinyin: zhōngchéng
+- Nghĩa: trung thành
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 舌头
+- Pinyin: shétou
+- Nghĩa: cái lưỡi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 舔
+- Pinyin: tiǎn
+- Nghĩa: liếm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 空隙
+- Pinyin: kòngxì
+- Nghĩa: khoảng trống, khe hở; thời gian rảnh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 扒
+- Pinyin: pá
+- Nghĩa: móc túi, ăn cắp (từ trên người)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 垫
+- Pinyin: diàn
+- Nghĩa: miếng đệm, tấm lót
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 叼
+- Pinyin: diāo
+- Nghĩa: ngậm, tha (trong miệng)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 粉末
+- Pinyin: fěnmò
+- Nghĩa: bột, dạng bột
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 口腔
+- Pinyin: kǒuqiāng
+- Nghĩa: khoang miệng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 屡次
+- Pinyin: lǚcì
+- Nghĩa: nhiều lần, lặp đi lặp lại
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 依据
+- Pinyin: yījù
+- Nghĩa: căn cứ vào, dựa theo
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 罐
+- Pinyin: guàn
+- Nghĩa: cái lọ, cái hũ, cái lon
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 数额
+- Pinyin: shù'é
+- Nghĩa: số lượng, hạn mức
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 永恒
+- Pinyin: yǒnghéng
+- Nghĩa: vĩnh hằng, mãi mãi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 遵循
+- Pinyin: zūnxún
+- Nghĩa: tuân theo, tuân thủ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 不屑
+- Pinyin: búxiè
+- Nghĩa: coi thường, không thèm để ý
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 孕育
+- Pinyin: yùnyù
+- Nghĩa: ấp ủ, thai nghén (ý tưởng, sự việc)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 博览会
+- Pinyin: bólǎnhuì
+- Nghĩa: hội chợ triển lãm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 耐用
+- Pinyin: nàiyòng
+- Nghĩa: bền, dùng được lâu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 魔术
+- Pinyin: móshù
+- Nghĩa: ảo thuật
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 扣
+- Pinyin: kòu
+- Nghĩa: trừ, khấu trừ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 季度
+- Pinyin: jìdù
+- Nghĩa: quý (ba tháng)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 本钱
+- Pinyin: běnqián
+- Nghĩa: vốn liếng (tiền); điều kiện làm vốn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 通货膨胀
+- Pinyin: tōnghuòpéngzhàng
+- Nghĩa: lạm phát
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 平庸
+- Pinyin: píngyōng
+- Nghĩa: tầm thường, xoàng xĩnh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 捏
+- Pinyin: niē
+- Nghĩa: nặn, bóp, kẹp (bằng ngón tay)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 环节
+- Pinyin: huánjié
+- Nghĩa: khâu, mắt xích (trong một quá trình)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 兴旺
+- Pinyin: xīngwàng
+- Nghĩa: hưng thịnh, phát đạt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 垄断
+- Pinyin: lǒngduàn
+- Nghĩa: độc quyền
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 扩充
+- Pinyin: kuòchōng
+- Nghĩa: mở rộng, bổ sung (quy mô, nội dung)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 掏
+- Pinyin: tāo
+- Nghĩa: móc, thò tay lấy (ra)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 布局
+- Pinyin: bùjú
+- Nghĩa: bố cục, sắp xếp tổng thể
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 拟定
+- Pinyin: nǐdìng
+- Nghĩa: dự thảo, đặt ra (kế hoạch)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 策略
+- Pinyin: cèlüè
+- Nghĩa: chiến lược, sách lược
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 咀嚼
+- Pinyin: jǔjué
+- Nghĩa: nhai
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 可口
+- Pinyin: kěkǒu
+- Nghĩa: ngon miệng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 物美价廉
+- Pinyin: wùměijiàlián
+- Nghĩa: vật đẹp giá rẻ, chất lượng tốt giá cả phải chăng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 风味
+- Pinyin: fēngwèi
+- Nghĩa: hương vị, phong vị đặc trưng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 吹捧
+- Pinyin: chuīpěng
+- Nghĩa: tâng bốc, ca ngợi thái quá
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 品尝
+- Pinyin: pǐncháng
+- Nghĩa: nếm thử, thưởng thức
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 踊跃
+- Pinyin: yǒngyuè
+- Nghĩa: hăng hái, sôi nổi (tham gia)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 井
+- Pinyin: jǐng
+- Nghĩa: cái giếng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 财务
+- Pinyin: cáiwù
+- Nghĩa: tài chính, kế toán
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 局部
+- Pinyin: júbù
+- Nghĩa: cục bộ, một phần
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 关照
+- Pinyin: guānzhào
+- Nghĩa: quan tâm, chiếu cố
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 观光
+- Pinyin: guānguāng
+- Nghĩa: tham quan, du lịch (ngắm cảnh)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 就近
+- Pinyin: jiùjìn
+- Nghĩa: gần đó, ngay gần
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 肖像
+- Pinyin: xiàoxiàng
+- Nghĩa: chân dung
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 纺织
+- Pinyin: fǎngzhī
+- Nghĩa: dệt (vải, sợi)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 留念
+- Pinyin: liúniàn
+- Nghĩa: lưu niệm, giữ làm kỷ niệm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 对照
+- Pinyin: duìzhào
+- Nghĩa: đối chiếu, so sánh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 齐心协力
+- Pinyin: qíxīnxiélì
+- Nghĩa: đồng tâm hiệp lực
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 专长
+- Pinyin: zhuāncháng
+- Nghĩa: sở trường, chuyên môn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 资本
+- Pinyin: zīběn
+- Nghĩa: vốn (tiền, điều kiện)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 以往
+- Pinyin: yǐwǎng
+- Nghĩa: trước đây, trước kia
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 淡季
+- Pinyin: dànjì
+- Nghĩa: mùa thấp điểm, mùa ế ẩm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 制服
+- Pinyin: zhìfú
+- Nghĩa: đồng phục
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 规格
+- Pinyin: guīgé
+- Nghĩa: quy cách, tiêu chuẩn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 递增
+- Pinyin: dìzēng
+- Nghĩa: tăng dần
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 周期
+- Pinyin: zhōuqī
+- Nghĩa: chu kỳ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 赌博
+- Pinyin: dǔbó
+- Nghĩa: cờ bạc, đánh bạc
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 空想
+- Pinyin: kōngxiǎng
+- Nghĩa: viển vông, tưởng tượng suông
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 日新月异
+- Pinyin: rìxīnyuèyì
+- Nghĩa: thay đổi từng ngày, đổi mới không ngừng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 沉闷
+- Pinyin: chénmèn
+- Nghĩa: u ám, nặng nề, ngột ngạt (tâm trạng, không khí)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 充实
+- Pinyin: chōngshí
+- Nghĩa: sung túc, đầy đủ, ý nghĩa (cuộc sống)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 交易
+- Pinyin: jiāoyì
+- Nghĩa: giao dịch, mua bán
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 任意
+- Pinyin: rènyì
+- Nghĩa: tùy ý, tự do (không giới hạn)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 乐趣
+- Pinyin: lèqù
+- Nghĩa: niềm vui, thú vui
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 设立
+- Pinyin: shèlì
+- Nghĩa: thành lập, thiết lập
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 虚荣
+- Pinyin: xūróng
+- Nghĩa: hư vinh, sĩ diện
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 珍贵
+- Pinyin: zhēnguì
+- Nghĩa: quý giá, đáng trân trọng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 合伙
+- Pinyin: héhuǒ
+- Nghĩa: hợp tác, cùng góp vốn làm ăn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 筹备
+- Pinyin: chóubèi
+- Nghĩa: chuẩn bị, trù bị
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 成员
+- Pinyin: chéngyuán
+- Nghĩa: thành viên
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 初步
+- Pinyin: chūbù
+- Nghĩa: bước đầu, sơ bộ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 合算
+- Pinyin: hésuàn
+- Nghĩa: đáng, hời (về mặt lợi ích/chi phí)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 渠道
+- Pinyin: qúdào
+- Nghĩa: kênh, con đường (thông tin, tiếp cận)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 审查
+- Pinyin: shěnchá
+- Nghĩa: thẩm tra, kiểm duyệt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 缴纳
+- Pinyin: jiǎonà
+- Nghĩa: nộp, đóng (tiền, thuế theo quy định)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 摸索
+- Pinyin: mōsuǒ
+- Nghĩa: dò dẫm, mày mò (tìm phương pháp)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 层次
+- Pinyin: céngcì
+- Nghĩa: tầng bậc, thứ tự, cấp độ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 阶层
+- Pinyin: jiēcéng
+- Nghĩa: tầng lớp (xã hội)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 政策
+- Pinyin: zhèngcè
+- Nghĩa: chính sách
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 欢乐
+- Pinyin: huānlè
+- Nghĩa: vui vẻ, hân hoan
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 上瘾
+- Pinyin: shàngyǐn
+- Nghĩa: nghiện, ghiền
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 慈善
+- Pinyin: císhàn
+- Nghĩa: từ thiện
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 股份
+- Pinyin: gǔfèn
+- Nghĩa: cổ phần
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 股东
+- Pinyin: gǔdōng
+- Nghĩa: cổ đông
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 钞票
+- Pinyin: chāopiào
+- Nghĩa: tiền giấy, tiền
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 苦尽甘来
+- Pinyin: kǔjìngānlái
+- Nghĩa: khổ tận cam lai, hết khổ đến sướng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 尴尬
+- Pinyin: gāngà
+- Nghĩa: ngượng ngùng, khó xử
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 抛弃
+- Pinyin: pāoqì
+- Nghĩa: vứt bỏ, từ bỏ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 坦白
+- Pinyin: tǎnbái
+- Nghĩa: thành thật, thẳng thắn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 急功近利
+- Pinyin: jígōngjìnlì
+- Nghĩa: nóng vội cầu lợi trước mắt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 进展
+- Pinyin: jìnzhǎn
+- Nghĩa: tiến triển
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 牢骚
+- Pinyin: láosāo
+- Nghĩa: lời than phiền, lời cằn nhằn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 迄今为止
+- Pinyin: qìjīnwéizhǐ
+- Nghĩa: cho đến nay
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 吃力
+- Pinyin: chīlì
+- Nghĩa: vất vả, tốn sức
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 家喻户晓
+- Pinyin: jiāyùhùxiǎo
+- Nghĩa: ai ai cũng biết, nổi tiếng khắp nơi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 无穷无尽
+- Pinyin: wúqióngwújìn
+- Nghĩa: vô cùng vô tận
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 罪犯
+- Pinyin: zuìfàn
+- Nghĩa: tội phạm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 盗窃
+- Pinyin: dàoqiè
+- Nghĩa: trộm cắp
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 公然
+- Pinyin: gōngrán
+- Nghĩa: công khai, ngang nhiên
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 冒充
+- Pinyin: màochōng
+- Nghĩa: giả mạo, mạo danh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 大肆
+- Pinyin: dàsì
+- Nghĩa: ra sức, tràn lan (thường chỉ việc xấu)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 诈骗
+- Pinyin: zhàpiàn
+- Nghĩa: lừa đảo
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 拘留
+- Pinyin: jūliú
+- Nghĩa: tạm giữ, câu lưu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 败坏
+- Pinyin: bàihuài
+- Nghĩa: làm tổn hại, làm hư hỏng (danh dự, phong khí)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 名誉
+- Pinyin: míngyù
+- Nghĩa: danh dự, danh tiếng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 曝光
+- Pinyin: bàoguāng
+- Nghĩa: bị phơi bày, phanh phui (trước công luận)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 引用
+- Pinyin: yǐnyòng
+- Nghĩa: trích dẫn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 截至
+- Pinyin: jiézhì
+- Nghĩa: tính đến (một mốc thời gian)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 力争
+- Pinyin: lìzhēng
+- Nghĩa: cố gắng giành lấy, nỗ lực đạt được
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 亚军
+- Pinyin: yàjūn
+- Nghĩa: á quân, hạng nhì
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 季军
+- Pinyin: jìjūn
+- Nghĩa: hạng ba
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 极限
+- Pinyin: jíxiàn
+- Nghĩa: giới hạn, cực hạn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 狭窄
+- Pinyin: xiázhǎi
+- Nghĩa: hẹp, chật hẹp
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 任性
+- Pinyin: rènxìng
+- Nghĩa: bướng bỉnh, tùy tiện
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 田径
+- Pinyin: tiánjìng
+- Nghĩa: điền kinh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 选手
+- Pinyin: xuǎnshǒu
+- Nghĩa: vận động viên, người dự thi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 同胞
+- Pinyin: tóngbāo
+- Nghĩa: đồng bào
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 直播
+- Pinyin: zhíbō
+- Nghĩa: phát trực tiếp, livestream
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 旗帜
+- Pinyin: qízhì
+- Nghĩa: cờ, ngọn cờ (biểu tượng)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 领先
+- Pinyin: lǐngxiān
+- Nghĩa: dẫn đầu, đi trước
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 分解
+- Pinyin: fēnjiě
+- Nghĩa: phân giải, chia nhỏ ra
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 公式
+- Pinyin: gōngshì
+- Nghĩa: công thức
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 精密
+- Pinyin: jīngmì
+- Nghĩa: chính xác, tinh vi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 悬殊
+- Pinyin: xuánshū
+- Nghĩa: chênh lệch rất lớn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 迷信
+- Pinyin: míxìn
+- Nghĩa: mê tín
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 舆论
+- Pinyin: yúlùn
+- Nghĩa: dư luận
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 自发
+- Pinyin: zìfā
+- Nghĩa: tự phát
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 掀起
+- Pinyin: xiānqǐ
+- Nghĩa: dấy lên, khởi lên (phong trào)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 空洞
+- Pinyin: kōngdòng
+- Nghĩa: trống rỗng, sáo rỗng
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 制约
+- Pinyin: zhìyuē
+- Nghĩa: kiềm chế, ràng buộc
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 原理
+- Pinyin: yuánlǐ
+- Nghĩa: nguyên lý
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 冷酷
+- Pinyin: lěngkù
+- Nghĩa: lạnh lùng, tàn nhẫn
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 动员
+- Pinyin: dòngyuán
+- Nghĩa: động viên, huy động
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 牵扯
+- Pinyin: qiānchě
+- Nghĩa: liên can, dính líu tới
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 胸膛
+- Pinyin: xiōngtáng
+- Nghĩa: lồng ngực
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 管辖
+- Pinyin: guǎnxiá
+- Nghĩa: quản lý, quản hạt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 故障
+- Pinyin: gùzhàng
+- Nghĩa: sự cố, trục trặc (thiết bị)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 严禁
+- Pinyin: yánjìn
+- Nghĩa: nghiêm cấm
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 猝死
+- Pinyin: cùsǐ
+- Nghĩa: đột tử
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 正规
+- Pinyin: zhèngguī
+- Nghĩa: chính quy, bài bản
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 演习
+- Pinyin: yǎnxí
+- Nghĩa: diễn tập, tập dượt
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 弹性
+- Pinyin: tánxìng
+- Nghĩa: tính linh hoạt, độ đàn hồi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 竞赛
+- Pinyin: jìngsài
+- Nghĩa: thi đấu, cuộc thi
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 优先
+- Pinyin: yōuxiān
+- Nghĩa: ưu tiên
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 选拔
+- Pinyin: xuǎnbá
+- Nghĩa: tuyển chọn, chọn lọc
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 资产
+- Pinyin: zīchǎn
+- Nghĩa: tài sản
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 得天独厚
+- Pinyin: détiāndúhòu
+- Nghĩa: có điều kiện thiên phú, ưu thế bẩm sinh
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 作风
+- Pinyin: zuòfēng
+- Nghĩa: tác phong, phong cách làm việc
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 顽强
+- Pinyin: wánqiáng
+- Nghĩa: kiên cường, ngoan cường
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 志气
+- Pinyin: zhìqì
+- Nghĩa: chí khí, ý chí phấn đấu
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 屈服
+- Pinyin: qūfú
+- Nghĩa: khuất phục, chịu thua
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 依托
+- Pinyin: yītuō
+- Nghĩa: dựa vào, nương tựa
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 装备
+- Pinyin: zhuāngbèi
+- Nghĩa: trang bị
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 战术
+- Pinyin: zhànshù
+- Nghĩa: chiến thuật
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 悬崖峭壁
+- Pinyin: xuányáqiàobì
+- Nghĩa: vách núi dựng đứng (ví khó khăn lớn)
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 涌现
+- Pinyin: yǒngxiàn
+- Nghĩa: xuất hiện hàng loạt, nổi lên
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
+## 相辅相成
+- Pinyin: xiāngfǔxiāngchéng
+- Nghĩa: hỗ trợ lẫn nhau, tương hỗ
+- Usage:
+  - Seen: 0
+  - Speaking: 0
+  - Writing: 0
+- Confidence: 0%
+- Activation: D
+- Last Studied: —
+
+---
+
 _Thêm từ mới theo format trên. Strategist promote/demote bằng cách move block sang tier file khác._
