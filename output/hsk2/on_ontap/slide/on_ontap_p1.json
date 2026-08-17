@@ -1,0 +1,322 @@
+{
+ "meta": {
+  "title": "HSK2 — Ôn tập tổng hợp (Phần 1: Ngữ pháp + Phần 2: Từ vựng)",
+  "lesson": "Ôn tập · New HSK Course 2"
+ },
+ "slides": [
+  {
+   "type": "title",
+   "title": "Ôn tập tổng hợp",
+   "subtitle": "Phần 1 · Ngữ pháp — 15 bài, New HSK Course 2",
+   "footer": "HSK2 · Ôn tập cuối khoá"
+  },
+  {
+   "type": "bullets",
+   "kicker": "目标",
+   "title": "Mục tiêu buổi ôn",
+   "bullets": [
+    "Mỗi điểm ngữ pháp: 1 dòng [ngữ pháp — mục đích — cách dùng] rồi tới bài tập kiểm tra ngay",
+    "Mỗi nhóm 1 dạng bài tập khác nhau: sắp xếp câu, điền từ, trắc nghiệm, tìm lỗi sai, dịch nhanh, đúng/sai",
+    "Một số câu bài tập lấy TRỰC TIẾP từ đề thi 官方样卷 HSK2 (đánh dấu 【官方样卷】)",
+    "Không học nội dung mới — chỉ ôn tập và luyện phản xạ"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 1/17 · Bài 1",
+   "title": "Sắp xếp thành câu đúng",
+   "instructions": "Sắp xếp các từ sau thành câu đúng:",
+   "items": [
+    "吧 — hỏi lại để xác nhận điều đã đoán — đặt cuối câu hỏi\n吧 / 学生 / 你 / 是",
+    "是…的 — nhấn mạnh thời gian/nơi/cách đã xảy ra — 是…的 kẹp quanh phần muốn nhấn mạnh\n来 / 你 / 什么时候 / 是 / 的",
+    "请/让/叫 — sai khiến/nhờ người khác làm gì — A + 请/让/叫 + B + động từ\n问题 / 老师 / 回答 / 让 / 学生"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 2/17 · Bài 2",
+   "title": "Điền từ vào chỗ trống",
+   "instructions": "Điền từ thích hợp vào chỗ trống:",
+   "items": [
+    "还是…吧 — gợi ý nghiêng về 1 phương án — 还是 + hành động + 吧\n我们 ___ 坐地铁去吧。",
+    "多 — số lẻ, hơn/mấy — số từ + 多 (+ lượng từ)\n教室里有二十 ___ 个学生。",
+    "的(định ngữ) — cụm từ bổ nghĩa cho danh từ — cụm từ + 的 + danh từ\n这些书是朋友们送 ___ 。"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 3/17 · Bài 3",
+   "title": "Trắc nghiệm chọn câu đúng",
+   "instructions": "Chọn câu ĐÚNG cho ý nghĩa cho sẵn:",
+   "items": [
+    "动词重叠 — làm thử/nhẹ nhàng, thời gian ngắn — lặp lại động từ (AA/ABAB/AAB)\n'Thử nghe nhạc một chút' — A) 我听音乐音乐  B) 我听听音乐  C) 我听了音乐音乐",
+    "'Đã giúp một tay rồi' — A) 他帮了帮忙  B) 他帮帮了忙  C) 他帮忙了帮"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 4/17 · Bài 4",
+   "title": "Tìm và sửa câu sai",
+   "instructions": "Mỗi câu sau có 1 lỗi — tìm và sửa lại:",
+   "items": [
+    "过 — đã từng làm (kinh nghiệm) — động từ + 过\n她穿过去年这件衣服一次。",
+    "因为…所以 — vì A nên B — 因为 + lý do，所以 + kết quả\n所以我生病了，因为没去上班。",
+    "的字短语(lược bỏ) — khỏi lặp lại danh từ đã nhắc — cụm từ + 的 (bỏ danh từ)\n这件衣服太贵了，还是买那件红色衣服吧。"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 5/17 · Bài 4 拓展",
+   "title": "Dịch nhanh Việt → Trung",
+   "instructions": "Dịch nhanh sang tiếng Trung, dùng 把:",
+   "items": [
+    "把字句 — đưa vật cụ thể lên trước động từ — 把 + vật + động từ + phần còn lại\nHãy treo cái áo lên đi.",
+    "Bạn đã lau sạch cái bàn chưa?"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 6/17 · Bài 5",
+   "title": "Đúng hay Sai?",
+   "instructions": "Nhận định sau ĐÚNG hay SAI?",
+   "items": [
+    "简单/复合趋向补语 — chỉ hướng di chuyển — động từ + 来/去/上/下...\n'他走进教室来了' nghĩa là anh ấy đang đi RA khỏi lớp.",
+    "都…了 — nhấn mạnh đã muộn/đến lúc — 都 + mốc thời gian + 了\n'都十点了' dùng để nhắc rằng đã muộn/đến giờ rồi."
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 7/17 · Bài 6-7",
+   "title": "Điền từ vào chỗ trống",
+   "instructions": "Điền chữ còn thiếu:",
+   "items": [
+    "状态补语 得 — nói làm như thế nào — động từ + 得 + tính từ\n他昨天睡 ___ 很晚。",
+    "她住 ___ 很远，我想送她回去。"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 8/17 · Bài 7",
+   "title": "Sắp xếp thành câu đúng",
+   "instructions": "Sắp xếp thành câu đúng:",
+   "items": [
+    "一…就… — B xảy ra ngay sau A — 一 + A，就 + B\n他 / 就 / 一 / 下课 / 回家"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 9/17 · Bài 8",
+   "title": "Điền từ vào chỗ trống",
+   "instructions": "Điền từ còn thiếu:",
+   "items": [
+    "虽然……，但是…… — tuy A nhưng B — 虽然 + A，但是 + B\n他 ___ 已经很累了，___ 还是坚持跑完了。",
+    "外边下雪了，___ 不太冷。(chỉ dùng 1 vế)"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 10/17 · Bài 9",
+   "title": "Trắc nghiệm chọn câu đúng",
+   "instructions": "Chọn câu ĐÚNG cho ý sau:",
+   "items": [
+    "动词「离」— A cách B — A + 离 + B + khoảng cách\n'Nhà anh ấy cách nhà tôi rất gần' — A) 他家离我家很近  B) 他家很近离我家  C) 离他家我家很近"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 11/17 · Bài 10",
+   "title": "Tìm và sửa câu sai",
+   "instructions": "Mỗi câu sau có 1 lỗi — tìm và sửa lại:",
+   "items": [
+    "选择问句 — nối 2 lựa chọn trong câu hỏi — A + 还是 + B\n你想喝茶还是咖啡还是？",
+    "连…都/也 — nhấn mạnh trường hợp cực đoan nhất — 连 + trường hợp cực đoan + 都/也\n他忙得连饭不都吃。"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 12/17 · Bài 11",
+   "title": "Dịch nhanh Việt → Trung",
+   "instructions": "Dịch nhanh sang tiếng Trung:",
+   "items": [
+    "着 — hành động/trạng thái đang tiếp diễn — động từ + 着\nCửa sổ đang mở.",
+    "最 — mức độ cao nhất — 最 + tính từ\nTrong nhà, bố cao nhất.",
+    "被字句 — vật bị/được tác động — vật + 被 + người + động từ\nCái bánh đã bị em trai ăn hết rồi."
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 13/17 · Bài 13",
+   "title": "Đúng hay Sai?",
+   "instructions": "Câu sau ĐÚNG hay SAI ngữ pháp?",
+   "items": [
+    "双宾语句(2) — cho ai cái gì — động từ + 给 + người nhận + vật\n'他送给我一本书' đúng ngữ pháp.",
+    "'他送我给一本书' đúng ngữ pháp."
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 14/17 · Bài 14",
+   "title": "Điền từ vào chỗ trống",
+   "instructions": "Điền chữ còn thiếu:",
+   "items": [
+    "存现句(2) — nơi chốn có ai/gì xuất hiện — nơi chốn + động từ + 着 + người/vật\n墙上挂 ___ 一张照片。",
+    "多(cảm thán) — câu cảm thán, mức độ rất cao — 多 + tính từ + 啊\n今天天气多 ___ 啊！"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 15/17 · Bài 14",
+   "title": "Trắc nghiệm chọn câu đúng",
+   "instructions": "Chọn câu ĐÚNG cho ý sau (làm nhiều hơn, KHÔNG phải cảm thán):",
+   "items": [
+    "副词「多」+ động từ — làm nhiều hơn — 多 + động từ\n'Trời lạnh rồi, hãy mặc thêm quần áo vào' — A) 天冷了，多穿点衣服！  B) 天冷了，穿多点衣服！  C) 天冷了，衣服多穿点！"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 16/17 · Bài 14 拓展",
+   "title": "Sắp xếp thành câu đúng",
+   "instructions": "Sắp xếp thành câu đúng:",
+   "items": [
+    "已经…没…了 — đã lâu không làm gì — 已经 + thời gian + 没 + động từ + 了\n了 / 我 / 两 / 年 / 没 / 已经 / 回国",
+    "我们 / 上 / 了 / 爱 / 中文课"
+   ]
+  },
+  {
+   "type": "exercise",
+   "kicker": "练习 17/17 · Bài 15",
+   "title": "Trắc nghiệm chọn câu đúng",
+   "instructions": "Chọn câu ĐÚNG cho ý sau:",
+   "items": [
+    "有字句(2) — đạt tới mức độ nào đó — 有 + số lượng\n'Đã nửa năm rồi không gặp' — A) 我们有半年没见了  B) 我们没半年有见了  C) 我们半年有没见了"
+   ]
+  },
+  {
+   "type": "table",
+   "kicker": "语法总结 · 补语",
+   "title": "Bảng hệ thống — 6 loại bổ ngữ đã học",
+   "headers": [
+    "Loại bổ ngữ",
+    "Cấu trúc",
+    "Ví dụ",
+    "Bài"
+   ],
+   "cjk_cols": [
+    1,
+    2
+   ],
+   "rows": [
+    [
+     "结果补语 (kết quả)",
+     "V + bổ ngữ kết quả (完/好/到...)",
+     "作业做完了。",
+     "Bài 3"
+    ],
+    [
+     "简单趋向补语 (xu hướng đơn)",
+     "V + 来/去/上/下/进/出...",
+     "快进来吧。",
+     "Bài 5"
+    ],
+    [
+     "复合趋向补语 (xu hướng kép)",
+     "V + xu hướng đơn + 来/去",
+     "他跑过去了。",
+     "Bài 5"
+    ],
+    [
+     "状态补语 得 (trạng thái)",
+     "V + 得 + tính từ",
+     "他昨天睡得很晚。【官方样卷】",
+     "Bài 6-7"
+    ],
+    [
+     "时量补语 (thời lượng)",
+     "V + (了) + khoảng thời gian",
+     "他在公司工作了两个月。【官方样卷】",
+     "Bài 9"
+    ],
+    [
+     "动量补语 (số lần)",
+     "V + 数词 + 次",
+     "这药一天吃三次。【官方样卷】",
+     "Bài 15"
+    ]
+   ],
+   "footer_note": "Cả 6 loại đều đứng SAU động từ chính — phân biệt bằng Ý NGHĨA, không phải vị trí. 【官方样卷】= câu trích từ HSK(二级)样卷 chính thức.",
+   "audio": "assets/audio/slide20.mp3"
+  },
+  {
+   "type": "table",
+   "kicker": "语法总结 · 比较句",
+   "title": "Bảng hệ thống — 比较句 đầy đủ (1)-(8)",
+   "headers": [
+    "#",
+    "Cấu trúc",
+    "Ví dụ",
+    "Bài"
+   ],
+   "cjk_cols": [
+    1,
+    2
+   ],
+   "rows": [
+    [
+     "(1) Cơ bản",
+     "A + 比 + B + tính từ",
+     "（身体）比昨天好。【官方样卷】",
+     "Bài 8"
+    ],
+    [
+     "(2) Chênh nhẹ",
+     "A + 比 + B + tính từ + 一点儿/一些",
+     "这个比那个便宜一点儿。",
+     "Bài 8"
+    ],
+    [
+     "(3) Phủ định",
+     "A + 没有 + B + (这么/那么) + tính từ",
+     "弟弟没有哥哥高。",
+     "Bài 8-9"
+    ],
+    [
+     "(4) Chênh lớn",
+     "A + 比 + B + tính từ + 多了/得多",
+     "这儿比那儿安静多了。",
+     "Bài 12"
+    ],
+    [
+     "(5) Có bổ ngữ trạng thái",
+     "比 đặt trước HOẶC sau động từ đều được",
+     "他比我起得早。",
+     "Bài 12"
+    ],
+    [
+     "(6) Vừa tân ngữ vừa bổ ngữ",
+     "Đảo tân ngữ lên đầu, hoặc LẶP động từ",
+     "他汉字写得比我好。",
+     "Bài 12"
+    ],
+    [
+     "(7) Chênh cụ thể",
+     "A + 比 + B + tính từ + số lượng",
+     "今年比去年冷五度。",
+     "Bài 13"
+    ],
+    [
+     "(8) Chênh nhẹ (nhắc lại)",
+     "A + 比 + B + tính từ + 一点儿/一些",
+     "哥哥比我瘦一些。",
+     "Bài 13"
+    ]
+   ],
+   "footer_note": "(2) và (8) cùng 1 cấu trúc — sách nhắc lại có chủ đích. (1) trích từ 官方样卷, còn lại tự soạn (样卷 không có ví dụ 比较句 nâng cao, ngoài phạm vi HSK2 2.0).",
+   "audio": "assets/audio/slide21.mp3"
+  },
+  {
+   "type": "section",
+   "title": "Hoàn thành ôn tập ngữ pháp!",
+   "subtitle": "Tiếp theo: Phần 2 — Ôn tập ~210 từ vựng theo chủ đề"
+  }
+ ]
+}
