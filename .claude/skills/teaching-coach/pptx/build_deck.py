@@ -426,6 +426,15 @@ class DeckBuilder:
         self._vocab_table(slide, items, tleft, top, tw, area_h)
 
     def _slide_vocab_cards(self, slide, s, items, example, top, area_h):
+        if example:
+            # Câu ví dụ + nhiều thẻ từ (>=4-5) xếp CHỒNG DỌC trong cột hẹp cố
+            # định (~2.4in) làm từ dài (vd 不好意思, 4 chữ) bị wrap/tràn
+            # (2026-08-14, phát hiện qua ảnh chụp PowerPoint thật). Chuyển
+            # hẳn sang layout HÀNG NGANG (câu ở trên, thẻ từ xếp ngang bên
+            # dưới) — có ảnh thì ảnh chiếm 1 cột dọc riêng (trái/phải), phần
+            # còn lại mới chia trên/dưới; không ảnh thì dùng trọn full width.
+            self._slide_vocab_cards_row(slide, s, items, example, top, area_h)
+            return
         # Cột trái (ảnh + ví dụ) và cột phải (thẻ từ) có bề rộng CỐ ĐỊNH
         # riêng — ví dụ dùng TRỌN bề rộng cột trái (rộng hơn hẳn bề rộng ảnh)
         # để không phải wrap nhiều dòng/tràn khung khi câu dài (2026-08-07,
@@ -508,6 +517,83 @@ class DeckBuilder:
                 p3.space_before = Pt(3)
                 self._set_run(p3.add_run(), it["vn"], 15, color="ink")
             cur_y = cur_y + card_h + gap_v
+
+    def _slide_vocab_cards_row(self, slide, s, items, example, top, area_h):
+        """Câu ví dụ phía trên, thẻ từ xếp thành 1 HÀNG NGANG bên dưới (mỗi
+        thẻ tự co theo bề rộng khả dụng/n) — thay cho cột dọc hẹp cố định
+        vốn làm từ dài (vd 不好意思) bị tràn/wrap xấu khi xếp CHỒNG nhiều từ.
+        Có `image` -> ảnh chiếm 1 cột dọc riêng (trái/phải, mặc định trái),
+        phần còn lại mới chia trên (câu)/dưới (hàng thẻ từ); không ảnh dùng
+        trọn full width."""
+        content_w = SLIDE_W - 2 * MARGIN
+        gap = Inches(0.4)
+        if s.get("image"):
+            img_w = min(Inches(4.0), int(content_w * 0.32))
+            text_w = content_w - img_w - gap
+            side = s.get("image_side", "left")
+            if side == "right":
+                text_left = MARGIN
+                img_left = MARGIN + text_w + gap
+            else:
+                img_left = MARGIN
+                text_left = MARGIN + img_w + gap
+            img_h = self._image_fit_height(s["image"], img_w, area_h)
+            img_top = top + max(0, int((area_h - img_h) / 2))
+            self._place_image(slide, s["image"], img_left, img_top, img_w, img_h)
+        else:
+            text_left = MARGIN
+            text_w = content_w
+
+        keywords = [it.get("hz", "") for it in items if it.get("hz")]
+        hz_text = example.get("hz", "")
+        natural = self._wrap_lines(hz_text, text_w, 28, cjk=True, bold=True) * self._line_h(28)
+        if example.get("py"):
+            natural += Pt(6) + self._wrap_lines(example["py"], text_w, 16) * self._line_h(16)
+        if example.get("vn"):
+            natural += Pt(4) + self._wrap_lines(example["vn"], text_w, 14) * self._line_h(14)
+        ex_h_max = int(area_h * 0.55)
+        ex_h = min(ex_h_max, int(natural) + Pt(16))
+        scale = self._fit_scale(natural, ex_h)
+
+        def sz(pt, floor):
+            return max(floor, int(pt * scale))
+
+        box, tf = self._textbox(slide, text_left, top, text_w, ex_h, anchor=MSO_ANCHOR.TOP)
+        p = tf.paragraphs[0]
+        self._set_run_highlighted(p, hz_text, keywords, sz(28, 17), color="ink",
+                                  bold=True, cjk=True)
+        if example.get("py"):
+            p2 = tf.add_paragraph(); p2.space_before = Pt(6 * scale)
+            self._set_run(p2.add_run(), example["py"], sz(16, 11), color="accent",
+                          italic=True)
+        if example.get("vn"):
+            p3 = tf.add_paragraph(); p3.space_before = Pt(4 * scale)
+            self._set_run(p3.add_run(), example["vn"], sz(14, 10), color="muted")
+
+        row_top = top + ex_h + Inches(0.3)
+        row_h = (top + area_h) - row_top
+        n = max(1, len(items))
+        card_gap = Inches(0.15) if s.get("image") else Inches(0.2)
+        card_w = int((text_w - card_gap * (n - 1)) / n)
+        cur_x = text_left
+        # Từ dài (>=4 chữ) co nhỏ hơn nữa khi cột đã hẹp lại vì có ảnh cạnh tranh.
+        base_hz_sz = 36 if s.get("image") else 40
+        for it in items:
+            box, tf = self._textbox(slide, cur_x, row_top, card_w, row_h,
+                                    anchor=MSO_ANCHOR.MIDDLE)
+            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+            hz = it.get("hz", "")
+            hz_sz = base_hz_sz if len(hz) <= 2 else (base_hz_sz - 8 if len(hz) <= 4 else base_hz_sz - 14)
+            self._set_run(p.add_run(), hz, hz_sz, color="ink", bold=True, cjk=True)
+            if it.get("py"):
+                p2 = tf.add_paragraph(); p2.alignment = PP_ALIGN.CENTER
+                p2.space_before = Pt(6)
+                self._set_run(p2.add_run(), it["py"], 15, color="accent", italic=True)
+            if it.get("vn"):
+                p3 = tf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
+                p3.space_before = Pt(3)
+                self._set_run(p3.add_run(), it["vn"], 13, color="ink")
+            cur_x = cur_x + card_w + card_gap
 
     def _image_fit_height(self, rel_path, box_w, max_h):
         """Chiều cao hiển thị THẬT của ảnh khi ép vừa bề rộng box_w (giữ tỉ lệ),
@@ -1578,6 +1664,27 @@ class DeckBuilder:
         self._band_header(slide, s.get("title", default_title), s.get("kicker"))
         top = self._content_top()
         area_h = self._content_area_h() - self._footer_reserved_h(s)
+        word_bank = s.get("word_bank")
+        if word_bank:
+            # Dải "ngân hàng từ" (汉字+pinyin, đã xáo trộn ngoài JSON) ngay
+            # dưới header — bắt buộc cho slide đục lỗ (exercise) không có
+            # slide vocab nào đứng trước nó, nếu không học viên không biết
+            # 5 từ mục tiêu là từ nào để điền (2026-08-14, user hỏi "từ cần
+            # điền đâu?" khi xem slide chỉ toàn dấu ___ trơn không kèm gợi ý
+            # đây là 5 từ nào).
+            wb_h = Inches(0.62)
+            box, tf = self._textbox(slide, MARGIN, top, SLIDE_W - 2 * MARGIN, wb_h,
+                                    anchor=MSO_ANCHOR.MIDDLE)
+            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+            self._set_run(p.add_run(), "Từ cần dùng:  ", 15, color="accent", bold=True)
+            for i, w in enumerate(word_bank):
+                if i:
+                    self._set_run(p.add_run(), "   ·   ", 15, color="muted")
+                self._set_run(p.add_run(), w.get("hz", ""), 19, color="ink", bold=True, cjk=True)
+                if w.get("py"):
+                    self._set_run(p.add_run(), " (%s)" % w["py"], 14, color="accent", italic=True)
+            top = top + wb_h
+            area_h = area_h - wb_h
         has_img = bool(s.get("image"))
         txt_left, txt_w, img_left, img_w = self._split_image_col(s, Inches(4.6))
         instructions = s.get("instructions")

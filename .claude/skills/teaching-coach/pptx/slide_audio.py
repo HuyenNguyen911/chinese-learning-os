@@ -84,7 +84,13 @@ def read_text(s):
     pinyin tự động bị bỏ qua vì không match), word_groups (items[].hz),
     stroke_group (chars[].hanzi)."""
     t = s.get("type")
-    if t == "vocab":
+    if s.get("audio_text"):
+        # Override tường minh: dùng khi kiểu render không có field cố định để
+        # tự trích (vd slide `exercise` đục lỗ — câu hiển thị có `[___]` che
+        # từ mục tiêu nên không đọc được trực tiếp; audio_text giữ câu GỐC
+        # chưa che để vẫn nghe được, học viên coi như 1 dạng nghe kiểm tra).
+        xs = [s["audio_text"]]
+    elif t == "vocab":
         xs = [it.get("hz", "") for it in s.get("items", [])]
         ex = s.get("example")
         if ex:

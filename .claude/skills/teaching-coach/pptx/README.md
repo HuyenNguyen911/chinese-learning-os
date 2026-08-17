@@ -93,9 +93,9 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` (+ `image?`, `image_side?`) | Khung hội thoại (bong bóng chat 2 phía, hoặc swimlane 1-cột/người nếu >2 speaker) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau. Có `image` → ảnh ngữ cảnh 1 bên, khung thoại co vào bên còn lại (giúp liên tưởng bối cảnh thay vì chỉ thấy chữ nổi) |
 | `passage` | `title`, `sentences[]` = `{hz, py, vn}` (+ `note?`, `image?`, `image_side?`) | Đoạn văn tự sự/kể chuyện (课文 thể 叙述体, câu nối tiếp câu — KHÔNG phải hội thoại qua lại) — mỗi câu 1 khối, không dùng bong bóng thoại |
 | `reading` | `groups[]` = `{label, items[]}` | Nguồn đọc thêm (nhóm "trong sách" / "nguồn ngoài") |
-| `exercise` | `instructions?`, `items[]` (+ `image?`) | Slide bài tập (đánh số) |
-| `answers` | `items[]` | Slide đáp án (đánh số) |
-| `bullets` | `bullets[]` (+ `image?`) | Gạch đầu dòng thường |
+| `exercise` | `instructions?`, `items[]` (+ `image?`, `word_bank?`) | Slide bài tập (đánh số) |
+| `answers` | `items[]` (+ `word_bank?`) | Slide đáp án (đánh số) |
+| `bullets` | `bullets[]` (+ `image?`, `word_bank?`) | Gạch đầu dòng thường |
 
 **`exercise`/`answers`/`bullets` — item 2 dòng "nhãn\ncâu" (2026-08-13):** mỗi phần tử
 trong `items[]`/`bullets[]` có thể là 1 chuỗi chứa `\n` — dòng ĐẦU (trước `\n`) render
@@ -115,6 +115,7 @@ Ghi chú:
 - **`dialogue`**: speaker xuất hiện **đầu tiên** căn trái, các speaker khác căn phải.
 - **`table.cjk_cols`**: mảng chỉ số cột (0-based) dùng font CJK. Mặc định (khi bỏ trống/KHÔNG có field): cột 0 là nhãn tiếng Việt, các cột còn lại là CJK. ⚠️ `cjk_cols: []` (mảng RỖNG) khác với bỏ hẳn field — `[]` ép TOÀN BỘ cột về non-CJK, kể cả cột chứa câu Hán thuần. Hậu quả: renderer ước lượng độ rộng chữ theo font Latin (hẹp hơn CJK) → tính thiếu số dòng cần wrap → chữ tràn ô ("rớt dòng"). Bảng có cột chứa câu/từ tiếng Trung PHẢI khai đúng index cột đó vào `cjk_cols` (vd `[0, 1]`), không để `[]` nếu có cột CJK.
 - **`image`**: đường dẫn ảnh **tương đối theo thư mục chứa file JSON**. Thiếu file → renderer vẽ khung xám placeholder (không lỗi). Cần `Pillow` để giữ đúng tỉ lệ ảnh (đã có sẵn). Hỗ trợ ở `title/vocab/grammar/dialogue/bullets/exercise/table/image` (không có ở `reading`).
+- **`word_bank`** (`exercise`/`answers`/`bullets`, 2026-08-14): mảng `{hz, py}` render thành 1 dải "Từ cần dùng: ..." full-width ngay dưới header, TRƯỚC nội dung chính. Dùng cho bài tập đục lỗ (`[___]`) không có slide `vocab`/`wordcard` nào đứng ngay trước để giới thiệu từ — nếu không học viên không biết chính xác 5 (hay N) từ mục tiêu cần điền là từ nào (từng bị hỏi "từ cần điền đâu?" khi thiếu). Nên xáo trộn thứ tự `word_bank` so với thứ tự xuất hiện trong câu (ở tầng soạn JSON) để vẫn cần suy luận theo nghĩa, không chỉ điền theo thứ tự.
 - **`footer_note`** (mọi type): 1 dòng chú thích nhỏ ở đáy slide (vd đối chiếu
   giáo trình khác) — thay cho việc phải làm 1 slide `bullets` đứng riêng.
 - **`tip`** (`bullets`/`exercise`/`answers`/`grammar`): mẹo ghi nhớ, LUÔN render
@@ -213,8 +214,15 @@ slide (title + mọi item/ví dụ) rồi hỏi thẳng mới được sinh audi
 - `--rate=...` (CLI) override cho CẢ HAI loại cùng lúc nếu cần đồng nhất (vd
   buổi ngữ âm nhập môn muốn chậm hơn hẳn, `--rate=-30%`).
 
-Text được đọc tự trích theo `type` của slide — không cần field `audio_text`
-riêng:
+Text được đọc tự trích theo `type` của slide. **Trừ khi slide có field
+`audio_text`** (chuỗi tuỳ ý) — khi đó đọc ĐÚNG chuỗi này, bỏ qua mọi rule theo
+`type` bên dưới. Dùng cho slide mà nội dung hiển thị không tự trích được câu
+để đọc, điển hình nhất là `exercise` đục lỗ (`[___]` không phải chữ Hán nên
+không tự trích ra được câu liền mạch) — gắn `audio_text` = câu GỐC chưa che,
+để vẫn có audio đọc câu đầy đủ (học viên coi như 1 dạng nghe kiểm tra sau khi
+điền, không nghe không sao vì phần nhìn vẫn đục lỗ bình thường).
+
+Không có `audio_text` → trích theo `type`:
 - `vocab` → `hz` của từng `items[]`; nếu có `example` cấp SLIDE (chế độ THẺ,
   xem mục audio) → đọc thêm `hz` của câu ví dụ đó sau cùng
 - `wordcard` → `hz` của từ + `hz` của từng `examples[]`
@@ -240,6 +248,41 @@ riêng:
 > log) nếu không thêm dấu. Buổi ngữ âm chưa dạy thanh điệu thì mặc định gắn
 > dấu thanh 1 (ngang cao) cho toàn bộ — vừa nhất quán "ưu tiên thanh 1 khi
 > chưa học thanh điệu", vừa để audio đọc được.
+
+> ⚠️ **Tự sinh pinyin hàng loạt cho câu văn tự soạn (không phải từ đơn) bằng
+> `pypinyin` hay sai đa âm tự mặc định (2026-08-14, phát hiện khi soạn ~38 câu
+> ví dụ ôn tập HSK2 Phần 2)** — `pypinyin.pinyin(..., heteronym=False)` chọn âm
+> theo từ điển nội bộ, không hiểu ngữ pháp câu, nên các trợ từ/động từ đa âm
+> sau hay bị đọc SAI nếu không ép tay theo từng vị trí xuất hiện:
+> - **得** — LUÔN là "de" (nhẹ) trong mọi câu ở buổi này (bổ ngữ trình độ
+>   V+得+tính từ, hoặc các cụm cố định 记得/懂得/舍得/值得): pypinyin hay trả về
+>   "dé" (nặng, nghĩa "đạt được" như 得到/得意) — ép "de" TOÀN CỤC an toàn trừ
+>   khi câu thật sự dùng nghĩa "đạt được".
+> - **着** — LUÔN "zhe" (trợ từ tiếp diễn V+着) trong ngữ cảnh thông thường —
+>   ép TOÀN CỤC an toàn.
+> - **地** — CHỈ "de" khi làm trạng ngữ (tính từ/động từ + 地 + động từ, vd
+>   "高兴地画"); còn lại (vd 地方/地址 — "nơi chốn/địa chỉ") giữ nguyên "dì" mặc
+>   định của pypinyin. KHÔNG được ép toàn cục — phải chỉ định đúng VỊ TRÍ xuất
+>   hiện (0-based occurrence index trong câu) cần ép, còn lại giữ mặc định.
+> - **过** — "guo" (nhẹ, trợ từ kinh nghiệm "đã từng", vd "来过") khác "guò"
+>   (nặng, động từ "đi qua/trải qua", vd "过去", "过得非常美好") — phải ép theo
+>   từng vị trí xuất hiện cụ thể, không ép toàn cục.
+> - **长** — "cháng" (dài, thời lượng/độ dài) khác "zhǎng" (lớn lên/đứng đầu) —
+>   pypinyin hay mặc định nhầm sang "zhǎng"; câu chỉ nói về ĐỘ DÀI/THỜI GIAN
+>   thì ép "cháng" theo vị trí xuất hiện.
+> - **教** — "jiāo" (động từ "dạy", vd "教我们") khác "jiào" (danh từ/cụm cố
+>   định như 教室/教育) — pypinyin hay mặc định "jiào"; câu dùng làm ĐỘNG TỪ
+>   thì ép "jiāo" theo vị trí xuất hiện.
+>
+> Cách làm an toàn: viết wrapper quanh `pypinyin.pinyin()` trả về list 1-1
+> theo từng KÝ TỰ (không phải theo từ), ép cứng 得/着 toàn cục, và nhận thêm
+> tham số override dạng `{group_index: (vị_trí_xuất_hiện_0_based, ...)}` cho
+> 地/过/长/教 (và bất kỳ đa âm tự nào khác gặp phải) để chỉ ép đúng lần xuất
+> hiện cần thiết, không đụng các lần khác cùng ký tự trong cùng câu. ⚠️ Coi
+> chừng dấu câu ghép nhiều ký tự (vd "——" 2 dấu gạch ngang liền) — pypinyin có
+> thể gộp thành 1 token duy nhất, làm lệch alignment ký tự↔token cho MỌI ký tự
+> phía sau trong câu đó; luôn `assert len(tokens) == len(text)` để bắt lỗi này
+> sớm, hoặc tránh hẳn các dấu câu ghép khi soạn câu ví dụ.
 
 > ⚠️ **Sắp lại thứ tự slide sau khi đã sinh audio:** `slide_audio.py` đặt tên file audio
 > theo VỊ TRÍ slide tại thời điểm chạy (`slideNN.mp3`), không theo nội dung/hash. Nếu sau
@@ -312,6 +355,19 @@ bỏ ảnh cho buổi đó (vd buổi quá dày chữ, muốn gọn).
   `table` dùng để so sánh nhiều quy tắc (vd 时量补语 "Tân ngữ đứng ở đâu") chưa hỗ trợ
   tô đỏ từ khoá trong cột Ví dụ. Cân nhắc mở rộng `_set_run_highlighted` sang
   `_fill_cell`/`_slide_table` ở phiên sau.
+- ✅ **`vocab` chế độ thẻ — cột từ dọc hẹp cố định tràn/wrap khi ≥4-5 thẻ từ
+  dài — đã sửa (2026-08-14, ôn tập HSK2 Phần 2):** `_slide_vocab_cards` (nhánh
+  có `example` cấp slide) từng LUÔN xếp thẻ từ CHỒNG DỌC trong 1 cột hẹp cố
+  định (~19% content width khi không ảnh, ~32% khi có ảnh) — với từ 4 chữ (vd
+  不好意思) và ≥4-5 thẻ/slide, cột hẹp này làm chữ wrap 2 dòng rồi tràn khỏi
+  khung (thấy rõ khi mở bằng PowerPoint thật, khác preview trong 1 số app xem
+  nhanh). Đã sửa: thêm `_slide_vocab_cards_row` — câu ví dụ full-width (hoặc
+  chia sẻ với cột ảnh nếu có `image`) ở TRÊN, thẻ từ xếp thành 1 HÀNG NGANG
+  ngay dưới (mỗi thẻ tự co theo bề rộng khả dụng/số từ, cỡ chữ 汉字 tự giảm
+  theo độ dài từ: ≤2 chữ giữ cỡ gốc, 3-4 chữ giảm nhẹ, ≥5 chữ giảm thêm). Áp
+  dụng cho MỌI slide `vocab` có `example`, kể cả khi có `image` (ảnh chiếm 1
+  cột dọc riêng trái/phải qua `image_side`, phần còn lại mới chia trên/dưới
+  như thường).
 
 ⚠️ **Query ngắn mới ra kết quả:** `search()` lọc `license_type=commercial&orientation=wide`
 — query TIẾNG ANH dài (>3 từ, vd `"world flags icon simple"`) hay ra **0 kết quả** dù chủ đề
