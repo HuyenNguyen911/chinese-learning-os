@@ -116,8 +116,24 @@ Ghi chú:
 - **`table.cjk_cols`**: mảng chỉ số cột (0-based) dùng font CJK. Mặc định (khi bỏ trống/KHÔNG có field): cột 0 là nhãn tiếng Việt, các cột còn lại là CJK. ⚠️ `cjk_cols: []` (mảng RỖNG) khác với bỏ hẳn field — `[]` ép TOÀN BỘ cột về non-CJK, kể cả cột chứa câu Hán thuần. Hậu quả: renderer ước lượng độ rộng chữ theo font Latin (hẹp hơn CJK) → tính thiếu số dòng cần wrap → chữ tràn ô ("rớt dòng"). Bảng có cột chứa câu/từ tiếng Trung PHẢI khai đúng index cột đó vào `cjk_cols` (vd `[0, 1]`), không để `[]` nếu có cột CJK.
 - **`image`**: đường dẫn ảnh **tương đối theo thư mục chứa file JSON**. Thiếu file → renderer vẽ khung xám placeholder (không lỗi). Cần `Pillow` để giữ đúng tỉ lệ ảnh (đã có sẵn). Hỗ trợ ở `title/vocab/grammar/dialogue/bullets/exercise/table/image` (không có ở `reading`).
 - **`word_bank`** (`exercise`/`answers`/`bullets`, 2026-08-14): mảng `{hz, py}` render thành 1 dải "Từ cần dùng: ..." full-width ngay dưới header, TRƯỚC nội dung chính. Dùng cho bài tập đục lỗ (`[___]`) không có slide `vocab`/`wordcard` nào đứng ngay trước để giới thiệu từ — nếu không học viên không biết chính xác 5 (hay N) từ mục tiêu cần điền là từ nào (từng bị hỏi "từ cần điền đâu?" khi thiếu). Nên xáo trộn thứ tự `word_bank` so với thứ tự xuất hiện trong câu (ở tầng soạn JSON) để vẫn cần suy luận theo nghĩa, không chỉ điền theo thứ tự.
-- **`footer_note`** (mọi type): 1 dòng chú thích nhỏ ở đáy slide (vd đối chiếu
-  giáo trình khác) — thay cho việc phải làm 1 slide `bullets` đứng riêng.
+- **`footer_note`** (mọi type): chú thích nhỏ ở đáy slide (vd đối chiếu giáo
+  trình khác, hoặc mẹo chiết tự từ vựng — xem dưới) — thay cho việc phải làm 1
+  slide `bullets` đứng riêng. Nhận **string** (1 dòng, layout gốc) hoặc **list
+  string** (2026-08-19: nhiều dòng, mỗi phần tử 1 dòng riêng — dùng khi 1 slide
+  có nhiều từ cần mẹo riêng, vd `word_pair`/`vocab` 2 từ/slide). Renderer tự
+  giãn chiều cao dải footer theo số dòng thực tế (không cần tính tay) — nhưng
+  với `vocab`/`word_pair` (2 loại duy nhất có thể có >1 từ/slide), nơi gọi PHẢI
+  cộng thêm `self._footer_lines_extra(s)` vào `_content_area_h()` để trừ đúng
+  chỗ, nếu không nội dung chính sẽ tràn xuống đè lên dải footer nhiều dòng.
+  **Mẹo chiết tự từ vựng (dùng `footer_note` cho mục đích này):** tra
+  `.claude/skills/vocab-study/data/hanzi.json` lấy bộ thủ + pinyin + nghĩa
+  từng phần làm nguồn — không tự bịa cách chiết tự khi không có nguồn/không
+  chắc (thà để trống còn hơn ghi sai). Tuyệt đối không dùng thuật ngữ ngôn ngữ
+  học ("mượn âm", "biểu âm", "hình thanh", "phiên thiết") — người đọc không có
+  nền Hán Việt sẽ không hiểu; nếu 1 bộ phận chỉ biểu âm (không mang nghĩa),
+  DROP hẳn khỏi lời giải thích, chỉ giữ bộ phận có nghĩa/hình ảnh thật. Với từ
+  vay mượn phiên âm nước ngoài (vd T恤, 台风) — nói thẳng đó là phiên âm, không
+  gán nghĩa giả cho chữ Hán dùng để ghi âm.
 - **`tip`** (`bullets`/`exercise`/`answers`/`grammar`): mẹo ghi nhớ, LUÔN render
   ở dải footer riêng (đáy slide, có icon 🔑) — **tách khỏi luồng nội dung
   chính**, không chèn vào cuối bullet/ví dụ như trước. Nếu slide có cả `tip`

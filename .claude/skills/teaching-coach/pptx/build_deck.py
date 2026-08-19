@@ -241,21 +241,40 @@ class DeckBuilder:
         mv.line.fill.background()
 
     def _place_footer_note(self, slide, text):
-        """Dòng chú thích nhỏ ở đáy slide (vd đối chiếu giáo trình khác) — dùng
-        chung cho MỌI loại slide qua render(), thay vì phải để riêng 1 slide
-        '对照' đứng một mình."""
-        box, tf = self._textbox(slide, MARGIN, SLIDE_H - Inches(0.42),
-                                SLIDE_W - 2 * MARGIN, Inches(0.32),
+        """Dòng chú thích nhỏ ở đáy slide (vd đối chiếu giáo trình khác, hoặc
+        mẹo chiết tự mỗi từ) — dùng chung cho MỌI loại slide qua render().
+        `text` là 1 chuỗi (1 dòng, layout cũ) hoặc list chuỗi (nhiều dòng —
+        vd word_pair/vocab 2 từ/slide, mỗi từ 1 dòng mẹo riêng); số dòng phải
+        khớp với `extra` đã cộng vào _content_area_h() ở nơi gọi, nếu không
+        nội dung chính sẽ đè lên đây."""
+        lines = text if isinstance(text, list) else [text]
+        n = len(lines)
+        line_h = Inches(0.30) if n == 1 else Inches(0.24)
+        box_h = line_h * n
+        top = SLIDE_H - Inches(0.1) - box_h
+        box, tf = self._textbox(slide, MARGIN, top, SLIDE_W - 2 * MARGIN, box_h,
                                 anchor=MSO_ANCHOR.MIDDLE)
-        p = tf.paragraphs[0]
-        self._set_run(p.add_run(), "📖 " + text, 11, color="muted", italic=True,
-                      cjk=True)
+        sz = 11 if n == 1 else 10
+        for i, t in enumerate(lines):
+            p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
+            if i > 0:
+                p.space_before = Pt(2)
+            self._set_run(p.add_run(), "📖 " + t, sz, color="muted", italic=True,
+                          cjk=True)
+
+    def _footer_lines_extra(self, s):
+        """Chiều cao THÊM (ngoài mức 1 dòng mặc định đã tính trong
+        _content_area_h) cần trừ khỏi vùng nội dung chính khi footer_note có
+        NHIỀU hơn 1 dòng (vd word_pair/vocab 2 từ/slide, mỗi từ 1 mẹo)."""
+        fn = s.get("footer_note")
+        n = len(fn) if isinstance(fn, list) else (1 if fn else 0)
+        return Inches(0.24) * max(0, n - 1)
 
     def _content_top(self):
         return getattr(self, "_band_h", BAND_H) + Inches(0.30)
 
-    def _content_area_h(self):
-        return SLIDE_H - self._content_top() - Inches(0.4)
+    def _content_area_h(self, extra=0):
+        return SLIDE_H - self._content_top() - Inches(0.4) - extra
 
     def _place_image(self, slide, rel_path, left, top, box_w, box_h):
         path = self.base / rel_path
@@ -413,7 +432,7 @@ class DeckBuilder:
         self._band_header(slide, s.get("title", "Từ vựng mới"), s.get("kicker"))
         items = s.get("items", [])
         top = self._content_top()
-        area_h = self._content_area_h()
+        area_h = self._content_area_h(self._footer_lines_extra(s))
         example = s.get("example")
         has_img = bool(s.get("image"))
 
@@ -786,7 +805,7 @@ class DeckBuilder:
         default_title = " · ".join(w.get("hz", "") for w in words) or "生词"
         self._band_header(slide, s.get("title", default_title), s.get("kicker"))
         top = self._content_top()
-        area_h = self._content_area_h()
+        area_h = self._content_area_h(self._footer_lines_extra(s))
         content_w = SLIDE_W - 2 * MARGIN
         n = max(1, len(words))
         gap = Inches(0.6)
