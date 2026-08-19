@@ -39,7 +39,8 @@
           "vn": "Cậu xem, hai cái đồng hồ này thế nào?"
         }
       ],
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": "表 = 毛(máo, lông) + 衣(yī, áo) → mặt NGOÀI của áo có lông → \"bề ngoài, mặt\" → 手表 = đồng hồ đeo tay"
     },
     {
       "type": "wordcard",
@@ -56,7 +57,8 @@
           "vn": "Hôm nay lạnh hơn hôm qua."
         }
       ],
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "比 = hai chữ 匕(bǐ, cái thìa) đặt song song → so sánh CẠNH NHAU → \"so sánh, hơn\""
     },
     {
       "type": "wordcard",
@@ -73,7 +75,8 @@
           "vn": "Tớ nhớ cậu thích xem phim tình cảm."
         }
       ],
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "记 = 讠(yán, lời nói) + 己(jǐ, bản thân) → tự mình GHI lại bằng lời → \"ghi nhớ\""
     },
     {
       "type": "wordcard",
@@ -90,7 +93,8 @@
           "vn": "Mình xem phim tình cảm đó nhé?"
         }
       ],
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "情 = 忄(xīn, trái tim) + 青(qīng, tươi xanh non trẻ) → TRÁI TIM rung động tươi trẻ → \"tình cảm\""
     },
     {
       "type": "wordcard",
@@ -107,7 +111,8 @@
           "vn": "Phim này thú vị hơn phim tình cảm kia."
         }
       ],
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": "意 = 音(yīn, âm thanh) + 心(xīn, tim) → âm thanh phát ra từ TRONG TIM → \"ý\" → 有意思 = có ý nghĩa, thú vị"
     },
     {
       "type": "wordcard",
@@ -124,7 +129,8 @@
           "vn": "Sao gọi nhiều món thế?"
         }
       ],
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "点 = 占(zhàn, chiếm) + 灬(huǒ, lửa) → NGỌN LỬA nhỏ, chấm sáng → \"điểm, chấm\" → 点(菜) = gọi món"
     },
     {
       "type": "wordcard",
@@ -141,7 +147,8 @@
           "vn": "Tuy thấy hơi mệt, tớ vẫn đi bộ về nhà."
         }
       ],
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": "虽 = 口(kǒu, miệng) + 虫(chóng, côn trùng) → tuy là côn trùng nhỏ NHƯNG vẫn kêu to → \"tuy, mặc dù\""
     },
     {
       "type": "wordcard",
@@ -158,7 +165,8 @@
           "vn": "Ngoài trời có tuyết, nhưng không lạnh lắm."
         }
       ],
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": "但 = 亻(rén, người) + 旦(dàn, mặt trời mọc = bình minh) → nghĩa gốc \"chỉ, duy nhất\", sau dùng làm từ nối \"nhưng\""
     },
     {
       "type": "wordcard",
@@ -175,7 +183,8 @@
           "vn": "Hôm nay tiêu không ít tiền nhỉ?"
         }
       ],
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": "花 = 艹(cǎo, cỏ cây) + 化(huà, biến đổi) → CỎ CÂY biến đổi nở ra → \"hoa\""
     },
     {
       "type": "wordcard",
@@ -192,7 +201,8 @@
           "vn": "Vợ cảm thấy hôm nay rất vui."
         }
       ],
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": "妻 = 十+彐(bàn tay)+女(nǚ, phụ nữ) → người PHỤ NỮ được chăm sóc trong nhà → \"vợ\""
     },
     {
       "type": "wordcard",
@@ -209,7 +219,8 @@
           "vn": "Chồng cô ấy là bác sĩ."
         }
       ],
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": "丈 = 一(một) + 又(yòu, bàn tay) → đơn vị đo bằng SẢI TAY người đàn ông → \"trượng, chồng\""
     },
     {
       "type": "wordcard",
@@ -226,7 +237,8 @@
           "vn": "Quán ăn này món ăn rất ngon."
         }
       ],
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": "馆 = 饣(shí, ăn) + 官(guān, nơi công cộng) → nơi CÔNG CỘNG phục vụ ĂN uống → \"quán ăn\""
     },
     {
       "type": "wordcard",
@@ -243,7 +255,8 @@
           "vn": "Xin lỗi, lần này là lỗi của tớ."
         }
       ],
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": "错 = 钅(jīn, kim loại) + 昔(xī, xưa cũ) → kim loại cũ kỹ, gỉ sét → \"sai\""
     },
     {
       "type": "wordcard",
@@ -260,7 +273,8 @@
           "vn": "Từ giờ ngày nào tớ cũng luyện tiếng Trung."
         }
       ],
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide16.mp3",
+      "footer_note": "后 vốn là hình một NGƯỜI đứng ra lệnh (miệng 口 ra lệnh) → \"phía sau, vua\" → 以后 = sau này"
     },
     {
       "type": "wordcard",
@@ -277,7 +291,8 @@
           "vn": "Từ giờ tớ nhất định sẽ chú ý."
         }
       ],
-      "audio": "assets/audio/slide17.mp3"
+      "audio": "assets/audio/slide17.mp3",
+      "footer_note": "注 = 氵(shuǐ, nước) + 主(zhǔ, chủ) → dồn NƯỚC vào đúng CHỖ CHỦ chốt → \"rót vào, chú ý\""
     },
     {
       "type": "wordcard",
@@ -294,7 +309,8 @@
           "vn": "Lần sau tớ nhất định sẽ nhớ."
         }
       ],
-      "audio": "assets/audio/slide18.mp3"
+      "audio": "assets/audio/slide18.mp3",
+      "footer_note": "定 = 宀(mián, mái nhà) + 疋(pǐ, bàn chân) → chân đã YÊN VỊ trong nhà, không đổi nữa → \"nhất định\""
     },
     {
       "type": "wordcard",
@@ -311,7 +327,8 @@
           "vn": "Tớ hứa với cậu, từ giờ sẽ không quên nữa."
         }
       ],
-      "audio": "assets/audio/slide19.mp3"
+      "audio": "assets/audio/slide19.mp3",
+      "footer_note": "答 = 竹(trúc) + 合(hé, khớp lại) → lời ĐÁP khớp như 2 mảnh tre ghép lại → \"đáp\" → 答应 = đồng ý"
     },
     {
       "type": "wordcard",
@@ -328,7 +345,8 @@
           "vn": "Lần này là lỗi của tớ, tớ chịu trách nhiệm."
         }
       ],
-      "audio": "assets/audio/slide20.mp3"
+      "audio": "assets/audio/slide20.mp3",
+      "footer_note": "责 = 龶 + 贝(bèi, tiền/vỏ sò xưa) → phải LO khoản NỢ tiền → \"trách nhiệm\" → 负责 = chịu trách nhiệm"
     },
     {
       "type": "dialogue",

@@ -42,7 +42,8 @@
         "vn": "Lúc Tiểu Vy ra ngoài thì mưa phùn, lúc về thì đã thành mưa rào."
       },
       "image": "assets/rain_shower.jpg",
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": ["毛 vốn là hình vẽ sợi LÔNG nhỏ mảnh (tượng hình) → mưa nhỏ như sợi LÔNG → 毛毛雨 = mưa phùn", "阵 = 阝(nơi chốn) + 车(chē, xe) → đoàn XE nối đuôi thành ĐỢT → \"trận, đợt\" → 阵雨 = mưa rào từng đợt"]
     },
     {
       "type": "vocab",
@@ -65,7 +66,8 @@
         "vn": "Bố nói, quê bố tuyết rơi to quá, mùa đông năm ngoái từng xảy ra tuyết lở."
       },
       "image": "assets/avalanche.jpg",
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": ["下 = một vạch NGẮN dưới một điểm → chỉ hướng ĐI XUỐNG → \"dưới, xuống\" → 下雪 = tuyết rơi", "雪 = 雨(yǔ, mưa) + 彐(cái chổi) → mưa được QUÉT thành từng bông → \"tuyết\""]
     },
     {
       "type": "vocab",
@@ -87,7 +89,8 @@
         "py": "Xiǎolán kàn diànshì de shíhou, zhènfēng guā de hěn dà, zhǔchírén shuō kěnéng huì yǒu lóngjuǎnfēng.",
         "vn": "Lúc Tiểu Lan xem TV, gió giật thổi rất mạnh, người dẫn chương trình nói có thể sẽ có lốc xoáy."
       },
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "龙 vốn là hình con RỒNG uốn lượn → \"rồng\" → 龙卷风 = lốc xoáy (cuốn như rồng)"
     },
     {
       "type": "vocab",
@@ -110,7 +113,8 @@
         "vn": "Mẹ đang gọi điện, ngoài trời bất chợt có sấm, còn thấy cả chớp nữa, mẹ giật cả người."
       },
       "image": "assets/lightning_storm.jpg",
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": ["雷 = 雨(yǔ, mưa) + 田(tián, ruộng) → tiếng nổ trên RUỘNG giữa cơn MƯA → \"sấm\"", "闪 = 门(cửa) + 人(người) → NGƯỜI thấp thoáng sau CỬA, lóe lên rồi mất → \"chớp, lóe\" → 闪电 = chớp sét"]
     },
     {
       "type": "vocab",
@@ -133,7 +137,8 @@
         "vn": "Tiểu Vy nói với bố, bão là thảm họa thiên nhiên thường gặp nhất ở nhà mình."
       },
       "image": "assets/typhoon.jpg",
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": ["灾 = 宀(mián, mái nhà) + 火(huǒ, lửa) → LỬA cháy ngay trong NHÀ → \"tai họa\"", "台风 vốn là từ phiên âm nước ngoài (không phải chiết tự Hán) — 台 ở đây không mang nghĩa \"đài\" thông thường"]
     },
     {
       "type": "vocab",
@@ -155,7 +160,8 @@
         "py": "Gēge shuō, nà cì dìzhèn yǐhòu, tāmen cūnzi fāshēngle shāntǐ huápō.",
         "vn": "Anh trai nói, sau lần động đất đó, làng của họ đã xảy ra sạt lở đất."
       },
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": ["震 = 雨(yǔ, mưa) + 辰(chén, buổi sớm) → rung chuyển như sấm chớp lúc TRỜI MƯA → \"rung, động đất\"", "滑 = 氵(nước) + 骨(xương) → trơn như NƯỚC làm xương TRƯỢT đi → \"trượt, trơn\""]
     },
     {
       "type": "vocab",
@@ -178,7 +184,8 @@
         "vn": "Chị gái xem trên tin tức, sau khi núi lửa phun trào, trên núi đã bốc cháy thành cháy rừng."
       },
       "image": "assets/wildfire.jpg",
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": ["爆 = 火(huǒ, lửa) + 暴(bào, dữ dội) → LỬA bùng lên dữ dội → \"nổ, bùng phát\"", "森 = ba chữ 木(cây) chồng lên nhau → rất nhiều CÂY → \"rừng rậm\""]
     },
     {
       "type": "vocab",
@@ -201,7 +208,8 @@
         "vn": "Quê Tiểu Lan xảy ra sóng thần, còn mang đến cả lũ lụt rất lớn."
       },
       "image": "assets/tsunami.jpg",
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": ["洪 = 氵(shuǐ, nước) + 共(gòng, cùng chung) → nước dâng CÙNG lúc khắp nơi → \"lũ lụt\"", "海 = 氵(nước) + 每(mỗi, sinh sôi không ngừng) → NƯỚC mênh mông sinh sôi không ngừng → \"biển\""]
     },
     {
       "type": "vocab",
@@ -219,7 +227,8 @@
         "vn": "Mẹ nói, gần đây quê mẹ hạn hán lắm, mấy tháng nay không có mưa."
       },
       "image": "assets/drought.jpg",
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": "旱 = 日(rì, mặt trời) + 干(gān, khô) → MẶT TRỜI đốt khô đất → \"hạn hán\""
     },
     {
       "type": "passage",

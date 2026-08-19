@@ -22,6 +22,7 @@
       "kicker": "生词 1/20",
       "hz": "拿", "py": "ná", "vn": "cầm, mang",
       "image": "assets/img_na.jpg",
+      "footer_note": "拿 = 合(hé, hợp lại) + 手(shǒu, tay) → hai bên HỢP LẠI, dùng TAY nắm giữ → \"cầm, lấy\"",
       "examples": [{"hz": "你把书拿过来。", "py": "Nǐ bǎ shū ná guòlái.", "vn": "Cầm sách qua đây."}]
     },
     {
@@ -29,6 +30,7 @@
       "kicker": "生词 2/20",
       "hz": "带", "py": "dài", "vn": "mang theo, dẫn theo",
       "image": "assets/img_dai.jpg",
+      "footer_note": "带 vốn là hình một DẢI THẮT LƯNG vắt qua người, có tua vải rủ xuống → \"mang theo, đai\"",
       "examples": [{"hz": "别忘了带雨伞出去。", "py": "Bié wàng le dài yǔsǎn chūqù.", "vn": "Đừng quên mang dù ra ngoài."}]
     },
     {
@@ -36,6 +38,7 @@
       "kicker": "生词 3/20",
       "hz": "搬", "py": "bān", "vn": "khiêng, dọn (đồ nặng)",
       "image": "assets/img_ban.jpg",
+      "footer_note": "搬 = 扌(shǒu, tay) → dùng TAY di chuyển đồ đạc → \"chuyển, dọn\"",
       "examples": [{"hz": "我们把桌子搬进来吧。", "py": "Wǒmen bǎ zhuōzi bān jìnlái ba.", "vn": "Mình khiêng cái bàn vào đây đi."}]
     },
     {
@@ -43,6 +46,7 @@
       "kicker": "生词 4/20",
       "hz": "寄", "py": "jì", "vn": "gửi (bưu kiện)",
       "image": "assets/img_ji.jpg",
+      "footer_note": "寄 = 宀(mián, mái nhà) → gửi đồ từ NHÀ này sang NHÀ khác → \"gửi\"",
       "examples": [{"hz": "我把礼物寄回家了。", "py": "Wǒ bǎ lǐwù jì huí jiā le.", "vn": "Tôi gửi quà về nhà rồi."}]
     },
     {
@@ -50,6 +54,7 @@
       "kicker": "生词 5/20",
       "hz": "扔", "py": "rēng", "vn": "vứt, ném",
       "image": "assets/img_reng.jpg",
+      "footer_note": "扔 = 扌(shǒu, tay) → dùng TAY quăng đồ đi → \"ném, vứt\"",
       "examples": [{"hz": "别把垃圾扔出去！", "py": "Bié bǎ lājī rēng chūqù!", "vn": "Đừng vứt rác ra ngoài!"}]
     },
     {
@@ -57,6 +62,7 @@
       "kicker": "生词 6/20",
       "hz": "摆", "py": "bǎi", "vn": "xếp, bày",
       "image": "assets/img_bai.jpg",
+      "footer_note": "摆 = 扌(shǒu, tay) → dùng TAY sắp xếp đồ vật ngay ngắn → \"bày, xếp\"",
       "examples": [{"hz": "把花摆上去。", "py": "Bǎ huā bǎi shàngqù.", "vn": "Bày hoa lên đó."}]
     },
     {
@@ -64,6 +70,7 @@
       "kicker": "生词 7/20",
       "hz": "放", "py": "fàng", "vn": "để, đặt",
       "image": "assets/img_fang.jpg",
+      "footer_note": "放 = 方(fāng, vị trí) + 攵(pū, gõ nhẹ, thúc đẩy) → thúc đồ tới đúng VỊ TRÍ rồi buông ra → \"đặt, thả\"",
       "examples": [{"hz": "请把书放回去。", "py": "Qǐng bǎ shū fàng huíqù.", "vn": "Xin để sách về lại chỗ cũ."}]
     },
     {
@@ -71,6 +78,7 @@
       "kicker": "生词 8/20",
       "hz": "挂", "py": "guà", "vn": "treo",
       "image": "assets/img_gua.jpg",
+      "footer_note": "挂 = 扌(shǒu, tay) + 圭(guī, ngọc bội xếp chồng) → dùng TAY treo vật lên như xếp CHỒNG ngọc → \"treo\"",
       "examples": [{"hz": "把画挂起来。", "py": "Bǎ huà guà qǐlái.", "vn": "Treo tranh lên."}]
     },
     {
@@ -78,6 +86,7 @@
       "kicker": "生词 9/20",
       "hz": "抬", "py": "tái", "vn": "khiêng, nâng",
       "image": "assets/img_tai.jpg",
+      "footer_note": "抬 = 扌(shǒu, tay) → dùng TAY nâng vật lên → \"khiêng, nâng\"",
       "examples": [{"hz": "大家一起把箱子抬上去。", "py": "Dàjiā yìqǐ bǎ xiāngzi tái shàngqù.", "vn": "Mọi người cùng khiêng thùng lên."}]
     },
     {
@@ -85,6 +94,7 @@
       "kicker": "生词 10/20",
       "hz": "抱", "py": "bào", "vn": "bế, ôm",
       "image": "assets/img_bao.jpg",
+      "footer_note": "抱 = 扌(shǒu, tay) + 包(bāo, bọc lại) → dùng TAY BỌC quanh ai đó → \"ôm\"",
       "examples": [{"hz": "妈妈把孩子抱起来。", "py": "Māma bǎ háizi bào qǐlái.", "vn": "Mẹ bế con lên."}]
     },
     {
@@ -92,6 +102,7 @@
       "kicker": "生词 11/20",
       "hz": "提", "py": "tí", "vn": "xách",
       "image": "assets/img_ti.jpg",
+      "footer_note": "提 = 扌(shǒu, tay) → dùng TAY xách vật đung đưa lên → \"xách, nhắc tới\"",
       "examples": [{"hz": "他提着包走进来。", "py": "Tā tízhe bāo zǒu jìnlái.", "vn": "Anh ấy xách túi đi vào."}]
     },
     {
@@ -99,6 +110,7 @@
       "kicker": "生词 12/20",
       "hz": "借", "py": "jiè", "vn": "mượn",
       "image": "assets/img_jie.jpg",
+      "footer_note": "借 = 亻(rén, người) + 昔(xī, ngày xưa) → NGƯỜI ta trao đổi đồ qua lại → \"mượn, cho mượn\"",
       "examples": [{"hz": "我想把这本书借回去看。", "py": "Wǒ xiǎng bǎ zhè běn shū jiè huíqù kàn.", "vn": "Tôi muốn mượn cuốn sách này về xem."}]
     },
     {
@@ -106,6 +118,7 @@
       "kicker": "生词 13/20",
       "hz": "还", "py": "huán", "vn": "trả lại, hoàn trả",
       "image": "assets/img_huan.jpg",
+      "footer_note": "还 = 辶(chuò, đi) → mang đồ ĐI trả lại chỗ cũ → \"trả lại\" (khác nghĩa \"vẫn\" ở 还是)",
       "examples": [{"hz": "明天把书还回来。", "py": "Míngtiān bǎ shū huán huílái.", "vn": "Ngày mai trả sách lại."}]
     },
     {
@@ -113,6 +126,7 @@
       "kicker": "生词 14/20",
       "hz": "卖", "py": "mài", "vn": "bán",
       "image": "assets/img_mai.jpg",
+      "footer_note": "卖 = 十(shí, đầy đủ) trên 买(mǎi, mua) → làm cho việc MUA hoàn tất từ phía bên kia → \"bán\"",
       "examples": [{"hz": "他把车卖出去了。", "py": "Tā bǎ chē mài chūqù le.", "vn": "Anh ấy bán xe đi rồi."}]
     },
     {
@@ -120,6 +134,7 @@
       "kicker": "生词 15/20",
       "hz": "爬", "py": "pá", "vn": "trèo, bò",
       "image": "assets/img_pa.jpg",
+      "footer_note": "爬 = 爪(zhǎo, móng vuốt/bàn tay chống) → dùng CHÂN TAY chống để di chuyển → \"bò, leo\"",
       "examples": [{"hz": "孩子爬上去了。", "py": "Háizi pá shàngqù le.", "vn": "Đứa bé trèo lên rồi."}]
     },
     {
@@ -127,6 +142,7 @@
       "kicker": "生词 16/20",
       "hz": "跳", "py": "tiào", "vn": "nhảy",
       "image": "assets/img_tiao.jpg",
+      "footer_note": "跳 = 足(zú, chân) → dùng CHÂN bật lên khỏi mặt đất → \"nhảy\"",
       "examples": [{"hz": "他跳下去了。", "py": "Tā tiào xiàqù le.", "vn": "Anh ấy nhảy xuống rồi."}]
     },
     {
@@ -134,6 +150,7 @@
       "kicker": "生词 17/20",
       "hz": "倒", "py": "dǎo", "vn": "ngã, đổ",
       "image": "assets/img_dao.jpg",
+      "footer_note": "倒 = 亻(rén, người) + 到(dào, đi tới) → NGƯỜI đi TỚI mức mất thăng bằng → \"đổ, ngã\"",
       "examples": [{"hz": "椅子倒下来了。", "py": "Yǐzi dǎo xiàlái le.", "vn": "Cái ghế đổ xuống rồi."}]
     },
     {
@@ -141,6 +158,7 @@
       "kicker": "生词 18/20",
       "hz": "退", "py": "tuì", "vn": "lùi, thoái",
       "image": "assets/img_tui.jpg",
+      "footer_note": "退 = 辶(chuò, đi) + 艮(gèn, dừng lại/cứng) → ĐI nhưng bị CẢN lại, phải LÙI → \"lùi, trả lại\"",
       "examples": [{"hz": "车慢慢地退回来了。", "py": "Chē mànmàn de tuì huílái le.", "vn": "Xe chầm chậm lùi lại."}]
     },
     {
@@ -148,6 +166,7 @@
       "kicker": "生词 19/20",
       "hz": "躲", "py": "duǒ", "vn": "tránh, trốn, ẩn",
       "image": "assets/img_duo.jpg",
+      "footer_note": "躲 = 身(shēn, thân thể) → giấu cả THÂN mình đi → \"trốn, núp\"",
       "examples": [{"hz": "他躲进去了。", "py": "Tā duǒ jìnqù le.", "vn": "Anh ấy trốn vào trong rồi."}]
     },
     {
@@ -155,6 +174,7 @@
       "kicker": "生词 20/20",
       "hz": "传", "py": "chuán", "vn": "truyền, chuyền",
       "image": "assets/img_chuan.jpg",
+      "footer_note": "传 = 亻(rén, người) → NGƯỜI này TRUYỀN lại cho người khác → \"truyền, chuyền\"",
       "examples": [{"hz": "请把手机传过来。", "py": "Qǐng bǎ shǒujī chuán guòlái.", "vn": "Xin chuyền điện thoại qua đây."}]
     },
     {

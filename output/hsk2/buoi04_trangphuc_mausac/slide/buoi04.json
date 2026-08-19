@@ -64,7 +64,8 @@
           "vn": "Bạn tự qua đó đi, tôi đợi bạn ở đây."
         }
       ],
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "过 = 辶(chuò, bộ đi, liên quan DI CHUYỂN) → \"đi qua, vượt qua\" → 过去 = đi qua, quá khứ"
     },
     {
       "type": "wordcard",
@@ -85,7 +86,8 @@
           "vn": "Bạn ăn vịt quay Bắc Kinh chưa?"
         }
       ],
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "过 dùng sau động từ (V+过) → liên tưởng: 辶(đi) LƯỚT QUA một lần rồi thôi → \"đã từng\" (kinh nghiệm)"
     },
     {
       "type": "wordcard",
@@ -107,7 +109,8 @@
           "vn": "Bên trong đông người quá, chúng ta đừng vào nữa."
         }
       ],
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "进 = 辶(chuò, đi) + 井(jǐng, giếng nước) → ĐI vòng quanh GIẾNG để tiến vào → \"tiến, vào\" → 进去 = đi vào"
     },
     {
       "type": "wordcard",
@@ -129,7 +132,8 @@
           "vn": "Cái quần này hơi dài, có thể đổi cái nhỏ hơn không?"
         }
       ],
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": "裤 = 衤(yī, quần áo) → trang phục mặc phần dưới cơ thể → \"quần\""
     },
     {
       "type": "wordcard",
@@ -151,7 +155,8 @@
           "vn": "Trung tâm thương mại này cuối tuần rất đông người."
         }
       ],
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "场 = 土(tǔ, đất) + 勿(wù, cờ phất) → khoảng ĐẤT rộng cắm CỜ để họp chợ → \"sân, chợ\" → 商场 = trung tâm mua sắm"
     },
     {
       "type": "wordcard",
@@ -173,7 +178,8 @@
           "vn": "Bạn có thể mặc thử trước, rồi quyết định mua hay không."
         }
       ],
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": "试 = 讠(yán, lời nói) + 式(shì, khuôn mẫu) → dùng LỜI theo đúng KHUÔN để kiểm tra → \"thử, thi\""
     },
     {
       "type": "wordcard",
@@ -194,7 +200,8 @@
           "vn": "Hôm nay mưa nên chúng tôi không đi công viên."
         }
       ],
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": "所 = 户(hù, cửa nhà) + 斤(jīn, cái rìu) → dùng RÌU chặt gỗ dựng NHÀ → \"nơi chốn\" → 所以 = vì vậy"
     },
     {
       "type": "wordcard",
@@ -216,7 +223,8 @@
           "vn": "Con đường đó rất dài, đi bộ qua đó mất 20 phút."
         }
       ],
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": "条 = phần dưới là 木(mù, cây) → hình một CÀNH cây dài mảnh rủ xuống → lượng từ đếm vật DÀI"
     },
     {
       "type": "wordcard",
@@ -237,7 +245,8 @@
           "vn": "Vì trời mưa nên tôi không ra ngoài."
         }
       ],
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": "因 = 囗(vây quanh) + 大(dà, người dang tay) → có NGƯỜI trong VÒNG vây làm ra chuyện → \"nguyên nhân\" → 因为 = bởi vì"
     },
     {
       "type": "section",
@@ -272,7 +281,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": ["尺 = 尸(thân người) + 乚 → đo theo CHIỀU DÀI cơ thể → \"thước, cỡ\" → 尺码 = size", "合 = 亼(gộp lại) + 口(kǒu, miệng) → NẮP đậy khớp đúng miệng bình → \"hợp, khớp\" → 合适 = vừa vặn"]
     },
     {
       "type": "word_pair",
@@ -303,7 +313,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": ["深 = 氵(shuǐ, nước) + 罙(sâu thẳm) → NƯỚC ở nơi sâu thẳm → \"sâu\" → 深色 = màu đậm", "浅 = 氵(shuǐ, nước) → nước NÔNG, không sâu → \"nhạt, cạn\" → 浅色 = màu nhạt"]
     },
     {
       "type": "word_pair",
@@ -334,7 +345,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide16.mp3",
+      "footer_note": ["折 = 扌(shǒu, tay) + 斤(jīn, cái rìu) → dùng TAY và RÌU bẻ gãy → \"gãy, giảm\" → 打折 = giảm giá", "换 = 扌(shǒu, tay) → dùng TAY đổi lấy vật khác → \"đổi\""]
     },
     {
       "type": "word_pair",
@@ -353,7 +365,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide17.mp3"
+      "audio": "assets/audio/slide17.mp3",
+      "footer_note": "试衣间 = 试(thử) + 衣(áo) + 间(phòng) → phòng để THỬ ÁO trước khi mua"
     },
     {
       "type": "section",
@@ -388,7 +401,8 @@
           "image": "assets/words/xiuxian.jpg"
         }
       ],
-      "audio": "assets/audio/slide19.mp3"
+      "audio": "assets/audio/slide19.mp3",
+      "footer_note": ["睡 = 目(mù, mắt) + phần dưới như mí mắt RỦ xuống → \"ngủ\" → 睡衣 = đồ ngủ", "休 = 亻(rén, người) + 木(mù, cây) → NGƯỜI dựa vào CÂY để nghỉ → \"nghỉ ngơi\" → 休闲 = thư giãn"]
     },
     {
       "type": "word_pair",
@@ -419,7 +433,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide20.mp3"
+      "audio": "assets/audio/slide20.mp3",
+      "footer_note": ["正 = 一(một đích) + 止(zhǐ, dừng chân) → dừng chân ĐÚNG một đích duy nhất → \"ngay thẳng, chính thức\"", "西 vốn là hình tổ CHIM lúc mặt trời lặn hướng tây → \"phương tây\" → 西装 = âu phục kiểu Tây"]
     },
     {
       "type": "word_pair",
@@ -450,7 +465,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide21.mp3"
+      "audio": "assets/audio/slide21.mp3",
+      "footer_note": ["衬 = 衤(yī, quần áo) → mảnh VẢI lót bên trong → \"áo lót, sơ mi\" → 衬衫 = áo sơ mi", "T恤 = phiên âm từ tiếng Anh \"T-shirt\" — chữ 恤 chỉ dùng để ghi lại cách ĐỌC, không liên quan nghĩa gốc \"thương xót\""]
     },
     {
       "type": "word_pair",
@@ -481,7 +497,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide22.mp3"
+      "audio": "assets/audio/slide22.mp3",
+      "footer_note": ["套 = 大(to lớn) + 镸(dài lâu) → vật TO bao trùm bên ngoài → \"bộ, áo khoác\" → 外套 = áo khoác ngoài", "配 = 酉(yǒu, rượu/bình) → pha, PHỐI đúng tỷ lệ → \"phối hợp\" → 配饰 = phụ kiện"]
     },
     {
       "type": "word_pair",
@@ -512,7 +529,8 @@
           "image": "assets/words/guoshi2.jpg"
         }
       ],
-      "audio": "assets/audio/slide23.mp3"
+      "audio": "assets/audio/slide23.mp3",
+      "footer_note": ["时 = 日(rì, mặt trời) + 寸(cùn, đo lường) → đo THỜI GIAN theo bóng mặt trời → \"thời\" → 时尚 = thời trang", "过 = 辶(chuò, đi) → đã ĐI/trôi qua → 过时 = lỗi thời (đã qua thời)"]
     },
     {
       "type": "section",
@@ -547,7 +565,8 @@
           "image": "assets/words/yongyi.jpg"
         }
       ],
-      "audio": "assets/audio/slide25.mp3"
+      "audio": "assets/audio/slide25.mp3",
+      "footer_note": ["背 = 北(běi, quay lưng) + phần thân thể → phần THÂN quay lưng lại → \"lưng, cõng\" → 背心 = áo ba lỗ", "泳 = 氵(shuǐ, nước) + 永(yǒng, dòng chảy dài) → bơi theo DÒNG nước dài → \"bơi\" → 泳衣 = đồ bơi"]
     },
     {
       "type": "word_pair",
@@ -578,7 +597,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide26.mp3"
+      "audio": "assets/audio/slide26.mp3",
+      "footer_note": ["鞋 = 革(da thuộc) → làm từ DA để đi → \"giày\" → 运动鞋 = giày thể thao", "制 = 巾(jīn, vải) + 刂(dāo, dao) → dùng DAO cắt VẢI theo khuôn → \"chế tạo, quy định\" → 制服 = đồng phục"]
     },
     {
       "type": "word_pair",
@@ -596,7 +616,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide27.mp3"
+      "audio": "assets/audio/slide27.mp3",
+      "footer_note": "内 = 冂(bao ngoài) + 人(rén, người) → NGƯỜI ở BÊN TRONG lớp bao ngoài → \"bên trong\" → 内衣 = đồ lót"
     },
     {
       "type": "section",
@@ -631,7 +652,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide29.mp3"
+      "audio": "assets/audio/slide29.mp3",
+      "footer_note": ["棉 = 木(cây) + 帛(vải lụa) → CÂY cho ra sợi dệt VẢI → \"bông, cotton\"", "牛 vốn là hình cái ĐẦU TRÂU BÒ nhìn từ trước (có 2 sừng) → \"trâu, bò\" → 牛仔 = denim, jean (vải bò)"]
     },
     {
       "type": "word_pair",
@@ -662,7 +684,8 @@
           }
         }
       ],
-      "audio": "assets/audio/slide30.mp3"
+      "audio": "assets/audio/slide30.mp3",
+      "footer_note": ["绸 = 纟(tơ lụa) → sợi TƠ dệt khắp thành tấm → \"lụa\" → 丝绸 = tơ lụa", "羊 vốn là hình cái ĐẦU CON DÊ/CỪU có sừng cong → \"dê, cừu\" → 羊毛 = len (lông cừu)"]
     },
     {
       "type": "section",
@@ -697,7 +720,8 @@
           "image": "assets/words/dute.jpg"
         }
       ],
-      "audio": "assets/audio/slide32.mp3"
+      "audio": "assets/audio/slide32.mp3",
+      "footer_note": ["典 = 曲(sách cuộn) + 八(hai tay nâng) → SÁCH quý được hai tay NÂNG giữ → \"kinh điển, sách mẫu\" → 经典 = kinh điển", "独 = 犭(quǎn, chó/thú) + 虫(chóng, một con vật) → xưa chỉ MỘT con thú ở riêng lẻ → \"đơn độc, độc đáo\""]
     },
     {
       "type": "word_pair",
@@ -728,7 +752,8 @@
           "image": "assets/words/liuxing.jpg"
         }
       ],
-      "audio": "assets/audio/slide33.mp3"
+      "audio": "assets/audio/slide33.mp3",
+      "footer_note": ["迷 = 辶(chuò, đi) → ĐI lạc, không tìm ra lối → \"mê, lạc\" → 迷人 = quyến rũ (khiến người ta mê)", "流 = 氵(nước) → chảy TRÔI lan khắp nơi → \"trôi chảy\" → 流行 = thịnh hành, lan rộng"]
     },
     {
       "type": "word_pair",
@@ -759,7 +784,8 @@
           "image": "assets/words/baida.jpg"
         }
       ],
-      "audio": "assets/audio/slide34.mp3"
+      "audio": "assets/audio/slide34.mp3",
+      "footer_note": ["品 = ba chữ 口(kǒu, miệng) chồng lên nhau → nhiều MIỆNG cùng NẾM, bàn luận → \"phẩm chất\" → 有品味 = có gu", "百 = 一(một) + 白(trắng, rõ ràng) → con số TRÒN đầy đủ → \"trăm\" → 百搭 = phối được với trăm kiểu"]
     },
     {
       "type": "dialogue",

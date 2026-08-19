@@ -37,7 +37,8 @@
           "vn": "Cậu từ Bắc Kinh về khi nào vậy?"
         }
       ],
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": "从 = hai chữ 人(rén, người) nối đuôi nhau đi theo → \"từ, theo\""
     },
     {
       "type": "wordcard",
@@ -54,7 +55,8 @@
           "vn": "Sao vừa hết tiết là cậu chạy ra ngoài vậy?"
         }
       ],
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "往 = 彳(chì, bước chân) + 王(wáng, vua) → BƯỚC theo một hướng nhất định → \"hướng về, đi tới\""
     },
     {
       "type": "wordcard",
@@ -71,7 +73,8 @@
           "vn": "Cậu chạy nhanh không?"
         }
       ],
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "跑 = 足(zú, chân) → dùng CHÂN di chuyển thật nhanh → \"chạy\""
     },
     {
       "type": "wordcard",
@@ -88,7 +91,8 @@
           "vn": "Tớ hẹn với bạn học rồi, cùng đi chơi bóng rổ."
         }
       ],
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "打 = 扌(shǒu, tay) + 丁(dīng, hình CÁI ĐINH) → tay cầm búa ĐÓNG ĐINH → \"đánh, gõ\" → 打篮球 = chơi bóng rổ"
     },
     {
       "type": "wordcard",
@@ -105,7 +109,8 @@
           "vn": "Cậu chơi bóng rổ thế nào?"
         }
       ],
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": "篮 = 竹(zhú, tre) → đồ đan bằng TRE dùng đựng đồ → \"giỏ\" → 篮球 = bóng rổ (ném bóng vào giỏ)"
     },
     {
       "type": "wordcard",
@@ -122,7 +127,8 @@
           "vn": "Sở thích của tớ là thể thao."
         }
       ],
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "运 = 辶(chuò, đi) + 云(yún, mây) → di chuyển NHẸ NHÀNG như mây trôi → \"vận động\""
     },
     {
       "type": "wordcard",
@@ -139,7 +145,8 @@
           "vn": "Cậu đá được không?"
         }
       ],
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": "踢 = 足(zú, chân) → dùng CHÂN hất mạnh ra → \"đá\""
     },
     {
       "type": "wordcard",
@@ -156,7 +163,8 @@
           "vn": "Tớ còn thích đá bóng, cứ đến Chủ nhật là tớ đi đá bóng với bạn bè."
         }
       ],
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": "足 vốn là hình bàn CHÂN (口 là đầu gối) → \"chân\" → 足球 = bóng đá (đá bằng chân)"
     },
     {
       "type": "wordcard",
@@ -173,7 +181,8 @@
           "vn": "Cứ đến Chủ nhật là đi đá bóng với bạn bè."
         }
       ],
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": "球 = 王(biến thể của 玉, ngọc) + phần bên phải hình khối tròn → NGỌC mài tròn → \"quả bóng\""
     },
     {
       "type": "wordcard",
@@ -190,7 +199,8 @@
           "vn": "Còn chạy bộ thì sao? Cậu chạy nhanh không?"
         }
       ],
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": "步 = 止(zhǐ, bàn chân) đặt chồng lên nhau → bước chân NỌ nối chân KIA → \"bước\" → 跑步 = chạy bộ"
     },
     {
       "type": "wordcard",
@@ -212,7 +222,8 @@
           "vn": "Có, nhưng tớ bơi không nhanh."
         }
       ],
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": "泳 = 氵(shuǐ, nước) + 永(yǒng, dòng chảy dài) → bơi theo DÒNG nước dài → \"bơi\""
     },
     {
       "type": "wordcard",
@@ -229,7 +240,8 @@
           "vn": "Cậu có sở thích gì?"
         }
       ],
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": "爱 = 爫(trảo, bàn tay) + 冖(mái che) + 友(bạn) → ĐEM một người BẠN vào nhà che chở → \"yêu, thích\""
     },
     {
       "type": "wordcard",
@@ -246,7 +258,8 @@
           "vn": "Từ khi vào tiểu học, ngày nào tớ cũng đi tập thể thao cùng ba."
         }
       ],
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": "开 = 一(chốt cửa) + 廾(gǒng, hai bàn tay) → hai tay NÂNG chốt cửa lên → \"mở\" → 开始 = mở đầu"
     },
     {
       "type": "wordcard",
@@ -263,7 +276,8 @@
           "vn": "Cậu ấy chơi bóng bàn rất giỏi."
         }
       ],
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide16.mp3",
+      "footer_note": "乒乓 là chữ TƯỢNG THANH mô phỏng tiếng bóng nảy \"cạch-cạch\" → 乒乓球 = bóng bàn"
     },
     {
       "type": "wordcard",
@@ -280,7 +294,8 @@
           "vn": "Cuối tuần chúng ta cùng đánh cầu lông đi."
         }
       ],
-      "audio": "assets/audio/slide17.mp3"
+      "audio": "assets/audio/slide17.mp3",
+      "footer_note": "羽 vốn là hình hai CHIẾC LÔNG VŨ → \"lông vũ\" → 羽毛球 = cầu lông (quả cầu có lông)"
     },
     {
       "type": "wordcard",
@@ -297,7 +312,8 @@
           "vn": "Cô ấy chơi tennis khá đấy."
         }
       ],
-      "audio": "assets/audio/slide18.mp3"
+      "audio": "assets/audio/slide18.mp3",
+      "footer_note": "网 vốn là hình vẽ CÁI LƯỚI (nét đan chéo như mắt lưới) → 网球 = tennis (đánh bóng qua lưới)"
     },
     {
       "type": "wordcard",
@@ -314,7 +330,8 @@
           "vn": "Tớ chơi bóng chuyền không giỏi lắm."
         }
       ],
-      "audio": "assets/audio/slide19.mp3"
+      "audio": "assets/audio/slide19.mp3",
+      "footer_note": "排 = 扌(shǒu, tay) + 非(fēi, dàn ngang 2 bên) → dùng TAY xếp thành HÀNG → 排球 = bóng chuyền"
     },
     {
       "type": "wordcard",
@@ -331,7 +348,8 @@
           "vn": "Ngày nào tớ cũng đạp xe đi học."
         }
       ],
-      "audio": "assets/audio/slide20.mp3"
+      "audio": "assets/audio/slide20.mp3",
+      "footer_note": "骑 = 马(mǎ, ngựa) → hành động NGỒI lên lưng ngựa → \"cưỡi\" → 骑自行车 = đạp xe (cưỡi xe)"
     },
     {
       "type": "wordcard",
@@ -348,7 +366,8 @@
           "vn": "Hễ có thời gian là tớ đi leo núi."
         }
       ],
-      "audio": "assets/audio/slide21.mp3"
+      "audio": "assets/audio/slide21.mp3",
+      "footer_note": "山 vốn là hình BA ĐỈNH NÚI nhấp nhô → \"núi\" → 爬山 = leo núi"
     },
     {
       "type": "grammar",

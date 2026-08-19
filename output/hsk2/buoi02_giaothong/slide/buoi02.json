@@ -42,7 +42,8 @@
           "vn": "Gần đây có trạm xe buýt không?"
         }
       ],
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": "公 = 八(bā, chia ra) + 厶(sī, riêng tư) → chia CÁI RIÊNG thành CHUNG → \"công cộng\""
     },
     {
       "type": "wordcard",
@@ -64,7 +65,8 @@
           "vn": "Trạm xe buýt ở đâu?"
         }
       ],
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "站 = 立(lì, đứng) + 占(zhàn, chiếm chỗ) → nơi xe DỪNG đứng lại chờ khách → \"trạm/bến\""
     },
     {
       "type": "wordcard",
@@ -86,7 +88,8 @@
           "vn": "Trường cách nhà mình không xa."
         }
       ],
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "远 = 辶(chuò, bộ đi, liên quan DI CHUYỂN) → phải ĐI một quãng đường dài mới tới nơi → \"xa\""
     },
     {
       "type": "wordcard",
@@ -108,7 +111,8 @@
           "vn": "Chúng ta bắt taxi đi thôi."
         }
       ],
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "打 = 扌(shǒu, tay) + 丁(dīng, hình CÁI ĐINH) → tay cầm búa ĐÓNG ĐINH → \"đánh, gõ\" → 打车 = ngoắc gọi xe"
     },
     {
       "type": "wordcard",
@@ -129,7 +133,8 @@
           "vn": "Mình rất muốn đi, nhưng không có thời gian."
         }
       ],
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": "但 = 亻(rén, người) + 旦(dàn, mặt trời mọc = bình minh) → nghĩa gốc \"chỉ, duy nhất\", sau dùng làm từ nối \"nhưng\""
     },
     {
       "type": "wordcard",
@@ -151,7 +156,8 @@
           "vn": "Thôi đừng xem phim nữa."
         }
       ],
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "还 = 辶(chuò, đi) + 不(bù, không) → đi mà chưa dứt hẳn, vẫn quay lại → \"vẫn nên...\""
     },
     {
       "type": "wordcard",
@@ -172,7 +178,8 @@
           "vn": "Đúng vậy, rạp phim cũng không nhỏ."
         }
       ],
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": "啊 = 口(kǒu, miệng, tiếng nói) + 阿(ā, đọc là \"a\") → tiếng thốt ra từ miệng đúng bằng \"a\" → trợ từ cảm thán"
     },
     {
       "type": "wordcard",
@@ -189,7 +196,8 @@
           "vn": "ĐH Bắc Kinh có hơn bốn vạn sinh viên đấy!"
         }
       ],
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": "万 vốn là hình con BỌ CẠP (tượng hình) thời giáp cốt — giản thể nay chỉ còn 3 nét, nghĩa \"vạn\" (10.000)"
     },
     {
       "type": "wordcard",
@@ -210,7 +218,8 @@
           "vn": "Trên mạng còn nói có hơn ba nghìn sinh viên nước ngoài."
         }
       ],
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": "名 = 夕(xī, đêm tối) + 口(kǒu, miệng, gọi) → tối không thấy mặt phải GỌI TÊN → \"tên\""
     },
     {
       "type": "wordcard",
@@ -232,7 +241,8 @@
           "vn": "Trên mạng nói quán ăn này khá ngon."
         }
       ],
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": "网 vốn là hình vẽ CÁI LƯỚI (nét đan chéo như mắt lưới) → 网上 = \"trên mạng\""
     },
     {
       "type": "wordcard",
@@ -249,7 +259,8 @@
           "vn": "Trên mạng còn nói ĐH Bắc Kinh có hơn ba nghìn sinh viên nước ngoài."
         }
       ],
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": "外 = 夕(xī, đêm) + 卜(bǔ, bói) → BÓI TOÁN lúc đêm khuya, chuyện xa lạ → \"bên ngoài\""
     },
     {
       "type": "wordcard",
@@ -271,7 +282,8 @@
           "vn": "Phòng này không lớn, nhưng rất sạch sẽ."
         }
       ],
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": "间 = 门(mén, cửa) + 日(rì, nắng) → ánh nắng lọt KHE cửa → \"khoảng, gian\" (đếm phòng)"
     },
     {
       "type": "wordcard",
@@ -288,7 +300,8 @@
           "vn": "Đằng kia có một phòng học, chúng ta đi xem thử đi."
         }
       ],
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": "室 = 宀(mián, mái nhà) + 至(zhì, đến/tới) → nơi người ta ĐẾN rồi Ở lại → \"phòng\""
     },
     {
       "type": "wordcard",
@@ -310,7 +323,8 @@
           "vn": "Vé phim còn chưa đến hai mươi tệ."
         }
       ],
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide16.mp3",
+      "footer_note": "票 = 覀(xī, lửa) trên 示(shì, bàn thờ) → tục ĐỐT tiền giấy cúng → về sau = \"vé, phiếu\""
     },
     {
       "type": "wordcard",
@@ -327,7 +341,8 @@
           "vn": "Thôi đừng xem phim nữa."
         }
       ],
-      "audio": "assets/audio/slide17.mp3"
+      "audio": "assets/audio/slide17.mp3",
+      "footer_note": "别 = 另(lìng, tách riêng) + 刂(dāo, dao) → dùng DAO tách RIÊNG ra → \"khác biệt\" → 别 (đừng) = tách khỏi việc đó"
     },
     {
       "type": "wordcard",
@@ -344,7 +359,8 @@
           "vn": "Khi có thời gian chúng tôi còn muốn quay lại xem phim."
         }
       ],
-      "audio": "assets/audio/slide18.mp3"
+      "audio": "assets/audio/slide18.mp3",
+      "footer_note": "过 = 辶(chuò, bộ đi, liên quan DI CHUYỂN) → \"đi qua, vượt qua\" → 过来 = đi qua đây, quay lại"
     },
     {
       "type": "section",
@@ -371,7 +387,8 @@
           "vn": "Bạn biết đi rạp phim thế nào không?"
         }
       ],
-      "audio": "assets/audio/slide31.mp3"
+      "audio": "assets/audio/slide31.mp3",
+      "footer_note": "走 = 土(tǔ, người) + 止(zhǐ, chân) → NGƯỜI bước bằng CHÂN → \"đi bộ\" → 怎么走 = đi thế nào"
     },
     {
       "type": "wordcard",
@@ -393,7 +410,8 @@
           "vn": "Bạn cứ đi thẳng, không cần rẽ."
         }
       ],
-      "audio": "assets/audio/slide32.mp3"
+      "audio": "assets/audio/slide32.mp3",
+      "footer_note": "直 = 目(mù, mắt) + 一(yī, đường thẳng) → mắt nhìn theo một đường KHÔNG lệch → \"thẳng\" → 一直走 = đi thẳng mãi"
     },
     {
       "type": "wordcard",
@@ -415,7 +433,8 @@
           "vn": "Phía trước rẽ trái là tới trường."
         }
       ],
-      "audio": "assets/audio/slide33.mp3"
+      "audio": "assets/audio/slide33.mp3",
+      "footer_note": "拐 = 扌(shǒu, tay) + 另(lìng, tách khác) → dùng TAY kéo SANG hướng khác → \"rẽ, quẹo\""
     },
     {
       "type": "wordcard",
@@ -437,7 +456,8 @@
           "vn": "Đến ngã tư thì bạn rẽ trái."
         }
       ],
-      "audio": "assets/audio/slide34.mp3"
+      "audio": "assets/audio/slide34.mp3",
+      "footer_note": "十字 = hình CHỮ THẬP (dấu +, như phép cộng) → 2 đường cắt nhau → \"ngã tư\""
     },
     {
       "type": "wordcard",
@@ -458,7 +478,8 @@
           "vn": "Chỗ đèn giao thông có một trạm xe buýt."
         }
       ],
-      "audio": "assets/audio/slide35.mp3"
+      "audio": "assets/audio/slide35.mp3",
+      "footer_note": "灯 = 火(huǒ, lửa) + 丁(dīng, hình CÂY NẾN đứng thẳng) → ngọn LỬA cháy trên đầu cây → \"đèn\" → 红绿灯 = đèn tín hiệu"
     },
     {
       "type": "wordcard",
@@ -480,7 +501,8 @@
           "vn": "Gần trường có rạp chiếu phim."
         }
       ],
-      "audio": "assets/audio/slide36.mp3"
+      "audio": "assets/audio/slide36.mp3",
+      "footer_note": "附 = 阝(fù, bộ liên quan GÒ ĐẤT/nơi chốn) → đứng sát ngay một nơi → \"phụ cận, gần đây\""
     },
     {
       "type": "dialogue",

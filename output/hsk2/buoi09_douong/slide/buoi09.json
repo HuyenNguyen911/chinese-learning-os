@@ -38,7 +38,8 @@
           "vn": "Quần của con trai hỏng rồi."
         }
       ],
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": "坏 = 土(tǔ, đất) → bức tường ĐẤT bị sụp lở, hư hại → \"hỏng, xấu\""
     },
     {
       "type": "wordcard",
@@ -55,7 +56,8 @@
           "vn": "Con vóc dáng không cao bằng cậu ấy."
         }
       ],
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "个 = 人(rén, người) + 丨(gǔn, nét đếm) → vạch để ĐẾM từng người → \"cái/con\" → 个子 = vóc dáng"
     },
     {
       "type": "wordcard",
@@ -72,7 +74,8 @@
           "vn": "Cái quần này không đắt đến thế."
         }
       ],
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "那 = \"cái đó\" + 么 (trợ từ mức độ) → cái đó tới VẬY → \"như thế, đến vậy\""
     },
     {
       "type": "wordcard",
@@ -89,7 +92,8 @@
           "vn": "Ở cửa ra vào có một tiệm trà sữa."
         }
       ],
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "门 vốn là hình vẽ HAI CÁNH CỬA (tượng hình) → \"cửa, cổng\" → 门口 = cửa ra vào"
     },
     {
       "type": "wordcard",
@@ -106,7 +110,8 @@
           "vn": "Tiệm cà phê cách đây hơi xa."
         }
       ],
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": "离 vốn là hình một loài CHIM lạ (tượng hình, quẻ Ly Kinh Dịch) — về sau chuyển hẳn sang nghĩa \"cách, rời khỏi\""
     },
     {
       "type": "wordcard",
@@ -123,7 +128,8 @@
           "vn": "Chỗ này cách nhà gần lắm."
         }
       ],
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "近 = 辶(chuò, bộ đi, liên quan DI CHUYỂN) → chỉ cần đi một QUÃNG NGẮN là tới → \"gần\""
     },
     {
       "type": "wordcard",
@@ -150,7 +156,8 @@
           "vn": "Cỡ nhỏ là đủ rồi, cảm ơn."
         }
       ],
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": "杯 = 木(mù, gỗ) → cốc uống nước xưa làm bằng GỖ → \"cốc, ly\" → 大杯 = cỡ lớn"
     },
     {
       "type": "wordcard",
@@ -187,7 +194,8 @@
           "vn": "Trời nóng, thêm đá đi (加冰 gộp chung slide này)."
         }
       ],
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": "冰 = 冫(bīng, băng giá) + 水(shuǐ, nước) → NƯỚC bị đóng thành BĂNG → \"đá, băng\" → 去冰 = bỏ đá"
     },
     {
       "type": "wordcard",
@@ -204,7 +212,8 @@
           "vn": "Nửa đường là được rồi."
         }
       ],
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": "糖 = 米(mǐ, gạo) → đường xưa được nấu, chiết xuất từ GẠO, lúa mạch → \"đường, kẹo\""
     },
     {
       "type": "wordcard",
@@ -221,7 +230,8 @@
           "vn": "Tôi không uống được đường, cho loại không đường nhé."
         }
       ],
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": "无 (giản thể của 無) vốn là hình người MÚA tay áo dài — về sau chuyển hẳn sang nghĩa \"không có\" → 无糖 = không đường"
     },
     {
       "type": "wordcard",
@@ -238,7 +248,8 @@
           "vn": "Phục vụ ơi, cho tôi xem thực đơn."
         }
       ],
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": "菜 = 艹(cǎo, cỏ cây) + 采(cǎi, hái) → HÁI rau cỏ về ăn → \"rau, món ăn\" → 菜单 = thực đơn"
     },
     {
       "type": "wordcard",
@@ -255,7 +266,8 @@
           "vn": "Mình gọi món khai vị trước đi."
         }
       ],
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": "胃 = 田(tián, túi chứa hạt) + 月(yuè, bộ chỉ cơ thể) → CƠ QUAN chứa thức ăn → \"dạ dày\" → 开胃菜 = khai vị"
     },
     {
       "type": "wordcard",
@@ -272,7 +284,8 @@
           "vn": "Món chính cậu muốn ăn gì?"
         }
       ],
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": "主 = 丶(zhǔ, ngọn lửa) + 王(wáng, hình cây đèn) → NGƯỜI giữ lửa/đèn trong nhà → \"chủ\" → 主菜 = món chính"
     },
     {
       "type": "wordcard",
@@ -289,7 +302,8 @@
           "vn": "Cuối cùng gọi món tráng miệng đi."
         }
       ],
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide16.mp3",
+      "footer_note": "甜 = 舌(shé, lưỡi) + 甘(gān, ngọt) → LƯỠI nếm vị NGỌT → \"ngọt\" → 甜点 = món tráng miệng"
     },
     {
       "type": "wordcard",
@@ -306,7 +320,8 @@
           "vn": "Món đặc sản của quán này là gì?"
         }
       ],
-      "audio": "assets/audio/slide17.mp3"
+      "audio": "assets/audio/slide17.mp3",
+      "footer_note": "特 = 牛(niú, trâu bò) → xưa chỉ CON BÒ được chọn riêng để tế lễ → nghĩa \"đặc biệt\" → 特色菜 = đặc sản"
     },
     {
       "type": "wordcard",
@@ -323,7 +338,8 @@
           "vn": "Bạn gợi ý món nào?"
         }
       ],
-      "audio": "assets/audio/slide18.mp3"
+      "audio": "assets/audio/slide18.mp3",
+      "footer_note": "推 = 扌(shǒu, tay) → dùng TAY đẩy về phía trước → \"đẩy\" → 推荐 = đẩy/giới thiệu cho người khác (gợi ý)"
     },
     {
       "type": "wordcard",
@@ -340,7 +356,8 @@
           "vn": "Bò bít-tết bạn muốn chín mức nào?"
         }
       ],
-      "audio": "assets/audio/slide19.mp3"
+      "audio": "assets/audio/slide19.mp3",
+      "footer_note": "熟 = 灬(huǒ, lửa) → nấu bằng LỬA tới khi chín kỹ → \"chín, quen\" → 几分熟 = hỏi độ chín (mấy phần chín)"
     },
     {
       "type": "wordcard",
@@ -357,7 +374,8 @@
           "vn": "Ăn không hết, gói mang về đi."
         }
       ],
-      "audio": "assets/audio/slide20.mp3"
+      "audio": "assets/audio/slide20.mp3",
+      "footer_note": "包 = 勹(bāo, bọc lại) + 巳(sì, hình đứa bé) → BỌC đứa bé lại → \"gói, bọc\" → 打包 = gói mang về"
     },
     {
       "type": "wordcard",
@@ -384,7 +402,8 @@
           "vn": "ăn ở đây (nói tắt)"
         }
       ],
-      "audio": "assets/audio/slide21.mp3"
+      "audio": "assets/audio/slide21.mp3",
+      "footer_note": "堂 = 土(tǔ, đất) → sảnh lớn xưa xây trên NỀN ĐẤT cao → \"nhà lớn, sảnh\" → 堂食 = ăn tại sảnh (dùng tại chỗ)"
     },
     {
       "type": "wordcard",
@@ -406,7 +425,8 @@
           "vn": "Có thể thêm topping không?"
         }
       ],
-      "audio": "assets/audio/slide22.mp3"
+      "audio": "assets/audio/slide22.mp3",
+      "footer_note": "加 = 力(lì, sức) + 口(kǒu, miệng, lời nói) → dùng SỨC và LỜI nói bồi thêm vào → \"thêm\" → 加料 = thêm topping"
     },
     {
       "type": "dialogue",

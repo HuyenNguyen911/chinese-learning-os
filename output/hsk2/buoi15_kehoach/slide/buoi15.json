@@ -43,6 +43,7 @@
         "vn": "Đặt vé máy bay thì họ tên nhất định phải khớp y hệt hộ chiếu, không thì tới sân bay có thể không được lên máy bay."
       },
       "audio": "assets/audio/slide03.mp3",
+      "footer_note": ["姓 = 女(nǚ, phụ nữ) + 生(shēng, sinh ra) → mang HỌ theo dòng mẹ SINH ra → \"họ\" → 姓名 = họ tên", "机 = 木(cây) + 几(bàn nhỏ) → dụng cụ bằng gỗ có chức năng → \"máy, cơ\" → 机场 = sân bay"],
       "image": "assets/checkin_counter.jpg"
     },
     {
@@ -66,6 +67,7 @@
         "vn": "Trước khi xuất ngoại du lịch, vé những điểm tham quan hot nên đặt trước trên mạng, không thì tới nơi có thể phải xếp hàng rất lâu."
       },
       "audio": "assets/audio/slide04.mp3",
+      "footer_note": ["国 = 囗(vòng biên giới) + 玉(ngọc, vua) → VUA cai trị trong một VÒNG biên giới → \"đất nước\" → 出国 = ra nước ngoài", "票 = 覀(xī, lửa) trên 示(shì, bàn thờ) → tục ĐỐT tiền giấy cúng → về sau = \"vé, phiếu\" → 门票 = vé vào cổng"],
       "image": "assets/airplane_window.jpg"
     },
     {
@@ -89,6 +91,7 @@
         "vn": "Bạn học cấp 3 của tôi làm việc ngay tại Di Hòa Viên, có thể nhờ bạn ấy giới thiệu cho em thật kỹ."
       },
       "audio": "assets/audio/slide05.mp3",
+      "footer_note": "高 vốn là hình một TÒA THÁP cao nhiều tầng → \"cao\" → 高中 = trung học phổ thông",
       "image": "assets/summer_palace.jpg"
     },
     {
@@ -112,6 +115,7 @@
         "vn": "Đi du lịch, có thêm bạn là có thêm thuận lợi."
       },
       "audio": "assets/audio/slide06.mp3",
+      "footer_note": ["门 vốn là hình vẽ HAI CÁNH CỬA → \"cửa\" → 出门 = ra khỏi cửa (ra ngoài)", "路 = 足(zú, chân) + 各(gè, mỗi, riêng lẻ) → mỗi BƯỚC CHÂN đi trên → \"đường, lối đi\""],
       "image": "assets/friends_travel.jpg"
     },
     {
@@ -135,6 +139,7 @@
         "vn": "Mua vé máy bay nên so sánh vài trang web, cùng ngày bay mà giá vé có thể chênh nhau nhiều."
       },
       "audio": "assets/audio/slide07.mp3",
+      "footer_note": "飞 vốn là hình con CHIM đang bay dang cánh → \"bay\"",
       "image": "assets/airplane_flying.jpg"
     },
     {
@@ -158,6 +163,7 @@
         "vn": "Từ mặt đất nhìn lên trời, máy bay trông giống như một con chim vậy."
       },
       "audio": "assets/audio/slide08.mp3",
+      "footer_note": "鸟 vốn là hình một con CHIM đứng, có mỏ và đuôi → \"chim\"",
       "image": "assets/bird_flying.jpg"
     },
     {
@@ -181,6 +187,7 @@
         "vn": "Trước khi xuất ngoại phải kiểm tra hộ chiếu có hết hạn không, visa nên xin trước cả tháng kẻo không kịp."
       },
       "audio": "assets/audio/slide09.mp3",
+      "footer_note": ["签 = 竹(zhú, tre) → thẻ TRE dùng để ký, đánh dấu → \"ký tên\" → 签证 = visa", "护 = 扌(tay) + 户(cửa nhà) → dùng TAY canh giữ CỬA nhà → \"bảo vệ\" → 护照 = hộ chiếu"],
       "image": "assets/passport_visa.jpg"
     },
     {
@@ -204,6 +211,7 @@
         "vn": "Chính sách miễn visa quá cảnh rất tiện, nhưng phải xem kỹ tối đa được ở bao nhiêu giờ, quá giờ có thể rắc rối."
       },
       "audio": "assets/audio/slide10.mp3",
+      "footer_note": "境 = 土(tǔ, đất) + 竟(jìng, cuối cùng, hết) → nơi ĐẤT đai kết thúc → \"biên giới\" → 过境 = quá cảnh",
       "image": "assets/airport_transit.jpg"
     },
     {
@@ -227,6 +235,7 @@
         "vn": "Giờ nhiều chuyến bay có thể check-in trước trên điện thoại, lấy thẻ lên máy bay điện tử, khỏi phải xếp hàng ở sân bay."
       },
       "audio": "assets/audio/slide11.mp3",
+      "footer_note": ["值 = 亻(rén, người) + 直(zhí, ngay thẳng) → NGƯỜI đứng thẳng đúng CA trực → \"giá trị, trực\" → 值机 = làm thủ tục bay", "登 = 癶(hai chân bước lên) + 豆(bệ) → bước CHÂN lên BỆ cao → \"lên, đăng\" → 登机牌 = thẻ lên máy bay"],
       "image": "assets/boarding_pass.jpg"
     },
     {
@@ -250,6 +259,7 @@
         "vn": "Trước khi qua an ninh nên uống hết nước, nên tới cổng ra máy bay sớm nửa tiếng kẻo lỡ giờ lên máy bay."
       },
       "audio": "assets/audio/slide12.mp3",
+      "footer_note": ["安 = 宀(mián, mái nhà) + 女(nǚ, phụ nữ) → PHỤ NỮ ở yên trong NHÀ → \"an toàn, yên ổn\" → 安检 = kiểm tra an ninh", "口 vốn là hình cái MIỆNG mở (tượng hình) → \"cửa, chỗ mở\" → 登机口 = cổng lên máy bay"],
       "image": "assets/security_check.jpg"
     },
     {
@@ -273,6 +283,7 @@
         "vn": "Lúc chuyển chuyến bay phải xem kỹ có cần nhập cảnh trước không, không thì có thể lỡ chuyến bay tiếp theo."
       },
       "audio": "assets/audio/slide13.mp3",
+      "footer_note": ["转 = 车(chē, xe) → XE chuyển hướng đi tiếp → \"chuyển, xoay\" → 转机 = chuyển chuyến bay", "入 vốn là hình MŨI TÊN nhọn cắm VÀO → \"vào\" → 入境 = nhập cảnh"],
       "image": "assets/departure_gate.jpg"
     },
     {
@@ -291,6 +302,7 @@
         "vn": "Hành lý tốt nhất đừng vượt cân quy định, không thì phải trả thêm nhiều tiền, trước khi đi nên cân thử ở nhà cho chắc."
       },
       "audio": "assets/audio/slide14.mp3",
+      "footer_note": "李 = 木(mù, cây) + 子(zǐ, quả) → cây ra quả MẬN → \"mận\"/họ Lý (行李 \"hành lý\" mượn CHỮ VIẾT này, không liên quan nghĩa quả mận)",
       "image": "assets/suitcase_luggage.jpg"
     },
     {

@@ -43,7 +43,8 @@
         "py": "Yí ge rén zài jiā kàn diànshì, duō méiyìsi a, háishi zhǎo péngyou yìqǐ tiàowǔ ba.",
         "vn": "Một mình ở nhà xem tivi thì chán biết bao, thôi rủ bạn cùng đi nhảy đi."
       },
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": "舞 vốn là hình một NGƯỜI múa hai tay cầm dải lụa → \"nhảy múa\" → 跳舞 = khiêu vũ"
     },
     {
       "type": "vocab",
@@ -60,7 +61,8 @@
         "py": "Yáng Tónglè yǒu yì shuāng dà yǎnjing, xiào qǐlái tèbié hǎokàn.",
         "vn": "Dương Đồng Nhạc có đôi mắt to, cười lên rất đẹp."
       },
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "睛 = 目(mù, mắt) + 青(qīng, trong xanh) → phần TRONG XANH của mắt → \"con ngươi\" → 眼睛 = đôi mắt"
     },
     {
       "type": "vocab",
@@ -83,7 +85,8 @@
         "py": "Wáng Yīfēi zhù de bú shì biéshù, shì yí tào xiǎo gōngyù, búguò lí xuéxiào hěn jìn.",
         "vn": "Chỗ Vương Nhất Phi ở không phải biệt thự, mà là một căn hộ nhỏ, nhưng cách trường rất gần."
       },
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": ["寓 = 宀(mián, mái nhà) → nơi ở dưới một MÁI NHÀ chung → \"căn hộ\" → 公寓 = chung cư", "别 = 另(tách riêng) + 刂(dao) → dùng DAO tách RIÊNG ra → \"khác biệt\" → 别墅 = biệt thự (nhà tách riêng)"]
     },
     {
       "type": "vocab",
@@ -105,7 +108,8 @@
         "py": "Yáng Tónglè dàxué de shíhou zhù sùshè, bìyè yǐhòu cái bān jìn yì jiān píngfáng.",
         "vn": "Hồi đại học Dương Đồng Nhạc ở ký túc xá, sau khi tốt nghiệp mới chuyển vào một căn nhà một tầng."
       },
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": ["舍 = 人(rén, người) + 舌(shé, lưỡi/nói) → nơi NGƯỜI ta ăn nói, nghỉ ngơi → \"nhà trọ\" → 宿舍 = ký túc xá", "平 vốn là hình HƠI NƯỚC tỏa đều hai bên (tượng hình) → \"bằng phẳng, đều\" → 平房 = nhà trệt"]
     },
     {
       "type": "vocab",
@@ -128,7 +132,8 @@
         "py": "Zhè tào gōngyù bú dà, zhǐ yǒu yí ge kètīng hé yí ge wòshì.",
         "vn": "Căn hộ này không lớn, chỉ có một phòng khách và một phòng ngủ."
       },
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": ["厅 = 广(guǎng, nhà rộng) → gian nhà RỘNG để tiếp khách → \"phòng khách\" → 客厅 = phòng khách", "卧 = 臣(mắt cúi xuống) + 人(người) → NGƯỜI cúi xuống nằm nghỉ → \"nằm\" → 卧室 = phòng ngủ"]
     },
     {
       "type": "vocab",
@@ -150,7 +155,8 @@
         "py": "Chúfáng hé wèishēngjiān dōu zài kètīng pángbiān, yòng qǐlái hěn fāngbiàn.",
         "vn": "Phòng bếp và phòng vệ sinh đều ở cạnh phòng khách, dùng rất tiện."
       },
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "厨 = 广(guǎng, nhà rộng) → gian nhà để NẤU ăn → \"bếp\" → 厨房 = nhà bếp"
     },
     {
       "type": "vocab",
@@ -173,7 +179,8 @@
         "py": "Yángtái shàng bǎizhe jǐ pén huā, māma měitiān dōu dǎsǎo de gāngānjìngjìng.",
         "vn": "Trên ban công bày mấy chậu hoa, mẹ ngày nào cũng quét dọn sạch sẽ."
       },
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": ["阳 = 阝(nơi chốn) + 日(rì, mặt trời) → nơi có ÁNH MẶT TRỜI chiếu vào → \"ban công, dương\" → 阳台 = ban công", "扫 = 扌(tay) + 彐(cái chổi) → dùng TAY cầm CHỔI quét → \"quét dọn\" → 打扫 = quét dọn"]
     },
     {
       "type": "vocab",
@@ -195,7 +202,8 @@
         "py": "Shōushi wán fángjiān, cā hǎo chuānghu yǐhòu, jiā li duō gānjìng a!",
         "vn": "Dọn xong phòng, lau xong cửa sổ rồi, nhà cửa sạch biết bao!"
       },
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": ["拾 = 扌(shǒu, tay) + 合(hé, gộp lại) → dùng TAY GOM nhặt đồ lại → \"thu dọn\" → 收拾 = dọn dẹp", "擦 = 扌(tay) → dùng TAY chà xát cho sạch → \"lau, chùi\" → 擦窗户 = lau cửa sổ"]
     },
     {
       "type": "vocab",
@@ -217,7 +225,8 @@
         "py": "Tā měitiān huí jiā xiān tuō dì, dào lājī, ránhòu cái zuò fàn.",
         "vn": "Ngày nào anh ấy về nhà cũng lau nhà, đổ rác trước, rồi mới nấu cơm."
       },
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": "拖 = 扌(shǒu, tay) + 也(yě, cũng) → TAY kéo lê vật đi → \"kéo lê, lau\" → 拖地 = lau nhà"
     },
     {
       "type": "vocab",
@@ -240,7 +249,8 @@
         "py": "Māma xǐ yīfu xǐ de hěn kuài, xǐ wán jiù ná dào yángtái shàng shài yīfu.",
         "vn": "Mẹ giặt đồ rất nhanh, giặt xong là mang ra ban công phơi luôn."
       },
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": ["洗 = 氵(nước) + 先(trước) → dùng NƯỚC TRƯỚC tiên để làm sạch → \"rửa, giặt\" → 洗衣服 = giặt quần áo", "晒 = 日(rì, mặt trời) → phơi dưới ánh MẶT TRỜI → \"phơi nắng\" → 晒衣服 = phơi quần áo"]
     },
     {
       "type": "vocab",
@@ -262,7 +272,8 @@
         "py": "Bàba xǐhuan pēngrèn, kěshì cónglái bù xǐ wǎn, dōu shì māma xǐ.",
         "vn": "Bố thích nấu nướng, nhưng chẳng bao giờ rửa bát, toàn mẹ rửa."
       },
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": ["烹 = 亨(hanh thông) + 灬(huǒ, lửa) → nấu bằng LỬA cho chín → \"nấu nướng\" → 烹饪 = nấu ăn", "碗 = 石(đá/gốm) + 宛(hình cong tròn) → đồ GỐM hình CONG tròn → \"bát, chén\""]
     },
     {
       "type": "vocab",
@@ -284,7 +295,8 @@
         "py": "Tāmen bānjiā de shíhou, wǒ sòng gěi tāmen jǐ pén huā, xīwàng tāmen chángcháng jiāo huā.",
         "vn": "Lúc họ chuyển nhà, tôi tặng họ mấy chậu hoa, mong họ hay tưới hoa."
       },
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": ["搬 = 扌(tay) → dùng TAY di chuyển đồ đạc → \"chuyển, dọn\" → 搬家 = chuyển nhà", "浇 = 氵(shuǐ, nước) → dùng NƯỚC tưới lên → \"tưới\" → 浇花 = tưới hoa"]
     },
     {
       "type": "vocab",
@@ -301,7 +313,8 @@
         "py": "Shuǐguǎn huài le, tā zìjǐ zài jiā xiū dōngxi, xiū le yí ge xiàwǔ.",
         "vn": "Ống nước hỏng rồi, anh ấy tự sửa đồ ở nhà, sửa mất cả buổi chiều."
       },
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": "修 = 攸(xa xôi) + 彡(shān, từng nét) → chỉnh sửa từng NÉT nhỏ cho hoàn thiện → \"sửa chữa\" → 修东西 = sửa đồ"
     },
     {
       "type": "dialogue",

@@ -41,7 +41,8 @@
           "vn": "Món ở quán này khá ngon, bạn có thể thử xem."
         }
       ],
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": "错 = 钅(jīn, kim loại) + 昔(xī, xưa cũ) → kim loại cũ kỹ, gỉ sét → \"sai\" → 不错 = không sai, khá tốt"
     },
     {
       "type": "wordcard",
@@ -62,7 +63,8 @@
           "vn": "Thời tiết đẹp thế này, chúng ta ra ngoài đi dạo đi."
         }
       ],
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "出 = 屮(chè, mầm cây) mọc ra khỏi 凵(qiǎn, cái hốc) → mầm nhô RA ngoài → \"ra\" → 出去 = đi ra ngoài"
     },
     {
       "type": "wordcard",
@@ -83,7 +85,8 @@
           "vn": "Bao giờ bạn về?"
         }
       ],
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "回 vốn là hình vòng XOÁY quay lại điểm đầu (囗 vây quanh 口) → \"quay lại\" → 回来 = quay về (hướng người nói)"
     },
     {
       "type": "wordcard",
@@ -104,7 +107,8 @@
           "vn": "Muộn rồi, chúng ta nên về thôi."
         }
       ],
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "去 = 土(tǔ, đất/nơi ở) + 厶(sī, riêng tư) → RỜI khỏi chỗ riêng của mình → \"đi, rời đi\" → 回去 = quay về (hướng người nghe)"
     },
     {
       "type": "wordcard",
@@ -126,7 +130,8 @@
           "vn": "Đi bộ cả ngày, tôi rất mệt, muốn nghỉ một chút."
         }
       ],
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": "累 = 田(tián, ruộng) + 糸(mì, dây/tơ) → RUỘNG chồng lên DÂY, gánh nặng chồng chất → \"mệt\""
     },
     {
       "type": "wordcard",
@@ -147,7 +152,8 @@
           "vn": "Mỗi sáng tôi dậy lúc 7 giờ."
         }
       ],
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "每 vốn liên quan hình 母(mǔ, người mẹ) → MỖI lần mẹ sinh nở là một lần khác nhau → \"mỗi\""
     },
     {
       "type": "wordcard",
@@ -169,7 +175,8 @@
           "vn": "Làm ơn lấy cuốn sách đó đưa cho tôi."
         }
       ],
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": "拿 = 合(hé, hợp lại) + 手(shǒu, tay) → hai bên HỢP LẠI, dùng TAY nắm giữ → \"cầm, lấy\""
     },
     {
       "type": "wordcard",
@@ -191,7 +198,8 @@
           "vn": "Hãy rửa tay sạch rồi mới ăn cơm."
         }
       ],
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": "手 vốn là hình vẽ BÀN TAY xòe các ngón → \"tay\""
     },
     {
       "type": "wordcard",
@@ -234,7 +242,8 @@
           "vn": "Bạn viết xong bài tập chưa?"
         }
       ],
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": "完 = 宀(mián, mái nhà) + 元(yuán, đầu tiên) → việc ĐẦU TIÊN trong nhà đã xong xuôi → \"hoàn thành\""
     },
     {
       "type": "wordcard",
@@ -255,7 +264,8 @@
           "vn": "Sao bạn mệt vậy?"
         }
       ],
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": "为 vốn là hình bàn tay dắt một con VOI đi làm việc → \"làm, vì\" → 为什么 = vì cái gì, tại sao"
     },
     {
       "type": "wordcard",
@@ -277,7 +287,8 @@
           "vn": "Trước khi ăn phải rửa tay."
         }
       ],
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": "洗 = 氵(shuǐ, nước) + 先(xiān, trước) → dùng NƯỚC TRƯỚC tiên để làm sạch → \"rửa\""
     },
     {
       "type": "wordcard",
@@ -298,7 +309,8 @@
           "vn": "Chúng ta cùng đi xem phim đi."
         }
       ],
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": "起 = 走(zǒu, đi/chạy) + 己(jǐ, bản thân) → TỰ MÌNH đứng dậy và bước đi → \"dậy, bắt đầu\" → 一起 = cùng nhau"
     },
     {
       "type": "wordcard",
@@ -319,7 +331,8 @@
           "vn": "Thời tiết đẹp thế này, chúng ta ra ngoài đi dạo đi."
         }
       ],
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide16.mp3",
+      "footer_note": "么 giản thể từ 幺(yāo, sợi tơ nhỏ bé) → hậu tố NHỎ NHẸ dùng hỏi mức độ → 这么 = thế này, như vậy"
     },
     {
       "type": "wordcard",
@@ -340,7 +353,8 @@
           "vn": "Việc này tôi tự mình có thể làm."
         }
       ],
-      "audio": "assets/audio/slide17.mp3"
+      "audio": "assets/audio/slide17.mp3",
+      "footer_note": "自 vốn là hình vẽ CÁI MŨI (người Hoa cổ chỉ vào mũi khi nói \"tôi\") → \"tự, bản thân\" → 自己 = tự mình"
     },
     {
       "type": "section",
@@ -366,7 +380,8 @@
           "vn": "Đi du lịch Tây An, tốt nhất nên đặt khách sạn trước."
         }
       ],
-      "audio": "assets/audio/slide19.mp3"
+      "audio": "assets/audio/slide19.mp3",
+      "footer_note": "订 = 讠(yán, lời nói) + 丁(dīng, hình CÁI ĐINH) → dùng LỜI nói ĐÓNG CHẶT một thỏa thuận → \"đặt, hẹn trước\""
     },
     {
       "type": "wordcard",
@@ -388,7 +403,8 @@
           "vn": "Phòng này rất sạch."
         }
       ],
-      "audio": "assets/audio/slide20.mp3"
+      "audio": "assets/audio/slide20.mp3",
+      "footer_note": "房 = 户(hù, cửa một cánh) + 方(fāng, vuông vắn) → cửa dẫn vào không gian VUÔNG VẮN → \"phòng\""
     },
     {
       "type": "wordcard",
@@ -409,7 +425,8 @@
           "vn": "Phòng đơn một đêm 380 tệ."
         }
       ],
-      "audio": "assets/audio/slide21.mp3"
+      "audio": "assets/audio/slide21.mp3",
+      "footer_note": "单 vốn là hình cái NÁ/chạc săn bắn có một cán → về sau chuyển nghĩa \"đơn lẻ, một\" → 单人间 = phòng cho 1 người"
     },
     {
       "type": "wordcard",
@@ -431,7 +448,8 @@
           "vn": "Quầy lễ tân ở ngay cửa chính."
         }
       ],
-      "audio": "assets/audio/slide22.mp3"
+      "audio": "assets/audio/slide22.mp3",
+      "footer_note": "前 vốn có 止(chân) ở trên, hình bước chân LÊN một con thuyền → tiến về phía trước → \"trước\" → 前台 = quầy lễ tân"
     },
     {
       "type": "wordcard",
@@ -453,7 +471,8 @@
           "vn": "Sau 2 giờ chiều là có thể check-in."
         }
       ],
-      "audio": "assets/audio/slide23.mp3"
+      "audio": "assets/audio/slide23.mp3",
+      "footer_note": "入 vốn là hình MŨI TÊN nhọn cắm VÀO → \"vào\" → 入住 = vào ở, nhận phòng"
     },
     {
       "type": "wordcard",
@@ -475,7 +494,8 @@
           "vn": "Tôi muốn check-out, làm ơn giúp tôi xem qua."
         }
       ],
-      "audio": "assets/audio/slide24.mp3"
+      "audio": "assets/audio/slide24.mp3",
+      "footer_note": "退 = 辶(chuò, đi) + 艮(gèn, dừng lại/cứng) → ĐI nhưng bị CẢN lại, phải LÙI → \"lùi, trả lại\" → 退房 = trả phòng"
     },
     {
       "type": "dialogue",

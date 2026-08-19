@@ -48,7 +48,8 @@
           "vn": "Bạn có thể giúp một chút được không?"
         }
       ],
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": "忙 = 忄(xīn, trái tim) + 亡(wáng, mất mát) → lòng NƠM NỚP như sắp mất điều gì → \"bận rộn\" → 帮忙 = giúp khi ai đó đang bận"
     },
     {
       "type": "wordcard",
@@ -75,7 +76,8 @@
           "vn": "Thật ngại quá, làm phiền bạn rồi."
         }
       ],
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "思 = 田(tián, đầu/ruộng) + 心(xīn, tim) → nghĩ bằng cả ĐẦU và TIM → \"suy nghĩ, ý\" → 不好意思 = ngại ngùng"
     },
     {
       "type": "wordcard",
@@ -101,7 +103,8 @@
           "vn": "Lần sau lại đến chơi nhé."
         }
       ],
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "次 = 冫(bīng, hơi thở) + 欠(qiàn, người đang HÁ MIỆNG ngáp) → ngáp liên tục NHIỀU LẦN → lượng từ đếm \"lần\""
     },
     {
       "type": "wordcard",
@@ -128,7 +131,8 @@
           "vn": "Câu này mình không hiểu."
         }
       ],
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "懂 = 忄(xīn, tâm trí) + 董(dǒng, giám đốc, người quản lý mọi việc) → tâm trí như GIÁM ĐỐC nắm rõ mọi việc → \"hiểu\""
     },
     {
       "type": "wordcard",
@@ -155,7 +159,8 @@
           "vn": "Cô giáo giới thiệu cho tụi mình nhiều thứ."
         }
       ],
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": "给 = 纟(sī, sợi dây/tơ) + 合(hé, hợp lại, khớp vào nhau) → dùng DÂY buộc mà TRAO cho nhau → \"cho, tặng\""
     },
     {
       "type": "wordcard",
@@ -182,7 +187,8 @@
           "vn": "Mai mình ra bến xe đón bạn."
         }
       ],
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "接 = 扌(shǒu, tay) → giơ TAY ra ĐỠ lấy, nối lại → \"đón, tiếp, nối\""
     },
     {
       "type": "wordcard",
@@ -208,7 +214,8 @@
           "vn": "Anh ấy vừa đến là gọi điện cho mình liền."
         }
       ],
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": "就 (jiù) nghe giống trong từ \"tựu trường\"/\"thành tựu\" (đến nơi, đạt được) → nghĩa \"liền, thì ngay\""
     },
     {
       "type": "wordcard",
@@ -235,7 +242,8 @@
           "vn": "Nghỉ hè mình muốn đi Vân Nam du lịch."
         }
       ],
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": "游 = 氵(shuǐ, nước) + phần bên phải như LÁ CỜ phấp phới → trôi nổi tự do trong nước → \"bơi\" → 旅游 = đi du lịch"
     },
     {
       "type": "wordcard",
@@ -289,7 +297,8 @@
           "vn": "Mình đã ăn cơm rồi."
         }
       ],
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": "经 = 纟(sī, sợi tơ dọc trong khung dệt) → mở rộng nghĩa \"đã trải qua, kinh qua\" → 已经 = đã... rồi"
     },
     {
       "type": "wordcard",
@@ -316,7 +325,8 @@
           "vn": "Bạn hiểu ý mình không?"
         }
       ],
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": "意 = 音(yīn, âm thanh) + 心(xīn, tim) → âm thanh phát ra từ TRONG TIM → \"ý, suy nghĩ\" → 意思 = ý tứ, nghĩa"
     },
     {
       "type": "wordcard",
@@ -343,7 +353,8 @@
           "vn": "Đôi khi mình đi du lịch một mình."
         }
       ],
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": "时 = 日(rì, mặt trời) + 寸(cùn, đo lường nhỏ) → đo THỜI GIAN theo bóng MẶT TRỜI → \"thời gian\" → 有时 = có lúc, đôi khi"
     },
     {
       "type": "dialogue",

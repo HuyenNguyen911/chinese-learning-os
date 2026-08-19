@@ -43,7 +43,8 @@
           "vn": "Tóc cô ấy rất dài."
         }
       ],
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": "长 vốn là hình MÁI TÓC dài buông xuống → \"dài\""
     },
     {
       "type": "wordcard",
@@ -65,7 +66,8 @@
           "vn": "Bạn giúp tôi đốt nến nhé."
         }
       ],
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "烛 = 火(huǒ, lửa) → vật thắp LỬA sáng → \"nến, đuốc\" → 蜡烛 = cây nến"
     },
     {
       "type": "wordcard",
@@ -87,7 +89,8 @@
           "vn": "Bạn có thể giúp tôi mở cái hộp này không?"
         }
       ],
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "开 = 一(chốt cửa) + 廾(gǒng, hai bàn tay) → hai tay NÂNG chốt cửa lên → \"mở\" → 打开 = mở ra"
     },
     {
       "type": "wordcard",
@@ -109,7 +112,8 @@
           "vn": "Cái bánh kem này nhìn có vẻ rất ngon."
         }
       ],
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "糕 = 米(mǐ, gạo) → bánh làm từ bột GẠO hấp lên cao → \"bánh\" → 蛋糕 = bánh gato"
     },
     {
       "type": "wordcard",
@@ -131,7 +135,8 @@
           "vn": "Cô ấy chậm chậm bước vào."
         }
       ],
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": "地 = 土(tǔ, đất) + 也(yě, cũng) → mặt ĐẤT cũng là nơi hành động diễn ra → nối trạng ngữ + động từ"
     },
     {
       "type": "wordcard",
@@ -153,7 +158,8 @@
           "vn": "Bạn biết hát bài này không?"
         }
       ],
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "唱 = 口(kǒu, miệng) + 昌(chāng, rực rỡ) → MIỆNG cất tiếng rực rỡ vang xa → \"hát\""
     },
     {
       "type": "wordcard",
@@ -175,7 +181,8 @@
           "vn": "Trên tường có một bức tranh."
         }
       ],
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": "画 = khung 凵 bao quanh 田(tián, ô ruộng) → nét vẽ tạo thành các Ô hình → \"vẽ, tranh\""
     },
     {
       "type": "wordcard",
@@ -197,7 +204,8 @@
           "vn": "Cây bút vẽ này còn mới."
         }
       ],
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": "笔 = 竹(zhú, tre) + 毛(máo, lông) → cán TRE gắn LÔNG để viết/vẽ → \"bút\" → 画笔 = bút vẽ"
     },
     {
       "type": "wordcard",
@@ -219,7 +227,8 @@
           "vn": "Hôm nay mọi người đều rất vui."
         }
       ],
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": "快 = 忄(xīn, trái tim) + 夬(dứt khoát) → trái tim DỨT KHOÁT, nhẹ nhõm → \"nhanh, vui\" → 快乐 = vui vẻ"
     },
     {
       "type": "wordcard",
@@ -241,7 +250,8 @@
           "vn": "Tôi không thích ăn thịt lắm."
         }
       ],
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": "肉 vốn là hình một MIẾNG THỊT có vân gân bên trong → \"thịt\""
     },
     {
       "type": "wordcard",
@@ -263,7 +273,8 @@
           "vn": "Hôm nay là sinh nhật của tôi."
         }
       ],
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": "生 = mầm cây mọc lên khỏi mặt ĐẤT (土) → \"sinh ra, sống\" → 生日 = ngày sinh"
     },
     {
       "type": "wordcard",
@@ -285,7 +296,8 @@
           "vn": "Hôm nay trông bạn không thoải mái lắm."
         }
       ],
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": "舒 = 舍(nhà trọ, nghỉ ngơi) + 予(cho) → được NGHỈ NGƠI thư thái → \"thoải mái\""
     },
     {
       "type": "wordcard",
@@ -307,7 +319,8 @@
           "vn": "Tôi quên mang chìa khoá."
         }
       ],
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": "忘 = 亡(wáng, mất) + 心(xīn, tim) → trong TIM đã MẤT đi điều gì đó → \"quên\""
     },
     {
       "type": "wordcard",
@@ -329,7 +342,8 @@
           "vn": "Con cá này rất tươi."
         }
       ],
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide16.mp3",
+      "footer_note": "鱼 vốn là hình con CÁ nhìn nghiêng (đầu, vây, đuôi) → \"cá\""
     },
     {
       "type": "vocab",

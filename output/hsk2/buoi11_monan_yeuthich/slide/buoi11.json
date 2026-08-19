@@ -44,7 +44,8 @@
         "py": "Wǒ tóu téng, bú tài shūfu.",
         "vn": "Tớ đau đầu, không được khỏe lắm."
       },
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": ["头 = 大(dà, to lớn) + phần trên hình cái ĐẦU → bộ phận TO nhất trên cùng cơ thể → \"đầu\"", "疼 = 疒(dấu hiệu bệnh tật) → cơ thể phát bệnh, khó chịu → \"đau\""]
     },
     {
       "type": "vocab",
@@ -66,7 +67,8 @@
         "py": "Wǒ jīngcháng tóu téng, yí dòng jiù téng.",
         "vn": "Tớ hay đau đầu, cử động là đau ngay."
       },
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "动 = 云(yún, mây) + 力(lì, sức) → dùng SỨC làm chuyển động → \"hoạt động\""
     },
     {
       "type": "vocab",
@@ -88,7 +90,8 @@
         "py": "Lùshang chē duō, hái xiàzhe xuě, wǒ kāi màn diǎnr.",
         "vn": "Đường đông xe, lại đang có tuyết rơi, tớ lái chậm chút."
       },
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "慢 = 忄(xīn, tim) + 曼(dài, kéo dài) → trái tim đập KÉO DÀI, không vội → \"chậm\""
     },
     {
       "type": "vocab",
@@ -111,7 +114,8 @@
         "py": "Shēntǐ bù shūfu, chīwán yào jiù hǎoduō le.",
         "vn": "Người không khỏe, uống xong thuốc thấy đỡ hơn nhiều."
       },
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": ["身 vốn là hình một NGƯỜI ĐỨNG NGHIÊNG, bụng hơi phình (tượng hình) → \"thân thể\"", "药 = 艹(cǎo, cỏ cây) + 约(yuē, liều lượng) → cỏ cây bào chế theo LIỀU LƯỢNG → \"thuốc\""]
     },
     {
       "type": "vocab",
@@ -128,7 +132,8 @@
         "py": "Wǒ cóng yàodiàn mǎile diǎnr yào, méi qù yīyuàn.",
         "vn": "Tớ mua ít thuốc ở hiệu thuốc, không đi bệnh viện."
       },
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": "店 = 广(guǎng, mái nhà rộng) + 占(zhàn, chiếm chỗ) → mái nhà CHIẾM một chỗ để buôn bán → \"cửa hàng\" → 药店 = hiệu thuốc"
     },
     {
       "type": "vocab",
@@ -146,7 +151,8 @@
         "py": "Nǐ zuì xǐhuan chī Zhōngguó cài.",
         "vn": "Cậu thích ăn món Trung Quốc nhất."
       },
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "最 = 曰(nói) + 取(lấy) → lấy điều được NÓI ĐẾN NHIỀU NHẤT → \"nhất, hơn cả\""
     },
     {
       "type": "vocab",
@@ -169,7 +175,8 @@
         "py": "Yīshēng jiǎnchále wǒ de yǎnjing hé ěrduo.",
         "vn": "Bác sĩ đã kiểm tra mắt và tai của tớ."
       },
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": ["眼 = 目(mù, mắt) + 艮(gěn, cứng) → con mắt CỨNG, khó nhìn xuyên qua → \"mắt\"", "耳 vốn là hình vẽ CÁI TAI người/thú (tượng hình) → \"tai\" → 耳朵 = tai"]
     },
     {
       "type": "vocab",
@@ -191,7 +198,8 @@
         "py": "Gǎnmào le, bízi bù shūfu, zuǐ yě méi wèidao.",
         "vn": "Bị cảm rồi, mũi khó chịu, miệng cũng chẳng có vị gì."
       },
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": ["鼻 = 自(zì, cái mũi, người ta chỉ vào mũi khi nói \"tôi\") + 畀(bì, trao cho) → \"mũi\"", "嘴 = 口(kǒu, miệng) + 觜(mỏ chim) → phần MIỆNG nhô ra như MỎ CHIM → \"miệng, mỏm\""]
     },
     {
       "type": "vocab",
@@ -214,7 +222,8 @@
         "py": "Shuāidǎo de shíhou, wǒ de shǒu hé tuǐ dōu shòushāng le.",
         "vn": "Lúc bị ngã, tay và chân tớ đều bị thương."
       },
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": ["手 vốn là hình vẽ BÀN TAY xòe các ngón (tượng hình) → \"tay\"", "腿 = 月(nhục, thân thể) + 退(tuì, lùi) → phần thân dùng để BƯỚC LÙI/đi lại → \"chân, đùi\""]
     },
     {
       "type": "vocab",
@@ -236,7 +245,8 @@
         "py": "Zuòle yì tiān chē, wǒ de bèi hé jiānbǎng dōu hěn suān.",
         "vn": "Ngồi xe cả ngày, lưng và vai tớ đều mỏi nhừ."
       },
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": ["肩 = 户(cánh cửa) + phần thân thể → phần THÂN như cánh CỬA để gánh đồ → \"vai\"", "背 = 北(běi, quay lưng) + phần thân thể → phần THÂN quay lưng lại → \"lưng, cõng\""]
     },
     {
       "type": "vocab",
@@ -258,7 +268,8 @@
         "py": "Wǒ yì jǐnzhāng, xīnzàng tiào de kuài, dùzi yě téng.",
         "vn": "Tớ hễ hồi hộp là tim đập nhanh, bụng cũng đau."
       },
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": ["心 vốn là hình vẽ TRÁI TIM (tượng hình) → \"tim\" → 心脏 = tim (nội tạng)", "肚 = 月(nhục, thân thể) + 土(tǔ, đất) → phần thân TRÒN như ụ ĐẤT → \"bụng\""]
     },
     {
       "type": "vocab",
@@ -280,7 +291,8 @@
         "py": "Dìdi gǎnmào fāshāo le, māma hěn dānxīn.",
         "vn": "Em trai bị cảm sốt, mẹ rất lo lắng."
       },
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": ["感 = 咸(mọi thứ cùng) + 心(xīn, tim) → MỌI THỨ cùng tác động vào TIM → \"cảm nhận\" → 感冒 = cảm cúm", "烧 = 火(lửa) → dùng LỬA đốt cháy → \"đốt, sốt\" → 发烧 = phát sốt"]
     },
     {
       "type": "vocab",
@@ -302,7 +314,8 @@
         "py": "Wǒ dùzi téng, kěnéng zhòngdú le, děi qù kànbìng.",
         "vn": "Tớ đau bụng, có thể bị ngộ độc rồi, phải đi khám."
       },
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": ["看 = 手(bàn tay che trên) + 目(mắt) → lấy TAY che MẮT để nhìn xa → \"nhìn, khám\" → 看病 = khám bệnh", "病 = 疒(nè, bệnh tật) + 丙(bǐng) → dấu hiệu BỆNH TẬT phát ra → \"bệnh\""]
     },
     {
       "type": "vocab",
@@ -324,7 +337,8 @@
         "py": "Yīshēng zài tǐjiǎn shí fāxiàn wǒ de yáchǐ fāyán le.",
         "vn": "Bác sĩ khi khám sức khỏe phát hiện răng tớ bị viêm."
       },
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide16.mp3",
+      "footer_note": ["炎 = hai chữ 火(huǒ, lửa) chồng lên nhau → LỬA cháy dữ dội, nóng rát → \"viêm, nóng\"", "体 = 亻(người) + 本(gốc, gốc rễ) → phần GỐC của một NGƯỜI → \"thân thể\" → 体检 = khám sức khỏe"]
     },
     {
       "type": "dialogue",

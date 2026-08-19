@@ -43,7 +43,8 @@
         "py": "Kāixué yǐhòu, wǒ jiù yào zhùxiào le.",
         "vn": "Sau khi khai giảng, tớ sẽ ở ký túc xá."
       },
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": ["开 = 一(chốt cửa) + 廾(gǒng, hai bàn tay) → hai tay NÂNG chốt cửa lên → \"mở\" → 开学 = khai giảng", "住 = 亻(rén, người) + 主(zhǔ, làm chủ) → NGƯỜI làm CHỦ một chỗ ở → \"ở, trú\" → 住校 = ở nội trú"]
     },
     {
       "type": "vocab",
@@ -66,7 +67,8 @@
         "py": "Zhè mén kèchéng hěn yǒu yìsi, dàjiā dōu zài rènzhēn tīngkè.",
         "vn": "Môn học này rất thú vị, mọi người đều đang chăm chú nghe giảng."
       },
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": "课 = 讠(yán, lời nói) + 果(guǒ, kết quả) → lời giảng đem lại KẾT QUẢ → \"bài học, môn học\""
     },
     {
       "type": "vocab",
@@ -89,7 +91,8 @@
         "py": "Suīrán wǒmen zài jiā yuǎnchéng xuéxí, dàn wǒ hěn xiǎngniàn wǒ de shìyǒu.",
         "vn": "Dù chúng tớ học từ xa ở nhà, nhưng tớ rất nhớ bạn cùng phòng của mình."
       },
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": ["习 = 羽(cánh chim, phía trên) + 日(mặt trời) → CHIM non tập bay dưới ánh mặt trời → \"học, luyện tập\" → 学习 = học tập", "友 = hai chữ 又(yòu, bàn tay) nắm lấy nhau → \"bạn bè\" → 室友 = bạn cùng phòng"]
     },
     {
       "type": "vocab",
@@ -112,7 +115,8 @@
         "py": "Zhè ge cí wǒ bù dǒng, nǐ néng bāng wǒ yīxià ma?",
         "vn": "Từ này tớ không hiểu, cậu có thể giúp tớ một chút không?"
       },
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "词 = 讠(yán, lời nói) + 司(quản lý) → lời nói được QUẢN LÝ thành đơn vị → \"từ, từ ngữ\""
     },
     {
       "type": "vocab",
@@ -135,7 +139,8 @@
         "py": "Wǒ qù xiàng tā qǐngjiào, yīnwèi tā zài shùxué fāngmiàn hěn yǒu tiānfù.",
         "vn": "Tớ đi hỏi cậu ấy, vì cậu ấy rất có thiên phú về môn Toán."
       },
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": ["请 = 讠(yán, lời nói) + 青(qīng, trong trẻo) → lời nói TRONG TRẺO, lễ phép → \"mời, xin\" → 请教 = xin chỉ giáo", "天 = 一(bầu trời) trên đầu chữ 大(người dang tay) → khoảng KHÔNG trên đầu người → \"trời\" → 天赋 = năng khiếu trời cho"]
     },
     {
       "type": "vocab",
@@ -158,7 +163,8 @@
         "py": "Jīntiān de zuòyè tài duō le, wǒ zuò cuò le hěn duō.",
         "vn": "Bài tập hôm nay nhiều quá, tớ làm sai mất nhiều câu rồi."
       },
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": ["业 vốn là hình cái GIÁ TREO chuông/khánh thời xưa → \"nghề, việc\" → 作业 = bài tập", "错 = 钅(jīn, kim loại) + 昔(xī, xưa cũ) → kim loại cũ kỹ, gỉ sét → \"sai\""]
     },
     {
       "type": "vocab",
@@ -181,7 +187,8 @@
         "py": "Míngtiān yào kǎoshì, jīntiān wǒ yào fùxí zhèxiē tí.",
         "vn": "Ngày mai phải thi rồi, hôm nay tớ phải ôn tập những câu hỏi này."
       },
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": ["复 = 亻(rén, người) + 日(rì, ngày) + 夂(chân bước) → NGƯỜI bước lại đúng NGÀY cũ → \"lặp lại\" → 复习 = ôn tập", "题 = 是(shì, đúng, phải) + 页(trang giấy) → TRANG GIẤY ghi câu hỏi cần trả lời ĐÚNG → \"đề bài\""]
     },
     {
       "type": "vocab",
@@ -204,7 +211,8 @@
         "py": "Mǎshàng yào kǎoshì le, wǒ juéde hěn jǐnzhāng, yālì hěn dà.",
         "vn": "Sắp thi rồi, tớ cảm thấy rất căng thẳng, áp lực rất lớn."
       },
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": ["紧 = 又(yòu, bàn tay) + 糸(mì, sợi dây) → tay NẮM CHẶT sợi dây → \"chặt, khẩn trương\" → 紧张 = căng thẳng", "压 = 厂(vách đá) + 土(tǔ, đất) → VÁCH ĐÁ đè nặng xuống đất → \"đè nén, áp lực\""]
     },
     {
       "type": "vocab",
@@ -227,7 +235,8 @@
         "py": "Zhè cì kǎoshì zhǐshì yī cì nénglì pínggū, wǒmen yào yǒu zìxìn.",
         "vn": "Kỳ thi này chỉ là một lần đánh giá năng lực thôi, chúng ta phải tự tin lên."
       },
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": ["力 vốn là hình một CÁI CÀY (nông cụ cần sức) → \"sức mạnh\" → 能力 = năng lực", "信 = 亻(rén, người) + 言(yán, lời nói) → LỜI NÓI của một NGƯỜI đáng tin → \"tin tưởng\" → 自信 = tự tin"]
     },
     {
       "type": "vocab",
@@ -250,7 +259,8 @@
         "py": "Wǒ jīntiān kǎo de hěn hǎo, suǒyǐ dàjiā dōu xiào de hěn kāixīn.",
         "vn": "Hôm nay tớ thi rất tốt, nên mọi người đều cười rất vui vẻ."
       },
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": "考 = 耂(lǎo, người già) + 丂(hơi thở khó) → NGƯỜI GIÀ xét hỏi, kiểm tra → \"thi, khảo\""
     },
     {
       "type": "vocab",
@@ -273,7 +283,8 @@
         "py": "Rúguǒ zhè cì kǎoshì dì-yī míng, wǒ jiù néng ná dào jiǎngxuéjīn.",
         "vn": "Nếu kỳ thi này đứng nhất, tớ sẽ nhận được học bổng."
       },
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": ["试 = 讠(yán, lời nói) + 式(shì, khuôn mẫu) → dùng LỜI theo đúng KHUÔN để kiểm tra → \"thử, thi\" → 考试 = kỳ thi", "奖 = 丬(nửa thân cây) + 夕(đêm) + 大(to lớn) → phần thưởng TO LỚN trao đêm lễ → \"giải thưởng\" → 奖学金 = học bổng"]
     },
     {
       "type": "vocab",
@@ -301,7 +312,8 @@
         "py": "Wúlùn chéngjìdān zěnmeyàng, zhǐyào nǔlì le jiù bùyòng shīwàng, yào duì zìjǐ mǎnyì.",
         "vn": "Bất kể bảng điểm thế nào, chỉ cần cố gắng rồi thì không cần phải thất vọng, phải tự hài lòng với bản thân."
       },
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": ["满 = 氵(nước) + 两(liǎng, cả hai bên) → nước dâng ĐẦY cả hai bên → \"đầy, hài lòng\" → 满意 = hài lòng", "望 = 亡(mất) + 月(nguyệt, trăng) → ngóng nhìn MẶT TRĂNG dù đã khuất → \"trông ngóng\" → 失望 = thất vọng"]
     },
     {
       "type": "vocab",
@@ -324,7 +336,8 @@
         "py": "Bìyè yǐhòu, wǒ zhōngyú kěyǐ hǎohǎo fàngsōng yīxià le.",
         "vn": "Sau khi tốt nghiệp, cuối cùng tớ cũng có thể thư giãn một chút rồi."
       },
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": ["松 = 木(mù, cây) → cây có dáng THƯA, cành lỏng lẻo → \"lỏng, thư giãn\" → 放松 = thư giãn", "毕 = 比(so sánh cạnh nhau) + 十(shí, đầy đủ) → mọi thứ đã ĐẦY ĐỦ, xong xuôi → \"hoàn tất\" → 毕业 = tốt nghiệp"]
     },
     {
       "type": "dialogue",

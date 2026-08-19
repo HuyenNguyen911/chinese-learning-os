@@ -42,7 +42,8 @@
         "py": "Guònián de shíhou, yéye zèngsòng gěi wǒ yí ge hóngbāo, zhù wǒ xīn de yì nián xuéxí jìnbù.",
         "vn": "Lúc ăn Tết, ông nội tặng cho tớ một bao lì xì, chúc tớ năm mới học tập tiến bộ."
       },
-      "audio": "assets/audio/slide03.mp3"
+      "audio": "assets/audio/slide03.mp3",
+      "footer_note": "红 = 纟(sī, tơ lụa) → lụa nhuộm màu ĐỎ rực → \"đỏ\" → 红包 = bao lì xì đỏ"
     },
     {
       "type": "vocab",
@@ -64,7 +65,8 @@
         "py": "Dànián chūyī zǎoshang, wǒ shōudào le nǎinai gěi de yāsuìqián, xīnli tèbié kāixīn.",
         "vn": "Sáng mùng 1 Tết, tớ nhận được tiền lì xì bà nội cho, trong lòng đặc biệt vui."
       },
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide04.mp3",
+      "footer_note": ["到 = 至(zhì, đến tận nơi) + 刂(dứt khoát) → ĐẾN TẬN nơi một cách dứt khoát → \"đến\" → 收到 = nhận được", "钱 = 钅(kim loại) → tiền đúc từ KIM LOẠI → \"tiền\" → 压岁钱 = tiền lì xì"]
     },
     {
       "type": "vocab",
@@ -87,7 +89,8 @@
         "py": "Chūnjié qián, wǒmen hé línjū hùxiāng jiāohuàn le chūnlián, tiē zài zìjǐ jiā de mén shàng.",
         "vn": "Trước Tết, chúng tôi và hàng xóm trao đổi câu đối Tết cho nhau, dán lên cửa nhà mình."
       },
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide05.mp3",
+      "footer_note": "交 vốn là hình một NGƯỜI đứng bắt chéo chân → \"giao nhau, trao đổi\" → 交换 = trao đổi"
     },
     {
       "type": "vocab",
@@ -109,7 +112,8 @@
         "py": "Chūnjié de shíhou, wǒmen qù qīnqi jiā bàinián, gěi tāmen sòng shàng xīnnián de zhùfú.",
         "vn": "Dịp Tết, chúng tôi đến nhà họ hàng chúc Tết, gửi tới họ lời chúc năm mới."
       },
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide06.mp3",
+      "footer_note": "拜 = hai chữ 手(shǒu, tay) chắp lại → chắp TAY hành lễ → \"lạy, chúc mừng\" → 拜年 = chúc Tết"
     },
     {
       "type": "vocab",
@@ -132,7 +136,8 @@
         "py": "Māma zuò de niángāo bǐ wàimiàn mǎi de míngxiǎn tián yìxiē, yīnwèi tā fàng le hěn duō táng.",
         "vn": "Bánh tổ mẹ làm ngọt hơn rõ rệt so với bánh mua ngoài, vì mẹ cho rất nhiều đường."
       },
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide07.mp3",
+      "footer_note": ["明 = 日(rì, mặt trời) + 月(yuè, mặt trăng) → cả MẶT TRỜI và MẶT TRĂNG cùng chiếu sáng → \"sáng rõ\"", "糕 = 米(gạo) → bánh làm từ bột GẠO hấp lên cao → \"bánh\" → 年糕 = bánh năm mới"]
     },
     {
       "type": "vocab",
@@ -155,7 +160,8 @@
         "py": "Zhè cì nǎinai bāo de jiǎozi bǐ shàng cì de shāowēi xián yìdiǎnr, dànshì háishi hěn hǎochī.",
         "vn": "Lần này sủi cảo bà gói mặn hơn lần trước một chút, nhưng vẫn rất ngon."
       },
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide08.mp3",
+      "footer_note": "饺 = 饣(shí, ăn) + 交(jiāo, gấp giao nhau) → vỏ bánh GẤP LẠI giao nhau rồi ăn → \"bánh chẻo\""
     },
     {
       "type": "vocab",
@@ -177,7 +183,8 @@
         "py": "Zhè liǎng zhǒng guònián tángguǒ de wèidao chàbuduō, wǒ dōu hěn xǐhuan chī.",
         "vn": "Hai loại kẹo Tết này vị gần giống nhau, tớ đều thích ăn."
       },
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide09.mp3",
+      "footer_note": ["差 = 羊(yáng, dê) + 工(gōng, công cụ đo) → đo DÊ không chuẩn, LỆCH nhau → \"chênh lệch\"", "糖 = 米(gạo) → đường xưa nấu từ GẠO, lúa mạch → \"đường, kẹo\" → 糖果 = kẹo"]
     },
     {
       "type": "vocab",
@@ -200,7 +207,8 @@
         "py": "Chúxī nà tiān, māma hěn rènzhēn de bāo chūnjuǎn, zhǔnbèi le yí dà pán.",
         "vn": "Hôm giao thừa, mẹ gói nem rất tận tâm, chuẩn bị cả một đĩa to."
       },
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide10.mp3",
+      "footer_note": ["真 = 直(zhí, ngay thẳng) + 八(chia đều) → nhìn NGAY THẲNG, không lệch → \"chân thật\"", "春 = 日(mặt trời) → mùa cây cối đâm chồi dưới ánh MẶT TRỜI ấm → \"mùa xuân\" → 春卷 = chả giò"]
     },
     {
       "type": "vocab",
@@ -223,7 +231,8 @@
         "py": "Xiǎonián nà tiān, māma nàixīn de dǎsǎo fángzi, fángjiān biàn de gāngānjìngjìng.",
         "vn": "Hôm ông Công ông Táo, mẹ kiên nhẫn dọn dẹp nhà cửa, phòng trở nên sạch sẽ."
       },
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide11.mp3",
+      "footer_note": ["耐 = 而(mà, tuy nhiên) + 寸(cùn, tấc nhỏ) → chịu đựng từng TẤC nhỏ dù khó khăn → \"kiên nhẫn\"", "小 = 亅(móc câu) + 八(chia tách) → vật bị CHIA TÁCH thành mảnh nhỏ → \"nhỏ\" → 小年 = tiểu niên"]
     },
     {
       "type": "vocab",
@@ -246,7 +255,8 @@
         "py": "Chūnjié qián de dàsǎochú zhēn xīnkǔ, dànshì dǎsǎo wán yǐhòu, dàjiā dōu hěn kāixīn.",
         "vn": "Tổng vệ sinh trước Tết thật vất vả, nhưng dọn xong rồi, ai cũng vui."
       },
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide12.mp3",
+      "footer_note": ["辛 vốn là hình cây KIM/dao khắc dùng xăm hình phạt (tượng hình) → \"cay đắng, vất vả\" → 辛苦 = vất vả", "扫 = 扌(shǒu, tay) + 彐(cái chổi) → dùng TAY cầm CHỔI quét → \"quét dọn\""]
     },
     {
       "type": "vocab",
@@ -269,7 +279,8 @@
         "py": "Chūnjié shì yì jiā rén tuányuán de rìzi, dàjiā cóng wàidì huílái yìqǐ chīfàn.",
         "vn": "Tết Nguyên Đán là ngày cả nhà đoàn tụ, mọi người từ xa về ăn cơm cùng nhau."
       },
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide13.mp3",
+      "footer_note": ["节 = 艹(cỏ cây) → đốt của cây TRE, điểm chia thời gian → \"tiết, ngày lễ\" → 春节 = Tết", "团 = 囗(vòng tròn bao quanh) + 才(tài, nhân lực) → mọi NGƯỜI quây QUẦN thành vòng tròn → \"đoàn tụ\""]
     },
     {
       "type": "vocab",
@@ -292,7 +303,8 @@
         "py": "Chúxī de shíhou, wǒmen fàng le hěn duō biānpào, fēicháng rènao.",
         "vn": "Vào đêm giao thừa, chúng tôi đốt rất nhiều pháo, náo nhiệt lắm."
       },
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide14.mp3",
+      "footer_note": ["除 = 阝(bậc thang) + 余(dư ra) → bước qua phần CŨ dư thừa → \"trừ bỏ\" → 除夕 = đêm giao thừa", "炮 = 火(huǒ, lửa) + 包(bāo, bọc) → LỬA bọc trong ống rồi nổ tung → \"pháo\""]
     },
     {
       "type": "vocab",
@@ -314,7 +326,8 @@
         "py": "Dànián chūyī, yéye jiào wǒmen guòqù, gěi měi ge háizi dōu fā hóngbāo.",
         "vn": "Mùng 1 Tết, ông nội gọi chúng tôi lại, phát bao lì xì cho từng đứa trẻ."
       },
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide15.mp3",
+      "footer_note": "初 = 衤(yī, quần áo) + 刀(dāo, dao/kéo) → dùng DAO cắt vải may ÁO MỚI đầu tiên → \"ban đầu\" → 初一 = mùng một"
     },
     {
       "type": "vocab",
@@ -342,7 +355,8 @@
         "py": "Guònián de shíhou, jiā li bǎi zhe táohuā, méihuā hé jīnjú shù, kànqǐlái hěn yǒu guònián de qìfēn.",
         "vn": "Lúc ăn Tết, trong nhà bày hoa đào, hoa mai và cây quất, trông rất có không khí Tết."
       },
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide16.mp3",
+      "footer_note": ["桃 = 木(cây) → loại CÂY ra quả đào → \"đào\" → 桃花 = hoa đào", "梅 = 木(mù, cây) + 每(měi, mỗi) → CÂY nở hoa vào MỖI dịp đầu xuân → \"mai\""]
     },
     {
       "type": "dialogue",
