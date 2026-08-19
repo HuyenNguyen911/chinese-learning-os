@@ -10,14 +10,16 @@ Với mỗi slide có nội dung chữ Hán đáng đọc (vocab / grammar / dia
 Đa dạng giọng:
   - Slide thường: LUÂN PHIÊN giọng theo VOICE_POOL (mỗi slide 1 giọng khác nhau).
   - Hội thoại: mỗi người nói 1 giọng riêng (A/B…), ghép các lượt thành 1 mp3.
-Tốc độ: chậm lại cho học viên qua --rate (mặc định -18%).
+Tốc độ: chậm lại cho học viên qua --rate (mặc định -15% thường / -8% hội thoại).
+Âm lượng: qua --volume (mặc định +50% từ Buổi 4 HSK2 — Buổi 1-3 build trước khi
+có field này nên vẫn ở +0% cũ, không hồi tố).
 
 Sau bước này chạy build_deck.py: mỗi slide có "audio" sẽ có nút 🔊 (PowerPoint
 nhận là Sound, bấm để phát). CHỈ phát khi mở bằng PowerPoint thật (desktop/app),
 trình xem Drive/Google Slides không phát audio nhúng.
 
 Chạy:
-    python slide_audio.py <lesson.json> [--rate=-18%] [--force]
+    python slide_audio.py <lesson.json> [--rate=-15%] [--volume=+50%] [--force]
 
 Cần: edge-tts (internet). Không sinh lại file đã có trừ khi --force.
 """
@@ -68,6 +70,10 @@ DIALOGUE_VOICES = ["zh-CN-XiaoxiaoNeural", "zh-CN-YunxiNeural", "zh-CN-XiaoyiNeu
 # chuyện) một chút. -30% cũ bị chê quá chậm/không tự nhiên; hạ xuống -15%/-8%.
 RATE_DEFAULT = "-15%"
 DIALOGUE_RATE_DEFAULT = "-8%"
+# Volume mặc định — feedback Buổi 3 HSK2 (2026-08-19): edge-tts để mặc định
+# +0% nghe nhỏ, đặc biệt cộng với rate chậm càng nghe yếu hơn. Test nghe ổn ở
+# +50%. Áp dụng từ Buổi 4 trở đi (không hồi tố Buổi 1-3 đã build).
+VOLUME_DEFAULT = "+50%"
 
 
 def read_text(s):
@@ -144,15 +150,16 @@ def read_text(s):
     return "，".join(xs) if xs else None
 
 
-def tts(text, voice, rate, out):
+def tts(text, voice, rate, out, volume=VOLUME_DEFAULT):
     r = subprocess.run(
         [sys.executable, "-m", "edge_tts", "--voice", voice,
-         "--rate=%s" % rate, "--text", text, "--write-media", str(out)],
+         "--rate=%s" % rate, "--volume=%s" % volume,
+         "--text", text, "--write-media", str(out)],
         capture_output=True, text=True)
     return r.returncode == 0 and out.exists()
 
 
-def gen_dialogue(turns, rate, audio_dir, out, tag, voice_overrides=None):
+def gen_dialogue(turns, rate, audio_dir, out, tag, voice_overrides=None, volume=VOLUME_DEFAULT):
     """Mỗi speaker 1 giọng riêng; ghép các lượt thành 1 mp3.
 
     `voice_overrides` (optional, key = tên speaker đúng như trong `turns`) ghi
@@ -172,7 +179,7 @@ def gen_dialogue(turns, rate, audio_dir, out, tag, voice_overrides=None):
         if not text:
             continue
         tmp = audio_dir / ("_%s_%02d.mp3" % (tag, j))
-        if not tts(text, voice, rate, tmp):
+        if not tts(text, voice, rate, tmp, volume=volume):
             return False, voices
         data += tmp.read_bytes()
         tmp.unlink()
@@ -186,14 +193,17 @@ def main(argv):
     args = [a for a in argv[1:] if not a.startswith("--")]
     opts = [a for a in argv[1:] if a.startswith("--")]
     if not args:
-        print("Usage: python slide_audio.py <lesson.json> [--rate=-18%] [--force]",
+        print("Usage: python slide_audio.py <lesson.json> [--rate=-15%] [--volume=+50%] [--force]",
               file=sys.stderr)
         return 2
     src = Path(args[0])
     rate_override = None
+    volume_override = None
     for o in opts:
         if o.startswith("--rate="):
             rate_override = o.split("=", 1)[1]
+        elif o.startswith("--volume="):
+            volume_override = o.split("=", 1)[1]
     force = "--force" in opts
 
     spec = json.loads(src.read_text(encoding="utf-8"))
@@ -202,6 +212,7 @@ def main(argv):
 
     made = 0
     pool_idx = 0
+    volume = volume_override or VOLUME_DEFAULT
     for i, s in enumerate(spec.get("slides", []), start=1):
         rel = "assets/audio/slide%02d.mp3" % i
         out = src.parent / rel
@@ -217,14 +228,15 @@ def main(argv):
                 rate = rate_override or DIALOGUE_RATE_DEFAULT
                 ok, voices = gen_dialogue(s["turns"], rate, audio_dir, out,
                                           tag="d%02d" % i,
-                                          voice_overrides=s.get("voices"))
+                                          voice_overrides=s.get("voices"),
+                                          volume=volume)
                 label = "dialogue " + "/".join(
                     v.split("-")[-1].replace("Neural", "") for v in voices.values())
             else:
                 rate = rate_override or RATE_DEFAULT
                 voice = VOICE_POOL[pool_idx % len(VOICE_POOL)]
                 pool_idx += 1
-                ok = tts(text, voice, rate, out)
+                ok = tts(text, voice, rate, out, volume=volume)
                 label = "%s %s" % (s.get("type"),
                                    voice.split("-")[-1].replace("Neural", ""))
             if not ok:
@@ -238,7 +250,7 @@ def main(argv):
     src.write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n",
                    encoding="utf-8")
     rate_note = rate_override or ("%s thường / %s hội thoại" % (RATE_DEFAULT, DIALOGUE_RATE_DEFAULT))
-    print("DONE: %d mp3 mới (rate %s) -> %s" % (made, rate_note, audio_dir))
+    print("DONE: %d mp3 mới (rate %s, volume %s) -> %s" % (made, rate_note, volume, audio_dir))
     return 0
 
 

@@ -229,6 +229,11 @@ slide (title + mọi item/ví dụ) rồi hỏi thẳng mới được sinh audi
   trung tâm) giữ giọng riêng để dễ phân biệt nhất trong hội thoại đó.
 - `--rate=...` (CLI) override cho CẢ HAI loại cùng lúc nếu cần đồng nhất (vd
   buổi ngữ âm nhập môn muốn chậm hơn hẳn, `--rate=-30%`).
+- **Âm lượng (2026-08-19, feedback Buổi 3 HSK2 "nghe nhỏ"):** mặc định
+  `--volume=+50%` (trước đó edge-tts để `+0%`, cộng với rate chậm nghe càng
+  yếu). Áp dụng **từ Buổi 4 trở đi** — Buổi 1-3 đã build giữ nguyên `+0%`, KHÔNG
+  hồi tố (không rebuild lại các buổi cũ). Override qua CLI `--volume=...` nếu
+  cần khác cho buổi cụ thể.
 
 Text được đọc tự trích theo `type` của slide. **Trừ khi slide có field
 `audio_text`** (chuỗi tuỳ ý) — khi đó đọc ĐÚNG chuỗi này, bỏ qua mọi rule theo
