@@ -60,6 +60,10 @@ format thi HSK và HSKK 初级.
   - `hint_plus`: **KHÔNG dùng** — không kèm đáp án mẫu/câu trả lời hoàn chỉnh nào
     cho phần 回答问题, kể cả trong `dapan.docx`. Chỉ để học viên tự trả lời dựa trên
     dàn bài; giáo viên chấm trực tiếp khi nghe, không cần văn bản mẫu để đối chiếu.
+  - **Mỗi câu 回答问题 độc lập** (2026-08-19, chấm bài buổi 1 HSK2): khi soạn hint
+    hoặc khi CHẤM câu trả lời của học viên, không giả định câu trả lời phải nối
+    tiếp/khớp bối cảnh của block khác trong cùng buổi (vd bài đọc `doc_hieu` dùng
+    tình huống riêng) — mỗi câu 回答问题 là 1 câu hỏi cá nhân hoá đứng riêng.
   **Khi block có ≥2 câu hỏi 回答问题:** tách thành **nhiều block riêng, mỗi block
   1 câu hỏi** (đặt `title` là "Câu hỏi 1"/"Câu hỏi 2"... để tránh lặp chữ "回答问题"
   trong header do renderer tự ghép `"🗣 %s (%s)" % (title, part)`) — vì mỗi câu cần
@@ -208,6 +212,17 @@ doc.save(path)
 Việc đúng lâu dài là sửa `_block_header`/`_run` để tự nhận `\n`/`§` và tách
 paragraph — nhưng đó là sửa code renderer dùng chung, để dành làm trên `main`
 khi có nhiều buổi cùng cần, không vá lẻ tẻ trên từng nhánh feature.
+
+## Kiểm bài học viên đã làm (đối chiếu `worksheet.docx` đã điền với `dapan.docx`)
+⚠️ **`python-docx`'s `doc.paragraphs` bỏ sót text nằm trong content control
+(`w:sdt`)** (2026-08-19, phát hiện khi kiểm bài buổi 2 HSK2): nếu học viên điền
+bài bằng field dạng content control (thường gặp khi mở/lưu từ Google Docs), câu
+trả lời thật vẫn tồn tại trong XML nhưng `doc.paragraphs` không thấy — dẫn tới
+báo nhầm "học viên bỏ trống" dù thực ra có làm. Trước khi kết luận 1 mục là bỏ
+trống, trích xuất TOÀN BỘ `<w:p>` bằng đệ quy
+(`document.element.body.iter(qn('w:p'))` rồi lấy `.//w:t` của từng `<w:p>`),
+KHÔNG dùng `doc.paragraphs` đơn thuần — hoặc unzip file, grep toàn bộ `<w:t>`
+trong `word/document.xml` để đối chiếu chéo trước khi báo học viên bỏ trống.
 
 ## Gây dựng kho đề (1 lần, có review gate)
 Khi kho `knowledge/hsk-exam-bank/hskN.md` còn trống:
