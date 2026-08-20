@@ -1459,12 +1459,33 @@
 | 振奋 | zhènfèn | 精神很好 | phấn chấn, hăng hái; làm phấn chấn tinh thần | HSK6模拟题终于过了两百分，这个成绩让我一整天都很振奋。 |
 | 公认 | gōngrèn | 大家都觉得 | được mọi người thừa nhận, công nhận chung | 在我们组里，他是公认最会写BRD的人，逻辑清楚得没话说。 |
 | 功劳 | gōngláo | 做的贡献 | công lao, công trạng | 项目能按时上线，测试同事的功劳其实一点都不比开发小。 |
-| 战略 | zhànlüè | 重要计划 | chiến lược (kế hoạch trọng yếu) | 我给自己定了个长期战略：先攒钱和知识，再慢慢往喜欢的方向走。 |
 | 派遣 | pàiqiǎn | 派人去 | phái cử, cử (người) đi làm nhiệm vụ | 公司这次派遣我去广州出差，正好能顺便拍几张老街的照片。 |
+| 战略 | zhànlüè | 重要计划 | chiến lược (kế hoạch trọng yếu) | 我给自己定了个长期战略：先攒钱和知识，再慢慢往喜欢的方向走。 |
 | 模型 | móxíng | 做样子 | mô hình | 我最近在研究怎么用大语言模型帮自己搭一个中文陪练。 |
 | 共计 | gòngjì | 总共 | tổng cộng, tính chung là | 这个月加班共计快五十个小时，我才意识到自己差点变成"牛马"。 |
 | 优越 | yōuyuè | 很好 | ưu việt, hơn hẳn (điều kiện, hoàn cảnh tốt) | 比起追求优越的物质，我更看重心里那份平静和自由。 |
 | 实事求是 | shíshìqiúshì | 实事求是 | thực sự cầu thị (làm việc theo đúng thực tế, khách quan) | 给学生评价时我也实事求是，好就是好，错的地方一定指出来。 |
+| 验证 | yànzhèng | 用事实来证明对不对 | kiểm chứng, xác minh (bằng thực tế) | 后来的事实验证了他的判断是对的。 |
+| 扭转 | niǔzhuǎn | 改变方向 | xoay chuyển, đảo ngược (tình thế, xu hướng) | 那阵子我一直摆烂，后来靠每天一点小习惯才慢慢扭转过来。 |
+| 被动 | bèidòng | 不是自己主动做的 | bị động | 他做事总是很被动，从不主动。 |
+| 防治 | fángzhì | 预防并治疗疾病 | phòng và trị (bệnh, sâu bệnh) | 我们要做好传染病的防治工作。 |
+| 消灭 | xiāomiè | 使完全不存在 | tiêu diệt, xóa bỏ | 我们要消灭一切困难。 |
+| 萌芽 | méngyá | 开始生长 | nảy mầm, manh nha; mầm mống mới hình thành | 想自己搭AI家教的念头，其实是从一次堵车的胡思乱想里萌芽的。 |
+| 荒谬 | huāngmiù | 不合理 | phi lý, vô lý, nực cười (tính chất) | 有些"职场PUA"的话听着特别荒谬，我现在学会一笑而过了。 |
+| 先前 | xiānqián | 以前的时候 | trước đây, trước kia | 先前的事情就别再提了。 |
+| 陈旧 | chénjiù | 很旧，不新 | cũ kỹ, lạc hậu | 这台电脑已经很陈旧了。 |
+| 前提 | qiántí | 先要有的条件 | tiền đề, điều kiện tiên quyết | 健康是工作的前提。 |
+| 交代 | jiāodài | 说清楚，安排好 | dặn dò, trình bày rõ, bàn giao | 老师把任务交代得很清楚。 |
+| 追究 | zhuījiū | 查清楚责任 | truy cứu (trách nhiệm) | 出了问题要追究原因。 |
+| 基因 | jīyīn | 决定遗传的东西 | gen, gene | 这种病和基因有关系。 |
+| 遗传 | yíchuán | 从父母传给孩子 | di truyền | 他的近视是遗传的。 |
+| 预料 | yùliào | 提前猜到会发生的事 | dự liệu, đoán trước, lường trước | 结果完全出乎我的预料。 |
+| 消除 | xiāochú | 去掉 | loại bỏ, xóa bỏ, trừ khử | 练瑜伽和游泳能帮我消除一整天开会攒下来的疲惫。 |
+| 隐患 | yǐnhuàn | 隐藏问题 | mối nguy tiềm ẩn, hiểm họa ẩn giấu | 上线前我一定要把流程里的每个隐患都排查清楚才放心。 |
+| 预兆 | yùzhào | 提前信号 | điềm báo, dấu hiệu báo trước | 最近总觉得累，可能是身体给我的一个要休息的预兆。 |
+| 案例 | ànlì | 真实例子 | ca, trường hợp cụ thể, ví dụ thực tế | 我给学生讲课时，喜欢用身边真实的案例，他们更容易记住。 |
+| 零星 | língxīng | 很少的 | lẻ tẻ, rải rác, ít ỏi (tính chất) | 周末除了陪妈妈买菜，我只有零星几个小时能安静看书。 |
+| 挽救 | wǎnjiù | 救回来 | cứu vãn, cứu lấy, vãn hồi | 那个快要黄掉的项目，最后是大家连着加班才勉强挽救回来的。 |
 | 细致 | xìzhì | 很仔细 | tỉ mỉ, cẩn thận, kỹ lưỡng (tính chất) | 妈妈买菜特别细致，每样都要挑半天，我在旁边边等边拍照。 |
 | 不言而喻 | bùyán'éryù | 不用说 | không nói cũng hiểu, hiển nhiên, khỏi cần giải thích | 跟对的人一起去旅行有多重要，对我来说是不言而喻的。 |
 | 血压 | xuèyā | 血压 | huyết áp | 体检报告出来，我血压正常，算是给自己一点安慰。 |
@@ -1482,27 +1503,6 @@
 | 攒 | zǎn | 存钱 | tích cóp, dành dụm, tích lũy | 我一边攒钱一边攒知识，觉得这两样才是最稳的靠山。 |
 | 可行 | kěxíng | 可以做 | khả thi, có thể thực hiện được | 我先做了个小demo，验证这个自动化方案到底可行不可行。 |
 | 展望 | zhǎnwàng | 看未来 | triển vọng; nhìn về tương lai, dự kiến phía trước | 年底做总结时，我喜欢一边展望明年想去的新地方，一边订计划。 |
-| 扭转 | niǔzhuǎn | 改变方向 | xoay chuyển, đảo ngược (tình thế, xu hướng) | 那阵子我一直摆烂，后来靠每天一点小习惯才慢慢扭转过来。 |
-| 萌芽 | méngyá | 开始生长 | nảy mầm, manh nha; mầm mống mới hình thành | 想自己搭AI家教的念头，其实是从一次堵车的胡思乱想里萌芽的。 |
-| 荒谬 | huāngmiù | 不合理 | phi lý, vô lý, nực cười (tính chất) | 有些"职场PUA"的话听着特别荒谬，我现在学会一笑而过了。 |
-| 预兆 | yùzhào | 提前信号 | điềm báo, dấu hiệu báo trước | 最近总觉得累，可能是身体给我的一个要休息的预兆。 |
-| 消除 | xiāochú | 去掉 | loại bỏ, xóa bỏ, trừ khử | 练瑜伽和游泳能帮我消除一整天开会攒下来的疲惫。 |
-| 隐患 | yǐnhuàn | 隐藏问题 | mối nguy tiềm ẩn, hiểm họa ẩn giấu | 上线前我一定要把流程里的每个隐患都排查清楚才放心。 |
-| 案例 | ànlì | 真实例子 | ca, trường hợp cụ thể, ví dụ thực tế | 我给学生讲课时，喜欢用身边真实的案例，他们更容易记住。 |
-| 零星 | língxīng | 很少的 | lẻ tẻ, rải rác, ít ỏi (tính chất) | 周末除了陪妈妈买菜，我只有零星几个小时能安静看书。 |
-| 挽救 | wǎnjiù | 救回来 | cứu vãn, cứu lấy, vãn hồi | 那个快要黄掉的项目，最后是大家连着加班才勉强挽救回来的。 |
-| 监测 | jiāncè | 检查 | giám sát đo lường, theo dõi kiểm tra | 我给自己做了个小表格，每天监测背了多少HSK6生词。 |
-| 血压 | xuèyā | 血压 | huyết áp | 体检报告出来，我血压正常，算是给自己一点安慰。 |
-| 先进 | xiānjìn | 很先进 | tiên tiến, tiến bộ (tính chất) | 用上更先进的AI工具后，我整理会议记录快了一大半。 |
-| 人为 | rénwéi | 人做出来的 | do con người tạo ra, nhân tạo; do người gây nên | 很多所谓的"意外"，其实都是人为疏忽一点点累积出来的。 |
-| 切切实实 | qièqièshíshí | 真的 | thật sự, thiết thực, chắc chắn (nhấn mạnh) | 这三年学中文，我切切实实感受到了自己一点点的进步。 |
-| 优越 | yōuyuè | 很好 | ưu việt, hơn hẳn (điều kiện, hoàn cảnh tốt) | 比起追求优越的物质，我更看重心里那份平静和自由。 |
-| 大大 | dàdà | 很厉害 | rất nhiều, đáng kể, ở mức lớn (mức độ) | 自从用AI陪练，我说中文的自信心大大提高了。 |
-| 攒 | zǎn | 存钱 | tích cóp, dành dụm, tích lũy | 我一边攒钱一边攒知识，觉得这两样才是最稳的靠山。 |
-| 实事求是 | shíshìqiúshì | 实事求是 | thực sự cầu thị (làm việc theo đúng thực tế, khách quan) | 给学生评价时我也实事求是，好就是好，错的地方一定指出来。 |
-| 远远 | yuǎnyuǎn | 差很远 | vượt xa, hơn hẳn, kém xa (mức chênh lớn) | 我口语的自然度还远远比不上笔试，得多找AI练开口。 |
-| 领域 | lǐngyù | 领域 | lĩnh vực, phạm vi | 做了几年BA，我在这个领域慢慢有了自己的判断和节奏。 |
-| 预测 | yùcè | 提前知道 | dự đoán, dự báo trước | 没人能准确预测未来，我能做的就是每年去一个新地方，好好生活。 |
 
 ### 生词拓展
 
