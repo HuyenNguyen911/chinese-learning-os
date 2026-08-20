@@ -94,6 +94,22 @@ trong xlsx có khớp thứ tự slide (`vocab_payload.json`) không — dòng b
 bị xáo trộn, mà `extract_xlsx.py` giữ nguyên thứ tự gặp trong file (không tự sort) nên
 `tu-vung.html` sẽ hiện sai thứ tự học nếu không sắp lại trước khi build.
 
+Khi redo, kiểm tra thêm 2 điều (đã gặp thực tế khi rà bài 22-28):
+- **Từ của bài khác lẫn vào:** không chỉ kiểm tra thiếu/sai thứ tự trong chính bài đang
+  sửa — có thể dính nguyên một cụm từ vựng của BÀI KHÁC do lỗi copy-paste khi bulk-import
+  (case thực tế: bài 28 dính 14 từ của bài 26). So khớp danh sách 生词 của bài đang sửa
+  với danh sách đúng suy ra từ slide; từ nào không thuộc bài này thì xoá.
+- **Nhãn slide không đáng tin:** nhiều slide giới thiệu từ mới thật lại bị gắn nhãn
+  "练一练" thay vì "生词" (thứ tự placeholder trong file pptx khác nhau giữa các slide,
+  nhãn có thể rơi xuống cuối thay vì đầu). Đừng lọc slide 生词 theo chữ nhãn — nhận diện
+  bằng pattern nội dung: có từ + `(词性)` + câu ví dụ đi kèm.
+
+Kỹ thuật sửa xlsx an toàn khi redo nguyên khối 1 bài (không đụng dữ liệu bài khác, tránh
+lệch phạm vi khi bài đó cần đổi cả số dòng): xác định `start`/`old_len` của khối bài đó,
+`ws.delete_rows(start, old_len)` rồi `ws.insert_rows(start, new_len)` với `new_len` = số
+từ đúng sau khi sửa, luôn `assert` dòng ngay trước và dòng ngay sau khối là bài liền kề
+đúng như kỳ vọng trước khi ghi đè.
+
 Bài tập/viết (theo mẫu — writing đầu, tô đỏ từ trọng tâm):
 ```
 "$PY" "$LP/render_baitap.py" \
