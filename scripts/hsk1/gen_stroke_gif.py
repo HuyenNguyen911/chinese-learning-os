@@ -48,8 +48,14 @@ VOCAB_STUDY_CACHE = _REPO_ROOT / ".claude/skills/vocab-study/data/_src/graphics.
 LOCAL_CACHE = _SCRIPT_DIR / "_src" / "graphics.txt"
 
 # --- Canvas / transform -------------------------------------------------
-CANVAS = 440
-MARGIN = 40
+# Vẽ ở độ phân giải gấp SS lần rồi downsize LANCZOS về OUT_CANVAS trước khi
+# ghép GIF — Pillow polygon/line không có anti-alias ở độ phân giải gốc nên
+# nét cong/móc bị răng cưa ("gãy gãy"); supersample+downsize là cách rẻ nhất
+# để làm mượt mà không phải tự viết rasterizer AA.
+SS = 3
+OUT_CANVAS = 440
+CANVAS = OUT_CANVAS * SS
+MARGIN = 40 * SS
 PLOT = CANVAS - 2 * MARGIN
 GRID_COLOR = (222, 222, 222)
 STROKE_COLOR = (25, 25, 25)
@@ -98,7 +104,7 @@ def parse_svg_path(d):
     start = (0.0, 0.0)
     pts = []
 
-    def quad(p0, p1, p2, n=10):
+    def quad(p0, p1, p2, n=22):
         for k in range(n + 1):
             t = k / n
             mt = 1 - t
@@ -106,7 +112,7 @@ def parse_svg_path(d):
             y = mt * mt * p0[1] + 2 * mt * t * p1[1] + t * t * p2[1]
             pts.append((x, y))
 
-    def cubic(p0, p1, p2, p3, n=12):
+    def cubic(p0, p1, p2, p3, n=26):
         for k in range(n + 1):
             t = k / n
             mt = 1 - t
@@ -163,6 +169,35 @@ def to_canvas(pt):
     return (MARGIN + x / 1024 * PLOT, MARGIN + yy / 1024 * PLOT)
 
 
+def smooth_polyline(points, samples_per_seg=10):
+    """Catmull-Rom qua các điểm median (thường chỉ 2-5 điểm/nét, thẳng đơ) ->
+    đường cong mượt. median gốc là polyline thẳng nối các điểm rời rạc nên
+    "đầu bút chạy" theo nó trông GÃY KHÚC ở mỗi điểm gấp; nội suy Catmull-Rom
+    cho tiếp tuyến liên tục nên trail cong mượt tự nhiên như nét bút thật."""
+    n = len(points)
+    if n < 3:
+        return list(points)
+
+    def cr(p0, p1, p2, p3, t):
+        t2 = t * t
+        t3 = t2 * t
+        x = 0.5 * ((2 * p1[0]) + (-p0[0] + p2[0]) * t +
+                   (2 * p0[0] - 5 * p1[0] + 4 * p2[0] - p3[0]) * t2 +
+                   (-p0[0] + 3 * p1[0] - 3 * p2[0] + p3[0]) * t3)
+        y = 0.5 * ((2 * p1[1]) + (-p0[1] + p2[1]) * t +
+                   (2 * p0[1] - 5 * p1[1] + 4 * p2[1] - p3[1]) * t2 +
+                   (-p0[1] + 3 * p1[1] - 3 * p2[1] + p3[1]) * t3)
+        return (x, y)
+
+    ext = [points[0]] + list(points) + [points[-1]]
+    out = [ext[1]]
+    for i in range(1, len(ext) - 2):
+        p0, p1, p2, p3 = ext[i - 1], ext[i], ext[i + 1], ext[i + 2]
+        for k in range(1, samples_per_seg + 1):
+            out.append(cr(p0, p1, p2, p3, k / samples_per_seg))
+    return out
+
+
 def sample_polyline_fraction(points, t_max):
     """Trả về đoạn đầu của polyline `points` ứng với tỉ lệ t_max (0..1),
     nội suy tuyến tính điểm cuối cho mượt (theo index, không theo arc-length —
@@ -185,17 +220,18 @@ def sample_polyline_fraction(points, t_max):
 
 def draw_grid(draw):
     x0, y0, x1, y1 = MARGIN, MARGIN, MARGIN + PLOT, MARGIN + PLOT
-    draw.rectangle([x0, y0, x1, y1], outline=GRID_COLOR, width=2)
+    draw.rectangle([x0, y0, x1, y1], outline=GRID_COLOR, width=2 * SS)
     cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
-    draw.line([(cx, y0), (cx, y1)], fill=GRID_COLOR, width=1)
-    draw.line([(x0, cy), (x1, cy)], fill=GRID_COLOR, width=1)
-    draw.line([(x0, y0), (x1, y1)], fill=GRID_COLOR, width=1)
-    draw.line([(x1, y0), (x0, y1)], fill=GRID_COLOR, width=1)
+    draw.line([(cx, y0), (cx, y1)], fill=GRID_COLOR, width=1 * SS)
+    draw.line([(x0, cy), (x1, cy)], fill=GRID_COLOR, width=1 * SS)
+    draw.line([(x0, y0), (x1, y1)], fill=GRID_COLOR, width=1 * SS)
+    draw.line([(x1, y0), (x0, y1)], fill=GRID_COLOR, width=1 * SS)
 
 
 def build_frames(strokes_raw, medians_raw, trail_steps=6, hold=8):
     strokes_px = [[to_canvas(p) for p in parse_svg_path(s)] for s in strokes_raw]
-    medians_px = [[to_canvas((p[0], p[1])) for p in m] for m in medians_raw]
+    medians_px = [smooth_polyline([to_canvas((p[0], p[1])) for p in m])
+                  for m in medians_raw]
 
     frames = []
 
@@ -211,6 +247,9 @@ def build_frames(strokes_raw, medians_raw, trail_steps=6, hold=8):
             if len(pts) > 2:
                 d.polygon(pts, fill=STROKE_COLOR)
 
+    def downsize(img):
+        return img.resize((OUT_CANVAS, OUT_CANVAS), Image.LANCZOS)
+
     n = len(strokes_px)
     for i in range(n):
         median = medians_px[i] if i < len(medians_px) else []
@@ -220,16 +259,16 @@ def build_frames(strokes_raw, medians_raw, trail_steps=6, hold=8):
             t_max = step / trail_steps
             trail = sample_polyline_fraction(median, t_max)
             if len(trail) > 1:
-                d.line(trail, fill=TRAIL_COLOR, width=9, joint="curve")
+                d.line(trail, fill=TRAIL_COLOR, width=9 * SS, joint="curve")
             if trail:
                 tx, ty = trail[-1]
-                r = 6
+                r = 6 * SS
                 d.ellipse([tx - r, ty - r, tx + r, ty + r], fill=TRAIL_COLOR)
-            frames.append(img)
+            frames.append(downsize(img))
         # nét thứ i hoàn tất -> tô đặc
         img, d = new_canvas()
         fill_upto(d, i)
-        frames.append(img)
+        frames.append(downsize(img))
 
     frames.extend([frames[-1].copy() for _ in range(hold)])
     return frames

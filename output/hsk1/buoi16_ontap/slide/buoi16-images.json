@@ -1,0 +1,20 @@
+{
+  "out_dir": "assets",
+  "images": [
+    { "name": "b01_nin_men", "query": "smiling students classroom" },
+    { "name": "b02_word_order", "query": "student reading book at home" },
+    { "name": "b03_shi_de_ma", "query": "smiling couple portrait" },
+    { "name": "b04_you_liang", "query": "happy family portrait four people" },
+    { "name": "b05_noun_pred_hui", "query": "person cooking wok kitchen" },
+    { "name": "b06_xiang_liandong", "query": "woman shopping supermarket" },
+    { "name": "b07_dian_fen_ba", "query": "wooden wall clock close up" },
+    { "name": "b08_fangwei_zai_neng", "query": "cat lying under table" },
+    { "name": "b09_cunxian_di", "query": "puppy sitting grass" },
+    { "name": "b10_adj_pred_qian", "query": "fresh apples market stall" },
+    { "name": "b11_zhengfan_zai", "query": "family watching tv living room" },
+    { "name": "b12_feizhuwei_le_tai", "query": "rain falling window" },
+    { "name": "b13_keyi_yixia", "query": "cup of hot tea" },
+    { "name": "b14_le_lihe_dou", "query": "movie theater audience seats" },
+    { "name": "b15_bingliefu", "query": "beijing forbidden city skyline" }
+  ]
+}

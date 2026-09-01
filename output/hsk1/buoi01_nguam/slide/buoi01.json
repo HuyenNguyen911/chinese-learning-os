@@ -1,0 +1,1722 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 1",
+    "topic": "拼音 · Ngữ âm nhập môn"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "Ngữ âm tiếng Trung",
+      "subtitle": "拼音 (pīnyīn) — hệ thống ghép âm",
+      "footer": "HSK1 · Sơ cấp · Buổi 1"
+    },
+    {
+      "type": "image",
+      "kicker": "总览",
+      "title": "Cấu trúc âm tiết tiếng Trung",
+      "image": "assets/overview_pinyin.png",
+      "captions": [
+        "3 phần ghép thành 1 âm tiết: 声母 (phụ âm đầu) + 韵母 (phần vần) + 声调 (thanh điệu)."
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "声母",
+      "title": "Nhóm Môi (b p m f)",
+      "headers": [
+        "声母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "image": "assets/artic_moi.gif",
+      "rows": [
+        [
+          "b",
+          "gần \"p\" Việt — KHÔNG bật hơi",
+          "爸爸 bàba — bố"
+        ],
+        [
+          "p",
+          "gần \"ph\" Việt — bật hơi mạnh",
+          "苹果 píngguǒ — táo"
+        ],
+        [
+          "m",
+          "như \"m\" Việt",
+          "妈妈 māma — mẹ"
+        ],
+        [
+          "f",
+          "như \"ph/f\" Việt",
+          "飞机 fēijī — máy bay"
+        ]
+      ],
+      "note": "bā (không bật hơi) so với pā (bật hơi mạnh) — vị trí giống hệt, chỉ khác luồng hơi.",
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "练习",
+      "title": "Luyện đọc mở rộng — Nhóm Môi",
+      "groups": [
+        {
+          "label": "b",
+          "items": [
+            {
+              "hz": "八",
+              "py": "bā",
+              "vn": "số 8"
+            },
+            {
+              "hz": "玻璃",
+              "py": "bōli",
+              "vn": "thủy tinh"
+            }
+          ]
+        },
+        {
+          "label": "p",
+          "items": [
+            {
+              "hz": "拍",
+              "py": "pāi",
+              "vn": "vỗ, chụp (ảnh)"
+            },
+            {
+              "hz": "批",
+              "py": "pī",
+              "vn": "phê duyệt"
+            }
+          ]
+        },
+        {
+          "label": "m",
+          "items": [
+            {
+              "hz": "猫",
+              "py": "māo",
+              "vn": "con mèo"
+            },
+            {
+              "hz": "摸",
+              "py": "mō",
+              "vn": "sờ"
+            }
+          ]
+        },
+        {
+          "label": "f",
+          "items": [
+            {
+              "hz": "发",
+              "py": "fā",
+              "vn": "phát ra"
+            },
+            {
+              "hz": "分",
+              "py": "fēn",
+              "vn": "phút"
+            },
+            {
+              "hz": "夫妻",
+              "py": "fūqī",
+              "vn": "vợ chồng"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "声母",
+      "title": "Nhóm Đầu lưỡi (d t n l)",
+      "headers": [
+        "声母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "image": "assets/artic_daulu.gif",
+      "rows": [
+        [
+          "d",
+          "gần \"t\" Việt — KHÔNG bật hơi",
+          "大 dà — to, lớn"
+        ],
+        [
+          "t",
+          "gần \"th\" Việt — bật hơi",
+          "他 tā — anh ấy"
+        ],
+        [
+          "n",
+          "như \"n\" Việt",
+          "你 nǐ — bạn"
+        ],
+        [
+          "l",
+          "như \"l\" Việt",
+          "老师 lǎoshī — giáo viên"
+        ]
+      ],
+      "note": "dū so với tū — cùng đầu lưỡi chạm lợi, khác bật hơi (giống quy tắc b–p vừa học).",
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "练习",
+      "title": "Luyện đọc mở rộng — Nhóm Đầu lưỡi",
+      "groups": [
+        {
+          "label": "d",
+          "items": [
+            {
+              "hz": "搭",
+              "py": "dā",
+              "vn": "đi nhờ"
+            },
+            {
+              "hz": "低",
+              "py": "dī",
+              "vn": "thấp"
+            },
+            {
+              "hz": "都",
+              "py": "dōu",
+              "vn": "đều"
+            }
+          ]
+        },
+        {
+          "label": "t",
+          "items": [
+            {
+              "hz": "她",
+              "py": "tā",
+              "vn": "cô ấy"
+            },
+            {
+              "hz": "它",
+              "py": "tā",
+              "vn": "nó (đồ vật)"
+            },
+            {
+              "hz": "踢",
+              "py": "tī",
+              "vn": "đá (bóng)"
+            }
+          ]
+        },
+        {
+          "label": "n",
+          "items": [
+            {
+              "hz": "妞妞",
+              "py": "niūniu",
+              "vn": "bé gái"
+            }
+          ]
+        },
+        {
+          "label": "l",
+          "items": [
+            {
+              "hz": "拉",
+              "py": "lā",
+              "vn": "kéo"
+            }
+          ]
+        }
+      ],
+      "note": "n và l ít từ thanh 1 thông dụng — 2 âm này KHÔNG khó phát âm với người Việt nên không cần ép ví dụ, tập trung vào âm là chính.",
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "声母",
+      "title": "Nhóm Gốc lưỡi (g k h)",
+      "headers": [
+        "声母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "image": "assets/artic_goclu.gif",
+      "rows": [
+        [
+          "g",
+          "gần \"c/k\" Việt — KHÔNG bật hơi",
+          "哥哥 gēge — anh trai"
+        ],
+        [
+          "k",
+          "gần \"kh\" Việt — bật hơi",
+          "看 kàn — xem, nhìn"
+        ],
+        [
+          "h",
+          "như \"h\" Việt, hơi cọ ở họng",
+          "好 hǎo — tốt, khỏe"
+        ]
+      ],
+      "note": "gē so với kē — cùng gốc lưỡi chạm ngạc mềm, khác bật hơi.",
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "练习",
+      "title": "Luyện đọc mở rộng — Nhóm Gốc lưỡi",
+      "groups": [
+        {
+          "label": "g",
+          "items": [
+            {
+              "hz": "高",
+              "py": "gāo",
+              "vn": "cao"
+            },
+            {
+              "hz": "该",
+              "py": "gāi",
+              "vn": "nên, phải"
+            },
+            {
+              "hz": "姑姑",
+              "py": "gūgu",
+              "vn": "cô, dì"
+            }
+          ]
+        },
+        {
+          "label": "k",
+          "items": [
+            {
+              "hz": "咖啡",
+              "py": "kāfēi",
+              "vn": "cà phê"
+            },
+            {
+              "hz": "开心",
+              "py": "kāixīn",
+              "vn": "vui vẻ"
+            },
+            {
+              "hz": "科",
+              "py": "kē",
+              "vn": "môn, khoa"
+            }
+          ]
+        },
+        {
+          "label": "h",
+          "items": [
+            {
+              "hz": "花",
+              "py": "huā",
+              "vn": "hoa"
+            },
+            {
+              "hz": "黑",
+              "py": "hēi",
+              "vn": "đen"
+            },
+            {
+              "hz": "呼吸",
+              "py": "hūxī",
+              "vn": "thở"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "声母",
+      "title": "Nhóm Mặt lưỡi phẳng (j q x)",
+      "headers": [
+        "声母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "image": "assets/artic_matluoi.gif",
+      "rows": [
+        [
+          "j",
+          "gần \"ch\" nhẹ, lưỡi PHẲNG sát răng dưới",
+          "叫 jiào — gọi là, tên là"
+        ],
+        [
+          "q",
+          "gần \"ch\" bật hơi mạnh, lưỡi phẳng",
+          "请 qǐng — mời, xin"
+        ],
+        [
+          "x",
+          "gần \"x/s\" nhẹ, lưỡi phẳng sát răng",
+          "学习 xuéxí — học"
+        ]
+      ],
+      "note": "j/q/x lưỡi PHẲNG sát răng dưới — dễ lẫn với zh/ch/sh (lưỡi CONG) ở nhóm sau; 2 nhóm đều nghe gần giống \"ch/x\" tiếng Việt nên dễ gộp làm một, so sánh kỹ khi sang slide tiếp theo.",
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "练习",
+      "title": "Luyện đọc mở rộng — Nhóm Mặt lưỡi phẳng",
+      "groups": [
+        {
+          "label": "j",
+          "items": [
+            {
+              "hz": "家",
+              "py": "jiā",
+              "vn": "nhà"
+            },
+            {
+              "hz": "今天",
+              "py": "jīntiān",
+              "vn": "hôm nay"
+            },
+            {
+              "hz": "鸡",
+              "py": "jī",
+              "vn": "con gà"
+            },
+            {
+              "hz": "机",
+              "py": "jī",
+              "vn": "máy"
+            }
+          ]
+        },
+        {
+          "label": "q",
+          "items": [
+            {
+              "hz": "七",
+              "py": "qī",
+              "vn": "số 7"
+            },
+            {
+              "hz": "秋天",
+              "py": "qiūtiān",
+              "vn": "mùa thu"
+            },
+            {
+              "hz": "妻子",
+              "py": "qīzi",
+              "vn": "vợ"
+            },
+            {
+              "hz": "期",
+              "py": "qī",
+              "vn": "kỳ, thời hạn"
+            }
+          ]
+        },
+        {
+          "label": "x",
+          "items": [
+            {
+              "hz": "西",
+              "py": "xī",
+              "vn": "hướng tây"
+            },
+            {
+              "hz": "心",
+              "py": "xīn",
+              "vn": "tim, lòng"
+            },
+            {
+              "hz": "西瓜",
+              "py": "xīguā",
+              "vn": "dưa hấu"
+            },
+            {
+              "hz": "吸",
+              "py": "xī",
+              "vn": "hít vào"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "声母",
+      "title": "Nhóm Cong lưỡi (zh ch sh r) · khó nhất",
+      "headers": [
+        "声母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "image": "assets/artic_conglu.gif",
+      "rows": [
+        [
+          "zh",
+          "gần \"tr\" Việt, KHÔNG bật hơi, đầu lưỡi CONG chạm ngạc cứng",
+          "中国 Zhōngguó — Trung Quốc"
+        ],
+        [
+          "ch",
+          "gần \"tr\" bật hơi mạnh, lưỡi cong",
+          "吃 chī — ăn"
+        ],
+        [
+          "sh",
+          "gần \"s\" Việt nhưng lưỡi cong lên",
+          "是 shì — là, thì"
+        ],
+        [
+          "r",
+          "không có âm tương đương — lưỡi cong, rung nhẹ, gần \"r\" Mỹ",
+          "人 rén — người"
+        ]
+      ],
+      "note": "jī (lưỡi phẳng, nhóm trước) so với zhī (lưỡi CONG lên ngạc) rất dễ gộp làm một · người Việt hay đọc zh/ch/sh như tr/ch/s tiếng Việt (KHÔNG cong lưỡi) — vì tiếng Việt không có âm cong lưỡi (retroflex), phải tập cong hẳn đầu lưỡi lên chạm ngạc cứng.",
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "练习",
+      "title": "Luyện đọc mở rộng — Nhóm Cong lưỡi",
+      "groups": [
+        {
+          "label": "zh",
+          "items": [
+            {
+              "hz": "中",
+              "py": "zhōng",
+              "vn": "giữa, Trung"
+            },
+            {
+              "hz": "猪",
+              "py": "zhū",
+              "vn": "con lợn"
+            },
+            {
+              "hz": "抓",
+              "py": "zhuā",
+              "vn": "nắm, bắt"
+            },
+            {
+              "hz": "桌子",
+              "py": "zhuōzi",
+              "vn": "cái bàn"
+            }
+          ]
+        },
+        {
+          "label": "ch",
+          "items": [
+            {
+              "hz": "车",
+              "py": "chē",
+              "vn": "xe"
+            },
+            {
+              "hz": "春天",
+              "py": "chūntiān",
+              "vn": "mùa xuân"
+            },
+            {
+              "hz": "出",
+              "py": "chū",
+              "vn": "ra"
+            },
+            {
+              "hz": "抽烟",
+              "py": "chōuyān",
+              "vn": "hút thuốc"
+            }
+          ]
+        },
+        {
+          "label": "sh",
+          "items": [
+            {
+              "hz": "书",
+              "py": "shū",
+              "vn": "sách"
+            },
+            {
+              "hz": "山",
+              "py": "shān",
+              "vn": "núi"
+            },
+            {
+              "hz": "伤心",
+              "py": "shāngxīn",
+              "vn": "buồn"
+            },
+            {
+              "hz": "收",
+              "py": "shōu",
+              "vn": "thu, nhận"
+            }
+          ]
+        },
+        {
+          "label": "r",
+          "items": [
+            {
+              "hz": "热",
+              "py": "rè",
+              "vn": "nóng"
+            },
+            {
+              "hz": "认识",
+              "py": "rènshi",
+              "vn": "quen biết"
+            },
+            {
+              "hz": "日本",
+              "py": "Rìběn",
+              "vn": "Nhật Bản"
+            }
+          ]
+        }
+      ],
+      "note": "r KHÔNG có âm tiết thanh 1 thông dụng trong tiếng Trung (đặc điểm ngữ âm, không tránh được) — 3 ví dụ trên giữ nguyên thanh gốc, nghe giáo viên đọc mẫu.",
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "声母",
+      "title": "Nhóm Đầu lưỡi phẳng (z c s)",
+      "headers": [
+        "声母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "image": "assets/artic_dauluoi_phang.gif",
+      "rows": [
+        [
+          "z",
+          "gần \"d/ch\" nhẹ, đầu lưỡi chạm RĂNG trên, KHÔNG cong",
+          "字 zì — chữ"
+        ],
+        [
+          "c",
+          "gần \"x/ts\" bật hơi mạnh, lưỡi phẳng",
+          "菜 cài — món ăn"
+        ],
+        [
+          "s",
+          "như \"x/s\" Việt, lưỡi phẳng",
+          "三 sān — số 3"
+        ]
+      ],
+      "note": "zhī–zī, chī–cī, shī–sī — cong lưỡi (nhóm trước) và phẳng lưỡi (nhóm này) nghe khác hẳn dù nhìn gần giống.",
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "练习",
+      "title": "Luyện đọc mở rộng — Nhóm Đầu lưỡi phẳng",
+      "groups": [
+        {
+          "label": "z",
+          "items": [
+            {
+              "hz": "糟糕",
+              "py": "zāogāo",
+              "vn": "hỏng rồi"
+            },
+            {
+              "hz": "增加",
+              "py": "zēngjiā",
+              "vn": "tăng thêm"
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "items": [
+            {
+              "hz": "参加",
+              "py": "cānjiā",
+              "vn": "tham gia"
+            },
+            {
+              "hz": "猜",
+              "py": "cāi",
+              "vn": "đoán"
+            },
+            {
+              "hz": "餐厅",
+              "py": "cāntīng",
+              "vn": "nhà hàng"
+            },
+            {
+              "hz": "粗心",
+              "py": "cūxīn",
+              "vn": "bất cẩn"
+            }
+          ]
+        },
+        {
+          "label": "s",
+          "items": [
+            {
+              "hz": "司机",
+              "py": "sījī",
+              "vn": "tài xế"
+            },
+            {
+              "hz": "酸",
+              "py": "suān",
+              "vn": "chua"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "韵母",
+      "title": "Nguyên âm đơn (1/3)",
+      "headers": [
+        "韵母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "rows": [
+        [
+          "a",
+          "\"a\" Việt, mở miệng to",
+          "妈 mā — mẹ"
+        ],
+        [
+          "o",
+          "giữa \"o\" và \"ô\" Việt",
+          "我 wǒ — tôi"
+        ],
+        [
+          "e",
+          "KHÔNG có âm tương đương — giữa \"ơ\" và \"ưa\", miệng dẹt",
+          "喝 hē — uống"
+        ],
+        [
+          "i",
+          "\"i\" Việt (sau phụ âm thường)",
+          "你 nǐ — bạn"
+        ],
+        [
+          "u",
+          "\"u\" Việt",
+          "五 wǔ — số 5"
+        ],
+        [
+          "ü",
+          "KHÔNG có trong tiếng Việt — đọc \"i\" nhưng CHÚM MÔI tròn như \"u\"",
+          "女 nǚ — con gái"
+        ]
+      ],
+      "note": "e và i đọc KHÁC ĐI tuỳ ngữ cảnh — e đứng riêng khác e trong ei; i thường khác i (câm/buzz) sau zh/ch/sh/z/c/s. Xem rõ ở slide luyện đọc kế tiếp.",
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "练习",
+      "title": "Luyện đọc — Nguyên âm đơn",
+      "groups": [
+        {
+          "label": "a",
+          "items": [
+            {
+              "hz": "妈",
+              "py": "mā",
+              "vn": "mẹ"
+            },
+            {
+              "hz": "八",
+              "py": "bā",
+              "vn": "số 8"
+            }
+          ]
+        },
+        {
+          "label": "o",
+          "items": [
+            {
+              "hz": "摸",
+              "py": "mō",
+              "vn": "sờ"
+            }
+          ]
+        },
+        {
+          "label": "e · đứng riêng",
+          "items": [
+            {
+              "hz": "喝",
+              "py": "hē",
+              "vn": "uống"
+            },
+            {
+              "hz": "车",
+              "py": "chē",
+              "vn": "xe"
+            }
+          ]
+        },
+        {
+          "label": "e · trong ei",
+          "items": [
+            {
+              "hz": "黑",
+              "py": "hēi",
+              "vn": "đen"
+            }
+          ]
+        },
+        {
+          "label": "i",
+          "items": [
+            {
+              "hz": "西",
+              "py": "xī",
+              "vn": "hướng tây"
+            },
+            {
+              "hz": "七",
+              "py": "qī",
+              "vn": "số 7"
+            }
+          ]
+        },
+        {
+          "label": "i · sau zh/ch/sh/z/c/s",
+          "items": [
+            {
+              "hz": "知",
+              "py": "zhī",
+              "vn": "biết"
+            }
+          ]
+        },
+        {
+          "label": "u",
+          "items": [
+            {
+              "hz": "呼",
+              "py": "hū",
+              "vn": "gọi, hô hấp"
+            }
+          ]
+        },
+        {
+          "label": "ü · khó",
+          "items": [
+            {
+              "hz": "女",
+              "py": "nǚ",
+              "vn": "con gái"
+            },
+            {
+              "hz": "去",
+              "py": "qù",
+              "vn": "đi"
+            }
+          ]
+        }
+      ],
+      "note": "nǚ (ü, môi CHÚM tròn) so với nú (u, môi tròn thường) — 2 âm khác nghĩa hoàn toàn dù nhìn gần giống; bỏ qua ü rồi đọc thành u là lỗi rất thường gặp.",
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "韵母",
+      "title": "Nguyên âm kép (2/3)",
+      "headers": [
+        "韵母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "rows": [
+        [
+          "ai",
+          "như \"ai\" Việt",
+          "爱 ài — yêu"
+        ],
+        [
+          "ei",
+          "như \"ây\" Việt",
+          "谁 shéi — ai (đại từ hỏi)"
+        ],
+        [
+          "ao",
+          "như \"ao\" Việt",
+          "好 hǎo — tốt"
+        ],
+        [
+          "ou",
+          "như \"âu/ô\" Việt",
+          "都 dōu — đều"
+        ]
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "练习",
+      "title": "Luyện đọc — Nguyên âm kép",
+      "groups": [
+        {
+          "label": "ai",
+          "items": [
+            {
+              "hz": "猜",
+              "py": "cāi",
+              "vn": "đoán"
+            },
+            {
+              "hz": "该",
+              "py": "gāi",
+              "vn": "nên, phải"
+            },
+            {
+              "hz": "哀",
+              "py": "āi",
+              "vn": "buồn, thương"
+            }
+          ]
+        },
+        {
+          "label": "ei",
+          "items": [
+            {
+              "hz": "黑",
+              "py": "hēi",
+              "vn": "đen"
+            },
+            {
+              "hz": "飞",
+              "py": "fēi",
+              "vn": "bay"
+            },
+            {
+              "hz": "杯子",
+              "py": "bēizi",
+              "vn": "cái cốc"
+            }
+          ]
+        },
+        {
+          "label": "ao",
+          "items": [
+            {
+              "hz": "高",
+              "py": "gāo",
+              "vn": "cao"
+            },
+            {
+              "hz": "猫",
+              "py": "māo",
+              "vn": "mèo"
+            },
+            {
+              "hz": "包",
+              "py": "bāo",
+              "vn": "gói, cái túi"
+            }
+          ]
+        },
+        {
+          "label": "ou",
+          "items": [
+            {
+              "hz": "都",
+              "py": "dōu",
+              "vn": "đều"
+            },
+            {
+              "hz": "收",
+              "py": "shōu",
+              "vn": "thu, nhận"
+            },
+            {
+              "hz": "偷",
+              "py": "tōu",
+              "vn": "trộm, ăn cắp"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "韵母",
+      "title": "Vận mẫu mũi (3/3) — phần khó",
+      "headers": [
+        "韵母",
+        "Đọc gần giống",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        2
+      ],
+      "rows": [
+        [
+          "an",
+          "như \"an\" Việt",
+          "三 sān — số 3"
+        ],
+        [
+          "en",
+          "như \"ân\" Việt, nhẹ và ngắn",
+          "很 hěn — rất"
+        ],
+        [
+          "ang",
+          "như \"ang\" Việt nhưng MŨI hơn, miệng mở to hơn an",
+          "忙 máng — bận"
+        ],
+        [
+          "eng",
+          "như \"âng\" Việt",
+          "冷 lěng — lạnh"
+        ],
+        [
+          "in",
+          "như \"in\" Việt",
+          "您 nín — ngài (kính trọng)"
+        ],
+        [
+          "ing",
+          "như \"inh\" Việt",
+          "姓 xìng — họ, tên họ"
+        ],
+        [
+          "-i (sau zh/ch/sh/z/c/s)",
+          "KHÔNG đọc \"i\" thường — chỉ giữ vị trí lưỡi của phụ âm trước, không phát âm rõ",
+          "知 zhī — biết · 是 shì — là"
+        ]
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "练习",
+      "title": "Luyện đọc — Vận mẫu mũi",
+      "groups": [
+        {
+          "label": "an",
+          "items": [
+            {
+              "hz": "三",
+              "py": "sān",
+              "vn": "số 3"
+            },
+            {
+              "hz": "安",
+              "py": "ān",
+              "vn": "an toàn, yên"
+            }
+          ]
+        },
+        {
+          "label": "en",
+          "items": [
+            {
+              "hz": "恩",
+              "py": "ēn",
+              "vn": "ơn"
+            }
+          ]
+        },
+        {
+          "label": "ang · so với an",
+          "items": [
+            {
+              "hz": "汤",
+              "py": "tāng",
+              "vn": "canh"
+            },
+            {
+              "hz": "帮",
+              "py": "bāng",
+              "vn": "giúp"
+            }
+          ]
+        },
+        {
+          "label": "eng · so với en",
+          "items": [
+            {
+              "hz": "灯",
+              "py": "dēng",
+              "vn": "đèn"
+            },
+            {
+              "hz": "蒸",
+              "py": "zhēng",
+              "vn": "hấp"
+            }
+          ]
+        },
+        {
+          "label": "in",
+          "items": [
+            {
+              "hz": "心",
+              "py": "xīn",
+              "vn": "tim, lòng"
+            },
+            {
+              "hz": "因",
+              "py": "yīn",
+              "vn": "vì, do"
+            }
+          ]
+        },
+        {
+          "label": "ing · so với in",
+          "items": [
+            {
+              "hz": "鹰",
+              "py": "yīng",
+              "vn": "chim ưng"
+            }
+          ]
+        },
+        {
+          "label": "-i",
+          "items": [
+            {
+              "hz": "知",
+              "py": "zhī",
+              "vn": "biết"
+            },
+            {
+              "hz": "思",
+              "py": "sī",
+              "vn": "suy nghĩ"
+            }
+          ]
+        }
+      ],
+      "note": "an/ang, en/eng, in/ing — tiếng Việt không phân biệt rõ 3 cặp này; ang/eng/ing MŨI và MỞ miệng hơn an/en/in.",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "image",
+      "kicker": "声调",
+      "title": "So sánh 4 thanh + khinh thanh",
+      "image": "assets/tone_chart.png",
+      "captions": [
+        "Xem GIF động từng thanh ở 5 slide sau để luyện phát âm chi tiết."
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "声调",
+      "title": "Thanh 1 — Ngang cao (55)",
+      "headers": [
+        "汉字",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "image": "assets/tone1.gif",
+      "image_side": "left",
+      "rows": [
+        [
+          "妈",
+          "mā",
+          "mẹ"
+        ],
+        [
+          "他",
+          "tā",
+          "anh ấy / cô ấy"
+        ],
+        [
+          "高",
+          "gāo",
+          "cao"
+        ],
+        [
+          "飞",
+          "fēi",
+          "bay"
+        ],
+        [
+          "吃",
+          "chī",
+          "ăn"
+        ],
+        [
+          "今天",
+          "jīntiān",
+          "hôm nay"
+        ]
+      ],
+      "tip": "Giữ độ cao ổn định từ đầu đến cuối, không lên không xuống. Lỗi thường gặp: giọng bị \"rơi\" ở cuối âm tiết — phải giữ CAO đến hết.",
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "声调",
+      "title": "Thanh 2 — Đi lên (35)",
+      "headers": [
+        "汉字",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "image": "assets/tone2.gif",
+      "image_side": "left",
+      "rows": [
+        [
+          "谁",
+          "shéi",
+          "ai"
+        ],
+        [
+          "人",
+          "rén",
+          "người"
+        ],
+        [
+          "来",
+          "lái",
+          "đến"
+        ],
+        [
+          "国",
+          "guó",
+          "nước, quốc gia"
+        ],
+        [
+          "学",
+          "xué",
+          "học"
+        ],
+        [
+          "十",
+          "shí",
+          "số 10"
+        ]
+      ],
+      "tip": "Bắt đầu ở mức trung, đi lên dứt khoát — như đang hỏi lại \"hả?\". Lỗi thường gặp: lên không đủ đà, nghe giống thanh 3 — phải bật mạnh lên ở cuối.",
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "声调",
+      "title": "Thanh 3 — Xuống rồi lên (214)",
+      "headers": [
+        "汉字",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "image": "assets/tone3.gif",
+      "image_side": "left",
+      "rows": [
+        [
+          "你",
+          "nǐ",
+          "bạn"
+        ],
+        [
+          "好",
+          "hǎo",
+          "tốt"
+        ],
+        [
+          "我",
+          "wǒ",
+          "tôi"
+        ],
+        [
+          "很",
+          "hěn",
+          "rất"
+        ],
+        [
+          "可以",
+          "kěyǐ",
+          "có thể"
+        ],
+        [
+          "老师",
+          "lǎoshī",
+          "giáo viên"
+        ]
+      ],
+      "tip": "Bắt đầu mức thấp, hạ xuống đáy rồi bật lên nhẹ ở cuối — đọc một mình thì kéo dài hơn 3 thanh kia. Lỗi thường gặp: đọc thành thanh 2 (bỏ quên đoạn xuống đáy) — đây là cặp thanh người Việt DỄ LẪN NHẤT, luôn nhìn hướng đường cong để phân biệt. Ghi nhớ: 2 thanh 3 liền nhau → thanh 3 đầu đổi thành thanh 2 (học kỹ ở buổi 2).",
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "声调",
+      "title": "Thanh 4 — Đi xuống (51)",
+      "headers": [
+        "汉字",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "image": "assets/tone4.gif",
+      "image_side": "left",
+      "rows": [
+        [
+          "再",
+          "zài",
+          "lại, nữa"
+        ],
+        [
+          "是",
+          "shì",
+          "là, thì"
+        ],
+        [
+          "看",
+          "kàn",
+          "xem, nhìn"
+        ],
+        [
+          "去",
+          "qù",
+          "đi"
+        ],
+        [
+          "大",
+          "dà",
+          "to, lớn"
+        ],
+        [
+          "爱",
+          "ài",
+          "yêu"
+        ]
+      ],
+      "tip": "Từ mức cao nhất RƠI THẲNG xuống đáy — dứt khoát như ra lệnh. Lỗi thường gặp: rơi không đủ nhanh/mạnh — nghe lưng chừng giữa thanh 4 và thanh 1.",
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "声调",
+      "title": "Thanh 5 — Khinh thanh (nhẹ)",
+      "headers": [
+        "汉字",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "image": "assets/tone5.gif",
+      "image_side": "left",
+      "rows": [
+        [
+          "妈妈",
+          "māma",
+          "mẹ (chữ 2 nhẹ)"
+        ],
+        [
+          "吗",
+          "ma",
+          "trợ từ hỏi cuối câu"
+        ],
+        [
+          "爸爸",
+          "bàba",
+          "bố (chữ 2 nhẹ)"
+        ],
+        [
+          "谢谢",
+          "xièxie",
+          "cảm ơn (chữ 2 nhẹ)"
+        ],
+        [
+          "朋友",
+          "péngyou",
+          "bạn bè (chữ 2 nhẹ)"
+        ],
+        [
+          "我们",
+          "wǒmen",
+          "chúng tôi (chữ 2 nhẹ)"
+        ]
+      ],
+      "tip": "Không có đường cong riêng — đọc NHẸ và NGẮN, cao độ phụ thuộc âm tiết trước. Lỗi thường gặp: cố đọc rõ dấu cho âm khinh thanh (mang dấu thanh riêng) — chỉ cần lướt nhanh, không nhấn. Buổi 2 học chi tiết 轻声 (khinh thanh trong từ) và 儿化 (cuốn lưỡi).",
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "变调",
+      "title": "Biến điệu 不 (bù) và 一 (yī)",
+      "headers": [
+        "Quy tắc",
+        "Ví dụ 1",
+        "Ví dụ 2",
+        "Ví dụ 3"
+      ],
+      "cjk_cols": [],
+      "rows": [
+        [
+          "不 + thanh 4 → bú (thanh 2)",
+          "不是 bú shì — không phải",
+          "不客气 bú kèqi — không có gì",
+          "不对 bú duì — không đúng"
+        ],
+        [
+          "不 + thanh 1/2/3 → giữ bù (thanh 4)",
+          "不好 bù hǎo — không tốt",
+          "不来 bù lái — không đến",
+          "不忙 bù máng — không bận"
+        ],
+        [
+          "一 + thanh 4 → yí (thanh 2)",
+          "一定 yídìng — nhất định",
+          "一样 yíyàng — giống nhau",
+          "一共 yígòng — tổng cộng"
+        ],
+        [
+          "一 + thanh 1/2/3 → yì (thanh 4)",
+          "一天 yìtiān — một ngày",
+          "一起 yìqǐ — cùng nhau",
+          "一直 yìzhí — luôn luôn"
+        ],
+        [
+          "一 đứng riêng/cuối số đếm → giữ yī",
+          "第一 dìyī — thứ nhất",
+          "一、二、三 — đếm số",
+          "十一 shíyī — 11"
+        ]
+      ],
+      "footer_note": "不 và 一 là 2 chữ ĐỔI THANH THEO NGỮ CẢNH duy nhất cần nhớ ngay từ đầu vì xuất hiện liên tục — các quy tắc biến điệu khác (chuỗi thanh 3, 轻声, 儿化) học ở buổi 2.",
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "写字",
+      "title": "8 nét cơ bản trong chữ Hán",
+      "headers": [
+        "Nét",
+        "Tên gọi",
+        "Cách viết"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "一",
+          "Nét ngang",
+          "Kéo từ trái sang phải."
+        ],
+        [
+          "丨",
+          "Nét sổ",
+          "Kéo thẳng từ trên xuống dưới."
+        ],
+        [
+          "丶",
+          "Nét chấm",
+          "Một dấu chấm từ trên xuống."
+        ],
+        [
+          "丿",
+          "Nét phẩy",
+          "Cong từ trên xuống dưới, sang trái."
+        ],
+        [
+          "乀",
+          "Nét mác",
+          "Kéo từ trên xuống dưới, sang phải."
+        ],
+        [
+          "亅",
+          "Nét hất",
+          "Hất từ dưới lên trên, sang phải."
+        ],
+        [
+          "𠃍",
+          "Nét gập",
+          "Nét ngang gập gãy xuống thành nét sổ."
+        ],
+        [
+          "亅",
+          "Nét móc",
+          "Kéo sổ xuống dưới rồi móc nhẹ lên."
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "写字",
+      "title": "6 quy tắc thứ tự viết nét",
+      "headers": [
+        "Quy tắc",
+        "Mô tả"
+      ],
+      "cjk_cols": [],
+      "rows": [
+        [
+          "Ngang trước, sổ sau",
+          "Viết nét ngang trước rồi mới viết nét sổ cắt qua."
+        ],
+        [
+          "Phẩy trước, mác sau",
+          "Viết nét phẩy (trái) trước, nét mác (phải) sau."
+        ],
+        [
+          "Trên trước, dưới sau",
+          "Viết các nét ở phần trên trước, phần dưới sau."
+        ],
+        [
+          "Trái trước, phải sau",
+          "Viết phần bên trái trước, phần bên phải sau."
+        ],
+        [
+          "Ngoài trước, trong sau",
+          "Viết khung bao quanh bên ngoài trước, chữ bên trong sau (sau đó mới đóng cửa)."
+        ],
+        [
+          "Giữa trước, hai bên sau",
+          "Với các chữ có đối xứng, viết nét ở giữa trước, sau đó viết hai bên."
+        ]
+      ],
+      "footer_note": "6 quy tắc này là NỀN TẢNG áp dụng cho mọi chữ Hán — 6 ví dụ chữ ở các slide sau đều minh hoạ lại đúng các quy tắc này."
+    },
+    {
+      "type": "stroke_group",
+      "kicker": "写字",
+      "title": "Ví dụ: Nét ngang — 一 二 三",
+      "principle": "Ngang trước, sổ sau (áp dụng lặp lại): mỗi nét ngang viết trái → phải; nhiều nét ngang xếp chồng thì TRÊN trước, DƯỚI sau.",
+      "chars": [
+        {
+          "hanzi": "一",
+          "pinyin": "yī",
+          "meaning": "số 1",
+          "image": "assets/stroke_yi.gif"
+        },
+        {
+          "hanzi": "二",
+          "pinyin": "èr",
+          "meaning": "số 2",
+          "image": "assets/stroke_er.gif"
+        },
+        {
+          "hanzi": "三",
+          "pinyin": "sān",
+          "meaning": "số 3",
+          "image": "assets/stroke_san.gif"
+        }
+      ],
+      "audio": "assets/audio/slide30.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "Ví dụ: Phẩy trước, mác sau — 人 (rén)",
+      "image": "assets/stroke_ren.gif",
+      "bullets": [
+        "Nghĩa: người. Gồm 2 nét (nét phẩy + nét mác).",
+        "Thứ tự nét: nét phẩy (bên trái, đi xuống) viết trước, nét mác (bên phải, đi xuống) viết sau.",
+        "Quy tắc: Phẩy trước, mác sau — hình dáng như 2 chân người đang đứng."
+      ],
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "Ví dụ: Ngoài trước, trong sau — 口 (kǒu)",
+      "image": "assets/stroke_kou.gif",
+      "bullets": [
+        "Nghĩa: miệng. Cũng là bộ thủ hay gặp (吗, 叫, 谢…).",
+        "Thứ tự nét: nét dọc bên trái → nét ngang-dọc gập góc (trên + phải) → nét ngang đóng đáy.",
+        "Quy tắc: Ngoài trước, trong sau — viết khung bao ngoài trước, đóng đáy sau cùng."
+      ],
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "Ví dụ: Trái trước, phải sau — 你 (nǐ)",
+      "image": "assets/stroke_ni.gif",
+      "bullets": [
+        "Nghĩa: bạn / anh / chị. Ghép bộ 亻(nhân đứng) + 尔.",
+        "Thứ tự nét: bộ 亻 (2 nét) viết trước, phần bên phải viết sau.",
+        "Quy tắc: Trái trước, phải sau — áp dụng cho mọi chữ có bộ 亻 (你 / 他 / 们)."
+      ],
+      "audio": "assets/audio/slide33.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "写字",
+      "title": "Ví dụ: Trái trước, phải sau — 好 (hǎo)",
+      "image": "assets/stroke_hao.gif",
+      "bullets": [
+        "Nghĩa: tốt, khỏe. Ghép 女 (nữ) + 子 (tử/con).",
+        "Thứ tự nét: 女 (3 nét, bên trái) viết trước, 子 (3 nét, bên phải) viết sau.",
+        "Ghi nhớ: \"女 (mẹ) + 子 (con) = 好 (tốt)\" — hình ảnh dễ nhớ để ghép nghĩa với mặt chữ."
+      ],
+      "audio": "assets/audio/slide34.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "练习",
+      "title": "Luyện đọc — Phân biệt phụ âm",
+      "headers": [
+        "b",
+        "p",
+        "d",
+        "t",
+        "g",
+        "k"
+      ],
+      "cjk_cols": [],
+      "rows": [
+        [
+          "bā",
+          "pā",
+          "dā",
+          "tā",
+          "gā",
+          "kā"
+        ],
+        [
+          "bū",
+          "pū",
+          "dū",
+          "tū",
+          "gū",
+          "kū"
+        ],
+        [
+          "bāi",
+          "pāi",
+          "dāi",
+          "tāi",
+          "gāi",
+          "kāi"
+        ],
+        [
+          "bāo",
+          "pāo",
+          "dōu",
+          "tōu",
+          "gāo",
+          "kāo"
+        ]
+      ],
+      "note": "Đọc thanh 1 (ngang cao) xuyên suốt — sách gốc không ghi thanh, buổi 1 mặc định thanh 1 để tập trung vào ÂM, chưa cần lo cao độ.",
+      "footer_note": "Nguồn: 汉语教程 (Giáo trình Hán ngữ, Yang Jizhou chủ biên) Quyển 1, Bài 1, mục 语音练习 (1) 辨别声母 — Đại học Ngôn ngữ Bắc Kinh xuất bản.",
+      "audio": "assets/audio/slide35.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "练习",
+      "title": "Luyện đọc — Phân biệt vận mẫu",
+      "headers": [
+        "Đối lập",
+        "Âm tiết luyện đọc"
+      ],
+      "cjk_cols": [],
+      "rows": [
+        [
+          "a vs o (b p m f)",
+          "bā – bō, pā – pō, mā – mō, fā – fō"
+        ],
+        [
+          "ai vs ei (b m g h)",
+          "bāi – bēi, māi – mēi, gāi – gēi, hāi – hēi"
+        ],
+        [
+          "e (h n d k)",
+          "hē, nē, dē, kē"
+        ],
+        [
+          "ao (p h k g)",
+          "pāo, hāo, kāo, gāo"
+        ],
+        [
+          "o (f m b p)",
+          "fō, mō, bō, pō"
+        ],
+        [
+          "ou (p h k g)",
+          "pōu, hōu, kōu, gōu"
+        ]
+      ],
+      "note": "Đọc thanh 1 xuyên suốt, cùng lý do như slide trước.",
+      "footer_note": "Nguồn: 汉语教程 Quyển 1, Bài 1, mục 语音练习 (2) 辨别韵母 — cùng nguồn với slide trước.",
+      "audio": "assets/audio/slide36.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "练习",
+      "title": "Luyện đọc mở rộng — Vần phức (làm quen)",
+      "headers": [
+        "Vần",
+        "j",
+        "q",
+        "x"
+      ],
+      "cjk_cols": [],
+      "rows": [
+        [
+          "ian",
+          "jiān",
+          "qián",
+          "xián"
+        ],
+        [
+          "iang",
+          "jiāng",
+          "qiáng",
+          "xiāng"
+        ],
+        [
+          "iong",
+          "—",
+          "qióng",
+          "xiōng"
+        ]
+      ],
+      "note": "Vần phức có âm đệm i/u/ü (ian, iang, iong…) học kỹ ở buổi sau — đây chỉ để LÀM QUEN mặt chữ, giúp nhận diện khi gặp trong bài đọc.",
+      "audio": "assets/audio/slide37.mp3"
+    }
+  ]
+}
