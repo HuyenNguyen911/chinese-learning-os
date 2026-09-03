@@ -15,7 +15,7 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 |---|---|---|---|---|---|
 | 01 | Ngữ âm: pinyin · thanh điệu · thanh/vận mẫu · 变调 | `buoi01_nguam/` | — | hệ thống ngữ âm, thanh điệu, 变调 | ✅ đã có |
 | 02 | Chào hỏi & làm quen | `buoi02_chaohoi_lamquen/` | L1 你好 · L2 我叫李文 | 是 · 吗 · 呢 · 叫…名字 | ⏳ chưa soạn |
-| 03 | Quốc tịch & bản thân | `buoi03_quoctich/` | L3 我是中国人 | "是"字句 · 的 · X是Y · 哪国人 | ⏳ chưa soạn |
+| 03 | Quốc tịch & bản thân | `buoi03_quoctich/` | L3 我是中国人 | "是"字句 · 的 · X是Y · 哪国人 | ✅ slide+audio xong (chưa có baitap) |
 | 04 | Gia đình | `buoi04_giadinh/` | L4 我有两个孩子 | "有"字句 · 几口人 · 和 · 都 · 两 vs 二 | ⏳ chưa soạn |
 | 05 | Số đếm & số điện thoại | `buoi05_sodem_sodt/` | L6 手机号是多少 | 多少 vs 几 · số lớn · 连动句(1) | ⏳ chưa soạn |
 | 06 | Ngày tháng & nghỉ làm | `buoi06_ngaythang/` | L5 今天我休息 | 时间的表达(1) · 名词谓语句 · 能愿动词"会" | ⏳ chưa soạn |

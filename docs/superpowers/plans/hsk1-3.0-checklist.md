@@ -393,7 +393,7 @@ chưa build slide/bài tập).
 |---|---|---|---|---|
 | 01 | Ngữ âm | — | 0 (no vocab) | ✅ đã có |
 | 02 | Chào hỏi & làm quen | L1+L2 | 26 | ⏳ chưa soạn |
-| 03 | Quốc tịch & bản thân | L3 | 11 | ⏳ chưa soạn |
+| 03 | Quốc tịch & bản thân | L3 | 11 (+12 mở rộng: 7 quốc gia, 男朋友, 4 cấp học) | ✅ đã có |
 | 04 | Gia đình | L4 | 16 | ⏳ chưa soạn |
 | 05 | Số đếm & số điện thoại | L6 | 18 | ⏳ chưa soạn |
 | 06 | Ngày tháng & nghỉ làm | L5 | 13 | ⏳ chưa soạn |

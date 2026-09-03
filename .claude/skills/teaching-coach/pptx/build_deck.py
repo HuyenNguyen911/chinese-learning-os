@@ -18,6 +18,7 @@ Cần: python-pptx, Pillow. Không cần internet lúc render.
 """
 
 import json
+import random
 import re
 import sys
 from pathlib import Path
@@ -51,6 +52,10 @@ SLIDE_W = Inches(13.333)
 SLIDE_H = Inches(7.5)
 MARGIN = Inches(0.6)
 BAND_H = Inches(1.32)
+
+# Nhãn cột 汉字 khi xáo trộn cho minigame "match" — tối đa 12 cặp/slide,
+# khuyến nghị thực tế ~8 cặp/slide (giống quy tắc `vocab`), xem pptx/README.md.
+MATCH_LETTERS = "ABCDEFGHIJKL"
 
 
 class DeckBuilder:
@@ -1754,6 +1759,172 @@ class DeckBuilder:
                 self._set_run(p2.add_run(), parts[1], sz(17, 13), color="ink", cjk=True)
         if has_img:
             self._place_image(slide, s["image"], img_left, top, img_w, area_h)
+
+    # -- minigame: "guess" (đoán từ qua ảnh) --------------------------------
+    def _slide_guess(self, s):
+        """Minigame 'Đoán từ qua ảnh' (2026-09, thêm để đa dạng hình thức
+        trình bày ngoài bảng/chữ thuần — xem mục chọn hình thức theo loại nội
+        dung trong `slide-design-best-practices.md`). Sinh 2 slide liên tiếp
+        thay vì 1: slide HỎI chỉ có ảnh to + câu dẫn (không lộ chữ), rồi slide
+        ĐÁP ÁN mới hiện 汉字/pinyin/nghĩa. Học viên đoán miệng ở slide hỏi
+        trước khi qua slide đáp án — khác `wordcard` (luôn hiện ảnh+chữ CÙNG
+        LÚC, không có yếu tố đoán). Chỉ hợp với từ vựng cụ thể minh hoạ được
+        bằng ảnh (đồ vật/hoạt động), không hợp với hư từ/khái niệm trừu tượng.
+        Trường JSON: `image` (bắt buộc để minigame có ý nghĩa), `hz`/`py`/`vn`
+        (đáp án), `prompt?` (câu dẫn, mặc định "Đoán xem: đây là gì?")."""
+        self._slide_guess_question(s)
+        self._slide_guess_answer(s)
+
+    def _slide_guess_question(self, s):
+        slide = self._new_slide()
+        self._band_header(slide, s.get("prompt", "Đoán xem: đây là gì?"),
+                          s.get("kicker"))
+        top = self._content_top(); area_h = self._content_area_h()
+        img_w = SLIDE_W - 2 * MARGIN
+        if s.get("image"):
+            self._place_image(slide, s["image"], MARGIN, top, img_w, area_h)
+        else:
+            box, tf = self._textbox(slide, MARGIN, top, img_w, area_h,
+                                    anchor=MSO_ANCHOR.MIDDLE)
+            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+            self._set_run(
+                p.add_run(),
+                "(thiếu field \"image\" — slide \"guess\" cần ảnh để đoán)",
+                14, color="muted", italic=True)
+
+    def _slide_guess_answer(self, s):
+        slide = self._new_slide()
+        self._band_header(slide, "Đáp án", s.get("kicker"))
+        top = self._content_top(); area_h = self._content_area_h()
+        txt_left, txt_w, img_left, img_w = self._split_image_col(
+            s, Inches(4.6), default_side="left")
+        if s.get("image"):
+            self._place_image(slide, s["image"], img_left, top, img_w, area_h)
+        box, tf = self._textbox(slide, txt_left, top, txt_w, area_h,
+                                anchor=MSO_ANCHOR.MIDDLE)
+        p = tf.paragraphs[0]
+        self._set_run(p.add_run(), s.get("hz", ""), 54, color="ink", bold=True,
+                      cjk=True)
+        if s.get("py"):
+            p2 = tf.add_paragraph(); p2.space_before = Pt(10)
+            self._set_run(p2.add_run(), s["py"], 22, color="accent", italic=True)
+        if s.get("vn"):
+            p3 = tf.add_paragraph(); p3.space_before = Pt(6)
+            self._set_run(p3.add_run(), s["vn"], 20, color="ink")
+
+    # -- minigame: "match" (ghép cặp xáo trộn) ------------------------------
+    def _match_items(self, s):
+        return s.get("items", [])[:len(MATCH_LETTERS)]
+
+    def _match_orders(self, s):
+        """Sinh 2 thứ tự xáo trộn ĐỘC LẬP (cột 汉字 và cột Nghĩa) — có seed cố
+        định (mặc định 42, đổi qua field "seed") để build lại nhiều lần ra
+        CÙNG 1 đề, không đổi ngẫu nhiên mỗi lần chạy (tránh lệch đề giữa các
+        lần rebuild, cùng tinh thần với cách audio/ảnh được cache theo tên
+        trong pptx/README.md). Reshuffle cột phải tối đa 20 lần nếu vô tình
+        trùng vị trí hiển thị với đáp án đúng (dễ đoán mò theo hàng thay vì
+        theo nghĩa)."""
+        items = self._match_items(s)
+        n = len(items)
+        seed = s.get("seed", 42)
+        left_order = list(range(n))
+        random.Random(seed).shuffle(left_order)
+        right_order = list(range(n))
+        rng_right = random.Random(seed + 1)
+        rng_right.shuffle(right_order)
+        tries = 0
+        while (n > 1 and any(left_order[i] == right_order[i] for i in range(n))
+               and tries < 20):
+            rng_right.shuffle(right_order)
+            tries += 1
+        return left_order, right_order
+
+    def _slide_match(self, s):
+        """Minigame 'Ghép cặp xáo trộn' (2026-09) — sinh 2 slide: slide ĐỐ
+        (cột 汉字 xáo trộn đánh nhãn A/B/C..., cột Nghĩa xáo trộn ĐỘC LẬP đánh
+        số 1/2/3..., học viên ghép miệng/viết ra chữ nào khớp số nào) rồi
+        slide ĐÁP ÁN (bảng đối chiếu, tái dùng `_slide_table` thay vì viết lại
+        logic co giãn cột/hàng). Dùng để ôn tập 1 nhóm từ đã dạy thay cho
+        `bullets` liệt kê thụ động. Trường JSON: `items[]` = `{hz, py, vn}`,
+        `seed?` (đổi đề nếu muốn), tối đa `len(MATCH_LETTERS)` = 12 cặp
+        (khuyến nghị thực tế ~8/slide, giống quy tắc `vocab` — nhiều hơn nên
+        tách 2 slide `match` liên tiếp)."""
+        self._slide_match_puzzle(s)
+        self._slide_match_answer(s)
+
+    def _slide_match_puzzle(self, s):
+        slide = self._new_slide()
+        self._band_header(slide, s.get("title", "Ghép chữ với nghĩa đúng"),
+                          s.get("kicker"))
+        items = self._match_items(s)
+        n = len(items)
+        if n == 0:
+            return
+        left_order, right_order = self._match_orders(s)
+        top = self._content_top(); area_h = self._content_area_h()
+        col_gap = Inches(0.5)
+        col_w = int((SLIDE_W - 2 * MARGIN - col_gap) / 2)
+        left_x = MARGIN
+        right_x = MARGIN + col_w + col_gap
+
+        hz_sz, vn_sz, label_sz = 26, 17, 20
+        # Đo số dòng THẬT cho cột 汉字 (chữ to nhất, dễ tràn nhất nếu item là
+        # cụm từ chứ không phải 1 chữ đơn) bằng _wrap_lines — cùng cách các
+        # slide khác trong file này dùng để né lớp lỗi "ước lượng thiếu số
+        # dòng -> tràn ô" đã ghi nhiều lần trong pptx/README.md.
+        max_hz_lines = max(
+            (self._wrap_lines(it.get("hz", ""), col_w - Inches(0.6), hz_sz,
+                              cjk=True, bold=True) for it in items), default=1)
+        ideal_row_h = self._line_h(hz_sz) * max_hz_lines + Inches(0.12)
+        scale = self._fit_scale(ideal_row_h * n, area_h)
+        row_h = int(ideal_row_h * scale)
+        hz_sz = max(13, int(hz_sz * scale))
+        vn_sz = max(11, int(vn_sz * scale))
+        label_sz = max(12, int(label_sz * scale))
+        grid_top = top + max(0, int((area_h - row_h * n) / 2))
+
+        for row, idx in enumerate(left_order):
+            it = items[idx]
+            y = grid_top + row * row_h
+            box, tf = self._textbox(slide, left_x, y, col_w, row_h,
+                                    anchor=MSO_ANCHOR.MIDDLE)
+            p = tf.paragraphs[0]
+            self._set_run(p.add_run(), "%s.  " % MATCH_LETTERS[row], label_sz,
+                          color="accent", bold=True)
+            self._set_run(p.add_run(), it.get("hz", ""), hz_sz, color="ink",
+                          bold=True, cjk=True)
+        for row, idx in enumerate(right_order):
+            it = items[idx]
+            y = grid_top + row * row_h
+            box, tf = self._textbox(slide, right_x, y, col_w, row_h,
+                                    anchor=MSO_ANCHOR.MIDDLE)
+            p = tf.paragraphs[0]
+            self._set_run(p.add_run(), "%d.  " % (row + 1), label_sz,
+                          color="accent", bold=True)
+            self._set_run(p.add_run(), it.get("vn", ""), vn_sz, color="ink")
+
+    def _slide_match_answer(self, s):
+        items = self._match_items(s)
+        if not items:
+            return
+        left_order, right_order = self._match_orders(s)
+        right_pos_of = {orig: j for j, orig in enumerate(right_order)}
+        rows = []
+        for i, orig in enumerate(left_order):
+            it = items[orig]
+            ans_num = right_pos_of[orig] + 1
+            rows.append([MATCH_LETTERS[i], it.get("hz", ""), it.get("py", ""),
+                        it.get("vn", ""), "%s → %d" % (MATCH_LETTERS[i], ans_num)])
+        # Tái dùng nguyên `_slide_table` (đã xử lý co giãn cột/hàng/cỡ chữ)
+        # thay vì viết lại logic bảng riêng — chỉ dựng 1 "spec" bảng giả từ
+        # kết quả ghép cặp.
+        self._slide_table({
+            "title": "Đáp án — chữ nào khớp nghĩa nào",
+            "kicker": s.get("kicker"),
+            "headers": ["", "汉字", "Pinyin", "Nghĩa", "Đáp án"],
+            "cjk_cols": [1],
+            "rows": rows,
+        })
 
 
 def main(argv):

@@ -110,6 +110,8 @@ Item chỉ 1 dòng (không có `\n`) vẫn hoạt động như cũ, không bị 
 | `word_groups` | `groups[]` = `{label, items[]}`, mỗi `item` = `{hz, py, vn}` | N nhóm xếp CẠNH NHAU (banner nhãn to 30pt + bảng con 汉字\|Pinyin\|Nghĩa mỗi dòng 1 ví dụ) — tự xếp lưới thích ứng theo số nhóm (≤3 → 1 hàng, 4 → 2×2, >4 → nhiều hàng x4 cột) để cột luôn đủ rộng, không rớt dòng. Dùng cho bảng luyện đọc theo nhóm 声母/韵母 thay vì nhồi nhiều ví dụ vào 1 ô |
 | `stroke_group` | `principle`, `chars[]` = `{hanzi, pinyin, meaning, image}` | N chữ Hán CÙNG minh hoạ 1 nguyên tắc viết nét, xếp thẻ ngang (ảnh GIF nét + nhãn) dưới 1 dòng nguyên tắc chung — tránh lặp nguyên tắc giống hệt nhau nhiều slide (vd 一/二/三 đều "nét ngang, trái→phải") |
 | `info_grid` | `cards[]` = `{label, image?, py?, caption?}` | N thẻ (ảnh + label CJK đậm + pinyin + caption Việt) xếp LƯỚI trong 1 slide (≤4 thẻ → 1 hàng, >4 → 4 cột nhiều hàng) — dùng khi 1 slide cần NHIỀU ảnh cùng lúc (vd hồ sơ 1 quốc gia: cờ+biểu tượng+thủ đô+ngôn ngữ+tiền tệ), khác mọi type khác chỉ hỗ trợ 1 ảnh/slide |
+| `guess` | `image`, `hz`, `py?`, `vn?`, `prompt?` | **Minigame "đoán từ qua ảnh"** (2026-09) — 1 block JSON tự sinh **2 slide**: slide HỎI (chỉ ảnh to + `prompt`, mặc định "Đoán xem: đây là gì?", không lộ chữ) rồi slide ĐÁP ÁN (ảnh nhỏ hơn 1 bên + 汉字/pinyin/nghĩa). Học viên đoán miệng trước khi qua slide sau. Chỉ hợp với từ vựng cụ thể minh hoạ được bằng ảnh (đồ vật/hoạt động) — từ trừu tượng dùng `vocab`/`wordcard` như cũ. Thiếu `image` → slide hỏi hiện placeholder báo thiếu, không crash. |
+| `match` | `items[]` = `{hz, py, vn}` (khuyến nghị ≤8, tối đa 12), `seed?` | **Minigame "ghép cặp xáo trộn"** (2026-09) — 1 block JSON tự sinh **2 slide**: slide ĐỐ (cột 汉字 xáo trộn nhãn A/B/C..., cột Nghĩa xáo trộn ĐỘC LẬP đánh số 1/2/3..., học viên ghép miệng/viết ra giấy) rồi slide ĐÁP ÁN (bảng đối chiếu, tái dùng renderer của `table`). Xáo trộn có seed cố định (mặc định 42) nên build lại nhiều lần ra CÙNG 1 đề — đổi `seed` nếu muốn đề khác. Dùng để ôn tập 1 nhóm từ đã dạy, thay cho `bullets` liệt kê thụ động. |
 
 Ghi chú:
 - **`dialogue`**: speaker xuất hiện **đầu tiên** căn trái, các speaker khác căn phải.
@@ -667,6 +669,22 @@ nhiều lần, không xảy ra khi build từ JSON sạch):**
       return None
   _pptx_package._MediaParts._find_by_sha1 = _safe_find_by_sha1
   ```
+
+## Chọn hình thức trình bày theo loại nội dung (2026-09)
+
+Trước khi soạn JSON, đừng mặc định luôn dùng `vocab`/`bullets` — tra nhanh theo
+loại nội dung để tránh mọi buổi giống hệt nhau về hình thức:
+
+| Loại nội dung | Hình thức mặc định | Khi nào đổi sang minigame |
+|---|---|---|
+| Từ vựng cụ thể (đồ vật/hoạt động minh hoạ được) | `wordcard`/`word_pair` | Có ảnh rõ, muốn học viên chủ động đoán trước khi xem nghĩa → `guess` |
+| Từ trừu tượng (hư từ, khái niệm) | `vocab` bảng | Không đổi — ảnh không giúp gì cho loại này |
+| Ôn tập 1 nhóm từ đã dạy (cuối buổi/đầu buổi sau) | `bullets` liệt kê | Nên đổi sang `match` — ôn tập bằng liệt kê thụ động là hình thức yếu nhất để ghi nhớ, ghép cặp buộc học viên nhớ lại chủ động |
+| Ngữ pháp có ≥2 cấu trúc dễ nhầm | `table` so sánh | Không đổi — `guess`/`match` không hợp với nội dung trừu tượng |
+
+Xem thêm mục "Nguyên tắc trình bày" trong `slide-design-best-practices.md`
+(đóng gói trong `chinese-teaching.skill`) để biết đủ bảng map nội dung → hình
+thức cho mọi loại slide, không chỉ 2 minigame mới này.
 
 ## Nguyên tắc thiết kế (đã nhúng sẵn trong renderer)
 
