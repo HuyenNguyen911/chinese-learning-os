@@ -330,12 +330,52 @@ Không có `audio_text` → trích theo `type`:
 > **PowerPoint thật** (desktop hoặc app điện thoại) — tải file về rồi trình chiếu.
 > Trình xem trực tiếp trên Drive hoặc Google Slides sẽ không kêu.
 
-## Ảnh minh hoạ (Openverse CC)
+## Ảnh minh hoạ (Pexels — ảnh chụp thật)
+
+**Nguồn (đổi từ Openverse sang Pexels, 2026-09-03):** Openverse gộp ảnh CC từ nhiều
+nguồn (Flickr, Wikimedia, bảo tàng số hoá...) nên hay lẫn tranh minh hoạ/clip-art cũ,
+không đúng phong cách ảnh chụp thực tế mong muốn cho slide. Pexels chỉ có ảnh chụp thật
+(không có mục illustration/vector), giới hạn miễn phí thoải mái (200 request/giờ,
+20.000/tháng), lấy API key tức thì không cần duyệt.
+
+**Cần API key:** lấy miễn phí tại https://www.pexels.com/api/, rồi đặt biến môi trường
+`PEXELS_API_KEY` trước khi chạy (không commit key vào repo):
+```bash
+PEXELS_API_KEY=xxxx "$PY" .claude/skills/teaching-coach/pptx/fetch_images.py <manifest.json>
+```
 
 Sinh manifest `{name, query}` → chạy `fetch_images.py <manifest.json>` (xem docstring đầu
 file) → tải vào `out_dir`, ghi `credits.json`. Sau đó gắn `"image": "assets/<name>.jpg"` vào
 từng slide (`title/vocab/grammar/dialogue/bullets/exercise/table/image` hỗ trợ `image` —
 `reading` không có).
+
+⚠️ **Pexels YẾU với 2 nhóm chủ đề (xác nhận qua test thực tế Buổi 3 HSK1,
+2026-09-03) — vì bản chất chỉ có ảnh chụp thật, không có đồ hoạ/icon:**
+- **Cờ quốc gia** — query kiểu `"France flag"`/`"China flag"` hay ra ảnh lạc đề (nhà
+  thờ có băng-rôn huy hiệu, toà nhà có cờ chỉ là chi tiết nhỏ...), gần như không có
+  ảnh cận cảnh quốc kỳ sạch. **Đổi hẳn sang query địa danh/biểu tượng nổi tiếng của
+  nước đó** thay vì tìm cờ — hiệu quả rõ rệt và dễ nhận biết hơn với học sinh tiểu
+  học: Tháp Eiffel (Pháp), Tử Cấm Thành/Forbidden City Beijing (Trung Quốc), nón lá +
+  ruộng lúa/"conical hat rice field" (Việt Nam), Tượng Nữ thần Tự Do (Mỹ), Big Ben
+  (Anh), núi Phú Sĩ/Mount Fuji (Nhật), cổng Brandenburg ban ngày — thêm rõ
+  "daytime" nếu không sẽ ra ảnh đêm tối khó nhìn (Đức), Nhà hát Opera Sydney (Úc).
+- **Icon khái niệm trừu tượng** (question mark, chain link, ID card, megaphone,
+  no-entry, và từ ngữ pháp thuần trừu tượng như 这/谁) — search ra vật thể trùng chữ
+  nhưng sai hẳn nghĩa biểu tượng (vd "question mark" → biển báo qua đường ban đêm;
+  "chain link" → cái lá kẹt hàng rào lưới thép; "megaphone" → cây kèn trumpet;
+  "ID card" → cái ví tiền có chữ nước ngoài). Với nhóm này: **không cố ép Pexels** —
+  giữ nguyên ảnh/icon nguồn cũ (vd bộ icon Openverse đã có sẵn trong `assets/icons/`)
+  hoặc để trống theo quy tắc "2 lượt" ở trên, đừng tính 2 lượt riêng cho nhóm này vì
+  gần như chắc chắn không ra ảnh đúng.
+
+⚠️ **Pexels hay trả CÙNG 1 ảnh top-result cho nhiều query gần nghĩa khác nhau**
+(2026-09-03) — vd `"young woman smiling"` và `"person shrugging casual"` ra trùng 1
+ảnh; `"elementary school students"` và `"middle school students"` cũng trùng. Nếu
+không phát hiện, 2 slide khác nhau (đặc biệt `word_pair` 2 từ cạnh nhau) sẽ vô tình
+dùng chung 1 ảnh. **Sau khi fetch xong nhiều ảnh cho cùng 1 buổi, luôn đối chiếu
+`source` trong `credits.json`** — trùng `source` giữa 2 mục → đổi query cụ thể/hẹp
+hơn cho 1 trong 2 (thêm bối cảnh riêng, vd đổi "young woman smiling" → "happy young
+woman outdoor portrait smiling nature" để tách khỏi nhóm ảnh phổ biến).
 
 **Bắt buộc gen ảnh theo TỪNG từ vựng trước khi để trống (2026-08-07):** với mọi
 slide có field `image` (đặc biệt `wordcard`/`word_pair` — thiết kế vốn có ảnh sticker
@@ -392,10 +432,10 @@ bỏ ảnh cho buổi đó (vd buổi quá dày chữ, muốn gọn).
   cột dọc riêng trái/phải qua `image_side`, phần còn lại mới chia trên/dưới
   như thường).
 
-⚠️ **Query ngắn mới ra kết quả:** `search()` lọc `license_type=commercial&orientation=wide`
-— query TIẾNG ANH dài (>3 từ, vd `"world flags icon simple"`) hay ra **0 kết quả** dù chủ đề
-phổ biến. Luôn dùng query 1-3 từ đơn giản (`"flags"`, `"Eiffel Tower"`, `"panda"`) — nếu 0
-kết quả, rút ngắn lại trước khi đổi hẳn chủ đề tìm.
+⚠️ **Query ngắn mới ra kết quả:** query TIẾNG ANH dài (>3 từ, vd `"world flags icon
+simple"`) hay ra **0 kết quả** dù chủ đề phổ biến. Luôn dùng query 1-3 từ đơn giản
+(`"flags"`, `"Eiffel Tower"`, `"panda"`) — nếu 0 kết quả, rút ngắn lại trước khi đổi hẳn
+chủ đề tìm.
 
 **Quy trình chọn query khi từ trừu tượng (2026-08-05):** thử query bám sát
 NGHĨA TỪ trước; nếu từ là tính từ/khái niệm trừu tượng khó minh hoạ trực tiếp
@@ -415,9 +455,9 @@ flatlay") thay vì chấp nhận ảnh không phù hợp cho lớp học. Riêng
 tự thân (vd 内衣) — cân nhắc bỏ qua ảnh, không cần cố tìm bằng được.
 
 **Bắt buộc 2 bước trước khi `build_deck.py`:**
-1. **Convert non-JPEG → JPEG thật.** Openverse đôi khi trả ảnh WEBP nhưng script vẫn lưu
-   đuôi `.jpg` → `build_deck.py` sẽ crash `ValueError: unsupported image format ... WEBP`.
-   Kiểm tra + convert bằng Pillow trước khi build:
+1. **Convert non-JPEG → JPEG thật (phòng hờ).** Pexels trả JPEG thật nên hiếm gặp, nhưng
+   nếu CDN trả format khác mà script lưu nhầm đuôi `.jpg` → `build_deck.py` sẽ crash
+   `ValueError: unsupported image format ...`. Kiểm tra + convert bằng Pillow trước khi build:
    ```python
    from PIL import Image
    import glob
