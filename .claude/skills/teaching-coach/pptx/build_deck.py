@@ -751,7 +751,11 @@ class DeckBuilder:
     #    từng từ (thay cho bảng vocab dồn nhiều từ/slide).
     def _slide_wordcard(self, s):
         slide = self._new_slide()
-        self._band_header(slide, s.get("title", s.get("hz", "生词")), s.get("kicker"))
+        # Không fallback về hz làm title header — hz đã hiện to (54pt) ngay
+        # trong nội dung cột trái, lặp lại trên dải header vừa dư thừa vừa
+        # chiếm chỗ (review 2026-09-03). Header wordcard mặc định CHỈ có
+        # kicker (vd "生词 1/23"), trừ khi JSON tự khai `title` riêng.
+        self._band_header(slide, s.get("title", ""), s.get("kicker"))
         top = self._content_top()
         area_h = self._content_area_h()
         content_w = SLIDE_W - 2 * MARGIN
@@ -807,8 +811,9 @@ class DeckBuilder:
     def _slide_word_pair(self, s):
         slide = self._new_slide()
         words = s.get("words", [])[:2]
-        default_title = " · ".join(w.get("hz", "") for w in words) or "生词"
-        self._band_header(slide, s.get("title", default_title), s.get("kicker"))
+        # Cùng lý do wordcard ở trên: hz mỗi từ đã hiện to trong nội dung
+        # chính, không cần lặp lại trên header.
+        self._band_header(slide, s.get("title", ""), s.get("kicker"))
         top = self._content_top()
         area_h = self._content_area_h(self._footer_lines_extra(s))
         content_w = SLIDE_W - 2 * MARGIN
@@ -967,7 +972,14 @@ class DeckBuilder:
             for row in data:
                 text = str(row[c]) if c < len(row) else ""
                 max_len = max(max_len, len(text))
-            per_char = 1.7 if is_cjk else 1.0
+            # 2.4 (thay vì 1.7 cũ): cột 0 luôn render ĐẬM (_fill_cell
+            # bold=(c==0)) nhưng hệ số này KHÔNG tính bold, nên khi 1 cột
+            # khác trong bảng có nội dung rất dài (vd bản dịch tiếng Việt),
+            # cột CJK bị chia phần quá hẹp so với chữ đậm cần — dẫn tới câu
+            # ngắn (9 ký tự) cũng rớt dòng xấu kiểu "...是哪国 / 人？" (review
+            # 2026-09-03). 2.4 cộng thêm biên an toàn, không chỉ bù riêng
+            # hệ số đậm 1.12x.
+            per_char = 2.4 if is_cjk else 1.0
             weights.append(max(2.2, max_len * per_char))
         total = sum(weights)
         return [w / total for w in weights]
@@ -1102,6 +1114,62 @@ class DeckBuilder:
                                           anchor=MSO_ANCHOR.TOP)
                 p2 = tf2.paragraphs[0]; p2.alignment = PP_ALIGN.CENTER
                 self._set_run(p2.add_run(), cap, 11, color="muted", cjk=True)
+
+    def _slide_match_pairs(self, s):
+        """Trò chơi ôn từ vựng "nối ảnh với từ" — ẢNH (đánh số) và TỪ (đánh
+        chữ cái, đã xáo trộn) hiện CÙNG 1 slide (2 cột trái/phải) để học viên
+        vừa nhìn ảnh vừa nhìn danh sách từ mà chọn, không cần lật qua lại 2
+        slide riêng (review 2026-09-04). `images[]` = {num, image};
+        `words[]` = {letter, hz, py?, vn?}."""
+        slide = self._new_slide()
+        self._band_header(slide, s.get("title", "配对游戏"), s.get("kicker"))
+        top = self._content_top(); area_h = self._content_area_h()
+        images = s.get("images", [])
+        words = s.get("words", [])
+
+        gap = Inches(0.35)
+        left_w = int((SLIDE_W - 2 * MARGIN - gap) * 0.56)
+        right_left = MARGIN + left_w + gap
+        right_w = SLIDE_W - MARGIN - right_left
+
+        # -- Cột trái: lưới ảnh đánh số --------------------------------
+        n = len(images)
+        ncols = 2 if n > 2 else max(1, n)
+        nrows = -(-n // ncols) if ncols else 0
+        igap = Inches(0.16)
+        cell_w = int((left_w - igap * (ncols - 1)) / ncols) if ncols else left_w
+        cell_h = int((area_h - igap * (nrows - 1)) / nrows) if nrows else area_h
+        badge_d = Inches(0.36)
+        for i, card in enumerate(images):
+            r, c = divmod(i, ncols)
+            cx = int(MARGIN + c * (cell_w + igap))
+            cy = int(top + r * (cell_h + igap))
+            img_h = cell_h - Inches(0.05)
+            if card.get("image"):
+                self._place_image(slide, card["image"], cx, cy, cell_w, img_h)
+            circ = slide.shapes.add_shape(MSO_SHAPE.OVAL, Emu(int(cx)), Emu(int(cy)),
+                                          badge_d, badge_d)
+            circ.fill.solid(); circ.fill.fore_color.rgb = self._rgb("accent")
+            circ.line.fill.background(); circ.shadow.inherit = False
+            btf = circ.text_frame; btf.margin_left = 0; btf.margin_right = 0
+            btf.margin_top = 0; btf.margin_bottom = 0
+            bp = btf.paragraphs[0]; bp.alignment = PP_ALIGN.CENTER
+            self._set_run(bp.add_run(), str(card.get("num", i + 1)), 15,
+                          color="bg", bold=True)
+
+        # -- Cột phải: danh sách từ đánh chữ cái ------------------------
+        box, tf = self._textbox(slide, right_left, top, right_w, area_h,
+                                anchor=MSO_ANCHOR.MIDDLE)
+        for i, w in enumerate(words):
+            p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
+            p.space_before = Pt(0) if i == 0 else Pt(14)
+            self._set_run(p.add_run(), w.get("letter", "") + "  ", 18,
+                          color="accent", bold=True)
+            self._set_run(p.add_run(), w.get("hz", ""), 22, color="ink",
+                          bold=True, cjk=True)
+            if w.get("py") or w.get("vn"):
+                extra = "  " + " · ".join(x for x in (w.get("py"), w.get("vn")) if x)
+                self._set_run(p.add_run(), extra, 13, color="muted", italic=True)
 
     def _speaker_icon(self, name):
         # CHỈ dùng emoji 1 codepoint — chuỗi ghép ZWJ (vd 🧑‍🏫) PowerPoint
@@ -1285,14 +1353,26 @@ class DeckBuilder:
             # Bề rộng RIÊNG mỗi bubble theo dòng dài nhất — câu ngắn (vd 你们好!)
             # không bị kéo giãn hết cỡ như câu dài (review buổi 02: "nội dung
             # ngắn mà khung dài").
-            def w(text, pt, cjk):
+            def w(text, pt, cjk, bold=False):
                 if not text:
                     return 0
-                return len(text) * Pt(pt) * (1.0 if cjk else 0.55)
-            needed = max(w(t.get("hz", ""), hz_sz, True),
+                base = len(text) * Pt(pt) * (1.0 if cjk else 0.55)
+                # hz luôn render bold (~12% rộng hơn) — PHẢI cộng thêm ở đây,
+                # khớp với hệ số bold đã dùng trong nlines()/_wrap_lines(),
+                # nếu không bubble bị sizing hẹp hơn chữ thật cần, khiến câu
+                # ngắn cũng bị rớt dòng (vd "这是谁？" tự tách "？" xuống dòng
+                # dù bubble "còn chỗ" theo ước lượng cũ không tính bold).
+                return base * 1.12 if bold else base
+            needed = max(w(t.get("hz", ""), hz_sz, True, bold=True),
                         w(t.get("py", ""), py_sz, False),
                         w(t.get("vn", ""), vn_sz, False))
-            return int(min(max_bubble_w, max(min_bubble_w, needed + Inches(0.5))))
+            # +0.85in (thay vì 0.5in cũ): với text ngắn, biên an toàn cũ chỉ
+            # dư đúng ~0 ký tự sau khi trừ margin nội dung (Pt(20) ở nlines())
+            # — sai số làm tròn/độ rộng font thật vs ước lượng đẩy ngay qua
+            # ngưỡng wrap dù tính ra "vừa đủ 1 dòng" (review 2026-09-03: "这是
+            # 谁？"/"这是我女朋友。" vẫn rớt dòng dù đã cộng hệ số bold). +0.85in
+            # cho dư ~1.5-2 ký tự làm biên, đủ hấp thụ sai số ước lượng.
+            return int(min(max_bubble_w, max(min_bubble_w, needed + Inches(0.85))))
 
         # Số dòng THỰC TẾ sau khi wrap trong bề rộng bubble THẬT (không phải
         # cứ 1 field = 1 dòng) — bubble bị ép về max_bubble_w khi câu dài, nên
