@@ -352,33 +352,14 @@ không đúng phong cách ảnh chụp thực tế mong muốn cho slide. Pexels
 (không có mục illustration/vector), giới hạn miễn phí thoải mái (200 request/giờ,
 20.000/tháng), lấy API key tức thì không cần duyệt.
 
-### ⭐ Quy tắc MẶC ĐỊNH: ưu tiên ảnh bối cảnh VIỆT NAM (2026-09-08, user chốt)
+### ⭐ Quy tắc MẶC ĐỊNH: ưu tiên ảnh bối cảnh VIỆT NAM
 
-Học viên là người Việt (học sinh tiểu học/THCS), nên ảnh minh hoạ **mặc định phải mang
-bối cảnh Việt Nam** — người Việt, cảnh Việt Nam, đồ vật/nghề quen thuộc ở Việt Nam —
-để các em thấy gần gũi, không phải nhìn toàn ảnh nước ngoài.
+Học viên là người Việt → ảnh minh hoạ **mặc định tìm ảnh liên quan Việt Nam** (người
+Việt, cảnh Việt Nam, đồ vật/nghề quen thuộc ở Việt Nam) cho các em thấy gần gũi. Thêm
+"Vietnamese"/"Vietnam" hoặc tên địa danh Việt vào query **ngay từ lần fetch đầu**.
 
-**Cách làm:** thêm "Vietnamese"/"Vietnam" (hoặc tên địa danh Việt) vào query NGAY TỪ
-LẦN FETCH ĐẦU, đừng fetch ảnh chung rồi mới đổi sau (mất thêm nhiều vòng fetch + phải
-soi lại ảnh từ đầu — buổi 3 HSK1 mất 4 vòng vì làm ngược thứ tự này).
-
-**NGOẠI LỆ — giữ ảnh nước sở tại, KHÔNG Việt hoá:** từ vựng là tên quốc gia khác
-(中国/法国/日本/韩国/德国/美国/英国/泰国/澳大利亚…) → dùng địa danh/biểu tượng của
-chính nước đó (xem mục cờ quốc gia bên dưới). Chỉ 越南 mới dùng ảnh Việt Nam.
-
-**Query Việt Nam đã kiểm chứng CÓ ảnh tốt:** địa danh (`Hoi An ancient town colorful
-lanterns Vietnam`, `Gyeongbokgung`-kiểu cho từng nước, `Vietnam national flag red with
-yellow star`), đời sống/nghề (`Vietnamese street food vendor busy cooking`, chợ nổi),
-chân dung (`Vietnamese man/woman smiling portrait`, `Vietnamese boy confused puzzled
-face`, `Vietnamese woman in ao dai`), học sinh ngoài trường (`Vietnamese teenage
-students school uniform`, `Vietnam school children red scarf uniform`), văn phòng
-(`Vietnamese people working office meeting`).
-
-**Query Việt Nam gần như KHÔNG có ảnh (đừng tốn vòng fetch):** lớp học Việt Nam đang
-học, học sinh Việt trong lớp, "Vietnamese classroom/students in class" → Pexels trả về
-đúng bộ ảnh lớp học phương Tây. Với nhóm này: chấp nhận ảnh quốc tế, hoặc đề nghị user
-tự cấp ảnh (bỏ vào `assets/words/` + `assets/topic/` đúng tên file là build lại dùng
-được ngay, không cần sửa JSON).
+**NGOẠI LỆ:** từ vựng là tên quốc gia khác (中国/法国/日本/韩国/德国/美国/英国/泰国/
+澳大利亚…) → dùng địa danh/biểu tượng của chính nước đó, không Việt hoá.
 
 **Cần API key:** lấy miễn phí tại https://www.pexels.com/api/, rồi đặt biến môi trường
 `PEXELS_API_KEY` trước khi chạy (không commit key vào repo — dự án này đã lưu sẵn trong
