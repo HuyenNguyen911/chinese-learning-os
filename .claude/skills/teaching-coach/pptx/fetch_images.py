@@ -9,6 +9,11 @@ mục illustration/vector như Openverse/Pixabay). Cần API key miễn phí (l�
 không cần duyệt) tại https://www.pexels.com/api/ — đặt vào biến môi trường
 `PEXELS_API_KEY` trước khi chạy.
 
+⭐ QUY TẮC MẶC ĐỊNH (2026-09-08): học viên là người Việt → query phải ưu tiên bối cảnh
+VIỆT NAM ngay từ lần fetch đầu ("Vietnamese ...", tên địa danh Việt). NGOẠI LỆ: từ vựng
+là tên quốc gia khác thì dùng địa danh của chính nước đó. Chi tiết + danh sách query đã
+kiểm chứng: xem mục "Ảnh minh hoạ" trong README.md cùng thư mục.
+
 Nhận 1 manifest JSON: {"out_dir": "...", "images": [{"name","query"}, ...]}
 Với mỗi mục: search Pexels, chọn ảnh phù hợp, tải về <out_dir>/<name>.jpg,
 ghi attribution vào <out_dir>/credits.json.
