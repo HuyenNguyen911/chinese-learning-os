@@ -234,8 +234,13 @@ def main(argv):
                     v.split("-")[-1].replace("Neural", "") for v in voices.values())
             else:
                 rate = rate_override or RATE_DEFAULT
-                voice = VOICE_POOL[pool_idx % len(VOICE_POOL)]
-                pool_idx += 1
+                # `voice` cấp SLIDE (2026-09-08): ép 1 giọng cố định cho slide
+                # đó, thay vì luân phiên theo VOICE_POOL — dùng khi 1 cụm slide
+                # cần cùng 1 người đọc (vd cả phần 自我介绍 đọc bằng Xiaoyi).
+                voice = s.get("voice")
+                if not voice:
+                    voice = VOICE_POOL[pool_idx % len(VOICE_POOL)]
+                    pool_idx += 1
                 ok = tts(text, voice, rate, out, volume=volume)
                 label = "%s %s" % (s.get("type"),
                                    voice.split("-")[-1].replace("Neural", ""))

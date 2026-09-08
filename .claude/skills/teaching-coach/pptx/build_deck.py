@@ -372,6 +372,24 @@ class DeckBuilder:
         per_line = max(1, int(width_emu / avg_char_w))
         return max(1, -(-len(str(text)) // per_line))
 
+    @staticmethod
+    def _split_cjk_segments(text):
+        """Cắt 1 dòng thành các đoạn liên tiếp [(chuỗi, có_phải_chữ_Hán)] để
+        gán màu/font khác nhau cho phần Hán và phần Latin trong CÙNG 1 dòng
+        (vd "是 = LÀ." -> [("是", True), (" = LÀ.", False)])."""
+        def is_cjk_char(ch):
+            o = ord(ch)
+            return (0x3400 <= o <= 0x9FFF or 0xF900 <= o <= 0xFAFF
+                    or 0x3000 <= o <= 0x303F or 0xFF01 <= o <= 0xFF60)
+        segs = []
+        for ch in str(text):
+            flag = is_cjk_char(ch)
+            if segs and segs[-1][1] == flag:
+                segs[-1][0] += ch
+            else:
+                segs.append([ch, flag])
+        return [(s, f) for s, f in segs]
+
     def _fit_scale(self, natural_h, avail_h):
         return min(1.0, avail_h / natural_h) if natural_h else 1.0
 
@@ -637,7 +655,8 @@ class DeckBuilder:
         # Chữ thường, KHÔNG khung/nền — tránh lệch form khi cột ảnh hẹp hơn bảng.
         box, tf = self._textbox(slide, left, top, width, height)
         p = tf.paragraphs[0]
-        self._set_run(p.add_run(), "例句  ", 12, color="accent", bold=True)
+        # Bỏ nhãn "例句" (2026-09-08): nhìn vào là biết đây là câu ví dụ,
+        # nhãn chỉ làm slide thêm chữ dư.
         self._set_run(p.add_run(), example.get("hz", ""), 15, color="ink",
                       bold=True, cjk=True)
         if example.get("py"):
@@ -790,10 +809,13 @@ class DeckBuilder:
         # --- Cột phải: tối đa 3 câu ví dụ, canh giữa theo chiều dọc --------
         ebox, etf = self._textbox(slide, right_left, top, right_w, area_h,
                                   anchor=MSO_ANCHOR.MIDDLE)
-        p = etf.paragraphs[0]
-        self._set_run(p.add_run(), "例句", 16, color="accent", bold=True, cjk=True)
+        # Bỏ nhãn "例句" (2026-09-08) — ví dụ tự hiển nhiên, không cần nhãn.
+        first_ex = True
         for ex in s.get("examples", [])[:3]:
-            p = etf.add_paragraph(); p.space_before = Pt(22)
+            if first_ex:
+                p = etf.paragraphs[0]; first_ex = False
+            else:
+                p = etf.add_paragraph(); p.space_before = Pt(22)
             self._set_run(p.add_run(), "•  ", 18, color="accent", bold=True)
             self._set_run(p.add_run(), ex.get("hz", ""), 20, color="ink", bold=True,
                           cjk=True)
@@ -831,7 +853,17 @@ class DeckBuilder:
                                   img_side, img_side)
                 cur_top = cur_top + img_side + Inches(0.12)
 
-            info_h = Inches(1.3)
+            # Chiều cao khối 汉字/pinyin/nghĩa tính THEO NỘI DUNG THẬT thay vì
+            # cố định 1.3in (2026-09-08): 40pt 汉字 + pinyin + nghĩa cao hơn
+            # 1.3in nên khung ví dụ bên dưới bị chồm lên, chữ dán sát nhau
+            # (trước đây nhãn "例句" che bớt nên chưa lộ).
+            info_h = self._line_h(40)
+            if w.get("py"):
+                info_h += Pt(4) + self._line_h(18)
+            if w.get("vn"):
+                info_h += Pt(3) + self._wrap_lines(
+                    w["vn"], col_w, 15, cjk=False) * self._line_h(15)
+            info_h = int(info_h + Pt(10))          # đệm dưới
             box, tf = self._textbox(slide, col_left, cur_top, col_w, info_h,
                                     anchor=MSO_ANCHOR.TOP)
             p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
@@ -853,14 +885,13 @@ class DeckBuilder:
 
             ex = w.get("example")
             if ex:
+                # giãn thêm 1 khoảng rõ ràng giữa nghĩa và câu ví dụ
+                cur_top = cur_top + Inches(0.16)
                 ex_h = top + area_h - cur_top
                 ebox, etf = self._textbox(slide, col_left, cur_top, col_w, ex_h,
                                           anchor=MSO_ANCHOR.TOP)
-                p = etf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
-                self._set_run(p.add_run(), "例句", 13, color="accent",
-                              bold=True, cjk=True)
-                p2 = etf.add_paragraph(); p2.alignment = PP_ALIGN.CENTER
-                p2.space_before = Pt(6)
+                # Bỏ nhãn "例句" (2026-09-08) — câu ví dụ đứng thẳng, không nhãn.
+                p2 = etf.paragraphs[0]; p2.alignment = PP_ALIGN.CENTER
                 self._set_run(p2.add_run(), ex.get("hz", ""), 17, color="ink",
                               bold=True, cjk=True)
                 if ex.get("py"):
@@ -880,7 +911,99 @@ class DeckBuilder:
             line.fill.solid(); line.fill.fore_color.rgb = self._rgb("band")
             line.line.fill.background(); line.shadow.inherit = False
 
+    def _slide_grammar_groups(self, s):
+        """Ngữ pháp dạng CẶP: mỗi điểm ngữ pháp đi kèm NGAY ví dụ của nó
+        (`groups[]` = [{point, examples[]}]) — thay cho kiểu cũ dồn hết công
+        thức thành 1 cục rồi mới liệt kê 1 cục ví dụ (review 2026-09-08:
+        "nên là 是 = LÀ => 我是法国人。", không phải list rời).
+        """
+        slide = self._new_slide()
+        self._band_header(slide, s.get("title", "Ngữ pháp"), s.get("kicker"))
+        top = self._content_top()
+        area_h = self._content_area_h() - self._footer_reserved_h(s)
+        txt_left, txt_w, img_left, img_w = self._split_image_col(s, Inches(4.7))
+        if s.get("image"):
+            self._place_image(slide, s["image"], img_left, top, img_w, area_h)
+
+        groups = s.get("groups", [])
+        if not groups:
+            return
+
+        # 2 CỘT mỗi nhóm: công thức bên TRÁI, ví dụ bên PHẢI (review
+        # 2026-09-08: xếp dọc thành 1 hàng dài nhìn không gọn mắt).
+        gap = Inches(0.28)
+        left_w = int(txt_w * 0.40)
+        right_left = txt_left + left_w + gap
+        right_w = txt_w - left_w - gap
+        row_gap = Inches(0.22)
+
+        def row_h_at(g, scale):
+            def sz(pt, floor):
+                return max(floor, int(pt * scale))
+            h_left = self._wrap_lines(g.get("point", ""), left_w, sz(19, 12),
+                                      cjk=True, bold=True) * self._line_h(sz(19, 12))
+            h_right = 0
+            for j, ex in enumerate(g.get("examples", [])):
+                h_right += (0 if j == 0 else Pt(8 * scale))
+                h_right += self._wrap_lines(ex.get("hz", ""), right_w, sz(18, 12),
+                                            cjk=True, bold=True) * self._line_h(sz(18, 12))
+                if ex.get("py"):
+                    h_right += self._line_h(sz(12, 9))
+                if ex.get("vn"):
+                    h_right += self._wrap_lines(ex["vn"], right_w, sz(12, 9)) \
+                        * self._line_h(sz(12, 9))
+            return int(max(h_left, h_right))
+
+        natural = sum(row_h_at(g, 1.0) for g in groups) + row_gap * (len(groups) - 1)
+        scale = self._fit_scale(natural, area_h)
+
+        def sz(pt, floor):
+            return max(floor, int(pt * scale))
+
+        rows = [row_h_at(g, scale) for g in groups]
+        total = sum(rows) + int(row_gap * scale) * (len(groups) - 1)
+        y = int(top + max(0, (area_h - total) / 2))
+
+        for gi, g in enumerate(groups):
+            rh = rows[gi]
+            # --- cột trái: công thức (chữ Hán tô đỏ) ---
+            lbox, ltf = self._textbox(slide, txt_left, y, left_w, rh,
+                                      anchor=MSO_ANCHOR.MIDDLE)
+            lp = ltf.paragraphs[0]
+            for seg, is_cjk in self._split_cjk_segments(g.get("point", "")):
+                self._set_run(lp.add_run(), seg, sz(19, 12),
+                              color="accent" if is_cjk else "ink",
+                              bold=True, cjk=is_cjk)
+            # --- cột phải: các ví dụ ---
+            rbox, rtf = self._textbox(slide, right_left, y, right_w, rh,
+                                      anchor=MSO_ANCHOR.MIDDLE)
+            first_ex = True
+            for ex in g.get("examples", []):
+                pe = rtf.paragraphs[0] if first_ex else rtf.add_paragraph()
+                if not first_ex:
+                    pe.space_before = Pt(8 * scale)
+                first_ex = False
+                self._set_run(pe.add_run(), ex.get("hz", ""), sz(18, 12),
+                              color="ink", bold=True, cjk=True)
+                if ex.get("py"):
+                    pp = rtf.add_paragraph()
+                    self._set_run(pp.add_run(), ex["py"], sz(12, 9),
+                                  color="accent", italic=True)
+                if ex.get("vn"):
+                    pv = rtf.add_paragraph()
+                    self._set_run(pv.add_run(), ex["vn"], sz(12, 9), color="muted")
+            # --- vạch ngăn mảnh giữa các nhóm ---
+            if gi < len(groups) - 1:
+                dy = y + rh + int(row_gap * scale) // 2
+                ln = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, txt_left, dy,
+                                            txt_w, Inches(0.012))
+                ln.fill.solid(); ln.fill.fore_color.rgb = self._rgb("band")
+                ln.line.fill.background(); ln.shadow.inherit = False
+            y = y + rh + int(row_gap * scale)
+
     def _slide_grammar(self, s):
+        if s.get("groups"):
+            return self._slide_grammar_groups(s)
         slide = self._new_slide()
         self._band_header(slide, s.get("title", "Ngữ pháp"), s.get("kicker"))
         top = self._content_top()
@@ -927,9 +1050,17 @@ class DeckBuilder:
         for i, line in enumerate(point_lines):
             p = tf.paragraphs[0] if first else tf.add_paragraph()
             if not first:
-                p.space_before = Pt(4 * scale)
-            self._set_run(p.add_run(), line, sz(20, 13), color="ink", bold=True,
-                          cjk=True)
+                # 10pt (thay vì 4pt): nhiều dòng công thức dán sát nhau đọc
+                # thành "1 cục" (review 2026-09-04) — giãn ra cho tách dòng.
+                p.space_before = Pt(10 * scale)
+            # Tô ĐỎ phần chữ Hán trong point, chữ Việt để màu mực thường —
+            # mắt bắt ngay chữ/cấu trúc đang học giữa lời giải thích tiếng
+            # Việt, không cần khai `highlight` tay (highlight cũ chỉ áp cho
+            # câu ví dụ, không áp cho point).
+            for seg, is_cjk in self._split_cjk_segments(line):
+                self._set_run(p.add_run(), seg, sz(20, 13),
+                              color="accent" if is_cjk else "ink",
+                              bold=True, cjk=is_cjk)
             first = False
         for ex in examples:
             # Pinyin xuống DÒNG RIÊNG ngay dưới Hán tự (đổi lại 2026-08-11,

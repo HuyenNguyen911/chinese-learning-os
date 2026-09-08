@@ -88,7 +88,7 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); nếu item có `ex` (câu ví dụ riêng từng từ) → chèn cột **Ví dụ** cuối bảng; `example?` (cấp SLIDE, không phải item) = `{hz,py,vn}` 1 câu ví dụ chung — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). Dùng được cho CẢ CÂU dài, không chỉ từ đơn (vd mỗi item là 1 lời chúc/câu nói) — cột 汉字 tự đủ rộng + hàng tự cao theo số dòng 汉字 cần wrap, Pinyin/Nghĩa co lại/rớt dòng trước (xem lessons learned bên dưới). |
 | `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). |
 | `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}` | **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. ⚠️ **Lịch sử (đã sửa 2026-08-06):** handler `_slide_word_pair` được thêm ở `5a2a154`, rồi bị **âm thầm xoá** ở `619229b` (commit message chỉ nói "sửa 3 lỗi renderer", không nhắc việc xoá này) — các bản README trước đó ghi nhầm là "chưa triển khai", thực ra là đã cài rồi bị mất. Đã khôi phục lại nguyên trạng handler. |
-| `grammar` | `point?`, `examples[]` = `{hz, py, vn, highlight?}`, `note?`, `source?`, `image?`, `highlight?` | Giảng ngữ pháp. `highlight` (str hoặc list[str], cấp SLIDE — áp dụng mọi ví dụ, hoặc cấp ví dụ để override riêng) = tô màu accent (đỏ) cho đúng chỗ khớp trong `hz` của từng ví dụ, giúp học viên thấy ngay từ/cấu trúc đang học nằm ở đâu trong câu (vd `"highlight": "没有"` tô đỏ mọi chỗ xuất hiện "没有"; 时量补语 nên override theo từng ví dụ vì cụm bổ ngữ khác nhau mỗi câu, vd ví dụ 1 `"highlight": "半个多小时"`, ví dụ 2 `"highlight": "两个小时了"`). |
+| `grammar` | `point?`, `examples[]` = `{hz, py, vn, highlight?}`, `note?`, `source?`, `image?`, `highlight?` | Giảng ngữ pháp. `highlight` (str hoặc list[str], cấp SLIDE — áp dụng mọi ví dụ, hoặc cấp ví dụ để override riêng) = tô màu accent (đỏ) cho đúng chỗ khớp trong `hz` của từng ví dụ, giúp học viên thấy ngay từ/cấu trúc đang học nằm ở đâu trong câu (vd `"highlight": "没有"` tô đỏ mọi chỗ xuất hiện "没有"; 时量补语 nên override theo từng ví dụ vì cụm bổ ngữ khác nhau mỗi câu, vd ví dụ 1 `"highlight": "半个多小时"`, ví dụ 2 `"highlight": "两个小时了"`).<br>**`groups[]` = `[{point, examples[]}]` (2026-09-08) — chế độ 2 CỘT: mỗi điểm ngữ pháp ở cột TRÁI, ví dụ tương ứng ngay cột PHẢI, các nhóm cách nhau bằng vạch ngăn mảnh.** Dùng thay cho `point` + `examples` phẳng khi 1 slide có nhiều điểm nhỏ (vd 是 = LÀ → 我是中国人。 / 不是 = KHÔNG PHẢI → 我老师不是法国人。) — kiểu phẳng dồn hết công thức thành 1 cục rồi mới liệt kê ví dụ, người học không biết ví dụ nào thuộc điểm nào. Chữ Hán trong `point` tự động tô đỏ (không cần khai `highlight`). Có `groups` thì `point`/`examples` cấp slide bị bỏ qua. |
 | `table` | `headers[]`, `rows[][]` (+ `cjk_cols[]`) | Bảng so sánh (vd 了 vs 过) |
 | `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` (+ `image?`, `image_side?`) | Khung hội thoại (bong bóng chat 2 phía, hoặc swimlane 1-cột/người nếu >2 speaker) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau. Có `image` → ảnh ngữ cảnh 1 bên, khung thoại co vào bên còn lại (giúp liên tưởng bối cảnh thay vì chỉ thấy chữ nổi) |
 | `passage` | `title`, `sentences[]` = `{hz, py, vn}` (+ `note?`, `image?`, `image_side?`) | Đoạn văn tự sự/kể chuyện (课文 thể 叙述体, câu nối tiếp câu — KHÔNG phải hội thoại qua lại) — mỗi câu 1 khối, không dùng bong bóng thoại |
@@ -110,6 +110,7 @@ Item chỉ 1 dòng (không có `\n`) vẫn hoạt động như cũ, không bị 
 | `word_groups` | `groups[]` = `{label, items[]}`, mỗi `item` = `{hz, py, vn}` | N nhóm xếp CẠNH NHAU (banner nhãn to 30pt + bảng con 汉字\|Pinyin\|Nghĩa mỗi dòng 1 ví dụ) — tự xếp lưới thích ứng theo số nhóm (≤3 → 1 hàng, 4 → 2×2, >4 → nhiều hàng x4 cột) để cột luôn đủ rộng, không rớt dòng. Dùng cho bảng luyện đọc theo nhóm 声母/韵母 thay vì nhồi nhiều ví dụ vào 1 ô |
 | `stroke_group` | `principle`, `chars[]` = `{hanzi, pinyin, meaning, image}` | N chữ Hán CÙNG minh hoạ 1 nguyên tắc viết nét, xếp thẻ ngang (ảnh GIF nét + nhãn) dưới 1 dòng nguyên tắc chung — tránh lặp nguyên tắc giống hệt nhau nhiều slide (vd 一/二/三 đều "nét ngang, trái→phải") |
 | `info_grid` | `cards[]` = `{label, image?, py?, caption?}` | N thẻ (ảnh + label CJK đậm + pinyin + caption Việt) xếp LƯỚI trong 1 slide (≤4 thẻ → 1 hàng, >4 → 4 cột nhiều hàng) — dùng khi 1 slide cần NHIỀU ảnh cùng lúc (vd hồ sơ 1 quốc gia: cờ+biểu tượng+thủ đô+ngôn ngữ+tiền tệ), khác mọi type khác chỉ hỗ trợ 1 ảnh/slide |
+| `match_pairs` | `images[]` = `{num, image}`, `words[]` = `{letter, hz, py?, vn?}` | **Trò chơi nối ảnh với từ** (2026-09-08): ảnh đánh SỐ ở cột trái + danh sách từ đánh CHỮ CÁI (đã xáo trộn) ở cột phải, hiện CÙNG 1 slide để học viên vừa nhìn ảnh vừa nhìn từ mà chọn (không phải lật qua lại 2 slide). Dùng cho phần ôn từ vựng cuối buổi. **Tối đa 5 cặp/slide** — 10 cặp/slide chữ và ảnh quá nhỏ; nhiều từ thì chia nhiều slide và **chia đều** (11 từ → 4+4+3, KHÔNG 5+5+1 để tránh slide lẻ 1 từ). |
 | `guess` | `image`, `hz`, `py?`, `vn?`, `prompt?` | **Minigame "đoán từ qua ảnh"** (2026-09) — 1 block JSON tự sinh **2 slide**: slide HỎI (chỉ ảnh to + `prompt`, mặc định "Đoán xem: đây là gì?", không lộ chữ) rồi slide ĐÁP ÁN (ảnh nhỏ hơn 1 bên + 汉字/pinyin/nghĩa). Học viên đoán miệng trước khi qua slide sau. Chỉ hợp với từ vựng cụ thể minh hoạ được bằng ảnh (đồ vật/hoạt động) — từ trừu tượng dùng `vocab`/`wordcard` như cũ. Thiếu `image` → slide hỏi hiện placeholder báo thiếu, không crash. |
 | `match` | `items[]` = `{hz, py, vn}` (khuyến nghị ≤8, tối đa 12), `seed?` | **Minigame "ghép cặp xáo trộn"** (2026-09) — 1 block JSON tự sinh **2 slide**: slide ĐỐ (cột 汉字 xáo trộn nhãn A/B/C..., cột Nghĩa xáo trộn ĐỘC LẬP đánh số 1/2/3..., học viên ghép miệng/viết ra giấy) rồi slide ĐÁP ÁN (bảng đối chiếu, tái dùng renderer của `table`). Xáo trộn có seed cố định (mặc định 42) nên build lại nhiều lần ra CÙNG 1 đề — đổi `seed` nếu muốn đề khác. Dùng để ôn tập 1 nhóm từ đã dạy, thay cho `bullets` liệt kê thụ động. |
 
@@ -195,6 +196,14 @@ chưa" — nhưng bị hiểu lầm là đã duyệt xong cả deck, build luôn
 1-2 câu hỏi lựa chọn hẹp KHÔNG đồng nghĩa duyệt toàn văn; phải trình đủ text mọi
 slide (title + mọi item/ví dụ) rồi hỏi thẳng mới được sinh audio.
 
+**Tái diễn lần 3 — Buổi 3 HSK1 (2026-09-08):** user dặn *"build theo thứ tự nha, audio
+làm sau cùng"* → bị hiểu là lệnh chốt nội dung + cho phép sinh audio. Thực ra câu đó chỉ
+nói về **THỨ TỰ CÁC BƯỚC BUILD** (JSON → pptx → audio), không phải duyệt nội dung. **Quy
+tắc rút ra:** câu dặn về *cách/thứ tự build* (dù nghe như đang cho phép tiến hành)
+KHÔNG PHẢI lời chốt nội dung — 2 việc tách biệt. Chỉ chạy `slide_audio.py` khi user xác
+nhận rõ ràng bằng lời **liên quan tới NỘI DUNG** ("nội dung ok", "chốt rồi", "duyệt hết
+rồi", "được rồi, tiếp tục bước tiếp theo").
+
 **Giọng & tốc độ (2026-08-04, sau feedback "giọng cũ nghe mệt/robot"):**
 - Slide thường (vocab/wordcard/grammar/table/passage): luân phiên 2 giọng
   `zh-CN-XiaoxiaoNeural` ("Warm") / `zh-CN-XiaoyiNeural` ("Lively"), mặc định
@@ -229,6 +238,11 @@ slide (title + mọi item/ví dụ) rồi hỏi thẳng mới được sinh audi
   giọng** (vd 3 nhân vật nữ chỉ có 2 giọng nữ để chia) — ưu tiên để 2 nhân vật
   không nói liên tiếp nhau dùng chung 1 giọng, người còn lại (vd giáo viên/vai
   trung tâm) giữ giọng riêng để dễ phân biệt nhất trong hội thoại đó.
+- **`voice` cấp SLIDE (2026-09-08):** thêm `"voice": "zh-CN-XiaoyiNeural"` vào 1 slide
+  thường (không phải `dialogue`) để ÉP giọng cố định cho slide đó, thay vì luân phiên
+  theo `VOICE_POOL`. Dùng khi 1 CỤM slide cần cùng 1 người đọc cho liền mạch — vd cả
+  4 slide 自我介绍 (chào → thông tin → lời kết) đọc bằng 1 giọng, nếu để luân phiên thì
+  nghe như 4 người khác nhau tự giới thiệu. Với `dialogue` vẫn dùng `voices` theo speaker.
 - `--rate=...` (CLI) override cho CẢ HAI loại cùng lúc nếu cần đồng nhất (vd
   buổi ngữ âm nhập môn muốn chậm hơn hẳn, `--rate=-30%`).
 - **Âm lượng (2026-08-19, feedback Buổi 3 HSK2 "nghe nhỏ"):** mặc định
@@ -376,6 +390,25 @@ dùng chung 1 ảnh. **Sau khi fetch xong nhiều ảnh cho cùng 1 buổi, luô
 `source` trong `credits.json`** — trùng `source` giữa 2 mục → đổi query cụ thể/hẹp
 hơn cho 1 trong 2 (thêm bối cảnh riêng, vd đổi "young woman smiling" → "happy young
 woman outdoor portrait smiling nature" để tách khỏi nhóm ảnh phổ biến).
+
+⚠️ **Đối chiếu trùng lặp phải tính CẢ ảnh đã dùng ở slide khác trong cùng deck**
+(2026-09-08, Buổi 3 HSK1): không chỉ so các ảnh vừa fetch với nhau. Bộ ảnh lớp học
+phương Tây của Pexels (lớp có quả địa cầu / học sinh giơ tay) chiếm gần hết top-result
+cho MỌI query chứa "classroom/school/students", nên nó lần lượt lọt vào slide ngữ pháp
+是, slide ngữ pháp 吗, rồi 小学生, 初中生, và cả slide 自我介绍 — mỗi lần fetch mới lại
+trùng đúng ảnh đã dùng. Mẹo phá vòng lặp: **bỏ hẳn từ "classroom/school" khỏi query**,
+đổi sang bối cảnh cá nhân/ngoài trời cụ thể ("little girl writing in notebook at desk",
+"two boys playing football in park", "teenagers with school backpacks on stairs").
+
+⚠️ **Ảnh bối cảnh VIỆT NAM: kho Pexels rất hẹp** (2026-09-08, test ~30 query trong 4
+vòng). Có sẵn và dùng tốt: đường phố/địa danh (Hội An, Văn Miếu, chợ nổi, cờ VN trên
+cửa cuốn), chân dung người vùng cao, người bán hàng rong. **Gần như không có**: lớp học
+Việt Nam, học sinh Việt trong trường, văn phòng Việt Nam — query "Vietnamese classroom/
+students" trả về đúng bộ ảnh phương Tây nói trên. Hệ quả thực tế: cùng 1 ảnh (vd phụ nữ
+áo dài trước biển Chanel) bị trả về cho 4 query khác nhau (人/姐姐/大学生/waving hello).
+**Cách xử lý:** dùng ảnh VN cho những gì Pexels có (địa danh, người, nghề đường phố),
+các slide lớp học/văn phòng thì chấp nhận ảnh quốc tế hoặc đề nghị user tự cấp ảnh
+(đưa vào `assets/words/` + `assets/topic/` đúng tên file là build lại dùng được ngay).
 
 **Bắt buộc gen ảnh theo TỪNG từ vựng trước khi để trống (2026-08-07):** với mọi
 slide có field `image` (đặc biệt `wordcard`/`word_pair` — thiết kế vốn có ảnh sticker
