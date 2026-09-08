@@ -15,7 +15,7 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 |---|---|---|---|---|---|
 | 01 | Ngữ âm: pinyin · thanh điệu · thanh/vận mẫu · 变调 | `buoi01_nguam/` | — | hệ thống ngữ âm, thanh điệu, 变调 | ✅ đã có |
 | 02 | Chào hỏi & làm quen | `buoi02_chaohoi_lamquen/` | L1 你好 · L2 我叫李文 | 是 · 吗 · 呢 · 叫…名字 | ⏳ chưa soạn |
-| 03 | Quốc tịch & bản thân | `buoi03_quoctich/` | L3 我是中国人 | "是"字句 · 的 · X是Y · 哪国人 | ✅ slide+audio xong (chưa có baitap) |
+| 03 | Quốc tịch & bản thân | `buoi03_quoctich/` | L3 我是中国人 (3 课文) | "是"字句 · 结构助词"的" · 用"吗"的是非问句 | ✅ XONG (38 slide + audio; không làm baitap — thực hành ngay trên lớp) |
 | 04 | Gia đình | `buoi04_giadinh/` | L4 我有两个孩子 | "有"字句 · 几口人 · 和 · 都 · 两 vs 二 | ⏳ chưa soạn |
 | 05 | Số đếm & số điện thoại | `buoi05_sodem_sodt/` | L6 手机号是多少 | 多少 vs 几 · số lớn · 连动句(1) | ⏳ chưa soạn |
 | 06 | Ngày tháng & nghỉ làm | `buoi06_ngaythang/` | L5 今天我休息 | 时间的表达(1) · 名词谓语句 · 能愿动词"会" | ⏳ chưa soạn |
@@ -30,9 +30,15 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 | 15 | Đi lại & du lịch · hẹn gặp | `buoi15_dulai_dulich/` | L15 大兴机场见 | 并列复句"……，还/也……" | ⏳ chưa soạn |
 | 16 | Ôn tập tổng hợp | `buoi16_ontap/` | — (ôn ~243–300 từ đã học) | Phần 1: đủ 15 điểm ngữ pháp trọng tâm của 15 bài sách 3.0. Phần 2: 243 từ vựng theo chủ đề | ✅ phần 1 (`slide/`) + phần 2 (`slide2_tuvung/`) xong slide + audio + ảnh (chưa có baitap/) |
 
-**15 buổi cần soạn** = vị trí 02–16 (buổi 01 ngữ âm đã xong). Trạng thái vocab: xem checklist
-`hsk1-3.0-checklist.md` — 243 từ distinct remap từ 15 课 sách (per-buổi 11–26 từ/buổi), 2 buổi
-(08, 11) có block 生词 flag OCR sót cần đối chiếu `raw/新HSK1教程3.0.pdf` khi build.
+**15 buổi cần soạn** = vị trí 02–16 (buổi 01 ngữ âm đã xong; buổi 03 đã xong 2026-09-08).
+
+> ⚠️ **Số từ trong checklist KHÔNG đáng tin — phải đối chiếu sách trước khi soạn mỗi buổi.**
+> Phát hiện khi làm buổi 03 (2026-09-08): mỗi bài trong sách có NHIỀU khối 生词 (X-2, X-4, X-6…),
+> mỗi khối cạnh 1 đoạn 课文 khác nhau; bản bóc cũ chỉ lấy 1-2 khối đầu. Bài 3 thực tế **22 từ**
+> nhưng checklist ghi 11 (thiếu 12, thừa 1 — 都 vốn thuộc Bài 14). Các bài khác rất có thể cũng
+> thiếu tương tự. Cách kiểm đúng: render trang PDF ra ảnh rồi ĐỌC BẰNG VISION
+> (`fitz` → `get_pixmap(dpi=170)`), KHÔNG dùng `raw/新HSK1教程3.0.pdf.ocr.txt` cho bảng 生词
+> (OCR sách này xáo chữ Hán, sai dấu pinyin, mất số thứ tự).
 
 ## Buổi cũ (2.0) tái dùng — không phải buổi mới, chỉ là nguồn nguyên liệu
 
@@ -74,9 +80,25 @@ buoi16_ontap/
                     Buoi-16-P2-Tuvung.pptx + assets/)
 ```
 
-Thứ tự block slide: `title → ôn buổi trước → mục tiêu → 生词 → ngữ pháp → 10 câu khẩu ngữ →
-hội thoại/课文 → bài đọc → footer Hán ngữ Q1 → lỗi người Việt → preview bài tập`. (Buổi 01 ngữ
-âm: không có "10 câu khẩu ngữ", thay bằng luyện âm.)
+**Thứ tự block slide — mô hình 2 PHẦN (chốt ở buổi 03, 2026-09-08):**
+
+```
+title → 目标 (mục tiêu)
+── 第一部分 · 课本生词 (slide `section`) ──
+   生词 bám sách (wordcard 1 từ / word_pair 2 từ, mỗi từ 2 ví dụ)
+   → 课文 nguyên văn của sách (đủ các đoạn, mỗi đoạn 1 slide dialogue)
+   → 语法 (dùng `grammar.groups`: mỗi điểm ngữ pháp kèm ví dụ riêng, 2 cột)
+   → 自我介绍 (3 bước: chào mở đầu → thông tin cá nhân → lời kết)
+── 第二部分 · 生词拓展 (slide `section`) ──
+   từ mở rộng ngoài sách (tên nước khác, cấp học…)
+   → 配对游戏 (slide `match_pairs`, tối đa 5 cặp/slide, chia đều)
+```
+
+Khác bản 2.0 cũ (`title → ôn buổi trước → mục tiêu → 生词 → ngữ pháp → 10 câu khẩu ngữ →
+hội thoại → bài đọc → footer Hán ngữ → lỗi người Việt → preview bài tập`): **bỏ** slide ôn buổi
+trước, bảng 10 câu khẩu ngữ, bảng lỗi người Việt và slide preview bài tập; **tách** từ bám sách
+với từ mở rộng thành 2 phần có slide phân mục; **thêm** minigame nối ảnh-từ cuối buổi.
+Buổi 01 (ngữ âm) là ngoại lệ: không có 生词/课文, thay bằng các block luyện âm.
 
 ## Ghi chú kỹ thuật
 

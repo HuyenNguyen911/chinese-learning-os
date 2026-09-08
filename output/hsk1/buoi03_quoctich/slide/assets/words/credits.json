@@ -32,28 +32,28 @@
     "query": "hand presenting photo"
   },
   "shei": {
-    "title": "person smiling shrugging casual",
-    "creator": "pessoas uem",
+    "title": "child shrugging shoulders puzzled expression",
+    "creator": "Rulo Davila",
     "license": "Pexels License",
-    "source": "https://www.pexels.com/photo/portrait-of-a-kid-smiling-16160801/",
-    "attribution": "Photo by pessoas uem on Pexels",
-    "query": "person smiling shrugging casual"
+    "source": "https://www.pexels.com/photo/a-boy-in-blue-crew-neck-shirt-4687230/",
+    "attribution": "Photo by Rulo Davila on Pexels",
+    "query": "child shrugging shoulders puzzled expression"
   },
   "nvpengyou": {
-    "title": "outdoor portrait of smiling woman in nature",
-    "creator": "Svet Svet",
+    "title": "two schoolgirls friends laughing on playground",
+    "creator": "Nitin Khajotia",
     "license": "Pexels License",
-    "source": "https://www.pexels.com/photo/outdoor-portrait-of-smiling-woman-in-nature-37625167/",
-    "attribution": "Photo by Svet Svet on Pexels",
-    "query": "young woman smiling nature portrait"
+    "source": "https://www.pexels.com/photo/cheerful-schoolgirl-outdoors-in-jaipur-india-39112159/",
+    "attribution": "Photo by Nitin Khajotia on Pexels",
+    "query": "two schoolgirls friends laughing on playground"
   },
   "nanpengyou": {
-    "title": "young man smiling",
-    "creator": "Amir SeilSepour",
+    "title": "two boys playing football in park",
+    "creator": "Gene Samit",
     "license": "Pexels License",
-    "source": "https://www.pexels.com/photo/portrait-of-a-man-with-a-hat-smiling-6102841/",
-    "attribution": "Photo by Amir SeilSepour on Pexels",
-    "query": "young man smiling"
+    "source": "https://www.pexels.com/photo/kids-playing-soccer-in-doylestown-park-32620220/",
+    "attribution": "Photo by Gene Samit on Pexels",
+    "query": "two boys playing football in park"
   },
   "taiguo": {
     "title": "Bangkok temple Thailand",
@@ -64,12 +64,12 @@
     "query": "Bangkok temple Thailand"
   },
   "yuenan": {
-    "title": "Vietnam conical hat rice field",
-    "creator": "Alex Shmakov",
+    "title": "Hoi An ancient town colorful lanterns Vietnam",
+    "creator": "Hooman Beings",
     "license": "Pexels License",
-    "source": "https://www.pexels.com/photo/person-wearing-a-conical-hat-walking-on-farm-carrying-a-bunch-of-leaves-13361851/",
-    "attribution": "Photo by Alex Shmakov on Pexels",
-    "query": "Vietnam conical hat rice field"
+    "source": "https://www.pexels.com/photo/charming-street-scene-in-da-nang-vietnam-37996444/",
+    "attribution": "Photo by Hooman Beings on Pexels",
+    "query": "Hoi An ancient town colorful lanterns Vietnam"
   },
   "meiguo": {
     "title": "Statue of Liberty New York",
@@ -112,20 +112,20 @@
     "query": "Sydney Opera House"
   },
   "xiaoxuesheng": {
-    "title": "students looking at their teacher",
-    "creator": "Yan Krukau",
+    "title": "little girl writing in notebook at desk",
+    "creator": "Son Hoa Nguyen",
     "license": "Pexels License",
-    "source": "https://www.pexels.com/photo/students-looking-at-their-teacher-8617961/",
-    "attribution": "Photo by Yan Krukau on Pexels",
-    "query": "young elementary school children classroom"
+    "source": "https://www.pexels.com/photo/child-in-vietnamese-classroom-with-school-supplies-33985330/",
+    "attribution": "Photo by Son Hoa Nguyen on Pexels",
+    "query": "little girl writing in notebook at desk"
   },
   "chuzhongsheng": {
-    "title": "students participating in class",
-    "creator": "Yan Krukau",
+    "title": "teenagers with school backpacks on stairs outdoors",
+    "creator": "Israel Torres",
     "license": "Pexels License",
-    "source": "https://www.pexels.com/photo/students-participating-in-class-8618062/",
-    "attribution": "Photo by Yan Krukau on Pexels",
-    "query": "teenager classroom studying group"
+    "source": "https://www.pexels.com/photo/two-young-people-standing-in-front-of-a-blue-wall-17030110/",
+    "attribution": "Photo by Israel Torres on Pexels",
+    "query": "teenagers with school backpacks on stairs outdoors"
   },
   "gaozhongsheng": {
     "title": "high school students",
@@ -142,5 +142,77 @@
     "source": "https://www.pexels.com/photo/three-people-inside-the-library-8199625/",
     "attribution": "Photo by Yan Krukau on Pexels",
     "query": "university students"
+  },
+  "guo": {
+    "title": "colorful world globe on wooden desk",
+    "creator": "Yan Krukau",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/man-pointing-to-globe-8617981/",
+    "attribution": "Photo by Yan Krukau on Pexels",
+    "query": "colorful world globe on wooden desk"
+  },
+  "ta": {
+    "title": "young asian girl portrait smiling",
+    "creator": "Min An",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/portrait-of-a-woman-698532/",
+    "attribution": "Photo by Min An on Pexels",
+    "query": "young asian girl portrait smiling"
+  },
+  "women": {
+    "title": "friends taking selfie together laughing colorful",
+    "creator": "Yan Krukau",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/friends-with-glitters-on-face-7312328/",
+    "attribution": "Photo by Yan Krukau on Pexels",
+    "query": "friends taking selfie together laughing colorful"
+  },
+  "wei": {
+    "title": "woman waving hello during video call on laptop",
+    "creator": "Guillermo Berlin",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/smiling-woman-working-on-laptop-in-cozy-evening-ambiance-30087070/",
+    "attribution": "Photo by Guillermo Berlin on Pexels",
+    "query": "woman waving hello during video call on laptop"
+  },
+  "jiejie": {
+    "title": "teenage girl with little sister smiling outdoors",
+    "creator": "Ирина Атаманенко",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/girls-hugging-on-hay-9035771/",
+    "attribution": "Photo by Ирина Атаманенко on Pexels",
+    "query": "teenage girl with little sister smiling outdoors"
+  },
+  "gongzuo": {
+    "title": "young woman working modern bright office desk",
+    "creator": "Yan Krukau",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/a-woman-sitting-at-the-table-7693194/",
+    "attribution": "Photo by Yan Krukau on Pexels",
+    "query": "young woman working modern bright office desk"
+  },
+  "mang": {
+    "title": "busy office desk stacked papers person working",
+    "creator": "Craig Adderley",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/man-laughing-while-sitting-on-office-chair-1546912/",
+    "attribution": "Photo by Craig Adderley on Pexels",
+    "query": "busy office desk stacked papers person working"
+  },
+  "xiang": {
+    "title": "hands holding old family photograph",
+    "creator": "Jay Moon",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/hands-playing-with-a-retro-gaming-controller-37935954/",
+    "attribution": "Photo by Jay Moon on Pexels",
+    "query": "hands holding old family photograph"
+  },
+  "hanguo": {
+    "title": "Gyeongbokgung palace Seoul South Korea",
+    "creator": "Huy Phan",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/a-wall-with-doors-in-gyeongbokgung-palace-seoul-south-korea-19271540/",
+    "attribution": "Photo by Huy Phan on Pexels",
+    "query": "Gyeongbokgung palace Seoul South Korea"
   }
 }

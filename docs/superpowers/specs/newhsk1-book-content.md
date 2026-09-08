@@ -65,23 +65,47 @@ không dùng — chỉ dùng để đối chiếu ngữ cảnh.
 
 ## Bài 3 — 我是中国人 (Wǒ shì Zhōngguó rén) — Tôi là người Trung Quốc
 
-课文: Giới thiệu quốc tịch bản thân và người khác (Trung Quốc/Pháp/Thái Lan).
+课文: 3 đoạn — (1) 李文/白家月 giới thiệu quốc tịch, (2) 安妮 xem ảnh 女朋友 của 陈天中
+(Thái Lan), (3) 王一雪 gọi video cho 王一飞 (hỏi công việc còn bận không) — đoạn 3 là
+ngữ liệu cho điểm ngữ pháp 用"吗"的是非问句.
 
-**生词**
+**生词 — ĐÃ SỬA 2026-09-04 (đối chiếu trực tiếp trang 26/28/29 sách gốc bằng vision)**
 
-| 汉字 | Pinyin | Nghĩa Việt |
-|---|---|---|
-| 人 | rén | người |
-| 的 | de | trợ từ sở hữu/định ngữ |
-| 中国 | Zhōngguó | (riêng) Trung Quốc |
-| 法国 | Fǎguó | (riêng) Pháp |
-| 中文 | Zhōngwén | (riêng) tiếng Trung |
-| 这 | zhè | này |
-| 谁 | shéi | ai |
-| 女朋友 | nǚpéngyou | bạn gái |
-| 哪 | nǎ | nào |
-| 都 | dōu | đều |
-| 泰国 | Tàiguó | (riêng) Thái Lan |
+⚠️ Bản trước chỉ có 11 từ và có 1 từ sai (都) — **thiếu hẳn khối 生词 3-6 (10 từ) + 国 + 她**.
+Đúng là **22 từ** (18 từ đánh số ①-⑱ + 4 专有名词):
+
+| # | 汉字 | Pinyin | Nghĩa Việt | Khối |
+|---|---|---|---|---|
+| ① | 人 | rén | người | 3-2 |
+| ② | 的 | de | trợ từ sở hữu/định ngữ | 3-2 |
+| ③ | 这 | zhè | này, đây | 3-4 |
+| ④ | 谁 | shéi/shuí | ai | 3-4 |
+| ⑤ | 女朋友 | nǚpéngyou | bạn gái (girlfriend — nghĩa người yêu) | 3-4 |
+| ⑥ | 哪 | nǎ | nào | 3-4 |
+| ⑦ | 国 | guó | nước, quốc gia | 3-4 |
+| ⑧ | 她 | tā | cô ấy | 3-4 |
+| ⑨ | 喂 | wèi | alô, này (gọi điện) | 3-6 |
+| ⑩ | 姐姐 | jiějie | chị gái | 3-6 |
+| ⑪ | 工作 | gōngzuò | công việc | 3-6 |
+| ⑫ | 还 | hái | vẫn, còn | 3-6 |
+| ⑬ | 忙 | máng | bận | 3-6 |
+| ⑭ | 吗 | ma | trợ từ nghi vấn cuối câu | 3-6 |
+| ⑮ | 对 | duì | đúng | 3-6 |
+| ⑯ | 太 | tài | quá, lắm | 3-6 |
+| ⑰ | 我们 | wǒmen | chúng tôi/chúng ta | 3-6 |
+| ⑱ | 想 | xiǎng | nhớ (ai đó) | 3-6 |
+| 专① | 中国 | Zhōngguó | (riêng) Trung Quốc | 3-2 |
+| 专② | 法国 | Fǎguó | (riêng) Pháp | 3-2 |
+| 专③ | 中文 | Zhōngwén | (riêng) tiếng Trung | 3-2 |
+| 专④ | 泰国 | Tàiguó | (riêng) Thái Lan | 3-4 |
+
+**都 KHÔNG thuộc Bài 3** (bản trước gán sai) — 都 thuộc Bài 14.
+
+> ⚠️ **CẢNH BÁO CHO CÁC BÀI KHÁC:** mỗi bài trong sách có NHIỀU khối 生词 (X-2, X-4, X-6…),
+> mỗi khối nằm cạnh 1 đoạn 课文 khác nhau. Bản bóc trước chỉ lấy được khối đầu/giữa nên
+> **các bài khác rất có thể cũng thiếu khối cuối** giống Bài 3 (thiếu 12/22 từ = 55%).
+> Cần audit lại từng bài bằng cách render trang PDF ra ảnh rồi đọc bằng vision (OCR text
+> của sách này quá nhiễu, không dùng được cho bảng 生词).
 
 **语法**
 - "是"字句 ("是" Sentence): biểu thị đồng nhất/thuộc loại gì; phủ định là 不是.

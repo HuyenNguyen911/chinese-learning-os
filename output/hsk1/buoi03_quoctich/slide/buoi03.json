@@ -14,162 +14,135 @@
     {
       "type": "bullets",
       "kicker": "目标",
-      "title": "今天学什么？— Mục tiêu hôm nay",
+      "title": "今天学什么？",
       "image": "assets/icons/icon_target.png",
       "bullets": [
         "Nói được mình là người nước nào: 我是……人！",
-        "Biết cách nói \"của ai\" bằng 的.",
-        "Hỏi & trả lời \"đây là ai?\" — 这是谁？",
+        "Biết dùng 的 để nói \"của ai\".",
+        "Hỏi bằng 吗 và 哪: 你是哪国人？你是法国人吗？",
         "Tự giới thiệu bản thân thật tự tin!"
       ]
     },
     {
-      "type": "wordcard",
-      "kicker": "生词 1/23",
-      "hz": "人",
-      "py": "rén",
-      "vn": "người",
-      "image": "assets/words/ren.jpg",
-      "examples": [
+      "type": "section",
+      "title": "第一部分 · 课本生词",
+      "subtitle": "Phần 1 — 22 từ vựng theo sách (Bài 3)"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 1-2/22",
+      "words": [
         {
-          "hz": "中国人",
-          "py": "Zhōngguó rén",
-          "vn": "người Trung Quốc"
+          "hz": "人",
+          "py": "rén",
+          "vn": "người",
+          "image": "assets/words/ren.jpg",
+          "example": {
+            "hz": "中国人",
+            "py": "Zhōngguó rén",
+            "vn": "người Trung Quốc"
+          }
         },
         {
-          "hz": "越南人",
-          "py": "Yuènán rén",
-          "vn": "người Việt Nam"
+          "hz": "国",
+          "py": "guó",
+          "vn": "nước, quốc gia",
+          "image": "assets/words/guo.jpg",
+          "example": {
+            "hz": "你是哪国人？",
+            "py": "Nǐ shì nǎ guó rén?",
+            "vn": "Bạn là người nước nào?"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide04.mp3"
     },
     {
       "type": "wordcard",
-      "kicker": "生词 2/23",
+      "kicker": "生词 3/22",
       "hz": "的",
       "py": "de",
       "vn": "của",
       "examples": [
         {
-          "hz": "白家月的中文老师",
-          "py": "Bái Jiāyuè de Zhōngwén lǎoshī",
-          "vn": "giáo viên tiếng Trung của Bạch Gia Nguyệt"
-        },
-        {
           "hz": "你的名字",
           "py": "nǐ de míngzi",
           "vn": "tên của bạn"
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词 3/23",
-      "hz": "中国",
-      "py": "Zhōngguó",
-      "vn": "Trung Quốc",
-      "image": "assets/words/zhongguo.jpg",
-      "examples": [
-        {
-          "hz": "我是中国人。",
-          "py": "Wǒ shì Zhōngguó rén.",
-          "vn": "Tôi là người Trung Quốc."
         },
         {
-          "hz": "中国老师",
-          "py": "Zhōngguó lǎoshī",
-          "vn": "giáo viên (người) Trung Quốc"
+          "hz": "白家月的中文老师",
+          "py": "Bái Jiāyuè de Zhōngwén lǎoshī",
+          "vn": "giáo viên tiếng Trung của Bạch Gia Nguyệt"
         }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词 4/23",
-      "hz": "法国",
-      "py": "Fǎguó",
-      "vn": "Pháp",
-      "image": "assets/words/faguo.jpg",
-      "examples": [
-        {
-          "hz": "我是法国人。",
-          "py": "Wǒ shì Fǎguó rén.",
-          "vn": "Tôi là người Pháp."
-        },
-        {
-          "hz": "你是法国人吗？",
-          "py": "Nǐ shì Fǎguó rén ma?",
-          "vn": "Bạn là người Pháp à?"
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词 5/23",
-      "hz": "中文",
-      "py": "Zhōngwén",
-      "vn": "tiếng Trung",
-      "examples": [
-        {
-          "hz": "中文老师",
-          "py": "Zhōngwén lǎoshī",
-          "vn": "giáo viên tiếng Trung"
-        },
-        {
-          "hz": "你的中文很好。",
-          "py": "Nǐ de Zhōngwén hěn hǎo.",
-          "vn": "Tiếng Trung của bạn giỏi lắm."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词 6/23",
-      "hz": "这",
-      "py": "zhè",
-      "vn": "đây, này",
-      "image": "assets/words/zhe.jpg",
-      "examples": [
-        {
-          "hz": "这是谁？",
-          "py": "Zhè shì shéi?",
-          "vn": "Đây là ai?"
-        },
-        {
-          "hz": "这是我女生朋友。",
-          "py": "Zhè shì wǒ nǚshēng péngyou.",
-          "vn": "Đây là bạn nữ của tôi."
-        }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词 7/23",
-      "hz": "谁",
-      "py": "shéi",
-      "vn": "ai",
-      "image": "assets/words/shei.jpg",
-      "examples": [
-        {
-          "hz": "这是谁？",
-          "py": "Zhè shì shéi?",
-          "vn": "Đây là ai?"
-        },
-        {
-          "hz": "你是谁？",
-          "py": "Nǐ shì shéi?",
-          "vn": "Bạn là ai?"
-        }
-      ]
+      ],
+      "audio": "assets/audio/slide05.mp3"
     },
     {
       "type": "word_pair",
-      "kicker": "生词 8-9/23",
+      "kicker": "生词 4-5/22",
       "words": [
         {
-          "hz": "女生朋友",
-          "py": "nǚshēng péngyou",
-          "vn": "bạn nữ (bạn thường, không phải người yêu)",
-          "image": "assets/words/nvpengyou.jpg",
+          "hz": "中国",
+          "py": "Zhōngguó",
+          "vn": "Trung Quốc",
+          "image": "assets/words/zhongguo.jpg",
+          "example": {
+            "hz": "我是中国人。",
+            "py": "Wǒ shì Zhōngguó rén.",
+            "vn": "Tôi là người Trung Quốc."
+          }
+        },
+        {
+          "hz": "中文",
+          "py": "Zhōngwén",
+          "vn": "tiếng Trung",
+          "example": {
+            "hz": "你的中文很好。",
+            "py": "Nǐ de Zhōngwén hěn hǎo.",
+            "vn": "Tiếng Trung của bạn giỏi lắm."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 6-7/22",
+      "words": [
+        {
+          "hz": "法国",
+          "py": "Fǎguó",
+          "vn": "Pháp",
+          "image": "assets/words/faguo.jpg",
+          "example": {
+            "hz": "我是法国人。",
+            "py": "Wǒ shì Fǎguó rén.",
+            "vn": "Tôi là người Pháp."
+          }
+        },
+        {
+          "hz": "泰国",
+          "py": "Tàiguó",
+          "vn": "Thái Lan",
+          "image": "assets/words/taiguo.jpg",
+          "example": {
+            "hz": "她也是泰国人。",
+            "py": "Tā yě shì Tàiguó rén.",
+            "vn": "Cô ấy cũng là người Thái Lan."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 8-9/22",
+      "words": [
+        {
+          "hz": "这",
+          "py": "zhè",
+          "vn": "đây, này",
+          "image": "assets/words/zhe.jpg",
           "example": {
             "hz": "这是我女生朋友。",
             "py": "Zhè shì wǒ nǚshēng péngyou.",
@@ -177,22 +150,22 @@
           }
         },
         {
-          "hz": "男生朋友",
-          "py": "nánshēng péngyou",
-          "vn": "bạn nam (bạn thường, không phải người yêu)",
-          "image": "assets/words/nanpengyou.jpg",
+          "hz": "谁",
+          "py": "shéi",
+          "vn": "ai",
+          "image": "assets/words/shei.jpg",
           "example": {
-            "hz": "这是我男生朋友。",
-            "py": "Zhè shì wǒ nánshēng péngyou.",
-            "vn": "Đây là bạn nam của tôi."
+            "hz": "这是谁？",
+            "py": "Zhè shì shéi?",
+            "vn": "Đây là ai?"
           }
         }
       ],
-      "footer_note": "女生朋友/男生朋友 = bạn (thường), chỉ nói rõ giới tính — khác 女朋友/男朋友 (người yêu, không dạy ở buổi này)."
+      "audio": "assets/audio/slide08.mp3"
     },
     {
       "type": "wordcard",
-      "kicker": "生词 10/23",
+      "kicker": "生词 10/22",
       "hz": "哪",
       "py": "nǎ",
       "vn": "nào",
@@ -207,52 +180,202 @@
           "py": "Nǐ nǚshēng péngyou shì nǎ guó rén?",
           "vn": "Bạn nữ của bạn là người nước nào?"
         }
-      ]
+      ],
+      "audio": "assets/audio/slide09.mp3"
     },
     {
-      "type": "wordcard",
-      "kicker": "生词 11/23",
-      "hz": "都",
-      "py": "dōu",
-      "vn": "đều",
-      "examples": [
+      "type": "word_pair",
+      "kicker": "生词 11-12/22",
+      "words": [
         {
-          "hz": "我们都是学生。",
-          "py": "Wǒmen dōu shì xuésheng.",
-          "vn": "Chúng tôi đều là học sinh."
+          "hz": "她",
+          "py": "tā",
+          "vn": "cô ấy, chị ấy",
+          "image": "assets/words/ta.jpg",
+          "example": {
+            "hz": "她是中文老师。",
+            "py": "Tā shì Zhōngwén lǎoshī.",
+            "vn": "Cô ấy là giáo viên tiếng Trung."
+          }
         },
         {
-          "hz": "我们都是中国人。",
-          "py": "Wǒmen dōu shì Zhōngguó rén.",
-          "vn": "Chúng tôi đều là người Trung Quốc."
+          "hz": "我们",
+          "py": "wǒmen",
+          "vn": "chúng tôi, chúng mình",
+          "example": {
+            "hz": "我们很想你。",
+            "py": "Wǒmen hěn xiǎng nǐ.",
+            "vn": "Chúng mình rất nhớ bạn."
+          }
         }
       ],
-      "footer_note": "都 sẽ học kỹ hơn ở Buổi 12 — ở đây dùng trước cho tiện."
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 13/22",
+      "words": [
+        {
+          "hz": "女生朋友",
+          "py": "nǚshēng péngyou",
+          "vn": "bạn nữ (bạn thường)",
+          "image": "assets/words/nvpengyou.jpg",
+          "example": {
+            "hz": "这是我女生朋友。",
+            "py": "Zhè shì wǒ nǚshēng péngyou.",
+            "vn": "Đây là bạn nữ của tôi."
+          }
+        },
+        {
+          "hz": "男生朋友",
+          "py": "nánshēng péngyou",
+          "vn": "bạn nam (bạn thường)",
+          "image": "assets/words/nanpengyou.jpg",
+          "example": {
+            "hz": "这是我男生朋友。",
+            "py": "Zhè shì wǒ nánshēng péngyou.",
+            "vn": "Đây là bạn nam của tôi."
+          }
+        }
+      ],
+      "footer_note": "Sách gốc dùng 女朋友 (= NGƯỜI YÊU). Ở buổi này dạy 女生朋友/男生朋友 = bạn bè bình thường, có nói rõ là bạn nữ/bạn nam — 男生朋友 là từ ghép thêm cho đủ cặp.",
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 14-15/22",
+      "words": [
+        {
+          "hz": "喂",
+          "py": "wèi",
+          "vn": "alô, này (khi gọi điện)",
+          "example": {
+            "hz": "喂，一飞！",
+            "py": "Wèi, Yīfēi!",
+            "vn": "Alô, Nhất Phi ơi!"
+          }
+        },
+        {
+          "hz": "姐姐",
+          "py": "jiějie",
+          "vn": "chị gái",
+          "image": "assets/words/jiejie.jpg",
+          "example": {
+            "hz": "姐姐！",
+            "py": "Jiějie!",
+            "vn": "Chị ơi!"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 16-17/22",
+      "words": [
+        {
+          "hz": "工作",
+          "py": "gōngzuò",
+          "vn": "công việc",
+          "image": "assets/words/gongzuo.jpg",
+          "example": {
+            "hz": "你工作还忙吗？",
+            "py": "Nǐ gōngzuò hái máng ma?",
+            "vn": "Công việc của bạn còn bận không?"
+          }
+        },
+        {
+          "hz": "忙",
+          "py": "máng",
+          "vn": "bận",
+          "image": "assets/words/mang.jpg",
+          "example": {
+            "hz": "我不太忙。",
+            "py": "Wǒ bú tài máng.",
+            "vn": "Tôi không bận lắm."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 18-19/22",
+      "words": [
+        {
+          "hz": "还",
+          "py": "hái",
+          "vn": "vẫn, còn",
+          "example": {
+            "hz": "对，还很忙。",
+            "py": "Duì, hái hěn máng.",
+            "vn": "Đúng, vẫn còn rất bận."
+          }
+        },
+        {
+          "hz": "太",
+          "py": "tài",
+          "vn": "quá, lắm",
+          "example": {
+            "hz": "我不太忙。",
+            "py": "Wǒ bú tài máng.",
+            "vn": "Tôi không bận lắm."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 20-21/22",
+      "words": [
+        {
+          "hz": "吗",
+          "py": "ma",
+          "vn": "…không? (câu hỏi)",
+          "example": {
+            "hz": "你也很忙吗？",
+            "py": "Nǐ yě hěn máng ma?",
+            "vn": "Bạn cũng rất bận không?"
+          }
+        },
+        {
+          "hz": "对",
+          "py": "duì",
+          "vn": "đúng",
+          "example": {
+            "hz": "对，还很忙。",
+            "py": "Duì, hái hěn máng.",
+            "vn": "Đúng, vẫn còn rất bận."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
     },
     {
       "type": "wordcard",
-      "kicker": "生词 12/23",
-      "hz": "泰国",
-      "py": "Tàiguó",
-      "vn": "Thái Lan",
-      "image": "assets/words/taiguo.jpg",
+      "kicker": "生词 22/22",
+      "hz": "想",
+      "py": "xiǎng",
+      "vn": "nhớ (ai đó)",
       "examples": [
         {
-          "hz": "你是泰国人吗？",
-          "py": "Nǐ shì Tàiguó rén ma?",
-          "vn": "Bạn là người Thái Lan à?"
+          "hz": "我们很想你。",
+          "py": "Wǒmen hěn xiǎng nǐ.",
+          "vn": "Chúng mình rất nhớ bạn."
         },
         {
-          "hz": "我不是泰国人。",
-          "py": "Wǒ bú shì Tàiguó rén.",
-          "vn": "Tôi không phải người Thái Lan."
+          "hz": "我也想你们。",
+          "py": "Wǒ yě xiǎng nǐmen.",
+          "vn": "Mình cũng nhớ các bạn."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide16.mp3"
     },
     {
       "type": "dialogue",
       "kicker": "会话",
-      "title": "会话 1 — 李文 và 白家月 gặp lại",
+      "title": "会话 1",
       "turns": [
         {
           "speaker": "李文",
@@ -269,12 +392,13 @@
           "hz": "我的中文老师也是中国人。",
           "py": "Wǒ de Zhōngwén lǎoshī yě shì Zhōngguó rén."
         }
-      ]
+      ],
+      "audio": "assets/audio/slide17.mp3"
     },
     {
       "type": "dialogue",
       "kicker": "会话",
-      "title": "会话 2 — 安妮 xem ảnh trong điện thoại 陈天中",
+      "title": "会话 2",
       "turns": [
         {
           "speaker": "安妮",
@@ -296,73 +420,171 @@
           "hz": "她也是泰国人。",
           "py": "Tā yě shì Tàiguó rén."
         }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 3",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "喂，一飞！",
+          "py": "Wèi, Yīfēi!"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "姐姐！",
+          "py": "Jiějie!"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "你工作还忙吗？",
+          "py": "Nǐ gōngzuò hái máng ma?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "对，还很忙。你也很忙吗？",
+          "py": "Duì, hái hěn máng. Nǐ yě hěn máng ma?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我不太忙。我们很想你。",
+          "py": "Wǒ bú tài máng. Wǒmen hěn xiǎng nǐ."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "我也想你们。",
+          "py": "Wǒ yě xiǎng nǐmen."
+        }
+      ],
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "王一飞": "zh-CN-XiaoyiNeural"
+      },
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "“是”字句",
+      "image": "assets/topic/shi_quoctich.jpg",
+      "groups": [
+        {
+          "point": "是 = LÀ",
+          "examples": [
+            {
+              "hz": "我是中国人。",
+              "py": "Wǒ shì Zhōngguó rén.",
+              "vn": "Tôi là người Trung Quốc."
+            },
+            {
+              "hz": "她是中文老师。",
+              "py": "Tā shì Zhōngwén lǎoshī.",
+              "vn": "Cô ấy là giáo viên tiếng Trung."
+            }
+          ]
+        },
+        {
+          "point": "Ai + 是 + tên nước + 人",
+          "examples": [
+            {
+              "hz": "我是法国人。",
+              "py": "Wǒ shì Fǎguó rén.",
+              "vn": "Tôi là người Pháp."
+            }
+          ]
+        },
+        {
+          "point": "不是 = KHÔNG PHẢI",
+          "examples": [
+            {
+              "hz": "我老师不是法国人。",
+              "py": "Wǒ lǎoshī bú shì Fǎguó rén.",
+              "vn": "Giáo viên của tôi không phải người Pháp."
+            }
+          ]
+        }
+      ],
+      "tip": "Đừng quên chữ 人!   我是中国 ❌   我是中国人 ✅"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "结构助词“的”",
+      "image": "assets/topic/de_sohuu.jpg",
+      "groups": [
+        {
+          "point": "的 = CỦA",
+          "examples": [
+            {
+              "hz": "你的名字",
+              "py": "nǐ de míngzi",
+              "vn": "tên của bạn"
+            },
+            {
+              "hz": "白家月的中文老师",
+              "py": "Bái Jiāyuè de Zhōngwén lǎoshī",
+              "vn": "giáo viên tiếng Trung của Bạch Gia Nguyệt"
+            }
+          ]
+        },
+        {
+          "point": "Sau 我/你 + người quen → bỏ 的 cũng đúng",
+          "examples": [
+            {
+              "hz": "我老师 = 我的老师",
+              "py": "wǒ lǎoshī = wǒ de lǎoshī",
+              "vn": "giáo viên của tôi"
+            },
+            {
+              "hz": "我姐姐 = 我的姐姐",
+              "py": "wǒ jiějie = wǒ de jiějie",
+              "vn": "chị gái của tôi"
+            }
+          ]
+        }
       ]
     },
     {
       "type": "grammar",
       "kicker": "语法",
-      "title": "是 — nói mình là người nước nào",
-      "image": "assets/icons/icon_id.png",
-      "point": "是 nghĩa là \"LÀ\". Nói quốc tịch: Ai + 是 + Tên nước + 人. Muốn nói KHÔNG PHẢI thì thêm 不 ngay trước 是.",
-      "examples": [
+      "title": "用“吗”的是非问句",
+      "image": "assets/topic/na_ma_hoi.jpg",
+      "groups": [
         {
-          "hz": "我是法国人。",
-          "py": "Wǒ shì Fǎguó rén.",
-          "vn": "Tôi là người Pháp."
+          "point": "吗 = …KHÔNG?  (trả lời 对 / 不是)",
+          "examples": [
+            {
+              "hz": "你是法国人吗？",
+              "py": "Nǐ shì Fǎguó rén ma?",
+              "vn": "Bạn là người Pháp không?"
+            },
+            {
+              "hz": "你也很忙吗？",
+              "py": "Nǐ yě hěn máng ma?",
+              "vn": "Bạn cũng rất bận không?"
+            }
+          ]
         },
         {
-          "hz": "我老师不是法国人。",
-          "py": "Wǒ lǎoshī bú shì Fǎguó rén.",
-          "vn": "Giáo viên của tôi không phải người Pháp."
+          "point": "哪 = NÀO?  (trả lời tên nước)",
+          "examples": [
+            {
+              "hz": "你是哪国人？",
+              "py": "Nǐ shì nǎ guó rén?",
+              "vn": "Bạn là người nước nào?"
+            }
+          ]
         }
-      ],
-      "tip": "我是中国 ❌ → 我是中国人 ✅ — đừng quên 人!"
-    },
-    {
-      "type": "grammar",
-      "kicker": "语法",
-      "title": "的 — nói CỦA AI",
-      "image": "assets/icons/icon_link.png",
-      "point": "的 nghĩa là \"CỦA\". [Ai] + 的 + [đồ vật/người]. Nói về thầy cô/người thân thì có thể BỎ 的.",
-      "examples": [
-        {
-          "hz": "你的名字",
-          "py": "nǐ de míngzi",
-          "vn": "tên của bạn"
-        },
-        {
-          "hz": "我老师／我学生／你同学",
-          "py": "wǒ lǎoshī / wǒ xuésheng / nǐ tóngxué",
-          "vn": "giáo viên của tôi / học sinh của tôi / bạn học của bạn"
-        }
-      ],
-      "tip": "我老师 nghe tự nhiên hơn 我的老师 khi nói về người quen!"
-    },
-    {
-      "type": "grammar",
-      "kicker": "语法",
-      "title": "哪 và 吗 — 2 cách hỏi quốc tịch",
-      "image": "assets/icons/icon_question.png",
-      "point": "你是哪国人？ = hỏi MỞ (nước nào?). 你是法国人吗？ = đoán thử 1 nước rồi hỏi đúng/sai.",
-      "examples": [
-        {
-          "hz": "你是哪国人？",
-          "py": "Nǐ shì nǎ guó rén?",
-          "vn": "Bạn là người nước nào?"
-        },
-        {
-          "hz": "你是法国人吗？",
-          "py": "Nǐ shì Fǎguó rén ma?",
-          "vn": "Bạn là người Pháp à?"
-        }
-      ],
-      "tip": "哪(nǎ) ≠ 那(nà) — đừng nhầm nhé!"
+      ]
     },
     {
       "type": "table",
-      "kicker": "口语",
-      "title": "常用句子 (1/2) — 10 câu khẩu ngữ",
-      "image": "assets/icons/icon_megaphone.png",
+      "kicker": "自我介绍 ①",
+      "title": "开场问候 — Bước 1: Chào mở đầu",
+      "image": "assets/topic/intro_chao.jpg",
       "headers": [
         "中文",
         "Pinyin",
@@ -373,37 +595,59 @@
       ],
       "rows": [
         [
-          "你是哪国人？",
-          "Nǐ shì nǎ guó rén?",
-          "Bạn là người nước nào?"
+          "你好！",
+          "Nǐ hǎo!",
+          "Xin chào!"
         ],
         [
-          "我是中国人。",
-          "Wǒ shì Zhōngguó rén.",
-          "Tôi là người Trung Quốc."
+          "大家好！",
+          "Dàjiā hǎo!",
+          "Chào mọi người!"
         ],
         [
-          "我是法国人。",
-          "Wǒ shì Fǎguó rén.",
-          "Tôi là người Pháp."
+          "我来介绍一下儿。",
+          "Wǒ lái jièshào yíxiàr.",
+          "Mình xin tự giới thiệu một chút."
+        ]
+      ],
+      "footer_note": "介绍 · 一下儿 là từ mở rộng ngoài Bài 3 — chỉ cần nói được cả câu theo mẫu.",
+      "audio": "assets/audio/slide23.mp3",
+      "voice": "zh-CN-XiaoyiNeural"
+    },
+    {
+      "type": "table",
+      "kicker": "自我介绍 ②",
+      "title": "基本信息 — Bước 2a: Tên · Quốc tịch",
+      "image": "assets/topic/intro_ten_quoctich.jpg",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "我叫明安。",
+          "Wǒ jiào Míng'ān.",
+          "Mình tên là Minh An. (thay bằng tên em)"
         ],
         [
           "我是越南人。",
           "Wǒ shì Yuènán rén.",
-          "Tôi là người Việt Nam."
-        ],
-        [
-          "这是谁？",
-          "Zhè shì shéi?",
-          "Đây là ai?"
+          "Mình là người Việt Nam."
         ]
-      ]
+      ],
+      "footer_note": "Muốn nói \"đến từ\" thay cho \"là người\": 我来自越南 (Wǒ láizì Yuènán) — 来自 là từ mở rộng ngoài Bài 3.",
+      "audio": "assets/audio/slide24.mp3",
+      "voice": "zh-CN-XiaoyiNeural"
     },
     {
       "type": "table",
-      "kicker": "口语",
-      "title": "常用句子 (2/2) — 10 câu khẩu ngữ",
-      "image": "assets/icons/icon_megaphone.png",
+      "kicker": "自我介绍 ③",
+      "title": "基本信息 — Bước 2b: Tuổi · Học/Làm · Sở thích",
+      "image": "assets/topic/intro_tuoi_sothich.jpg",
       "headers": [
         "中文",
         "Pinyin",
@@ -414,35 +658,67 @@
       ],
       "rows": [
         [
-          "这是我女生朋友。",
-          "Zhè shì wǒ nǚshēng péngyou.",
-          "Đây là bạn nữ của tôi."
+          "我今年九岁。",
+          "Wǒ jīnnián jiǔ suì.",
+          "Năm nay mình 9 tuổi. (thay bằng tuổi em)"
         ],
         [
-          "你女生朋友是哪国人？",
-          "Nǐ nǚshēng péngyou shì nǎ guó rén?",
-          "Bạn nữ của bạn là người nước nào?"
+          "我是小学生。",
+          "Wǒ shì xiǎoxuéshēng.",
+          "Mình là học sinh tiểu học."
         ],
         [
-          "她也是泰国人。",
-          "Tā yě shì Tàiguó rén.",
-          "Cô ấy cũng là người Thái Lan."
+          "我在学校学习。",
+          "Wǒ zài xuéxiào xuéxí.",
+          "Mình học ở trường."
         ],
         [
-          "我的中文老师也是中国人。",
-          "Wǒ de Zhōngwén lǎoshī yě shì Zhōngguó rén.",
-          "Giáo viên tiếng Trung của tôi cũng là người Trung Quốc."
-        ],
-        [
-          "你的中文很好。",
-          "Nǐ de Zhōngwén hěn hǎo.",
-          "Tiếng Trung của bạn giỏi lắm."
+          "我喜欢学习汉语。",
+          "Wǒ xǐhuan xuéxí Hànyǔ.",
+          "Mình thích học tiếng Trung."
         ]
-      ]
+      ],
+      "footer_note": "Người lớn nói nghề nghiệp: 我在……工作 (làm việc tại…) · 我是职员 (nhân viên văn phòng). 今年/岁/在/学习/喜欢/汉语 là từ mở rộng, học kỹ ở các buổi sau.",
+      "audio": "assets/audio/slide25.mp3",
+      "voice": "zh-CN-XiaoyiNeural"
+    },
+    {
+      "type": "table",
+      "kicker": "自我介绍 ④",
+      "title": "结束语 — Bước 3: Lời kết",
+      "image": "assets/topic/intro_ketthuc.jpg",
+      "headers": [
+        "中文",
+        "Pinyin",
+        "Tiếng Việt"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "很高兴认识大家。",
+          "Hěn gāoxìng rènshi dàjiā.",
+          "Rất vui được làm quen với mọi người."
+        ],
+        [
+          "谢谢大家！",
+          "Xièxie dàjiā!",
+          "Cảm ơn mọi người!"
+        ]
+      ],
+      "footer_note": "很高兴认识 · 谢谢 · 大家 đã học ở Buổi 2 — chỉ cần ghép lại.",
+      "audio": "assets/audio/slide26.mp3",
+      "voice": "zh-CN-XiaoyiNeural"
+    },
+    {
+      "type": "section",
+      "title": "第二部分 · 生词拓展",
+      "subtitle": "Phần 2 — Từ mở rộng: 7 nước khác + 4 cấp học + trò chơi"
     },
     {
       "type": "word_pair",
-      "kicker": "生词拓展 13-14/23",
+      "kicker": "生词拓展 1-2/11",
       "words": [
         {
           "hz": "越南",
@@ -466,11 +742,12 @@
             "vn": "Tôi là người Mỹ."
           }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide28.mp3"
     },
     {
       "type": "word_pair",
-      "kicker": "生词拓展 15-16/23",
+      "kicker": "生词拓展 3-4/11",
       "words": [
         {
           "hz": "英国",
@@ -494,17 +771,18 @@
             "vn": "Tôi là người Nhật."
           }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide29.mp3"
     },
     {
       "type": "word_pair",
-      "kicker": "生词拓展 17-18/23",
+      "kicker": "生词拓展 5-6/11",
       "words": [
         {
           "hz": "韩国",
           "py": "Hánguó",
           "vn": "Hàn Quốc",
-          "image": "assets/words/hanguo.png",
+          "image": "assets/words/hanguo.jpg",
           "example": {
             "hz": "我是韩国人。",
             "py": "Wǒ shì Hánguó rén.",
@@ -522,27 +800,24 @@
             "vn": "Tôi là người Đức."
           }
         }
-      ]
-    },
-    {
-      "type": "wordcard",
-      "kicker": "生词拓展 19/23",
-      "hz": "澳大利亚",
-      "py": "Àodàlìyà",
-      "vn": "Úc",
-      "image": "assets/words/aodaliya.jpg",
-      "examples": [
-        {
-          "hz": "我是澳大利亚人。",
-          "py": "Wǒ shì Àodàlìyà rén.",
-          "vn": "Tôi là người Úc."
-        }
-      ]
+      ],
+      "audio": "assets/audio/slide30.mp3"
     },
     {
       "type": "word_pair",
-      "kicker": "生词拓展 20-21/23",
+      "kicker": "生词拓展 7-8/11",
       "words": [
+        {
+          "hz": "澳大利亚",
+          "py": "Àodàlìyà",
+          "vn": "Úc",
+          "image": "assets/words/aodaliya.jpg",
+          "example": {
+            "hz": "我是澳大利亚人。",
+            "py": "Wǒ shì Àodàlìyà rén.",
+            "vn": "Tôi là người Úc."
+          }
+        },
         {
           "hz": "小学生",
           "py": "xiǎoxuéshēng",
@@ -553,7 +828,14 @@
             "py": "Wǒ shì xiǎoxuéshēng.",
             "vn": "Tôi là học sinh tiểu học."
           }
-        },
+        }
+      ],
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展 9-10/11",
+      "words": [
         {
           "hz": "初中生",
           "py": "chūzhōngshēng",
@@ -564,13 +846,7 @@
             "py": "Wǒ shì chūzhōngshēng.",
             "vn": "Tôi là học sinh cấp 2."
           }
-        }
-      ]
-    },
-    {
-      "type": "word_pair",
-      "kicker": "生词拓展 22-23/23",
-      "words": [
+        },
         {
           "hz": "高中生",
           "py": "gāozhōngshēng",
@@ -581,251 +857,96 @@
             "py": "Wǒ shì gāozhōngshēng.",
             "vn": "Tôi là học sinh cấp 3."
           }
-        },
-        {
-          "hz": "大学生",
-          "py": "dàxuéshēng",
-          "vn": "sinh viên đại học",
-          "image": "assets/words/daxuesheng.jpg",
-          "example": {
-            "hz": "我是大学生。",
-            "py": "Wǒ shì dàxuéshēng.",
-            "vn": "Tôi là sinh viên đại học."
-          }
-        }
-      ]
-    },
-    {
-      "type": "table",
-      "kicker": "自我介绍",
-      "title": "自我介绍 (1/2) — Mẫu câu giới thiệu bản thân",
-      "image": "assets/icons/icon_wave.png",
-      "headers": [
-        "中文",
-        "Pinyin",
-        "Tiếng Việt"
-      ],
-      "cjk_cols": [
-        0
-      ],
-      "rows": [
-        [
-          "大家好！",
-          "Dàjiā hǎo!",
-          "Chào mọi người!"
-        ],
-        [
-          "我叫……。",
-          "Wǒ jiào...",
-          "Tôi tên là…"
-        ],
-        [
-          "我是越南人。",
-          "Wǒ shì Yuènán rén.",
-          "Tôi là người Việt Nam."
-        ],
-        [
-          "我是学生。",
-          "Wǒ shì xuésheng.",
-          "Tôi là học sinh."
-        ]
-      ],
-      "footer_note": "Chọn từ đã học: 小学生/初中生/高中生/大学生 thay cho 学生 nếu muốn nói rõ cấp học."
-    },
-    {
-      "type": "table",
-      "kicker": "自我介绍",
-      "title": "自我介绍 (2/2) — xem trước",
-      "headers": [
-        "中文",
-        "Pinyin",
-        "Tiếng Việt"
-      ],
-      "cjk_cols": [
-        0
-      ],
-      "rows": [
-        [
-          "我今年……岁。",
-          "Wǒ jīnnián... suì.",
-          "Năm nay tôi … tuổi."
-        ],
-        [
-          "我喜欢中文。",
-          "Wǒ xǐhuan Zhōngwén.",
-          "Tôi thích tiếng Trung."
-        ]
-      ],
-      "footer_note": "2 câu này chỉ làm quen trước — 岁 học kỹ ở Buổi 4, 喜欢 học kỹ ở Buổi 9, không kiểm tra ở Buổi 3."
-    },
-    {
-      "type": "passage",
-      "kicker": "自我介绍",
-      "title": "自我介绍 — Đoạn văn mẫu",
-      "sentences": [
-        {
-          "hz": "大家好！我叫陈小雨。",
-          "py": "Dàjiā hǎo! Wǒ jiào Chén Xiǎoyǔ.",
-          "vn": "Chào mọi người! Mình tên là Trần Tiểu Vũ."
-        },
-        {
-          "hz": "我是越南人，也是小学生。",
-          "py": "Wǒ shì Yuènán rén, yě shì xiǎoxuéshēng.",
-          "vn": "Mình là người Việt Nam, cũng là học sinh tiểu học."
-        },
-        {
-          "hz": "我的中文老师是中国人，我很喜欢她。",
-          "py": "Wǒ de Zhōngwén lǎoshī shì Zhōngguó rén, wǒ hěn xǐhuan tā.",
-          "vn": "Cô giáo tiếng Trung của mình là người Trung Quốc, mình rất thích cô ấy."
-        },
-        {
-          "hz": "我女生朋友是法国人，我男生朋友是泰国人。",
-          "py": "Wǒ nǚshēng péngyou shì Fǎguó rén, wǒ nánshēng péngyou shì Tàiguó rén.",
-          "vn": "Bạn nữ của mình là người Pháp, bạn nam của mình là người Thái Lan."
-        },
-        {
-          "hz": "我们都喜欢中文，也都是小学生。",
-          "py": "Wǒmen dōu xǐhuan Zhōngwén, yě dōu shì xiǎoxuéshēng.",
-          "vn": "Chúng mình đều thích tiếng Trung, cũng đều là học sinh tiểu học."
-        },
-        {
-          "hz": "你叫什么名字？你是哪国人呢？",
-          "py": "Nǐ jiào shénme míngzi? Nǐ shì nǎ guó rén ne?",
-          "vn": "Bạn tên là gì? Bạn là người nước nào?"
-        },
-        {
-          "hz": "很高兴认识你！",
-          "py": "Hěn gāoxìng rènshi nǐ!",
-          "vn": "Rất vui được quen bạn!"
         }
       ],
-      "note": "Đoạn mẫu kể chuyện rồi QUAY LẠI HỎI người đọc (你叫什么名字？你是哪国人呢？) — ôn lại 什么/叫 (Buổi 2) + 哪/呢, biến bài đọc thành 1 cuộc trò chuyện thật thay vì liệt kê. 喜欢 là từ xem trước (học kỹ Buổi 9). Hãy thử viết đoạn tương tự cho chính mình!"
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 11/11",
+      "hz": "大学生",
+      "py": "dàxuéshēng",
+      "vn": "sinh viên đại học",
+      "examples": [
+        {
+          "hz": "我是大学生。",
+          "py": "Wǒ shì dàxuéshēng.",
+          "vn": "Tôi là sinh viên đại học."
+        }
+      ],
+      "image": "assets/words/daxuesheng.jpg",
+      "audio": "assets/audio/slide33.mp3"
     },
     {
       "type": "match_pairs",
       "kicker": "游戏",
-      "title": "配对游戏 (1/2) — Nối ảnh với từ",
+      "title": "配对游戏 (1/5) · 课本生词",
       "images": [
         {
           "num": 1,
-          "image": "assets/words/faguo.jpg"
+          "image": "assets/words/taiguo.jpg"
         },
         {
           "num": 2,
-          "image": "assets/words/yuenan.jpg"
+          "image": "assets/words/ren.jpg"
         },
         {
           "num": 3,
-          "image": "assets/words/nanpengyou.jpg"
+          "image": "assets/words/faguo.jpg"
         },
         {
           "num": 4,
-          "image": "assets/words/xiaoxuesheng.jpg"
+          "image": "assets/words/guo.jpg"
         },
         {
           "num": 5,
-          "image": "assets/words/zhe.jpg"
-        },
-        {
-          "num": 6,
-          "image": "assets/words/chuzhongsheng.jpg"
-        },
-        {
-          "num": 7,
-          "image": "assets/words/nvpengyou.jpg"
-        },
-        {
-          "num": 8,
-          "image": "assets/words/hanguo.png"
-        },
-        {
-          "num": 9,
           "image": "assets/words/zhongguo.jpg"
-        },
-        {
-          "num": 10,
-          "image": "assets/words/ren.jpg"
         }
       ],
       "words": [
         {
           "letter": "A",
-          "hz": "男生朋友",
-          "py": "nánshēng péngyou",
-          "vn": "bạn nam"
+          "hz": "中国",
+          "py": "Zhōngguó"
         },
         {
           "letter": "B",
-          "hz": "女生朋友",
-          "py": "nǚshēng péngyou",
-          "vn": "bạn nữ"
+          "hz": "法国",
+          "py": "Fǎguó"
         },
         {
           "letter": "C",
-          "hz": "小学生",
-          "py": "xiǎoxuéshēng",
-          "vn": "học sinh tiểu học"
+          "hz": "国",
+          "py": "guó"
         },
         {
           "letter": "D",
-          "hz": "中国",
-          "py": "Zhōngguó",
-          "vn": "Trung Quốc"
+          "hz": "泰国",
+          "py": "Tàiguó"
         },
         {
           "letter": "E",
-          "hz": "这",
-          "py": "zhè",
-          "vn": "đây, này"
-        },
-        {
-          "letter": "F",
-          "hz": "韩国",
-          "py": "Hánguó",
-          "vn": "Hàn Quốc"
-        },
-        {
-          "letter": "G",
-          "hz": "初中生",
-          "py": "chūzhōngshēng",
-          "vn": "học sinh cấp 2"
-        },
-        {
-          "letter": "H",
-          "hz": "越南",
-          "py": "Yuènán",
-          "vn": "Việt Nam"
-        },
-        {
-          "letter": "I",
-          "hz": "法国",
-          "py": "Fǎguó",
-          "vn": "Pháp"
-        },
-        {
-          "letter": "J",
           "hz": "人",
-          "py": "rén",
-          "vn": "người"
+          "py": "rén"
         }
       ]
     },
     {
       "type": "match_pairs",
       "kicker": "游戏",
-      "title": "配对游戏 (2/2) — Nối ảnh với từ",
+      "title": "配对游戏 (2/5) · 课本生词",
       "images": [
         {
           "num": 1,
-          "image": "assets/words/deguo.jpg"
+          "image": "assets/words/jiejie.jpg"
         },
         {
           "num": 2,
-          "image": "assets/words/daxuesheng.jpg"
+          "image": "assets/words/ta.jpg"
         },
         {
           "num": 3,
-          "image": "assets/words/yingguo.jpg"
+          "image": "assets/words/zhe.jpg"
         },
         {
           "num": 4,
@@ -833,79 +954,160 @@
         },
         {
           "num": 5,
-          "image": "assets/words/meiguo.jpg"
-        },
-        {
-          "num": 6,
-          "image": "assets/words/riben.jpg"
-        },
-        {
-          "num": 7,
-          "image": "assets/words/taiguo.jpg"
-        },
-        {
-          "num": 8,
-          "image": "assets/words/gaozhongsheng.jpg"
-        },
-        {
-          "num": 9,
-          "image": "assets/words/aodaliya.jpg"
+          "image": "assets/words/mang.jpg"
         }
       ],
       "words": [
         {
           "letter": "A",
-          "hz": "泰国",
-          "py": "Tàiguó",
-          "vn": "Thái Lan"
+          "hz": "谁",
+          "py": "shéi"
+        },
+        {
+          "letter": "B",
+          "hz": "她",
+          "py": "tā"
+        },
+        {
+          "letter": "C",
+          "hz": "这",
+          "py": "zhè"
+        },
+        {
+          "letter": "D",
+          "hz": "忙",
+          "py": "máng"
+        },
+        {
+          "letter": "E",
+          "hz": "姐姐",
+          "py": "jiějie"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (3/5) · 生词拓展",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/riben.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/meiguo.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/yingguo.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/yuenan.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "美国",
+          "py": "Měiguó"
+        },
+        {
+          "letter": "B",
+          "hz": "日本",
+          "py": "Rìběn"
+        },
+        {
+          "letter": "C",
+          "hz": "英国",
+          "py": "Yīngguó"
+        },
+        {
+          "letter": "D",
+          "hz": "越南",
+          "py": "Yuènán"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (4/5) · 生词拓展",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/xiaoxuesheng.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/hanguo.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/aodaliya.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/deguo.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "德国",
+          "py": "Déguó"
         },
         {
           "letter": "B",
           "hz": "澳大利亚",
-          "py": "Àodàlìyà",
-          "vn": "Úc"
+          "py": "Àodàlìyà"
+        },
+        {
+          "letter": "C",
+          "hz": "韩国",
+          "py": "Hánguó"
+        },
+        {
+          "letter": "D",
+          "hz": "小学生",
+          "py": "xiǎoxuéshēng"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (5/5) · 生词拓展",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/gaozhongsheng.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/daxuesheng.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/chuzhongsheng.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "初中生",
+          "py": "chūzhōngshēng"
+        },
+        {
+          "letter": "B",
+          "hz": "大学生",
+          "py": "dàxuéshēng"
         },
         {
           "letter": "C",
           "hz": "高中生",
-          "py": "gāozhōngshēng",
-          "vn": "học sinh cấp 3"
-        },
-        {
-          "letter": "D",
-          "hz": "美国",
-          "py": "Měiguó",
-          "vn": "Mỹ"
-        },
-        {
-          "letter": "E",
-          "hz": "英国",
-          "py": "Yīngguó",
-          "vn": "Anh"
-        },
-        {
-          "letter": "F",
-          "hz": "谁",
-          "py": "shéi",
-          "vn": "ai"
-        },
-        {
-          "letter": "G",
-          "hz": "德国",
-          "py": "Déguó",
-          "vn": "Đức"
-        },
-        {
-          "letter": "H",
-          "hz": "日本",
-          "py": "Rìběn",
-          "vn": "Nhật Bản"
-        },
-        {
-          "letter": "I",
-          "hz": "大学生",
-          "py": "dàxuéshēng",
-          "vn": "sinh viên đại học"
+          "py": "gāozhōngshēng"
         }
       ]
     }

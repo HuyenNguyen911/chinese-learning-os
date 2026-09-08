@@ -49,21 +49,42 @@ chưa build slide/bài tập).
 
 ## Buổi 03 — Quốc tịch & bản thân (L3)
 
+⚠️ **SỬA 2026-09-04:** bảng cũ ghi 11 từ là SAI (thiếu khối 生词 3-6 + 国 + 她, và gán sai 都).
+Đối chiếu trực tiếp sách (trang 26/28/29, đọc bằng vision) → Bài 3 có **22 từ**.
+
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
-| 人 | rén | người | ⏳ chưa soạn |
-| 的 | de | trợ từ sở hữu/định ngữ | ⏳ chưa soạn |
-| 中国 | Zhōngguó | (riêng) Trung Quốc | ⏳ chưa soạn |
-| 法国 | Fǎguó | (riêng) Pháp | ⏳ chưa soạn |
-| 中文 | Zhōngwén | (riêng) tiếng Trung | ⏳ chưa soạn |
-| 这 | zhè | này | ⏳ chưa soạn |
-| 谁 | shéi | ai | ⏳ chưa soạn |
-| 女朋友 | nǚpéngyou | bạn gái | ⏳ chưa soạn |
-| 哪 | nǎ | nào | ⏳ chưa soạn |
-| 都 | dōu | đều | ⏳ chưa soạn |
-| 泰国 | Tàiguó | (riêng) Thái Lan | ⏳ chưa soạn |
+| 人 | rén | người | ✅ đã có |
+| 的 | de | trợ từ sở hữu/định ngữ | ✅ đã có |
+| 这 | zhè | này, đây | ✅ đã có |
+| 谁 | shéi | ai | ✅ đã có |
+| 女朋友 | nǚpéngyou | bạn gái (người yêu) | ✅ đã có |
+| 哪 | nǎ | nào | ✅ đã có |
+| 国 | guó | nước, quốc gia | ✅ bổ sung 2026-09-04 |
+| 她 | tā | cô ấy | ✅ bổ sung 2026-09-04 |
+| 喂 | wèi | alô, này | ✅ bổ sung 2026-09-04 |
+| 姐姐 | jiějie | chị gái | ✅ bổ sung 2026-09-04 |
+| 工作 | gōngzuò | công việc | ✅ bổ sung 2026-09-04 |
+| 还 | hái | vẫn, còn | ✅ bổ sung 2026-09-04 |
+| 忙 | máng | bận | ✅ bổ sung 2026-09-04 |
+| 吗 | ma | trợ từ nghi vấn | ✅ bổ sung 2026-09-04 |
+| 对 | duì | đúng | ✅ bổ sung 2026-09-04 |
+| 太 | tài | quá, lắm | ✅ bổ sung 2026-09-04 |
+| 我们 | wǒmen | chúng tôi | ✅ bổ sung 2026-09-04 |
+| 想 | xiǎng | nhớ (ai đó) | ✅ bổ sung 2026-09-04 |
+| 中国 | Zhōngguó | (riêng) Trung Quốc | ✅ đã có |
+| 法国 | Fǎguó | (riêng) Pháp | ✅ đã có |
+| 中文 | Zhōngwén | (riêng) tiếng Trung | ✅ đã có |
+| 泰国 | Tàiguó | (riêng) Thái Lan | ✅ đã có |
 
-**11 từ** (都 ôn lại ở buổi 12)
+**22 từ.** 都 đã BỎ khỏi bài này (thuộc Bài 14).
+
+Mở rộng ngoài sách (dạy ở Phần 2 của buổi): 越南, 美国, 英国, 日本, 韩国, 德国, 澳大利亚,
+小学生, 初中生, 高中生, 大学生 (11 từ).
+
+> ⚠️ **Tổng 243 từ của checklist này KHÔNG còn đáng tin** — riêng Bài 3 đã thiếu 12/22 từ (55%)
+> vì bản bóc chỉ lấy 1-2 khối 生词 đầu mỗi bài, bỏ khối cuối. Các bài khác cần audit lại bằng
+> cách render trang PDF ra ảnh rồi đọc bằng vision (OCR text của sách quá nhiễu cho bảng 生词).
 
 ---
 
