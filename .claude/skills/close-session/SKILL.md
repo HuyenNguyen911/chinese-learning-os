@@ -37,7 +37,7 @@ Quét toàn bộ session tìm:
 - **Bước thủ công lặp đi lặp lại** — việc tay làm nhiều lần → nên đưa thành command/bước trong skill.
 
 **Map & trình bày:**
-Map mỗi phát hiện tới **skill đích**: `learning-strategist`, `hsk6-examiner`, `speaking-coach`, `exercise-generator`, `teaching-coach`, `doc-analyzer`, `vocab-study`, `lesson-prep`, `close-session`, hoặc `CLAUDE.md`.
+Map mỗi phát hiện tới **skill đích**: `learning-strategist`, `hsk6-examiner`, `speaking-coach`, `exercise-generator`, `teaching-coach`, `doc-analyzer`, `vocab-study`, `lesson-prep`, `critic`, `close-session`, hoặc `CLAUDE.md`.
 
 Trình bày bảng:
 

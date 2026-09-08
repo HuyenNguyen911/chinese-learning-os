@@ -18,6 +18,7 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
 - `/close-session` → invoke Skill("close-session")
 - `/vocab-study` → invoke Skill("vocab-study")
 - `/lesson-prep` → invoke Skill("lesson-prep")
+- `/critic` → invoke Skill("critic")
 
 ### Soft Route (intent detection — priority order)
 1. Explicit command → hard route
@@ -29,6 +30,8 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
 4c. "đóng session" / "kết thúc buổi" / "kết thúc session" / "close session" → close-session
 4d. "học từ vựng" / "review từ vựng" / "sinh trang học từ" / "cập nhật từ vựng theo bài" / "tu-vung" → vocab-study
 4e. "chuẩn bị bài" / "bóc bài khóa" / "lesson-prep" / "chuẩn bị buổi X" / "bài khóa của cô" → lesson-prep
+4f. "phản biện" / "bắt lỗi lập luận" / "chỗ này sai ở đâu" / "review giúp kết luận này" → critic
+   _(KHÔNG route sang critic khi user chỉ nhờ chấm bài viết tiếng Trung → rule 2; hoặc soi bug code → /code-review)_
 5. Ambiguous → hỏi 1 câu ngắn
 
 ### Confidence Rules
@@ -153,4 +156,5 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 - **exercise-generator** — Sinh bài tập HSK1-3 cho học viên (đủ 听/读/书写 + HSKK), bám buổi dạy, ưu tiên kho đề真题, render .docx tương tác + file đáp án; audio nghe/nói qua cổng xác nhận
 - **close-session** — Đóng session: hygiene check (git status) + phân loại file theo nhánh đích (main cho meta/shared-data, nhánh gốc cho content) + rà soát session tìm tri thức/pattern mới cần đưa vào skill hiện có, rồi gộp tất cả vào 1 bảng commit+push duy nhất chờ user duyệt 1 lần (meta-skill, được sửa SKILL.md/CLAUDE.md sau duyệt, không đụng memory)
 - **vocab-study** — Sinh trang học từ vựng theo bài (Quizlet-style) từ `raw/Từ vựng.xlsx` → `output/study/hskN/tu-vung.html`: bảng 生词 + 生词拓展 (**sơ đồ cây**: gốc → nhánh có nghĩa), flashcard active-recall + Leitner (neo Activation), chiết tự + mẹo nhớ tiếng Việt (~1350 từ), tên bài, phát âm 🔊 (chọn giọng). Chỉ đọc knowledge/vocabulary.
+- **critic** — Phản biện độc lập một tài liệu/kết luận/kế hoạch trước khi chốt: luận điểm thiếu bằng chứng, kết luận vội, giả định ẩn, thông tin bỏ sót, mâu thuẫn logic, steelman phe đối lập, cách kiểm chứng; xếp mức 🔴/🟡/⚪. Chỉ đọc + báo cáo, không sửa file. Nếu vật bị phản biện do chính AI vừa tạo trong session → bắt buộc chạy trong subagent context sạch để tránh tự xác nhận.
 - **lesson-prep** — Bóc tách pptx bài khóa HSK6: convert (doc-analyzer) → phân loại → nạp từ vựng (tier-a + vocab-study) + xuất bài tập/bài viết ra .docx. Kiểm tra đáp án AI trước khi xuất.
