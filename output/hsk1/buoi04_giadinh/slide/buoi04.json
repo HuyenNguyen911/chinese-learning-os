@@ -1,0 +1,1186 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 4",
+    "topic": "我有两个孩子 — Gia đình"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我有两个孩子",
+      "subtitle": "Tôi có hai con",
+      "footer": "HSK1 · Buổi 4",
+      "image": "assets/topic/family_title.jpg"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么？",
+      "image": "assets/icons/icon_target.png",
+      "bullets": [
+        "Nói được nhà mình có mấy người: 你家有几口人？",
+        "Hỏi/đáp có anh chị em, con cái bằng 有/没有.",
+        "Hỏi tuổi đúng cách: trẻ em dùng 几岁, người lớn dùng 多大.",
+        "Phân biệt 二 và 两 khi nói số, và đọc đúng biến điệu của 一."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第一部分 · 课本生词"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 1-2/21",
+      "words": [
+        {
+          "hz": "有",
+          "py": "yǒu",
+          "vn": "có",
+          "image": "assets/words/you.jpg",
+          "example": {
+            "hz": "我有一个妹妹。",
+            "py": "Wǒ yǒu yí ge mèimei.",
+            "vn": "Mình có một em gái."
+          }
+        },
+        {
+          "hz": "没有",
+          "py": "méiyǒu",
+          "vn": "không có",
+          "example": {
+            "hz": "我没有哥哥。",
+            "py": "Wǒ méiyǒu gēge.",
+            "vn": "Mình không có anh trai."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 3-4/21",
+      "words": [
+        {
+          "hz": "多少",
+          "py": "duōshao",
+          "vn": "bao nhiêu",
+          "example": {
+            "hz": "她有多少个学生？",
+            "py": "Tā yǒu duōshao ge xuésheng?",
+            "vn": "Cô ấy có bao nhiêu học sinh?"
+          }
+        },
+        {
+          "hz": "几",
+          "py": "jǐ",
+          "vn": "mấy",
+          "example": {
+            "hz": "你家有几口人？",
+            "py": "Nǐ jiā yǒu jǐ kǒu rén?",
+            "vn": "Nhà bạn có mấy người?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 5-6/21",
+      "words": [
+        {
+          "hz": "个",
+          "py": "gè",
+          "vn": "cái (lượng từ chung)",
+          "example": {
+            "hz": "她有二十个学生。",
+            "py": "Tā yǒu èrshí ge xuésheng.",
+            "vn": "Cô ấy có hai mươi học sinh."
+          }
+        },
+        {
+          "hz": "口",
+          "py": "kǒu",
+          "vn": "lượng từ đếm người trong nhà",
+          "example": {
+            "hz": "我家有四口人。",
+            "py": "Wǒ jiā yǒu sì kǒu rén.",
+            "vn": "Nhà mình có bốn người."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 7-8/21",
+      "words": [
+        {
+          "hz": "爸爸",
+          "py": "bàba",
+          "vn": "bố",
+          "image": "assets/words/baba.jpg",
+          "example": {
+            "hz": "我爸爸很忙。",
+            "py": "Wǒ bàba hěn máng.",
+            "vn": "Bố mình rất bận."
+          }
+        },
+        {
+          "hz": "妈妈",
+          "py": "māma",
+          "vn": "mẹ",
+          "image": "assets/words/mama.jpg",
+          "example": {
+            "hz": "我妈妈是老师。",
+            "py": "Wǒ māma shì lǎoshī.",
+            "vn": "Mẹ mình là giáo viên."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 9-10/21",
+      "words": [
+        {
+          "hz": "哥哥",
+          "py": "gēge",
+          "vn": "anh trai",
+          "image": "assets/words/gege.jpg",
+          "example": {
+            "hz": "我有两个哥哥。",
+            "py": "Wǒ yǒu liǎng ge gēge.",
+            "vn": "Mình có hai anh trai."
+          }
+        },
+        {
+          "hz": "妹妹",
+          "py": "mèimei",
+          "vn": "em gái",
+          "image": "assets/words/meimei.jpg",
+          "example": {
+            "hz": "我妹妹五岁。",
+            "py": "Wǒ mèimei wǔ suì.",
+            "vn": "Em gái mình 5 tuổi."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 11-12/21",
+      "words": [
+        {
+          "hz": "儿子",
+          "py": "érzi",
+          "vn": "con trai",
+          "image": "assets/words/erzi.jpg",
+          "example": {
+            "hz": "这是您儿子吗？",
+            "py": "Zhè shì nín érzi ma?",
+            "vn": "Đây là con trai của cô/chú ạ?"
+          }
+        },
+        {
+          "hz": "女儿",
+          "py": "nǚ'ér",
+          "vn": "con gái",
+          "image": "assets/words/nver.jpg",
+          "example": {
+            "hz": "您女儿多大？",
+            "py": "Nín nǚ'ér duō dà?",
+            "vn": "Con gái của cô/chú bao nhiêu tuổi?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 13-14/21",
+      "words": [
+        {
+          "hz": "家",
+          "py": "jiā",
+          "vn": "nhà, gia đình",
+          "image": "assets/words/jia.jpg",
+          "example": {
+            "hz": "我家很大。",
+            "py": "Wǒ jiā hěn dà.",
+            "vn": "Nhà mình rất lớn."
+          }
+        },
+        {
+          "hz": "孩子",
+          "py": "háizi",
+          "vn": "con cái",
+          "image": "assets/words/haizi.jpg",
+          "example": {
+            "hz": "我有两个孩子。",
+            "py": "Wǒ yǒu liǎng ge háizi.",
+            "vn": "Mình có hai con."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 15-16/21",
+      "words": [
+        {
+          "hz": "和",
+          "py": "hé",
+          "vn": "và",
+          "example": {
+            "hz": "爸爸、妈妈和我。",
+            "py": "Bàba, māma hé wǒ.",
+            "vn": "Bố, mẹ và mình."
+          }
+        },
+        {
+          "hz": "呢",
+          "py": "ne",
+          "vn": "…thì sao?",
+          "example": {
+            "hz": "我有两个哥哥，你呢？",
+            "py": "Wǒ yǒu liǎng ge gēge, nǐ ne?",
+            "vn": "Mình có hai anh trai, còn bạn thì sao?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 17-18/21",
+      "words": [
+        {
+          "hz": "岁",
+          "py": "suì",
+          "vn": "tuổi",
+          "image": "assets/words/sui.jpg",
+          "example": {
+            "hz": "他今年五岁。",
+            "py": "Tā jīnnián wǔ suì.",
+            "vn": "Năm nay em ấy 5 tuổi."
+          }
+        },
+        {
+          "hz": "今年",
+          "py": "jīnnián",
+          "vn": "năm nay",
+          "image": "assets/words/jinnian.jpg",
+          "example": {
+            "hz": "她今年十二岁。",
+            "py": "Tā jīnnián shí'èr suì.",
+            "vn": "Năm nay chị ấy 12 tuổi."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 19-20/21",
+      "words": [
+        {
+          "hz": "多",
+          "py": "duō",
+          "vn": "(hỏi mức độ) bao nhiêu",
+          "example": {
+            "hz": "你女儿多大？",
+            "py": "Nǐ nǚ'ér duō dà?",
+            "vn": "Con gái bạn bao nhiêu tuổi?"
+          }
+        },
+        {
+          "hz": "大",
+          "py": "dà",
+          "vn": "(tuổi) lớn",
+          "example": {
+            "hz": "你儿子多大？",
+            "py": "Nǐ érzi duō dà?",
+            "vn": "Con trai bạn bao nhiêu tuổi?"
+          }
+        }
+      ],
+      "footer_note": "多 + 大 ghép lại thành 多大 = câu hỏi tuổi dùng cho người từ 10 tuổi trở lên (trẻ dưới 10 tuổi hỏi bằng 几岁).",
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 21/21",
+      "hz": "他",
+      "py": "tā",
+      "vn": "anh ấy, nó (nam)",
+      "image": "assets/words/ta_nam.jpg",
+      "examples": [
+        {
+          "hz": "他是我哥哥。",
+          "py": "Tā shì wǒ gēge.",
+          "vn": "Anh ấy là anh trai của mình."
+        },
+        {
+          "hz": "他今年五岁。",
+          "py": "Tā jīnnián wǔ suì.",
+          "vn": "Năm nay cậu ấy 5 tuổi."
+        }
+      ],
+      "footer_note": "他 (tā) chỉ NAM/con trai. 她 (tā) chỉ NỮ/con gái (đã học ở Buổi 3). Hai chữ đọc GIỐNG HỆT NHAU, chỉ khác mặt chữ (亻người vs 女 nữ) — nghe không phân biệt được, phải nhìn chữ viết hoặc dựa vào ngữ cảnh.",
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 1",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "一飞忙吗？",
+          "py": "Yīfēi máng ma?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "她很忙。",
+          "py": "Tā hěn máng."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "她有多少个学生？",
+          "py": "Tā yǒu duōshao ge xuésheng?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "她有二十个学生。",
+          "py": "Tā yǒu èrshí ge xuésheng."
+        }
+      ],
+      "voices": {
+        "刘明": "zh-CN-YunyangNeural",
+        "王一雪": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 2",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "我有两个哥哥，你呢？",
+          "py": "Wǒ yǒu liǎng ge gēge, nǐ ne?"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "我没有哥哥。",
+          "py": "Wǒ méiyǒu gēge."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "你家有几口人？",
+          "py": "Nǐ jiā yǒu jǐ kǒu rén?"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "我家有四口人，爸爸、妈妈、妹妹和我。",
+          "py": "Wǒ jiā yǒu sì kǒu rén, bàba, māma, mèimei hé wǒ."
+        }
+      ],
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "杨同乐": "zh-CN-YunxiNeural"
+      },
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 3",
+      "turns": [
+        {
+          "speaker": "杨同乐",
+          "hz": "这是您儿子吗？",
+          "py": "Zhè shì nín érzi ma?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "是的。我有两个孩子，一个儿子，一个女儿。",
+          "py": "Shì de. Wǒ yǒu liǎng ge háizi, yí ge érzi, yí ge nǚ'ér."
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "您儿子几岁？",
+          "py": "Nín érzi jǐ suì?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "他今年五岁。",
+          "py": "Tā jīnnián wǔ suì."
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "您女儿多大？",
+          "py": "Nín nǚ'ér duō dà?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "她今年十二。",
+          "py": "Tā jīnnián shí'èr."
+        }
+      ],
+      "voices": {
+        "杨同乐": "zh-CN-YunxiNeural",
+        "王一雪": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "“有”字句",
+      "image": "assets/topic/you_ziju.jpg",
+      "groups": [
+        {
+          "point": "有 = CÓ",
+          "examples": [
+            {
+              "hz": "我有一个妹妹。",
+              "py": "Wǒ yǒu yí ge mèimei.",
+              "vn": "Mình có một em gái."
+            },
+            {
+              "hz": "我有两个孩子。",
+              "py": "Wǒ yǒu liǎng ge háizi.",
+              "vn": "Mình có hai con."
+            }
+          ]
+        },
+        {
+          "point": "没 / 没有 = KHÔNG CÓ",
+          "examples": [
+            {
+              "hz": "我没有哥哥。",
+              "py": "Wǒ méiyǒu gēge.",
+              "vn": "Mình không có anh trai."
+            }
+          ]
+        }
+      ],
+      "tip": "Không nói “不有” ❌ — phủ định của 有 luôn là 没 hoặc 没有.",
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "“一”的变调 — Đọc đúng “一”",
+      "groups": [
+        {
+          "point": "一 đứng một mình / đếm số → đọc yī (thanh 1)",
+          "examples": [
+            {
+              "hz": "一、二、三……",
+              "py": "yī, èr, sān……",
+              "vn": "một, hai, ba…"
+            }
+          ]
+        },
+        {
+          "point": "一 + từ vốn thanh 4 (kể cả đọc nhẹ gốc thanh 4) → đọc yí",
+          "examples": [
+            {
+              "hz": "一个",
+              "py": "yí ge",
+              "vn": "một cái"
+            },
+            {
+              "hz": "一岁",
+              "py": "yí suì",
+              "vn": "một tuổi"
+            }
+          ]
+        },
+        {
+          "point": "一 + từ thanh 1/2/3 → đọc yì",
+          "examples": [
+            {
+              "hz": "一天",
+              "py": "yì tiān",
+              "vn": "một ngày"
+            },
+            {
+              "hz": "一年",
+              "py": "yì nián",
+              "vn": "một năm"
+            },
+            {
+              "hz": "一本",
+              "py": "yì běn",
+              "vn": "một quyển"
+            }
+          ]
+        }
+      ],
+      "tip": "Không đọc 一个 là “yī ge” — luôn đổi thành “yí ge” vì 个 vốn là thanh 4.",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "数字的表达 — Số lớn & 二 vs 两",
+      "groups": [
+        {
+          "point": "Số > 100: đọc đủ cả chữ, kể cả số 0 ở giữa",
+          "examples": [
+            {
+              "hz": "一百",
+              "py": "yìbǎi",
+              "vn": "100"
+            },
+            {
+              "hz": "二百零八",
+              "py": "èrbǎi líng bā",
+              "vn": "208"
+            },
+            {
+              "hz": "一千五百二十八",
+              "py": "yìqiān wǔbǎi èrshíbā",
+              "vn": "1528"
+            }
+          ]
+        },
+        {
+          "point": "二 (èr) khi đếm số/số thứ tự, 两 (liǎng) khi đứng trước lượng từ",
+          "examples": [
+            {
+              "hz": "十二、二十二",
+              "py": "shí'èr, èrshí'èr",
+              "vn": "12, 22 (dùng 二)"
+            },
+            {
+              "hz": "两个人、两口人",
+              "py": "liǎng ge rén, liǎng kǒu rén",
+              "vn": "hai người (dùng 两 vì có lượng từ)"
+            }
+          ]
+        }
+      ],
+      "tip": "Không nói “二个人” ❌ — đứng trước lượng từ luôn đổi 二 thành 两.",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "语气助词“呢” — Hỏi lại cho gọn",
+      "groups": [
+        {
+          "point": "A……, B呢? = A thế này, còn B thì sao?",
+          "examples": [
+            {
+              "hz": "我有两个哥哥，你呢？",
+              "py": "Wǒ yǒu liǎng ge gēge, nǐ ne?",
+              "vn": "Mình có 2 anh trai, còn bạn thì sao?"
+            },
+            {
+              "hz": "我是越南人，你呢？",
+              "py": "Wǒ shì Yuènán rén, nǐ ne?",
+              "vn": "Mình là người Việt Nam, còn bạn?"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "名量词和名量结构 — Đếm người, đếm đồ",
+      "groups": [
+        {
+          "point": "Số + Lượng từ + Danh từ — không được bỏ lượng từ",
+          "examples": [
+            {
+              "hz": "四口人",
+              "py": "sì kǒu rén",
+              "vn": "bốn người (trong nhà)"
+            },
+            {
+              "hz": "两个哥哥",
+              "py": "liǎng ge gēge",
+              "vn": "hai anh trai"
+            }
+          ]
+        },
+        {
+          "point": "口 chỉ dùng để đếm NGƯỜI TRONG NHÀ. Đếm chung dùng 个.",
+          "examples": [
+            {
+              "hz": "我家有五口人。",
+              "py": "Wǒ jiā yǒu wǔ kǒu rén.",
+              "vn": "Nhà mình có năm người."
+            }
+          ]
+        }
+      ],
+      "tip": "Chưa chắc dùng lượng từ nào thì dùng 个 — riêng đếm người trong nhà luôn dùng 口.",
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "section",
+      "title": "第二部分 · 生词拓展"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "家谱 1/2",
+      "title": "家谱 — 爷爷奶奶 · 叔叔阿姨",
+      "groups": [
+        {
+          "label": "本家（爸爸这边）",
+          "items": [
+            {
+              "hz": "爷爷",
+              "py": "yéye",
+              "vn": "ông nội"
+            },
+            {
+              "hz": "奶奶",
+              "py": "nǎinai",
+              "vn": "bà nội"
+            },
+            {
+              "hz": "姑姑",
+              "py": "gūgu",
+              "vn": "cô (chị/em gái của bố)"
+            },
+            {
+              "hz": "叔叔",
+              "py": "shūshu",
+              "vn": "chú (em trai của bố)"
+            },
+            {
+              "hz": "婶婶",
+              "py": "shěnshen",
+              "vn": "thím (vợ của chú)"
+            }
+          ]
+        },
+        {
+          "label": "外家（妈妈这边）",
+          "items": [
+            {
+              "hz": "外公",
+              "py": "wàigōng",
+              "vn": "ông ngoại"
+            },
+            {
+              "hz": "外婆",
+              "py": "wàipó",
+              "vn": "bà ngoại"
+            },
+            {
+              "hz": "阿姨",
+              "py": "āyí",
+              "vn": "dì (chị/em gái của mẹ)"
+            },
+            {
+              "hz": "舅舅",
+              "py": "jiùjiu",
+              "vn": "cậu (anh/em trai của mẹ)"
+            },
+            {
+              "hz": "舅妈",
+              "py": "jiùmā",
+              "vn": "mợ (vợ của cậu)"
+            },
+            {
+              "hz": "姨夫",
+              "py": "yífu",
+              "vn": "dượng (chồng của dì)"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "家谱 2/2",
+      "title": "家谱 — 弟弟 · 侄子侄女",
+      "groups": [
+        {
+          "label": "同辈（跟我一样大）",
+          "items": [
+            {
+              "hz": "弟弟",
+              "py": "dìdi",
+              "vn": "em trai"
+            }
+          ]
+        },
+        {
+          "label": "晚辈（比我小一辈）",
+          "items": [
+            {
+              "hz": "侄子",
+              "py": "zhízi",
+              "vn": "cháu trai (con của anh/em trai)"
+            },
+            {
+              "hz": "侄女",
+              "py": "zhínǚ",
+              "vn": "cháu gái (con của anh/em trai)"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 · 量词",
+      "hz": "本",
+      "py": "běn",
+      "vn": "lượng từ đếm sách, vở",
+      "image": "assets/words/ben.jpg",
+      "examples": [
+        {
+          "hz": "一本书",
+          "py": "yì běn shū",
+          "vn": "một quyển sách"
+        },
+        {
+          "hz": "两本书",
+          "py": "liǎng běn shū",
+          "vn": "hai quyển sách"
+        }
+      ],
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (1/3) · 家人",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/yeye.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/nainai.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/waigong.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/waipo.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/gugu.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "外婆",
+          "py": "wàipó"
+        },
+        {
+          "letter": "B",
+          "hz": "爷爷",
+          "py": "yéye"
+        },
+        {
+          "letter": "C",
+          "hz": "姑姑",
+          "py": "gūgu"
+        },
+        {
+          "letter": "D",
+          "hz": "奶奶",
+          "py": "nǎinai"
+        },
+        {
+          "letter": "E",
+          "hz": "外公",
+          "py": "wàigōng"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (2/3) · 家人",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/ayi.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/shushu.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/jiujiu.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/shenshen.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/jiuma.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "舅妈",
+          "py": "jiùmā"
+        },
+        {
+          "letter": "B",
+          "hz": "阿姨",
+          "py": "āyí"
+        },
+        {
+          "letter": "C",
+          "hz": "婶婶",
+          "py": "shěnshen"
+        },
+        {
+          "letter": "D",
+          "hz": "叔叔",
+          "py": "shūshu"
+        },
+        {
+          "letter": "E",
+          "hz": "舅舅",
+          "py": "jiùjiu"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (3/3) · 家人",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/yifu.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/didi.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/zhizi.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/zhinv.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/ben.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "侄女",
+          "py": "zhínǚ"
+        },
+        {
+          "letter": "B",
+          "hz": "姨夫",
+          "py": "yífu"
+        },
+        {
+          "letter": "C",
+          "hz": "本",
+          "py": "běn"
+        },
+        {
+          "letter": "D",
+          "hz": "弟弟",
+          "py": "dìdi"
+        },
+        {
+          "letter": "E",
+          "hz": "侄子",
+          "py": "zhízi"
+        }
+      ]
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展 1-2/8 · 职业",
+      "words": [
+        {
+          "hz": "医生",
+          "py": "yīshēng",
+          "vn": "bác sĩ",
+          "image": "assets/words/yisheng.jpg",
+          "example": {
+            "hz": "我爸爸是医生。",
+            "py": "Wǒ bàba shì yīshēng.",
+            "vn": "Bố mình là bác sĩ."
+          }
+        },
+        {
+          "hz": "护士",
+          "py": "hùshi",
+          "vn": "y tá",
+          "image": "assets/words/hushi.jpg",
+          "example": {
+            "hz": "我妈妈是护士。",
+            "py": "Wǒ māma shì hùshi.",
+            "vn": "Mẹ mình là y tá."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide30.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展 3-4/8 · 职业",
+      "words": [
+        {
+          "hz": "警察",
+          "py": "jǐngchá",
+          "vn": "công an",
+          "image": "assets/words/jingcha.jpg",
+          "example": {
+            "hz": "我叔叔是警察。",
+            "py": "Wǒ shūshu shì jǐngchá.",
+            "vn": "Chú mình là công an."
+          }
+        },
+        {
+          "hz": "司机",
+          "py": "sījī",
+          "vn": "tài xế",
+          "image": "assets/words/siji.jpg",
+          "example": {
+            "hz": "我舅舅是司机。",
+            "py": "Wǒ jiùjiu shì sījī.",
+            "vn": "Cậu mình là tài xế."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展 5-6/8 · 职业",
+      "words": [
+        {
+          "hz": "厨师",
+          "py": "chúshī",
+          "vn": "đầu bếp",
+          "image": "assets/words/chushi.jpg",
+          "example": {
+            "hz": "我姑姑是厨师。",
+            "py": "Wǒ gūgu shì chúshī.",
+            "vn": "Cô mình là đầu bếp."
+          }
+        },
+        {
+          "hz": "农民",
+          "py": "nóngmín",
+          "vn": "nông dân",
+          "image": "assets/words/nongmin.jpg",
+          "example": {
+            "hz": "我外公是农民。",
+            "py": "Wǒ wàigōng shì nóngmín.",
+            "vn": "Ông ngoại mình là nông dân."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展 7-8/8 · 职业",
+      "words": [
+        {
+          "hz": "职员",
+          "py": "zhíyuán",
+          "vn": "nhân viên văn phòng",
+          "image": "assets/words/zhiyuan.jpg",
+          "example": {
+            "hz": "我姨夫是职员。",
+            "py": "Wǒ yífu shì zhíyuán.",
+            "vn": "Dượng mình là nhân viên văn phòng."
+          }
+        },
+        {
+          "hz": "公务员",
+          "py": "gōngwùyuán",
+          "vn": "công chức nhà nước",
+          "image": "assets/words/gongwuyuan.jpg",
+          "example": {
+            "hz": "我舅舅是公务员。",
+            "py": "Wǒ jiùjiu shì gōngwùyuán.",
+            "vn": "Cậu mình là công chức nhà nước."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide33.mp3"
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (1/2) · 职业",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/yisheng.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/hushi.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/jingcha.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/siji.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "护士",
+          "py": "hùshi"
+        },
+        {
+          "letter": "B",
+          "hz": "司机",
+          "py": "sījī"
+        },
+        {
+          "letter": "C",
+          "hz": "医生",
+          "py": "yīshēng"
+        },
+        {
+          "letter": "D",
+          "hz": "警察",
+          "py": "jǐngchá"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (2/2) · 职业",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/chushi.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/nongmin.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/zhiyuan.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/gongwuyuan.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "公务员",
+          "py": "gōngwùyuán"
+        },
+        {
+          "letter": "B",
+          "hz": "厨师",
+          "py": "chúshī"
+        },
+        {
+          "letter": "C",
+          "hz": "职员",
+          "py": "zhíyuán"
+        },
+        {
+          "letter": "D",
+          "hz": "农民",
+          "py": "nóngmín"
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "kicker": "课文",
+      "title": "我的家",
+      "image": "assets/topic/wodejia.jpg",
+      "image_side": "right",
+      "sentences": [
+        {
+          "hz": "我来介绍一下我的家。",
+          "py": "Wǒ lái jièshào yíxià wǒ de jiā.",
+          "vn": "Mình xin giới thiệu về gia đình mình."
+        },
+        {
+          "hz": "我家有五口人：爷爷、爸爸、妈妈、弟弟和我。",
+          "py": "Wǒ jiā yǒu wǔ kǒu rén: yéye, bàba, māma, dìdi hé wǒ.",
+          "vn": "Nhà mình có 5 người: ông nội, bố, mẹ, em trai và mình."
+        },
+        {
+          "hz": "我爷爷今年七十岁。",
+          "py": "Wǒ yéye jīnnián qīshí suì.",
+          "vn": "Ông nội mình năm nay 70 tuổi."
+        },
+        {
+          "hz": "我爸爸是医生，我妈妈是老师。",
+          "py": "Wǒ bàba shì yīshēng, wǒ māma shì lǎoshī.",
+          "vn": "Bố mình là bác sĩ, mẹ mình là giáo viên."
+        },
+        {
+          "hz": "我弟弟五岁，他很可爱。",
+          "py": "Wǒ dìdi wǔ suì, tā hěn kě'ài.",
+          "vn": "Em trai mình 5 tuổi, em ấy rất đáng yêu."
+        },
+        {
+          "hz": "我今年十岁，我是小学生。",
+          "py": "Wǒ jīnnián shí suì, wǒ shì xiǎoxuéshēng.",
+          "vn": "Mình năm nay 10 tuổi, mình là học sinh tiểu học."
+        },
+        {
+          "hz": "我很爱我的家人。",
+          "py": "Wǒ hěn ài wǒ de jiārén.",
+          "vn": "Mình rất yêu gia đình của mình."
+        }
+      ],
+      "audio": "assets/audio/slide36.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习",
+      "title": "该你了！介绍你的家",
+      "instructions": "Thay các thông tin dưới đây bằng gia đình thật của em, rồi nói to thành 1 đoạn văn giống bài mẫu.",
+      "items": [
+        "我家有 ___ 口人：___。\n(Điền số người và tên các thành viên trong nhà em)",
+        "我 ___ 是 ___。\n(Chọn 1 người trong nhà + nghề nghiệp của người đó)",
+        "我 ___ 岁，我是 ___。\n(Điền tuổi và \"em là học sinh tiểu học\" hoặc nghề của em)"
+      ]
+    }
+  ]
+}

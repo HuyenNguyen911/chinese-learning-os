@@ -95,10 +95,15 @@ Mở rộng ngoài sách (dạy ở Phần 2 của buổi): 越南, 美国, 英�
 
 ## Buổi 04 — Gia đình (L4)
 
+**ĐÃ SỬA 2026-09-08** — đối chiếu trực tiếp trang 34/37/40 sách gốc bằng vision: sách có
+21 từ 生词 đánh số ①-㉑ (không phải 16 như bản cũ) + 1 từ dạy trong ngữ pháp (两). Bản cũ
+thiếu 有/他/岁/今年/多/大/孩子 và ghép sai "多大" thành 1 từ.
+
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
-| 个 | gè | cái (lượng từ vạn năng) | ⏳ chưa soạn |
+| 有 | yǒu | có | ⏳ chưa soạn |
 | 多少 | duōshao | bao nhiêu | ⏳ chưa soạn |
+| 个 | gè | cái (lượng từ vạn năng) | ⏳ chưa soạn |
 | 哥哥 | gēge | anh trai | ⏳ chưa soạn |
 | 呢 | ne | trợ từ hỏi rút gọn | ⏳ chưa soạn |
 | 没有 | méiyǒu | không có | ⏳ chưa soạn |
@@ -109,12 +114,17 @@ Mở rộng ngoài sách (dạy ở Phần 2 của buổi): 越南, 美国, 英�
 | 妈妈 | māma | mẹ | ⏳ chưa soạn |
 | 妹妹 | mèimei | em gái | ⏳ chưa soạn |
 | 和 | hé | và | ⏳ chưa soạn |
-| 两 | liǎng | hai (trước lượng từ) | ⏳ chưa soạn |
 | 儿子 | érzi | con trai | ⏳ chưa soạn |
+| 孩子 | háizi | con cái | ⏳ chưa soạn |
 | 女儿 | nǚ'ér | con gái | ⏳ chưa soạn |
-| 多大 | duō dà | bao nhiêu tuổi | ⏳ chưa soạn |
+| 岁 | suì | tuổi | ⏳ chưa soạn |
+| 他 | tā | anh ấy/nó | ⏳ chưa soạn |
+| 今年 | jīnnián | năm nay | ⏳ chưa soạn |
+| 多 | duō | (hỏi mức độ) bao nhiêu | ⏳ chưa soạn |
+| 大 | dà | (tuổi) lớn | ⏳ chưa soạn |
+| 两 *(ngữ pháp, không có số 生词)* | liǎng | hai (trước lượng từ) | ⏳ chưa soạn |
 
-**16 từ** (家, 和 ôn lại ở buổi 09)
+**21 từ + 1 từ ngữ pháp (两)** (家, 和 ôn lại ở buổi 09)
 
 ---
 

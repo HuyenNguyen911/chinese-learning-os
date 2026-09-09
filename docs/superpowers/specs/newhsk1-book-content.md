@@ -124,34 +124,49 @@ ngữ liệu cho điểm ngữ pháp 用"吗"的是非问句.
 
 ## Bài 4 — 我有两个孩子 (Wǒ yǒu liǎng ge háizi) — Tôi có hai con
 
-课文: Hỏi thăm gia đình — số con, tuổi tác của con cái.
+课文: Hỏi thăm gia đình — số con, tuổi tác của con cái. 3 đoạn 课文.
 
-**生词**
+**生词 — ĐÃ SỬA 2026-09-08 (đối chiếu trực tiếp trang 34/37/40 sách gốc bằng vision)**
 
+Sách có 3 khối 生词 (4-2 cạnh 课文1, 4-4 cạnh 课文2, 4-6 cạnh 课文3) = **21 từ** đánh số
+①-㉑ liên tục xuyên khối, không phải 16 từ như bản cũ. Bản cũ thiếu 有/他/岁/今年/多/大/孩子
+(7 từ), và ghép sai "多大" thành 1 từ (sách tách riêng 多 + 大, mỗi từ 1 mục số).
+
+| # | 汉字 | Pinyin | Từ loại | Nghĩa Việt | Khối |
+|---|---|---|---|---|---|
+| ① | 有 | yǒu | v. | có | 4-2 |
+| ② | 多少 | duōshao | pron. | bao nhiêu | 4-2 |
+| ③ | 个 | gè | m. | cái (lượng từ vạn năng) | 4-2 |
+| ④ | 哥哥 | gēge | n. | anh trai | 4-4 |
+| ⑤ | 呢 | ne | part. | trợ từ hỏi rút gọn ("…thì sao?") | 4-4 |
+| ⑥ | 没有 | méiyǒu | v. | không có | 4-4 |
+| ⑦ | 家 | jiā | n. | nhà, gia đình | 4-4 |
+| ⑧ | 几 | jǐ | pron. | mấy | 4-4 |
+| ⑨ | 口 | kǒu | m. | lượng từ đếm người trong nhà | 4-4 |
+| ⑩ | 爸爸 | bàba | n. | bố | 4-4 |
+| ⑪ | 妈妈 | māma | n. | mẹ | 4-4 |
+| ⑫ | 妹妹 | mèimei | n. | em gái | 4-4 |
+| ⑬ | 和 | hé | conj. | và | 4-4 |
+| ⑭ | 儿子 | érzi | n. | con trai | 4-6 |
+| ⑮ | 孩子 | háizi | n. | con cái | 4-6 |
+| ⑯ | 女儿 | nǚ'ér | n. | con gái | 4-6 |
+| ⑰ | 岁 | suì | m. | tuổi | 4-6 |
+| ⑱ | 他 | tā | pron. | anh ấy/nó (giống đực) | 4-6 |
+| ⑲ | 今年 | jīnnián | n. | năm nay | 4-6 |
+| ⑳ | 多 | duō | pron. | (hỏi mức độ) bao nhiêu | 4-6 |
+| ㉑ | 大 | dà | adj. | (tuổi) lớn | 4-6 |
+
+**Từ dạy trong ngữ pháp (không có số thứ tự 生词 riêng nhưng bắt buộc dạy):**
 | 汉字 | Pinyin | Nghĩa Việt |
 |---|---|---|
-| 个 | gè | cái (lượng từ vạn năng) |
-| 多少 | duōshao | bao nhiêu |
-| 哥哥 | gēge | anh trai |
-| 呢 | ne | trợ từ hỏi rút gọn ("…thì sao?") |
-| 没有 | méiyǒu | không có |
-| 家 | jiā | nhà, gia đình |
-| 几 | jǐ | mấy |
-| 口 | kǒu | lượng từ đếm người trong nhà |
-| 爸爸 | bàba | bố |
-| 妈妈 | māma | mẹ |
-| 妹妹 | mèimei | em gái |
-| 和 | hé | và |
-| 两 | liǎng | hai (trước lượng từ) |
-| 儿子 | érzi | con trai |
-| 女儿 | nǚ'ér | con gái |
-| 多大 | duō dà | bao nhiêu tuổi (hỏi tuổi) |
+| 两 | liǎng | hai (dùng trước lượng từ, thay cho 二) |
 
 **语法**
 - "有"字句(1): 有 biểu thị sở hữu; phủ định là 没/没有.
-- 数字的表达: số Ả Rập vs chữ Hán; cách viết/đọc số từ 100–10000; số "2" đọc 二(èr) trong số thứ tự, 两(liǎng) trước lượng từ.
-- 语气助词"呢"(1): hỏi rút gọn kiểu "A, …你呢?".
+- 数字的表达: số Ả Rập vs chữ Hán; cách viết 0-99, 100-10000; số "2" đọc 二(èr) trong số thứ tự (第二), 两(liǎng) trước lượng từ (两个人, 两口人, 两本书).
+- 语气助词"呢"(1): hỏi rút gọn kiểu "A……, B呢?".
 - 名量词和名量结构 [Số+Lượng từ+(Danh từ)]: VD 口, 个 → 四口人, 两个哥哥.
+- 几岁 (hỏi tuổi trẻ em <10 tuổi) vs 多大 (hỏi tuổi người ≥10 tuổi, dùng 多+大, không phải 1 từ ghép).
 
 ---
 
