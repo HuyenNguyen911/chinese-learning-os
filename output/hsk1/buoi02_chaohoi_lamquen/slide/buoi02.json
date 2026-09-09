@@ -37,15 +37,24 @@
           "py": "nǐ",
           "vn": "bạn (số ít)",
           "image": "assets/words/ni.jpg",
-          "example": {"hz": "你叫什么名字？", "py": "Nǐ jiào shénme míngzi?", "vn": "Bạn tên là gì?"}
+          "example": {
+            "hz": "你叫什么名字？",
+            "py": "Nǐ jiào shénme míngzi?",
+            "vn": "Bạn tên là gì?"
+          }
         },
         {
           "hz": "您",
           "py": "nín",
           "vn": "ngài, bác (kính ngữ, ngôi 2)",
-          "example": {"hz": "老师，您好！", "py": "Lǎoshī, nín hǎo!", "vn": "Con chào thầy/cô ạ!"}
+          "example": {
+            "hz": "老师，您好！",
+            "py": "Lǎoshī, nín hǎo!",
+            "vn": "Con chào thầy/cô ạ!"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide04.mp3"
     },
     {
       "type": "word_pair",
@@ -56,15 +65,24 @@
           "py": "nǐmen",
           "vn": "các bạn (số nhiều)",
           "image": "assets/words/nimen.jpg",
-          "example": {"hz": "你们好！", "py": "Nǐmen hǎo!", "vn": "Chào các bạn!"}
+          "example": {
+            "hz": "你们好！",
+            "py": "Nǐmen hǎo!",
+            "vn": "Chào các bạn!"
+          }
         },
         {
           "hz": "们",
           "py": "men",
           "vn": "hậu tố số nhiều (sau đại từ/danh từ chỉ người)",
-          "example": {"hz": "同学们，再见！", "py": "Tóngxuémen, zàijiàn!", "vn": "Các bạn học ơi, tạm biệt!"}
+          "example": {
+            "hz": "同学们，再见！",
+            "py": "Tóngxuémen, zàijiàn!",
+            "vn": "Các bạn học ơi, tạm biệt!"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide05.mp3"
     },
     {
       "type": "word_pair",
@@ -74,16 +92,25 @@
           "hz": "我",
           "py": "wǒ",
           "vn": "tôi",
-          "example": {"hz": "我叫陈天中。", "py": "Wǒ jiào Chén Tiānzhōng.", "vn": "Tôi tên là Trần Thiên Trung."}
+          "example": {
+            "hz": "我叫陈天中。",
+            "py": "Wǒ jiào Chén Tiānzhōng.",
+            "vn": "Tôi tên là Trần Thiên Trung."
+          }
         },
         {
           "hz": "大家",
           "py": "dàjiā",
           "vn": "mọi người",
           "image": "assets/words/dajia.jpg",
-          "example": {"hz": "大家好！", "py": "Dàjiā hǎo!", "vn": "Chào mọi người!"}
+          "example": {
+            "hz": "大家好！",
+            "py": "Dàjiā hǎo!",
+            "vn": "Chào mọi người!"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide06.mp3"
     },
     {
       "type": "word_pair",
@@ -94,16 +121,25 @@
           "py": "lǎoshī",
           "vn": "giáo viên",
           "image": "assets/words/laoshi.jpg",
-          "example": {"hz": "老师，再见！", "py": "Lǎoshī, zàijiàn!", "vn": "Tạm biệt thầy/cô!"}
+          "example": {
+            "hz": "老师，再见！",
+            "py": "Lǎoshī, zàijiàn!",
+            "vn": "Tạm biệt thầy/cô!"
+          }
         },
         {
           "hz": "王老师",
           "py": "Wáng lǎoshī",
           "vn": "(riêng) cô/thầy Vương",
           "image": "assets/words/wanglaoshi.jpg",
-          "example": {"hz": "王老师，你好！", "py": "Wáng lǎoshī, nǐ hǎo!", "vn": "Chào cô/thầy Vương!"}
+          "example": {
+            "hz": "王老师，你好！",
+            "py": "Wáng lǎoshī, nǐ hǎo!",
+            "vn": "Chào cô/thầy Vương!"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide07.mp3"
     },
     {
       "type": "word_pair",
@@ -114,16 +150,25 @@
           "py": "xuésheng",
           "vn": "học sinh",
           "image": "assets/words/xuesheng.jpg",
-          "example": {"hz": "我是学生。", "py": "Wǒ shì xuésheng.", "vn": "Tôi là học sinh."}
+          "example": {
+            "hz": "我是学生。",
+            "py": "Wǒ shì xuésheng.",
+            "vn": "Tôi là học sinh."
+          }
         },
         {
           "hz": "同学",
           "py": "tóngxué",
           "vn": "bạn học",
           "image": "assets/words/tongxue.jpg",
-          "example": {"hz": "同学们，再见！", "py": "Tóngxuémen, zàijiàn!", "vn": "Các bạn học ơi, tạm biệt!"}
+          "example": {
+            "hz": "同学们，再见！",
+            "py": "Tóngxuémen, zàijiàn!",
+            "vn": "Các bạn học ơi, tạm biệt!"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide08.mp3"
     },
     {
       "type": "word_pair",
@@ -134,16 +179,25 @@
           "py": "nǐ hǎo",
           "vn": "xin chào",
           "image": "assets/words/nihao.jpg",
-          "example": {"hz": "AI小语，你好！", "py": "AI Xiǎoyǔ, nǐ hǎo!", "vn": "Chào AI Tiểu Ngữ!"}
+          "example": {
+            "hz": "AI小语，你好！",
+            "py": "AI Xiǎoyǔ, nǐ hǎo!",
+            "vn": "Chào AI Tiểu Ngữ!"
+          }
         },
         {
           "hz": "好",
           "py": "hǎo",
           "vn": "tốt, khỏe, ổn (tính từ)",
           "image": "assets/words/hao.jpg",
-          "example": {"hz": "我很好。", "py": "Wǒ hěn hǎo.", "vn": "Tôi khỏe/ổn."}
+          "example": {
+            "hz": "我很好。",
+            "py": "Wǒ hěn hǎo.",
+            "vn": "Tôi khỏe/ổn."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide09.mp3"
     },
     {
       "type": "wordcard",
@@ -153,9 +207,18 @@
       "vn": "tạm biệt",
       "image": "assets/words/zaijian.jpg",
       "examples": [
-        {"hz": "老师，再见！", "py": "Lǎoshī, zàijiàn!", "vn": "Tạm biệt thầy/cô!"},
-        {"hz": "同学们，再见！", "py": "Tóngxuémen, zàijiàn!", "vn": "Tạm biệt các bạn học!"}
-      ]
+        {
+          "hz": "老师，再见！",
+          "py": "Lǎoshī, zàijiàn!",
+          "vn": "Tạm biệt thầy/cô!"
+        },
+        {
+          "hz": "同学们，再见！",
+          "py": "Tóngxuémen, zàijiàn!",
+          "vn": "Tạm biệt các bạn học!"
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
     },
     {
       "type": "word_pair",
@@ -166,16 +229,25 @@
           "py": "xièxie",
           "vn": "cảm ơn",
           "image": "assets/words/xiexie.jpg",
-          "example": {"hz": "谢谢！", "py": "Xièxie!", "vn": "Cảm ơn!"}
+          "example": {
+            "hz": "谢谢！",
+            "py": "Xièxie!",
+            "vn": "Cảm ơn!"
+          }
         },
         {
           "hz": "不客气",
           "py": "bú kèqi",
           "vn": "không có gì",
           "image": "assets/words/bukeqi.jpg",
-          "example": {"hz": "不客气！", "py": "Bú kèqi!", "vn": "Không có gì đâu!"}
+          "example": {
+            "hz": "不客气！",
+            "py": "Bú kèqi!",
+            "vn": "Không có gì đâu!"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide11.mp3"
     },
     {
       "type": "word_pair",
@@ -186,16 +258,25 @@
           "py": "duìbuqǐ",
           "vn": "xin lỗi",
           "image": "assets/words/duibuqi.jpg",
-          "example": {"hz": "对不起！", "py": "Duìbuqǐ!", "vn": "Xin lỗi!"}
+          "example": {
+            "hz": "对不起！",
+            "py": "Duìbuqǐ!",
+            "vn": "Xin lỗi!"
+          }
         },
         {
           "hz": "没关系",
           "py": "méi guānxi",
           "vn": "không sao",
           "image": "assets/words/meiguanxi.jpg",
-          "example": {"hz": "没关系！", "py": "Méi guānxi!", "vn": "Không sao đâu!"}
+          "example": {
+            "hz": "没关系！",
+            "py": "Méi guānxi!",
+            "vn": "Không sao đâu!"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide12.mp3"
     },
     {
       "type": "wordcard",
@@ -205,9 +286,19 @@
       "vn": "không sao, không có gì",
       "image": "assets/words/meishir.jpg",
       "examples": [
-        {"hz": "没事儿！", "py": "Méishìr!", "vn": "Không sao!"},
-        {"hz": "没事儿，没事儿！", "py": "Méishìr, méishìr!", "vn": "Không sao đâu, không sao đâu! (nói lặp trong khẩu ngữ)"}
-      ]
+        {
+          "hz": "没事儿！",
+          "py": "Méishìr!",
+          "vn": "Không sao!"
+        },
+        {
+          "hz": "没事儿，没事儿！",
+          "py": "Méishìr, méishìr!",
+          "vn": "Không sao đâu, không sao đâu! (nói lặp trong khẩu ngữ)"
+        }
+      ],
+      "footer_note": "So với 没关系 (slide trước): 没事儿 chỉ dùng với bạn bè thân — không chắc thì cứ dùng 没关系, luôn đúng!",
+      "audio": "assets/audio/slide13.mp3"
     },
     {
       "type": "word_pair",
@@ -218,15 +309,24 @@
           "py": "qǐngwèn",
           "vn": "xin hỏi",
           "image": "assets/words/qingwen.jpg",
-          "example": {"hz": "请问，你叫什么名字？", "py": "Qǐngwèn, nǐ jiào shénme míngzi?", "vn": "Xin hỏi, bạn tên là gì?"}
+          "example": {
+            "hz": "请问，你叫什么名字？",
+            "py": "Qǐngwèn, nǐ jiào shénme míngzi?",
+            "vn": "Xin hỏi, bạn tên là gì?"
+          }
         },
         {
           "hz": "叫",
           "py": "jiào",
           "vn": "tên là, gọi là",
-          "example": {"hz": "我叫陈天中。", "py": "Wǒ jiào Chén Tiānzhōng.", "vn": "Tôi tên là Trần Thiên Trung."}
+          "example": {
+            "hz": "我叫陈天中。",
+            "py": "Wǒ jiào Chén Tiānzhōng.",
+            "vn": "Tôi tên là Trần Thiên Trung."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide14.mp3"
     },
     {
       "type": "word_pair",
@@ -236,16 +336,25 @@
           "hz": "什么",
           "py": "shénme",
           "vn": "gì, cái gì",
-          "example": {"hz": "你叫什么？", "py": "Nǐ jiào shénme?", "vn": "Bạn tên là gì?"}
+          "example": {
+            "hz": "你叫什么？",
+            "py": "Nǐ jiào shénme?",
+            "vn": "Bạn tên là gì?"
+          }
         },
         {
           "hz": "名字",
           "py": "míngzi",
           "vn": "tên",
           "image": "assets/words/mingzi.jpg",
-          "example": {"hz": "你叫什么名字？", "py": "Nǐ jiào shénme míngzi?", "vn": "Bạn tên là gì?"}
+          "example": {
+            "hz": "你叫什么名字？",
+            "py": "Nǐ jiào shénme míngzi?",
+            "vn": "Bạn tên là gì?"
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide15.mp3"
     },
     {
       "type": "word_pair",
@@ -255,16 +364,25 @@
           "hz": "是",
           "py": "shì",
           "vn": "là",
-          "example": {"hz": "我是白家月。", "py": "Wǒ shì Bái Jiāyuè.", "vn": "Tôi là Bạch Gia Nguyệt."}
+          "example": {
+            "hz": "我是白家月。",
+            "py": "Wǒ shì Bái Jiāyuè.",
+            "vn": "Tôi là Bạch Gia Nguyệt."
+          }
         },
         {
           "hz": "不",
           "py": "bù",
           "vn": "không, chẳng (phó từ phủ định)",
           "image": "assets/words/bu.jpg",
-          "example": {"hz": "我不是安妮。", "py": "Wǒ bú shì Ānnī.", "vn": "Tôi không phải là Annie."}
+          "example": {
+            "hz": "我不是安妮。",
+            "py": "Wǒ bú shì Ānnī.",
+            "vn": "Tôi không phải là Annie."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide16.mp3"
     },
     {
       "type": "word_pair",
@@ -275,16 +393,25 @@
           "py": "rènshi",
           "vn": "quen biết",
           "image": "assets/words/renshi.jpg",
-          "example": {"hz": "认识你我也很高兴。", "py": "Rènshi nǐ wǒ yě hěn gāoxìng.", "vn": "Quen biết bạn tôi cũng rất vui."}
+          "example": {
+            "hz": "认识你我也很高兴。",
+            "py": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+            "vn": "Quen biết bạn tôi cũng rất vui."
+          }
         },
         {
           "hz": "高兴",
           "py": "gāoxìng",
           "vn": "vui, mừng",
           "image": "assets/words/gaoxing.jpg",
-          "example": {"hz": "很高兴认识你。", "py": "Hěn gāoxìng rènshi nǐ.", "vn": "Rất vui được quen biết bạn."}
+          "example": {
+            "hz": "很高兴认识你。",
+            "py": "Hěn gāoxìng rènshi nǐ.",
+            "vn": "Rất vui được quen biết bạn."
+          }
         }
-      ]
+      ],
+      "audio": "assets/audio/slide17.mp3"
     },
     {
       "type": "word_pair",
@@ -294,93 +421,197 @@
           "hz": "很",
           "py": "hěn",
           "vn": "rất",
-          "example": {"hz": "很高兴认识你。", "py": "Hěn gāoxìng rènshi nǐ.", "vn": "Rất vui được quen biết bạn."}
+          "example": {
+            "hz": "很高兴认识你。",
+            "py": "Hěn gāoxìng rènshi nǐ.",
+            "vn": "Rất vui được quen biết bạn."
+          }
         },
         {
           "hz": "也",
           "py": "yě",
           "vn": "cũng",
-          "example": {"hz": "我也是学生。", "py": "Wǒ yě shì xuésheng.", "vn": "Tôi cũng là học sinh."}
+          "example": {
+            "hz": "我也是学生。",
+            "py": "Wǒ yě shì xuésheng.",
+            "vn": "Tôi cũng là học sinh."
+          }
         }
-      ]
-    },
-    {
-      "type": "dialogue",
-      "kicker": "会话",
-      "title": "会话 1 — 课文1 (Bài 1)",
-      "turns": [
-        {"speaker": "王一飞", "hz": "AI小语，你好！", "py": "AI Xiǎoyǔ, nǐ hǎo!"},
-        {"speaker": "小语", "hz": "王老师，你好！", "py": "Wáng lǎoshī, nǐ hǎo!"}
-      ]
-    },
-    {
-      "type": "dialogue",
-      "kicker": "会话",
-      "title": "会话 2a — 课文2 (Bài 1)",
-      "turns": [
-        {"speaker": "王一飞", "hz": "大家好！", "py": "Dàjiā hǎo!"},
-        {"speaker": "学生们", "hz": "老师，您好！", "py": "Lǎoshī, nín hǎo!"}
-      ]
-    },
-    {
-      "type": "dialogue",
-      "kicker": "会话",
-      "title": "会话 2b — 课文2 (Bài 1)",
-      "turns": [
-        {"speaker": "小语", "hz": "你们好！", "py": "Nǐmen hǎo!"},
-        {"speaker": "学生们", "hz": "你好，小语！", "py": "Nǐ hǎo, Xiǎoyǔ!"}
-      ]
-    },
-    {
-      "type": "dialogue",
-      "kicker": "会话",
-      "title": "会话 3a — 课文3 (Bài 1)",
-      "turns": [
-        {"speaker": "学生们", "hz": "谢谢！", "py": "Xièxie!"},
-        {"speaker": "小语", "hz": "不客气！", "py": "Bú kèqi!"}
-      ]
-    },
-    {
-      "type": "dialogue",
-      "kicker": "会话",
-      "title": "会话 3b — 课文3 (Bài 1)",
-      "turns": [
-        {"speaker": "王一飞", "hz": "同学们，再见！", "py": "Tóngxuémen, zàijiàn!"},
-        {"speaker": "学生们", "hz": "老师，再见！", "py": "Lǎoshī, zàijiàn!"}
-      ]
-    },
-    {
-      "type": "dialogue",
-      "kicker": "会话",
-      "title": "会话 4 — 课文1 (Bài 2)",
-      "turns": [
-        {"speaker": "王一飞", "hz": "请问，你叫什么名字？", "py": "Qǐngwèn, nǐ jiào shénme míngzi?"},
-        {"speaker": "陈天中", "hz": "我叫陈天中。", "py": "Wǒ jiào Chén Tiānzhōng."}
-      ]
-    },
-    {
-      "type": "dialogue",
-      "kicker": "会话",
-      "title": "会话 5 — 课文2 (Bài 2)",
-      "turns": [
-        {"speaker": "陈天中", "hz": "你好，安妮！", "py": "Nǐ hǎo, Ānnī!"},
-        {"speaker": "白家月", "hz": "你好，陈天中！", "py": "Nǐ hǎo, Chén Tiānzhōng!"},
-        {"speaker": "白家月", "hz": "我不是安妮，我是白家月。", "py": "Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè."},
-        {"speaker": "陈天中", "hz": "对不起！", "py": "Duìbuqǐ!"},
-        {"speaker": "白家月", "hz": "没关系！", "py": "Méi guānxi!"}
-      ]
-    },
-    {
-      "type": "dialogue",
-      "kicker": "会话",
-      "title": "会话 6 — 课文3 (Bài 2)",
-      "turns": [
-        {"speaker": "李文", "hz": "你好！我叫李文。", "py": "Nǐ hǎo! Wǒ jiào Lǐ Wén."},
-        {"speaker": "白家月", "hz": "你好！我叫白家月。", "py": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè."},
-        {"speaker": "李文", "hz": "很高兴认识你。", "py": "Hěn gāoxìng rènshi nǐ."},
-        {"speaker": "白家月", "hz": "认识你我也很高兴。", "py": "Rènshi nǐ wǒ yě hěn gāoxìng."}
       ],
-      "voices": {"李文": "zh-CN-YunxiNeural", "白家月": "zh-CN-XiaoxiaoNeural"}
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 1",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "AI小语，你好！",
+          "py": "AI Xiǎoyǔ, nǐ hǎo!"
+        },
+        {
+          "speaker": "小语",
+          "hz": "王老师，你好！",
+          "py": "Wáng lǎoshī, nǐ hǎo!"
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 2a",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "大家好！",
+          "py": "Dàjiā hǎo!"
+        },
+        {
+          "speaker": "学生们",
+          "hz": "老师，您好！",
+          "py": "Lǎoshī, nín hǎo!"
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 2b",
+      "turns": [
+        {
+          "speaker": "小语",
+          "hz": "你们好！",
+          "py": "Nǐmen hǎo!"
+        },
+        {
+          "speaker": "学生们",
+          "hz": "你好，小语！",
+          "py": "Nǐ hǎo, Xiǎoyǔ!"
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 3a",
+      "turns": [
+        {
+          "speaker": "学生们",
+          "hz": "谢谢！",
+          "py": "Xièxie!"
+        },
+        {
+          "speaker": "小语",
+          "hz": "不客气！",
+          "py": "Bú kèqi!"
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 3b",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "同学们，再见！",
+          "py": "Tóngxuémen, zàijiàn!"
+        },
+        {
+          "speaker": "学生们",
+          "hz": "老师，再见！",
+          "py": "Lǎoshī, zàijiàn!"
+        }
+      ],
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 4",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "请问，你叫什么名字？",
+          "py": "Qǐngwèn, nǐ jiào shénme míngzi?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我叫陈天中。",
+          "py": "Wǒ jiào Chén Tiānzhōng."
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 5",
+      "turns": [
+        {
+          "speaker": "陈天中",
+          "hz": "你好，安妮！",
+          "py": "Nǐ hǎo, Ānnī!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "你好，陈天中！",
+          "py": "Nǐ hǎo, Chén Tiānzhōng!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我不是安妮，我是白家月。",
+          "py": "Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "对不起！",
+          "py": "Duìbuqǐ!"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "没关系！",
+          "py": "Méi guānxi!"
+        }
+      ],
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "title": "会话 6",
+      "turns": [
+        {
+          "speaker": "李文",
+          "hz": "你好！我叫李文。",
+          "py": "Nǐ hǎo! Wǒ jiào Lǐ Wén."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "你好！我叫白家月。",
+          "py": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè."
+        },
+        {
+          "speaker": "李文",
+          "hz": "很高兴认识你。",
+          "py": "Hěn gāoxìng rènshi nǐ."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "认识你我也很高兴。",
+          "py": "Rènshi nǐ wǒ yě hěn gāoxìng."
+        }
+      ],
+      "voices": {
+        "李文": "zh-CN-YunxiNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide26.mp3"
     },
     {
       "type": "grammar",
@@ -390,15 +621,31 @@
         {
           "point": "您 = kính ngữ (ngôi 2, trang trọng) — khác 你 (thông thường)",
           "examples": [
-            {"hz": "老师，您好！", "py": "Lǎoshī, nín hǎo!", "vn": "Con chào thầy/cô ạ! (kính trọng)"},
-            {"hz": "你好！", "py": "Nǐ hǎo!", "vn": "Chào bạn! (thân mật, ngang hàng)"}
+            {
+              "hz": "老师，您好！",
+              "py": "Lǎoshī, nín hǎo!",
+              "vn": "Con chào thầy/cô ạ! (kính trọng)"
+            },
+            {
+              "hz": "你好！",
+              "py": "Nǐ hǎo!",
+              "vn": "Chào bạn! (thân mật, ngang hàng)"
+            }
           ]
         },
         {
           "point": "们 = hậu tố số nhiều, gắn sau đại từ/danh từ chỉ người",
           "examples": [
-            {"hz": "你们好！", "py": "Nǐmen hǎo!", "vn": "Chào các bạn!"},
-            {"hz": "同学们，再见！", "py": "Tóngxuémen, zàijiàn!", "vn": "Các bạn học ơi, tạm biệt!"}
+            {
+              "hz": "你们好！",
+              "py": "Nǐmen hǎo!",
+              "vn": "Chào các bạn!"
+            },
+            {
+              "hz": "同学们，再见！",
+              "py": "Tóngxuémen, zàijiàn!",
+              "vn": "Các bạn học ơi, tạm biệt!"
+            }
           ]
         }
       ],
@@ -412,14 +659,27 @@
         {
           "point": "Chủ ngữ + Vị ngữ + Tân ngữ (S + V + O)",
           "examples": [
-            {"hz": "我叫陈天中。", "py": "Wǒ jiào Chén Tiānzhōng.", "vn": "Tôi(S) tên là(V) Trần Thiên Trung(O)."},
-            {"hz": "我是白家月。", "py": "Wǒ shì Bái Jiāyuè.", "vn": "Tôi(S) là(V) Bạch Gia Nguyệt(O)."}
+            {
+              "hz": "我叫陈天中。",
+              "py": "Wǒ jiào Chén Tiānzhōng.",
+              "vn": "Tôi(S) tên là(V) Trần Thiên Trung(O)."
+            },
+            {
+              "hz": "我是白家月。",
+              "py": "Wǒ shì Bái Jiāyuè.",
+              "vn": "Tôi(S) là(V) Bạch Gia Nguyệt(O)."
+            }
           ]
         },
         {
           "point": "不 + động từ = phủ định",
           "examples": [
-            {"hz": "我不是安妮。", "py": "Wǒ bú shì Ānnī.", "vn": "Tôi không phải là Annie.", "highlight": "不"}
+            {
+              "hz": "我不是安妮。",
+              "py": "Wǒ bú shì Ānnī.",
+              "vn": "Tôi không phải là Annie.",
+              "highlight": "不"
+            }
           ]
         }
       ]
@@ -439,18 +699,53 @@
       "kicker": "游戏 · 复习",
       "title": "配对复习 (1/4) · 称呼",
       "images": [
-        {"num": 1, "image": "assets/words/ni.jpg"},
-        {"num": 2, "image": "assets/words/nimen.jpg"},
-        {"num": 3, "image": "assets/words/dajia.jpg"},
-        {"num": 4, "image": "assets/words/laoshi.jpg"},
-        {"num": 5, "image": "assets/words/wanglaoshi.jpg"}
+        {
+          "num": 1,
+          "image": "assets/words/ni.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/nimen.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/dajia.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/laoshi.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/wanglaoshi.jpg"
+        }
       ],
       "words": [
-        {"letter": "A", "hz": "王老师", "py": "Wáng lǎoshī"},
-        {"letter": "B", "hz": "你", "py": "nǐ"},
-        {"letter": "C", "hz": "老师", "py": "lǎoshī"},
-        {"letter": "D", "hz": "你们", "py": "nǐmen"},
-        {"letter": "E", "hz": "大家", "py": "dàjiā"}
+        {
+          "letter": "A",
+          "hz": "王老师",
+          "py": "Wáng lǎoshī"
+        },
+        {
+          "letter": "B",
+          "hz": "你",
+          "py": "nǐ"
+        },
+        {
+          "letter": "C",
+          "hz": "老师",
+          "py": "lǎoshī"
+        },
+        {
+          "letter": "D",
+          "hz": "你们",
+          "py": "nǐmen"
+        },
+        {
+          "letter": "E",
+          "hz": "大家",
+          "py": "dàjiā"
+        }
       ]
     },
     {
@@ -458,18 +753,53 @@
       "kicker": "游戏 · 复习",
       "title": "配对复习 (2/4) · 称呼/打招呼",
       "images": [
-        {"num": 1, "image": "assets/words/xuesheng.jpg"},
-        {"num": 2, "image": "assets/words/tongxue.jpg"},
-        {"num": 3, "image": "assets/words/nihao.jpg"},
-        {"num": 4, "image": "assets/words/hao.jpg"},
-        {"num": 5, "image": "assets/words/zaijian.jpg"}
+        {
+          "num": 1,
+          "image": "assets/words/xuesheng.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/tongxue.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/nihao.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/hao.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/zaijian.jpg"
+        }
       ],
       "words": [
-        {"letter": "A", "hz": "好", "py": "hǎo"},
-        {"letter": "B", "hz": "学生", "py": "xuésheng"},
-        {"letter": "C", "hz": "再见", "py": "zàijiàn"},
-        {"letter": "D", "hz": "同学", "py": "tóngxué"},
-        {"letter": "E", "hz": "你好", "py": "nǐ hǎo"}
+        {
+          "letter": "A",
+          "hz": "好",
+          "py": "hǎo"
+        },
+        {
+          "letter": "B",
+          "hz": "学生",
+          "py": "xuésheng"
+        },
+        {
+          "letter": "C",
+          "hz": "再见",
+          "py": "zàijiàn"
+        },
+        {
+          "letter": "D",
+          "hz": "同学",
+          "py": "tóngxué"
+        },
+        {
+          "letter": "E",
+          "hz": "你好",
+          "py": "nǐ hǎo"
+        }
       ]
     },
     {
@@ -477,18 +807,53 @@
       "kicker": "游戏 · 复习",
       "title": "配对复习 (3/4) · 感谢/道歉/问名字",
       "images": [
-        {"num": 1, "image": "assets/words/xiexie.jpg"},
-        {"num": 2, "image": "assets/words/bukeqi.jpg"},
-        {"num": 3, "image": "assets/words/duibuqi.jpg"},
-        {"num": 4, "image": "assets/words/meiguanxi.jpg"},
-        {"num": 5, "image": "assets/words/qingwen.jpg"}
+        {
+          "num": 1,
+          "image": "assets/words/xiexie.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/bukeqi.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/duibuqi.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/meiguanxi.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/qingwen.jpg"
+        }
       ],
       "words": [
-        {"letter": "A", "hz": "没关系", "py": "méi guānxi"},
-        {"letter": "B", "hz": "谢谢", "py": "xièxie"},
-        {"letter": "C", "hz": "请问", "py": "qǐngwèn"},
-        {"letter": "D", "hz": "对不起", "py": "duìbuqǐ"},
-        {"letter": "E", "hz": "不客气", "py": "bú kèqi"}
+        {
+          "letter": "A",
+          "hz": "没关系",
+          "py": "méi guānxi"
+        },
+        {
+          "letter": "B",
+          "hz": "谢谢",
+          "py": "xièxie"
+        },
+        {
+          "letter": "C",
+          "hz": "请问",
+          "py": "qǐngwèn"
+        },
+        {
+          "letter": "D",
+          "hz": "对不起",
+          "py": "duìbuqǐ"
+        },
+        {
+          "letter": "E",
+          "hz": "不客气",
+          "py": "bú kèqi"
+        }
       ]
     },
     {
@@ -496,16 +861,44 @@
       "kicker": "游戏 · 复习",
       "title": "配对复习 (4/4) · 问名字/是不/认识",
       "images": [
-        {"num": 1, "image": "assets/words/mingzi.jpg"},
-        {"num": 2, "image": "assets/words/bu.jpg"},
-        {"num": 3, "image": "assets/words/renshi.jpg"},
-        {"num": 4, "image": "assets/words/gaoxing.jpg"}
+        {
+          "num": 1,
+          "image": "assets/words/mingzi.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/bu.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/renshi.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/gaoxing.jpg"
+        }
       ],
       "words": [
-        {"letter": "A", "hz": "认识", "py": "rènshi"},
-        {"letter": "B", "hz": "名字", "py": "míngzi"},
-        {"letter": "C", "hz": "高兴", "py": "gāoxìng"},
-        {"letter": "D", "hz": "不", "py": "bù"}
+        {
+          "letter": "A",
+          "hz": "认识",
+          "py": "rènshi"
+        },
+        {
+          "letter": "B",
+          "hz": "名字",
+          "py": "míngzi"
+        },
+        {
+          "letter": "C",
+          "hz": "高兴",
+          "py": "gāoxìng"
+        },
+        {
+          "letter": "D",
+          "hz": "不",
+          "py": "bù"
+        }
       ]
     }
   ]
