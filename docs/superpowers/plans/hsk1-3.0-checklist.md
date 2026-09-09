@@ -130,19 +130,30 @@ thiếu 有/他/岁/今年/多/大/孩子 và ghép sai "多大" thành 1 từ.
 
 ## Buổi 05 — Số đếm & số điện thoại (L6)
 
+> ⚠️ Đã đối chiếu PDF gốc bằng vision (2026-09-09, trang 50-58 = index 49-58 file
+> `raw/新HSK1教程3.0.pdf`) — checklist cũ sai nhiều: gộp nhầm 手机号 thành 1 từ (thực ra 2 từ
+> rời 手机+号, cộng thêm 电话 riêng), bịa "一些" (sách chỉ dạy 些), lẫn "好的" vào (好的 KHÔNG
+> phải 生词 mới của bài này — không có trong hộp New Words 6-2), và bỏ sót hẳn 5 từ
+> (明天, 去, 哪儿, 东西 + 电话). Danh sách dưới đây lấy đúng theo 3 hộp New Words 6-2/6-4/6-6
+> trong sách.
+
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
-| 手机号 | shǒujīhào | số điện thoại di động | ⏳ chưa soạn |
-| 好的 | hǎode | được, ok | ⏳ chưa soạn |
+| 手机 | shǒujī | điện thoại di động | ⏳ chưa soạn |
+| 电话 | diànhuà | điện thoại, cuộc gọi | ⏳ chưa soạn |
+| 号 | hào | số | ⏳ chưa soạn |
+| 明天 | míngtiān | ngày mai | ⏳ chưa soạn |
+| 去 | qù | đi | ⏳ chưa soạn |
+| 哪儿 | nǎr | đâu, ở đâu | ⏳ chưa soạn |
 | 想 | xiǎng | muốn, định | ⏳ chưa soạn |
 | 超市 | chāoshì | siêu thị | ⏳ chưa soạn |
 | 买 | mǎi | mua | ⏳ chưa soạn |
-| 一些 | yìxiē | một số, vài | ⏳ chưa soạn |
+| 东西 | dōngxi | đồ, thứ | ⏳ chưa soạn |
+| 些 | xiē | một số, vài | ⏳ chưa soạn |
 | 牛奶 | niúnǎi | sữa bò | ⏳ chưa soạn |
-| 西安饭店 | Xī'ān Fàndiàn | (riêng) Nhà hàng Tây An | ⏳ chưa soạn |
 | 吃 | chī | ăn | ⏳ chưa soạn |
 | 晚饭 | wǎnfàn | cơm tối | ⏳ chưa soạn |
-| 那边 | nàbian | đằng kia | ⏳ chưa soạn |
+| 那边 | nàbiān | đằng kia | ⏳ chưa soạn |
 | 包子 | bāozi | bánh bao | ⏳ chưa soạn |
 | 非常 | fēicháng | rất, vô cùng | ⏳ chưa soạn |
 | 好吃 | hǎochī | ngon | ⏳ chưa soạn |
@@ -150,8 +161,9 @@ thiếu 有/他/岁/今年/多/大/孩子 và ghép sai "多大" thành 1 từ.
 | 怎么 | zěnme | thế nào, làm sao | ⏳ chưa soạn |
 | 坐 | zuò | ngồi, đi (bằng xe) | ⏳ chưa soạn |
 | 出租车 | chūzūchē | taxi | ⏳ chưa soạn |
+| 西安饭店 (专名) | Xī'ān Fàndiàn | (riêng) Nhà hàng Tây An | ⏳ chưa soạn |
 
-**18 từ**
+**23 từ** (22 生词 + 1 专有名词)
 
 ---
 
@@ -204,8 +216,8 @@ thiếu 有/他/岁/今年/多/大/孩子 và ghép sai "多大" thành 1 từ.
 
 ## Buổi 08 — Nghề & nơi làm · 在 (L8)
 
-⚠️ Nguồn có block OCR sót đã flag (xem note dưới) — 能/到 phục hồi từ hội thoại, cần đối chiếu
-`raw/新HSK1教程3.0.pdf` khi build.
+✅ **ĐÃ SỬA 2026-09-09** (đối chiếu trực tiếp trang 055/057/059 sách gốc = index 69/71/73 file
+PDF, bằng vision). Bổ sung 3 từ bị OCR bỏ sót ở block 8-4/8-6: **学校, 书店, 病人**.
 
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
@@ -220,17 +232,20 @@ thiếu 有/他/岁/今年/多/大/孩子 và ghép sai "多大" thành 1 từ.
 | 下 | xià | dưới | ⏳ chưa soạn |
 | 漂亮 | piàoliang | đẹp | ⏳ chưa soạn |
 | 在 | zài | ở, tại | ⏳ chưa soạn |
+| 学校 | xuéxiào | trường học | ⏳ chưa soạn |
+| 书店 | shūdiàn | hiệu sách | ⏳ chưa soạn |
 | 前 | qián | trước | ⏳ chưa soạn |
-| 午饭 | wǔfàn | cơm trưa | ⏳ chưa soạn |
 | 能 | néng | có thể (năng lực/điều kiện) | ⏳ chưa soạn |
 | 到 | dào | đến, tới | ⏳ chưa soạn |
-| 医生 | yīshēng | bác sĩ | ⏳ chưa soạn |
-| 大 | dà | to, lớn | ⏳ chưa soạn |
-| 多 | duō | nhiều | ⏳ chưa soạn |
-| 工作 | gōngzuò | công việc, làm việc | ⏳ chưa soạn |
+| 午饭 | wǔfàn | cơm trưa | ⏳ chưa soạn |
 | 饭 | fàn | cơm, bữa ăn | ⏳ chưa soạn |
+| 大 | dà | to, lớn | ⏳ chưa soạn |
+| 病人 | bìngrén | bệnh nhân | ⏳ chưa soạn |
+| 多 | duō | nhiều | ⏳ chưa soạn |
+| 医生 | yīshēng | bác sĩ | ⏳ chưa soạn |
+| 工作 | gōngzuò | công việc, làm việc | ⏳ chưa soạn |
 
-**20 từ** (在 ôn lại ở buổi 13)
+**23 từ** (+ danh từ riêng 胡医生; 在 ôn lại ở buổi 13)
 
 ---
 
@@ -431,7 +446,7 @@ thiếu 有/他/岁/今年/多/大/孩子 và ghép sai "多大" thành 1 từ.
 | 02 | Chào hỏi & làm quen | L1+L2 | 28 | ⏳ chưa soạn |
 | 03 | Quốc tịch & bản thân | L3 | 11 (+12 mở rộng: 7 quốc gia, 男朋友, 4 cấp học) | ✅ đã có |
 | 04 | Gia đình | L4 | 16 | ⏳ chưa soạn |
-| 05 | Số đếm & số điện thoại | L6 | 18 | ⏳ chưa soạn |
+| 05 | Số đếm & số điện thoại | L6 | 23 | ✅ đã có (slide; 西安饭店 giữ trong 课文/ví dụ, không làm thẻ từ vựng riêng vì chỉ là tên riêng dùng 1 lần) |
 | 06 | Ngày tháng & nghỉ làm | L5 | 13 | ⏳ chưa soạn |
 | 07 | Giờ giấc & công việc | L7 | 16 | ⏳ chưa soạn |
 | 08 | Nghề & nơi làm · 在 | L8 | 20 | ⏳ chưa soạn |
@@ -442,15 +457,16 @@ thiếu 有/他/岁/今年/多/大/孩子 và ghép sai "多大" thành 1 từ.
 | 13 | Đại học & đang làm · 呢 | L11 | 21 | ⏳ chưa soạn |
 | 14 | Thời tiết & sức khỏe | L12 | 19 | ⏳ chưa soạn |
 | 15 | Đi lại & du lịch · hẹn gặp | L15 | 16 | ⏳ chưa soạn |
-| 16 | Ôn tập tổng hợp | — | 0 (ôn lại ~245) | ⏳ chưa soạn |
-| **Tổng** | | | **245 distinct** (per-buổi range 11–28) | |
+| 16 | Ôn tập tổng hợp | — | 0 (ôn lại ~250) | ⏳ chưa soạn |
+| **Tổng** | | | **250 distinct** (per-buổi range 11–28) | |
 
-Tổng theo từng 课 sách trước dedup = 249 (247 gốc + 2 từ audit buổi 02 bổ sung 2026-09-09: 不,
-对不起). Trừ 4 từ trùng lặp xuất hiện lại ở 课 khác (xem mục dưới) → **245 từ phân biệt** trong
-checklist này.
+Tổng theo từng 课 sách trước dedup = 254 (247 gốc + 2 từ audit buổi 02 bổ sung 2026-09-09: 不,
+对不起 + 5 từ audit buổi 05 bổ sung 2026-09-09: bỏ "手机号" gộp/"一些"/"好的" sai, thay bằng
+手机, 电话, 号, 明天, 去, 哪儿, 想, 东西, 些 đúng theo sách — net +5 từ so với 18 cũ). Trừ 4 từ
+trùng lặp xuất hiện lại ở 课 khác (xem mục dưới) → **250 từ phân biệt** trong checklist này.
 
-> Số 249/245 vẫn CHƯA phải con số cuối — mới chỉ audit xong buổi 01, 02, 03. Các buổi 04-15
-> chưa đối chiếu bằng vision, rất có thể còn thiếu từ tương tự (xem cảnh báo dưới).
+> Số 254/250 vẫn CHƯA phải con số cuối — mới chỉ audit xong buổi 01, 02, 03, 05. Các buổi 04,
+> 06-15 chưa đối chiếu bằng vision, rất có thể còn thiếu từ tương tự (xem cảnh báo dưới).
 
 ---
 

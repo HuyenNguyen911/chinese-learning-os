@@ -1,0 +1,749 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 5",
+    "topic": "你的手机号是多少？— Số đếm & số điện thoại"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "你的手机号是多少？",
+      "subtitle": "Số điện thoại của bạn là bao nhiêu?",
+      "footer": "HSK1 · Buổi 5",
+      "image": "assets/words/shouji.jpg"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么？",
+      "image": "assets/icons/icon_target.png",
+      "bullets": [
+        "Hỏi và cho số điện thoại: 你的手机号是多少？",
+        "Nói được dự định bằng 想: 我想去超市买东西。",
+        "Ghép 2 động từ liên tiếp trong 1 câu (连动句): đi đâu để làm gì, đi bằng gì.",
+        "Hỏi cách thức bằng 怎么: 我们怎么去？",
+        "Phân biệt 几 và 多少, đọc đúng số điện thoại (đổi 一 thành 幺)."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第一部分 · 课本生词"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 1-2/22",
+      "words": [
+        {
+          "hz": "手机",
+          "py": "shǒujī",
+          "vn": "điện thoại di động",
+          "image": "assets/words/shouji.jpg",
+          "example": {
+            "hz": "你的手机号是多少？",
+            "py": "Nǐ de shǒujī hào shì duōshao?",
+            "vn": "Số điện thoại di động của bạn là bao nhiêu?"
+          }
+        },
+        {
+          "hz": "电话",
+          "py": "diànhuà",
+          "vn": "điện thoại, cuộc gọi",
+          "example": {
+            "hz": "我打电话给你。",
+            "py": "Wǒ dǎ diànhuà gěi nǐ.",
+            "vn": "Tôi gọi điện cho bạn."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 3/22",
+      "hz": "号",
+      "py": "hào",
+      "vn": "số",
+      "examples": [
+        {
+          "hz": "你的手机号是多少？",
+          "py": "Nǐ de shǒujī hào shì duōshao?",
+          "vn": "Số điện thoại di động của bạn là bao nhiêu?"
+        },
+        {
+          "hz": "今天几号？",
+          "py": "Jīntiān jǐ hào?",
+          "vn": "Hôm nay ngày mấy?"
+        }
+      ],
+      "footer_note": "号 dùng cho cả SỐ ĐIỆN THOẠI và NGÀY THÁNG — ngày dùng 几号 (số nhỏ, dự đoán được), điện thoại dùng 多少 (số dài, không đoán trước).",
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 4-5/22",
+      "words": [
+        {
+          "hz": "明天",
+          "py": "míngtiān",
+          "vn": "ngày mai",
+          "example": {
+            "hz": "明天你去哪儿？",
+            "py": "Míngtiān nǐ qù nǎr?",
+            "vn": "Mai bạn đi đâu?"
+          }
+        },
+        {
+          "hz": "去",
+          "py": "qù",
+          "vn": "đi",
+          "example": {
+            "hz": "我想去超市。",
+            "py": "Wǒ xiǎng qù chāoshì.",
+            "vn": "Tôi muốn đi siêu thị."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 6-7/22",
+      "words": [
+        {
+          "hz": "哪儿",
+          "py": "nǎr",
+          "vn": "đâu, ở đâu",
+          "example": {
+            "hz": "你去哪儿？",
+            "py": "Nǐ qù nǎr?",
+            "vn": "Bạn đi đâu?"
+          }
+        },
+        {
+          "hz": "想",
+          "py": "xiǎng",
+          "vn": "muốn, định",
+          "example": {
+            "hz": "我想买东西。",
+            "py": "Wǒ xiǎng mǎi dōngxi.",
+            "vn": "Tôi muốn mua đồ."
+          }
+        }
+      ],
+      "footer_note": "想 ở Buổi 3 nghĩa là \"nhớ\" (我们很想你 = chúng mình rất nhớ bạn). Ở đây 想 + động từ nghĩa là \"muốn/định\" — 2 cách dùng khác nhau của cùng 1 chữ, phân biệt bằng NGỮ CẢNH đứng sau nó.",
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 8-9/22",
+      "words": [
+        {
+          "hz": "超市",
+          "py": "chāoshì",
+          "vn": "siêu thị",
+          "image": "assets/words/chaoshi.jpg",
+          "example": {
+            "hz": "超市在哪儿？",
+            "py": "Chāoshì zài nǎr?",
+            "vn": "Siêu thị ở đâu?"
+          }
+        },
+        {
+          "hz": "买",
+          "py": "mǎi",
+          "vn": "mua",
+          "example": {
+            "hz": "你想买什么？",
+            "py": "Nǐ xiǎng mǎi shénme?",
+            "vn": "Bạn muốn mua gì?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 10-11/22",
+      "words": [
+        {
+          "hz": "东西",
+          "py": "dōngxi",
+          "vn": "đồ, thứ",
+          "example": {
+            "hz": "我想买些东西。",
+            "py": "Wǒ xiǎng mǎi xiē dōngxi.",
+            "vn": "Tôi muốn mua ít đồ."
+          }
+        },
+        {
+          "hz": "些",
+          "py": "xiē",
+          "vn": "một số, vài",
+          "example": {
+            "hz": "我想买些牛奶。",
+            "py": "Wǒ xiǎng mǎi xiē niúnǎi.",
+            "vn": "Tôi muốn mua ít sữa."
+          }
+        }
+      ],
+      "footer_note": "些 là lượng từ KHÔNG XÁC ĐỊNH số lượng (một ít/vài) — đứng trước danh từ, không cần số đếm phía trước như 个/口.",
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 12/22",
+      "hz": "牛奶",
+      "py": "niúnǎi",
+      "vn": "sữa bò",
+      "image": "assets/words/niunai.jpg",
+      "examples": [
+        {
+          "hz": "我想买些牛奶。",
+          "py": "Wǒ xiǎng mǎi xiē niúnǎi.",
+          "vn": "Tôi muốn mua ít sữa."
+        },
+        {
+          "hz": "我每天喝牛奶。",
+          "py": "Wǒ měitiān hē niúnǎi.",
+          "vn": "Tôi uống sữa mỗi ngày."
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 13-14/22",
+      "words": [
+        {
+          "hz": "吃",
+          "py": "chī",
+          "vn": "ăn",
+          "example": {
+            "hz": "你想吃什么？",
+            "py": "Nǐ xiǎng chī shénme?",
+            "vn": "Bạn muốn ăn gì?"
+          }
+        },
+        {
+          "hz": "晚饭",
+          "py": "wǎnfàn",
+          "vn": "cơm tối",
+          "image": "assets/words/wanfan.jpg",
+          "example": {
+            "hz": "我们去吃晚饭。",
+            "py": "Wǒmen qù chī wǎnfàn.",
+            "vn": "Chúng ta đi ăn cơm tối."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 15-16/22",
+      "words": [
+        {
+          "hz": "那边",
+          "py": "nàbiān",
+          "vn": "đằng kia",
+          "example": {
+            "hz": "那边的包子非常好吃。",
+            "py": "Nàbiān de bāozi fēicháng hǎochī.",
+            "vn": "Bánh bao đằng kia rất ngon."
+          }
+        },
+        {
+          "hz": "包子",
+          "py": "bāozi",
+          "vn": "bánh bao",
+          "image": "assets/words/baozi.jpg",
+          "example": {
+            "hz": "我想吃包子。",
+            "py": "Wǒ xiǎng chī bāozi.",
+            "vn": "Tôi muốn ăn bánh bao."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 17-18/22",
+      "words": [
+        {
+          "hz": "非常",
+          "py": "fēicháng",
+          "vn": "rất, vô cùng",
+          "example": {
+            "hz": "这个非常好吃。",
+            "py": "Zhège fēicháng hǎochī.",
+            "vn": "Cái này ngon vô cùng."
+          }
+        },
+        {
+          "hz": "好吃",
+          "py": "hǎochī",
+          "vn": "ngon",
+          "example": {
+            "hz": "包子非常好吃。",
+            "py": "Bāozi fēicháng hǎochī.",
+            "vn": "Bánh bao rất ngon."
+          }
+        }
+      ],
+      "footer_note": "好吃 đọc \"hǎochī\" — chữ 好 ở đây đọc hǎo (tốt/ngon), KHÔNG đọc hào (nhầm với 号 vừa học).",
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 19-20/22",
+      "words": [
+        {
+          "hz": "米饭",
+          "py": "mǐfàn",
+          "vn": "cơm (gạo)",
+          "image": "assets/words/mifan.jpg",
+          "example": {
+            "hz": "我想吃米饭。",
+            "py": "Wǒ xiǎng chī mǐfàn.",
+            "vn": "Tôi muốn ăn cơm."
+          }
+        },
+        {
+          "hz": "怎么",
+          "py": "zěnme",
+          "vn": "thế nào, làm sao",
+          "example": {
+            "hz": "我们怎么去？",
+            "py": "Wǒmen zěnme qù?",
+            "vn": "Chúng ta đi bằng cách nào?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 21-22/22",
+      "words": [
+        {
+          "hz": "坐",
+          "py": "zuò",
+          "vn": "ngồi, đi (bằng xe)",
+          "example": {
+            "hz": "我们坐出租车去。",
+            "py": "Wǒmen zuò chūzūchē qù.",
+            "vn": "Chúng ta đi taxi."
+          }
+        },
+        {
+          "hz": "出租车",
+          "py": "chūzūchē",
+          "vn": "taxi",
+          "image": "assets/words/chuzuche.jpg",
+          "example": {
+            "hz": "坐出租车去饭店。",
+            "py": "Zuò chūzūchē qù fàndiàn.",
+            "vn": "Đi taxi đến nhà hàng."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "会话 1 · 问手机号",
+      "turns": [
+        {
+          "speaker": "李文",
+          "hz": "家月，你的手机号是多少？",
+          "py": "Jiāyuè, nǐ de shǒujī hào shì duōshao?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我的手机号是 +33 601493190。",
+          "py": "Wǒ de shǒujī hào shì líng líng sān sān liù líng yāo sì jiǔ sān yāo jiǔ líng."
+        },
+        {
+          "speaker": "李文",
+          "hz": "我的手机号是 +86 13552721160。",
+          "py": "Wǒ de shǒujī hào shì líng líng bā liù yāo sān wǔ wǔ èr qī èr yāo yāo liù líng."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "好的。",
+          "py": "Hǎo de."
+        }
+      ],
+      "voices": {
+        "李文": "zh-CN-YunxiNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "会话 2 · 去超市买东西",
+      "turns": [
+        {
+          "speaker": "陈天中",
+          "hz": "家月，明天你去哪儿？",
+          "py": "Jiāyuè, míngtiān nǐ qù nǎr?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我想去超市买东西。",
+          "py": "Wǒ xiǎng qù chāoshì mǎi dōngxi."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "你去超市买什么？",
+          "py": "Nǐ qù chāoshì mǎi shénme?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我想买些牛奶。",
+          "py": "Wǒ xiǎng mǎi xiē niúnǎi."
+        }
+      ],
+      "voices": {
+        "陈天中": "zh-CN-YunxiNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "会话 3 · 一家人吃晚饭",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "星期天我们去哪儿吃晚饭？",
+          "py": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我还想去西安饭店。",
+          "py": "Wǒ hái xiǎng qù Xī'ān Fàndiàn."
+        },
+        {
+          "speaker": "刘小雪",
+          "hz": "那边的包子非常好吃，我想吃包子。",
+          "py": "Nàbiān de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi."
+        },
+        {
+          "speaker": "刘小明",
+          "hz": "妈妈，我想吃米饭，不想吃包子。",
+          "py": "Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "好的。我们怎么去？",
+          "py": "Hǎo de. Wǒmen zěnme qù?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "坐出租车去。",
+          "py": "Zuò chūzūchē qù."
+        }
+      ],
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "刘明": "zh-CN-YunyangNeural",
+        "刘小雪": "zh-CN-XiaoyiNeural",
+        "刘小明": "zh-CN-YunxiaNeural"
+      },
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "能愿动词“想” — Muốn / định làm gì",
+      "groups": [
+        {
+          "point": "想 + động từ = muốn/định làm việc gì đó",
+          "examples": [
+            {
+              "hz": "我想去超市买东西。",
+              "py": "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+              "vn": "Tôi muốn đi siêu thị mua đồ."
+            },
+            {
+              "hz": "我想吃包子。",
+              "py": "Wǒ xiǎng chī bāozi.",
+              "vn": "Tôi muốn ăn bánh bao."
+            }
+          ]
+        }
+      ],
+      "tip": "想 luôn đứng NGAY TRƯỚC động từ, không đứng 1 mình cuối câu như tiếng Việt \"tôi muốn\" — phải nói rõ muốn LÀM GÌ.",
+      "footer_note": "想 ở Buổi 3 (我们很想你) nghĩa là \"nhớ\". Ở đây 想 đứng trước 1 động từ khác thì nghĩa là \"muốn/định\" — phân biệt bằng việc có động từ theo sau hay không.",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "连动句(1) — Nối 2 động từ trong 1 câu",
+      "groups": [
+        {
+          "point": "Biểu thị MỤC ĐÍCH: đi đâu ĐỂ làm gì",
+          "examples": [
+            {
+              "hz": "我想去超市买东西。",
+              "py": "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+              "vn": "Tôi muốn đi siêu thị (để) mua đồ."
+            },
+            {
+              "hz": "我们去西安饭店吃晚饭。",
+              "py": "Wǒmen qù Xī'ān Fàndiàn chī wǎnfàn.",
+              "vn": "Chúng tôi đi Nhà hàng Tây An (để) ăn cơm tối."
+            }
+          ]
+        },
+        {
+          "point": "Biểu thị PHƯƠNG THỨC: đi bằng cách gì",
+          "examples": [
+            {
+              "hz": "我们坐出租车去西安饭店。",
+              "py": "Wǒmen zuò chūzūchē qù Xī'ān Fàndiàn.",
+              "vn": "Chúng tôi đi taxi tới Nhà hàng Tây An."
+            },
+            {
+              "hz": "坐出租车去。",
+              "py": "Zuò chūzūchē qù.",
+              "vn": "Đi bằng taxi."
+            }
+          ]
+        }
+      ],
+      "tip": "Không cần thêm \"và\"/\"để\" giữa 2 động từ như tiếng Việt — 2 động từ cứ nối liền nhau theo đúng thứ tự hành động thật (làm cái nào trước, nói cái đó trước).",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "疑问代词“怎么” — Hỏi cách thức",
+      "groups": [
+        {
+          "point": "怎么 đứng TRƯỚC động từ, hỏi cách thức/phương thức",
+          "examples": [
+            {
+              "hz": "我们怎么去？",
+              "py": "Wǒmen zěnme qù?",
+              "vn": "Chúng ta đi bằng cách nào?"
+            },
+            {
+              "hz": "你怎么去超市？",
+              "py": "Nǐ zěnme qù chāoshì?",
+              "vn": "Bạn đi siêu thị bằng cách nào?"
+            }
+          ]
+        }
+      ],
+      "tip": "Trả lời câu hỏi 怎么 thường dùng cấu trúc 坐 + phương tiện, ví dụ 坐出租车/坐公共汽车.",
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 · 选词填空",
+      "title": "选词填空 — Điền từ đúng vào chỗ trống",
+      "instructions": "Chọn 1 từ trong khung điền vào mỗi câu (nguyên đề trong sách, trang 041).",
+      "word_bank": [
+        {
+          "hz": "多少",
+          "py": "duōshao"
+        },
+        {
+          "hz": "买",
+          "py": "mǎi"
+        },
+        {
+          "hz": "米饭",
+          "py": "mǐfàn"
+        },
+        {
+          "hz": "坐",
+          "py": "zuò"
+        },
+        {
+          "hz": "去",
+          "py": "qù"
+        }
+      ],
+      "items": [
+        "1. 我想___超市___牛奶。\nWǒ xiǎng ___ chāoshì ___ niúnǎi.",
+        "2. 我们___出租车去西安饭店吃晚饭。\nWǒmen ___ chūzūchē qù Xī'ān Fàndiàn chī wǎnfàn.",
+        "3. 妈妈：你想吃什么？孩子：我想吃___。\nMāma: Nǐ xiǎng chī shénme? Háizi: Wǒ xiǎng chī ___.",
+        "4. 老师：你的手机号是___？\nLǎoshī: Nǐ de shǒujī hào shì ___?"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第二部分 · 生词拓展"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法拓展",
+      "title": "几 vs 多少 — Khi nào dùng từ nào?",
+      "groups": [
+        {
+          "point": "几 = hỏi SỐ NHỎ, dự đoán được (thường < 10), BẮT BUỘC có lượng từ theo sau",
+          "examples": [
+            {
+              "hz": "你家有几口人？",
+              "py": "Nǐ jiā yǒu jǐ kǒu rén?",
+              "vn": "Nhà bạn có mấy người? (đã học Buổi 4)"
+            }
+          ]
+        },
+        {
+          "point": "多少 = hỏi SỐ BẤT KỲ, không đoán trước được (số lớn/dài), KHÔNG bắt buộc lượng từ",
+          "examples": [
+            {
+              "hz": "你的手机号是多少？",
+              "py": "Nǐ de shǒujī hào shì duōshao?",
+              "vn": "Số điện thoại của bạn là bao nhiêu?"
+            },
+            {
+              "hz": "苹果多少钱一斤？",
+              "py": "Píngguǒ duōshao qián yì jīn?",
+              "vn": "Táo bao nhiêu tiền một cân?"
+            }
+          ]
+        }
+      ],
+      "tip": "Hỏi số điện thoại / giá tiền / số lớn → luôn dùng 多少, không dùng 几.",
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "语法拓展",
+      "title": "读电话号码 — Đọc rời từng chữ số, 1 luôn đọc 幺",
+      "headers": [
+        "号码（汉字读法）",
+        "Pinyin",
+        "Ghi chú"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "零九幺·二三四·五六七八",
+          "líng jiǔ yāo · èr sān sì · wǔ liù qī bā",
+          "Số điện thoại Việt Nam quen thuộc (0912-345-678)"
+        ],
+        [
+          "零二八·三八二二·幺二三四",
+          "líng èr bā · sān bā èr èr · yāo èr sān sì",
+          "Số bàn công ty/trường học (028-3822-1234)"
+        ],
+        [
+          "三三六零幺四九三幺九零",
+          "sān sān liù líng yāo sì jiǔ sān yāo jiǔ líng",
+          "Số của 白家月 trong 会话1 (+33 601493190) — chú ý 2 chữ 幺"
+        ]
+      ],
+      "footer_note": "Số điện thoại đọc RỜI TỪNG CHỮ SỐ (không đọc theo hàng chục/trăm như số thường). Chữ số 1 luôn đọc 幺 (yāo), KHÔNG đọc 一 (yī) — để không nghe nhầm với số 7 (七 qī) khi nói nhanh qua điện thoại. Số 0 đọc 零 (líng).",
+      "audio": "assets/audio/slide25.mp3",
+      "voice": "zh-CN-XiaoyiNeural"
+    },
+    {
+      "type": "bullets",
+      "kicker": "语法拓展",
+      "title": "Ôn nhanh: số 0-100 (đã học Buổi 4)",
+      "bullets": [
+        "0-10: 零一二三四五六七八九十",
+        "11-99: (số chục) + (số đơn vị), ví dụ 十五 (15) · 二十三 (23) · 九十九 (99)",
+        "100: 一百 — chú ý: đây là số ĐẾM thường nên 一 vẫn đọc yī, KHÁC với số điện thoại (đọc rời từng chữ, 1 = 幺)",
+        "✏️ Luyện tập\nĐọc to số điện thoại của em cho cô nghe — nhớ đọc RỜI TỪNG SỐ và đổi 1 thành 幺!"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (1/2) · 生词拓展",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/shouji.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/chaoshi.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/niunai.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/baozi.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "牛奶",
+          "py": "niúnǎi"
+        },
+        {
+          "letter": "B",
+          "hz": "手机",
+          "py": "shǒujī"
+        },
+        {
+          "letter": "C",
+          "hz": "包子",
+          "py": "bāozi"
+        },
+        {
+          "letter": "D",
+          "hz": "超市",
+          "py": "chāoshì"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 (2/2) · 生词拓展",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/mifan.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/chuzuche.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/wanfan.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "晚饭",
+          "py": "wǎnfàn"
+        },
+        {
+          "letter": "B",
+          "hz": "米饭",
+          "py": "mǐfàn"
+        },
+        {
+          "letter": "C",
+          "hz": "出租车",
+          "py": "chūzūchē"
+        }
+      ]
+    }
+  ]
+}

@@ -201,35 +201,50 @@ Sách có 3 khối 生词 (4-2 cạnh 课文1, 4-4 cạnh 课文2, 4-6 cạnh �
 
 ## Bài 6 — 你的手机号是多少？(Nǐ de shǒujīhào shì duōshao?) — Số điện thoại của bạn là bao nhiêu?
 
-课文: Hỏi số điện thoại, đi siêu thị mua đồ, rủ nhau đi ăn nhà hàng Tây An.
+> ⚠️ Đã đối chiếu PDF gốc bằng vision (2026-09-09, trang 50-58 sách = index 49-58 file PDF).
+> Bản cũ dưới đây từng gộp nhầm "手机号" thành 1 từ, bịa "一些" (đúng ra là "些"), lẫn "好的"
+> vào dù không phải 生词 mới, và bỏ sót 5 từ (手机, 电话, 明天, 去, 哪儿, 东西). Danh sách đã
+> sửa theo đúng 3 hộp New Words 6-2/6-4/6-6 trong sách.
+
+课文: 3 đoạn — (1) hỏi số điện thoại ở trường; (2) rủ đi siêu thị mua đồ (sau giờ học); (3) cả
+nhà Wang Yixue bàn đi ăn tối ở nhà hàng Tây An, ăn gì, đi bằng gì.
 
 **生词**
 
-| 汉字 | Pinyin | Nghĩa Việt |
-|---|---|---|
-| 手机号 | shǒujīhào | số điện thoại di động |
-| 好的 | hǎode | được, ok |
-| 想 | xiǎng | muốn, định |
-| 超市 | chāoshì | siêu thị |
-| 买 | mǎi | mua |
-| 一些 | yìxiē | một số, vài |
-| 牛奶 | niúnǎi | sữa bò |
-| 西安饭店 | Xī'ān Fàndiàn | (riêng) Nhà hàng Tây An |
-| 吃 | chī | ăn |
-| 晚饭 | wǎnfàn | cơm tối |
-| 那边 | nàbian | đằng kia |
-| 包子 | bāozi | bánh bao |
-| 非常 | fēicháng | rất, vô cùng |
-| 好吃 | hǎochī | ngon |
-| 米饭 | mǐfàn | cơm (gạo) |
-| 怎么 | zěnme | thế nào, làm sao |
-| 坐 | zuò | ngồi, đi (bằng xe) |
-| 出租车 | chūzūchē | taxi |
+| 汉字 | Pinyin | Nghĩa Việt | Khối |
+|---|---|---|---|
+| 手机 | shǒujī | điện thoại di động | 6-2 ① |
+| 电话 | diànhuà | điện thoại, cuộc gọi | 6-2 ② |
+| 号 | hào | số | 6-2 ③ |
+| 明天 | míngtiān | ngày mai | 6-4 ④ |
+| 去 | qù | đi | 6-4 ⑤ |
+| 哪儿 | nǎr | đâu, ở đâu | 6-4 ⑥ |
+| 想 | xiǎng | muốn, định | 6-4 ⑦ |
+| 超市 | chāoshì | siêu thị | 6-4 ⑧ |
+| 买 | mǎi | mua | 6-4 ⑨ |
+| 东西 | dōngxi | đồ, thứ | 6-4 ⑩ |
+| 些 | xiē | một số, vài | 6-4 ⑪ |
+| 牛奶 | niúnǎi | sữa bò | 6-4 ⑫ |
+| 吃 | chī | ăn | 6-6 ⑬ |
+| 晚饭 | wǎnfàn | cơm tối | 6-6 ⑭ |
+| 那边 | nàbiān | đằng kia | 6-6 ⑮ |
+| 包子 | bāozi | bánh bao | 6-6 ⑯ |
+| 非常 | fēicháng | rất, vô cùng | 6-6 ⑰ |
+| 好吃 | hǎochī | ngon | 6-6 ⑱ |
+| 米饭 | mǐfàn | cơm (gạo) | 6-6 ⑲ |
+| 怎么 | zěnme | thế nào, làm sao | 6-6 ⑳ |
+| 坐 | zuò | ngồi, đi (bằng xe) | 6-6 ㉑ |
+| 出租车 | chūzūchē | taxi | 6-6 ㉒ |
+| 西安饭店 | Xī'ān Fàndiàn | (riêng) Nhà hàng Tây An | 6-6 专名① |
+
+**23 từ** (22 生词 + 1 专有名词). "好的" xuất hiện trong hội thoại nhưng KHÔNG có trong hộp
+New Words của bài này (đã học trước đó) — không tính là 生词 mới.
 
 **语法**
-- 能愿动词"想": biểu thị mong muốn, dự định.
-- 连动句(1): vị ngữ gồm 2 cụm động từ trở lên (VD: 去超市买东西).
-- 疑问代词"怎么": hỏi về cách thức/phương thức hành động.
+- 能愿动词"想": biểu thị mong muốn, dự định (dùng trước động từ).
+- 连动句(1): vị ngữ gồm 2 cụm động từ trở lên, biểu thị mục đích (我想去超市买东西) hoặc
+  phương thức (我们坐出租车去西安饭店).
+- 疑问代词"怎么": hỏi về cách thức/phương thức hành động (dùng trước động từ, VD: 你怎么去？).
 
 ---
 
@@ -285,22 +300,31 @@ Sách có 3 khối 生词 (4-2 cạnh 课文1, 4-4 cạnh 课文2, 4-6 cạnh �
 | 下 | xià | dưới |
 | 漂亮 | piàoliang | đẹp |
 | 在 | zài | ở, tại |
+| 学校 | xuéxiào | trường học |
+| 书店 | shūdiàn | hiệu sách |
 | 前 | qián | trước |
-| 午饭 | wǔfàn | cơm trưa |
 | 能 | néng | có thể (năng lực/điều kiện) |
 | 到 | dào | đến, tới |
-| 医生 | yīshēng | bác sĩ |
-| 大 | dà | to, lớn |
-| 多 | duō | nhiều |
-| 工作 | gōngzuò | công việc, làm việc |
+| 午饭 | wǔfàn | cơm trưa |
 | 饭 | fàn | cơm, bữa ăn |
+| 大 | dà | to, lớn |
+| 病人 | bìngrén | bệnh nhân |
+| 多 | duō | nhiều |
+| 医生 | yīshēng | bác sĩ |
+| 工作 | gōngzuò | công việc, làm việc |
+
+Danh từ riêng: 胡医生 (Hú yīshēng) — Bác sĩ Hồ.
+
+**23 từ** (đã audit đủ 3 khối 生词 8-2/8-4/8-6).
 
 **语法**
 - 方位词: 上/下/里/外/前/后/外边.
 - 介词"在": kết hợp từ chỉ vị trí, đặt trước động từ, biểu thị nơi diễn ra hành động.
 - 能愿动词"能": biểu thị khả năng/điều kiện/khả năng xảy ra.
 
-> Ghi chú OCR: hộp 生词 gốc (trang 72, mục 8-4) bị mất một phần do ảnh quét; 能/到 được phục hồi từ hội thoại + phần giải thích ngữ pháp "能愿动词能" cùng trang — độ tin cậy cao nhưng không phải chụp trực tiếp từ hộp từ vựng.
+> **生词 — ĐÃ SỬA 2026-09-09** (đối chiếu trực tiếp trang 055/057/059 sách gốc = index 69/71/73
+> file PDF, bằng vision). Bản OCR cũ chỉ ghi 20 từ, bỏ sót 3 từ do ảnh quét mất một phần hộp
+> 生词 8-4/8-6: **学校, 书店, 病人**. Đúng là **23 từ**.
 
 ---
 
