@@ -65,7 +65,13 @@ class WorksheetBuilder:
         f.bold = bold
         f.italic = italic
         f.color.rgb = self._rgb(color)
-        f.name = self.theme["cjk_font"] if cjk else self.theme["text_font"]
+        # ascii/hAnsi luôn dùng text_font (Latin) — kể cả khi cjk=True, vì 1
+        # run có thể lẫn chữ Việt + chữ Hán (vd tiêu đề "Phần 2 (听后回答)").
+        # Nếu gán cả ascii lẫn eastAsia = cjk_font, Word áp font CJK luôn cho
+        # phần chữ Việt có dấu -> lệch kerning, trông như "Phầ n" (2026-08-23,
+        # phát hiện ở buổi 17 HSK2 — bug có sẵn từ trước, ảnh hưởng mọi buổi
+        # có tiêu đề/instructions lẫn chữ Việt+Hán trong cùng 1 run).
+        f.name = self.theme["text_font"]
         if cjk:
             run._element.rPr.rFonts.set(qn("w:eastAsia"), self.theme["cjk_font"])
         return run
@@ -319,7 +325,11 @@ class WorksheetBuilder:
         title = block.get("title", "Nói")
         self._block_header(doc, idx, "🗣 %s (%s)" % (title, part),
                            block.get("instructions"))
-        repeat = part == "听后重复"
+        # 听后重复/听后回答 (2026-08-23, buổi 17 HSK2 — HSKK sơ cấp): cả 2 phần
+        # đều thuần nghe (thí sinh không đọc được text lúc thi thật) -> ẩn
+        # script như nhau, chỉ khác câu placeholder hiển thị.
+        hide_script = {"听后重复": "(nghe audio rồi nhắc lại)",
+                       "听后回答": "(nghe audio rồi trả lời)"}.get(part)
         for n, it in enumerate(block.get("items", []), start=1):
             p = doc.add_paragraph()
             self._run(p, "%d) " % n, 12, color="accent", bold=True)
@@ -328,10 +338,12 @@ class WorksheetBuilder:
                 self._run(p, "🔊 ", 11, color="accent")
                 self._audio_link(p, link, link)
                 self._run(p, "   ", 11)
-            if repeat:
-                # target sentence is the listening stimulus -> hide it
-                self._run(p, "(nghe audio rồi nhắc lại)", 12, color="muted",
-                          italic=True)
+            if hide_script:
+                # target sentence is the listening stimulus -> hide it; mô tả
+                # cách làm đã nằm ở instructions của block, không lặp lại mỗi
+                # câu nữa (2026-08-23, feedback buổi 17 HSK2: lặp 15/10 lần
+                # nhìn rối).
+                pass
             else:
                 self._run(p, it.get("script", ""), 13, cjk=True)
             # 回答问题 (2026-08-07): dàn bài gợi mở PHẢI ở worksheet (học viên

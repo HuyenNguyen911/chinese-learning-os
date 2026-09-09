@@ -21,8 +21,10 @@
 - `nghe`: `{ "type":"nghe", "title", "instructions"?,
   "items":[{"script" (chỉ vào đáp án), "q", "options":[str], "answer":"A|B|C",
   "audio"?, "audio_url"?, "src"?}] }`
-- `noi_hskk`: `{ "type":"noi_hskk", "title", "part":"听后重复|回答问题",
-  "instructions"?, "items":[{"script","hint"?,"hint_plus"?,"audio"?}] }`
+- `noi_hskk`: `{ "type":"noi_hskk", "title", "part":"听后重复|听后回答|回答问题",
+  "instructions"?, "items":[{"script","hint"?,"hint_plus"?,"audio"?}] }` —
+  `听后重复` và `听后回答` đều ẩn `script` trên worksheet (thuần nghe, đúng format
+  thi HSKK sơ cấp thật); chỉ `回答问题` mới hiện `script` (câu hỏi mở in trên giấy).
 - `grammar_note`: `{ "type":"grammar_note", "title", "instructions"?,
   "points":[{"pattern","explain"?,"example"?}] }` — hộp giải thích ngữ pháp (chỉ hiển thị).
 - `writing_prompt`: `{ "type":"writing_prompt", "title", "instructions"?,
