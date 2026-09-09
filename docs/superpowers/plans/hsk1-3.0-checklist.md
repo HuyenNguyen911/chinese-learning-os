@@ -14,6 +14,9 @@ chưa build slide/bài tập).
 
 ## Buổi 02 — Chào hỏi & làm quen (L1 + L2)
 
+⚠️ **SỬA 2026-09-09:** L1 audit khớp hoàn toàn (13/13 từ). L2 bản cũ thiếu 2 từ — **不** và
+**对不起** (khối 2-4, trang 007) — đối chiếu trực tiếp trang 001-009 sách gốc bằng vision.
+
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
 | 你好 | nǐ hǎo | xin chào | ⏳ chưa soạn |
@@ -35,7 +38,9 @@ chưa build slide/bài tập).
 | 什么 | shénme | gì, cái gì | ⏳ chưa soạn |
 | 名字 | míngzi | tên | ⏳ chưa soạn |
 | 我 | wǒ | tôi | ⏳ chưa soạn |
+| 不 | bù | không, chẳng (phó từ phủ định) | ✅ bổ sung 2026-09-09 |
 | 是 | shì | là | ⏳ chưa soạn |
+| 对不起 | duìbuqǐ | xin lỗi | ✅ bổ sung 2026-09-09 |
 | 没关系 | méi guānxi | không sao | ⏳ chưa soạn |
 | 没事儿 | méishìr | không sao, không có gì | ⏳ chưa soạn |
 | 很 | hěn | rất | ⏳ chưa soạn |
@@ -43,7 +48,7 @@ chưa build slide/bài tập).
 | 认识 | rènshi | quen biết | ⏳ chưa soạn |
 | 也 | yě | cũng | ⏳ chưa soạn |
 
-**26 từ**
+**28 từ**
 
 ---
 
@@ -413,7 +418,7 @@ Mở rộng ngoài sách (dạy ở Phần 2 của buổi): 越南, 美国, 英�
 | Buổi | Chủ đề | 课 sách | Số 生词 (distinct, sau dedup) | Trạng thái |
 |---|---|---|---|---|
 | 01 | Ngữ âm | — | 0 (no vocab) | ✅ đã có |
-| 02 | Chào hỏi & làm quen | L1+L2 | 26 | ⏳ chưa soạn |
+| 02 | Chào hỏi & làm quen | L1+L2 | 28 | ⏳ chưa soạn |
 | 03 | Quốc tịch & bản thân | L3 | 11 (+12 mở rộng: 7 quốc gia, 男朋友, 4 cấp học) | ✅ đã có |
 | 04 | Gia đình | L4 | 16 | ⏳ chưa soạn |
 | 05 | Số đếm & số điện thoại | L6 | 18 | ⏳ chưa soạn |
@@ -427,11 +432,15 @@ Mở rộng ngoài sách (dạy ở Phần 2 của buổi): 越南, 美国, 英�
 | 13 | Đại học & đang làm · 呢 | L11 | 21 | ⏳ chưa soạn |
 | 14 | Thời tiết & sức khỏe | L12 | 19 | ⏳ chưa soạn |
 | 15 | Đi lại & du lịch · hẹn gặp | L15 | 16 | ⏳ chưa soạn |
-| 16 | Ôn tập tổng hợp | — | 0 (ôn lại ~243) | ⏳ chưa soạn |
-| **Tổng** | | | **243 distinct** (per-buổi range 11–26) | |
+| 16 | Ôn tập tổng hợp | — | 0 (ôn lại ~245) | ⏳ chưa soạn |
+| **Tổng** | | | **245 distinct** (per-buổi range 11–28) | |
 
-Tổng theo từng 课 sách trước dedup = 247 (khớp book-content §Tổng kết). Trừ 4 từ trùng lặp
-xuất hiện lại ở 课 khác (xem mục dưới) → **243 từ phân biệt** trong checklist này.
+Tổng theo từng 课 sách trước dedup = 249 (247 gốc + 2 từ audit buổi 02 bổ sung 2026-09-09: 不,
+对不起). Trừ 4 từ trùng lặp xuất hiện lại ở 课 khác (xem mục dưới) → **245 từ phân biệt** trong
+checklist này.
+
+> Số 249/245 vẫn CHƯA phải con số cuối — mới chỉ audit xong buổi 01, 02, 03. Các buổi 04-15
+> chưa đối chiếu bằng vision, rất có thể còn thiếu từ tương tự (xem cảnh báo dưới).
 
 ---
 
@@ -464,19 +473,20 @@ book-content để tránh đếm trùng/đếm nhầm:
 | Thời tiết | 热 | Có | Buổi 14 (đã tính) |
 
 Kết luận: 2/8 từ tái dùng dự kiến (本, 下雪) không xác nhận được trong book-content — không
-đưa vào checklist 243 từ để tránh bịa đặt; cần đối chiếu `raw/新HSK1教程3.0.pdf` (hoặc bản
+đưa vào checklist 245 từ để tránh bịa đặt; cần đối chiếu `raw/新HSK1教程3.0.pdf` (hoặc bản
 OCR .ocr.txt) khi build buổi 04/10 (本) và buổi 14 (下雪) để xác nhận có bị OCR bỏ sót không,
 hay đúng là sách không dạy từ này ở L1-15 (thuộc phần mở rộng ngoài 300, theo spec §5).
 
 ---
 
-## Chênh lệch 243 vs. mốc ~300
+## Chênh lệch 245 vs. mốc ~300
 
-Tổng distinct trong checklist này = **243** (< mốc ~300 của HSK1 3.0 final). Đây là chênh lệch
+Tổng distinct trong checklist này = **245** (< mốc ~300 của HSK1 3.0 final; số này còn tăng
+tiếp khi audit xong buổi 04-15 — xem cảnh báo ở mục "Bảng tổng hợp"). Đây là chênh lệch
 **đã biết trước**, không phải lỗi remap — theo `newhsk1-book-content.md` §Tổng kết, bản thân
-sách chỉ bóc được ≈247 生词 (đã nêu rõ "词汇匹配新大纲300词，略有扩展" — sách tự nhận nhắm ~300
-nhưng nội dung 15 课 in ra chỉ chạm ≈247, chưa kể workbook "学练手册" đi kèm có thể bổ sung
-thêm từ ngoài 15 课 chính). 243 = 247 trừ 4 từ trùng lặp giữa các 课 (mục trên).
+sách chỉ bóc được ≈249 生词 (đã nêu rõ "词汇匹配新大纲300词，略有扩展" — sách tự nhận nhắm ~300
+nhưng nội dung 15 课 in ra chỉ chạm ≈249, chưa kể workbook "学练手册" đi kèm có thể bổ sung
+thêm từ ngoài 15 课 chính). 245 = 249 trừ 4 từ trùng lặp giữa các 课 (mục trên).
 
 **Buổi có 生词 bị flag "OCR sót, cần đối chiếu bản gốc"** (theo Ghi chú OCR trong
 `newhsk1-book-content.md`):

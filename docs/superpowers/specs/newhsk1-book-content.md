@@ -11,7 +11,10 @@ không dùng — chỉ dùng để đối chiếu ngữ cảnh.
 
 课文: Chào hỏi ngày khai giảng — học viên chào AI trợ giảng Xiaoyu và giữa giáo viên/học sinh.
 
-**生词**
+**生词 — ĐÃ AUDIT 2026-09-09 (đối chiếu trực tiếp trang 001/002/003 sách gốc bằng vision)**
+
+✅ Khớp hoàn toàn với bản bóc trước — đủ 13 từ, không thiếu/thừa. Khối 生词: 1-2 (你好, 王老师) ·
+1-4 (大家, 好, 学生, 们, 老师, 您, 你们) · 1-6 (谢谢, 不客气, 同学, 再见).
 
 | 汉字 | Pinyin | Nghĩa Việt |
 |---|---|---|
@@ -40,23 +43,28 @@ không dùng — chỉ dùng để đối chiếu ngữ cảnh.
 
 课文: Làm quen, hỏi tên giữa các nhân vật trên sân trường; xin lỗi khi nhận nhầm người.
 
-**生词**
+**生词 — ĐÃ SỬA 2026-09-09 (đối chiếu trực tiếp trang 005/006/007/009 sách gốc bằng vision)**
 
-| 汉字 | Pinyin | Nghĩa Việt |
-|---|---|---|
-| 请问 | qǐngwèn | xin hỏi |
-| 你 | nǐ | bạn (số ít) |
-| 叫 | jiào | tên là, gọi là |
-| 什么 | shénme | gì, cái gì |
-| 名字 | míngzi | tên |
-| 我 | wǒ | tôi |
-| 是 | shì | là |
-| 没关系 | méi guānxi | không sao |
-| 没事儿 | méishìr | không sao, không có gì |
-| 很 | hěn | rất |
-| 高兴 | gāoxìng | vui, mừng |
-| 认识 | rènshi | quen biết |
-| 也 | yě | cũng |
+⚠️ Bản trước thiếu 2/15 từ: **不 (bù)** và **对不起 (duìbuqǐ)** — cả hai nằm trong khối 2-4
+(trang 007), cùng khối với 是/没关系/没事 đã có sẵn, nhưng bị bỏ sót. Đúng là **15 từ**:
+
+| 汉字 | Pinyin | Nghĩa Việt | Khối |
+|---|---|---|---|
+| 请问 | qǐngwèn | xin hỏi | 2-2 |
+| 你 | nǐ | bạn (số ít) | 2-2 |
+| 叫 | jiào | tên là, gọi là | 2-2 |
+| 什么 | shénme | gì, cái gì | 2-2 |
+| 名字 | míngzi | tên | 2-2 |
+| 我 | wǒ | tôi | 2-2 |
+| 不 | bù | không, chẳng (phó từ phủ định) | 2-4 |
+| 是 | shì | là | 2-4 |
+| 对不起 | duìbuqǐ | xin lỗi | 2-4 |
+| 没关系 | méi guānxi | không sao | 2-4 |
+| 没事儿 | méishìr | không sao, không có gì | 2-4 |
+| 很 | hěn | rất | 2-6 |
+| 高兴 | gāoxìng | vui, mừng | 2-6 |
+| 认识 | rènshi | quen biết | 2-6 |
+| 也 | yě | cũng | 2-6 |
 
 **语法**
 - 汉语的基本语序 (Trật tự từ cơ bản): Chủ ngữ + Vị ngữ + Tân ngữ. VD: 我(CN) 叫(VN) 陈天中(TN).
@@ -523,19 +531,21 @@ ngữ liệu cho điểm ngữ pháp 用"吗"的是非问句.
 
 ## Tổng kết
 
-**Tổng số 生词 phân biệt trong 15 bài: ≈ 247 từ** (đếm theo lần xuất hiện đầu tiên trong hộp
-"生词 New Words" của từng bài; loại bỏ các lần dùng lại từ đã học ở bài trước). Con số này
-khớp sát với công bố ở phần "使用说明" của chính sách (trang 7): **"词汇匹配新大纲规定的
-300词，略有扩展"** — tức sách nhắm tới ~300 từ (bản HSK 3.0 "2025 final", KHÔNG phải mốc
-500 từ của bản dự thảo 2021). Chênh lệch 247 vs. 300 nhiều khả năng do: (a) một vài mục
-生词 bị OCR làm mất ở các trang ảnh-hộp không rõ (đã đánh dấu ở Bài 8, Bài 13), và (b) phần
-"学练手册" (workbook) đi kèm có thể bổ sung thêm từ ngoài 15 bài chính.
+**Tổng số 生词 phân biệt trong 15 bài: ≈ 260 từ** (cập nhật 2026-09-09 sau audit vision Bài 1-3;
+số gốc ≈247 khi đếm theo lần xuất hiện đầu tiên trong hộp "生词 New Words" của từng bài, loại
+bỏ các lần dùng lại từ đã học ở bài trước — nhưng bản gốc bị OCR/bóc sót khối 生词 cuối bài ở
+nhiều nơi, xem cột "Số 生词" bên dưới đã sửa cho Bài 2/3). Con số ~247-260 vẫn khớp hướng với
+công bố ở phần "使用说明" của chính sách (trang 7): **"词汇匹配新大纲规定的300词，略有扩展"**
+— tức sách nhắm tới ~300 từ (bản HSK 3.0 "2025 final", KHÔNG phải mốc 500 từ của bản dự thảo
+2021). Chênh lệch vs. 300 nhiều khả năng do: (a) các bài **chưa audit** (4-15, trừ 3 đã sửa)
+vẫn có thể còn thiếu 生词 bị OCR/bóc sót giống Bài 2/3 (đã đánh dấu nghi vấn thêm ở Bài 8, 13),
+và (b) phần "学练手册" (workbook) đi kèm có thể bổ sung thêm từ ngoài 15 bài chính.
 
 | Bài | Chủ đề | Số 生词 |
 |---|---|---|
-| 1 | Chào hỏi AI Xiaoyu | 13 |
-| 2 | Xưng tên, làm quen | 13 |
-| 3 | Quốc tịch | 11 |
+| 1 | Chào hỏi AI Xiaoyu | 13 (audit 2026-09-09, khớp) |
+| 2 | Xưng tên, làm quen | 15 (audit 2026-09-09, +2: 不/对不起) |
+| 3 | Quốc tịch | 22 (audit 2026-09-04, +11) |
 | 4 | Gia đình, con cái | 16 |
 | 5 | Ngày tháng, nghỉ làm | 13 |
 | 6 | Số điện thoại, mua sắm/ăn uống | 18 |
@@ -548,4 +558,4 @@ khớp sát với công bố ở phần "使用说明" của chính sách (trang
 | 13 | Gọi món ăn/uống | 12 |
 | 14 | Đã làm gì, cấp học | 20 |
 | 15 | Du lịch, hẹn gặp sân bay | 16 |
-| **Tổng** | | **≈ 247** |
+| **Tổng** | | **≈ 260** (Bài 4-15 chưa audit, số liệu vẫn có thể đổi) |
