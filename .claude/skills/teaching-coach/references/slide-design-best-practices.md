@@ -27,6 +27,16 @@ Không nhồi chữ — vượt giới hạn thì tách slide, không giảm c�
 | Bài tập luyện tập | 1 dạng bài tập/slide (không trộn điền từ + trắc nghiệm cùng slide) |
 | Tổng kết cuối buổi | 3-5 gạch đầu dòng "hôm nay đã học" |
 
+## 3b. Sắp xếp 生词 theo NHÓM NGHĨA, không cứng theo thứ tự khối trong sách (2026-09-09)
+
+Sách thường liệt kê 生词 theo thứ tự khối xuất hiện trong 课文 (X-2, X-4, X-6…) — đúng
+với mạch đọc hiểu bài khóa, nhưng KHÔNG phải thứ tự tối ưu để dạy/ôn từ vựng. Trước khi
+soạn slide từ vựng, thử nhóm lại các từ theo chủ đề/chức năng ngữ dụng (vd: cụm xưng hô
+đi chung, cụm chào hỏi đi chung, cụm cảm ơn-đáp lễ đi chung, cụm xin lỗi-đáp lễ đi
+chung…) — giúp học viên thấy được các từ liên quan nhau ngay khi học, dễ nhớ theo nhóm
+hơn là nhớ rời rạc theo thứ tự xuất hiện trong sách. Khi đổi thứ tự, vẫn giữ đủ 课文
+nguyên văn theo đúng trình tự gốc của sách (chỉ đổi thứ tự phần 生词, không đổi 课文).
+
 ## 4. Cấu trúc mạch bài học như một lập luận (không phải tập hợp slide rời rạc)
 Vận dụng ý tưởng "situation → complication → resolution" (từ `academic-pptx-skill`) vào bài giảng ngôn ngữ: **tình huống có thật (hội thoại/nhu cầu giao tiếp) → vướng mắc (điểm ngữ pháp/từ vựng chưa biết cách diễn đạt) → giải quyết (dạy cấu trúc mới) → áp dụng lại vào tình huống ban đầu**. Tránh liệt kê ngữ pháp khô khan không có bối cảnh dẫn nhập.
 
@@ -60,9 +70,10 @@ Ngoài các loại slide tĩnh (bảng, thẻ, ảnh+chữ), renderer có 2 lo�
 |---|---|---|
 | Từ vựng cụ thể có ảnh minh hoạ rõ (đồ vật, hoạt động) | `guess` — đoán từ qua ảnh | Buộc học viên chủ động nhớ lại trước khi được cho đáp án, thay vì chỉ nhìn ảnh+chữ cùng lúc như `wordcard` |
 | Ôn tập 1 nhóm từ đã dạy (đầu buổi sau hoặc cuối buổi) | `match` — ghép cặp xáo trộn | Liệt kê bằng `bullets` là hình thức ôn tập yếu nhất (chỉ đọc lại thụ động); ghép cặp buộc nhớ lại chủ động (active recall) |
+| Ôn tập có ảnh, GV tự chấm/hỏi đáp trực tiếp trên lớp | `match_pairs` — nối ảnh-số với từ, 1 slide, KHÔNG tự sinh đáp án | `guess`/`match` luôn tự sinh thêm 1 slide đáp án — thừa và không cần thiết khi GV đã kiểm tra miệng ngay tại lớp |
 
-Không dùng 2 minigame này cho từ trừu tượng/hư từ (không có ảnh minh hoạ được,
-và ghép cặp với khái niệm ngữ pháp dễ gây nhầm lẫn hơn là giúp nhớ) — giữ
+Không dùng 2 minigame `guess`/`match` cho từ trừu tượng/hư từ (không có ảnh minh hoạ
+được, và ghép cặp với khái niệm ngữ pháp dễ gây nhầm lẫn hơn là giúp nhớ) — giữ
 `vocab`/`grammar`/`table` cho các trường hợp đó. Xem schema đầy đủ (`items`,
 `seed`, giới hạn số cặp) trong `pptx/README.md`.
 

@@ -361,6 +361,20 @@ Việt, cảnh Việt Nam, đồ vật/nghề quen thuộc ở Việt Nam) cho c
 **NGOẠI LỆ:** từ vựng là tên quốc gia khác (中国/法国/日本/韩国/德国/美国/英国/泰国/
 澳大利亚…) → dùng địa danh/biểu tượng của chính nước đó, không Việt hoá.
 
+⚠️ **"Ưu tiên Việt Nam" là để THÂN THIỆN, không phải để GIỚI HẠN (2026-09-09,
+Buổi 02 HSK1):** với từ trừu tượng/cử chỉ xã giao (谢谢/对不起/没关系/不客气...), thêm
+"Vietnamese" vào query nhiều lần chỉ ra ảnh sai/lạc đề hoặc mơ hồ (Pexels không có đủ
+ảnh gắn nhãn đúng cử chỉ này theo bối cảnh Việt Nam cụ thể). Nếu thử 2-3 lần với từ khoá
+Việt Nam đều không ra ảnh đúng nghĩa → **bỏ hẳn ràng buộc Việt Nam, tìm rộng ra ảnh quốc
+tế** miễn là rõ nghĩa/rõ cử chỉ; đừng vì giữ đúng quy tắc mặc định mà chấp nhận ảnh sai
+hoặc bỏ cuộc không gắn ảnh cho từ đó.
+
+**Bắt buộc xem lại ảnh bằng mắt trước khi gắn vào slide** (dùng Read trên file ảnh vừa
+tải) — mô tả `query` không đảm bảo ảnh trả về đúng nghĩa (đã xảy ra: query "apologizing
+sorry gesture" ra ảnh người bịt miệng suỵt; query "reassuring okay gesture" ra ảnh cổ vũ
+bóng đá). Ảnh sai/mơ hồ mà đưa vào minigame nối ảnh-từ càng tệ hơn không có ảnh — học
+viên nhìn ảnh không đoán được gán với từ nào.
+
 **Cần API key:** lấy miễn phí tại https://www.pexels.com/api/, rồi đặt biến môi trường
 `PEXELS_API_KEY` trước khi chạy (không commit key vào repo — dự án này đã lưu sẵn trong
 `.claude/settings.local.json` mục `env`, file đó bị gitignore nên an toàn; nếu phiên mới
@@ -562,6 +576,12 @@ cột 汉字 mặc định chỉ 26% bề rộng — đủ cho 1-2 từ nhưng c
 hàng tính theo số dòng 汉字 THẬT cần wrap (dùng `_wrap_lines`), Pinyin/Nghĩa
 được PHÉP hẹp/rớt dòng trước (ưu tiên 汉字 không bao giờ mất chữ).
 
+⚠️ **`word_pair` ảnh quá nhỏ so với cột (2026-09-09, review Buổi 02 HSK1):** `img_side`
+bị ép cứng `min(col_w, 2.1in)` trong khi cột thường rộng 5-6in (2 cột/slide) — ảnh chỉ
+chiếm góc nhỏ giữa nhiều khoảng trống, nhìn "khó coi". Đã tính lại ngân sách chiều cao
+còn lại cho info/ví dụ bên dưới (đủ dư khoảng 1in) rồi nâng cap lên `2.5in` — vẫn an
+toàn không tràn/đè chữ ví dụ với nghĩa dài 1-2 dòng.
+
 ⚠️ **`vocab` chế độ THẺ (`_slide_vocab_cards`) — cột ví dụ rớt dòng khi không có
 `image` (2026-08-12, Buổi 15 HSK2):** cột thẻ từ (bên phải, chỉ chứa 1-2 chữ Hán
 to + pinyin + nghĩa) trước đây LUÔN chiếm cố định `min(3.8in, 32%)` bất kể có
@@ -586,6 +606,13 @@ cột), `natural`/scale tính theo cột CAO NHẤT thay vì tổng tất cả l
 đọc trực quan hơn hội thoại 2 người dạng bong bóng trái/phải, đặc biệt hội
 thoại kiểu gọi điện xen giữa 2 nơi. User muốn thiết kế lại layout này ở 1
 session riêng sau.
+
+**Workaround thực tế trong lúc chưa sửa gốc (2026-09-09, Buổi 02 HSK1):** thay vì chấp
+nhận swimlane xấu, **tách hội thoại ≥3 người thành nhiều slide `dialogue` 2 người liên
+tiếp**, giữ đúng thứ tự lượt gốc trong sách (vd 4 lượt thoại A→B→C→B tách thành slide
+"A↔B" rồi slide "C↔B"). Chỉ áp dụng khi các lượt thực sự tách được thành từng cặp liền
+kề không phá vỡ mạch hội thoại — nếu 3 người thực sự nói xen kẽ nhau không tách được
+gọn thì đành chấp nhận swimlane.
 
 ⚠️ **Bullet "•/◦" trơ trọi xuất hiện ở đoạn văn thứ 2+ trong textbox tự do
 (2026-08-10):** mọi `_slide_*` tạo nhiều đoạn văn qua `tf.add_paragraph()`
@@ -765,6 +792,14 @@ loại nội dung để tránh mọi buổi giống hệt nhau về hình thức
 | Từ trừu tượng (hư từ, khái niệm) | `vocab` bảng | Không đổi — ảnh không giúp gì cho loại này |
 | Ôn tập 1 nhóm từ đã dạy (cuối buổi/đầu buổi sau) | `bullets` liệt kê | Nên đổi sang `match` — ôn tập bằng liệt kê thụ động là hình thức yếu nhất để ghi nhớ, ghép cặp buộc học viên nhớ lại chủ động |
 | Ngữ pháp có ≥2 cấu trúc dễ nhầm | `table` so sánh | Không đổi — `guess`/`match` không hợp với nội dung trừu tượng |
+
+**Chọn `guess`/`match` (tự sinh thêm slide ĐÁP ÁN) hay `match_pairs` (1 slide, KHÔNG có
+đáp án) — theo cách GV kiểm tra (2026-09-09):** nếu GV muốn tự chấm/hỏi đáp trực tiếp
+trên lớp (không cần deck lộ sẵn đáp án) → dùng `match_pairs` (ảnh+từ xáo trộn cùng 1
+slide, GV kiểm miệng). Nếu muốn deck tự chốt đáp án ngay sau khi học viên đoán/ghép
+xong (không có GV live-check, hoặc học viên tự học) → `guess`/`match` (tự sinh thêm 1
+slide đáp án). Đừng mặc định dùng `guess`/`match` chỉ vì quen tay — hỏi rõ ngữ cảnh dùng
+trước khi chọn.
 
 Xem thêm mục "Nguyên tắc trình bày" trong `slide-design-best-practices.md`
 (đóng gói trong `chinese-teaching.skill`) để biết đủ bảng map nội dung → hình

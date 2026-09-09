@@ -847,7 +847,7 @@ class DeckBuilder:
             col_left = MARGIN + i * (col_w + gap)
             cur_top = top
             if w.get("image"):
-                img_side = min(col_w, Inches(2.1))
+                img_side = min(col_w, Inches(2.5))
                 img_left = col_left + (col_w - img_side) // 2
                 self._place_image(slide, w["image"], img_left, cur_top,
                                   img_side, img_side)
