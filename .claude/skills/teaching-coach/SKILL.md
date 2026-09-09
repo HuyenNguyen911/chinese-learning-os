@@ -138,6 +138,18 @@ Trước khi chia slide, đọc `references/slide-design-best-practices.md` — 
      - Ép đọc đúng tuyệt đối (多音字/儿化) cần Azure Speech + SSML `<phoneme>` (có API key) — để sau, edge-tts free không làm được.
    - **DOCX** (cho phần luyện tập mang đi làm): trên máy local chưa có helper riêng — tạo trực tiếp bằng thư viện `python-docx` (đã cài trong Python312), hoặc trình bày phần bài tập ngay trong chat. Gồm phần bài tập (điền từ, sắp xếp câu, dịch, trắc nghiệm) bám đúng điểm ngữ pháp/từ vựng của bài, và nên có phần đáp án riêng ở cuối file hoặc file thứ 2. (Đường dẫn cloud `/mnt/skills/public/docx/` không tồn tại local.)
    - Sau khi tạo xong file, **báo rõ đường dẫn file** `.pptx`/`.docx` cho học viên (công cụ `present_files` chỉ có trên cloud, không dùng ở local).
+6. **Trước khi báo hoàn thành pptx (bắt buộc, 2026-09-09 — review buổi 05 HSK1):**
+   - **Copy asset dùng chung khi tạo buổi mới**: các icon/ảnh lặp lại giữa mọi buổi (vd
+     `assets/icons/icon_target.png` cho slide mục tiêu) KHÔNG tự có sẵn ở buổi mới — phải
+     tự copy từ 1 buổi trước đó (`output/hskN/buoi<X-1>_.../slide/assets/icons/`) sang buổi
+     đang soạn. JSON trỏ đúng path không có nghĩa là file đã tồn tại.
+   - **Quét lại toàn bộ field `image`** trong JSON (kể cả lồng sâu trong `words[]`,
+     `images[]` của `match_pairs`) và kiểm file thật sự tồn tại trên đĩa — thiếu 1 file vẫn
+     build "thành công" (renderer tự vẽ khung xám placeholder, không báo lỗi dừng build).
+   - **Soát từng ảnh minh hoạ bằng mắt** (Read tool) trước khi giao — không tin query đã đặt
+     cho `fetch_images.py`: kiểm khớp đúng nghĩa từ + có yếu tố Việt Nam rõ ràng chưa (xem
+     `references/slide-design-best-practices.md` mục 8 để biết cách xử lý khi không tìm được
+     ảnh VN phù hợp).
 
 **Output của giai đoạn B**: bài giảng ở dạng sẵn sàng để học — trực quan, có cấu trúc rõ, đúng định dạng học viên cần.
 

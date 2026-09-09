@@ -13,8 +13,18 @@ không cần duyệt) tại https://www.pexels.com/api/ — đặt vào biến m
 ("Vietnamese ...", tên địa danh Việt) ngay từ lần fetch đầu. NGOẠI LỆ: từ vựng là tên
 quốc gia khác thì dùng địa danh của chính nước đó.
 
+⚠️ Script LUÔN lấy KẾT QUẢ ĐẦU TIÊN Pexels trả về mà tải được (không phải "ảnh tốt nhất"
+qua so sánh) — dù query đã ghi rõ bối cảnh VN, kết quả đầu vẫn có thể chung chung/không
+đúng ý, hoặc 2 query khác nhau cùng match về 1 tấm ảnh hot nhất (ra ảnh TRÙNG cho 2 từ
+khác nhau). Luôn Read lại ảnh bằng mắt sau khi tải xong, đừng tin query string
+(xem `references/slide-design-best-practices.md` mục 8).
+
+⚠️ CACHE theo tên file (`dest.exists()`): nếu ảnh đã tải (dù SAI/không đạt) và muốn tải lại
+bằng query khác, PHẢI tự xoá file `<out_dir>/<name>.jpg` trước khi chạy lại — nếu không
+script sẽ in "CACHED" và bỏ qua, giữ nguyên ảnh cũ dù manifest đã đổi query.
+
 Nhận 1 manifest JSON: {"out_dir": "...", "images": [{"name","query"}, ...]}
-Với mỗi mục: search Pexels, chọn ảnh phù hợp, tải về <out_dir>/<name>.jpg,
+Với mỗi mục: search Pexels, tải về <out_dir>/<name>.jpg kết quả đầu tiên tải được,
 ghi attribution vào <out_dir>/credits.json.
 
 Chạy:

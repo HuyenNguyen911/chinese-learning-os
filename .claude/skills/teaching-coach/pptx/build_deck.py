@@ -778,22 +778,65 @@ class DeckBuilder:
         top = self._content_top()
         area_h = self._content_area_h()
         content_w = SLIDE_W - 2 * MARGIN
-        gap = Inches(0.5)
-        left_w = int(content_w * 0.42)
-        right_left = MARGIN + left_w + gap
-        right_w = SLIDE_W - MARGIN - right_left
-
-        # --- Cột trái: ảnh vuông trên, 汉字/pinyin/nghĩa/từ loại dưới -------
         has_img = bool(s.get("image"))
-        if has_img:
-            img_side = min(left_w, Inches(3.4))
+        # `image_pos` (2026-09-09, review buổi 05 HSK1: "linh hoạt vị trí đặt
+        # ảnh, không cố định 1 kiểu — cố định làm hạn chế hiển thị"): mỗi
+        # slide tự chọn layout phù hợp với nội dung của chính nó thay vì ép
+        # tất cả wordcard theo đúng 1 khuôn. "left"/"right" = ảnh đứng thành
+        # dải riêng cao bằng area_h, chữ lui về cột hẹp cạnh ảnh (ảnh to nhất,
+        # hợp khi nghĩa/ví dụ ngắn); "top" (mặc định cũ) = ảnh nhỏ hơn nằm
+        # trên, 汉字/pinyin/nghĩa full-width bên dưới (hợp khi nghĩa dài/từ
+        # loại phức tạp cần cột rộng, không cần ảnh quá to).
+        image_pos = s.get("image_pos", "top" if not has_img else "left")
+
+        if has_img and image_pos in ("left", "right"):
+            gap1 = Inches(0.3); gap2 = Inches(0.5)
+            info_w = Inches(2.3)
+            right_w = Inches(4.8)
+            img_w = content_w - gap1 - info_w - gap2 - right_w
+            img_side = min(img_w, area_h)
+            if image_pos == "left":
+                img_left = MARGIN
+                info_left = MARGIN + img_w + gap1
+            else:  # "right": ảnh nằm cuối, info/ví dụ dồn về đầu
+                info_left = MARGIN
+                img_left = MARGIN + content_w - img_w
+            img_top = top
+            self._place_image(slide, s["image"], img_left, img_top, img_side, img_side)
+            right_left = info_left + info_w + gap2 if image_pos == "left" \
+                else info_left + info_w + gap2
+        elif has_img:  # image_pos == "top": layout dọc gốc (ảnh nhỏ hơn)
+            left_w = int(content_w * 0.42)
+            min_text_h = self._line_h(54)
+            if s.get("py"):
+                min_text_h += Pt(6) + self._line_h(22)
+            if s.get("vn"):
+                min_text_h += Pt(4) + self._wrap_lines(
+                    s["vn"], left_w, 18, cjk=False) * self._line_h(18)
+            min_text_h = int(min_text_h + Pt(16))
+            budget_h = area_h - min_text_h - Inches(0.15)
+            img_side = min(left_w, Inches(3.6), max(Inches(2.2), budget_h))
             img_left = MARGIN + (left_w - img_side) // 2
             self._place_image(slide, s["image"], img_left, top, img_side, img_side)
-            info_top = top + img_side + Inches(0.15)
+            info_left = MARGIN
+            info_w = left_w
+            info_top_override = top + img_side + Inches(0.15)
+            gap = Inches(0.5)
+            right_w = SLIDE_W - MARGIN - (MARGIN + info_w + gap)
+            right_left = MARGIN + info_w + gap
         else:
-            info_top = top
-        info_h = top + area_h - info_top
-        box, tf = self._textbox(slide, MARGIN, info_top, left_w, info_h,
+            gap = Inches(0.5)
+            info_w = int(content_w * 0.42)
+            right_w = SLIDE_W - MARGIN - (MARGIN + info_w + gap)
+            info_left = MARGIN
+            right_left = MARGIN + info_w + gap
+
+        text_top = top
+        text_h = area_h
+        if has_img and image_pos == "top":
+            text_top = info_top_override
+            text_h = top + area_h - info_top_override
+        box, tf = self._textbox(slide, info_left, text_top, info_w, text_h,
                                 anchor=MSO_ANCHOR.MIDDLE)
         p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
         self._set_run(p.add_run(), s.get("hz", ""), 54, color="ink", bold=True, cjk=True)
@@ -843,28 +886,62 @@ class DeckBuilder:
         gap = Inches(0.6)
         col_w = int((content_w - gap * (n - 1)) / n)
 
+        # Ảnh có thể đặt CẠNH khối chữ (trái/phải, ảnh to hơn) hoặc TRÊN khối
+        # chữ (ảnh nhỏ hơn, chữ full-width) — chọn theo `image_pos` từng từ
+        # (2026-09-09, review buổi 05 HSK1: "linh hoạt vị trí đặt ảnh, không
+        # cố định 1 kiểu — cố định làm hạn chế hiển thị"). Mặc định "left"
+        # (ảnh cao bằng area_h, không còn bó buộc bởi chiều cao chữ bên
+        # dưới như kiểu xếp dọc cũ) — dùng "top" khi nghĩa/ví dụ dài cần cột
+        # rộng full col_w hơn là ảnh to.
+        TEXT_COL_W = Inches(2.7)
+        INNER_GAP = Inches(0.25)
         for i, w in enumerate(words):
             col_left = MARGIN + i * (col_w + gap)
-            cur_top = top
-            if w.get("image"):
-                img_side = min(col_w, Inches(2.5))
-                img_left = col_left + (col_w - img_side) // 2
-                self._place_image(slide, w["image"], img_left, cur_top,
+            has_img = bool(w.get("image"))
+            image_pos = w.get("image_pos", "left")
+            top_stack = False
+            if has_img and image_pos in ("left", "right"):
+                text_w = min(col_w - INNER_GAP - Inches(1.4), TEXT_COL_W)
+                img_w = col_w - INNER_GAP - text_w
+                img_side = min(img_w, area_h)
+                # Căn TOP trùng với khối chữ bên cạnh (không căn giữa theo
+                # area_h) — 2026-09-09, review buổi 05 HSK1: "thấy cái cao
+                # cái thấp nhìn ghét" khi ảnh căn giữa còn chữ neo TOP, lệch
+                # đỉnh nhau. Giờ cả 2 cùng bắt đầu từ `top`, luôn ngang hàng.
+                img_top = top
+                if image_pos == "left":
+                    img_left = col_left
+                    text_left = col_left + img_w + INNER_GAP
+                else:  # "right"
+                    img_left = col_left + col_w - img_w
+                    text_left = col_left
+                self._place_image(slide, w["image"], img_left, img_top,
                                   img_side, img_side)
-                cur_top = cur_top + img_side + Inches(0.12)
+            elif has_img:  # image_pos == "top": ảnh nhỏ hơn nằm trên, full-width
+                top_stack = True
+                text_w = col_w
+                text_left = col_left
+                img_side = min(col_w, Inches(2.6))
+                img_left = col_left + (col_w - img_side) // 2
+                self._place_image(slide, w["image"], img_left, top,
+                                  img_side, img_side)
+            else:
+                text_w = col_w
+                text_left = col_left
 
-            # Chiều cao khối 汉字/pinyin/nghĩa tính THEO NỘI DUNG THẬT thay vì
-            # cố định 1.3in (2026-09-08): 40pt 汉字 + pinyin + nghĩa cao hơn
-            # 1.3in nên khung ví dụ bên dưới bị chồm lên, chữ dán sát nhau
-            # (trước đây nhãn "例句" che bớt nên chưa lộ).
+            # Chiều cao khối 汉字/pinyin/nghĩa tính THEO NỘI DUNG THẬT (giữ
+            # nguyên nguyên tắc cũ, 2026-09-08) — nay dùng text_w (hẹp hơn
+            # col_w khi có ảnh) để wrap đúng bề rộng thật của cột chữ.
             info_h = self._line_h(40)
             if w.get("py"):
                 info_h += Pt(4) + self._line_h(18)
             if w.get("vn"):
                 info_h += Pt(3) + self._wrap_lines(
-                    w["vn"], col_w, 15, cjk=False) * self._line_h(15)
+                    w["vn"], text_w, 15, cjk=False) * self._line_h(15)
             info_h = int(info_h + Pt(10))          # đệm dưới
-            box, tf = self._textbox(slide, col_left, cur_top, col_w, info_h,
+
+            cur_top = top + img_side + Inches(0.12) if top_stack else top
+            box, tf = self._textbox(slide, text_left, cur_top, text_w, info_h,
                                     anchor=MSO_ANCHOR.TOP)
             p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
             self._set_run(p.add_run(), w.get("hz", ""), 40, color="ink",
@@ -885,10 +962,12 @@ class DeckBuilder:
 
             ex = w.get("example")
             if ex:
-                # giãn thêm 1 khoảng rõ ràng giữa nghĩa và câu ví dụ
+                # giãn thêm 1 khoảng rõ ràng giữa nghĩa và câu ví dụ — vẫn
+                # còn TRỌN phần area_h còn lại vì không phải chia sẻ chỗ với
+                # ảnh (ảnh đã đứng riêng 1 dải bên cạnh).
                 cur_top = cur_top + Inches(0.16)
                 ex_h = top + area_h - cur_top
-                ebox, etf = self._textbox(slide, col_left, cur_top, col_w, ex_h,
+                ebox, etf = self._textbox(slide, text_left, cur_top, text_w, ex_h,
                                           anchor=MSO_ANCHOR.TOP)
                 # Bỏ nhãn "例句" (2026-09-08) — câu ví dụ đứng thẳng, không nhãn.
                 p2 = etf.paragraphs[0]; p2.alignment = PP_ALIGN.CENTER
@@ -1367,12 +1446,96 @@ class DeckBuilder:
         # >2 người nói thật (vd 王老师/小语/学生们): ép vào 2 cột trái/phải làm
         # 2 người "phe phải" dồn chung 1 cột, không biết ai đang nói + để
         # nhiều khoảng trắng giữa 2 cột trông như 2 hội thoại tách rời, RẤT
-        # khó đọc (review buổi 02, 2 lần). Chuyển sang danh sách 1 CỘT, đọc
-        # tuần tự trên→dưới như kịch bản — luôn rõ ràng bất kể bao nhiêu người.
-        if len(uniq_speakers) > 2:
+        # khó đọc (review buổi 02, 2 lần). Chuyển sang swimlane (1 cột/người,
+        # `_dialogue_script`) — luôn rõ ràng ai đang nói bất kể bao nhiêu người.
+        # ⚠️ Swimlane xếp CỘT theo người nói NHƯNG mỗi cột có timeline Y ĐỘC
+        # LẬP riêng — nên 2 lượt liền nhau của 2 người khác nhau có thể rơi
+        # vào CÙNG hàng ngang, trông như nói đồng thời dù đã đánh số thứ tự
+        # (review buổi 05 HSK1, hội thoại 4 người: "ngang hàng khó coi").
+        # `layout: "column"` (khai rõ trong JSON) dùng `_dialogue_column`:
+        # VẪN xếp theo cột riêng từng người (để nhận diện ai nói qua vị trí
+        # + màu) nhưng dùng 1 con trỏ Y DÙNG CHUNG cho mọi cột — lượt sau
+        # LUÔN nằm thấp hơn lượt trước bất kể đổi cột, nên thứ tự đọc
+        # trên→dưới luôn đúng 100% (fix tiếp sau khi user xác nhận đã đúng
+        # thứ tự nhưng muốn giữ lại cách chia cột theo nhân vật).
+        if s.get("layout") == "column":
+            self._dialogue_column(slide, turns, top, uniq_speakers, txt_left, txt_w)
+        elif len(uniq_speakers) > 2:
             self._dialogue_script(slide, turns, top, uniq_speakers, txt_left, txt_w)
         else:
             self._dialogue_bubbles(slide, turns, top, txt_left, txt_w)
+
+    def _dialogue_column(self, slide, turns, top, uniq_speakers, txt_left=None, txt_w=None):
+        # Mỗi người nói 1 CỘT riêng (như swimlane) NHƯNG dùng 1 con trỏ Y
+        # DÙNG CHUNG cho mọi cột (không phải timeline riêng từng cột) — lượt
+        # thoại thứ N luôn nằm thấp hơn lượt N-1 bất kể đổi cột, nên vừa
+        # nhận diện được ai nói (vị trí cột + màu) vừa không bao giờ có 2
+        # lượt "ngang hàng" gây hiểu lầm nói đồng thời.
+        if txt_left is None:
+            txt_left, txt_w = MARGIN, SLIDE_W - 2 * MARGIN
+        n_spk = max(1, len(uniq_speakers))
+        col_gap = Inches(0.25)
+        col_w = int((txt_w - col_gap * (n_spk - 1)) / n_spk)
+        col_x = {sp: int(txt_left + i * (col_w + col_gap)) for i, sp in enumerate(uniq_speakers)}
+        palette = ["F7E4E1", "E4EEF7", "FBF0D9", "E7F3E8"]
+        spk_color = {sp: palette[i % len(palette)] for i, sp in enumerate(uniq_speakers)}
+
+        header_h = int(Inches(0.4))
+        for i, sp in enumerate(uniq_speakers):
+            hdr = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
+                                        col_x[sp], int(top), col_w, header_h)
+            hdr.fill.solid(); hdr.fill.fore_color.rgb = RGBColor.from_string(spk_color[sp])
+            hdr.line.color.rgb = self._rgb("accent"); hdr.line.width = Pt(0.75)
+            hdr.shadow.inherit = False
+            tf = hdr.text_frame; tf.word_wrap = True
+            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+            self._set_run(p.add_run(), self._speaker_icon(sp) + " " + sp, 14,
+                          color="ink", bold=True, cjk=True)
+        body_top = int(top) + header_h + int(Inches(0.10))
+
+        def nlines(t):
+            w = col_w
+            n_ = self._wrap_lines(t.get("hz", ""), w - Pt(20), 16, cjk=True, bold=True)
+            if t.get("py"):
+                n_ += self._wrap_lines(t["py"], w - Pt(20), 11, cjk=False)
+            if t.get("vn"):
+                n_ += self._wrap_lines(t["vn"], w - Pt(20), 10, cjk=False)
+            return n_
+
+        gap0 = int(Inches(0.10)); pad0 = int(Inches(0.14)); line0 = int(Inches(0.30))
+        avail_h = int(SLIDE_H - body_top - Inches(0.30))
+        natural = sum(line0 * nlines(t) + pad0 for t in turns) + gap0 * (len(turns) - 1)
+        scale = min(1.0, avail_h / natural) if natural else 1.0
+        line_h = int(line0 * scale); pad = int(pad0 * scale); gap = int(gap0 * scale)
+        hz_sz = max(12, int(16 * scale)); py_sz = max(9, int(11 * scale))
+        vn_sz = max(8, int(10 * scale))
+
+        y = body_top
+        for turn_no, t in enumerate(turns, 1):
+            spk = t.get("speaker")
+            x = col_x.get(spk, int(txt_left))
+            row_h = line_h * nlines(t) + pad
+            card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
+                                        x, Emu(y), col_w, Emu(row_h))
+            card.fill.solid()
+            card.fill.fore_color.rgb = RGBColor.from_string(spk_color.get(spk, "F4F5F7"))
+            card.line.color.rgb = self._rgb("muted"); card.line.width = Pt(0.5)
+            card.shadow.inherit = False
+            tf = card.text_frame; tf.word_wrap = True
+            tf.margin_left = Pt(8); tf.margin_right = Pt(6)
+            tf.margin_top = Pt(3); tf.margin_bottom = Pt(3)
+            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.LEFT
+            self._set_run(p.add_run(), "%d. " % turn_no, hz_sz, color="accent", bold=True)
+            self._set_run(p.add_run(), t.get("hz", ""), hz_sz, color="ink", bold=True, cjk=True)
+            if t.get("py"):
+                p2 = tf.add_paragraph(); p2.alignment = PP_ALIGN.LEFT
+                self._set_run(p2.add_run(), t["py"], py_sz, color="accent", italic=True)
+            if t.get("vn"):
+                p3 = tf.add_paragraph(); p3.alignment = PP_ALIGN.LEFT
+                self._set_run(p3.add_run(), t["vn"], vn_sz, color="muted")
+            # con trỏ Y DÙNG CHUNG — mọi cột cùng nhảy xuống sau MỖI lượt,
+            # khác swimlane gốc (mỗi cột tự đếm riêng, xem _dialogue_script).
+            y = y + row_h + gap
 
     def _dialogue_script(self, slide, turns, top, uniq_speakers, txt_left=None, txt_w=None):
         # Swimlane: MỖI người nói 1 CỘT riêng, cùng hàng ngang = cùng lượt

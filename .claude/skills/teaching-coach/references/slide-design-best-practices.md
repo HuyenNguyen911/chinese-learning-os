@@ -93,6 +93,28 @@ Sau khi tạo file, đọc lại toàn bộ tiêu đề slide theo thứ tự (g
 
 **Tự soát bằng ảnh (bắt buộc khi có PowerPoint):** xuất từng slide ra PNG (PowerPoint COM `Slide.Export`) rồi ghép contact-sheet để nhìn tổng thể trước khi giao — bắt lỗi bố cục/canh lề/ảnh sai mà đọc XML không thấy.
 
+**Soát chất lượng ảnh minh hoạ bằng MẮT, không tin query string (2026-09-09, review buổi 05
+HSK1):** `fetch_images.py` tự tải ảnh KẾT QUẢ ĐẦU TIÊN Pexels trả về — dù query đã ghi rõ
+"Vietnamese ..."/"Vietnam ..." vẫn có thể ra ảnh chung chung không có yếu tố VN nào (buổi 05:
+"Vietnam supermarket grocery store aisle" ra ảnh kệ rau củ không rõ ở đâu), thậm chí ra TRÙNG
+ảnh với 1 từ khác đã fetch trước đó khi 2 query khác nhau cùng match về 1 tấm hot nhất
+(手机 vs 电话 nhận cùng 1 ảnh 2 lần liên tiếp dù đổi query). Sau khi build xong, đọc (Read
+tool) TỪNG ảnh trong `assets/words/` — không chỉ tin tên file/query đã đặt — kiểm 2 việc:
+(1) ảnh có khớp đúng nghĩa từ không (không chỉ "có vẻ liên quan"), (2) có yếu tố Việt Nam rõ
+ràng không (biển hiệu/thương hiệu VN thật như "Bách hóa XANH", trang phục, khung cảnh đường
+phố/nhà VN...) — nếu chưa đạt, đổi query cụ thể hơn (thêm địa danh/thương hiệu/hành động rõ)
+rồi thử lại; nếu đã thử vài query mà kho ảnh Pexels vẫn không có ảnh mang yếu tố VN cho từ đó
+(vd 牛奶 — sữa không phải món đặc trưng để chụp riêng) → chấp nhận ảnh trung tính, KHÔNG cố
+ép, và nói rõ giới hạn này với user thay vì âm thầm dùng ảnh không đạt.
+
+**Quét lại toàn bộ đường dẫn `image` trước khi bàn giao:** duyệt hết field `image` trong JSON
+(kể cả field lồng sâu như `words[].image`, `images[].image` trong `match_pairs`) và kiểm
+`os.path.exists()` từng cái — thiếu 1 file (dù JSON trỏ đúng path) sẽ khiến renderer tự vẽ
+khung xám placeholder thay vì báo lỗi dừng build, rất dễ lọt qua nếu chỉ nhìn "build thành
+công". Lỗi thường gặp nhất: buổi mới tạo quên copy các asset DÙNG CHUNG giữa các buổi (vd
+`assets/icons/icon_target.png` cho slide mục tiêu) — các buổi trước đã có sẵn file này nhưng
+buổi mới không tự động kế thừa, phải copy tay.
+
 ## 9. Nguyên tắc trình bày (bổ sung từ phản hồi dạy thực tế)
 
 Đây là các quy tắc rút ra sau khi dùng slide thật trên lớp. `build_deck.py` đã enforce sẵn phần cấu trúc; phần biên tập (giọng văn, tiêu đề, chọn câu) do người soạn JSON tuân thủ.
