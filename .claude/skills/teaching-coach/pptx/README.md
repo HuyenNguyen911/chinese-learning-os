@@ -84,14 +84,14 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `type` | Trường chính | Công dụng |
 |---|---|---|
 | `title` | `title` (+ `subtitle`, `footer`, `image?`) | Slide bìa (nền accent) |
-| `section` | `title` (+ `subtitle`) | Chuyển mục |
+| `section` | `title` (+ `subtitle`) | Chuyển mục — mặc định chỉ đặt `title` (nhãn CJK, vd "第一部分 · 课本生词"); **tránh thêm `subtitle` kiểu "Phần X — N từ vựng theo sách..."** (2026-09-09, review buổi 04 HSK1) — đây là "nhãn dư thừa" thuộc về sổ sách soạn bài, không phải nội dung học viên cần thấy trên slide. Chỉ dùng `subtitle` khi thật sự cần mô tả thêm ngữ cảnh học (hiếm) |
 | `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); nếu item có `ex` (câu ví dụ riêng từng từ) → chèn cột **Ví dụ** cuối bảng; `example?` (cấp SLIDE, không phải item) = `{hz,py,vn}` 1 câu ví dụ chung — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). Dùng được cho CẢ CÂU dài, không chỉ từ đơn (vd mỗi item là 1 lời chúc/câu nói) — cột 汉字 tự đủ rộng + hàng tự cao theo số dòng 汉字 cần wrap, Pinyin/Nghĩa co lại/rớt dòng trước (xem lessons learned bên dưới). |
 | `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). |
 | `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}` | **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. ⚠️ **Lịch sử (đã sửa 2026-08-06):** handler `_slide_word_pair` được thêm ở `5a2a154`, rồi bị **âm thầm xoá** ở `619229b` (commit message chỉ nói "sửa 3 lỗi renderer", không nhắc việc xoá này) — các bản README trước đó ghi nhầm là "chưa triển khai", thực ra là đã cài rồi bị mất. Đã khôi phục lại nguyên trạng handler. |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn, highlight?}`, `note?`, `source?`, `image?`, `highlight?` | Giảng ngữ pháp. `highlight` (str hoặc list[str], cấp SLIDE — áp dụng mọi ví dụ, hoặc cấp ví dụ để override riêng) = tô màu accent (đỏ) cho đúng chỗ khớp trong `hz` của từng ví dụ, giúp học viên thấy ngay từ/cấu trúc đang học nằm ở đâu trong câu (vd `"highlight": "没有"` tô đỏ mọi chỗ xuất hiện "没有"; 时量补语 nên override theo từng ví dụ vì cụm bổ ngữ khác nhau mỗi câu, vd ví dụ 1 `"highlight": "半个多小时"`, ví dụ 2 `"highlight": "两个小时了"`).<br>**`groups[]` = `[{point, examples[]}]` (2026-09-08) — chế độ 2 CỘT: mỗi điểm ngữ pháp ở cột TRÁI, ví dụ tương ứng ngay cột PHẢI, các nhóm cách nhau bằng vạch ngăn mảnh.** Dùng thay cho `point` + `examples` phẳng khi 1 slide có nhiều điểm nhỏ (vd 是 = LÀ → 我是中国人。 / 不是 = KHÔNG PHẢI → 我老师不是法国人。) — kiểu phẳng dồn hết công thức thành 1 cục rồi mới liệt kê ví dụ, người học không biết ví dụ nào thuộc điểm nào. Chữ Hán trong `point` tự động tô đỏ (không cần khai `highlight`). Có `groups` thì `point`/`examples` cấp slide bị bỏ qua. |
 | `table` | `headers[]`, `rows[][]` (+ `cjk_cols[]`) | Bảng so sánh (vd 了 vs 过) |
 | `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` (+ `image?`, `image_side?`) | Khung hội thoại (bong bóng chat 2 phía, hoặc swimlane 1-cột/người nếu >2 speaker) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau. Có `image` → ảnh ngữ cảnh 1 bên, khung thoại co vào bên còn lại (giúp liên tưởng bối cảnh thay vì chỉ thấy chữ nổi) |
-| `passage` | `title`, `sentences[]` = `{hz, py, vn}` (+ `note?`, `image?`, `image_side?`) | Đoạn văn tự sự/kể chuyện (课文 thể 叙述体, câu nối tiếp câu — KHÔNG phải hội thoại qua lại) — mỗi câu 1 khối, không dùng bong bóng thoại |
+| `passage` | `title`, `sentences[]` = `{hz, py, vn}` (+ `note?`, `image?`, `image_side?`) | Đoạn văn tự sự/kể chuyện (课文 thể 叙述体, câu nối tiếp câu — KHÔNG phải hội thoại qua lại) — mỗi câu 1 khối, không dùng bong bóng thoại. ⚠️ **`image_side` chỉ có tác dụng khi khai rõ trong JSON** (đã sửa 2026-09-09, buổi 04 HSK1 — trước đó field này được README ghi nhưng renderer chưa cài, luôn ép ảnh full-width lên TRÊN bất kể khai gì, gây tràn khi đoạn văn dài); không khai `image_side` → giữ layout ảnh-trên cũ (ảnh chiếm ~32% chiều cao). Có `footer_note` nhiều dòng → nhớ cộng `_footer_lines_extra(s)` vào `_content_area_h()` giống `word_pair`/`vocab`, nếu không nội dung chính sẽ tràn xuống đè footer |
 | `reading` | `groups[]` = `{label, items[]}` | Nguồn đọc thêm (nhóm "trong sách" / "nguồn ngoài") |
 | `exercise` | `instructions?`, `items[]` (+ `image?`, `word_bank?`) | Slide bài tập (đánh số) |
 | `answers` | `items[]` (+ `word_bank?`) | Slide đáp án (đánh số) |
@@ -121,7 +121,11 @@ Ghi chú:
 - **`word_bank`** (`exercise`/`answers`/`bullets`, 2026-08-14): mảng `{hz, py}` render thành 1 dải "Từ cần dùng: ..." full-width ngay dưới header, TRƯỚC nội dung chính. Dùng cho bài tập đục lỗ (`[___]`) không có slide `vocab`/`wordcard` nào đứng ngay trước để giới thiệu từ — nếu không học viên không biết chính xác 5 (hay N) từ mục tiêu cần điền là từ nào (từng bị hỏi "từ cần điền đâu?" khi thiếu). Nên xáo trộn thứ tự `word_bank` so với thứ tự xuất hiện trong câu (ở tầng soạn JSON) để vẫn cần suy luận theo nghĩa, không chỉ điền theo thứ tự.
 - **`footer_note`** (mọi type): chú thích nhỏ ở đáy slide (vd đối chiếu giáo
   trình khác, hoặc mẹo chiết tự từ vựng — xem dưới) — thay cho việc phải làm 1
-  slide `bullets` đứng riêng. Nhận **string** (1 dòng, layout gốc) hoặc **list
+  slide `bullets` đứng riêng. **Cũng dùng để phân biệt nhanh 2 từ dễ nhầm đã dạy
+  gần nhau** (vd 没关系 vs 没事儿) — đính `footer_note` vào slide của từ dạy SAU,
+  không tạo hẳn 1 slide so sánh riêng, trừ khi khác biệt đủ lớn/phức tạp cần
+  bảng hoặc nhiều ví dụ (review buổi 02: user từ chối slide so sánh riêng, chỉ
+  muốn 1 câu ghi chú ngắn). Nhận **string** (1 dòng, layout gốc) hoặc **list
   string** (2026-08-19: nhiều dòng, mỗi phần tử 1 dòng riêng — dùng khi 1 slide
   có nhiều từ cần mẹo riêng, vd `word_pair`/`vocab` 2 từ/slide). Renderer tự
   giãn chiều cao dải footer theo số dòng thực tế (không cần tính tay) — nhưng
@@ -134,7 +138,13 @@ Ghi chú:
   chắc (thà để trống còn hơn ghi sai). Tuyệt đối không dùng thuật ngữ ngôn ngữ
   học ("mượn âm", "biểu âm", "hình thanh", "phiên thiết") — người đọc không có
   nền Hán Việt sẽ không hiểu; nếu 1 bộ phận chỉ biểu âm (không mang nghĩa),
-  DROP hẳn khỏi lời giải thích, chỉ giữ bộ phận có nghĩa/hình ảnh thật. Với từ
+  DROP hẳn khỏi lời giải thích, chỉ giữ bộ phận có nghĩa/hình ảnh thật.
+  **KHÔNG dùng `footer_note` cho ghi chú sổ sách lịch trình soạn bài** (2026-09-09,
+  review buổi 04 HSK1) — vd "từ X đã học ở Buổi Y, không dạy lại", "từ Z ôn kỹ hơn
+  ở Buổi W" — đây là thông tin phục vụ người SOẠN bài, không phải học viên đang
+  xem slide; bị coi là "ghi chú kiểu vậy bỏ luôn". Khác với "đối chiếu giáo trình
+  khác" ở trên (vd đối chiếu Hán ngữ Quyển 1) — loại đó vẫn hữu ích cho học viên vì
+  giúp liên hệ kiến thức đã biết, không phải bookkeeping nội bộ. Với từ
   vay mượn phiên âm nước ngoài (vd T恤, 台风) — nói thẳng đó là phiên âm, không
   gán nghĩa giả cho chữ Hán dùng để ghi âm.
 - **`tip`** (`bullets`/`exercise`/`answers`/`grammar`): mẹo ghi nhớ, LUÔN render
@@ -181,6 +191,14 @@ Sinh tự động bằng helper:
 → đọc chữ Hán của các slide (vocab / wordcard / grammar / dialogue / passage /
 bảng `口语`), gọi `edge-tts` sinh mp3 vào `assets/audio/` và tự gắn key `audio`.
 Cần internet; `--force` để sinh lại.
+
+⚠️ **`grammar` dùng chế độ `groups[]` (2 cột) — đã sửa 2026-09-09 (buổi 04 HSK1):**
+trước đó `slide_audio.py` chỉ đọc field phẳng `examples[]` cấp slide (kiểu cũ), nên
+MỌI slide `grammar` soạn theo `groups[]` (từ 2026-09-08) bị bỏ qua hoàn toàn khi
+sinh audio — không báo lỗi, chỉ lặng lẽ thiếu (phát hiện khi đối chiếu số file mp3
+sinh ra ít hơn số slide có chữ Hán). Đã sửa để đọc cả 2 dạng; nếu thêm field mới cho
+`grammar` sau này, nhớ đối chiếu luôn hàm trích text trong `slide_audio.py`, không
+chỉ `build_deck.py`.
 
 **⚠️ Cổng duyệt bắt buộc (2026-08-04, user nhắc lại 2 lần trong 1 session; TÁI DIỄN
 2026-08-12 Buổi 15 — lần thứ 3):** KHÔNG chạy `slide_audio.py` cho tới khi user đã
@@ -789,6 +807,7 @@ loại nội dung để tránh mọi buổi giống hệt nhau về hình thức
 | Loại nội dung | Hình thức mặc định | Khi nào đổi sang minigame |
 |---|---|---|
 | Từ vựng cụ thể (đồ vật/hoạt động minh hoạ được) | `wordcard`/`word_pair` | Có ảnh rõ, muốn học viên chủ động đoán trước khi xem nghĩa → `guess` |
+| Từ vựng có QUAN HỆ CẤU TRÚC rõ (họ hàng, phân cấp, sơ đồ...) | `word_groups` chia theo đúng cấu trúc (vd bên nội/bên ngoại, theo thế hệ) | Không đổi — mục đích là học viên thấy được MỐI QUAN HỆ giữa các từ, không phải học từng từ tách rời; **tránh** dàn `word_pair`/`wordcard` nhiều slide liên tiếp cho nhóm từ này (2026-09-09, review buổi 04 HSK1: 15 từ họ hàng ban đầu tách 7 slide `word_pair`, user yêu cầu gộp lại theo "sơ đồ gia phả" — mất ảnh riêng từng từ nhưng đổi lại thấy rõ cấu trúc, nén gọn hơn nhiều) |
 | Từ trừu tượng (hư từ, khái niệm) | `vocab` bảng | Không đổi — ảnh không giúp gì cho loại này |
 | Ôn tập 1 nhóm từ đã dạy (cuối buổi/đầu buổi sau) | `bullets` liệt kê | Nên đổi sang `match` — ôn tập bằng liệt kê thụ động là hình thức yếu nhất để ghi nhớ, ghép cặp buộc học viên nhớ lại chủ động |
 | Ngữ pháp có ≥2 cấu trúc dễ nhầm | `table` so sánh | Không đổi — `guess`/`match` không hợp với nội dung trừu tượng |

@@ -105,7 +105,14 @@ def read_text(s):
             # liệt kê nhanh) nên đọc luôn câu ví dụ thay vì chỉ đọc từ rời.
             xs.append(ex.get("hz", ""))
     elif t == "grammar":
-        xs = [ex.get("hz", "") for ex in s.get("examples", [])]
+        if s.get("groups"):
+            # 2026-09-08: chế độ 2 cột groups[]={point, examples[]} — trước
+            # đó chỉ đọc field phẳng examples[] cấp slide (legacy), nên mọi
+            # slide grammar dùng groups bị bỏ qua hoàn toàn, không sinh audio.
+            xs = [ex.get("hz", "") for g in s.get("groups", [])
+                  for ex in g.get("examples", [])]
+        else:
+            xs = [ex.get("hz", "") for ex in s.get("examples", [])]
     elif t == "table" and str(s.get("kicker", "")).startswith("口语"):
         xs = [row[0] for row in s.get("rows", []) if row]
     elif t == "wordcard":

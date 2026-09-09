@@ -117,7 +117,24 @@ Sau khi tạo file, đọc lại toàn bộ tiêu đề slide theo thứ tự (g
   trái/phải cũ (ảnh 1 bên, câu văn cột hẹp bên kia) khiến câu dài phải wrap nhiều
   dòng trong cột hẹp, nhìn như bị xé thành nhiều cột — ảnh (nếu có) nên đặt dải
   TRÊN full-width, câu văn xuống 1 cột rộng full-width bên dưới, đánh số ①②③ đầu
-  mỗi câu để tách bạch.
+  mỗi câu để tách bạch. **Layout ảnh-bên đã quay lại làm tuỳ chọn (2026-09-09,
+  buổi 04 HSK1):** dùng khi đoạn văn NGẮN (≤4-5 câu) và ảnh đẹp/đáng xem to hơn —
+  khai `image_side: "left"/"right"` trong JSON để bật; không khai thì vẫn mặc định
+  layout ảnh-trên full-width như trên. Đoạn văn dài (≥6-7 câu như bài giới thiệu
+  gia đình) vẫn nên giữ ảnh-trên vì cột chữ hẹp bên cạnh dễ tràn.
+- **Section slide không cần `subtitle` liệt kê số liệu (2026-09-09, buổi 04 HSK1):**
+  `title` (nhãn CJK, vd "第一部分 · 课本生词") là đủ để chuyển mục — tránh thêm
+  `subtitle` kiểu "Phần X — N từ vựng theo sách..."; đó là ghi chú phục vụ người
+  soạn bài, không phải nội dung học viên cần thấy trên slide.
+- **`footer_note` chỉ dùng cho làm rõ NỘI DUNG, không dùng cho sổ sách lịch trình
+  (2026-09-09):** vd "từ X đã học ở Buổi Y", "ôn kỹ hơn ở Buổi Z" — bỏ hẳn loại ghi
+  chú này. Vẫn giữ dùng cho: mẹo chiết tự, phân biệt 2 từ dễ nhầm, đối chiếu giáo
+  trình khác (loại này giúp học viên liên hệ kiến thức đã biết, khác bookkeeping).
+- **Từ vựng có QUAN HỆ CẤU TRÚC (họ hàng, phân cấp...) dùng `word_groups` chia theo
+  cấu trúc, không dàn `word_pair` nhiều slide (2026-09-09, buổi 04 HSK1):** 15 từ họ
+  hàng ban đầu tách 7 slide `word_pair` (1 cặp/slide) — user yêu cầu gộp lại theo
+  "sơ đồ gia phả" (nhóm theo bên nội/bên ngoại, theo thế hệ). Đổi lại mất ảnh riêng
+  từng từ nhưng học viên thấy rõ MỐI QUAN HỆ giữa các từ, và nén gọn hơn nhiều slide.
 - **口语 (khẩu ngữ tự nhiên, cuối buổi) dùng `type: "grammar"` thay vì `table`:**
   tái dùng đúng layout "ảnh 1 bên + danh sách cụm câu (Hán tự đậm + pinyin cùng
   dòng, nghĩa xuống dòng, giãn cách rộng)" đã ổn định — không cần `point`, chỉ cần

@@ -1494,7 +1494,15 @@ class DeckBuilder:
                 # ngắn cũng bị rớt dòng (vd "这是谁？" tự tách "？" xuống dòng
                 # dù bubble "còn chỗ" theo ước lượng cũ không tính bold).
                 return base * 1.12 if bold else base
-            needed = max(w(t.get("hz", ""), hz_sz, True, bold=True),
+            # Dòng 汉字 render CHUNG với tiền tố "speaker: " (cùng 1 paragraph,
+            # xem vòng lặp render bên dưới) — không cộng bề rộng tiền tố này
+            # vào đây từng làm bubble "vừa đủ 1 dòng theo hz" nhưng thực tế
+            # PowerPoint wrap 2 dòng do cộng thêm speaker, khiến dòng cuối
+            # (thường chỉ còn dấu câu) bị đẩy ra ngoài khung (báo lỗi buổi 02:
+            # 会话5/6, tên người nói 白家月/李文 đẩy câu vừa sát ngưỡng qua 2 dòng).
+            spk = t.get("speaker", "")
+            spk_prefix_w = w(spk + ": ", vn_sz, True, bold=True) if spk else 0
+            needed = max(w(t.get("hz", ""), hz_sz, True, bold=True) + spk_prefix_w,
                         w(t.get("py", ""), py_sz, False),
                         w(t.get("vn", ""), vn_sz, False))
             # +0.85in (thay vì 0.5in cũ): với text ngắn, biên an toàn cũ chỉ
@@ -1573,21 +1581,37 @@ class DeckBuilder:
         # hẹp) — ảnh (nếu có) chuyển lên dải TRÊN full-width, câu văn xuống
         # 1 CỘT RỘNG full-width bên dưới, đánh số ①②③ đầu mỗi câu để tách
         # bạch rõ ràng thay vì chỉ dựa vào khoảng cách dòng.
+        # 2026-09-09: README từng ghi `image_side?` là field hợp lệ cho
+        # `passage` nhưng chưa bao giờ được cài (chỉ có layout ảnh-trên cố
+        # định ở trên) — set "image_side" không có tác dụng gì, gây tràn khi
+        # đoạn văn dài (ảnh chiếm 32% chiều cao bất kể). Chỉ khi JSON khai rõ
+        # `image_side` mới chuyển sang layout cột ảnh-bên (dùng lại
+        # `_split_image_col`), giữ nguyên layout ảnh-trên cũ khi không khai
+        # (không phá các buổi cũ đã dùng `passage` + `image` không kèm side).
         slide = self._new_slide()
         self._band_header(slide, s.get("title", "课文"), s.get("kicker"))
-        top = self._content_top(); area_h = self._content_area_h()
+        top = self._content_top()
+        area_h = self._content_area_h(self._footer_lines_extra(s))
         sentences = s.get("sentences", [])
         note = s.get("note")
 
-        if s.get("image"):
+        img_left = None
+        if s.get("image") and s.get("image_side"):
+            txt_left, txt_w, img_left, img_w = self._split_image_col(
+                s, Inches(3.2))
+            img_h = min(area_h, self._image_fit_height(s["image"], img_w, area_h))
+            img_top = top + (area_h - img_h) // 2
+            self._place_image(slide, s["image"], img_left, img_top, img_w, img_h)
+        elif s.get("image"):
             img_w = SLIDE_W - 2 * MARGIN
             img_h = min(int(area_h * 0.32), self._image_fit_height(
                 s["image"], img_w, int(area_h * 0.32)))
             self._place_image(slide, s["image"], MARGIN, top, img_w, img_h)
             top = top + img_h + Inches(0.22)
             area_h = area_h - img_h - Inches(0.22)
-
-        txt_left, txt_w = MARGIN, SLIDE_W - 2 * MARGIN
+            txt_left, txt_w = MARGIN, SLIDE_W - 2 * MARGIN
+        else:
+            txt_left, txt_w = MARGIN, SLIDE_W - 2 * MARGIN
 
         natural = 0
         for i, sent in enumerate(sentences):
