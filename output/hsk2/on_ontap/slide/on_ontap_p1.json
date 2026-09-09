@@ -12,6 +12,15 @@
   },
   {
    "type": "bullets",
+   "kicker": "口语热身",
+   "title": "Khởi động: trả lời 2 câu hỏi trước khi vào bài",
+   "bullets": [
+    "请介绍一下你最喜欢的一个节日。\n开头: Đó là lễ gì? Bạn thường làm gì vào dịp đó? — 主体: Vì sao bạn thích lễ đó? — 结尾: Bạn mong chờ điều gì nhất ở lễ đó?",
+    "你觉得学开车难不难？为什么？\n开头: Bạn thấy học lái xe khó hay dễ? — 主体: Vì sao bạn nghĩ vậy? — 结尾: Bạn có muốn học lái xe không?"
+   ]
+  },
+  {
+   "type": "bullets",
    "kicker": "目标",
    "title": "Mục tiêu buổi ôn",
    "bullets": [

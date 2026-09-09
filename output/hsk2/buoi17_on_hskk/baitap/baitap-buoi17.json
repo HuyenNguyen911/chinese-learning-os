@@ -1,0 +1,452 @@
+{
+  "meta": {
+    "lesson": "Buổi 17: Ôn tập HSKK sơ cấp (3 đề, theo đúng format thi thật)",
+    "hsk": 2
+  },
+  "blocks": [
+    {
+      "type": "grammar_note",
+      "title": "Định dạng đề thi HSKK sơ cấp",
+      "points": [
+        {
+          "pattern": "1. Lặp lại sau khi nghe",
+          "explain": "15 câu hỏi, 4 phút"
+        },
+        {
+          "pattern": "2. Trả lời sau khi nghe",
+          "explain": "10 câu hỏi, 3 phút"
+        },
+        {
+          "pattern": "3. Trả lời câu hỏi",
+          "explain": "2 câu hỏi, 3 phút"
+        },
+        {
+          "pattern": "Tổng thời gian làm bài",
+          "explain": "khoảng 17 phút (bao gồm 7 phút chuẩn bị)."
+        },
+        {
+          "pattern": "Trình độ Sơ cấp",
+          "explain": "học viên sẽ nắm được khoảng 200 từ tiếng Trung thường dùng trong đàm thoại hàng ngày."
+        },
+        {
+          "pattern": "HSKK (Thi Nói HSK) Sơ cấp",
+          "explain": "áp dụng cho học viên đã qua HSK1 và HSK2."
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 1 — Phần 1",
+      "part": "听后重复",
+      "instructions": "Nghe từng câu 1 lần rồi nhắc lại đúng nguyên văn§Mỗi câu: nghe ~3 giây · nhắc lại ~10 giây.",
+      "items": [
+        {
+          "script": "请你帮我一个忙，好吗？",
+          "audio": "audio/de1-p1-01.mp3"
+        },
+        {
+          "script": "我们还是坐公交车去吧。",
+          "audio": "audio/de1-p1-02.mp3"
+        },
+        {
+          "script": "我想预订一个单人间。",
+          "audio": "audio/de1-p1-03.mp3"
+        },
+        {
+          "script": "这件衬衫的颜色很好看。",
+          "audio": "audio/de1-p1-04.mp3"
+        },
+        {
+          "script": "请把行李收拾好。",
+          "audio": "audio/de1-p1-05.mp3"
+        },
+        {
+          "script": "他写得很好看。",
+          "audio": "audio/de1-p1-06.mp3"
+        },
+        {
+          "script": "我一有空就去打篮球。",
+          "audio": "audio/de1-p1-07.mp3"
+        },
+        {
+          "script": "这件衣服比那件贵一点儿。",
+          "audio": "audio/de1-p1-08.mp3"
+        },
+        {
+          "script": "这家店离我家不远。",
+          "audio": "audio/de1-p1-09.mp3"
+        },
+        {
+          "script": "你想先复习还是先休息？",
+          "audio": "audio/de1-p1-10.mp3"
+        },
+        {
+          "script": "我最喜欢吃妈妈做的菜。",
+          "audio": "audio/de1-p1-11.mp3"
+        },
+        {
+          "script": "今天比昨天冷得多。",
+          "audio": "audio/de1-p1-12.mp3"
+        },
+        {
+          "script": "我们上课的时候要多说中文。",
+          "audio": "audio/de1-p1-13.mp3"
+        },
+        {
+          "script": "我们去买点儿年货吧。",
+          "audio": "audio/de1-p1-14.mp3"
+        },
+        {
+          "script": "我想再去一次上海。",
+          "audio": "audio/de1-p1-15.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 1 — Phần 2",
+      "part": "听后回答",
+      "instructions": "Nghe câu hỏi 1 lần rồi trả lời trực tiếp bằng 1 câu ngắn§Mỗi câu: nghe ~3 giây · trả lời ~15 giây.",
+      "items": [
+        {
+          "script": "你叫什么名字？",
+          "audio": "audio/de1-p2-01.mp3"
+        },
+        {
+          "script": "你家离学校远不远？",
+          "audio": "audio/de1-p2-02.mp3"
+        },
+        {
+          "script": "你今天想吃什么？",
+          "audio": "audio/de1-p2-03.mp3"
+        },
+        {
+          "script": "周末你喜欢做什么运动？",
+          "audio": "audio/de1-p2-04.mp3"
+        },
+        {
+          "script": "你最近忙不忙？",
+          "audio": "audio/de1-p2-05.mp3"
+        },
+        {
+          "script": "你觉得今天天气怎么样？",
+          "audio": "audio/de1-p2-06.mp3"
+        },
+        {
+          "script": "你考试的时候紧张不紧张？",
+          "audio": "audio/de1-p2-07.mp3"
+        },
+        {
+          "script": "你喜欢什么颜色？",
+          "audio": "audio/de1-p2-08.mp3"
+        },
+        {
+          "script": "春节的时候你想做什么？",
+          "audio": "audio/de1-p2-09.mp3"
+        },
+        {
+          "script": "你想不想再去一次中国旅游？",
+          "audio": "audio/de1-p2-10.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 1 — Câu hỏi 1",
+      "part": "回答问题",
+      "items": [
+        {
+          "script": "请介绍一下你的一个好朋友。",
+          "hint": "开头 (Mở bài): Bạn ấy tên gì? Bạn quen bạn ấy như thế nào? — 主体 (Thân bài): Bạn ấy trông như thế nào? Bạn ấy thích làm gì? — 结尾 (Kết bài): Vì sao bạn thích làm bạn với bạn ấy? — ⏱ Thời gian: chuẩn bị ~30 giây, trả lời ~1 phút (ước lượng, tổng 1.5 phút theo 官方样卷)"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 1 — Câu hỏi 2",
+      "part": "回答问题",
+      "items": [
+        {
+          "script": "医生这个工作怎么样？为什么？",
+          "hint": "开头 (Mở bài): Bạn nghĩ nghề bác sĩ như thế nào? — 主体 (Thân bài): Vì sao bạn nghĩ vậy? Công việc đó có gì vất vả hoặc thú vị? — 结尾 (Kết bài): Bạn có muốn làm bác sĩ không? Vì sao? — ⏱ Thời gian: chuẩn bị ~30 giây, trả lời ~1 phút (ước lượng, tổng 1.5 phút theo 官方样卷)"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 2 — Phần 1",
+      "part": "听后重复",
+      "instructions": "Nghe từng câu 1 lần rồi nhắc lại đúng nguyên văn§Mỗi câu: nghe ~3 giây · nhắc lại ~10 giây.",
+      "items": [
+        {
+          "script": "是他开车送我们来的。",
+          "audio": "audio/de2-p1-01.mp3"
+        },
+        {
+          "script": "这个电影院附近有二十多个座位。",
+          "audio": "audio/de2-p1-02.mp3"
+        },
+        {
+          "script": "这次旅行你打算住几天？",
+          "audio": "audio/de2-p1-03.mp3"
+        },
+        {
+          "script": "请把外套给我。",
+          "audio": "audio/de2-p1-04.mp3"
+        },
+        {
+          "script": "都十点了！",
+          "audio": "audio/de2-p1-05.mp3"
+        },
+        {
+          "script": "你昨晚睡得好不好？",
+          "audio": "audio/de2-p1-06.mp3"
+        },
+        {
+          "script": "他写得快不快？",
+          "audio": "audio/de2-p1-07.mp3"
+        },
+        {
+          "script": "我最近比较忙。",
+          "audio": "audio/de2-p1-08.mp3"
+        },
+        {
+          "script": "我等了他半个小时。",
+          "audio": "audio/de2-p1-09.mp3"
+        },
+        {
+          "script": "他连饭都没吃。",
+          "audio": "audio/de2-p1-10.mp3"
+        },
+        {
+          "script": "外面正下着雨呢。",
+          "audio": "audio/de2-p1-11.mp3"
+        },
+        {
+          "script": "那边正在打雷。",
+          "audio": "audio/de2-p1-12.mp3"
+        },
+        {
+          "script": "这些词我都记住了。",
+          "audio": "audio/de2-p1-13.mp3"
+        },
+        {
+          "script": "我们一起写春联吧。",
+          "audio": "audio/de2-p1-14.mp3"
+        },
+        {
+          "script": "你有多久没回国了？",
+          "audio": "audio/de2-p1-15.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 2 — Phần 2",
+      "part": "听后回答",
+      "instructions": "Nghe câu hỏi 1 lần rồi trả lời trực tiếp bằng 1 câu ngắn§Mỗi câu: nghe ~3 giây · trả lời ~15 giây.",
+      "items": [
+        {
+          "script": "你今天几点起床的？",
+          "audio": "audio/de2-p2-01.mp3"
+        },
+        {
+          "script": "你喜欢喝奶茶还是咖啡？",
+          "audio": "audio/de2-p2-02.mp3"
+        },
+        {
+          "script": "你会不会打篮球？",
+          "audio": "audio/de2-p2-03.mp3"
+        },
+        {
+          "script": "你家附近有商场吗？",
+          "audio": "audio/de2-p2-04.mp3"
+        },
+        {
+          "script": "你去过中国吗？",
+          "audio": "audio/de2-p2-05.mp3"
+        },
+        {
+          "script": "你觉得汉语难不难？",
+          "audio": "audio/de2-p2-06.mp3"
+        },
+        {
+          "script": "你周末喜欢去哪儿玩？",
+          "audio": "audio/de2-p2-07.mp3"
+        },
+        {
+          "script": "你今天穿什么颜色的衣服？",
+          "audio": "audio/de2-p2-08.mp3"
+        },
+        {
+          "script": "你家附近有没有公园？",
+          "audio": "audio/de2-p2-09.mp3"
+        },
+        {
+          "script": "你去年过年做了什么？",
+          "audio": "audio/de2-p2-10.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 2 — Câu hỏi 1",
+      "part": "回答问题",
+      "items": [
+        {
+          "script": "请介绍一下你最喜欢的一个地方。",
+          "hint": "开头 (Mở bài): Đó là nơi nào? Nơi đó ở đâu? — 主体 (Thân bài): Nơi đó trông như thế nào? Bạn thường làm gì ở đó? — 结尾 (Kết bài): Vì sao bạn thích nơi đó? — ⏱ Thời gian: chuẩn bị ~30 giây, trả lời ~1 phút (ước lượng, tổng 1.5 phút theo 官方样卷)"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 2 — Câu hỏi 2",
+      "part": "回答问题",
+      "items": [
+        {
+          "script": "你觉得学中文难不难？为什么？",
+          "hint": "开头 (Mở bài): Bạn thấy học tiếng Trung khó hay dễ? — 主体 (Thân bài): Vì sao bạn thấy vậy? Phần nào khó/dễ nhất với bạn? — 结尾 (Kết bài): Bạn sẽ tiếp tục học tiếng Trung như thế nào? — ⏱ Thời gian: chuẩn bị ~30 giây, trả lời ~1 phút (ước lượng, tổng 1.5 phút theo 官方样卷)"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 3 — Phần 1",
+      "part": "听后重复",
+      "instructions": "Nghe từng câu 1 lần rồi nhắc lại đúng nguyên văn§Mỗi câu: nghe ~3 giây · nhắc lại ~10 giây.",
+      "items": [
+        {
+          "script": "医生让我多喝水。",
+          "audio": "audio/de3-p1-01.mp3"
+        },
+        {
+          "script": "我们坐地铁去比较方便。",
+          "audio": "audio/de3-p1-02.mp3"
+        },
+        {
+          "script": "这次旅游我们玩得很开心。",
+          "audio": "audio/de3-p1-03.mp3"
+        },
+        {
+          "script": "我觉得浅色比深色好看。",
+          "audio": "audio/de3-p1-04.mp3"
+        },
+        {
+          "script": "你把书放在桌子上吧。",
+          "audio": "audio/de3-p1-05.mp3"
+        },
+        {
+          "script": "他收到了很多生日礼物。",
+          "audio": "audio/de3-p1-06.mp3"
+        },
+        {
+          "script": "他笑得很开心。",
+          "audio": "audio/de3-p1-07.mp3"
+        },
+        {
+          "script": "这个没有那个方便。",
+          "audio": "audio/de3-p1-08.mp3"
+        },
+        {
+          "script": "我要一杯热奶茶，谢谢。",
+          "audio": "audio/de3-p1-09.mp3"
+        },
+        {
+          "script": "我复习到很晚。",
+          "audio": "audio/de3-p1-10.mp3"
+        },
+        {
+          "script": "医生让我少吃辣的。",
+          "audio": "audio/de3-p1-11.mp3"
+        },
+        {
+          "script": "今天风很大。",
+          "audio": "audio/de3-p1-12.mp3"
+        },
+        {
+          "script": "我们几个同学一起复习功课。",
+          "audio": "audio/de3-p1-13.mp3"
+        },
+        {
+          "script": "除夕晚上我们一起包饺子。",
+          "audio": "audio/de3-p1-14.mp3"
+        },
+        {
+          "script": "办签证大概需要几天？",
+          "audio": "audio/de3-p1-15.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 3 — Phần 2",
+      "part": "听后回答",
+      "instructions": "Nghe câu hỏi 1 lần rồi trả lời trực tiếp bằng 1 câu ngắn§Mỗi câu: nghe ~3 giây · trả lời ~15 giây.",
+      "items": [
+        {
+          "script": "你觉得打车方便还是坐公交车方便？",
+          "audio": "audio/de3-p2-01.mp3"
+        },
+        {
+          "script": "你会游泳吗？",
+          "audio": "audio/de3-p2-02.mp3"
+        },
+        {
+          "script": "你们家附近有没有电影院？",
+          "audio": "audio/de3-p2-03.mp3"
+        },
+        {
+          "script": "朋友过生日的时候，你想送什么礼物？",
+          "audio": "audio/de3-p2-04.mp3"
+        },
+        {
+          "script": "你觉得中国菜好吃吗？",
+          "audio": "audio/de3-p2-05.mp3"
+        },
+        {
+          "script": "你感冒的时候会不会去医院？",
+          "audio": "audio/de3-p2-06.mp3"
+        },
+        {
+          "script": "你们那儿冬天冷不冷？",
+          "audio": "audio/de3-p2-07.mp3"
+        },
+        {
+          "script": "出国旅游前你要准备什么？",
+          "audio": "audio/de3-p2-08.mp3"
+        },
+        {
+          "script": "你家里谁做饭做得最好？",
+          "audio": "audio/de3-p2-09.mp3"
+        },
+        {
+          "script": "你今年过年回家吗？",
+          "audio": "audio/de3-p2-10.mp3"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 3 — Câu hỏi 1",
+      "part": "回答问题",
+      "items": [
+        {
+          "script": "请介绍一下你的家人。",
+          "hint": "开头 (Mở bài): Gia đình bạn có mấy người? Gồm những ai? — 主体 (Thân bài): Mỗi người làm công việc gì? Bạn thân với ai nhất? — 结尾 (Kết bài): Vì sao bạn yêu quý gia đình mình? — ⏱ Thời gian: chuẩn bị ~30 giây, trả lời ~1 phút (ước lượng, tổng 1.5 phút theo 官方样卷)"
+        }
+      ]
+    },
+    {
+      "type": "noi_hskk",
+      "title": "Đề 3 — Câu hỏi 2",
+      "part": "回答问题",
+      "items": [
+        {
+          "script": "你觉得在网上买东西怎么样？为什么？",
+          "hint": "开头 (Mở bài): Bạn có hay mua đồ trên mạng không? — 主体 (Thân bài): Vì sao bạn thấy mua trên mạng tốt hoặc không tốt? — 结尾 (Kết bài): Bạn thích mua trên mạng hơn hay đi cửa hàng hơn? — ⏱ Thời gian: chuẩn bị ~30 giây, trả lời ~1 phút (ước lượng, tổng 1.5 phút theo 官方样卷)"
+        }
+      ]
+    }
+  ]
+}

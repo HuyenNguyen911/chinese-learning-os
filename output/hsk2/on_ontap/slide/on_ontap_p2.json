@@ -6,6 +6,15 @@
  "slides": [
   {
    "type": "bullets",
+   "kicker": "口语热身",
+   "title": "Khởi động: trả lời 2 câu hỏi trước khi vào bài",
+   "bullets": [
+    "请说一下你周末一般做什么。\n开头: Cuối tuần bạn thường dậy lúc mấy giờ? — 主体: Bạn thường làm gì vào cuối tuần? — 结尾: Bạn thích cuối tuần hay ngày thường hơn?",
+    "你觉得在中国旅游怎么样？为什么？\n开头: Bạn có muốn đi du lịch Trung Quốc không? — 主体: Vì sao bạn nghĩ vậy? — 结尾: Nếu đi, bạn muốn đến thành phố nào nhất?"
+   ]
+  },
+  {
+   "type": "bullets",
    "kicker": "目标",
    "title": "Ôn tập tổng hợp — Phần 2: Từ vựng",
    "bullets": [
