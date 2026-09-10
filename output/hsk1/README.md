@@ -20,7 +20,7 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 | 05 | Số đếm & số điện thoại | `buoi05_sodem_sodt/` | L6 手机号是多少 | 多少 vs 几 · số lớn · 连动句(1) | ✅ slide XONG (28 slide + 20 audio; 22 生词 bám sách — bỏ 西安饭店 khỏi thẻ từ vựng riêng vì chỉ là tên riêng 1 lần dùng, vẫn giữ trong 课文/ví dụ; 3 课文 hội thoại dạng 1-cột tuần tự [`layout: "column"`, thêm 2026-09-09]; 语法 想/连动句/怎么 + mở rộng 几vs多少/đọc số điện thoại; 1 slide 练习 选词填空 nguyên đề sách); baitap CHƯA làm — chưa quyết định |
 | 06 | Ngày tháng & nghỉ làm | `buoi06_ngaythang/` | L5 今天我休息 | 时间的表达(1) · 名词谓语句 · 能愿动词"会" | ⏳ chưa soạn |
 | 07 | Giờ giấc & công việc | `buoi07_giogiac_congviec/` | L7 六点半下班 | 时间的表达(2): 点/分 · 语气助词"吧"(1) | ⏳ chưa soạn |
-| 08 | Nghề & nơi làm · 在 | `buoi08_nghe_vitri/` | L8 在医院工作 | 方位词 · 介词"在" · 能愿动词"能" | ⏳ chưa soạn |
+| 08 | Nghề & nơi làm · 在 | `buoi08_nghe_vitri/` | L8 在医院工作 | 方位词 · 介词"在" · 能愿动词"能" | ✅ XONG 2026-09-10 (23 từ audit lại bằng vision — checklist cũ thiếu 学校/书店/病人; 27 slide + audio + ảnh Pexels, có tách nền rembg cho ảnh chân dung nghề nghiệp; 语法 mở rộng có bảng so sánh 会/想/能 lấy từ buổi06 2.0 cũ — xem mục "Buổi cũ (2.0) tái dùng" bên dưới; KHÔNG có baitap/ riêng — bài tập đã nhúng trong slide) |
 | 09 | Nơi chốn & đồ vật · vị trí | `buoi09_noichon_dovat/` | L9 在学校学习 | 存现句(1) · thời gian+nơi chốn làm trạng ngữ · 第 | ⏳ chưa soạn |
 | 10 | Mua sắm & giá tiền | `buoi10_muasam/` | L10 苹果真便宜 | 钱数的表达 · 形容词谓语句 · 怎么样 | ⏳ chưa soạn |
 | 11 | Ăn uống & gọi món | `buoi11_anuong/` | L13 请给我一杯茶 | 能愿动词"可以" · 动词+一下 · 双宾语句(1) | ⏳ chưa soạn |
@@ -46,18 +46,25 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 **đã sản xuất theo syllabus 2.0** (12 buổi, sách HSK Standard Course) — **số buổi của chúng
 KHÔNG khớp vị trí 06/10/12 trong bảng 3.0 ở trên**. Theo spec 3.0 §5, đây là nguồn tái dùng có
 chọn lọc:
-- `buoi06_nangnguyen_phuongtien` (会/想/能, giao thông): fold từ 会/想/能 + giao thông
-  (坐/飞机/开车) vào buổi 3.0 mới **08/13/15**.
+- `buoi06_nangnguyen_phuongtien` (会/想/能, giao thông) — **QUYẾT ĐỊNH CHỐT 2026-09-10**
+  (đơn giản hoá so với dự kiến ban đầu "fold vào 08/13/15"): xé làm 2, KHÔNG dùng buổi 13.
+  - Phần **ngữ pháp** 会/想/能 → ✅ ĐÃ vào buổi 3.0 mới **08** (`buoi08_nghe_vitri/`, bảng so
+    sánh "Đừng nhầm 3 từ 'có thể'", xong 2026-09-10).
+  - Phần **chủ đề giao thông** (坐/飞机/开车/公共汽车/地铁/出租车...) → ⏳ CHƯA dùng, để dành cho
+    buổi 3.0 mới **15** (`buoi15_dulai_dulich/`, chưa soạn).
 - `buoi10_luongtu_mausac` (lượng từ, màu sắc): reuse lượng từ **个/本/块** vào buổi 3.0 mới
-  **04/10**. Màu sắc (红/蓝…) phần lớn NGOÀI phạm vi 300 từ 3.0 → để "mở rộng", không dạy như
-  生词 chính (xem checklist §"Đối chiếu tận dụng buổi cũ").
+  **04/10**. 个/本 đã đủ ở buổi 04 (`buoi04_giadinh/`, xong, có 生词拓展·量词 riêng) — buổi 04
+  KHÔNG cần lấy gì thêm từ folder này nữa. Buổi **10** (Mua sắm & giá tiền, `buoi10_muasam/`)
+  vẫn ⏳ CHƯA soạn — khi soạn, lấy lượng từ liên quan mua sắm (块 tiền, cái, chiếc...) từ folder
+  này. Màu sắc (红/蓝…) phần lớn NGOÀI phạm vi 300 từ 3.0 → để "mở rộng", không dạy như 生词
+  chính (xem checklist §"Đối chiếu tận dụng buổi cũ").
 - `buoi12_le_thoitiet` (了/过, thời tiết): reuse ngữ pháp **了** + thời tiết cơ bản
-  (天气/下雨/下雪/冷/热) vào buổi 3.0 mới **14**. Mùa/暖和/凉快/度/晴天/阴天 NGOÀI 300 → "mở rộng".
+  (天气/下雨/下雪/冷/热) vào buổi 3.0 mới **14** (`buoi14_thoitiet_suckhoe/`, ⏳ CHƯA soạn).
+  Mùa/暖和/凉快/度/晴天/阴天 NGOÀI 300 → "mở rộng".
 
-Nội dung 3 folder cũ KHÔNG bị xoá. Khi build buổi 3.0 tương ứng, copy phần hợp lệ sang folder
-mới (`buoi04_giadinh/`, `buoi08_nghe_vitri/`, `buoi10_muasam/`, `buoi13_daihoc/`,
-`buoi14_thoitiet_suckhoe/`, `buoi15_dulai_dulich/`) + đánh dấu rõ phần nào là "mở rộng" ngoài
-scope 300 từ.
+Nội dung 3 folder cũ KHÔNG bị xoá — `buoi10_luongtu_mausac/` và `buoi12_le_thoitiet/` vẫn còn
+nguyên vẹn để tái dùng cho buổi 10/14 sau này; `buoi06_nangnguyen_phuongtien/` vẫn giữ phần
+giao thông chưa dùng, chờ buổi 15.
 
 `on1_nguphap_dongtu/` (2.0) đã xoá — thay bằng `buoi16_ontap/slide/` (phần 1, đúng 15 điểm
 ngữ pháp sách 3.0). `on2_tuvung_chude/` (2.0) đã được dựng lại thành `buoi16_ontap/slide2_tuvung/`
