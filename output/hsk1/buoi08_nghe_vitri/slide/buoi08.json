@@ -1,0 +1,595 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 8",
+    "topic": "我爸爸也在医院工作 — Nghề & nơi làm"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我爸爸也在医院工作",
+      "subtitle": "Bố tôi cũng làm việc ở bệnh viện",
+      "footer": "HSK1 · Buổi 8"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么？",
+      "bullets": [
+        "Nói được đồ vật/con vật ở đâu bằng giới từ 在.",
+        "Hỏi và trả lời có làm được việc gì không bằng 能.",
+        "Phân biệt 3 từ hay bị nhầm thành 'có thể': 会 / 想 / 能.",
+        "Kể được người trong nhà đang ở đâu, làm gì."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第一部分 · 课本生词"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 1-2/23",
+      "title": "房间 · 外",
+      "image": "assets/words/fangjian.jpg",
+      "items": [
+        {
+          "hz": "房间",
+          "py": "fángjiān",
+          "vn": "phòng"
+        },
+        {
+          "hz": "外",
+          "py": "wài",
+          "vn": "ngoài"
+        }
+      ],
+      "example": {
+        "hz": "房间外有一只小猫。",
+        "py": "Fángjiān wài yǒu yì zhī xiǎo māo.",
+        "vn": "Ngoài phòng có một con mèo nhỏ."
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 3-6/23",
+      "title": "只 · 小 · 猫 · 漂亮",
+      "image": "assets/words/mao_cutout.png",
+      "items": [
+        {
+          "hz": "只",
+          "py": "zhī",
+          "vn": "lượng từ (con — cho động vật)"
+        },
+        {
+          "hz": "小",
+          "py": "xiǎo",
+          "vn": "nhỏ"
+        },
+        {
+          "hz": "猫",
+          "py": "māo",
+          "vn": "mèo"
+        },
+        {
+          "hz": "漂亮",
+          "py": "piàoliang",
+          "vn": "đẹp"
+        }
+      ],
+      "example": {
+        "hz": "这只小猫真漂亮！",
+        "py": "Zhè zhī xiǎo māo zhēn piàoliang!",
+        "vn": "Con mèo nhỏ này đẹp thật!"
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 7-8/23",
+      "title": "没 · 看见",
+      "items": [
+        {
+          "hz": "没",
+          "py": "méi",
+          "vn": "không, chưa"
+        },
+        {
+          "hz": "看见",
+          "py": "kànjiàn",
+          "vn": "nhìn thấy"
+        }
+      ],
+      "example": {
+        "hz": "我没看见，它在哪儿呢？",
+        "py": "Wǒ méi kànjiàn, tā zài nǎr ne?",
+        "vn": "Tôi không thấy, nó ở đâu nhỉ?"
+      },
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 9-10/23",
+      "title": "桌子 · 下",
+      "image": "assets/words/zhuozi.jpg",
+      "items": [
+        {
+          "hz": "桌子",
+          "py": "zhuōzi",
+          "vn": "cái bàn"
+        },
+        {
+          "hz": "下",
+          "py": "xià",
+          "vn": "dưới"
+        }
+      ],
+      "example": {
+        "hz": "它在桌子下呢。",
+        "py": "Tā zài zhuōzi xià ne.",
+        "vn": "Nó đang ở dưới bàn đấy."
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 11-13/23",
+      "title": "在 · 学校 · 午饭",
+      "image": "assets/words/xuexiao.jpg",
+      "items": [
+        {
+          "hz": "在",
+          "py": "zài",
+          "vn": "ở, tại (giới từ)"
+        },
+        {
+          "hz": "学校",
+          "py": "xuéxiào",
+          "vn": "trường học"
+        },
+        {
+          "hz": "午饭",
+          "py": "wǔfàn",
+          "vn": "cơm trưa"
+        }
+      ],
+      "example": {
+        "hz": "我在学校吃午饭。",
+        "py": "Wǒ zài xuéxiào chī wǔfàn.",
+        "vn": "Tôi ăn cơm trưa ở trường."
+      },
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 14-15/23",
+      "title": "书店 · 前",
+      "image": "assets/words/shudian_cutout.png",
+      "items": [
+        {
+          "hz": "书店",
+          "py": "shūdiàn",
+          "vn": "hiệu sách"
+        },
+        {
+          "hz": "前",
+          "py": "qián",
+          "vn": "trước"
+        }
+      ],
+      "example": {
+        "hz": "在学校书店前见吧。",
+        "py": "Zài xuéxiào shūdiàn qián jiàn ba.",
+        "vn": "Gặp nhau trước hiệu sách trường nhé."
+      },
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 16-17/23",
+      "title": "能 · 到",
+      "items": [
+        {
+          "hz": "能",
+          "py": "néng",
+          "vn": "có thể (khả năng/điều kiện)"
+        },
+        {
+          "hz": "到",
+          "py": "dào",
+          "vn": "đến, tới"
+        }
+      ],
+      "example": {
+        "hz": "你能到学校吗？",
+        "py": "Nǐ néng dào xuéxiào ma?",
+        "vn": "Bạn đến trường được không?"
+      },
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 18/23",
+      "title": "饭",
+      "image": "assets/words/wufan.jpg",
+      "items": [
+        {
+          "hz": "饭",
+          "py": "fàn",
+          "vn": "cơm, bữa ăn"
+        }
+      ],
+      "example": {
+        "hz": "小胡，还没吃饭呢？",
+        "py": "Xiǎo Hú, hái méi chīfàn ne?",
+        "vn": "Tiểu Hồ, vẫn chưa ăn cơm à?"
+      },
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 19-22/23",
+      "title": "大 · 病人 · 多 · 医生",
+      "image": "assets/words/bingren_cutout.png",
+      "items": [
+        {
+          "hz": "大",
+          "py": "dà",
+          "vn": "to, lớn"
+        },
+        {
+          "hz": "病人",
+          "py": "bìngrén",
+          "vn": "bệnh nhân"
+        },
+        {
+          "hz": "多",
+          "py": "duō",
+          "vn": "nhiều"
+        },
+        {
+          "hz": "医生",
+          "py": "yīshēng",
+          "vn": "bác sĩ"
+        }
+      ],
+      "example": {
+        "hz": "大医院病人多，医生非常忙。",
+        "py": "Dà yīyuàn bìngrén duō, yīshēng fēicháng máng.",
+        "vn": "Bệnh viện lớn nhiều bệnh nhân, bác sĩ rất bận."
+      },
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 23/23",
+      "title": "工作",
+      "image": "assets/words/gongzuo_cutout.png",
+      "items": [
+        {
+          "hz": "工作",
+          "py": "gōngzuò",
+          "vn": "công việc, làm việc"
+        }
+      ],
+      "example": {
+        "hz": "我爸爸也在医院工作。",
+        "py": "Wǒ bàba yě zài yīyuàn gōngzuò.",
+        "vn": "Bố tôi cũng làm việc ở bệnh viện."
+      },
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "房间外有一只小猫",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "房间外有一只小猫。"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我没看见，它在哪儿呢？"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "它在桌子下呢。"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "这只小猫真漂亮！"
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "我们在哪儿见呢？",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "我们在哪儿见呢？"
+        },
+        {
+          "speaker": "李文",
+          "hz": "在学校书店前见吧。"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "好的。下午两点你能到吗？"
+        },
+        {
+          "speaker": "李文",
+          "hz": "我能到。我在学校吃午饭。"
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "大医院病人多",
+      "voices": {
+        "刘明": "zh-CN-YunjianNeural",
+        "胡医生": "zh-CN-YunxiNeural"
+      },
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "小胡，还没吃饭呢？"
+        },
+        {
+          "speaker": "胡医生",
+          "hz": "没吃呢。"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "大医院病人多，医生非常忙。"
+        },
+        {
+          "speaker": "胡医生",
+          "hz": "是的。我爸爸也在医院工作，他也非常忙。"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "你家有两个医生？"
+        },
+        {
+          "speaker": "胡医生",
+          "hz": "对。"
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/3",
+      "title": "介词「在」",
+      "point": "在 + nơi chốn + động từ = ở [nơi chốn] làm [việc gì]",
+      "examples": [
+        {
+          "hz": "我们在哪儿见呢？",
+          "py": "Wǒmen zài nǎr jiàn ne?",
+          "vn": "Chúng ta gặp nhau ở đâu nhỉ?",
+          "highlight": "在"
+        },
+        {
+          "hz": "我在学校吃午饭。",
+          "py": "Wǒ zài xuéxiào chī wǔfàn.",
+          "vn": "Tôi ăn cơm trưa ở trường.",
+          "highlight": "在"
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/3",
+      "title": "能愿动词「能」",
+      "point": "能 + động từ = có thể (khả năng/điều kiện làm được việc gì)",
+      "examples": [
+        {
+          "hz": "下午两点你能到吗？",
+          "py": "Xiàwǔ liǎng diǎn nǐ néng dào ma?",
+          "vn": "Chiều 2 giờ bạn có đến được không?",
+          "highlight": "能"
+        },
+        {
+          "hz": "我能到。",
+          "py": "Wǒ néng dào.",
+          "vn": "Tôi đến được.",
+          "highlight": "能"
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "语法 3/3 · 拓展",
+      "title": "会 / 想 / 能 — Đừng nhầm 3 từ 'có thể'",
+      "headers": [
+        "Từ",
+        "Nghĩa",
+        "Ví dụ"
+      ],
+      "cjk_cols": [
+        0,
+        2
+      ],
+      "rows": [
+        [
+          "会",
+          "biết làm — kỹ năng đã HỌC mới có",
+          "我会说汉语。"
+        ],
+        [
+          "想",
+          "muốn làm — mong muốn trong đầu",
+          "我想去公园玩儿。"
+        ],
+        [
+          "能",
+          "có thể / được phép — khả năng, điều kiện",
+          "你能到吗？"
+        ]
+      ],
+      "footer_note": "Tiếng Việt chỉ có 1 từ 'có thể' nên rất dễ gộp cả 3 — tiếng Trung phải chọn đúng từ theo tình huống.",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "应用",
+      "title": "我的一家人",
+      "sentences": [
+        {
+          "hz": "房间外有爸爸、妈妈、姐姐和我，还有一只小猫，很漂亮。",
+          "py": "Fángjiān wài yǒu bàba, māma, jiějie hé wǒ, hái yǒu yì zhī xiǎo māo, hěn piàoliang.",
+          "vn": "Ngoài phòng có bố, mẹ, chị gái và tôi, còn có một con mèo nhỏ, rất đẹp."
+        },
+        {
+          "hz": "猫没在桌子上，在桌子下呢。",
+          "py": "Māo méi zài zhuōzi shang, zài zhuōzi xià ne.",
+          "vn": "Mèo không ở trên bàn, mà ở dưới bàn đấy."
+        },
+        {
+          "hz": "妈妈坐在沙发上打电话，姐姐想去公园玩儿，我在吃饭，还能再吃一碗，爸爸想去看足球。",
+          "py": "Māma zuò zài shāfā shang dǎ diànhuà, jiějie xiǎng qù gōngyuán wánr, wǒ zài chīfàn, hái néng zài chī yì wǎn, bàba xiǎng qù kàn zúqiú.",
+          "vn": "Mẹ ngồi trên sofa nghe điện thoại, chị gái muốn đi công viên chơi, tôi thì đang ăn cơm, còn ăn thêm được một bát nữa, bố thì muốn đi xem bóng đá."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 1/3",
+      "title": "Điền 在 / 能 / 会",
+      "word_bank": [
+        {
+          "hz": "会",
+          "py": "huì"
+        },
+        {
+          "hz": "在",
+          "py": "zài"
+        },
+        {
+          "hz": "能",
+          "py": "néng"
+        }
+      ],
+      "items": [
+        "我[___]学校吃午饭。",
+        "你[___]到学校吗？",
+        "我[___]说一点儿汉语。"
+      ]
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 2/3",
+      "title": "Sắp xếp thành câu đúng",
+      "items": [
+        "桌子 / 下 / 猫 / 在",
+        "学校 / 书店 / 前 / 在 / 见",
+        "房间 / 外 / 猫 / 有 / 一只"
+      ]
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 3/3",
+      "title": "Dịch sang tiếng Trung",
+      "items": [
+        "Con mèo ở dưới bàn.",
+        "Bạn có thể đến trường không?",
+        "Tôi ăn cơm trưa ở trường."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第二部分 · 生词拓展"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 职业",
+      "title": "护士",
+      "image": "assets/words/hushi_cutout.png",
+      "items": [
+        {
+          "hz": "护士",
+          "py": "hùshi",
+          "vn": "y tá"
+        }
+      ],
+      "example": {
+        "hz": "我姐姐是护士。",
+        "py": "Wǒ jiějie shì hùshi.",
+        "vn": "Chị gái tôi là y tá."
+      },
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 职业",
+      "title": "司机",
+      "image": "assets/words/sijide_cutout.png",
+      "items": [
+        {
+          "hz": "司机",
+          "py": "sījī",
+          "vn": "tài xế"
+        }
+      ],
+      "example": {
+        "hz": "他是出租车司机。",
+        "py": "Tā shì chūzūchē sījī.",
+        "vn": "Anh ấy là tài xế taxi."
+      },
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 职业",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/yisheng_cutout.png"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/hushi_cutout.png"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/sijide_cutout.png"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/laoshi_cutout.png"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "护士",
+          "py": "hùshi"
+        },
+        {
+          "letter": "B",
+          "hz": "医生",
+          "py": "yīshēng"
+        },
+        {
+          "letter": "C",
+          "hz": "老师",
+          "py": "lǎoshī"
+        },
+        {
+          "letter": "D",
+          "hz": "司机",
+          "py": "sījī"
+        }
+      ]
+    }
+  ]
+}
