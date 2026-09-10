@@ -86,15 +86,15 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `title` | `title` (+ `subtitle`, `footer`, `image?`) | Slide bìa (nền accent) |
 | `section` | `title` (+ `subtitle`) | Chuyển mục — mặc định chỉ đặt `title` (nhãn CJK, vd "第一部分 · 课本生词"); **tránh thêm `subtitle` kiểu "Phần X — N từ vựng theo sách..."** (2026-09-09, review buổi 04 HSK1) — đây là "nhãn dư thừa" thuộc về sổ sách soạn bài, không phải nội dung học viên cần thấy trên slide. Chỉ dùng `subtitle` khi thật sự cần mô tả thêm ngữ cảnh học (hiếm) |
 | `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); nếu item có `ex` (câu ví dụ riêng từng từ) → chèn cột **Ví dụ** cuối bảng; `example?` (cấp SLIDE, không phải item) = `{hz,py,vn}` 1 câu ví dụ chung — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). Dùng được cho CẢ CÂU dài, không chỉ từ đơn (vd mỗi item là 1 lời chúc/câu nói) — cột 汉字 tự đủ rộng + hàng tự cao theo số dòng 汉字 cần wrap, Pinyin/Nghĩa co lại/rớt dòng trước (xem lessons learned bên dưới). |
-| `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). |
-| `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}` | **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. ⚠️ **Lịch sử (đã sửa 2026-08-06):** handler `_slide_word_pair` được thêm ở `5a2a154`, rồi bị **âm thầm xoá** ở `619229b` (commit message chỉ nói "sửa 3 lỗi renderer", không nhắc việc xoá này) — các bản README trước đó ghi nhầm là "chưa triển khai", thực ra là đã cài rồi bị mất. Đã khôi phục lại nguyên trạng handler. |
+| `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?`, `title?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). ⚠️ Không khai `title` → header chỉ còn dải màu trống + tab `kicker` nhỏ, nhìn như "chưa xử lý xong" (2026-09-10, Buổi 7 HSK1) — LUÔN khai `title` mô tả ngắn cụm từ (vd `"课 — Tiết học"`), trừ khi cố ý muốn header tối giản. |
+| `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn}`, `title?` | **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. ⚠️ Cùng lưu ý `title` như `wordcard` ở trên — LUÔN khai `title` (vd `"上课／下课 — Lên lớp & tan học"`), không chỉ dựa vào `kicker`. ⚠️ **Lịch sử (đã sửa 2026-08-06):** handler `_slide_word_pair` được thêm ở `5a2a154`, rồi bị **âm thầm xoá** ở `619229b` (commit message chỉ nói "sửa 3 lỗi renderer", không nhắc việc xoá này) — các bản README trước đó ghi nhầm là "chưa triển khai", thực ra là đã cài rồi bị mất. Đã khôi phục lại nguyên trạng handler. |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn, highlight?}`, `note?`, `source?`, `image?`, `highlight?` | Giảng ngữ pháp. `highlight` (str hoặc list[str], cấp SLIDE — áp dụng mọi ví dụ, hoặc cấp ví dụ để override riêng) = tô màu accent (đỏ) cho đúng chỗ khớp trong `hz` của từng ví dụ, giúp học viên thấy ngay từ/cấu trúc đang học nằm ở đâu trong câu (vd `"highlight": "没有"` tô đỏ mọi chỗ xuất hiện "没有"; 时量补语 nên override theo từng ví dụ vì cụm bổ ngữ khác nhau mỗi câu, vd ví dụ 1 `"highlight": "半个多小时"`, ví dụ 2 `"highlight": "两个小时了"`).<br>**`groups[]` = `[{point, examples[]}]` (2026-09-08) — chế độ 2 CỘT: mỗi điểm ngữ pháp ở cột TRÁI, ví dụ tương ứng ngay cột PHẢI, các nhóm cách nhau bằng vạch ngăn mảnh.** Dùng thay cho `point` + `examples` phẳng khi 1 slide có nhiều điểm nhỏ (vd 是 = LÀ → 我是中国人。 / 不是 = KHÔNG PHẢI → 我老师不是法国人。) — kiểu phẳng dồn hết công thức thành 1 cục rồi mới liệt kê ví dụ, người học không biết ví dụ nào thuộc điểm nào. Chữ Hán trong `point` tự động tô đỏ (không cần khai `highlight`). Có `groups` thì `point`/`examples` cấp slide bị bỏ qua. |
 | `table` | `headers[]`, `rows[][]` (+ `cjk_cols[]`) | Bảng so sánh (vd 了 vs 过) |
 | `dialogue` | `turns[]` = `{speaker, hz, py, vn?}` (+ `image?`, `image_side?`, `layout?`) | Khung hội thoại (bong bóng chat 2 phía, hoặc swimlane 1-cột/người nếu >2 speaker) — hội thoại nhiều lượt nên **bỏ `vn`** để bong bóng không tràn/đụng nhau. Có `image` → ảnh ngữ cảnh 1 bên, khung thoại co vào bên còn lại (giúp liên tưởng bối cảnh thay vì chỉ thấy chữ nổi). `layout: "column"` (2026-09-09, review buổi 05 HSK1) — ép về **1 CỘT DUY NHẤT** bất kể số người nói, mọi lượt xếp thẳng trên→dưới đúng thứ tự nói (đánh số `1. 2. 3.`), màu card đổi theo người nói để vẫn phân biệt được ai nói. Dùng khi swimlane mặc định (>2 speaker) khiến 2 lượt của 2 người khác nhau rơi cùng hàng ngang trông như nói đồng thời ("ngang hàng khó coi") — hoặc khi muốn ép cả hội thoại 2 người đọc như kịch bản tuần tự thay vì bong bóng chat trái/phải. |
 | `passage` | `title`, `sentences[]` = `{hz, py, vn}` (+ `note?`, `image?`, `image_side?`) | Đoạn văn tự sự/kể chuyện (课文 thể 叙述体, câu nối tiếp câu — KHÔNG phải hội thoại qua lại) — mỗi câu 1 khối, không dùng bong bóng thoại. ⚠️ **`image_side` chỉ có tác dụng khi khai rõ trong JSON** (đã sửa 2026-09-09, buổi 04 HSK1 — trước đó field này được README ghi nhưng renderer chưa cài, luôn ép ảnh full-width lên TRÊN bất kể khai gì, gây tràn khi đoạn văn dài); không khai `image_side` → giữ layout ảnh-trên cũ (ảnh chiếm ~32% chiều cao). Có `footer_note` nhiều dòng → nhớ cộng `_footer_lines_extra(s)` vào `_content_area_h()` giống `word_pair`/`vocab`, nếu không nội dung chính sẽ tràn xuống đè footer |
 | `reading` | `groups[]` = `{label, items[]}` | Nguồn đọc thêm (nhóm "trong sách" / "nguồn ngoài") |
-| `exercise` | `instructions?`, `items[]` (+ `image?`, `word_bank?`) | Slide bài tập (đánh số) |
-| `answers` | `items[]` (+ `word_bank?`) | Slide đáp án (đánh số) |
+| `exercise` | `instructions?`, `items[]` (+ `image?`, `word_bank?`) | Slide bài tập (renderer TỰ đánh số `1. 2. 3.` — không tự thêm số vào đầu string trong `items[]`, sẽ bị đánh số đôi "1. 1. ...") |
+| `answers` | `items[]` (+ `word_bank?`) | Slide đáp án (renderer TỰ đánh số, cùng lưu ý trên) |
 | `bullets` | `bullets[]` (+ `image?`, `word_bank?`) | Gạch đầu dòng thường |
 
 **`exercise`/`answers`/`bullets` — item 2 dòng "nhãn\ncâu" (2026-08-13):** mỗi phần tử
@@ -165,6 +165,12 @@ buổi). Thay thế `word_pair` cho trường hợp "2-3 từ ghép chung 1 câu
 nhiên" (khác `word_pair` gốc — mỗi từ ảnh/ví dụ RIÊNG, hợp khi 2 từ không liên
 quan nhau).
 
+⚠️ **Luôn khai `title` riêng cho slide `vocab`** (2026-09-10, Buổi 8 HSK1) — không
+khai → renderer tự điền mặc định **"Từ vựng mới"** (vô nghĩa, không mô tả từ nào
+đang dạy) do code fallback `s.get("title", "Từ vựng mới")`. Dùng các `hz` trong
+`items[]` nối bằng " · " làm title (vd `"只 · 小 · 猫 · 漂亮"`) — vừa đúng nội dung,
+vừa nhất quán với cách các type khác (`grammar`, `table`...) đặt title.
+
 **Chọn `vocab` (bảng) hay `wordcard`/`word_pair` (1-2 từ/slide) cho 生词 chính (2026-08-06):**
 `references/slide-design-best-practices.md` (đóng gói trong `chinese-teaching.skill`) ghi
 "từ vựng = BẢNG cân cột, dùng type `vocab`" — quy tắc này có từ trước khi `wordcard`/
@@ -175,12 +181,28 @@ Dùng `vocab` (bảng) khi: liệt kê nhanh không cần ảnh/ví dụ riêng 
 cuối buổi, bảng đối chiếu). Mặc định cho 生词 dạy mới trong 1 buổi: `wordcard` (1 từ, cần
 đào sâu) hoặc `word_pair` (2 từ liên quan/slide, khi số lượng lớn cần nén gọn).
 
+**Cập nhật (2026-09-10, Buổi 8 HSK1): ưu tiên `vocab` chế độ THẺ (không phải bảng)
+khi 2-4 từ cùng xuất hiện trong 1 câu ví dụ có sẵn trong sách/课文** — thay vì tách
+thành nhiều slide `wordcard`/`word_pair`. Lý do: (1) chế độ thẻ của `vocab` tự động
+tô đỏ mọi từ khớp trong câu ví dụ (`word_pair`/`wordcard` KHÔNG có highlight tự động,
+phải tô tay hoặc chịu không có), (2) gọn slide hơn khi câu sách vốn đã chứa nhiều từ
+mục tiêu liền nhau (vd "这只小猫真漂亮！" chứa cả 只/小/猫/漂亮 → 1 slide thay vì 2).
+Vẫn dùng `wordcard`/`word_pair` khi từ không chia sẻ chung 1 câu ví dụ tự nhiên, hoặc
+cần ảnh/ví dụ RIÊNG cho từng từ (vd 2 nghề nghiệp khác nhau, mỗi nghề 1 ảnh).
+
 Xem [example-lesson.json](example-lesson.json) — mẫu bao trùm mọi loại slide.
 
 ## Audio giọng bản địa (nút 🔊)
 
 Thêm key `"audio": "assets/audio/slideNN.mp3"` vào slide → renderer nhúng nút 🔊
 ở góc phải header (PowerPoint nhận là **Sound**, bấm/di chuột để phát).
+
+⚠️ **Icon `speaker.png` (2026-09-10, Buổi 8 HSK1):** bản gốc nền đỏ đô + loa trắng
+trùng gần như y hệt màu dải header accent mặc định → icon gần như vô hình, user
+tưởng audio chưa nhúng dù thực ra có. Đã đổi sang nền TRẮNG + viền/loa màu accent
+để luôn tương phản với header bất kể theme buổi đó dùng accent màu gì. Nếu đổi
+`theme.accent` khác hẳn (buổi dùng màu nền không phải đỏ) → kiểm tra lại độ tương
+phản icon, không mặc định là ổn.
 
 Sinh tự động bằng helper:
 
@@ -370,6 +392,17 @@ không đúng phong cách ảnh chụp thực tế mong muốn cho slide. Pexels
 (không có mục illustration/vector), giới hạn miễn phí thoải mái (200 request/giờ,
 20.000/tháng), lấy API key tức thì không cần duyệt.
 
+### ⚠️ Tránh ảnh ẨN DỤ trừu tượng cho từ đo lường thời gian (2026-09-10, Buổi 7 HSK1)
+
+Học viên HSK1 là học sinh tiểu học — với các từ liên quan ĐO LƯỜNG THỜI GIAN cụ thể
+(点/分/半/分钟...), tránh chọn ảnh mang tính ẨN DỤ dù người lớn hiểu đúng liên tưởng
+(vd nửa quả cam/quả chanh cắt đôi để minh hoạ 半 "một nửa nói chung", cát đồng hồ chảy
+để minh hoạ 分钟 "khoảng thời gian trôi qua") — trẻ nhỏ đọc ảnh theo nghĩa ĐEN, sẽ hiểu
+nhầm 半 liên quan tới trái cây/nấu ăn thay vì "giờ rưỡi". Với nhóm từ này: ưu tiên mặt
+đồng hồ thật (ảnh chụp hoặc tự vẽ — xem mục "Tự vẽ đồng hồ chính xác bằng PIL" bên dưới)
+hơn là vật thể ẩn dụ, dù ảnh ẩn dụ có vẻ "đẹp/rõ" hơn về mặt hình ảnh thuần tuý. Nếu
+không tìm được đồng hồ phù hợp → thà để trống ảnh còn hơn gắn vật ẩn dụ dễ hiểu lầm.
+
 ### ⭐ Quy tắc MẶC ĐỊNH: ưu tiên ảnh bối cảnh VIỆT NAM
 
 Học viên là người Việt → ảnh minh hoạ **mặc định tìm ảnh liên quan Việt Nam** (người
@@ -406,6 +439,14 @@ file) → tải vào `out_dir`, ghi `credits.json`. Sau đó gắn `"image": "as
 từng slide (`title/vocab/grammar/dialogue/bullets/exercise/table/image` hỗ trợ `image` —
 `reading` không có).
 
+⚠️ **`out_dir` trong manifest được resolve theo THƯ MỤC ĐANG ĐỨNG (cwd) lúc chạy lệnh,
+KHÔNG theo vị trí file manifest** (2026-09-10, Buổi 7 HSK1) — chạy `fetch_images.py` từ
+sai cwd (vd từ gốc repo thay vì từ trong `assets/`) khiến script cố ghi vào
+`<cwd>/<out_dir>/<name>.jpg`, thư mục cha không tồn tại → TOÀN BỘ ảnh trong manifest báo
+`FAIL` hàng loạt, dễ tưởng nhầm là lỗi API/key trong khi thực ra chỉ là sai đường dẫn.
+Luôn `cd` vào đúng thư mục chứa `out_dir` (thường là `assets/` của buổi đang soạn) trước
+khi chạy, hoặc đặt `out_dir` là đường dẫn tuyệt đối trong manifest.
+
 ⚠️ **Pexels YẾU với 2 nhóm chủ đề (xác nhận qua test thực tế Buổi 3 HSK1,
 2026-09-03) — vì bản chất chỉ có ảnh chụp thật, không có đồ hoạ/icon:**
 - **Cờ quốc gia** — query kiểu `"France flag"`/`"China flag"` hay ra ảnh lạc đề (nhà
@@ -425,6 +466,39 @@ từng slide (`title/vocab/grammar/dialogue/bullets/exercise/table/image` hỗ t
   hoặc để trống theo quy tắc "2 lượt" ở trên, đừng tính 2 lượt riêng cho nhóm này vì
   gần như chắc chắn không ra ảnh đúng.
 
+### Tự vẽ đồng hồ chính xác bằng PIL (khi cần khớp ĐÚNG giờ cụ thể, 2026-09-10, Buổi 7 HSK1)
+
+Với 生词 kiểu 点/分/半 (giờ/phút/rưỡi) cần ảnh đồng hồ khớp CHÍNH XÁC giờ nói trong câu
+ví dụ (vd "现在三点半" phải thấy kim chỉ đúng 3 giờ rưỡi) — ảnh chụp thật từ Pexels gần
+như không bao giờ khớp đúng phút cần dạy (kim đồng hồ trên ảnh thật là giờ ngẫu nhiên
+lúc chụp), và đổi query nhiều lần cũng không kiểm soát được. Giải pháp đáng tin cậy hơn:
+tự vẽ mặt đồng hồ bằng `PIL.ImageDraw`, tính góc kim theo công thức toán học nên luôn
+đúng tuyệt đối:
+
+```python
+import math
+from PIL import Image, ImageDraw, ImageFont
+W = 640
+img = Image.new("RGB", (W, W), "#FFF6E9")
+d = ImageDraw.Draw(img)
+cx, cy, r = W//2, W//2, 280
+d.ellipse([cx-r, cy-r, cx+r, cy+r], fill="#FFFFFF", outline="#F2994A", width=14)
+# ... vẽ số 1-12 quanh viền (xem code đầy đủ trong lịch sử buổi 7) ...
+hour, minute = 3, 30                                   # giờ cần vẽ
+hour_angle = math.radians((hour + minute/60) * 30 - 90)
+minute_angle = math.radians(minute * 6 - 90)
+hx, hy = cx + math.cos(hour_angle)*r*0.5, cy + math.sin(hour_angle)*r*0.5
+mx, my = cx + math.cos(minute_angle)*r*0.78, cy + math.sin(minute_angle)*r*0.78
+d.line([cx, cy, hx, hy], fill="#C0392B", width=16)      # kim giờ (ngắn)
+d.line([cx, cy, mx, my], fill="#333333", width=10)      # kim phút (dài)
+img.save("assets/words/<ten>.png")
+```
+
+Dùng khi: từ vựng/ngữ pháp cần MINH HOẠ CHÍNH XÁC một mốc giờ cụ thể và ảnh thật không
+đáp ứng được (đã thử fetch nhiều query mà đồng hồ vẫn lệch giờ). Không lạm dụng cho mọi
+trường hợp — ảnh chụp thật vẫn ưu tiên khi không cần khớp giờ chính xác (vd chỉ cần
+"một cái đồng hồ" chung chung để minh hoạ từ 现在/点).
+
 ⚠️ **Pexels hay trả CÙNG 1 ảnh top-result cho nhiều query gần nghĩa khác nhau**
 (2026-09-03) — vd `"young woman smiling"` và `"person shrugging casual"` ra trùng 1
 ảnh; `"elementary school students"` và `"middle school students"` cũng trùng. Nếu
@@ -433,6 +507,14 @@ dùng chung 1 ảnh. **Sau khi fetch xong nhiều ảnh cho cùng 1 buổi, luô
 `source` trong `credits.json`** — trùng `source` giữa 2 mục → đổi query cụ thể/hẹp
 hơn cho 1 trong 2 (thêm bối cảnh riêng, vd đổi "young woman smiling" → "happy young
 woman outdoor portrait smiling nature" để tách khỏi nhóm ảnh phổ biến).
+
+⚠️ **"Đồng hồ/clock" là chủ đề Pexels đặc biệt hay lặp ảnh** (2026-09-10, Buổi 7 HSK1
+— test ~10 query khác nhau: "alarm clock", "wall clock", "digital clock", "clock face
+half past"...) — top-result liên tục rơi vào đúng vài tấm quen thuộc (đồng hồ xanh
+ngọc kiểu cổ điển, đồng hồ báo thức "SHARR", đồng hồ tháp La Mã) bất kể query đổi thế
+nào, khiến 2 từ cạnh nhau trong `word_pair` dễ vô tình dùng chung 1 ảnh. Xếp cùng nhóm
+"khó" với cờ quốc gia/icon trừu tượng ở dưới — cân nhắc dùng kỹ thuật tự vẽ đồng hồ
+(xem mục ngay dưới) thay vì cố fetch thêm nhiều lượt.
 
 ⚠️ **Đối chiếu trùng lặp phải tính CẢ ảnh đã dùng ở slide khác trong cùng deck**
 (2026-09-08, Buổi 3 HSK1): không chỉ so các ảnh vừa fetch với nhau. Bộ ảnh lớp học
@@ -469,6 +551,45 @@ tùy chọn nên dễ bị bỏ sót hoàn toàn nếu không tự nhắc — bu
 cảnh thực tế minh hoạ được (đồ vật, địa danh, hoạt động — không phải hư từ/khái niệm
 ngữ pháp), chủ động gen ảnh trước khi trình user duyệt, trừ khi có quyết định rõ ràng
 bỏ ảnh cho buổi đó (vd buổi quá dày chữ, muốn gọn).
+
+**Ảnh phải khớp ĐÚNG câu ví dụ, không chỉ đúng từ vựng đơn lẻ (2026-09-10, Buổi 8
+HSK1):** khi slide có `example` cấp câu, tìm ảnh minh hoạ đúng NỘI DUNG câu đó —
+không chỉ tìm ảnh chung chung cho 1 từ trong nhóm. Ví dụ: câu ví dụ "它在桌子下呢"
+(nó đang ở dưới bàn) → phải tìm ảnh **"cat under table"** (mèo dưới gầm bàn), không
+phải ảnh cái bàn trống — ảnh cái bàn không sai nghĩa từ 桌子 nhưng không minh hoạ
+được ý "ở dưới" mà câu ví dụ đang dạy. Tương tự "房间外有一只小猫" cần ảnh mèo ở
+NGOÀI CỬA/phòng, không phải ảnh nội thất phòng chung chung. Query nên mô tả cả
+HÀNH ĐỘNG/VỊ TRÍ trong câu, không chỉ danh từ chính.
+
+### Tách nền ảnh (rembg) — khi nào dùng, khi nào không (2026-09-10, Buổi 8 HSK1)
+
+Khác crop tròn/vuông (chỉ đổi hình dạng khung, ảnh vẫn còn nền) — **tách nền thật**
+(xoá phông, giữ lại đúng người/vật, nền trong suốt) dùng thư viện `rembg`:
+
+```bash
+"$PY" -m pip install rembg onnxruntime   # cài 1 lần, tự tải model u2net (~176MB) lần đầu chạy
+```
+
+Script tối thiểu:
+```python
+from rembg import remove
+from PIL import Image
+Image.open("assets/words/mao.jpg").pipe(lambda im: remove(im)).save("assets/words/mao_cutout.png", "PNG")
+# hoặc: remove(Image.open(src)).save(dst, "PNG")
+```
+Gắn `"image": "assets/words/mao_cutout.png"` vào slide như ảnh thường (renderer tự
+nhận PNG có alpha, nền trong suốt hiện đúng màu nền slide).
+
+**Dùng khi:** ảnh Pexels có nền lộn xộn/nhiều đồ vật thừa gây rối mắt, và chủ thể
+(người/vật) tự nó đã đủ rõ nghĩa không cần ngữ cảnh xung quanh (vd chân dung nghề
+nghiệp, con vật). Cho slide nhiều items dùng chung 1 ảnh, tách nền giúp ảnh trông
+gọn như sticker, không lấn nội dung chữ bên cạnh.
+
+**KHÔNG dùng khi:** ngữ cảnh nền là 1 PHẦN NGHĨA của ảnh — vd ảnh minh hoạ 老师
+(giáo viên) mà người đứng viết bảng: tách nền xong mất luôn cái bảng, chỉ còn người
+quay lưng lơ lửng, không ai đoán được là "giáo viên" nữa. Trường hợp này giữ nguyên
+ảnh chữ nhật gốc. Luôn xem lại ảnh sau khi tách (Read file ảnh) — nếu mất ngữ cảnh
+quan trọng, đổi query ảnh gốc tìm bối cảnh khác thay vì cố tách nền ảnh đang có.
 
 **Known issues chờ điều tra kỹ hơn (2026-08-07, phát hiện khi làm Buổi 9):**
 - **Bong bóng hội thoại (`_slide_dialogue`) quá khổ**: chiều rộng/chiều cao bubble hiện
