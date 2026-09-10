@@ -1,0 +1,330 @@
+{
+  "words/dianyingyuan": {
+    "title": "cinema building exterior entrance evening",
+    "creator": "Ben Spadinger",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/cinema-roma-blue-sign-at-night-in-turin-32458988/",
+    "attribution": "Photo by Ben Spadinger on Pexels",
+    "query": "cinema building exterior entrance evening"
+  },
+  "words/yiyuan": {
+    "title": "hospital building facade entrance ambulance",
+    "creator": "Timothy Huliselan",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/hospital-by-the-street-20026899/",
+    "attribution": "Photo by Timothy Huliselan on Pexels",
+    "query": "hospital building facade entrance ambulance"
+  },
+  "words/dian": {
+    "title": "small shop storefront Vietnam street",
+    "creator": "Tuan Vy",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/local-convenience-store-in-vietnam-with-customer-32856479/",
+    "attribution": "Photo by Tuan Vy on Pexels",
+    "query": "small shop storefront Vietnam street"
+  },
+  "words/cai": {
+    "title": "Vietnamese vegetables dish plate market",
+    "creator": "Anh Tuấn Lê",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/woman-plating-food-at-a-market-stall-13197712/",
+    "attribution": "Photo by Anh Tuấn Lê on Pexels",
+    "query": "Vietnamese vegetables dish plate market"
+  },
+  "words/jia": {
+    "title": "Vietnamese family home living room together",
+    "creator": "Phil Nguyen",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/man-wearing-red-top-1044995/",
+    "attribution": "Photo by Phil Nguyen on Pexels",
+    "query": "Vietnamese family home living room together"
+  },
+  "topic/sunrise": {
+    "title": "sunrise morning sun rising sky",
+    "creator": "Magda Ehlers",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/stunning-sunrise-over-cloudy-horizon-37606760/",
+    "attribution": "Photo by Magda Ehlers on Pexels",
+    "query": "sunrise morning sun rising sky"
+  },
+  "topic/noon": {
+    "title": "bright noon sun high in sky",
+    "creator": "Tuğba",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/the-sun-is-shining-brightly-in-the-blue-sky-27679978/",
+    "attribution": "Photo by Tuğba on Pexels",
+    "query": "bright noon sun high in sky"
+  },
+  "topic/sunset": {
+    "title": "sunset evening sun setting sky",
+    "creator": "Lucas Pezeta",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/picturesque-sunset-sky-with-sun-5619196/",
+    "attribution": "Photo by Lucas Pezeta on Pexels",
+    "query": "sunset evening sun setting sky"
+  },
+  "topic/night": {
+    "title": "night sky stars dark city",
+    "creator": "Lachlan  Ross",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/river-with-shiny-pier-under-cloudless-starry-sky-6510358/",
+    "attribution": "Photo by Lachlan  Ross on Pexels",
+    "query": "night sky stars dark city"
+  },
+  "words/zhong1": {
+    "title": "alarm clock close up table morning",
+    "creator": "Atlantic Ambience",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/red-alarm-clock-on-a-book-12932690/",
+    "attribution": "Photo by Atlantic Ambience on Pexels",
+    "query": "alarm clock close up table morning"
+  },
+  "words/zhong2": {
+    "title": "wall clock showing half past hour",
+    "creator": "Cats Coming",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/wall-clock-at-5-50-707582/",
+    "attribution": "Photo by Cats Coming on Pexels",
+    "query": "wall clock showing half past hour"
+  },
+  "words/classroom_in": {
+    "title": "Vietnamese students classroom raising hands lesson",
+    "creator": "Pavel Danilyuk",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/kids-sitting-at-the-table-8423040/",
+    "attribution": "Photo by Pavel Danilyuk on Pexels",
+    "query": "Vietnamese students classroom raising hands lesson"
+  },
+  "words/classroom_out": {
+    "title": "students leaving classroom backpack hallway",
+    "creator": "Norma Mortenson",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/back-view-shot-of-students-walking-on-a-hallway-while-having-a-conversation-8456146/",
+    "attribution": "Photo by Norma Mortenson on Pexels",
+    "query": "students leaving classroom backpack hallway"
+  },
+  "words/friends_meet": {
+    "title": "two friends waving hello happy reunion park",
+    "creator": "Zen Chung",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/smiling-woman-waving-at-another-woman-5537581/",
+    "attribution": "Photo by Zen Chung on Pexels",
+    "query": "two friends waving hello happy reunion park"
+  },
+  "words/busy_desk": {
+    "title": "person busy working desk papers",
+    "creator": "RDNE Stock project",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/a-person-writing-while-holding-a-cup-of-coffee-5921570/",
+    "attribution": "Photo by RDNE Stock project on Pexels",
+    "query": "person busy working desk papers"
+  },
+  "words/chatting": {
+    "title": "two friends chatting talking outdoor happy",
+    "creator": "Mike Jones",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/man-and-woman-talking-near-the-window-9050619/",
+    "attribution": "Photo by Mike Jones on Pexels",
+    "query": "two friends chatting talking outdoor happy"
+  },
+  "words/xianzai_watch": {
+    "title": "close up wristwatch checking time hand",
+    "creator": "Bimal  Chhetry",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/a-person-holding-an-analog-wristwatch-14312717/",
+    "attribution": "Photo by Bimal  Chhetry on Pexels",
+    "query": "close up wristwatch checking time hand"
+  },
+  "words/dian_clock": {
+    "title": "simple alarm clock white face arabic numbers",
+    "creator": "Wal Saravia",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/vintage-metal-alarm-clock-on-countertop-31103955/",
+    "attribution": "Photo by Wal Saravia on Pexels",
+    "query": "simple alarm clock white face arabic numbers"
+  },
+  "words/fen_digital": {
+    "title": "digital alarm clock bedside table red numbers seven segment",
+    "creator": "Wal Saravia",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/vintage-metal-alarm-clock-on-countertop-31103955/",
+    "attribution": "Photo by Wal Saravia on Pexels",
+    "query": "digital alarm clock bedside table red numbers seven segment"
+  },
+  "words/ban_clock": {
+    "title": "modern wall clock arabic numbers minimalist",
+    "creator": "Jessica Lewis 🦋 thepaintedsquare",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/round-teal-and-white-analog-table-clock-displaying-10-10-time-191414/",
+    "attribution": "Photo by Jessica Lewis 🦋 thepaintedsquare on Pexels",
+    "query": "modern wall clock arabic numbers minimalist"
+  },
+  "words/shangwu_sky": {
+    "title": "soft morning sunlight blue sky clouds",
+    "creator": "涵 涵",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/white-clouds-covering-sun-1686230/",
+    "attribution": "Photo by 涵 涵 on Pexels",
+    "query": "soft morning sunlight blue sky clouds"
+  },
+  "words/chatting2": {
+    "title": "two young friends laughing talking table daylight",
+    "creator": "Hakan Sapci",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/relaxing-beachside-picnic-with-scenic-view-38390585/",
+    "attribution": "Photo by Hakan Sapci on Pexels",
+    "query": "two young friends laughing talking table daylight"
+  },
+  "words/hourglass": {
+    "title": "hourglass sand timer close up",
+    "creator": "Dhia Eddine",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/close-up-photo-of-hourglass-7224866/",
+    "attribution": "Photo by Dhia Eddine on Pexels",
+    "query": "hourglass sand timer close up"
+  },
+  "words/walking_away": {
+    "title": "person walking away street back view city",
+    "creator": "Jan Ernest",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/black-and-white-photo-of-walking-on-the-sidewalk-10399158/",
+    "attribution": "Photo by Jan Ernest on Pexels",
+    "query": "person walking away street back view city"
+  },
+  "words/fen_macro": {
+    "title": "macro close up clock minute hand seconds hand black white",
+    "creator": "Jessica Lewis 🦋 thepaintedsquare",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/round-teal-and-white-analog-table-clock-displaying-10-10-time-191414/",
+    "attribution": "Photo by Jessica Lewis 🦋 thepaintedsquare on Pexels",
+    "query": "macro close up clock minute hand seconds hand black white"
+  },
+  "words/hou_wait": {
+    "title": "person waiting checking watch impatient sitting",
+    "creator": "Anderson Portella",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/a-person-sitting-on-the-pavement-9396157/",
+    "attribution": "Photo by Anderson Portella on Pexels",
+    "query": "person waiting checking watch impatient sitting"
+  },
+  "words/dian_exact": {
+    "title": "clock face hands vertical twelve o'clock exact",
+    "creator": "Jessica Lewis 🦋 thepaintedsquare",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/round-teal-and-white-analog-table-clock-displaying-10-10-time-191414/",
+    "attribution": "Photo by Jessica Lewis 🦋 thepaintedsquare on Pexels",
+    "query": "clock face hands vertical twelve o'clock exact"
+  },
+  "words/ban_half": {
+    "title": "clock face hands half past minute hand down",
+    "creator": "Jessica Lewis 🦋 thepaintedsquare",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/round-teal-and-white-analog-table-clock-displaying-10-10-time-191414/",
+    "attribution": "Photo by Jessica Lewis 🦋 thepaintedsquare on Pexels",
+    "query": "clock face hands half past minute hand down"
+  },
+  "words/classroom_study": {
+    "title": "students studying textbook desk bright classroom",
+    "creator": "Yan Krukau",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/a-boy-looking-down-a-microscope-8617845/",
+    "attribution": "Photo by Yan Krukau on Pexels",
+    "query": "students studying textbook desk bright classroom"
+  },
+  "words/hou_next": {
+    "title": "calendar pages flipping bright colorful",
+    "creator": "Jakub Zerdzicki",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/abstract-close-up-of-orange-curved-paper-art-36343921/",
+    "attribution": "Photo by Jakub Zerdzicki on Pexels",
+    "query": "calendar pages flipping bright colorful"
+  },
+  "words/timer_bright": {
+    "title": "colorful kitchen timer clock bright kids",
+    "creator": "COPPERTIST WU",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/close-up-of-a-donha-egg-watch-pendant-15930083/",
+    "attribution": "Photo by COPPERTIST WU on Pexels",
+    "query": "colorful kitchen timer clock bright kids"
+  },
+  "words/hou_path": {
+    "title": "sunny path forward trail walking daylight colorful",
+    "creator": "abdullah çadırcı",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/a-person-walking-on-the-boardwalk-7770392/",
+    "attribution": "Photo by abdullah çadırcı on Pexels",
+    "query": "sunny path forward trail walking daylight colorful"
+  },
+  "words/ban_orange": {
+    "title": "orange fruit sliced in half two equal pieces",
+    "creator": "Israyosoy S.",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/vibrant-orange-slice-on-pastel-background-28893011/",
+    "attribution": "Photo by Israyosoy S. on Pexels",
+    "query": "orange fruit sliced in half two equal pieces"
+  },
+  "words/shi_homework": {
+    "title": "child student pile homework books stressed desk",
+    "creator": "Son Hoa Nguyen",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/child-in-vietnamese-classroom-with-school-supplies-33985330/",
+    "attribution": "Photo by Son Hoa Nguyen on Pexels",
+    "query": "child student pile homework books stressed desk"
+  },
+  "words/xianzai_kid": {
+    "title": "kid pointing at wristwatch smiling",
+    "creator": "Carlos Ruiz",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/boy-in-black-jacket-wearing-black-sunglasses-smiling-4416688/",
+    "attribution": "Photo by Carlos Ruiz on Pexels",
+    "query": "kid pointing at wristwatch smiling"
+  },
+  "words/ban_clock2": {
+    "title": "clock reading half past three thirty pm",
+    "creator": "Jean-Francois Frenel",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/elegant-vintage-clock-with-roman-numerals-35070219/",
+    "attribution": "Photo by Jean-Francois Frenel on Pexels",
+    "query": "clock reading half past three thirty pm"
+  },
+  "words/ban_clock3": {
+    "title": "colorful kids wall clock bright numbers bedroom",
+    "creator": "Jessica Lewis 🦋 thepaintedsquare",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/round-teal-and-white-analog-table-clock-displaying-10-10-time-191414/",
+    "attribution": "Photo by Jessica Lewis 🦋 thepaintedsquare on Pexels",
+    "query": "colorful kids wall clock bright numbers bedroom"
+  },
+  "words/fenzhong_stopwatch": {
+    "title": "analog stopwatch red simple sports",
+    "creator": "Jilly Noble",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/vintage-pink-alarm-clock-on-pastel-background-29765808/",
+    "attribution": "Photo by Jilly Noble on Pexels",
+    "query": "analog stopwatch red simple sports"
+  },
+  "words/fenzhong_pocket": {
+    "title": "vintage pocket watch open lying on wooden table",
+    "creator": "Jean Fabien Pagano",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/close-up-of-a-gold-pocket-watch-12826332/",
+    "attribution": "Photo by Jean Fabien Pagano on Pexels",
+    "query": "vintage pocket watch open lying on wooden table"
+  },
+  "words/ban_digital": {
+    "title": "digital alarm clock display morning numbers bedside",
+    "creator": "Wal Saravia",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/vintage-metal-alarm-clock-on-countertop-31103955/",
+    "attribution": "Photo by Wal Saravia on Pexels",
+    "query": "digital alarm clock display morning numbers bedside"
+  },
+  "words/ban_phone": {
+    "title": "smartphone lock screen clock time display close up",
+    "creator": "Kafeel Ahmed",
+    "license": "Pexels License",
+    "source": "https://www.pexels.com/photo/time-on-cellphone-screen-14979013/",
+    "attribution": "Photo by Kafeel Ahmed on Pexels",
+    "query": "smartphone lock screen clock time display close up"
+  }
+}

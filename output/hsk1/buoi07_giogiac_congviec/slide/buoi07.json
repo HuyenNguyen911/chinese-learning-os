@@ -1,0 +1,891 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 7",
+    "topic": "我晚上六点半下班 — Giờ giấc & công việc"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我晚上六点半下班",
+      "subtitle": "Tôi tan làm lúc 6 giờ rưỡi tối",
+      "footer": "HSK1 · Buổi 7",
+      "image": "assets/topic/sunset.jpg"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么？",
+      "image": "assets/icons/icon_target.png",
+      "bullets": [
+        "Nói được MẤY GIỜ, xếp đúng thứ tự TO → NHỎ (năm/tháng/ngày/giờ...).",
+        "Biết dùng 上午/中午/下午/晚上/半夜 đúng buổi trong ngày.",
+        "Biết thêm 吧 để rủ rê nhẹ nhàng, thêm 呢 để nói chắc chắn hơn.",
+        "Kể được 1 ngày của mình bằng tiếng Trung."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第一部分 · 课本生词"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 1-2/27",
+      "title": "现在／点 — Bây giờ là mấy giờ?",
+      "words": [
+        {
+          "hz": "现在",
+          "py": "xiànzài",
+          "vn": "bây giờ",
+          "image": "assets/words/xianzai_watch.jpg",
+          "example": {
+            "hz": "现在几点？",
+            "py": "Xiànzài jǐ diǎn?",
+            "vn": "Bây giờ mấy giờ rồi?"
+          }
+        },
+        {
+          "hz": "点",
+          "py": "diǎn",
+          "vn": "giờ (đơn vị)",
+          "image": "assets/words/dian_clock.jpg",
+          "example": {
+            "hz": "现在四点十五分。",
+            "py": "Xiànzài sì diǎn shíwǔ fēn.",
+            "vn": "Bây giờ là 4 giờ 15 phút."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 3-4/27",
+      "title": "分／半 — Đọc số phút",
+      "words": [
+        {
+          "hz": "分",
+          "py": "fēn",
+          "vn": "phút (mốc giờ)",
+          "image": "assets/words/ban_clock.jpg",
+          "example": {
+            "hz": "现在十点十分。",
+            "py": "Xiànzài shí diǎn shí fēn.",
+            "vn": "Bây giờ là 10 giờ 10 phút."
+          }
+        },
+        {
+          "hz": "半",
+          "py": "bàn",
+          "vn": "rưỡi",
+          "image": "assets/words/ban_drawn.png",
+          "example": {
+            "hz": "现在三点半。",
+            "py": "Xiànzài sān diǎn bàn.",
+            "vn": "Bây giờ là 3 giờ rưỡi."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 5-6/27",
+      "title": "早上／上午 — Buổi sáng",
+      "words": [
+        {
+          "hz": "早上",
+          "py": "zǎoshang",
+          "vn": "sáng sớm",
+          "image": "assets/topic/sunrise.jpg",
+          "example": {
+            "hz": "早上八点四十。",
+            "py": "Zǎoshang bā diǎn sìshí.",
+            "vn": "8 giờ 40 sáng sớm."
+          }
+        },
+        {
+          "hz": "上午",
+          "py": "shàngwǔ",
+          "vn": "buổi sáng",
+          "image": "assets/words/shangwu_sky.jpg",
+          "example": {
+            "hz": "我上午十点有课。",
+            "py": "Wǒ shàngwǔ shí diǎn yǒu kè.",
+            "vn": "Tôi có tiết học lúc 10 giờ sáng."
+          }
+        }
+      ],
+      "footer_note": "早上 là lúc trời vừa sáng, còn 上午 là cả buổi sáng dài hơn (có thể nói 上午十点, 上午十一点...).",
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 7-8/27",
+      "title": "下午／晚上 — Buổi chiều & buổi tối",
+      "words": [
+        {
+          "hz": "下午",
+          "py": "xiàwǔ",
+          "vn": "buổi chiều",
+          "image": "assets/topic/sunset.jpg",
+          "example": {
+            "hz": "我们下午两点见吧。",
+            "py": "Wǒmen xiàwǔ liǎng diǎn jiàn ba.",
+            "vn": "Chiều nay 2 giờ mình gặp nhau nhé."
+          }
+        },
+        {
+          "hz": "晚上",
+          "py": "wǎnshang",
+          "vn": "buổi tối",
+          "image": "assets/topic/night.jpg",
+          "example": {
+            "hz": "我晚上六点半下班。",
+            "py": "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+            "vn": "Tối nay tôi tan làm lúc 6 giờ rưỡi."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 9/27",
+      "title": "课 — Tiết học",
+      "hz": "课",
+      "py": "kè",
+      "vn": "tiết học",
+      "image": "assets/words/classroom_in.jpg",
+      "examples": [
+        {
+          "hz": "我上午有课。",
+          "py": "Wǒ shàngwǔ yǒu kè.",
+          "vn": "Sáng nay tôi có tiết học."
+        },
+        {
+          "hz": "下午两点还有课。",
+          "py": "Xiàwǔ liǎng diǎn hái yǒu kè.",
+          "vn": "Chiều 2 giờ vẫn còn tiết học."
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 10-11/27",
+      "title": "上课／下课 — Lên lớp & tan học",
+      "words": [
+        {
+          "hz": "上课",
+          "py": "shàngkè",
+          "vn": "lên lớp, đi học",
+          "image": "assets/words/classroom_study.jpg",
+          "example": {
+            "hz": "我们上午十点上课。",
+            "py": "Wǒmen shàngwǔ shí diǎn shàngkè.",
+            "vn": "Chúng tôi học lúc 10 giờ sáng."
+          }
+        },
+        {
+          "hz": "下课",
+          "py": "xiàkè",
+          "vn": "tan học",
+          "image": "assets/words/classroom_out.jpg",
+          "example": {
+            "hz": "我们四点半下课。",
+            "py": "Wǒmen sì diǎn bàn xiàkè.",
+            "vn": "Chúng tôi tan học lúc 4 giờ rưỡi."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 12-13/27",
+      "title": "见／事 — Gặp nhau & bận việc",
+      "words": [
+        {
+          "hz": "见",
+          "py": "jiàn",
+          "vn": "gặp",
+          "image": "assets/words/friends_meet.jpg",
+          "example": {
+            "hz": "明天见！",
+            "py": "Míngtiān jiàn!",
+            "vn": "Mai gặp lại!"
+          }
+        },
+        {
+          "hz": "事",
+          "py": "shì",
+          "vn": "việc, chuyện",
+          "image": "assets/words/shi_homework.jpg",
+          "example": {
+            "hz": "下午我还有事。",
+            "py": "Xiàwǔ wǒ hái yǒu shì.",
+            "vn": "Chiều nay tôi vẫn còn việc."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 14-15/27",
+      "title": "吧／呢 — 2 chữ thêm cuối câu",
+      "words": [
+        {
+          "hz": "吧",
+          "py": "ba",
+          "vn": "giống thêm chữ \"nhé\"",
+          "image": "assets/words/chatting.jpg",
+          "example": {
+            "hz": "我们两点见吧。",
+            "py": "Wǒmen liǎng diǎn jiàn ba.",
+            "vn": "Mình gặp nhau lúc 2 giờ nhé."
+          }
+        },
+        {
+          "hz": "呢",
+          "py": "ne",
+          "vn": "giống thêm chữ \"đấy\"",
+          "image": "assets/words/chatting2.jpg",
+          "example": {
+            "hz": "我还上课呢。",
+            "py": "Wǒ hái shàngkè ne.",
+            "vn": "Mình vẫn đang học đấy."
+          }
+        }
+      ],
+      "footer_note": "吧 và 呢 sẽ học kỹ hơn ở phần 语法 phía sau.",
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 16-18/27",
+      "title": "电影院／电影／看 — Đi xem phim",
+      "items": [
+        {
+          "hz": "电影院",
+          "py": "diànyǐngyuàn",
+          "vn": "rạp chiếu phim"
+        },
+        {
+          "hz": "电影",
+          "py": "diànyǐng",
+          "vn": "phim"
+        },
+        {
+          "hz": "看",
+          "py": "kàn",
+          "vn": "xem, nhìn"
+        }
+      ],
+      "image": "assets/words/dianyingyuan.jpg",
+      "example": {
+        "hz": "我想去电影院看电影。",
+        "py": "Wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng.",
+        "vn": "Tôi muốn đi rạp xem phim."
+      },
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 19-21/27",
+      "title": "在／家／里 — Ở đâu vậy?",
+      "items": [
+        {
+          "hz": "在",
+          "py": "zài",
+          "vn": "ở, tại"
+        },
+        {
+          "hz": "家",
+          "py": "jiā",
+          "vn": "nhà"
+        },
+        {
+          "hz": "里",
+          "py": "lǐ",
+          "vn": "trong, bên trong"
+        }
+      ],
+      "image": "assets/words/jia.jpg",
+      "example": {
+        "hz": "我在家里呢。",
+        "py": "Wǒ zài jiā li ne.",
+        "vn": "Tôi đang ở nhà."
+      },
+      "footer_note": "里 đứng sau 家/店 thì đọc nhẹ \"li\", không đọc nặng \"lǐ\".",
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 22-23/27",
+      "title": "医院／上班 — Đi làm",
+      "items": [
+        {
+          "hz": "医院",
+          "py": "yīyuàn",
+          "vn": "bệnh viện"
+        },
+        {
+          "hz": "上班",
+          "py": "shàngbān",
+          "vn": "đi làm"
+        }
+      ],
+      "image": "assets/words/yiyuan.jpg",
+      "example": {
+        "hz": "我八点去医院上班。",
+        "py": "Wǒ bā diǎn qù yīyuàn shàngbān.",
+        "vn": "Tôi đi làm ở bệnh viện lúc 8 giờ."
+      },
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 24-25/27",
+      "title": "店／菜 — Ra cửa hàng mua đồ",
+      "items": [
+        {
+          "hz": "店",
+          "py": "diàn",
+          "vn": "cửa hàng"
+        },
+        {
+          "hz": "菜",
+          "py": "cài",
+          "vn": "rau, món ăn"
+        }
+      ],
+      "image": "assets/words/dian.jpg",
+      "example": {
+        "hz": "你去店里买些菜吧。",
+        "py": "Nǐ qù diàn li mǎi xiē cài ba.",
+        "vn": "Bạn ra cửa hàng mua ít rau nhé."
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词 26-27/27",
+      "title": "分钟／后 — Còn bao lâu nữa?",
+      "words": [
+        {
+          "hz": "分钟",
+          "py": "fēnzhōng",
+          "vn": "phút (khoảng thời gian)",
+          "example": {
+            "hz": "我十分钟后去。",
+            "py": "Wǒ shí fēnzhōng hòu qù.",
+            "vn": "10 phút nữa tôi đi."
+          }
+        },
+        {
+          "hz": "后",
+          "py": "hòu",
+          "vn": "sau, sau đó",
+          "example": {
+            "hz": "下课后，我想去超市。",
+            "py": "Xiàkè hòu, wǒ xiǎng qù chāoshì.",
+            "vn": "Sau khi tan học, tôi muốn đi siêu thị."
+          }
+        }
+      ],
+      "footer_note": "分 (đã học ở slide đầu) dùng để nói MỐC GIỜ (2 giờ 10 phút); 分钟 dùng để nói MỘT KHOẢNG thời gian dài bao lâu (10 phút nữa).",
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "会话 1 · 打电话约时间",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "现在几点？",
+          "py": "Xiànzài jǐ diǎn?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "早上八点四十。",
+          "py": "Zǎoshang bā diǎn sìshí."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我上午十点十分有课。",
+          "py": "Wǒ shàngwǔ shí diǎn shí fēn yǒu kè."
+        },
+        {
+          "speaker": "安妮",
+          "hz": "好的，我们下午两点见吧。",
+          "py": "Hǎo de, wǒmen xiàwǔ liǎng diǎn jiàn ba."
+        }
+      ],
+      "voices": {
+        "白家月": "zh-CN-XiaoxiaoNeural",
+        "安妮": "zh-CN-XiaoyiNeural"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "会话 2 · 约看电影",
+      "turns": [
+        {
+          "speaker": "李文",
+          "hz": "下午我想去电影院看电影，你去吗？",
+          "py": "Xiàwǔ wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng, nǐ qù ma?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我不想去，下午还有事。",
+          "py": "Wǒ bù xiǎng qù, xiàwǔ hái yǒu shì."
+        },
+        {
+          "speaker": "李文",
+          "hz": "好的。明天呢？",
+          "py": "Hǎo de. Míngtiān ne?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我明天下午两点还上课呢，四点半下课。",
+          "py": "Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne, sì diǎn bàn xiàkè."
+        }
+      ],
+      "voices": {
+        "李文": "zh-CN-YunxiNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "会话 3 · 打电话问在哪儿",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "喂，你在哪儿呢？",
+          "py": "Wèi, nǐ zài nǎr ne?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我在家里呢。",
+          "py": "Wǒ zài jiā li ne."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我晚上六点半下班。",
+          "py": "Wǒ wǎnshang liù diǎn bàn xiàbān."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我八点去医院上班。",
+          "py": "Wǒ bā diǎn qù yīyuàn shàngbān."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "好的，你去店里买些菜吧。",
+          "py": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "好，我十分钟后去。",
+          "py": "Hǎo, wǒ shí fēnzhōng hòu qù."
+        }
+      ],
+      "voices": {
+        "王一雪": "zh-CN-XiaoyiNeural",
+        "刘明": "zh-CN-YunyangNeural"
+      },
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/5",
+      "title": "Nói giờ: TO nói trước, NHỎ nói sau",
+      "groups": [
+        {
+          "point": "Xếp từ TO → NHỎ: năm → tháng → ngày → thứ → buổi → giờ → phút (ngược tiếng Việt!)",
+          "examples": [
+            {
+              "hz": "2026年9月10号（星期四）晚上七点半。",
+              "py": "Èr líng èr liù nián jiǔ yuè shí hào (xīngqīsì) wǎnshang qī diǎn bàn.",
+              "vn": "7 giờ rưỡi tối, thứ Năm, ngày 10 tháng 9 năm 2026 (tiếng Việt nói ngược lại).",
+              "highlight": "晚上七点半"
+            }
+          ]
+        },
+        {
+          "point": "刻 = 15 phút, nói nhanh gọn hơn",
+          "examples": [
+            {
+              "hz": "现在七点一刻。",
+              "py": "Xiànzài qī diǎn yí kè.",
+              "vn": "Bây giờ là 7 giờ 15 phút.",
+              "highlight": "一刻"
+            },
+            {
+              "hz": "现在七点三刻。",
+              "py": "Xiànzài qī diǎn sān kè.",
+              "vn": "Bây giờ là 7 giờ 45 phút.",
+              "highlight": "三刻"
+            }
+          ]
+        },
+        {
+          "point": "Thêm 2 buổi mới: 中午 (buổi trưa), 半夜 (nửa đêm)",
+          "examples": [
+            {
+              "hz": "中午十二点，半夜两点。",
+              "py": "Zhōngwǔ shí'èr diǎn, bànyè liǎng diǎn.",
+              "vn": "12 giờ trưa, 2 giờ đêm khuya.",
+              "highlight": [
+                "中午",
+                "半夜"
+              ]
+            }
+          ]
+        }
+      ],
+      "tip": "Nhớ như xếp hộp: hộp TO ở ngoài, hộp NHỎ ở trong — năm ngoài cùng, phút trong cùng!",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 1/5",
+      "title": "Xếp lại cho đúng thứ tự",
+      "instructions": "Ghép các mảnh dưới đây thành 1 câu đúng thứ tự TO → NHỎ (nói miệng).",
+      "items": [
+        "点半／晚上／七\nDiǎn bàn ／ Wǎnshang ／ Qī",
+        "十点／上午／有课\nShí diǎn ／ Shàngwǔ ／ Yǒu kè",
+        "半夜／两点\nBànyè ／ Liǎng diǎn"
+      ]
+    },
+    {
+      "type": "info_grid",
+      "kicker": "语法 2/5",
+      "title": "Nhìn mặt trời, biết ngay buổi nào!",
+      "cards": [
+        {
+          "label": "早上／上午",
+          "image": "assets/topic/sunrise.jpg",
+          "py": "zǎoshang / shàngwǔ",
+          "caption": "Mặt trời mới mọc, đang lên cao"
+        },
+        {
+          "label": "中午",
+          "image": "assets/topic/noon.jpg",
+          "py": "zhōngwǔ",
+          "caption": "Mặt trời ở ngay trên đỉnh đầu"
+        },
+        {
+          "label": "下午",
+          "image": "assets/topic/sunset.jpg",
+          "py": "xiàwǔ",
+          "caption": "Mặt trời đang từ từ xuống"
+        },
+        {
+          "label": "晚上／半夜",
+          "image": "assets/topic/night.jpg",
+          "py": "wǎnshang / bànyè",
+          "caption": "Trời đã tối, có sao"
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 2/5",
+      "title": "Đoán xem là buổi nào?",
+      "items": [
+        "Mặt trời mới mọc, đang lên cao → là buổi ____？",
+        "Mặt trời ở ngay trên đỉnh đầu → là buổi ____？",
+        "Trời tối, có rất nhiều sao → là buổi ____？"
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 3/5",
+      "title": "Nói giờ TRƯỚC, làm gì thì nói SAU",
+      "groups": [
+        {
+          "point": "Câu tiếng Trung luôn nói GIỜ trước, rồi mới nói LÀM GÌ",
+          "examples": [
+            {
+              "hz": "她上午十点半上课。",
+              "py": "Tā shàngwǔ shí diǎn bàn shàngkè.",
+              "vn": "Bạn ấy 10 rưỡi sáng thì lên lớp.",
+              "highlight": "上午十点半"
+            },
+            {
+              "hz": "我们下午两点见吧。",
+              "py": "Wǒmen xiàwǔ liǎng diǎn jiàn ba.",
+              "vn": "Chiều nay 2 giờ mình gặp nhau nhé.",
+              "highlight": "下午两点"
+            }
+          ]
+        }
+      ],
+      "tip": "Đặt câu tiếng Trung, luôn hỏi mình: MẤY GIỜ trước, rồi mới LÀM GÌ!",
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 3/5",
+      "title": "Sắp xếp thành câu đúng",
+      "items": [
+        "上课／十点半／她／上午\nShàngkè ／ Shí diǎn bàn ／ Tā ／ Shàngwǔ",
+        "两点／见吧／下午／我们\nLiǎng diǎn ／ Jiàn ba ／ Xiàwǔ ／ Wǒmen"
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 4/5",
+      "title": "吧 = thêm chữ \"nhé\" vào cuối câu",
+      "groups": [
+        {
+          "point": "Muốn rủ ai làm gì cho nhẹ nhàng, dễ thương → thêm 吧",
+          "examples": [
+            {
+              "hz": "我们两点见吧。",
+              "py": "Wǒmen liǎng diǎn jiàn ba.",
+              "vn": "Mình gặp nhau lúc 2 giờ nhé.",
+              "highlight": "吧"
+            },
+            {
+              "hz": "你去店里买吧。",
+              "py": "Nǐ qù diàn li mǎi ba.",
+              "vn": "Bạn ra cửa hàng mua đi nhé.",
+              "highlight": "吧"
+            }
+          ]
+        }
+      ],
+      "tip": "Muốn rủ ai làm gì cho dễ thương, đừng quên thêm 吧!",
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 4/5",
+      "title": "Thêm 吧 cho câu nhẹ nhàng hơn",
+      "items": [
+        "我们下午三点见___。\nWǒmen xiàwǔ sān diǎn jiàn ___.",
+        "你去超市买___。\nNǐ qù chāoshì mǎi ___."
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 5/5",
+      "title": "呢 = thêm chữ \"đấy/mà\" vào cuối câu",
+      "groups": [
+        {
+          "point": "Muốn nói chắc chắn, rõ ràng hơn 1 chút → thêm 呢",
+          "examples": [
+            {
+              "hz": "我还上课呢。",
+              "py": "Wǒ hái shàngkè ne.",
+              "vn": "Mình vẫn đang học đấy.",
+              "highlight": "呢"
+            },
+            {
+              "hz": "我在家里呢。",
+              "py": "Wǒ zài jiā li ne.",
+              "vn": "Mình đang ở nhà đấy.",
+              "highlight": "呢"
+            }
+          ]
+        }
+      ],
+      "tip": "呢 giúp câu nói nghe chắc chắn, rõ ràng hơn.",
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 5/5",
+      "title": "Chọn 吧 hay 呢?",
+      "word_bank": [
+        {
+          "hz": "呢",
+          "py": "ne"
+        },
+        {
+          "hz": "吧",
+          "py": "ba"
+        }
+      ],
+      "items": [
+        "我们两点见___。\nWǒmen liǎng diǎn jiàn ___.",
+        "我还有事___。\nWǒ hái yǒu shì ___.",
+        "你去超市买___。\nNǐ qù chāoshì mǎi ___.",
+        "我在家里___。\nWǒ zài jiā li ___."
+      ]
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 · 我的一天 1/2",
+      "title": "我的一天（上）",
+      "sentences": [
+        {
+          "hz": "大家好，我叫小美，我是学生。",
+          "py": "Dàjiā hǎo, wǒ jiào Xiǎoměi, wǒ shì xuésheng.",
+          "vn": "Chào mọi người, mình tên là Tiểu Mỹ, mình là học sinh."
+        },
+        {
+          "hz": "早上八点，我去上课，我很高兴。",
+          "py": "Zǎoshang bā diǎn, wǒ qù shàngkè, wǒ hěn gāoxìng.",
+          "vn": "8 giờ sáng, mình đi học, mình rất vui."
+        },
+        {
+          "hz": "上午十点，我有课。",
+          "py": "Shàngwǔ shí diǎn, wǒ yǒu kè.",
+          "vn": "10 giờ sáng, mình có tiết học."
+        },
+        {
+          "hz": "中午十二点，我去吃饭，午饭很好吃！",
+          "py": "Zhōngwǔ shí'èr diǎn, wǒ qù chīfàn, wǔfàn hěn hǎochī!",
+          "vn": "12 giờ trưa, mình đi ăn cơm, cơm trưa rất ngon!"
+        }
+      ],
+      "audio": "assets/audio/slide30.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "课文 · 我的一天 2/2",
+      "title": "我的一天（下）",
+      "sentences": [
+        {
+          "hz": "下午两点，我还有课，四点半下课，下午很忙。",
+          "py": "Xiàwǔ liǎng diǎn, wǒ hái yǒu kè, sì diǎn bàn xiàkè, xiàwǔ hěn máng.",
+          "vn": "2 giờ chiều, mình vẫn còn tiết học, 4 rưỡi tan học, buổi chiều rất bận."
+        },
+        {
+          "hz": "下课后，我想去超市买东西。",
+          "py": "Xiàkè hòu, wǒ xiǎng qù chāoshì mǎi dōngxi.",
+          "vn": "Tan học xong, mình muốn đi siêu thị mua đồ."
+        },
+        {
+          "hz": "晚上，我在家吃晚饭，晚饭也很好吃。",
+          "py": "Wǎnshang, wǒ zài jiā chī wǎnfàn, wǎnfàn yě hěn hǎochī.",
+          "vn": "Buổi tối, mình ăn cơm tối ở nhà, cơm tối cũng rất ngon."
+        },
+        {
+          "hz": "晚饭后，我喜欢看电影，电影很好看。",
+          "py": "Wǎnfàn hòu, wǒ xǐhuan kàn diànyǐng, diànyǐng hěn hǎokàn.",
+          "vn": "Sau bữa tối, mình thích xem phim, phim rất hay."
+        },
+        {
+          "hz": "现在晚上八点，我很累，也很高兴。",
+          "py": "Xiànzài wǎnshang bā diǎn, wǒ hěn lèi, yě hěn gāoxìng.",
+          "vn": "Bây giờ là 8 giờ tối, mình hơi mệt, nhưng cũng rất vui."
+        },
+        {
+          "hz": "明天见！",
+          "py": "Míngtiān jiàn!",
+          "vn": "Mai gặp lại!"
+        }
+      ],
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "问答",
+      "title": "根据课文回答 — Trả lời theo bài đọc",
+      "instructions": "Học sinh trả lời miệng bằng tiếng Trung.",
+      "items": [
+        "早上，小美几点去上课？\nZǎoshang, Xiǎoměi jǐ diǎn qù shàngkè?",
+        "小美下午几点下课？\nXiǎoměi xiàwǔ jǐ diǎn xiàkè?",
+        "晚饭后，小美喜欢做什么？\nWǎnfàn hòu, Xiǎoměi xǐhuan zuò shénme?"
+      ]
+    },
+    {
+      "type": "exercise",
+      "kicker": "综合练习",
+      "title": "选词填空 — Điền từ đúng vào chỗ trống",
+      "instructions": "Chọn 1 từ trong khung điền vào mỗi câu (nguyên đề trong sách, trang 052).",
+      "word_bank": [
+        {
+          "hz": "医院",
+          "py": "yīyuàn"
+        },
+        {
+          "hz": "十二点半",
+          "py": "shí'èr diǎn bàn"
+        },
+        {
+          "hz": "课",
+          "py": "kè"
+        },
+        {
+          "hz": "现在",
+          "py": "xiànzài"
+        },
+        {
+          "hz": "见",
+          "py": "jiàn"
+        }
+      ],
+      "items": [
+        "她星期天没有___。\nTā xīngqītiān méiyǒu ___.",
+        "我们中午___下课，下午两点___吧。\nWǒmen zhōngwǔ ___ xiàkè, xiàwǔ liǎng diǎn ___ ba.",
+        "白家月：对不起，我___有事呢，你去吧。\n李文：好的，你忙吧。",
+        "王一雪：你今天晚上几点去___上班？\n刘明：晚上八点。"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第二部分 · 生词拓展"
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 你还记得吗？",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/dianyingyuan.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/yiyuan.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/dian.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/jia.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "医院",
+          "py": "yīyuàn"
+        },
+        {
+          "letter": "B",
+          "hz": "家",
+          "py": "jiā"
+        },
+        {
+          "letter": "C",
+          "hz": "电影院",
+          "py": "diànyǐngyuàn"
+        },
+        {
+          "letter": "D",
+          "hz": "店",
+          "py": "diàn"
+        }
+      ]
+    }
+  ]
+}
