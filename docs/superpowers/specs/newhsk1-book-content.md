@@ -252,32 +252,50 @@ New Words của bài này (đã học trước đó) — không tính là 生词
 
 课文: Hỏi giờ giấc, lịch học, hẹn gặp; giờ tan làm và việc mua đồ trên đường về.
 
+> **生词 — ĐÃ SỬA 2026-09-10** (đối chiếu trực tiếp trang 045-052 sách gốc = index 59-66 file
+> PDF, bằng vision). Checklist cũ ghi 16 từ, chỉ lấy đủ khối 7-2 + một phần 7-4/7-6 — bỏ sót
+> **11 từ**: 电影, 事, 呢, 半, 在, 家, 里, 晚上, 上班, 菜, 后. Đúng là **27 từ** (3 khối 7-2/7-4/7-6).
+
 **生词**
 
-| 汉字 | Pinyin | Nghĩa Việt |
-|---|---|---|
-| 现在 | xiànzài | bây giờ |
-| 点 | diǎn | giờ (thời điểm) |
-| 早上 | zǎoshang | buổi sáng sớm |
-| 上午 | shàngwǔ | buổi sáng |
-| 分 | fēn | phút |
-| 课 | kè | tiết học |
-| 下午 | xiàwǔ | buổi chiều |
-| 见 | jiàn | gặp |
-| 吧 | ba | trợ từ đề nghị/thương lượng |
-| 电影院 | diànyǐngyuàn | rạp chiếu phim |
-| 看 | kàn | xem, nhìn |
-| 上课 | shàngkè | lên lớp, học |
-| 下课 | xiàkè | tan học |
-| 店 | diàn | cửa hàng |
-| 分钟 | fēnzhōng | phút (khoảng thời gian) |
-| 医院 | yīyuàn | bệnh viện |
+| 汉字 | Pinyin | Nghĩa Việt | Khối |
+|---|---|---|---|
+| 现在 | xiànzài | bây giờ | 7-2 ① |
+| 点 | diǎn | giờ (thời điểm) | 7-2 ② |
+| 早上 | zǎoshang | buổi sáng sớm | 7-2 ③ |
+| 上午 | shàngwǔ | buổi sáng | 7-2 ④ |
+| 分 | fēn | phút | 7-2 ⑤ |
+| 课 | kè | tiết học | 7-2 ⑥ |
+| 下午 | xiàwǔ | buổi chiều | 7-2 ⑦ |
+| 见 | jiàn | gặp | 7-2 ⑧ |
+| 吧 | ba | trợ từ đề nghị/thương lượng | 7-2 ⑨ |
+| 电影院 | diànyǐngyuàn | rạp chiếu phim | 7-4 ⑩ |
+| 看 | kàn | xem, nhìn, đọc | 7-4 ⑪ |
+| 电影 | diànyǐng | phim | 7-4 ⑫ |
+| 事 | shì | việc, chuyện | 7-4 ⑬ |
+| 上课 | shàngkè | lên lớp, học | 7-4 ⑭ |
+| 呢 | ne | trợ từ xác nhận sự việc | 7-4 ⑮ |
+| 半 | bàn | rưỡi, nửa | 7-4 ⑯ |
+| 下课 | xiàkè | tan học | 7-4 ⑰ |
+| 在 | zài | ở, tại | 7-6 ⑱ |
+| 家 | jiā | nhà | 7-6 ⑲ |
+| 里 | lǐ | trong, bên trong | 7-6 ⑳ |
+| 晚上 | wǎnshang | buổi tối | 7-6 ㉑ |
+| 医院 | yīyuàn | bệnh viện | 7-6 ㉒ |
+| 上班 | shàngbān | đi làm | 7-6 ㉓ |
+| 店 | diàn | cửa hàng | 7-6 ㉔ |
+| 菜 | cài | rau, món ăn | 7-6 ㉕ |
+| 分钟 | fēnzhōng | phút (khoảng thời gian) | 7-6 ㉖ |
+| 后 | hòu | sau, sau đó | 7-6 ㉗ |
+
+**27 từ** (đã audit đủ 3 khối 生词 7-2/7-4/7-6).
 
 **语法**
-- 时间的表达(2): dùng 点/分 chỉ thời điểm cụ thể; dùng 上午/中午/下午/晚上 chỉ khoảng thời gian.
-- 语气助词"吧"(1): cuối câu, biểu thị đề nghị/thương lượng/khuyên bảo/yêu cầu.
+- 时间的表达(2): dùng 点/分 chỉ thời điểm cụ thể (整点 dùng 点, không phải整点 dùng 分, đúng
+  10 phút không được bỏ 分, dưới 10 phút phải đọc 零); dùng 上午/中午/下午/晚上 chỉ khoảng thời gian.
+- 语气助词"吧"(1): cuối câu, đọc nhẹ (轻声 ba), biểu thị đề nghị/thương lượng/khuyên bảo/yêu cầu.
+- 语气助词"呢"(2): cuối câu, biểu thị sự việc đã xác nhận (khác 呢(1) hỏi lại đã học ở bài trước).
 - 副词、时间词语作状语的位置: đặt trước động từ/tính từ.
-- 语气助词"呢"(2): cuối câu, biểu thị sự việc đã xác nhận.
 
 ---
 

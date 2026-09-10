@@ -191,6 +191,10 @@ thiếu 有/他/岁/今年/多/大/孩子 và ghép sai "多大" thành 1 từ.
 
 ## Buổi 07 — Giờ giấc & công việc (L7)
 
+✅ **ĐÃ SỬA 2026-09-10** (đối chiếu trực tiếp trang 045-052 sách gốc = index 59-66 file PDF,
+bằng vision). Bản cũ chỉ ghi 16 từ (đủ 7-2 + non đủ 7-4/7-6) — bỏ sót 11 từ do ảnh quét mất
+phần cuối khối 7-4/7-6: **电影, 事, 呢, 半, 在, 家, 里, 晚上, 上班, 菜, 后**. Đúng là **27 từ**.
+
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
 | 现在 | xiànzài | bây giờ | ⏳ chưa soạn |
@@ -203,14 +207,25 @@ thiếu 有/他/岁/今年/多/大/孩子 và ghép sai "多大" thành 1 từ.
 | 见 | jiàn | gặp | ⏳ chưa soạn |
 | 吧 | ba | trợ từ đề nghị/thương lượng | ⏳ chưa soạn |
 | 电影院 | diànyǐngyuàn | rạp chiếu phim | ⏳ chưa soạn |
-| 看 | kàn | xem, nhìn | ⏳ chưa soạn |
+| 看 | kàn | xem, nhìn, đọc | ⏳ chưa soạn |
+| 电影 | diànyǐng | phim | ⏳ chưa soạn |
+| 事 | shì | việc, chuyện | ⏳ chưa soạn |
 | 上课 | shàngkè | lên lớp, học | ⏳ chưa soạn |
+| 呢 | ne | trợ từ xác nhận sự việc | ⏳ chưa soạn |
+| 半 | bàn | rưỡi, nửa | ⏳ chưa soạn |
 | 下课 | xiàkè | tan học | ⏳ chưa soạn |
-| 店 | diàn | cửa hàng | ⏳ chưa soạn |
-| 分钟 | fēnzhōng | phút (khoảng thời gian) | ⏳ chưa soạn |
+| 在 | zài | ở, tại | ⏳ chưa soạn |
+| 家 | jiā | nhà | ⏳ chưa soạn |
+| 里 | lǐ | trong, bên trong | ⏳ chưa soạn |
+| 晚上 | wǎnshang | buổi tối | ⏳ chưa soạn |
 | 医院 | yīyuàn | bệnh viện | ⏳ chưa soạn |
+| 上班 | shàngbān | đi làm | ⏳ chưa soạn |
+| 店 | diàn | cửa hàng | ⏳ chưa soạn |
+| 菜 | cài | rau, món ăn | ⏳ chưa soạn |
+| 分钟 | fēnzhōng | phút (khoảng thời gian) | ⏳ chưa soạn |
+| 后 | hòu | sau, sau đó | ⏳ chưa soạn |
 
-**16 từ**
+**27 từ**
 
 ---
 
