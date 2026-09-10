@@ -18,7 +18,7 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 | 03 | Quốc tịch & bản thân | `buoi03_quoctich/` | L3 我是中国人 (3 课文) | "是"字句 · 结构助词"的" · 用"吗"的是非问句 | ✅ XONG (38 slide + audio; không làm baitap — thực hành ngay trên lớp) |
 | 04 | Gia đình | `buoi04_giadinh/` | L4 我有两个孩子 | "有"字句 · 几口人 · 和 · 都 · 两 vs 二 | ⏳ chưa soạn |
 | 05 | Số đếm & số điện thoại | `buoi05_sodem_sodt/` | L6 手机号是多少 | 多少 vs 几 · số lớn · 连动句(1) | ✅ slide XONG (28 slide + 20 audio; 22 生词 bám sách — bỏ 西安饭店 khỏi thẻ từ vựng riêng vì chỉ là tên riêng 1 lần dùng, vẫn giữ trong 课文/ví dụ; 3 课文 hội thoại dạng 1-cột tuần tự [`layout: "column"`, thêm 2026-09-09]; 语法 想/连动句/怎么 + mở rộng 几vs多少/đọc số điện thoại; 1 slide 练习 选词填空 nguyên đề sách); baitap CHƯA làm — chưa quyết định |
-| 06 | Ngày tháng & nghỉ làm | `buoi06_ngaythang/` | L5 今天我休息 | 时间的表达(1) · 名词谓语句 · 能愿动词"会" | ⏳ chưa soạn |
+| 06 | Ngày tháng & nghỉ làm | `buoi06_ngaythang/` ⚠️ CHƯA TẠO | L5 今天我休息 | 时间的表达(1) · 名词谓语句 · 能愿动词"会" | ⏳ chưa soạn |
 | 07 | Giờ giấc & công việc | `buoi07_giogiac_congviec/` | L7 六点半下班 | 时间的表达(2): 点/分 · 语气助词"吧"(1) | ⏳ chưa soạn |
 | 08 | Nghề & nơi làm · 在 | `buoi08_nghe_vitri/` | L8 在医院工作 | 方位词 · 介词"在" · 能愿动词"能" | ✅ XONG 2026-09-10 (23 từ audit lại bằng vision — checklist cũ thiếu 学校/书店/病人; 27 slide + audio + ảnh Pexels, có tách nền rembg cho ảnh chân dung nghề nghiệp; 语法 mở rộng có bảng so sánh 会/想/能 lấy từ buổi06 2.0 cũ — xem mục "Buổi cũ (2.0) tái dùng" bên dưới; KHÔNG có baitap/ riêng — bài tập đã nhúng trong slide) |
 | 09 | Nơi chốn & đồ vật · vị trí | `buoi09_noichon_dovat/` | L9 在学校学习 | 存现句(1) · thời gian+nơi chốn làm trạng ngữ · 第 | ⏳ chưa soạn |
@@ -46,6 +46,16 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 **đã sản xuất theo syllabus 2.0** (12 buổi, sách HSK Standard Course) — **số buổi của chúng
 KHÔNG khớp vị trí 06/10/12 trong bảng 3.0 ở trên**. Theo spec 3.0 §5, đây là nguồn tái dùng có
 chọn lọc:
+
+> ⚠️ **DỄ NHẦM — đọc kỹ trước khi động vào buổi 06/10/12:** `buoi06_nangnguyen_phuongtien/`
+> **KHÔNG PHẢI** buổi 06 thật của 3.0 (buổi 06 thật = "Ngày tháng & nghỉ làm", folder đúng tên
+> `buoi06_ngaythang/` — **CHƯA TỒN TẠI**, chưa soạn). Tương tự `buoi10_luongtu_mausac/` KHÔNG
+> PHẢI buổi 10 thật (buổi 10 thật = "Mua sắm & giá tiền", folder `buoi10_muasam/` — CHƯA TỒN
+> TẠI), và `buoi12_le_thoitiet/` KHÔNG PHẢI buổi 12 thật (buổi 12 thật = "Sở thích & phim · 了",
+> folder `buoi12_sothich_phim/` — CHƯA TỒN TẠI). 3 folder này chỉ là **kho nguyên liệu cũ** đánh
+> số theo hệ 2.0 (12 buổi) — số trùng ngẫu nhiên với vị trí 3.0, không liên quan nội dung. Khi
+> soạn buổi 06/10/12 (3.0) thật, tạo folder MỚI đúng tên như bảng syllabus, không đổi tên/ghi
+> đè lên 3 folder cũ này.
 - `buoi06_nangnguyen_phuongtien` (会/想/能, giao thông) — **QUYẾT ĐỊNH CHỐT 2026-09-10**
   (đơn giản hoá so với dự kiến ban đầu "fold vào 08/13/15"): xé làm 2, KHÔNG dùng buổi 13.
   - Phần **ngữ pháp** 会/想/能 → ✅ ĐÃ vào buổi 3.0 mới **08** (`buoi08_nghe_vitri/`, bảng so
