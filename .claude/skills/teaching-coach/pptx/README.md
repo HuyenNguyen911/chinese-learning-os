@@ -465,6 +465,39 @@ khi chạy, hoặc đặt `out_dir` là đường dẫn tuyệt đối trong man
   giữ nguyên ảnh/icon nguồn cũ (vd bộ icon Openverse đã có sẵn trong `assets/icons/`)
   hoặc để trống theo quy tắc "2 lượt" ở trên, đừng tính 2 lượt riêng cho nhóm này vì
   gần như chắc chắn không ra ảnh đúng.
+- **Đếm số lượng vật thể chính xác** (2026-09-10, Buổi 4 HSK1) — query kiểu "eight eggs
+  in carton" hay ra sai số lượng thật trong ảnh (vd ra ảnh 9 quả trứng), và 2 query số
+  liền kề (vd "six/seven oranges") có thể trả về CÙNG 1 ảnh dù số khác nhau. Pexels
+  không index theo số lượng vật thể trong ảnh — không dùng ảnh chụp để minh hoạ số đếm
+  cụ thể; thay bằng chấm tròn tự dựng (xem mục "Dạy số đếm" bên dưới).
+- **Tư thế tay / cử chỉ cụ thể không phổ biến** (2026-09-10, Buổi 4 HSK1) — thử tìm ảnh
+  đúng 10 tư thế tay ra dấu số Trung Quốc (中国数字手势 1-10), kể cả khi mô tả rất cụ thể
+  tư thế từng số (vd "shaka sign", "finger gun L shape", "hooked index finger"), vẫn ra
+  sai/trùng ảnh cho gần một nửa số: 2 số liền nhau trả về ảnh giống hệt nhau, hoặc ảnh
+  không đúng tư thế mô tả. Với cử chỉ tay đặc thù văn hoá: không cố ép Pexels — xin ảnh
+  thật từ user (họ lưu file vào đúng path `assets/...` rồi báo lại, xem mục "Ảnh do user
+  cung cấp" bên dưới) hoặc bỏ ảnh, dùng chữ/bảng thay thế.
+
+### Ảnh do user dán trực tiếp trong khung chat — không tự lưu được (2026-09-10, Buổi 4 HSK1)
+
+User dán ảnh vào khung chat (không phải upload file) → Claude CHỈ xem được nội dung ảnh
+(đọc bằng mắt), **không có cách nào lưu ảnh đó thành file trong project**. Đã tìm khắp các
+thư mục temp thường dùng để paste ảnh (`%TEMP%`, scratchpad) — không có file nào được tạo
+ra tương ứng. Muốn dùng đúng ảnh user vừa dán: nhờ user tự lưu ảnh ra file (chuột phải →
+"Save image as...") vào đúng path `assets/...` của buổi đang soạn, rồi báo lại tên file —
+không có shortcut nào khác, và đừng lặp lại việc tìm kiếm Pexels để "thay thế" ảnh đó nếu
+user đã nói rõ muốn đúng tấm họ gửi.
+
+### Dạy số đếm / ghép số (hàng chục, hàng trăm) — bảng lưới ngang, không liệt kê dọc (2026-09-10, Buổi 4 HSK1)
+
+Nội dung có QUY LUẬT LẶP LẠI theo 2 chiều (vd ghép số: hàng = chữ số 1-9, cột = theo
+hàng chục/trăm) nên trình bày bằng `table` dạng **lưới ngang** — nhìn 1 hàng + 1 cột là
+thấy ngay quy luật (vd hàng "五", cột "21-30" → "二十五") — thay vì `grammar` liệt kê
+`point` + `examples` theo chiều dọc (user phản hồi "nhìn không hiểu ngay", đặc biệt với
+học sinh tiểu học không quen đọc quy tắc ngữ pháp bằng chữ). Số nhỏ (0-10) cần minh hoạ
+trực quan để nhớ: dùng **chấm tròn tự dựng** (●●● lặp theo đúng số lượng, viết thẳng vào
+`caption`/`bullets`) thay vì cố tìm ảnh chụp đếm vật — xem 2 mục Pexels ở trên, ảnh chụp
+không đáng tin để đếm chính xác.
 
 ### Tự vẽ đồng hồ chính xác bằng PIL (khi cần khớp ĐÚNG giờ cụ thể, 2026-09-10, Buổi 7 HSK1)
 

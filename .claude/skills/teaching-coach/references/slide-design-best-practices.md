@@ -60,6 +60,16 @@ cho cấu trúc chính + 1 slide `table` riêng liệt kê từng trường hợ
 | cột "Ví dụ") — nhìn vào bảng là thấy ngay có mấy trường hợp, không cần đọc hết văn
 xuôi mới hiểu.
 
+**Nội dung lặp lại theo 2 chiều (vd ghép số hàng chục/trăm: hàng = chữ số, cột = theo
+hàng chục) → bảng lưới NGANG, không liệt kê `grammar` dọc (2026-09-10, Buổi 4 HSK1):**
+user phản hồi "nhìn không hiểu ngay" với slide `grammar` kiểu `point` + `examples` liệt
+kê tuần tự (11-19, rồi 20/30..., rồi 21-99) — phải đọc hết mới ráp được quy luật. Đổi
+sang `table` với hàng = đơn vị (一 二 三...), cột = theo chục (1-10 | 11-20 | 21-30...)
+→ nhìn 1 hàng + 1 cột là thấy ngay quy luật lặp lại, không cần đọc chữ giải thích. Với
+số nhỏ cần minh hoạ số lượng trực quan (0-10): dùng **chấm tròn tự dựng** (●●● lặp đúng
+số lượng, viết thẳng vào text) thay vì tìm ảnh chụp đếm vật — Pexels không đếm chính xác
+số lượng vật thể trong ảnh, xem `pptx/README.md` mục Pexels để biết chi tiết.
+
 ## 5b. Đừng chỉ chọn giữa "bảng" và "chữ" — cân nhắc cả minigame (2026-09)
 
 Ngoài các loại slide tĩnh (bảng, thẻ, ảnh+chữ), renderer có 2 loại slide
