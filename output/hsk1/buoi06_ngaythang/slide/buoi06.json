@@ -1,0 +1,1013 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 6",
+    "topic": "今天我休息 — Ngày tháng & nghỉ làm"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "今天我休息",
+      "subtitle": "Ngày tháng & nghỉ làm",
+      "footer": "HSK1 · Buổi 6"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么？",
+      "bullets": [
+        "Nói được ngày/tháng/thứ theo đúng thứ tự tiếng Trung (năm→tháng→ngày→thứ).",
+        "Dùng được 会 để nói mình biết làm việc gì (do học mà có).",
+        "Hiểu câu vị ngữ chỉ có danh từ, không cần 是 (vd: 今天9月8号。)."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第一部分 · 课本生词"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "今天 · 昨天 · 明天",
+      "image": "assets/words/jintian.jpg",
+      "items": [
+        {
+          "hz": "今天",
+          "py": "jīntiān",
+          "vn": "hôm nay"
+        },
+        {
+          "hz": "昨天",
+          "py": "zuótiān",
+          "vn": "hôm qua"
+        },
+        {
+          "hz": "明天",
+          "py": "míngtiān",
+          "vn": "ngày mai"
+        }
+      ],
+      "example": {
+        "hz": "昨天下雨，今天晴天，明天会更好。",
+        "py": "zuótiān xiàyǔ, jīntiān qíngtiān, míngtiān huì gèng hǎo",
+        "vn": "Hôm qua mưa, hôm nay nắng, ngày mai sẽ tốt hơn."
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "月 · 上个月 · 下个月",
+      "image": "assets/words/yue.jpg",
+      "items": [
+        {
+          "hz": "月",
+          "py": "yuè",
+          "vn": "tháng"
+        },
+        {
+          "hz": "上个月",
+          "py": "shàng ge yuè",
+          "vn": "tháng trước"
+        },
+        {
+          "hz": "下个月",
+          "py": "xià ge yuè",
+          "vn": "tháng tới"
+        }
+      ],
+      "example": {
+        "hz": "现在几月？上个月八月，下个月十月。",
+        "py": "xiànzài jǐ yuè? shàng ge yuè bā yuè, xià ge yuè shí yuè",
+        "vn": "Bây giờ tháng mấy? Tháng trước tháng Tám, tháng tới tháng Mười."
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "号 · 日 — Cách nói ngày",
+      "words": [
+        {
+          "hz": "号",
+          "py": "hào",
+          "vn": "ngày (mồng)",
+          "image": "assets/words/hao.jpg",
+          "example": {
+            "hz": "今天几号？",
+            "py": "jīntiān jǐ hào",
+            "vn": "Hôm nay mồng mấy?"
+          }
+        },
+        {
+          "hz": "日",
+          "py": "rì",
+          "vn": "ngày (trang trọng)",
+          "image": "assets/words/ri.jpg",
+          "example": {
+            "hz": "生日快乐！",
+            "py": "shēngrì kuàilè",
+            "vn": "Chúc mừng sinh nhật!"
+          }
+        }
+      ],
+      "footer_note": "号 dùng khi nói miệng hằng ngày; 日 trang trọng hơn (giấy tờ, văn viết) — nghĩa như nhau.",
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "星期 · 上个星期 · 下个星期",
+      "image": "assets/words/xingqi.jpg",
+      "items": [
+        {
+          "hz": "星期",
+          "py": "xīngqī",
+          "vn": "tuần/thứ"
+        },
+        {
+          "hz": "上个星期",
+          "py": "shàng ge xīngqī",
+          "vn": "tuần trước"
+        },
+        {
+          "hz": "下个星期",
+          "py": "xià ge xīngqī",
+          "vn": "tuần tới"
+        }
+      ],
+      "example": {
+        "hz": "星期几？上个星期我很忙，下个星期我休息。",
+        "py": "xīngqī jǐ? shàng ge xīngqī wǒ hěn máng, xià ge xīngqī wǒ xiūxi",
+        "vn": "Thứ mấy? Tuần trước mình rất bận, tuần tới mình nghỉ."
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "星期日 · 星期天 — Chủ nhật",
+      "words": [
+        {
+          "hz": "星期日",
+          "py": "Xīngqīrì",
+          "vn": "Chủ nhật",
+          "image": "assets/words/xingqiri.jpg",
+          "example": {
+            "hz": "今天星期日。",
+            "py": "jīntiān xīngqīrì",
+            "vn": "Hôm nay Chủ nhật."
+          }
+        },
+        {
+          "hz": "星期天",
+          "py": "Xīngqītiān",
+          "vn": "Chủ nhật",
+          "image": "assets/words/xingqitian.jpg",
+          "example": {
+            "hz": "星期天我休息。",
+            "py": "xīngqītiān wǒ xiūxi",
+            "vn": "Chủ nhật mình nghỉ."
+          }
+        }
+      ],
+      "footer_note": "Hai từ này nghĩa giống hệt nhau, dùng từ nào cũng được.",
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "休息 — Nghỉ ngơi",
+      "hz": "休息",
+      "py": "xiūxi",
+      "vn": "nghỉ ngơi",
+      "image": "assets/words/xiuxi.jpg",
+      "examples": [
+        {
+          "hz": "今天我休息。",
+          "py": "jīntiān wǒ xiūxi",
+          "vn": "Hôm nay mình nghỉ."
+        },
+        {
+          "hz": "你累了，快休息吧。",
+          "py": "nǐ lèi le, kuài xiūxi ba",
+          "vn": "Bạn mệt rồi, nghỉ đi."
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "做 · 做饭",
+      "words": [
+        {
+          "hz": "做",
+          "py": "zuò",
+          "vn": "làm",
+          "image": "assets/words/zuo.jpg",
+          "example": {
+            "hz": "你做什么？",
+            "py": "nǐ zuò shénme",
+            "vn": "Bạn làm gì thế?"
+          }
+        },
+        {
+          "hz": "做饭",
+          "py": "zuò fàn",
+          "vn": "nấu cơm",
+          "image": "assets/words/zuofan.jpg",
+          "example": {
+            "hz": "妈妈会做饭。",
+            "py": "māma huì zuò fàn",
+            "vn": "Mẹ biết nấu cơm."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "面条儿 · 饺子",
+      "words": [
+        {
+          "hz": "面条儿",
+          "py": "miàntiáor",
+          "vn": "mì",
+          "image": "assets/words/miantiaor.jpg",
+          "example": {
+            "hz": "我喜欢吃面条儿。",
+            "py": "wǒ xǐhuan chī miàntiáor",
+            "vn": "Mình thích ăn mì."
+          }
+        },
+        {
+          "hz": "饺子",
+          "py": "jiǎozi",
+          "vn": "sủi cảo",
+          "image": "assets/words/jiaozi.jpg",
+          "example": {
+            "hz": "我们一起包饺子。",
+            "py": "wǒmen yìqǐ bāo jiǎozi",
+            "vn": "Chúng ta cùng gói sủi cảo."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "菜 — Món ăn",
+      "hz": "菜",
+      "py": "cài",
+      "vn": "món ăn",
+      "image": "assets/words/cai.jpg",
+      "examples": [
+        {
+          "hz": "这个菜真好吃。",
+          "py": "zhège cài zhēn hǎochī",
+          "vn": "Món này ngon thật."
+        },
+        {
+          "hz": "妈妈做了三个菜。",
+          "py": "māma zuòle sān ge cài",
+          "vn": "Mẹ làm 3 món."
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "一些 — Một ít",
+      "hz": "一些",
+      "py": "yìxiē",
+      "vn": "một ít",
+      "image": "assets/words/yixie.jpg",
+      "examples": [
+        {
+          "hz": "我会做一些菜。",
+          "py": "wǒ huì zuò yìxiē cài",
+          "vn": "Mình biết làm vài món."
+        },
+        {
+          "hz": "桌子上有一些水果。",
+          "py": "zhuōzi shàng yǒu yìxiē shuǐguǒ",
+          "vn": "Trên bàn có ít trái cây."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "上班 · 下班",
+      "words": [
+        {
+          "hz": "上班",
+          "py": "shàngbān",
+          "vn": "đi làm",
+          "image": "assets/words/shangban.jpg",
+          "example": {
+            "hz": "你几点上班？",
+            "py": "nǐ jǐ diǎn shàngbān",
+            "vn": "Mấy giờ bạn đi làm?"
+          }
+        },
+        {
+          "hz": "下班",
+          "py": "xiàbān",
+          "vn": "tan làm",
+          "image": "assets/words/xiaban.jpg",
+          "example": {
+            "hz": "爸爸六点下班。",
+            "py": "bàba liù diǎn xiàbān",
+            "vn": "Bố 6 giờ tan làm."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "新 — Mới",
+      "hz": "新",
+      "py": "xīn",
+      "vn": "mới",
+      "image": "assets/words/xin.jpg",
+      "examples": [
+        {
+          "hz": "这是我的新电脑。",
+          "py": "zhè shì wǒ de xīn diànnǎo",
+          "vn": "Đây là máy tính mới của mình."
+        },
+        {
+          "hz": "我有一个新朋友。",
+          "py": "wǒ yǒu yí ge xīn péngyou",
+          "vn": "Mình có một người bạn mới."
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "电脑 — Máy tính",
+      "hz": "电脑",
+      "py": "diànnǎo",
+      "vn": "máy tính",
+      "image": "assets/words/diannao.jpg",
+      "examples": [
+        {
+          "hz": "这是你的电脑吗？",
+          "py": "zhè shì nǐ de diànnǎo ma",
+          "vn": "Đây là máy tính của bạn à?"
+        },
+        {
+          "hz": "我用电脑学习。",
+          "py": "wǒ yòng diànnǎo xuéxí",
+          "vn": "Mình dùng máy tính để học."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "真 — Thật là",
+      "hz": "真",
+      "py": "zhēn",
+      "vn": "thật là",
+      "examples": [
+        {
+          "hz": "真好看！",
+          "py": "zhēn hǎokàn",
+          "vn": "Đẹp thật!"
+        },
+        {
+          "hz": "这个真好吃。",
+          "py": "zhège zhēn hǎochī",
+          "vn": "Cái này ngon thật."
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "好看 — Đẹp",
+      "hz": "好看",
+      "py": "hǎokàn",
+      "vn": "đẹp",
+      "examples": [
+        {
+          "hz": "你的新电脑真好看。",
+          "py": "nǐ de xīn diànnǎo zhēn hǎokàn",
+          "vn": "Máy tính mới của bạn đẹp thật."
+        },
+        {
+          "hz": "这张照片很好看。",
+          "py": "zhè zhāng zhàopiàn hěn hǎokàn",
+          "vn": "Bức ảnh này đẹp."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "喜欢 — Thích",
+      "hz": "喜欢",
+      "py": "xǐhuan",
+      "vn": "thích",
+      "image": "assets/words/xihuan.jpg",
+      "examples": [
+        {
+          "hz": "我喜欢它。",
+          "py": "wǒ xǐhuan tā",
+          "vn": "Mình thích nó."
+        },
+        {
+          "hz": "你喜欢做什么？",
+          "py": "nǐ xǐhuan zuò shénme",
+          "vn": "Bạn thích làm gì?"
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "它 — Nó",
+      "hz": "它",
+      "py": "tā",
+      "vn": "nó",
+      "image": "assets/words/ta_cat.jpg",
+      "examples": [
+        {
+          "hz": "我也很喜欢它。",
+          "py": "wǒ yě hěn xǐhuan tā",
+          "vn": "Mình cũng rất thích nó."
+        },
+        {
+          "hz": "这是我的猫，它很可爱。",
+          "py": "zhè shì wǒ de māo, tā hěn kě'ài",
+          "vn": "Đây là mèo của mình, nó rất đáng yêu."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "会话1 · 问日期",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "今天几号？",
+          "py": "Jīntiān jǐ hào?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "今天9月8号。",
+          "py": "Jīntiān jiǔ yuè bā hào."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "星期几？",
+          "py": "Xīngqī jǐ?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "星期日。今天我休息。",
+          "py": "Xīngqīrì. Jīntiān wǒ xiūxi."
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "会话2 · 问会不会做饭",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "你会做饭吗？",
+          "py": "Nǐ huì zuò fàn ma?"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "我会做。",
+          "py": "Wǒ huì zuò."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "你会做什么？",
+          "py": "Nǐ huì zuò shénme?"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn."
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "会话3 · 下班聊新电脑",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "同乐，下班吗？",
+          "py": "Tónglè, xiàbān ma?"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "下班。",
+          "py": "Xiàbān."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "这是你的新电脑吗？",
+          "py": "Zhè shì nǐ de xīn diànnǎo ma?"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "是的，是我的新电脑。",
+          "py": "Shì de, shì wǒ de xīn diànnǎo."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "真好看！",
+          "py": "Zhēn hǎokàn!"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "我也很喜欢它。",
+          "py": "Wǒ yě hěn xǐhuan tā."
+        }
+      ],
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "时间的表达（1）— Nói ngày tháng đúng thứ tự",
+      "point": "Tiếng Trung nói ngày tháng theo thứ tự 年 (năm) → 月 (tháng) → 日/号 (ngày) → 星期 (thứ) — ngược với tiếng Việt (thứ→ngày→tháng→năm).",
+      "examples": [
+        {
+          "hz": "2025年9月8号，星期一。",
+          "py": "èr líng èr wǔ nián jiǔ yuè bā hào, xīngqīyī",
+          "vn": "Ngày 8 tháng 9 năm 2025, thứ Hai.",
+          "highlight": [
+            "年",
+            "月",
+            "号",
+            "星期"
+          ]
+        },
+        {
+          "hz": "今天9月8号，星期日。",
+          "py": "jīntiān jiǔ yuè bā hào, xīngqīrì",
+          "vn": "Hôm nay 8/9, Chủ nhật.",
+          "highlight": [
+            "月",
+            "号",
+            "星期"
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "语法",
+      "title": "Ôn tập · 12 tháng",
+      "headers": [
+        "月",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "一月",
+          "Yīyuè",
+          "tháng 1"
+        ],
+        [
+          "二月",
+          "Èryuè",
+          "tháng 2"
+        ],
+        [
+          "三月",
+          "Sānyuè",
+          "tháng 3"
+        ],
+        [
+          "四月",
+          "Sìyuè",
+          "tháng 4"
+        ],
+        [
+          "五月",
+          "Wǔyuè",
+          "tháng 5"
+        ],
+        [
+          "六月",
+          "Liùyuè",
+          "tháng 6"
+        ],
+        [
+          "七月",
+          "Qīyuè",
+          "tháng 7"
+        ],
+        [
+          "八月",
+          "Bāyuè",
+          "tháng 8"
+        ],
+        [
+          "九月",
+          "Jiǔyuè",
+          "tháng 9"
+        ],
+        [
+          "十月",
+          "Shíyuè",
+          "tháng 10"
+        ],
+        [
+          "十一月",
+          "Shíyīyuè",
+          "tháng 11"
+        ],
+        [
+          "十二月",
+          "Shí'èryuè",
+          "tháng 12"
+        ]
+      ],
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "语法",
+      "title": "Ôn tập · 7 thứ trong tuần",
+      "headers": [
+        "星期",
+        "Pinyin",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        0
+      ],
+      "rows": [
+        [
+          "星期一",
+          "Xīngqīyī",
+          "Thứ Hai"
+        ],
+        [
+          "星期二",
+          "Xīngqī'èr",
+          "Thứ Ba"
+        ],
+        [
+          "星期三",
+          "Xīngqīsān",
+          "Thứ Tư"
+        ],
+        [
+          "星期四",
+          "Xīngqīsì",
+          "Thứ Năm"
+        ],
+        [
+          "星期五",
+          "Xīngqīwǔ",
+          "Thứ Sáu"
+        ],
+        [
+          "星期六",
+          "Xīngqīliù",
+          "Thứ Bảy"
+        ],
+        [
+          "星期日 / 星期天",
+          "Xīngqīrì / Xīngqītiān",
+          "Chủ Nhật"
+        ]
+      ],
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "名词谓语句 · 能愿动词「会」",
+      "groups": [
+        {
+          "point": "名词谓语句 — Vị ngữ chỉ có danh từ (không cần 是)",
+          "examples": [
+            {
+              "hz": "今天9月8号。",
+              "py": "jīntiān jiǔ yuè bā hào",
+              "vn": "Hôm nay 8/9."
+            },
+            {
+              "hz": "我妹妹12岁。",
+              "py": "wǒ mèimei shí'èr suì",
+              "vn": "Em gái mình 12 tuổi."
+            }
+          ]
+        },
+        {
+          "point": "能愿动词「会」— Biết làm gì nhờ học",
+          "examples": [
+            {
+              "hz": "你会做饭吗？",
+              "py": "nǐ huì zuò fàn ma",
+              "vn": "Bạn biết nấu cơm không?"
+            },
+            {
+              "hz": "我不会做菜。",
+              "py": "wǒ bú huì zuò cài",
+              "vn": "Mình không biết nấu món ăn."
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "section",
+      "title": "第二部分 · 文化拓展"
+    },
+    {
+      "type": "bullets",
+      "kicker": "小语的彩蛋",
+      "title": "中国美食——饺子",
+      "image": "assets/words/jiaozi.jpg",
+      "bullets": [
+        "饺子是中国传统美食，特别是过年、团圆的时候常吃。\nJiǎozi shì Zhōngguó chuántǒng měishí, tèbié shì guònián, tuányuán de shíhou cháng chī. (Sủi cảo là món ăn truyền thống Trung Quốc, hay ăn dịp Tết, đoàn viên.)",
+        "饺子的形状像元宝，代表财富和好运。\nJiǎozi de xíngzhuàng xiàng yuánbǎo, dàibiǎo cáifù hé hǎoyùn. (Hình dáng sủi cảo giống thỏi vàng cổ, tượng trưng cho tài lộc và may mắn.)",
+        "我们一起包饺子吧！\nWǒmen yìqǐ bāo jiǎozi ba! (Chúng ta cùng gói sủi cảo nhé!)"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 吃饭",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/zuofan.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/miantiaor.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/jiaozi.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/cai.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "菜",
+          "py": "cài"
+        },
+        {
+          "letter": "B",
+          "hz": "饺子",
+          "py": "jiǎozi"
+        },
+        {
+          "letter": "C",
+          "hz": "做饭",
+          "py": "zuò fàn"
+        },
+        {
+          "letter": "D",
+          "hz": "面条儿",
+          "py": "miàntiáor"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 生活",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/diannao.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/xiuxi.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/xiaban.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "下班",
+          "py": "xiàbān"
+        },
+        {
+          "letter": "B",
+          "hz": "电脑",
+          "py": "diànnǎo"
+        },
+        {
+          "letter": "C",
+          "hz": "休息",
+          "py": "xiūxi"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 日期词 (1)",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/jintian.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/yue.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/hao.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/ri.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "日",
+          "py": "rì"
+        },
+        {
+          "letter": "B",
+          "hz": "今天",
+          "py": "jīntiān"
+        },
+        {
+          "letter": "C",
+          "hz": "号",
+          "py": "hào"
+        },
+        {
+          "letter": "D",
+          "hz": "月",
+          "py": "yuè"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 日期词 (2)",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/xingqi.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/xingqiri.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/xingqitian.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "星期天",
+          "py": "Xīngqītiān"
+        },
+        {
+          "letter": "B",
+          "hz": "星期",
+          "py": "xīngqī"
+        },
+        {
+          "letter": "C",
+          "hz": "星期日",
+          "py": "Xīngqīrì"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 感受词 (1)",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/zuo.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/yixie.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/xin.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/zhen.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "真",
+          "py": "zhēn"
+        },
+        {
+          "letter": "B",
+          "hz": "做",
+          "py": "zuò"
+        },
+        {
+          "letter": "C",
+          "hz": "一些",
+          "py": "yìxiē"
+        },
+        {
+          "letter": "D",
+          "hz": "新",
+          "py": "xīn"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 感受词 (2)",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/haokan.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/xihuan.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/ta_cat.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "它",
+          "py": "tā"
+        },
+        {
+          "letter": "B",
+          "hz": "好看",
+          "py": "hǎokàn"
+        },
+        {
+          "letter": "C",
+          "hz": "喜欢",
+          "py": "xǐhuan"
+        }
+      ]
+    }
+  ]
+}
