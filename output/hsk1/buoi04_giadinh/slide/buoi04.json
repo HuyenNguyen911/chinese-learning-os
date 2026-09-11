@@ -24,6 +24,202 @@
       ]
     },
     {
+      "type": "image",
+      "kicker": "数字",
+      "title": "手势数字 0-10 — Ra dấu số bằng 1 bàn tay",
+      "image": "assets/numbers/so-tay.jpg",
+      "caption": "0 = 零 (líng, không ra dấu). Từ 1-10, người Trung Quốc chỉ dùng 1 tay để ra dấu (khác kiểu đếm ngón tay thường) — thử làm theo tay trong ảnh rồi đọc to số đó.",
+      "audio_text": "零，一，二，三，四，五，六，七，八，九，十",
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "数字",
+      "title": "十几 / 几十 — Nhìn lưới là ghép được số",
+      "headers": [
+        "汉字",
+        "Pinyin",
+        "1-10",
+        "11-20",
+        "21-30",
+        "31-40"
+      ],
+      "cjk_cols": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "rows": [
+        [
+          "一",
+          "yī",
+          "1",
+          "十一",
+          "二十一",
+          "三十一"
+        ],
+        [
+          "二",
+          "èr",
+          "2",
+          "十二",
+          "二十二",
+          "三十二"
+        ],
+        [
+          "三",
+          "sān",
+          "3",
+          "十三",
+          "二十三",
+          "三十三"
+        ],
+        [
+          "四",
+          "sì",
+          "4",
+          "十四",
+          "二十四",
+          "三十四"
+        ],
+        [
+          "五",
+          "wǔ",
+          "5",
+          "十五",
+          "二十五",
+          "三十五"
+        ],
+        [
+          "六",
+          "liù",
+          "6",
+          "十六",
+          "二十六",
+          "三十六"
+        ],
+        [
+          "七",
+          "qī",
+          "7",
+          "十七",
+          "二十七",
+          "三十七"
+        ],
+        [
+          "八",
+          "bā",
+          "8",
+          "十八",
+          "二十八",
+          "三十八"
+        ],
+        [
+          "九",
+          "jiǔ",
+          "9",
+          "十九",
+          "二十九",
+          "三十九"
+        ],
+        [
+          "十",
+          "shí",
+          "10",
+          "二十",
+          "三十",
+          "四十"
+        ]
+      ],
+      "footer_note": "Cùng 1 hàng (vd 五) lặp lại ở mọi cột chục — chỉ đổi số chục đứng trước 十. Hàng cuối (十) chính là bản thân số chục: 二十=20, 三十=30, 四十=40. 10 chỉ nói 十, KHÔNG nói 一十."
+    },
+    {
+      "type": "table",
+      "kicker": "数字",
+      "title": "百 / 千 — Tách theo hàng để đọc số lớn",
+      "headers": [
+        "千",
+        "百",
+        "十",
+        "个",
+        "汉字",
+        "数字"
+      ],
+      "cjk_cols": [
+        4
+      ],
+      "rows": [
+        [
+          "",
+          "1",
+          "0",
+          "0",
+          "一百",
+          "100"
+        ],
+        [
+          "",
+          "2",
+          "0",
+          "8",
+          "二百零八",
+          "208"
+        ],
+        [
+          "1",
+          "5",
+          "2",
+          "8",
+          "一千五百二十八",
+          "1528"
+        ]
+      ],
+      "footer_note": "Đọc từ hàng lớn xuống hàng nhỏ, hàng nào có số 0 thì đọc 零 (không bỏ qua) — vd 208 có 0 ở hàng chục nên đọc 二百零八, không phải 二百八.",
+      "audio_text": "一百，二百零八，一千五百二十八",
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习",
+      "title": "算一算，写一写 — Tính và viết số",
+      "instructions": "Tính phép cộng rồi đọc to bằng tiếng Trung (câu 1-3); viết số Ả Rập thành chữ Hán (câu 4-6). Nhìn bảng pinyin bên dưới nếu chưa nhớ cách đọc.",
+      "word_bank": [
+        {
+          "hz": "十",
+          "py": "shí"
+        },
+        {
+          "hz": "六",
+          "py": "liù"
+        },
+        {
+          "hz": "三",
+          "py": "sān"
+        },
+        {
+          "hz": "二",
+          "py": "èr"
+        },
+        {
+          "hz": "七",
+          "py": "qī"
+        },
+        {
+          "hz": "几",
+          "py": "jǐ"
+        }
+      ],
+      "items": [
+        "1. 十 + 六 = ？",
+        "2. 三十 + 二 = ？",
+        "3. 七十 = 几个十？",
+        "4. 36 viết chữ Hán là: ___",
+        "5. 58 viết chữ Hán là: ___",
+        "6. 99 viết chữ Hán là: ___"
+      ]
+    },
+    {
       "type": "section",
       "title": "第一部分 · 课本生词"
     },
@@ -53,7 +249,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide04.mp3"
+      "audio": "assets/audio/slide08.mp3"
     },
     {
       "type": "word_pair",
@@ -80,7 +276,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide05.mp3"
+      "audio": "assets/audio/slide09.mp3"
     },
     {
       "type": "word_pair",
@@ -107,7 +303,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide06.mp3"
+      "audio": "assets/audio/slide10.mp3"
     },
     {
       "type": "word_pair",
@@ -136,7 +332,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide07.mp3"
+      "audio": "assets/audio/slide11.mp3"
     },
     {
       "type": "word_pair",
@@ -165,7 +361,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide08.mp3"
+      "audio": "assets/audio/slide12.mp3"
     },
     {
       "type": "word_pair",
@@ -194,7 +390,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide09.mp3"
+      "audio": "assets/audio/slide13.mp3"
     },
     {
       "type": "word_pair",
@@ -223,7 +419,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide10.mp3"
+      "audio": "assets/audio/slide14.mp3"
     },
     {
       "type": "word_pair",
@@ -250,7 +446,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide11.mp3"
+      "audio": "assets/audio/slide15.mp3"
     },
     {
       "type": "word_pair",
@@ -279,7 +475,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide12.mp3"
+      "audio": "assets/audio/slide16.mp3"
     },
     {
       "type": "word_pair",
@@ -307,7 +503,7 @@
         }
       ],
       "footer_note": "多 + 大 ghép lại thành 多大 = câu hỏi tuổi dùng cho người từ 10 tuổi trở lên (trẻ dưới 10 tuổi hỏi bằng 几岁).",
-      "audio": "assets/audio/slide13.mp3"
+      "audio": "assets/audio/slide17.mp3"
     },
     {
       "type": "wordcard",
@@ -329,7 +525,7 @@
         }
       ],
       "footer_note": "他 (tā) chỉ NAM/con trai. 她 (tā) chỉ NỮ/con gái (đã học ở Buổi 3). Hai chữ đọc GIỐNG HỆT NHAU, chỉ khác mặt chữ (亻người vs 女 nữ) — nghe không phân biệt được, phải nhìn chữ viết hoặc dựa vào ngữ cảnh.",
-      "audio": "assets/audio/slide14.mp3"
+      "audio": "assets/audio/slide18.mp3"
     },
     {
       "type": "dialogue",
@@ -361,7 +557,7 @@
         "刘明": "zh-CN-YunyangNeural",
         "王一雪": "zh-CN-XiaoxiaoNeural"
       },
-      "audio": "assets/audio/slide15.mp3"
+      "audio": "assets/audio/slide19.mp3"
     },
     {
       "type": "dialogue",
@@ -393,7 +589,7 @@
         "王一雪": "zh-CN-XiaoxiaoNeural",
         "杨同乐": "zh-CN-YunxiNeural"
       },
-      "audio": "assets/audio/slide16.mp3"
+      "audio": "assets/audio/slide20.mp3"
     },
     {
       "type": "dialogue",
@@ -435,7 +631,7 @@
         "杨同乐": "zh-CN-YunxiNeural",
         "王一雪": "zh-CN-XiaoxiaoNeural"
       },
-      "audio": "assets/audio/slide17.mp3"
+      "audio": "assets/audio/slide21.mp3"
     },
     {
       "type": "grammar",
@@ -470,7 +666,7 @@
         }
       ],
       "tip": "Không nói “不有” ❌ — phủ định của 有 luôn là 没 hoặc 没有.",
-      "audio": "assets/audio/slide18.mp3"
+      "audio": "assets/audio/slide22.mp3"
     },
     {
       "type": "grammar",
@@ -524,33 +720,13 @@
         }
       ],
       "tip": "Không đọc 一个 là “yī ge” — luôn đổi thành “yí ge” vì 个 vốn là thanh 4.",
-      "audio": "assets/audio/slide19.mp3"
+      "audio": "assets/audio/slide23.mp3"
     },
     {
       "type": "grammar",
       "kicker": "语法",
-      "title": "数字的表达 — Số lớn & 二 vs 两",
+      "title": "二 vs 两 — Khi nào đổi số 2",
       "groups": [
-        {
-          "point": "Số > 100: đọc đủ cả chữ, kể cả số 0 ở giữa",
-          "examples": [
-            {
-              "hz": "一百",
-              "py": "yìbǎi",
-              "vn": "100"
-            },
-            {
-              "hz": "二百零八",
-              "py": "èrbǎi líng bā",
-              "vn": "208"
-            },
-            {
-              "hz": "一千五百二十八",
-              "py": "yìqiān wǔbǎi èrshíbā",
-              "vn": "1528"
-            }
-          ]
-        },
         {
           "point": "二 (èr) khi đếm số/số thứ tự, 两 (liǎng) khi đứng trước lượng từ",
           "examples": [
@@ -568,7 +744,7 @@
         }
       ],
       "tip": "Không nói “二个人” ❌ — đứng trước lượng từ luôn đổi 二 thành 两.",
-      "audio": "assets/audio/slide20.mp3"
+      "audio": "assets/audio/slide24.mp3"
     },
     {
       "type": "grammar",
@@ -591,7 +767,7 @@
           ]
         }
       ],
-      "audio": "assets/audio/slide21.mp3"
+      "audio": "assets/audio/slide25.mp3"
     },
     {
       "type": "grammar",
@@ -625,7 +801,7 @@
         }
       ],
       "tip": "Chưa chắc dùng lượng từ nào thì dùng 个 — riêng đếm người trong nhà luôn dùng 口.",
-      "audio": "assets/audio/slide22.mp3"
+      "audio": "assets/audio/slide26.mp3"
     },
     {
       "type": "section",
@@ -702,7 +878,7 @@
           ]
         }
       ],
-      "audio": "assets/audio/slide24.mp3"
+      "audio": "assets/audio/slide28.mp3"
     },
     {
       "type": "word_groups",
@@ -735,7 +911,7 @@
           ]
         }
       ],
-      "audio": "assets/audio/slide25.mp3"
+      "audio": "assets/audio/slide29.mp3"
     },
     {
       "type": "wordcard",
@@ -756,7 +932,7 @@
           "vn": "hai quyển sách"
         }
       ],
-      "audio": "assets/audio/slide26.mp3"
+      "audio": "assets/audio/slide30.mp3"
     },
     {
       "type": "match_pairs",
@@ -947,7 +1123,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide30.mp3"
+      "audio": "assets/audio/slide34.mp3"
     },
     {
       "type": "word_pair",
@@ -976,7 +1152,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide31.mp3"
+      "audio": "assets/audio/slide35.mp3"
     },
     {
       "type": "word_pair",
@@ -1005,7 +1181,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide32.mp3"
+      "audio": "assets/audio/slide36.mp3"
     },
     {
       "type": "word_pair",
@@ -1034,7 +1210,7 @@
           }
         }
       ],
-      "audio": "assets/audio/slide33.mp3"
+      "audio": "assets/audio/slide37.mp3"
     },
     {
       "type": "match_pairs",
@@ -1169,7 +1345,7 @@
           "vn": "Mình rất yêu gia đình của mình."
         }
       ],
-      "audio": "assets/audio/slide36.mp3"
+      "audio": "assets/audio/slide40.mp3"
     },
     {
       "type": "exercise",
