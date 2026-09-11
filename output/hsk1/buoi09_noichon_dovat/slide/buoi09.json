@@ -1,0 +1,844 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 9",
+    "topic": "我明天上午在学校学习 — Nơi chốn & đồ vật · vị trí"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我明天上午在学校学习",
+      "subtitle": "Sáng mai tôi học ở trường",
+      "footer": "HSK1 · Buổi 9"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么？",
+      "bullets": [
+        "Nói được có ai/cái gì ở đâu bằng 有/是 (存现句).",
+        "Sắp đúng thứ tự khi câu có cả thời gian và nơi chốn.",
+        "Đếm thứ tự bằng 第 (第一, 第二本...).",
+        "Kể được lịch cuối tuần: ở đâu, làm gì, với ai."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第一部分 · 课本生词"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 1-3/23",
+      "title": "前边 · 边 · 家",
+      "image": "assets/words/phoduongVN2.jpg",
+      "items": [
+        {
+          "hz": "前边",
+          "py": "qiánbian",
+          "vn": "phía trước"
+        },
+        {
+          "hz": "边",
+          "py": "bian/biān",
+          "vn": "hậu tố chỉ phía/bên; khi là danh từ riêng đọc biān"
+        },
+        {
+          "hz": "家",
+          "py": "jiā",
+          "vn": "lượng từ (cho rạp/cửa hàng/doanh nghiệp — khác 家=nhà đã học Buổi 4)"
+        }
+      ],
+      "example": {
+        "hz": "学校前边有一家电影院。",
+        "py": "Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn.",
+        "vn": "Phía trước trường học có một rạp chiếu phim."
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 4-5/23",
+      "title": "那个 · 外边",
+      "image": "assets/words/gapngoai2.jpg",
+      "items": [
+        {
+          "hz": "那个",
+          "py": "nàge",
+          "vn": "cái đó, cái kia (khẩu ngữ: nèige)"
+        },
+        {
+          "hz": "外边",
+          "py": "wàibian",
+          "vn": "bên ngoài"
+        }
+      ],
+      "example": {
+        "hz": "那个电影院外边有很多人。",
+        "py": "Nàge diànyǐngyuàn wàibian yǒu hěn duō rén.",
+        "vn": "Bên ngoài rạp chiếu phim đó có rất nhiều người."
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 6-7/23",
+      "title": "椅子 · 上",
+      "image": "assets/words/ghesach.jpg",
+      "items": [
+        {
+          "hz": "椅子",
+          "py": "yǐzi",
+          "vn": "cái ghế"
+        },
+        {
+          "hz": "上",
+          "py": "shang/shàng",
+          "vn": "trên (đứng sau danh từ, đọc nhẹ shang); chỉ vị trí cao/thứ tự trước thì đọc shàng"
+        }
+      ],
+      "example": {
+        "hz": "椅子上有一本中文书。",
+        "py": "Yǐzi shang yǒu yì běn Zhōngwén shū.",
+        "vn": "Trên ghế có một quyển sách tiếng Trung."
+      },
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 8-10/23",
+      "title": "本 · 书 · 那",
+      "image": "assets/words/chongsach2.jpg",
+      "items": [
+        {
+          "hz": "本",
+          "py": "běn",
+          "vn": "lượng từ cho sách/vở"
+        },
+        {
+          "hz": "书",
+          "py": "shū",
+          "vn": "sách"
+        },
+        {
+          "hz": "那",
+          "py": "nà",
+          "vn": "đó, kia (đại từ; đứng một mình hoặc + lượng từ + danh từ như 那本书 — khác 那个 luôn dùng lượng từ 个)"
+        }
+      ],
+      "example": {
+        "hz": "那本书是我的。",
+        "py": "Nà běn shū shì wǒ de.",
+        "vn": "Quyển sách đó là của tôi."
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 11-12/23",
+      "title": "第 · 学习",
+      "image": "assets/words/hocsinhhoctap.jpg",
+      "items": [
+        {
+          "hz": "第",
+          "py": "dì",
+          "vn": "tiền tố chỉ số thứ tự (第一, 第二...)"
+        },
+        {
+          "hz": "学习",
+          "py": "xuéxí",
+          "vn": "học tập"
+        }
+      ],
+      "example": {
+        "hz": "我学习中文，这是第一课。",
+        "py": "Wǒ xuéxí Zhōngwén, zhè shì dì-yī kè.",
+        "vn": "Tôi học tiếng Trung, đây là bài thứ nhất."
+      },
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 13-15/23",
+      "title": "做 · 白天 · 读书",
+      "image": "assets/words/docsach_nha.jpg",
+      "items": [
+        {
+          "hz": "做",
+          "py": "zuò",
+          "vn": "làm"
+        },
+        {
+          "hz": "白天",
+          "py": "báitiān",
+          "vn": "ban ngày"
+        },
+        {
+          "hz": "读书",
+          "py": "dúshū",
+          "vn": "đọc sách, đi học"
+        }
+      ],
+      "example": {
+        "hz": "我白天在家里读书。",
+        "py": "Wǒ báitiān zài jiā li dúshū.",
+        "vn": "Ban ngày tôi đọc sách ở nhà."
+      },
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 16-20/23",
+      "title": "和 · 朋友 · 唱 · 歌 · 好听",
+      "image": "assets/words/hatcavui.jpg",
+      "items": [
+        {
+          "hz": "和",
+          "py": "hé",
+          "vn": "và, với"
+        },
+        {
+          "hz": "朋友",
+          "py": "péngyou",
+          "vn": "bạn bè"
+        },
+        {
+          "hz": "唱",
+          "py": "chàng",
+          "vn": "hát"
+        },
+        {
+          "hz": "歌",
+          "py": "gē",
+          "vn": "bài hát"
+        },
+        {
+          "hz": "好听",
+          "py": "hǎotīng",
+          "vn": "hay, dễ nghe"
+        }
+      ],
+      "example": {
+        "hz": "我和朋友唱歌，很好听。",
+        "py": "Wǒ hé péngyou chàng gē, hěn hǎotīng.",
+        "vn": "Tôi hát cùng bạn, hát rất hay."
+      },
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 21-23/23",
+      "title": "电视 · 狗 · 玩",
+      "image": "assets/words/chotivi.jpg",
+      "items": [
+        {
+          "hz": "电视",
+          "py": "diànshì",
+          "vn": "ti vi"
+        },
+        {
+          "hz": "狗",
+          "py": "gǒu",
+          "vn": "con chó"
+        },
+        {
+          "hz": "玩",
+          "py": "wán",
+          "vn": "chơi (khẩu ngữ hay nói 玩儿)"
+        }
+      ],
+      "example": {
+        "hz": "我在家看电视，和小狗玩。",
+        "py": "Wǒ zài jiā kàn diànshì, hé xiǎo gǒu wán.",
+        "vn": "Tôi ở nhà xem ti vi, chơi với chó con."
+      },
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 1",
+      "title": "学校前边有一家电影院",
+      "voices": {
+        "李文": "zh-CN-YunxiNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural"
+      },
+      "turns": [
+        {
+          "speaker": "李文",
+          "hz": "学校前边有一家电影院。",
+          "py": "Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "对。我们晚上去那个电影院看电影吧。",
+          "py": "Duì. Wǒmen wǎnshang qù nàge diànyǐngyuàn kàn diànyǐng ba."
+        },
+        {
+          "speaker": "李文",
+          "hz": "好！我们七点在电影院外边见，好吗？",
+          "py": "Hǎo! Wǒmen qī diǎn zài diànyǐngyuàn wàibian jiàn, hǎo ma?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "好的，晚上七点见！",
+          "py": "Hǎo de, wǎnshang qī diǎn jiàn!"
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 2",
+      "title": "椅子上有一本中文书",
+      "voices": {
+        "白家月": "zh-CN-XiaoxiaoNeural",
+        "陈天中": "zh-CN-YunxiNeural"
+      },
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "椅子上有一本中文书，那是谁的书？",
+          "py": "Yǐzi shang yǒu yì běn Zhōngwén shū, nà shì shéi de shū?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "是我的书，谢谢。这是我的第二本中文书。",
+          "py": "Shì wǒ de shū, xièxie. Zhè shì wǒ de dì-èr běn Zhōngwén shū."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "不客气。你明天上午在哪儿？",
+          "py": "Bú kèqi. Nǐ míngtiān shàngwǔ zài nǎr?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我明天上午在学校学习。",
+          "py": "Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文 3",
+      "title": "你星期六做什么？",
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "杨同乐": "zh-CN-YunxiNeural"
+      },
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "明天星期六，你做什么？",
+          "py": "Míngtiān Xīngqīliù, nǐ zuò shénme?"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "我白天在家里读书，晚上和朋友们去外边唱歌。",
+          "py": "Wǒ báitiān zài jiā li dúshū, wǎnshang hé péngyoumen qù wàibian chàng gē."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "你唱歌很好听。",
+          "py": "Nǐ chàng gē hěn hǎotīng."
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "谢谢！您星期六做什么？",
+          "py": "Xièxie! Nín Xīngqīliù zuò shénme?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我在家里做饭、看电视，和孩子们、小狗玩。",
+          "py": "Wǒ zài jiā li zuò fàn, kàn diànshì, hé háizimen, xiǎo gǒu wán."
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "我也有一只小狗。",
+          "py": "Wǒ yě yǒu yì zhī xiǎo gǒu."
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 1/3",
+      "title": "存现句(1)：有 / 是 biểu thị tồn tại",
+      "point": "[Nơi chốn] + 有/是 + người/vật = ở [nơi chốn] có [ai/cái gì]. Phủ định 没有: KHÔNG dùng số từ+lượng từ trước tân ngữ.",
+      "examples": [
+        {
+          "hz": "学校前边有一家电影院。",
+          "py": "Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn.",
+          "vn": "Phía trước trường có 1 rạp chiếu phim.",
+          "highlight": "有"
+        },
+        {
+          "hz": "电影院前边是一家超市。",
+          "py": "Diànyǐngyuàn qiánbian shì yì jiā chāoshì.",
+          "vn": "Phía trước rạp chiếu phim là 1 siêu thị.",
+          "highlight": "是"
+        },
+        {
+          "hz": "桌子上没有小猫。",
+          "py": "Zhuōzi shang méiyǒu xiǎo māo.",
+          "vn": "Trên bàn không có con mèo nào.",
+          "highlight": "没有"
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法 2/3",
+      "title": "Thời gian đứng TRƯỚC nơi chốn",
+      "point": "Khi câu có cả từ chỉ thời gian và từ chỉ nơi chốn cùng làm trạng ngữ: thời gian luôn đứng TRƯỚC nơi chốn (ngược với thói quen tiếng Việt hay nói nơi chốn trước).",
+      "examples": [
+        {
+          "hz": "我们七点在电影院外边见。",
+          "py": "Wǒmen qī diǎn zài diànyǐngyuàn wàibian jiàn.",
+          "vn": "7 giờ chúng ta gặp nhau bên ngoài rạp.",
+          "highlight": "七点"
+        },
+        {
+          "hz": "安妮下午在家里学中文。",
+          "py": "Ānnī xiàwǔ zài jiā li xué Zhōngwén.",
+          "vn": "Chiều Annie học tiếng Trung ở nhà.",
+          "highlight": "下午"
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "语法 3/3",
+      "title": "第 + số từ — biểu thị thứ tự",
+      "headers": [
+        "Cấu trúc",
+        "Ví dụ",
+        "Nghĩa"
+      ],
+      "cjk_cols": [
+        1
+      ],
+      "rows": [
+        [
+          "第 + số từ",
+          "第一，第二，第三",
+          "thứ nhất, thứ hai, thứ ba"
+        ],
+        [
+          "第 + số từ + 量词",
+          "第一个，第二个，第一本",
+          "cái thứ nhất, cái thứ hai, quyển thứ nhất"
+        ],
+        [
+          "第 + số từ + 量词 + 名词",
+          "第一个学生，第一本书",
+          "học sinh thứ nhất, quyển sách thứ nhất"
+        ]
+      ],
+      "footer_note": "第 luôn đứng NGAY TRƯỚC số từ, không thêm gì ở giữa — khác 两/二 thường phải đi kèm lượng từ ngay.",
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "passage",
+      "kicker": "应用",
+      "title": "我的周末",
+      "sentences": [
+        {
+          "hz": "我家前边是一家小商店，商店外边有几只小狗，很可爱。",
+          "py": "Wǒ jiā qiánbian shì yì jiā xiǎo shāngdiàn, shāngdiàn wàibian yǒu jǐ zhī xiǎo gǒu, hěn kě'ài.",
+          "vn": "Phía trước nhà tôi là một cửa hàng nhỏ, ngoài cửa hàng có mấy con chó con, rất dễ thương."
+        },
+        {
+          "hz": "星期六白天我在家里读书，椅子上有我的第一本中文书。",
+          "py": "Xīngqīliù báitiān wǒ zài jiā li dúshū, yǐzi shang yǒu wǒ de dì-yī běn Zhōngwén shū.",
+          "vn": "Ban ngày thứ Bảy tôi đọc sách ở nhà, trên ghế có quyển sách tiếng Trung đầu tiên của tôi."
+        },
+        {
+          "hz": "晚上我和朋友们去电影院看电影，七点在电影院外边见，然后我们一起唱歌，唱得很好听。",
+          "py": "Wǎnshang wǒ hé péngyoumen qù diànyǐngyuàn kàn diànyǐng, qī diǎn zài diànyǐngyuàn wàibian jiàn, ránhòu wǒmen yìqǐ chàng gē, chàng de hěn hǎotīng.",
+          "vn": "Buổi tối tôi và các bạn đi xem phim, 7 giờ gặp nhau bên ngoài rạp, sau đó cùng nhau hát, hát rất hay."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 1/3",
+      "title": "Điền 有 / 是 / 没有",
+      "word_bank": [
+        {
+          "hz": "有",
+          "py": "yǒu"
+        },
+        {
+          "hz": "是",
+          "py": "shì"
+        },
+        {
+          "hz": "没有",
+          "py": "méiyǒu"
+        }
+      ],
+      "items": [
+        "学校前边[___]一家电影院。",
+        "桌子上[___]小猫，只有一本书。",
+        "电影院前边[___]一家超市。"
+      ]
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 2/3",
+      "title": "Sắp xếp thành câu đúng (chú ý thứ tự thời gian-nơi chốn)",
+      "items": [
+        "在家里 / 下午 / 安妮 / 学中文",
+        "见 / 电影院外边 / 七点 / 我们 / 在",
+        "读书 / 白天 / 在家里 / 我"
+      ]
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 3/3",
+      "title": "Dịch sang tiếng Trung",
+      "items": [
+        "Trên ghế có một quyển sách.",
+        "Đây là quyển sách thứ hai của tôi.",
+        "Tối nay tôi và bạn bè ra ngoài hát."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第二部分 · 生词拓展"
+    },
+    {
+      "type": "image",
+      "kicker": "生词拓展 · 方位词",
+      "title": "上下左右前后里外 + 边",
+      "image": "assets/words/phuongvi_diagram.png"
+    },
+    {
+      "type": "grammar",
+      "kicker": "生词拓展 · 方位词",
+      "title": "边 · 面 · 方 — Chọn hậu tố nào?",
+      "groups": [
+        {
+          "point": "边 — khẩu ngữ, LUÔN dùng được → ưu tiên chọn khi nói",
+          "examples": [
+            {
+              "hz": "书在桌子上边。",
+              "py": "Shū zài zhuōzi shàngbian.",
+              "vn": "Sách ở trên bàn."
+            },
+            {
+              "hz": "教室里边很安静。",
+              "py": "Jiàoshì lǐbian hěn ānjìng.",
+              "vn": "Trong lớp học rất yên tĩnh."
+            }
+          ]
+        },
+        {
+          "point": "面 — nghĩa GIỐNG HỆT 边, dùng thay được cho nhau",
+          "examples": [
+            {
+              "hz": "上面 = 上边",
+              "py": "shàngmian = shàngbian",
+              "vn": "Hai từ này nghĩa hoàn toàn như nhau."
+            },
+            {
+              "hz": "你的书在桌子上面。",
+              "py": "Nǐ de shū zài zhuōzi shàngmian.",
+              "vn": "Sách của bạn ở trên bàn."
+            }
+          ]
+        },
+        {
+          "point": "方 — trang trọng, hay gặp trong văn viết/thông báo → CHỈ CẦN NHẬN BIẾT",
+          "examples": [
+            {
+              "hz": "前方到站。",
+              "py": "Qiánfāng dào zhàn.",
+              "vn": "Phía trước sắp đến trạm. (thông báo trên xe/tàu)"
+            },
+            {
+              "hz": "上方",
+              "py": "shàngfāng",
+              "vn": "phía trên (thường gặp trong văn viết, ít dùng khi nói)"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 · 方位词",
+      "title": "Điền đúng phương vị từ",
+      "word_bank": [
+        {
+          "hz": "上边",
+          "py": "shàngbian"
+        },
+        {
+          "hz": "里边",
+          "py": "lǐbian"
+        },
+        {
+          "hz": "下边",
+          "py": "xiàbian"
+        }
+      ],
+      "items": [
+        "铅笔在书包[___]。",
+        "碗、筷子和勺子在桌子[___]。",
+        "猫在椅子[___]。"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 学习用品",
+      "title": "铅笔 · 尺子 · 橡皮",
+      "image": "assets/words/hocsinhdungcu1.jpg",
+      "items": [
+        {
+          "hz": "铅笔",
+          "py": "qiānbǐ",
+          "vn": "bút chì"
+        },
+        {
+          "hz": "尺子",
+          "py": "chǐzi",
+          "vn": "cái thước"
+        },
+        {
+          "hz": "橡皮",
+          "py": "xiàngpí",
+          "vn": "cục tẩy"
+        }
+      ],
+      "example": {
+        "hz": "铅笔、尺子和橡皮在书包里边。",
+        "py": "Qiānbǐ, chǐzi hé xiàngpí zài shūbāo lǐbian.",
+        "vn": "Bút chì, thước và tẩy ở trong cặp sách."
+      },
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 学习用品",
+      "title": "书包 · 笔记本",
+      "image": "assets/words/hocsinhdungcu2.jpg",
+      "items": [
+        {
+          "hz": "书包",
+          "py": "shūbāo",
+          "vn": "cặp sách"
+        },
+        {
+          "hz": "笔记本",
+          "py": "bǐjìběn",
+          "vn": "quyển vở"
+        }
+      ],
+      "example": {
+        "hz": "笔记本在书包上边。",
+        "py": "Bǐjìběn zài shūbāo shàngbian.",
+        "vn": "Quyển vở ở trên cặp sách."
+      },
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 厨房用品",
+      "title": "碗 · 筷子 · 勺子",
+      "image": "assets/words/chenbatduaThia.jpg",
+      "items": [
+        {
+          "hz": "碗",
+          "py": "wǎn",
+          "vn": "cái bát"
+        },
+        {
+          "hz": "筷子",
+          "py": "kuàizi",
+          "vn": "đôi đũa"
+        },
+        {
+          "hz": "勺子",
+          "py": "sháozi",
+          "vn": "cái thìa"
+        }
+      ],
+      "example": {
+        "hz": "碗、筷子和勺子在桌子上边。",
+        "py": "Wǎn, kuàizi hé sháozi zài zhuōzi shàngbian.",
+        "vn": "Bát, đũa và thìa ở trên bàn."
+      },
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 房间",
+      "title": "客厅",
+      "image": "assets/words/phongkhach.jpg",
+      "items": [
+        {
+          "hz": "客厅",
+          "py": "kètīng",
+          "vn": "phòng khách"
+        }
+      ],
+      "example": {
+        "hz": "我们在客厅看电视。",
+        "py": "Wǒmen zài kètīng kàn diànshì.",
+        "vn": "Chúng tôi xem ti vi ở phòng khách."
+      },
+      "audio": "assets/audio/slide29.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 房间",
+      "title": "卧室",
+      "image": "assets/words/phongngu.jpg",
+      "items": [
+        {
+          "hz": "卧室",
+          "py": "wòshì",
+          "vn": "phòng ngủ"
+        }
+      ],
+      "example": {
+        "hz": "我的书在卧室里。",
+        "py": "Wǒ de shū zài wòshì li.",
+        "vn": "Sách của tôi ở trong phòng ngủ."
+      },
+      "audio": "assets/audio/slide30.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 房间",
+      "title": "厨房",
+      "image": "assets/words/nhabep.jpg",
+      "items": [
+        {
+          "hz": "厨房",
+          "py": "chúfáng",
+          "vn": "nhà bếp"
+        }
+      ],
+      "example": {
+        "hz": "妈妈在厨房做饭。",
+        "py": "Māma zài chúfáng zuò fàn.",
+        "vn": "Mẹ nấu cơm ở nhà bếp."
+      },
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · 房间",
+      "title": "浴室",
+      "image": "assets/words/phongtam.jpg",
+      "items": [
+        {
+          "hz": "浴室",
+          "py": "yùshì",
+          "vn": "phòng tắm"
+        }
+      ],
+      "example": {
+        "hz": "浴室在卧室旁边。",
+        "py": "Yùshì zài wòshì pángbiān.",
+        "vn": "Phòng tắm ở cạnh phòng ngủ."
+      },
+      "audio": "assets/audio/slide32.mp3"
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 房间",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/phongkhach.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/phongngu.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/nhabep.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/phongtam.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "客厅",
+          "py": "kètīng"
+        },
+        {
+          "letter": "B",
+          "hz": "卧室",
+          "py": "wòshì"
+        },
+        {
+          "letter": "C",
+          "hz": "厨房",
+          "py": "chúfáng"
+        },
+        {
+          "letter": "D",
+          "hz": "浴室",
+          "py": "yùshì"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 东西",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/obj_qianbi.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/obj_shubao.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/obj_wan.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/obj_kuaizi.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "铅笔",
+          "py": "qiānbǐ"
+        },
+        {
+          "letter": "B",
+          "hz": "书包",
+          "py": "shūbāo"
+        },
+        {
+          "letter": "C",
+          "hz": "碗",
+          "py": "wǎn"
+        },
+        {
+          "letter": "D",
+          "hz": "筷子",
+          "py": "kuàizi"
+        }
+      ]
+    }
+  ]
+}
