@@ -14,14 +14,14 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 | # | Buổi | Folder | 课文 sách | Ngữ pháp trọng tâm | Trạng thái |
 |---|---|---|---|---|---|
 | 01 | Ngữ âm: pinyin · thanh điệu · thanh/vận mẫu · 变调 | `buoi01_nguam/` | — | hệ thống ngữ âm, thanh điệu, 变调 | ✅ đã có |
-| 02 | Chào hỏi & làm quen | `buoi02_chaohoi_lamquen/` | L1 你好 · L2 我叫李文 | 是 · 吗 · 呢 · 叫…名字 | ⏳ chưa soạn |
+| 02 | Chào hỏi & làm quen | `buoi02_chaohoi_lamquen/` | L1 你好 · L2 我叫李文 | 是 · 吗 · 呢 · 叫…名字 | ✅ XONG (pilot 3.0; sửa lại thứ tự bảng README — trước ghi nhầm "chưa soạn" dù đã có đủ slide+audio+GIF nét chữ+minigame từ trước) |
 | 03 | Quốc tịch & bản thân | `buoi03_quoctich/` | L3 我是中国人 (3 课文) | "是"字句 · 结构助词"的" · 用"吗"的是非问句 | ✅ XONG (38 slide + audio; không làm baitap — thực hành ngay trên lớp) |
-| 04 | Gia đình | `buoi04_giadinh/` | L4 我有两个孩子 | "有"字句 · 几口人 · 和 · 都 · 两 vs 二 | ⏳ chưa soạn |
+| 04 | Gia đình | `buoi04_giadinh/` | L4 我有两个孩子 | "有"字句 · 几口人 · 和 · 都 · 两 vs 二 | ✅ XONG (41 slide + audio, gồm bản chính 37 slide + bổ sung nền tảng số đếm 0-10/hàng chục/hàng trăm-nghìn; sửa lại thứ tự bảng README — trước ghi nhầm "chưa soạn") |
 | 05 | Số đếm & số điện thoại | `buoi05_sodem_sodt/` | L6 手机号是多少 | 多少 vs 几 · số lớn · 连动句(1) | ✅ slide XONG (28 slide + 20 audio; 22 生词 bám sách — bỏ 西安饭店 khỏi thẻ từ vựng riêng vì chỉ là tên riêng 1 lần dùng, vẫn giữ trong 课文/ví dụ; 3 课文 hội thoại dạng 1-cột tuần tự [`layout: "column"`, thêm 2026-09-09]; 语法 想/连动句/怎么 + mở rộng 几vs多少/đọc số điện thoại; 1 slide 练习 选词填空 nguyên đề sách); baitap CHƯA làm — chưa quyết định |
 | 06 | Ngày tháng & nghỉ làm | `buoi06_ngaythang/` ⚠️ CHƯA TẠO | L5 今天我休息 | 时间的表达(1) · 名词谓语句 · 能愿动词"会" | ⏳ chưa soạn |
-| 07 | Giờ giấc & công việc | `buoi07_giogiac_congviec/` | L7 六点半下班 | 时间的表达(2): 点/分 · 语气助词"吧"(1) | ⏳ chưa soạn |
+| 07 | Giờ giấc & công việc | `buoi07_giogiac_congviec/` | L7 六点半下班 | 时间的表达(2): 点/分 · 语气助词"吧"(1) | ✅ XONG 2026-09-10 (27 生词 bám sách đối chiếu vision trang 045-052; 35 slide + 23 audio; 3 hội thoại nguyên bản; 5 điểm ngữ pháp — thứ tự thời gian to→nhỏ, 上午/下午/晚上 qua vị trí mặt trời, trạng ngữ thời gian, 吧, 呢 — mỗi điểm kèm luyện tập; đoạn văn 我的一天 tự soạn; 综合练习 nguyên đề sách; minigame ghép ảnh cuối buổi; KHÔNG có baitap/ riêng) |
 | 08 | Nghề & nơi làm · 在 | `buoi08_nghe_vitri/` | L8 在医院工作 | 方位词 · 介词"在" · 能愿动词"能" | ✅ XONG 2026-09-10 (23 từ audit lại bằng vision — checklist cũ thiếu 学校/书店/病人; 27 slide + audio + ảnh Pexels, có tách nền rembg cho ảnh chân dung nghề nghiệp; 语法 mở rộng có bảng so sánh 会/想/能 lấy từ buổi06 2.0 cũ — xem mục "Buổi cũ (2.0) tái dùng" bên dưới; KHÔNG có baitap/ riêng — bài tập đã nhúng trong slide) |
-| 09 | Nơi chốn & đồ vật · vị trí | `buoi09_noichon_dovat/` | L9 在学校学习 | 存现句(1) · thời gian+nơi chốn làm trạng ngữ · 第 | ⏳ chưa soạn |
+| 09 | Nơi chốn & đồ vật · vị trí | `buoi09_noichon_dovat/` | L9 在学校学习 | 存现句(1) · thời gian+nơi chốn làm trạng ngữ · 第 | ✅ XONG 2026-09-11 (23 từ bám sách đối chiếu vision trang 061-069 — checklist cũ chỉ ghi 14, thiếu 椅子/上/本/书/那/第/学习/做; 34 slide + 23 audio -10%; 3 hội thoại nguyên bản có đủ pinyin; 3 điểm ngữ pháp; mở rộng thêm 8 phương vị từ 上下左右前后里外+边 (sơ đồ tự vẽ bằng PIL, không dùng ảnh Pexels) + phân biệt 边/面/方 + đồ vật học tập/bếp + 4 từ phòng ốc; 2 minigame ghép ảnh-từ; KHÔNG có baitap/ riêng) |
 | 10 | Mua sắm & giá tiền | `buoi10_muasam/` | L10 苹果真便宜 | 钱数的表达 · 形容词谓语句 · 怎么样 | ⏳ chưa soạn |
 | 11 | Ăn uống & gọi món | `buoi11_anuong/` | L13 请给我一杯茶 | 能愿动词"可以" · 动词+一下 · 双宾语句(1) | ⏳ chưa soạn |
 | 12 | Sở thích & phim · 了 | `buoi12_sothich_phim/` | L14 看了一个电影 | 动态助词"了(2)" · 离合词(1) · 范围副词"都" | ⏳ chưa soạn |
@@ -30,7 +30,9 @@ Checklist phủ ~300 từ theo buổi: `docs/superpowers/plans/hsk1-3.0-checklis
 | 15 | Đi lại & du lịch · hẹn gặp | `buoi15_dulai_dulich/` | L15 大兴机场见 | 并列复句"……，还/也……" | ⏳ chưa soạn |
 | 16 | Ôn tập tổng hợp | `buoi16_ontap/` | — (ôn ~243–300 từ đã học) | Phần 1: đủ 15 điểm ngữ pháp trọng tâm của 15 bài sách 3.0. Phần 2: 243 từ vựng theo chủ đề | ✅ phần 1 (`slide/`) + phần 2 (`slide2_tuvung/`) xong slide + audio + ảnh (chưa có baitap/) |
 
-**15 buổi cần soạn** = vị trí 02–16 (buổi 01 ngữ âm đã xong; buổi 03 đã xong 2026-09-08).
+**Tiến độ (2026-09-11):** 9/16 buổi đã xong — 01, 02, 03, 04, 05, 07, 08, 09, 16. Còn 7 buổi
+chưa soạn thật: 06, 10, 11, 12, 13, 14, 15 (buổi 06/10/12 hiện có folder nhưng chỉ là nguyên
+liệu cũ 2.0, xem cảnh báo bên dưới — KHÔNG tính là đã soạn cho vị trí 3.0).
 
 > ⚠️ **Số từ trong checklist KHÔNG đáng tin — phải đối chiếu sách trước khi soạn mỗi buổi.**
 > Phát hiện khi làm buổi 03 (2026-09-08): mỗi bài trong sách có NHIỀU khối 生词 (X-2, X-4, X-6…),
