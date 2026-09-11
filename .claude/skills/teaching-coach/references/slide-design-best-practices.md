@@ -132,6 +132,15 @@ công". Lỗi thường gặp nhất: buổi mới tạo quên copy các asset D
 `assets/icons/icon_target.png` cho slide mục tiêu) — các buổi trước đã có sẵn file này nhưng
 buổi mới không tự động kế thừa, phải copy tay.
 
+**Thêm 2 tiêu chí khi soát ảnh bằng mắt (2026-09-11, review buổi 06 HSK1):** ngoài 2 việc ở
+trên, kiểm thêm (1) **phù hợp trẻ em, tránh nội dung nhạy cảm** — học viên HSK1 là học sinh
+tiểu học, loại ngay ảnh phong cách người lớn (vd ảnh "boudoir"/thời trang gợi cảm dù chỉ minh
+hoạ ý chung chung như "nghỉ ngơi"); (2) **khớp SÁT nghĩa của chính từ/câu ví dụ đang minh hoạ,
+không chỉ đại khái cùng chủ đề** — đối chiếu lại đúng câu `example`/`ex` của từ đó, không chỉ
+đối chiếu nghĩa `vn` đơn lẻ (buổi 6 phải fetch lại 6/27 ảnh vì bỏ sót 2 tiêu chí này: ảnh
+"hôm qua" ra sách vở cháy xém không liên quan, ảnh "mới" ra hộp quà ngẫu nhiên thay vì gắn với
+chính "新电脑" trong câu ví dụ).
+
 ## 9. Nguyên tắc trình bày (bổ sung từ phản hồi dạy thực tế)
 
 Đây là các quy tắc rút ra sau khi dùng slide thật trên lớp. `build_deck.py` đã enforce sẵn phần cấu trúc; phần biên tập (giọng văn, tiêu đề, chọn câu) do người soạn JSON tuân thủ.

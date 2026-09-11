@@ -149,8 +149,27 @@ class DeckBuilder:
         f.name = font or self.theme["text_font"]
         f.color.rgb = self._rgb(color)
         rPr = run._r.get_or_add_rPr()
-        for tag in ("a:ea", "a:cs"):
-            rPr.append(rPr.makeelement(qn(tag), {"typeface": self.theme["cjk_font"]}))
+        if cjk:
+            # CHỈ ép font Đông Á (a:ea/a:cs) khi run thật sự chứa chữ Hán —
+            # trước đây áp dụng vô điều kiện cho MỌI run, kể cả run tiếng
+            # Việt thuần (cjk=False). Một số ký tự Việt có dấu tổ hợp (vd
+            # "bạn" — dấu nặng) bị PowerPoint xếp vào vùng "complex script"
+            # thay vì "latin", nên vẫn ăn theo a:cs -> render bằng cjk_font
+            # (Microsoft YaHei) — font này thiếu vài glyph dấu tiếng Việt
+            # (xem ghi chú "msyh.ttc thiếu dấu ẹ/ự/ắ/ỏ..."), khiến dấu bị
+            # rớt câm lặng (2026-09-11, feedback buổi 06 HSK1: "bạn" hiện
+            # ra "ban"). Giờ chỉ override khi cjk=True; run Latin/Việt thuần
+            # giữ nguyên font mặc định của theme cho a:ea/a:cs (đủ glyph).
+            for tag in ("a:ea", "a:cs"):
+                rPr.append(rPr.makeelement(qn(tag), {"typeface": self.theme["cjk_font"]}))
+            # PowerPoint chỉ áp dụng luật ngắt dòng kiểu Á Đông (kinsoku —
+            # không để 1 dấu câu đóng như 。/，/！ đứng lẻ ở ĐẦU dòng mới) khi
+            # run có lang="zh-CN". Thiếu tag này, PowerPoint coi văn bản là
+            # Latin và ngắt dòng thuần theo độ rộng khiến dấu câu cuối câu
+            # thường bị "rớt" xuống 1 dòng riêng (2026-09-11, feedback buổi
+            # 06 HSK1: "bị rớt dòng có dấu chấm", cả ở vocab example lẫn
+            # dialogue turn dài).
+            rPr.set("lang", "zh-CN")
 
     def _is_wide_char(self, ch):
         """CJK/fullwidth char chiếm ~1 em ngang, thay vì ~0.52em như Latin —
@@ -791,8 +810,13 @@ class DeckBuilder:
 
         if has_img and image_pos in ("left", "right"):
             gap1 = Inches(0.3); gap2 = Inches(0.5)
-            info_w = Inches(2.3)
-            right_w = Inches(4.8)
+            info_w = Inches(2.1)
+            # 4.8 -> 4.2in (2026-09-11, feedback buổi 06 HSK1: ảnh cột
+            # left/right bị bó hẹp bởi right_w cố định lớn, nhỏ hơn nhiều so
+            # với area_h -> để trống dải to trên/dưới dù đã canh giữa) — nhường
+            # bớt bề rộng cho ảnh để ảnh to hơn, lấp khoảng trống thật thay vì
+            # chỉ dịch 1 khối nhỏ vào giữa nền trắng.
+            right_w = Inches(4.2)
             img_w = content_w - gap1 - info_w - gap2 - right_w
             img_side = min(img_w, area_h)
             if image_pos == "left":
@@ -801,7 +825,12 @@ class DeckBuilder:
             else:  # "right": ảnh nằm cuối, info/ví dụ dồn về đầu
                 info_left = MARGIN
                 img_left = MARGIN + content_w - img_w
-            img_top = top
+            # Căn GIỮA theo chiều dọc area_h (không neo top) — nếu không, khi
+            # img_side < area_h (ảnh vuông bị bó hẹp bởi chiều rộng cột) ảnh
+            # dồn hẳn lên trên, để trống 1 dải lớn phía dưới dù cột chữ bên
+            # cạnh đã canh MIDDLE (2026-09-11, feedback buổi 06 HSK1: "dồn
+            # hết trên, phí dưới trông trang").
+            img_top = top + max(0, int((area_h - img_side) / 2))
             self._place_image(slide, s["image"], img_left, img_top, img_side, img_side)
             right_left = info_left + info_w + gap2 if image_pos == "left" \
                 else info_left + info_w + gap2
@@ -858,17 +887,17 @@ class DeckBuilder:
             if first_ex:
                 p = etf.paragraphs[0]; first_ex = False
             else:
-                p = etf.add_paragraph(); p.space_before = Pt(22)
-            self._set_run(p.add_run(), "•  ", 18, color="accent", bold=True)
-            self._set_run(p.add_run(), ex.get("hz", ""), 20, color="ink", bold=True,
+                p = etf.add_paragraph(); p.space_before = Pt(26)
+            self._set_run(p.add_run(), "•  ", 20, color="accent", bold=True)
+            self._set_run(p.add_run(), ex.get("hz", ""), 23, color="ink", bold=True,
                           cjk=True)
             if ex.get("py"):
-                p2 = etf.add_paragraph(); p2.space_before = Pt(2)
-                self._set_run(p2.add_run(), "     " + ex["py"], 14, color="accent",
+                p2 = etf.add_paragraph(); p2.space_before = Pt(3)
+                self._set_run(p2.add_run(), "     " + ex["py"], 16, color="accent",
                               italic=True)
             if ex.get("vn"):
-                p3 = etf.add_paragraph(); p3.space_before = Pt(1)
-                self._set_run(p3.add_run(), "     " + ex["vn"], 14, color="muted")
+                p3 = etf.add_paragraph(); p3.space_before = Pt(2)
+                self._set_run(p3.add_run(), "     " + ex["vn"], 16, color="muted")
 
     # -- word_pair: 2 từ / 1 slide xếp CẠNH NHAU, mỗi cột tự chứa ảnh +
     #    汉字/pinyin/nghĩa + 1 câu ví dụ — dùng cho từ vựng mở rộng số lượng
@@ -932,56 +961,87 @@ class DeckBuilder:
             # Chiều cao khối 汉字/pinyin/nghĩa tính THEO NỘI DUNG THẬT (giữ
             # nguyên nguyên tắc cũ, 2026-09-08) — nay dùng text_w (hẹp hơn
             # col_w khi có ảnh) để wrap đúng bề rộng thật của cột chữ.
-            info_h = self._line_h(40)
+            # Cỡ chữ tăng so với bản cũ (40/18/15 -> 50/22/18, 2026-09-11,
+            # feedback buổi 06 HSK1: "bố cục nhìn ghê" — chỉ canh giữa 1 khối
+            # nhỏ giữa nền trắng không đủ, chữ/ảnh phải TO hơn để thật sự
+            # lấp không gian thay vì để khoảng trắng lớn cả trên lẫn dưới).
+            info_h = self._line_h(50)
             if w.get("py"):
-                info_h += Pt(4) + self._line_h(18)
+                info_h += Pt(5) + self._line_h(22)
             if w.get("vn"):
-                info_h += Pt(3) + self._wrap_lines(
-                    w["vn"], text_w, 15, cjk=False) * self._line_h(15)
-            info_h = int(info_h + Pt(10))          # đệm dưới
+                info_h += Pt(4) + self._wrap_lines(
+                    w["vn"], text_w, 18, cjk=False) * self._line_h(18)
+            info_h = int(info_h + Pt(12))          # đệm dưới
 
-            cur_top = top + img_side + Inches(0.12) if top_stack else top
+            # Chiều cao THẬT cần cho câu ví dụ (nếu có) — tính trước để gộp
+            # vào tổng khối rồi canh GIỮA area_h, thay vì ví dụ luôn ăn hết
+            # phần còn lại (neo TOP bên trong 1 box cao gần hết area_h khiến
+            # vài dòng chữ ngắn trôi lên đầu, để trống cả mảng lớn phía dưới
+            # — 2026-09-11, feedback buổi 06 HSK1: "dồn hết trên, phí dưới").
+            ex = w.get("example")
+            ex_natural_h = 0
+            if ex:
+                ex_natural_h = Inches(0.22) + self._wrap_lines(
+                    ex.get("hz", ""), text_w, 21, cjk=True, bold=True) * self._line_h(21)
+                if ex.get("py"):
+                    ex_natural_h += Pt(3) + self._wrap_lines(
+                        ex["py"], text_w, 15) * self._line_h(15)
+                if ex.get("vn"):
+                    ex_natural_h += Pt(3) + self._wrap_lines(
+                        ex["vn"], text_w, 15) * self._line_h(15)
+                ex_natural_h = int(ex_natural_h + Pt(8))
+
+            block_h = info_h + ex_natural_h
+            if has_img and image_pos in ("left", "right"):
+                block_h = max(block_h, img_side)
+            v_offset = max(0, int((area_h - block_h) / 2))
+
+            if has_img and image_pos in ("left", "right"):
+                img_top = top + v_offset
+                # đã place ảnh ở trên với img_top=top; dịch lại theo v_offset
+                slide.shapes[-1].top = img_top
+
+            cur_top = (top + img_side + Inches(0.12)) if top_stack else (top + v_offset)
             box, tf = self._textbox(slide, text_left, cur_top, text_w, info_h,
                                     anchor=MSO_ANCHOR.TOP)
             p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
-            self._set_run(p.add_run(), w.get("hz", ""), 40, color="ink",
+            self._set_run(p.add_run(), w.get("hz", ""), 50, color="ink",
                           bold=True, cjk=True)
             if w.get("pos"):
-                self._set_run(p.add_run(), "  " + w["pos"], 14, color="muted",
+                self._set_run(p.add_run(), "  " + w["pos"], 15, color="muted",
                               italic=True)
             if w.get("py"):
                 p2 = tf.add_paragraph(); p2.alignment = PP_ALIGN.CENTER
-                p2.space_before = Pt(4)
-                self._set_run(p2.add_run(), w["py"], 18, color="accent",
+                p2.space_before = Pt(5)
+                self._set_run(p2.add_run(), w["py"], 22, color="accent",
                               italic=True)
             if w.get("vn"):
                 p3 = tf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
-                p3.space_before = Pt(3)
-                self._set_run(p3.add_run(), w["vn"], 15, color="ink")
+                p3.space_before = Pt(4)
+                self._set_run(p3.add_run(), w["vn"], 18, color="ink")
             cur_top = cur_top + info_h
 
-            ex = w.get("example")
             if ex:
-                # giãn thêm 1 khoảng rõ ràng giữa nghĩa và câu ví dụ — vẫn
-                # còn TRỌN phần area_h còn lại vì không phải chia sẻ chỗ với
-                # ảnh (ảnh đã đứng riêng 1 dải bên cạnh).
-                cur_top = cur_top + Inches(0.16)
-                ex_h = top + area_h - cur_top
+                # Dùng đúng chiều cao THẬT cần (ex_natural_h tính ở trên),
+                # không ăn hết phần area_h còn lại — tránh vài dòng chữ ngắn
+                # neo TOP rồi để trống mảng lớn bên dưới.
+                cur_top = cur_top + Inches(0.22)
+                ex_h = ex_natural_h
                 ebox, etf = self._textbox(slide, text_left, cur_top, text_w, ex_h,
                                           anchor=MSO_ANCHOR.TOP)
                 # Bỏ nhãn "例句" (2026-09-08) — câu ví dụ đứng thẳng, không nhãn.
                 p2 = etf.paragraphs[0]; p2.alignment = PP_ALIGN.CENTER
-                self._set_run(p2.add_run(), ex.get("hz", ""), 17, color="ink",
+                self._set_run(p2.add_run(), ex.get("hz", ""), 21, color="ink",
                               bold=True, cjk=True)
                 if ex.get("py"):
                     p3 = etf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
-                    p3.space_before = Pt(2)
-                    self._set_run(p3.add_run(), ex["py"], 13, color="accent",
+                    p3.space_before = Pt(3)
+                    self._set_run(p3.add_run(), ex["py"], 15, color="accent",
                                   italic=True)
                 if ex.get("vn"):
                     p4 = etf.add_paragraph(); p4.alignment = PP_ALIGN.CENTER
-                    p4.space_before = Pt(2)
-                    self._set_run(p4.add_run(), ex["vn"], 13, color="muted")
+                    p4.space_before = Pt(3)
+                    self._set_run(p4.add_run(), ex["vn"], 15, color="muted")
 
         if n == 2:
             divider_x = MARGIN + col_w + gap // 2
@@ -2246,9 +2306,14 @@ class DeckBuilder:
         `bullets` liệt kê thụ động. Trường JSON: `items[]` = `{hz, py, vn}`,
         `seed?` (đổi đề nếu muốn), tối đa `len(MATCH_LETTERS)` = 12 cặp
         (khuyến nghị thực tế ~8/slide, giống quy tắc `vocab` — nhiều hơn nên
-        tách 2 slide `match` liên tiếp)."""
+        tách 2 slide `match` liên tiếp). `answer?` (bool, mặc định True,
+        2026-09-11) — đặt `False` để CHỈ sinh slide đố, bỏ slide đáp án (hợp
+        khi GV tự chấm miệng trên lớp, không cần deck tự lộ đáp án ngay sau).
+        Trước đây phải build đủ rồi xoá slide đáp án thủ công bằng script
+        python-pptx riêng — giờ khai thẳng trong JSON."""
         self._slide_match_puzzle(s)
-        self._slide_match_answer(s)
+        if s.get("answer", True):
+            self._slide_match_answer(s)
 
     def _slide_match_puzzle(self, s):
         slide = self._new_slide()

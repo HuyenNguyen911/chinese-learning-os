@@ -112,7 +112,7 @@ Item chỉ 1 dòng (không có `\n`) vẫn hoạt động như cũ, không bị 
 | `info_grid` | `cards[]` = `{label, image?, py?, caption?}` | N thẻ (ảnh + label CJK đậm + pinyin + caption Việt) xếp LƯỚI trong 1 slide (≤4 thẻ → 1 hàng, >4 → 4 cột nhiều hàng) — dùng khi 1 slide cần NHIỀU ảnh cùng lúc (vd hồ sơ 1 quốc gia: cờ+biểu tượng+thủ đô+ngôn ngữ+tiền tệ), khác mọi type khác chỉ hỗ trợ 1 ảnh/slide |
 | `match_pairs` | `images[]` = `{num, image}`, `words[]` = `{letter, hz, py?, vn?}` | **Trò chơi nối ảnh với từ** (2026-09-08): ảnh đánh SỐ ở cột trái + danh sách từ đánh CHỮ CÁI (đã xáo trộn) ở cột phải, hiện CÙNG 1 slide để học viên vừa nhìn ảnh vừa nhìn từ mà chọn (không phải lật qua lại 2 slide). Dùng cho phần ôn từ vựng cuối buổi. **Tối đa 5 cặp/slide** — 10 cặp/slide chữ và ảnh quá nhỏ; nhiều từ thì chia nhiều slide và **chia đều** (11 từ → 4+4+3, KHÔNG 5+5+1 để tránh slide lẻ 1 từ). |
 | `guess` | `image`, `hz`, `py?`, `vn?`, `prompt?` | **Minigame "đoán từ qua ảnh"** (2026-09) — 1 block JSON tự sinh **2 slide**: slide HỎI (chỉ ảnh to + `prompt`, mặc định "Đoán xem: đây là gì?", không lộ chữ) rồi slide ĐÁP ÁN (ảnh nhỏ hơn 1 bên + 汉字/pinyin/nghĩa). Học viên đoán miệng trước khi qua slide sau. Chỉ hợp với từ vựng cụ thể minh hoạ được bằng ảnh (đồ vật/hoạt động) — từ trừu tượng dùng `vocab`/`wordcard` như cũ. Thiếu `image` → slide hỏi hiện placeholder báo thiếu, không crash. |
-| `match` | `items[]` = `{hz, py, vn}` (khuyến nghị ≤8, tối đa 12), `seed?` | **Minigame "ghép cặp xáo trộn"** (2026-09) — 1 block JSON tự sinh **2 slide**: slide ĐỐ (cột 汉字 xáo trộn nhãn A/B/C..., cột Nghĩa xáo trộn ĐỘC LẬP đánh số 1/2/3..., học viên ghép miệng/viết ra giấy) rồi slide ĐÁP ÁN (bảng đối chiếu, tái dùng renderer của `table`). Xáo trộn có seed cố định (mặc định 42) nên build lại nhiều lần ra CÙNG 1 đề — đổi `seed` nếu muốn đề khác. Dùng để ôn tập 1 nhóm từ đã dạy, thay cho `bullets` liệt kê thụ động. |
+| `match` | `items[]` = `{hz, py, vn}` (khuyến nghị ≤8, tối đa 12), `seed?`, `answer?` | **Minigame "ghép cặp xáo trộn"** (2026-09) — 1 block JSON tự sinh **2 slide**: slide ĐỐ (cột 汉字 xáo trộn nhãn A/B/C..., cột Nghĩa xáo trộn ĐỘC LẬP đánh số 1/2/3..., học viên ghép miệng/viết ra giấy) rồi slide ĐÁP ÁN (bảng đối chiếu, tái dùng renderer của `table`). Xáo trộn có seed cố định (mặc định 42) nên build lại nhiều lần ra CÙNG 1 đề — đổi `seed` nếu muốn đề khác. Dùng để ôn tập 1 nhóm từ đã dạy, thay cho `bullets` liệt kê thụ động. `answer: false` (2026-09-11) — CHỈ sinh slide đố, bỏ slide đáp án (hợp khi GV tự chấm miệng trên lớp); mặc định `true` (giữ hành vi cũ). |
 
 Ghi chú:
 - **`dialogue`**: speaker xuất hiện **đầu tiên** căn trái, các speaker khác căn phải.
@@ -385,6 +385,22 @@ Không có `audio_text` → trích theo `type`:
 > Trình xem trực tiếp trên Drive hoặc Google Slides sẽ không kêu.
 
 ## Ảnh minh hoạ (Pexels — ảnh chụp thật)
+
+### ⚠️ Soát ảnh sau khi fetch — thêm 2 tiêu chí (2026-09-11, Buổi 6 HSK1)
+
+Ngoài việc Read lại ảnh bằng mắt (đã có ở mục "Quy trình chuẩn" bước 1b), khi soát
+PHẢI kiểm thêm 2 điểm sau — trong buổi 6 phải fetch lại 6/27 ảnh vì bỏ sót:
+
+1. **Phù hợp trẻ em, tránh nội dung nhạy cảm.** Học viên là học sinh tiểu học — loại
+   ngay ảnh mang phong cách người lớn (vd ảnh "boudoir"/thời trang gợi cảm dù chỉ minh
+   hoạ ý "nghỉ ngơi/thư giãn" rất chung chung). Ưu tiên ảnh trẻ em, gia đình, hoạt động
+   đời thường rõ ràng.
+2. **Khớp SÁT nghĩa của chính từ/câu ví dụ đang minh hoạ, không chỉ đại khái cùng chủ
+   đề.** Query mơ hồ dễ ra ảnh lạc đề nhìn "có vẻ liên quan" nhưng không thật sự đúng
+   (vd query "tomorrow" ra ảnh phong cảnh chung chung không gợi được ý "ngày mai"; query
+   "new" ra ảnh mở hộp quà ngẫu nhiên thay vì gắn với chính đồ vật trong câu ví dụ, như
+   "新电脑" nên ra ảnh máy tính/laptop mới chứ không phải hộp quà bất kỳ). Đối chiếu lại
+   `example`/`ex` của từ trước khi chốt ảnh, không chỉ đối chiếu mỗi nghĩa `vn` đơn lẻ.
 
 **Nguồn (đổi từ Openverse sang Pexels, 2026-09-03):** Openverse gộp ảnh CC từ nhiều
 nguồn (Flickr, Wikimedia, bảo tàng số hoá...) nên hay lẫn tranh minh hoạ/clip-art cũ,
@@ -977,6 +993,33 @@ trước khi chọn.
 Xem thêm mục "Nguyên tắc trình bày" trong `slide-design-best-practices.md`
 (đóng gói trong `chinese-teaching.skill`) để biết đủ bảng map nội dung → hình
 thức cho mọi loại slide, không chỉ 2 minigame mới này.
+
+## Lessons learned — 4 bug renderer đã sửa (2026-09-11, Buổi 6 HSK1)
+
+Phát hiện khi review buổi 6, đã sửa thẳng trong `build_deck.py` (comment giải thích
+tại chỗ) — ghi lại đây để session sau không tưởng nhầm là bug còn tồn tại:
+
+1. **Chữ Hán bị "rớt dòng" — 1 dấu câu cuối câu (。/，/！) đứng lẻ ở ĐẦU dòng mới.**
+   Nguyên nhân: run chữ Hán chưa khai `lang="zh-CN"` trong `rPr`, nên PowerPoint áp
+   luật ngắt dòng kiểu Latin thay vì kinsoku (luật Á Đông cấm dấu câu đóng đứng đầu
+   dòng). Đã sửa: `_set_run()` tự gắn `lang="zh-CN"` khi `cjk=True`.
+2. **Dấu tiếng Việt bị nuốt câm lặng** (vd "bạn" hiện ra "ban", mất dấu nặng). Nguyên
+   nhân: `_set_run()` từng ép font Đông Á (`a:ea`/`a:cs` = `cjk_font`, tức Microsoft
+   YaHei) cho **MỌI** run kể cả run tiếng Việt thuần — 1 số ký tự Việt có dấu tổ hợp bị
+   PowerPoint xếp vào vùng "complex script" nên vẫn ăn theo `a:cs`, mà `msyh.ttc` thiếu
+   vài glyph dấu tiếng Việt (xem mục "Tránh ảnh ẨN DỤ..." ở trên, cùng nguồn gốc font
+   này). Đã sửa: chỉ override `a:ea`/`a:cs` khi `cjk=True`.
+3. **`wordcard`/`word_pair` dồn nội dung lên đỉnh slide, để trống 1 mảng lớn phía dưới**
+   dù cột chữ đã canh `MIDDLE`. Nguyên nhân: ảnh (`image_pos: left/right`) luôn đặt
+   `img_top = top` (neo cứng đỉnh content area), không theo chiều cao khối chữ/ví dụ
+   bên cạnh. Đã sửa: tính `block_h` thật (ảnh so với chữ+ví dụ, lấy max) rồi canh GIỮA
+   cả khối trong `area_h`; ví dụ trong `word_pair` cũng đổi từ "ăn hết phần còn lại" ↔
+   sang "đúng chiều cao chữ thật cần" (dùng `_wrap_lines` ước lượng trước).
+4. **Cỡ chữ `word_pair`/`wordcard` quá nhỏ** so với không gian slide thực tế, làm mục 3
+   dù đã canh giữa vẫn để lại nhiều khoảng trắng. Đã tăng: `word_pair` 汉字 40→50pt,
+   pinyin 18→22pt, nghĩa 15→18pt, ví dụ 17→21pt; `wordcard` cột ví dụ 20→23pt + giãn
+   dòng 22→26pt; đồng thời nhường thêm bề rộng cho ảnh trong `wordcard` (`right_w`
+   4.8→4.2in).
 
 ## Nguyên tắc thiết kế (đã nhúng sẵn trong renderer)
 
