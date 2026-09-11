@@ -130,7 +130,13 @@ Trước khi chia slide, đọc `references/slide-design-best-practices.md` — 
    - **PPTX** (khi học viên muốn slide để lưu/dạy lại): dùng helper **data-driven** local `pptx/build_deck.py` (cùng thư mục skill) — KHÔNG dùng đường dẫn cloud `/mnt/skills/public/pptx/` (không tồn tại trên máy local). Quy trình: đọc `pptx/README.md` để nắm schema, ánh xạ nội dung Giai đoạn A sang các block JSON (`vocab`, `grammar`, `table`, `dialogue`, `reading`, `exercise`, `answers`, `bullets`...), ghi 1 file `lesson.json`, rồi chạy:
      `"C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe" .claude/skills/teaching-coach/pptx/build_deck.py output/hskN/buoiX_<chude>/slide/buoiX.json output/hskN/buoiX_<chude>/slide/Buoi-X-....pptx`
      Design system (font CJK, header dải đỏ + tab kicker, layout 汉字+pinyin+nghĩa, bảng màu) đã nhúng sẵn trong renderer — việc của bạn chỉ là chia nội dung đúng block + đặt action title tốt (bước 1-3). Ví dụ: so sánh 了 vs 过 → block `table`, hội thoại mẫu → block `dialogue`, nguồn đọc thêm → block `reading`. Ảnh minh hoạ: đặt file cạnh JSON và trỏ bằng key `image`. Tạo folder buổi `output/hskN/buoiX_<chude>/slide/`, ghi `buoiX.json` vào đó (ảnh để trong `assets/` cùng cấp, trỏ bằng key `image` dạng `assets/<tên>.jpg`) rồi render vào chính folder đó — mỗi buổi 1 folder gồm `slide/` (skill này) + `baitap/` (skill exercise-generator). Xem `pptx/example-lesson.json` làm mẫu. (`image_search` chỉ có trên cloud — bỏ qua khi chạy local.)
-   - **Audio giọng bản địa cho slide** (tùy chọn, qua `pptx/slide_audio.py` — cần `edge-tts`): với slide có chữ Hán đáng đọc. Chuẩn chất lượng cho người mới (HSK1-3):
+   - **Audio giọng bản địa cho slide** (tùy chọn, qua `pptx/slide_audio.py` — cần `edge-tts`): với slide có chữ Hán đáng đọc.
+     ⚠️ **Cổng duyệt bắt buộc TRƯỚC khi chạy `slide_audio.py`** (2026-09-11, tái phạm nhiều
+     lần kể cả trong cùng 1 buổi — buổi 09 HSK1): trình bày nội dung/cấu trúc slide cho học
+     viên duyệt trước lần build đầu tiên, VÀ **bất kỳ thay đổi nào sau đó** (thêm/đổi ảnh,
+     thêm/sửa slide, sửa ví dụ...) — dù nhỏ đến đâu — đều phải trình lại và chờ duyệt trước
+     khi chạy `slide_audio.py` lần tiếp theo. Không tự suy luận "thay đổi nhỏ chắc khỏi cần
+     hỏi lại". Chuẩn chất lượng cho người mới (HSK1-3):
      - **Tốc độ (`--rate`)**: luôn đọc chậm — mặc định `-18%`, hội thoại có thể `-12%`. KHÔNG để `+0%` (quá nhanh cho người mới).
      - **Giọng**: slide dạy (vocab/grammar/口语) dùng 1 giọng rõ, ổn định `zh-CN-XiaoxiaoNeural`; **chỉ hội thoại** mới đa giọng (mỗi người 1 giọng). Không xoay nhiều giọng ở slide thường — rối và kém tự nhiên cho người mới.
      - **Đọc trong ngữ cảnh, không đọc chữ trơ**: bảng lượng từ / mục có ví dụ → đọc cả ví dụ (一只猫) thay vì chữ đơn (只); TTS chọn đúng âm hơn. Vocab đọc ngắt nhịp từng từ, đừng nối liền một mạch (nghe cụt).
@@ -150,6 +156,11 @@ Trước khi chia slide, đọc `references/slide-design-best-practices.md` — 
      cho `fetch_images.py`: kiểm khớp đúng nghĩa từ + có yếu tố Việt Nam rõ ràng chưa (xem
      `references/slide-design-best-practices.md` mục 8 để biết cách xử lý khi không tìm được
      ảnh VN phù hợp).
+   - **Kiểm tra dialogue có đủ `py`** (2026-09-11, phát hiện khi review buổi 09 HSK1): mỗi
+     `turns[]` trong slide `dialogue` cần có cả `hz` VÀ `py` — renderer đã hỗ trợ sẵn nhưng
+     dễ quên khi soạn nhanh (buổi 08, 09 đều từng thiếu). Thiếu `py` vẫn build "thành công",
+     không báo lỗi, nên phải tự rà bằng mắt trong JSON trước khi giao, không đợi học viên
+     phát hiện.
 
 **Output của giai đoạn B**: bài giảng ở dạng sẵn sàng để học — trực quan, có cấu trúc rõ, đúng định dạng học viên cần.
 

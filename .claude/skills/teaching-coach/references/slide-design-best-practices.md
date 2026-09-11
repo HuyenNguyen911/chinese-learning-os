@@ -117,6 +117,13 @@ rồi thử lại; nếu đã thử vài query mà kho ảnh Pexels vẫn không
 (vd 牛奶 — sữa không phải món đặc trưng để chụp riêng) → chấp nhận ảnh trung tính, KHÔNG cố
 ép, và nói rõ giới hạn này với user thay vì âm thầm dùng ảnh không đạt.
 
+**Kiểm tra trùng ảnh với buổi trước (2026-09-11, review buổi 09 HSK1):** ảnh Pexels "hot nhất"
+cho 1 query chung chung (vd "local convenience store in Vietnam") rất dễ lặp lại giữa các buổi
+khác nhau dùng chủ đề gần giống nhau, kể cả khi query đặt khác nhau. Trước khi chốt ảnh mới,
+so `source` URL trong `credits.json` của buổi đang làm với `credits.json` của các buổi khác
+cùng cấp (`find output/hskN -iname credits.json`) — trùng URL thì đổi query khác, đừng chỉ đổi
+tên biến.
+
 **Quét lại toàn bộ đường dẫn `image` trước khi bàn giao:** duyệt hết field `image` trong JSON
 (kể cả field lồng sâu như `words[].image`, `images[].image` trong `match_pairs`) và kiểm
 `os.path.exists()` từng cái — thiếu 1 file (dù JSON trỏ đúng path) sẽ khiến renderer tự vẽ
@@ -191,3 +198,18 @@ buổi mới không tự động kế thừa, phải copy tay.
 - Dùng `fetch_images.py` để tải ảnh Creative Commons (Openverse) theo nội dung; ghi nguồn ở `credits.json`.
 - **Ưu tiên ảnh mô tả đúng nội dung** (vd 我会说汉语 → ảnh người đang đọc/nói tiếng Trung), **hạn chế emoji**.
 - Tránh ảnh mang sắc thái tiêu cực (vd học sinh mệt mỏi ôm đầu) — chọn ảnh tích cực, đúng tinh thần khích lệ.
+- **Khái niệm trừu tượng không có ảnh chụp thật phù hợp (2026-09-11, review buổi 09 HSK1) —
+  tự vẽ sơ đồ bằng PIL thay vì ép ảnh gượng gạo:** từ vựng như phương vị từ (上下左右前后里外)
+  không thể minh hoạ bằng 1 ảnh chụp thật (thử vài query Pexels đều lạc đề — biển chỉ đường,
+  ảnh kiến trúc...). Giải pháp: tự vẽ sơ đồ đơn giản bằng `PIL.ImageDraw` (vd buổi 09: 1 cái
+  hộp ở giữa + quả bóng đặt ở từng vị trí tương ứng, nối bằng nét đứt, có nhãn 2 dòng Hán
+  tự+tiếng Việt). Lưu ý kỹ thuật:
+  - **Dùng RIÊNG font cho mỗi ngôn ngữ**: font CJK (`msyh.ttc`/`msyhbd.ttc`) để vẽ chữ Hán,
+    font Latin (`arial.ttf`/`arialbd.ttf`) để vẽ tiếng Việt — không dùng chung 1 font cho cả
+    2, vì font CJK thường thiếu glyph dấu tổ hợp tiếng Việt (ư, ơ, ạ, ộ...), render ra ký tự
+    vỡ/tofu mà không báo lỗi.
+  - **Canvas nên khớp tỉ lệ khung ảnh thật trên slide** (khổ ngang ~2:1 cho slide type
+    `image` full-width) — sơ đồ dọc hẹp đặt vào khung ngang rộng sẽ bị co nhỏ, thừa nhiều
+    khoảng trắng 2 bên; dựng nhiều cụm nội dung thì xếp CẠNH NHAU theo chiều ngang (có vạch
+    chia), đừng xếp chồng dọc.
+  - Auto-crop viền trắng thừa quanh nội dung (tính bounding-box qua `getbbox()` trên ảnh grayscale threshold) trước khi lưu, để ảnh không có margin trống vô ích khi chèn vào slide.
