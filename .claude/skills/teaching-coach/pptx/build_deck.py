@@ -889,8 +889,9 @@ class DeckBuilder:
             else:
                 p = etf.add_paragraph(); p.space_before = Pt(26)
             self._set_run(p.add_run(), "•  ", 20, color="accent", bold=True)
-            self._set_run(p.add_run(), ex.get("hz", ""), 23, color="ink", bold=True,
-                          cjk=True)
+            self._set_run_highlighted(p, ex.get("hz", ""),
+                                      ex.get("highlight", s.get("hz")), 23,
+                                      color="ink", bold=True, cjk=True)
             if ex.get("py"):
                 p2 = etf.add_paragraph(); p2.space_before = Pt(3)
                 self._set_run(p2.add_run(), "     " + ex["py"], 16, color="accent",
@@ -913,7 +914,26 @@ class DeckBuilder:
         content_w = SLIDE_W - 2 * MARGIN
         n = max(1, len(words))
         gap = Inches(0.6)
-        col_w = int((content_w - gap * (n - 1)) / n)
+
+        # Cột KHÔNG còn luôn chia đều 50/50 (2026-09-12, buổi 10 HSK1 —
+        # feedback "bố trí cứng nhắc, ảnh nhỏ quá"): khi 1 trong 2 từ có ảnh
+        # còn từ kia không (rất phổ biến — từ chức năng/đại từ thường không
+        # có ảnh minh hoạ), chia đều 50/50 khiến ảnh bị bó hẹp dù cột bên
+        # cạnh thừa chỗ trống (chữ ngắn không cần nhiều bề rộng). Từ có ảnh
+        # được nhường thêm khoảng 1.8x bề rộng so với từ không ảnh.
+        has_img_flags = [bool(w.get("image")) for w in words]
+        if n == 2 and has_img_flags[0] != has_img_flags[1]:
+            ratios = [1.8 if f else 1.0 for f in has_img_flags]
+        else:
+            ratios = [1.0] * n
+        total_ratio = sum(ratios) or 1.0
+        avail_w = content_w - gap * (n - 1)
+        col_ws = [int(avail_w * r / total_ratio) for r in ratios]
+        col_lefts = []
+        _acc = MARGIN
+        for _w in col_ws:
+            col_lefts.append(_acc)
+            _acc += _w + gap
 
         # Ảnh có thể đặt CẠNH khối chữ (trái/phải, ảnh to hơn) hoặc TRÊN khối
         # chữ (ảnh nhỏ hơn, chữ full-width) — chọn theo `image_pos` từng từ
@@ -922,38 +942,36 @@ class DeckBuilder:
         # (ảnh cao bằng area_h, không còn bó buộc bởi chiều cao chữ bên
         # dưới như kiểu xếp dọc cũ) — dùng "top" khi nghĩa/ví dụ dài cần cột
         # rộng full col_w hơn là ảnh to.
-        TEXT_COL_W = Inches(2.7)
+        # TEXT_COL_W tăng 2.7in -> 3.6in (2026-09-12, buổi 10 HSK1): đo thực
+        # tế bằng `_wrap_lines` cho thấy 2.7in ép câu ví dụ 8-10 chữ (rất phổ
+        # biến) xuống 2 dòng, có lúc rớt dòng ngay giữa 1 từ 2 chữ (vd
+        # "那儿" bị tách "那" / "儿"); 3.6in đủ cho toàn bộ câu ví dụ 1 dòng.
+        TEXT_COL_W = Inches(3.6)
         INNER_GAP = Inches(0.25)
+        # Cột rất rộng (>= 6.3in, tức cột được nhường ảnh trong cặp bất đối
+        # xứng ở trên) tự chuyển sang layout "left" dù JSON xin "top" — vì
+        # đo thực tế: ảnh xếp TRÊN bị giới hạn bởi NGÂN SÁCH CHIỀU CAO còn
+        # lại sau khi trừ chữ (thường chỉ ra ảnh ~2.1-2.2in dù cột rất rộng),
+        # còn ảnh xếp CẠNH chữ dùng được TOÀN BỘ area_h (~5.5in) làm chiều
+        # cao, cho ảnh to hơn nhiều (~3.5in) khi cột đủ rộng để chừa 3.6in
+        # cho chữ + phần dư cho ảnh. Cột thường (~5.5in, cặp đối xứng) vẫn
+        # giữ "top" vì lúc đó "left" bị bó hẹp bởi BỀ RỘNG (ảnh chỉ ra được
+        # ~1.6in), thua "top" (~2.1-2.6in bị bó bởi chiều cao).
+        WIDE_COL_THRESHOLD = Inches(6.3)
         for i, w in enumerate(words):
-            col_left = MARGIN + i * (col_w + gap)
+            col_w = col_ws[i]
+            col_left = col_lefts[i]
             has_img = bool(w.get("image"))
             image_pos = w.get("image_pos", "left")
+            if has_img and image_pos == "top" and col_w >= WIDE_COL_THRESHOLD:
+                image_pos = "left"
             top_stack = False
             if has_img and image_pos in ("left", "right"):
                 text_w = min(col_w - INNER_GAP - Inches(1.4), TEXT_COL_W)
-                img_w = col_w - INNER_GAP - text_w
-                img_side = min(img_w, area_h)
-                # Căn TOP trùng với khối chữ bên cạnh (không căn giữa theo
-                # area_h) — 2026-09-09, review buổi 05 HSK1: "thấy cái cao
-                # cái thấp nhìn ghét" khi ảnh căn giữa còn chữ neo TOP, lệch
-                # đỉnh nhau. Giờ cả 2 cùng bắt đầu từ `top`, luôn ngang hàng.
-                img_top = top
-                if image_pos == "left":
-                    img_left = col_left
-                    text_left = col_left + img_w + INNER_GAP
-                else:  # "right"
-                    img_left = col_left + col_w - img_w
-                    text_left = col_left
-                self._place_image(slide, w["image"], img_left, img_top,
-                                  img_side, img_side)
-            elif has_img:  # image_pos == "top": ảnh nhỏ hơn nằm trên, full-width
+            elif has_img:  # image_pos == "top"
                 top_stack = True
                 text_w = col_w
                 text_left = col_left
-                img_side = min(col_w, Inches(2.6))
-                img_left = col_left + (col_w - img_side) // 2
-                self._place_image(slide, w["image"], img_left, top,
-                                  img_side, img_side)
             else:
                 text_w = col_w
                 text_left = col_left
@@ -990,6 +1008,32 @@ class DeckBuilder:
                     ex_natural_h += Pt(3) + self._wrap_lines(
                         ex["vn"], text_w, 15) * self._line_h(15)
                 ex_natural_h = int(ex_natural_h + Pt(8))
+
+            # Đặt ảnh SAU KHI đã biết info_h/ex_natural_h (nội dung chữ thật
+            # cần bao nhiêu chỗ) — sửa lỗi tràn slide (2026-09-12, buổi 10
+            # HSK1): trước đó nhánh "top" luôn đặt ảnh cố định 2.6in TRƯỚC,
+            # rồi xếp chữ ngay sau đó không kiểm tra tổng có vượt area_h hay
+            # không — ảnh+chữ dài (nhiều dòng ví dụ) tràn khỏi đáy slide.
+            # Giờ tính budget còn lại cho ảnh giống hệt cách `wordcard` làm.
+            img_side = 0
+            if has_img and image_pos in ("left", "right"):
+                img_w = col_w - INNER_GAP - text_w
+                img_side = min(img_w, area_h)
+                if image_pos == "left":
+                    img_left = col_left
+                    text_left = col_left + img_w + INNER_GAP
+                else:  # "right"
+                    img_left = col_left + col_w - img_w
+                    text_left = col_left
+                self._place_image(slide, w["image"], img_left, top,
+                                  img_side, img_side)
+            elif top_stack:
+                text_needed_h = info_h + ex_natural_h
+                budget_h = area_h - text_needed_h - Inches(0.12)
+                img_side = min(col_w, Inches(3.6), max(Inches(1.2), budget_h))
+                img_left = col_left + (col_w - img_side) // 2
+                self._place_image(slide, w["image"], img_left, top,
+                                  img_side, img_side)
 
             block_h = info_h + ex_natural_h
             if has_img and image_pos in ("left", "right"):
@@ -1031,8 +1075,9 @@ class DeckBuilder:
                                           anchor=MSO_ANCHOR.TOP)
                 # Bỏ nhãn "例句" (2026-09-08) — câu ví dụ đứng thẳng, không nhãn.
                 p2 = etf.paragraphs[0]; p2.alignment = PP_ALIGN.CENTER
-                self._set_run(p2.add_run(), ex.get("hz", ""), 21, color="ink",
-                              bold=True, cjk=True)
+                self._set_run_highlighted(p2, ex.get("hz", ""),
+                                          ex.get("highlight", w.get("hz")), 21,
+                                          color="ink", bold=True, cjk=True)
                 if ex.get("py"):
                     p3 = etf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
                     p3.space_before = Pt(3)
@@ -1044,7 +1089,7 @@ class DeckBuilder:
                     self._set_run(p4.add_run(), ex["vn"], 15, color="muted")
 
         if n == 2:
-            divider_x = MARGIN + col_w + gap // 2
+            divider_x = col_lefts[1] - gap // 2
             line = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, divider_x, top,
                                           Inches(0.015), area_h)
             line.fill.solid(); line.fill.fore_color.rgb = self._rgb("band")
