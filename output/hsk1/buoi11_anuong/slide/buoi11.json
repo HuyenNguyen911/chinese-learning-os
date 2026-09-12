@@ -1,0 +1,821 @@
+{
+  "meta": {
+    "lesson": "HSK1 · Buổi 11",
+    "topic": "请给我一杯茶 — Ăn uống & gọi món"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "请给我一杯茶",
+      "subtitle": "Ăn uống & gọi món",
+      "footer": "HSK1 · Buổi 11"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么？",
+      "bullets": [
+        "Dùng 可以 để xin phép/nói khả năng làm gì.",
+        "Dùng 动词+一下 khi làm/thử một việc trong chốc lát.",
+        "Nói câu 2 tân ngữ với 给 (đưa cho ai cái gì) và 问 (hỏi ai điều gì).",
+        "Gọi món/đặt đồ ăn uống trong quán, nhà hàng."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "生词"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "再 · 问题 · 打电话",
+      "items": [
+        {
+          "hz": "再",
+          "py": "zài",
+          "vn": "lại, một lần nữa"
+        },
+        {
+          "hz": "问题",
+          "py": "wèntí",
+          "vn": "câu hỏi, vấn đề"
+        },
+        {
+          "hz": "打电话",
+          "py": "dǎ diànhuà",
+          "vn": "gọi điện thoại"
+        }
+      ],
+      "image": "assets/words/daidianhua.jpg",
+      "example": {
+        "hz": "我可以再打电话问一个问题吗？",
+        "py": "Wǒ kěyǐ zài dǎ diànhuà wèn yí ge wèntí ma?",
+        "vn": "Mình có thể gọi điện lại hỏi thêm một câu được không?"
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "卖 — bán",
+      "hz": "卖",
+      "py": "mài",
+      "vn": "bán",
+      "image": "assets/words/mai.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "这个商店卖不卖手机？",
+          "py": "Zhège shāngdiàn mài bu mài shǒujī?",
+          "vn": "Cửa hàng này có bán điện thoại không?"
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "买 — mua",
+      "hz": "买",
+      "py": "mǎi",
+      "vn": "mua",
+      "image": "assets/words/maibuy.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我想买一个新手机。",
+          "py": "Wǒ xiǎng mǎi yí ge xīn shǒujī.",
+          "vn": "Tôi muốn mua một cái điện thoại mới."
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "服务员 · 女士 · 先生",
+      "items": [
+        {
+          "hz": "服务员",
+          "py": "fúwùyuán",
+          "vn": "nhân viên phục vụ"
+        },
+        {
+          "hz": "女士",
+          "py": "nǚshì",
+          "vn": "quý bà, cô"
+        },
+        {
+          "hz": "先生",
+          "py": "xiānsheng",
+          "vn": "quý ông, anh"
+        }
+      ],
+      "image": "assets/words/fuwuyuan.jpg",
+      "example": {
+        "hz": "服务员对女士和先生说：\"请坐！\"",
+        "py": "Fúwùyuán duì nǚshì hé xiānsheng shuō: \"Qǐng zuò!\"",
+        "vn": "Nhân viên phục vụ nói với quý bà và quý ông: \"Mời ngồi!\""
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "请 · 坐",
+      "words": [
+        {
+          "hz": "请",
+          "py": "qǐng",
+          "vn": "mời, xin mời",
+          "example": {
+            "hz": "服务员请我们坐下。",
+            "py": "Fúwùyuán qǐng wǒmen zuòxià.",
+            "vn": "Nhân viên phục vụ mời chúng tôi ngồi xuống."
+          }
+        },
+        {
+          "hz": "坐",
+          "py": "zuò",
+          "vn": "ngồi",
+          "example": {
+            "hz": "我想坐在窗户旁边。",
+            "py": "Wǒ xiǎng zuò zài chuānghu pángbiān.",
+            "vn": "Tôi muốn ngồi cạnh cửa sổ."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "title": "早饭 · 面包 · 鸡蛋",
+      "items": [
+        {
+          "hz": "早饭",
+          "py": "zǎofàn",
+          "vn": "bữa sáng"
+        },
+        {
+          "hz": "面包",
+          "py": "miànbāo",
+          "vn": "bánh mì"
+        },
+        {
+          "hz": "鸡蛋",
+          "py": "jīdàn",
+          "vn": "trứng gà"
+        }
+      ],
+      "image": "assets/words/zaofan.jpg",
+      "example": {
+        "hz": "我还没吃早饭，我要这个面包和鸡蛋。",
+        "py": "Wǒ hái méi chī zǎofàn, wǒ yào zhège miànbāo hé jīdàn.",
+        "vn": "Tôi vẫn chưa ăn sáng, tôi muốn cái bánh mì và trứng này."
+      },
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "杯 — cốc (lượng từ)",
+      "hz": "杯",
+      "py": "bēi",
+      "vn": "cốc (lượng từ)",
+      "image": "assets/words/bei.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我想要一杯牛奶。",
+          "py": "Wǒ xiǎng yào yì bēi niúnǎi.",
+          "vn": "Tôi muốn một cốc sữa."
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "茶 — trà",
+      "hz": "茶",
+      "py": "chá",
+      "vn": "trà",
+      "image": "assets/words/cha.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我想喝一杯茶。",
+          "py": "Wǒ xiǎng hē yì bēi chá.",
+          "vn": "Tôi muốn uống một cốc trà."
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "要 · 这个",
+      "words": [
+        {
+          "hz": "要",
+          "py": "yào",
+          "vn": "muốn, gọi (món)",
+          "example": {
+            "hz": "我要一斤饺子。",
+            "py": "Wǒ yào yì jīn jiǎozi.",
+            "vn": "Tôi muốn một cân sủi cảo."
+          }
+        },
+        {
+          "hz": "这个",
+          "py": "zhège",
+          "vn": "cái này",
+          "example": {
+            "hz": "我要这个面包。",
+            "py": "Wǒ yào zhège miànbāo.",
+            "vn": "Tôi muốn cái bánh mì này."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "一半 — Một nửa",
+      "hz": "一半",
+      "py": "yíbàn",
+      "vn": "một nửa",
+      "examples": [
+        {
+          "hz": "四十个太多了，我要一半吧。",
+          "py": "Sìshí ge tài duō le, wǒ yào yíbàn ba.",
+          "vn": "40 cái nhiều quá, cho tôi một nửa thôi."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "春卷 — nem cuốn",
+      "hz": "春卷",
+      "py": "chūnjuǎn",
+      "vn": "nem cuốn",
+      "image": "assets/words/chunjuan.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我很喜欢吃春卷。",
+          "py": "Wǒ hěn xǐhuan chī chūnjuǎn.",
+          "vn": "Tôi rất thích ăn nem cuốn."
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "粥 — cháo",
+      "hz": "粥",
+      "py": "zhōu",
+      "vn": "cháo",
+      "image": "assets/words/zhou.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我早上喜欢喝粥。",
+          "py": "Wǒ zǎoshang xǐhuan hē zhōu.",
+          "vn": "Buổi sáng tôi thích ăn cháo."
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "炒饭 — cơm rang",
+      "hz": "炒饭",
+      "py": "chǎofàn",
+      "vn": "cơm rang",
+      "image": "assets/words/chaofan.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我要一份炒饭。",
+          "py": "Wǒ yào yí fèn chǎofàn.",
+          "vn": "Tôi muốn một phần cơm rang."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "汤 — canh, súp",
+      "hz": "汤",
+      "py": "tāng",
+      "vn": "canh, súp",
+      "image": "assets/words/tang.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "这个汤真好喝。",
+          "py": "Zhège tāng zhēn hǎohē.",
+          "vn": "Canh này ngon thật."
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "咖啡 — cà phê",
+      "hz": "咖啡",
+      "py": "kāfēi",
+      "vn": "cà phê",
+      "image": "assets/words/kafei.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我每天喝一杯咖啡。",
+          "py": "Wǒ měitiān hē yì bēi kāfēi.",
+          "vn": "Mỗi ngày tôi uống một cốc cà phê."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "奶茶 — trà sữa",
+      "hz": "奶茶",
+      "py": "nǎichá",
+      "vn": "trà sữa",
+      "image": "assets/words/naicha.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "你喝奶茶吗？",
+          "py": "Nǐ hē nǎichá ma?",
+          "vn": "Bạn uống trà sữa không?"
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "汽水 — nước ngọt có ga",
+      "hz": "汽水",
+      "py": "qìshuǐ",
+      "vn": "nước ngọt có ga",
+      "image": "assets/words/qishui.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我想喝一瓶汽水。",
+          "py": "Wǒ xiǎng hē yì píng qìshuǐ.",
+          "vn": "Tôi muốn uống một chai nước ngọt."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "果汁 — nước ép trái cây",
+      "hz": "果汁",
+      "py": "guǒzhī",
+      "vn": "nước ép trái cây",
+      "image": "assets/words/guozhi.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "这个果汁很好喝。",
+          "py": "Zhège guǒzhī hěn hǎohē.",
+          "vn": "Nước ép này ngon lắm."
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "瓶 — chai (lượng từ)",
+      "hz": "瓶",
+      "py": "píng",
+      "vn": "chai (lượng từ)",
+      "image": "assets/words/ping.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我要一瓶水。",
+          "py": "Wǒ yào yì píng shuǐ.",
+          "vn": "Tôi muốn một chai nước."
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "碗 — bát, tô (lượng từ)",
+      "hz": "碗",
+      "py": "wǎn",
+      "vn": "bát, tô (lượng từ)",
+      "image": "assets/words/wan.jpg",
+      "image_pos": "left",
+      "examples": [
+        {
+          "hz": "我要一碗米饭。",
+          "py": "Wǒ yào yì wǎn mǐfàn.",
+          "vn": "Tôi muốn một bát cơm."
+        }
+      ],
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "份 — Phần, suất",
+      "hz": "份",
+      "py": "fèn",
+      "vn": "phần, suất (lượng từ)",
+      "image": "assets/words/fen.jpg",
+      "examples": [
+        {
+          "hz": "我们要两份米饭。",
+          "py": "Wǒmen yào liǎng fèn mǐfàn.",
+          "vn": "Chúng tôi muốn hai phần cơm."
+        },
+        {
+          "hz": "一份炒饭十块钱。",
+          "py": "Yí fèn chǎofàn shí kuài qián.",
+          "vn": "Một phần cơm rang mười tệ."
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "课文1 · 再问一个问题",
+      "voices": {
+        "白家月": "zh-CN-XiaoyiNeural",
+        "王一飞": "zh-CN-XiaoxiaoNeural"
+      },
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "王老师，我可以再问您一个问题吗？",
+          "py": "Wáng lǎoshī, wǒ kěyǐ zài wèn nín yí ge wèntí ma?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "可以。你有什么问题？",
+          "py": "Kěyǐ. Nǐ yǒu shénme wèntí?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "那个小店卖不卖手机？",
+          "py": "Nàge xiǎodiàn mài bu mài shǒujī?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "我不知道。你可以打电话问一下。",
+          "py": "Wǒ bù zhīdào. Nǐ kěyǐ dǎ diànhuà wèn yíxià."
+        }
+      ],
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "课文2 · 咖啡馆点早餐",
+      "voices": {
+        "王一雪": "zh-CN-XiaoyiNeural"
+      },
+      "turns": [
+        {
+          "speaker": "服务员",
+          "hz": "女士，请坐！您喝什么？",
+          "py": "Nǚshì, qǐng zuò! Nín hē shénme?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我看一下。请给我一杯牛奶。",
+          "py": "Wǒ kàn yíxià. Qǐng gěi wǒ yì bēi niúnǎi."
+        },
+        {
+          "speaker": "服务员",
+          "hz": "好的。您还要什么？",
+          "py": "Hǎo de. Nín hái yào shénme?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我还没吃早饭，再要这个面包和鸡蛋吧。",
+          "py": "Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba."
+        }
+      ],
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "会话",
+      "layout": "column",
+      "title": "课文3 · 餐馆点餐",
+      "voices": {
+        "服务员": "zh-CN-YunxiNeural",
+        "刘明": "zh-CN-YunjianNeural"
+      },
+      "turns": [
+        {
+          "speaker": "服务员",
+          "hz": "先生，请坐！您要什么？",
+          "py": "Xiānsheng, qǐng zuò! Nín yào shénme?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我要一斤饺子。",
+          "py": "Wǒ yào yì jīn jiǎozi."
+        },
+        {
+          "speaker": "服务员",
+          "hz": "好的。一斤饺子四十个。",
+          "py": "Hǎo de. Yì jīn jiǎozi sìshí ge."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "四十个太多了，我要一半吧。",
+          "py": "Sìshí ge tài duō le, wǒ yào yíbàn ba."
+        },
+        {
+          "speaker": "服务员",
+          "hz": "半斤20个。您想喝什么？",
+          "py": "Bàn jīn èrshí ge. Nín xiǎng hē shénme?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "请给我一杯茶吧。",
+          "py": "Qǐng gěi wǒ yì bēi chá ba."
+        }
+      ],
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "可以 · 一下 · 双宾语句",
+      "groups": [
+        {
+          "point": "能愿动词「可以」— Xin phép / khả năng làm gì",
+          "examples": [
+            {
+              "hz": "我可以再问您一个问题吗？",
+              "py": "Wǒ kěyǐ zài wèn nín yí ge wèntí ma?",
+              "vn": "Con có thể hỏi cô thêm một câu được không?"
+            },
+            {
+              "hz": "你可以打电话问一下。",
+              "py": "Nǐ kěyǐ dǎ diànhuà wèn yíxià.",
+              "vn": "Bạn có thể gọi điện hỏi thử."
+            }
+          ]
+        },
+        {
+          "point": "「动词+一下」结构 — Làm một chút, thử xem",
+          "examples": [
+            {
+              "hz": "你可以打电话问一下。",
+              "py": "Nǐ kěyǐ dǎ diànhuà wèn yíxià.",
+              "vn": "Bạn có thể gọi điện hỏi thử."
+            },
+            {
+              "hz": "我看一下菜单，然后要一杯牛奶。",
+              "py": "Wǒ kàn yíxià càidān, ránhòu yào yì bēi niúnǎi.",
+              "vn": "Tôi xem thực đơn một chút, rồi gọi một cốc sữa."
+            }
+          ]
+        },
+        {
+          "point": "双宾语句(1) — Một động từ, hai tân ngữ (给/问)",
+          "examples": [
+            {
+              "hz": "服务员给我一杯茶。",
+              "py": "Fúwùyuán gěi wǒ yì bēi chá.",
+              "vn": "Nhân viên phục vụ đưa cho tôi một cốc trà.",
+              "highlight": "给"
+            },
+            {
+              "hz": "白家月问老师一个问题。",
+              "py": "Bái Jiāyuè wèn lǎoshī yí ge wèntí.",
+              "vn": "Bạch Gia Duyệt hỏi cô giáo một câu hỏi.",
+              "highlight": "问"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习",
+      "title": "综合练习 · 选词填空",
+      "instructions": "选词填空。Chọn từ điền vào chỗ trống.",
+      "word_bank": [
+        {
+          "hz": "一下",
+          "py": "yíxià"
+        },
+        {
+          "hz": "可以",
+          "py": "kěyǐ"
+        },
+        {
+          "hz": "给",
+          "py": "gěi"
+        },
+        {
+          "hz": "问题",
+          "py": "wèntí"
+        },
+        {
+          "hz": "要",
+          "py": "yào"
+        }
+      ],
+      "items": [
+        "请___我一杯热水。",
+        "我们___一斤饺子。",
+        "A：我___坐这儿吗？ B：没___，请坐。",
+        "A：这个商店卖不卖手机？ B：你可以去问___。"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 餐厅里的人和早餐",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/fuwuyuan.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/nushi.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/xiansheng.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/mianbao.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/jidan.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "先生",
+          "py": "xiānsheng"
+        },
+        {
+          "letter": "B",
+          "hz": "服务员",
+          "py": "fúwùyuán"
+        },
+        {
+          "letter": "C",
+          "hz": "鸡蛋",
+          "py": "jīdàn"
+        },
+        {
+          "letter": "D",
+          "hz": "女士",
+          "py": "nǚshì"
+        },
+        {
+          "letter": "E",
+          "hz": "面包",
+          "py": "miànbāo"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 点心与正餐",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/chunjuan.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/zhou.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/chaofan.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/tang.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/kafei.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "汤",
+          "py": "tāng"
+        },
+        {
+          "letter": "B",
+          "hz": "春卷",
+          "py": "chūnjuǎn"
+        },
+        {
+          "letter": "C",
+          "hz": "咖啡",
+          "py": "kāfēi"
+        },
+        {
+          "letter": "D",
+          "hz": "粥",
+          "py": "zhōu"
+        },
+        {
+          "letter": "E",
+          "hz": "炒饭",
+          "py": "chǎofàn"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 饮料与量词",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/naicha.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/qishui.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/guozhi.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/ping.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/wan.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "碗",
+          "py": "wǎn"
+        },
+        {
+          "letter": "B",
+          "hz": "奶茶",
+          "py": "nǎichá"
+        },
+        {
+          "letter": "C",
+          "hz": "瓶",
+          "py": "píng"
+        },
+        {
+          "letter": "D",
+          "hz": "果汁",
+          "py": "guǒzhī"
+        },
+        {
+          "letter": "E",
+          "hz": "汽水",
+          "py": "qìshuǐ"
+        }
+      ]
+    }
+  ]
+}
