@@ -404,6 +404,7 @@ Danh từ riêng: 胡医生 (Hú yīshēng) — Bác sĩ Hồ.
 | 件 | jiàn | lượng từ (bộ/chiếc quần áo) |
 | 元 | yuán | đồng (nguyên) |
 | 怎么样 | zěnmeyàng | thế nào, ra sao |
+| 贵 | guì | đắt |
 | 穿 | chuān | mặc |
 | 女 | nǚ | nữ |
 | 男 | nán | nam |
@@ -493,29 +494,39 @@ Danh từ riêng: 胡医生 (Hú yīshēng) — Bác sĩ Hồ.
 
 课文: Hỏi cửa hàng có bán điện thoại không; gọi đồ ăn sáng và đặt món trong nhà hàng.
 
-**生词**
+**生词** (20 từ, đã đối chiếu vision `raw/新HSK1教程3.0.pdf` idx109-116 = trang 095-102, 2026-09-12 — sửa từ 12 lên 20, bổ sung 8 từ hộp 13-2 từng bị OCR bỏ sót)
 
-| 汉字 | Pinyin | Nghĩa Việt |
-|---|---|---|
-| 可以 | kěyǐ | có thể, được phép |
-| 卖 | mài | bán |
-| 女士 | nǚshì | quý bà, cô |
-| 服务员 | fúwùyuán | nhân viên phục vụ |
-| 杯 | bēi | cốc (lượng từ) |
-| 茶 | chá | trà |
-| 这个 | zhège | cái này |
-| 面包 | miànbāo | bánh mì |
-| 鸡蛋 | jīdàn | trứng gà |
-| 一下 | yíxià | một chút, thử xem |
-| 半 | bàn | nửa |
-| 打电话 | dǎ diànhuà | gọi điện thoại |
+| 汉字 | Pinyin | Nghĩa Việt | Hộp |
+|---|---|---|---|
+| 可以 | kěyǐ | có thể, được phép | 13-2 |
+| 再 | zài | lại, một lần nữa | 13-2 |
+| 问题 | wèntí | câu hỏi, vấn đề | 13-2 |
+| 卖 | mài | bán | 13-2 |
+| 打电话 | dǎ diànhuà | gọi điện thoại | 13-2 |
+| 一下 | yíxià | một chút, thử xem | 13-2 |
+| 服务员 | fúwùyuán | nhân viên phục vụ | 13-4 |
+| 女士 | nǚshì | quý bà, cô | 13-4 |
+| 请 | qǐng | mời, xin mời | 13-4 |
+| 坐 | zuò | ngồi | 13-4 |
+| 给 | gěi | cho, đưa | 13-4 |
+| 杯 | bēi | cốc (lượng từ) | 13-4 |
+| 要 | yào | muốn, gọi (món) | 13-4 |
+| 早饭 | zǎofàn | bữa sáng | 13-4 |
+| 这个 | zhège | cái này | 13-4 |
+| 面包 | miànbāo | bánh mì | 13-4 |
+| 鸡蛋 | jīdàn | trứng gà | 13-4 |
+| 先生 | xiānsheng | quý ông, anh | 13-6 |
+| 一半 | yíbàn | một nửa | 13-6 |
+| 茶 | chá | trà | 13-6 |
 
 **语法**
 - 能愿动词"可以": biểu thị khả năng, năng lực hoặc sự cho phép.
 - "动词+一下"结构: biểu thị làm một lần/thử làm, thời gian ngắn.
 - 双宾语句(1): một động từ mang 2 tân ngữ (给, 问).
 
-> Ghi chú OCR: hộp 生词 đầu bài (13-2, trang 112) không hiện được trong bản quét (chỉ thấy phần ngữ pháp); danh sách trên phục hồi từ hội thoại + hộp 13-4/13-6 rõ hơn ở các trang sau.
+> Đã sửa OCR (2026-09-12): hộp 生词 đầu bài (13-2, in trang 097 theo PDF thật — không phải
+> trang 112 như ghi chú cũ) đọc được đầy đủ bằng vision, không thiếu như note trước. Danh
+> sách 20 từ trên đối chiếu đủ cả 3 hộp 13-2/13-4/13-6.
 
 ---
 

@@ -1,0 +1,949 @@
+{
+  "meta": {
+    "title": "这儿的苹果真便宜！",
+    "lesson": "HSK1 · Buổi 10"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "这儿的苹果真便宜！",
+      "subtitle": "Táo ở đây rẻ thật!",
+      "footer": "HSK1 · Buổi 10"
+    },
+    {
+      "type": "bullets",
+      "kicker": "目标",
+      "title": "今天学什么？",
+      "bullets": [
+        "Hỏi và trả lời giá tiền: 多少钱？",
+        "Đọc đúng số tiền theo thứ tự 块→毛→分.",
+        "Dùng câu tính từ làm vị ngữ để khen/chê đồ vật (真便宜！很贵。)",
+        "Hỏi ý kiến bằng 怎么样, nhận biết tiền Trung Quốc thật (人民币)."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "第一部分 · 课本生词"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "钱 · 块 — Tiền & đơn vị tiền",
+      "words": [
+        {
+          "hz": "钱",
+          "py": "qián",
+          "vn": "tiền",
+          "image": "assets/qian.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这是多少钱？",
+            "py": "Zhè shì duōshao qián?",
+            "vn": "Đây là bao nhiêu tiền?"
+          }
+        },
+        {
+          "hz": "块",
+          "py": "kuài",
+          "vn": "đồng (đơn vị tiền)",
+          "example": {
+            "hz": "这条裤子五十块钱。",
+            "py": "Zhè tiáo kùzi wǔshí kuài qián.",
+            "vn": "Cái quần này năm mươi đồng."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "这些 · 那些 — Những cái này & những cái đó",
+      "words": [
+        {
+          "hz": "这些",
+          "py": "zhèxiē",
+          "vn": "những cái này",
+          "example": {
+            "hz": "这些多少钱？",
+            "py": "Zhèxiē duōshao qián?",
+            "vn": "Những cái này bao nhiêu tiền?"
+          }
+        },
+        {
+          "hz": "那些",
+          "py": "nàxiē",
+          "vn": "những cái đó",
+          "example": {
+            "hz": "那些十块钱一个。",
+            "py": "Nàxiē shí kuài qián yí gè.",
+            "vn": "Những cái đó mười đồng một cái."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "杯子 · 这边 — Cái cốc & bên này",
+      "words": [
+        {
+          "hz": "杯子",
+          "py": "bēizi",
+          "vn": "cái cốc/ly",
+          "image": "assets/beizi.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "请问，有杯子吗？",
+            "py": "Qǐngwèn, yǒu bēizi ma?",
+            "vn": "Xin hỏi, có cốc không?"
+          }
+        },
+        {
+          "hz": "这边",
+          "py": "zhèbian",
+          "vn": "bên này",
+          "example": {
+            "hz": "杯子在这边。",
+            "py": "Bēizi zài zhèbian.",
+            "vn": "Cốc ở bên này."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "title": "售货员 — Nhân viên bán hàng",
+      "hz": "售货员",
+      "py": "shòuhuòyuán",
+      "vn": "nhân viên bán hàng",
+      "image": "assets/shouhuoyuan.jpg",
+      "image_pos": "top",
+      "examples": [
+        {
+          "hz": "售货员说，杯子在这边。",
+          "py": "Shòuhuòyuán shuō, bēizi zài zhèbian.",
+          "vn": "Nhân viên bán hàng nói, cốc ở bên này."
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "这儿 · 水果 — Ở đây & hoa quả",
+      "words": [
+        {
+          "hz": "这儿",
+          "py": "zhèr",
+          "vn": "ở đây",
+          "example": {
+            "hz": "这儿的水果真不少！",
+            "py": "Zhèr de shuǐguǒ zhēn bù shǎo!",
+            "vn": "Hoa quả ở đây thật nhiều!"
+          }
+        },
+        {
+          "hz": "水果",
+          "py": "shuǐguǒ",
+          "vn": "hoa quả",
+          "image": "assets/shuiguo.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "您想买什么水果？",
+            "py": "Nín xiǎng mǎi shénme shuǐguǒ?",
+            "vn": "Bạn muốn mua hoa quả gì?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "斤 · 苹果 — Cân & táo",
+      "words": [
+        {
+          "hz": "斤",
+          "py": "jīn",
+          "vn": "cân (~500g)",
+          "example": {
+            "hz": "我想买两斤香蕉。",
+            "py": "Wǒ xiǎng mǎi liǎng jīn xiāngjiāo.",
+            "vn": "Tôi muốn mua hai cân chuối."
+          }
+        },
+        {
+          "hz": "苹果",
+          "py": "píngguǒ",
+          "vn": "táo",
+          "image": "assets/pingguo.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "苹果三块五一斤。",
+            "py": "Píngguǒ sān kuài wǔ yì jīn.",
+            "vn": "Táo ba đồng năm một cân."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "少 · 便宜 — Ít & rẻ",
+      "words": [
+        {
+          "hz": "少",
+          "py": "shǎo",
+          "vn": "ít",
+          "example": {
+            "hz": "这儿的水果真不少！",
+            "py": "Zhèr de shuǐguǒ zhēn bù shǎo!",
+            "vn": "Hoa quả ở đây thật không ít (thật nhiều)!"
+          }
+        },
+        {
+          "hz": "便宜",
+          "py": "piányi",
+          "vn": "rẻ",
+          "image": "assets/pianyi.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这儿的苹果真便宜！",
+            "py": "Zhèr de píngguǒ zhēn piányi!",
+            "vn": "Táo ở đây rẻ thật!"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "衣服 · 穿 — Quần áo & mặc",
+      "words": [
+        {
+          "hz": "衣服",
+          "py": "yīfu",
+          "vn": "quần áo",
+          "image": "assets/yifu.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这件衣服真好看。",
+            "py": "Zhè jiàn yīfu zhēn hǎokàn.",
+            "vn": "Bộ quần áo này đẹp thật."
+          }
+        },
+        {
+          "hz": "穿",
+          "py": "chuān",
+          "vn": "mặc",
+          "image": "assets/chuan.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "小雪能穿，买一件吧。",
+            "py": "Xiǎoxuě néng chuān, mǎi yí jiàn ba.",
+            "vn": "Bé Tuyết mặc vừa, mua một bộ đi."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "女 · 男 — Nữ & Nam",
+      "words": [
+        {
+          "hz": "女",
+          "py": "nǚ",
+          "vn": "nữ",
+          "image": "assets/nu.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这些是女孩子穿的衣服。",
+            "py": "Zhèxiē shì nǚ háizi chuān de yīfu.",
+            "vn": "Đây là quần áo con gái mặc."
+          }
+        },
+        {
+          "hz": "男",
+          "py": "nán",
+          "vn": "nam",
+          "image": "assets/nan.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "男孩子的衣服在那儿。",
+            "py": "Nán háizi de yīfu zài nàr.",
+            "vn": "Quần áo con trai ở đằng kia."
+          }
+        }
+      ],
+      "footer_note": "女 chính là chữ trong 女儿 (con gái) mình học ở Buổi 4 đó!",
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "件 · 元 — Lượng từ áo quần & đồng tiền",
+      "words": [
+        {
+          "hz": "件",
+          "py": "jiàn",
+          "vn": "lượng từ (bộ/chiếc quần áo)",
+          "example": {
+            "hz": "这件一百元。",
+            "py": "Zhè jiàn yìbǎi yuán.",
+            "vn": "Cái này một trăm đồng."
+          }
+        },
+        {
+          "hz": "元",
+          "py": "yuán",
+          "vn": "đồng (nguyên)",
+          "image": "assets/yuan2.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这件一百元，怎么样？",
+            "py": "Zhè jiàn yìbǎi yuán, zěnmeyàng?",
+            "vn": "Cái này một trăm đồng, thế nào?"
+          }
+        }
+      ],
+      "footer_note": "元 và 块 giống nhau, đều là 'đồng' — 元 dùng khi VIẾT, 块 dùng khi NÓI.",
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "怎么样 · 贵 — Thế nào & đắt",
+      "words": [
+        {
+          "hz": "怎么样",
+          "py": "zěnmeyàng",
+          "vn": "thế nào, ra sao",
+          "example": {
+            "hz": "这件一百元，怎么样？",
+            "py": "Zhè jiàn yìbǎi yuán, zěnmeyàng?",
+            "vn": "Cái này một trăm đồng, thế nào?"
+          }
+        },
+        {
+          "hz": "贵",
+          "py": "guì",
+          "vn": "đắt",
+          "image": "assets/gui.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这件衣服好看，也不贵。",
+            "py": "Zhè jiàn yīfu hǎokàn, yě bú guì.",
+            "vn": "Bộ quần áo này đẹp, cũng không đắt."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "title": "商店 · 那儿 — Cửa hàng & ở đó",
+      "words": [
+        {
+          "hz": "商店",
+          "py": "shāngdiàn",
+          "vn": "cửa hàng",
+          "image": "assets/shangdian.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这家商店衣服真多！",
+            "py": "Zhè jiā shāngdiàn yīfu zhēn duō!",
+            "vn": "Cửa hàng này quần áo thật nhiều!"
+          }
+        },
+        {
+          "hz": "那儿",
+          "py": "nàr",
+          "vn": "ở đó",
+          "example": {
+            "hz": "男孩子的衣服在那儿。",
+            "py": "Nán háizi de yīfu zài nàr.",
+            "vn": "Quần áo con trai ở đằng kia."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文",
+      "title": "课文1 · 买杯子 — Mua cốc",
+      "image": "assets/beizi.jpg",
+      "image_side": "right",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "请问，有杯子吗？",
+          "py": "Qǐngwèn, yǒu bēizi ma?"
+        },
+        {
+          "speaker": "售货员",
+          "hz": "有，杯子在这边。",
+          "py": "Yǒu, bēizi zài zhèbian."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "多少钱一个？",
+          "py": "Duōshao qián yí gè?"
+        },
+        {
+          "speaker": "售货员",
+          "hz": "这些五块钱一个，那些十块钱一个。",
+          "py": "Zhèxiē wǔ kuài qián yí gè, nàxiē shí kuài qián yí gè."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我买这个吧。",
+          "py": "Wǒ mǎi zhège ba."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文",
+      "title": "课文2 · 买苹果 — Mua táo",
+      "image": "assets/shuiguo.jpg",
+      "image_side": "right",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "这儿的水果真不少！",
+          "py": "Zhèr de shuǐguǒ zhēn bù shǎo!"
+        },
+        {
+          "speaker": "售货员",
+          "hz": "您想买什么？",
+          "py": "Nín xiǎng mǎi shénme?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "我想买两斤苹果。",
+          "py": "Wǒ xiǎng mǎi liǎng jīn píngguǒ."
+        },
+        {
+          "speaker": "售货员",
+          "hz": "苹果三块五一斤。这些七块二，七块钱吧。",
+          "py": "Píngguǒ sān kuài wǔ yì jīn. Zhèxiē qī kuài èr, qī kuài qián ba."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "好的，这儿的苹果真便宜！",
+          "py": "Hǎo de, zhèr de píngguǒ zhēn piányi!"
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文",
+      "title": "课文3 · 买衣服 — Mua quần áo cho con",
+      "image": "assets/yifu.jpg",
+      "image_side": "right",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "这家商店衣服真多！这件一百元，怎么样？",
+          "py": "Zhè jiā shāngdiàn yīfu zhēn duō! Zhè jiàn yìbǎi yuán, zěnmeyàng?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "好看，也不贵。",
+          "py": "Hǎokàn, yě bú guì."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "小雪能穿，买一件吧。",
+          "py": "Xiǎoxuě néng chuān, mǎi yí jiàn ba."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "好的。小明能穿吗？",
+          "py": "Hǎo de. Xiǎomíng néng chuān ma?"
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。",
+          "py": "Bù néng. Zhèxiē shì nǚ háizi chuān de yīfu, nán háizi de yīfu zài nàr."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "好的。",
+          "py": "Hǎo de."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "table",
+      "kicker": "语法",
+      "title": "钱数的表达 — Cách đọc số tiền",
+      "headers": [
+        "Viết số",
+        "Viết chữ",
+        "Đọc thế nào"
+      ],
+      "cjk_cols": [
+        0,
+        1
+      ],
+      "rows": [
+        [
+          "0.02元",
+          "两分",
+          "liǎng fēn"
+        ],
+        [
+          "0.2元",
+          "两毛",
+          "liǎng máo"
+        ],
+        [
+          "3元",
+          "三块",
+          "sān kuài"
+        ],
+        [
+          "3.2元",
+          "三块二",
+          "sān kuài èr"
+        ],
+        [
+          "6.02元",
+          "六块零两分",
+          "liù kuài líng liǎng fēn"
+        ],
+        [
+          "202.2元",
+          "二百零二块两毛",
+          "èrbǎi líng èr kuài liǎng máo"
+        ]
+      ],
+      "footer_note": "元/块 lớn nhất (giống 'đồng'). 角/毛 nhỏ hơn 10 lần (giống 'hào'). 分 nhỏ nhất (giống 'xu'). Đọc từ lớn xuống nhỏ: 块 → 毛 → 分.",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "形容词谓语句 — Tính từ làm vị ngữ",
+      "point": "Tính từ có thể đứng ngay sau chủ ngữ để làm vị ngữ, KHÔNG cần chữ 是 ở giữa. Có thể thêm 真/很/不 phía trước.",
+      "examples": [
+        {
+          "hz": "这儿的水果真不少！",
+          "py": "Zhèr de shuǐguǒ zhēn bù shǎo!",
+          "vn": "Hoa quả ở đây thật nhiều!",
+          "highlight": "不少"
+        },
+        {
+          "hz": "我的房间不大。",
+          "py": "Wǒ de fángjiān bú dà.",
+          "vn": "Phòng của tôi không to.",
+          "highlight": "不大"
+        },
+        {
+          "hz": "那个苹果好吃。",
+          "py": "Nàge píngguǒ hǎochī.",
+          "vn": "Quả táo đó ngon.",
+          "highlight": "好吃"
+        }
+      ],
+      "note": "Câu tiếng Việt mình hay nói kiểu 'phòng TÔI KHÔNG TO' — tiếng Trung giống y như vậy, không cần chữ 是 (là) ở giữa đâu!",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "疑问代词“怎么样” — Hỏi ý kiến 'thế nào'",
+      "point": "怎么样 dùng để hỏi Ý KIẾN hoặc TÌNH TRẠNG của một thứ. Đặt ngay sau đồ vật muốn hỏi: …怎么样？",
+      "examples": [
+        {
+          "hz": "这个杯子怎么样？我很喜欢，也不贵。",
+          "py": "Zhège bēizi zěnmeyàng? Wǒ hěn xǐhuan, yě bú guì.",
+          "vn": "Cái cốc này thế nào? Tôi rất thích, cũng không đắt.",
+          "highlight": "怎么样"
+        },
+        {
+          "hz": "这本书怎么样？很好看。",
+          "py": "Zhè běn shū zěnmeyàng? Hěn hǎokàn.",
+          "vn": "Quyển sách này thế nào? Rất hay.",
+          "highlight": "怎么样"
+        },
+        {
+          "hz": "这个菜怎么样？不太好吃，我不喜欢。",
+          "py": "Zhège cài zěnmeyàng? Bú tài hǎochī, wǒ bù xǐhuan.",
+          "vn": "Món này thế nào? Không ngon lắm, tôi không thích.",
+          "highlight": "怎么样"
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "bullets",
+      "kicker": "常见错误",
+      "title": "Lỗi hay gặp khi nói về giá tiền",
+      "bullets": [
+        "Quên lượng từ khi nói giá\nNói '苹果三块' (thiếu 一斤) là chưa đủ — phải nói đủ '苹果三块钱一斤' (táo BA ĐỒNG MỘT CÂN), không được bỏ đơn vị cân/cái.",
+        "Nhầm thứ tự đọc số tiền\n3.2元 phải đọc 'ba khối HAI' (三块二) — đơn vị LỚN (块) đọc trước, không đảo ngược thành 'hai khối ba'.",
+        "Lẫn 怎么样 với 多少钱\n怎么样 hỏi Ý KIẾN ('thế nào', đẹp/ngon/thích không) — 多少钱 mới hỏi GIÁ ('bao nhiêu tiền'). Hai câu này KHÔNG dùng thay nhau được."
+      ],
+      "tip": "Thấy muốn hỏi SỐ TIỀN → dùng 多少钱？ Thấy muốn hỏi Ý KIẾN (đẹp không, thích không) → dùng …怎么样？"
+    },
+    {
+      "type": "image",
+      "kicker": "小知识",
+      "title": "认识人民币 — Nhận biết tiền Trung Quốc",
+      "image": "assets/renminbi.jpg",
+      "caption": "Đây là tờ 1元 (một đồng) — mặt trước có chân dung, mặt sau là cảnh đẹp. Tiền giấy Trung Quốc có nhiều mệnh giá: 1, 5, 10, 20, 50, 100元."
+    },
+    {
+      "type": "section",
+      "title": "第二部分 · 生词拓展"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "title": "裤子 · 裙子 — Quần & váy",
+      "words": [
+        {
+          "hz": "裤子",
+          "py": "kùzi",
+          "vn": "quần",
+          "image": "assets/kuzi.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这条裤子怎么样？",
+            "py": "Zhè tiáo kùzi zěnmeyàng?",
+            "vn": "Cái quần này thế nào?"
+          }
+        },
+        {
+          "hz": "裙子",
+          "py": "qúnzi",
+          "vn": "váy",
+          "image": "assets/qunzi.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这条裙子很好看。",
+            "py": "Zhè tiáo qúnzi hěn hǎokàn.",
+            "vn": "Cái váy này rất đẹp."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "title": "衬衫 · 帽子 — Áo sơ mi & mũ",
+      "words": [
+        {
+          "hz": "衬衫",
+          "py": "chènshān",
+          "vn": "áo sơ mi",
+          "image": "assets/chenshan.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这件衬衫不贵。",
+            "py": "Zhè jiàn chènshān bú guì.",
+            "vn": "Cái áo sơ mi này không đắt."
+          }
+        },
+        {
+          "hz": "帽子",
+          "py": "màozi",
+          "vn": "mũ",
+          "image": "assets/maozi.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这顶帽子真便宜！",
+            "py": "Zhè dǐng màozi zhēn piányi!",
+            "vn": "Cái mũ này rẻ thật!"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "条 — Lượng từ cho quần/váy",
+      "hz": "条",
+      "py": "tiáo",
+      "vn": "lượng từ (cho quần, váy — vật dài)",
+      "examples": [
+        {
+          "hz": "一条裤子",
+          "py": "yì tiáo kùzi",
+          "vn": "một cái quần"
+        },
+        {
+          "hz": "一条裙子",
+          "py": "yì tiáo qúnzi",
+          "vn": "một cái váy"
+        }
+      ],
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "title": "鞋子 · 袜子 — Giày & tất",
+      "words": [
+        {
+          "hz": "鞋子",
+          "py": "xiézi",
+          "vn": "giày",
+          "image": "assets/xiezi.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这双鞋子真好看。",
+            "py": "Zhè shuāng xiézi zhēn hǎokàn.",
+            "vn": "Đôi giày này đẹp thật."
+          }
+        },
+        {
+          "hz": "袜子",
+          "py": "wàzi",
+          "vn": "tất",
+          "image": "assets/wazi.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这双袜子多少钱？",
+            "py": "Zhè shuāng wàzi duōshao qián?",
+            "vn": "Đôi tất này bao nhiêu tiền?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "title": "双 — Lượng từ đôi",
+      "hz": "双",
+      "py": "shuāng",
+      "vn": "đôi",
+      "examples": [
+        {
+          "hz": "一双鞋子",
+          "py": "yì shuāng xiézi",
+          "vn": "một đôi giày"
+        },
+        {
+          "hz": "一双袜子",
+          "py": "yì shuāng wàzi",
+          "vn": "một đôi tất"
+        }
+      ],
+      "audio": "assets/audio/slide29.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "title": "香蕉 · 橙子 — Chuối & cam",
+      "words": [
+        {
+          "hz": "香蕉",
+          "py": "xiāngjiāo",
+          "vn": "chuối",
+          "image": "assets/xiangjiao.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "妈妈买了三根香蕉。",
+            "py": "Māma mǎile sān gēn xiāngjiāo.",
+            "vn": "Mẹ mua ba quả chuối."
+          }
+        },
+        {
+          "hz": "橙子",
+          "py": "chéngzi",
+          "vn": "cam",
+          "image": "assets/chengzi.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "橙子三块钱一斤。",
+            "py": "Chéngzi sān kuài qián yì jīn.",
+            "vn": "Cam ba đồng một cân."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide30.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "title": "西瓜 · 葡萄 — Dưa hấu & nho",
+      "words": [
+        {
+          "hz": "西瓜",
+          "py": "xīguā",
+          "vn": "dưa hấu",
+          "image": "assets/xigua.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这个西瓜真便宜！",
+            "py": "Zhège xīguā zhēn piányi!",
+            "vn": "Quả dưa hấu này rẻ thật!"
+          }
+        },
+        {
+          "hz": "葡萄",
+          "py": "pútao",
+          "vn": "nho",
+          "image": "assets/putao.jpg",
+          "image_pos": "top",
+          "example": {
+            "hz": "这些葡萄怎么样？很好吃。",
+            "py": "Zhèxiē pútao zěnmeyàng? Hěn hǎochī.",
+            "vn": "Chỗ nho này thế nào? Rất ngon."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 衣服 — Nối ảnh với từ",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/kuzi.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/qunzi.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/chenshan.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "衬衫",
+          "py": "chènshān",
+          "vn": "áo sơ mi"
+        },
+        {
+          "letter": "B",
+          "hz": "裤子",
+          "py": "kùzi",
+          "vn": "quần"
+        },
+        {
+          "letter": "C",
+          "hz": "裙子",
+          "py": "qúnzi",
+          "vn": "váy"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 帽子・鞋袜 — Nối ảnh với từ",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/maozi.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/xiezi.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/wazi.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "袜子",
+          "py": "wàzi",
+          "vn": "tất"
+        },
+        {
+          "letter": "B",
+          "hz": "帽子",
+          "py": "màozi",
+          "vn": "mũ"
+        },
+        {
+          "letter": "C",
+          "hz": "鞋子",
+          "py": "xiézi",
+          "vn": "giày"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "游戏",
+      "title": "配对游戏 · 水果 — Nối ảnh với từ",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/xiangjiao.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/chengzi.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/xigua.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/putao.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "西瓜",
+          "py": "xīguā",
+          "vn": "dưa hấu"
+        },
+        {
+          "letter": "B",
+          "hz": "葡萄",
+          "py": "pútao",
+          "vn": "nho"
+        },
+        {
+          "letter": "C",
+          "hz": "香蕉",
+          "py": "xiāngjiāo",
+          "vn": "chuối"
+        },
+        {
+          "letter": "D",
+          "hz": "橙子",
+          "py": "chéngzi",
+          "vn": "cam"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "谢谢！"
+    }
+  ]
+}

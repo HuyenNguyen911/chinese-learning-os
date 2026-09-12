@@ -289,6 +289,10 @@ PDF, bằng vision). Bổ sung 3 từ bị OCR bỏ sót ở block 8-4/8-6: **�
 
 ## Buổi 10 — Mua sắm & giá tiền (L10)
 
+✅ **ĐÃ SỬA 2026-09-12** — đối chiếu trực tiếp vision `raw/新HSK1教程3.0.pdf` idx84-91 (trang in
+070-077 = idx 070+14), bằng vision. Checklist cũ chỉ ghi 22 từ (đủ 10-2/10-4, thiếu 1 từ ở
+10-6): bỏ sót **贵** (guì — đắt). Đúng là **23 từ**.
+
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
 | 杯子 | bēizi | cái cốc/ly | ⏳ chưa soạn |
@@ -309,36 +313,46 @@ PDF, bằng vision). Bổ sung 3 từ bị OCR bỏ sót ở block 8-4/8-6: **�
 | 件 | jiàn | lượng từ (bộ/chiếc quần áo) | ⏳ chưa soạn |
 | 元 | yuán | đồng (nguyên) | ⏳ chưa soạn |
 | 怎么样 | zěnmeyàng | thế nào, ra sao | ⏳ chưa soạn |
+| 贵 | guì | đắt | ⏳ chưa soạn |
 | 穿 | chuān | mặc | ⏳ chưa soạn |
 | 女 | nǚ | nữ | ⏳ chưa soạn |
 | 男 | nán | nam | ⏳ chưa soạn |
 | 那儿 | nàr | ở đó | ⏳ chưa soạn |
 
-**22 từ**
+**23 từ**
 
 ---
 
 ## Buổi 11 — Ăn uống & gọi món (L13)
 
-⚠️ Nguồn có block OCR sót đã flag (xem note dưới) — danh sách phục hồi từ hội thoại + hộp
-13-4/13-6, cần đối chiếu `raw/新HSK1教程3.0.pdf` khi build.
+✅ **ĐÃ SỬA 2026-09-12** — đối chiếu trực tiếp vision `raw/新HSK1教程3.0.pdf` idx109-116
+(trang in 095-102 = idx 095+14): checklist cũ chỉ ghi 12 từ (thiếu hẳn hộp 13-2 do OCR sót),
+thực tế đủ 3 hộp 13-2/13-4/13-6 = **20 từ**.
 
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
-| 可以 | kěyǐ | có thể, được phép | ⏳ chưa soạn |
-| 卖 | mài | bán | ⏳ chưa soạn |
-| 女士 | nǚshì | quý bà, cô | ⏳ chưa soạn |
-| 服务员 | fúwùyuán | nhân viên phục vụ | ⏳ chưa soạn |
-| 杯 | bēi | cốc (lượng từ) | ⏳ chưa soạn |
-| 茶 | chá | trà | ⏳ chưa soạn |
-| 这个 | zhège | cái này | ⏳ chưa soạn |
-| 面包 | miànbāo | bánh mì | ⏳ chưa soạn |
-| 鸡蛋 | jīdàn | trứng gà | ⏳ chưa soạn |
-| 一下 | yíxià | một chút, thử xem | ⏳ chưa soạn |
-| 半 | bàn | nửa | ⏳ chưa soạn |
-| 打电话 | dǎ diànhuà | gọi điện thoại | ⏳ chưa soạn |
+| 可以 | kěyǐ | có thể, được phép | ✅ soạn buổi 11 |
+| 再 | zài | lại, một lần nữa | ✅ soạn buổi 11 |
+| 问题 | wèntí | câu hỏi, vấn đề | ✅ soạn buổi 11 |
+| 卖 | mài | bán | ✅ soạn buổi 11 |
+| 打电话 | dǎ diànhuà | gọi điện thoại | ✅ soạn buổi 11 |
+| 一下 | yíxià | một chút, thử xem | ✅ soạn buổi 11 |
+| 服务员 | fúwùyuán | nhân viên phục vụ | ✅ soạn buổi 11 |
+| 女士 | nǚshì | quý bà, cô | ✅ soạn buổi 11 |
+| 请 | qǐng | mời, xin mời | ✅ soạn buổi 11 |
+| 坐 | zuò | ngồi | ✅ soạn buổi 11 |
+| 给 | gěi | cho, đưa | ✅ soạn buổi 11 |
+| 杯 | bēi | cốc (lượng từ) | ✅ soạn buổi 11 |
+| 要 | yào | muốn, gọi (món) | ✅ soạn buổi 11 |
+| 早饭 | zǎofàn | bữa sáng | ✅ soạn buổi 11 |
+| 这个 | zhège | cái này | ✅ soạn buổi 11 |
+| 面包 | miànbāo | bánh mì | ✅ soạn buổi 11 |
+| 鸡蛋 | jīdàn | trứng gà | ✅ soạn buổi 11 |
+| 先生 | xiānsheng | quý ông, anh | ✅ soạn buổi 11 |
+| 一半 | yíbàn | một nửa | ✅ soạn buổi 11 |
+| 茶 | chá | trà | ✅ soạn buổi 11 |
 
-**12 từ**
+**20 từ** (sửa từ 12 → 20, +8: 再/问题/请/坐/给/要/早饭/先生/一半; bỏ 半 lẻ — gộp vào 一半)
 
 ---
 
@@ -534,9 +548,10 @@ thêm từ ngoài 15 课 chính). 245 = 249 trừ 4 từ trùng lặp giữa cá
 - **Buổi 08** (L8, trang 72 mục 8-4): hộp 生词 gốc mất một phần do ảnh quét; 能/到 phục hồi từ
   hội thoại + phần giải thích ngữ pháp — độ tin cậy cao nhưng không chụp trực tiếp từ hộp từ
   vựng. Cần đối chiếu `raw/新HSK1教程3.0.pdf` khi build buổi 08.
-- **Buổi 11** (L13, trang 112 mục 13-2): hộp 生词 đầu bài không hiện trong bản quét (chỉ thấy
-  phần ngữ pháp); danh sách phục hồi từ hội thoại + hộp 13-4/13-6 rõ hơn ở trang sau. Cần đối
-  chiếu bản gốc khi build buổi 11.
+- ~~**Buổi 11** (L13, trang 112 mục 13-2)~~ — **ĐÃ SỬA 2026-09-12**: đối chiếu vision xong,
+  hộp 13-2 đọc được đầy đủ (không mất như note cũ tưởng), tăng từ 12 → 20 từ (+8: 再/问题/
+  请/坐/给/要/早饭/先生/一半). Xem bảng Buổi 11 ở trên.
 
-Nếu đối chiếu PDF gốc phát hiện thêm từ bị OCR bỏ sót (ở buổi 08/11, hoặc 本/下雪 ở mục trên),
-bổ sung trực tiếp vào bảng buổi tương ứng + cập nhật lại tổng số trong checklist này.
+Nếu đối chiếu PDF gốc phát hiện thêm từ bị OCR bỏ sót (ở buổi 08, hoặc 本/下雪 ở mục trên),
+bổ sung trực tiếp vào bảng buổi tương ứng + cập nhật lại tổng số trong checklist này. Tổng
+245 ở trên chưa cộng +8 của buổi 11 (cần cộng dồn lại = 253 khi tổng kết toàn bộ 15 buổi).
