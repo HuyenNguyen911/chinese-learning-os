@@ -532,32 +532,48 @@ Danh từ riêng: 胡医生 (Hú yīshēng) — Bác sĩ Hồ.
 
 ## Bài 14 — 我看了一个电影 (Wǒ kànle yí ge diànyǐng) — Tôi đã xem một bộ phim
 
-课文: Kể lại chuyến đi tàu (ai xem sách/ngủ/xem phim); con cái sắp vào tiểu học/trung học.
+> ⚠️ **Audit vision 2026-09-14** (render PDF tr.105/107/109 + đọc bằng vision): bản trước bỏ
+> sót khối 生词① (14-2) và vài mục lẻ trong 生词② (14-4) — thiếu 7 mục: 中午/开/有些/有的/了/
+> 说话/字. Bảng dưới đã đủ 3 khối 生词 (14-2, 14-4, 14-6).
+
+课文 1: Bai Jiayue & Chen Tianzhong kể chuyện trên tàu (ai đọc sách/ngủ, Chen xem phim).
+课文 2: Wang Yifei hỏi lớp về việc nghe/viết chữ Hán — luyện 了/都.
+课文 3: Liu Ming & Wang Yixue nói chuyện con cái sắp vào tiểu học/trung học.
 
 **生词**
 
-| 汉字 | Pinyin | Nghĩa Việt |
-|---|---|---|
-| 火车 | huǒchē | tàu hỏa |
-| 汉字 | Hànzì | (riêng) chữ Hán |
-| 听 | tīng | nghe |
-| 小学生 | xiǎoxuéshēng | học sinh tiểu học |
-| 写 | xiě | viết |
-| 都 | dōu | đều |
-| 听见 | tīngjiàn | nghe thấy |
-| 不要 | búyào | đừng, không được |
-| 哪些 | nǎxiē | những cái nào |
-| 汉语 | Hànyǔ | (riêng) tiếng Trung (tiếng nói) |
-| 明年 | míngnián | năm sau |
-| 上 | shàng | bắt đầu (đi học/lên lớp) |
-| 中学 | zhōngxué | trung học |
-| 小学 | xiǎoxué | tiểu học |
-| 中学生 | zhōngxuéshēng | học sinh trung học |
-| 上学 | shàngxué | đi học |
-| 他们 | tāmen | họ (nam/chung) |
-| 她们 | tāmen | họ (nữ) |
-| 它们 | tāmen | chúng nó (vật) |
-| 晚 | wǎn | muộn |
+| 汉字 | Pinyin | Nghĩa Việt | Khối |
+|---|---|---|---|
+| 上 | shàng | lên (tàu/xe) | 14-2 |
+| 火车 | huǒchē | tàu hỏa | 14-2 |
+| 中午 | zhōngwǔ | buổi trưa | 14-2 |
+| 开 | kāi | khởi hành, chạy (xe) | 14-2 |
+| 有些 | yǒuxiē | có một số (người/vật) | 14-2 |
+| 有的 | yǒude | có người, có cái | 14-2 |
+| 了 | le | trợ từ động thái (hành động đã xảy ra/hoàn thành) | 14-2 |
+| 写 | xiě | viết | 14-4 |
+| 都 | dōu | đều (ôn lại — đã học Buổi 03) | 14-4 |
+| 听见 | tīngjiàn | nghe thấy | 14-4 |
+| 不要 | búyào | đừng, không được | 14-4 |
+| 说话 | shuōhuà | nói chuyện | 14-4 |
+| 听 | tīng | nghe | 14-4 |
+| 哪些 | nǎxiē | những cái nào | 14-4 |
+| 字 | zì | chữ | 14-4 |
+| 汉语 | Hànyǔ | (riêng) tiếng Trung (tiếng nói) | 14-4 |
+| 汉字 | Hànzì | (riêng) chữ Hán | 14-4 |
+| 明年 | míngnián | năm sau | 14-6 |
+| 上 | shàng | bắt đầu (đi học/lên lớp) | 14-6 |
+| 中学 | zhōngxué | trung học | 14-6 |
+| 小学 | xiǎoxué | tiểu học | 14-6 |
+| 中学生 | zhōngxuéshēng | học sinh trung học | 14-6 |
+| 小学生 | xiǎoxuéshēng | học sinh tiểu học | 14-6 |
+| 上学 | shàngxué | đi học | 14-6 |
+| 他们 | tāmen | họ (nam/chung) | 14-6 |
+| 她们 | tāmen | họ (nữ) | 14-6 |
+| 它们 | tāmen | chúng nó (vật) | 14-6 |
+| 晚 | wǎn | muộn | 14-6 |
+
+**28 mục / 27 hanzi phân biệt** (上 lặp 2 nghĩa khác nhau).
 
 **语法**
 - 动态助词"了(2)": sau động từ, biểu thị hành động đã xảy ra/hoàn thành; phủ định dùng 没, bỏ 了.

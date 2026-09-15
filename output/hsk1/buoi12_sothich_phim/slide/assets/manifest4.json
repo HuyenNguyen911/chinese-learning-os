@@ -1,0 +1,16 @@
+{
+  "out_dir": "words",
+  "images": [
+    {"name": "changge_vn", "query": "Vietnamese child singing karaoke microphone happy"},
+    {"name": "tiaowu_vn", "query": "Vietnamese children traditional dance performance"},
+    {"name": "huahuar_vn", "query": "Vietnamese child drawing painting picture school"},
+    {"name": "tan_gangqin_vn", "query": "Vietnamese child playing piano"},
+    {"name": "tan_jita_vn", "query": "Vietnamese child playing guitar"},
+    {"name": "da_lanqiu_vn", "query": "Vietnamese children playing basketball street"},
+    {"name": "da_pingpangqiu_vn", "query": "Vietnamese children playing table tennis"},
+    {"name": "youyong_vn", "query": "Vietnamese child swimming river pool"},
+    {"name": "paizhao_vn", "query": "Vietnamese child taking photo camera"},
+    {"name": "xie_vn", "query": "Vietnamese child writing notebook desk"},
+    {"name": "naxie_zi_vn", "query": "Vietnamese student practicing writing characters classroom"}
+  ]
+}

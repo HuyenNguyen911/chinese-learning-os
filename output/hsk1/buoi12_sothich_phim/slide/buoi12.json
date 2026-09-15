@@ -1,0 +1,810 @@
+{
+  "meta": {
+    "title": "我看了一个电影",
+    "lesson": "Buổi 12 · New HSK Course 1 · L14"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我看了一个电影",
+      "subtitle": "Wǒ kànle yí ge diànyǐng · Tôi đã xem một bộ phim",
+      "footer": "Buổi 12 · Sở thích & phim · 了(2)",
+      "image": "assets/words/title_movie.jpg"
+    },
+    {
+      "type": "bullets",
+      "title": "Mục tiêu buổi học",
+      "bullets": [
+        "Nghe/dùng được 了 khi kể một việc đã làm xong",
+        "Biết đúng chỗ đặt 都 (đều) trong câu",
+        "Làm quen \"từ tách được\" như 说话／睡觉",
+        "Biết thêm nhiều từ chỉ sở thích để nói về mình"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 · Trên chuyến tàu",
+      "items": [
+        {
+          "hz": "上",
+          "py": "shàng",
+          "vn": "lên (tàu, xe)"
+        },
+        {
+          "hz": "火车",
+          "py": "huǒchē",
+          "vn": "tàu hỏa"
+        },
+        {
+          "hz": "开",
+          "py": "kāi",
+          "vn": "chạy, khởi hành (xe)"
+        }
+      ],
+      "image": "assets/words/shang_huoche.jpg",
+      "example": {
+        "hz": "过年了，我们上火车回家，中午车就开了。",
+        "py": "Guònián le, wǒmen shàng huǒchē huí jiā, zhōngwǔ chē jiù kāi le.",
+        "vn": "Tết đến rồi, chúng tôi lên tàu về nhà, buổi trưa tàu khởi hành."
+      },
+      "title": "",
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "words": [
+        {
+          "hz": "有些",
+          "py": "yǒuxiē",
+          "vn": "có một số (người/vật)",
+          "image": "assets/words/youxie_youde.jpg",
+          "example": {
+            "hz": "车上有些人在看书。",
+            "py": "Chē shang yǒuxiē rén zài kàn shū.",
+            "vn": "Trên tàu có một số người đang đọc sách."
+          }
+        },
+        {
+          "hz": "有的",
+          "py": "yǒude",
+          "vn": "có người, có cái",
+          "example": {
+            "hz": "有的人累了，睡觉了。",
+            "py": "Yǒude rén lèi le, shuìjiào le.",
+            "vn": "Có người mệt rồi, ngủ luôn."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "words": [
+        {
+          "hz": "明年",
+          "py": "míngnián",
+          "vn": "năm sau",
+          "example": {
+            "hz": "明年，我还要坐火车回家过年。",
+            "py": "Míngnián, wǒ hái yào zuò huǒchē huí jiā guònián.",
+            "vn": "Năm sau, tôi vẫn muốn đi tàu về nhà ăn Tết."
+          }
+        },
+        {
+          "hz": "过年",
+          "py": "guònián",
+          "vn": "ăn Tết, đón năm mới",
+          "image": "assets/words/mingnian_guonian.jpg",
+          "example": {
+            "hz": "过年的时候，全家人在一起，很开心。",
+            "py": "Guònián de shíhou, quánjiārén zài yìqǐ, hěn kāixīn.",
+            "vn": "Lúc ăn Tết, cả nhà quây quần bên nhau, rất vui."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "去年",
+      "py": "qùnián",
+      "vn": "năm ngoái",
+      "examples": [
+        {
+          "hz": "去年过年，我们也是坐火车回家的。",
+          "py": "Qùnián guònián, wǒmen yě shì zuò huǒchē huí jiā de.",
+          "vn": "Tết năm ngoái, chúng tôi cũng đi tàu về nhà."
+        }
+      ],
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 · Trong lớp học",
+      "items": [
+        {
+          "hz": "写",
+          "py": "xiě",
+          "vn": "viết"
+        },
+        {
+          "hz": "听",
+          "py": "tīng",
+          "vn": "nghe"
+        },
+        {
+          "hz": "听见",
+          "py": "tīngjiàn",
+          "vn": "nghe thấy"
+        }
+      ],
+      "image": "assets/words/xie.jpg",
+      "example": {
+        "hz": "老师教我们写字，我们认真地听，都听见了。",
+        "py": "Lǎoshī jiāo wǒmen xiě zì, wǒmen rènzhēn de tīng, dōu tīngjiàn le.",
+        "vn": "Cô giáo dạy chúng em viết chữ, chúng em chăm chú nghe, ai cũng nghe thấy rõ."
+      },
+      "title": "",
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "words": [
+        {
+          "hz": "说话",
+          "py": "shuōhuà",
+          "vn": "nói chuyện",
+          "image": "assets/words/buyao_shuohua.jpg",
+          "example": {
+            "hz": "我说了很多话。",
+            "py": "Wǒ shuōle hěn duō huà.",
+            "vn": "Tôi đã nói rất nhiều lời."
+          }
+        },
+        {
+          "hz": "不要",
+          "py": "búyào",
+          "vn": "đừng, không được",
+          "example": {
+            "hz": "请大家不要说话！",
+            "py": "Qǐng dàjiā búyào shuōhuà!",
+            "vn": "Mọi người đừng nói chuyện!"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "哪些",
+          "py": "nǎxiē",
+          "vn": "những cái nào"
+        },
+        {
+          "hz": "字",
+          "py": "zì",
+          "vn": "chữ"
+        }
+      ],
+      "image": "assets/words/naxie_zi_vn.jpg",
+      "example": {
+        "hz": "你们都会写哪些字了？",
+        "py": "Nǐmen dōu huì xiě nǎxiē zì le?",
+        "vn": "Các em đều đã biết viết những chữ nào rồi?"
+      },
+      "title": "",
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "专有名词",
+      "words": [
+        {
+          "hz": "汉语",
+          "py": "Hànyǔ",
+          "vn": "tiếng Trung (tiếng nói)",
+          "example": {
+            "hz": "我每天在学校学汉语，进步很快。",
+            "py": "Wǒ měitiān zài xuéxiào xué Hànyǔ, jìnbù hěn kuài.",
+            "vn": "Mỗi ngày tôi học tiếng Trung ở trường, tiến bộ rất nhanh."
+          }
+        },
+        {
+          "hz": "汉字",
+          "py": "Hànzì",
+          "vn": "chữ Hán (chữ viết)",
+          "image": "assets/words/hanyu_hanzi.jpg",
+          "example": {
+            "hz": "汉字虽然难，但是很有意思。",
+            "py": "Hànzì suīrán nán, dànshì hěn yǒu yìsi.",
+            "vn": "Chữ Hán tuy khó nhưng rất thú vị."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "info_grid",
+      "kicker": "生词",
+      "cards": [
+        {
+          "label": "他们",
+          "py": "tāmen",
+          "image": "assets/words/tamen_family.jpg",
+          "caption": "họ (nam / chung, có cả nam cả nữ)"
+        },
+        {
+          "label": "她们",
+          "py": "tāmen",
+          "image": "assets/words/tamen_nu.jpg",
+          "caption": "họ (toàn nữ)"
+        },
+        {
+          "label": "它们",
+          "py": "tāmen",
+          "image": "assets/words/tamen_vat.jpg",
+          "caption": "chúng nó (đồ vật, con vật)"
+        }
+      ],
+      "title": "",
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展 · Sở thích",
+      "hz": "爱好",
+      "py": "àihào",
+      "vn": "sở thích",
+      "image": "assets/words/aihao.jpg",
+      "examples": [
+        {
+          "hz": "我的爱好是画画儿。",
+          "py": "Wǒ de àihào shì huàhuàr.",
+          "vn": "Sở thích của tôi là vẽ tranh."
+        },
+        {
+          "hz": "你的爱好是什么？",
+          "py": "Nǐ de àihào shì shénme?",
+          "vn": "Sở thích của bạn là gì?"
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "唱歌",
+      "py": "chànggē",
+      "vn": "hát",
+      "image": "assets/words/changge.jpg",
+      "examples": [
+        {
+          "hz": "妹妹喜欢唱歌。",
+          "py": "Mèimei xǐhuan chànggē.",
+          "vn": "Em gái thích hát."
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "跳舞",
+      "py": "tiàowǔ",
+      "vn": "nhảy múa",
+      "image": "assets/words/tiaowu_vn.jpg",
+      "examples": [
+        {
+          "hz": "她们在学校跳舞。",
+          "py": "Tāmen zài xuéxiào tiàowǔ.",
+          "vn": "Các bạn ấy múa ở trường."
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "画画儿",
+      "py": "huàhuàr",
+      "vn": "vẽ tranh",
+      "image": "assets/words/huahuar.jpg",
+      "examples": [
+        {
+          "hz": "我周末在家画画儿。",
+          "py": "Wǒ zhōumò zài jiā huàhuàr.",
+          "vn": "Cuối tuần tôi ở nhà vẽ tranh."
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "弹钢琴",
+      "py": "tán gāngqín",
+      "vn": "chơi piano",
+      "image": "assets/words/tan_gangqin.jpg",
+      "examples": [
+        {
+          "hz": "姐姐会弹钢琴。",
+          "py": "Jiějie huì tán gāngqín.",
+          "vn": "Chị gái biết chơi piano."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "弹吉他",
+      "py": "tán jítā",
+      "vn": "chơi guitar",
+      "image": "assets/words/tan_jita.jpg",
+      "examples": [
+        {
+          "hz": "哥哥在家弹吉他。",
+          "py": "Gēge zài jiā tán jítā.",
+          "vn": "Anh trai chơi guitar ở nhà."
+        }
+      ],
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "踢足球",
+      "py": "tī zúqiú",
+      "vn": "đá bóng",
+      "image": "assets/words/ti_zuqiu.jpg",
+      "examples": [
+        {
+          "hz": "弟弟和朋友们踢足球。",
+          "py": "Dìdi hé péngyoumen tī zúqiú.",
+          "vn": "Em trai và các bạn đá bóng."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "打篮球",
+      "py": "dǎ lánqiú",
+      "vn": "chơi bóng rổ",
+      "image": "assets/words/da_lanqiu.jpg",
+      "examples": [
+        {
+          "hz": "我喜欢打篮球。",
+          "py": "Wǒ xǐhuan dǎ lánqiú.",
+          "vn": "Tôi thích chơi bóng rổ."
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "打乒乓球",
+      "py": "dǎ pīngpāngqiú",
+      "vn": "chơi bóng bàn",
+      "image": "assets/words/pingpong2.jpg",
+      "examples": [
+        {
+          "hz": "他和爸爸打乒乓球。",
+          "py": "Tā hé bàba dǎ pīngpāngqiú.",
+          "vn": "Bạn ấy và bố chơi bóng bàn."
+        }
+      ],
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "游泳",
+      "py": "yóuyǒng",
+      "vn": "bơi",
+      "image": "assets/words/youyong.jpg",
+      "examples": [
+        {
+          "hz": "夏天我们去游泳。",
+          "py": "Xiàtiān wǒmen qù yóuyǒng.",
+          "vn": "Mùa hè chúng tôi đi bơi."
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "骑自行车",
+      "py": "qí zìxíngchē",
+      "vn": "đạp xe đạp",
+      "image": "assets/words/qi_zixingche.jpg",
+      "examples": [
+        {
+          "hz": "我每天骑自行车上学。",
+          "py": "Wǒ měitiān qí zìxíngchē shàngxué.",
+          "vn": "Mỗi ngày tôi đạp xe đi học."
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "拍照",
+      "py": "pāizhào",
+      "vn": "chụp ảnh",
+      "image": "assets/words/paizhao.jpg",
+      "examples": [
+        {
+          "hz": "我喜欢拍照。",
+          "py": "Wǒ xǐhuan pāizhào.",
+          "vn": "Tôi thích chụp ảnh."
+        }
+      ],
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文1",
+      "title": "课文1 · 在火车上",
+      "turns": [
+        {
+          "speaker": "白家月",
+          "hz": "你们上火车后看见王老师了吗？",
+          "py": "Nǐmen shàng huǒchē hòu kànjiàn Wáng lǎoshī le ma?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "没看见。中午车开后，",
+          "py": "Méi kànjiàn. Zhōngwǔ chē kāi hòu,"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "有些人在看书，有的人睡觉了。",
+          "py": "yǒuxiē rén zài kàn shū, yǒude rén shuìjiào le."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "你呢？",
+          "py": "Nǐ ne?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我看了一个电影。",
+          "py": "Wǒ kànle yí ge diànyǐng."
+        }
+      ],
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文2",
+      "title": "课文2 · 你们会写汉字了吗",
+      "layout": "column",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "你们会说汉语了，也会写汉字了吗？",
+          "py": "Nǐmen huì shuō Hànyǔ le, yě huì xiě Hànzì le ma?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我们都会写了。",
+          "py": "Wǒmen dōu huì xiě le."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "老师，我听不见。",
+          "py": "Lǎoshī, wǒ tīng bú jiàn."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "请大家不要说话！",
+          "py": "Qǐng dàjiā búyào shuōhuà!"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "你们都会写哪些汉字了？",
+          "py": "Nǐmen dōu huì xiě nǎxiē Hànzì le?"
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "我会写这些字了，您看！",
+          "py": "Wǒ huì xiě zhèxiē zì le, nín kàn!"
+        }
+      ],
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "dialogue",
+      "kicker": "课文3",
+      "title": "课文3 · 孩子们都上学了",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "明年女儿上中学。",
+          "py": "Míngnián nǚ'ér shàng zhōngxué."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "对。儿子也上小学了。",
+          "py": "Duì. Érzi yě shàng xiǎoxué le."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "我们家有了一个中学生。",
+          "py": "Wǒmen jiā yǒule yí ge zhōngxuéshēng."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "还有了一个小学生。",
+          "py": "Hái yǒule yí ge xiǎoxuéshēng."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "上学后，他们都忙了。",
+          "py": "Shàngxué hòu, tāmen dōu máng le."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "是的。太晚了，睡觉吧。",
+          "py": "Shì de. Tài wǎn le, shuìjiào ba."
+        }
+      ],
+      "voices": {
+        "刘明": "zh-CN-YunyangNeural",
+        "王一雪": "zh-CN-XiaoxiaoNeural"
+      },
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "动态助词 了(2) — Báo việc đã xong",
+      "image": "assets/words/kai.jpg",
+      "point": "了 đặt SAU động từ, báo hành động đã xảy ra/hoàn thành. Phủ định dùng 没, BỎ 了 (không nói \"没...了\").",
+      "examples": [
+        {
+          "hz": "我看了一个电影。",
+          "py": "Wǒ kànle yí ge diànyǐng.",
+          "vn": "Tôi đã xem một bộ phim.",
+          "highlight": "了"
+        },
+        {
+          "hz": "我买了一个新电脑。",
+          "py": "Wǒ mǎile yí ge xīn diànnǎo.",
+          "vn": "Tôi đã mua một cái máy tính mới.",
+          "highlight": "了"
+        },
+        {
+          "hz": "我昨天没去商店买东西。",
+          "py": "Wǒ zuótiān méi qù shāngdiàn mǎi dōngxi.",
+          "vn": "Hôm qua tôi không đi cửa hàng mua đồ.",
+          "highlight": "没"
+        }
+      ],
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习",
+      "title": "练习 · 了(2) — Điền 了 hoặc 没",
+      "word_bank": [
+        {
+          "hz": "了",
+          "py": "le"
+        },
+        {
+          "hz": "没",
+          "py": "méi"
+        }
+      ],
+      "items": [
+        "我看[___]一个电影。",
+        "我昨天[___]去商店买东西。",
+        "白家月：你们昨天在车上做什么[___]？\n陈天中：我看[___]一本书。"
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "语法",
+      "title": "离合词(1) — Từ tách được",
+      "image": "assets/words/buyao_shuohua.jpg",
+      "headers": [
+        "合 (ghép)",
+        "分 (tách)"
+      ],
+      "cjk_cols": [
+        0,
+        1
+      ],
+      "rows": [
+        [
+          "睡觉",
+          "睡了觉 ／ 睡了一觉"
+        ],
+        [
+          "上课",
+          "上了课 ／ 上中文课"
+        ],
+        [
+          "下班",
+          "下了班"
+        ],
+        [
+          "说话",
+          "说了话 ／ 说了很多话"
+        ]
+      ],
+      "audio": "assets/audio/slide29.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习",
+      "title": "练习 · 离合词 — Tách từ cho đúng",
+      "word_bank": [
+        {
+          "hz": "睡了觉",
+          "py": "shuìle jiào"
+        },
+        {
+          "hz": "上了课",
+          "py": "shàngle kè"
+        },
+        {
+          "hz": "说了话",
+          "py": "shuōle huà"
+        }
+      ],
+      "items": [
+        "昨天晚上我很累，早早就[___]。",
+        "今天上午我们[___]中文课。",
+        "老师和我们[___]，我们都听见了。"
+      ]
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "title": "范围副词 都 — Đứng SAU đối tượng, TRƯỚC phủ định",
+      "image": "assets/words/tamen_family.jpg",
+      "point": "都 (đều) biểu thị toàn bộ. Đối tượng được khái quát đứng TRƯỚC 都; phủ định thì từ phủ định đứng SAU 都.",
+      "examples": [
+        {
+          "hz": "我们都会写了。",
+          "py": "Wǒmen dōu huì xiě le.",
+          "vn": "Chúng tôi đều biết viết rồi.",
+          "highlight": "都"
+        },
+        {
+          "hz": "同学们都没听见。",
+          "py": "Tóngxuémen dōu méi tīngjiàn.",
+          "vn": "Các bạn học đều không nghe thấy.",
+          "highlight": "都"
+        },
+        {
+          "hz": "我和我的朋友们都去。",
+          "py": "Wǒ hé wǒ de péngyoumen dōu qù.",
+          "vn": "Tôi và các bạn tôi đều đi.",
+          "highlight": "都"
+        }
+      ],
+      "audio": "assets/audio/slide31.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习",
+      "title": "练习 · 都 — Điền vào đúng vị trí",
+      "word_bank": [
+        {
+          "hz": "都",
+          "py": "dōu"
+        }
+      ],
+      "items": [
+        "我们[___]会写汉字了。",
+        "同学们[___]没听见老师的问题。",
+        "他没[___]老师说什么。"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "练习",
+      "title": "配对游戏 · Trên tàu, mọi người đang làm gì?",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/match_kanshu.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/match_shuijiao.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/match_kandianying.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "B",
+          "hz": "看书",
+          "py": "kàn shū"
+        },
+        {
+          "letter": "C",
+          "hz": "睡觉",
+          "py": "shuìjiào"
+        },
+        {
+          "letter": "A",
+          "hz": "看电影",
+          "py": "kàn diànyǐng"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "kicker": "练习",
+      "title": "配对游戏 · Nối sở thích với hình ảnh",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/changge.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/tiaowu_vn.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/ti_zuqiu.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/youyong.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/huahuar.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "D",
+          "hz": "唱歌",
+          "py": "chànggē"
+        },
+        {
+          "letter": "A",
+          "hz": "跳舞",
+          "py": "tiàowǔ"
+        },
+        {
+          "letter": "E",
+          "hz": "踢足球",
+          "py": "tī zúqiú"
+        },
+        {
+          "letter": "B",
+          "hz": "游泳",
+          "py": "yóuyǒng"
+        },
+        {
+          "letter": "C",
+          "hz": "画画儿",
+          "py": "huàhuàr"
+        }
+      ]
+    }
+  ]
+}

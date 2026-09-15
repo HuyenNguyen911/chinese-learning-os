@@ -1,0 +1,31 @@
+{
+  "out_dir": "words",
+  "images": [
+    {"name": "shang_huoche", "query": "Vietnamese family boarding train station platform"},
+    {"name": "kai", "query": "train departing leaving station motion"},
+    {"name": "youxie_youde", "query": "group people train some reading some sleeping"},
+    {"name": "mingnian_guonian", "query": "Vietnamese Lunar New Year Tet family celebration"},
+    {"name": "xie", "query": "Vietnamese child writing Chinese characters notebook"},
+    {"name": "ting_tingjian", "query": "child listening carefully classroom hand to ear"},
+    {"name": "buyao_shuohua", "query": "teacher quiet please sign classroom students"},
+    {"name": "naxie_zi", "query": "Chinese characters whiteboard classroom writing"},
+    {"name": "hanyu_hanzi", "query": "Vietnamese student practicing Chinese language book"},
+    {"name": "tamen_family", "query": "Vietnamese family group outdoor happy"},
+    {"name": "aihao", "query": "children hobbies collage happy Vietnamese kids"},
+    {"name": "changge", "query": "child singing microphone happy"},
+    {"name": "tiaowu", "query": "children dancing happy"},
+    {"name": "huahuar", "query": "child drawing painting picture"},
+    {"name": "tan_gangqin", "query": "child playing piano"},
+    {"name": "tan_jita", "query": "child playing guitar"},
+    {"name": "ti_zuqiu", "query": "Vietnamese children playing football"},
+    {"name": "da_lanqiu", "query": "child playing basketball"},
+    {"name": "da_pingpangqiu", "query": "child playing table tennis"},
+    {"name": "youyong", "query": "child swimming pool"},
+    {"name": "qi_zixingche", "query": "Vietnamese child riding bicycle"},
+    {"name": "paizhao", "query": "child taking photo camera"},
+    {"name": "title_movie", "query": "Vietnamese family watching movie cinema popcorn"},
+    {"name": "match_kanshu", "query": "person reading book train"},
+    {"name": "match_shuijiao", "query": "person sleeping train seat"},
+    {"name": "match_kandianying", "query": "person watching movie cinema"}
+  ]
+}

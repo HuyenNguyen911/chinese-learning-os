@@ -1,0 +1,11 @@
+{
+  "out_dir": "words",
+  "images": [
+    {"name": "naxie_zi", "query": "child hand writing Chinese characters practice sheet close up"},
+    {"name": "buyao_shuohua", "query": "teacher finger on lips shh quiet classroom students"},
+    {"name": "hanyu_hanzi", "query": "student reading Chinese textbook language class"},
+    {"name": "aihao", "query": "children playing musical instruments sports drawing collage variety"},
+    {"name": "qi_zixingche", "query": "child riding bicycle park path happy no signage"},
+    {"name": "match_shuijiao", "query": "person sleeping train seat eyes closed leaning"}
+  ]
+}

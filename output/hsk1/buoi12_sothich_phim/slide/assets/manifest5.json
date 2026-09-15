@@ -1,0 +1,7 @@
+{
+  "out_dir": "words",
+  "images": [
+    {"name": "tamen_vat", "query": "cute pets cat dog toys group colorful"},
+    {"name": "da_pingpangqiu_color", "query": "child playing table tennis colorful daytime"}
+  ]
+}

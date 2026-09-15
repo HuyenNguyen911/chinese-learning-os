@@ -358,29 +358,44 @@ thực tế đủ 3 hộp 13-2/13-4/13-6 = **20 từ**.
 
 ## Buổi 12 — Sở thích & phim · 了 (L14)
 
+> ⚠️ **Audit vision 2026-09-14**: checklist cũ chỉ ghi 19 từ — thiếu hẳn 7 mục (中午/开/有些/
+> 有的/了/说话/字) vì bỏ sót khối 生词① (14-2, sau 课文1) và vài mục lẻ trong 生词② (14-4).
+> Bảng dưới đã đối chiếu đủ 3 khối 生词 (14-2/14-4/14-6, tr.105/107/109) bằng vision.
+
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
+| 上 | shàng | lên (tàu/xe) | ⏳ chưa soạn |
 | 火车 | huǒchē | tàu hỏa | ⏳ chưa soạn |
-| 汉字 | Hànzì | (riêng) chữ Hán | ⏳ chưa soạn |
-| 听 | tīng | nghe | ⏳ chưa soạn |
-| 小学生 | xiǎoxuéshēng | học sinh tiểu học | ⏳ chưa soạn |
+| 中午 | zhōngwǔ | buổi trưa | ⏳ chưa soạn |
+| 开 | kāi | khởi hành, chạy (xe) | ⏳ chưa soạn |
+| 有些 | yǒuxiē | có một số (người/vật) | ⏳ chưa soạn |
+| 有的 | yǒude | có người, có cái | ⏳ chưa soạn |
+| 了 | le | (trợ từ động thái, chỉ hành động đã xảy ra/hoàn thành) | ⏳ chưa soạn |
 | 写 | xiě | viết | ⏳ chưa soạn |
+| 都 | dōu | đều (ôn lại — đã học **Buổi 01**, không phải Buổi 03) | ⏳ chưa soạn |
 | 听见 | tīngjiàn | nghe thấy | ⏳ chưa soạn |
 | 不要 | búyào | đừng, không được | ⏳ chưa soạn |
+| 说话 | shuōhuà | nói chuyện | ⏳ chưa soạn |
+| 听 | tīng | nghe | ⏳ chưa soạn |
 | 哪些 | nǎxiē | những cái nào | ⏳ chưa soạn |
+| 字 | zì | chữ | ⏳ chưa soạn |
 | 汉语 | Hànyǔ | (riêng) tiếng Trung (tiếng nói) | ⏳ chưa soạn |
+| 汉字 | Hànzì | (riêng) chữ Hán | ⏳ chưa soạn |
 | 明年 | míngnián | năm sau | ⏳ chưa soạn |
 | 上 | shàng | bắt đầu (đi học/lên lớp) | ⏳ chưa soạn |
 | 中学 | zhōngxué | trung học | ⏳ chưa soạn |
 | 小学 | xiǎoxué | tiểu học | ⏳ chưa soạn |
 | 中学生 | zhōngxuéshēng | học sinh trung học | ⏳ chưa soạn |
+| 小学生 | xiǎoxuéshēng | học sinh tiểu học (ôn lại — đã học ở Buổi 03, mục 生词拓展 4 cấp học) | ⏳ chưa soạn |
 | 上学 | shàngxué | đi học | ⏳ chưa soạn |
 | 他们 | tāmen | họ (nam/chung) | ⏳ chưa soạn |
 | 她们 | tāmen | họ (nữ) | ⏳ chưa soạn |
 | 它们 | tāmen | chúng nó (vật) | ⏳ chưa soạn |
 | 晚 | wǎn | muộn | ⏳ chưa soạn |
 
-**19 từ** (không tính 都 — đã tính ở buổi 03, ôn lại ở đây)
+**28 mục / 27 hanzi phân biệt** (上 xuất hiện 2 lần, 2 nghĩa khác nhau — sách tự tách thành
+2 mục riêng; không tính 都 vào tổng mới vì đã học ở **Buổi 01**, và không tính 小学生 vì đã
+học ở Buổi 03 — cả 2 chỉ ôn lại ở đây → **26 mục thật sự mới**).
 
 ---
 
@@ -449,7 +464,7 @@ thực tế đủ 3 hộp 13-2/13-4/13-6 = **20 từ**.
 | 爱 | ài | yêu, thích | ⏳ chưa soạn |
 | 哪个 | nǎge | cái nào | ⏳ chưa soạn |
 | 好玩儿 | hǎowánr | vui, thú vị | ⏳ chưa soạn |
-| 去年 | qùnián | năm ngoái | ⏳ chưa soạn |
+| 去年 | qùnián | năm ngoái | **đã dạy sớm ở Buổi 12** (2026-09-14, nhóm mở rộng 明年/过年/去年) — khi soạn Buổi 15 chỉ ôn lại, không tính là từ mới |
 | 男朋友 | nánpéngyou | bạn trai | ⏳ chưa soạn |
 | 西安 | Xī'ān | (riêng) Tây An | ⏳ chưa soạn |
 | 北京 | Běijīng | (riêng) Bắc Kinh | ⏳ chưa soạn |
@@ -505,8 +520,10 @@ trùng lặp xuất hiện lại ở 课 khác (xem mục dưới) → **250 t�
 |---|---|---|---|
 | 家 | jiā | Buổi 04 (L4) | Buổi 09 (L9) |
 | 和 | hé | Buổi 04 (L4) | Buổi 09 (L9) |
-| 都 | dōu | Buổi 03 (L3) | Buổi 12 (L14) |
+| 都 | dōu | **Buổi 01** (ngữ âm, sửa 2026-09-14 — checklist cũ ghi nhầm Buổi 03; đối chiếu trực tiếp `buoi01.json` thấy 都 đã là wordcard ở đó) | Buổi 12 (L14) |
 | 在 | zài | Buổi 08 (L8) | Buổi 13 (L11) |
+| 小学生 | xiǎoxuéshēng | Buổi 03 (L3, mục 生词拓展 4 cấp học, đi kèm 大学生) — phát hiện 2026-09-14 khi soạn Buổi 12 | Buổi 12 (L14) — KHÔNG dạy lại như từ mới, chỉ ôn |
+| 上 (nghĩa "trên", vị trí) | shang/shàng | Buổi 09 (L9) | Buổi 12 dạy **2 nghĩa khác**: "lên (tàu/xe)" và "bắt đầu (đi học)" — cùng chữ, khác nghĩa/từ loại, không phải ôn lại |
 
 ---
 
