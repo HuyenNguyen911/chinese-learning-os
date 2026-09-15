@@ -174,6 +174,17 @@ chính "新电脑" trong câu ví dụ).
   `title` (nhãn CJK, vd "第一部分 · 课本生词") là đủ để chuyển mục — tránh thêm
   `subtitle` kiểu "Phần X — N từ vựng theo sách..."; đó là ghi chú phục vụ người
   soạn bài, không phải nội dung học viên cần thấy trên slide.
+- **Cân nhắc bỏ hẳn slide `section` thuần label giữa các nhóm 生词 nhỏ trong cùng
+  buổi (2026-09-14, buổi 12 HSK1):** 1 slide chỉ có đúng 1 dòng nhãn (vd "生词 ·
+  Trong lớp học") bị coi là lãng phí, không có nội dung học. Gộp nhãn đó thành
+  `kicker` của slide `vocab`/`wordcard` ĐẦU TIÊN thuộc nhóm mới thay vì tách
+  riêng 1 slide. Chỉ giữ `section` cho mốc chuyển PHẦN LỚN thật sự cần nghỉ mắt
+  (vd 生词 → 课文, hoặc chuyển bài trong buổi ôn tập).
+- **`title` cho `vocab`/`wordcard`/`word_pair`/`info_grid` — chỉ khai khi KHÔNG
+  lặp lại nội dung đã hiện to trong thân slide (sửa 2026-09-14, buổi 12 HSK1,
+  override quy tắc cũ "luôn khai title"):** nếu title chỉ là "hz1 · hz2 — nghĩa1
+  / nghĩa2" giống hệt nội dung bên dưới → bỏ hẳn `title`, chỉ giữ `kicker`. Chỉ
+  khai `title` khi nó thêm thông tin mới (mô tả bối cảnh, ngữ pháp liên quan…).
 - **`footer_note` chỉ dùng cho làm rõ NỘI DUNG, không dùng cho sổ sách lịch trình
   (2026-09-09):** vd "từ X đã học ở Buổi Y", "ôn kỹ hơn ở Buổi Z" — bỏ hẳn loại ghi
   chú này. Vẫn giữ dùng cho: mẹo chiết tự, phân biệt 2 từ dễ nhầm, đối chiếu giáo

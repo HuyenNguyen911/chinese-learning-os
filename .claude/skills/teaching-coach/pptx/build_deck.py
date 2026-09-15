@@ -300,7 +300,41 @@ class DeckBuilder:
     def _content_area_h(self, extra=0):
         return SLIDE_H - self._content_top() - Inches(0.4) - extra
 
-    def _place_image(self, slide, rel_path, left, top, box_w, box_h):
+    def _image_fit_size(self, rel_path, box_w, box_h, fit="contain"):
+        """Trả về (w, h) THẬT SỰ ảnh sẽ chiếm sau khi fit tỉ lệ trong khung
+        box_w x box_h — dùng để tính centering nhất quán giữa cột có ảnh và
+        cột không ảnh (2026-09-14, buổi 12 HSK1: cấp khung box_h = area_h cho
+        ảnh rồi lấy LUÔN box_h làm "chiều cao khối" để canh giữa là sai — ảnh
+        thật (sau letterbox giữ tỉ lệ) thường THẤP HƠN box_h nhiều, khiến cột
+        có ảnh bị coi là "cao kịch khung" -> v_offset=0 -> neo TOP, còn cột
+        không ảnh vẫn center bình thường theo chiều cao chữ thật -> lệch
+        nhau rõ rệt, "1 bên trên 1 bên giữa"). Không tồn tại file/không có
+        Pillow -> coi như khung vuông giữ nguyên (khớp _place_image fallback).
+        """
+        if fit == "cover":
+            return int(box_w), int(box_h)
+        path = self.base / rel_path
+        if not path.exists() or not _HAS_PIL:
+            iw, ih = 4, 3
+        else:
+            with Image.open(str(path)) as im:
+                iw, ih = im.size
+        scale = min(box_w / iw, box_h / ih)
+        return int(iw * scale), int(ih * scale)
+
+    def _place_image(self, slide, rel_path, left, top, box_w, box_h, fit="contain"):
+        """`fit="contain"` (mặc định, hành vi gốc): giữ nguyên tỉ lệ ảnh,
+        letterbox + canh giữa trong khung box_w x box_h — ảnh KHÔNG bị cắt
+        nhưng có thể chừa khoảng trắng 2 bên nếu tỉ lệ ảnh lệch tỉ lệ khung
+        (vd ảnh ngang trong khung dọc hẹp). Dùng cho ảnh cần giữ nguyên vẹn
+        (sơ đồ, biểu đồ, ảnh có chữ/số quan trọng ở rìa).
+        `fit="cover"` (2026-09-14, buổi 12 HSK1 — feedback lặp lại nhiều lần
+        "ảnh nhỏ dù còn thừa khoảng trắng"): LẤP ĐẦY toàn bộ box_w x box_h,
+        cắt bớt phần ảnh dư ra ngoài khung (giữ đúng tỉ lệ gốc, không méo) —
+        dùng `Picture.crop_*` của python-pptx (cắt hiển thị, KHÔNG sửa file
+        gốc). Phù hợp ảnh minh hoạ trang trí (sticker/hobby/context photo) mà
+        chủ thể thường nằm giữa khung hình — không dùng cho ảnh có chi tiết
+        quan trọng sát rìa (dễ bị cắt mất)."""
         path = self.base / rel_path
         if not path.exists():
             ph = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
@@ -317,6 +351,16 @@ class DeckBuilder:
                 iw, ih = im.size
         else:
             iw, ih = 4, 3
+        if fit == "cover" and box_w > 0 and box_h > 0:
+            scale = max(box_w / iw, box_h / ih)
+            disp_w = iw * scale; disp_h = ih * scale
+            crop_w_frac = max(0.0, (1 - box_w / disp_w) / 2)
+            crop_h_frac = max(0.0, (1 - box_h / disp_h) / 2)
+            pic = slide.shapes.add_picture(str(path), Emu(int(left)), Emu(int(top)),
+                                           Emu(int(box_w)), Emu(int(box_h)))
+            pic.crop_left = crop_w_frac; pic.crop_right = crop_w_frac
+            pic.crop_top = crop_h_frac; pic.crop_bottom = crop_h_frac
+            return
         scale = min(box_w / iw, box_h / ih)
         w = int(iw * scale); h = int(ih * scale)
         l = int(left + (box_w - w) / 2)
@@ -471,7 +515,11 @@ class DeckBuilder:
     #    tránh header/hàng bảng tốn diện tích khi chỉ có 1-3 từ/slide.
     def _slide_vocab(self, s):
         slide = self._new_slide()
-        self._band_header(slide, s.get("title", "Từ vựng mới"), s.get("kicker"))
+        # Mặc định "" (đã bỏ fallback "Từ vựng mới" — 2026-09-14, buổi 12
+        # HSK1): khi hz+nghĩa đã hiện to trong thân slide, không khai title
+        # là lựa chọn CÓ CHỦ ĐÍCH (tránh lặp nội dung), không phải "quên
+        # khai" — không nên tự chèn chữ không mong muốn.
+        self._band_header(slide, s.get("title", ""), s.get("kicker"))
         items = s.get("items", [])
         top = self._content_top()
         area_h = self._content_area_h(self._footer_lines_extra(s))
@@ -818,20 +866,21 @@ class DeckBuilder:
             # chỉ dịch 1 khối nhỏ vào giữa nền trắng.
             right_w = Inches(4.2)
             img_w = content_w - gap1 - info_w - gap2 - right_w
-            img_side = min(img_w, area_h)
+            # ⚠️ KHÔNG ép khung ảnh HÌNH VUÔNG (đã sửa 2026-09-14, buổi 12
+            # HSK1, cùng lỗi gốc với `_slide_word_pair`) — `_place_image` tự
+            # giữ tỉ lệ ảnh trong khung CHỮ NHẬT bất kỳ, ép vuông theo
+            # min(img_w, area_h) chỉ lãng phí chiều cao dư khi img_w < area_h.
+            # Dùng khung THẬT img_w x area_h, ảnh tự to nhất có thể.
+            img_side = area_h
             if image_pos == "left":
                 img_left = MARGIN
                 info_left = MARGIN + img_w + gap1
             else:  # "right": ảnh nằm cuối, info/ví dụ dồn về đầu
                 info_left = MARGIN
                 img_left = MARGIN + content_w - img_w
-            # Căn GIỮA theo chiều dọc area_h (không neo top) — nếu không, khi
-            # img_side < area_h (ảnh vuông bị bó hẹp bởi chiều rộng cột) ảnh
-            # dồn hẳn lên trên, để trống 1 dải lớn phía dưới dù cột chữ bên
-            # cạnh đã canh MIDDLE (2026-09-11, feedback buổi 06 HSK1: "dồn
-            # hết trên, phí dưới trông trang").
-            img_top = top + max(0, int((area_h - img_side) / 2))
-            self._place_image(slide, s["image"], img_left, img_top, img_side, img_side)
+            img_top = top
+            self._place_image(slide, s["image"], img_left, img_top, img_w, img_side,
+                              fit="cover")
             right_left = info_left + info_w + gap2 if image_pos == "left" \
                 else info_left + info_w + gap2
         elif has_img:  # image_pos == "top": layout dọc gốc (ảnh nhỏ hơn)
@@ -958,11 +1007,22 @@ class DeckBuilder:
         # giữ "top" vì lúc đó "left" bị bó hẹp bởi BỀ RỘNG (ảnh chỉ ra được
         # ~1.6in), thua "top" (~2.1-2.6in bị bó bởi chiều cao).
         WIDE_COL_THRESHOLD = Inches(6.3)
-        for i, w in enumerate(words):
-            col_w = col_ws[i]
-            col_left = col_lefts[i]
+
+        # PASS 1 — tính trước info_h/ex_natural_h/layout của MỌI từ (chưa vẽ
+        # gì) rồi lấy 1 v_offset DÙNG CHUNG cho cả 2 cột (2026-09-14, buổi 12
+        # HSK1 — feedback "1 cột neo trên, 1 cột canh giữa, 2 chữ lệch nhau
+        # rõ"). Nguyên nhân gốc: mỗi cột trước đây tự tính v_offset riêng
+        # theo block_h CỦA CHÍNH NÓ — cột có ảnh (block_h bị kéo bằng area_h
+        # do ảnh "cover" lấp đầy) và cột không ảnh (block_h chỉ bằng khối chữ
+        # ngắn hơn) ra 2 v_offset khác hẳn nhau. Ảnh (chế độ cover) LUÔN lấp
+        # đầy đúng area_h nên tự nó không cần canh giữa — chỉ khối CHỮ mới
+        # cần 1 mốc chung để 2 cột nhìn ngang hàng.
+        precomputed = []
+        max_text_block_h = 0
+        for _pi, w in enumerate(words):
             has_img = bool(w.get("image"))
             image_pos = w.get("image_pos", "left")
+            col_w = col_ws[_pi]
             if has_img and image_pos == "top" and col_w >= WIDE_COL_THRESHOLD:
                 image_pos = "left"
             top_stack = False
@@ -971,31 +1031,17 @@ class DeckBuilder:
             elif has_img:  # image_pos == "top"
                 top_stack = True
                 text_w = col_w
-                text_left = col_left
             else:
                 text_w = col_w
-                text_left = col_left
 
-            # Chiều cao khối 汉字/pinyin/nghĩa tính THEO NỘI DUNG THẬT (giữ
-            # nguyên nguyên tắc cũ, 2026-09-08) — nay dùng text_w (hẹp hơn
-            # col_w khi có ảnh) để wrap đúng bề rộng thật của cột chữ.
-            # Cỡ chữ tăng so với bản cũ (40/18/15 -> 50/22/18, 2026-09-11,
-            # feedback buổi 06 HSK1: "bố cục nhìn ghê" — chỉ canh giữa 1 khối
-            # nhỏ giữa nền trắng không đủ, chữ/ảnh phải TO hơn để thật sự
-            # lấp không gian thay vì để khoảng trắng lớn cả trên lẫn dưới).
             info_h = self._line_h(50)
             if w.get("py"):
                 info_h += Pt(5) + self._line_h(22)
             if w.get("vn"):
                 info_h += Pt(4) + self._wrap_lines(
                     w["vn"], text_w, 18, cjk=False) * self._line_h(18)
-            info_h = int(info_h + Pt(12))          # đệm dưới
+            info_h = int(info_h + Pt(12))
 
-            # Chiều cao THẬT cần cho câu ví dụ (nếu có) — tính trước để gộp
-            # vào tổng khối rồi canh GIỮA area_h, thay vì ví dụ luôn ăn hết
-            # phần còn lại (neo TOP bên trong 1 box cao gần hết area_h khiến
-            # vài dòng chữ ngắn trôi lên đầu, để trống cả mảng lớn phía dưới
-            # — 2026-09-11, feedback buổi 06 HSK1: "dồn hết trên, phí dưới").
             ex = w.get("example")
             ex_natural_h = 0
             if ex:
@@ -1009,6 +1055,24 @@ class DeckBuilder:
                         ex["vn"], text_w, 15) * self._line_h(15)
                 ex_natural_h = int(ex_natural_h + Pt(8))
 
+            text_block_h = info_h + ex_natural_h
+            max_text_block_h = max(max_text_block_h, text_block_h)
+            precomputed.append(dict(has_img=has_img, image_pos=image_pos,
+                                    top_stack=top_stack, text_w=text_w,
+                                    info_h=info_h, ex=ex, ex_natural_h=ex_natural_h,
+                                    text_block_h=text_block_h))
+
+        shared_v_offset = max(0, int((area_h - max_text_block_h) / 2))
+
+        for i, w in enumerate(words):
+            col_w = col_ws[i]
+            col_left = col_lefts[i]
+            pc = precomputed[i]
+            has_img, image_pos, top_stack = pc["has_img"], pc["image_pos"], pc["top_stack"]
+            text_w = pc["text_w"]
+            info_h, ex, ex_natural_h = pc["info_h"], pc["ex"], pc["ex_natural_h"]
+            text_left = col_left
+
             # Đặt ảnh SAU KHI đã biết info_h/ex_natural_h (nội dung chữ thật
             # cần bao nhiêu chỗ) — sửa lỗi tràn slide (2026-09-12, buổi 10
             # HSK1): trước đó nhánh "top" luôn đặt ảnh cố định 2.6in TRƯỚC,
@@ -1018,7 +1082,11 @@ class DeckBuilder:
             img_side = 0
             if has_img and image_pos in ("left", "right"):
                 img_w = col_w - INNER_GAP - text_w
-                img_side = min(img_w, area_h)
+                # Ảnh dùng chế độ "cover" (2026-09-14, buổi 12 HSK1 — feedback
+                # lặp lại nhiều lần "ảnh nhỏ, còn dư chỗ trống to trong slide"):
+                # lấp đầy TRỌN VẸN khung img_w x area_h (cắt bớt viền dư giữ
+                # đúng tỉ lệ qua crop gốc của pptx, không méo ảnh) — không còn
+                # letterbox chừa khoảng trắng như "contain" cũ.
                 if image_pos == "left":
                     img_left = col_left
                     text_left = col_left + img_w + INNER_GAP
@@ -1026,7 +1094,7 @@ class DeckBuilder:
                     img_left = col_left + col_w - img_w
                     text_left = col_left
                 self._place_image(slide, w["image"], img_left, top,
-                                  img_side, img_side)
+                                  img_w, area_h, fit="cover")
             elif top_stack:
                 text_needed_h = info_h + ex_natural_h
                 budget_h = area_h - text_needed_h - Inches(0.12)
@@ -1035,15 +1103,9 @@ class DeckBuilder:
                 self._place_image(slide, w["image"], img_left, top,
                                   img_side, img_side)
 
-            block_h = info_h + ex_natural_h
-            if has_img and image_pos in ("left", "right"):
-                block_h = max(block_h, img_side)
-            v_offset = max(0, int((area_h - block_h) / 2))
-
-            if has_img and image_pos in ("left", "right"):
-                img_top = top + v_offset
-                # đã place ảnh ở trên với img_top=top; dịch lại theo v_offset
-                slide.shapes[-1].top = img_top
+            # Mốc dọc DÙNG CHUNG cho khối chữ ở mọi cột (xem PASS 1) — ảnh
+            # "cover" (left/right) tự lấp đủ area_h từ `top`, không cần dịch.
+            v_offset = shared_v_offset
 
             cur_top = (top + img_side + Inches(0.12)) if top_stack else (top + v_offset)
             box, tf = self._textbox(slide, text_left, cur_top, text_w, info_h,
@@ -1382,7 +1444,9 @@ class DeckBuilder:
         tệ...) khi cần NHIỀU ảnh trên cùng 1 slide, khác _slide_vocab/
         _slide_grammar (chỉ hỗ trợ 1 ảnh/slide)."""
         slide = self._new_slide()
-        self._band_header(slide, s.get("title", "Hồ sơ"), s.get("kicker"))
+        # Mặc định "" (đã bỏ fallback "Hồ sơ" — 2026-09-14, buổi 12 HSK1),
+        # cùng lý do với _slide_vocab ở trên.
+        self._band_header(slide, s.get("title", ""), s.get("kicker"))
         cards = s.get("cards", [])
         if not cards:
             return
@@ -1609,7 +1673,15 @@ class DeckBuilder:
 
         gap0 = int(Inches(0.10)); pad0 = int(Inches(0.14)); line0 = int(Inches(0.30))
         avail_h = int(SLIDE_H - body_top - Inches(0.30))
-        natural = sum(line0 * nlines(t) + pad0 for t in turns) + gap0 * (len(turns) - 1)
+        # Sàn 2 "dòng" cho mỗi thẻ (2026-09-14, buổi 12 HSK1 — feedback "khung
+        # chat to nhỏ không đồng đều"): lượt thoại ngắn (vd chỉ 1 câu ngắn +
+        # pinyin, tổng 2 dòng) tính đúng theo nlines() vẫn hợp lý, nhưng lượt
+        # NGẮN HƠN NỮA (chỉ 1 dòng do thiếu pinyin/vn) trông lọt thỏm bé hẳn
+        # cạnh thẻ 3-4 dòng bên cạnh — ép tối thiểu 2 dòng cho mọi thẻ để độ
+        # chênh lệch chiều cao giữa các thẻ không quá gắt, đọc thoại đỡ giật.
+        def nlines_floor(t):
+            return max(2, nlines(t))
+        natural = sum(line0 * nlines_floor(t) + pad0 for t in turns) + gap0 * (len(turns) - 1)
         scale = min(1.0, avail_h / natural) if natural else 1.0
         line_h = int(line0 * scale); pad = int(pad0 * scale); gap = int(gap0 * scale)
         hz_sz = max(12, int(16 * scale)); py_sz = max(9, int(11 * scale))
@@ -1619,7 +1691,7 @@ class DeckBuilder:
         for turn_no, t in enumerate(turns, 1):
             spk = t.get("speaker")
             x = col_x.get(spk, int(txt_left))
-            row_h = line_h * nlines(t) + pad
+            row_h = line_h * nlines_floor(t) + pad
             card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE,
                                         x, Emu(y), col_w, Emu(row_h))
             card.fill.solid()

@@ -106,6 +106,20 @@ Mỗi khi soạn một bài giảng thực sự (không áp dụng cho câu hỏ
    rồi Read ảnh đó. **KHÔNG dùng file `.ocr.txt`** cho bảng 生词 (OCR sách này xáo chữ Hán, sai
    dấu pinyin, mất số thứ tự ①②③). Nếu phát hiện dữ liệu sai → sửa luôn file dữ liệu gốc
    (checklist + book-content) chứ không chỉ sửa buổi đang soạn.
+1c. **⚠️ Quét chéo với các buổi ĐÃ BUILD trước khi chốt danh sách 生词 — bắt buộc,
+   không chỉ tin ghi chú tay trong checklist** (2026-09-14, buổi 12 HSK1). Ghi chú
+   dedup tay trong checklist (mục "Từ trùng lặp giữa các 课") có thể SAI — bằng
+   chứng: checklist ghi 都 "học ở Buổi 03" nhưng đối chiếu thật với
+   `output/hskN/buoi01.../slide/buoi01.json` thì 都 đã dạy từ Buổi 01; 小学生 bị
+   coi là từ mới ở Buổi 12 dù đã dạy đủ (kèm ảnh + ví dụ) ở Buổi 03 — chỉ phát
+   hiện khi user hỏi lại, không có bước tự động nào bắt lỗi này trước đó. Cách
+   kiểm: viết script Python quét mọi `output/hskN/buoi*/slide/*.json` đã build,
+   trích toàn bộ giá trị field `hz` (đệ quy qua mọi dict/list lồng nhau), rồi so
+   khớp CHÍNH XÁC với từng 汉字 dự định dạy ở buổi đang soạn — không dựa vào bảng
+   dedup tay. Từ trùng thật (cùng nghĩa) → chuyển thành ôn tập, không tính vào
+   số từ mới. Từ đồng tự khác nghĩa (vd 上 = "trên" ở 1 buổi, "lên xe"/"bắt đầu
+   học" ở buổi khác) → vẫn dạy như từ mới nhưng ghi chú rõ nghĩa đã biết để
+   tránh học viên nhầm.
 2. **Diễn giải kiến thức dễ hiểu, đúng bản chất** — không học vẹt công thức; giải thích *vì sao* ngữ pháp/từ vựng hoạt động như vậy, không chỉ nêu quy tắc.
 3. **Liên hệ với kiến thức đã học** — nối điểm mới với điểm ngữ pháp/từ vựng học viên đã biết (dựa vào hồ sơ học viên ở Bước 0), giúp kiến thức không bị rời rạc.
 4. **Đưa ví dụ thực tế** — câu ví dụ tự nhiên, đúng ngữ cảnh người Trung dùng thật, đồng thời cá nhân hóa theo sở thích học viên (xem `interest-personalization.md`).
