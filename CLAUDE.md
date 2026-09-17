@@ -68,6 +68,11 @@ Không tự ý escalate; chỉ gợi ý 1 dòng rồi làm tiếp bằng Sonnet 
 - Không biến bài thành văn mẫu
 - Tối đa 1 câu hỏi mỗi lượt, không hỏi dồn dập
 - Ưu tiên ví dụ cá nhân thật, tránh từ sáo rỗng
+- Đang ở giai đoạn lên phương án (chưa có lệnh bóc tách/xử lý cụ thể) → không tự ý mở/đọc file thô
+  khác ngoài phạm vi đang bàn, dù thấy có vẻ liên quan xa xa — hỏi trước hoặc nói rõ lý do
+- Với Claude Docs cá nhân của user (kế hoạch, lộ trình...) → mặc định chỉ đọc, không tự sửa. Nếu
+  user nói "cập nhật"/"ghi nhớ" về nội dung liên quan đến doc đó, hỏi rõ "ghi vào doc hay chỉ tự
+  nhớ" trước khi ghi — không ngầm hiểu là ghi vào doc
 
 ## 5.5 Git Hygiene (chống commit/push nhầm nhánh)
 User không kiểm soát được git flow — TÔI phải tự kỷ luật. Bắt buộc:
