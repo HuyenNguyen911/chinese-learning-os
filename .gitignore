@@ -10,3 +10,9 @@ output/Giáo trình 3.0/hsk1/_spike/
 # git worktree phụ (nested repo, không phải nội dung khóa học)
 output/hsk2-worktree/
 output/main-worktree/
+
+# File nguồn vượt giới hạn cứng 100MB của GitHub — giữ local, không backup qua git.
+# (Không dùng Git LFS vì chưa cần thiết cho quy mô hiện tại.)
+raw/Giáo trình phát triển hán ngữ/nói 1/tiengtrungthuonghai.vn.高级口语1mp3-zip
+raw/Giáo trình phát triển hán ngữ/nói 1/tiengtrungthuonghai.vn发展汉语高级口语1.pdf
+raw/Giáo trình phát triển hán ngữ/nói 2/tiengtrungthuonghai.vn.高级口语2mp3-zip
