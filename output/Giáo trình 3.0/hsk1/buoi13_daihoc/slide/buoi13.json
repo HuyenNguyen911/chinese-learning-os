@@ -1,0 +1,644 @@
+{
+  "meta": {
+    "title": "我读大学呢",
+    "lesson": "Buổi 13 · New HSK Course 1 · L11"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "我读大学呢",
+      "subtitle": "Wǒ dú dàxué ne · Tôi đang học đại học",
+      "footer": "Buổi 13 · HSK1 3.0 · Đại học & đang làm · 呢"
+    },
+    {
+      "type": "bullets",
+      "title": "Mục tiêu buổi học",
+      "bullets": [
+        "Nghe hiểu và dùng được 3 cách nói \"đang làm gì\"",
+        "Nghe hiểu và đặt được câu hỏi chính phản (正反问): x+不/没+x",
+        "Nắm được cách dùng năng nguyện động từ 要 (muốn, định làm)"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 · Tìm nhà hàng",
+      "items": [
+        {
+          "hz": "时候",
+          "py": "shíhou",
+          "vn": "(khoảng) thời gian, lúc"
+        },
+        {
+          "hz": "知道",
+          "py": "zhīdào",
+          "vn": "biết"
+        }
+      ],
+      "image": "assets/words/shihou.jpg",
+      "example": {
+        "hz": "你知道他什么时候来公司吗？",
+        "py": "Nǐ zhīdào tā shénme shíhou lái gōngsī ma?",
+        "vn": "Bạn có biết khi nào anh ấy đến công ty không?"
+      },
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "找",
+          "py": "zhǎo",
+          "vn": "tìm"
+        },
+        {
+          "hz": "饭店",
+          "py": "fàndiàn",
+          "vn": "nhà hàng"
+        }
+      ],
+      "image": "assets/words/fandian.jpg",
+      "example": {
+        "hz": "李文正在找饭店。",
+        "py": "Lǐ Wén zhèngzài zhǎo fàndiàn.",
+        "vn": "Lý Văn đang tìm nhà hàng."
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "那里",
+          "py": "nàlǐ",
+          "vn": "chỗ đó"
+        },
+        {
+          "hz": "哪里",
+          "py": "nǎlǐ",
+          "vn": "chỗ nào, đâu"
+        }
+      ],
+      "image": "assets/words/nali.jpg",
+      "example": {
+        "hz": "饭店在哪里？我看见了，饭店在那里。",
+        "py": "Fàndiàn zài nǎlǐ? Wǒ kànjiàn le, fàndiàn zài nàlǐ.",
+        "vn": "Nhà hàng ở đâu? Tôi thấy rồi, nhà hàng ở chỗ đó."
+      },
+      "footer_note": "那里/哪里 giống nghĩa 那儿/哪儿 đã học (Buổi 06/10) — chỉ khác vẻ ngoài (里 thay vì 儿), dùng thay thế được cho nhau.",
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "hz": "开车",
+      "py": "kāichē",
+      "vn": "lái xe",
+      "image": "assets/words/kaiche.jpg",
+      "examples": [
+        {
+          "hz": "你开车没开车？我没开车，坐车呢。",
+          "py": "Nǐ kāichē méi kāichē? Wǒ méi kāichē, zuò chē ne.",
+          "vn": "Bạn có lái xe không? Mình không lái xe, mình đang đi xe (khác)."
+        }
+      ],
+      "footer_note": "车 (xe) đã học ở Buổi 01 — hôm nay ghép lại thành 开车 (lái xe).",
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 · Đang làm gì",
+      "hz": "正在",
+      "py": "zhèngzài",
+      "vn": "đang",
+      "image": "assets/words/duzheng.jpg",
+      "examples": [
+        {
+          "hz": "他正在看书。",
+          "py": "Tā zhèngzài kàn shū.",
+          "vn": "Anh ấy đang đọc sách."
+        }
+      ],
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "hz": "在",
+      "py": "zài",
+      "vn": "đang (phó từ tiếp diễn)",
+      "image": "assets/words/duzheng.jpg",
+      "examples": [
+        {
+          "hz": "他在看书呢。",
+          "py": "Tā zài kàn shū ne.",
+          "vn": "Anh ấy đang đọc sách đấy."
+        }
+      ],
+      "footer_note": "在 đã học Buổi 07+08 với nghĩa \"ở, tại\" (giới từ) — hôm nay là NGHĨA KHÁC: đứng trước động từ để nói \"đang làm gì\".",
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "读",
+          "py": "dú",
+          "vn": "học, theo học"
+        },
+        {
+          "hz": "学",
+          "py": "xué",
+          "vn": "học"
+        },
+        {
+          "hz": "大学",
+          "py": "dàxué",
+          "vn": "đại học"
+        }
+      ],
+      "image": "assets/words/daxue.jpg",
+      "example": {
+        "hz": "我在读大学，是学医的大学生，每天都很忙。",
+        "py": "Wǒ zài dú dàxué, shì xué yī de dàxuéshēng, měitiān dōu hěn máng.",
+        "vn": "Tôi đang học đại học, là sinh viên học ngành y, mỗi ngày đều rất bận."
+      },
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "hz": "医",
+      "py": "yī",
+      "vn": "y (ngành y)",
+      "image": "assets/words/yi.jpg",
+      "examples": [
+        {
+          "hz": "我学医，以后想当医生。",
+          "py": "Wǒ xué yī, yǐhòu xiǎng dāng yīshēng.",
+          "vn": "Tôi học ngành y, sau này muốn làm bác sĩ."
+        }
+      ],
+      "footer_note": "医 không nằm trong 300 từ chính thức HSK1 — chỉ là chữ gốc trong 学医 (sách dạy riêng để hiểu câu), không tính là 1 mục từ vựng độc lập.",
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 · Em trai chưa dậy",
+      "hz": "起床",
+      "py": "qǐchuáng",
+      "vn": "ngủ dậy",
+      "image": "assets/words/qichuang.jpg",
+      "examples": [
+        {
+          "hz": "弟弟还没起床，还在睡觉呢。",
+          "py": "Dìdi hái méi qǐchuáng, hái zài shuìjiào ne.",
+          "vn": "Em trai vẫn chưa dậy, vẫn đang ngủ."
+        }
+      ],
+      "footer_note": "弟弟 (em trai, Buổi 04) và 睡觉 (ngủ, Buổi 12) đã học — hôm nay chỉ ôn lại qua ví dụ, không dạy lại.",
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "hz": "睡",
+      "py": "shuì",
+      "vn": "ngủ",
+      "image": "assets/words/shui.jpg",
+      "examples": [
+        {
+          "hz": "他很晚才睡。",
+          "py": "Tā hěn wǎn cái shuì.",
+          "vn": "Anh ấy ngủ rất muộn mới ngủ."
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "问",
+          "py": "wèn",
+          "vn": "hỏi"
+        },
+        {
+          "hz": "说",
+          "py": "shuō",
+          "vn": "nói"
+        }
+      ],
+      "image": "assets/words/wen_shuo.jpg",
+      "example": {
+        "hz": "妈妈问我明天做什么，我说我要去学校。",
+        "py": "Māma wèn wǒ míngtiān zuò shénme, wǒ shuō wǒ yào qù xuéxiào.",
+        "vn": "Mẹ hỏi tôi ngày mai làm gì, tôi nói tôi định đi học."
+      },
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词 · Ôn chữ, nghĩa mới",
+      "hz": "对",
+      "py": "duì",
+      "vn": "đối với, hướng về",
+      "examples": [
+        {
+          "hz": "他说得对。",
+          "py": "Tā shuō de duì.",
+          "vn": "Anh ấy nói đúng."
+        }
+      ],
+      "footer_note": "对 đã học Buổi 03 nghĩa \"đúng\" — hôm nay là NGHĨA/CÁCH DÙNG MỞ RỘNG khác (giới từ \"đối với\").",
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "hz": "要",
+      "py": "yào",
+      "vn": "muốn, định (làm gì)",
+      "examples": [
+        {
+          "hz": "我要去大学上课。",
+          "py": "Wǒ yào qù dàxué shàngkè.",
+          "vn": "Tôi định đi học ở trường đại học."
+        }
+      ],
+      "footer_note": "要 đã học Buổi 11 nghĩa \"muốn, gọi món\" — hôm nay mở rộng thêm nghĩa \"định làm\".",
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "hz": "小朋友",
+      "py": "xiǎopéngyou",
+      "vn": "em nhỏ, bạn nhỏ",
+      "image": "assets/words/xiaopengyou.jpg",
+      "examples": [
+        {
+          "hz": "这个小朋友生病了，妈妈要带他去医院。",
+          "py": "Zhège xiǎopéngyou shēngbìng le, māma yào dài tā qù yīyuàn.",
+          "vn": "Em nhỏ này bị ốm rồi, mẹ định đưa em đi bệnh viện."
+        }
+      ],
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · Đi làm",
+      "items": [
+        {
+          "hz": "来",
+          "py": "lái",
+          "vn": "đến, tới"
+        },
+        {
+          "hz": "公司",
+          "py": "gōngsī",
+          "vn": "công ty"
+        }
+      ],
+      "image": "assets/words/gongsi.jpg",
+      "example": {
+        "hz": "他每天几点来公司上班？",
+        "py": "Tā měitiān jǐ diǎn lái gōngsī shàngbān?",
+        "vn": "Anh ấy mỗi ngày mấy giờ đến công ty làm việc?"
+      },
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "年",
+      "py": "nián",
+      "vn": "năm",
+      "examples": [
+        {
+          "hz": "我姐姐今年上大学了。",
+          "py": "Wǒ jiějie jīnnián shàng dàxué le.",
+          "vn": "Chị tôi năm nay vào đại học rồi."
+        }
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "晚",
+      "py": "wǎn",
+      "vn": "muộn",
+      "image": "assets/words/wan.jpg",
+      "examples": [
+        {
+          "hz": "现在很晚了，我们该睡觉了。",
+          "py": "Xiànzài hěn wǎn le, wǒmen gāi shuìjiào le.",
+          "vn": "Bây giờ muộn rồi, chúng ta nên đi ngủ thôi."
+        }
+      ],
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词拓展",
+      "hz": "没事",
+      "py": "méishì",
+      "vn": "không sao",
+      "image": "assets/words/meishi.jpg",
+      "examples": [
+        {
+          "hz": "你不要担心，他没事。",
+          "py": "Nǐ búyào dānxīn, tā méishì.",
+          "vn": "Bạn đừng lo, anh ấy không sao."
+        }
+      ],
+      "footer_note": "没事 gần giống 没事儿 đã học ở Buổi 02 — 2 cách nói cùng nghĩa \"không sao\", dùng thay nhau được.",
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "dialogue",
+      "title": "课文1 · 找饭店",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "喂，李文，你什么时候能到饭店？",
+          "py": "Wèi, Lǐ Wén, nǐ shénme shíhou néng dào fàndiàn?"
+        },
+        {
+          "speaker": "李文",
+          "hz": "还不知道，正在找呢。它是不是在超市后边？",
+          "py": "Hái bù zhīdào, zhèngzài zhǎo ne. Tā shì bu shì zài chāoshì hòubian?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "是的。你开车没开车？",
+          "py": "Shì de. Nǐ kāichē méi kāichē?"
+        },
+        {
+          "speaker": "李文",
+          "hz": "我没开车，坐车呢。",
+          "py": "Wǒ méi kāichē, zuò chē ne."
+        }
+      ],
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "dialogue",
+      "title": "课文2 · 学医很忙",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "你还在读大学吗？",
+          "py": "Nǐ hái zài dú dàxué ma?"
+        },
+        {
+          "speaker": "李文",
+          "hz": "对，我读大学呢，还是大学生。",
+          "py": "Duì, wǒ dú dàxué ne, hái shì dàxuéshēng."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "你们学习忙不忙？",
+          "py": "Nǐmen xuéxí máng bu máng?"
+        },
+        {
+          "speaker": "李文",
+          "hz": "非常忙，我学医，我们的课很多。",
+          "py": "Fēicháng máng, wǒ xué yī, wǒmen de kè hěn duō."
+        }
+      ],
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "dialogue",
+      "title": "课文3 · 弟弟还没起床",
+      "turns": [
+        {
+          "speaker": "刘明",
+          "hz": "弟弟起床没起床呢？",
+          "py": "Dìdi qǐchuáng méi qǐchuáng ne?"
+        },
+        {
+          "speaker": "刘小雪",
+          "hz": "没起床呢，还在睡觉。",
+          "py": "Méi qǐchuáng ne, hái zài shuìjiào."
+        },
+        {
+          "speaker": "刘明",
+          "hz": "还睡呢？他今天去不去那里？",
+          "py": "Hái shuì ne? Tā jīntiān qù bu qù nàlǐ?"
+        },
+        {
+          "speaker": "刘小雪",
+          "hz": "去哪里？",
+          "py": "Qù nǎlǐ?"
+        },
+        {
+          "speaker": "刘明",
+          "hz": "去超市。",
+          "py": "Qù chāoshì."
+        },
+        {
+          "speaker": "刘小雪",
+          "hz": "我昨天问他，他对我说，他不去，他今天要和小朋友玩。",
+          "py": "Wǒ zuótiān wèn tā, tā duì wǒ shuō, tā bú qù, tā jīntiān yào hé xiǎopéngyou wán."
+        }
+      ],
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "point": "正反问 — Câu hỏi chính phản",
+      "highlight": "不",
+      "examples": [
+        {
+          "hz": "它是不是在超市后边？",
+          "py": "Tā shì bu shì zài chāoshì hòubian?",
+          "vn": "Nó có phải ở sau siêu thị không?"
+        },
+        {
+          "hz": "你去没去学校？",
+          "py": "Nǐ qù méi qù xuéxiào?",
+          "vn": "Bạn có đi học không?"
+        },
+        {
+          "hz": "这件衣服好看不好看？",
+          "py": "Zhè jiàn yīfu hǎokàn bu hǎokàn?",
+          "vn": "Cái áo này có đẹp không?"
+        }
+      ],
+      "note": "Công thức: x+不/没+x. Động từ dùng 不/没 (去不去/去没去), tính từ chỉ dùng 不 (好看不好看).",
+      "audio": "assets/audio/slide24.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 · 正反问",
+      "instructions": "Chọn đáp án đúng theo mẫu chính phản (正反问)",
+      "items": [
+        "你___超市？\n(A 去不去  B 去没有  C 去了)"
+      ],
+      "answers_hint": "Đáp án: A 去不去"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "point": "时间副词 在/正在 — Đang làm gì",
+      "highlight": [
+        "正在",
+        "在"
+      ],
+      "groups": [
+        {
+          "point": "正在/在 + V",
+          "examples": [
+            {
+              "hz": "他正在看电视。",
+              "py": "Tā zhèngzài kàn diànshì.",
+              "vn": "Anh ấy đang xem tivi."
+            }
+          ]
+        },
+        {
+          "point": "正在/在 + V + 呢",
+          "examples": [
+            {
+              "hz": "学生们在上课呢。",
+              "py": "Xuéshengmen zài shàngkè ne.",
+              "vn": "Các học sinh đang học đấy."
+            }
+          ]
+        },
+        {
+          "point": "V + 呢 (không cần 在/正在)",
+          "examples": [
+            {
+              "hz": "我们读书呢。",
+              "py": "Wǒmen dúshū ne.",
+              "vn": "Chúng tôi đang đọc sách đấy."
+            }
+          ]
+        }
+      ],
+      "note": "Phủ định luôn dùng 没(有), KHÔNG dùng 不: 我没看电视 (KHÔNG nói 我不在看电视).",
+      "audio": "assets/audio/slide26.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 · 在/正在",
+      "instructions": "Điền từ thích hợp vào chỗ trống",
+      "word_bank": [
+        {
+          "hz": "正在"
+        },
+        {
+          "hz": "睡觉"
+        }
+      ],
+      "items": [
+        "她没在看电视，___学习呢。",
+        "妈妈：爸爸在做什么？孩子：他在___呢。"
+      ],
+      "answers_hint": "Đáp án: (1) 正在  (2) 睡觉"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "point": "能愿动词 要 — Muốn làm, định làm",
+      "highlight": "要",
+      "examples": [
+        {
+          "hz": "他今天要和小朋友玩。",
+          "py": "Tā jīntiān yào hé xiǎopéngyou wán.",
+          "vn": "Hôm nay anh ấy định chơi với các bạn nhỏ."
+        },
+        {
+          "hz": "妈妈要去超市。",
+          "py": "Māma yào qù chāoshì.",
+          "vn": "Mẹ định đi siêu thị."
+        },
+        {
+          "hz": "白家月要在家里学中文。",
+          "py": "Bái Jiāyuè yào zài jiā li xué Zhōngwén.",
+          "vn": "Bạch Gia Nguyệt định học tiếng Trung ở nhà."
+        }
+      ],
+      "note": "要 đứng trước động từ, biểu thị dự định/mong muốn làm việc gì đó.",
+      "audio": "assets/audio/slide28.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 · 要",
+      "instructions": "Điền từ thích hợp vào chỗ trống",
+      "word_bank": [
+        {
+          "hz": "那里"
+        },
+        {
+          "hz": "要"
+        }
+      ],
+      "items": [
+        "弟弟：姐姐，我们去___玩吧，好不好？\n姐姐：我不去，我___读书。"
+      ],
+      "answers_hint": "Đáp án: 那里 / 要"
+    },
+    {
+      "type": "match_pairs",
+      "title": "配对游戏 · Nối ảnh với từ",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/gongsi.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/wan.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/qichuang.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/kaiche.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/fandian.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "开车",
+          "py": "kāichē"
+        },
+        {
+          "letter": "B",
+          "hz": "公司",
+          "py": "gōngsī"
+        },
+        {
+          "letter": "C",
+          "hz": "饭店",
+          "py": "fàndiàn"
+        },
+        {
+          "letter": "D",
+          "hz": "晚",
+          "py": "wǎn"
+        },
+        {
+          "letter": "E",
+          "hz": "起床",
+          "py": "qǐchuáng"
+        }
+      ]
+    }
+  ]
+}

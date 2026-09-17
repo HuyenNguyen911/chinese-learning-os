@@ -1,0 +1,16 @@
+{
+  "out_dir": "output/Giáo trình 3.0/hsk1/buoi13_daihoc/slide/assets/words",
+  "images": [
+    {"name": "fandian", "query": "Vietnamese restaurant storefront street"},
+    {"name": "zhao", "query": "Vietnamese person looking searching street map"},
+    {"name": "kaiche", "query": "Vietnamese woman driving car"},
+    {"name": "daxue", "query": "Vietnamese university campus students"},
+    {"name": "yi", "query": "Vietnamese medical student studying"},
+    {"name": "qichuang", "query": "Vietnamese child waking up bed morning"},
+    {"name": "shui", "query": "Vietnamese child sleeping bed"},
+    {"name": "wen_shuo", "query": "Vietnamese mother talking to child"},
+    {"name": "xiaopengyou", "query": "Vietnamese child portrait smiling"},
+    {"name": "gongsi", "query": "Vietnamese office building workers"},
+    {"name": "wan", "query": "Vietnamese person late night clock"}
+  ]
+}

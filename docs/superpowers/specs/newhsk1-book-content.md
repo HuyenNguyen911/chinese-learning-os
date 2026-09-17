@@ -419,34 +419,51 @@ Danh từ riêng: 胡医生 (Hú yīshēng) — Bác sĩ Hồ.
 
 ## Bài 11 — 我读大学呢 (Wǒ dú dàxué ne) — Tôi đang học đại học
 
-课文: Tìm đường đến nhà hàng, hỏi thăm việc học đại học ngành y, chuyện dậy sớm của em nhỏ.
+> ⚠️ **Audit vision 2026-09-15** (render PDF trang 078-084 = idx092-098, đọc bằng vision):
+> bản trước bịa "什么时候" (sách chỉ dạy **时候** riêng, 什么 đã học ở Bài 2) và "后边" (KHÔNG
+> có trong hộp 生词 nào của bài — chỉ 前边/外边 học ở Bài 9), đồng thời bỏ sót 3 từ: **饭店**
+> (nghĩa chung "nhà hàng", khác 西安饭店 là danh từ riêng đã học ở Bài 6), **找** (tìm), **睡觉**
+> (ngủ — dạng động từ ghép, khác 睡 đơn lẻ cũng có trong bài). Đúng đủ 3 hộp sinh từ 11-2/11-4/
+> 11-6 = **25 từ**.
+
+课文: 3 đoạn — (1) Lý Văn tìm nhà hàng trên đường, Vương Nhất Phi gọi điện hỏi thăm (đang lái
+xe hay đi taxi); (2) Vương Nhất Phi hỏi Lý Văn còn học đại học không, Lý Văn học y rất bận;
+(3) Lưu Minh hỏi con gái xem em trai đã dậy chưa trước khi đi làm thêm ở bệnh viện.
 
 **生词**
 
-| 汉字 | Pinyin | Nghĩa Việt |
-|---|---|---|
-| 什么时候 | shénme shíhou | khi nào |
-| 知道 | zhīdào | biết |
-| 正在 | zhèngzài | đang |
-| 后边 | hòubian | phía sau |
-| 开车 | kāichē | lái xe |
-| 车 | chē | xe |
-| 在 | zài | đang (phó từ chỉ hành động tiếp diễn) |
-| 读 | dú | học, theo học |
-| 大学 | dàxué | đại học |
-| 大学生 | dàxuéshēng | sinh viên đại học |
-| 学 | xué | học |
-| 医 | yī | y (ngành y) |
-| 问 | wèn | hỏi |
-| 对 | duì | đối với, hướng về |
-| 说 | shuō | nói |
-| 要 | yào | muốn, định |
-| 小朋友 | xiǎopéngyou | em nhỏ, bạn nhỏ |
-| 弟弟 | dìdi | em trai |
-| 起床 | qǐchuáng | ngủ dậy |
-| 睡 | shuì | ngủ |
-| 那里 | nàlǐ | chỗ đó |
-| 哪里 | nǎlǐ | chỗ nào, đâu |
+| # | 汉字 | Pinyin | Nghĩa Việt | Hộp |
+|---|---|---|---|---|
+| ① | 时候 | shíhou | (khoảng) thời gian, lúc | 11-2 |
+| ② | 饭店 | fàndiàn | nhà hàng | 11-2 |
+| ③ | 知道 | zhīdào | biết | 11-2 |
+| ④ | 正在 | zhèngzài | đang | 11-2 |
+| ⑤ | 找 | zhǎo | tìm | 11-2 |
+| ⑥ | 开车 | kāichē | lái xe | 11-2 |
+| ⑦ | 车 | chē | xe | 11-2 |
+| ⑧ | 在 | zài | đang (phó từ chỉ hành động tiếp diễn) | 11-4 |
+| ⑨ | 读 | dú | học, theo học | 11-4 |
+| ⑩ | 大学 | dàxué | đại học | 11-4 |
+| ⑪ | 大学生 | dàxuéshēng | sinh viên đại học | 11-4 |
+| ⑫ | 学 | xué | học | 11-4 |
+| ⑬ | 医 | yī | y (ngành y) | 11-4 |
+| ⑭ | 弟弟 | dìdi | em trai | 11-6 |
+| ⑮ | 起床 | qǐchuáng | ngủ dậy | 11-6 |
+| ⑯ | 睡觉 | shuìjiào | ngủ (động từ ghép) | 11-6 |
+| ⑰ | 睡 | shuì | ngủ | 11-6 |
+| ⑱ | 那里 | nàlǐ | chỗ đó | 11-6 |
+| ⑲ | 哪里 | nǎlǐ | chỗ nào, đâu | 11-6 |
+| ⑳ | 昨天 | zuótiān | hôm qua | 11-6 |
+| ㉑ | 问 | wèn | hỏi | 11-6 |
+| ㉒ | 对 | duì | đối với, hướng về | 11-6 |
+| ㉓ | 说 | shuō | nói | 11-6 |
+| ㉔ | 要 | yào | muốn, định (làm gì) | 11-6 |
+| ㉕ | 小朋友 | xiǎopéngyou | em nhỏ, bạn nhỏ | 11-6 |
+
+**25 từ** (什么时候 KHÔNG phải 1 từ ghép — 什么 đã học Bài 2, 时候 mới học ở đây, ghép lại thành
+cụm hỏi "khi nào"; 在 ôn lại từ Bài 8 nhưng nghĩa/từ loại khác — Bài 8 là giới từ "ở, tại", Bài
+11 là phó từ tiếp diễn "đang"; 要 ôn lại từ Bài 13 sách/Buổi 11 nhưng nghĩa mở rộng "định làm"
+thay vì "muốn/gọi món").
 
 **语法**
 - 正反问 (Câu hỏi khẳng định-phủ định): mẫu "x+不/没+x"; động từ dùng 不/没, tính từ dùng 不.

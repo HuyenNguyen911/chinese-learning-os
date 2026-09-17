@@ -401,31 +401,47 @@ học ở Buổi 03 — cả 2 chỉ ôn lại ở đây → **26 mục thật s
 
 ## Buổi 13 — Đại học & đang làm · 呢 (L11)
 
+✅ **ĐÃ SỬA 2026-09-15** — đối chiếu trực tiếp vision `raw/新HSK1教程3.0.pdf` idx092-098 (trang
+in 078-084), đủ 3 hộp 11-2/11-4/11-6. Bản cũ bịa "什么时候" (sách chỉ dạy 时候 riêng) và "后边"
+(không có trong hộp 生词 nào của bài), bỏ sót 饭店/找/睡觉. Đúng là **25 từ**.
+
+⚠️ **Quét chéo với các buổi đã build** (script quét field `hz` trong mọi
+`output/hsk1/buoi*/slide*/*.json`) phát hiện checklist cũ chỉ tự nhận đúng 1/7 từ trùng (要):
+**在** (Buổi 07+08, nghĩa "ở, tại" — Buổi 13 nghĩa khác "đang"), **对** (Buổi 03, nghĩa "đúng" —
+Buổi 13 nghĩa khác "đối với"), **昨天** (Buổi 06, y nguyên nghĩa), **弟弟** (Buổi 04, y nguyên),
+**睡觉** (Buổi 12 mở rộng, y nguyên), **大学生** (Buổi 03 mở rộng, y nguyên) — cả 6 từ này đều
+CHƯA được đánh dấu ôn tập trong bảng dưới trước khi soát lại 2026-09-15.
+
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
-| 什么时候 | shénme shíhou | khi nào | ⏳ chưa soạn |
-| 知道 | zhīdào | biết | ⏳ chưa soạn |
-| 正在 | zhèngzài | đang | ⏳ chưa soạn |
-| 后边 | hòubian | phía sau | ⏳ chưa soạn |
-| 开车 | kāichē | lái xe | ⏳ chưa soạn |
-| 车 | chē | xe | ⏳ chưa soạn |
-| 读 | dú | học, theo học | ⏳ chưa soạn |
-| 大学 | dàxué | đại học | ⏳ chưa soạn |
-| 大学生 | dàxuéshēng | sinh viên đại học | ⏳ chưa soạn |
-| 学 | xué | học | ⏳ chưa soạn |
-| 医 | yī | y (ngành y) | ⏳ chưa soạn |
-| 问 | wèn | hỏi | ⏳ chưa soạn |
-| 对 | duì | đối với, hướng về | ⏳ chưa soạn |
-| 说 | shuō | nói | ⏳ chưa soạn |
-| 要 | yào | muốn, định | ⏳ chưa soạn |
-| 小朋友 | xiǎopéngyou | em nhỏ, bạn nhỏ | ⏳ chưa soạn |
-| 弟弟 | dìdi | em trai | ⏳ chưa soạn |
-| 起床 | qǐchuáng | ngủ dậy | ⏳ chưa soạn |
-| 睡 | shuì | ngủ | ⏳ chưa soạn |
-| 那里 | nàlǐ | chỗ đó | ⏳ chưa soạn |
-| 哪里 | nǎlǐ | chỗ nào, đâu | ⏳ chưa soạn |
+| 时候 | shíhou | (khoảng) thời gian, lúc | ✅ MỚI |
+| 饭店 | fàndiàn | nhà hàng | ✅ MỚI |
+| 知道 | zhīdào | biết | ✅ MỚI |
+| 正在 | zhèngzài | đang | ✅ MỚI |
+| 找 | zhǎo | tìm | ✅ MỚI |
+| 开车 | kāichē | lái xe | ✅ MỚI |
+| 车 | chē | xe | ✅ MỚI |
+| 在 | zài | đang (phó từ tiếp diễn) | ⚠️ ÔN CHỮ — đã học Buổi 07+08 nghĩa "ở, tại" (giới từ); Buổi 13 nghĩa khác hẳn |
+| 读 | dú | học, theo học | ✅ MỚI |
+| 大学 | dàxué | đại học | ✅ MỚI |
+| 学 | xué | học | ✅ MỚI |
+| 医 | yī | y (ngành y) | ✅ MỚI |
+| 起床 | qǐchuáng | ngủ dậy | ✅ MỚI |
+| 睡 | shuì | ngủ | ✅ MỚI |
+| 那里 | nàlǐ | chỗ đó | ✅ MỚI |
+| 哪里 | nǎlǐ | chỗ nào, đâu | ✅ MỚI |
+| 问 | wèn | hỏi | ✅ MỚI |
+| 说 | shuō | nói | ✅ MỚI |
+| 小朋友 | xiǎopéngyou | em nhỏ, bạn nhỏ | ✅ MỚI |
+| 对 | duì | đối với, hướng về | ⚠️ ÔN CHỮ — đã học Buổi 03 nghĩa "đúng"; Buổi 13 nghĩa khác hẳn |
+| 要 | yào | muốn, định (làm gì) | ⚠️ ÔN CHỮ — đã học Buổi 11 nghĩa "muốn, gọi món"; Buổi 13 mở rộng nghĩa |
+| 大学生 | dàxuéshēng | sinh viên đại học | ⏭️ ÔN Y NGUYÊN — đã học Buổi 03 (mở rộng 4 cấp học) |
+| 弟弟 | dìdi | em trai | ⏭️ ÔN Y NGUYÊN — đã học Buổi 04 |
+| 睡觉 | shuìjiào | ngủ (động từ ghép) | ⏭️ ÔN Y NGUYÊN — đã học Buổi 12 (mở rộng) |
+| 昨天 | zuótiān | hôm qua | ⏭️ ÔN Y NGUYÊN — đã học Buổi 06 |
 
-**21 từ** (không tính 在 — đã tính ở buổi 08, ôn lại ở đây)
+**25 từ theo sách = 18 từ mới thật sự + 3 ôn chữ/khác nghĩa (在/对/要) + 4 ôn y nguyên
+(大学生/弟弟/睡觉/昨天, không dạy lại — chỉ nhắc khi gặp trong 课文)**
 
 ---
 
@@ -498,7 +514,7 @@ học ở Buổi 03 — cả 2 chỉ ôn lại ở đây → **26 mục thật s
 | 10 | Mua sắm & giá tiền | L10 | 22 | ⏳ chưa soạn |
 | 11 | Ăn uống & gọi món | L13 | 12 | ⏳ chưa soạn |
 | 12 | Sở thích & phim · 了 | L14 | 19 | ⏳ chưa soạn |
-| 13 | Đại học & đang làm · 呢 | L11 | 21 | ⏳ chưa soạn |
+| 13 | Đại học & đang làm · 呢 | L11 | 25 | ✅ đã có |
 | 14 | Thời tiết & sức khỏe | L12 | 19 | ⏳ chưa soạn |
 | 15 | Đi lại & du lịch · hẹn gặp | L15 | 16 | ⏳ chưa soạn |
 | 16 | Ôn tập tổng hợp | — | 0 (ôn lại ~250) | ⏳ chưa soạn |
@@ -521,7 +537,13 @@ trùng lặp xuất hiện lại ở 课 khác (xem mục dưới) → **250 t�
 | 家 | jiā | Buổi 04 (L4) | Buổi 09 (L9) |
 | 和 | hé | Buổi 04 (L4) | Buổi 09 (L9) |
 | 都 | dōu | **Buổi 01** (ngữ âm, sửa 2026-09-14 — checklist cũ ghi nhầm Buổi 03; đối chiếu trực tiếp `buoi01.json` thấy 都 đã là wordcard ở đó) | Buổi 12 (L14) |
-| 在 | zài | Buổi 08 (L8) | Buổi 13 (L11) |
+| 在 | zài | Buổi 08 (L8) | Buổi 13 (L11) — nghĩa khác: "ở, tại" (giới từ) → "đang" (phó từ tiếp diễn) |
+| 对 | duì | Buổi 03 (L3), nghĩa "đúng" | Buổi 13 (L11) — nghĩa khác "đối với, hướng về" (giới từ) |
+| 要 | yào | Buổi 11 (L13), nghĩa "muốn, gọi món" | Buổi 13 (L11) — mở rộng nghĩa "muốn, định làm" |
+| 昨天 | zuótiān | Buổi 06 (L5) | Buổi 13 (L11) — ôn y nguyên, không tính từ mới |
+| 弟弟 | dìdi | Buổi 04 (L4) | Buổi 13 (L11) — ôn y nguyên, không tính từ mới |
+| 睡觉 | shuìjiào | Buổi 12 (L14, mở rộng) | Buổi 13 (L11) — ôn y nguyên, không tính từ mới |
+| 大学生 | dàxuéshēng | Buổi 03 (L3, mở rộng) | Buổi 13 (L11) — ôn y nguyên, không tính từ mới |
 | 小学生 | xiǎoxuéshēng | Buổi 03 (L3, mục 生词拓展 4 cấp học, đi kèm 大学生) — phát hiện 2026-09-14 khi soạn Buổi 12 | Buổi 12 (L14) — KHÔNG dạy lại như từ mới, chỉ ôn |
 | 上 (nghĩa "trên", vị trí) | shang/shàng | Buổi 09 (L9) | Buổi 12 dạy **2 nghĩa khác**: "lên (tàu/xe)" và "bắt đầu (đi học)" — cùng chữ, khác nghĩa/từ loại, không phải ôn lại |
 
