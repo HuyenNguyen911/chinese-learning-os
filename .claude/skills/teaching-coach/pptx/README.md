@@ -74,6 +74,15 @@ Lưu ý encoding console: nếu cần in tiếng Trung ra terminal để debug, 
 4. **Duyệt nội dung với user trước khi sinh audio.** Trình bày nội dung text (title +
    items/example từng slide, không cần build pptx) cho user xem — nhất là câu ví dụ (tự
    nhiên/khớp ngữ cảnh chưa) và ảnh đã gắn (khớp nội dung slide chưa). Chờ user OK.
+   Nếu user muốn xem trực tiếp file `.pptx` (không chỉ đọc text): tự mở file cho họ bằng
+   PowerShell `Start-Process -FilePath "<đường dẫn tuyệt đối>.pptx"` (2026-09-17, buổi 13
+   HSK1) — **KHÔNG dùng `cmd /c start`** (lỗi encoding với path có dấu tiếng Việt, mở âm
+   thầm thất bại không báo lỗi rõ). Mỗi lần BUILD LẠI file rồi mở lại để user xem bản mới:
+   phải **đóng hẳn PowerPoint trước** (`Get-Process POWERPNT -ErrorAction SilentlyContinue
+   | Stop-Process -Force` rồi `Start-Sleep -Seconds 1`) trước khi `Start-Process` lại —
+   nếu PowerPoint đã mở sẵn file đó, gọi `Start-Process` lại chỉ kích hoạt lại đúng cửa sổ
+   cũ (không tự đọc lại file đã đổi trên đĩa), khiến user tưởng bug chưa được sửa dù thực
+   ra file trên đĩa đã đúng.
 5. Sau khi user duyệt, chạy `slide_audio.py <slide/buoiX.json>` rồi
    `build_deck.py <slide/buoiX.json> <slide/Buoi-X-....pptx>` — **một lần**, tránh
    rebuild lặp lại theo từng chỉnh sửa nhỏ (mỗi lần sinh audio gọi edge-tts qua mạng cho
@@ -112,7 +121,7 @@ tiêu đề, vd `"生词"`, `"语法"`, `"会话"`, `"练习"`.
 | `title` | `title` (+ `subtitle`, `footer`, `image?`) | Slide bìa (nền accent) |
 | `section` | `title` (+ `subtitle`) | Chuyển mục — mặc định chỉ đặt `title` (nhãn CJK, vd "第一部分 · 课本生词"); **tránh thêm `subtitle` kiểu "Phần X — N từ vựng theo sách..."** (2026-09-09, review buổi 04 HSK1) — đây là "nhãn dư thừa" thuộc về sổ sách soạn bài, không phải nội dung học viên cần thấy trên slide. Chỉ dùng `subtitle` khi thật sự cần mô tả thêm ngữ cảnh học (hiếm). ⚠️ **Cân nhắc BỎ HẲN slide `section` thuần label giữa các nhóm 生词 nhỏ trong cùng buổi** (2026-09-14, buổi 12 HSK1 — feedback "bỏ mấy slide kiểm 生词 này đi") — 1 slide chỉ có đúng 1 dòng nhãn (vd "生词 · Trong lớp học") bị coi là lãng phí, không có nội dung học. Thay vào đó, gộp nhãn đó thành `kicker` của slide `vocab`/`wordcard` ĐẦU TIÊN thuộc nhóm mới (vd `"kicker": "生词 · Trong lớp học"` thay vì `"kicker": "生词"` đơn thuần). Vẫn dùng `section` bình thường cho các mốc chuyển PHẦN LỚN thật sự cần 1 slide riêng để nghỉ mắt (vd chuyển từ 生词 sang 课文, hoặc chuyển bài trong buổi ôn tập) |
 | `vocab` | `items[]` = `{hz, py, vn}` (+ `image?`, `image_side?`, `color?`, `ex?`, `example?`) | Bảng từ vựng 汉字\|Pinyin\|Nghĩa; nếu item có `color` (hex, vd `"E74C3C"`) → chèn cột **chip màu** (bài dạy màu sắc); nếu item có `ex` (câu ví dụ riêng từng từ) → chèn cột **Ví dụ** cuối bảng; `example?` (cấp SLIDE, không phải item) = `{hz,py,vn}` 1 câu ví dụ chung — render **tách riêng khỏi bảng** (chữ thường, không khung): có ảnh → hiện dưới ảnh; không ảnh → hiện dưới bảng; có `image` → ảnh + bảng. Danh sách dài (>~8 từ) → tách thành 2 slide `vocab` liên tiếp thay vì nhồi 1 bảng (renderer không tự tách). Dùng được cho CẢ CÂU dài, không chỉ từ đơn (vd mỗi item là 1 lời chúc/câu nói) — cột 汉字 tự đủ rộng + hàng tự cao theo số dòng 汉字 cần wrap, Pinyin/Nghĩa co lại/rớt dòng trước (xem lessons learned bên dưới). |
-| `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?`, `title?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). Về `title` — xem quy tắc chung "Quy tắc `title` cho `vocab`/`wordcard`/`word_pair`/`info_grid`" bên dưới (đã đổi 2026-09-14: chỉ khai khi không lặp nội dung thân slide). Mỗi câu trong `examples[]` **tự động tô đỏ** mọi chỗ khớp `hz` (từ chính đang dạy) xuất hiện trong câu — không cần khai tay (2026-09-12, buổi 10 HSK1); dùng `examples[].highlight` (str hoặc list[str]) để override khi muốn tô từ khác thay vì `hz`. |
+| `wordcard` | `hz`, `py?`, `vn?`, `pos?`, `examples[]` = `{hz, py, vn}` (tối đa 3), `image?`, `title?` | **1 từ / 1 slide** — 汉字 lớn + pinyin + nghĩa + ảnh sticker minh hoạ bên trái, tối đa 3 câu ví dụ bên dưới. Dùng khi cần đào sâu từng từ thay vì dồn bảng nhiều từ/slide (số từ nhiều → số slide tăng tương ứng, cân nhắc thời lượng buổi học). Về `title` — xem quy tắc chung "Quy tắc `title` cho `vocab`/`wordcard`/`word_pair`/`info_grid`" bên dưới (đã đổi 2026-09-14: chỉ khai khi không lặp nội dung thân slide). Mỗi câu trong `examples[]` **tự động tô đỏ** mọi chỗ khớp `hz` (từ chính đang dạy) xuất hiện trong câu — không cần khai tay (2026-09-12, buổi 10 HSK1); dùng `examples[].highlight` (str hoặc list[str]) để override khi muốn tô từ khác thay vì `hz`. ⚠️ **`image_pos: "left"/"right"` (2026-09-17, buổi 13 HSK1):** ảnh dùng `fit="contain"` (đổi từ `"cover"` — ảnh 3:2 ngang bị `cover` cắt gần hết bề ngang khi nhồi vào khung dọc hẹp, mất phần lớn bối cảnh ảnh); cột chữ (`info_w`) tự nới rộng khi `hz` dài ≥3 ký tự (vd 小朋友) — trước đó cố định 2.1in làm chữ vỡ dòng đè lên cột ví dụ bên cạnh. |
 | `word_pair` | `words[]` = `{hz, py?, vn?, pos?, image?, example?}` (tối đa 2), `example` = `{hz, py, vn, highlight?}`, `title?` | **2 từ / 1 slide**, xếp cạnh nhau — mỗi cột tự chứa ảnh (trên) + 汉字/pinyin/nghĩa (giữa) + 1 câu ví dụ (dưới). Dùng cho từ vựng CÙNG NHÓM/CHỦ ĐỀ khi số lượng từ lớn (vd 生词拓展) — nén gọn hơn `wordcard` (đổi lại chỉ giữ 1 ví dụ/từ thay vì tối đa 3). Chỉ 1 từ (mảng `words` có 1 phần tử) vẫn hợp lệ — cột còn lại để trống. Về `title` — cùng quy tắc chung với `wordcard` (xem bên dưới). ⚠️ **Lịch sử (đã sửa 2026-08-06):** handler `_slide_word_pair` được thêm ở `5a2a154`, rồi bị **âm thầm xoá** ở `619229b` (commit message chỉ nói "sửa 3 lỗi renderer", không nhắc việc xoá này) — các bản README trước đó ghi nhầm là "chưa triển khai", thực ra là đã cài rồi bị mất. Đã khôi phục lại nguyên trạng handler. ⚠️ **`image_pos: "top"` từng tràn slide (đã sửa 2026-09-12, buổi 10 HSK1):** nhánh này trước đó đặt ảnh cố định `min(col_w, 2.6in)` rồi xếp 汉字/pinyin/nghĩa/ví dụ ngay bên dưới mà KHÔNG kiểm tra tổng chiều cao có vượt `area_h` hay không — từ có ví dụ dài (nhiều dòng) bị tràn khỏi đáy slide, khác hẳn nhánh `left`/`right` vốn đã tính `block_h`/`v_offset` đúng. Đã sửa: tính `info_h`/`ex_natural_h` (chỗ chữ THẬT cần) trước, rồi mới suy ra `img_side` từ phần ngân sách còn lại (`budget_h = area_h - text_needed_h - gap`, kẹp trong khoảng `[1.2in, 2.6in]`) — giống hệt cách `wordcard` đã làm đúng từ đầu. Nếu sau này thêm layout ảnh mới cho `word_pair`/`wordcard`, luôn tính ngân sách ảnh SAU khi đã đo chữ, không đặt cỡ ảnh cố định trước. ⚠️ **Cột không còn chia đều 50/50 cứng (đã sửa 2026-09-12, buổi 10 HSK1 — feedback "bố trí cứng nhắc, ảnh nhỏ quá"):** khi 2 từ trong `words[]` có 1 từ có `image` còn từ kia không (rất phổ biến — từ chức năng/đại từ thường không có ảnh), cột của từ CÓ ảnh được nhường thêm ~1.8x bề rộng so với từ không ảnh (thay vì ép cả 2 cột bằng nhau khiến ảnh bị bó hẹp dù cột bên cạnh thừa chỗ trống). Nếu cả 2 từ đều có ảnh (hoặc đều không) → vẫn chia đều 50/50 như cũ. Câu ví dụ mỗi từ **tự động tô đỏ** mọi chỗ khớp `hz` của chính từ đó (2026-09-12) — dùng `example.highlight` để override khi cần tô từ khác.
 ⚠️ **`image_pos: "top"` tự chuyển sang `"left"` khi cột đủ rộng (đã sửa 2026-09-12, cùng buổi — tăng cap `top` lên 3.6in ở lần sửa trước KHÔNG đủ, ảnh vẫn nhỏ):** đo thực tế bằng `_wrap_lines`+tính tay cho thấy nguyên nhân thật là ảnh xếp TRÊN chữ (`top`) bị giới hạn bởi NGÂN SÁCH CHIỀU CAO còn lại sau khi trừ chữ — dù cột rộng bao nhiêu, ảnh cũng chỉ ra được ~2.1-2.2in (chiều cao đang là nút thắt, không phải bề rộng). Ảnh xếp CẠNH chữ (`left`/`right`) thì dùng được TOÀN BỘ `area_h` (~5.5in) làm cạnh ảnh, cho ảnh to hơn hẳn (~3.5in) — NHƯNG chỉ khi cột đủ rộng để vẫn chừa đủ chỗ cho chữ không bị wrap xấu. Đã tăng `TEXT_COL_W` từ 2.7in lên 3.6in (đo bằng `_wrap_lines` xác nhận đủ cho mọi câu ví dụ 8-10 chữ hiện có, kể cả từ 2 chữ như "那儿" không còn bị tách đôi giữa dòng). Renderer tự động: cột `>= 6.3in` (tức cột được nhường ảnh trong cặp bất đối xứng ở trên) → ép `image_pos` thành `"left"` dù JSON xin `"top"`, cho ảnh full-height ~3.5in; cột thường `~5.5in` (cặp đối xứng, cả 2 từ đều có ảnh) → vẫn giữ `"top"`, vì lúc đó đổi sang `"left"` sẽ khiến ảnh bị bó hẹp bởi BỀ RỘNG (chỉ ra được ~1.6in do phải chia sẻ cột hẹp với 3.6in dành cho chữ) — thua hẳn `"top"` (~2.1-2.6in). Tức là 2 chế độ ăn theo 2 nút thắt khác nhau (`left`/`right` thắt bởi bề rộng, `top` thắt bởi chiều cao) — chọn đúng chế độ theo độ rộng cột thật sự cho ảnh to nhất, không có 1 layout thắng tuyệt đối mọi trường hợp. **Cặp ĐỐI XỨNG (cả 2 từ đều có ảnh) vẫn bị kẹt ~2.1-2.6in dù đã áp dụng hết các sửa trên** (2026-09-12, buổi 11 HSK1) — đây là giới hạn vật lý của việc nhồi 2 khối ảnh+chữ+ví dụ vào chung 1 slide, không phải bug. Nếu user chê "ảnh vẫn nhỏ" sau khi đã dùng `word_pair` cho cặp đối xứng, cách duy nhất để ảnh to hẳn (~4.2in, dùng `wordcard` `image_pos: "left"` full `area_h`) là **tách mỗi từ thành 1 slide `wordcard` riêng** — đánh đổi bằng việc tăng gần gấp đôi số slide (n từ trong `word_pair` → n slide `wordcard`). Hỏi thẳng user có chấp nhận đánh đổi này không trước khi tách, đừng tự ý làm. |
 | `grammar` | `point?`, `examples[]` = `{hz, py, vn, highlight?}`, `note?`, `source?`, `image?`, `highlight?` | Giảng ngữ pháp. `highlight` (str hoặc list[str], cấp SLIDE — áp dụng mọi ví dụ, hoặc cấp ví dụ để override riêng) = tô màu accent (đỏ) cho đúng chỗ khớp trong `hz` của từng ví dụ, giúp học viên thấy ngay từ/cấu trúc đang học nằm ở đâu trong câu (vd `"highlight": "没有"` tô đỏ mọi chỗ xuất hiện "没有"; 时量补语 nên override theo từng ví dụ vì cụm bổ ngữ khác nhau mỗi câu, vd ví dụ 1 `"highlight": "半个多小时"`, ví dụ 2 `"highlight": "两个小时了"`).<br>**`groups[]` = `[{point, examples[]}]` (2026-09-08) — chế độ 2 CỘT: mỗi điểm ngữ pháp ở cột TRÁI, ví dụ tương ứng ngay cột PHẢI, các nhóm cách nhau bằng vạch ngăn mảnh.** Dùng thay cho `point` + `examples` phẳng khi 1 slide có nhiều điểm nhỏ (vd 是 = LÀ → 我是中国人。 / 不是 = KHÔNG PHẢI → 我老师不是法国人。) — kiểu phẳng dồn hết công thức thành 1 cục rồi mới liệt kê ví dụ, người học không biết ví dụ nào thuộc điểm nào. Chữ Hán trong `point` tự động tô đỏ (không cần khai `highlight`). Có `groups` thì `point`/`examples` cấp slide bị bỏ qua. |
@@ -181,16 +190,21 @@ Ghi chú:
   trừ hao chỗ cho dải này (không cần tính tay).
 - Chữ Hán được gắn đúng thuộc tính font Đông Á (`a:ea`/`a:cs`) nên hiển thị chuẩn trong PowerPoint, không bị nhảy về font Latin.
 
-**`vocab` — 2 chế độ render (2026-08-07):** nếu slide có `image` hoặc `example`
-cấp SLIDE → tự chuyển sang **chế độ thẻ**: ảnh to (bên trái mặc định, `image_side`
-đổi được) + câu ví dụ dùng chung ngay dưới ảnh (cỡ chữ ~28pt, tự co nếu câu dài,
-**tự tô đỏ mọi từ trong `items[].hz` xuất hiện trong câu ví dụ** — không cần khai
-`highlight` tay), bên phải là danh sách thẻ từ (không bảng) canh GIỮA theo cả
-nhóm dù 1-3 từ. Không có `image`/`example` → giữ bảng cũ (`_vocab_table`, hợp
-cho liệt kê nhanh nhiều từ không cần ảnh/ví dụ riêng, vd bảng tổng kết cuối
-buổi). Thay thế `word_pair` cho trường hợp "2-3 từ ghép chung 1 câu ví dụ tự
-nhiên" (khác `word_pair` gốc — mỗi từ ảnh/ví dụ RIÊNG, hợp khi 2 từ không liên
-quan nhau).
+**`vocab` — 2 chế độ render (2026-08-07, layout thẻ VIẾT LẠI HOÀN TOÀN
+2026-09-17 buổi 13 HSK1):** nếu slide có `image` hoặc `example` cấp SLIDE →
+tự chuyển sang **chế độ thẻ**, giờ dùng ĐÚNG **3 cột đồng bộ với `wordcard`**
+(bỏ hẳn 2 layout cũ — "ảnh+ví dụ chồng dọc cột trái, thẻ từ cột phải" và
+"câu ví dụ hàng ngang phía trên, thẻ từ xếp hàng ngang phía dưới" — cả 2 đều
+bị chê "trông xấu"/ảnh nhỏ/tràn chữ so với `wordcard` khi đối chiếu ảnh chụp
+PowerPoint thật): **ảnh TRÁI** cao hết vùng nội dung (`fit="contain"`, không
+cắt cảnh), **cột GIỮA** xếp CHỒNG DỌC n thẻ từ (`items[]`, hz 40pt + py 18pt +
+vn 15pt, canh giữa cả nhóm), **cột PHẢI** hiện 1 câu ví dụ DÙNG CHUNG cỡ chữ
+CỐ ĐỊNH 23/16/16pt (không co scale động — tự tô đỏ mọi `items[].hz` khớp
+trong câu, không cần khai `highlight` tay). Không có `image`/`example` → giữ
+bảng cũ (`_vocab_table`, hợp cho liệt kê nhanh nhiều từ không cần ảnh/ví dụ
+riêng, vd bảng tổng kết cuối buổi). Dùng `vocab` (không phải `word_pair`) khi
+2-3 từ CÙNG CHUNG 1 câu ví dụ — `word_pair` vẫn giữ cho trường hợp mỗi từ cần
+ảnh/ví dụ RIÊNG (2 từ không chia sẻ chung ngữ cảnh).
 
 **Quy tắc `title` cho `vocab`/`wordcard`/`word_pair`/`info_grid` (sửa 2026-09-14,
 buổi 12 HSK1 — override quy tắc cũ "LUÔN khai title"):** chỉ khai `title` khi nó
@@ -721,19 +735,21 @@ quan trọng, đổi query ảnh gốc tìm bối cảnh khác thay vì cố tá
   `table` dùng để so sánh nhiều quy tắc (vd 时量补语 "Tân ngữ đứng ở đâu") chưa hỗ trợ
   tô đỏ từ khoá trong cột Ví dụ. Cân nhắc mở rộng `_set_run_highlighted` sang
   `_fill_cell`/`_slide_table` ở phiên sau.
-- ✅ **`vocab` chế độ thẻ — cột từ dọc hẹp cố định tràn/wrap khi ≥4-5 thẻ từ
-  dài — đã sửa (2026-08-14, ôn tập HSK2 Phần 2):** `_slide_vocab_cards` (nhánh
-  có `example` cấp slide) từng LUÔN xếp thẻ từ CHỒNG DỌC trong 1 cột hẹp cố
-  định (~19% content width khi không ảnh, ~32% khi có ảnh) — với từ 4 chữ (vd
-  不好意思) và ≥4-5 thẻ/slide, cột hẹp này làm chữ wrap 2 dòng rồi tràn khỏi
-  khung (thấy rõ khi mở bằng PowerPoint thật, khác preview trong 1 số app xem
-  nhanh). Đã sửa: thêm `_slide_vocab_cards_row` — câu ví dụ full-width (hoặc
-  chia sẻ với cột ảnh nếu có `image`) ở TRÊN, thẻ từ xếp thành 1 HÀNG NGANG
-  ngay dưới (mỗi thẻ tự co theo bề rộng khả dụng/số từ, cỡ chữ 汉字 tự giảm
-  theo độ dài từ: ≤2 chữ giữ cỡ gốc, 3-4 chữ giảm nhẹ, ≥5 chữ giảm thêm). Áp
-  dụng cho MỌI slide `vocab` có `example`, kể cả khi có `image` (ảnh chiếm 1
-  cột dọc riêng trái/phải qua `image_side`, phần còn lại mới chia trên/dưới
-  như thường).
+- ⚠️ **[LỊCH SỬ, ĐÃ THAY THẾ 2026-09-17]** `vocab` chế độ thẻ — cột từ dọc hẹp
+  cố định tràn/wrap khi ≥4-5 thẻ từ dài — đã sửa (2026-08-14, ôn tập HSK2 Phần
+  2): `_slide_vocab_cards` (nhánh có `example` cấp slide) từng LUÔN xếp thẻ từ
+  CHỒNG DỌC trong 1 cột hẹp cố định (~19% content width khi không ảnh, ~32%
+  khi có ảnh) — với từ 4 chữ (vd 不好意思) và ≥4-5 thẻ/slide, cột hẹp này làm
+  chữ wrap 2 dòng rồi tràn khỏi khung. Bản sửa lúc đó (`_slide_vocab_cards_row`
+  — câu ví dụ full-width ở TRÊN, thẻ từ xếp 1 HÀNG NGANG bên dưới) đã hoạt
+  động đúng về mặt kỹ thuật (không tràn chữ) nhưng **lại bị chê "trông xấu"/
+  ảnh nhỏ méo mó so với `wordcard`** khi dùng thật ở buổi 13 HSK1 (ảnh ngang
+  1.5:1 co theo bề rộng cột hẹp ra chiều cao rất thấp, để trống mảng trắng
+  lớn bên dưới). **Đã bỏ hẳn `_slide_vocab_cards_row`**, viết lại
+  `_slide_vocab_cards` theo đúng 3 cột như `wordcard` (xem mô tả `vocab` ở
+  trên) — bài học: sửa xong 1 lỗi (tràn chữ) không có nghĩa layout đã ổn, vẫn
+  cần đối chiếu ảnh chụp PowerPoint thật xem có ĐẸP/ĐỒNG BỘ với các slide
+  loại khác trong cùng buổi hay không.
 
 ⚠️ **Query ngắn mới ra kết quả:** query TIẾNG ANH dài (>3 từ, vd `"world flags icon
 simple"`) hay ra **0 kết quả** dù chủ đề phổ biến. Luôn dùng query 1-3 từ đơn giản
@@ -827,16 +843,19 @@ chiếm góc nhỏ giữa nhiều khoảng trống, nhìn "khó coi". Đã tính
 còn lại cho info/ví dụ bên dưới (đủ dư khoảng 1in) rồi nâng cap lên `2.5in` — vẫn an
 toàn không tràn/đè chữ ví dụ với nghĩa dài 1-2 dòng.
 
-⚠️ **`vocab` chế độ THẺ (`_slide_vocab_cards`) — cột ví dụ rớt dòng khi không có
-`image` (2026-08-12, Buổi 15 HSK2):** cột thẻ từ (bên phải, chỉ chứa 1-2 chữ Hán
-to + pinyin + nghĩa) trước đây LUÔN chiếm cố định `min(3.8in, 32%)` bất kể có
-ảnh hay không — khi slide chỉ có `example` (không `image`), cột ví dụ bên trái
-bị ép hẹp lại theo phần còn dư, ví dụ dài (2 dòng 汉字 + pinyin + nghĩa Việt)
-tính `natural_h` vượt `ex_h` nhưng `sz()` có floor cứng (16/11/11pt) chặn không
-co xuống được nữa → chữ tràn xuống dưới khung, mất dòng cuối. Đã sửa: thêm
-nhánh riêng khi KHÔNG có `image` — cột thẻ từ hẹp lại `min(2.4in, 19%)` (vẫn đủ
-rộng cho từ 3 âm tiết như 登机牌/登机口 không bị tách đôi), nhường phần dư cho
-cột ví dụ (từ ~66% lên ~77% content width).
+⚠️ **[LỊCH SỬ, ĐÃ THAY THẾ 2026-09-17]** `vocab` chế độ THẺ (`_slide_vocab_cards`)
+— cột ví dụ rớt dòng khi không có `image` (2026-08-12, Buổi 15 HSK2): cột thẻ
+từ (bên phải, chỉ chứa 1-2 chữ Hán to + pinyin + nghĩa) trước đây LUÔN chiếm
+cố định `min(3.8in, 32%)` bất kể có ảnh hay không — khi slide chỉ có `example`
+(không `image`), cột ví dụ bên trái bị ép hẹp lại theo phần còn dư, ví dụ dài
+(2 dòng 汉字 + pinyin + nghĩa Việt) tính `natural_h` vượt `ex_h` nhưng `sz()`
+có floor cứng (16/11/11pt) chặn không co xuống được nữa → chữ tràn xuống dưới
+khung, mất dòng cuối. Bản sửa lúc đó thêm nhánh riêng khi KHÔNG có `image` —
+cột thẻ từ hẹp lại, nhường phần dư cho cột ví dụ. **Toàn bộ hàm
+`_slide_vocab_cards` (cả nhánh có/không `image` mô tả ở trên) đã được viết
+lại hoàn toàn 2026-09-17 (buổi 13 HSK1)** theo layout 3 cột thống nhất với
+`wordcard` — chi tiết bug/fix cũ ở đây chỉ còn giá trị lịch sử, không phản
+ánh code hiện tại.
 
 ⚠️ **Hội thoại ≥3 người (`_dialogue_script`, swimlane nhiều cột) — bug lệch
 khoảng cách giữa các thẻ cùng cột (2026-08-10, KHÁC với việc đánh số thứ tự

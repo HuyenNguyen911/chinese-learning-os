@@ -120,6 +120,19 @@ Mỗi khi soạn một bài giảng thực sự (không áp dụng cho câu hỏ
    số từ mới. Từ đồng tự khác nghĩa (vd 上 = "trên" ở 1 buổi, "lên xe"/"bắt đầu
    học" ở buổi khác) → vẫn dạy như từ mới nhưng ghi chú rõ nghĩa đã biết để
    tránh học viên nhầm.
+   **Chạy CẢ 2 kiểu match, không chỉ exact** (2026-09-17, buổi 13 HSK1 — user
+   chê "từ vựng thấy nhắc ở bài trước rồi, lặp lại thấy chán" dù checklist báo
+   "từ mới"): (a) **exact match** `hz` == từ đang xét — bắt trùng thật (vd 车,
+   对, 大学生, 昨天 đã dạy nguyên con y hệt ở buổi khác); (b) **substring match**
+   — từ đang xét là 1 CHỮ xuất hiện lồng trong từ ghép đã dạy trước đó (vd 学
+   đã "quen mặt" qua 学生/学校/大学生/同学 dù chưa từng dạy 学 đứng riêng, 车 qua
+   出租车/火车/自行车). Loại (b) KHÔNG phải trùng thật (vẫn dạy vì nghĩa gốc
+   chưa từng giải thích riêng) nhưng học viên sẽ thấy quen mặt chữ → khi soạn
+   ví dụ cho từ loại (b), cố tình LIÊN HỆ NGƯỢC về từ ghép đã biết (vd ví dụ
+   cho 学 dùng "我在读大学，是学医的大学生" thay vì câu trung tính) để biến cảm
+   giác "lặp lại nhàm chán" thành "à, hoá ra đây là gốc của từ đã biết" —
+   xem `references/interest-personalization.md` không có mục này, ghi trực
+   tiếp ở đây vì đặc thù riêng của việc dạy theo giáo trình có sẵn.
 2. **Diễn giải kiến thức dễ hiểu, đúng bản chất** — không học vẹt công thức; giải thích *vì sao* ngữ pháp/từ vựng hoạt động như vậy, không chỉ nêu quy tắc.
 3. **Liên hệ với kiến thức đã học** — nối điểm mới với điểm ngữ pháp/từ vựng học viên đã biết (dựa vào hồ sơ học viên ở Bước 0), giúp kiến thức không bị rời rạc.
 4. **Đưa ví dụ thực tế** — câu ví dụ tự nhiên, đúng ngữ cảnh người Trung dùng thật, đồng thời cá nhân hóa theo sở thích học viên (xem `interest-personalization.md`).
