@@ -110,10 +110,10 @@ Mỗi khi soạn một bài giảng thực sự (không áp dụng cho câu hỏ
    không chỉ tin ghi chú tay trong checklist** (2026-09-14, buổi 12 HSK1). Ghi chú
    dedup tay trong checklist (mục "Từ trùng lặp giữa các 课") có thể SAI — bằng
    chứng: checklist ghi 都 "học ở Buổi 03" nhưng đối chiếu thật với
-   `output/hskN/buoi01.../slide/buoi01.json` thì 都 đã dạy từ Buổi 01; 小学生 bị
+   `output/<bộ giáo trình>/hskN/buoi01.../slide/buoi01.json` thì 都 đã dạy từ Buổi 01; 小学生 bị
    coi là từ mới ở Buổi 12 dù đã dạy đủ (kèm ảnh + ví dụ) ở Buổi 03 — chỉ phát
    hiện khi user hỏi lại, không có bước tự động nào bắt lỗi này trước đó. Cách
-   kiểm: viết script Python quét mọi `output/hskN/buoi*/slide/*.json` đã build,
+   kiểm: viết script Python quét mọi `output/<bộ giáo trình>/hskN/buoi*/slide/*.json` đã build,
    trích toàn bộ giá trị field `hz` (đệ quy qua mọi dict/list lồng nhau), rồi so
    khớp CHÍNH XÁC với từng 汉字 dự định dạy ở buổi đang soạn — không dựa vào bảng
    dedup tay. Từ trùng thật (cùng nghĩa) → chuyển thành ôn tập, không tính vào
@@ -142,8 +142,8 @@ Trước khi chia slide, đọc `references/slide-design-best-practices.md` — 
 5. Chọn định dạng output cuối cùng:
    - **Giảng trong chat** (mặc định khi không có yêu cầu file): trình bày bằng heading, bảng, và mô tả trực quan ngắn gọn — vẫn áp dụng nguyên tắc "mỗi ý một khối, không dồn chữ".
    - **PPTX** (khi học viên muốn slide để lưu/dạy lại): dùng helper **data-driven** local `pptx/build_deck.py` (cùng thư mục skill) — KHÔNG dùng đường dẫn cloud `/mnt/skills/public/pptx/` (không tồn tại trên máy local). Quy trình: đọc `pptx/README.md` để nắm schema, ánh xạ nội dung Giai đoạn A sang các block JSON (`vocab`, `grammar`, `table`, `dialogue`, `reading`, `exercise`, `answers`, `bullets`...), ghi 1 file `lesson.json`, rồi chạy:
-     `"C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe" .claude/skills/teaching-coach/pptx/build_deck.py output/hskN/buoiX_<chude>/slide/buoiX.json output/hskN/buoiX_<chude>/slide/Buoi-X-....pptx`
-     Design system (font CJK, header dải đỏ + tab kicker, layout 汉字+pinyin+nghĩa, bảng màu) đã nhúng sẵn trong renderer — việc của bạn chỉ là chia nội dung đúng block + đặt action title tốt (bước 1-3). Ví dụ: so sánh 了 vs 过 → block `table`, hội thoại mẫu → block `dialogue`, nguồn đọc thêm → block `reading`. Ảnh minh hoạ: đặt file cạnh JSON và trỏ bằng key `image`. Tạo folder buổi `output/hskN/buoiX_<chude>/slide/`, ghi `buoiX.json` vào đó (ảnh để trong `assets/` cùng cấp, trỏ bằng key `image` dạng `assets/<tên>.jpg`) rồi render vào chính folder đó — mỗi buổi 1 folder gồm `slide/` (skill này) + `baitap/` (skill exercise-generator). Xem `pptx/example-lesson.json` làm mẫu. (`image_search` chỉ có trên cloud — bỏ qua khi chạy local.)
+     `"C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe" .claude/skills/teaching-coach/pptx/build_deck.py output/<bộ giáo trình>/hskN/buoiX_<chude>/slide/buoiX.json output/<bộ giáo trình>/hskN/buoiX_<chude>/slide/Buoi-X-....pptx`
+     Design system (font CJK, header dải đỏ + tab kicker, layout 汉字+pinyin+nghĩa, bảng màu) đã nhúng sẵn trong renderer — việc của bạn chỉ là chia nội dung đúng block + đặt action title tốt (bước 1-3). Ví dụ: so sánh 了 vs 过 → block `table`, hội thoại mẫu → block `dialogue`, nguồn đọc thêm → block `reading`. Ảnh minh hoạ: đặt file cạnh JSON và trỏ bằng key `image`. Tạo folder buổi `output/<bộ giáo trình>/hskN/buoiX_<chude>/slide/`, ghi `buoiX.json` vào đó (ảnh để trong `assets/` cùng cấp, trỏ bằng key `image` dạng `assets/<tên>.jpg`) rồi render vào chính folder đó — mỗi buổi 1 folder gồm `slide/` (skill này) + `baitap/` (skill exercise-generator). Xem `pptx/example-lesson.json` làm mẫu. (`image_search` chỉ có trên cloud — bỏ qua khi chạy local.)
    - **Audio giọng bản địa cho slide** (tùy chọn, qua `pptx/slide_audio.py` — cần `edge-tts`): với slide có chữ Hán đáng đọc.
      ⚠️ **Cổng duyệt bắt buộc TRƯỚC khi chạy `slide_audio.py`** (2026-09-11, tái phạm nhiều
      lần kể cả trong cùng 1 buổi — buổi 09 HSK1): trình bày nội dung/cấu trúc slide cho học
@@ -161,7 +161,7 @@ Trước khi chia slide, đọc `references/slide-design-best-practices.md` — 
 6. **Trước khi báo hoàn thành pptx (bắt buộc, 2026-09-09 — review buổi 05 HSK1):**
    - **Copy asset dùng chung khi tạo buổi mới**: các icon/ảnh lặp lại giữa mọi buổi (vd
      `assets/icons/icon_target.png` cho slide mục tiêu) KHÔNG tự có sẵn ở buổi mới — phải
-     tự copy từ 1 buổi trước đó (`output/hskN/buoi<X-1>_.../slide/assets/icons/`) sang buổi
+     tự copy từ 1 buổi trước đó (`output/<bộ giáo trình>/hskN/buoi<X-1>_.../slide/assets/icons/`) sang buổi
      đang soạn. JSON trỏ đúng path không có nghĩa là file đã tồn tại.
    - **Quét lại toàn bộ field `image`** trong JSON (kể cả lồng sâu trong `words[]`,
      `images[]` của `match_pairs`) và kiểm file thật sự tồn tại trên đĩa — thiếu 1 file vẫn

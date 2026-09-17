@@ -63,7 +63,7 @@
 > 动词重叠(1)(2), 过, 因为…所以), nhưng đối chiếu trực tiếp sách: Bài 3 CHỈ có 2 box
 > 小语讲堂 thật — **结果补语** và **动词重叠(1)(2)**. "过" (动态助词) và "因为…所以"
 > thực ra thuộc **Bài 4** (trang 029), cùng với 的字短语. README đã được sửa lại
-> tương ứng cho Bài 3/4/5 (xem output/hsk2/README.md) — lỗi cùng dạng với 兼语句 ở
+> tương ứng cho Bài 3/4/5 (xem output/Giáo trình 3.0/hsk2/README.md) — lỗi cùng dạng với 兼语句 ở
 > Bài 1/2 đã sửa trước đó.
 
 ### 1. 结果补语 (Bổ ngữ kết quả)

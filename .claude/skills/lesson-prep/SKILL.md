@@ -37,7 +37,7 @@ LP=".claude/skills/lesson-prep/scripts"
 
 ### ② Hiểu & phân loại (Claude tự đọc file .txt)
 Xác định `buoiX_<chude>` (suy từ tên file/tiêu đề slide; không rõ → hỏi user 1 câu).
-Tạo `output/hsk6/buoiX_<chude>/lesson-prep/`.
+Tạo `output/Giáo trình chuẩn/hsk6/lesson/buoiX_<chude>/lesson-prep/`.
 
 Phân loại từng slide:
 - **Slide "từ vựng"** = từ có 释义 + ví dụ đi kèm → nhặt vào `vocab_payload.json`.
@@ -75,8 +75,8 @@ Rà lại từng đáp án `src:"AI"`: đúng ngữ pháp, đúng nghĩa, pinyin
 ### ④ Xuất
 Vocab:
 ```
-"$PY" "$LP/append_tier_a.py" "output/hsk6/buoiX_<chude>/lesson-prep/vocab_payload.json"
-"$PY" "$LP/append_xlsx.py"   "output/hsk6/buoiX_<chude>/lesson-prep/vocab_payload.json"
+"$PY" "$LP/append_tier_a.py" "output/Giáo trình chuẩn/hsk6/lesson/buoiX_<chude>/lesson-prep/vocab_payload.json"
+"$PY" "$LP/append_xlsx.py"   "output/Giáo trình chuẩn/hsk6/lesson/buoiX_<chude>/lesson-prep/vocab_payload.json"
 # Ghi TÊN BÀI vào .claude/skills/vocab-study/data/bai_titles.json (map {"<N>": "<bai_title>"}):
 #   thêm/ cập nhật khoá "<N>" = bai_title từ vocab_payload → build_md/render_html sẽ hiện tên bài.
 # rồi chạy pipeline vocab-study (tối thiểu 1→3→5; thêm 2/4 nếu có chữ/từ mới):
@@ -84,7 +84,7 @@ Vocab:
 "$PY" "$VS/build_md.py"
 "$PY" "$VS/render_html.py"
 ```
-→ `output/study/hsk6/tu-vung.html` (từ mới hiện trạng thái D vì đọc tier-a).
+→ `output/Giáo trình chuẩn/hsk6/study/tu-vung.html` (từ mới hiện trạng thái D vì đọc tier-a).
 
 **Chạy lại (redo) một bài đã có dữ liệu sai/thiếu:** `append_xlsx.py` dedup theo 生词 —
 nếu từ đã có trong xlsx (kể cả đang thiếu pinyin/nghĩa/ví dụ) thì **bỏ qua luôn, không
@@ -113,8 +113,8 @@ từ đúng sau khi sửa, luôn `assert` dòng ngay trước và dòng ngay sau
 Bài tập/viết (theo mẫu — writing đầu, tô đỏ từ trọng tâm):
 ```
 "$PY" "$LP/render_baitap.py" \
-  "output/hsk6/buoiX_<chude>/lesson-prep/exercise_payload.json" \
-  "output/hsk6/buoiX_<chude>/lesson-prep/baitap.docx"
+  "output/Giáo trình chuẩn/hsk6/lesson/buoiX_<chude>/lesson-prep/exercise_payload.json" \
+  "output/Giáo trình chuẩn/hsk6/lesson/buoiX_<chude>/lesson-prep/baitap.docx"
 ```
 
 ## Báo kết quả

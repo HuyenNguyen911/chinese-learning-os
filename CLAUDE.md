@@ -91,7 +91,7 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
    `git status` sạch (bài học: `git status` chỉ cho biết thay đổi chưa commit ở máy này,
    không cho biết máy có đang chậm hơn `origin/main` hay không).
 7. **Vocab-study / HSK6 là tool + data dùng chung mọi cấp**, không gắn riêng khóa nào.
-   Thay đổi `.claude/skills/vocab-study/**`, `output/study/hskN/**`,
+   Thay đổi `.claude/skills/vocab-study/**`, `output/Giáo trình chuẩn/hsk6/study/**`,
    `knowledge/vocabulary/**` → luôn về `main`, KHÔNG commit vào nhánh
    `feat/hskN-full-course` (nhánh đó chỉ chứa nội dung khóa học N). Đã xảy ra 2 lần
    (733ac6a, và 4 commit khác lỡ vào `feat/hsk2-full-course`) — user phải tự phát hiện.
@@ -109,10 +109,10 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
    thời/không dùng nữa (buổi 03 HSK1 đã commit thẳng `main`, xem commit `96e05e2`) —
    đừng checkout nhánh đó để làm việc mới. Mục 8 này chỉ còn áp dụng cho các khoá
    tương lai chưa đổi mô hình.
-9. **User tư duy theo thư mục nhìn thấy trên đĩa** (vd `output/hsk6`), không theo khái
-   niệm nhánh git — khi giải thích "X thuộc về đâu", luôn quy chiếu về đường dẫn thư mục
-   cụ thể, đừng chỉ nói tên nhánh (dễ hiểu lầm "H6" = tên nhánh trong khi user đang chỉ
-   đường dẫn `output/hsk6`).
+9. **User tư duy theo thư mục nhìn thấy trên đĩa** (vd `output/Giáo trình chuẩn/hsk6`),
+   không theo khái niệm nhánh git — khi giải thích "X thuộc về đâu", luôn quy chiếu về
+   đường dẫn thư mục cụ thể, đừng chỉ nói tên nhánh (dễ hiểu lầm "H6" = tên nhánh trong
+   khi user đang chỉ đường dẫn `output/Giáo trình chuẩn/hsk6`).
 
 ## 6. State Ownership
 
@@ -125,20 +125,24 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 | knowledge/vocabulary/tier-*.md | Learning Strategist |
 | sessions/writing/ | HSK6 Examiner (tạo file YYYY-MM-DD-topic.md) |
 | sessions/speaking/ | Speaking Coach (tạo file YYYY-MM-DD-topic.md) |
-| output/hskN/buoiX_&lt;chude&gt;/slide/ | Teaching Coach (buoiX.json + .pptx + assets/) |
-| output/hskN/buoiX_&lt;chude&gt;/baitap/ | Exercise Generator (baitap.json + hocsinh/worksheet.docx + audio + dapan/dapan.docx) |
+| output/&lt;bộ giáo trình&gt;/hskN/buoiX_&lt;chude&gt;/slide/ | Teaching Coach (buoiX.json + .pptx + assets/) |
+| output/&lt;bộ giáo trình&gt;/hskN/buoiX_&lt;chude&gt;/baitap/ | Exercise Generator (baitap.json + hocsinh/worksheet.docx + audio + dapan/dapan.docx) |
 | knowledge/hsk-exam-bank/ | Exercise Generator (seed có review gate) |
-| output/study/hskN/tu-vung.{md,html} | Vocab Study (đọc raw/Từ vựng.xlsx; CHỈ ĐỌC knowledge/vocabulary để lấy Activation) |
+| output/Giáo trình chuẩn/hsk6/study/tu-vung.{md,html} | Vocab Study (đọc raw/Từ vựng.xlsx; CHỈ ĐỌC knowledge/vocabulary để lấy Activation) |
 | .claude/skills/vocab-study/data/* | Vocab Study (hanzi.json, mnemonic.json — tích lũy; desc_override + vi_override = lấp 释义/意义 trống, ex_override = **ghi đè** 例句 cá nhân hoá; exp_extra) |
 | .claude/skills/**/SKILL.md, CLAUDE.md | Close Session (chỉ sửa sau khi user duyệt từng mục; không đụng memory) |
 | knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D; **ghi đè** luật tier-*.md ở trên cho riêng file này) |
 | raw/Từ vựng.xlsx | User / Lesson Prep (append dòng vocab mới) |
-| output/hsk6/**/lesson-prep/ | Lesson Prep (vocab_payload.json, exercise_payload.json, baitap.docx) |
+| output/Giáo trình chuẩn/hsk6/lesson/**/lesson-prep/ | Lesson Prep (vocab_payload.json, exercise_payload.json, baitap.docx) |
 | memory/* | User only |
 
-> **Cấu trúc output gom theo buổi:** mỗi buổi 1 folder `output/hskN/buoiX_<chude>/`
-> chứa `slide/` (Teaching Coach) và `baitap/` (Exercise Generator). `<chude>` = slug
-> chủ đề buổi, vd `buoi2_luongtu_mausac`. Đưa học sinh: cả folder `baitap/hocsinh/`
+> **Cấu trúc thư mục `output/`:** gom theo bộ giáo trình ở tầng đầu tiên —
+> `output/Giáo trình 3.0/` (hsk1, hsk2 — bám HSK 3.0), `output/Giáo trình chuẩn/`
+> (hsk6, gồm `lesson/`, `writing/`, `study/` — bám HSK Standard Course cũ), và
+> `output/Giáo trình phát triển Hán ngữ/` (bộ giáo trình mới, chưa có nội dung).
+> Trong mỗi bộ, mỗi buổi 1 folder `hskN/buoiX_<chude>/` chứa `slide/` (Teaching Coach)
+> và `baitap/` (Exercise Generator). `<chude>` = slug chủ đề buổi, vd
+> `buoi2_luongtu_mausac`. Đưa học sinh: cả folder `baitap/hocsinh/`
 > (worksheet + audio, KHÔNG có đáp án).
 >
 > **Lesson Prep & tier-a.md:** Lesson Prep chỉ **thêm** entry mới vào
@@ -157,6 +161,6 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 - **speaking-coach** — Luyện speaking, tóm tắt → sửa lỗi → mở rộng → hỏi sâu
 - **exercise-generator** — Sinh bài tập HSK1-3 cho học viên (đủ 听/读/书写 + HSKK), bám buổi dạy, ưu tiên kho đề真题, render .docx tương tác + file đáp án; audio nghe/nói qua cổng xác nhận
 - **close-session** — Đóng session: hygiene check (git status) + phân loại file theo nhánh đích (main cho meta/shared-data, nhánh gốc cho content) + rà soát session tìm tri thức/pattern mới cần đưa vào skill hiện có, rồi gộp tất cả vào 1 bảng commit+push duy nhất chờ user duyệt 1 lần (meta-skill, được sửa SKILL.md/CLAUDE.md sau duyệt, không đụng memory)
-- **vocab-study** — Sinh trang học từ vựng theo bài (Quizlet-style) từ `raw/Từ vựng.xlsx` → `output/study/hskN/tu-vung.html`: bảng 生词 + 生词拓展 (**sơ đồ cây**: gốc → nhánh có nghĩa), flashcard active-recall + Leitner (neo Activation), chiết tự + mẹo nhớ tiếng Việt (~1350 từ), tên bài, phát âm 🔊 (chọn giọng). Chỉ đọc knowledge/vocabulary.
+- **vocab-study** — Sinh trang học từ vựng theo bài (Quizlet-style) từ `raw/Từ vựng.xlsx` → `output/Giáo trình chuẩn/hsk6/study/tu-vung.html`: bảng 生词 + 生词拓展 (**sơ đồ cây**: gốc → nhánh có nghĩa), flashcard active-recall + Leitner (neo Activation), chiết tự + mẹo nhớ tiếng Việt (~1350 từ), tên bài, phát âm 🔊 (chọn giọng). Chỉ đọc knowledge/vocabulary.
 - **critic** — Phản biện độc lập một tài liệu/kết luận/kế hoạch trước khi chốt: luận điểm thiếu bằng chứng, kết luận vội, giả định ẩn, thông tin bỏ sót, mâu thuẫn logic, steelman phe đối lập, cách kiểm chứng; xếp mức 🔴/🟡/⚪. Chỉ đọc + báo cáo, không sửa file. Nếu vật bị phản biện do chính AI vừa tạo trong session → bắt buộc chạy trong subagent context sạch để tránh tự xác nhận.
 - **lesson-prep** — Bóc tách pptx bài khóa HSK6: convert (doc-analyzer) → phân loại → nạp từ vựng (tier-a + vocab-study) + xuất bài tập/bài viết ra .docx. Kiểm tra đáp án AI trước khi xuất.

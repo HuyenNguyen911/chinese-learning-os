@@ -34,7 +34,7 @@
 **Sửa 2026-08-04 (khi bóc Bài 3):** cột ngữ pháp Bài 3/4 bị lệch 1 bài so với sách
 thật (TOC gốc gán nhầm, cùng lỗi dạng đã sửa ở Bài 1/2 với 兼语句) — đã đối chiếu trực
 tiếp PDF trang 019-036 và sửa lại: Bài 3 chỉ có 结果补语+动词重叠(1)(2); 过 và 因为…
-所以 thực ra thuộc Bài 4. Xem `output/hsk2/buoi03_dulich_xian/doc/bai-doc.md` để biết
+所以 thực ra thuộc Bài 4. Xem `output/Giáo trình 3.0/hsk2/buoi03_dulich_xian/doc/bai-doc.md` để biết
 chi tiết đối chiếu.
 
 **Sửa 2026-08-05/06 (khi bóc Bài 5):** đã xác minh lại 4 điểm cũ còn hedge ở trên —
@@ -51,15 +51,15 @@ thay vì "形容词重叠 · 什么的 · 地" (ngữ pháp thật của Bài 6)
 Buổi 6 (sinh nhật) vẫn đúng sách. Đối chiếu trực tiếp ảnh trang 072-088: Bài 7 thật =
 状态补语(1)(2)[得] + 紧缩复句"一…就…" (KHÔNG có 比较句); 比较句(1)(2)[比] thực ra thuộc
 **Bài 8** (thay cho 比较句(3)+动词"离" cũ — điểm đó nghi thuộc Bài 9, **chưa verify bằng
-ảnh**, xem `output/hsk2/buoi07_thethao/doc/bai-doc.md` phần cảnh báo cuối). **Quyết định
+ảnh**, xem `output/Giáo trình 3.0/hsk2/buoi07_thethao/doc/bai-doc.md` phần cảnh báo cuối). **Quyết định
 của user (2026-08-06): KHÔNG sửa lại Buổi 6 đã duyệt/push — chấp nhận lệch.** Buổi 7 dạy
 đúng theo sách thật (状态补语 ôn lại + 一…就… mới), học viên sẽ ôn 状态补语 lần 2 một cách
 tự nhiên qua chủ đề thể thao. **Bài 9 cần verify lại bằng ảnh trước khi sản xuất** (không
 chặn Buổi 7).
 
 **Sửa 2026-08-06 (verify Bài 8/9/10 bằng ảnh, trước khi bóc Bài 8):** đối chiếu trực tiếp
-ảnh PDF trang 079-099 (`output/hsk2/buoi08_trinho_sosanh/doc/_tmp/p79-88.png` +
-`output/hsk2/buoi09_douong/doc/_tmp/p88-99.png`) — bảng ở trên vẫn còn SAI cả biên trang
+ảnh PDF trang 079-099 (`output/Giáo trình 3.0/hsk2/buoi08_trinho_sosanh/doc/_tmp/p79-88.png` +
+`output/Giáo trình 3.0/hsk2/buoi09_douong/doc/_tmp/p88-99.png`) — bảng ở trên vẫn còn SAI cả biên trang
 và ngữ pháp:
 - **Bài 8** thật = trang **079-087** (không phải 080-088): trang 079 là 目标, đúng
   2 điểm **比较句(1)(2)[比]** (trang 081, 083) + **虽然…但是** (trang 084-085) — đã sửa
@@ -69,7 +69,7 @@ và ngữ pháp:
 - **Bài 9** thật = trang **088-098** (không phải trang 089-095 như gợi ý cũ dựa text
   extract thô) — ⚠️ **sửa lại 2026-08-06 (khi bóc Bài 9):** con số này lệch 1, giống lỗi
   đã xảy ra với Bài 8 ở mục ngay trên (079-087 lệch 1 so với 080-088 xác nhận sau này).
-  Đối chiếu trực tiếp ảnh trang (`output/hsk2/buoi09_douong/doc/bai-doc.md`): trang bìa
+  Đối chiếu trực tiếp ảnh trang (`output/Giáo trình 3.0/hsk2/buoi09_douong/doc/bai-doc.md`): trang bìa
   "Lesson 9 我去买杯奶茶" là **PDF index 89 = trang in sách 073**; toàn bộ nội dung Bài 9
   nằm ở **PDF index 89-98 = trang in sách 073-082** (PDF index 88/trang 072 vẫn là 课堂
   活动 cuối Bài 8). Tên bài 我去买杯奶茶 ĐÚNG như README đã ghi, ngữ pháp 3 điểm là
@@ -96,7 +96,7 @@ và ngữ pháp:
   chờ quyết định.
 
 **Sửa 2026-08-07 (verify đầy đủ Bài 10 bằng ảnh, trước khi bóc buổi 10):** đối chiếu
-trực tiếp ảnh PDF trang 099-109 (`output/hsk2/buoi10_thicu/doc/_tmp/p99-109.png`) —
+trực tiếp ảnh PDF trang 099-109 (`output/Giáo trình 3.0/hsk2/buoi10_thicu/doc/_tmp/p99-109.png`) —
 xác nhận hedge cũ đúng: **Bài 10 thật = PDF trang 100-108 (in 084-092)**, 目标 chỉ có
 3 điểm **主谓谓语句** (trang 086) + **选择问句 dùng "还是"** (trang 088) + **要/快/快要/
 就要…了** (trang 090) — **KHÔNG có 着**. 着(1)(2) xác nhận thuộc **Bài 11** (目标 trang
@@ -125,7 +125,7 @@ sang Buổi 10 được (khớp mạch nhấn mạnh cảm xúc căng thẳng: �
 - **Buổi 5 nâng độ khó từ vựng** (2026-08-06, theo yêu cầu user — học viên đã vượt xa mức 18 từ gốc sách): 生词 slide đổi hẳn sang 20 từ động từ nâng cao (拿/带/搬/寄/扔/摆/放/挂/抬/抱/提/借/还/卖/爬/跳/倒/退/躲/传) để luyện 简单/复合趋向补语, không dùng 18 từ gốc sách nữa (18 từ gốc vẫn xuất hiện tự nhiên qua 課文). Bài tập (`baitap-buoi05.json`) vẫn bám 18 từ gốc + 3 điểm ngữ pháp chính theo đúng chuẩn Bài 5. Cân nhắc áp dụng tương tự (khảo sát trình độ trước khi bám 100% sách) cho các buổi sau nếu học viên tiếp tục vượt tiến độ.
 - **Buổi 13 nâng độ khó từ vựng — đi xa hơn Buổi 5** (2026-08-10, học viên xác nhận đã biết hết 11 từ gốc sách): 生词 slide đổi hẳn sang 29 từ chủ đề tặng quà Tết/春节 (10 từ chính nuôi 双宾语句/比较句(7)(8) + 19 từ mở rộng theo sơ đồ cây 4 nhánh: mốc thời gian/biểu tượng/món ăn/hoạt động), mỗi slide 2 từ (riêng 1 slide 3 từ cho nhóm cây/hoa) kèm 1 câu ví dụ dùng cả 2-3 từ. **Khác Buổi 5: bài tập (`baitap-buoi13.json`) cũng bỏ hẳn 11 từ gốc, bám 100% theo 29 từ mới** — 11 từ gốc chỉ còn xuất hiện tự nhiên qua 課文 (nguyên văn sách), không kiểm tra riêng trong bài tập. Lưu ý khi soạn `answer_plus` (đáp án nâng cao): chỉ được nâng TỪ VỰNG, không được lỡ dùng ngữ pháp của bài SAU chưa dạy (từng lọt "跳了起来" — 复合趋向补语 Bài 14 — vào bản nháp, đã sửa trước khi chốt).
 - **Buổi 11-12 bị bỏ qua tạm thời** (2026-08-10): user chủ động chọn làm Buổi 13 trước dù Buổi 11 (我最喜欢吃中国菜) và Buổi 12 (这里比北京冷多了) chưa build — lệch quy tắc "sản xuất tuần tự" ở đầu file. Cần quay lại làm Buổi 11-12 trước khi làm Buổi 14 trở đi để không bỏ sót ngữ pháp 着(1)(2)/被字句 (Bài 11) và 比较句(4)(5)(6) (Bài 12). **Cập nhật 2026-08-11:** user xác nhận lại, chủ động chọn làm Buổi 14 luôn, KHÔNG quay lại Buổi 11-12 trước — 着(1)(2)/被字字句/比较句(4)(5)(6) vẫn hoàn toàn chưa được dạy ở đâu, cần làm bù khi quay lại Buổi 11-12.
-- **Buổi 14 — biên trang lệch nặng so với TOC + thiếu 1 điểm ngữ pháp + 复合趋向补语 đã dạy sớm ở Buổi 5 (2026-08-11):** TOC cũ ghi Bài 14 ở trang "~121" (suy từ mục lục, chưa verify) — biên thật là **PDF trang 137-145** (xác định bằng cách tìm điểm Lesson 15 bắt đầu ở trang 146). Mục tiêu trang 137 liệt kê **3** điểm ngữ pháp (存现句(2) · 复合趋向补语 · 程度副词"多"), không phải 2 như TOC/README cũ ghi. Riêng 复合趋向补语 hoá ra đã dạy khá đầy đủ ở Buổi 5 (kể cả quy tắc đặt tân ngữ) nên slide Buổi 14 KHÔNG dạy lại — thay bằng 2 điểm khác lấy thẳng từ nội dung thật của Bài 14 (chưa từng dạy buổi nào, không "cướp" ngữ pháp bài sau): **已经 + khoảng thời gian + 没 + động từ + 了** (nguồn 综合练习) và **动词+"上" nghĩa mở rộng** (nguồn 小语的提示 课文4, "喜欢上"). Xem chi tiết đối chiếu ở `buoi14_letet/doc/bai-doc.md`. **Quy trình rút ra: trước khi thêm 1 điểm ngữ pháp "mở rộng" vào 1 buổi, phải rà (grep) toàn bộ `output/hsk2/**/slide/*.json` các buổi đã build để xác nhận CHƯA từng dạy, tránh trùng lặp hoặc lỡ dùng ngữ pháp của bài SAU chưa build.**
+- **Buổi 14 — biên trang lệch nặng so với TOC + thiếu 1 điểm ngữ pháp + 复合趋向补语 đã dạy sớm ở Buổi 5 (2026-08-11):** TOC cũ ghi Bài 14 ở trang "~121" (suy từ mục lục, chưa verify) — biên thật là **PDF trang 137-145** (xác định bằng cách tìm điểm Lesson 15 bắt đầu ở trang 146). Mục tiêu trang 137 liệt kê **3** điểm ngữ pháp (存现句(2) · 复合趋向补语 · 程度副词"多"), không phải 2 như TOC/README cũ ghi. Riêng 复合趋向补语 hoá ra đã dạy khá đầy đủ ở Buổi 5 (kể cả quy tắc đặt tân ngữ) nên slide Buổi 14 KHÔNG dạy lại — thay bằng 2 điểm khác lấy thẳng từ nội dung thật của Bài 14 (chưa từng dạy buổi nào, không "cướp" ngữ pháp bài sau): **已经 + khoảng thời gian + 没 + động từ + 了** (nguồn 综合练习) và **动词+"上" nghĩa mở rộng** (nguồn 小语的提示 课文4, "喜欢上"). Xem chi tiết đối chiếu ở `buoi14_letet/doc/bai-doc.md`. **Quy trình rút ra: trước khi thêm 1 điểm ngữ pháp "mở rộng" vào 1 buổi, phải rà (grep) toàn bộ `output/Giáo trình 3.0/hsk2/**/slide/*.json` các buổi đã build để xác nhận CHƯA từng dạy, tránh trùng lặp hoặc lỡ dùng ngữ pháp của bài SAU chưa build.**
 - **Buổi 14 — verify bằng text-layer thay vì ảnh (2026-08-11):** `pip install pymupdf` bị chặn ở tầng permission trong session, không render được ảnh trang để verify như quy trình chuẩn các buổi trước — dùng tạm text-layer sẵn có (`raw/New HSK Course 2.pdf.txt`) + đối chiếu kỹ checklist từ vựng/ngữ pháp (khớp 100%). Khuyến nghị verify lại bằng ảnh nếu có dịp cài được pymupdf.
 - **Buổi 14 — từ vựng nâng cấp chủ đề nhà cửa, KHÔNG dùng chủ đề Tết** (2026-08-11): ban đầu định nâng cấp theo hướng Tết như Buổi 13 nhưng user phát hiện sẽ trùng chủ đề — đổi sang chủ đề nhà cửa (loại nhà/phòng/việc nhà), dùng **đủ 21/21 từ** user cung cấp (không chọn lọc một phần) + giữ 3 từ gốc sách (没意思/跳舞/眼睛), 8 từ gốc còn lại (包/房子/过年/女孩儿/前面/位/小孩儿/姓) chỉ còn xuất hiện qua 课文 nguyên văn, không dạy riêng — theo đúng cách làm đã dùng ở Buổi 13.
 - **Viết 3.0:** mỗi buổi bài tập có sắp câu/điền chữ/câu ngắn + luân phiên đoạn 60-100 chữ / điền form (`dien_bieu_mau`) / lời nhắn / nhật ký (`writing_prompt` với `kind` + `target_length`) — schema đã mở rộng ở exercise-generator (`main`, commit `021493e`).
@@ -165,7 +165,7 @@ bài tập xong, 2026-08-11 — bóc bài lại biên trang + phát hiện thi�
 sau khi duyệt slide, user tự thêm 1 điểm ngữ pháp mới trên PowerPoint — 副词"多"+động từ —
 và dời vị trí slide, đã đánh số lại header + patch audio không rebuild; bài tập 27 mục,
 phủ 24/24 từ vựng). **Sửa 2026-08-12 (rà lại trước khi build Ôn tập tổng hợp):** dòng
-"Buổi 12 vẫn ⏳" ở trên là SAI — `ls` trực tiếp `output/hsk2/buoi12_thoitiet/` xác nhận
+"Buổi 12 vẫn ⏳" ở trên là SAI — `ls` trực tiếp `output/Giáo trình 3.0/hsk2/buoi12_thoitiet/` xác nhận
 đã build trọn gói từ trước (commit `6f1fc04`): slide 21 trang đủ 比较句(4)(5)(6) đúng
 ngữ pháp thật + bài tập trọn gói. **Buổi 1-15 đã build xong toàn bộ**, chỉ còn buổi Ôn
 tập tổng hợp (`on_ontap`) — xem trạng thái ở bảng trên (nguồn chân lý).

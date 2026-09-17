@@ -12,8 +12,8 @@ Bạn là routine đóng session của Chinese Learning OS. Chạy checklist tu�
 2. Chạy `git status` (và `git status --short` nếu output dài).
 3. Với mỗi file thay đổi/chưa commit, phân vào 1 trong 3 nhóm theo CLAUDE.md §5.5 và §6:
    - **Nhóm meta** → đích `main`. Gồm `.claude/skills/**/SKILL.md`, `.claude/skills/**/references/**`, `CLAUDE.md`. (Nhóm này sẽ được bổ sung thêm ở Bước 3 nếu có mục được duyệt.)
-   - **Nhóm shared-data** → đích `main` (CLAUDE.md §5.5 quy tắc 7, dùng chung mọi cấp, không gắn riêng khóa nào). Gồm `.claude/skills/vocab-study/**`, `output/study/hskN/**`, `knowledge/vocabulary/**`.
-   - **Nhóm feature-content** → đích **nhánh gốc** (nhánh đang đứng). Mọi file còn lại thuộc phạm vi công việc của session (vd `output/hskN/buoiX_.../**`, nội dung riêng của `feat/hskN-full-course`).
+   - **Nhóm shared-data** → đích `main` (CLAUDE.md §5.5 quy tắc 7, dùng chung mọi cấp, không gắn riêng khóa nào). Gồm `.claude/skills/vocab-study/**`, `output/Giáo trình chuẩn/hsk6/study/**`, `knowledge/vocabulary/**`.
+   - **Nhóm feature-content** → đích **nhánh gốc** (nhánh đang đứng). Mọi file còn lại thuộc phạm vi công việc của session (vd `output/<bộ giáo trình>/hskN/buoiX_.../**`, nội dung riêng của `feat/hskN-full-course`).
    - **Không phân loại được** (không khớp rõ pattern nào ở trên, hoặc nằm ngoài các thư mục đã biết trong CLAUDE.md §6) → để riêng, **không** đưa vào bảng push ở Bước 4 — báo cho user tự xử lý.
 4. Báo cáo ngắn kết quả phân loại (chưa commit/push gì ở bước này).
 

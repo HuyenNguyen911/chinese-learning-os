@@ -86,7 +86,7 @@ format thi HSK và HSKK 初级.
   phong cách tham khảo được.
 
 ## Cấu trúc thư mục (gom theo buổi)
-Mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` (do teaching-coach tạo trước), gồm:
+Mỗi buổi 1 folder `output/Giáo trình 3.0/hskN/buoiX_<chude>/` (do teaching-coach tạo trước), gồm:
 - `slide/` — `buoiX.json`, `.pptx`, `assets/` (của teaching-coach).
 - `baitap/` — nơi skill này ghi:
   - `baitap-buoiX.json` (nguồn)
@@ -97,12 +97,12 @@ Mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` (do teaching-coach tạo trư
 `buoiX_*` đã có sẵn; không tự đặt tên mới nếu teaching-coach đã tạo.
 
 ## Giai đoạn A — Soạn bài tập
-1. Đọc nội dung buổi: `output/hskN/buoiX_<chude>/slide/buoiX.json` (do
+1. Đọc nội dung buổi: `output/Giáo trình 3.0/hskN/buoiX_<chude>/slide/buoiX.json` (do
    teaching-coach tạo) để lấy từ vựng + điểm ngữ pháp trọng tâm.
 2. Chọn các block phù hợp (xem `references/exercise-types.md`) — thường đủ 7 loại:
    `noi`, `dien_cho_trong`, `doc_hieu`, `sap_xep`, `dich_dat_cau`, `nghe`,
    `noi_hskk`.
-3. Ghi file `output/hskN/buoiX_<chude>/baitap/baitap-buoiX.json` theo `worksheet/schema.md`.
+3. Ghi file `output/Giáo trình 3.0/hskN/buoiX_<chude>/baitap/baitap-buoiX.json` theo `worksheet/schema.md`.
 4. **Tự soát trước khi trình user** (bắt buộc — session Buổi 2/3 lộ trùng do bỏ
    bước này): quét mọi câu sản sinh/nghe (dien/sap/dich/nghe/听后重复) →
    (a) KHÔNG câu nào trùng nguyên văn; (b) đếm độ phủ vốn từ đã dạy. Có lỗi thì
@@ -141,7 +141,7 @@ Mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` (do teaching-coach tạo trư
   - Lấy job list: `audio_manifest.build_audio_manifest(spec)`.
   - Sinh từng file (nhớ `--rate`, xem policy dưới):
     `python -m edge_tts --voice zh-CN-XiaoxiaoNeural --rate=-25%
-    --text "<script>" --write-media output/hskN/buoiX_<chude>/baitap/hocsinh/audio/<file>`.
+    --text "<script>" --write-media output/Giáo trình 3.0/hskN/buoiX_<chude>/baitap/hocsinh/audio/<file>`.
 - Audio PHẢI nằm trong `baitap/hocsinh/audio/` (cạnh worksheet.docx) vì link trong
   .docx là tương đối (`audio/...`). Đường dẫn `audio` trong JSON để dạng `audio/<file>`.
 
@@ -170,8 +170,8 @@ Mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` (do teaching-coach tạo trư
 ```bash
 PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"
 "$PY" .claude/skills/exercise-generator/worksheet/build_worksheet.py \
-  output/hskN/buoiX_<chude>/baitap/baitap-buoiX.json \
-  output/hskN/buoiX_<chude>/baitap
+  output/Giáo trình 3.0/hskN/buoiX_<chude>/baitap/baitap-buoiX.json \
+  output/Giáo trình 3.0/hskN/buoiX_<chude>/baitap
 ```
 → `hocsinh/worksheet.docx` (cho học viên) + `dapan/dapan.docx` (đáp án + 听力文本).
 Renderer tự tạo 2 thư mục con. PDF tự xuất nếu có LibreOffice, không thì báo user

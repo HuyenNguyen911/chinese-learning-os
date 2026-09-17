@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Build output/study/hsk6/tu-vung.md từ raw/Từ vựng.xlsx (2 sheet: 'Từ vựng' + 'Chung từ')
+# Build output/Giáo trình chuẩn/hsk6/study/tu-vung.md từ raw/Từ vựng.xlsx (2 sheet: 'Từ vựng' + 'Chung từ')
 import json, re, os, sys
 from collections import Counter
 from pypinyin import pinyin, Style
@@ -28,7 +28,7 @@ _exp = os.path.join(DATA, "exp_extra.json")
 if os.path.exists(_exp):
     for k, v in json.load(open(_exp, encoding="utf-8")).items():
         ct[k] = v
-OUT = "output/study/hsk6/tu-vung.md"
+OUT = "output/Giáo trình chuẩn/hsk6/study/tu-vung.md"
 
 HAN = r"[一-鿿]"
 

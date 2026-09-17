@@ -2,7 +2,7 @@
 name: vocab-study
 description: >
   Sinh trang HỌC TỪ VỰNG theo bài (kiểu Quizlet) từ file Excel từ vựng.
-  Output: output/study/hskN/tu-vung.html tự chứa — bảng 生词 + 生词拓展, chế độ học
+  Output: output/Giáo trình chuẩn/hsk6/study/tu-vung.html tự chứa — bảng 生词 + 生词拓展, chế độ học
   flashcard (active recall + Leitner, neo theo Activation của vault), chiết tự +
   mẹo nhớ tiếng Việt, phát âm 🔊. Use when user muốn "học từ vựng", "review từ vựng",
   "sinh trang học từ", "cập nhật từ vựng theo bài".
@@ -23,8 +23,8 @@ author: Chinese Learning OS
   Đây là **生词拓展**.
 
 ## Output
-- `output/study/hskN/tu-vung.md` — nguồn (bảng 生词 + 生词拓展), có thể sửa tay.
-- `output/study/hskN/tu-vung.html` — trang học tự chứa (mở bằng trình duyệt).
+- `output/Giáo trình chuẩn/hsk6/study/tu-vung.md` — nguồn (bảng 生词 + 生词拓展), có thể sửa tay.
+- `output/Giáo trình chuẩn/hsk6/study/tu-vung.html` — trang học tự chứa (mở bằng trình duyệt).
   (Mặc định hsk6; đổi `OUT` trong build_md.py/render_html.py nếu cấp khác.)
 
 ## Tính năng trang HTML

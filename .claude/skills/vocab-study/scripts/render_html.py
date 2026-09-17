@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Render output/study/hsk6/tu-vung.md -> tu-vung.html
+# Render output/Giáo trình chuẩn/hsk6/study/tu-vung.md -> tu-vung.html
 # Mỗi bài: bảng 生词 (+ tab 生词拓展 nếu có) + nút 🎓 Học (flashcard active-recall + Leitner SRS).
 # Trạng thái ôn suy từ knowledge/vocabulary/tier-*.md (Activation). localStorage: nhớ sửa nội dung + tiến độ học.
 import re, html, os, sys
@@ -25,8 +25,8 @@ try:
 except FileNotFoundError:
     MN_JSON = "{}"
 
-MD = "output/study/hsk6/tu-vung.md"
-OUT = "output/study/hsk6/tu-vung.html"
+MD = "output/Giáo trình chuẩn/hsk6/study/tu-vung.md"
+OUT = "output/Giáo trình chuẩn/hsk6/study/tu-vung.html"
 TIERS = [("A", "knowledge/vocabulary/tier-a.md"),
          ("B", "knowledge/vocabulary/tier-b.md"),
          ("C", "knowledge/vocabulary/tier-c.md")]
@@ -400,7 +400,7 @@ function exportProgress(){
   URL.revokeObjectURL(url);
   var m=syncMeta();m.lastExport=payload.exportedAt;m.dirty=false;saveSyncMeta(m);
   updateSyncBar();
-  alert('Đã tải tu-vung-progress.json.\nHãy chuyển/lưu file này đè vào output/study/hsk6/ trong repo rồi git add + commit + push, để máy khác git pull về và bấm "Nhập tiến độ".');
+  alert('Đã tải tu-vung-progress.json.\nHãy chuyển/lưu file này đè vào output/Giáo trình chuẩn/hsk6/study/ trong repo rồi git add + commit + push, để máy khác git pull về và bấm "Nhập tiến độ".');
 }
 function importProgress(file){
   var reader=new FileReader();

@@ -121,7 +121,7 @@ rồi thử lại; nếu đã thử vài query mà kho ảnh Pexels vẫn không
 cho 1 query chung chung (vd "local convenience store in Vietnam") rất dễ lặp lại giữa các buổi
 khác nhau dùng chủ đề gần giống nhau, kể cả khi query đặt khác nhau. Trước khi chốt ảnh mới,
 so `source` URL trong `credits.json` của buổi đang làm với `credits.json` của các buổi khác
-cùng cấp (`find output/hskN -iname credits.json`) — trùng URL thì đổi query khác, đừng chỉ đổi
+cùng cấp (`find "output/<bộ giáo trình>/hskN" -iname credits.json`) — trùng URL thì đổi query khác, đừng chỉ đổi
 tên biến.
 
 **Quét lại toàn bộ đường dẫn `image` trước khi bàn giao:** duyệt hết field `image` trong JSON

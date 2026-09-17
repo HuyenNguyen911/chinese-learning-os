@@ -69,7 +69,7 @@ Lưu ý encoding console: nếu cần in tiếng Trung ra terminal để debug, 
    ngữ pháp nhưng học viên mới dễ thấy cụt; ưu tiên đổi thành câu có chủ ngữ
    tường minh (vd "服务员给我一杯茶。"/"我想喝一杯茶。") khi không thực sự cần
    giữ đúng nguyên văn 课文.
-3. Tạo folder buổi `output/hskN/buoiX_<chude>/slide/` rồi ghi `buoiX.json` vào đó
+3. Tạo folder buổi `output/<bộ giáo trình>/hskN/buoiX_<chude>/slide/` rồi ghi `buoiX.json` vào đó
    (ảnh vào `assets/` cùng cấp; path ảnh trong JSON là `assets/<tên>.jpg`).
 4. **Duyệt nội dung với user trước khi sinh audio.** Trình bày nội dung text (title +
    items/example từng slide, không cần build pptx) cho user xem — nhất là câu ví dụ (tự
@@ -80,9 +80,12 @@ Lưu ý encoding console: nếu cần in tiếng Trung ra terminal để debug, 
    toàn bộ slide, khá tốn thời gian/token nếu lặp lại nhiều vòng).
 6. Báo đường dẫn file cho học viên.
 
-> **Gom theo buổi:** mỗi buổi 1 folder `output/hskN/buoiX_<chude>/` chứa `slide/`
+> **Gom theo buổi:** mỗi buổi 1 folder `output/<bộ giáo trình>/hskN/buoiX_<chude>/` chứa `slide/`
 > (skill này) và `baitap/` (skill exercise-generator). `<chude>` = slug chủ đề,
-> vd `buoi2_luongtu_mausac`.
+> vd `buoi2_luongtu_mausac`. `<bộ giáo trình>` = tầng đầu tiên gom theo bộ giáo
+> trình (xem CLAUDE.md §6) — hiện là `Giáo trình 3.0` cho hsk1/hsk2. Nếu build
+> slide cho hsk6, kiểm tra CLAUDE.md trước vì hsk6 nằm dưới `Giáo trình chuẩn/hsk6/`
+> (có thêm tầng `lesson/`), không cùng gốc với hsk1/hsk2.
 
 ## Schema JSON
 
@@ -963,9 +966,9 @@ sys.path.insert(0, ".claude/skills/teaching-coach/pptx")
 import build_deck as bd
 from pptx import Presentation
 
-path = "output/hskN/buoiX_.../slide/Buoi-X-....pptx"
-spec = json.loads(open("output/hskN/buoiX_.../slide/buoiX.json", encoding="utf-8").read())
-spec.setdefault("_base", "output/hskN/buoiX_.../slide")   # để resolve path ảnh
+path = "output/<bộ giáo trình>/hskN/buoiX_.../slide/Buoi-X-....pptx"
+spec = json.loads(open("output/<bộ giáo trình>/hskN/buoiX_.../slide/buoiX.json", encoding="utf-8").read())
+spec.setdefault("_base", "output/<bộ giáo trình>/hskN/buoiX_.../slide")   # để resolve path ảnh
 
 builder = bd.DeckBuilder(spec)
 builder.prs = Presentation(path)              # nạp file HIỆN CÓ, không tạo mới
