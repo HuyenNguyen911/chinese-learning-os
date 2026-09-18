@@ -562,7 +562,7 @@ book-content để tránh đếm trùng/đếm nhầm:
 | Ngữ pháp | 了 | Có | Buổi 14 (grammar 了(1)) + Buổi 12 (动态助词 了(2)) — đã tính trong 生词 tương ứng |
 | Thời tiết | 天气 | Có | Buổi 14 (đã tính) |
 | Thời tiết | 下雨 | Có | Buổi 14 (đã tính) |
-| Thời tiết | 下雪 | **Không** — chỉ xuất hiện trong tiêu đề/课文 Bài 12 ("昨天下雪了"), không có trong hộp 生词 (chỉ 下雨/雨 được liệt kê) | Không đưa vào checklist; cần đối chiếu PDF gốc xem 雪/下雪 có bị OCR bỏ sót khỏi hộp 生词 không |
+| Thời tiết | 下雪 | ✅ **CÓ THẬT** — đã đối chiếu vision 2026-09-18 (idx100-106 sách gốc): 下 và 雪 nằm trong khối 生词② (12-4), bản bóc cũ bỏ sót nguyên khối này (chỉ giữ 生病/看病). Xem `newhsk1-book-content.md` §Bài 12 đã sửa | Buổi 14 (đã tính, +4 từ: 下/雪/来/公司 — 来/公司 trùng buổi 13, chuyển thành ôn tập không tính từ mới) |
 | Thời tiết | 冷 | Có | Buổi 14 (đã tính) |
 | Thời tiết | 热 | Có | Buổi 14 (đã tính) |
 

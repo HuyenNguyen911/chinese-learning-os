@@ -474,31 +474,47 @@ thay vì "muốn/gọi món").
 
 ## Bài 12 — 昨天下雪了 (Zuótiān xià xuě le) — Hôm qua tuyết rơi
 
-课文: Hỏi thời tiết (mưa, lạnh) qua điện thoại; đi khám bệnh vì cảm lạnh.
+> ⚠️ **Audit vision 2026-09-18** (render PDF idx100-106 = trang 086-092, đọc bằng vision):
+> bản trước bỏ sót nguyên khối **生词② (12-4)** — thiếu 4 mục: 下/雪/来/公司 (chỉ giữ lại
+> 生病/看病 của khối này). Xác nhận **雪/下雪 CÓ THẬT** trong hộp 生词 gốc (không phải OCR
+> sót ngoài phạm vi như nghi ngờ trước đây ở checklist §"Đối chiếu tận dụng buổi cũ") —
+> 雪 đứng riêng ở mục ⑪, 下 (động từ "rơi, đổ xuống" của mưa/tuyết) ở mục ⑩. Bảng dưới đã
+> đủ 3 khối 生词 (12-2, 12-4, 12-6) = 24 mục/23 chữ phân biệt (天 xuất hiện 2 lần, nghĩa
+> khác nhau: ③ "thời tiết" và ⑲ "ngày").
+
+课文 1: Wang Yixue gọi điện hỏi Wang Yifei bên đó thời tiết ra sao (trời mưa, hơi lạnh).
+课文 2: Trong thang máy công ty, Wang Yixue hỏi Yang Tongle sao hôm qua không đến — vì bị
+ốm phải đi khám. 课文 3: Bác sĩ Hu khám cho Yang Tongle, dặn uống thuốc, nghỉ nửa ngày, về
+nhà uống thêm nước ấm.
 
 **生词**
 
-| 汉字 | Pinyin | Nghĩa Việt |
-|---|---|---|
-| 天气 | tiānqì | thời tiết |
-| 这里 | zhèlǐ | ở đây |
-| 天 | tiān | trời; ngày |
-| 下雨 | xiàyǔ | mưa (động từ) |
-| 了 | le | trợ từ chỉ sự thay đổi |
-| 雨 | yǔ | mưa (danh từ) |
-| 有点儿 | yǒudiǎnr | hơi, có chút |
-| 觉得 | juéde | cảm thấy |
-| 冷 | lěng | lạnh |
-| 生病 | shēngbìng | bị bệnh |
-| 看病 | kànbìng | khám bệnh |
-| 病 | bìng | bệnh, ốm |
-| 一点儿 | yìdiǎnr | một chút |
-| 药 | yào | thuốc |
-| 回 | huí | về, trở về |
-| 再 | zài | rồi, sau đó mới |
-| 喝 | hē | uống |
-| 热 | rè | nóng |
-| 水 | shuǐ | nước |
+| 汉字 | Pinyin | Nghĩa Việt | Khối |
+|---|---|---|---|
+| 天气 | tiānqì | thời tiết | 12-2 |
+| 这里 | zhèlǐ | ở đây | 12-2 |
+| 天 | tiān | thời tiết | 12-2 |
+| 下雨 | xiàyǔ | mưa (động từ) | 12-2 |
+| 了 | le | trợ từ chỉ sự thay đổi/tình huống mới | 12-2 |
+| 雨 | yǔ | mưa (danh từ) | 12-2 |
+| 有点儿 | yǒudiǎnr | hơi, có chút | 12-2 |
+| 觉得 | juéde | cảm thấy | 12-2 |
+| 冷 | lěng | lạnh | 12-2 |
+| 下 | xià | (mưa/tuyết) rơi, đổ xuống | 12-4 |
+| 雪 | xuě | tuyết | 12-4 |
+| 来 | lái | đến | 12-4 |
+| 公司 | gōngsī | công ty | 12-4 |
+| 生病 | shēngbìng | bị bệnh | 12-4 |
+| 看病 | kànbìng | khám bệnh | 12-4 |
+| 病 | bìng | bệnh, ốm | 12-6 |
+| 一点儿 | yìdiǎnr | một chút | 12-6 |
+| 药 | yào | thuốc | 12-6 |
+| 天 | tiān | ngày (lượng từ) | 12-6 |
+| 回 | huí | về, trở về | 12-6 |
+| 再 | zài | rồi, sau đó mới | 12-6 |
+| 喝 | hē | uống | 12-6 |
+| 热 | rè | nóng | 12-6 |
+| 水 | shuǐ | nước | 12-6 |
 
 **语法**
 - 非主谓句 (Câu không phân chủ-vị): câu do từ/cụm từ tạo thành, không phân chủ ngữ-vị ngữ, hay dùng trong khẩu ngữ (下雪了。上课了。).
