@@ -1,0 +1,1585 @@
+<!doctype html>
+<title>HSK六级机考</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --bg:#F3F5F8; --surface:#FFFFFF; --surface-2:#E9EDF3; --line:#D7DEE8;
+  --ink:#1B2333; --ink-soft:#5B6472; --ink-faint:#8B93A0;
+  --accent:#2A5C99; --accent-ink:#FFFFFF; --accent-soft:#DCE7F5;
+  --good:#3F7D4F; --good-soft:#DFEEE1;
+  --warn:#A6741F; --warn-soft:#F3E7CD;
+  --bad:#C0392B; --bad-soft:#F6DEDA;
+  --live:#C0392B;
+  --radius:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#12161F; --surface:#1A2029; --surface-2:#222836; --line:#333C4D;
+    --ink:#ECEFF4; --ink-soft:#9BA3B2; --ink-faint:#6C7484;
+    --accent:#6FA0DB; --accent-ink:#0E1420; --accent-soft:#213249;
+    --good:#6FBF7F; --good-soft:#1E3324;
+    --warn:#D9A648; --warn-soft:#3A2E14;
+    --bad:#E0645A; --bad-soft:#3A1E1B;
+    --live:#E0645A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12161F; --surface:#1A2029; --surface-2:#222836; --line:#333C4D;
+  --ink:#ECEFF4; --ink-soft:#9BA3B2; --ink-faint:#6C7484;
+  --accent:#6FA0DB; --accent-ink:#0E1420; --accent-soft:#213249;
+  --good:#6FBF7F; --good-soft:#1E3324;
+  --warn:#D9A648; --warn-soft:#3A2E14;
+  --bad:#E0645A; --bad-soft:#3A1E1B;
+  --live:#E0645A;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:'Noto Sans SC',system-ui,sans-serif;
+  font-size:16px; font-weight:400;
+  padding:0 16px 64px;
+}
+.serif{font-family:'Noto Serif SC',serif}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace; font-variant-numeric:tabular-nums}
+
+.wrap{max-width:920px; margin:0 auto}
+.layout{display:flex; gap:22px; align-items:flex-start}
+aside.sidebar{
+  width:230px; flex:none; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:6px 0; max-height:calc(100vh - 40px); overflow-y:auto; position:sticky; top:16px;
+}
+aside.sidebar .weekHead{
+  font-size:11px; font-weight:700; color:var(--ink-faint); letter-spacing:.06em; padding:10px 14px 4px;
+}
+aside.sidebar .phaseTag{font-weight:500; color:var(--accent)}
+aside.sidebar button.dayBtn{
+  display:flex; width:100%; align-items:center; gap:8px; text-align:left; font:inherit; font-size:12.5px;
+  background:none; border:none; padding:7px 14px; cursor:pointer; color:var(--ink-soft);
+}
+aside.sidebar button.dayBtn:hover{background:var(--surface-2)}
+aside.sidebar button.dayBtn .n{font-family:'JetBrains Mono',monospace; color:var(--ink-faint); flex:none; width:40px}
+aside.sidebar button.dayBtn .skill{font-family:'Noto Serif SC',serif; font-weight:600; color:var(--ink); flex:none}
+aside.sidebar button.dayBtn.today{background:var(--accent-soft)}
+aside.sidebar button.dayBtn.today .skill{color:var(--accent)}
+aside.sidebar button.dayBtn.done .skill{color:var(--ink-faint); text-decoration:line-through}
+aside.sidebar .doneBox{
+  margin-left:auto; flex:none; width:18px; height:18px; border-radius:5px; border:1.5px solid var(--line);
+  display:flex; align-items:center; justify-content:center; font-size:12px; color:transparent; cursor:pointer;
+}
+aside.sidebar .doneBox.on{background:var(--good); border-color:var(--good); color:#fff}
+main.mainCol{flex:1; min-width:0}
+.sidebarToggle{display:none}
+@media (max-width:760px){
+  .layout{display:block}
+  aside.sidebar{
+    position:fixed; top:0; left:0; height:100vh; z-index:20; width:78vw; max-width:300px;
+    transform:translateX(-100%); transition:transform .2s ease; border-radius:0;
+  }
+  aside.sidebar.open{transform:translateX(0)}
+  .sidebarToggle{
+    display:inline-flex; align-items:center; gap:6px; font:inherit; font-weight:700; font-size:13px;
+    background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:7px 12px; cursor:pointer; color:var(--ink);
+  }
+  .sidebarScrim{display:none; position:fixed; inset:0; background:#0006; z-index:19}
+  .sidebarScrim.open{display:block}
+}
+header.top{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:22px 0 16px; border-bottom:2px solid var(--ink); gap:12px; flex-wrap:wrap;
+}
+header.top h1{
+  font-size:20px; margin:0; font-weight:700; letter-spacing:.02em;
+}
+header.top .sub{color:var(--ink-soft); font-size:12.5px; margin-top:3px; letter-spacing:.02em}
+header.top .badge{
+  font-size:11px; font-weight:700; color:var(--accent); border:1px solid var(--accent);
+  border-radius:4px; padding:3px 8px; letter-spacing:.05em;
+}
+
+nav.tabs{
+  display:flex; gap:2px; margin:20px 0 0; border-bottom:1px solid var(--line);
+  overflow-x:auto;
+}
+nav.tabs button{
+  font:inherit; font-weight:700; font-size:15px; color:var(--ink-soft);
+  background:none; border:none; padding:12px 20px; cursor:pointer;
+  border-bottom:3px solid transparent; white-space:nowrap;
+}
+nav.tabs button[aria-selected="true"]{color:var(--accent); border-bottom-color:var(--accent); background:var(--accent-soft)}
+nav.tabs button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+#lesson-cite{margin-left:auto; align-self:center; font-size:12px; color:var(--ink-faint); white-space:nowrap; padding:0 4px}
+
+/* Bảng 生词 kiểu sách giáo trình (số/生词/拼音/词性/释义) — dùng cho 学习词语 (user 2026-09-18) */
+table.vocabTable{width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden}
+table.vocabTable th, table.vocabTable td{padding:10px 12px; text-align:left; border-bottom:1px solid var(--line); font-size:14.5px; white-space:nowrap}
+table.vocabTable th{background:var(--surface-2); color:var(--ink-soft); font-size:12px; font-weight:700}
+table.vocabTable td.hz{font-family:'Noto Serif SC',serif; font-weight:700; font-size:16px}
+table.vocabTable td.py{font-family:'JetBrains Mono',monospace; color:var(--ink-soft)}
+table.vocabTable td.pos{color:var(--accent); text-align:center}
+table.vocabTable td.mean{white-space:normal; min-width:220px}
+table.vocabTable td.correctCell{background:var(--good-soft)}
+table.vocabTable td.wrongCell{background:var(--bad-soft)}
+
+/* Bám phong cách sách giáo trình hơn (user 2026-09-18, gửi ảnh trang sách làm mẫu):
+   icon audio tròn nhỏ thay vì nút chữ nhật "▶ 播放", và layout 2 cột cho bảng phân loại/MCQ
+   để đỡ dài dòng theo chiều dọc như sách in. */
+.audioBadge{
+  display:inline-flex; align-items:center; justify-content:center; flex:none;
+  width:30px; height:30px; border-radius:50%; font-size:13px;
+  background:var(--warn); color:#fff; border:none; cursor:pointer;
+}
+.audioBadge:hover{filter:brightness(1.08)}
+.underlineInput{
+  flex:1; min-width:0; border:none; border-bottom:1.5px solid var(--line); background:transparent;
+  color:var(--ink); font:inherit; padding:4px 2px;
+}
+.underlineInput:focus-visible{outline:none; border-bottom-color:var(--accent)}
+.twoColGrid{display:grid; grid-template-columns:1fr 1fr; gap:8px 28px}
+@media (max-width:640px){ .twoColGrid{grid-template-columns:1fr} }
+.abRow{display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:1px dashed var(--line)}
+.abRow .txt{flex:1}
+.mcqCell .q{margin-bottom:14px}
+
+/* "Giấy ô vuông" (方格/田字格) cho bài Viết — mô phỏng trực quan giấy tập viết trong sách
+   (tóm tắt 100 chữ, bài sửa lỗi định dạng) bằng lưới CSS thay vì tách từng ô <input> (không khả
+   thi để gõ) — user 2026-09-18 gửi ảnh sách yêu cầu bám sát hơn. */
+.gridPaper{
+  font-family:'Noto Serif SC',serif; font-size:16px; line-height:34px;
+  background-image:
+    linear-gradient(to right, var(--line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size:34px 34px; background-color:var(--surface);
+  border:1px solid var(--line); border-radius:6px; padding:0 2px;
+  color:var(--ink); white-space:pre-wrap; word-break:break-all;
+}
+textarea.gridPaper{width:100%; min-height:170px; resize:vertical; font:inherit}
+.scaffold{color:var(--accent); font-family:'Noto Serif SC',serif; font-size:15px; line-height:1.9; margin-bottom:10px}
+table.vocabTable tr:last-child td{border-bottom:none}
+.tableWrap{overflow-x:auto}
+
+section.panel{display:none; padding-top:18px}
+section.panel.active{display:block}
+
+nav.subtabs{display:flex; gap:4px; margin-bottom:16px; border-bottom:1px solid var(--line)}
+nav.subtabs button{
+  font:inherit; font-weight:600; font-size:13px; color:var(--ink-soft); background:none; border:none;
+  padding:9px 14px; cursor:pointer; border-bottom:2px solid transparent;
+}
+nav.subtabs button[aria-selected="true"]{color:var(--accent); border-bottom-color:var(--accent)}
+.subpanel{display:none}
+.subpanel.active{display:block}
+
+.examBar{
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:12px 18px; margin-bottom:16px;
+}
+.parts{display:flex; gap:8px; flex-wrap:wrap}
+.partChip{
+  font-size:13.5px; font-weight:600; padding:6px 12px; border-radius:6px;
+  background:var(--surface-2); color:var(--ink-soft); border:1px solid var(--line);
+}
+.partChip b{color:var(--ink); font-weight:700}
+.timerBox{display:flex; align-items:center; gap:10px}
+.timerBox .lbl{font-size:11px; color:var(--ink-faint)}
+.timer{font-size:24px; font-weight:700; min-width:74px; text-align:right}
+.timer.low{color:var(--bad)}
+.btn{
+  font:inherit; font-weight:700; font-size:13px; border-radius:6px; border:1px solid var(--line);
+  padding:8px 16px; background:var(--surface); color:var(--ink); cursor:pointer;
+}
+.btn.primary{background:var(--accent); color:var(--accent-ink); border-color:transparent}
+.btn:disabled{opacity:.4; cursor:not-allowed}
+.btn:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+.demoNote{
+  font-size:12px; color:var(--warn); background:var(--warn-soft); border:1px solid var(--warn);
+  border-radius:6px; padding:8px 12px; margin-bottom:16px;
+}
+.tag{
+  display:inline-block; font-size:10px; font-weight:700; color:var(--warn); background:var(--warn-soft);
+  border-radius:4px; padding:2px 6px; margin-left:6px; vertical-align:middle;
+}
+
+.partHead{
+  display:flex; align-items:baseline; gap:10px; margin:26px 0 10px;
+  padding-bottom:6px; border-bottom:1px solid var(--line);
+}
+.partHead .cn{font-family:'Noto Serif SC',serif; font-weight:700; font-size:16px}
+.partHead .count{margin-left:auto; font-size:12px; color:var(--ink-faint)}
+
+/* Icon "i" hover ra tip ngắn, không chiếm diện tích — dùng ở đầu mỗi dạng bài tập (user 2026-09-18) */
+.infoIcon{position:relative; display:inline-flex; margin-left:2px; vertical-align:middle}
+.infoDot{
+  display:inline-flex; align-items:center; justify-content:center; width:16px; height:16px;
+  border-radius:50%; background:var(--surface-2); color:var(--ink-soft); border:1px solid var(--line);
+  font-size:11px; font-weight:700; font-style:italic; font-family:Georgia,serif; cursor:help; user-select:none;
+}
+.infoIcon .infoTip{
+  position:absolute; left:0; top:calc(100% + 9px); width:300px; max-width:75vw;
+  max-height:min(320px, 70vh); overflow-y:auto;
+  background:var(--ink); color:var(--bg); font-size:12.5px; font-weight:500; line-height:1.6;
+  font-family:'Noto Sans SC',sans-serif; padding:9px 11px; border-radius:8px; z-index:30;
+  opacity:0; transform:translateY(-3px); pointer-events:none; transition:opacity .12s, transform .12s;
+}
+.infoIcon:hover .infoTip, .infoIcon:focus-within .infoTip{opacity:1; transform:translateY(0)}
+.infoIcon .infoTip::after{
+  content:''; position:absolute; bottom:100%; left:8px; border:5px solid transparent; border-bottom-color:var(--ink);
+}
+
+.audioCard{
+  display:flex; align-items:center; gap:14px; background:var(--surface); border:1px solid var(--line);
+  border-radius:var(--radius); padding:12px 16px; margin-bottom:14px;
+}
+.audioCard .dot{width:10px; height:10px; border-radius:50%; background:var(--ink-faint); flex:none}
+.audioCard .dot.playing{background:var(--live); animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.audioCard .state{font-size:13px; font-weight:600; color:var(--ink-soft)}
+.audioCard .replay{margin-left:auto}
+
+.passage{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:18px 20px; margin-bottom:14px; font-size:17.5px; font-weight:500; line-height:2.1; font-family:'Noto Serif SC',serif;
+}
+
+.q{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:14px 16px; margin-bottom:10px;
+}
+.q .qhead{display:flex; gap:8px; font-size:17px; font-weight:600; margin-bottom:12px; font-family:'Noto Serif SC',serif; line-height:1.7}
+.q .qhead .n{color:var(--accent); flex:none; font-family:'JetBrains Mono',monospace}
+.opts{display:grid; gap:8px}
+.opt{
+  display:flex; gap:10px; align-items:flex-start; padding:10px 12px; border-radius:8px; border:1px solid transparent;
+  cursor:pointer; font-size:16.5px; font-weight:500; font-family:'Noto Serif SC',serif;
+}
+.opt:hover{background:var(--surface-2)}
+.opt input{margin-top:3px}
+.q.graded .opt.correct{background:var(--good-soft); border-color:var(--good)}
+.q.graded .opt.wrong{background:var(--bad-soft); border-color:var(--bad)}
+
+.scoreBar{
+  display:flex; justify-content:space-between; align-items:center; margin:22px 0;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:14px 18px;
+}
+.scoreBar .big{font-size:26px; font-weight:700}
+.scoreBar .big .of{font-size:15px; color:var(--ink-faint); font-weight:500}
+
+.taskCard{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:18px; margin-bottom:18px;
+}
+.taskCard h3{margin:0 0 4px; font-size:16px; font-family:'Noto Serif SC',serif; color:var(--accent)}
+.taskCard .prompt{font-size:16.5px; font-weight:500; color:var(--ink); margin-bottom:12px; line-height:1.9; font-family:'Noto Serif SC',serif}
+textarea{
+  width:100%; min-height:150px; resize:vertical; font:inherit; font-size:15px; line-height:1.9;
+  border:1px solid var(--line); border-radius:8px; padding:12px 14px; background:var(--bg); color:var(--ink);
+  font-family:'Noto Serif SC',serif;
+}
+textarea:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
+.taskFoot{display:flex; justify-content:space-between; align-items:center; margin-top:8px; font-size:12.5px; color:var(--ink-faint)}
+.charCount.over{color:var(--bad); font-weight:700}
+.feedback{
+  margin-top:14px; padding:14px 16px; border-radius:8px; background:var(--surface-2); border:1px solid var(--line);
+  font-size:13.5px; line-height:1.7; white-space:pre-wrap;
+}
+.feedback.loading{color:var(--ink-faint); font-style:italic}
+
+.hskkFlow{display:flex; flex-direction:column; gap:18px}
+.hskkPart{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px;
+}
+.hskkPart .ph{display:flex; align-items:baseline; gap:10px; margin-bottom:12px}
+.hskkPart .ph .cn{font-family:'Noto Serif SC',serif; font-weight:700; font-size:17px}
+.hskkPart .ph .meta{margin-left:auto; font-size:12px; color:var(--ink-faint)}
+.hskkItem{border-top:1px solid var(--line); padding-top:14px; margin-top:14px}
+.hskkItem:first-of-type{border-top:none; padding-top:0; margin-top:0}
+.hskkItem .stem{font-family:'Noto Serif SC',serif; font-size:17.5px; font-weight:500; line-height:1.95; margin-bottom:10px}
+.judgeRow{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:10px}
+.copyHint{font-size:12.5px; color:var(--ink-soft)}
+.pasteBox{margin-top:8px}
+.pasteLabel{font-size:12.5px; color:var(--ink-faint); margin-bottom:6px}
+.pasteBox textarea{min-height:70px; font-size:13.5px; font-family:'Noto Sans SC',sans-serif}
+.silentBox{
+  display:flex; align-items:center; gap:10px; background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-bottom:10px; font-size:14px; color:var(--ink-soft);
+}
+
+footer.credit{text-align:center; color:var(--ink-faint); font-size:11.5px; margin-top:40px}
+
+.langBox{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px; margin-bottom:18px}
+.langBox h3{margin:0 0 12px; font-size:16px; font-family:'Noto Serif SC',serif; color:var(--accent)}
+.langItem{border-top:1px solid var(--line); padding-top:12px; margin-top:12px}
+.langItem:first-of-type{border-top:none; padding-top:0; margin-top:0}
+.langItem .pat{font-family:'Noto Serif SC',serif; font-weight:700; font-size:16px; margin-bottom:6px}
+.langItem .ex{font-family:'Noto Serif SC',serif; font-size:15px; color:var(--ink-soft); line-height:1.9; padding-left:14px; border-left:2px solid var(--line)}
+.langItem .practice{margin-top:8px; font-size:13.5px; background:var(--accent-soft); color:var(--accent); border-radius:6px; padding:8px 12px}
+
+@media (max-width:480px){
+  .examBar{flex-direction:column; align-items:stretch}
+  .timerBox{justify-content:space-between}
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1 class="serif">中国汉语水平考试 HSK（六级）+ HSKK（高级）</h1>
+      <div class="sub">机考模拟系统 · 依据 HSK 3.0 标准结构</div>
+    </div>
+    <span class="badge">模拟考场</span>
+  </header>
+
+  <button class="sidebarToggle" id="sidebarToggleBtn" style="margin:14px 0 0">☰ 课程安排</button>
+
+  <!-- Đồng bộ tiến độ giữa các máy: localStorage chỉ lưu trên đúng trình duyệt này (khác `db` của
+       Claude Artifact cũ) — xuất ra để đưa Claude Code lưu vào file trong repo, dán lại ở máy khác
+       (user 2026-09-18, chuyển app sang file HTML tự chứa). -->
+  <details class="taskCard" style="margin-top:14px">
+    <summary style="cursor:pointer; font-weight:700">🔄 Đồng bộ tiến độ giữa các máy</summary>
+    <div style="font-size:12.5px; color:var(--ink-faint); margin:10px 0">Tiến độ chỉ lưu trên trình duyệt này. Dùng máy khác? Xuất ở đây, đưa đoạn copy được cho Claude Code (nhờ lưu vào file trong repo), rồi dán lại ở ô "Nhập" bên dưới khi mở trên máy kia.</div>
+    <button class="btn primary" onclick="exportProgress()">📤 Xuất tiến độ (copy)</button>
+    <span class="copyHint" id="sync-hint"></span>
+    <textarea id="sync-export-box" style="display:none; min-height:60px; margin-top:8px" readonly></textarea>
+    <div style="margin-top:14px">
+      <div class="pasteLabel">Nhập tiến độ (dán JSON đã xuất trước đó):</div>
+      <textarea id="sync-import-box" style="min-height:60px"></textarea>
+      <div style="margin-top:8px"><button class="btn" onclick="importProgress()">📥 Nhập</button></div>
+    </div>
+  </details>
+
+  <div class="layout">
+  <div class="sidebarScrim" id="sidebarScrim"></div>
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="mainCol">
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-part="p1" id="tab-p1-btn">Phần 1 · 要点</button>
+    <button role="tab" aria-selected="false" data-part="p2">Phần 2 · 模拟测试</button>
+    <button role="tab" aria-selected="false" data-part="p3">Phần 3 · 总结</button>
+    <span id="lesson-cite" class="mono"></span>
+  </nav>
+
+  <!-- ============ 听力 ============ -->
+  <section class="panel active" id="panel-nghe">
+    <div class="subpanel active" data-sub-of="nghe" data-sub="p1">
+      <div id="nghe-vocab"></div>
+    </div>
+    <div class="subpanel" data-sub-of="nghe" data-sub="p2">
+      <div id="nghe-body"></div>
+    </div>
+  </section>
+
+  <!-- ============ 阅读 ============ -->
+  <section class="panel" id="panel-doc">
+    <div class="subpanel active" data-sub-of="doc" data-sub="p2">
+      <div id="doc-body"></div>
+    </div>
+  </section>
+
+  <!-- ============ 书写 ============ -->
+  <section class="panel" id="panel-viet">
+    <div class="subpanel active" data-sub-of="viet" data-sub="p2">
+      <div id="viet-body"></div>
+    </div>
+  </section>
+
+  <!-- ============ HSKK ============ -->
+  <section class="panel" id="panel-hskk">
+    <div class="subpanel active" data-sub-of="hskk" data-sub="p1">
+      <div id="lang-points"></div>
+    </div>
+
+    <div class="subpanel" data-sub-of="hskk" data-sub="p2">
+      <div class="judgeRow">
+        <button class="btn primary" onclick="copyFullHskkPrompt()">📋 Copy toàn bộ đề chấm cho Claude App</button>
+        <span class="copyHint" id="hskk-full-copyhint"></span>
+      </div>
+      <div class="hskkFlow">
+        <div class="hskkPart" id="hskk-p1">
+          <div class="ph"><span class="cn">听后复述</span><span class="infoIcon" tabindex="0"><span class="infoDot">i</span><span class="infoTip">Vừa nghe vừa ghi từ khoá (thời gian/địa điểm/số liệu/quan hệ nhân quả). Kể lại theo dàn ý, không cần đúng từng chữ — quan trọng là đủ ý chính và mạch lạc.</span></span><span class="meta">3题 · 每题约2分钟</span></div>
+          <div id="hskk-p1-items"></div>
+        </div>
+        <div class="hskkPart" id="hskk-p2">
+          <div class="ph"><span class="cn">朗读</span><span class="infoIcon" tabindex="0"><span class="infoDot">i</span><span class="infoTip">Đọc nhẩm 1 lượt trong đầu trước để nắm ngắt câu/ngữ điệu. Phát âm rõ, ngắt hơi đúng dấu câu, tốc độ vừa phải — đừng đọc quá nhanh để tránh vấp.</span></span><span class="meta">1题 · 2分钟</span></div>
+          <div id="hskk-p2-items"></div>
+        </div>
+        <div class="hskkPart" id="hskk-p3">
+          <div class="ph"><span class="cn">回答问题</span><span class="infoIcon" tabindex="0"><span class="infoDot">i</span><span class="infoTip">Trả lời có cấu trúc: nêu quan điểm → 1-2 lý do → ví dụ ngắn → chốt lại. Không cần dài, cần rõ ràng và có lập luận.</span></span><span class="meta">2题 · 每题2分钟</span></div>
+          <div id="hskk-p3-items"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 总结 ============ -->
+  <section class="panel" id="panel-summary">
+    <div class="examBar">
+      <div class="parts">
+        <span class="partChip">当前查看：<b id="sum-day">第1课</b> · <span id="sum-skill">口语（HSKK）</span></span>
+      </div>
+      <span class="btn" id="sum-doneBtn" style="cursor:default">⏳ 系统判定：本课进行中</span>
+    </div>
+    <div class="taskCard" id="sum-all"></div>
+  </section>
+
+  </main>
+  </div>
+</div>
+
+<script>
+/* Icon "i" hover ra tip ngắn tại mỗi dạng bài tập (nghe/nói/đọc/viết) — user 2026-09-18:
+   không biết làm dạng đó thì hover xem mẹo, tip phải ngắn gọn/logic/áp dụng được ngay. */
+function infoIcon(tip){
+  return `<span class="infoIcon" tabindex="0"><span class="infoDot">i</span><span class="infoTip">${tip}</span></span>`;
+}
+
+/* ĐỔI TỪ Artifact `sample` (gọi Claude thẳng trong trang) SANG cơ chế Copy-đề-cho-Claude + dán
+   kết quả (2026-09-18, cùng lý do đổi sang file HTML tự chứa — file thường không gọi được Claude
+   trực tiếp). Áp dụng thống nhất cho MỌI chỗ trước đây dùng AI chấm (Viết/Đọc), giống hệt cơ chế
+   đã có sẵn cho phần Nói (HSKK/Nghe 四+七). Kết quả dán vào lưu trong localStorage (`feedback/<id>`)
+   nên KHÔNG mất khi tải lại trang (khác bản Artifact cũ, feedback AI chỉ ở bộ nhớ tạm). */
+async function copyToClipboard(text, hintId){
+  const hint = document.getElementById(hintId);
+  try{
+    await navigator.clipboard.writeText(text);
+    if(hint) hint.textContent = '✅ Đã copy — dán vào Claude (app/web) để lấy nhận xét, xong dán kết quả vào ô bên dưới rồi Lưu.';
+  }catch(e){
+    if(hint) hint.textContent = '⚠️ Không copy được tự động — vui lòng thử lại.';
+  }
+}
+function copyPasteFeedbackBlock(id, copyFnName, copyLabel){
+  return `<div class="judgeRow">
+      <button class="btn primary" onclick="${copyFnName}()">${copyLabel}</button>
+      <span class="copyHint" id="${id}-copyhint"></span>
+    </div>
+    <div class="pasteLabel">Dán nhận xét từ Claude vào đây:</div>
+    <textarea id="${id}-input" style="min-height:80px"></textarea>
+    <div style="margin-top:8px"><button class="btn primary" onclick="savePasteFeedback('${id}')">💾 Lưu</button></div>
+    <div class="feedback" id="${id}" style="display:none"></div>`;
+}
+function savePasteFeedback(id){
+  const input = document.getElementById(id+'-input');
+  const val = input.value.trim();
+  if(!val) return;
+  const fb = document.getElementById(id);
+  fb.style.display = 'block';
+  fb.textContent = val;
+  lsSet('feedback/'+id, val);
+  maybeAutoMarkDone();
+}
+function loadPasteFeedback(id){
+  const val = lsGet('feedback/'+id, '');
+  if(!val) return;
+  const input = document.getElementById(id+'-input');
+  const fb = document.getElementById(id);
+  if(input) input.value = val;
+  if(fb){ fb.style.display = 'block'; fb.textContent = val; }
+}
+
+/* ---------------- 听力 ---------------- */
+/* Bám ĐÚNG cấu trúc sách 《发展汉语·高级听力I》 (30课). Buổi 1 Nghe = 第1课《珍惜现在》 —
+   NỘI DUNG THẬT (课文 + 一/三/五/六 lấy nguyên từ `文本与答案` PDF, có đáp án chính thức của sách),
+   không phải demo nữa (khác các buổi Nghe khác vẫn 示例, xem `REAL_CONTENT_DAYS`). Audio vẫn là
+   TTS (edge_tts) vì file gốc trong raw/ chưa tải được (chỉ có link mega.nz, việc tự tải bị chặn ở
+   tầng quyền hệ thống — xem [[reference-fazhan-hanyu-source-material]]) — script lời đọc thì ĐÃ
+   THẬT (đúng nguyên văn sách), chỉ giọng đọc là TTS thay vì bản ghi âm gốc. */
+const NGHE_LESSON = {
+  warmupDiscussion: ['你在哪里看到过类似的教学楼？你觉得它有什么优点和缺点？', '在你学习过的地方中，哪个让你印象最深？为什么？'],
+  vocab: [
+    {hz:'得知', py:'dézhī', pos:'动', mean:'知道。'},
+    {hz:'年迈', py:'niánmài', pos:'形', mean:'年龄大。'},
+    {hz:'百倍', py:'bǎibèi', pos:'', mean:'形容数量多或程度深。'},
+    {hz:'简直', py:'jiǎnzhí', pos:'副', mean:'表示完全如此。'},
+    {hz:'天壤之别', py:'tiānrǎng zhī bié', pos:'成', mean:'天上和地下的差别，形容差别极大。'},
+    {hz:'不已', py:'bùyǐ', pos:'动', mean:'不停。'},
+    {hz:'装修', py:'zhuāngxiū', pos:'动', mean:'给房子安上门窗、水电等设备，并粉刷房屋；也指按个性要求对房间结构、设备、家具等重新设计施工。'},
+    {hz:'扫除', py:'sǎochú', pos:'动', mean:'（给房间等）打扫卫生。'},
+    {hz:'偏偏', py:'piānpiān', pos:'副', mean:'表示事实和希望的正好相反。'},
+    {hz:'向往', py:'xiàngwǎng', pos:'动', mean:'因热爱、羡慕某种事物或境界而希望得到或达到。'},
+    {hz:'杂乱', py:'záluàn', pos:'形', mean:'没有顺序或条理。'},
+    {hz:'是否', py:'shìfǒu', pos:'副', mean:'是不是。'},
+    {hz:'喧闹', py:'xuānnào', pos:'形', mean:'声音很乱，很吵闹。'},
+    {hz:'心慌', py:'xīnhuāng', pos:'动', mean:'课文中指心中感到压抑。'},
+    {hz:'单调', py:'dāndiào', pos:'形', mean:'简单，重复，没有变化。'},
+    {hz:'绕远儿', py:'ràoyuǎnr', pos:'动', mean:'走因路线曲折、环绕而较远的路。'},
+    {hz:'情节', py:'qíngjié', pos:'名', mean:'事情的变化和经过。'},
+    {hz:'依恋', py:'yīliàn', pos:'动', mean:'依靠、留恋，舍不得离开。'},
+    {hz:'悔悟', py:'huǐwù', pos:'动', mean:'认识到了自己的过错后感到很后悔。'},
+  ],
+  ex1: {
+    tip:'Đây là dạng suy luận QUY NẠP (tìm điểm chung), không có đáp án đúng/sai tuyệt đối — mỗi nhóm 3 câu đều lặp lại 1 từ/cụm từ giống nhau (vd nhóm 1 lặp lại "别提"), nghe xong chỉ cần chỉ ra đúng từ/cụm đó và đoán tác dụng của nó trong câu.',
+    audio: 'nghe_ex1_all.mp3', // 1 track DUY NHẤT đọc nối tiếp cả 6 nhóm, đúng như sách (track "1-2")
+    groups: [
+      {label:'第一组'}, {label:'第二组'}, {label:'第三组'},
+      {label:'第四组'}, {label:'第五组'}, {label:'第六组'},
+    ],
+  },
+  ex2: {
+    tip:'2 câu hỏi này không có đáp án ABCD — nghe xong tự trả lời bằng lời của mình. Câu 1 hỏi THÔNG TIN cơ bản (ai viết, hoàn cảnh gì), câu 2 hỏi RÕ RÀNG tác giả thích toà nào hơn — bài có nhắc rất trực tiếp ở đoạn 3, đừng suy diễn ngược lại.',
+    audio: 'nghe_main.mp3',
+    questions: ['写文章的是个什么人？', '作者到底喜欢哪个教学楼？'],
+  },
+  ex3: {
+    tip:'Bảng A(东)/B(西) là liệt kê ĐẶC ĐIỂM KHÁCH QUAN của 2 toà nhà được so sánh trong đoạn [2] của bài — mỗi đặc điểm chỉ thuộc về 1 bên. Cách kiểm tra: tìm đúng câu trong bài nhắc đến đặc điểm đó, xem câu ấy đang mô tả toà nào (đoạn thường tả toà mới TRƯỚC, toà cũ SAU) — đừng suy theo cảm tính "toà mới chắc tốt hơn", cứ bám sát văn bản đã nghe.',
+    audio: 'nghe_main.mp3',
+    items: [
+      {text:'教学楼又老又旧', a:'B'},
+      {text:'教室很矮', a:'A'},
+      {text:'教室很小', a:'A'},
+      {text:'去操场不方便', a:'A'},
+      {text:'教室窗户又大又脏', a:'B'},
+      {text:'窗外就是绿树', a:'B'},
+      {text:'离中心花园很近', a:'B'},
+      {text:'去实验楼很方便', a:'B'},
+      {text:'教学楼内部装修很一般', a:'B'},
+      {text:'教室的墙很脏，擦不干净', a:'B'},
+      {text:'窗户很高，玻璃不好擦', a:'B'},
+      {text:'去教室要爬楼梯', a:'A'},
+    ],
+  },
+  ex4: {
+    tip:'Dựa vào bảng đã phân loại ở 三 để KỂ LẠI bằng lời của mình (không đọc nguyên câu trong bài) — nên có cấu trúc: đặc điểm 东教学楼(A) thế nào → đặc điểm 西教学楼(B) thế nào → theo bạn cái nào là ưu/nhược điểm, đối chiếu với quan điểm CỦA TÁC GIẢ trong bài (tác giả cuối cùng lại thấy tiếc nuối toà cũ).',
+    questions: ['东教学楼有什么特点？', '西教学楼有什么特点？这些特点在作者看来是优点还是缺点？'],
+  },
+  ex5: {
+    tip:'5 câu hỏi đều bám sát trình tự 3 đoạn của bài — câu 1-2 hỏi đoạn [1] (cảm nhận ban đầu), câu 3-4 hỏi đoạn [2] (sau khi chuyển sang toà mới), câu 5 hỏi đoạn [3] (bài học cuối). 3 phương án sai thường là đúng NGỮ PHÁP nhưng SAI so với nội dung đã nghe (đảo ngược cảm xúc, hoặc thêm chi tiết bài không nhắc) — không chọn theo cảm giác quen tai.',
+    audio: 'nghe_main.mp3',
+    qs: [
+      {stem:'刚上中学的时候，发生了以下哪件事？', opts:['"我"什么话都不愿意说','"我"一直羡慕别的同学','"我们"在西教学楼上课','学校新盖了东教学楼'], a:2},
+      {stem:'那时候"我"对东、西教学楼怎么看？', opts:['东教学楼好得不得了','老的教学楼窗户都大','想起东教学楼就生气','西教学楼从不大扫除'], a:0},
+      {stem:'进了东教学楼，"我"发现什么？', opts:['"我们"班的人太多了','新教室一点儿也不好','在那儿上课心里紧张','教室比以前的小了一半'], a:1},
+      {stem:'跟西教学楼比，东教学楼的缺点是什么？', opts:['进楼就是教室','窗外没有绿树','在居民楼中间','离宿舍特别远'], a:1},
+      {stem:'由教学楼"我"想到了什么？', opts:['在父母身边特别好','多忙也要看望父母','今天的一切都要珍惜','人都不懂得珍惜过去'], a:2},
+    ],
+  },
+  ex6: {
+    tip:'Ngân hàng từ dùng CHUNG cho cả 10 câu — lưu ý CÓ THỂ có từ được dùng LẶP LẠI hơn 1 lần (không phải mỗi từ chỉ dùng đúng 1 lần duy nhất), nên đừng gạch bỏ hẳn 1 từ ngay sau khi đã dùng nó ở 1 câu khác. Điền câu nào chắc chắn về nghĩa trước, các câu còn lại đối chiếu bằng cách LOẠI TRỪ dần.',
+    audio: 'nghe_ex6.mp3',
+    bank: ['强过','单调','出出进进','绕远儿','别提','百倍','简直','比','谁'],
+    items: [
+      {sentence:'从我家到学校___多近了，走路也就是五分钟。', a:'别提'},
+      {sentence:'和你___，我跑得慢多了。', a:'比'},
+      {sentence:'这次实习收获___太大了。', a:'简直'},
+      {sentence:'咱们这么走有点儿___，可是前面在修路，没办法。', a:'绕远儿'},
+      {sentence:'要说汉语，跟___比，他也不差。', a:'谁'},
+      {sentence:'我的计划___他百倍。', a:'强过'},
+      {sentence:'那个地方太漂亮了，强过我们这儿___。', a:'百倍'},
+      {sentence:'学生的生活虽然___，但很充实。', a:'单调'},
+      {sentence:'那么多人___的，我哪记得住小李来了没有啊？', a:'出出进进'},
+      {sentence:'昨天的天气___多好了。', a:'别提'},
+    ],
+  },
+  ex7: {
+    tip:'Đây là 说一说 mở rộng của SÁCH (chủ đề ký túc xá, không phải giáo trình cũ đã học ở bài) — trả lời theo cấu trúc: nêu cảm nhận/kỷ niệm cụ thể → giải thích lý do → (nếu có) rút ra 1 nhận xét cá nhân, tránh trả lời 1 câu cụt lủn.',
+    questions: ['第一次走进宿舍的时候，你怎么想？', '你宿舍的优点是什么？缺点是什么？', '在你学习过的学校中，给你留下深刻记忆的是哪所学校？为什么？'],
+  },
+};
+
+/* Cấu trúc 阅读 bám ĐÚNG sách 发展汉语·高级阅读: mỗi buổi = 4 文章 (细读/通读/略读/查读) +
+   1 实用阅读, mỗi bài có sẵn đáp án riêng (như sách) — không phải đề thi mô phỏng 3 phần như cũ.
+   Đây là bộ demo/khung để duyệt UI (user 2026-09-18), nội dung thật sẽ nạp sau. */
+/* Tip mỗi bài tập bám ĐÚNG nội dung/bẫy của câu đó (góc nhìn giáo viên), KHÔNG dùng chung 1 câu
+   mẹo áp cho mọi bài — user 2026-09-18 chê tip chung chung "không hiệu quả". Khi thay bằng nội
+   dung thật, PHẢI viết lại tip theo đúng bài thật, không giữ nguyên tip demo này. */
+const DOC_ARTICLES = [
+  {
+    key:'a1', label:'文章一', title:'休闲与游戏',
+    passage:'如今，"休闲"已成为生活中的重要内容。从社会发展的规律看，社会文明程度越高，[1]。因为人一忙就容易乱，处理问题[2]。',
+    blanksTip:'Chỗ [1]: đọc kỹ câu ngay trước ("xã hội càng văn minh") để xác định QUAN HỆ NHÂN QUẢ — chỗ trống phải là kết quả cùng chiều với vế đó, so 2 lựa chọn xem cái nào thực sự nối tiếp đúng logic, đừng chọn theo cảm giác "nghe hợp lý". Chỗ [2]: câu sau giải thích lý do "vì bận nên dễ loạn" — xác định chỗ trống đang nói hậu quả THUỘC LOẠI GÌ (tư duy/thành công/thất bại...) trước khi so 2 lựa chọn.',
+    blanks:[
+      {opts:['休闲的内容就越丰富','刺激的活动就越多'], a:0},
+      {opts:['就没了条理和智慧','就越容易成功'], a:0},
+    ],
+    mcq:[
+      {stem:'"休闲的价值不言而喻"是什么意思？', opts:['休闲的作用不说也很明白','休闲需要用语言解释','休闲不重要','休闲很复杂'], a:0,
+        tip:'Đây là câu hỏi TỪ VỰNG/THÀNH NGỮ (不言而喻), không phải hỏi nội dung bài — nếu không chắc nghĩa, thử thay nghĩa đen "không cần nói ra cũng hiểu được" vào đúng vị trí câu gốc, rồi xem lựa chọn nào diễn đạt lại đúng ý đó nhất.'},
+    ],
+    multi:{stem:'文章提到游戏在成长中的作用包括：', opts:['培养智慧','锻炼勇气','增加收入','创造基础'], answers:[0,1,3],
+      tip:'Đối chiếu TỪNG lựa chọn với đúng các ý được liệt kê ở đoạn [3] của bài — chỉ chọn ý nào bạn tìm thấy CÓ xuất hiện nguyên trong đoạn đó, gạch bỏ ngay ý nào không tìm thấy dù nghe có vẻ hợp lý (bẫy thường là 1 ý nằm ngoài chủ đề đang bàn, ví dụ liên quan tới tiền bạc/thời gian trong khi bài đang nói về vai trò của trò chơi).'},
+  },
+  {
+    key:'a2', label:'文章二', title:'"没什么"和"有什么"',
+    passage:'（示例段落）有人总说"没什么"，其实心里[1]。',
+    blanksTip:'Chữ "其实" (thực ra) luôn báo hiệu Ý SAU khác với ấn tượng bên ngoài ở vế trước — xác định vế trước đang thể hiện thái độ gì ra bên ngoài, rồi tìm lựa chọn diễn tả đúng CHIỀU NGƯỢC LẠI của thái độ đó.',
+    blanks:[{opts:['很在意','不在乎'], a:0}],
+    mcq:[{stem:'作者认为"没什么"这句话：', opts:['是客气的说法','是真心话','没有意义','是命令'], a:0,
+      tip:'Câu hỏi này về bản chất hỏi lại đúng ý của chữ "其实" ở đoạn trên — nếu đã xác định được chỗ trống đó, áp đúng logic tương tự vào 4 lựa chọn của câu này.'}],
+    multi:null,
+  },
+  {
+    key:'a3', label:'文章三', title:'散步的益处',
+    passage:'（示例段落）散步不仅能锻炼身体，还能让人[1]。',
+    blanksTip:'Cấu trúc "不仅…还能…" bắt buộc vế sau phải khác LOẠI lợi ích với vế trước — xác định vế trước đang nói lợi ích thuộc loại gì (thể chất/tinh thần/vật chất...), rồi chọn lựa chọn thuộc LOẠI KHÁC với loại đó.',
+    blanks:[{opts:['放松心情','花更多钱'], a:0}],
+    mcq:[{stem:'文章主要谈的是：', opts:['散步的好处','跑步的危险','饮食习惯','工作压力'], a:0,
+      tip:'Hỏi Ý CHÍNH toàn bài — đối chiếu từng lựa chọn với đúng phạm vi của tiêu đề bài, loại các lựa chọn chỉ khớp với 1 chi tiết nhỏ chứ không phải ý bao trùm cả bài.'}],
+    multi:null,
+  },
+  {
+    key:'a4', label:'文章四', title:'吃面的"学问"',
+    passage:'（示例段落）不同地区吃面的方式不同，比如[1]。',
+    blanksTip:'Chữ "比如" (ví dụ như) yêu cầu chỗ trống phải là 1 VÍ DỤ CỤ THỂ minh hoạ cho câu trước (khác biệt vùng miền khi ăn mì), không thể là 1 nhận định chung chung không có tính minh hoạ.',
+    blanks:[{opts:['北方人喜欢拉面','南方人不吃面'], a:0}],
+    mcq:[{stem:'根据文章，下列说法正确的是：', opts:['吃面很讲究','面条起源不明','面条很贵','面条只在北方吃'], a:0,
+      tip:'Đây là bài 查读 (đọc lướt tìm thông tin) — không cần đọc hết câu chữ, quét nhanh tìm đúng từ khoá trong 4 đáp án xuất hiện ở đâu trong bài rồi đối chiếu, KHÔNG suy luận thêm ngoài những gì bài viết.'}],
+    multi:null,
+  },
+  {
+    key:'practical', label:'实用阅读', title:'选课通知',
+    passage:'（示例通知）本学期选课将于9月20日开始，截止到9月25日，逾期不予办理。',
+    blanks:null,
+    mcq:[{stem:'选课截止日期是：', opts:['9月20日','9月25日','9月30日','10月1日'], a:1,
+      tip:'Thông báo hành chính luôn có 2 mốc riêng biệt: 开始 (bắt đầu) và 截止 (kết thúc/hạn chót) — câu hỏi này hỏi mốc SAU, đọc kỹ để không nhầm sang ngày mở đăng ký.'}],
+    multi:null,
+  },
+];
+
+/* ---------------- 课程安排 sidebar (theo lịch tuần chuẩn trong kế hoạch) ---------------- */
+const SCHEDULE_START = new Date(2026, 8, 17); // 17/9/2026, Thứ 5
+const TOTAL_WEEKS = 17;
+const DOW_SKILL = { // 0=CN .. 6=Thứ 7
+  0:{tab:'viet', cn:'书写', label:'第二题写作'},
+  1:{tab:'nghe', cn:'听力', label:''},
+  2:{tab:'hskk', cn:'口语', label:''},
+  3:{tab:'nghe', cn:'听力', label:''},
+  4:{tab:'hskk', cn:'口语', label:''},
+  5:{tab:'doc',  cn:'阅读', label:''},
+  6:{tab:'hskk', cn:'口语', label:''},
+};
+/* Nguồn sách theo từng kỹ năng — mỗi lần buổi đó xuất hiện thì lấy đúng 1 bài kế tiếp,
+   hết quyển I thì qua quyển II (theo yêu cầu user, không dùng công thức chia đều nữa) */
+const LESSON_BOOKS = {
+  hskk: [{title:'《发展汉语·高级口语I》', count:15}, {title:'《发展汉语·高级口语II》', count:15}],
+  nghe: [{title:'《发展汉语·高级听力I》', count:30}, {title:'《发展汉语·高级听力II》', count:30}],
+  doc:  [{title:'《发展汉语·高级阅读I》', count:15}, {title:'《发展汉语·高级阅读II》', count:15}],
+  viet: [{title:'《发展汉语·高级写作I》', count:12}, {title:'《发展汉语·高级写作II》', count:12}],
+};
+function occurrenceCount(n){
+  let c = 0;
+  for(let i=0;i<n;i++) if(SCHEDULE_RAW_TAB(i)===SCHEDULE_RAW_TAB(n-1)) c++;
+  return c;
+}
+function SCHEDULE_RAW_TAB(i){ return DOW_SKILL[new Date(SCHEDULE_START.getFullYear(),SCHEDULE_START.getMonth(),SCHEDULE_START.getDate()+i).getDay()].tab; }
+function lessonRefFor(tab, occIndex){
+  const books = LESSON_BOOKS[tab];
+  if(!books) return null;
+  let remain = occIndex, idx = 0;
+  while(idx < books.length && remain > books[idx].count){ remain -= books[idx].count; idx++; }
+  if(idx >= books.length){ // vượt quá tổng số bài hiện có — quay lại bài cuối quyển cuối để luyện lại
+    const last = books[books.length-1];
+    return {title:last.title, lesson:last.count, overflow:true};
+  }
+  return {title:books[idx].title, lesson:remain, overflow:false};
+}
+function phaseOf(week){
+  if(week<=2) return '阶段1·熟悉';
+  if(week<=6) return '阶段2·练技能';
+  if(week<=15) return '阶段3·冲刺刷题';
+  return '阶段4·高强度冲刺';
+}
+function buildSchedule(){
+  const days = [];
+  for(let i=0;i<TOTAL_WEEKS*7;i++){
+    const d = new Date(SCHEDULE_START);
+    d.setDate(d.getDate()+i);
+    const dow = d.getDay();
+    const week = Math.floor(i/7)+1;
+    days.push({n:i+1, date:d, week, dow, ...DOW_SKILL[dow]});
+  }
+  return days;
+}
+const SCHEDULE = buildSchedule();
+let currentDay = 1;
+let doneDays = {}; // {n: true}
+
+/* ĐỔI TỪ Artifact `db` SANG localStorage (2026-09-18): app chuyển thành file HTML tự chứa mở
+   trực tiếp bằng trình duyệt (giống output/.../tu-vung.html) thay vì Claude Artifact — không còn
+   phụ thuộc đăng nhập đúng tài khoản Claude mới mở được. Lưu ý: localStorage chỉ lưu TRONG ĐÚNG
+   trình duyệt/máy đang mở, không đồng bộ giữa các máy/trình duyệt khác nhau như `db` cũ. */
+function lsGet(key, fallback){
+  try{ const v = localStorage.getItem(key); return v!==null ? JSON.parse(v) : fallback; }catch(e){ return fallback; }
+}
+function lsSet(key, val){
+  try{ localStorage.setItem(key, JSON.stringify(val)); }catch(e){ /* private mode/đầy bộ nhớ — bỏ qua */ }
+}
+
+/* Xuất/Nhập tiến độ để đồng bộ thủ công giữa các máy (thay cho `db` đồng bộ tự động cũ) — chỉ
+   gom đúng các key `progress/*` và `feedback/*`, không đụng gì khác trong localStorage. */
+const LS_SYNC_PREFIXES = ['progress/', 'feedback/'];
+function exportProgressData(){
+  const data = {};
+  for(let i=0;i<localStorage.length;i++){
+    const k = localStorage.key(i);
+    if(LS_SYNC_PREFIXES.some(p=>k.startsWith(p))) data[k] = localStorage.getItem(k);
+  }
+  return data;
+}
+async function exportProgress(){
+  const json = JSON.stringify(exportProgressData());
+  const hint = document.getElementById('sync-hint');
+  try{
+    await navigator.clipboard.writeText(json);
+    hint.textContent = '✅ Đã copy — dán cho Claude Code lưu vào file, hoặc dán sang ô Nhập ở máy khác.';
+  }catch(e){
+    hint.textContent = '⚠️ Không copy tự động được — đã hiện sẵn ở ô bên dưới, tự chọn & copy.';
+    const box = document.getElementById('sync-export-box');
+    box.style.display = 'block';
+    box.value = json;
+  }
+}
+function importProgress(){
+  const raw = document.getElementById('sync-import-box').value.trim();
+  const hint = document.getElementById('sync-hint');
+  if(!raw) return;
+  try{
+    const data = JSON.parse(raw);
+    Object.keys(data).forEach(k=>{
+      if(LS_SYNC_PREFIXES.some(p=>k.startsWith(p))) localStorage.setItem(k, data[k]);
+    });
+    hint.textContent = '✅ Đã nhập — tải lại trang (F5) để áp dụng.';
+  }catch(e){
+    hint.textContent = '⚠️ Dữ liệu dán vào không hợp lệ (không phải JSON đã xuất từ app này).';
+  }
+}
+
+function renderSidebar(){
+  const el = document.getElementById('sidebar');
+  let html = '';
+  let curWeek = 0;
+  SCHEDULE.forEach(day=>{
+    if(day.week !== curWeek){
+      curWeek = day.week;
+      html += `<div class="weekHead">第 ${curWeek} 周 <span class="phaseTag">· ${phaseOf(curWeek)}</span></div>`;
+    }
+    const isDone = !!doneDays[day.n];
+    html += `<button class="dayBtn${day.n===currentDay?' today':''}${isDone?' done':''}" onclick="goToDay(${day.n})">
+      <span class="n">第${day.n}课</span><span class="skill">${day.cn}</span>
+      <span class="doneBox${isDone?' on':''}" title="${isDone?'已完成（系统自动判定）':'尚未完成'}">✓</span>
+    </button>`;
+  });
+  el.innerHTML = html;
+}
+function goToDay(n){
+  currentDay = n;
+  const day = SCHEDULE[n-1];
+  showSkillPanel(day.tab);
+  /* Buổi Đọc/Viết bám thẳng sách, không có nội dung "要点" riêng — ẩn hẳn nút Phần 1,
+     vào thẳng Phần 2 (user 2026-09-18) */
+  const noPart1 = (day.tab === 'doc' || day.tab === 'viet');
+  document.getElementById('tab-p1-btn').hidden = noPart1;
+  showPart(noPart1 ? 'p2' : 'p1');
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebarScrim').classList.remove('open');
+  renderSidebar();
+  updateSummaryHeader();
+  updateLessonNote(n);
+  renderLanguagePoints(day.tab==='hskk' ? n : null);
+}
+/* 表达方式 (mẫu câu) theo từng buổi — ví dụ tự soạn bám chủ đề bài học, không copy nguyên văn sách */
+const LANGUAGE_POINTS = {
+  1: {
+    title: '表达方式 · 第1课「快乐会传染」',
+    items: [
+      {pat:'1. 说到……，……会……', ex:['说到快乐，很多人会想到和朋友聚会、分享好消息的时刻。','说到情绪传染，有人会觉得难以置信，但研究确实证明了这一点。'], practice:'🎯 试着用这个句型说一句：说到"HSK6"，你会想到什么？'},
+      {pat:'2. 如果……，……就……；如果……，那么……', ex:['如果你身边的朋友常常保持乐观，你自己就会更容易感到快乐；如果周围的人情绪低落，那么你也很难独善其身。'], practice:'🎯 用这个句型对比"有好朋友"和"没有好朋友"两种情况。'},
+      {pat:'3. 由于……，(所以)……，因此……', ex:['由于快乐具有"传染性"，(所以)和积极乐观的人多相处会让自己更幸福，因此选择朋友也是一门学问。'], practice:'🎯 用这个句型说说你为什么决定考HSK6。'},
+      {pat:'4. 不是说……吗？为什么/怎么……？', ex:['你不是说社交圈子越广泛就越容易快乐吗？为什么有的人朋友很多，却还是感到孤独？'], practice:'🎯 试着用这个句型表达一次"意外/反驳"的语气。'},
+      {pat:'5. 把A……坏了', ex:['听到大家都为自己感到高兴，这可把他感动坏了。'], practice:'🎯 用"把……坏了"描述一件让你印象深刻的事。'},
+    ],
+  },
+};
+function renderLanguagePoints(n){
+  const el = document.getElementById('lang-points');
+  if(!el) return;
+  const data = LANGUAGE_POINTS[n];
+  if(!data){ el.innerHTML = ''; return; }
+  el.innerHTML = `<div class="langBox"><h3>${data.title}</h3>${data.items.map(it=>`
+    <div class="langItem">
+      <div class="pat">${it.pat}</div>
+      ${it.ex.map(e=>`<div class="ex">${e}</div>`).join('')}
+      <div class="practice">${it.practice}</div>
+    </div>`).join('')}</div>`;
+}
+/* Tên bài ngắn gọn cho buổi đã có nội dung thật — hiện 1 dòng "📖 第N课「Tên bài」", không kèm
+   trích dẫn nguồn/ghi chú dài dòng (user yêu cầu gọn 2026-09-18). N ở đây là SỐ BÀI TRONG SÁCH
+   (`lesson`), KHÔNG phải số buổi theo lịch `n` — 2 số này trùng nhau ở buổi 1 (HSKK) nên trước đó
+   nhầm tưởng dùng `n` là đúng; đến buổi 5 (Nghe = bài 1 sách) mới lộ bug, user báo sai (2026-09-18). */
+const LESSON_TITLES = {1: {lesson:1, title:'快乐会传染'}, 4: {lesson:1, title:'我和汉语'}, 5: {lesson:1, title:'珍惜现在'}};
+const REAL_CONTENT_DAYS = {1:'hskk', 4:'viet', 5:'nghe'}; // buổi đã nạp nội dung thật — cập nhật dần khi bóc thêm bài
+/* Tên sách rút gọn dùng chung cho trích dẫn — KHÔNG dùng ref.title (tên sách dài kiểu
+   《发展汉语·高级写作I》 gộp cả số tập I/II) nữa, chỉ cần đủ để biết đang bám sách nào. */
+const SHORT_BOOK_NAMES = {hskk:'高级口语', nghe:'高级听力', doc:'高级阅读', viet:'高级写作'};
+/* Trích dẫn nguồn bài — CHỈ 1 dòng ngắn gọn, đặt ở góc phải thanh tab (#lesson-cite), áp dụng
+   cho MỌI buổi (không riêng Đọc nữa) — bỏ hẳn tên sách dài + cảnh báo 示例 (user 2026-09-18,
+   lần 2: "dài quá, chỉ cần để như này, ở góc này, áp dụng cho tất cả các buổi"). */
+function updateLessonNote(n){
+  const day = SCHEDULE[n-1];
+  const citeEl = document.getElementById('lesson-cite');
+  if(!citeEl) return;
+  if(REAL_CONTENT_DAYS[n] === day.tab){
+    const lt = LESSON_TITLES[n];
+    citeEl.textContent = lt ? `📖 第${lt.lesson}课「${lt.title}」` : '';
+    return;
+  }
+  const occ = occurrenceCount(n);
+  const ref = lessonRefFor(day.tab, occ);
+  citeEl.textContent = ref ? `📖《${SHORT_BOOK_NAMES[day.tab]}》第${ref.lesson}课` : '';
+}
+function updateSummaryHeader(){
+  const day = SCHEDULE[currentDay-1];
+  document.getElementById('sum-day').textContent = '第'+currentDay+'课';
+  document.getElementById('sum-skill').textContent = day.cn;
+  document.getElementById('sum-doneBtn').textContent = doneDays[currentDay] ? '✅ 系统判定：本课已完成' : '⏳ 系统判定：本课进行中';
+  document.getElementById('sum-doneBtn').className = 'btn'+(doneDays[currentDay]?' primary':'');
+}
+function loadDoneDays(){
+  doneDays = lsGet('progress/done-days', {});
+  renderSidebar();
+  updateSummaryHeader();
+}
+function setDone(n, val){
+  if(doneDays[n] === val) return;
+  doneDays[n] = val;
+  lsSet('progress/done-days', doneDays);
+  renderSidebar();
+  if(n===currentDay) updateSummaryHeader();
+}
+/* Hệ thống tự kiểm tra buổi hiện tại đã làm xong hết các câu/mục chưa — không cho user tự tick tay */
+function checkDoneForDay(n){
+  const day = SCHEDULE[n-1];
+  const filled = fb => fb && fb.style.display!=='none' && !fb.classList.contains('loading') && fb.textContent.trim().length>0 && !fb.textContent.trim().startsWith('⚠️');
+  if(day.tab==='nghe') return Object.keys(ngheResults).length===3 && !!ngheSpeakingResults[n];
+  if(day.tab==='doc') return DOC_ARTICLES.every(a=>!!docResults[a.key]);
+  if(day.tab==='viet') return VIET_WRITING_IDS.every(id=>filled(document.getElementById(id+'-fb')));
+  if(day.tab==='hskk') return !!hskkResults[n];
+  return false;
+}
+function maybeAutoMarkDone(){
+  if(checkDoneForDay(currentDay)) setDone(currentDay, true);
+}
+loadDoneDays();
+renderSidebar();
+updateSummaryHeader();
+document.getElementById('sidebarToggleBtn').addEventListener('click',()=>{
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarScrim').classList.toggle('open');
+});
+document.getElementById('sidebarScrim').addEventListener('click',()=>{
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebarScrim').classList.remove('open');
+});
+
+/* ---------------- top nav = Phần 1/2/3 (áp dụng cho đúng kỹ năng của buổi đang chọn) + 总结 ---------------- */
+function showSkillPanel(tab){
+  document.querySelectorAll('section.panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('panel-'+tab).classList.add('active');
+}
+function showPart(part){
+  document.querySelectorAll('nav.tabs button[data-part]').forEach(b=>b.setAttribute('aria-selected', b.dataset.part===part ? 'true':'false'));
+  if(part === 'p3'){ showSummary(); return; }
+  const tab = SCHEDULE[currentDay-1].tab;
+  showSkillPanel(tab);
+  const target = document.querySelector(`.subpanel[data-sub-of="${tab}"][data-sub="${part}"]`);
+  document.querySelectorAll(`.subpanel[data-sub-of="${tab}"]`).forEach(p=>p.classList.remove('active'));
+  if(target) target.classList.add('active');
+}
+function showSummary(){
+  document.querySelectorAll('section.panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('panel-summary').classList.add('active');
+  refreshSummary();
+}
+document.querySelectorAll('nav.tabs button[data-part]').forEach(btn=>{
+  btn.addEventListener('click',()=>showPart(btn.dataset.part));
+});
+
+/* 1 khung duy nhất ở Phần 3 · 总结 — gộp điểm nghe/đọc, feedback viết, và (riêng buổi HSKK/khẩu
+   ngữ) 1 form dán+lưu duy nhất, không dàn trải thành nhiều card/section riêng (user 2026-09-18).
+   Các buổi kỹ năng khác (nghe/đọc/viết) có thể có form riêng khi làm tới — chưa quyết định. */
+function refreshSummary(){
+  const day = SCHEDULE[currentDay-1];
+  let html = '';
+  if(day.tab === 'nghe'){
+    if(!Object.keys(ngheResults).length){
+      html += `<div style="margin-bottom:10px; color:var(--ink-faint)">Chưa nộp bài trắc nghiệm nào ở Phần 2 (一/二/三/五/六).</div>`;
+    } else {
+      ['ex3','ex5','ex6'].forEach(k=>{
+        if(ngheResults[k]) html += `<div style="margin-bottom:6px">${ngheResults[k].label}：<b>${ngheResults[k].correct}</b> / ${ngheResults[k].total}</div>`;
+      });
+      const totalCorrect = Object.values(ngheResults).reduce((s,r)=>s+r.correct,0);
+      const totalAll = Object.values(ngheResults).reduce((s,r)=>s+r.total,0);
+      html += `<div style="margin:10px 0 14px; font-weight:700">听力总分：${totalCorrect} / ${totalAll}</div>`;
+    }
+    html += `<div class="pasteLabel" style="font-weight:700; margin:14px 0 8px">Đánh giá luyện nói (Nghe 四+七) từ Claude App</div>
+      <textarea id="nghe-speaking-result-tx"></textarea>
+      <div style="margin-top:8px"><button class="btn primary" onclick="saveNgheSpeakingResult()">💾 Lưu</button></div>`;
+  }
+  if(day.tab === 'doc'){
+    const graded = DOC_ARTICLES.filter(a=>docResults[a.key]);
+    if(!graded.length){
+      html += `<div style="margin-bottom:10px; color:var(--ink-faint)">Chưa nộp bài nào ở Phần 2.</div>`;
+    } else {
+      html += graded.map(a=>`<div style="margin-bottom:6px">${a.label}：<b>${docResults[a.key].correct}</b> / ${docResults[a.key].total}</div>`).join('');
+      const totalCorrect = graded.reduce((s,a)=>s+docResults[a.key].correct,0);
+      const totalAll = graded.reduce((s,a)=>s+docResults[a.key].total,0);
+      html += `<div style="margin:10px 0 14px; font-weight:700">阅读总分：${totalCorrect} / ${totalAll}</div>
+        ${copyPasteFeedbackBlock('doc-teacher-fb', 'copyDocTeacherPrompt', '📋 Copy điểm để Claude nhận xét')}`;
+    }
+  }
+  if(day.tab === 'viet'){
+    const VIET_FB = [
+      {id:'viet-summary-fb', label:'概括短文（100字）'},
+      {id:'viet-rewrite-fb', label:'试一试，写一写'},
+    ];
+    const gradedFb = VIET_FB.filter(f=>{
+      const fb = document.getElementById(f.id);
+      return fb && fb.style.display !== 'none' && !fb.classList.contains('loading');
+    });
+    if(!gradedFb.length){
+      html += `<div style="margin-bottom:10px; color:var(--ink-faint)">Chưa nộp bài viết nào ở Phần 2.</div>`;
+    } else {
+      gradedFb.forEach(f=>{
+        const fb = document.getElementById(f.id);
+        html += `<div style="margin-bottom:10px"><b>${f.label}</b><div class="feedback" style="margin-top:6px">${fb.textContent}</div></div>`;
+      });
+      html += copyPasteFeedbackBlock('viet-teacher-fb', 'copyVietTeacherPrompt', '📋 Copy để Claude nhận xét chung');
+    }
+  }
+  if(day.tab === 'hskk'){
+    html += `<div class="pasteLabel" style="font-weight:700; margin-bottom:8px">Đánh giá HSKK từ Claude App</div>
+      <textarea id="hskk-result-tx"></textarea>
+      <div style="margin-top:8px"><button class="btn primary" onclick="saveHskkResult()">💾 Lưu</button></div>`;
+  }
+  document.getElementById('sum-all').innerHTML = html;
+  if(day.tab === 'hskk') renderSavedHskkResult();
+  if(day.tab === 'nghe') renderSavedNgheSpeakingResult();
+  if(day.tab === 'doc') loadPasteFeedback('doc-teacher-fb');
+  if(day.tab === 'viet') loadPasteFeedback('viet-teacher-fb');
+}
+
+/* 阅读 render theo đúng cấu trúc sách: mỗi 文章 tự nộp riêng (không phải 1 bài thi chung có
+   đồng hồ), mỗi bài có thể gồm 一 (chọn câu điền), 二 (trắc nghiệm), 三 (chọn nhiều) tuỳ bài. */
+/* Gộp tip của TỪNG bài (一/二/三) thành 1 tooltip DUY NHẤT, đặt icon ở đề lớn (partHead)
+   — KHÔNG đặt "i" ở từng câu nhỏ (一/二.1/三) như bản trước, user 2026-09-18 yêu cầu sửa lại. */
+function buildDocArticleTip(art){
+  const parts = [];
+  if(art.blanksTip) parts.push('一、'+art.blanksTip);
+  if(art.mcq) art.mcq.forEach((q,qi)=>{ if(q.tip) parts.push(`二.${qi+1}、`+q.tip); });
+  if(art.multi && art.multi.tip) parts.push('三、'+art.multi.tip);
+  return parts.join('<br><br>');
+}
+function renderDocBody(){
+  const el = document.getElementById('doc-body');
+  el.innerHTML = DOC_ARTICLES.map(art=>{
+    const tip = buildDocArticleTip(art);
+    let html = `<div class="partHead"><span class="cn">${art.label} · ${art.title}</span>${tip?infoIcon(tip):''}</div>`;
+    html += `<div class="passage">${art.passage}</div>`;
+    if(art.blanks){
+      html += `<div class="q" id="doc-${art.key}-blanks"><div class="qhead"><span>一、选择合适的选项填入文中标号处</span></div><div class="opts">`
+        + art.blanks.map((b,bi)=>`<div style="margin-bottom:10px" data-blank="${bi}"><b>[${bi+1}]</b> `
+          + b.opts.map((o,oi)=>`<label class="opt" style="display:inline-flex;margin-right:14px"><input type="radio" name="doc-${art.key}-b${bi}" value="${oi}"><span>${String.fromCharCode(65+oi)}. ${o}</span></label>`).join('')
+          + `</div>`).join('')
+        + `</div></div>`;
+    }
+    if(art.mcq){
+      html += art.mcq.map((q,qi)=>`<div class="q" id="doc-${art.key}-mcq${qi}" data-answer="${q.a}">
+        <div class="qhead"><span class="n">二.${qi+1}</span><span>${q.stem}</span></div>
+        <div class="opts">${q.opts.map((o,oi)=>`<label class="opt"><input type="radio" name="doc-${art.key}-mcq${qi}" value="${oi}"><span>${String.fromCharCode(65+oi)}. ${o}</span></label>`).join('')}</div>
+      </div>`).join('');
+    }
+    if(art.multi){
+      html += `<div class="q" id="doc-${art.key}-multi"><div class="qhead"><span>三、${art.multi.stem}（多选）</span></div>
+        <div class="opts">${art.multi.opts.map((o,oi)=>`<label class="opt"><input type="checkbox" name="doc-${art.key}-multi" value="${oi}"><span>${String.fromCharCode(65+oi)}. ${o}</span></label>`).join('')}</div>
+      </div>`;
+    }
+    html += `<div style="margin:6px 0 30px"><span class="mono" id="doc-${art.key}-result" style="font-weight:700"></span></div>`;
+    return html;
+  }).join('');
+  el.innerHTML += `<div style="margin-top:10px">
+    <button class="btn primary" onclick="gradeAllDoc()">交卷</button>
+  </div>
+  <div class="scoreBar" id="doc-total-score" style="display:none; margin-top:16px">
+    <div>成绩</div>
+    <div class="big mono"><span id="doc-total-correct">0</span><span class="of" id="doc-total-of"></span></div>
+  </div>`;
+}
+renderDocBody();
+
+/* CHỈ 1 nút 交卷 cuối trang — làm hết 5 bài rồi mới nộp và chấm 1 lần (user 2026-09-18),
+   không cho nộp từng bài riêng như trước. */
+let docResults = {}; // { [key]: {correct, total} } — chỉ trong bộ nhớ, không lưu db (giống nghe/viết)
+function scoreDocArticle(key){
+  const art = DOC_ARTICLES.find(a=>a.key===key);
+  let correct = 0, total = 0;
+  if(art.blanks){
+    document.getElementById(`doc-${key}-blanks`).classList.add('graded');
+    art.blanks.forEach((b,bi)=>{
+      total++;
+      const row = document.querySelector(`#doc-${key}-blanks [data-blank="${bi}"]`);
+      const checked = row.querySelector('input:checked');
+      row.querySelectorAll('.opt').forEach((o,oi)=>{
+        if(oi===b.a) o.classList.add('correct');
+        else if(checked && Number(checked.value)===oi) o.classList.add('wrong');
+      });
+      if(checked && Number(checked.value)===b.a) correct++;
+    });
+  }
+  if(art.mcq){
+    art.mcq.forEach((q,qi)=>{
+      total++;
+      const qEl = document.getElementById(`doc-${key}-mcq${qi}`);
+      qEl.classList.add('graded');
+      const checked = qEl.querySelector('input:checked');
+      qEl.querySelectorAll('.opt').forEach((o,oi)=>{
+        if(oi===q.a) o.classList.add('correct');
+        else if(checked && Number(checked.value)===oi) o.classList.add('wrong');
+      });
+      if(checked && Number(checked.value)===q.a) correct++;
+    });
+  }
+  if(art.multi){
+    total++;
+    const box = document.getElementById(`doc-${key}-multi`);
+    box.classList.add('graded');
+    const checked = [...box.querySelectorAll('input:checked')].map(c=>Number(c.value)).sort();
+    const answer = [...art.multi.answers].sort();
+    box.querySelectorAll('.opt').forEach((o,oi)=>{
+      if(art.multi.answers.includes(oi)) o.classList.add('correct');
+      else if(checked.includes(oi)) o.classList.add('wrong');
+    });
+    if(JSON.stringify(checked)===JSON.stringify(answer)) correct++;
+  }
+  docResults[key] = {correct, total, label: art.label, title: art.title};
+  document.getElementById(`doc-${key}-result`).textContent = `${art.label}：${correct}/${total}`;
+}
+function gradeAllDoc(){
+  DOC_ARTICLES.forEach(a=>scoreDocArticle(a.key));
+  const totalCorrect = Object.values(docResults).reduce((s,r)=>s+r.correct,0);
+  const totalAll = Object.values(docResults).reduce((s,r)=>s+r.total,0);
+  document.getElementById('doc-total-score').style.display='flex';
+  document.getElementById('doc-total-correct').textContent = totalCorrect;
+  document.getElementById('doc-total-of').textContent = '/'+totalAll;
+  maybeAutoMarkDone();
+}
+
+function copyDocTeacherPrompt(){
+  const detail = DOC_ARTICLES.filter(a=>docResults[a.key])
+    .map(a=>`${a.label}（${a.title}）：${docResults[a.key].correct}/${docResults[a.key].total}`).join('\n');
+  const prompt = `Bạn là giáo viên tiếng Trung, nhận xét kết quả luyện Đọc hiểu (阅读, trình độ HSK6 nâng cao) của học viên dựa trên điểm từng bài dưới đây. Trả lời bằng tiếng Việt, ngắn gọn: nêu điểm mạnh, điểm yếu, và 1 gợi ý cụ thể để cải thiện.\n\n${detail}`;
+  copyToClipboard(prompt, 'doc-teacher-fb-copyhint');
+}
+
+/* ---------------- 听力 render/chấm (bám 7 dạng bài 一~七 của sách) ---------------- */
+function audioCardHtml(id, src, label){
+  return `<div class="audioCard" id="${id}-card">
+      <span class="dot" id="${id}-dot"></span>
+      <span class="state mono" id="${id}-state">${label} 录音未播放</span>
+      <audio id="${id}" src="${src}" preload="none"></audio>
+      <button class="btn replay" onclick="playAudioGeneric('${id}','${label}')">▶ 播放</button>
+    </div>`;
+}
+function playAudioGeneric(id, label){
+  const audio = document.getElementById(id);
+  const dot = document.getElementById(id+'-dot');
+  const state = document.getElementById(id+'-state');
+  dot.classList.add('playing');
+  state.textContent = `正在播放…`;
+  audio.currentTime = 0;
+  audio.play();
+  audio.onended = ()=>{ dot.classList.remove('playing'); state.textContent = `${label} 已播放完毕`; };
+}
+/* 学习词语 dời sang Phần 1 (trình bày bảng như sách), Phần 2 chỉ còn nội dung luyện tập
+   (user 2026-09-18) — file nghe thật (mega.nz, chưa tải được tự động) gắn link ngay đầu Phần 2
+   để user tự mở nghe song song trong lúc làm bài. */
+const NGHE_AUDIO_LINK = 'https://mega.nz/folder/72Am1ZrA#CZbNCJYYffYubQO19PSdvw';
+/* Audio gọn: 1 nút play + 1 <audio> ẩn, không dot/state như audioCardHtml (dùng cho các chỗ
+   cần compact — vocab header, 一 mỗi nhóm, 六 — user 2026-09-18 chê audioCard quá tốn diện tích). */
+function inlinePlayBtn(id, src){
+  return `<button class="audioBadge" onclick="playAudioSimple('${id}')">▶</button><audio id="${id}" src="${src}" preload="none"></audio>`;
+}
+function playAudioSimple(id){
+  const audio = document.getElementById(id);
+  audio.currentTime = 0;
+  audio.play();
+}
+function renderNgheVocabTable(){
+  const el = document.getElementById('nghe-vocab');
+  if(!el) return;
+  const rows = NGHE_LESSON.vocab.map((v,i)=>`<tr>
+      <td class="mono" style="color:var(--ink-faint)">${i+1}</td>
+      <td class="hz">${v.hz}</td>
+      <td class="py">${v.py}</td>
+      <td class="pos">${v.pos||''}</td>
+      <td class="mean">${v.mean}</td>
+    </tr>`).join('');
+  el.innerHTML = `<div class="partHead"><span class="cn">学习词语</span><span style="margin-left:auto">${inlinePlayBtn('vocab-all-audio','vocab_all.mp3')}</span></div>
+    <div class="tableWrap"><table class="vocabTable">
+      <thead><tr><th></th><th>生词</th><th>拼音</th><th>词性</th><th>释义</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>`;
+}
+function renderNgheBody(){
+  const L = NGHE_LESSON;
+  let html = `<div class="taskCard">
+      🔗 <a href="${NGHE_AUDIO_LINK}" target="_blank" rel="noopener">Mở file nghe thật (mega.nz)</a>
+    </div>`;
+  html += `<div class="partHead"><span class="cn">图示生活</span></div>
+    <div class="taskCard">${L.warmupDiscussion.map(q=>`<div style="margin-bottom:8px">${q}</div>`).join('')}</div>`;
+
+  html += `<div class="partHead"><span class="cn">一、请仔细听录音，找出每组句子有什么共同的地方</span>${infoIcon(L.ex1.tip)}<span style="margin-left:auto">${inlinePlayBtn('nghe-ex1-audio', L.ex1.audio)}</span></div>`;
+  html += `<div class="taskCard">` + L.ex1.groups.map((g,i)=>`
+      <div class="abRow"${i===L.ex1.groups.length-1?' style="border-bottom:none"':''}>
+        <span style="width:60px; flex:none; color:var(--ink-soft); font-weight:600">${g.label}：</span>
+        <input type="text" id="nghe-ex1-${i}-tx" class="underlineInput" placeholder="điểm chung là gì?">
+      </div>`).join('') + `</div>`;
+
+  html += `<div class="partHead"><span class="cn">二、听全文，简单回答问题</span>${infoIcon(L.ex2.tip)}</div>`;
+  html += audioCardHtml('nghe-main-audio', L.ex2.audio, '课文');
+  L.ex2.questions.forEach((q,i)=>{
+    html += `<div class="taskCard" style="margin-bottom:14px"><div class="pasteLabel">${i+1}. ${q}</div><textarea id="nghe-ex2-${i}-tx" style="min-height:60px"></textarea></div>`;
+  });
+
+  html += `<div class="partHead"><span class="cn">三、根据课文内容选择</span>${infoIcon(L.ex3.tip)}</div>`;
+  html += `<div class="q" id="nghe-ex3-block"><div class="twoColGrid">` + L.ex3.items.map((it,i)=>`
+      <div class="abRow" data-item="${i}">
+        <span class="txt">${it.text}</span>
+        <label class="opt" style="display:inline-flex;margin-right:6px"><input type="radio" name="nghe-ex3-${i}" value="A"><span>A</span></label>
+        <label class="opt" style="display:inline-flex"><input type="radio" name="nghe-ex3-${i}" value="B"><span>B</span></label>
+      </div>`).join('') + `</div></div>`;
+
+  html += `<div class="partHead"><span class="cn">四、参考第三题内容，用自己的话说一说</span>${infoIcon(L.ex4.tip)}</div>
+    <div class="taskCard">${L.ex4.questions.map(q=>`<div style="margin-bottom:8px">${q}</div>`).join('')}</div>`;
+
+  html += `<div class="partHead"><span class="cn">五、听全文，选择正确答案</span>${infoIcon(L.ex5.tip)}</div>`;
+  html += `<div class="twoColGrid">` + L.ex5.qs.map((q,qi)=>`<div class="mcqCell"><div class="q" id="nghe-ex5-q${qi}" data-answer="${q.a}">
+      <div class="qhead"><span class="n">${qi+1}.</span><span>${q.stem}</span></div>
+      <div class="opts">${q.opts.map((o,oi)=>`<label class="opt"><input type="radio" name="nghe-ex5-q${qi}" value="${oi}"><span>${String.fromCharCode(65+oi)}. ${o}</span></label>`).join('')}</div>
+    </div></div>`).join('') + `</div>`;
+
+  html += `<div class="partHead"><span class="cn">六、选词填空</span>${infoIcon(L.ex6.tip)}<span style="margin-left:auto">${inlinePlayBtn('nghe-ex6-audio', L.ex6.audio)}</span></div>`;
+  html += `<div class="tableWrap"><table class="vocabTable" id="nghe-ex6-block">
+      <thead><tr><th></th>${L.ex6.bank.map(w=>`<th style="text-align:center">${w}</th>`).join('')}</tr></thead>
+      <tbody>` + L.ex6.items.map((it,i)=>`
+        <tr data-item="${i}">
+          <td style="white-space:normal; min-width:200px">${i+1}. ${it.sentence}</td>
+          ${L.ex6.bank.map(w=>`<td style="text-align:center"><input type="radio" name="nghe-ex6-${i}" value="${w}"></td>`).join('')}
+        </tr>`).join('') + `</tbody>
+    </table></div>`;
+
+  html += `<div class="partHead"><span class="cn">七、说一说</span>${infoIcon(L.ex7.tip)}</div>
+    <div class="taskCard">${L.ex7.questions.map(q=>`<div style="margin-bottom:8px">${q}</div>`).join('')}</div>`;
+
+  html += `<div class="judgeRow" style="margin-top:10px">
+      <button class="btn primary" onclick="copyNgheSpeakingPrompt()">📋 Copy đề nói (四+七) cho Claude App</button>
+      <span class="copyHint" id="nghe-speaking-copyhint"></span>
+    </div>`;
+
+  html += `<div style="margin-top:16px"><button class="btn primary" onclick="gradeAllNghe()">交卷</button></div>
+    <div class="scoreBar" id="nghe-total-score" style="display:none; margin-top:16px">
+      <div>成绩</div>
+      <div class="big mono"><span id="nghe-total-correct">0</span><span class="of" id="nghe-total-of"></span></div>
+    </div>`;
+
+  document.getElementById('nghe-body').innerHTML = html;
+}
+renderNgheBody();
+renderNgheVocabTable();
+
+let ngheResults = {}; // { ex3:{correct,total,label}, ex5:{...}, ex6:{...} } — in-memory, không lưu db
+function gradeAllNghe(){
+  const L = NGHE_LESSON;
+  ngheResults = {};
+
+  let c = 0, t = 0;
+  L.ex3.items.forEach((it,i)=>{
+    t++;
+    const checked = document.querySelector(`input[name="nghe-ex3-${i}"]:checked`);
+    const row = document.querySelector(`#nghe-ex3-block [data-item="${i}"]`);
+    row.querySelectorAll('.opt').forEach(o=>{
+      const val = o.querySelector('input').value;
+      if(val===it.a) o.classList.add('correct');
+      else if(checked && checked.value===val) o.classList.add('wrong');
+    });
+    if(checked && checked.value===it.a) c++;
+  });
+  document.getElementById('nghe-ex3-block').classList.add('graded');
+  ngheResults.ex3 = {correct:c, total:t, label:'三、根据课文内容选择'};
+
+  c = 0; t = 0;
+  L.ex5.qs.forEach((q,qi)=>{
+    t++;
+    const qEl = document.getElementById(`nghe-ex5-q${qi}`);
+    qEl.classList.add('graded');
+    const checked = qEl.querySelector('input:checked');
+    qEl.querySelectorAll('.opt').forEach((o,oi)=>{
+      if(oi===q.a) o.classList.add('correct');
+      else if(checked && Number(checked.value)===oi) o.classList.add('wrong');
+    });
+    if(checked && Number(checked.value)===q.a) c++;
+  });
+  ngheResults.ex5 = {correct:c, total:t, label:'五、听全文，选择正确答案'};
+
+  c = 0; t = 0;
+  L.ex6.items.forEach((it,i)=>{
+    t++;
+    const checked = document.querySelector(`input[name="nghe-ex6-${i}"]:checked`);
+    const row = document.querySelector(`#nghe-ex6-block [data-item="${i}"]`);
+    row.querySelectorAll('td').forEach(td=>{
+      const input = td.querySelector('input');
+      if(!input) return;
+      if(input.value===it.a) td.classList.add('correctCell');
+      else if(checked && checked.value===input.value) td.classList.add('wrongCell');
+    });
+    if(checked && checked.value===it.a) c++;
+  });
+  ngheResults.ex6 = {correct:c, total:t, label:'六、选词填空'};
+
+  const totalCorrect = Object.values(ngheResults).reduce((s,r)=>s+r.correct,0);
+  const totalAll = Object.values(ngheResults).reduce((s,r)=>s+r.total,0);
+  document.getElementById('nghe-total-score').style.display='flex';
+  document.getElementById('nghe-total-correct').textContent = totalCorrect;
+  document.getElementById('nghe-total-of').textContent = '/'+totalAll;
+  maybeAutoMarkDone();
+}
+
+/* 四+七 là 2 dạng NÓI trong sách nghe — dùng lại đúng cơ chế Copy-đề-cho-Claude-App như HSKK,
+   vì Claude không nghe được audio qua Artifact (xem lý do ở phần HSKK). */
+function buildNgheSpeakingPrompt(){
+  const L = NGHE_LESSON;
+  return `Bạn đóng vai giáo viên tiếng Trung, luyện nói phần mở rộng sau bài nghe. Hãy dùng Voice Mode, nói chuyện trực tiếp bằng tiếng Trung với học viên (giải thích ngắn bằng tiếng Việt nếu cần). Hỏi lần lượt đủ các câu dưới đây, mỗi câu chờ học viên trả lời xong mới sang câu tiếp theo.
+
+PHẦN 四 (dựa vào bảng đã phân loại ở bài tập 三, kể lại bằng lời của học viên):
+${L.ex4.questions.map((q,i)=>`${i+1}. ${q}`).join('\n')}
+
+PHẦN 七 (thảo luận mở rộng chủ đề bài nghe):
+${L.ex7.questions.map((q,i)=>`${i+1}. ${q}`).join('\n')}
+
+TIÊU CHÍ CHẤM CHUNG (thang điểm 100):
+- Phát âm & ngữ điệu (25%)
+- Tốc độ & độ trôi chảy (25%)
+- Nội dung & độ liên quan (30%)
+- Ngữ pháp & từ vựng (20%)
+
+Sau khi học viên nói xong hết cả 2 phần, trả lời đúng định dạng sau (tiếng Việt) để học viên copy dán lại vào hệ thống theo dõi:
+
+## KẾT QUẢ CHẤM NÓI — Nghe (Phần 四+七)
+- Điểm ước tính: __/100
+- Phát âm & ngữ điệu: ...
+- Tốc độ & độ trôi chảy: ...
+- Nội dung: ...
+- Ngữ pháp & từ vựng: ...
+- Góp ý cải thiện: ...`;
+}
+async function copyNgheSpeakingPrompt(){
+  const hint = document.getElementById('nghe-speaking-copyhint');
+  try{
+    await navigator.clipboard.writeText(buildNgheSpeakingPrompt());
+    hint.textContent = '✅ Đã copy — mở Claude App, bật Voice Mode, dán vào để bắt đầu.';
+  }catch(e){
+    hint.textContent = '⚠️ Không copy được tự động — vui lòng thử lại.';
+  }
+}
+
+/* Kết quả chấm nói (Nghe 四+七, dán tay từ Claude App) — 1 form duy nhất/buổi, giống hệt cơ chế
+   HSKK — nằm ở Phần 3 · 总结, không phải Phần 2. */
+let ngheSpeakingResults = lsGet('progress/nghe-speaking-results', {}); // { [day]: "toàn bộ kết quả đã dán" }
+function renderSavedNgheSpeakingResult(){
+  const tx = document.getElementById('nghe-speaking-result-tx');
+  if(tx) tx.value = ngheSpeakingResults[currentDay] || '';
+}
+function saveNgheSpeakingResult(){
+  const tx = document.getElementById('nghe-speaking-result-tx');
+  const val = tx.value.trim();
+  if(!val) return;
+  ngheSpeakingResults[currentDay] = val;
+  lsSet('progress/nghe-speaking-results', ngheSpeakingResults);
+  maybeAutoMarkDone();
+}
+
+/* ---------------- 书写 ---------------- */
+/* Bám đúng cấu trúc sách 《发展汉语·高级写作I》: mỗi 课 = 范文讨论与学习 (范文+习作nhỏ) →
+   边读边练 (đọc thêm, không chấm) → 写作知识要点 (kiến thức viết, không chấm) → 参考练习
+   (bài viết chính). Đây là bộ khung/demo — nội dung thật nạp sau (user 2026-09-18). */
+/* Bám ĐÚNG sách 《发展汉语·高级写作I》 第1课《我和汉语》 — NỘI DUNG THẬT (user gửi ảnh chụp sách
+   2026-09-18), không phải bản demo tự bịa ngắn như lần đầu. Cấu trúc thật của 1 课: 本课导入 (khởi
+   động) → 范文讨论与学习 (范文 + Q1 thảo luận + Q2 5 câu trích ý + Q3 tóm tắt 100 chữ có khung sẵn +
+   Q4 cải câu theo 3 mẫu ngữ pháp) → 边读边练 (bài sửa lỗi định dạng/dấu câu, trình bày kiểu giấy ô
+   vuông) → 写作知识要点. KHÔNG có mục "参考练习" tự bịa như bản cũ — đã bỏ. */
+const VIET_LESSON = {
+  intro: [
+    '你是什么时候、在哪儿开始学习汉语的？',
+    '汉语和你的母语有什么不同？',
+    '学汉语的过程中有哪些乐趣和经验？你碰到过哪些困难？',
+    '你为什么选择学汉语？',
+  ],
+  model: {
+    title: '我和汉语', author: '陈霞（印度）',
+    tip:'Đọc kỹ bài mẫu để học cách mở bài (bắt đầu bằng 1 tình huống cụ thể — nhìn thấy tờ báo có chữ Hán) và cách triển khai theo trình tự thời gian (hai年后/一年后/来到中国以后) — đây là khung bạn có thể mượn khi viết bài của mình.',
+    passage: '上中学的时候，我偶然看见爸爸书桌上放着一张报纸，上面的字都是一个个小方块儿。那是什么字？我十分好奇，马上给爸爸打了个电话。从那时开始，我知道了，那些神秘的方块字叫"汉字"，使用汉字的是一个东方民族——中华民族。爸爸说，汉字是世界上最早的文字之一，汉语有着非常悠久的历史。于是，我产生了学习汉语、认识汉字的念头。\n\n两年后，我在一所大学学习政治经济学，同时在另外一所大学学习汉语。我对汉语、对中国的兴趣越来越浓厚，一年后我决定改变专业，专心学习汉语。经过严格的考试，我终于如愿以偿了：我成了大学中文系的学生。开始中文专业学习的时候，我还有点儿担心，因为我是个新生，不知能否赶上班里其他同学。系里的老师对我十分关心，特别是从中国来的老师，总是鼓励我、帮助我，教我最有效的学习方法。在老师的帮助下，我的汉语水平提高得很快。\n\n学汉语一年之后，我得到了一个参加印中文化交流奖学金考试的机会。对我来说，这是我梦寐以求的好机会。我把握住了这个机会，通过了考试，获得了中国政府提供的奖学金，多年的梦想终于实现了。\n\n来到中国以后，我在北京的一所大学学习，我们每天都有汉语课，我的汉语进步得更快。我深刻地体会到，如果不到中国来，就不可能很快地掌握标准汉语，而且也不可能真正了解中国。我感到，这里的老师都有经验，非常亲切，这里的环境特别适合外国留学生学习。有人说，没有去过长城，就不算到过中国；没有吃过烤鸭，就不算来过北京。我想说，不在北京学习，也是一种遗憾，因为这里的外国朋友来自世界各地，这里是我们留学生的乐园。\n\n我喜欢舞蹈，在北京，我还参加了两次演出。在"首都外国留学生新年文艺晚会"上，我既展示了印度舞蹈，又欣赏到了各个国家的舞蹈艺术。我希望在学习汉语的同时，能更多地了解中国的民间艺术，尤其是传统的舞蹈艺术，将来为增进印度和中国人民的友谊作出贡献。\n\n（选自《学汉语》1998年第2期，略有改动）',
+    discussion: '阅读上文并讨论：汉语文章的格式特点是什么？和你的母语有什么不同？',
+    extractTip:'Mỗi câu chỉ cần ghi 2-3 từ khoá/1 câu ngắn TRÍCH TỪ bài, không cần viết lại thành câu hoàn chỉnh của riêng bạn — đây là bài tập tìm ý, không phải viết luận.',
+    extractQuestions: [
+      '"我"是怎么知道汉语和汉字的？',
+      '"我"是什么时候把汉语作为自己的专业的？',
+      '"我"是利用什么机会来到中国学习的？',
+      '"我"在中国留学的体会是什么？',
+      '"我"在中国的生活，除了学习，还包括什么内容？',
+    ],
+    summaryTip:'Bám sát đúng khung câu cho sẵn (màu xanh) — mỗi chỗ "……" chỉ cần điền 1 cụm từ/1 mệnh đề ngắn lấy ý từ bài, không thêm câu mới ngoài khung. Đây là bài TÓM TẮT, không phải viết cảm nghĩ.',
+    summaryScaffold: '《我和汉语》写了作者学习汉语的经历。上中学的时候，……。两年后，……，……。学语言一年之后，……，……。来到中国以后，……，……。',
+    summaryTarget: 100,
+    rewriteTip:'Cả 3 câu đều là dạng "viết lại câu cho sẵn theo đúng mẫu ngữ pháp", sau đó tự đặt 1 câu MỚI khác cũng dùng mẫu đó — giám khảo sẽ để ý câu tự đặt có đúng ngữ pháp và có Ý RIÊNG hay chỉ đổi vài chữ của câu mẫu.',
+    rewrites: [
+      {pattern:'经过……，终于……', original:'我努力学习了一年，获得了中国政府提供的奖学金。'},
+      {pattern:'对……来说，……', original:'我得到了一个出国留学的机会，我觉得这样的机会很难得。'},
+      {pattern:'如果……，就……，而且……', original:'不碰到王老师，我也不可能喜欢上数学，日后在数学领域做出那么大成绩更是不可能的。'},
+    ],
+  },
+  correction: {
+    title: '我学汉语的原因',
+    tip:'Sách yêu cầu tìm lỗi VỀ ĐỊNH DẠNG (标点位置/题目 cách trình bày), không phải lỗi ngữ pháp/từ vựng — chú ý: dấu câu có đang bị đặt lệch ô, ngoặc kép mở/đóng có đúng chỗ, đoạn văn có xuống dòng thụt đầu dòng đúng quy tắc chưa, tên bài có được trình bày tách biệt/căn giữa không.',
+    passage: '"你为什么会来中国？为什么学习汉语？"许多人曾经问我这个问题。我原来没想过这个问题，只觉得这是一个偶然的事情。但是，我有时候也会问自己，为什么选择学习汉语呢？\n我想起我读小学的时候，有一个女老师，她是中国人。那时候，我们班的男孩子都很淘气，常常搞恶作剧，故意让老师生气，对老师开一些不太友善的玩笑。可是，那位老师始终没有生气，她常常给我们讲故事，其中有很多中国的民间故事，那些故事让我们听得入迷。于是，我们常常去找老师要书看，要求她讲更多的故事。\n小学毕业后，我跟大家一起上了中学，又上了大学，我选择了贸易专业，可是，那些美丽的中国民间故事已经留在了我的心里。\n也许这就是我现在学习汉语的原因之一吧。',
+  },
+  points: [
+    '文章题目的拟定：题目要简洁、能概括主要内容，避免过长或过于笼统。',
+    '标点符号在汉语写作中有重要的表达作用：位置、种类都会影响语气，不能随意省略或摆错位置。',
+  ],
+};
+function renderVietBody(){
+  const L = VIET_LESSON;
+  let html = `<div class="partHead"><span class="cn">本课导入</span></div>
+    <div class="taskCard">${L.intro.map(q=>`<div style="margin-bottom:6px">${q}</div>`).join('')}</div>`;
+
+  html += `<div class="partHead"><span class="cn">范文讨论与学习</span>${infoIcon(L.model.tip)}</div>`;
+  html += `<div class="passage"><div style="text-align:center; font-weight:700; margin-bottom:10px">${L.model.title}</div>
+    <div style="text-align:right; font-size:13px; color:var(--ink-faint); margin-bottom:14px">${L.model.author}</div>
+    ${L.model.passage.split('\n\n').map(p=>`<p style="margin:0 0 14px">${p}</p>`).join('')}</div>`;
+  html += `<div class="taskCard">${L.model.discussion}</div>`;
+
+  html += `<div class="taskCard">
+      <div style="font-weight:700; margin-bottom:10px">从范文中查找下列问题的答案，每题写出两到三个重点词语或句子${infoIcon(L.model.extractTip)}</div>
+      ${L.model.extractQuestions.map((q,i)=>`<div class="abRow"${i===L.model.extractQuestions.length-1?' style="border-bottom:none"':''}>
+        <span style="width:26px; flex:none; color:var(--ink-faint)">(${i+1})</span>
+        <span style="flex:none; max-width:55%">${q}</span>
+        <input type="text" id="viet-extract-${i}" class="underlineInput">
+      </div>`).join('')}
+    </div>`;
+
+  html += `<div class="taskCard">
+      <div style="font-weight:700; margin-bottom:10px">把范文概括成100字左右的短文，可以运用下面的句子组织概括的内容${infoIcon(L.model.summaryTip)}</div>
+      <div class="scaffold">${L.model.summaryScaffold}</div>
+      <textarea id="viet-summary" class="gridPaper" placeholder="在此作答…" oninput="wcUpdate('viet-summary',${L.model.summaryTarget})"></textarea>
+      <div class="taskFoot"><span>目标约${L.model.summaryTarget}字</span><span class="charCount mono" id="viet-summary-count">0字</span></div>
+      <div style="margin-top:12px">${copyPasteFeedbackBlock('viet-summary-fb', 'copyWritingGradePrompt', '📋 Copy bài + đề chấm cho Claude')}</div>
+    </div>`;
+
+  html += `<div class="taskCard">
+      <div style="font-weight:700; margin-bottom:10px">试一试，写一写${infoIcon(L.model.rewriteTip)}</div>
+      ${L.model.rewrites.map((r,i)=>`<div style="margin-bottom:${i===L.model.rewrites.length-1?0:18}px">
+        <div style="margin-bottom:6px">(${i+1}) 用"${r.pattern}"改写下面这句话，并用"${r.pattern}"重新造句。</div>
+        <div class="passage" style="margin-bottom:8px; font-size:14.5px">${r.original}</div>
+        <textarea id="viet-rewrite-${i}" style="min-height:90px" placeholder="在此作答…"></textarea>
+      </div>`).join('')}
+      <div style="margin-top:12px">${copyPasteFeedbackBlock('viet-rewrite-fb', 'copyVietRewritesPrompt', '📋 Copy bài + đề chấm cho Claude')}</div>
+    </div>`;
+
+  html += `<div class="partHead"><span class="cn">边读边练</span>${infoIcon(L.correction.tip)}</div>`;
+  html += `<div class="taskCard">
+      <div style="margin-bottom:10px">请指出下面的汉语短文格式（题目、标点位置等）不准确的地方，给予改正，改后读一读。</div>
+      <div class="gridPaper" style="padding:10px 6px; margin-bottom:14px">${L.correction.title}\n\n${L.correction.passage}</div>
+      <div class="pasteLabel">Ghi lại những chỗ bạn thấy sai + cách sửa:</div>
+      <textarea id="viet-correction-tx" style="min-height:90px"></textarea>
+    </div>`;
+
+  html += `<div class="partHead"><span class="cn">写作知识要点</span></div>
+    <div class="taskCard"><ul style="margin:0;padding-left:20px">${L.points.map(p=>`<li style="margin-bottom:6px">${p}</li>`).join('')}</ul></div>`;
+
+  document.getElementById('viet-body').innerHTML = html;
+  loadPasteFeedback('viet-summary-fb');
+  loadPasteFeedback('viet-rewrite-fb');
+}
+renderVietBody();
+const VIET_WRITING_IDS = ['viet-summary'];
+function copyVietRewritesPrompt(){
+  const L = VIET_LESSON;
+  const answers = L.model.rewrites.map((r,i)=>({r, text: document.getElementById('viet-rewrite-'+i).value.trim()}));
+  const detail = answers.map((a,i)=>`(${i+1}) 句型"${a.r.pattern}" — 原句：${a.r.original}\n学生作答：\n${a.text||'（未作答）'}`).join('\n\n');
+  const prompt = `你是HSK6写作阅卷老师。学生做了3道"用指定句型改写句子+自己再造1句"的练习。请用越南语（tiếng Việt）逐题简要批改：句型用得对不对，改写/造句是否通顺，并给1句改进建议。\n\n${detail}`;
+  copyToClipboard(prompt, 'viet-rewrite-fb-copyhint');
+}
+
+function wcUpdate(id, target){
+  const val = document.getElementById(id).value;
+  const n = [...val].filter(c=>/[一-鿿]/.test(c)).length;
+  const el = document.getElementById(id+'-count');
+  el.textContent = n+'字';
+  el.classList.toggle('over', n > target*1.3);
+}
+function copyWritingGradePrompt(){
+  const text = document.getElementById('viet-summary').value.trim();
+  const hint = document.getElementById('viet-summary-fb-copyhint');
+  if(!text){ if(hint) hint.textContent = '还没有作答内容，写完再 copy nha.'; return; }
+  const prompt = `你是HSK6（3.0）写作阅卷老师。题目：把范文《我和汉语》概括成约${VIET_LESSON.model.summaryTarget}字的短文。请用越南语（tiếng Việt）简要批改以下学生作文，按 内容/语法/词汇/结构 四个维度评分（满分100，给出估分），并指出2-3处具体问题：\n\n学生作文：\n${text}`;
+  copyToClipboard(prompt, 'viet-summary-fb-copyhint');
+}
+
+function copyVietTeacherPrompt(){
+  const detail = [
+    {id:'viet-summary-fb', label:'概括短文（100字）'},
+    {id:'viet-rewrite-fb', label:'试一试，写一写'},
+  ].map(f=>{
+    const box = document.getElementById(f.id);
+    const text = box && box.style.display!=='none' ? box.textContent : null;
+    return text ? `${f.label}：\n${text}` : null;
+  }).filter(Boolean).join('\n\n');
+  const hint = document.getElementById('viet-teacher-fb-copyhint');
+  if(!detail){ if(hint) hint.textContent = '还没有批改结果 — dán nhận xét từng bài ở trên trước.'; return; }
+  const prompt = `Bạn là giáo viên tiếng Trung. Dưới đây là các nhận xét chấm bài Viết (书写) riêng lẻ của học viên trong cùng 1 buổi. Hãy tổng hợp lại, trả lời bằng tiếng Việt, ngắn gọn: nêu điểm mạnh, điểm yếu chung, và 1 gợi ý cụ thể để cải thiện.\n\n${detail}`;
+  copyToClipboard(prompt, 'viet-teacher-fb-copyhint');
+}
+
+/* ---------------- HSKK ---------------- */
+/* 第1课来源：《发展汉语·高级口语I》第1课《快乐会传染》（内容已改写，非原文摘录） */
+const HSKK_P1 = ['hskk_p1_q1.mp3','hskk_p1_q2.mp3','hskk_p1_q3.mp3'];
+const HSKK_P2_TEXT = '说到"传染"，很多人首先想到的是感冒、水痘这类通过近距离接触传播的疾病，很少会把它和"快乐"联系在一起。然而，有研究人员在权威医学期刊上发表报告指出，快乐同样具有"传染性"：如果你身边的人常常保持愉快的情绪，你自己感到幸福的概率也会随之上升；反之，如果周围的人情绪低落，你也很难独善其身。专家把这种现象称为"情绪感染"。调查数据还显示，社交圈子越广泛、与他人联系越密切的人，往往也越容易获得快乐。';
+const HSKK_P3 = [
+  '你同意"快乐也会传染"这种说法吗？请说说你的看法和理由。',
+  '在日常生活中，你通常会用什么方式和身边的人分享自己的快乐？',
+];
+/* Gợi ý triển khai ý để được điểm cao — bám ĐÚNG nội dung từng câu hỏi (không chung chung),
+   viết từ góc độ giám khảo: cần thấy LẬP TRƯỜNG/Ý RÕ + LÝ DO + VÍ DỤ CỤ THỂ (user 2026-09-18). */
+const HSKK_P3_TIPS = [
+  'Cấu trúc dễ được điểm cao: (1) Nêu NGAY lập trường ở câu đầu — "我同意/基本同意这种说法" (đừng vòng vo). (2) 1 lý do lý thuyết — có thể nhắc lại ý "hiệu ứng lây lan cảm xúc" đã nghe ở đoạn trên. (3) 1 ví dụ THỰC TẾ của bản thân (kể ngắn 1 tình huống cụ thể bạn từng vui lây vì người xung quanh vui). (4) Chốt lại quan điểm trong 1 câu. Giám khảo trừ điểm nếu chỉ nói chung chung "tôi nghĩ đúng vì ai cũng vậy" mà không có ví dụ.',
+  'Cấu trúc dễ được điểm cao: (1) Liệt kê ngắn 2-3 CÁCH cụ thể bạn hay dùng để chia sẻ niềm vui (nhắn tin kể chuyện/rủ bạn ăn mừng/đăng mạng xã hội…). (2) Chọn 1 cách kể chi tiết hơn bằng 1 tình huống thật đã xảy ra (ai, chuyện gì, cảm giác thế nào). (3) Kết bằng 1 câu khái quát ý nghĩa của việc chia sẻ niềm vui với người khác. Tránh trả lời chỉ 1 câu cụt lủn không có ví dụ — giám khảo sẽ thấy nội dung nghèo.',
+];
+
+/* Xây 1 prompt "giám khảo HSKK" DUY NHẤT cho cả buổi, gồm cả 6 câu (听后复述x3+朗读+回答问题x2)
+   cho Claude App (Voice Mode) — nội dung KHÔNG hiển thị trên trang, chỉ copy thẳng vào clipboard
+   để tránh lộ tiêu chí/đề trước khi luyện. */
+const HSKK_ITEMS = [
+  {prefix:'p1', idx:0}, {prefix:'p1', idx:1}, {prefix:'p1', idx:2},
+  {prefix:'p2', idx:0},
+  {prefix:'p3', idx:0}, {prefix:'p3', idx:1},
+];
+function hskkItemSpec(prefix, i){
+  if(prefix==='p1'){
+    return {
+      partLabel: `听后复述 — câu ${Number(i)+1}/3`,
+      material: '(Đây là bài luyện nghe rồi nhắc lại — hệ thống không lưu sẵn transcript gốc của đoạn ghi âm. Thí sinh đã tự nghe đoạn ghi âm khoảng 1 phút trước khi qua đây.)',
+      steps: '1. Hỏi thí sinh đã nghe xong đoạn ghi âm gốc chưa.\n2. Yêu cầu thí sinh nhắc lại nội dung bằng lời của mình trong khoảng 2 phút, không ngắt lời giữa chừng.\n3. Chấm theo tiêu chí chung — vì không có bản gốc để đối chiếu từng câu, hãy đánh giá theo mức độ mạch lạc, đầy đủ ý chính và tự nhiên khi trình bày lại.',
+    };
+  }
+  if(prefix==='p2'){
+    return {
+      partLabel: '朗读 (đọc diễn cảm)',
+      material: HSKK_P2_TEXT,
+      steps: '1. Yêu cầu thí sinh đọc to, diễn cảm đúng đoạn văn trên trong khoảng 2 phút.\n2. Lắng nghe, đối chiếu đúng với đoạn văn trên (nội dung phải khớp, không được bỏ/thêm chữ).\n3. Chấm theo tiêu chí chung.',
+    };
+  }
+  return {
+    partLabel: `回答问题 — câu ${Number(i)+1}/2`,
+    material: HSKK_P3[i],
+    steps: '1. Đọc câu hỏi trên cho thí sinh (hoặc để thí sinh tự đọc).\n2. Yêu cầu trả lời trong khoảng 2 phút, có quan điểm rõ ràng và lý do thuyết phục.\n3. Chấm theo tiêu chí chung, đặc biệt độ thuyết phục/logic của câu trả lời.',
+  };
+}
+function buildFullHskkPrompt(){
+  const sections = HSKK_ITEMS.map((it,n)=>{
+    const spec = hskkItemSpec(it.prefix, it.idx);
+    return `--- Câu ${n+1}/6: ${spec.partLabel} ---
+ĐỀ BÀI / TƯ LIỆU:
+${spec.material}
+QUY TRÌNH:
+${spec.steps}`;
+  }).join('\n\n');
+  return `Bạn đóng vai giám khảo kỳ thi HSKK cao cấp (Advanced), người Trung Quốc bản xứ, giọng nghiêm túc nhưng khích lệ học sinh. Hãy dùng Voice Mode, nói chuyện trực tiếp bằng tiếng Trung với thí sinh (giải thích ngắn bằng tiếng Việt nếu cần). Tổ chức đủ 6 câu theo đúng thứ tự dưới đây, mỗi câu hỏi xong chờ thí sinh trả lời rồi mới sang câu tiếp theo.
+
+${sections}
+
+TIÊU CHÍ CHẤM CHUNG (thang điểm 100):
+- Phát âm & ngữ điệu (30%)
+- Tốc độ & độ trôi chảy (20%)
+- Nội dung & độ chính xác/thuyết phục (30%)
+- Ngữ pháp & từ vựng (20%)
+
+Sau khi thí sinh nói xong CẢ 6 câu, trả lời đúng định dạng sau (tiếng Việt), MỖI câu 1 khối, để thí sinh copy từng khối dán lại vào hệ thống theo dõi:
+
+## KẾT QUẢ CHẤM HSKK — <tên phần, ví dụ: 听后复述 câu 1/3>
+- Điểm ước tính: __/100
+- Phát âm & ngữ điệu: ...
+- Tốc độ & độ trôi chảy: ...
+- Nội dung: ...
+- Ngữ pháp & từ vựng: ...
+- Góp ý cải thiện: ...
+
+(lặp lại đúng khối trên cho cả 6 câu, theo đúng thứ tự đã hỏi)`;
+}
+
+async function copyFullHskkPrompt(){
+  const hint = document.getElementById('hskk-full-copyhint');
+  try{
+    await navigator.clipboard.writeText(buildFullHskkPrompt());
+    hint.textContent = '✅ Đã copy — mở Claude App, bật Voice Mode, dán vào để bắt đầu.';
+  }catch(e){
+    hint.textContent = '⚠️ Không copy được tự động (trình duyệt chặn clipboard) — vui lòng thử lại.';
+  }
+}
+
+function renderHskk(){
+  document.getElementById('hskk-p1-items').innerHTML = HSKK_P1.map((src,i)=>{
+    const audioId = `hskk-p1-audio-${i}`;
+    return `<div class="hskkItem" id="p1-${i}">
+      <div class="audioCard" id="${audioId}-card">
+        <span class="dot" id="${audioId}-dot"></span>
+        <span class="state mono" id="${audioId}-state">第${i+1}题 录音未播放</span>
+        <audio id="${audioId}" src="${src}" preload="none"></audio>
+        <button class="btn replay" id="${audioId}-btn" onclick="playHskkAudio('${audioId}', ${i+1})">▶ 播放</button>
+      </div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('hskk-p2-items').innerHTML = `<div class="hskkItem" id="p2-0">
+      <div class="passage">${HSKK_P2_TEXT}</div>
+    </div>`;
+
+  document.getElementById('hskk-p3-items').innerHTML = HSKK_P3.map((q,i)=>`
+    <div class="hskkItem" id="p3-${i}">
+      <div class="stem">${i+1}. ${q}${infoIcon(HSKK_P3_TIPS[i])}</div>
+    </div>`).join('');
+}
+renderHskk();
+
+function playHskkAudio(audioId, n){
+  const audio = document.getElementById(audioId);
+  const dot = document.getElementById(audioId+'-dot');
+  const state = document.getElementById(audioId+'-state');
+  dot.classList.add('playing');
+  state.textContent = `正在播放第 ${n} 题…`;
+  audio.currentTime = 0;
+  audio.play();
+  audio.onended = ()=>{
+    dot.classList.remove('playing');
+    state.textContent = `第 ${n} 题已播放完毕`;
+  };
+}
+
+/* Kết quả chấm HSKK (dán tay từ Claude App) — 1 form DUY NHẤT/buổi (không tách theo từng câu,
+   vì đề chấm cũng đã gộp thành 1 prompt duy nhất), lưu theo buổi vào db. Nằm ở Phần 3 · 总结
+   (không phải Phần 2) — Phần 2 chỉ hiện đề/audio. Chỉ áp dụng cho buổi khẩu ngữ (HSKK); các buổi
+   kỹ năng khác có thể thiết kế khác khi làm tới (user 2026-09-18). */
+let hskkResults = lsGet('progress/hskk-results', {}); // { [day]: "toàn bộ kết quả đã dán" }
+function renderSavedHskkResult(){
+  const tx = document.getElementById('hskk-result-tx');
+  if(tx) tx.value = hskkResults[currentDay] || '';
+}
+function saveHskkResult(){
+  const tx = document.getElementById('hskk-result-tx');
+  const val = tx.value.trim();
+  if(!val) return;
+  hskkResults[currentDay] = val;
+  lsSet('progress/hskk-results', hskkResults);
+  maybeAutoMarkDone();
+}
+
+/* Mở đúng tab của buổi đang chọn (khớp với sidebar) ngay khi tải trang xong */
+goToDay(currentDay);
+</script>
