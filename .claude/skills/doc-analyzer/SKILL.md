@@ -85,6 +85,16 @@ Output text được ghi cạnh file gốc: `{file_path}.txt` (text-PDF) hoặc 
 **Cache:** nếu `{file_path}.ocr.txt` đã tồn tại và mới hơn PDF → script trả `CACHED`, không OCR lại.
 
 **Ngưỡng phát hiện scan:** trung bình < 25 ký tự/trang → coi là scan.
+**Watermark-only PDF đánh lừa ngưỡng scan** (phát hiện 2026-09-18, bộ 发展汉语高级口语): PDF scan
+nhưng mỗi trang có lớp text watermark lặp lại (vd "www.xxx.com, For more") — avg chars/page có
+thể vượt ngưỡng 25 dù nội dung thật 100% là ảnh, khiến script trả nhầm `TEXT_PDF`. Dấu hiệu nhận
+biết: đọc thử vài trang đầu của `.txt` xuất ra, nếu thấy lặp y hệt 1-2 dòng ngắn ở mọi trang (không
+đổi theo nội dung) → nghi ngờ watermark-only, ép OCR bằng cách chạy lại với `--scan-threshold` cao
+(vd `--scan-threshold 100000`) để bỏ qua nhánh pypdf.
+**Windows: lỗi `UnicodeEncodeError` khi in kết quả** — nếu path/tên file chứa ký tự tiếng Việt có
+dấu, dòng `print()` cuối của `pdf_to_text.py` có thể crash trên console mặc định (cp1252) dù file
+`.txt`/`.ocr.txt` đã được ghi đúng. Set `PYTHONIOENCODING=utf-8` trước khi chạy script (hoặc nếu
+lệnh báo lỗi, cứ kiểm tra file output đã tồn tại chưa trước khi kết luận thất bại).
 **Số trang lớn:** scan > 100 trang → script cảnh báo `[doc-analyzer] Scan {N} trang, OCR có thể mất vài phút…` rồi vẫn chạy.
 **DPI:** mặc định 200. Nếu OCR ra chữ sai nhiều (chữ nhỏ/mờ) → chạy lại với `--dpi 300`.
 **OCR có target (`--pages`):** sách/PDF scan lớn (vài trăm trang) mà chỉ cần 1 chương → dùng `--pages START-END` (1-based, inclusive) để **chỉ OCR dải trang đó**, tránh OCR mù cả file:
