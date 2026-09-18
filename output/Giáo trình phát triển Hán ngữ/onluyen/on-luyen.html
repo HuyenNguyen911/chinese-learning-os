@@ -49,9 +49,16 @@ aside.sidebar{
   width:230px; flex:none; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
   padding:6px 0; max-height:calc(100vh - 40px); overflow-y:auto; position:sticky; top:16px;
 }
-aside.sidebar .weekHead{
-  font-size:11px; font-weight:700; color:var(--ink-faint); letter-spacing:.06em; padding:10px 14px 4px;
+aside.sidebar button.weekHead{
+  display:flex; align-items:center; width:100%; gap:6px; font:inherit;
+  font-size:12px; font-weight:700; color:var(--ink-soft); letter-spacing:.03em;
+  background:none; border:none; padding:10px 14px 6px; cursor:pointer;
+  font-family:'Noto Serif SC',serif;
 }
+aside.sidebar button.weekHead:hover{color:var(--ink)}
+aside.sidebar button.weekHead .arrow{flex:none; font-size:10px; transition:transform .15s; color:var(--ink-faint)}
+aside.sidebar button.weekHead.collapsed .arrow{transform:rotate(-90deg)}
+aside.sidebar button.weekHead .count{margin-left:auto; font-size:10.5px; font-weight:500; color:var(--ink-faint)}
 aside.sidebar .phaseTag{font-weight:500; color:var(--accent)}
 aside.sidebar button.dayBtn{
   display:flex; width:100%; align-items:center; gap:8px; text-align:left; font:inherit; font-size:12.5px;
@@ -59,7 +66,7 @@ aside.sidebar button.dayBtn{
 }
 aside.sidebar button.dayBtn:hover{background:var(--surface-2)}
 aside.sidebar button.dayBtn .n{font-family:'JetBrains Mono',monospace; color:var(--ink-faint); flex:none; width:40px}
-aside.sidebar button.dayBtn .skill{font-family:'Noto Serif SC',serif; font-weight:600; color:var(--ink); flex:none}
+aside.sidebar button.dayBtn .skill{font-family:'Noto Serif SC',serif; font-weight:600; color:var(--ink); flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 aside.sidebar button.dayBtn.today{background:var(--accent-soft)}
 aside.sidebar button.dayBtn.today .skill{color:var(--accent)}
 aside.sidebar button.dayBtn.done .skill{color:var(--ink-faint); text-decoration:line-through}
@@ -480,7 +487,7 @@ function loadPasteFeedback(id){
 /* ---------------- 听力 ---------------- */
 /* Bám ĐÚNG cấu trúc sách 《发展汉语·高级听力I》 (30课). Buổi 1 Nghe = 第1课《珍惜现在》 —
    NỘI DUNG THẬT (课文 + 一/三/五/六 lấy nguyên từ `文本与答案` PDF, có đáp án chính thức của sách),
-   không phải demo nữa (khác các buổi Nghe khác vẫn 示例, xem `REAL_CONTENT_DAYS`). Audio vẫn là
+   không phải demo nữa (khác các buổi Nghe khác vẫn 示例, xem `REAL_CONTENT_LESSONS`). Audio vẫn là
    TTS (edge_tts) vì file gốc trong raw/ chưa tải được (chỉ có link mega.nz, việc tự tải bị chặn ở
    tầng quyền hệ thống — xem [[reference-fazhan-hanyu-source-material]]) — script lời đọc thì ĐÃ
    THẬT (đúng nguyên văn sách), chỉ giọng đọc là TTS thay vì bản ghi âm gốc. */
@@ -635,32 +642,32 @@ const DOC_ARTICLES = [
   },
 ];
 
-/* ---------------- 课程安排 sidebar (theo lịch tuần chuẩn trong kế hoạch) ---------------- */
-const SCHEDULE_START = new Date(2026, 8, 17); // 17/9/2026, Thứ 5
-const TOTAL_WEEKS = 17;
-const DOW_SKILL = { // 0=CN .. 6=Thứ 7
-  0:{tab:'viet', cn:'书写', label:'第二题写作'},
-  1:{tab:'nghe', cn:'听力', label:''},
-  2:{tab:'hskk', cn:'口语', label:''},
-  3:{tab:'nghe', cn:'听力', label:''},
-  4:{tab:'hskk', cn:'口语', label:''},
-  5:{tab:'doc',  cn:'阅读', label:''},
-  6:{tab:'hskk', cn:'口语', label:''},
-};
-/* Nguồn sách theo từng kỹ năng — mỗi lần buổi đó xuất hiện thì lấy đúng 1 bài kế tiếp,
-   hết quyển I thì qua quyển II (theo yêu cầu user, không dùng công thức chia đều nữa) */
+/* ---------------- 课程安排 sidebar ----------------
+   ĐỔI TỪ lịch theo ngày trong tuần (xen kẽ 4 kỹ năng mỗi ngày) SANG gộp khối theo kỹ năng
+   (user 2026-09-18: "các kỹ năng đang xen kẽ, muốn tập trung buổi nào thì tập trung hẳn vào
+   kỹ năng đó"). Thứ tự khối: 口语 (đang triển khai trước) → 听力 → 阅读 → 书写. Trong mỗi khối,
+   "buổi" đánh số lại từ 1 (localIndex), không dùng số buổi toàn khoá nữa. */
+const SKILL_ORDER = ['hskk', 'nghe', 'doc', 'viet'];
+const SKILL_LABELS = {hskk:'口语', nghe:'听力', doc:'阅读', viet:'书写'};
+/* Nguồn sách theo từng kỹ năng — mỗi buổi trong khối lấy đúng 1 bài kế tiếp theo thứ tự sách,
+   hết quyển I thì qua quyển II */
 const LESSON_BOOKS = {
   hskk: [{title:'《发展汉语·高级口语I》', count:15}, {title:'《发展汉语·高级口语II》', count:15}],
   nghe: [{title:'《发展汉语·高级听力I》', count:30}, {title:'《发展汉语·高级听力II》', count:30}],
   doc:  [{title:'《发展汉语·高级阅读I》', count:15}, {title:'《发展汉语·高级阅读II》', count:15}],
   viet: [{title:'《发展汉语·高级写作I》', count:12}, {title:'《发展汉语·高级写作II》', count:12}],
 };
-function occurrenceCount(n){
-  let c = 0;
-  for(let i=0;i<n;i++) if(SCHEDULE_RAW_TAB(i)===SCHEDULE_RAW_TAB(n-1)) c++;
-  return c;
-}
-function SCHEDULE_RAW_TAB(i){ return DOW_SKILL[new Date(SCHEDULE_START.getFullYear(),SCHEDULE_START.getMonth(),SCHEDULE_START.getDate()+i).getDay()].tab; }
+/* Tên từng 课 của quyển 高级口语 I+II (30 bài) — bóc mục lục PDF (user 2026-09-18) để sidebar
+   hiện đúng tên bài ngay cả những buổi chưa nạp nội dung chi tiết. */
+const HSKK_LESSON_TITLES = {
+  1:'快乐会传染', 2:'在家上学', 3:'活人图书馆', 4:'爱上搜索', 5:'老大难问题',
+  6:'人类最糟糕的发明', 7:'网络新词', 8:'最省钱的瘦身方法', 9:'到底谁的错', 10:'你有环保意识吗',
+  11:'带什么去旅行', 12:'人口老龄化', 13:'AA制', 14:'爱情呼叫转移', 15:'高尔夫魅力无限',
+  16:'我们天天都在说谎', 17:'结婚证需要有效期吗', 18:'你会成为工作狂吗', 19:'第一印象', 20:'地铁女性车厢',
+  21:'熟视无睹的歧视', 22:'你的宠物我的烦恼', 23:'摄像头，我支持', 24:'教育需不需要惩罚', 25:'中大奖，你会告诉父母吗',
+  26:'网络实名制可行吗', 27:'名人有没有隐私权', 28:'"富二代"的争议', 29:'习惯决定成功', 30:'人类一千年以后',
+};
+const ALL_LESSON_TITLES = {hskk: HSKK_LESSON_TITLES}; // nghe/doc/viet: chưa bóc mục lục, thêm dần
 function lessonRefFor(tab, occIndex){
   const books = LESSON_BOOKS[tab];
   if(!books) return null;
@@ -672,21 +679,17 @@ function lessonRefFor(tab, occIndex){
   }
   return {title:books[idx].title, lesson:remain, overflow:false};
 }
-function phaseOf(week){
-  if(week<=2) return '阶段1·熟悉';
-  if(week<=6) return '阶段2·练技能';
-  if(week<=15) return '阶段3·冲刺刷题';
-  return '阶段4·高强度冲刺';
-}
+function totalLessonsFor(tab){ return LESSON_BOOKS[tab].reduce((s,b)=>s+b.count, 0); }
 function buildSchedule(){
   const days = [];
-  for(let i=0;i<TOTAL_WEEKS*7;i++){
-    const d = new Date(SCHEDULE_START);
-    d.setDate(d.getDate()+i);
-    const dow = d.getDay();
-    const week = Math.floor(i/7)+1;
-    days.push({n:i+1, date:d, week, dow, ...DOW_SKILL[dow]});
-  }
+  let n = 0;
+  SKILL_ORDER.forEach(tab=>{
+    const total = totalLessonsFor(tab);
+    for(let i=0;i<total;i++){
+      n++;
+      days.push({n, tab, cn: SKILL_LABELS[tab], localIndex: i+1});
+    }
+  });
   return days;
 }
 const SCHEDULE = buildSchedule();
@@ -743,18 +746,42 @@ function importProgress(){
   }
 }
 
+/* Thu gọn/mở rộng từng khối kỹ năng trong sidebar (user 2026-09-18) — mặc định chỉ mở khối
+   đang chứa buổi hiện tại, các khối khác thu gọn, đỡ phải cuộn qua 144 buổi. Trạng thái lưu
+   localStorage để giữ nguyên khi tải lại trang. */
+let collapsedSkills = lsGet('ui/collapsed-skills', null);
+function ensureCollapsedDefaults(){
+  if(collapsedSkills) return;
+  const curTab = SCHEDULE[currentDay-1].tab;
+  collapsedSkills = {};
+  SKILL_ORDER.forEach(tab=>{ collapsedSkills[tab] = (tab !== curTab); });
+}
+function toggleSkillGroup(tab){
+  collapsedSkills[tab] = !collapsedSkills[tab];
+  lsSet('ui/collapsed-skills', collapsedSkills);
+  renderSidebar();
+}
 function renderSidebar(){
+  ensureCollapsedDefaults();
   const el = document.getElementById('sidebar');
   let html = '';
-  let curWeek = 0;
+  let curTab = null;
   SCHEDULE.forEach(day=>{
-    if(day.week !== curWeek){
-      curWeek = day.week;
-      html += `<div class="weekHead">第 ${curWeek} 周 <span class="phaseTag">· ${phaseOf(curWeek)}</span></div>`;
+    if(day.tab !== curTab){
+      curTab = day.tab;
+      const total = totalLessonsFor(curTab);
+      const doneCount = SCHEDULE.filter(d=>d.tab===curTab && doneDays[d.n]).length;
+      const collapsed = !!collapsedSkills[curTab];
+      html += `<button class="weekHead${collapsed?' collapsed':''}" onclick="toggleSkillGroup('${curTab}')">
+        <span class="arrow">▼</span><span>${SKILL_LABELS[curTab]}</span><span class="count">${doneCount}/${total}</span>
+      </button>`;
     }
+    if(collapsedSkills[day.tab]) return;
     const isDone = !!doneDays[day.n];
+    const titleMap = ALL_LESSON_TITLES[day.tab];
+    const title = titleMap && titleMap[day.localIndex] ? `「${titleMap[day.localIndex]}」` : '';
     html += `<button class="dayBtn${day.n===currentDay?' today':''}${isDone?' done':''}" onclick="goToDay(${day.n})">
-      <span class="n">第${day.n}课</span><span class="skill">${day.cn}</span>
+      <span class="n">第${day.localIndex}课</span><span class="skill">${title}</span>
       <span class="doneBox${isDone?' on':''}" title="${isDone?'已完成（系统自动判定）':'尚未完成'}">✓</span>
     </button>`;
   });
@@ -765,7 +792,9 @@ function goToDay(n){
   const day = SCHEDULE[n-1];
   showSkillPanel(day.tab);
   /* Buổi Đọc/Viết bám thẳng sách, không có nội dung "要点" riêng — ẩn hẳn nút Phần 1,
-     vào thẳng Phần 2 (user 2026-09-18) */
+     vào thẳng Phần 2 (user 2026-09-18). Buổi 口语 CHƯA bóc xong 表达方式 vẫn giữ tab Phần 1
+     hiển thị dù trống — đây là placeholder cho nội dung CHƯA làm, khác hẳn Đọc/Viết vốn
+     THEO THIẾT KẾ không có Phần 1 — không được ẩn kẻo tưởng nhầm là đã xong hết. */
   const noPart1 = (day.tab === 'doc' || day.tab === 'viet');
   document.getElementById('tab-p1-btn').hidden = noPart1;
   showPart(noPart1 ? 'p2' : 'p1');
@@ -802,11 +831,15 @@ function renderLanguagePoints(n){
     </div>`).join('')}</div>`;
 }
 /* Tên bài ngắn gọn cho buổi đã có nội dung thật — hiện 1 dòng "📖 第N课「Tên bài」", không kèm
-   trích dẫn nguồn/ghi chú dài dòng (user yêu cầu gọn 2026-09-18). N ở đây là SỐ BÀI TRONG SÁCH
-   (`lesson`), KHÔNG phải số buổi theo lịch `n` — 2 số này trùng nhau ở buổi 1 (HSKK) nên trước đó
-   nhầm tưởng dùng `n` là đúng; đến buổi 5 (Nghe = bài 1 sách) mới lộ bug, user báo sai (2026-09-18). */
-const LESSON_TITLES = {1: {lesson:1, title:'快乐会传染'}, 4: {lesson:1, title:'我和汉语'}, 5: {lesson:1, title:'珍惜现在'}};
-const REAL_CONTENT_DAYS = {1:'hskk', 4:'viet', 5:'nghe'}; // buổi đã nạp nội dung thật — cập nhật dần khi bóc thêm bài
+   trích dẫn nguồn/ghi chú dài dòng (user yêu cầu gọn 2026-09-18). Key theo (tab, localIndex)
+   thay vì số buổi toàn khoá `n` — vì sau khi gộp khối theo kỹ năng (2026-09-18), `n` của mỗi
+   kỹ năng dịch chuyển theo thứ tự khối, còn localIndex (số bài trong sách của đúng kỹ năng đó)
+   thì cố định. */
+const REAL_CONTENT_LESSONS = {
+  hskk: {1: {lesson:1, title:'快乐会传染'}},
+  viet: {1: {lesson:1, title:'我和汉语'}},
+  nghe: {1: {lesson:1, title:'珍惜现在'}},
+}; // buổi đã nạp nội dung thật — cập nhật dần khi bóc thêm bài
 /* Tên sách rút gọn dùng chung cho trích dẫn — KHÔNG dùng ref.title (tên sách dài kiểu
    《发展汉语·高级写作I》 gộp cả số tập I/II) nữa, chỉ cần đủ để biết đang bám sách nào. */
 const SHORT_BOOK_NAMES = {hskk:'高级口语', nghe:'高级听力', doc:'高级阅读', viet:'高级写作'};
@@ -817,18 +850,17 @@ function updateLessonNote(n){
   const day = SCHEDULE[n-1];
   const citeEl = document.getElementById('lesson-cite');
   if(!citeEl) return;
-  if(REAL_CONTENT_DAYS[n] === day.tab){
-    const lt = LESSON_TITLES[n];
-    citeEl.textContent = lt ? `📖 第${lt.lesson}课「${lt.title}」` : '';
+  const real = REAL_CONTENT_LESSONS[day.tab] && REAL_CONTENT_LESSONS[day.tab][day.localIndex];
+  if(real){
+    citeEl.textContent = `📖 第${real.lesson}课「${real.title}」`;
     return;
   }
-  const occ = occurrenceCount(n);
-  const ref = lessonRefFor(day.tab, occ);
+  const ref = lessonRefFor(day.tab, day.localIndex - 1);
   citeEl.textContent = ref ? `📖《${SHORT_BOOK_NAMES[day.tab]}》第${ref.lesson}课` : '';
 }
 function updateSummaryHeader(){
   const day = SCHEDULE[currentDay-1];
-  document.getElementById('sum-day').textContent = '第'+currentDay+'课';
+  document.getElementById('sum-day').textContent = '第'+day.localIndex+'课';
   document.getElementById('sum-skill').textContent = day.cn;
   document.getElementById('sum-doneBtn').textContent = doneDays[currentDay] ? '✅ 系统判定：本课已完成' : '⏳ 系统判定：本课进行中';
   document.getElementById('sum-doneBtn').className = 'btn'+(doneDays[currentDay]?' primary':'');
