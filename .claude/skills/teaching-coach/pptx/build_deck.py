@@ -356,11 +356,19 @@ class DeckBuilder:
             disp_w = iw * scale; disp_h = ih * scale
             crop_w_frac = max(0.0, (1 - box_w / disp_w) / 2)
             crop_h_frac = max(0.0, (1 - box_h / disp_h) / 2)
-            pic = slide.shapes.add_picture(str(path), Emu(int(left)), Emu(int(top)),
-                                           Emu(int(box_w)), Emu(int(box_h)))
-            pic.crop_left = crop_w_frac; pic.crop_right = crop_w_frac
-            pic.crop_top = crop_h_frac; pic.crop_bottom = crop_h_frac
-            return
+            # Khung box_w x box_h lệch tỉ lệ quá xa ảnh gốc (vd cột chữ rộng
+            # 3.6in cố định ép cột ảnh còn lại quá hẹp/cao) khiến "cover" phải
+            # cắt bỏ phần lớn ảnh (>20% mỗi bên = >40% tổng), cắt cụt mất chủ
+            # thể (2026-09-19, buổi 14 HSK1 — feedback "ảnh bị cắt dọc" lặp
+            # lại nhiều buổi trước). Chặn: vượt ngưỡng → rơi về "contain"
+            # (letterbox, không cắt) thay vì cắt cụt chủ thể.
+            CROP_FRAC_LIMIT = 0.20
+            if crop_w_frac <= CROP_FRAC_LIMIT and crop_h_frac <= CROP_FRAC_LIMIT:
+                pic = slide.shapes.add_picture(str(path), Emu(int(left)), Emu(int(top)),
+                                               Emu(int(box_w)), Emu(int(box_h)))
+                pic.crop_left = crop_w_frac; pic.crop_right = crop_w_frac
+                pic.crop_top = crop_h_frac; pic.crop_bottom = crop_h_frac
+                return
         scale = min(box_w / iw, box_h / ih)
         w = int(iw * scale); h = int(ih * scale)
         l = int(left + (box_w - w) / 2)
@@ -542,7 +550,15 @@ class DeckBuilder:
         area_h (fit="contain", không cắt cảnh), cột GIỮA xếp CHỒNG DỌC n thẻ
         từ (hz/py/vn, không ví dụ riêng), cột PHẢI hiện 1 câu ví dụ DÙNG
         CHUNG (cỡ chữ cố định 23/16/16pt giống hệt wordcard, không co scale
-        động — tránh lặp lại lỗi chữ quá nhỏ/khó đọc)."""
+        động — tránh lặp lại lỗi chữ quá nhỏ/khó đọc).
+
+        `image_layout: "top_left"` (2026-09-19, opt-in riêng cho buổi 14 HSK1
+        theo mockup user gửi — KHÔNG đổi mặc định các buổi khác): ảnh thu nhỏ
+        về góc trên-trái, từ vựng xếp cạnh ảnh cùng hàng trên, câu ví dụ kéo
+        FULL-WIDTH ở dải dưới cùng thay vì bó trong cột phải hẹp."""
+        if s.get("image_layout") == "top_left" and s.get("image"):
+            self._slide_vocab_cards_top_left(slide, s, items, example, top, area_h)
+            return
         content_w = SLIDE_W - 2 * MARGIN
         gap1 = Inches(0.3); gap2 = Inches(0.5)
         n = max(1, len(items))
@@ -614,6 +630,57 @@ class DeckBuilder:
             if example.get("vn"):
                 p3 = etf.add_paragraph(); p3.space_before = Pt(2)
                 self._set_run(p3.add_run(), "     " + example["vn"], 16, color="muted")
+
+    def _slide_vocab_cards_top_left(self, slide, s, items, example, top, area_h):
+        """`image_layout: "top_left"` — ảnh nhỏ góc trên-trái + từ vựng cạnh
+        ảnh cùng hàng trên, câu ví dụ full-width dải dưới (2026-09-19, buổi 14
+        HSK1, theo mockup user gửi trong chat)."""
+        content_w = SLIDE_W - 2 * MARGIN
+        img_w = Inches(5.2)
+        img_h_cap = min(Inches(3.6), int(area_h * 0.62))
+        img_h = self._image_fit_height(s["image"], img_w, img_h_cap)
+        gap = Inches(0.3)
+        img_left = MARGIN
+        self._place_image(slide, s["image"], img_left, top, img_w, img_h, fit="contain")
+
+        words_left = img_left + img_w + gap
+        words_w = content_w - img_w - gap
+        n = max(1, len(items))
+        word_gap = Inches(0.2)
+        each_w = int((words_w - word_gap * (n - 1)) / n)
+        cx = words_left
+        for it in items:
+            box, tf = self._textbox(slide, cx, top, each_w, img_h,
+                                    anchor=MSO_ANCHOR.MIDDLE)
+            p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
+            self._set_run(p.add_run(), it.get("hz", ""), 36, color="ink",
+                          bold=True, cjk=True)
+            if it.get("py"):
+                p2 = tf.add_paragraph(); p2.alignment = PP_ALIGN.CENTER
+                p2.space_before = Pt(4)
+                self._set_run(p2.add_run(), it["py"], 16, color="accent", italic=True)
+            if it.get("vn"):
+                p3 = tf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
+                p3.space_before = Pt(3)
+                self._set_run(p3.add_run(), it["vn"], 13, color="ink")
+            cx = cx + each_w + word_gap
+
+        if example:
+            ex_top = top + img_h + Inches(0.25)
+            ex_h = area_h - img_h - Inches(0.25)
+            keywords = [it.get("hz", "") for it in items if it.get("hz")]
+            ebox, etf = self._textbox(slide, MARGIN, ex_top, content_w, ex_h)
+            p = etf.paragraphs[0]
+            self._set_run(p.add_run(), "•  ", 18, color="accent", bold=True)
+            self._set_run_highlighted(p, example.get("hz", ""), keywords, 20,
+                                      color="ink", bold=True, cjk=True)
+            if example.get("py"):
+                p2 = etf.add_paragraph(); p2.space_before = Pt(4)
+                self._set_run(p2.add_run(), "     " + example["py"], 14,
+                              color="accent", italic=True)
+            if example.get("vn"):
+                p3 = etf.add_paragraph(); p3.space_before = Pt(3)
+                self._set_run(p3.add_run(), "     " + example["vn"], 14, color="muted")
 
     def _image_fit_height(self, rel_path, box_w, max_h):
         """Chiều cao hiển thị THẬT của ảnh khi ép vừa bề rộng box_w (giữ tỉ lệ),
@@ -951,13 +1018,53 @@ class DeckBuilder:
         max_text_block_h = 0
         for _pi, w in enumerate(words):
             has_img = bool(w.get("image"))
-            image_pos = w.get("image_pos", "left")
+            # Mặc định MIRROR theo vị trí cột khi có đúng 2 từ (2026-09-19,
+            # buổi 14 HSK1 — feedback "các từ không đối xứng à?"): từ 1 ảnh
+            # bên "left" (ra rìa ngoài-trái), từ 2 mặc định "right" (ra rìa
+            # ngoài-phải) thay vì cả 2 cùng "left" cứng — trước đó khiến ảnh
+            # từ 2 dạt vào SÁT DẢI PHÂN CÁCH giữa 2 cột (cạnh trong) trong khi
+            # ảnh từ 1 nằm rìa ngoài, tạo cảm giác lệch/không cân xứng dù mỗi
+            # cột riêng lẻ đều theo đúng rule "ảnh-trái-chữ-phải". Chỉ áp
+            # dụng khi n==2 và JSON không tự khai `image_pos` (khai tay luôn
+            # được tôn trọng, không bị ghi đè).
+            default_pos = "right" if (n == 2 and _pi == 1) else "left"
+            image_pos = w.get("image_pos", default_pos)
             col_w = col_ws[_pi]
             if has_img and image_pos == "top" and col_w >= WIDE_COL_THRESHOLD:
                 image_pos = "left"
             top_stack = False
             if has_img and image_pos in ("left", "right"):
-                text_w = min(col_w - INNER_GAP - Inches(1.4), TEXT_COL_W)
+                # Bề rộng chữ = ĐO THẬT nội dung cần (2026-09-19, buổi 14 HSK1
+                # — sau khi sàn cố định 2.6in vẫn ép ảnh 冷/热 quá nhỏ, user
+                # xin ảnh to hơn nữa nhưng KHÔNG được làm rớt dòng chữ). Thay
+                # sàn cố định bằng đo bề rộng 1 dòng THẬT SỰ cần cho từng dòng
+                # (hz/pos/py/vn + ví dụ) ở đúng cỡ chữ sẽ vẽ bên dưới — dùng
+                # max của tất cả, nên câu ngắn (vd "冬天很冷。") tự nhường
+                # thêm chỗ cho ảnh, câu dài vẫn được đủ chỗ như cũ, không cần
+                # đoán 1 sàn chung cho mọi trường hợp.
+                needed_pt = self._text_width_pt(w.get("hz", ""), 50, bold=True)
+                if w.get("pos"):
+                    # pos hiển thị cỡ 15pt (không bold) NỐI TIẾP hz trên cùng
+                    # dòng — đo riêng đúng cỡ thật, không đo cả cụm ở cỡ 50pt
+                    # (từng làm needed_pt bị thổi phồng gấp ~2 lần, vô tình ép
+                    # text_w kịch trần TEXT_COL_W thay vì co lại nhường ảnh).
+                    needed_pt = max(needed_pt, self._text_width_pt(w.get("hz", ""), 50, bold=True)
+                                    + self._text_width_pt("  " + w["pos"], 15))
+                if w.get("py"):
+                    needed_pt = max(needed_pt, self._text_width_pt(w["py"], 22, bold=True))
+                if w.get("vn"):
+                    needed_pt = max(needed_pt, self._text_width_pt(w["vn"], 18))
+                # LƯU Ý: câu ví dụ (example) KHÔNG tính vào needed_pt — câu ví
+                # dụ được PHÉP tự xuống dòng (đã cộng đúng số dòng wrap vào
+                # ex_natural_h ở dưới, không bị cắt/mất chữ), chỉ riêng dòng
+                # 汉字/pinyin/nghĩa của TỪ mới cần giữ nguyên 1 dòng. Trước đó
+                # đo cả câu ví dụ khiến soạn ví dụ dài hơn 1 chút (thêm ngữ
+                # cảnh theo yêu cầu) lại vô tình ép text_w kịch trần, ảnh nhỏ
+                # lại — ngược với việc "ảnh to hơn" (2026-09-19, buổi 14 HSK1).
+                needed_w = Pt(needed_pt) + Inches(0.35)  # đệm lề 2 bên
+                MIN_TEXT_W = Inches(1.7)
+                text_w = max(MIN_TEXT_W, min(needed_w, TEXT_COL_W))
+                text_w = min(text_w, col_w - INNER_GAP - Inches(1.8))
             elif has_img:  # image_pos == "top"
                 top_stack = True
                 text_w = col_w
@@ -972,27 +1079,49 @@ class DeckBuilder:
                     w["vn"], text_w, 18, cjk=False) * self._line_h(18)
             info_h = int(info_h + Pt(12))
 
+            # Câu ví dụ (ex) khi ảnh nằm "left"/"right" giờ nằm ở DẢI RIÊNG
+            # FULL-WIDTH bên dưới ảnh+từ (2026-09-19, buổi 14 HSK1 — feedback
+            # "đặt ví dụ dưới ảnh, đỡ bị ép rớt dòng"), thay vì bó trong cột
+            # chữ hẹp cạnh ảnh — đo wrap theo `col_w` (đầy đủ bề rộng cột)
+            # thay vì `text_w` hẹp, nên câu dài vẫn gọn trong 1-2 dòng.
             ex = w.get("example")
+            ex_wrap_w = col_w if (has_img and image_pos in ("left", "right")) else text_w
             ex_natural_h = 0
             if ex:
                 ex_natural_h = Inches(0.22) + self._wrap_lines(
-                    ex.get("hz", ""), text_w, 21, cjk=True, bold=True) * self._line_h(21)
+                    ex.get("hz", ""), ex_wrap_w, 21, cjk=True, bold=True) * self._line_h(21)
                 if ex.get("py"):
                     ex_natural_h += Pt(3) + self._wrap_lines(
-                        ex["py"], text_w, 15) * self._line_h(15)
+                        ex["py"], ex_wrap_w, 15) * self._line_h(15)
                 if ex.get("vn"):
                     ex_natural_h += Pt(3) + self._wrap_lines(
-                        ex["vn"], text_w, 15) * self._line_h(15)
+                        ex["vn"], ex_wrap_w, 15) * self._line_h(15)
                 ex_natural_h = int(ex_natural_h + Pt(8))
 
-            text_block_h = info_h + ex_natural_h
+            # Nhánh "left"/"right": text_block_h chỉ tính info_h (dải ảnh+từ)
+            # — ex_natural_h không còn cùng khối với info_h nữa (đã tách dải
+            # riêng), gộp chung sẽ làm shared_v_offset tính sai, đẩy dải
+            # ảnh+từ lệch tâm. Nhánh top_stack/không-ảnh vẫn giữ hành vi cũ
+            # (info+ex cùng 1 khối xếp dọc trong cột).
+            if has_img and image_pos in ("left", "right"):
+                text_block_h = info_h
+            else:
+                text_block_h = info_h + ex_natural_h
             max_text_block_h = max(max_text_block_h, text_block_h)
             precomputed.append(dict(has_img=has_img, image_pos=image_pos,
                                     top_stack=top_stack, text_w=text_w,
                                     info_h=info_h, ex=ex, ex_natural_h=ex_natural_h,
                                     text_block_h=text_block_h))
 
-        shared_v_offset = max(0, int((area_h - max_text_block_h) / 2))
+        # Dải ví dụ full-width (nếu có) dùng chiều cao LỚN NHẤT trong 2 cột,
+        # để 2 ví dụ (nếu cả 2 từ đều có example) nằm ngang hàng nhau.
+        max_ex_h_fullwidth = max(
+            [pc["ex_natural_h"] for pc in precomputed
+             if pc["has_img"] and pc["image_pos"] in ("left", "right") and pc["ex"]],
+            default=0)
+        row_gap = Inches(0.25) if max_ex_h_fullwidth else 0
+        row1_h = area_h - max_ex_h_fullwidth - row_gap if max_ex_h_fullwidth else area_h
+        shared_v_offset = max(0, int((row1_h - max_text_block_h) / 2))
 
         for i, w in enumerate(words):
             col_w = col_ws[i]
@@ -1023,8 +1152,10 @@ class DeckBuilder:
                 else:  # "right"
                     img_left = col_left + col_w - img_w
                     text_left = col_left
+                # Chiều cao ảnh = row1_h (dải ảnh+từ, đã trừ dải ví dụ
+                # full-width bên dưới nếu có) thay vì luôn full area_h.
                 self._place_image(slide, w["image"], img_left, top,
-                                  img_w, area_h, fit="cover")
+                                  img_w, row1_h, fit="cover")
             elif top_stack:
                 text_needed_h = info_h + ex_natural_h
                 budget_h = area_h - text_needed_h - Inches(0.12)
@@ -1057,10 +1188,28 @@ class DeckBuilder:
                 self._set_run(p3.add_run(), w["vn"], 18, color="ink")
             cur_top = cur_top + info_h
 
-            if ex:
-                # Dùng đúng chiều cao THẬT cần (ex_natural_h tính ở trên),
-                # không ăn hết phần area_h còn lại — tránh vài dòng chữ ngắn
-                # neo TOP rồi để trống mảng lớn bên dưới.
+            if ex and has_img and image_pos in ("left", "right"):
+                # Dải ví dụ FULL-WIDTH bên dưới ảnh+từ (2026-09-19, buổi 14
+                # HSK1) — canh giữa theo `col_w` thay vì bó trong `text_w` hẹp.
+                ex_top = top + row1_h + row_gap
+                ebox, etf = self._textbox(slide, col_left, ex_top, col_w, max_ex_h_fullwidth,
+                                          anchor=MSO_ANCHOR.TOP)
+                p2 = etf.paragraphs[0]; p2.alignment = PP_ALIGN.CENTER
+                self._set_run_highlighted(p2, ex.get("hz", ""),
+                                          ex.get("highlight", w.get("hz")), 21,
+                                          color="ink", bold=True, cjk=True)
+                if ex.get("py"):
+                    p3 = etf.add_paragraph(); p3.alignment = PP_ALIGN.CENTER
+                    p3.space_before = Pt(3)
+                    self._set_run(p3.add_run(), ex["py"], 15, color="accent",
+                                  italic=True)
+                if ex.get("vn"):
+                    p4 = etf.add_paragraph(); p4.alignment = PP_ALIGN.CENTER
+                    p4.space_before = Pt(3)
+                    self._set_run(p4.add_run(), ex["vn"], 15, color="muted")
+            elif ex:
+                # Nhánh top_stack/không-ảnh: giữ hành vi cũ (ví dụ nối tiếp
+                # ngay dưới info, trong cùng cột hẹp).
                 cur_top = cur_top + Inches(0.22)
                 ex_h = ex_natural_h
                 ebox, etf = self._textbox(slide, text_left, cur_top, text_w, ex_h,
