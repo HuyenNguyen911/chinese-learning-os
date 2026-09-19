@@ -1,0 +1,711 @@
+{
+  "meta": {
+    "title": "昨天下雪了",
+    "lesson": "Buổi 14 · New HSK Course 1 · L12"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "昨天下雪了",
+      "subtitle": "Zuótiān xià xuě le · Hôm qua tuyết rơi",
+      "footer": "Buổi 14 · HSK1 3.0 · Thời tiết & sức khỏe"
+    },
+    {
+      "type": "bullets",
+      "title": "Mục tiêu buổi học",
+      "bullets": [
+        "Nghe hiểu và mô tả được thời tiết (mưa, tuyết, lạnh, nóng)",
+        "Nghe hiểu và mô tả đơn giản khi bị ốm, đi khám bệnh",
+        "Nắm được câu không chủ-vị (非主谓句) dùng trong khẩu ngữ",
+        "Nắm được cách dùng ngữ khí trợ từ \"了(1)\" — báo hiệu tình huống mới",
+        "Nắm được cấu trúc cảm thán \"太……了\""
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 · Hỏi thời tiết",
+      "image_layout": "top_left",
+      "items": [
+        {
+          "hz": "天气",
+          "py": "tiānqì",
+          "vn": "thời tiết"
+        },
+        {
+          "hz": "天",
+          "py": "tiān",
+          "vn": "trời (= 天气, dùng trong khẩu ngữ)"
+        }
+      ],
+      "image": "assets/words/tianqi.jpg",
+      "example": {
+        "hz": "今天天气怎么样？这里的天不太好。",
+        "py": "Jīntiān tiānqì zěnmeyàng? Zhèlǐ de tiān bú tài hǎo.",
+        "vn": "Hôm nay thời tiết thế nào? Chỗ này trời không đẹp lắm."
+      },
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "words": [
+        {
+          "hz": "冷",
+          "py": "lěng",
+          "vn": "lạnh",
+          "pos": "tính từ",
+          "image": "assets/words/leng.jpg",
+          "example": {
+            "hz": "今天很冷，多穿点儿衣服。",
+            "py": "Jīntiān hěn lěng, duō chuān diǎnr yīfu.",
+            "vn": "Hôm nay lạnh lắm, mặc thêm quần áo vào."
+          }
+        },
+        {
+          "hz": "热",
+          "py": "rè",
+          "vn": "nóng",
+          "pos": "tính từ",
+          "image": "assets/words/re.jpg",
+          "example": {
+            "hz": "外边很热，我们喝点儿水吧。",
+            "py": "Wàibian hěn rè, wǒmen hē diǎnr shuǐ ba.",
+            "vn": "Bên ngoài nóng lắm, chúng ta uống chút nước đi."
+          }
+        }
+      ],
+      "footer_note": "冷/热 là tính từ, làm vị ngữ KHÔNG cần 是 phía trước: ❌ 我是很冷 → ✅ 我很冷。",
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "有点儿",
+          "py": "yǒudiǎnr",
+          "vn": "hơi, có chút (đứng TRƯỚC tính từ/động từ)"
+        },
+        {
+          "hz": "觉得",
+          "py": "juéde",
+          "vn": "cảm thấy"
+        }
+      ],
+      "image": "assets/words/youdianr_juede.jpg",
+      "example": {
+        "hz": "雨有点儿大，我觉得很冷。",
+        "py": "Yǔ yǒudiǎnr dà, wǒ juéde hěn lěng.",
+        "vn": "Mưa hơi to, tôi cảm thấy rất lạnh."
+      },
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "下雨",
+          "py": "xià yǔ",
+          "vn": "mưa (động từ)"
+        },
+        {
+          "hz": "雨",
+          "py": "yǔ",
+          "vn": "mưa (danh từ)"
+        }
+      ],
+      "image": "assets/words/xiayu.jpg",
+      "example": {
+        "hz": "下雨了，雨有点儿大。",
+        "py": "Xià yǔ le, yǔ yǒudiǎnr dà.",
+        "vn": "Trời mưa rồi, mưa hơi to."
+      },
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "下",
+          "py": "xià",
+          "vn": "(mưa/tuyết) rơi, đổ xuống"
+        },
+        {
+          "hz": "雪",
+          "py": "xuě",
+          "vn": "tuyết"
+        }
+      ],
+      "image": "assets/words/xiaxue.jpg",
+      "example": {
+        "hz": "昨天下雪了。",
+        "py": "Zuótiān xià xuě le.",
+        "vn": "Hôm qua tuyết rơi rồi."
+      },
+      "footer_note": "雪 có bộ 雨 (mưa) ở trên — tuyết cũng là 1 dạng nước từ trời rơi xuống, giống mưa.",
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "words": [
+        {
+          "hz": "晴天",
+          "py": "qíngtiān",
+          "vn": "trời nắng, trời quang",
+          "image": "assets/words/qingtian.jpg",
+          "example": {
+            "hz": "今天是晴天，我们去公园玩儿吧。",
+            "py": "Jīntiān shì qíngtiān, wǒmen qù gōngyuán wánr ba.",
+            "vn": "Hôm nay trời nắng, chúng ta ra công viên chơi đi."
+          }
+        },
+        {
+          "hz": "阴天",
+          "py": "yīntiān",
+          "vn": "trời âm u",
+          "image": "assets/words/yintian.jpg",
+          "example": {
+            "hz": "今天是阴天，我没看见太阳。",
+            "py": "Jīntiān shì yīntiān, wǒ méi kànjiàn tàiyáng.",
+            "vn": "Hôm nay trời âm u, tôi không thấy mặt trời."
+          }
+        }
+      ],
+      "footer_note": "晴 có bộ 日 (mặt trời) — trời tạnh, có nắng.",
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "words": [
+        {
+          "hz": "暖和",
+          "py": "nuǎnhuo",
+          "vn": "ấm áp",
+          "image": "assets/words/nuanhuo.jpg",
+          "example": {
+            "hz": "春天很暖和，花都开了。",
+            "py": "Chūntiān hěn nuǎnhuo, huā dōu kāi le.",
+            "vn": "Mùa xuân ấm áp, hoa đều nở rồi."
+          }
+        },
+        {
+          "hz": "凉快",
+          "py": "liángkuai",
+          "vn": "mát mẻ",
+          "image": "assets/words/liangkuai.jpg",
+          "example": {
+            "hz": "秋天很凉快，我喜欢秋天。",
+            "py": "Qiūtiān hěn liángkuai, wǒ xǐhuan qiūtiān.",
+            "vn": "Mùa thu mát mẻ, tôi thích mùa thu."
+          }
+        }
+      ],
+      "footer_note": "凉 cùng bộ 冫 (băng) với 冷 — cùng nhóm nghĩa liên quan đến lạnh, nhưng 凉快 chỉ mát nhẹ, dễ chịu.",
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "word_groups",
+      "kicker": "生词拓展",
+      "title": "四季 · Bốn mùa",
+      "groups": [
+        {
+          "label": "四季",
+          "items": [
+            {
+              "hz": "春天",
+              "py": "chūntiān",
+              "vn": "mùa xuân"
+            },
+            {
+              "hz": "夏天",
+              "py": "xiàtiān",
+              "vn": "mùa hè"
+            },
+            {
+              "hz": "秋天",
+              "py": "qiūtiān",
+              "vn": "mùa thu"
+            },
+            {
+              "hz": "冬天",
+              "py": "dōngtiān",
+              "vn": "mùa đông"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 · Bị ốm",
+      "items": [
+        {
+          "hz": "生病",
+          "py": "shēngbìng",
+          "vn": "bị bệnh, bị ốm"
+        },
+        {
+          "hz": "看病",
+          "py": "kànbìng",
+          "vn": "khám bệnh"
+        }
+      ],
+      "image": "assets/words/shengbing_kanbing.jpg",
+      "example": {
+        "hz": "杨同乐生病了，去医院看病。",
+        "py": "Yáng Tónglè shēngbìng le, qù yīyuàn kànbìng.",
+        "vn": "Dương Đồng Lạc bị ốm rồi, đi bệnh viện khám bệnh."
+      },
+      "footer_note": "杨同乐 chính là nhân vật trong 课文2/3 của buổi này — nhắc lại tên để liên hệ ngay khi vào hội thoại.",
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "病",
+          "py": "bìng",
+          "vn": "bệnh, ốm"
+        },
+        {
+          "hz": "药",
+          "py": "yào",
+          "vn": "thuốc"
+        }
+      ],
+      "image": "assets/words/bing_yao.jpg",
+      "example": {
+        "hz": "弟弟病了，医生给他一点儿药，让他多休息。",
+        "py": "Dìdi bìng le, yīshēng gěi tā yìdiǎnr yào, ràng tā duō xiūxi.",
+        "vn": "Em trai ốm rồi, bác sĩ cho em ấy một ít thuốc, bảo em ấy nghỉ ngơi nhiều."
+      },
+      "footer_note": [
+        "病 có bộ 疒 (bệnh tật) — nhìn thấy bộ này là nghĩ ngay tới ốm đau.",
+        "药 có bộ 艹 (cỏ cây) ở trên — vì thuốc xưa làm từ thảo dược."
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "喝",
+          "py": "hē",
+          "vn": "uống"
+        },
+        {
+          "hz": "水",
+          "py": "shuǐ",
+          "vn": "nước"
+        }
+      ],
+      "image": "assets/words/he_shui.jpg",
+      "example": {
+        "hz": "我很渴，想喝一杯水。",
+        "py": "Wǒ hěn kě, xiǎng hē yì bēi shuǐ.",
+        "vn": "Tôi rất khát, muốn uống một cốc nước."
+      },
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "hz": "一点儿",
+      "py": "yìdiǎnr",
+      "vn": "một chút, một ít",
+      "pos": "số lượng nhỏ (đứng SAU động từ/danh từ)",
+      "image": "assets/words/yidianr.jpg",
+      "examples": [
+        {
+          "hz": "医生说，吃一点儿药就好了。",
+          "py": "Yīshēng shuō, chī yìdiǎnr yào jiù hǎo le.",
+          "vn": "Bác sĩ nói, uống một chút thuốc là khỏe thôi."
+        }
+      ],
+      "footer_note": "Phân biệt với 有点儿 đã học: 有点儿 đứng TRƯỚC tính từ/động từ tâm lý (有点儿冷、有点儿累); 一点儿 đứng SAU động từ/danh từ, chỉ số lượng nhỏ (吃一点儿药、喝一点儿水).",
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展 · Triệu chứng ốm",
+      "items": [
+        {
+          "hz": "头疼",
+          "py": "tóuténg",
+          "vn": "đau đầu"
+        },
+        {
+          "hz": "发烧",
+          "py": "fāshāo",
+          "vn": "sốt"
+        }
+      ],
+      "image": "assets/words/touteng_fashao.jpg",
+      "example": {
+        "hz": "弟弟头疼，还发烧了。",
+        "py": "Dìdi tóuténg, hái fāshāo le.",
+        "vn": "Em trai đau đầu, còn bị sốt nữa."
+      },
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词拓展",
+      "items": [
+        {
+          "hz": "咳嗽",
+          "py": "késou",
+          "vn": "ho"
+        },
+        {
+          "hz": "感冒",
+          "py": "gǎnmào",
+          "vn": "cảm cúm, bị cảm"
+        }
+      ],
+      "image": "assets/words/kesou_ganmao.jpg",
+      "example": {
+        "hz": "他感冒了，一直咳嗽。",
+        "py": "Tā gǎnmào le, yìzhí késou.",
+        "vn": "Anh ấy bị cảm rồi, cứ ho mãi."
+      },
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "hz": "这里",
+      "py": "zhèlǐ",
+      "vn": "ở đây, chỗ này",
+      "image": "assets/words/zheli.jpg",
+      "examples": [
+        {
+          "hz": "这里的天气很好，我们出去玩儿吧。",
+          "py": "Zhèlǐ de tiānqì hěn hǎo, wǒmen chūqù wánr ba.",
+          "vn": "Thời tiết ở đây đẹp lắm, chúng ta ra ngoài chơi đi."
+        }
+      ],
+      "footer_note": "这里 giống nghĩa 这儿 đã học — cùng nhóm với 那里/哪里 (Buổi 13), chỉ khác vẻ ngoài (里 thay vì 儿).",
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "回",
+          "py": "huí",
+          "vn": "về, trở về"
+        },
+        {
+          "hz": "再",
+          "py": "zài",
+          "vn": "rồi, sau đó mới"
+        }
+      ],
+      "image": "assets/words/hui_zai.jpg",
+      "example": {
+        "hz": "回家后再喝些热水。",
+        "py": "Huí jiā hòu zài hē xiē rè shuǐ.",
+        "vn": "Về nhà rồi sau đó hãy uống thêm ít nước nóng."
+      },
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "生词",
+      "hz": "天",
+      "py": "tiān",
+      "vn": "ngày (lượng từ đếm ngày)",
+      "image": "assets/words/tian_liangci.jpg",
+      "examples": [
+        {
+          "hz": "他病了三天。",
+          "py": "Tā bìng le sān tiān.",
+          "vn": "Anh ấy ốm ba ngày rồi."
+        }
+      ],
+      "footer_note": "天 ở đây khác nghĩa với 天 đã học đầu buổi (= 天气, khẩu ngữ) — cùng 1 chữ nhưng 2 nghĩa, phải nhìn ngữ cảnh để phân biệt.",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "dialogue",
+      "title": "课文1 · 问天气",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "今天天气怎么样？",
+          "py": "Jīntiān tiānqì zěnmeyàng?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "这里的天不太好，下雨了。",
+          "py": "Zhèlǐ de tiān bú tài hǎo, xià yǔ le."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "雨大吗？",
+          "py": "Yǔ dà ma?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "有点儿大，我觉得很冷。",
+          "py": "Yǒudiǎnr dà, wǒ juéde hěn lěng."
+        }
+      ],
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "王一飞": "zh-CN-XiaoyiNeural"
+      },
+      "audio": "assets/audio/slide20.mp3"
+    },
+    {
+      "type": "dialogue",
+      "title": "课文2 · 生病了",
+      "turns": [
+        {
+          "speaker": "王一雪",
+          "hz": "昨天下雪了。",
+          "py": "Zuótiān xià xuě le."
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "是的，太冷了。",
+          "py": "Shì de, tài lěng le."
+        },
+        {
+          "speaker": "王一雪",
+          "hz": "你昨天没来公司，生病了？",
+          "py": "Nǐ zuótiān méi lái gōngsī, shēngbìng le?"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "对，我昨天去医院看病了。",
+          "py": "Duì, wǒ zuótiān qù yīyuàn kànbìng le."
+        }
+      ],
+      "voices": {
+        "王一雪": "zh-CN-XiaoxiaoNeural",
+        "杨同乐": "zh-CN-YunxiNeural"
+      },
+      "audio": "assets/audio/slide21.mp3"
+    },
+    {
+      "type": "dialogue",
+      "title": "课文3 · 看病",
+      "turns": [
+        {
+          "speaker": "杨同乐",
+          "hz": "医生，我病了。",
+          "py": "Yīshēng, wǒ bìng le."
+        },
+        {
+          "speaker": "胡医生",
+          "hz": "我看看。你觉得怎么样？",
+          "py": "Wǒ kànkan. Nǐ juéde zěnmeyàng?"
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "我很冷。",
+          "py": "Wǒ hěn lěng."
+        },
+        {
+          "speaker": "胡医生",
+          "hz": "好的，吃一点儿药，今天休息半天吧。",
+          "py": "Hǎo de, chī yìdiǎnr yào, jīntiān xiūxi bàn tiān ba."
+        },
+        {
+          "speaker": "杨同乐",
+          "hz": "好的。",
+          "py": "Hǎo de."
+        },
+        {
+          "speaker": "胡医生",
+          "hz": "回家后再喝些热水。",
+          "py": "Huí jiā hòu zài hē xiē rè shuǐ."
+        }
+      ],
+      "voices": {
+        "杨同乐": "zh-CN-YunxiNeural",
+        "胡医生": "zh-CN-YunyangNeural"
+      },
+      "footer_note": "Người Trung Quốc thường khuyên uống nước ấm/nước nóng khi bị ốm, vì tin rằng tốt cho sức khỏe hơn nước lạnh.",
+      "audio": "assets/audio/slide22.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "point": "非主谓句 — Câu không phân chủ ngữ - vị ngữ",
+      "examples": [
+        {
+          "hz": "下雨了。",
+          "py": "Xià yǔ le.",
+          "vn": "Trời mưa rồi."
+        },
+        {
+          "hz": "下雪了。",
+          "py": "Xià xuě le.",
+          "vn": "Tuyết rơi rồi."
+        },
+        {
+          "hz": "上课了。",
+          "py": "Shàngkè le.",
+          "vn": "Vào tiết học rồi."
+        },
+        {
+          "hz": "真漂亮！",
+          "py": "Zhēn piàoliang!",
+          "vn": "Đẹp thật!"
+        }
+      ],
+      "note": "Câu do 1 từ/cụm từ tạo thành, không tách rõ chủ ngữ và vị ngữ — hay dùng trong khẩu ngữ để nói về hiện tượng tự nhiên hoặc để cảm thán.",
+      "image": "assets/words/grammar_feimzhuwei.jpg",
+      "audio": "assets/audio/slide23.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 · 非主谓句",
+      "instructions": "Nhìn tình huống, viết 1 câu không chủ-vị ngắn gọn phù hợp",
+      "items": [
+        "Nhìn ra cửa sổ thấy trời đang mưa, em nói: ______",
+        "Đến giờ vào lớp, cô giáo nói: ______",
+        "Nhìn thấy bông hoa rất đẹp, em cảm thán: ______"
+      ],
+      "answers_hint": "Đáp án gợi ý: 下雨了。/ 上课了。/ 真漂亮！"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "point": "语气助词 \"了(1)\" — báo hiệu tình huống mới",
+      "highlight": "了",
+      "examples": [
+        {
+          "hz": "下雨了。",
+          "py": "Xià yǔ le.",
+          "vn": "Trời mưa rồi (lúc nãy chưa mưa)."
+        },
+        {
+          "hz": "十二点了，吃午饭吧。",
+          "py": "Shí'èr diǎn le, chī wǔfàn ba.",
+          "vn": "12 giờ rồi, ăn trưa thôi."
+        },
+        {
+          "hz": "弟弟起床了吗？没起床呢。",
+          "py": "Dìdi qǐchuáng le ma? Méi qǐchuáng ne.",
+          "vn": "Em trai dậy chưa? Chưa dậy đâu."
+        }
+      ],
+      "note": "了 đặt cuối câu (hoặc chỗ ngắt câu), báo hiệu có thay đổi hoặc xuất hiện tình huống mới — KHÔNG đơn thuần là dấu hiệu \"thì quá khứ\". Phủ định dùng 没, và BỎ HẲN 了 ở cuối câu.",
+      "tip": "了 luôn đứng SAU động từ hoặc cuối câu — không đặt trước động từ như từ \"đã\" trong tiếng Việt: ❌ 我昨天了去 → ✅ 我昨天去了。",
+      "image": "assets/words/grammar_le1.jpg",
+      "audio": "assets/audio/slide25.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 · 了(1)",
+      "instructions": "Chọn vị trí đúng của 了 trong câu",
+      "items": [
+        "我昨天___去学校。\n(A 了去  B 去了  C 了去了)",
+        "A: 你吃饭了吗？ B: 我___吃饭。\n(A 没了  B 没  C 不了)"
+      ],
+      "answers_hint": "Đáp án: 1) B 去了   2) B 没 (没吃饭，KHÔNG dùng 了)"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "point": "\"太……了\" — cảm thán mức độ cao",
+      "highlight": "太……了",
+      "examples": [
+        {
+          "hz": "太冷了！",
+          "py": "Tài lěng le!",
+          "vn": "Lạnh quá!"
+        },
+        {
+          "hz": "这个杯子太小了。",
+          "py": "Zhège bēizi tài xiǎo le.",
+          "vn": "Cái cốc này bé quá."
+        },
+        {
+          "hz": "我们今天太高兴了！",
+          "py": "Wǒmen jīntiān tài gāoxìng le!",
+          "vn": "Hôm nay chúng tôi vui quá!"
+        }
+      ],
+      "note": "太……了 dùng để cảm thán một mức độ rất cao hoặc rất sâu — đặt tính từ vào giữa 太 và 了.",
+      "tip": "Tính từ làm vị ngữ (kể cả trong 太……了) KHÔNG cần 是 phía trước: ❌ 我是很冷 → ✅ 我很冷 / 太冷了！",
+      "image": "assets/words/grammar_taile.jpg",
+      "audio": "assets/audio/slide27.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 · 太……了",
+      "instructions": "Dùng \"太……了\" viết lại câu cảm thán cho tình huống sau",
+      "items": [
+        "Trời hôm nay rất nóng, em muốn kêu lên: ______",
+        "Món ăn này rất ngon, em muốn khen: ______"
+      ],
+      "answers_hint": "Đáp án gợi ý: 太热了！/ 太好吃了！"
+    },
+    {
+      "type": "match_pairs",
+      "title": "配对游戏 · Nối ảnh với từ",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/xiayu.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/xiaxue.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/leng.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/re.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/he_shui.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "热",
+          "py": "rè"
+        },
+        {
+          "letter": "B",
+          "hz": "下雪",
+          "py": "xià xuě"
+        },
+        {
+          "letter": "C",
+          "hz": "喝水",
+          "py": "hē shuǐ"
+        },
+        {
+          "letter": "D",
+          "hz": "冷",
+          "py": "lěng"
+        },
+        {
+          "letter": "E",
+          "hz": "下雨",
+          "py": "xià yǔ"
+        }
+      ]
+    }
+  ]
+}
