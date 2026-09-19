@@ -1,0 +1,729 @@
+{
+  "meta": {
+    "title": "大兴机场见！",
+    "lesson": "Buổi 15 · New HSK Course 1 · L15"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "大兴机场见！",
+      "subtitle": "Dàxīng Jīchǎng jiàn! · Hẹn gặp ở sân bay Đại Hưng!",
+      "footer": "Buổi 15 · HSK1 3.0 · Đi lại & du lịch · hẹn gặp"
+    },
+    {
+      "type": "bullets",
+      "title": "Mục tiêu buổi học",
+      "bullets": [
+        "Hỏi & trả lời sở thích ăn uống khi mời khách (爱吃哪个菜)",
+        "Kể chuyện du lịch đã đi và kế hoạch sắp đi",
+        "Hỏi & trả lời thời lượng di chuyển (máy bay mất mấy tiếng)",
+        "Hẹn gặp, sắp xếp đón nhau và ở nhà nhau khi đi xa",
+        "Nắm được câu ghép đẳng lập \"……，还/也……\"",
+        "Mở rộng 10 từ vựng chủ đề du lịch (旅游/护照/签证...)"
+      ]
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 · Mời ăn",
+      "items": [
+        {
+          "hz": "爱",
+          "py": "ài",
+          "vn": "yêu, thích"
+        },
+        {
+          "hz": "哪个",
+          "py": "nǎge",
+          "vn": "cái nào"
+        }
+      ],
+      "image": "assets/words/ai_nage.jpg",
+      "example": {
+        "hz": "你们爱吃哪个菜？",
+        "py": "Nǐmen ài chī nǎge cài?",
+        "vn": "Các bạn thích ăn món nào?"
+      },
+      "audio": "assets/audio/slide03.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 · Du lịch",
+      "items": [
+        {
+          "hz": "男朋友",
+          "py": "nánpéngyou",
+          "vn": "bạn trai"
+        },
+        {
+          "hz": "好玩儿",
+          "py": "hǎowánr",
+          "vn": "vui, thú vị",
+          "pos": "tính từ"
+        }
+      ],
+      "image": "assets/words/nanpengyou_haowanr.jpg",
+      "example": {
+        "hz": "去年我和男朋友去了西安，那里非常好玩儿。",
+        "py": "Qùnián wǒ hé nánpéngyou qùle Xī'ān, nàlǐ fēicháng hǎowánr.",
+        "vn": "Năm ngoái tôi và bạn trai đi Tây An, ở đó rất thú vị."
+      },
+      "audio": "assets/audio/slide04.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "专有名词 · Địa danh",
+      "words": [
+        {
+          "hz": "西安",
+          "py": "Xī'ān",
+          "vn": "(riêng) Tây An",
+          "image": "assets/words/xian.jpg",
+          "example": {
+            "hz": "我很想去西安旅游。",
+            "py": "Wǒ hěn xiǎng qù Xī'ān lǚyóu.",
+            "vn": "Tôi rất muốn đi Tây An du lịch."
+          }
+        },
+        {
+          "hz": "北京",
+          "py": "Běijīng",
+          "vn": "(riêng) Bắc Kinh",
+          "image": "assets/words/beijing.jpg",
+          "example": {
+            "hz": "北京是中国的首都。",
+            "py": "Běijīng shì Zhōngguó de shǒudū.",
+            "vn": "Bắc Kinh là thủ đô Trung Quốc."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide05.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 · Đi máy bay",
+      "items": [
+        {
+          "hz": "飞机",
+          "py": "fēijī",
+          "vn": "máy bay"
+        },
+        {
+          "hz": "小时",
+          "py": "xiǎoshí",
+          "vn": "giờ (thời lượng)"
+        }
+      ],
+      "image": "assets/words/feiji_xiaoshi.jpg",
+      "example": {
+        "hz": "从河内到北京，坐飞机要九个小时。",
+        "py": "Cóng Hénèi dào Běijīng, zuò fēijī yào jiǔ ge xiǎoshí.",
+        "vn": "Từ Hà Nội đến Bắc Kinh, đi máy bay mất chín tiếng."
+      },
+      "audio": "assets/audio/slide06.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词 · Hẹn gặp",
+      "items": [
+        {
+          "hz": "家人",
+          "py": "jiārén",
+          "vn": "người nhà"
+        },
+        {
+          "hz": "时间",
+          "py": "shíjiān",
+          "vn": "thời gian"
+        }
+      ],
+      "image": "assets/words/jiaren_shijian.jpg",
+      "example": {
+        "hz": "我家人都在北京，星期天我姐姐也有时间。",
+        "py": "Wǒ jiārén dōu zài Běijīng, xīngqītiān wǒ jiějie yě yǒu shíjiān.",
+        "vn": "Người nhà tôi đều ở Bắc Kinh, chủ nhật chị tôi cũng có thời gian."
+      },
+      "audio": "assets/audio/slide07.mp3"
+    },
+    {
+      "type": "vocab",
+      "kicker": "生词",
+      "items": [
+        {
+          "hz": "机场",
+          "py": "jīchǎng",
+          "vn": "sân bay"
+        },
+        {
+          "hz": "接",
+          "py": "jiē",
+          "vn": "đón, gặp",
+          "pos": "động từ"
+        }
+      ],
+      "image": "assets/words/jichang_jie.jpg",
+      "example": {
+        "hz": "星期天我姐姐可以去机场接你们。",
+        "py": "Xīngqītiān wǒ jiějie kěyǐ qù jīchǎng jiē nǐmen.",
+        "vn": "Chủ nhật chị tôi có thể đi sân bay đón các bạn."
+      },
+      "audio": "assets/audio/slide08.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词",
+      "words": [
+        {
+          "hz": "住",
+          "py": "zhù",
+          "vn": "ở, sống",
+          "pos": "động từ",
+          "image": "assets/words/zhu.jpg",
+          "example": {
+            "hz": "谢谢你，那我们就住你家。",
+            "py": "Xièxie nǐ, nà wǒmen jiù zhù nǐ jiā.",
+            "vn": "Cảm ơn bạn, vậy chúng tôi sẽ ở nhà bạn."
+          }
+        },
+        {
+          "hz": "早",
+          "py": "zǎo",
+          "vn": "sớm",
+          "pos": "tính từ",
+          "image": "assets/words/zao.jpg",
+          "example": {
+            "hz": "我们早上八点到，早不早？",
+            "py": "Wǒmen zǎoshang bā diǎn dào, zǎo bu zǎo?",
+            "vn": "Chúng tôi sáng 8 giờ đến, có sớm không?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide09.mp3"
+    },
+    {
+      "type": "wordcard",
+      "kicker": "专有名词",
+      "hz": "大兴机场",
+      "py": "Dàxīng Jīchǎng",
+      "vn": "(riêng) Sân bay Đại Hưng",
+      "image": "assets/words/daxing_jichang.jpg",
+      "examples": [
+        {
+          "hz": "我们星期日早上在大兴机场见！",
+          "py": "Wǒmen xīngqīrì zǎoshang zài Dàxīng Jīchǎng jiàn!",
+          "vn": "Chúng ta hẹn gặp ở sân bay Đại Hưng vào sáng chủ nhật nhé!"
+        }
+      ],
+      "audio": "assets/audio/slide10.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展 · Từ vựng du lịch",
+      "words": [
+        {
+          "hz": "旅游",
+          "py": "lǚyóu",
+          "vn": "du lịch",
+          "image": "assets/words/lvyou.jpg",
+          "example": {
+            "hz": "我很喜欢去中国旅游。",
+            "py": "Wǒ hěn xǐhuan qù Zhōngguó lǚyóu.",
+            "vn": "Tôi rất thích đi Trung Quốc du lịch."
+          }
+        },
+        {
+          "hz": "导游",
+          "py": "dǎoyóu",
+          "vn": "hướng dẫn viên du lịch",
+          "image": "assets/words/daoyou.jpg",
+          "example": {
+            "hz": "导游带我们去了很多地方。",
+            "py": "Dǎoyóu dài wǒmen qùle hěn duō dìfang.",
+            "vn": "Hướng dẫn viên đưa chúng tôi đi nhiều nơi."
+          }
+        }
+      ],
+      "footer_note": "旅游/导游 đều có bộ 游 (bơi, đi lại) — cùng nhóm nghĩa về việc đi đây đi đó.",
+      "audio": "assets/audio/slide11.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "words": [
+        {
+          "hz": "护照",
+          "py": "hùzhào",
+          "vn": "hộ chiếu",
+          "image": "assets/words/huzhao.jpg",
+          "example": {
+            "hz": "去中国旅游要带护照。",
+            "py": "Qù Zhōngguó lǚyóu yào dài hùzhào.",
+            "vn": "Đi Trung Quốc du lịch phải mang theo hộ chiếu."
+          }
+        },
+        {
+          "hz": "签证",
+          "py": "qiānzhèng",
+          "vn": "visa",
+          "image": "assets/words/qianzheng.jpg",
+          "example": {
+            "hz": "越南人去中国需要签证吗？",
+            "py": "Yuènán rén qù Zhōngguó xūyào qiānzhèng ma?",
+            "vn": "Người Việt Nam đi Trung Quốc có cần visa không?"
+          }
+        }
+      ],
+      "audio": "assets/audio/slide12.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "words": [
+        {
+          "hz": "票",
+          "py": "piào",
+          "vn": "vé",
+          "image": "assets/words/piao.jpg",
+          "example": {
+            "hz": "我在网上买了飞机票。",
+            "py": "Wǒ zài wǎngshàng mǎile fēijīpiào.",
+            "vn": "Tôi mua vé máy bay trên mạng rồi."
+          }
+        },
+        {
+          "hz": "出发",
+          "py": "chūfā",
+          "vn": "xuất phát, khởi hành",
+          "pos": "động từ",
+          "image": "assets/words/chufa.jpg",
+          "example": {
+            "hz": "我们明天早上出发。",
+            "py": "Wǒmen míngtiān zǎoshang chūfā.",
+            "vn": "Chúng tôi khởi hành vào sáng mai."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide13.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "words": [
+        {
+          "hz": "行李",
+          "py": "xíngli",
+          "vn": "hành lý",
+          "image": "assets/words/xingli.jpg",
+          "example": {
+            "hz": "我的行李很重。",
+            "py": "Wǒ de xíngli hěn zhòng.",
+            "vn": "Hành lý của tôi rất nặng."
+          }
+        },
+        {
+          "hz": "箱子",
+          "py": "xiāngzi",
+          "vn": "vali, hòm",
+          "image": "assets/words/xiangzi.jpg",
+          "example": {
+            "hz": "我把衣服都放进箱子里了。",
+            "py": "Wǒ bǎ yīfu dōu fàngjìn xiāngzi lǐ le.",
+            "vn": "Tôi cho hết quần áo vào trong vali rồi."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide14.mp3"
+    },
+    {
+      "type": "word_pair",
+      "kicker": "生词拓展",
+      "words": [
+        {
+          "hz": "地图",
+          "py": "dìtú",
+          "vn": "bản đồ",
+          "image": "assets/words/ditu.jpg",
+          "example": {
+            "hz": "手机地图能帮我们找到路。",
+            "py": "Shǒujī dìtú néng bāng wǒmen zhǎodào lù.",
+            "vn": "Bản đồ điện thoại có thể giúp chúng tôi tìm đường."
+          }
+        },
+        {
+          "hz": "酒店",
+          "py": "jiǔdiàn",
+          "vn": "khách sạn",
+          "image": "assets/words/jiudian.jpg",
+          "example": {
+            "hz": "这家酒店很便宜。",
+            "py": "Zhè jiā jiǔdiàn hěn piányi.",
+            "vn": "Khách sạn này rất rẻ."
+          }
+        }
+      ],
+      "audio": "assets/audio/slide15.mp3"
+    },
+    {
+      "type": "dialogue",
+      "title": "课文1 · 问客人爱吃什么",
+      "layout": "column",
+      "turns": [
+        {
+          "speaker": "李文",
+          "hz": "你们爱吃哪个菜？",
+          "py": "Nǐmen ài chī nǎge cài?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "我喜欢这个，也喜欢那个。",
+          "py": "Wǒ xǐhuan zhège, yě xǐhuan nàge."
+        },
+        {
+          "speaker": "陈天中",
+          "hz": "这些菜都好吃，还很好看。",
+          "py": "Zhèxiē cài dōu hǎochī, hái hěn hǎokàn."
+        },
+        {
+          "speaker": "李文",
+          "hz": "我爱吃中国菜，也喜欢做。大家多吃点儿。",
+          "py": "Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò. Dàjiā duō chī diǎnr."
+        }
+      ],
+      "voices": {
+        "李文": "zh-CN-YunxiNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural",
+        "陈天中": "zh-CN-YunyangNeural"
+      },
+      "footer_note": "劝饭(mời khách ăn thêm) là nét văn hoá bàn ăn của người Trung Quốc, thể hiện sự hiếu khách.",
+      "audio": "assets/audio/slide16.mp3"
+    },
+    {
+      "type": "dialogue",
+      "title": "课文2 · Kể chuyện du lịch",
+      "layout": "column",
+      "turns": [
+        {
+          "speaker": "李文",
+          "hz": "你们都想去哪儿？",
+          "py": "Nǐmen dōu xiǎng qù nǎr?"
+        },
+        {
+          "speaker": "安妮",
+          "hz": "去年我和男朋友去了西安，今年我想去北京。",
+          "py": "Qùnián wǒ hé nánpéngyou qùle Xī'ān, jīnnián wǒ xiǎng qù Běijīng."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "前几年我去了西安，非常好玩儿。今年我也想去北京。",
+          "py": "Qián jǐ nián wǒ qùle Xī'ān, fēicháng hǎowánr. Jīnnián wǒ yě xiǎng qù Běijīng."
+        },
+        {
+          "speaker": "李文",
+          "hz": "我和王老师都是北京人，北京非常漂亮。",
+          "py": "Wǒ hé Wáng lǎoshī dōu shì Běijīng rén, Běijīng fēicháng piàoliang."
+        }
+      ],
+      "voices": {
+        "李文": "zh-CN-YunxiNeural",
+        "安妮": "zh-CN-XiaoyiNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural"
+      },
+      "footer_note": "几 trong \"前几年\" nghĩa là \"vài, mấy\" (số lượng không xác định) — khác 几 dùng để HỎI \"mấy?\" đã học ở Buổi 4 (你家有几口人？).",
+      "audio": "assets/audio/slide17.mp3"
+    },
+    {
+      "type": "dialogue",
+      "title": "课文3 · 大兴机场见",
+      "layout": "column",
+      "turns": [
+        {
+          "speaker": "王一飞",
+          "hz": "你们的飞机到北京要几个小时？",
+          "py": "Nǐmen de fēijī dào Běijīng yào jǐ ge xiǎoshí?"
+        },
+        {
+          "speaker": "白家月",
+          "hz": "九个小时。",
+          "py": "Jiǔ ge xiǎoshí."
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。",
+          "py": "Wǒ jiārén dōu zài Běijīng, xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā."
+        },
+        {
+          "speaker": "安妮",
+          "hz": "我们星期日早上八点到大兴机场，早不早？",
+          "py": "Wǒmen xīngqīrì zǎoshang bā diǎn dào Dàxīng Jīchǎng, zǎo bu zǎo?"
+        },
+        {
+          "speaker": "王一飞",
+          "hz": "不早。",
+          "py": "Bù zǎo."
+        },
+        {
+          "speaker": "白家月",
+          "hz": "谢谢老师！那我们和您姐姐在大兴机场见！",
+          "py": "Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng Jīchǎng jiàn!"
+        }
+      ],
+      "voices": {
+        "王一飞": "zh-CN-YunxiNeural",
+        "白家月": "zh-CN-XiaoxiaoNeural",
+        "安妮": "zh-CN-XiaoyiNeural"
+      },
+      "footer_note": [
+        "要 ở đây nghĩa \"mất, cần (bao lâu)\" — khác \"muốn, gọi món\" (Buổi 11) và \"muốn, định làm\" (Buổi 13).",
+        "那 ở đây là liên từ \"vậy thì, thế thì\" — khác đại từ chỉ định \"kia, đó\" đã học ở Buổi 9."
+      ],
+      "audio": "assets/audio/slide18.mp3"
+    },
+    {
+      "type": "grammar",
+      "kicker": "语法",
+      "point": "并列复句 \"……，还/也……\" — Câu ghép đẳng lập",
+      "highlight": "还/也",
+      "examples": [
+        {
+          "hz": "我喜欢这个，也喜欢那个。",
+          "py": "Wǒ xǐhuan zhège, yě xǐhuan nàge.",
+          "vn": "Tôi thích cái này, cũng thích cái kia."
+        },
+        {
+          "hz": "王老师是北京人，李文也是北京人。",
+          "py": "Wáng lǎoshī shì Běijīng rén, Lǐ Wén yě shì Běijīng rén.",
+          "vn": "Cô Vương là người Bắc Kinh, Lý Văn cũng là người Bắc Kinh."
+        },
+        {
+          "hz": "我喜欢喝中国茶，还喜欢吃中国菜。",
+          "py": "Wǒ xǐhuan hē Zhōngguó chá, hái xǐhuan chī Zhōngguó cài.",
+          "vn": "Tôi thích uống trà Trung Quốc, còn thích ăn món Trung Quốc."
+        }
+      ],
+      "note": "Câu ghép đẳng lập gồm 2 vế có cấu trúc song song, liên quan lô-gích với nhau, nối bằng 还 hoặc 也 để liệt kê thêm 1 ý cùng loại.",
+      "audio": "assets/audio/slide19.mp3"
+    },
+    {
+      "type": "exercise",
+      "kicker": "练习 · ……，还/也……",
+      "instructions": "Dùng 还/也 nối 2 câu cho sẵn thành 1 câu ghép đẳng lập",
+      "items": [
+        "我喜欢旅游。+ 我喜欢拍照。→ ______",
+        "我想去北京。+ 我想去西安。→ ______",
+        "他是我们的导游。+ 他是我的朋友。→ ______"
+      ],
+      "answers_hint": "Đáp án gợi ý: 1) 我喜欢旅游，也喜欢拍照。 2) 我想去北京，也想去西安。 3) 他是我们的导游，还是我的朋友。"
+    },
+    {
+      "type": "match_pairs",
+      "title": "配对游戏 · Nối ảnh với từ (1/4)",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/ai_nage.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/nanpengyou_haowanr.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/xian.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/beijing.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/feiji_xiaoshi.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "北京",
+          "py": "Běijīng"
+        },
+        {
+          "letter": "B",
+          "hz": "爱",
+          "py": "ài"
+        },
+        {
+          "letter": "C",
+          "hz": "飞机",
+          "py": "fēijī"
+        },
+        {
+          "letter": "D",
+          "hz": "西安",
+          "py": "Xī'ān"
+        },
+        {
+          "letter": "E",
+          "hz": "好玩儿",
+          "py": "hǎowánr"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "title": "配对游戏 · Nối ảnh với từ (2/4)",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/jiaren_shijian.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/zhu.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/zao.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/daxing_jichang.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/jichang_jie.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "早",
+          "py": "zǎo"
+        },
+        {
+          "letter": "B",
+          "hz": "接",
+          "py": "jiē"
+        },
+        {
+          "letter": "C",
+          "hz": "家人",
+          "py": "jiārén"
+        },
+        {
+          "letter": "D",
+          "hz": "大兴机场",
+          "py": "Dàxīng Jīchǎng"
+        },
+        {
+          "letter": "E",
+          "hz": "住",
+          "py": "zhù"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "title": "配对游戏 · Nối ảnh với từ (3/4)",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/lvyou.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/daoyou.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/huzhao.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/qianzheng.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/piao.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "签证",
+          "py": "qiānzhèng"
+        },
+        {
+          "letter": "B",
+          "hz": "旅游",
+          "py": "lǚyóu"
+        },
+        {
+          "letter": "C",
+          "hz": "票",
+          "py": "piào"
+        },
+        {
+          "letter": "D",
+          "hz": "导游",
+          "py": "dǎoyóu"
+        },
+        {
+          "letter": "E",
+          "hz": "护照",
+          "py": "hùzhào"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "title": "配对游戏 · Nối ảnh với từ (4/4)",
+      "images": [
+        {
+          "num": 1,
+          "image": "assets/words/chufa.jpg"
+        },
+        {
+          "num": 2,
+          "image": "assets/words/xingli.jpg"
+        },
+        {
+          "num": 3,
+          "image": "assets/words/xiangzi.jpg"
+        },
+        {
+          "num": 4,
+          "image": "assets/words/ditu.jpg"
+        },
+        {
+          "num": 5,
+          "image": "assets/words/jiudian.jpg"
+        }
+      ],
+      "words": [
+        {
+          "letter": "A",
+          "hz": "箱子",
+          "py": "xiāngzi"
+        },
+        {
+          "letter": "B",
+          "hz": "酒店",
+          "py": "jiǔdiàn"
+        },
+        {
+          "letter": "C",
+          "hz": "出发",
+          "py": "chūfā"
+        },
+        {
+          "letter": "D",
+          "hz": "地图",
+          "py": "dìtú"
+        },
+        {
+          "letter": "E",
+          "hz": "行李",
+          "py": "xíngli"
+        }
+      ]
+    }
+  ]
+}

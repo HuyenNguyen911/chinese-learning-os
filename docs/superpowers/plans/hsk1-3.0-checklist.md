@@ -475,26 +475,42 @@ CHƯA được đánh dấu ôn tập trong bảng dưới trước khi soát l�
 
 ## Buổi 15 — Đi lại & du lịch · hẹn gặp (L15)
 
+✅ **ĐÃ SỬA 2026-09-19** — đối chiếu trực tiếp vision `raw/新HSK1教程3.0.pdf` idx126-131 (trang in
+112-117), đủ 3 hộp 15-2/15-4/15-6 + 课文3. Bản cũ chỉ ghi 16 từ, bỏ sót **几** (nghĩa mới "vài,
+mấy" — khác nghi vấn "mấy" đã học Buổi 04), **年** (hoá ra đã dạy Buổi 13, không phải từ mới),
+**要** (nghĩa mới "mất/cần [bao lâu]" — khác 2 nghĩa đã học Buổi 11/13), và **接** (hoàn toàn
+mới — "đón, gặp"). Đúng là **20 mục** (17 生词 đánh số + 3 danh từ riêng).
+
+⚠️ **Quét chéo với các buổi đã build** (script quét field `hz` trong mọi
+`output/hsk1/buoi*/slide/*.json`): **那** đã dạy ở Buổi 09 (đại từ chỉ định "kia, đó") — Bài 15
+dùng nghĩa khác hẳn (liên từ "vậy thì, thế thì") → ôn chữ, không phải từ mới hoàn toàn.
+
 | 汉字 | pinyin | nghĩa Việt | trạng thái |
 |---|---|---|---|
 | 爱 | ài | yêu, thích | ⏳ chưa soạn |
 | 哪个 | nǎge | cái nào | ⏳ chưa soạn |
-| 好玩儿 | hǎowánr | vui, thú vị | ⏳ chưa soạn |
-| 去年 | qùnián | năm ngoái | **đã dạy sớm ở Buổi 12** (2026-09-14, nhóm mở rộng 明年/过年/去年) — khi soạn Buổi 15 chỉ ôn lại, không tính là từ mới |
+| 去年 | qùnián | năm ngoái | ⏭️ ÔN Y NGUYÊN — đã dạy sớm ở Buổi 12 (nhóm mở rộng 明年/过年/去年), không tính từ mới |
 | 男朋友 | nánpéngyou | bạn trai | ⏳ chưa soạn |
+| 几 | jǐ | vài, mấy (số từ, không nghi vấn — vd 前几年) | ⚠️ ÔN CHỮ — đã học Buổi 04 nghĩa nghi vấn "mấy?"; Bài 15 nghĩa khác (số lượng phiếm chỉ) |
+| 年 | nián | năm | ⏭️ ÔN Y NGUYÊN — đã dạy Buổi 13 (生词拓展), y nguyên nghĩa, không tính từ mới |
+| 好玩儿 | hǎowánr | vui, thú vị | ⏳ chưa soạn |
 | 西安 | Xī'ān | (riêng) Tây An | ⏳ chưa soạn |
 | 北京 | Běijīng | (riêng) Bắc Kinh | ⏳ chưa soạn |
 | 飞机 | fēijī | máy bay | ⏳ chưa soạn |
+| 要 | yào | mất, cần (bao lâu) | ⚠️ ÔN CHỮ — đã học Buổi 11 "muốn, gọi món" + Buổi 13 "muốn, định làm"; Bài 15 nghĩa khác hẳn (động từ chỉ thời lượng cần thiết) |
 | 小时 | xiǎoshí | giờ (thời lượng) | ⏳ chưa soạn |
 | 家人 | jiārén | người nhà | ⏳ chưa soạn |
 | 时间 | shíjiān | thời gian | ⏳ chưa soạn |
 | 机场 | jīchǎng | sân bay | ⏳ chưa soạn |
+| 接 | jiē | đón, gặp | ✅ MỚI (bỏ sót ở bản checklist cũ) |
 | 住 | zhù | ở, sống | ⏳ chưa soạn |
 | 早 | zǎo | sớm | ⏳ chưa soạn |
-| 那 | nà | vậy thì, thế thì (liên từ) | ⏳ chưa soạn |
+| 那 | nà | vậy thì, thế thì (liên từ) | ⚠️ ÔN CHỮ — đã học Buổi 09 nghĩa đại từ chỉ định "kia, đó"; Bài 15 nghĩa khác hẳn (liên từ) |
 | 大兴机场 | Dàxīng Jīchǎng | (riêng) Sân bay Đại Hưng | ⏳ chưa soạn |
 
-**16 từ**
+**20 mục theo sách = 15 từ mới thật sự (爱/哪个/男朋友/好玩儿/西安/北京/飞机/小时/家人/时间/
+机场/接/住/早/大兴机场) + 3 ôn chữ khác nghĩa (几/要/那) + 2 ôn y nguyên không tính mới
+(去年/年)**
 
 ---
 
@@ -516,9 +532,9 @@ CHƯA được đánh dấu ôn tập trong bảng dưới trước khi soát l�
 | 12 | Sở thích & phim · 了 | L14 | 19 | ⏳ chưa soạn |
 | 13 | Đại học & đang làm · 呢 | L11 | 25 | ✅ đã có |
 | 14 | Thời tiết & sức khỏe | L12 | 19 | ⏳ chưa soạn |
-| 15 | Đi lại & du lịch · hẹn gặp | L15 | 16 | ⏳ chưa soạn |
+| 15 | Đi lại & du lịch · hẹn gặp | L15 | 20 (15 mới + 3 ôn chữ khác nghĩa: 几/要/那 + 2 ôn y nguyên: 去年/年) | ⏳ chưa soạn |
 | 16 | Ôn tập tổng hợp | — | 0 (ôn lại ~250) | ⏳ chưa soạn |
-| **Tổng** | | | **250 distinct** (per-buổi range 11–28) | |
+| **Tổng** | | | **~250 distinct** (per-buổi range 11–28; buổi 06/07/09/12/14 chưa audit vision như buổi 15, số này có thể còn đổi) | |
 
 Tổng theo từng 课 sách trước dedup = 254 (247 gốc + 2 từ audit buổi 02 bổ sung 2026-09-09: 不,
 对不起 + 5 từ audit buổi 05 bổ sung 2026-09-09: bỏ "手机号" gộp/"一些"/"好的" sai, thay bằng
@@ -546,6 +562,10 @@ trùng lặp xuất hiện lại ở 课 khác (xem mục dưới) → **250 t�
 | 大学生 | dàxuéshēng | Buổi 03 (L3, mở rộng) | Buổi 13 (L11) — ôn y nguyên, không tính từ mới |
 | 小学生 | xiǎoxuéshēng | Buổi 03 (L3, mục 生词拓展 4 cấp học, đi kèm 大学生) — phát hiện 2026-09-14 khi soạn Buổi 12 | Buổi 12 (L14) — KHÔNG dạy lại như từ mới, chỉ ôn |
 | 上 (nghĩa "trên", vị trí) | shang/shàng | Buổi 09 (L9) | Buổi 12 dạy **2 nghĩa khác**: "lên (tàu/xe)" và "bắt đầu (đi học)" — cùng chữ, khác nghĩa/từ loại, không phải ôn lại |
+| 那 | nà | Buổi 09 (L9), đại từ chỉ định "kia, đó" | Buổi 15 (L15) — nghĩa khác hẳn: liên từ "vậy thì, thế thì" |
+| 几 | jǐ | Buổi 04 (L4), từ nghi vấn "mấy?" | Buổi 15 (L15) — nghĩa khác: số từ phiếm chỉ "vài, mấy" (không nghi vấn, vd 前几年) |
+| 要 (lần 3) | yào | Buổi 11→13 (xem dòng trên) | Buổi 15 (L15) — thêm nghĩa thứ 3: động từ chỉ thời lượng cần thiết "mất, cần (bao lâu)" |
+| 年 | nián | Buổi 13 (L11, 生词拓展) | Buổi 15 (L15) — ôn y nguyên, không tính từ mới |
 
 ---
 

@@ -621,20 +621,27 @@ nhà uống thêm nước ấm.
 
 **生词**
 
+> ✅ Audit vision 2026-09-19 (idx126-131, trang in 112-117): bản cũ thiếu 几/年/要/接 — xem
+> `hsk1-3.0-checklist.md` §Buổi 15 để có bảng đầy đủ + ghi chú ôn chữ/ôn y nguyên.
+
 | 汉字 | Pinyin | Nghĩa Việt |
 |---|---|---|
 | 爱 | ài | yêu, thích |
 | 哪个 | nǎge | cái nào |
-| 好玩儿 | hǎowánr | vui, thú vị |
 | 去年 | qùnián | năm ngoái |
 | 男朋友 | nánpéngyou | bạn trai |
+| 几 | jǐ | vài, mấy (số từ phiếm chỉ — khác nghi vấn "mấy?" đã học) |
+| 年 | nián | năm |
+| 好玩儿 | hǎowánr | vui, thú vị |
 | 西安 | Xī'ān | (riêng) Tây An |
 | 北京 | Běijīng | (riêng) Bắc Kinh |
 | 飞机 | fēijī | máy bay |
+| 要 | yào | mất, cần (bao lâu) |
 | 小时 | xiǎoshí | giờ (thời lượng) |
 | 家人 | jiārén | người nhà |
 | 时间 | shíjiān | thời gian |
 | 机场 | jīchǎng | sân bay |
+| 接 | jiē | đón, gặp |
 | 住 | zhù | ở, sống |
 | 早 | zǎo | sớm |
 | 那 | nà | vậy thì, thế thì (liên từ) |
@@ -674,5 +681,5 @@ và (b) phần "学练手册" (workbook) đi kèm có thể bổ sung thêm từ
 | 12 | Thời tiết, ốm bệnh | 19 |
 | 13 | Gọi món ăn/uống | 12 |
 | 14 | Đã làm gì, cấp học | 20 |
-| 15 | Du lịch, hẹn gặp sân bay | 16 |
-| **Tổng** | | **≈ 260** (Bài 4-15 chưa audit, số liệu vẫn có thể đổi) |
+| 15 | Du lịch, hẹn gặp sân bay | 20 (audit 2026-09-19, +4: 几/年/要/接; trong đó 年 hoá ra trùng Bài 11) |
+| **Tổng** | | **≈ 260** (Bài 4-14 chưa audit, số liệu vẫn có thể đổi) |
