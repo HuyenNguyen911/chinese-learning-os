@@ -56,13 +56,15 @@ aside.sidebar{
 .sidebarCollapseBtn{display:none}
 @media (min-width:761px){
   .sidebarCollapseBtn{
-    display:flex; align-items:center; justify-content:center; flex:none; align-self:stretch;
-    width:18px; min-height:80px; border-radius:6px; border:1px solid var(--line); background:var(--surface);
-    color:var(--ink-faint); cursor:pointer; font-size:12px; padding:0; position:sticky; top:16px;
+    display:flex; align-items:center; justify-content:center; flex:none; align-self:flex-start;
+    width:15px; height:46px; border-radius:0 8px 8px 0; border:1px solid var(--line); border-left:none;
+    background:var(--surface); color:var(--ink-soft); cursor:pointer; font-size:11px; font-weight:700;
+    padding:0; position:sticky; top:16px; box-shadow:2px 1px 4px rgba(0,0,0,.10); z-index:3;
+    margin-left:-15px; margin-top:44px;
   }
-  .sidebarCollapseBtn:hover{color:var(--ink); background:var(--surface-2)}
+  .sidebarCollapseBtn:hover{color:var(--ink); background:var(--accent-soft); border-color:var(--accent)}
   body.sidebarCollapsed aside.sidebar{display:none}
-  body.sidebarCollapsed .wrap{max-width:1180px}
+  body.sidebarCollapsed .wrap{max-width:none}
 }
 aside.sidebar button.weekHead{
   display:flex; align-items:center; width:100%; gap:6px; font:inherit;
