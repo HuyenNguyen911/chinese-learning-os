@@ -3,9 +3,10 @@ name: vocab-study
 description: >
   Sinh trang HỌC TỪ VỰNG theo bài (kiểu Quizlet) từ file Excel từ vựng.
   Output: output/Giáo trình chuẩn/hsk6/study/tu-vung.html tự chứa — bảng 生词 + 生词拓展, chế độ học
-  flashcard (active recall + Leitner, neo theo Activation của vault), chiết tự +
-  mẹo nhớ tiếng Việt, phát âm 🔊. Use when user muốn "học từ vựng", "review từ vựng",
-  "sinh trang học từ", "cập nhật từ vựng theo bài".
+  flashcard (active recall + Leitner, neo theo Activation của vault, resume đúng thẻ khi lỡ đóng
+  giữa chừng), chiết tự + mẹo nhớ tiếng Việt, phát âm 🔊. Cũng xử lý lệnh "áp dụng lên hạng" để ghi
+  hàng chờ D→C (từ flashcard) vào tier-a.md. Use when user muốn "học từ vựng", "review từ vựng",
+  "sinh trang học từ", "cập nhật từ vựng theo bài", "áp dụng lên hạng".
 author: Chinese Learning OS
 ---
 
@@ -30,9 +31,17 @@ author: Chinese Learning OS
 ## Tính năng trang HTML
 - Bảng 生词: `生词 | Pinyin | 释义 | Nghĩa | 例句`; bài mới nhất trên cùng; mặc định thu gọn.
 - Tab **生词拓展** (nếu bài có): nhóm họ từ theo chữ gốc + pinyin.
-- **Trạng thái ôn** ⚪/D/C/B/A đọc từ `knowledge/vocabulary/tier-*.md` (Activation) — **chỉ đọc**.
+- **Trạng thái ôn** ⚪/D/C/B/A đọc từ `knowledge/vocabulary/tier-*.md` (Activation).
 - **🎓 Học**: flashcard active-recall + lặp ngắt quãng Leitner (localStorage);
   chấm ❌ Chưa / ✅ Thuộc; **trần thăng hạng = Activation+1** (chưa dùng thật thì không "thuộc hẳn").
+- **Resume đúng thẻ**: đóng popup giữa chừng (lỡ tay / đổi ý) → mở lại đúng bài sẽ hỏi tiếp tục từ
+  vị trí dừng (localStorage `hsk6study_resume_v1`), không bắt học lại từ đầu. Tự xoá khi học xong hẳn.
+- **Lên hạng C (chỉ D→C, recognition-only)**: bấm "Thuộc" lần đầu với 1 từ đang D → queue ngay
+  (localStorage `hsk6vocab_promote_v1`, banner xanh hiện số từ đang chờ). Xuất file
+  `tu-vung-promote-to-c.json` (nút "Xuất danh sách"), git add/commit/push, rồi nhờ Claude chạy lệnh
+  **`áp dụng lên hạng`** ở phiên làm việc kế — Claude/script mới thật sự ghi vào `tier-a.md` (trang
+  HTML tĩnh không tự ghi file được). **Không đụng B/A** — 2 mức đó vẫn chỉ lên qua dùng thật
+  (viết/nói được chấm, do Learning Strategist batch update từ session-log).
 - **🧩 Chiết tự / mẹo nhớ**: phân rã bộ/thành phần + **mẹo nhớ tiếng Việt** (kể chuyện) + 🔍 HanziCraft.
 - **🔊 Phát âm** (Web Speech API, giọng zh-CN của máy) — bảng + thẻ học (auto đọc khi lật).
 - ✏️ Sửa nội dung tại chỗ (lưu localStorage).
@@ -57,6 +66,20 @@ SK=".claude/skills/vocab-study/scripts"
 "$PY" "$SK/render_html.py"
 ```
 Lần cập nhật thông thường (không có chữ/từ mới) chỉ cần **1 → 3 → 5**.
+
+## `áp dụng lên hạng` [file, mặc định `output/Giáo trình chuẩn/hsk6/study/tu-vung-promote-to-c.json`]
+Áp dụng hàng chờ D→C mà user export từ nút "🎓 Xuất danh sách" trên trang flashcard (xem mục
+Resume/Lên hạng ở trên). Trang HTML tĩnh không tự ghi được `tier-a.md`, nên bước này luôn cần chạy
+tay ở phiên Claude Code kế tiếp (gợi ý: gộp vào lúc `/close-session`).
+```bash
+"$PY" ".claude/skills/vocab-study/scripts/apply_promote.py"   # hoặc truyền path file khác
+```
+- Chỉ đổi `Activation: D` → `C`, `Seen` +1, `Last Studied` = hôm nay cho từ đã có entry trong
+  `tier-a.md`/`tier-b.md`/`tier-c.md`. Từ đang B/A thì **bỏ qua, không đụng** (báo cáo riêng).
+  Từ chưa có entry nào (chưa được Learning Strategist đưa vào vault) thì **bỏ qua**, không tự thêm.
+- Recalc lại `state/activation.md` (Total/Activated/Rate/Avg Confidence/Tier counts) sau khi ghi.
+- Xoá file JSON đã xử lý xong (tránh áp dụng lại 2 lần).
+- Báo cáo cho user: đã promote từ nào, bỏ qua từ nào và vì sao — để user tự đối chiếu.
 
 ## Sinh override bằng workflow (nghĩa Việt / 例句 cá nhân hoá)
 Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu cá nhân hoá — dùng workflow (cần user bật orchestration):
@@ -87,7 +110,10 @@ Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu
 - Nghĩa Việt **ưu tiên cột 意义**; chỉ tự sinh khi trống, có verify chéo trước khi merge (`vi_override.json`).
 - 例句 mặc định theo cột 例如; nếu từ có trong `ex_override.json` thì **ghi đè** bằng câu cá nhân hoá.
 - **Hàng phân cách bảng markdown** = mọi ô chỉ gồm `---`/`:`; render KHÔNG được bỏ dòng dữ liệu chỉ vì ô có chứa `---` (bug cũ đã sửa: 勉强 Bài 5).
-- Chỉ **đọc** `knowledge/vocabulary/*` (Activation). Không ghi. State vocabulary do learning-strategist sở hữu (CLAUDE.md §6).
+- **Đọc** `knowledge/vocabulary/*` (Activation) khi render trang. Chỉ **ghi** qua lệnh `áp dụng lên hạng`
+  ở trên, và ghi hẹp: riêng field Seen/Activation(D→C)/Last Studied của entry đã có sẵn — không thêm
+  entry mới, không đụng Confidence/Speaking/Writing/Activation B/A. Ngoài phạm vi đó, state vocabulary
+  vẫn do learning-strategist sở hữu (CLAUDE.md §6).
 - Mẹo nhớ: workflow cần user bật orchestration; **chỉ sinh cho từ mới** để tiết kiệm token.
 - **Mọi script phải `reconfigure(utf-8)` stdout/stderr ở đầu file** — console Windows mặc định cp1252, in 中文/tiếng Việt sẽ crash `UnicodeEncodeError` nếu thiếu.
 - **Sau mỗi lần build, nhắc user `Ctrl+Shift+R`** — trình duyệt cache file HTML rất mạnh; mở lại/`start` chỉ focus tab cũ, dễ tưởng "update mất tiêu".

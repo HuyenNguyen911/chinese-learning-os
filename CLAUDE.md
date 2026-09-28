@@ -28,7 +28,7 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
 4. "kế hoạch" / "plan" / "backlog" / "tuần này" / "hôm nay học gì" → learning-strategist
 4b. "tạo bài tập" / "bài tập" / "làm đề" / "worksheet" / "bài tập buổi X" → exercise-generator
 4c. "đóng session" / "kết thúc buổi" / "kết thúc session" / "close session" → close-session
-4d. "học từ vựng" / "review từ vựng" / "sinh trang học từ" / "cập nhật từ vựng theo bài" / "tu-vung" → vocab-study
+4d. "học từ vựng" / "review từ vựng" / "sinh trang học từ" / "cập nhật từ vựng theo bài" / "tu-vung" / "áp dụng lên hạng" → vocab-study
 4e. "chuẩn bị bài" / "bóc bài khóa" / "lesson-prep" / "chuẩn bị buổi X" / "bài khóa của cô" → lesson-prep
 4f. "phản biện" / "bắt lỗi lập luận" / "chỗ này sai ở đâu" / "review giúp kết luận này" → critic
    _(KHÔNG route sang critic khi user chỉ nhờ chấm bài viết tiếng Trung → rule 2; hoặc soi bug code → /code-review)_
@@ -126,17 +126,17 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 | state/competency.md | User / Learning Strategist (manual) |
 | state/weekly-goal.md | Learning Strategist |
 | state/session-log.md | HSK6 Examiner, Speaking Coach, Exercise Generator (append) |
-| state/activation.md | Learning Strategist (batch) |
+| state/activation.md | Learning Strategist (batch); Vocab Study recalc aggregate sau lệnh "áp dụng lên hạng" |
 | knowledge/vocabulary/tier-*.md | Learning Strategist |
 | sessions/writing/ | HSK6 Examiner (tạo file YYYY-MM-DD-topic.md) |
 | sessions/speaking/ | Speaking Coach (tạo file YYYY-MM-DD-topic.md) |
 | output/&lt;bộ giáo trình&gt;/hskN/buoiX_&lt;chude&gt;/slide/ | Teaching Coach (buoiX.json + .pptx + assets/) |
 | output/&lt;bộ giáo trình&gt;/hskN/buoiX_&lt;chude&gt;/baitap/ | Exercise Generator (baitap.json + hocsinh/worksheet.docx + audio + dapan/dapan.docx) |
 | knowledge/hsk-exam-bank/ | Exercise Generator (seed có review gate) |
-| output/Giáo trình chuẩn/hsk6/study/tu-vung.{md,html} | Vocab Study (đọc raw/Từ vựng.xlsx; CHỈ ĐỌC knowledge/vocabulary để lấy Activation) |
+| output/Giáo trình chuẩn/hsk6/study/tu-vung.{md,html} | Vocab Study (đọc raw/Từ vựng.xlsx; đọc knowledge/vocabulary để lấy Activation; xem dòng tier-a.md bên dưới cho phạm vi ghi hẹp qua lệnh "áp dụng lên hạng") |
 | .claude/skills/vocab-study/data/* | Vocab Study (hanzi.json, mnemonic.json — tích lũy; desc_override + vi_override = lấp 释义/意义 trống, ex_override = **ghi đè** 例句 cá nhân hoá; exp_extra) |
 | .claude/skills/**/SKILL.md, CLAUDE.md | Close Session (chỉ sửa sau khi user duyệt từng mục; không đụng memory) |
-| knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D; **ghi đè** luật tier-*.md ở trên cho riêng file này) |
+| knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D; **ghi đè** luật tier-*.md ở trên cho riêng file này). Vocab Study cũng được ghi, phạm vi hẹp: CHỈ sửa field Seen/Activation/Last Studied của entry đã có sẵn, CHỈ D→C, qua lệnh "áp dụng lên hạng" xử lý file export từ flashcard — không thêm entry mới, không đụng Confidence/Speaking/Writing/Activation B/A (2 mức đó vẫn chỉ lên qua dùng thật, do Learning Strategist batch update) |
 | raw/Từ vựng.xlsx | User / Lesson Prep (append dòng vocab mới) |
 | output/Giáo trình chuẩn/hsk6/lesson/**/lesson-prep/ | Lesson Prep (vocab_payload.json, exercise_payload.json, baitap.docx) |
 | memory/* | User only |
@@ -166,6 +166,6 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 - **speaking-coach** — Luyện speaking, tóm tắt → sửa lỗi → mở rộng → hỏi sâu
 - **exercise-generator** — Sinh bài tập HSK1-3 cho học viên (đủ 听/读/书写 + HSKK), bám buổi dạy, ưu tiên kho đề真题, render .docx tương tác + file đáp án; audio nghe/nói qua cổng xác nhận
 - **close-session** — Đóng session: hygiene check (git status) + phân loại file theo nhánh đích (main cho meta/shared-data, nhánh gốc cho content) + rà soát session tìm tri thức/pattern mới cần đưa vào skill hiện có, rồi gộp tất cả vào 1 bảng commit+push duy nhất chờ user duyệt 1 lần (meta-skill, được sửa SKILL.md/CLAUDE.md sau duyệt, không đụng memory)
-- **vocab-study** — Sinh trang học từ vựng theo bài (Quizlet-style) từ `raw/Từ vựng.xlsx` → `output/Giáo trình chuẩn/hsk6/study/tu-vung.html`: bảng 生词 + 生词拓展 (**sơ đồ cây**: gốc → nhánh có nghĩa), flashcard active-recall + Leitner (neo Activation), chiết tự + mẹo nhớ tiếng Việt (~1350 từ), tên bài, phát âm 🔊 (chọn giọng). Chỉ đọc knowledge/vocabulary.
+- **vocab-study** — Sinh trang học từ vựng theo bài (Quizlet-style) từ `raw/Từ vựng.xlsx` → `output/Giáo trình chuẩn/hsk6/study/tu-vung.html`: bảng 生词 + 生词拓展 (**sơ đồ cây**: gốc → nhánh có nghĩa), flashcard active-recall + Leitner (neo Activation, resume đúng thẻ), chiết tự + mẹo nhớ tiếng Việt (~1350 từ), tên bài, phát âm 🔊 (chọn giọng). Đọc knowledge/vocabulary; ghi hẹp qua lệnh "áp dụng lên hạng" (chỉ D→C, entry có sẵn — xem CLAUDE.md §6 dòng tier-a.md).
 - **critic** — Phản biện độc lập một tài liệu/kết luận/kế hoạch trước khi chốt: luận điểm thiếu bằng chứng, kết luận vội, giả định ẩn, thông tin bỏ sót, mâu thuẫn logic, steelman phe đối lập, cách kiểm chứng; xếp mức 🔴/🟡/⚪. Chỉ đọc + báo cáo, không sửa file. Nếu vật bị phản biện do chính AI vừa tạo trong session → bắt buộc chạy trong subagent context sạch để tránh tự xác nhận.
 - **lesson-prep** — Bóc tách pptx bài khóa HSK6: convert (doc-analyzer) → phân loại → nạp từ vựng (tier-a + vocab-study) + xuất bài tập/bài viết ra .docx. Kiểm tra đáp án AI trước khi xuất.

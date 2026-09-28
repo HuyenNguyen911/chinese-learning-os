@@ -146,6 +146,9 @@ button{font-family:inherit;}
 .syncbanner.info{background:#eaf2ff;border-bottom-color:#a9c9f5;color:#1a4a8a;}
 .syncbanner.info button{background:#1a4a8a;}
 .syncbanner.info .x{color:#1a4a8a;}
+.syncbanner.promo{background:#eafbea;border-bottom-color:#7cc47c;color:#1a6b1a;}
+.syncbanner.promo button{background:#1a6b1a;}
+.syncbanner.promo .x{color:#1a6b1a;}
 .xlate-pop{position:fixed;z-index:9999;background:#1a1a1a;color:#fff;padding:8px 12px;border-radius:8px;font-size:13px;max-width:280px;box-shadow:0 4px 16px rgba(0,0,0,.3);line-height:1.5;}
 .xlate-pop .xl-loading{opacity:.6;}
 .xlate-pop a{color:#8ecdf7;font-size:11px;display:block;margin-top:4px;text-decoration:none;}
@@ -384,6 +387,7 @@ document.addEventListener('DOMContentLoaded',function(){
   document.querySelectorAll('#root tbody tr').forEach(initRow);
   document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
   updateSyncBar();
+  updatePromoteBar();
 });
 
 /* ===== Đồng bộ tiến độ giữa các máy (Export/Import thủ công, đẩy qua git) ===== */
@@ -441,6 +445,35 @@ var SKEY='hsk6srs_v1';
 function sload(){try{return JSON.parse(localStorage.getItem(SKEY))||{};}catch(e){return {};}}
 var SRS=sload();
 function ssave(){localStorage.setItem(SKEY,JSON.stringify(SRS));}
+/* ===== Resume đúng thẻ: lưu phiên học dang dở để mở lại không phải học lại từ đầu ===== */
+var RKEY='hsk6study_resume_v1';
+function rload(){try{return JSON.parse(localStorage.getItem(RKEY))||{};}catch(e){return {};}}
+function rsave(){localStorage.setItem(RKEY,JSON.stringify({label:Slabel,dir:Sdir,q:Sq,done:Sdone,total:Stotal,again:Sagain,capped:Scapped,ts:new Date().toISOString()}));}
+function rclear(){localStorage.removeItem(RKEY);}
+/* ===== Hàng chờ lên hạng C (chỉ D→C, chỉ recognition — B/A vẫn phải dùng thật qua Learning Strategist) ===== */
+var PROMKEY='hsk6vocab_promote_v1';
+function pload(){try{return JSON.parse(localStorage.getItem(PROMKEY))||{};}catch(e){return {};}}
+var PROM=pload();
+function psave(){localStorage.setItem(PROMKEY,JSON.stringify(PROM));}
+function promCount(){return Object.keys(PROM).length;}
+function updatePromoteBar(){
+  var n=promCount(),banner=document.getElementById('promobanner');
+  if(!banner)return;
+  banner.classList.toggle('hidden', n===0);
+  var c=document.getElementById('promocount');if(c)c.textContent=n;
+}
+function exportPromote(){
+  var n=promCount();
+  if(!n){alert('Chưa có từ nào sẵn sàng lên hạng C.');return;}
+  var payload={ver:1,exportedAt:new Date().toISOString(),words:Object.keys(PROM).map(function(w){return {w:w,queuedAt:PROM[w].ts};})};
+  var blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');a.href=url;a.download='tu-vung-promote-to-c.json';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  PROM={};psave();updatePromoteBar();
+  alert('Đã tải tu-vung-promote-to-c.json ('+n+' từ).\nLưu file này vào output/Giáo trình chuẩn/hsk6/study/ trong repo, rồi nhờ Claude chạy lệnh "áp dụng lên hạng" (skill vocab-study). Claude sẽ ghi vào tier-a.md rồi tự xoá file này — không cần commit riêng file JSON này, chỉ commit kết quả (tier-a.md + state/activation.md).');
+}
 var ACTLVL={none:0,d:1,c:2,b:3,a:4};
 var ACTNAME={none:'⚪ kho (chưa học)',d:'D · mới học',c:'C · nhận ra',b:'B · dùng được',a:'A · tự tin dùng'};
 function sbox(w){return (SRS[w]&&SRS[w].box)||0;}
@@ -465,8 +498,15 @@ function beginStudy(cards,label){
   if(!cards.length){alert('Không có từ để học.');return;}
   cards.forEach(function(c){if(!SRS[c.w])SRS[c.w]={box:c.lvl};}); // mốc khởi đầu khách quan theo Activation
   ssave();
-  cards.sort(function(a,b){return sbox(a.w)-sbox(b.w);});
-  Sq=cards.slice();Stotal=cards.length;Sdone=0;Sagain=0;Scapped=0;Slabel=label;
+  var saved=rload();
+  if(saved.label===label && saved.q && saved.q.length && saved.done<saved.total &&
+     confirm('Tìm thấy phiên học dang dở "'+label+'" ('+saved.done+'/'+saved.total+'). Tiếp tục từ chỗ dừng?')){
+    Sq=saved.q;Stotal=saved.total;Sdone=saved.done;Sagain=saved.again||0;Scapped=saved.capped||0;Slabel=label;Sdir=saved.dir||Sdir;
+    var sd=document.getElementById('sdir');if(sd)sd.textContent=(Sdir==='zh2vi')?'汉 → Việt':'Việt → 汉';
+  }else{
+    cards.sort(function(a,b){return sbox(a.w)-sbox(b.w);});
+    Sq=cards.slice();Stotal=cards.length;Sdone=0;Sagain=0;Scapped=0;Slabel=label;
+  }
   document.getElementById('study').classList.remove('hidden');
   resetBody();sNext();
 }
@@ -509,9 +549,10 @@ function sGrade(good){var w=Scur.w;if(!SRS[w])SRS[w]={box:Scur.lvl};
   if(good){
     if(sbox(w)>=cap){Scapped++;}            // kịch trần: chưa dùng thật thì không "thuộc hẳn"
     SRS[w].box=Math.min(sbox(w)+1,cap);
+    if(Scur.act==='d' && !PROM[w]){PROM[w]={ts:new Date().toISOString()};psave();updatePromoteBar();} // D→C: nhận ra là đủ, tự bạn quyết
     Sq.shift();Sdone++;
   }else{SRS[w].box=1;Sagain++;Sq.push(Sq.shift());}
-  ssave();markDirty();sNext();}
+  ssave();markDirty();rsave();sNext();}
 function reading(p,hv){return esc(p||'')+(hv?' · <span class="hv">'+esc(hv)+'</span>':'');}
 var IDS={'⿰':'trái–phải','⿱':'trên–dưới','⿲':'trái–giữa–phải','⿳':'trên–giữa–dưới','⿴':'bao kín','⿵':'bao trên','⿶':'bao dưới','⿷':'bao trái','⿸':'góc trên-trái','⿹':'góc trên-phải','⿺':'góc dưới-trái','⿻':'lồng nhau'};
 function structLabel(dc){return (dc&&IDS[dc[0]])?IDS[dc[0]]:'';}
@@ -556,6 +597,7 @@ function chietTu(word,pys){
 function sProg(){document.getElementById('sc').textContent=Slabel+' · '+Sdone+'/'+Stotal;
   document.getElementById('sp').style.width=(Stotal?Math.round(Sdone/Stotal*100):0)+'%';}
 function sFinish(){
+  rclear();
   var extra=Scapped?('<br><small style="color:#c0392b">'+Scapped+' từ kịch trần theo vault — cần dùng thật (nói/viết) để Activation lên hạng.</small>'):'';
   document.getElementById('sbody').innerHTML=
   '<div class="sdone">🎉 Xong '+esc(Slabel)+'!<br>'+Stotal+' từ · '+Sagain+' lần chưa thuộc'+extra+'<br>'+
@@ -631,6 +673,9 @@ P = ['<!doctype html>', '<html lang="vi"><head><meta charset="utf-8">',
      '<div id="importbanner" class="syncbanner info hidden">ℹ️ Phiên này bạn chưa bấm "Nhập tiến độ". Nếu vừa git pull từ máy khác, hãy nhập trước khi học để không học nhầm dữ liệu cũ.'
      '<button onclick="document.getElementById(\'importfile\').click()">Nhập ngay</button>'
      '<button class="x" onclick="dismissImportBanner()" title="Ẩn tạm cho phiên này">✕</button>'
+     '</div>',
+     '<div id="promobanner" class="syncbanner promo hidden">🎓 <span id="promocount">0</span> từ đã "Thuộc" từ mức D — sẵn sàng lên hạng C trong vault (chỉ recognition; B/A vẫn cần dùng thật).'
+     '<button onclick="exportPromote()">Xuất danh sách</button>'
      '</div>',
      '<main id="root">']
 
