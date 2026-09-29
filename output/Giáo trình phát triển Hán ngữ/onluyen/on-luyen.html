@@ -1,4 +1,5 @@
 <!doctype html>
+<meta charset="utf-8">
 <title>HSK六级机考</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
 <style>
@@ -353,6 +354,23 @@ footer.credit{text-align:center; color:var(--ink-faint); font-size:11.5px; margi
 .textPara:last-child{margin-bottom:0}
 .textSource{font-size:12px; color:var(--ink-faint); text-align:right; margin-top:4px}
 
+/* Tra pinyin + nghĩa theo ngữ cảnh khi bôi đen chữ Hán trong 课文/阅读/写作 đề (user 2026-09-29):
+   bôi đen 1 từ/cụm → popup hiện pinyin + nghĩa của cụm đó + nghĩa của CẢ CÂU chứa nó (để thấy
+   nghĩa sát ngữ cảnh, không chỉ nghĩa từ điển rời rạc). Tra online (MyMemory, free, không cần
+   key) nên cần internet; offline thì chỉ hiện pinyin (pinyin-pro chạy client-side, không cần mạng). */
+.lookupPopup{
+  position:fixed; z-index:200; max-width:300px; background:var(--surface); border:1px solid var(--line);
+  border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,.22); padding:14px 16px; font-size:13.5px; line-height:1.6;
+}
+.lookupPopup .lp-word{font-family:'Noto Serif SC',serif; font-size:18px; font-weight:700; color:var(--accent)}
+.lookupPopup .lp-pinyin{color:var(--ink-soft); font-size:13px; margin:2px 0 8px}
+.lookupPopup .lp-mean{margin-bottom:6px; color:var(--ink)}
+.lookupPopup .lp-mean b{color:var(--ink-faint); font-weight:700; font-size:11.5px; text-transform:uppercase; letter-spacing:.03em; display:block; margin-bottom:2px}
+.lookupPopup .lp-ctx{color:var(--ink-soft); font-size:12.5px; border-top:1px solid var(--line); padding-top:8px; margin-top:8px}
+.lookupPopup .lp-close{position:absolute; top:6px; right:8px; cursor:pointer; color:var(--ink-faint); font-size:13px; background:none; border:none; padding:4px}
+.lookupPopup .lp-loading{color:var(--ink-faint); font-style:italic}
+.lookupPopup .lp-err{color:var(--bad); font-size:12.5px}
+
 /* 🎓 Giảng giải (coaching): lớp nội dung tổng hợp sau 课文+表达方式, đóng vai giáo viên ôn
    luyện — tóm tắt, khung lập luận tái dùng được, cụm hay "mượn" cho HSKK, câu hỏi dẫn dắt
    nối sang Phần 2. Dùng tông --good (xanh lá) để phân biệt rõ với .textBox/.langBox (--accent
@@ -488,6 +506,12 @@ footer.credit{text-align:center; color:var(--ink-faint); font-size:11.5px; margi
   </div>
 </div>
 
+<div id="lookupPopup" class="lookupPopup" hidden>
+  <button class="lp-close" id="lp-close" aria-label="Đóng">✕</button>
+  <div id="lp-body"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3/dist/index.js"></script>
 <script>
 /* Icon "i" hover ra tip ngắn tại mỗi dạng bài tập (nghe/nói/đọc/viết) — user 2026-09-18:
    không biết làm dạng đó thì hover xem mẹo, tip phải ngắn gọn/logic/áp dụng được ngay. */
@@ -3478,6 +3502,154 @@ function saveHskkResult(){
   lsSet('progress/hskk-results', hskkResults);
   maybeAutoMarkDone();
 }
+
+/* ============ Tra pinyin + nghĩa theo ngữ cảnh khi bôi đen chữ Hán (user 2026-09-29) ============
+   Bôi đen 1 từ/cụm trong 课文/阅读/写作 đề → popup hiện pinyin (pinyin-pro, chạy offline sau khi
+   script đã tải) + nghĩa của cụm đó + nghĩa của CẢ CÂU chứa nó (dịch qua MyMemory API, miễn phí,
+   không cần key — cần internet). Dịch cả câu để nghĩa hiện ra "gần sát ngữ cảnh" thay vì chỉ nghĩa
+   từ điển rời rạc của riêng từ đó. Không bật trong input/textarea để không cản trở việc gõ bài. */
+(function(){
+  const MAX_LOOKUP_LEN = 30;
+  const popup = document.getElementById('lookupPopup');
+  const popupBody = document.getElementById('lp-body');
+  const closeBtn = document.getElementById('lp-close');
+  if(!popup || !popupBody || !closeBtn) return;
+
+  const translateCache = new Map();
+  let requestToken = 0;
+  let currentRect = null;
+
+  function hideLookup(){ popup.hidden = true; currentRect = null; }
+  closeBtn.addEventListener('click', hideLookup);
+
+  function isFormField(node){
+    return !!(node && node.closest && node.closest('input,textarea,[contenteditable="true"]'));
+  }
+
+  function sentenceOf(block, range){
+    const text = (block && block.textContent) || '';
+    if(!text) return '';
+    const preRange = document.createRange();
+    preRange.selectNodeContents(block);
+    try{ preRange.setEnd(range.startContainer, range.startOffset); }
+    catch(e){ return text.slice(0,200); }
+    const offset = preRange.toString().length;
+    const parts = text.match(/[^。！？…\n]*[。！？…]|[^。！？…\n]+$/g) || [text];
+    let acc = 0;
+    for(const part of parts){
+      acc += part.length;
+      if(offset <= acc) return part.trim();
+    }
+    return parts.length ? parts[parts.length-1].trim() : text.slice(0,200);
+  }
+
+  function translate(text){
+    const key = 'zh|'+text;
+    if(translateCache.has(key)) return translateCache.get(key);
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=zh-CN|vi`;
+    const p = fetch(url).then(r=>{
+      if(!r.ok) throw new Error('http '+r.status);
+      return r.json();
+    }).then(data=>{
+      const t = data && data.responseData && data.responseData.translatedText;
+      if(!t) throw new Error('empty');
+      return t;
+    });
+    translateCache.set(key, p);
+    return p;
+  }
+
+  function getPinyin(text){
+    try{
+      if(window.pinyinPro && typeof window.pinyinPro.pinyin === 'function'){
+        return window.pinyinPro.pinyin(text, {toneType:'symbol', type:'string'});
+      }
+    }catch(e){}
+    return '';
+  }
+
+  function escapeHtml(s){
+    return (s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function positionPopup(){
+    if(!currentRect) return;
+    const margin = 8;
+    let left = currentRect.left;
+    let top = currentRect.bottom + margin;
+    const w = popup.offsetWidth, h = popup.offsetHeight;
+    if(left + w > window.innerWidth - margin) left = window.innerWidth - w - margin;
+    if(left < margin) left = margin;
+    if(top + h > window.innerHeight - margin) top = currentRect.top - h - margin;
+    if(top < margin) top = margin;
+    popup.style.left = left + 'px';
+    popup.style.top = top + 'px';
+  }
+
+  function showLookup(selectedText, sentence, rect){
+    const myToken = ++requestToken;
+    currentRect = rect;
+    const pinyin = getPinyin(selectedText);
+    const hasCtx = sentence && sentence !== selectedText;
+    popupBody.innerHTML = `
+      <div class="lp-word">${escapeHtml(selectedText)}</div>
+      <div class="lp-pinyin">${escapeHtml(pinyin) || '—'}</div>
+      <div class="lp-mean" id="lp-mean-word"><b>Nghĩa</b><span class="lp-loading">đang tra…</span></div>
+      ${hasCtx ? `<div class="lp-ctx" id="lp-mean-ctx"><b>Trong câu này</b><span class="lp-loading">đang tra…</span></div>` : ''}
+    `;
+    popup.hidden = false;
+    positionPopup();
+
+    translate(selectedText).then(t=>{
+      if(myToken !== requestToken) return;
+      const el = document.getElementById('lp-mean-word');
+      if(el) el.innerHTML = `<b>Nghĩa</b>${escapeHtml(t)}`;
+      positionPopup();
+    }).catch(()=>{
+      if(myToken !== requestToken) return;
+      const el = document.getElementById('lp-mean-word');
+      if(el) el.innerHTML = `<b>Nghĩa</b><span class="lp-err">Không tra được (cần internet)</span>`;
+      positionPopup();
+    });
+
+    if(hasCtx){
+      translate(sentence).then(t=>{
+        if(myToken !== requestToken) return;
+        const el = document.getElementById('lp-mean-ctx');
+        if(el) el.innerHTML = `<b>Trong câu này</b>${escapeHtml(t)}`;
+        positionPopup();
+      }).catch(()=>{
+        if(myToken !== requestToken) return;
+        const el = document.getElementById('lp-mean-ctx');
+        if(el) el.remove();
+        positionPopup();
+      });
+    }
+  }
+
+  function handleSelection(){
+    const sel = window.getSelection();
+    if(!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    const text = sel.toString().trim();
+    const HAN_RE = new RegExp(String.fromCharCode(91,0x4e00,45,0x9fff,93));
+    if(!text || !HAN_RE.test(text) || text.length > MAX_LOOKUP_LEN) return;
+    const range = sel.getRangeAt(0);
+    const startEl = range.startContainer.nodeType===3 ? range.startContainer.parentElement : range.startContainer;
+    const endEl = range.endContainer.nodeType===3 ? range.endContainer.parentElement : range.endContainer;
+    if(isFormField(startEl) || isFormField(endEl)) return;
+
+    let block = (startEl && startEl.closest && startEl.closest('div,p,li,td,blockquote')) || startEl;
+    const sentence = sentenceOf(block, range);
+    showLookup(text, sentence, range.getBoundingClientRect());
+  }
+
+  document.addEventListener('mouseup', (e)=>{ if(!popup.contains(e.target)) setTimeout(handleSelection, 0); });
+  document.addEventListener('touchend', ()=>{ setTimeout(handleSelection, 0); });
+  document.addEventListener('keyup', (e)=>{ if(e.shiftKey) setTimeout(handleSelection, 0); });
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') hideLookup(); });
+  document.addEventListener('mousedown', (e)=>{ if(!popup.hidden && !popup.contains(e.target)) hideLookup(); });
+  window.addEventListener('scroll', hideLookup, true);
+})();
 
 /* Mở đúng tab của buổi đang chọn (khớp với sidebar) ngay khi tải trang xong */
 goToDay(currentDay);
