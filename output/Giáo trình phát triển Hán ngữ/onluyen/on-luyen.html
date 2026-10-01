@@ -3397,18 +3397,26 @@ function hskkItemSpec(prefix, i){
       steps: '1. Yêu cầu thí sinh đọc to, diễn cảm đúng đoạn văn trên trong khoảng 2 phút.\n2. Lắng nghe, đối chiếu đúng với đoạn văn trên (nội dung phải khớp, không được bỏ/thêm chữ).\n3. Chấm theo tiêu chí chung.',
     };
   }
+  const dupCheckStep = Number(i)===1
+    ? '\n4. Lưu ý: câu này (câu 6) cùng chủ đề với câu 5 vừa hỏi. Nếu thí sinh trả lời gần như lặp lại y hệt góc nhìn/lý do/ví dụ đã dùng ở câu 5, hãy dừng lại nhắc nhẹ nhàng ngay lúc đó (trước khi chấm điểm) và gợi ý thí sinh chọn góc nhìn/ví dụ khác cho câu 6, rồi mới để thí sinh trả lời lại.'
+    : '';
   return {
     partLabel: `回答问题 — câu ${Number(i)+1}/2`,
     material: L.p3[i],
-    steps: '1. Đọc câu hỏi trên cho thí sinh (hoặc để thí sinh tự đọc).\n2. Yêu cầu trả lời trong khoảng 2 phút, có quan điểm rõ ràng và lý do thuyết phục.\n3. Chấm theo tiêu chí chung, đặc biệt độ thuyết phục/logic của câu trả lời.',
+    steps: `1. Đọc câu hỏi trên cho thí sinh (hoặc để thí sinh tự đọc).\n2. Yêu cầu trả lời trong khoảng 2 phút, có quan điểm rõ ràng và lý do thuyết phục.\n3. Chấm theo tiêu chí chung, đặc biệt độ thuyết phục/logic của câu trả lời.${dupCheckStep}`,
+    needsRewrite: true,
+    rewriteMaterial: L.p2Text,
   };
 }
 function buildFullHskkPrompt(){
   const sections = HSKK_ITEMS.map((it,n)=>{
     const spec = hskkItemSpec(it.prefix, it.idx);
+    const extraMaterial = spec.needsRewrite
+      ? `\nNGUYÊN LIỆU BÀI HỌC HÔM ĐÓ (bài khóa 朗读 cùng buổi — dùng để lồng ý/từ vựng khi viết bài sửa, không bắt thí sinh phải nhắc lại khi trả lời):\n${spec.rewriteMaterial}`
+      : '';
     return `--- Câu ${n+1}/6: ${spec.partLabel} ---
 ĐỀ BÀI / TƯ LIỆU:
-${spec.material}
+${spec.material}${extraMaterial}
 QUY TRÌNH:
 ${spec.steps}`;
   }).join('\n\n');
@@ -3422,6 +3430,13 @@ TIÊU CHÍ CHẤM CHUNG (thang điểm 100):
 - Nội dung & độ chính xác/thuyết phục (30%)
 - Ngữ pháp & từ vựng (20%)
 
+RIÊNG CÂU 5 VÀ 6 (回答问题): sau khi chấm điểm, viết thêm 1 "BÀI SỬA" — bản nâng cấp của chính câu trả lời thí sinh vừa nói, không phải văn mẫu mới. Yêu cầu:
+- Giữ đúng lập trường, lý do, ví dụ cá nhân thí sinh đã đưa ra — chỉ sửa lỗi ngữ pháp/từ sai, diễn đạt lại cho gọn và tự nhiên hơn.
+- Có thể lồng ghép tự nhiên 1-2 ý hoặc cách diễn đạt từ NGUYÊN LIỆU BÀI HỌC HÔM ĐÓ (bài khóa 朗读) nếu hợp lý, để tăng chiều sâu nội dung.
+- Dùng 1-2 cụm từ/cấu trúc đúng tầm HSKK cao cấp (không dùng từ quá học thuật/khoa trương).
+- Văn phong khẩu ngữ, đơn giản, giống người thật đang nói chứ không phải bài luận — nhìn đơn giản nhưng đạt chuẩn 90+ điểm theo đúng tiêu chí chấm ở trên.
+- Độ dài tương đương bài gốc của thí sinh (không viết dài hơn hẳn).
+
 Sau khi thí sinh nói xong CẢ 6 câu, trả lời đúng định dạng sau (tiếng Việt), MỖI câu 1 khối, để thí sinh copy từng khối dán lại vào hệ thống theo dõi:
 
 ## KẾT QUẢ CHẤM HSKK — <tên phần, ví dụ: 听后复述 câu 1/3>
@@ -3431,8 +3446,10 @@ Sau khi thí sinh nói xong CẢ 6 câu, trả lời đúng định dạng sau (
 - Nội dung: ...
 - Ngữ pháp & từ vựng: ...
 - Góp ý cải thiện: ...
+(CHỈ với câu 5 và 6, thêm dòng sau cùng:)
+- Bài sửa (90+, giữ ý/văn phong của bạn): <bản nâng cấp bằng tiếng Trung>
 
-(lặp lại đúng khối trên cho cả 6 câu, theo đúng thứ tự đã hỏi)`;
+(lặp lại đúng khối trên cho cả 6 câu, theo đúng thứ tự đã hỏi. Sau khối câu 6, thêm 1 đoạn TỔNG KẾT BUỔI: ưu điểm nổi bật, nhược điểm cần cải thiện, điểm trung bình ước tính của cả buổi.)`;
 }
 
 async function copyFullHskkPrompt(){
