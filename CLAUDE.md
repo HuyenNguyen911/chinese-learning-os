@@ -73,6 +73,10 @@ Không tự ý escalate; chỉ gợi ý 1 dòng rồi làm tiếp bằng Sonnet 
 - Với Claude Docs cá nhân của user (kế hoạch, lộ trình...) → mặc định chỉ đọc, không tự sửa. Nếu
   user nói "cập nhật"/"ghi nhớ" về nội dung liên quan đến doc đó, hỏi rõ "ghi vào doc hay chỉ tự
   nhớ" trước khi ghi — không ngầm hiểu là ghi vào doc
+- Trước khi bulk-rebuild nội dung ghi đè nhiều file đã có (audio, slide...) → cho xem cách làm +
+  1-2 mẫu, chờ duyệt, rồi mới chạy toàn bộ + commit. Duyệt mục tiêu ("làm lại cho khớp X") không
+  đồng nghĩa duyệt luôn cách làm ở quy mô toàn bộ
+- Mặc định trả lời bằng tiếng Việt (trừ khi user chủ động dùng tiếng Anh trước)
 
 ## 5.5 Git Hygiene (chống commit/push nhầm nhánh)
 User không kiểm soát được git flow — TÔI phải tự kỷ luật. Bắt buộc:
