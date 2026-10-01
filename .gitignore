@@ -3,6 +3,10 @@
 __pycache__/
 ~$*
 
+# File scratch Word — user mở/lưu tay liên tục, byte đổi vặt không mang nội dung mới,
+# gây "M" trong git status hoài dù không có gì để commit.
+raw/worksheet.docx
+
 # hsk1 GIF tooling — cache + spike scratch
 scripts/hsk1/_src/
 output/Giáo trình 3.0/hsk1/_spike/
