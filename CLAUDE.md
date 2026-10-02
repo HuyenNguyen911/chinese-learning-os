@@ -27,6 +27,9 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
    _(Nếu cùng match rule 2 và 3: ưu tiên speaking-coach nếu có từ khóa speaking rõ ràng)_
 4. "kế hoạch" / "plan" / "backlog" / "tuần này" / "hôm nay học gì" → learning-strategist
 4b. "tạo bài tập" / "bài tập" / "làm đề" / "worksheet" / "bài tập buổi X" → exercise-generator
+   _(TRỪ việc liên quan trực tiếp tới `output/Giáo trình phát triển Hán ngữ/onluyen/on-luyen.html`
+   — tool HTML luyện HSKK cao cấp riêng, không thuộc workflow docx HSK1-3 của exercise-generator,
+   hiện chưa có skill nào sở hữu → xử lý trực tiếp, không qua skill)_
 4c. "đóng session" / "kết thúc buổi" / "kết thúc session" / "close session" → close-session
 4d. "học từ vựng" / "review từ vựng" / "sinh trang học từ" / "cập nhật từ vựng theo bài" / "tu-vung" / "áp dụng lên hạng" → vocab-study
 4e. "chuẩn bị bài" / "bóc bài khóa" / "lesson-prep" / "chuẩn bị buổi X" / "bài khóa của cô" → lesson-prep
@@ -143,12 +146,14 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 | knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D; **ghi đè** luật tier-*.md ở trên cho riêng file này). Vocab Study cũng được ghi, phạm vi hẹp: CHỈ sửa field Seen/Activation/Last Studied của entry đã có sẵn, CHỈ D→C, qua lệnh "áp dụng lên hạng" xử lý file export từ flashcard — không thêm entry mới, không đụng Confidence/Speaking/Writing/Activation B/A (2 mức đó vẫn chỉ lên qua dùng thật, do Learning Strategist batch update) |
 | raw/Từ vựng.xlsx | User / Lesson Prep (append dòng vocab mới) |
 | output/Giáo trình chuẩn/hsk6/lesson/**/lesson-prep/ | Lesson Prep (vocab_payload.json, exercise_payload.json, baitap.docx) |
+| output/Giáo trình phát triển Hán ngữ/onluyen/** | User (tool HTML tự chứa luyện HSKK cao cấp 30 buổi — chưa có skill nào sở hữu, sửa trực tiếp) |
 | memory/* | User only |
 
 > **Cấu trúc thư mục `output/`:** gom theo bộ giáo trình ở tầng đầu tiên —
 > `output/Giáo trình 3.0/` (hsk1, hsk2 — bám HSK 3.0), `output/Giáo trình chuẩn/`
 > (hsk6, gồm `lesson/`, `writing/`, `study/` — bám HSK Standard Course cũ), và
-> `output/Giáo trình phát triển Hán ngữ/` (bộ giáo trình mới, chưa có nội dung).
+> `output/Giáo trình phát triển Hán ngữ/` (bộ giáo trình mới, chưa có nội dung bài học —
+> riêng có sẵn `onluyen/` là tool luyện HSKK cao cấp độc lập, xem dòng onluyen ở §6).
 > Trong mỗi bộ, mỗi buổi 1 folder `hskN/buoiX_<chude>/` chứa `slide/` (Teaching Coach)
 > và `baitap/` (Exercise Generator). `<chude>` = slug chủ đề buổi, vd
 > `buoi2_luongtu_mausac`. Đưa học sinh: cả folder `baitap/hocsinh/`
