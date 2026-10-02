@@ -366,7 +366,6 @@ footer.credit{text-align:center; color:var(--ink-faint); font-size:11.5px; margi
 .lookupPopup .lp-pinyin{color:var(--ink-soft); font-size:13px; margin:2px 0 8px}
 .lookupPopup .lp-mean{margin-bottom:6px; color:var(--ink)}
 .lookupPopup .lp-mean b{color:var(--ink-faint); font-weight:700; font-size:11.5px; text-transform:uppercase; letter-spacing:.03em; display:block; margin-bottom:2px}
-.lookupPopup .lp-ctx{color:var(--ink-soft); font-size:12.5px; border-top:1px solid var(--line); padding-top:8px; margin-top:8px}
 .lookupPopup .lp-close{position:absolute; top:6px; right:8px; cursor:pointer; color:var(--ink-faint); font-size:13px; background:none; border:none; padding:4px}
 .lookupPopup .lp-loading{color:var(--ink-faint); font-style:italic}
 .lookupPopup .lp-err{color:var(--bad); font-size:12.5px}
@@ -3530,11 +3529,12 @@ function saveHskkResult(){
   maybeAutoMarkDone();
 }
 
-/* ============ Tra pinyin + nghĩa theo ngữ cảnh khi bôi đen chữ Hán (user 2026-09-29) ============
+/* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
    Bôi đen 1 từ/cụm trong 课文/阅读/写作 đề → popup hiện pinyin (pinyin-pro, chạy offline sau khi
-   script đã tải) + nghĩa của cụm đó + nghĩa của CẢ CÂU chứa nó (dịch qua MyMemory API, miễn phí,
-   không cần key — cần internet). Dịch cả câu để nghĩa hiện ra "gần sát ngữ cảnh" thay vì chỉ nghĩa
-   từ điển rời rạc của riêng từ đó. Không bật trong input/textarea để không cản trở việc gõ bài. */
+   script đã tải) + nghĩa của cụm đó (dịch qua MyMemory API, miễn phí, không cần key — cần internet).
+   Không bật trong input/textarea để không cản trở việc gõ bài.
+   (Từng thử thêm nghĩa của cả câu chứa nó để sát ngữ cảnh hơn — bỏ 2026-10-02 vì câu bị cắt sai
+   ranh giới và/hoặc bản dịch không đáng tin, user yêu cầu bỏ hẳn, chỉ giữ pinyin + nghĩa từ.) */
 (function(){
   const MAX_LOOKUP_LEN = 30;
   const popup = document.getElementById('lookupPopup');
@@ -3553,26 +3553,49 @@ function saveHskkResult(){
     return !!(node && node.closest && node.closest('input,textarea,[contenteditable="true"]'));
   }
 
-  function sentenceOf(block, range){
-    const text = (block && block.textContent) || '';
-    if(!text) return '';
-    const preRange = document.createRange();
-    preRange.selectNodeContents(block);
-    try{ preRange.setEnd(range.startContainer, range.startOffset); }
-    catch(e){ return text.slice(0,200); }
-    const offset = preRange.toString().length;
-    const parts = text.match(/[^。！？…\n]*[。！？…]|[^。！？…\n]+$/g) || [text];
-    let acc = 0;
-    for(const part of parts){
-      acc += part.length;
-      if(offset <= acc) return part.trim();
-    }
-    return parts.length ? parts[parts.length-1].trim() : text.slice(0,200);
-  }
+  /* MyMemory dịch sai khá nhiều 成语/liên từ nâng cao hay lặp lại trong các đoạn 朗读
+     (vd "归根结底" ra "Vào cuối ngày," — dịch nghĩa đen của 1 nghĩa tiếng Anh "at the
+     end of the day" chứ không phải "nói cho cùng/xét đến cùng" — user phát hiện
+     2026-10-02). Tra các cụm hay dùng này từ từ điển tay trước, chỉ gọi API cho
+     phần còn lại. */
+  const MEANING_OVERRIDES = {
+    '不可否认': 'Không thể phủ nhận',
+    '与此同时': 'Đồng thời, cùng lúc đó',
+    '长此以往': 'Cứ kéo dài như vậy, nếu cứ tiếp diễn như thế',
+    '归根结底': 'Nói cho cùng, xét đến cùng',
+    '由此可见': 'Qua đó có thể thấy',
+    '另辟蹊径': 'Tìm một hướng đi khác, mở lối riêng',
+    '寄望于': 'Đặt hy vọng vào, kỳ vọng vào',
+    '权衡利弊': 'Cân nhắc được mất, cân nhắc lợi hại',
+    '诚然': 'Quả thật, đúng là (thừa nhận trước khi phản biện)',
+    '值得注意的是': 'Điều đáng chú ý là',
+    '换言之': 'Nói cách khác',
+    '须知': 'Cần biết rằng, nên biết là',
+    '正所谓': 'Đúng như câu người ta vẫn nói',
+    '毕竟': 'Dù sao, xét cho cùng',
+    '值得深思的是': 'Điều đáng suy ngẫm là',
+    '可见一斑': 'Qua đó thấy được phần nào của cả vấn đề',
+    '值得借鉴的是': 'Điều đáng học hỏi, tham khảo là',
+    '殊不知': 'Nào ngờ, không ngờ rằng',
+    '坐吃山空': 'Ngồi không ăn tiêu thì núi vàng cũng cạn (ăn bám mãi rồi cũng hết)',
+    '不容忽视': 'Không thể xem nhẹ, không thể bỏ qua',
+    '耐人寻味': 'Đáng để suy ngẫm, càng ngẫm càng thấy thú vị',
+    '可谓': 'Có thể nói là',
+    '罄竹难书': 'Nhiều vô kể, kể không xuể (tội lỗi/khuyết điểm quá nhiều)',
+    '未免': 'Không tránh khỏi, có phần (hơi...)',
+    '足见': 'Đủ thấy, đủ để chứng tỏ',
+    '莫衷一是': 'Không ai thống nhất được, mỗi người một ý',
+    '不谋而合': 'Không hẹn mà gặp, trùng hợp ăn ý',
+  };
 
   function translate(text){
     const key = 'zh|'+text;
     if(translateCache.has(key)) return translateCache.get(key);
+    if(Object.prototype.hasOwnProperty.call(MEANING_OVERRIDES, text)){
+      const p = Promise.resolve(MEANING_OVERRIDES[text]);
+      translateCache.set(key, p);
+      return p;
+    }
     const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=zh-CN|vi`;
     const p = fetch(url).then(r=>{
       if(!r.ok) throw new Error('http '+r.status);
@@ -3613,16 +3636,14 @@ function saveHskkResult(){
     popup.style.top = top + 'px';
   }
 
-  function showLookup(selectedText, sentence, rect){
+  function showLookup(selectedText, rect){
     const myToken = ++requestToken;
     currentRect = rect;
     const pinyin = getPinyin(selectedText);
-    const hasCtx = sentence && sentence !== selectedText;
     popupBody.innerHTML = `
       <div class="lp-word">${escapeHtml(selectedText)}</div>
       <div class="lp-pinyin">${escapeHtml(pinyin) || '—'}</div>
       <div class="lp-mean" id="lp-mean-word"><b>Nghĩa</b><span class="lp-loading">đang tra…</span></div>
-      ${hasCtx ? `<div class="lp-ctx" id="lp-mean-ctx"><b>Trong câu này</b><span class="lp-loading">đang tra…</span></div>` : ''}
     `;
     popup.hidden = false;
     positionPopup();
@@ -3638,20 +3659,6 @@ function saveHskkResult(){
       if(el) el.innerHTML = `<b>Nghĩa</b><span class="lp-err">Không tra được (cần internet)</span>`;
       positionPopup();
     });
-
-    if(hasCtx){
-      translate(sentence).then(t=>{
-        if(myToken !== requestToken) return;
-        const el = document.getElementById('lp-mean-ctx');
-        if(el) el.innerHTML = `<b>Trong câu này</b>${escapeHtml(t)}`;
-        positionPopup();
-      }).catch(()=>{
-        if(myToken !== requestToken) return;
-        const el = document.getElementById('lp-mean-ctx');
-        if(el) el.remove();
-        positionPopup();
-      });
-    }
   }
 
   function handleSelection(){
@@ -3665,9 +3672,7 @@ function saveHskkResult(){
     const endEl = range.endContainer.nodeType===3 ? range.endContainer.parentElement : range.endContainer;
     if(isFormField(startEl) || isFormField(endEl)) return;
 
-    let block = (startEl && startEl.closest && startEl.closest('div,p,li,td,blockquote')) || startEl;
-    const sentence = sentenceOf(block, range);
-    showLookup(text, sentence, range.getBoundingClientRect());
+    showLookup(text, range.getBoundingClientRect());
   }
 
   document.addEventListener('mouseup', (e)=>{ if(!popup.contains(e.target)) setTimeout(handleSelection, 0); });
