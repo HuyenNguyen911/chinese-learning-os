@@ -125,13 +125,13 @@ def build_bai(n):
     _t = TITLES.get(str(n), "").strip()
     heading = "## Bài %d — %s" % (n, _t) if _t else "## Bài %d" % n
     out = [heading, "", "### 生词", "",
-           "| 生词 | Pinyin | 释义 | Nghĩa | 例句 |", "| --- | --- | --- | --- | --- |"]
+           "| 生词 | Pinyin | Nghĩa | 释义 | 例句 |", "| --- | --- | --- | --- | --- |"]
     for r in words:
         w = norm_w(r["w"])
         rj = r["desc"].strip() if r["desc"].strip() else OV.get(w, "")
         vv = r["vi"].strip() if r["vi"].strip() else VI_OV.get(w, "")
         exv = EX_OV.get(w) or clean_ex(r["ex"])  # câu cá nhân hoá ưu tiên thay câu bài khóa
-        out.append("| %s | %s | %s | %s | %s |" % (cell(w), py(w), cell(rj), cell(vv), cell(exv)))
+        out.append("| %s | %s | %s | %s | %s |" % (cell(w), py(w), cell(vv), cell(rj), cell(exv)))
     # ---- 生词拓展 ----
     groups = []
     for g in ct.get(str(n), []):

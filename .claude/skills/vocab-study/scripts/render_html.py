@@ -488,8 +488,8 @@ function cardsFrom(rows){
     if(st){['a','b','c','d'].forEach(function(x){if(st.classList.contains(x))act=x;});}
     var w=td[1].textContent.trim();
     if(!w)return;
-    out.push({w:w,py:td[2].textContent.trim(),rj:td[3].textContent.trim(),
-              vi:td[4].textContent.trim(),ex:td[5].textContent.trim(),act:act,lvl:ACTLVL[act],
+    out.push({w:w,py:td[2].textContent.trim(),vi:td[3].textContent.trim(),
+              rj:td[4].textContent.trim(),ex:td[5].textContent.trim(),act:act,lvl:ACTLVL[act],
               pys:(tr.getAttribute('data-py')||'').split(' ').filter(Boolean)});
   });
   return out;
@@ -537,8 +537,8 @@ function sFlip(){if(Sflip)return;Sflip=true;
   var b=document.getElementById('sback');
   var h='<div class="py">'+esc(Scur.py)+'</div>';
   if(Sdir==='vi2zh')h+='<div class="zh">'+esc(Scur.w)+'</div>';
-  h+='<div class="ln"><span class="lb">释义</span><span>'+esc(Scur.rj)+'</span></div>';
   h+='<div class="ln"><span class="lb">Nghĩa</span><span class="vi">'+esc(Scur.vi)+'</span></div>';
+  h+='<div class="ln"><span class="lb">释义</span><span>'+esc(Scur.rj)+'</span></div>';
   if(Scur.ex)h+='<div class="ln"><span class="lb">Ví dụ</span><span>'+esc(Scur.ex)+'</span></div>';
   h+=chietTu(Scur.w,Scur.pys);
   b.innerHTML=h;b.className='sback on';
