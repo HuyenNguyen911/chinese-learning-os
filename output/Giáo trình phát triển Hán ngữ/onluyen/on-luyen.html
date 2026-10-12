@@ -262,6 +262,12 @@ nav.subtabs button[aria-selected="true"]{color:var(--accent); border-bottom-colo
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 .audioCard .state{font-size:13px; font-weight:600; color:var(--ink-soft)}
 .audioCard .replay{margin-left:auto}
+.audioCard{flex-wrap:wrap}
+.audioCard .prog{flex:0 0 100%; display:flex; align-items:center; gap:12px}
+.audioCard .prog[hidden]{display:none}
+.audioCard .prog .bar{flex:1; height:8px; border-radius:4px; background:var(--line); cursor:pointer; position:relative; overflow:hidden}
+.audioCard .prog .bar i{position:absolute; left:0; top:0; bottom:0; width:0; background:var(--live); border-radius:4px}
+.audioCard .prog .time{font-size:12px; font-weight:600; color:var(--ink-soft); min-width:84px; text-align:right}
 
 .passage{
   background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
@@ -3478,8 +3484,12 @@ function renderHskk(n){
       <div class="audioCard" id="${audioId}-card">
         <span class="dot" id="${audioId}-dot"></span>
         <span class="state mono" id="${audioId}-state">第${i+1}题 录音未播放</span>
-        <audio id="${audioId}" src="${src}" preload="none"></audio>
+        <audio id="${audioId}" src="${src}" preload="metadata"></audio>
         <button class="btn replay" id="${audioId}-btn" onclick="playHskkAudio('${audioId}', ${i+1})">▶ 播放</button>
+        <div class="prog" id="${audioId}-prog" hidden>
+          <div class="bar" id="${audioId}-bar"><i id="${audioId}-fill"></i></div>
+          <span class="time mono" id="${audioId}-time">0:00 / --:--</span>
+        </div>
       </div>
     </div>`;
   }).join('');
@@ -3499,6 +3509,27 @@ function playHskkAudio(audioId, n){
   const dot = document.getElementById(audioId+'-dot');
   const state = document.getElementById(audioId+'-state');
   const btn = document.getElementById(audioId+'-btn');
+  const prog = document.getElementById(audioId+'-prog');
+  const fill = document.getElementById(audioId+'-fill');
+  const time = document.getElementById(audioId+'-time');
+  const bar = document.getElementById(audioId+'-bar');
+  const fmt = s => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+  const updateProg = ()=>{
+    const d = audio.duration;
+    const ok = isFinite(d) && d > 0;
+    fill.style.width = ok ? `${(audio.currentTime/d)*100}%` : '0';
+    time.textContent = `${fmt(audio.currentTime)} / ${ok ? fmt(d) : '--:--'}`;
+  };
+  prog.hidden = false;
+  audio.ontimeupdate = updateProg;
+  audio.onloadedmetadata = updateProg;
+  bar.onclick = e=>{
+    if(!isFinite(audio.duration)) return;
+    const r = bar.getBoundingClientRect();
+    audio.currentTime = Math.min(1, Math.max(0, (e.clientX - r.left)/r.width)) * audio.duration;
+    updateProg();
+  };
+  updateProg();
   if(audio.paused){
     if(audio.ended) audio.currentTime = 0;
     audio.play();
@@ -3515,6 +3546,7 @@ function playHskkAudio(audioId, n){
     dot.classList.remove('playing');
     state.textContent = `第 ${n} 题已播放完毕`;
     btn.textContent = '▶ 播放';
+    updateProg();
   };
 }
 
