@@ -776,7 +776,10 @@ function buildSchedule(){
   return days;
 }
 const SCHEDULE = buildSchedule();
-let currentDay = 1;
+/* Nhớ đúng buổi đang xem qua lần tải lại trang (user 2026-10-13: "load xong vẫn ở chỗ đó, chứ
+   không phải dừng ở buổi 1") — lưu localStorage, validate lại range phòng khi SCHEDULE đổi độ dài. */
+let currentDay = lsGet('progress/current-day', 1);
+if(!(currentDay >= 1 && currentDay <= SCHEDULE.length)) currentDay = 1;
 let doneDays = {}; // {n: true}
 
 /* ĐỔI TỪ Artifact `db` SANG localStorage (2026-09-18): app chuyển thành file HTML tự chứa mở
@@ -872,6 +875,7 @@ function renderSidebar(){
 }
 function goToDay(n){
   currentDay = n;
+  lsSet('progress/current-day', n);
   const day = SCHEDULE[n-1];
   showSkillPanel(day.tab);
   /* Buổi Đọc/Viết bám thẳng sách, không có nội dung "要点" riêng — ẩn hẳn nút Phần 1,
