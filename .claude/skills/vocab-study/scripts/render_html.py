@@ -309,7 +309,7 @@ function applyFlag(tr){var w=tr.getAttribute('data-w');var on=!!FLAGS[w];
   b.textContent=on?'🚩':'⚑';b.classList.toggle('on',on);
   b.title=on?'Bỏ đánh dấu (đang học tới đây)':'Đánh dấu: đang học tới đây';}
 function toggleFlag(btn){var tr=btn.closest('tr');var w=tr.getAttribute('data-w');
-  FLAGS[w]=!FLAGS[w];if(!FLAGS[w])delete FLAGS[w];fsave();markDirty();
+  FLAGS[w]=!FLAGS[w];if(!FLAGS[w])delete FLAGS[w];fsave();var _m=syncMeta();_m.flagsTs=nowIso();saveSyncMeta(_m);markDirty();
   applyFlag(tr);updateBaiFlagCount(tr.closest('details'));}
 function updateBaiFlagCount(det){if(!det)return;
   var n=det.querySelectorAll('.panel.p1 tbody tr.flagged').length;
@@ -327,7 +327,7 @@ function er(btn){var tr=btn.closest('tr');var on=!tr.classList.contains('editing
   tr.classList.toggle('editing',on);var c=tr.querySelectorAll('td.data');var w=tr.getAttribute('data-w');
   for(var i=0;i<c.length;i++){var td=c[i];td.contentEditable=on?'true':'false';
     /* sửa ô nào lưu ô đó; riêng ô 生词 (idx 0) đổi → đánh dấu dòng cần làm mới cột sau */
-    if(on){td.oninput=(function(idx,cell,row){return function(){var r=rec(w);r[idx]=cell.textContent;
+    if(on){td.oninput=(function(idx,cell,row){return function(){var r=rec(w);r[idx]=cell.textContent;r._ts=nowIso();
       if(idx===0){r._stale=1;row.classList.add('stale');staleBadge(row);}store(DB);markDirty();};})(i,td,tr);}}
   btn.textContent=on?'✅':'✏️';if(on)c[0].focus();}
 function tab(btn,which){var d=btn.closest('details');
@@ -386,6 +386,7 @@ function spkRow(btn){speak(btn.closest('tr').getAttribute('data-w'));}
 document.addEventListener('DOMContentLoaded',function(){
   document.querySelectorAll('#root tbody tr').forEach(initRow);
   document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
+  autoLoadProgress();
   updateSyncBar();
   updatePromoteBar();
 });
@@ -394,33 +395,91 @@ document.addEventListener('DOMContentLoaded',function(){
 var SYNCKEY='hsk6vocab_syncmeta_v1';
 function syncMeta(){try{return JSON.parse(localStorage.getItem(SYNCKEY))||{};}catch(e){return {};}}
 function saveSyncMeta(m){localStorage.setItem(SYNCKEY,JSON.stringify(m));}
-function markDirty(){var m=syncMeta();m.dirty=true;saveSyncMeta(m);updateSyncBar();}
-function exportProgress(){
-  var payload={ver:1,exportedAt:new Date().toISOString(),db:DB,flags:FLAGS,srs:SRS};
-  var blob=new Blob([JSON.stringify(payload)],{type:'application/json'});
-  var url=URL.createObjectURL(blob);
-  var a=document.createElement('a');a.href=url;a.download='tu-vung-progress.json';
-  document.body.appendChild(a);a.click();document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-  var m=syncMeta();m.lastExport=payload.exportedAt;m.dirty=false;saveSyncMeta(m);
-  updateSyncBar();
-  alert('Đã tải tu-vung-progress.json.\nHãy chuyển/lưu file này đè vào output/Giáo trình chuẩn/hsk6/study/ trong repo rồi git add + commit + push, để máy khác git pull về và bấm "Nhập tiến độ".');
+function markDirty(){var m=syncMeta();m.dirty=true;saveSyncMeta(m);updateSyncBar();scheduleAutoSave();}
+function nowIso(){return new Date().toISOString();}
+/* Gộp 2 bản tiến độ: SRS + ghi chú sửa theo từng từ (ts mới hơn thắng); cờ đánh dấu theo cả bản (flagsTs mới hơn thắng) */
+function mergeProgress(L,R){
+  function pick(a,b){if(!a)return b;if(!b)return a;var ta=a.ts||'',tb=b.ts||'';
+    if(ta===tb)return (a.box||0)>=(b.box||0)?a:b;return ta>tb?a:b;}
+  var out={ver:2,db:{},flags:{},srs:{}};
+  var ks=Object.assign({},L.srs||{},R.srs||{});
+  for(var w in ks)out.srs[w]=pick((L.srs||{})[w],(R.srs||{})[w]);
+  var kd=Object.assign({},L.db||{},R.db||{});
+  for(var w2 in kd){var x=(L.db||{})[w2],y=(R.db||{})[w2];
+    out.db[w2]=!x?y:!y?x:((x._ts||'')>(y._ts||'')?x:y);}
+  var lf=L.flagsTs||'',rf=R.flagsTs||'';
+  out.flags=(lf>=rf?L.flags:R.flags)||{};out.flagsTs=lf>=rf?lf:rf;
+  return out;
 }
+function localSnapshot(){return {db:DB,flags:FLAGS,srs:SRS,flagsTs:syncMeta().flagsTs||''};}
+function applySnapshot(P){
+  DB=P.db||{};store(DB);FLAGS=P.flags||{};fsave();SRS=P.srs||{};ssave();
+  var m=syncMeta();m.flagsTs=P.flagsTs||m.flagsTs||'';saveSyncMeta(m);
+  document.querySelectorAll('#root tbody tr').forEach(initRow);
+  document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
+}
+function toast(t){var d=document.createElement('div');d.textContent=t;
+  d.style.cssText='position:fixed;bottom:18px;right:18px;background:#1a4a8a;color:#fff;padding:10px 14px;border-radius:8px;font-size:13px;z-index:99999;box-shadow:0 2px 8px #0004';
+  document.body.appendChild(d);setTimeout(function(){d.remove();},4500);}
+/* --- Kéo về (pull): file tu-vung-progress.js nằm cạnh trang, nạp bằng <script> → git pull xong mở trang là tự có --- */
+function autoLoadProgress(){
+  var R=window.__PROGRESS;if(!R)return;
+  var m=syncMeta();if(m.lastSeen===R.exportedAt)return;
+  var merged=mergeProgress(localSnapshot(),R);applySnapshot(merged);
+  m=syncMeta();m.lastSeen=R.exportedAt;m.lastImport=nowIso();
+  m.dirty=JSON.stringify(merged.srs)!==JSON.stringify(R.srs||{})||JSON.stringify(merged.db)!==JSON.stringify(R.db||{});
+  saveSyncMeta(m);sessionStorage.setItem('imported_this_session','1');updateSyncBar();
+  toast('Đã tự nạp tiến độ từ repo'+(R.exportedAt?' (xuất '+new Date(R.exportedAt).toLocaleString('vi-VN')+')':'')+'.');
+}
+/* --- Đẩy lên (push): ghi THẲNG vào repo qua File System Access (chọn thư mục study/ 1 lần, nhớ lại) --- */
+var PFILE='tu-vung-progress.js';
+function idb(){return new Promise(function(res,rej){var q=indexedDB.open('hsk6sync',1);
+  q.onupgradeneeded=function(){q.result.createObjectStore('h');};q.onsuccess=function(){res(q.result);};q.onerror=function(){rej(q.error);};});}
+function idbGet(k){return idb().then(function(d){return new Promise(function(res){var r=d.transaction('h').objectStore('h').get(k);r.onsuccess=function(){res(r.result);};r.onerror=function(){res(null);};});});}
+function idbSet(k,v){return idb().then(function(d){return new Promise(function(res){var t=d.transaction('h','readwrite');t.objectStore('h').put(v,k);t.oncomplete=res;});});}
+async function getDir(interactive){
+  if(!window.showDirectoryPicker)return null;
+  var h=null;try{h=await idbGet('dir');}catch(e){}
+  if(h){var p=await h.queryPermission({mode:'readwrite'});
+    if(p==='granted')return h;
+    if(interactive&&(await h.requestPermission({mode:'readwrite'}))==='granted')return h;}
+  if(!interactive)return null;
+  h=await window.showDirectoryPicker({mode:'readwrite',id:'hsk6study'});
+  await idbSet('dir',h);return h;
+}
+function parseProgressJs(t){var i=t.indexOf('{'),j=t.lastIndexOf('}');return JSON.parse(t.slice(i,j+1));}
+async function writeToRepo(interactive){
+  var dir=await getDir(interactive);if(!dir)return false;
+  var remote={};try{var f=await (await dir.getFileHandle(PFILE)).getFile();remote=parseProgressJs(await f.text());}catch(e){}
+  var merged=mergeProgress(localSnapshot(),remote);applySnapshot(merged);
+  var payload=Object.assign({ver:2,exportedAt:nowIso()},merged);
+  var fh=await dir.getFileHandle(PFILE,{create:true});var w=await fh.createWritable();
+  await w.write('window.__PROGRESS='+JSON.stringify(payload)+';\n');await w.close();
+  var m=syncMeta();m.lastExport=payload.exportedAt;m.lastSeen=payload.exportedAt;m.dirty=false;saveSyncMeta(m);updateSyncBar();
+  return true;
+}
+var _autoT=null;
+function scheduleAutoSave(){clearTimeout(_autoT);_autoT=setTimeout(function(){writeToRepo(false).catch(function(){});},3000);}
+async function exportProgress(){
+  try{if(await writeToRepo(true)){alert('Đã ghi tiến độ vào repo ('+PFILE+').\nBước còn lại: nhờ Claude "đồng bộ tiến độ" (hoặc chạy sync_progress.py) để commit + push.');return;}}
+  catch(e){if(e&&e.name==='AbortError')return;}
+  /* Trình duyệt không ghi thẳng được → tải file về như cũ */
+  var payload=Object.assign({ver:2,exportedAt:nowIso()},localSnapshot());
+  var blob=new Blob(['window.__PROGRESS='+JSON.stringify(payload)+';\n'],{type:'application/javascript'});
+  var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download=PFILE;
+  document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
+  var m=syncMeta();m.lastExport=payload.exportedAt;m.dirty=false;saveSyncMeta(m);updateSyncBar();
+  alert('Trình duyệt này không ghi thẳng vào repo được → đã tải '+PFILE+'. Hãy lưu đè vào output/Giáo trình chuẩn/hsk6/study/ rồi nhờ Claude đồng bộ.');
+}
+/* Nhập thủ công (dự phòng): chọn file .js hoặc .json — GỘP với tiến độ máy này, không ghi đè */
 function importProgress(file){
   var reader=new FileReader();
   reader.onload=function(){
-    var payload;
-    try{payload=JSON.parse(reader.result);}catch(e){alert('File không hợp lệ.');return;}
-    if(!confirm('Nhập tiến độ từ file sẽ GHI ĐÈ toàn bộ cờ đánh dấu / tiến độ học (SRS) / ghi chú sửa trên máy này. Tiếp tục?'))return;
-    DB=payload.db||{};store(DB);
-    FLAGS=payload.flags||{};fsave();
-    SRS=payload.srs||{};ssave();
-    document.querySelectorAll('#root tbody tr').forEach(initRow);
-    document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
-    var m=syncMeta();m.lastImport=new Date().toISOString();m.dirty=false;saveSyncMeta(m);
-    sessionStorage.setItem('imported_this_session','1');
-    updateSyncBar();
-    alert('Đã nhập tiến độ'+(payload.exportedAt?(' (xuất lúc '+new Date(payload.exportedAt).toLocaleString('vi-VN')+').'):'.'));
+    var R;try{R=parseProgressJs(reader.result);}catch(e){alert('File không hợp lệ.');return;}
+    applySnapshot(mergeProgress(localSnapshot(),R));
+    var m=syncMeta();m.lastImport=nowIso();m.lastSeen=R.exportedAt||m.lastSeen;m.dirty=true;saveSyncMeta(m);
+    sessionStorage.setItem('imported_this_session','1');updateSyncBar();
+    toast('Đã gộp tiến độ từ file.');
   };
   reader.readAsText(file);
 }
@@ -548,10 +607,10 @@ function sGrade(good){var w=Scur.w;if(!SRS[w])SRS[w]={box:Scur.lvl};
   var cap=Math.max(1,Scur.lvl+1); // trần theo Activation của vault
   if(good){
     if(sbox(w)>=cap){Scapped++;}            // kịch trần: chưa dùng thật thì không "thuộc hẳn"
-    SRS[w].box=Math.min(sbox(w)+1,cap);
+    SRS[w].box=Math.min(sbox(w)+1,cap);SRS[w].ts=nowIso();
     if(Scur.act==='d' && !PROM[w]){PROM[w]={ts:new Date().toISOString()};psave();updatePromoteBar();} // D→C: nhận ra là đủ, tự bạn quyết
     Sq.shift();Sdone++;
-  }else{SRS[w].box=1;Sagain++;Sq.push(Sq.shift());}
+  }else{SRS[w].box=1;SRS[w].ts=nowIso();Sagain++;Sq.push(Sq.shift());}
   ssave();markDirty();rsave();sNext();}
 function reading(p,hv){return esc(p||'')+(hv?' · <span class="hv">'+esc(hv)+'</span>':'');}
 var IDS={'⿰':'trái–phải','⿱':'trên–dưới','⿲':'trái–giữa–phải','⿳':'trên–giữa–dưới','⿴':'bao kín','⿵':'bao trên','⿶':'bao dưới','⿷':'bao trái','⿸':'góc trên-trái','⿹':'góc trên-phải','⿺':'góc dưới-trái','⿻':'lồng nhau'};
@@ -662,9 +721,9 @@ P = ['<!doctype html>', '<html lang="vi"><head><meta charset="utf-8">',
      '<div class="bar"><h1>生词 HSK6</h1>',
      '<input id="q" placeholder="Tìm từ / pinyin / nghĩa…" oninput="filt()">',
      '<button class="gostudy" onclick="startStudyAll()">🎓 Học</button>',
-     '<button class="syncbtn" onclick="exportProgress()" title="Tải file tiến độ (cờ đánh dấu, SRS, ghi chú sửa) để copy/git push sang máy khác">⬆️ Xuất tiến độ</button>',
-     '<button class="syncbtn" onclick="document.getElementById(\'importfile\').click()" title="Nạp file tiến độ đã đồng bộ từ máy khác — sẽ GHI ĐÈ tiến độ trên máy này">⬇️ Nhập tiến độ</button>',
-     '<input type="file" id="importfile" accept="application/json" style="display:none" onchange="if(this.files[0])importProgress(this.files[0]);this.value=\'\';">',
+     '<button class="syncbtn" onclick="exportProgress()" title="Ghi thẳng tiến độ vào repo (lần đầu chọn thư mục study/), rồi commit + push để máy khác tự có">⬆️ Xuất tiến độ</button>',
+     '<button class="syncbtn" onclick="document.getElementById(\'importfile\').click()" title="Nạp file tiến độ đã đồng bộ từ máy khác — sẽ GỘP với tiến độ máy này (dự phòng — bình thường trang tự nạp khi mở)">⬇️ Nhập tiến độ</button>',
+     '<input type="file" id="importfile" accept=".js,.json,application/json" style="display:none" onchange="if(this.files[0])importProgress(this.files[0]);this.value=\'\';">',
      '</div>',
      '<div id="syncbanner" class="syncbanner hidden">⚠️ Máy này có thay đổi (cờ đánh dấu / tiến độ học / ghi chú) chưa được xuất ra để đồng bộ sang máy khác.'
      '<button onclick="exportProgress()">Xuất ngay</button>'
@@ -720,6 +779,7 @@ P.append('<div id="study" class="hidden" onclick="if(event.target.id===\'study\'
          '<div class="sfront" id="sfront"></div><div class="shint" id="shint">Bấm / Space để lật thẻ</div>'
          '<div class="sback" id="sback"></div></div>'
          '</div></div>')
+P.append('<script src="tu-vung-progress.js" onerror="void 0"></script>')
 P.append('<script>var HZ=' + HZ_JSON + ';var MN=' + MN_JSON + ';</script>')
 P.append('<script>' + JS + '</script>')
 P.append('</body></html>')
