@@ -373,6 +373,10 @@ footer.credit{text-align:center; color:var(--ink-faint); font-size:11.5px; margi
 .lookupPopup .lp-mean{margin-bottom:6px; color:var(--ink)}
 .lookupPopup .lp-mean b{color:var(--ink-faint); font-weight:700; font-size:11.5px; text-transform:uppercase; letter-spacing:.03em; display:block; margin-bottom:2px}
 .lookupPopup .lp-close{position:absolute; top:6px; right:8px; cursor:pointer; color:var(--ink-faint); font-size:13px; background:none; border:none; padding:4px}
+.lookupPopup .lp-ctx{margin-top:8px; padding-top:8px; border-top:1px solid var(--line); color:var(--ink)}
+.lookupPopup .lp-ctx b{color:var(--ink-faint); font-weight:700; font-size:11.5px; text-transform:uppercase; letter-spacing:.03em; display:block; margin-bottom:2px}
+.lookupPopup .lp-ctx .zh{font-family:'Noto Serif SC',serif; font-size:13.5px; color:var(--ink-soft); margin-bottom:3px}
+.lookupPopup .lp-ctx .zh mark{background:var(--accent); color:#fff; border-radius:3px; padding:0 1px}
 .lookupPopup .lp-loading{color:var(--ink-faint); font-style:italic}
 .lookupPopup .lp-err{color:var(--bad); font-size:12.5px}
 
@@ -3668,6 +3672,71 @@ function saveHskkResult(){
   maybeAutoMarkDone();
 }
 
+/* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
+   Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
+   Đã làm: Bài 1 (課文/朗读/回答问题/表达方式). Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+const SENTENCE_VI = {
+ "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
+ "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
+ "专家说这是一个情绪感染的问题": "Chuyên gia nói: \"Đây là vấn đề lây lan cảm xúc.\"",
+ "调查数据显示社会关系最广泛的人同时也最快乐这些人与朋友配偶邻居和亲戚的联系都较为密切": "Số liệu khảo sát cho thấy những người có quan hệ xã hội rộng nhất cũng là những người vui nhất; họ gắn bó khá mật thiết với bạn bè, vợ/chồng, hàng xóm và họ hàng.",
+ "专家说你身边多一个快乐的人你就多一份快乐": "Chuyên gia nói: \"Bên cạnh bạn có thêm một người vui vẻ thì bạn có thêm một phần niềm vui.\"",
+ "研究人员还发现快乐比不快乐更易传染": "Các nhà nghiên cứu còn phát hiện: niềm vui \"lây\" dễ hơn nỗi buồn.",
+ "如果你的直接社交对象很快乐你快乐的几率会增加15%": "Nếu người trong vòng quan hệ trực tiếp của bạn vui vẻ, xác suất bạn vui sẽ tăng 15%.",
+ "如果你配偶或兄弟姐妹的朋友很快乐你快乐的几率就会增加10%": "Nếu bạn bè của vợ/chồng hoặc anh chị em của bạn vui vẻ, xác suất bạn vui sẽ tăng 10%.",
+ "如果你的第三层社交圈如朋友的朋友很快乐那么你快乐的几率会增加6%": "Nếu người ở vòng quan hệ thứ ba của bạn, chẳng hạn bạn của bạn bè bạn, vui vẻ, thì xác suất bạn vui sẽ tăng 6%.",
+ "但每多一个不快乐的朋友你不快乐的几率会增加7%": "Nhưng cứ thêm một người bạn không vui, xác suất bạn không vui sẽ tăng 7%.",
+ "这项新公布的研究结果显示幸福可能会通过社交网络扩散你交往的人越幸福你也会感到越快乐": "Kết quả nghiên cứu mới công bố này cho thấy hạnh phúc có thể lan truyền qua mạng lưới xã hội: người bạn giao tiếp càng hạnh phúc thì bạn cũng càng cảm thấy vui.",
+ "如果你的社交网络比如朋友家庭和配偶他们中有人变得快乐那也会增加你快乐的可能性": "Nếu trong mạng lưới xã hội của bạn, như bạn bè, gia đình, vợ/chồng, có người trở nên vui vẻ thì khả năng bạn vui cũng sẽ tăng lên.",
+ "有一个故事说一位犹太教的长老酷爱打高尔夫球": "Có một câu chuyện kể về một vị trưởng lão Do Thái giáo, rất mê chơi golf.",
+ "在一个安息日他觉得手痒很想去挥挥杆但犹太教规定教徒在安息日必须休息什么事都不能做": "Vào một ngày Sabbath, ông ngứa ngáy chân tay, rất muốn ra vung gậy, nhưng giáo luật Do Thái quy định tín đồ ngày Sabbath phải nghỉ ngơi, không được làm bất cứ việc gì.",
+ "这位长老却怎么也熬不住决定偷偷去高尔夫球场想着打九个洞就好了": "Vị trưởng lão này lại không thể nào nhịn nổi, quyết định lén ra sân golf, nghĩ rằng chỉ chơi chín lỗ là được.",
+ "由于安息日犹太教徒都不会出门球场上一个人也没有因此长老觉得不会有人知道他违反规定": "Vì ngày Sabbath tín đồ Do Thái đều không ra khỏi nhà, trên sân không có một bóng người, nên trưởng lão nghĩ sẽ không ai biết mình vi phạm quy định.",
+ "然而当长老在打第二洞时却被天使发现了天使生气地到上帝面前告状说某某长老不守教义居然在安息日出门打高尔夫球": "Thế nhưng khi trưởng lão đang đánh lỗ thứ hai thì bị thiên thần phát hiện; thiên thần tức giận lên mách Thượng đế, nói có vị trưởng lão nọ không tuân giáo lý, lại dám ra ngoài chơi golf vào ngày Sabbath.",
+ "上帝听了就跟天使说会好好惩罚这个长老": "Thượng đế nghe xong, bảo thiên thần rằng sẽ trừng phạt vị trưởng lão này thật xứng đáng.",
+ "第三个洞开始长老打出超完美的成绩几乎都是一杆进洞": "Từ lỗ thứ ba, trưởng lão đánh ra thành tích cực kỳ hoàn hảo, hầu như lỗ nào cũng một gậy vào lỗ (hole-in-one).",
+ "长老兴奋坏了到打第七个洞时天使又跑去找上帝上帝呀您不是说要惩罚长老吗": "Trưởng lão phấn khích đến phát điên; đến lỗ thứ bảy, thiên thần lại chạy đi tìm Thượng đế: \"Thượng đế ơi, chẳng phải Ngài nói sẽ trừng phạt trưởng lão sao?",
+ "为什么还不见有惩罚": "Sao vẫn chưa thấy trừng phạt gì cả?\"",
+ "上帝说我已经在惩罚他了": "Thượng đế nói: \"Ta đang trừng phạt ông ta rồi đấy.\"",
+ "直到打完第九个洞长老都是一杆进洞": "Cho đến khi đánh xong lỗ thứ chín, lỗ nào trưởng lão cũng một gậy vào lỗ.",
+ "因为打得太神了于是长老决定再打九个洞": "Vì đánh quá thần sầu, trưởng lão bèn quyết định đánh thêm chín lỗ nữa.",
+ "天使又去找上帝了您说要惩罚他惩罚到底在哪里": "Thiên thần lại đi tìm Thượng đế: \"Ngài nói sẽ trừng phạt ông ta, rốt cuộc sự trừng phạt ở đâu?\"",
+ "天使很生气地问上帝这就是您对长老的惩罚吗": "Thiên thần rất tức giận hỏi Thượng đế: \"Đây chính là sự trừng phạt của Ngài dành cho trưởng lão sao?\"",
+ "上帝说正是你想想他有这么惊人的成绩以及兴奋的心情却不能跟任何人说这不是最好的惩罚吗": "Thượng đế nói: \"Đúng vậy. Ngươi thử nghĩ xem, ông ta có thành tích đáng kinh ngạc và tâm trạng phấn khởi như thế mà lại không thể kể với bất cứ ai — đó chẳng phải là sự trừng phạt tốt nhất sao?\"",
+ "生活需要伴侣快乐和痛苦都要有人分享": "Cuộc sống cần có bạn đồng hành; niềm vui và nỗi đau đều cần có người cùng chia sẻ.",
+ "没有人分享的人生无论面对的是快乐还是痛苦都是一种惩罚": "Một cuộc đời không có ai chia sẻ, dù đối diện với niềm vui hay nỗi đau, đều là một sự trừng phạt.",
+ "中国古人说人生最快乐的几件事情就是久旱逢甘露他乡遇故知洞房花烛夜金榜题名时": "Người xưa Trung Quốc nói, mấy điều vui nhất đời là: nắng hạn gặp mưa rào, nơi đất khách gặp cố tri, đêm động phòng hoa chúc, lúc bảng vàng đề tên.",
+ "什么才是世界上最快乐的事": "Điều gì mới là chuyện vui nhất thế giới?",
+ "下面这些你又经历过几件呢": "Trong những điều dưới đây, bạn đã trải qua mấy điều rồi?",
+ "在你打扮得最漂亮的那天在街上偶然遇到你很在乎的人": "Hôm bạn ăn diện đẹp nhất, tình cờ gặp trên phố người mà bạn rất để tâm.",
+ "收拾书架的时候发现一张没有支取的存单": "Lúc dọn giá sách, phát hiện một tờ phiếu gửi tiết kiệm chưa rút.",
+ "数目不大但是人有遗忘的财富无论是雪中送炭还是锦上添花都表明你的生活其实没有问题": "Số tiền không lớn, nhưng có được một khoản tiền mà mình đã quên mất; dù là \"đưa than sưởi ngày tuyết\" (giúp lúc khó khăn) hay \"dệt hoa trên gấm\" (tốt lại thêm tốt), đều cho thấy cuộc sống của bạn thật ra không có vấn đề gì.",
+ "早上醒来依然记得夜里的美梦": "Sáng thức dậy vẫn nhớ giấc mơ đẹp đêm qua.",
+ "美梦不多但不丢失实在很难得": "Giấc mơ đẹp không nhiều mà lại không quên mất, thật hiếm có.",
+ "做了噩梦及时醒来发现一切不是真的": "Gặp ác mộng nhưng kịp tỉnh dậy, phát hiện mọi chuyện không phải thật.",
+ "醒来认为上班已经迟到但突然想起来是周末": "Tỉnh dậy tưởng đi làm trễ rồi, nhưng chợt nhớ ra là cuối tuần.",
+ "曾经有一家英国报纸以世界上最快乐的事情是什么为题有奖征集答案": "Từng có một tờ báo Anh lấy đề \"Điều vui nhất thế giới là gì\" để thu thập đáp án có thưởng.",
+ "只有不超过3%的回答是挣到了一大笔钱": "Chỉ có không quá 3% câu trả lời là kiếm được một khoản tiền lớn.",
+ "最后获奖的四个答案是艺术家完成了一件作品望着作品吹口哨的时候小孩儿在沙滩上用沙子堆成了一座城堡母亲忙了一天晚上给自己的孩子洗了一个热水澡外科医生完成了一个手术救活了一个生命": "Bốn đáp án đoạt giải cuối cùng là: khi nghệ sĩ hoàn thành một tác phẩm, vừa ngắm nó vừa huýt sáo; khi đứa trẻ dùng cát xây xong một tòa lâu đài trên bãi biển; khi người mẹ bận rộn cả ngày, tối đến tắm nước nóng cho con; khi bác sĩ phẫu thuật hoàn thành ca mổ, cứu sống một mạng người.",
+ "常言道独乐乐不如众乐乐这句古语道出了快乐的本质唯有被分享快乐才真正称得上快乐": "Người ta thường nói: \"Vui một mình không bằng vui cùng mọi người\" — câu cổ ngữ này nói lên bản chất của niềm vui: chỉ khi được chia sẻ, niềm vui mới thật sự xứng gọi là niềm vui.",
+ "试想一个人纵然取得再辉煌的成就倘若身边无人可以倾诉无人可以共享喜悦这份喜悦终究会在孤独中逐渐黯淡甚至异化为一种无形的煎熬": "Thử nghĩ xem: một người dù đạt thành tựu rực rỡ đến đâu, nếu bên cạnh không có ai để tâm sự, không ai để cùng chung niềm vui, thì niềm vui ấy rốt cuộc cũng phai nhạt dần trong cô độc, thậm chí biến thành một nỗi dày vò vô hình.",
+ "与此同时痛苦亦是如此若有人分担再深的苦楚也会因此减轻几分": "Tương tự như vậy, nỗi đau cũng thế: nếu có người sẻ chia thì khổ đau sâu đến mấy cũng vơi đi phần nào.",
+ "不可否认现代社会节奏加快人与人之间看似联系便捷实则愈发疏离许多人宁愿把心事埋藏心底也不愿向他人敞开": "Không thể phủ nhận, xã hội hiện đại nhịp sống nhanh, con người với nhau trông có vẻ liên lạc thuận tiện nhưng thực ra ngày càng xa cách; nhiều người thà chôn tâm sự trong lòng còn hơn mở lòng với người khác.",
+ "长此以往孤独感只会愈演愈烈": "Cứ kéo dài như vậy, cảm giác cô đơn chỉ ngày càng trầm trọng thêm.",
+ "归根结底幸福与否往往不在于拥有多少而在于是否有人与你同享悲欢唯有学会分享才能体会生活真正的意义": "Nói cho cùng, hạnh phúc hay không thường không nằm ở chỗ có bao nhiêu, mà ở chỗ có ai cùng bạn sẻ chia buồn vui; chỉ khi học được cách chia sẻ mới cảm nhận được ý nghĩa thật sự của cuộc sống.",
+ "试看古今贤者无不珍视知己与同伴而视孤芳自赏为人生之大忌这正印证了分享之于幸福不可或缺的分量": "Xem các bậc hiền nhân xưa nay, ai cũng trân trọng tri kỷ và bạn đồng hành, coi việc tự cho mình thanh cao, sống tách biệt (cô phương tự thưởng) là điều đại kỵ của đời người; điều này chính là minh chứng cho tầm quan trọng không thể thiếu của sự chia sẻ đối với hạnh phúc.",
+ "你同意快乐也会传染这种说法吗": "Bạn có đồng ý với cách nói \"niềm vui cũng có thể lây\" không?",
+ "请说说你的看法和理由": "Hãy nói về quan điểm và lý do của bạn.",
+ "在日常生活中你通常会用什么方式和身边的人分享自己的快乐": "Trong cuộc sống hằng ngày, bạn thường chia sẻ niềm vui của mình với những người xung quanh bằng cách nào?",
+ "说到快乐很多人会想到和朋友聚会分享好消息的时刻": "Nhắc đến niềm vui, nhiều người sẽ nghĩ đến những lúc tụ họp với bạn bè, chia sẻ tin tốt.",
+ "说到情绪传染有人会觉得难以置信但研究确实证明了这一点": "Nói đến sự lây lan cảm xúc, có người sẽ thấy khó tin, nhưng nghiên cứu quả thực đã chứng minh điều đó.",
+ "如果你身边的朋友常常保持乐观你自己就会更容易感到快乐如果周围的人情绪低落那么你也很难独善其身": "Nếu bạn bè quanh bạn thường lạc quan, bản thân bạn sẽ dễ cảm thấy vui hơn; nếu người xung quanh tâm trạng sa sút thì bạn cũng khó mà đứng ngoài ảnh hưởng.",
+ "由于快乐具有传染性所以和积极乐观的人多相处会让自己更幸福因此选择朋友也是一门学问": "Vì niềm vui có tính \"lây lan\", (nên) thường xuyên ở bên người tích cực lạc quan sẽ khiến mình hạnh phúc hơn; do đó chọn bạn cũng là cả một nghệ thuật.",
+ "你不是说社交圈子越广泛就越容易快乐吗": "Chẳng phải bạn nói vòng quan hệ xã hội càng rộng thì càng dễ vui sao?",
+ "为什么有的人朋友很多却还是感到孤独": "Tại sao có người bạn bè rất nhiều mà vẫn cảm thấy cô đơn?",
+ "听到大家都为自己感到高兴这可把他感动坏了": "Nghe mọi người đều mừng cho mình, anh ấy cảm động vô cùng."
+};
+
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
    Bôi đen 1 từ/cụm trong 课文/阅读/写作 đề → popup hiện pinyin (pinyin-pro, chạy offline sau khi
    script đã tải) + nghĩa của cụm đó (dịch qua MyMemory API, miễn phí, không cần key — cần internet).
@@ -3725,6 +3794,8 @@ function saveHskkResult(){
     '足见': 'Đủ thấy, đủ để chứng tỏ',
     '莫衷一是': 'Không ai thống nhất được, mỗi người một ý',
     '不谋而合': 'Không hẹn mà gặp, trùng hợp ăn ý',
+    '宽带': 'Băng thông rộng (internet cáp quang/ADSL)',
+    '手机': 'Điện thoại di động',
   };
 
   function translate(text){
@@ -3735,14 +3806,20 @@ function saveHskkResult(){
       translateCache.set(key, p);
       return p;
     }
-    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=zh-CN|vi`;
-    const p = fetch(url).then(r=>{
+    const mm = (q, pair)=>fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=${pair}`).then(r=>{
       if(!r.ok) throw new Error('http '+r.status);
       return r.json();
     }).then(data=>{
       const t = data && data.responseData && data.responseData.translatedText;
       if(!t) throw new Error('empty');
       return t;
+    });
+    /* Với từ ngắn (vd 宽带), MyMemory hay trả thẳng bản tiếng Anh dù đã xin zh-CN|vi (user 2026-10-21).
+       Kết quả toàn ASCII = chưa phải tiếng Việt → dịch tiếp en→vi; nếu vẫn lỗi thì giữ bản tiếng Anh. */
+    const looksEnglish = s => /^[\x00-\x7F]+$/.test(s) && /[A-Za-z]{2}/.test(s);
+    const p = mm(text, 'zh-CN|vi').then(t=>{
+      if(!looksEnglish(t)) return t;
+      return mm(t, 'en|vi').then(v=>looksEnglish(v) ? `${t} (tiếng Anh)` : v).catch(()=>`${t} (tiếng Anh)`);
     });
     translateCache.set(key, p);
     return p;
@@ -3775,14 +3852,50 @@ function saveHskkResult(){
     popup.style.top = top + 'px';
   }
 
-  function showLookup(selectedText, rect){
+  /* Tìm câu chứa vùng bôi đen + bản dịch Việt dựng sẵn (SENTENCE_VI). Duyệt các phần tử tổ tiên
+     (từ trong ra ngoài), tách câu theo textContent của chính tổ tiên đó, chọn câu theo vị trí ký tự
+     của điểm bắt đầu bôi đen → đúng câu ngay cả khi cùng từ xuất hiện nhiều lần. */
+  const normKey = s => s.replace(/[^一-鿿A-Za-z0-9%]/g, '');
+  const splitSentences = t => (t.match(/[^。！？]*[。！？]+["”」』]?|[^。！？]+$/g) || []).map(x=>x.trim()).filter(x=>/[一-鿿]/.test(x));
+  function findContext(range, text){
+    let el = range.startContainer.nodeType===3 ? range.startContainer.parentElement : range.startContainer;
+    for(let depth=0; el && el !== document.body && depth < 6; depth++, el = el.parentElement){
+      const full = el.textContent || '';
+      const pre = document.createRange();
+      try{ pre.setStart(el, 0); pre.setEnd(range.startContainer, range.startOffset); }catch(e){ continue; }
+      const start = pre.toString().length;
+      let cursor = 0;
+      for(const s of splitSentences(full)){
+        const at = full.indexOf(s, cursor);
+        if(at < 0) continue;
+        cursor = at + s.length;
+        if(start >= at && start < cursor){
+          const vi = SENTENCE_VI[normKey(s)] || SENTENCE_VI[normKey(s.replace(/^\d+[.、]\s*/, ''))]; // câu hỏi đánh số "1. …" (回答问题)
+          if(vi) return {zh: s, vi};
+          break;
+        }
+      }
+    }
+    return null;
+  }
+  function ctxHtml(ctx, sel){
+    if(!ctx) return '';
+    const zh = escapeHtml(ctx.zh);
+    const i = ctx.zh.indexOf(sel);
+    const zhMarked = i < 0 ? zh : escapeHtml(ctx.zh.slice(0,i)) + '<mark>' + escapeHtml(sel) + '</mark>' + escapeHtml(ctx.zh.slice(i+sel.length));
+    return `<div class="lp-ctx"><b>Trong câu</b><div class="zh">${zhMarked}</div>${escapeHtml(ctx.vi)}</div>`;
+  }
+
+  function showLookup(selectedText, rect, range){
     const myToken = ++requestToken;
     currentRect = rect;
     const pinyin = getPinyin(selectedText);
+    const ctx = range ? findContext(range, selectedText) : null;
     popupBody.innerHTML = `
       <div class="lp-word">${escapeHtml(selectedText)}</div>
       <div class="lp-pinyin">${escapeHtml(pinyin) || '—'}</div>
       <div class="lp-mean" id="lp-mean-word"><b>Nghĩa</b><span class="lp-loading">đang tra…</span></div>
+      ${ctxHtml(ctx, selectedText)}
     `;
     popup.hidden = false;
     positionPopup();
@@ -3811,7 +3924,7 @@ function saveHskkResult(){
     const endEl = range.endContainer.nodeType===3 ? range.endContainer.parentElement : range.endContainer;
     if(isFormField(startEl) || isFormField(endEl)) return;
 
-    showLookup(text, range.getBoundingClientRect());
+    showLookup(text, range.getBoundingClientRect(), range);
   }
 
   document.addEventListener('mouseup', (e)=>{ if(!popup.contains(e.target)) setTimeout(handleSelection, 0); });
