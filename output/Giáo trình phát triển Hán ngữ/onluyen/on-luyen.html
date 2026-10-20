@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4148,7 +4148,57 @@ const SENTENCE_VI = {
  "全亚洲乃至全世界的大学毕业生都面临着几十年来最糟糕的就业形势": "Sinh viên tốt nghiệp toàn châu Á, thậm chí toàn thế giới, đang phải đối mặt với tình hình việc làm tồi tệ nhất trong mấy chục năm qua.",
  "很多学生找不到工作于是大发牢骚把所有的过错都归咎于学校专业设置不合理教学质量差": "Nhiều sinh viên không tìm được việc liền than phiền ầm ĩ, đổ hết lỗi cho việc nhà trường bố trí chuyên ngành bất hợp lý, chất lượng giảng dạy kém.",
  "很多学生找不到工作把所有的过错都归咎于学校专业设置不合理更有甚者指责国家的扩招政策给他们带来了空前的就业压力": "Nhiều sinh viên không tìm được việc thì đổ hết lỗi cho việc nhà trường bố trí chuyên ngành bất hợp lý; thậm chí có người còn trách chính sách mở rộng tuyển sinh của nhà nước đã đem lại cho họ áp lực việc làm chưa từng có.",
- "只是单方面让大学生降低对工作岗位报酬的期望值未免有点儿不近情理": "Chỉ đơn phương bắt sinh viên hạ thấp kỳ vọng về thu nhập của vị trí việc làm thì e là có phần không hợp tình hợp lý."
+ "只是单方面让大学生降低对工作岗位报酬的期望值未免有点儿不近情理": "Chỉ đơn phương bắt sinh viên hạ thấp kỳ vọng về thu nhập của vị trí việc làm thì e là có phần không hợp tình hợp lý.",
+ "环保和低碳的话题从来没有像今天这样深入人心随着人们环境意识的不断提高以往日常生活中一些作为常识去理解去参与的事物已经不再符合今天的环保要求了": "Chủ đề bảo vệ môi trường và lối sống ít carbon chưa bao giờ đi sâu vào lòng người như ngày nay; cùng với việc ý thức môi trường của mọi người không ngừng nâng cao, một số việc trong đời sống hằng ngày trước đây vốn được hiểu và làm theo như lẽ thường, nay đã không còn phù hợp với yêu cầu bảo vệ môi trường hiện nay nữa.",
+ "一次性用品给人们带来了方便但与此同时也增加了垃圾的排放城市机动车的增加是工业化的标志之一可是尾气污染也越来越严重地威胁着居民的身体健康": "Đồ dùng một lần mang lại sự tiện lợi cho mọi người, nhưng mặt khác cũng làm tăng lượng rác thải; xe cơ giới trong thành phố tăng lên là một trong những dấu hiệu của công nghiệp hóa, nhưng ô nhiễm khí thải cũng ngày càng đe dọa nghiêm trọng sức khỏe của người dân.",
+ "面对这类观念转换中的诸多问题也许你能理解但是你采取过什么行动呢": "Trước rất nhiều vấn đề như vậy trong quá trình thay đổi quan niệm, có thể bạn hiểu được, nhưng bạn đã từng hành động gì chưa?",
+ "不妨先完成下面的题目为你的环保意识打打分吧": "Bạn thử làm các câu hỏi dưới đây trước, để tự chấm điểm ý thức bảo vệ môi trường của mình nhé.",
+ "记得关掉家用电器的电源开关把空调调到合适的温度不过高或过低减少私家车的使用尽量利用公共交通改用节能型照明灯利用太阳能": "Nhớ tắt công tắc nguồn của các thiết bị điện trong nhà; chỉnh điều hòa ở nhiệt độ phù hợp, không quá cao hoặc quá thấp; hạn chế dùng xe riêng, cố gắng sử dụng phương tiện công cộng; chuyển sang dùng đèn chiếu sáng tiết kiệm năng lượng; tận dụng năng lượng mặt trời.",
+ "购物有计划不买半年闲注意保存塑料袋纸袋垃圾袋循环使用用过的纸张笔记本等翻用另一面把报纸杂志类印刷品送到废品回收站买厕所卫生纸时选再生纸制品": "Mua sắm có kế hoạch, không mua đồ \"nửa năm không đụng tới\"; chú ý giữ lại túi nilon, túi giấy, túi rác để dùng lại nhiều lần; giấy, vở đã dùng thì lật sang mặt kia dùng tiếp; mang các ấn phẩm như báo, tạp chí đến điểm thu mua phế liệu; khi mua giấy vệ sinh thì chọn loại làm từ giấy tái chế.",
+ "洗衣服时适量使用肥皂不用合成洗涤剂洗脸刷牙洗碗时不用长流水为卫生间厨房更换节水型的水龙头把用过的洗澡水存起来用来擦地冲厕所等收集夏天的雨水及空调的排水作为防火用水存起来": "Khi giặt quần áo dùng xà phòng vừa đủ, không dùng chất tẩy rửa tổng hợp; khi rửa mặt, đánh răng, rửa bát không để nước chảy liên tục; thay vòi nước loại tiết kiệm nước cho nhà vệ sinh và nhà bếp; giữ lại nước tắm đã dùng để lau nhà, dội bồn cầu...; hứng nước mưa mùa hè và nước xả từ điều hòa, trữ lại làm nước phòng cháy.",
+ "以上三种类型每种5道题每道题满分10分": "Mỗi loại trong ba loại trên có 5 câu, mỗi câu tối đa 10 điểm.",
+ "经常能做到的可得10分有时能做到的得5分根本做不到的得0分": "Thường xuyên làm được thì được 10 điểm, thỉnh thoảng làm được thì được 5 điểm, hoàn toàn không làm được thì được 0 điểm.",
+ "2030分的成绩说明你在该类型的问题中基本做到了善待环境超过40分就是环保明星了": "Đạt 20-30 điểm cho thấy ở loại vấn đề đó bạn về cơ bản đã đối xử tốt với môi trường, trên 40 điểm thì bạn là ngôi sao bảo vệ môi trường rồi.",
+ "有人统计过每人每年丢掉的垃圾一般超过人体平均重量的五六倍": "Có người đã thống kê, lượng rác mỗi người thải ra mỗi năm thường vượt quá năm, sáu lần trọng lượng trung bình của cơ thể người.",
+ "各城市目前垃圾的产生量大约是十年前的几倍乃至十几倍": "Lượng rác thải phát sinh hiện nay ở các thành phố gấp khoảng mấy lần, thậm chí mười mấy lần so với mười năm trước.",
+ "其中很大一部分是过度包装造成的": "Trong đó, một phần rất lớn là do bao bì quá mức gây ra.",
+ "不少商品特别是化妆品保健品的包装费用大约已占到成本的30%50%": "Không ít mặt hàng, đặc biệt là mỹ phẩm và thực phẩm chức năng, chi phí bao bì đã chiếm khoảng 30%-50% giá thành.",
+ "过度包装不仅造成了巨大的浪费也加重了消费者的经济负担同时还增加了垃圾量污染了环境": "Bao bì quá mức không chỉ gây lãng phí rất lớn, mà còn tăng thêm gánh nặng kinh tế cho người tiêu dùng, đồng thời còn làm tăng lượng rác, gây ô nhiễm môi trường.",
+ "我是一个已过花甲之年的退休教师每天要吃一定量的药品": "Tôi là một giáo viên về hưu đã ngoài sáu mươi tuổi, mỗi ngày phải uống một lượng thuốc nhất định.",
+ "有的药很好塑料瓶或玻璃瓶装100粒吃完了瓶子可以回收": "Có loại thuốc thì rất ổn: đựng trong lọ nhựa hoặc lọ thủy tinh 100 viên, uống hết thì lọ có thể đem tái chế.",
+ "而同样是100粒有的是大盒套小盒每一小盒内只装三五粒": "Còn cũng là 100 viên, có loại lại hộp to lồng hộp nhỏ, mỗi hộp nhỏ chỉ đựng dăm ba viên.",
+ "这种过度包装不单在药品中常见在营养品中更是屡见不鲜常常是里三层外三层": "Kiểu bao bì quá mức này không chỉ thường thấy ở thuốc, mà ở thực phẩm dinh dưỡng thì lại càng nhan nhản, thường là trong ba lớp ngoài ba lớp.",
+ "建议有关部门专门审查包装是否符合卫生和环保标准不符合就必须整改换包装": "Tôi đề nghị các cơ quan liên quan chuyên trách kiểm tra xem bao bì có đạt tiêu chuẩn vệ sinh và môi trường hay không, nếu không đạt thì bắt buộc phải chấn chỉnh, đổi bao bì.",
+ "有一次看见一位日本同学扔饮料瓶": "Có một lần, tôi thấy một bạn học người Nhật vứt chai nước uống.",
+ "饮料瓶要扔在专用的分类袋子里这是我所知道的但我不知道的是在扔之前先要剥掉它外面那层彩色塑料拿下它的瓶盖然后才能把透明的瓶身投到专用袋里": "Chai nước uống phải vứt vào túi phân loại riêng, điều này thì tôi biết; nhưng điều tôi không biết là trước khi vứt, phải bóc lớp nhựa màu bên ngoài, tháo nắp chai ra, rồi mới bỏ phần thân chai trong suốt vào túi riêng.",
+ "也就是说这三样东西需要被回收到不同袋子里有不同的回收用途": "Nói cách khác, ba thứ này cần được thu gom vào các túi khác nhau, và có những mục đích tái chế khác nhau.",
+ "看着这位同学熟练地做着这一切我猜想他早已经习惯这么做就好像穿鞋子要系鞋带一样自然": "Nhìn bạn ấy thành thạo làm tất cả những việc đó, tôi đoán bạn ấy đã quen làm như vậy từ lâu, tự nhiên như đi giày thì phải buộc dây giày vậy.",
+ "也许你会说这未免太麻烦了但是就是这一点一滴为每个人带来了好处": "Có thể bạn sẽ nói như thế thì phiền phức quá, nhưng chính những việc nhỏ nhặt từng chút một ấy đã mang lại lợi ích cho mỗi người.",
+ "日本的生活用品价格一般要比我们国内贵出几倍但是纸巾之类的日用纸品却和国内价格接近想必就有资源回收的功劳": "Giá đồ dùng sinh hoạt ở Nhật thường đắt hơn trong nước ta mấy lần, nhưng các loại giấy dùng hằng ngày như khăn giấy lại có giá gần bằng trong nước, hẳn là nhờ công của việc tái chế tài nguyên.",
+ "此外在昂贵的日本每个电车或地铁车站都设有免费公厕并且里面还提供免费厕纸而厕纸包装也经常会印着一行小字这是用回收的电车车票做的": "Ngoài ra, ở nước Nhật đắt đỏ, ga tàu điện hay ga tàu điện ngầm nào cũng có nhà vệ sinh công cộng miễn phí, bên trong còn có sẵn giấy vệ sinh miễn phí, và trên bao bì giấy vệ sinh thường in một dòng chữ nhỏ: Sản phẩm này được làm từ vé tàu điện đã thu hồi.",
+ "这样前后呼应着就让人觉得很麻烦的垃圾分类确实是很有意义的一件事情": "Trước sau ăn khớp với nhau như vậy, khiến người ta thấy việc phân loại rác tưởng chừng rất phiền phức ấy quả thật là một việc rất có ý nghĩa.",
+ "吃肉是一件非常不经济不道德的事情而且会对自然环境造成严重污染": "Ăn thịt là một việc rất phí phạm, trái đạo đức, hơn nữa còn gây ô nhiễm nghiêm trọng cho môi trường tự nhiên.",
+ "不吃肉不仅会带来一个更清洁的环境还会带来更健康的身体": "Không ăn thịt không chỉ mang lại một môi trường sạch hơn, mà còn mang lại một cơ thể khỏe mạnh hơn.",
+ "据联合国粮农组织调查全球近20%的温室气体源于肉类生产这比全世界所有交通工具的总排放量还要多": "Theo khảo sát của Tổ chức Lương thực và Nông nghiệp Liên Hợp Quốc, gần 20% khí nhà kính trên toàn cầu bắt nguồn từ sản xuất thịt, nhiều hơn cả tổng lượng khí thải của tất cả phương tiện giao thông trên thế giới.",
+ "一头牛每年排放的二氧化碳量超过了一辆小汽车而且饲养它们也要消耗大量的食物和能源": "Lượng khí CO2 một con bò thải ra mỗi năm vượt quá một chiếc ô tô con, hơn nữa, nuôi chúng cũng tiêu tốn một lượng lớn thức ăn và năng lượng.",
+ "12磅的麦子可以做出12条面包供一个人吃一个星期可是用来喂牛却只能产出一磅牛肉": "12 pound lúa mì có thể làm ra 12 ổ bánh mì, đủ cho một người ăn trong một tuần, nhưng nếu đem cho bò ăn thì chỉ tạo ra được một pound thịt bò.",
+ "每吃掉1千克牛肉就等于吃掉了133千克的土豆和4万公升水": "Cứ ăn 1 kg thịt bò thì tương đương với ăn mất 133 kg khoai tây và 40.000 lít nước.",
+ "而吃一天素食等于种100棵树": "Còn ăn chay một ngày thì tương đương với trồng 100 cái cây.",
+ "实际上用植物蛋白取代动物蛋白我们并没有失去什么反而带来巨大的利益": "Thực ra, dùng protein thực vật thay cho protein động vật, chúng ta chẳng mất đi điều gì, ngược lại còn mang lại lợi ích to lớn.",
+ "不光消除无数动物的痛苦免除因肉食带来的种种疾病还可以在很大程度上缓解世界能源危机粮食危机环境污染和全球变暖问题": "Không chỉ chấm dứt nỗi đau của vô số động vật, tránh được đủ loại bệnh tật do ăn thịt gây ra, mà còn có thể giảm bớt ở mức độ rất lớn khủng hoảng năng lượng, khủng hoảng lương thực, ô nhiễm môi trường của thế giới và vấn đề trái đất nóng lên.",
+ "为了保护地球保护生存环境从今天开始低碳素食吧": "Để bảo vệ trái đất, bảo vệ môi trường sống, hãy bắt đầu ăn chay ít carbon từ hôm nay!",
+ "一次偶然目睹日本同学细致地分类丢弃饮料瓶剥去塑料拧下瓶盖分别投放这一近乎本能的举动令人不禁对环保意识有了更深的思考": "Một lần tình cờ chứng kiến bạn học người Nhật tỉ mỉ phân loại khi vứt chai nước — bóc lớp nhựa, vặn nắp chai, bỏ riêng từng thứ — hành động gần như bản năng ấy khiến người ta không khỏi suy nghĩ sâu hơn về ý thức bảo vệ môi trường.",
+ "不可否认垃圾分类在旁人看来或许繁琐然而正是这种近乎苛刻的坚持日积月累才换来了资源回收体系的高效运转": "Không thể phủ nhận, trong mắt người ngoài, phân loại rác có lẽ rườm rà, thế nhưng chính sự kiên trì gần như khắt khe ấy, tích tiểu thành đại, mới đổi lại được sự vận hành hiệu quả của hệ thống tái chế tài nguyên.",
+ "与此同时日用纸品价格之所以能维持低廉公厕免费厕纸之所以能循环再造无不得益于这份看似微不足道的麻烦": "Tương tự như vậy, sở dĩ giá giấy dùng hằng ngày giữ được ở mức rẻ, sở dĩ giấy vệ sinh miễn phí trong nhà vệ sinh công cộng được làm từ vật liệu tái chế, đều là nhờ vào sự \"phiền phức\" tưởng chừng nhỏ nhặt không đáng kể này.",
+ "由此可见环保意识的养成往往始于生活中那些不起眼的细节而非宏大的口号": "Từ đó có thể thấy, ý thức bảo vệ môi trường thường được hình thành từ những chi tiết không mấy nổi bật trong cuộc sống, chứ không phải từ những khẩu hiệu to tát.",
+ "归根结底唯有将环保内化为日常习惯而非偶尔为之的形式才能真正实现可持续发展": "Suy cho cùng, chỉ có biến bảo vệ môi trường thành thói quen hằng ngày, chứ không phải hình thức thỉnh thoảng mới làm, thì mới có thể thực sự đạt được phát triển bền vững.",
+ "这种看似繁琐的坚持实则体现了一种将环保融入血液内化为本能的集体自觉远比口号式的宣传更具说服力": "Sự kiên trì tưởng chừng rườm rà này thực chất thể hiện một sự tự giác tập thể, đưa bảo vệ môi trường hòa vào máu thịt, biến thành bản năng, có sức thuyết phục hơn nhiều so với kiểu tuyên truyền bằng khẩu hiệu.",
+ "你了解哪些低碳环保措施": "Bạn biết những biện pháp bảo vệ môi trường, giảm carbon nào?",
+ "为了环保可能会造成成本提高售价随之提高你愿意接受提高了的价格吗": "Vì bảo vệ môi trường, có thể chi phí sẽ tăng lên, giá bán cũng tăng theo, bạn có sẵn lòng chấp nhận mức giá đã tăng đó không?",
+ "一次性用品给人们带来了方便但与此同时也增加了垃圾的排放": "Đồ dùng một lần mang lại sự tiện lợi cho mọi người, nhưng mặt khác cũng làm tăng lượng rác thải.",
+ "这次展览不仅向世界各国的人民介绍了我们真实的生活也让他们了解了我们的文化同时还引发了又一次中国热": "Cuộc triển lãm lần này không chỉ giới thiệu với người dân các nước trên thế giới cuộc sống chân thực của chúng ta, mà còn giúp họ hiểu về văn hóa của chúng ta, đồng thời còn khơi dậy thêm một lần nữa \"cơn sốt Trung Quốc\".",
+ "这种过度包装不单在药品中常见在营养品中更是屡见不鲜": "Kiểu bao bì quá mức này không chỉ thường thấy ở thuốc, mà ở thực phẩm dinh dưỡng thì lại càng nhan nhản.",
+ "不光消除了无数动物的痛苦免除了因肉食带来的种种疾病还可以在很大程度上缓解世界能源危机和环境污染": "Không chỉ chấm dứt nỗi đau của vô số động vật, tránh được đủ loại bệnh tật do ăn thịt gây ra, mà còn có thể giảm bớt ở mức độ rất lớn khủng hoảng năng lượng thế giới và ô nhiễm môi trường."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
