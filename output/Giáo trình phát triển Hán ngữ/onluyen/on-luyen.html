@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: 口语 Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 + 写作 第1课 (bài + dòng hướng dẫn). 阅读 còn là demo nên chưa dịch. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -5223,7 +5223,73 @@ const SENTENCE_VI = {
  "你关心人类以后的生活吗": "Bạn có quan tâm đến cuộc sống của loài người sau này không?",
  "那时人类的平均身高将达到最高点195米寿命也将增至120岁": "Khi đó, chiều cao trung bình của con người sẽ đạt mức cao nhất là 1,95 m, tuổi thọ cũng tăng lên 120 tuổi.",
  "此外基因修改等技术将令人类的外貌比现在更美丽": "Ngoài ra, các công nghệ như chỉnh sửa gen sẽ khiến ngoại hình con người đẹp hơn bây giờ.",
- "再过50年人类可以在火星上散步但接下来是一个漫长的过程": "Thêm 50 năm nữa, con người có thể đi dạo trên Sao Hỏa, nhưng tiếp theo là một quá trình dài đằng đẵng."
+ "再过50年人类可以在火星上散步但接下来是一个漫长的过程": "Thêm 50 năm nữa, con người có thể đi dạo trên Sao Hỏa, nhưng tiếp theo là một quá trình dài đằng đẵng.",
+ "你是什么时候在哪儿开始学习汉语的": "Bạn bắt đầu học tiếng Trung từ khi nào, ở đâu?",
+ "汉语和你的母语有什么不同": "Tiếng Trung khác tiếng mẹ đẻ của bạn ở những điểm nào?",
+ "学汉语的过程中有哪些乐趣和经验": "Trong quá trình học tiếng Trung, bạn có những niềm vui và kinh nghiệm gì?",
+ "你碰到过哪些困难": "Bạn đã gặp phải những khó khăn nào?",
+ "你为什么选择学汉语": "Vì sao bạn chọn học tiếng Trung?",
+ "我和汉语": "Tôi và tiếng Trung",
+ "上中学的时候我偶然看见爸爸书桌上放着一张报纸上面的字都是一个个小方块儿": "Hồi học trung học, tình cờ tôi thấy trên bàn làm việc của bố có một tờ báo, chữ trên đó toàn là những ô vuông nhỏ.",
+ "那是什么字": "Đó là chữ gì vậy?",
+ "我十分好奇马上给爸爸打了个电话": "Tôi vô cùng tò mò, liền gọi điện ngay cho bố.",
+ "从那时开始我知道了那些神秘的方块字叫汉字使用汉字的是一个东方民族中华民族": "Từ lúc đó, tôi biết rằng những chữ vuông bí ẩn ấy gọi là \"chữ Hán\", và dân tộc dùng chữ Hán là một dân tộc phương Đông — dân tộc Trung Hoa.",
+ "爸爸说汉字是世界上最早的文字之一汉语有着非常悠久的历史": "Bố nói, chữ Hán là một trong những loại chữ viết sớm nhất trên thế giới, tiếng Trung có lịch sử vô cùng lâu đời.",
+ "于是我产生了学习汉语认识汉字的念头": "Thế là tôi nảy ra ý định học tiếng Trung, học chữ Hán.",
+ "两年后我在一所大学学习政治经济学同时在另外一所大学学习汉语": "Hai năm sau, tôi học kinh tế chính trị ở một trường đại học, đồng thời học tiếng Trung ở một trường đại học khác.",
+ "我对汉语对中国的兴趣越来越浓厚一年后我决定改变专业专心学习汉语": "Niềm yêu thích của tôi đối với tiếng Trung và Trung Quốc ngày càng sâu đậm, một năm sau tôi quyết định đổi chuyên ngành, chuyên tâm học tiếng Trung.",
+ "经过严格的考试我终于如愿以偿了我成了大学中文系的学生": "Trải qua kỳ thi nghiêm ngặt, cuối cùng tôi đã toại nguyện: tôi trở thành sinh viên khoa tiếng Trung của trường đại học.",
+ "开始中文专业学习的时候我还有点儿担心因为我是个新生不知能否赶上班里其他同学": "Khi bắt đầu học chuyên ngành tiếng Trung, tôi vẫn hơi lo lắng, vì tôi là sinh viên mới, không biết có theo kịp các bạn khác trong lớp hay không.",
+ "系里的老师对我十分关心特别是从中国来的老师总是鼓励我帮助我教我最有效的学习方法": "Các thầy cô trong khoa rất quan tâm đến tôi, đặc biệt là những thầy cô đến từ Trung Quốc, luôn động viên, giúp đỡ tôi và dạy tôi phương pháp học hiệu quả nhất.",
+ "在老师的帮助下我的汉语水平提高得很快": "Nhờ sự giúp đỡ của thầy cô, trình độ tiếng Trung của tôi tiến bộ rất nhanh.",
+ "学汉语一年之后我得到了一个参加印中文化交流奖学金考试的机会": "Sau một năm học tiếng Trung, tôi có được cơ hội tham gia kỳ thi học bổng giao lưu văn hóa Ấn – Trung.",
+ "对我来说这是我梦寐以求的好机会": "Đối với tôi, đây là cơ hội tốt mà tôi hằng mơ ước.",
+ "我把握住了这个机会通过了考试获得了中国政府提供的奖学金多年的梦想终于实现了": "Tôi đã nắm bắt cơ hội này, vượt qua kỳ thi, giành được học bổng do Chính phủ Trung Quốc cấp, ước mơ bao năm cuối cùng đã thành hiện thực.",
+ "来到中国以后我在北京的一所大学学习我们每天都有汉语课我的汉语进步得更快": "Sau khi đến Trung Quốc, tôi học ở một trường đại học tại Bắc Kinh, ngày nào chúng tôi cũng có giờ tiếng Trung, tiếng Trung của tôi càng tiến bộ nhanh hơn.",
+ "我深刻地体会到如果不到中国来就不可能很快地掌握标准汉语而且也不可能真正了解中国": "Tôi thấm thía rằng, nếu không đến Trung Quốc thì không thể nhanh chóng nắm vững tiếng Trung chuẩn, và cũng không thể thật sự hiểu được Trung Quốc.",
+ "我感到这里的老师都有经验非常亲切这里的环境特别适合外国留学生学习": "Tôi cảm thấy thầy cô ở đây đều có kinh nghiệm, rất thân thiện, môi trường ở đây đặc biệt thích hợp cho du học sinh nước ngoài học tập.",
+ "有人说没有去过长城就不算到过中国没有吃过烤鸭就不算来过北京": "Có người nói, chưa đến Vạn Lý Trường Thành thì chưa coi là đã đến Trung Quốc; chưa ăn vịt quay thì chưa coi là đã đến Bắc Kinh.",
+ "我想说不在北京学习也是一种遗憾因为这里的外国朋友来自世界各地这里是我们留学生的乐园": "Tôi muốn nói rằng, không học ở Bắc Kinh cũng là một điều đáng tiếc, vì bạn bè nước ngoài ở đây đến từ khắp nơi trên thế giới, nơi đây là thiên đường của du học sinh chúng tôi.",
+ "我喜欢舞蹈在北京我还参加了两次演出": "Tôi thích múa, ở Bắc Kinh tôi còn tham gia biểu diễn hai lần.",
+ "在首都外国留学生新年文艺晚会上我既展示了印度舞蹈又欣赏到了各个国家的舞蹈艺术": "Tại \"Dạ hội văn nghệ mừng năm mới của du học sinh nước ngoài tại Thủ đô\", tôi vừa trình diễn điệu múa Ấn Độ, vừa được thưởng thức nghệ thuật múa của các nước.",
+ "我希望在学习汉语的同时能更多地了解中国的民间艺术尤其是传统的舞蹈艺术将来为增进印度和中国人民的友谊作出贡献": "Tôi hy vọng trong khi học tiếng Trung, có thể tìm hiểu thêm về nghệ thuật dân gian Trung Quốc, nhất là nghệ thuật múa truyền thống, để sau này góp phần thắt chặt tình hữu nghị giữa nhân dân Ấn Độ và Trung Quốc.",
+ "选自学汉语1998年第2期略有改动": "(Trích từ tạp chí \"Học tiếng Trung\" số 2 năm 1998, có chỉnh sửa đôi chút)",
+ "阅读上文并讨论汉语文章的格式特点是什么": "Đọc bài trên và thảo luận: Đặc điểm về hình thức trình bày của bài văn tiếng Trung là gì?",
+ "和你的母语有什么不同": "So với tiếng mẹ đẻ của bạn thì có gì khác?",
+ "我是怎么知道汉语和汉字的": "\"Tôi\" đã biết đến tiếng Trung và chữ Hán như thế nào?",
+ "我是什么时候把汉语作为自己的专业的": "\"Tôi\" chọn tiếng Trung làm chuyên ngành của mình từ khi nào?",
+ "我是利用什么机会来到中国学习的": "\"Tôi\" đã nhờ cơ hội nào mà sang Trung Quốc học?",
+ "我在中国留学的体会是什么": "\"Tôi\" có cảm nhận gì khi du học ở Trung Quốc?",
+ "我在中国的生活除了学习还包括什么内容": "Cuộc sống của \"tôi\" ở Trung Quốc, ngoài việc học ra, còn có những gì?",
+ "我和汉语写了作者学习汉语的经历": "Bài \"Tôi và tiếng Trung\" kể về quá trình học tiếng Trung của tác giả.",
+ "上中学的时候": "Hồi học trung học, …….",
+ "两年后": "Hai năm sau, ……, …….",
+ "学语言一年之后": "Sau một năm học ngôn ngữ, ……, …….",
+ "来到中国以后": "Sau khi đến Trung Quốc, ……, …….",
+ "我努力学习了一年获得了中国政府提供的奖学金": "Tôi đã nỗ lực học một năm và giành được học bổng do Chính phủ Trung Quốc cấp.",
+ "我得到了一个出国留学的机会我觉得这样的机会很难得": "Tôi có được một cơ hội đi du học nước ngoài, tôi thấy cơ hội như vậy rất hiếm có.",
+ "不碰到王老师我也不可能喜欢上数学日后在数学领域做出那么大成绩更是不可能的": "Nếu không gặp thầy Vương, tôi cũng không thể thích môn toán, càng không thể nào sau này đạt được thành tựu lớn như vậy trong lĩnh vực toán học.",
+ "我学汉语的原因": "Lý do tôi học tiếng Trung",
+ "你为什么会来中国": "\"Sao bạn lại đến Trung Quốc?",
+ "为什么学习汉语": "Sao lại học tiếng Trung?\"",
+ "许多人曾经问我这个问题": "Nhiều người từng hỏi tôi câu hỏi này.",
+ "我原来没想过这个问题只觉得这是一个偶然的事情": "Trước đây tôi chưa từng nghĩ đến câu hỏi này, chỉ thấy đó là một chuyện tình cờ.",
+ "但是我有时候也会问自己为什么选择学习汉语呢": "Nhưng đôi khi tôi cũng tự hỏi mình, tại sao lại chọn học tiếng Trung nhỉ?",
+ "我想起我读小学的时候有一个女老师她是中国人": "Tôi nhớ lại hồi học tiểu học, có một cô giáo là người Trung Quốc.",
+ "那时候我们班的男孩子都很淘气常常搞恶作剧故意让老师生气对老师开一些不太友善的玩笑": "Hồi đó, đám con trai lớp tôi rất nghịch ngợm, thường bày trò quậy phá, cố tình chọc cô tức giận, đùa cợt với cô những câu không mấy thiện ý.",
+ "可是那位老师始终没有生气她常常给我们讲故事其中有很多中国的民间故事那些故事让我们听得入迷": "Thế nhưng cô giáo ấy trước sau vẫn không hề giận, cô thường kể chuyện cho chúng tôi nghe, trong đó có rất nhiều truyện dân gian Trung Quốc, những câu chuyện ấy khiến chúng tôi nghe say mê.",
+ "于是我们常常去找老师要书看要求她讲更多的故事": "Thế là chúng tôi thường tìm cô xin sách đọc, đòi cô kể thêm nhiều chuyện nữa.",
+ "小学毕业后我跟大家一起上了中学又上了大学我选择了贸易专业可是那些美丽的中国民间故事已经留在了我的心里": "Tốt nghiệp tiểu học, tôi cùng mọi người lên trung học, rồi vào đại học, tôi chọn chuyên ngành thương mại, nhưng những câu chuyện dân gian Trung Quốc đẹp đẽ ấy đã đọng lại trong lòng tôi.",
+ "也许这就是我现在学习汉语的原因之一吧": "Có lẽ đó chính là một trong những lý do khiến tôi học tiếng Trung bây giờ.",
+ "文章题目的拟定题目要简洁能概括主要内容避免过长或过于笼统": "Cách đặt tiêu đề bài văn: tiêu đề phải ngắn gọn, khái quát được nội dung chính, tránh quá dài hoặc quá chung chung.",
+ "标点符号在汉语写作中有重要的表达作用位置种类都会影响语气不能随意省略或摆错位置": "Dấu câu có vai trò biểu đạt quan trọng trong văn viết tiếng Trung: vị trí và loại dấu đều ảnh hưởng đến ngữ khí, không được tùy tiện bỏ sót hoặc đặt sai chỗ.",
+ "从范文中查找下列问题的答案每题写出两到三个重点词语或句子": "Tìm trong bài mẫu câu trả lời cho các câu hỏi dưới đây, mỗi câu ghi ra hai đến ba từ ngữ hoặc câu trọng tâm",
+ "把范文概括成100字左右的短文可以运用下面的句子组织概括的内容": "Tóm tắt bài mẫu thành một đoạn văn ngắn khoảng 100 chữ, có thể dùng các câu dưới đây để sắp xếp nội dung tóm tắt",
+ "试一试写一写": "Thử viết xem",
+ "用经过终于改写下面这句话并用经过终于重新造句": "Dùng mẫu \"经过……，终于……\" (trải qua…, cuối cùng…) để viết lại câu dưới đây, rồi dùng mẫu này đặt một câu mới.",
+ "用对来说改写下面这句话并用对来说重新造句": "Dùng mẫu \"对……来说，……\" (đối với…, …) để viết lại câu dưới đây, rồi dùng mẫu này đặt một câu mới.",
+ "用如果就而且改写下面这句话并用如果就而且重新造句": "Dùng mẫu \"如果……，就……，而且……\" (nếu…, thì…, hơn nữa…) để viết lại câu dưới đây, rồi dùng mẫu này đặt một câu mới.",
+ "请指出下面的汉语短文格式题目标点位置等不准确的地方给予改正改后读一读": "Hãy chỉ ra những chỗ trình bày chưa đúng (tên bài, vị trí dấu câu…) trong đoạn văn tiếng Trung dưới đây, sửa lại, rồi đọc lại bài đã sửa."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
@@ -5351,7 +5417,8 @@ const SENTENCE_VI = {
      không ảnh hưởng key SENTENCE_VI (key đã bỏ dấu câu). */
   const qCount = s => (s.match(/"/g) || []).length;
   const splitSentences = t => {
-    const a = (t.match(/[^。！？]*[。！？]+["”」』]?|[^。！？]+$/g) || []).map(x=>x.trim());
+    // Xuống dòng cũng là ranh giới câu (ô 边读边练 của 写作 đặt tên bài + đoạn văn chung 1 khối).
+    const a = (t.match(/[^。！？\n]*[。！？]+["”」』]?|[^。！？\n]+/g) || []).map(x=>x.trim());
     let before = 0;
     for(let i=0; i<a.length; i++){
       const opensNext = i < a.length-1 && a[i].endsWith('"') && (before + qCount(a[i]) - 1) % 2 === 0;
@@ -5360,20 +5427,31 @@ const SENTENCE_VI = {
     }
     return a.filter(x=>/[一-鿿]/.test(x));
   };
+  /* Ghép text của el, BỎ chữ trong icon gợi ý ⓘ (.infoIcon — tip tiếng Việt dính liền sau dòng
+     hướng dẫn 写作 làm câu không khớp key), kèm vị trí của điểm bắt đầu bôi đen trong text đó. */
+  function textWithOffset(el, node, off){
+    const tw = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let full = '', start = -1, n;
+    while((n = tw.nextNode())){
+      if(n.parentElement && n.parentElement.closest('.infoIcon')) continue;
+      if(n === node) start = full.length + off;
+      full += n.data;
+    }
+    return {full, start};
+  }
   function findContext(range, text){
     let el = range.startContainer.nodeType===3 ? range.startContainer.parentElement : range.startContainer;
+    if(range.startContainer.nodeType !== 3) return null;
     for(let depth=0; el && el !== document.body && depth < 6; depth++, el = el.parentElement){
-      const full = el.textContent || '';
-      const pre = document.createRange();
-      try{ pre.setStart(el, 0); pre.setEnd(range.startContainer, range.startOffset); }catch(e){ continue; }
-      const start = pre.toString().length;
+      const {full, start} = textWithOffset(el, range.startContainer, range.startOffset);
+      if(start < 0) continue;
       let cursor = 0;
       for(const s of splitSentences(full)){
         const at = full.indexOf(s, cursor);
         if(at < 0) continue;
         cursor = at + s.length;
         if(start >= at && start < cursor){
-          const vi = SENTENCE_VI[normKey(s)] || SENTENCE_VI[normKey(s.replace(/^\d+[.、]\s*/, ''))]; // câu hỏi đánh số "1. …" (回答问题)
+          const vi = SENTENCE_VI[normKey(s)] || SENTENCE_VI[normKey(s.replace(/^(\d+[.、]|[(（]\d+[)）])\s*/, ''))]; // câu đánh số "1. …" (回答问题) / "(1) …" (写作)
           if(vi) return {zh: s, vi};
           break;
         }
