@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4727,7 +4727,51 @@ const SENTENCE_VI = {
  "说说事情的经过": "Hãy kể lại sự việc đã diễn ra như thế nào.",
  "你能不能就歧视问题谈谈你的想法": "Bạn có thể nói suy nghĩ của mình về vấn đề phân biệt đối xử không?",
  "只要我们认真地反思一下自己的过去就不难发现正是那些优势和快乐折磨着我们": "Chỉ cần chúng ta nghiêm túc nhìn lại quá khứ của mình một chút, sẽ không khó để nhận ra rằng chính những ưu thế và niềm vui ấy đã giày vò chúng ta.",
- "说是保障妇女权益实际上更多的妇女可能因此找不到工作": "Nói là để bảo đảm quyền lợi của phụ nữ, nhưng thực tế có thể vì thế mà càng nhiều phụ nữ không tìm được việc làm."
+ "说是保障妇女权益实际上更多的妇女可能因此找不到工作": "Nói là để bảo đảm quyền lợi của phụ nữ, nhưng thực tế có thể vì thế mà càng nhiều phụ nữ không tìm được việc làm.",
+ "宠物给人带来的是一种单纯信任爱的愉悦和精神上的依赖使身处现代社会快节奏生活的人们缓解了压力为他们增添了乐趣": "Thú cưng mang lại cho con người niềm vui giản đơn của sự tin cậy và yêu thương, cùng chỗ dựa về tinh thần, giúp những người sống giữa nhịp sống hối hả của xã hội hiện đại giảm bớt áp lực và có thêm niềm vui.",
+ "但如果人们对宠物饲养和管理不当也会出现不和谐的音符": "Nhưng nếu nuôi và quản lý thú cưng không đúng cách thì cũng sẽ xuất hiện những \"nốt nhạc lạc điệu\".",
+ "目前在我市因宠物而产生的纠纷日渐增多当宠物这个人类的新宠恋上了官司的时候我们怎样保持人与动物之间人与人之间的和谐": "Hiện nay, ở thành phố chúng tôi, các tranh chấp phát sinh vì thú cưng ngày càng nhiều; khi thú cưng – \"cục cưng mới\" của con người – \"dính\" vào kiện tụng, chúng ta làm thế nào để giữ được sự hòa hợp giữa người với động vật, giữa người với người?",
+ "李丽有只名叫贝克的小狗去年夏天的一个午后她带着贝克到楼下草地上玩耍自己站在离它不到5米的地方": "Lý Lệ có một chú chó nhỏ tên là Beck; một buổi chiều mùa hè năm ngoái, cô dẫn Beck xuống bãi cỏ dưới nhà chơi, còn mình thì đứng cách nó chưa đầy 5 mét.",
+ "一整天没出门的贝克一看到宽阔的草坪和马路立即撒了欢儿": "Beck cả ngày chưa được ra khỏi nhà, vừa thấy bãi cỏ rộng và con đường là lập tức chạy nhảy tung tăng.",
+ "此时一辆面包车急驶过来只听贝克惨叫一声便倒在车子右前轮后不动了": "Đúng lúc đó, một chiếc xe van lao nhanh tới, chỉ nghe Beck kêu thảm thiết một tiếng rồi nằm bất động phía sau bánh trước bên phải của xe.",
+ "司机小杨对撞伤小狗的过程却有自己的一番解释我当时准备停车而且那个地方是我每天停车的位置": "Thế nhưng tài xế Tiểu Dương lại có cách giải thích riêng về chuyện đâm phải chú chó: \"Lúc đó tôi đang chuẩn bị đỗ xe, hơn nữa chỗ đó là chỗ ngày nào tôi cũng đỗ.",
+ "我停车时没有看见小狗如果我真的轧到它小狗那么小肯定早死了": "Lúc đỗ xe tôi không hề thấy con chó, nếu tôi thật sự cán phải nó thì con chó nhỏ như thế chắc chắn đã chết ngay rồi.\"",
+ "随后小杨和李丽一起抱着贝克来到宠物医院": "Sau đó, Tiểu Dương cùng Lý Lệ bế Beck đến bệnh viện thú y.",
+ "经诊断贝克只是轻伤治疗后已经没有生命危险小杨还支付了治疗费58元": "Qua chẩn đoán, Beck chỉ bị thương nhẹ, sau khi điều trị đã không còn nguy hiểm đến tính mạng, Tiểu Dương còn trả 58 tệ tiền chữa trị.",
+ "但让小杨不能接受的是李丽竟要他赔偿1万元": "Nhưng điều khiến Tiểu Dương không thể chấp nhận là Lý Lệ lại đòi anh bồi thường 10.000 tệ.",
+ "因双方调解无果李丽诉至法院要求小杨赔偿治疗费392元狗的主人误工费226元": "Do hai bên hòa giải không thành, Lý Lệ khởi kiện ra tòa, yêu cầu Tiểu Dương bồi thường 392 tệ tiền chữa trị và 226 tệ tiền mất thu nhập do nghỉ làm của chủ chó.",
+ "法院对双方在此案中应承担的责任进行了分析": "Tòa án đã phân tích trách nhiệm mà mỗi bên phải gánh chịu trong vụ án này.",
+ "依据相关规定李丽在放养贝克时虽然取得了合法的饲养证但没有按照规定牵养对小狗贝克的去向采取了放任的态度": "Căn cứ theo quy định liên quan, khi thả Beck, Lý Lệ tuy đã có giấy phép nuôi hợp pháp nhưng không dắt dây theo quy định, mà để mặc chú chó Beck muốn chạy đi đâu thì đi.",
+ "当时贝克突然出现在面包车右前轮的后侧让驾车者反应不及是其受伤的主要原因": "Khi đó, Beck đột ngột xuất hiện phía sau bánh trước bên phải của chiếc xe van, khiến người lái xe không kịp phản ứng, đó là nguyên nhân chính khiến nó bị thương.",
+ "因此宠物的放养者应当自行承担主要过错责任即80%的责任": "Vì vậy, người thả rông thú cưng phải tự chịu trách nhiệm lỗi chính, tức là 80% trách nhiệm.",
+ "小杨作为一名资深驾驶员在驾驶时对车辆周围的环境观察不够应当预见而没有预见是造成小狗受伤的次要原因应当承担20%的过错责任": "Tiểu Dương là một tài xế lâu năm, khi lái xe đã quan sát không đủ môi trường xung quanh xe, lẽ ra phải lường trước mà lại không lường trước, đó là nguyên nhân thứ yếu khiến chú chó bị thương, nên phải chịu 20% trách nhiệm lỗi.",
+ "原告李丽提出赔偿宠物饲养者误工费的请求因其没有提供扣发工资的相应证明法院不予认定": "Nguyên đơn Lý Lệ yêu cầu bồi thường tiền mất thu nhập do nghỉ làm cho người nuôi thú cưng, nhưng vì không cung cấp được giấy tờ chứng minh bị trừ lương tương ứng nên tòa án không chấp nhận.",
+ "最后法院判决小杨一次性赔偿原告宠物治疗费人民币32元已扣除已支付的治疗费58元": "Cuối cùng, tòa án tuyên Tiểu Dương bồi thường một lần cho nguyên đơn 32 nhân dân tệ tiền chữa trị thú cưng (đã trừ đi 58 tệ tiền chữa trị đã trả trước đó).",
+ "同时驳回原告其他诉讼请求": "Đồng thời, bác bỏ các yêu cầu khởi kiện khác của nguyên đơn.",
+ "有关部门曾经作过一项调查被调查的大多数人认为不应提倡在城市里饲养宠物": "Cơ quan hữu quan từng tiến hành một cuộc khảo sát, đa số người được khảo sát cho rằng không nên khuyến khích nuôi thú cưng trong thành phố.",
+ "因为随着城市饲养宠物数量的增加一系列不可回避的弊端也将随之而至": "Bởi vì khi số lượng thú cưng được nuôi trong thành phố tăng lên, hàng loạt mặt trái không thể né tránh cũng sẽ kéo theo.",
+ "一是城市的环境卫生状况将成为一个人们不得不关注的社会问题": "Thứ nhất, tình trạng vệ sinh môi trường đô thị sẽ trở thành một vấn đề xã hội mà mọi người buộc phải quan tâm.",
+ "宠物固然可爱但是它们要排泄它们的屎尿污渍遗留在城市的大小街道也就不可避免": "Thú cưng dĩ nhiên đáng yêu, nhưng chúng phải bài tiết, nên việc phân, nước tiểu và vết bẩn của chúng vương vãi trên khắp các con phố lớn nhỏ trong thành phố cũng là điều không thể tránh khỏi.",
+ "据北京几家派出所的民警介绍居民反映宠物狗在居民楼道内随地大小便已是常事": "Theo lời các cảnh sát ở mấy đồn công an tại Bắc Kinh, cư dân phản ánh rằng chuyện chó cưng phóng uế bừa bãi trong hành lang khu chung cư đã là chuyện thường ngày.",
+ "二是由宠物热滋生各种疾病的可能性增大": "Thứ hai, khả năng phát sinh các loại bệnh tật từ cơn sốt nuôi thú cưng tăng lên.",
+ "一般来说大多宠物的常见病是胃肠呼吸道疾病以及其他传染病但这些病很少会传染给人类": "Nói chung, bệnh thường gặp ở phần lớn thú cưng là bệnh đường tiêu hóa, đường hô hấp và một số bệnh truyền nhiễm khác, nhưng những bệnh này rất ít khi lây sang người.",
+ "不过每年仍需要定期给狗注射狂犬疫苗以防出现狂犬病": "Tuy vậy, hằng năm vẫn cần định kỳ tiêm vắc-xin phòng dại cho chó để phòng ngừa bệnh dại.",
+ "三是我们不得不承认京城兴起的这股宠物热已经成为当前邻里关系恶化的一个热点问题": "Thứ ba, chúng ta buộc phải thừa nhận rằng cơn sốt thú cưng đang nổi lên ở Bắc Kinh đã trở thành một vấn đề nóng làm xấu đi quan hệ hàng xóm hiện nay.",
+ "有一些人养狗并不单纯以观赏和休闲为目的而是以养大狗烈性狗为荣": "Có một số người nuôi chó không đơn thuần để ngắm nghía và giải trí, mà lấy việc nuôi chó to, chó dữ làm niềm tự hào.",
+ "许多居民因不堪大狗烈性狗带来的极度恐惧便有意地将有毒的食物扔给狗吃把狗毒死": "Nhiều cư dân vì không chịu nổi nỗi sợ hãi tột độ do chó to, chó dữ gây ra nên đã cố ý ném thức ăn có độc cho chó ăn, đầu độc chết chó.",
+ "为此类事件而诉诸法庭的人逐渐增多以致邻里间竟反目成仇": "Số người đưa những vụ việc như vậy ra tòa ngày càng nhiều, đến mức hàng xóm láng giềng thậm chí trở mặt thành thù.",
+ "随着宠物逐渐融入都市人的生活由此引发的邻里纠纷与法律争议也日渐增多一场看似寻常的交通意外竟演变为一桩索赔万元的诉讼案": "Khi thú cưng dần hòa nhập vào cuộc sống của người dân đô thị, các tranh chấp hàng xóm và tranh cãi pháp lý nảy sinh từ đó cũng ngày càng nhiều — một tai nạn giao thông tưởng chừng bình thường lại biến thành một vụ kiện đòi bồi thường cả vạn tệ.",
+ "不可否认宠物为主人带来了陪伴与慰藉却也因管理不当频频成为邻里矛盾的导火索": "Không thể phủ nhận rằng thú cưng mang lại cho chủ sự bầu bạn và niềm an ủi, nhưng cũng vì quản lý không đúng cách mà thường xuyên trở thành ngòi nổ của mâu thuẫn hàng xóm.",
+ "与此同时双方在责任认定与赔偿金额上各执一词恰恰折射出人与动物人与人之间在权责边界上的模糊地带": "Mặt khác, việc hai bên mỗi người một ý về xác định trách nhiệm và số tiền bồi thường lại phản ánh đúng vùng mờ trong ranh giới quyền lợi và trách nhiệm giữa người với động vật, giữa người với người.",
+ "由此可见宠物纠纷表面上关乎动物实则考验的是城市文明程度与公民的责任意识": "Có thể thấy, tranh chấp thú cưng bề ngoài là chuyện liên quan đến động vật, nhưng thực chất là phép thử đối với trình độ văn minh đô thị và ý thức trách nhiệm của công dân.",
+ "归根结底唯有饲主自觉履行看管义务双方也秉持理性沟通的态度才能让人与宠物真正和谐共处于同一片公共空间": "Suy cho cùng, chỉ khi người nuôi tự giác thực hiện nghĩa vụ trông giữ, đồng thời hai bên giữ thái độ trao đổi một cách lý trí, thì con người và thú cưng mới có thể thật sự chung sống hòa hợp trong cùng một không gian công cộng.",
+ "这也提醒着每一位养宠人士享受陪伴的同时更应时刻谨记自己对他人对社会所应承担的那一份责任": "Điều này cũng nhắc nhở mỗi người nuôi thú cưng: song song với việc tận hưởng sự bầu bạn, càng phải luôn ghi nhớ phần trách nhiệm mà mình cần gánh vác đối với người khác và đối với xã hội.",
+ "你会不会养宠物": "Bạn có nuôi thú cưng không?",
+ "谈谈你养或不养的理由": "Hãy nói về lý do bạn nuôi hoặc không nuôi.",
+ "你觉得男人和女人在对待宠物的态度方面有差别吗": "Bạn có nghĩ đàn ông và phụ nữ có sự khác biệt trong thái độ đối với thú cưng không?",
+ "目前在我市因宠物而产生的纠纷日渐增多": "Hiện nay, ở thành phố chúng tôi, các tranh chấp phát sinh vì thú cưng ngày càng nhiều.",
+ "小杨在驾驶时对车辆周围的环境观察不够应当预见而没有预见是造成小狗受伤害的次要原因应当承担20%的过错责任": "Khi lái xe, Tiểu Dương đã quan sát không đủ môi trường xung quanh xe, lẽ ra phải lường trước mà lại không lường trước, đó là nguyên nhân thứ yếu khiến chú chó bị thương, nên phải chịu 20% trách nhiệm lỗi.",
+ "从公共卫生来讲这的确是需要重视的一件事情": "Xét về mặt vệ sinh công cộng, đây quả thực là một việc cần được coi trọng."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
