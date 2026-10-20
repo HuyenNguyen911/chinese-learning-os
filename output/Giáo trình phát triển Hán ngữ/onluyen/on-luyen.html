@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4451,7 +4451,52 @@ const SENTENCE_VI = {
  "他靠反复地观看比赛录像来了解对手": "Anh ấy dựa vào việc xem đi xem lại video trận đấu để tìm hiểu đối thủ.",
  "最开始它只是苏格兰牧羊人的游戏后来成为苏格兰的一项传统项目而后传入英格兰": "Lúc đầu nó chỉ là trò chơi của những người chăn cừu Scotland, sau đó trở thành một môn truyền thống của Scotland, rồi du nhập vào Anh.",
  "19世纪末传到美洲澳洲及南非20世纪传到亚洲最终成为全世界闻名的一个运动项目": "Cuối thế kỷ 19 golf lan sang châu Mỹ, châu Úc và Nam Phi, thế kỷ 20 lan sang châu Á, cuối cùng trở thành một môn thể thao nổi tiếng toàn thế giới.",
- "倘若是正式比赛迟到轻则受罚重则丧失比赛资格": "Nếu đến muộn trong trận đấu chính thức, nhẹ thì bị phạt, nặng thì mất tư cách thi đấu."
+ "倘若是正式比赛迟到轻则受罚重则丧失比赛资格": "Nếu đến muộn trong trận đấu chính thức, nhẹ thì bị phạt, nặng thì mất tư cách thi đấu.",
+ "实际上不管我们承认不承认谎言都是人生的一部分": "Thực ra, dù chúng ta có thừa nhận hay không, lời nói dối vẫn là một phần của cuộc đời.",
+ "有时候一句谎言可以避免可能出现的许多惊恐与烦恼": "Có những lúc, một lời nói dối có thể tránh được biết bao nỗi hoảng sợ và phiền muộn có thể xảy ra.",
+ "对一个身患不治之症的人来说安慰他一句没什么你很快就可以康复的谎言就有可能燃起他渴望生命的激情延续他的生命对一个身处绝境的被困者来说鼓励他一句救援者马上就到的话语肯定能给他走出困境的勇气": "Với một người mắc bệnh nan y, lời nói dối an ủi \"Không sao đâu, anh sẽ sớm bình phục thôi\" có thể thắp lên trong họ niềm khao khát sống mãnh liệt, kéo dài sự sống của họ; với một người bị mắc kẹt trong tuyệt cảnh, một câu động viên \"Đội cứu hộ sắp tới rồi\" chắc chắn sẽ cho họ dũng khí để thoát khỏi hoàn cảnh khốn cùng.",
+ "由此说来说谎有的时候并不是一件坏事": "Nói như vậy thì đôi khi nói dối không hẳn là chuyện xấu.",
+ "仔细想一下谎言在我们生活中的每一个角落似乎都存在着": "Nghĩ kỹ lại, dường như lời nói dối hiện diện ở mọi ngóc ngách trong cuộc sống của chúng ta.",
+ "看一看市场上的产品广告有几个是值得我们完全信赖的": "Thử nhìn các quảng cáo sản phẩm trên thị trường xem, có mấy cái đáng để chúng ta tin tưởng hoàn toàn?",
+ "想一想我们说的每一句话做的每一件事有多少是发自肺腑真心诚意的": "Thử nghĩ xem, trong từng lời ta nói, từng việc ta làm, có bao nhiêu điều là xuất phát từ tận đáy lòng, thật lòng thật dạ?",
+ "谎言不仅充斥在人与人之间日常的交往当中事实上小到一个家庭的成员之间一个单位的同事之间大到国际间的政治往来军事上的对策计谋经济上的竞争调控我们都可以找到说谎人的影子": "Lời nói dối không chỉ tràn ngập trong giao tiếp thường ngày giữa người với người; thực tế, nhỏ thì giữa các thành viên trong một gia đình, giữa đồng nghiệp trong một cơ quan, lớn thì trong quan hệ chính trị quốc tế, mưu lược đối sách quân sự, cạnh tranh và điều tiết kinh tế, chúng ta đều có thể tìm thấy bóng dáng của kẻ nói dối.",
+ "不过在这个平台上表现出来的谎言形式人们似乎更愿意理解成策略手段和措施从而变得心安理得": "Tuy nhiên, những hình thức nói dối thể hiện trên bình diện này, người ta dường như lại muốn hiểu là chiến lược, thủ đoạn và biện pháp, từ đó trở nên thản nhiên, chẳng chút áy náy.",
+ "我们就是这样矛盾": "Chúng ta mâu thuẫn như thế đấy.",
+ "尽管所有的人表面上都会说不喜欢说谎的人但是出于生理生活生存的需要一旦条件环境时机成熟人们还是会有意或无意地说谎甚至还会为说谎带来的好处沾沾自喜": "Dù bề ngoài ai cũng nói là không thích người nói dối, nhưng vì nhu cầu sinh lý, cuộc sống và sinh tồn, một khi điều kiện, hoàn cảnh và thời cơ chín muồi, người ta vẫn sẽ cố ý hoặc vô tình nói dối, thậm chí còn đắc ý vì những lợi ích mà lời nói dối mang lại.",
+ "有时人们为了替自己的谎言辩护还创造出许多新的概念并美其名曰真实的谎言善意的谎言理解的谎言等等": "Có khi, để bào chữa cho lời nói dối của mình, người ta còn nghĩ ra nhiều khái niệm mới và gọi bằng những cái tên mỹ miều như \"lời nói dối chân thật, lời nói dối thiện ý, lời nói dối thấu hiểu\", v.v.",
+ "其实谎言就是谎言我们没有必要去掩盖它的坏处也没有必要去替它寻找更多赞美或借口": "Thật ra, nói dối vẫn là nói dối, chúng ta không cần phải che đậy mặt xấu của nó, cũng chẳng cần tìm thêm lời ca ngợi hay cái cớ cho nó.",
+ "尽管有些谎言是我们迫不得已而为之但就其实质来说还是暴露了我们人类不敢面对现实的某些弱点": "Dù có những lời nói dối là do chúng ta bất đắc dĩ phải nói, nhưng xét về bản chất, chúng vẫn phơi bày một số điểm yếu của loài người: không dám đối mặt với hiện thực.",
+ "研究人员近日指出学会说谎的艺术也是人们生存的一大重要本领一些人出于种种原因每天都要撒上二十多个无伤大雅的谎": "Các nhà nghiên cứu gần đây chỉ ra rằng học được nghệ thuật nói dối cũng là một \"kỹ năng quan trọng\" để con người sinh tồn; vì đủ thứ lý do, có người mỗi ngày nói tới hơn hai mươi lời nói dối vô hại.",
+ "研究人员声称男性为了生存可能比女性更容易说谎": "Các nhà nghiên cứu cho rằng, để sinh tồn, nam giới có thể dễ nói dối hơn nữ giới.",
+ "他们在研究中发现男性一般会在驾驶汽车或是使用器械的能力方面夸大其词以显示他在这方面无所不能来炫耀自己的男子气概而女性则更倾向于在购物问题上说谎来表明自己购物时多么大手大脚": "Trong nghiên cứu, họ phát hiện nam giới thường phóng đại về khả năng lái xe hay sử dụng máy móc, để tỏ ra mình chuyện gì cũng làm được, nhằm khoe khí chất đàn ông; còn nữ giới lại có xu hướng nói dối về chuyện mua sắm, để cho thấy mình mua sắm \"vung tay quá trán\" đến mức nào.",
+ "研究人员表示如今的社会对男性提出的要求越来越高尤其是在他们必须面临女性挑战和竞争的情况下男性极可能出于自身的软弱或是担忧而说谎": "Các nhà nghiên cứu cho biết: \"Xã hội ngày nay đặt ra yêu cầu ngày càng cao đối với nam giới, nhất là khi họ phải đối mặt với sự thách thức và cạnh tranh từ phía nữ giới, nam giới rất có thể nói dối vì sự yếu đuối hoặc lo lắng của chính mình.",
+ "事实上那些信誓旦旦表示自己从不说谎的人原本就是在撒谎因为说谎就像空气和水一样对每个人的生存都至关重要": "Thực tế, những người thề thốt chắc nịch rằng mình chưa bao giờ nói dối thì vốn dĩ đang nói dối rồi, bởi vì nói dối cũng như không khí và nước, vô cùng quan trọng đối với sự sinh tồn của mỗi người.\"",
+ "研究人员还在他们最近出版的新书生活指南中表示人们一般在6岁时就开始学会说谎而且在今后的一生当中都会继续保持这一习惯": "Trong cuốn sách mới xuất bản gần đây mang tên \"Cẩm nang cuộc sống\", các nhà nghiên cứu còn cho biết con người thường bắt đầu biết nói dối từ năm 6 tuổi, và sẽ tiếp tục duy trì thói quen này suốt cả đời sau đó.",
+ "谎言在我们生活中随处可见有些谎言是善意的比如对危重病人隐瞒病情有些谎言是迫不得已的如为了保守某个秘密": "Lời nói dối có ở khắp nơi trong cuộc sống của chúng ta: có những lời nói dối mang thiện ý, chẳng hạn giấu bệnh nhân nặng về tình trạng bệnh; có những lời nói dối là bất đắc dĩ, như để giữ một bí mật nào đó.",
+ "而如果无缘无故地去欺骗别人说谎的时间过长或次数过多以至于对那些被谎言蛊惑的人造成某种危害这样的说谎就是一种病态了": "Còn nếu vô duyên vô cớ lừa dối người khác, nói dối quá lâu hoặc quá nhiều lần, đến mức gây ra tác hại nào đó cho những người bị lời nói dối mê hoặc, thì nói dối như vậy đã là một dạng bệnh lý.",
+ "说谎成瘾的人即使在不需要说谎的情况下仍然习惯或自然地说谎当看到有人相信谎言时便沾沾自喜说谎也就成了生活中不可或缺的一部分有的甚至发展为政治诈骗": "Người nghiện nói dối, ngay cả khi không cần nói dối, vẫn nói dối theo thói quen hoặc một cách tự nhiên, khi thấy có người tin lời mình thì lấy làm đắc ý; nói dối trở thành một phần không thể thiếu trong cuộc sống của họ, thậm chí có người còn đi đến lừa đảo chính trị.",
+ "有的说谎者则仅仅是用撒谎来获得变态心理的满足虽然屡屡被揭穿却仍然乐此不疲": "Có những kẻ nói dối chỉ đơn thuần dùng việc nói dối để thỏa mãn tâm lý lệch lạc, dù nhiều lần bị vạch trần nhưng vẫn thích thú không biết chán.",
+ "说谎是一种个人行为又是一种社会行为往往对自己他人和社会造成极大危害": "Nói dối vừa là hành vi cá nhân, vừa là hành vi xã hội, thường gây tác hại rất lớn cho bản thân, người khác và xã hội.",
+ "谎言隐瞒真相直接影响他人对一件事或一个人的评价": "Lời nói dối che giấu sự thật, ảnh hưởng trực tiếp đến cách người khác đánh giá một sự việc hay một con người.",
+ "一个人说谎次数多了便失去诚信如果这个人掌握较大的权力就可能祸国殃民": "Một người nói dối nhiều lần sẽ đánh mất uy tín; nếu người đó nắm trong tay quyền lực lớn, thì có thể hại nước hại dân.",
+ "中国历史上有一个与狼来了异曲同工的故事那就是周幽王为博得美人一笑不惜点燃烽火台谎报军情": "Lịch sử Trung Quốc có một câu chuyện tuy khác nhưng cùng một ý nghĩa với câu chuyện \"Chó sói đến rồi\", đó là Chu U Vương, để đổi lấy một nụ cười của người đẹp, đã không tiếc đốt đài phong hỏa báo tin giặc giả.",
+ "第一次诸侯率兵来救但次数多了诸侯便不再相信": "Lần đầu, các chư hầu dẫn quân đến cứu, nhưng nhiều lần như vậy thì chư hầu không còn tin nữa.",
+ "结果是敌人真的来了西周也就这样灭亡了": "Kết quả là, giặc đến thật, và nhà Tây Chu cứ thế mà diệt vong.",
+ "对说谎成瘾的人我们一是同情二是不要轻信三是建议他尽早去看看心理医生尽快矫正自己的病态以免害人害己": "Đối với người nghiện nói dối, một là chúng ta nên cảm thông, hai là đừng dễ dàng tin, ba là khuyên họ sớm đi gặp bác sĩ tâm lý, nhanh chóng chữa trị tình trạng bệnh lý của mình, để khỏi hại người hại mình.",
+ "谎言在日常生活中可谓俯拾皆是有些出于善意有些实属无奈然而一旦说谎成瘾甚至发展到以欺骗他人为乐的地步便已沦为一种病态": "Lời nói dối trong cuộc sống thường ngày có thể nói là nhan nhản khắp nơi, có lời xuất phát từ thiện ý, có lời thật sự là bất đắc dĩ; thế nhưng một khi đã nghiện nói dối, thậm chí đến mức lấy việc lừa người khác làm vui, thì đã trở thành một dạng bệnh lý.",
+ "不可否认说谎者往往能从一时的蒙蔽中获得某种心理满足却鲜少意识到这种满足终将以失信于人为代价": "Không thể phủ nhận, người nói dối thường có được sự thỏa mãn tâm lý nào đó từ việc che mắt người khác nhất thời, nhưng hiếm khi nhận ra rằng cái giá cuối cùng phải trả cho sự thỏa mãn ấy là đánh mất lòng tin của mọi người.",
+ "与此同时狼来了式的教训古已有之周幽王为博美人一笑而谎报军情终致诸侯不再信任国破家亡的下场可见一斑": "Mặt khác, bài học kiểu \"Chó sói đến rồi\" đã có từ xa xưa — Chu U Vương vì muốn người đẹp cười mà báo tin giặc giả, cuối cùng chuốc lấy kết cục chư hầu không còn tin tưởng, nước mất nhà tan; chỉ một ví dụ ấy cũng đủ thấy rõ.",
+ "由此可见诚信一旦透支便极难挽回": "Từ đó có thể thấy, chữ tín một khi đã cạn thì rất khó lấy lại.",
+ "归根结底对于说谎成瘾者与其一味指责不如给予理解并建议其及早寻求疏导唯有正视并矫正这一病态才能避免害人害己的恶果": "Suy cho cùng, đối với người nghiện nói dối, thay vì chỉ một mực chỉ trích, chi bằng hãy thấu hiểu họ, và khuyên họ sớm tìm sự giúp đỡ tâm lý; chỉ có nhìn thẳng vào và chữa trị tình trạng bệnh lý này, mới có thể tránh được hậu quả hại người hại mình.",
+ "这段历史教训至今仍振聋发聩提醒世人诚信一旦失去纵使日后百般弥补恐怕也难以挽回最初的信任": "Bài học lịch sử này đến nay vẫn còn vang vọng như hồi chuông cảnh tỉnh, nhắc nhở người đời rằng chữ tín một khi đã mất, dù sau này có tìm trăm phương ngàn cách bù đắp, e rằng cũng khó lấy lại được niềm tin ban đầu.",
+ "你能说说善意的谎言是什么意思吗": "Bạn có thể nói xem \"lời nói dối thiện ý\" nghĩa là gì không?",
+ "它到底算不算说谎": "Rốt cuộc nó có được tính là nói dối hay không?",
+ "说说在你小时候父母或老师是如何教育你不说谎的": "Hãy kể xem hồi nhỏ bố mẹ hoặc thầy cô đã dạy bạn không nói dối như thế nào.",
+ "对一个身患不治之症的人来说安慰他一句没什么你很快就可以康复的谎言就有可能燃起他渴望生命的激情延续他的生命": "Với một người mắc bệnh nan y, lời nói dối an ủi \"Không sao đâu, anh sẽ sớm bình phục thôi\" có thể thắp lên trong họ niềm khao khát sống mãnh liệt, kéo dài sự sống của họ.",
+ "小到一个家庭的成员之间一个单位的同事之间大到国际间的政治往来军事上的对策计谋经济上的竞争调控我们都可以找到说谎人的影子": "Nhỏ thì giữa các thành viên trong một gia đình, giữa đồng nghiệp trong một cơ quan, lớn thì trong quan hệ chính trị quốc tế, mưu lược đối sách quân sự, cạnh tranh và điều tiết kinh tế, chúng ta đều có thể tìm thấy bóng dáng của kẻ nói dối.",
+ "出于生理生活生存的需要一旦条件环境时机成熟人们还是会有意或无意地说谎": "Vì nhu cầu sinh lý, cuộc sống và sinh tồn, một khi điều kiện, hoàn cảnh và thời cơ chín muồi, người ta vẫn sẽ cố ý hoặc vô tình nói dối.",
+ "事实上那些信誓旦旦表示自己从不说谎的人原本就是在撒谎": "Thực tế, những người thề thốt chắc nịch rằng mình chưa bao giờ nói dối thì vốn dĩ đang nói dối rồi.",
+ "对说谎成瘾的人我们一是同情二是不要轻信三是建议他尽早去看看心理医生": "Đối với người nghiện nói dối, một là chúng ta nên cảm thông, hai là đừng dễ dàng tin, ba là khuyên họ sớm đi gặp bác sĩ tâm lý."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
