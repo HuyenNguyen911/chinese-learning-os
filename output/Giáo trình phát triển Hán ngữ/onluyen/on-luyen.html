@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4038,7 +4038,53 @@ const SENTENCE_VI = {
  "现代达人指的是在某一领域某一方面非常专业非常精通的人也就是专家行家比高手还高手": "\"达人\" thời hiện đại là chỉ người cực kỳ chuyên nghiệp, cực kỳ tinh thông trong một lĩnh vực, một phương diện nào đó, tức là chuyên gia, người trong nghề, còn cao tay hơn cả cao thủ.",
  "用拼客们自己的话讲这是一种节约时尚快乐共赢的新型生活方式": "Nói theo cách của chính những người \"拼客\", đây là một lối sống kiểu mới tiết kiệm, thời thượng, vui vẻ và đôi bên cùng có lợi.",
  "公交太慢地铁太挤打车太贵说来说去还是拼车方便快捷经济实惠": "Xe buýt quá chậm, tàu điện ngầm quá đông, đi taxi quá đắt, nói tới nói lui, vẫn là đi chung xe tiện lợi nhanh chóng, kinh tế thiết thực.",
- "据统计现代汉语中每年大概要出现1000个左右新词新语有的是随着新事物新现象新观念的出现而产生的如手机宽带有的是来自外语或汉语方言的如脱口秀买单": "Theo thống kê, mỗi năm tiếng Hán hiện đại xuất hiện khoảng 1000 từ ngữ mới, có từ ra đời cùng với sự xuất hiện của sự vật mới, hiện tượng mới, quan niệm mới, như \"điện thoại di động\", \"băng thông rộng\"; có từ đến từ tiếng nước ngoài hoặc phương ngữ tiếng Hán, như \"talk show\", \"thanh toán hóa đơn\"."
+ "据统计现代汉语中每年大概要出现1000个左右新词新语有的是随着新事物新现象新观念的出现而产生的如手机宽带有的是来自外语或汉语方言的如脱口秀买单": "Theo thống kê, mỗi năm tiếng Hán hiện đại xuất hiện khoảng 1000 từ ngữ mới, có từ ra đời cùng với sự xuất hiện của sự vật mới, hiện tượng mới, quan niệm mới, như \"điện thoại di động\", \"băng thông rộng\"; có từ đến từ tiếng nước ngoài hoặc phương ngữ tiếng Hán, như \"talk show\", \"thanh toán hóa đơn\".",
+ "随着生活水平的提高和生活节奏的改变人们的身体健康和体形越来越受到关注": "Cùng với việc mức sống được nâng cao và nhịp sống thay đổi, sức khỏe và vóc dáng của con người ngày càng được quan tâm.",
+ "瑜伽晨练健身房成了人们常挂在嘴边的词语": "Yoga, tập thể dục buổi sáng, phòng gym đã trở thành những từ mà người ta lúc nào cũng nhắc đến.",
+ "如果你不知道有氧运动不知道普拉提街舞没有私人教练那你就落伍了": "Nếu bạn không biết bài tập aerobic, không biết Pilates, nhảy đường phố, không có huấn luyện viên riêng, thì bạn đã lạc hậu rồi.",
+ "而肥胖不仅严重危害人们的身体健康还极大破坏了个人的美好形象所以成为了大家的头号公敌": "Còn béo phì không chỉ gây hại nghiêm trọng cho sức khỏe mà còn làm tổn hại rất lớn đến hình ảnh đẹp của mỗi người, vì vậy đã trở thành \"kẻ thù số một\" của mọi người.",
+ "有网站曾经作过一项调查在众多的被访者当中有7成的被访者对健美瘦身感兴趣而且有高达55%的人正在进行健美瘦身": "Từng có một trang web thực hiện cuộc khảo sát: trong số rất nhiều người được hỏi, có 70% quan tâm đến việc giữ dáng giảm cân, và có tới 55% đang thực hiện việc giữ dáng giảm cân.",
+ "其中女性比例稍高于男性": "Trong đó, tỉ lệ nữ cao hơn nam một chút.",
+ "如此看来真的是爱美之心人皆有之": "Xem ra, đúng là \"ai cũng có lòng yêu cái đẹp\".",
+ "至于采用哪种方式健美瘦身有434%的被访者常在健身房或体育中心进行运动有311%的人选择限制或规范饮食选择吃减肥瘦身食品的为81%而选择服用减肥瘦身药物喝减肥瘦身饮料的分别为52%和19%另有43%选择了其他方式如手术中医等": "Còn về việc dùng cách nào để giữ dáng giảm cân, có 43,4% người được hỏi thường tập luyện ở phòng gym hoặc trung tâm thể thao, 31,1% chọn hạn chế hoặc điều chỉnh ăn uống, 8,1% chọn ăn thực phẩm giảm cân, số người chọn uống thuốc giảm cân và uống đồ uống giảm cân lần lượt là 5,2% và 1,9%, ngoài ra có 4,3% chọn cách khác, như phẫu thuật, Đông y, v.v.",
+ "由此可见运动仍是大家选择最多的健美瘦身方式": "Từ đó có thể thấy, vận động vẫn là cách giữ dáng giảm cân được mọi người lựa chọn nhiều nhất.",
+ "有人说减肥是为了健康为了远离各种因肥胖而引起的疾病": "Có người nói giảm cân là vì sức khỏe, để tránh xa các loại bệnh do béo phì gây ra.",
+ "而更多的女孩子会告诉你是为了穿好看的衣服为了自己喜欢的人为了让自己变得更美丽更自信": "Còn nhiều cô gái hơn sẽ nói với bạn rằng họ giảm cân là để mặc quần áo đẹp, vì người mình thích, để bản thân trở nên xinh đẹp hơn, tự tin hơn.",
+ "不知道是不是每个人都尝试过减肥但每个减肥的人一定都有自己充足的理由": "Không biết có phải ai cũng từng thử giảm cân hay không, nhưng người nào giảm cân chắc chắn cũng có lý do xác đáng của riêng mình.",
+ "面对专家千万不要再盲目减肥了的提醒面对家人你又不胖何苦折腾自己呢的劝说我们来听听他们是怎么说的吧": "Trước lời nhắc nhở của chuyên gia \"đừng giảm cân một cách mù quáng nữa\", trước lời khuyên của người nhà \"con có béo đâu, hà tất phải hành hạ bản thân\", chúng ta hãy cùng nghe xem họ nói thế nào nhé.",
+ "身材好了穿什么衣服都漂亮": "Dáng đẹp rồi thì mặc quần áo gì cũng đẹp.",
+ "一定得再减几斤要不然的话跟迷你裙比基尼都得说再见了": "Nhất định phải giảm thêm vài cân nữa, nếu không thì phải nói lời tạm biệt với váy ngắn và bikini rồi.",
+ "要知道问售货小姐有没有特大号的衣服是一件很丢脸的事情但是这里的衣服都太肥了却可以理直气壮地说出口": "Phải biết rằng, hỏi cô bán hàng \"có quần áo cỡ siêu to không\" là một chuyện rất mất mặt; nhưng câu \"quần áo ở đây rộng quá\" thì lại có thể nói ra một cách đường hoàng.",
+ "体重超重行动都不方便夏天一走路就出汗": "Thừa cân thì đi lại không tiện, mùa hè cứ đi bộ là đổ mồ hôi.",
+ "必须得减否则下雨都不能跟女朋友打一把雨伞": "Nhất định phải giảm, nếu không thì trời mưa cũng chẳng che chung một chiếc ô với bạn gái được.",
+ "其实胖起来做什么事都不方便而且大家都认为胖人做事比较迟钝比较慢": "Thật ra béo lên thì làm việc gì cũng bất tiện, hơn nữa mọi người đều cho rằng người béo làm việc khá chậm chạp, lề mề.",
+ "更重要的是现在社会很现实的以貌取人要是不让自己瘦下来就别想找到好工作": "Quan trọng hơn là xã hội bây giờ rất thực tế, trông mặt mà bắt hình dong, nếu không làm cho mình gầy đi thì đừng mong tìm được việc tốt.",
+ "和那些年轻漂亮的同事一起逛街再也不会感到自卑了": "Đi dạo phố cùng những đồng nghiệp trẻ đẹp kia cũng sẽ không còn thấy tự ti nữa.",
+ "一辈子就结一次婚婚礼上我一定要是最美的新娘穿最美的婚纱": "Cả đời chỉ kết hôn một lần, trong đám cưới tôi nhất định phải là cô dâu đẹp nhất, mặc bộ váy cưới đẹp nhất.",
+ "很多人特别是女士们每年花在减肥上的金钱不少遇到手头紧的时候只好放弃": "Nhiều người, đặc biệt là phụ nữ, mỗi năm tiêu không ít tiền vào việc giảm cân, gặp lúc túng tiền thì đành bỏ cuộc.",
+ "可是专家说何必去大把大把地花钱呢": "Nhưng chuyên gia nói, hà tất phải vung tiền ra nhiều như vậy?",
+ "不妨看看这里的建议它们都是不必花大笔金钱去健身中心也可以做的健身运动达到既经济又瘦身的目的": "Chi bằng xem thử những gợi ý ở đây, chúng đều là những bài tập rèn luyện sức khỏe không cần tốn nhiều tiền đến trung tâm thể hình cũng có thể làm được, đạt được mục đích vừa tiết kiệm vừa giảm cân.",
+ "当然不管用哪种方法千万不能三天打鱼两天晒网": "Đương nhiên, dù dùng cách nào thì cũng tuyệt đối không được \"bữa đực bữa cái\".",
+ "步行这大概是最简便最经济的健身方法了": "Đi bộ — đây có lẽ là cách rèn luyện sức khỏe đơn giản và tiết kiệm nhất.",
+ "每星期最少3次每次连续步行20分钟": "Mỗi tuần ít nhất 3 lần, mỗi lần đi bộ liên tục 20 phút.",
+ "爬楼梯每爬10分钟要消耗220卡热量": "Leo cầu thang — cứ leo 10 phút là tiêu hao 220 calo.",
+ "上课上班回家时别再坐电梯了还是爬爬楼梯吧你会收到意想不到的效果": "Khi đi học, đi làm, về nhà, đừng đi thang máy nữa, hãy leo cầu thang đi, bạn sẽ nhận được hiệu quả không ngờ.",
+ "骑自行车自行车是很普通的代步工具也是一种很好的健身工具": "Đạp xe — xe đạp là phương tiện đi lại rất bình thường, cũng là một công cụ rèn luyện sức khỏe rất tốt.",
+ "每星期34次每次持续半小时能让你的身体得到足够的锻炼并且平均每10分钟消耗100卡的热量": "Mỗi tuần 3-4 lần, mỗi lần kéo dài nửa tiếng, có thể giúp cơ thể bạn được vận động đầy đủ, và trung bình cứ 10 phút tiêu hao 100 calo.",
+ "早晨体操利用免费的公共设施早上起来做做体操能让你更有精神面对一天的工作现在的小区或公园里基本都有公共的健身设施好好利用它们一样可以达到健身的作用": "Thể dục buổi sáng, tận dụng thiết bị công cộng miễn phí — sáng dậy tập thể dục một chút giúp bạn có tinh thần hơn để đối mặt với công việc trong ngày; hiện nay trong khu dân cư hoặc công viên hầu như đều có thiết bị tập luyện công cộng, tận dụng tốt chúng thì cũng có thể đạt được tác dụng rèn luyện sức khỏe như vậy.",
+ "做家务这是最有效的减肥方法之一扫地擦地吸尘洗衣服擦玻璃既帮你消耗了多余的热量又收拾了房间一举两得": "Làm việc nhà — đây là một trong những cách giảm cân hiệu quả nhất: quét nhà, lau nhà, hút bụi, giặt quần áo, lau kính, vừa giúp bạn tiêu hao lượng calo dư thừa, vừa dọn dẹp được nhà cửa, một công đôi việc.",
+ "减肥瘦身未必需要耗费大量金钱步行爬楼梯骑自行车乃至做家务皆可达到强身健体之效": "Giảm cân giữ dáng chưa chắc đã cần tốn nhiều tiền, đi bộ, leo cầu thang, đạp xe, thậm chí làm việc nhà đều có thể đạt được hiệu quả tăng cường sức khỏe.",
+ "不可否认许多人一提及健身便联想到昂贵的健身房会员费殊不知真正决定效果的并非投入的金钱多寡而在于能否持之以恒": "Không thể phủ nhận, nhiều người hễ nhắc đến rèn luyện sức khỏe là liền nghĩ đến phí hội viên phòng gym đắt đỏ, đâu biết rằng thứ thực sự quyết định hiệu quả không phải là bỏ ra nhiều hay ít tiền, mà là có kiên trì bền bỉ được hay không.",
+ "倘若三天打鱼两天晒网纵有再精良的器械也难以见效反之哪怕只是每日坚持步行二十分钟长此以往亦能收获意想不到的效果": "Nếu \"bữa đực bữa cái\" thì dù có máy móc tốt đến đâu cũng khó có hiệu quả; ngược lại, cho dù chỉ là mỗi ngày kiên trì đi bộ hai mươi phút, lâu dần cũng có thể thu được hiệu quả không ngờ.",
+ "由此可见瘦身的关键不在于花多少钱而在于能否坚持": "Từ đó có thể thấy, mấu chốt của việc giảm cân không nằm ở \"tiêu bao nhiêu tiền\", mà ở \"có kiên trì được không\".",
+ "归根结底与其盲目追求昂贵的减肥方式不如从日常生活的点滴做起让运动真正融入生活方为长久之计": "Suy cho cùng, thay vì mù quáng chạy theo những cách giảm cân đắt tiền, chi bằng bắt đầu từ những việc nhỏ trong cuộc sống hằng ngày, để vận động thực sự hòa vào cuộc sống, đó mới là kế lâu dài.",
+ "换言之健身成败的分水岭从来不在钱包的厚薄而在意志的坚韧与否这一点无论古今皆然值得每个人深思": "Nói cách khác, ranh giới giữa thành và bại trong việc rèn luyện sức khỏe từ trước tới nay chưa bao giờ nằm ở ví dày hay mỏng, mà ở ý chí có kiên cường hay không; điều này dù xưa hay nay đều đúng, đáng để mỗi người suy ngẫm.",
+ "健身的重要性是什么": "Tầm quan trọng của việc rèn luyện sức khỏe là gì?",
+ "一个人的身材到底有多重要": "Vóc dáng của một người rốt cuộc quan trọng đến mức nào?",
+ "我们对服用这种药物的人数进行了统计至于他们服用的效果还需要我们继续跟踪调查": "Chúng tôi đã thống kê số người dùng loại thuốc này, còn về hiệu quả sử dụng của họ thì chúng tôi vẫn cần tiếp tục theo dõi, điều tra.",
+ "有434%的被访者常在健身房运动有371%的人选择限制饮食另有43%选择了其他形式": "Có 43,4% người được hỏi thường tập luyện ở phòng gym, 37,1% chọn hạn chế ăn uống, ngoài ra có 4,3% chọn hình thức khác.",
+ "必须得保证产品的质量否则你将会失去所有的客户": "Nhất định phải đảm bảo chất lượng sản phẩm, nếu không bạn sẽ mất hết khách hàng.",
+ "要是不能选择适合自己的方式就别想达到理想的效果": "Nếu không chọn được cách phù hợp với bản thân thì đừng mong đạt được hiệu quả lý tưởng."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
