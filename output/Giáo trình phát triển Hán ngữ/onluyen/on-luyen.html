@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4637,7 +4637,49 @@ const SENTENCE_VI = {
  "心理学家让一些被试对两个学生进行评价两相比较谁更聪明一些": "Nhà tâm lý học để một số người tham gia thí nghiệm đánh giá hai học sinh: so sánh hai người, ai thông minh hơn?",
  "一个人的体态姿势谈吐衣着打扮等都在一定程度上反映出这个人的内在素养和个性特征": "Dáng vẻ, tư thế, cách ăn nói, cách ăn mặc trang điểm... của một người đều phản ánh ở một mức độ nhất định tố chất bên trong và đặc điểm tính cách của người đó.",
  "学识修养差的暴发户总会在不经意中露出马脚因为文化的修养是装不出来的": "Kẻ trọc phú kém học thức và tu dưỡng thế nào cũng sẽ vô tình \"lòi đuôi\", bởi vì sự tu dưỡng văn hóa là thứ không thể giả vờ được.",
- "在正常情况下第一印象或多或少反映出一个人的真实情况": "Trong tình huống bình thường, ấn tượng đầu tiên ít nhiều phản ánh con người thật của một người."
+ "在正常情况下第一印象或多或少反映出一个人的真实情况": "Trong tình huống bình thường, ấn tượng đầu tiên ít nhiều phản ánh con người thật của một người.",
+ "未来的日子北京女性有可能在高峰期地铁里享受一节位于列车中部的女性专用的粉红色车厢": "Trong tương lai, vào giờ cao điểm, phụ nữ Bắc Kinh có thể được đi trên một toa tàu điện ngầm màu hồng dành riêng cho nữ, nằm ở giữa đoàn tàu.",
+ "有高层人士认为北京女性在上下班高峰时期挤地铁太辛苦而且还有可能遭遇性骚扰所以提出了这样一个人性化管理的提案": "Có nhân vật cấp cao cho rằng phụ nữ Bắc Kinh chen chúc đi tàu điện ngầm vào giờ cao điểm đi làm, tan làm quá vất vả, lại còn có thể bị quấy rối tình dục, nên đã đưa ra đề xuất \"quản lý nhân văn\" như vậy.",
+ "目前全球只有9个城市有女性车厢这些城市设立女性车厢有其必然性如开罗德黑兰属于伊斯兰城市宗教风俗要求男女乘客必须隔离而东京大阪名古屋首尔等城市的女性乘客相对较少且性骚扰等治安问题突出": "Hiện nay trên toàn cầu chỉ có 9 thành phố có toa dành cho nữ, và việc các thành phố này lập toa dành cho nữ đều có lý do tất yếu của nó: chẳng hạn Cairo, Tehran là các thành phố Hồi giáo, phong tục tôn giáo đòi hỏi hành khách nam nữ phải tách biệt; còn ở các thành phố như Tokyo, Osaka, Nagoya, Seoul, hành khách nữ tương đối ít, hơn nữa các vấn đề an ninh trật tự như quấy rối tình dục lại khá nổi cộm.",
+ "据相关媒体报道在日本为防止女性受到性骚扰地铁公司设置女性专用车厢": "Theo đưa tin của các phương tiện truyền thông liên quan, ở Nhật Bản, để ngăn phụ nữ bị quấy rối tình dục, các công ty tàu điện ngầm đã bố trí toa dành riêng cho nữ.",
+ "但实施的效果好像也并不尽如人意": "Nhưng hiệu quả thực hiện dường như cũng không được như mong muốn.",
+ "首先很多日本男性觉得自己受到了性别歧视其次很多日本女性反映女性车厢内秩序更加混乱还有地铁公司的乘务人员也感觉在组织人员上下车方面似乎比以前更费劲": "Thứ nhất, nhiều đàn ông Nhật cảm thấy mình bị phân biệt giới tính; thứ hai, nhiều phụ nữ Nhật phản ánh rằng trật tự trong toa dành cho nữ còn hỗn loạn hơn; ngoài ra, nhân viên phục vụ của công ty tàu điện ngầm cũng cảm thấy việc điều phối hành khách lên xuống tàu dường như vất vả hơn trước.",
+ "巴西约18亿总人口中女性超过60%里约热内卢的女性比例也较高": "Trong tổng dân số khoảng 180 triệu người của Brazil, nữ giới chiếm hơn 60%, tỷ lệ nữ ở Rio de Janeiro cũng khá cao.",
+ "政府有关部门决定在地铁里安排女性专用车厢在站台上安排安全人员引导男女乘客分别上车": "Các cơ quan chính phủ liên quan quyết định bố trí toa dành riêng cho nữ trên tàu điện ngầm, đồng thời bố trí nhân viên an ninh trên sân ga hướng dẫn hành khách nam và nữ lên tàu riêng.",
+ "新方案一出台公众反应不一": "Phương án mới vừa ban hành, phản ứng của công chúng đã mỗi người một khác.",
+ "有人说这样一来车厢里就不太挤了也不用再忍受一些男人说的有关女人的玩笑话": "Có người nói, như vậy thì trong toa sẽ không còn chật lắm, cũng không phải chịu đựng những câu đùa về phụ nữ của một số đàn ông nữa.",
+ "而持反对意见的人士则认为任何限制巴西公民在公共场所自由来往的措施都是对法律的直接侵犯": "Còn những người phản đối thì cho rằng bất kỳ biện pháp nào hạn chế công dân Brazil tự do qua lại ở nơi công cộng đều là sự vi phạm trực tiếp pháp luật.",
+ "在大城市的地铁中每逢上下班高峰期拥挤的地铁人流将有限的车厢挤成了沙丁鱼罐头": "Trong tàu điện ngầm ở các thành phố lớn, cứ đến giờ cao điểm đi làm, tan làm, dòng người đông nghịt lại nhồi những toa tàu có hạn chật như hộp cá mòi.",
+ "拥挤不堪的车厢里不需要扶着把手都能站稳这就是车厢内部的真实写照": "\"Trong toa tàu chật cứng, không cần vịn tay nắm cũng đứng vững\" — đó chính là bức tranh chân thực bên trong toa tàu.",
+ "在这样的高密度车厢中男女之间的摩擦常常难以避免更有甚者有些男性色胆包天地在拥挤的地铁中向女性揩油": "Trong những toa tàu mật độ cao như vậy, va chạm giữa nam và nữ thường khó tránh khỏi; tệ hơn nữa, có những gã đàn ông to gan lớn mật lợi dụng lúc tàu điện ngầm chen chúc để \"sàm sỡ\" phụ nữ.",
+ "有网友称天气渐渐要热起来了女性穿得会比较少每天上下班挤在这样塞满人的车厢里没有人身安全感": "Có cư dân mạng nói: \"Trời dần nóng lên, phụ nữ sẽ ăn mặc ít hơn, ngày nào đi làm, tan làm cũng phải chen trong những toa tàu chật ních người như thế này, chẳng có chút cảm giác an toàn nào cho bản thân.\"",
+ "上下班时乘过地铁的人都明白在完全是人贴人式的站立环境中女性朋友很难保护自己不受有些男性的侵犯": "Ai từng đi tàu điện ngầm vào giờ đi làm, tan làm đều hiểu, trong cảnh đứng sát người vào người như vậy, phụ nữ rất khó tự bảo vệ mình khỏi sự xâm phạm của một số đàn ông.",
+ "设立女性车厢作为保护女性免受骚扰和体恤女性上下班辛苦的提案虽然想法有点天真不符合中国国情但其中透露出的对女性的人文关怀值得我们每个每天乘公共交通工具上下班的男士思考": "Lập toa dành cho nữ, với tư cách là đề xuất nhằm bảo vệ phụ nữ khỏi bị quấy rối và thông cảm với nỗi vất vả của phụ nữ khi đi làm, tan làm, tuy ý tưởng có phần ngây thơ, không phù hợp với tình hình thực tế của Trung Quốc, nhưng sự quan tâm nhân văn dành cho phụ nữ toát ra từ đó đáng để mỗi người đàn ông chúng ta, những người ngày ngày đi làm bằng phương tiện giao thông công cộng, suy ngẫm.",
+ "从这方面来说设立女性车厢还是有倡导意义的": "Xét về mặt này, việc lập toa dành cho nữ vẫn có ý nghĩa khuyến khích, định hướng.",
+ "设立女性车厢的想法看似合理却适得其反": "Ý tưởng lập toa dành cho nữ tưởng chừng hợp lý, nhưng lại phản tác dụng.",
+ "首先女性车厢的设置让我想到一个最基本的矛盾那就是这个想法的前提是把女性乘客都假定为一个人出行问题是还有许多群体性的出行": "Thứ nhất, việc bố trí toa dành cho nữ khiến tôi nghĩ đến một mâu thuẫn cơ bản nhất, đó là ý tưởng này dựa trên tiền đề giả định mọi hành khách nữ đều đi một mình, trong khi vấn đề là còn rất nhiều trường hợp đi theo nhóm.",
+ "试想如果一个来北京旅游的旅行团或者一对小情侣一起去坐地铁是不是到了地铁以后还要分开车厢乘坐到达目的地以后再在地铁通道旁等候人到齐了再出地铁": "Thử nghĩ xem, nếu một đoàn khách đến Bắc Kinh du lịch hay một đôi tình nhân trẻ cùng đi tàu điện ngầm, chẳng lẽ đến ga rồi lại phải tách ra ngồi toa riêng, đến nơi lại đứng bên lối đi trong ga chờ mọi người đến đủ rồi mới ra khỏi ga?",
+ "这时候所造成的拥堵可能要比没有实行男女分开乘坐时更严重": "Khi đó, tình trạng ùn tắc gây ra có thể còn nghiêm trọng hơn so với lúc chưa chia nam nữ đi riêng.",
+ "其次男女车厢分开是不是就有利于女性乘车了": "Thứ hai, tách toa nam nữ ra thì có thật là thuận lợi hơn cho phụ nữ đi tàu không?",
+ "我看未必": "Tôi thấy chưa chắc.",
+ "根据笔者常年坐地铁的经验女性乘坐地铁在很多时候不是由于自己身单力薄才困难更多的是由于空间不足所引起的争抢": "Theo kinh nghiệm nhiều năm đi tàu điện ngầm của người viết, phụ nữ đi tàu điện ngầm nhiều khi gặp khó khăn không phải vì bản thân thể chất yếu ớt, mà phần nhiều là do cảnh tranh giành vì thiếu không gian.",
+ "争抢的人群里面既有男人也有女人所以即使设立女性车厢这种争抢还会存在既然存在空间的争抢也就还会存在上车难和下车难的问题": "Trong đám người tranh giành ấy có cả đàn ông lẫn phụ nữ, vì vậy dù có lập toa dành cho nữ thì sự tranh giành này vẫn tồn tại; mà đã còn tranh giành không gian thì cũng vẫn còn chuyện khó lên tàu, khó xuống tàu.",
+ "最后让我们来思考这种争抢意识的存在是否都是因为乘车人的素质问题": "Cuối cùng, chúng ta hãy thử nghĩ xem, tâm lý tranh giành này tồn tại có phải hoàn toàn do vấn đề ý thức của người đi tàu hay không?",
+ "运力不足管理不善设计上的某种不合理应当是其中的重要原因": "Năng lực vận chuyển không đủ, quản lý yếu kém, một số điểm bất hợp lý trong thiết kế hẳn phải là những nguyên nhân quan trọng.",
+ "如何最大限度地实现同一个空间内方便换乘如何在增加车次和运力方面多做文章如何更好地增强导引和疏导能力是交通运营和管理部门应该考虑并改进的": "Làm thế nào để tối đa hóa việc chuyển tuyến thuận tiện trong cùng một không gian, làm thế nào để chú trọng hơn vào việc tăng chuyến và tăng năng lực vận chuyển, làm thế nào để nâng cao khả năng hướng dẫn và phân luồng, đó là những điều mà các cơ quan vận hành và quản lý giao thông nên cân nhắc và cải thiện.",
+ "设立女性专属车厢表面上似乎是对女性乘客的一种体贴与保护然而细究之下这一设想却存在诸多难以回避的矛盾": "Lập toa dành riêng cho nữ, bề ngoài có vẻ là sự chu đáo và bảo vệ đối với hành khách nữ, nhưng xem xét kỹ thì ý tưởng này lại tồn tại nhiều mâu thuẫn khó né tránh.",
+ "不可否认结伴出行的情侣或旅行团一旦被迫分开乘车反倒可能加剧站台的拥堵与不便": "Không thể phủ nhận, các cặp tình nhân hay đoàn du lịch đi cùng nhau một khi bị buộc phải tách ra đi riêng, ngược lại có thể khiến sân ga càng ùn tắc và bất tiện hơn.",
+ "与此同时车厢内空间的争抢本就无关性别无论男女在运力不足的情况下都难免陷入同样的窘境": "Mặt khác, việc tranh giành không gian trong toa vốn chẳng liên quan đến giới tính — dù nam hay nữ, khi năng lực vận chuyển không đủ đều khó tránh rơi vào cảnh khốn đốn như nhau.",
+ "由此可见将问题简单归结为男女分开未免是治标而不治本": "Từ đó có thể thấy, quy vấn đề một cách đơn giản thành \"tách nam nữ\" thì e rằng chỉ là trị ngọn mà không trị gốc.",
+ "归根结底真正亟待解决的是运力不足管理不善与设计不合理等深层症结而非仅凭一纸车厢分隔的方案便可一劳永逸": "Suy cho cùng, điều thực sự cần giải quyết gấp là những căn bệnh sâu xa như năng lực vận chuyển không đủ, quản lý yếu kém và thiết kế bất hợp lý, chứ không phải chỉ dựa vào một phương án tách toa trên giấy là có thể giải quyết dứt điểm một lần cho xong.",
+ "唯有从根源着手改善公共交通体系才能让每一位乘客都真正受益": "Chỉ có bắt tay cải thiện hệ thống giao thông công cộng từ gốc rễ thì mới giúp mỗi hành khách thực sự được hưởng lợi.",
+ "换言之解决公共治理难题终究离不开扎实的基础设施建设与科学的资源调配而非简单粗暴的一刀切方案": "Nói cách khác, giải quyết các bài toán quản lý công rốt cuộc không thể tách rời việc xây dựng cơ sở hạ tầng vững chắc và phân bổ nguồn lực một cách khoa học, chứ không phải những phương án \"cào bằng\" đơn giản, thô bạo.",
+ "你觉得设立女性车厢体现了对女性的尊重吗": "Bạn có cho rằng việc lập toa dành cho nữ thể hiện sự tôn trọng đối với phụ nữ không?",
+ "你同意如果设女性车厢也应该设男性车厢老人车厢儿童车厢这种说法吗": "Bạn có đồng ý với ý kiến \"nếu lập toa dành cho nữ thì cũng nên lập toa cho nam, toa cho người già, toa cho trẻ em\" không?",
+ "有人说这样一来女性也不用再忍受一些男人说的有关女人的玩笑话": "Có người nói, như vậy thì phụ nữ cũng không phải chịu đựng những câu đùa về phụ nữ của một số đàn ông nữa.",
+ "设立女性车厢其中透露出的对女性的人文关怀值得我们思考": "Việc lập toa dành cho nữ, sự quan tâm nhân văn dành cho phụ nữ toát ra từ đó đáng để chúng ta suy ngẫm.",
+ "试想如果一个来北京旅游的旅行团或者一对小情侣一起去坐地铁是不是到了地铁以后还要分开车厢乘坐": "Thử nghĩ xem, nếu một đoàn khách đến Bắc Kinh du lịch hay một đôi tình nhân trẻ cùng đi tàu điện ngầm, chẳng lẽ đến ga rồi lại phải tách ra ngồi toa riêng?",
+ "男女车厢分开是不是就有利于女性乘车了": "Tách toa nam nữ ra thì có thật là thuận lợi hơn cho phụ nữ đi tàu không?"
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
