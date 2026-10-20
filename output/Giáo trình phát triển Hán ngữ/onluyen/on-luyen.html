@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4679,7 +4679,55 @@ const SENTENCE_VI = {
  "有人说这样一来女性也不用再忍受一些男人说的有关女人的玩笑话": "Có người nói, như vậy thì phụ nữ cũng không phải chịu đựng những câu đùa về phụ nữ của một số đàn ông nữa.",
  "设立女性车厢其中透露出的对女性的人文关怀值得我们思考": "Việc lập toa dành cho nữ, sự quan tâm nhân văn dành cho phụ nữ toát ra từ đó đáng để chúng ta suy ngẫm.",
  "试想如果一个来北京旅游的旅行团或者一对小情侣一起去坐地铁是不是到了地铁以后还要分开车厢乘坐": "Thử nghĩ xem, nếu một đoàn khách đến Bắc Kinh du lịch hay một đôi tình nhân trẻ cùng đi tàu điện ngầm, chẳng lẽ đến ga rồi lại phải tách ra ngồi toa riêng?",
- "男女车厢分开是不是就有利于女性乘车了": "Tách toa nam nữ ra thì có thật là thuận lợi hơn cho phụ nữ đi tàu không?"
+ "男女车厢分开是不是就有利于女性乘车了": "Tách toa nam nữ ra thì có thật là thuận lợi hơn cho phụ nữ đi tàu không?",
+ "我们是不是经常遭受歧视": "\"Có phải chúng ta thường xuyên bị phân biệt đối xử không?\"",
+ "要是突然有人就这一问题向众人提问的话我想回答经常遭受歧视的人一定超过50%": "Nếu bỗng có người đem câu hỏi này ra hỏi mọi người, tôi nghĩ số người trả lời \"thường xuyên bị phân biệt đối xử\" chắc chắn sẽ vượt quá 50%.",
+ "不因为别的就因为在现代人的眼中歧视已经成了一种习惯": "Không vì lý do gì khác, chỉ vì trong mắt người hiện đại, \"phân biệt đối xử\" đã trở thành một thói quen.",
+ "我们在被某一些人歧视的同时自己也歧视着另外一些人我们在某一些场合和事情上遭遇歧视的时候又总在另一些场合和事情上制造歧视": "Trong khi bị một số người phân biệt đối xử, chính chúng ta cũng đang phân biệt đối xử với một số người khác; khi gặp phải sự phân biệt đối xử ở một số hoàn cảnh và sự việc nào đó, chúng ta lại luôn tạo ra sự phân biệt đối xử ở những hoàn cảnh và sự việc khác.",
+ "本地人歧视外地人有文凭的歧视没文凭的官大的歧视官小的当官的歧视老百姓有钱人歧视穷人身材好的歧视长得胖的长得漂亮的歧视长得难看的城里人歧视乡下人乡下人歧视山里人白领歧视蓝领奇怪的是人们对这些发生在眼前的歧视现象歧视行为大都采取熟视无睹的态度": "Người bản địa kỳ thị người nơi khác, người có bằng cấp kỳ thị người không có bằng cấp, quan to kỳ thị quan nhỏ, người làm quan kỳ thị dân thường, người giàu kỳ thị người nghèo, người dáng đẹp kỳ thị người béo, người xinh đẹp kỳ thị người xấu, người thành phố kỳ thị người nông thôn, người nông thôn kỳ thị người miền núi, dân văn phòng kỳ thị lao động chân tay… Điều kỳ lạ là, đối với những hiện tượng, hành vi phân biệt đối xử diễn ra ngay trước mắt này, phần lớn mọi người đều có thái độ nhìn mãi thành quen, làm như không thấy.",
+ "我认为我们之所以对歧视的存在熟视无睹或我们之所以在自己的生活中一边反对歧视一边又制造歧视那是因为歧视在许多时候能给我们带来某种优势和快感": "Tôi cho rằng, sở dĩ chúng ta làm như không thấy sự tồn tại của phân biệt đối xử, hay sở dĩ trong cuộc sống của mình chúng ta vừa phản đối phân biệt đối xử lại vừa tạo ra phân biệt đối xử, là vì trong nhiều trường hợp, phân biệt đối xử có thể mang lại cho chúng ta một loại ưu thế và cảm giác sảng khoái nào đó.",
+ "可是只要我们认真地反思一下自己的过去就不难发现正是那些从歧视别人中得到的优势和快乐日复一日地折磨着我们的灵魂致使我们对一切可能出现在自己面前的歧视怀有一种深刻的畏惧和敌意而后为了消除这种敌意和畏惧我们又想尽办法去歧视一切可以歧视的东西": "Thế nhưng, chỉ cần chúng ta nghiêm túc nhìn lại quá khứ của mình một chút, sẽ không khó để nhận ra rằng chính những ưu thế và niềm vui có được từ việc kỳ thị người khác ấy đã ngày qua ngày giày vò tâm hồn chúng ta, khiến chúng ta mang nỗi sợ hãi và thù địch sâu sắc đối với mọi sự kỳ thị có thể xuất hiện trước mặt mình; rồi sau đó, để xóa bỏ nỗi thù địch và sợ hãi ấy, chúng ta lại tìm mọi cách để kỳ thị tất cả những gì có thể kỳ thị.",
+ "最终歧视如瘟疫一样在人群中散播循环永无终止": "Cuối cùng, sự phân biệt đối xử lan truyền và tuần hoàn trong cộng đồng như một bệnh dịch, mãi không có hồi kết…",
+ "一家公司招聘员工招聘广告上注明要求男性身高175米以上五官端正三年以上工作经验大学毕业30岁以下身体健康对歧视过于敏感的人会认为这个招聘广告歧视了很多人": "Một công ty tuyển nhân viên, trên quảng cáo tuyển dụng ghi rõ yêu cầu: nam giới, cao từ 1,75 m trở lên, ngũ quan cân đối, có trên ba năm kinh nghiệm làm việc, tốt nghiệp đại học, dưới 30 tuổi, sức khỏe tốt… Những người quá nhạy cảm với sự phân biệt đối xử sẽ cho rằng quảng cáo tuyển dụng này đã phân biệt đối xử với rất nhiều người.",
+ "它歧视女性歧视矮人歧视残疾人歧视刚步入社会的人歧视学历低的人歧视年纪大的人": "Nó phân biệt đối xử với phụ nữ, với người thấp, với người khuyết tật, với người mới bước chân vào xã hội, với người có trình độ học vấn thấp, với người lớn tuổi.",
+ "严格说来在那些施行反歧视法的国家或地区人们已经可以根据这则广告起诉该公司": "Xét một cách chặt chẽ, ở những quốc gia hoặc khu vực áp dụng luật chống phân biệt đối xử, người ta đã có thể căn cứ vào mẩu quảng cáo này để kiện công ty đó.",
+ "反歧视法看似公平合乎人性": "Luật chống phân biệt đối xử nhìn qua thì có vẻ công bằng, hợp với nhân tính.",
+ "它要求赋予所有人平等的地位和机会公民不能因为种族性别年龄相貌身体状况等的不同而受到不同待遇": "Nó yêu cầu trao cho tất cả mọi người địa vị và cơ hội bình đẳng, công dân không được bị đối xử khác biệt vì khác nhau về chủng tộc, giới tính, tuổi tác, ngoại hình, tình trạng sức khỏe, v.v.",
+ "但这样的法律真的合理吗": "Nhưng luật như vậy có thật sự hợp lý không?",
+ "它只保护一部分人的权益而剥夺另一部分人的权益更主要的是它侵犯了雇主根据工作的性质而自由地选择雇员的权利而求职者却可以按自己的意愿自由地选择工作雇主的选择权受到限制而求职者又没有限制": "Nó chỉ bảo vệ quyền lợi của một bộ phận người mà tước đoạt quyền lợi của một bộ phận khác; quan trọng hơn, nó xâm phạm quyền của người sử dụng lao động được tự do lựa chọn nhân viên dựa theo tính chất công việc, trong khi người tìm việc lại có thể tự do chọn công việc theo ý mình — quyền lựa chọn của người sử dụng lao động bị hạn chế, còn người tìm việc thì không.",
+ "它否认人的差别": "Nó phủ nhận sự khác biệt giữa con người.",
+ "它要求男女平等可实际上男女生理有别各有长短": "Nó đòi hỏi nam nữ bình đẳng, nhưng thực tế nam và nữ khác nhau về sinh lý, mỗi bên đều có điểm mạnh điểm yếu riêng.",
+ "论体力活男人比女人强论手工活女人又比男人强": "Nói về việc nặng nhọc thì đàn ông giỏi hơn phụ nữ; nói về việc thủ công tỉ mỉ thì phụ nữ lại giỏi hơn đàn ông.",
+ "若强行要求一律平等显然是抹杀男女差别结果是不能人尽其能造成人力资源的浪费": "Nếu cưỡng ép đòi hỏi bình đẳng tuyệt đối thì rõ ràng là xóa nhòa sự khác biệt nam nữ, kết quả là không thể để mỗi người phát huy hết khả năng của mình, gây lãng phí nguồn nhân lực.",
+ "它强调男女同工同酬说是保障妇女权益实际上更多的妇女可能因此找不到工作": "Nó nhấn mạnh nam nữ làm cùng việc thì hưởng cùng lương, nói là để bảo đảm quyền lợi của phụ nữ, nhưng thực tế có thể vì thế mà càng nhiều phụ nữ không tìm được việc làm.",
+ "它侵犯了公民的言论权利": "Nó xâm phạm quyền ngôn luận của công dân.",
+ "有些地方的法规甚至不让人使用具体字眼去描述一些人比如身体有缺陷的人": "Luật lệ ở một số nơi thậm chí không cho người ta dùng những từ ngữ cụ thể để miêu tả một số người, ví dụ như người có khiếm khuyết về cơ thể.",
+ "你不能把失明人士叫做瞎子不能把行动不便的人称为瘸子不能把精神不正常的人称做傻子使公民的言论受到限制": "Bạn không được gọi người khiếm thị là \"thằng mù\", không được gọi người đi lại khó khăn là \"thằng què\", không được gọi người có vấn đề về tâm thần là \"thằng ngốc\"… khiến lời nói của công dân bị hạn chế.",
+ "当然反歧视法的出发点是善意的它要保障公民的权益它要消灭不公平现象然而它的理据是荒谬的它的作用适得其反": "Đương nhiên, xuất phát điểm của luật chống phân biệt đối xử là thiện ý, nó muốn bảo đảm quyền lợi của công dân, muốn xóa bỏ những hiện tượng bất công, nhưng lý lẽ của nó lại phi lý, và nó chỉ gây phản tác dụng.",
+ "它不但没有保护公民的权益反而损害了公民的权益它不但没有消灭不公平现象反而在制造不公平": "Nó không những không bảo vệ quyền lợi của công dân mà ngược lại còn làm tổn hại quyền lợi của công dân; nó không những không xóa bỏ được bất công mà ngược lại còn đang tạo ra bất công.",
+ "国外有一位著名的文学家读小学时成绩一直很差": "Ở nước ngoài có một nhà văn nổi tiếng, hồi học tiểu học thành tích lúc nào cũng rất kém.",
+ "有一次他与一名尖子生同时迟到老师热情地关照尖子生不要因学习而累坏了身体却反过来嘲笑他早上睡懒觉": "Có một lần, cậu và một học sinh giỏi cùng đi học muộn, thầy giáo ân cần dặn học sinh giỏi đừng vì học hành mà làm hại sức khỏe, nhưng quay sang lại chế giễu cậu sáng ngủ nướng.",
+ "他受到歧视后每天发奋苦读三四个小时的书最后终于成才": "Sau khi bị phân biệt đối xử, mỗi ngày cậu đều gắng sức miệt mài đọc sách ba bốn tiếng đồng hồ, cuối cùng đã thành tài.",
+ "一个人是否坚强有时在于他能否忍受外界的种种压力这些压力就包含着歧视": "Một người có kiên cường hay không, đôi khi phụ thuộc vào việc người đó có chịu đựng được đủ loại áp lực từ bên ngoài hay không, và trong những áp lực đó có cả sự phân biệt đối xử.",
+ "歧视一半是天使一半是恶魔": "Sự phân biệt đối xử một nửa là thiên thần, một nửa là ác quỷ.",
+ "它既能使一个人信心全无也常常能够激起心灵深处最坚强的力量": "Nó vừa có thể khiến một người mất sạch niềm tin, lại cũng thường có thể khơi dậy sức mạnh kiên cường nhất từ sâu thẳm tâm hồn.",
+ "如果你想学业有成就必须艰难地承受别人施给你的有意或无意的歧视": "Nếu bạn muốn học hành thành đạt, bạn phải gian nan chịu đựng sự phân biệt đối xử, dù cố ý hay vô tình, mà người khác dành cho bạn.",
+ "金钱我们可以不要荣誉我们可以拒绝唯有尊严不可丢失": "Tiền bạc chúng ta có thể không cần, vinh dự chúng ta có thể từ chối, chỉ có phẩm giá là không thể đánh mất.",
+ "人的一生中要拥有尊严就必须同歧视作殊死的决斗": "Trong cuộc đời một con người, muốn giữ được phẩm giá thì phải quyết đấu một mất một còn với sự phân biệt đối xử.",
+ "让我们珍惜曾经遭受或至今遭受的歧视把它当做我们一生中最宝贵的一段经历用奋斗和拼搏铸成沉重的拳头把歧视砸碎": "Hãy trân trọng những lần phân biệt đối xử mà chúng ta từng gặp hoặc đến nay vẫn đang gặp, coi đó là trải nghiệm quý báu nhất trong đời, dùng sự phấn đấu và nỗ lực hết mình rèn thành nắm đấm nặng ký, đập tan sự phân biệt đối xử.",
+ "这个过程很艰难也非常漫长但必须坚强地走过去人生才会有价值": "Quá trình này rất gian nan, cũng vô cùng dài lâu, nhưng phải kiên cường vượt qua thì cuộc đời mới có giá trị.",
+ "倘若有人问起我们是否经常遭受歧视恐怕多数人都会给出肯定的答案然而耐人寻味的是我们自己往往也在不经意间扮演着歧视他人的角色": "Nếu có ai hỏi \"chúng ta có thường xuyên bị phân biệt đối xử không\", e rằng phần lớn mọi người đều sẽ đưa ra câu trả lời khẳng định; thế nhưng điều đáng suy ngẫm là chính chúng ta cũng thường vô tình đóng vai người phân biệt đối xử với người khác.",
+ "不可否认本地人歧视外地人有文凭者歧视无文凭者诸如此类的现象早已渗透进生活的方方面面以至于人们对其习以为常视而不见": "Không thể phủ nhận, những hiện tượng như người bản địa kỳ thị người nơi khác, người có bằng cấp kỳ thị người không có bằng cấp từ lâu đã thấm vào mọi mặt của cuộc sống, đến mức người ta coi đó là chuyện bình thường, làm như không thấy.",
+ "与此同时这种一边反对歧视一边制造歧视的矛盾心理往往源于歧视能够带来某种微妙的优越感": "Mặt khác, tâm lý mâu thuẫn \"vừa phản đối phân biệt đối xử, vừa tạo ra phân biệt đối xử\" này thường bắt nguồn từ việc phân biệt đối xử có thể mang lại một cảm giác hơn người tinh vi nào đó.",
+ "由此可见歧视之所以难以根除关键不在于他人而在于我们每个人内心深处的偏见与傲慢": "Từ đó có thể thấy, sở dĩ phân biệt đối xử khó bị loại bỏ tận gốc, mấu chốt không nằm ở người khác, mà nằm ở định kiến và sự kiêu ngạo sâu thẳm trong lòng mỗi chúng ta.",
+ "归根结底唯有先正视并反思自身的偏见才能真正打破这一恶性循环": "Suy cho cùng, chỉ khi trước hết nhìn thẳng và tự xem xét lại định kiến của bản thân, chúng ta mới có thể thực sự phá vỡ vòng luẩn quẩn này.",
+ "这一反思并不轻松却是打破偏见代际循环构建更为包容社会的必经之路容不得半点回避与敷衍": "Sự tự xem xét này không hề dễ dàng, nhưng lại là con đường tất yếu để phá vỡ vòng lặp định kiến truyền qua các thế hệ và xây dựng một xã hội bao dung hơn, không cho phép chút né tránh hay qua loa nào.",
+ "在你们国家歧视体现在哪些方面": "Ở nước bạn, sự phân biệt đối xử thể hiện ở những mặt nào?",
+ "你有过被歧视的经历吗": "Bạn đã từng bị phân biệt đối xử chưa?",
+ "说说事情的经过": "Hãy kể lại sự việc đã diễn ra như thế nào.",
+ "你能不能就歧视问题谈谈你的想法": "Bạn có thể nói suy nghĩ của mình về vấn đề phân biệt đối xử không?",
+ "只要我们认真地反思一下自己的过去就不难发现正是那些优势和快乐折磨着我们": "Chỉ cần chúng ta nghiêm túc nhìn lại quá khứ của mình một chút, sẽ không khó để nhận ra rằng chính những ưu thế và niềm vui ấy đã giày vò chúng ta.",
+ "说是保障妇女权益实际上更多的妇女可能因此找不到工作": "Nói là để bảo đảm quyền lợi của phụ nữ, nhưng thực tế có thể vì thế mà càng nhiều phụ nữ không tìm được việc làm."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
