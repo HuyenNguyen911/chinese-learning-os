@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4941,7 +4941,51 @@ const SENTENCE_VI = {
  "亲情归亲情财产归财产中大奖后对父母守口如瓶跟孝道根本不搭界": "Tình thân là tình thân, tài sản là tài sản, trúng giải lớn rồi giữ kín như bưng với cha mẹ chẳng liên quan gì đến đạo hiếu cả.",
  "父母说不定一不留神就把儿子的大秘密给泄露了": "Biết đâu cha mẹ sơ ý một chút là làm lộ mất bí mật lớn của con trai.",
  "换个角度说突如其来的500万元对于一个农村家庭也许是不能承受的": "Nhìn từ một góc độ khác, 5 triệu tệ ập đến bất ngờ đối với một gia đình nông thôn có lẽ là điều không gánh nổi.",
- "从情理上来说当然应该让父母过上好的生活": "Xét về tình về lý, đương nhiên nên để cha mẹ được sống tốt hơn."
+ "从情理上来说当然应该让父母过上好的生活": "Xét về tình về lý, đương nhiên nên để cha mẹ được sống tốt hơn.",
+ "韩国是世界上互联网最普及的国家之一": "Hàn Quốc là một trong những quốc gia có Internet phổ biến nhất thế giới.",
+ "根据韩国信息通信部最近公布的数据韩国6岁以上的上网人口达3482万约占总人口的73%": "Theo số liệu Bộ Thông tin và Truyền thông Hàn Quốc công bố gần đây, số người dùng Internet từ 6 tuổi trở lên ở Hàn Quốc đạt 34,82 triệu, chiếm khoảng 73% tổng dân số.",
+ "为了维护网络的健康和安全保护公民的隐私权名誉权和经济权益韩国政府从2002年起推动实施网络实名制": "Để giữ gìn sự lành mạnh và an toàn của mạng, bảo vệ quyền riêng tư, quyền danh dự và quyền lợi kinh tế của công dân, từ năm 2002 chính phủ Hàn Quốc đã thúc đẩy thực hiện chế độ tên thật trên mạng.",
+ "迄今韩国已通过立法监督管理和教育等措施对网络邮箱网络论坛博客乃至网络视频实行实名制成为全球贯彻实名制最彻底的国家之一这也使得韩国成为网络安全程度最高的国家": "Đến nay, thông qua các biện pháp lập pháp, giám sát, quản lý và giáo dục, Hàn Quốc đã áp dụng chế độ tên thật đối với hộp thư điện tử, diễn đàn mạng, blog và thậm chí cả video trực tuyến, trở thành một trong những quốc gia thực thi chế độ tên thật triệt để nhất thế giới; điều này cũng giúp Hàn Quốc trở thành quốc gia có mức độ an ninh mạng cao nhất.",
+ "韩国网络实名制的最大受益者是企业": "Người hưởng lợi lớn nhất từ chế độ tên thật trên mạng ở Hàn Quốc là doanh nghiệp.",
+ "如购物网站和企业网站愿意引入实名制因为通过身份证号码可以对顾客的性别年龄和生日等信息进行分类从而建立顾客数据库开展有针对性的营销活动": "Chẳng hạn, các trang mua sắm và trang web doanh nghiệp đều sẵn lòng áp dụng chế độ tên thật, vì qua số chứng minh nhân dân có thể phân loại các thông tin như giới tính, tuổi tác và ngày sinh của khách hàng, từ đó xây dựng cơ sở dữ liệu khách hàng và triển khai các hoạt động tiếp thị có mục tiêu.",
+ "网络实名制还促进了韩国网上银行网络消费等的快速发展吸引了大批资金进入网络产业带动韩国网络产业不断升级提升了网络服务的质量": "Chế độ tên thật trên mạng còn thúc đẩy ngân hàng trực tuyến, tiêu dùng trực tuyến... của Hàn Quốc phát triển nhanh chóng, thu hút một lượng lớn vốn đổ vào ngành công nghiệp Internet, kéo theo ngành Internet Hàn Quốc không ngừng nâng cấp và nâng cao chất lượng dịch vụ mạng.",
+ "同时实名制对保护青少年也有一定的积极意义": "Đồng thời, chế độ tên thật cũng có ý nghĩa tích cực nhất định trong việc bảo vệ thanh thiếu niên.",
+ "在最大的搜索服务网站NAVER输入一些成人词汇时需要输入姓名和身份证号码以进行成人认证这样就可以避免青少年从搜索引擎中获得淫秽电影和小说等信息": "Khi nhập một số từ ngữ dành cho người lớn trên NAVER, trang dịch vụ tìm kiếm lớn nhất, người dùng phải nhập họ tên và số chứng minh nhân dân để xác thực là người trưởng thành; như vậy có thể ngăn thanh thiếu niên lấy được các thông tin như phim, tiểu thuyết đồi trụy từ công cụ tìm kiếm.",
+ "公众对于实名制并不陌生储蓄实名制股票交易实名制住房实名制等众多实名制已经渗透到了公众生活的方方面面": "Công chúng không hề xa lạ với chế độ tên thật: hàng loạt chế độ tên thật như gửi tiết kiệm bằng tên thật, giao dịch cổ phiếu bằng tên thật, nhà ở bằng tên thật... đã len lỏi vào mọi mặt đời sống của mọi người.",
+ "可能是因为我们现实生活中有着太多的实名制公众对于虚拟网络世界的实名制心存疑虑": "Có lẽ vì trong đời sống thực của chúng ta đã có quá nhiều chế độ tên thật, nên công chúng còn nhiều nghi ngại đối với chế độ tên thật trong thế giới mạng ảo.",
+ "有网民发帖说是不是上厕所也要搞实名制": "Có cư dân mạng đăng bài nói: chẳng lẽ đi vệ sinh cũng phải dùng tên thật à?",
+ "可谁也没有想到的是上厕所也要搞实名制如今已成为了事实": "Nhưng điều không ai ngờ tới là việc đi vệ sinh cũng phải dùng tên thật nay đã thành sự thật.",
+ "据中国日报新近报道芬兰上厕所也搞实名制": "Theo tin gần đây của tờ \"China Daily\", ở Phần Lan đi vệ sinh cũng phải dùng tên thật.",
+ "近日芬兰高速公路路边的公共厕所安装了新型电子门锁": "Gần đây, các nhà vệ sinh công cộng ven đường cao tốc ở Phần Lan đã lắp loại khóa cửa điện tử kiểu mới.",
+ "人们如果要使用这些公共厕所需要发送手机短信告知真实姓名和护照号码才能将厕所门打开": "Nếu muốn sử dụng những nhà vệ sinh công cộng này, mọi người phải gửi tin nhắn điện thoại báo họ tên thật và số hộ chiếu thì mới mở được cửa.",
+ "上厕所也搞实名制这是为什么呢": "Đi vệ sinh cũng dùng tên thật, đó là vì sao vậy?",
+ "报道说主要目的是防止纵火与失窃案件的发生": "Bản tin cho biết, mục đích chính là ngăn chặn các vụ phóng hỏa và trộm cắp xảy ra.",
+ "可见实名制不是中国的专利而是国际惯例": "Có thể thấy, chế độ tên thật không phải là \"độc quyền\" của Trung Quốc mà là thông lệ quốc tế.",
+ "在一些发达国家名字就是一个人的品牌": "Ở một số nước phát triển, cái tên chính là thương hiệu của một con người.",
+ "个人经济信用犯罪记录享受福利收入高低纳税多少都和个人的名字紧紧相联": "Tín dụng kinh tế cá nhân, tiền án tiền sự, việc hưởng phúc lợi, thu nhập cao hay thấp, nộp thuế nhiều hay ít, tất cả đều gắn chặt với tên của mỗi người.",
+ "同时上网实名手机实名也都得到公众的普遍认可": "Đồng thời, việc lên mạng bằng tên thật hay dùng điện thoại bằng tên thật cũng đều được công chúng thừa nhận rộng rãi.",
+ "可以说实名制是网络时代匿名社会的管理基础是社会规范得以遵循的一种途径": "Có thể nói, chế độ tên thật là nền tảng quản lý của thời đại Internet và xã hội ẩn danh, là một con đường để các chuẩn mực xã hội được tuân thủ.",
+ "实名制的实行程度在一定意义上与社会法制化程度现代化程度同步": "Mức độ thực hiện chế độ tên thật, ở một ý nghĩa nào đó, song hành với mức độ pháp quyền hóa và hiện đại hóa của xã hội.",
+ "因此我们必须学会慢慢适应并接受实名制": "Vì vậy, chúng ta phải học cách từ từ thích nghi và chấp nhận chế độ tên thật.",
+ "推行网络实名制在很多时候会使人由于惧怕报复或舆论攻击等而不敢自由地表达自己真实的意见和主张这是对公民权利的不正当的限制是绝不能接受的": "Việc áp dụng chế độ tên thật trên mạng, trong nhiều trường hợp, sẽ khiến người ta vì sợ bị trả thù hay bị dư luận công kích mà không dám tự do bày tỏ ý kiến và quan điểm thật của mình; đây là sự hạn chế không chính đáng đối với quyền công dân, tuyệt đối không thể chấp nhận.",
+ "首先利用网络从事破坏活动的人只是极少数我们不能因为极少数人的不法行为而剥夺绝大多数守法者的合法权利": "Thứ nhất, những kẻ lợi dụng mạng để tiến hành hoạt động phá hoại chỉ là số cực ít; chúng ta không thể vì hành vi phạm pháp của số cực ít người mà tước đi quyền hợp pháp của đại đa số người tuân thủ pháp luật.",
+ "其次实名制不可能杜绝极少数人的不法行为不可能避免一些人在虚假的实名制下继续从事不法活动": "Thứ hai, chế độ tên thật không thể dẹp bỏ hoàn toàn hành vi phạm pháp của số cực ít người, cũng không thể tránh được việc một số người tiếp tục hoạt động phạm pháp dưới vỏ bọc tên thật giả mạo.",
+ "必然会有人通过顶替别人的名字来注册登录网站继续从事捣乱活动": "Chắc chắn sẽ có người mạo danh tên người khác để đăng ký, đăng nhập trang web và tiếp tục quấy phá.",
+ "更为重要的是在网上匿名发言从事破坏活动的人并不能真正逍遥法外": "Quan trọng hơn nữa, những kẻ phát ngôn ẩn danh trên mạng để phá hoại cũng không thể thực sự nhởn nhơ ngoài vòng pháp luật.",
+ "懂得网络技术的人都知道我们在网上活动都会在服务器上留下一个个脚印IP地址在自动地即时地记录着我们的踪影许多网上案件都是警方根据服务器的记录侦破的": "Ai hiểu về công nghệ mạng đều biết, mọi hoạt động của chúng ta trên mạng đều để lại từng \"dấu chân\" trên máy chủ, địa chỉ IP tự động và tức thời ghi lại \"dấu vết\" của chúng ta; nhiều vụ án trên mạng đã được cảnh sát phá dựa vào nhật ký của máy chủ.",
+ "事实说明在现实环境下匿名网友在网上说的话更多的是真话实话": "Thực tế cho thấy, trong môi trường hiện nay, những lời cư dân mạng ẩn danh nói trên mạng phần nhiều là lời thật, lời thật lòng.",
+ "匿名上网不仅是人们选择的一种自由还是一种生活方式是上网的乐趣所在也是网上文化繁荣的驱动力": "Lên mạng ẩn danh không chỉ là một sự tự do lựa chọn của con người mà còn là một lối sống, là cái thú của việc lên mạng, đồng thời là động lực cho sự phồn thịnh của văn hóa mạng.",
+ "如同化装舞会一样匿名上网匿名发言互动交流可以更多地激发人们的热情和创造力使人们更少地怀有羞怯和担心从而使人们的日常生活更加富于色彩互联网文化也更加趋于繁荣": "Cũng giống như một buổi dạ hội hóa trang, lên mạng ẩn danh, phát ngôn ẩn danh và giao lưu tương tác có thể khơi dậy nhiều hơn nhiệt huyết và sức sáng tạo của con người, khiến người ta bớt e ngại và lo lắng, từ đó làm cho cuộc sống thường ngày thêm muôn màu muôn vẻ, văn hóa Internet cũng ngày càng phồn thịnh.",
+ "说到底匿名上网是公民不可剥夺的权利": "Nói cho cùng, lên mạng ẩn danh là quyền không thể bị tước đoạt của công dân.",
+ "韩国自2002年起推行网络实名制如今已成为全球贯彻实名制最为彻底网络安全程度最高的国家之一": "Hàn Quốc áp dụng chế độ tên thật trên mạng từ năm 2002, đến nay đã trở thành một trong những quốc gia thực thi chế độ tên thật triệt để nhất và có mức độ an ninh mạng cao nhất thế giới.",
+ "不可否认实名制的推行离不开立法监督与教育等多重措施的协同配合而其成效也远不止于维护网络秩序这一层面": "Không thể phủ nhận, việc áp dụng chế độ tên thật không thể tách rời sự phối hợp đồng bộ của nhiều biện pháp như lập pháp, giám sát và giáo dục, và hiệu quả của nó cũng vượt xa phạm vi giữ gìn trật tự mạng.",
+ "与此同时实名制还为企业精准营销提供了数据基础并有效遏制了青少年接触不良信息的渠道": "Bên cạnh đó, chế độ tên thật còn cung cấp nền tảng dữ liệu cho doanh nghiệp tiếp thị chính xác, đồng thời ngăn chặn hiệu quả các kênh khiến thanh thiếu niên tiếp xúc với thông tin xấu.",
+ "由此可见一项看似单一的网络治理措施实则牵动着经济教育与社会安全等多重层面": "Từ đó có thể thấy, một biện pháp quản lý mạng tưởng chừng đơn lẻ thực ra lại tác động đến nhiều phương diện như kinh tế, giáo dục và an ninh xã hội.",
+ "归根结底网络实名制之所以能够取得显著成效关键并不在于技术本身的先进与否而在于制度设计是否周全执行是否到位": "Suy cho cùng, sở dĩ chế độ tên thật trên mạng đạt được hiệu quả rõ rệt, mấu chốt không nằm ở việc bản thân công nghệ có tiên tiến hay không, mà ở chỗ thiết kế chế độ có chu toàn hay không và việc thực thi có đến nơi đến chốn hay không.",
+ "唯有多方协力网络空间才能真正实现安全与自由并存": "Chỉ khi nhiều bên cùng chung sức, không gian mạng mới thực sự đạt được sự cùng tồn tại giữa an toàn và tự do.",
+ "这也为其他国家治理网络乱象平衡自由与秩序之间的张力提供了一个颇具参考价值的现实范本": "Điều này cũng cung cấp cho các quốc gia khác một hình mẫu thực tế khá có giá trị tham khảo trong việc chấn chỉnh sự hỗn loạn trên mạng và cân bằng mối căng thẳng giữa tự do và trật tự.",
+ "你觉得上网实名制有必要吗": "Bạn có thấy chế độ tên thật khi lên mạng là cần thiết không?",
+ "你认为实名制应该限制在合理范围吗": "Bạn có cho rằng chế độ tên thật nên được giới hạn trong phạm vi hợp lý không?"
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
