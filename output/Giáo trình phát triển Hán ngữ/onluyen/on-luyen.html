@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4377,7 +4377,40 @@ const SENTENCE_VI = {
  "换言之情谊的深浅从来不取决于谁为账单买单而取决于彼此是否愿意为对方腾出时间与真心这才是关系的核心": "Nói cách khác, tình cảm sâu hay nông chưa bao giờ phụ thuộc vào việc ai trả hóa đơn, mà phụ thuộc vào việc hai bên có sẵn lòng dành thời gian và tấm lòng cho nhau hay không, đó mới là cốt lõi của mối quan hệ.",
  "你会和你的男女朋友实行AA制吗": "Bạn có chia tiền kiểu AA với bạn trai/bạn gái của mình không?",
  "你怎么看家庭AA制婚姻AA制": "Bạn nghĩ sao về chia tiền kiểu AA trong gia đình / trong hôn nhân?",
- "其实大家心里都有数这次吃你的下次就该我的了": "Thực ra trong lòng mọi người đều hiểu, lần này ăn của anh, lần sau sẽ đến lượt tôi."
+ "其实大家心里都有数这次吃你的下次就该我的了": "Thực ra trong lòng mọi người đều hiểu, lần này ăn của anh, lần sau sẽ đến lượt tôi.",
+ "爱情呼叫转移是2007年中国电影集团公司和几家影视公司联合出品的一部贺岁片": "\"Chuyển hướng cuộc gọi tình yêu\" là một bộ phim Tết do Tập đoàn Điện ảnh Trung Quốc cùng một số công ty điện ảnh truyền hình phối hợp sản xuất năm 2007.",
+ "总制片人是中国电影集团总经理国家一级导演韩三平他被称为中国电影掌门人": "Tổng nhà sản xuất là Hàn Tam Bình, tổng giám đốc Tập đoàn Điện ảnh Trung Quốc kiêm đạo diễn hạng nhất quốc gia, ông được gọi là \"người cầm trịch của điện ảnh Trung Quốc\".",
+ "导演是张建亚他与陈凯歌张艺谋都被称为中国第五代导演": "Đạo diễn là Trương Kiến Á, ông cùng với Trần Khải Ca và Trương Nghệ Mưu đều được gọi là thế hệ đạo diễn thứ năm của Trung Quốc.",
+ "编剧之一是国内一个脱口秀节目主持人刘仪伟": "Một trong các biên kịch là Lưu Nghi Vĩ, người dẫn một chương trình talk show trong nước.",
+ "男主角由徐峥扮演女演员也都在国内有着较高的知名度": "Vai nam chính do Từ Tranh đảm nhận, các nữ diễn viên cũng đều khá nổi tiếng trong nước.",
+ "总而言之影片的制作团队阵容强大明星云集再加上搞笑的故事一上映就受到广大观众的喜爱和好评": "Tóm lại, đội ngũ sản xuất phim rất hùng hậu, quy tụ nhiều ngôi sao, cộng thêm câu chuyện hài hước, nên vừa công chiếu đã được đông đảo khán giả yêu thích và khen ngợi.",
+ "影片以一个男人寻找理想的妻子为主线通过主人公徐朗和12个女人的故事表现了一个男人感情生活当中的困惑和茫然": "Bộ phim lấy hành trình một người đàn ông đi tìm người vợ lý tưởng làm mạch chính, qua câu chuyện giữa nhân vật chính Từ Lãng và 12 người phụ nữ để thể hiện sự băn khoăn và mông lung trong đời sống tình cảm của một người đàn ông.",
+ "故事的内容是这样的男主人公徐朗是一位都市白领因为厌倦了老婆每周四天的炸酱面和永远不变的家居服在他自己都没意识到的情况下离婚二字脱口而出他被老婆赶出了家门": "Nội dung câu chuyện như sau: nam chính Từ Lãng là một nhân viên văn phòng ở thành phố, vì chán ngán món mì tương đen vợ nấu bốn ngày mỗi tuần và bộ đồ mặc nhà chẳng bao giờ thay đổi, nên trong lúc chính anh cũng không ý thức được, hai chữ \"ly hôn\" đã buột ra khỏi miệng, và anh bị vợ đuổi ra khỏi nhà.",
+ "这天夜里他遇见了一个自称天使的神秘人这位男子送给他一部手机并告诉他每按一个按键就会有一次艳遇就会把他梦想中理想的女性带到他的身边": "Đêm hôm đó, anh gặp một người bí ẩn tự xưng là thiên sứ, người đàn ông này tặng anh một chiếc điện thoại và nói với anh rằng mỗi lần bấm một phím sẽ có một cuộc gặp gỡ lãng mạn, sẽ đưa người phụ nữ lý tưởng trong mơ đến bên anh.",
+ "天使没有说谎从拿到手机的那一刻起陆续有12个不同类型的女人闯进了徐朗的生活": "Thiên sứ không nói dối, kể từ khoảnh khắc nhận được chiếc điện thoại, lần lượt có 12 người phụ nữ thuộc các kiểu khác nhau bước vào cuộc sống của Từ Lãng.",
+ "这部电影讲述了一个现实生活中绝对不可能发生的故事一个刚刚离婚的先生得到一部手机而手机上不同的按键可以让他找到不同类型的女人并跟她们交往": "Bộ phim kể một câu chuyện tuyệt đối không thể xảy ra ngoài đời thực: một người đàn ông vừa ly hôn có được một chiếc điện thoại, và các phím khác nhau trên điện thoại có thể giúp anh tìm được những kiểu phụ nữ khác nhau để qua lại với họ.",
+ "影片围绕的还是爱情这个古老的主题但是并没有刻意地去描述浪漫的场面而是以一种轻松幽默时尚的喜剧形式出现在娱乐的同时也包含着深刻的生活哲理": "Bộ phim vẫn xoay quanh chủ đề muôn thuở là tình yêu, nhưng không cố ý miêu tả những cảnh lãng mạn, mà xuất hiện dưới hình thức hài kịch nhẹ nhàng, dí dỏm, hợp thời, vừa giải trí vừa chứa đựng triết lý sống sâu sắc.",
+ "影片用一部手机把主人公与这些美女的故事串在一起把现实生活中男女交往的种种情节都融合在一起展现在观众面前通过这个电影告诉大家每个人都有权利去恋爱但是我们每个人必须珍惜每一次恋爱的机会": "Bộ phim dùng một chiếc điện thoại để xâu chuỗi câu chuyện giữa nhân vật chính với những người đẹp này, gộp đủ mọi tình huống nam nữ qua lại ngoài đời thực rồi bày ra trước mắt khán giả, qua đó muốn nói với mọi người rằng ai cũng có quyền yêu, nhưng mỗi chúng ta đều phải trân trọng từng cơ hội được yêu.",
+ "坦率地说爱情呼叫转移其实没什么太多的剧情是一部有着很浓的商业片味道的电影可是现实生活中的男男女女都可以在电影里看到自己或周围人的影子搞笑的内容让我们捧腹大笑的同时或许也可以让我们明白某种道理": "Nói thẳng ra, \"Chuyển hướng cuộc gọi tình yêu\" thực ra không có nhiều tình tiết, là một bộ phim mang đậm chất phim thương mại, nhưng những người đàn ông, đàn bà ngoài đời thực đều có thể thấy bóng dáng của chính mình hoặc người xung quanh trong phim; nội dung hài hước khiến chúng ta cười ôm bụng, đồng thời có lẽ cũng giúp ta hiểu ra một đạo lý nào đó.",
+ "一句话这是一部值得一看的喜剧片相信会给你带来不少笑声": "Nói tóm lại, đây là một bộ phim hài đáng xem, tin rằng sẽ mang lại cho bạn không ít tiếng cười.",
+ "爱情呼叫转移当年与一部007影片同时上映但仍然获得了全国1700万的票房收入成为了国内电影市场的一匹黑马受到媒体的高度关注和影迷的高度评价": "Năm đó \"Chuyển hướng cuộc gọi tình yêu\" công chiếu cùng lúc với một phim 007, nhưng vẫn đạt doanh thu phòng vé 17 triệu trên toàn quốc, trở thành một \"ngựa ô\" của thị trường điện ảnh trong nước, được truyền thông đặc biệt chú ý và người hâm mộ đánh giá rất cao.",
+ "制作方再接再厉第二年推出了续集爱情呼叫转移2爱情左灯右行这一次不再是男主角约会12位美女而是一位美女与12位男士的故事": "Nhà sản xuất tiếp tục phát huy, năm sau tung ra phần tiếp theo \"Chuyển hướng cuộc gọi tình yêu 2 — Tình yêu đèn trái rẽ phải\", lần này không còn là nam chính hẹn hò với 12 người đẹp, mà là câu chuyện giữa một người đẹp với 12 người đàn ông.",
+ "根据市场调查观众最喜欢的电影类型第一是喜剧第二是爱情": "Theo điều tra thị trường, thể loại phim khán giả thích nhất là hài, thứ hai là tình cảm.",
+ "有电影界专业人士总结一部贺岁喜剧片要想流行一定要具备三点首先是明星云集其次喜剧色彩要浓厚结尾要光明气氛要热闹喜庆最后一点是影片要有经典的台词": "Có chuyên gia trong giới điện ảnh tổng kết rằng, một bộ phim hài Tết muốn ăn khách nhất định phải có ba điều: thứ nhất là quy tụ nhiều ngôi sao; thứ hai, màu sắc hài phải đậm, kết thúc phải có hậu, không khí phải náo nhiệt, vui tươi; điều cuối cùng là phim phải có những câu thoại kinh điển.",
+ "爱情呼叫转移这个系列虽然不是好莱坞大片也没有获得奥斯卡大奖但仍然获得了观众的喜爱和极高的票房": "Loạt phim \"Chuyển hướng cuộc gọi tình yêu\" tuy không phải bom tấn Hollywood, cũng không giành được giải Oscar, nhưng vẫn được khán giả yêu thích và đạt doanh thu phòng vé rất cao.",
+ "所以说电影无所谓有没有教育意义无所谓获奖不获奖归根结底还是观众说了算只要观众认可就足够了": "Cho nên mới nói, phim có ý nghĩa giáo dục hay không, đoạt giải hay không cũng chẳng quan trọng, suy cho cùng vẫn là khán giả quyết định, chỉ cần khán giả công nhận là đủ.",
+ "一部贺岁片借由男主人公与十二个女性之间的离奇邂逅道出了当代都市人在情感世界中的普遍困惑理想的伴侣究竟是否真实存在": "Một bộ phim Tết, thông qua những cuộc gặp gỡ kỳ lạ giữa nam chính và mười hai người phụ nữ, đã nói lên nỗi băn khoăn chung của người thành thị hiện đại trong thế giới tình cảm — người bạn đời lý tưởng rốt cuộc có thật sự tồn tại hay không?",
+ "不可否认影片中那部能够按键召唤艳遇的神奇手机不过是一种夸张的艺术想象然而其背后所折射的心理却真实可感人们往往因对现实伴侣的平淡感到厌倦而对未知的可能性心存幻想": "Không thể phủ nhận, chiếc điện thoại thần kỳ có thể \"bấm phím là triệu hồi được cuộc gặp gỡ lãng mạn\" trong phim chẳng qua chỉ là một sự tưởng tượng nghệ thuật cường điệu, thế nhưng tâm lý phản chiếu phía sau nó lại chân thực, có thể cảm nhận được: con người thường vì thấy chán sự nhạt nhẽo của người bạn đời thực tại mà mơ tưởng về những khả năng chưa biết.",
+ "与此同时这种幻想也恰恰暴露出现代婚恋观中的浮躁与不安": "Mặt khác, chính sự mơ tưởng ấy cũng phơi bày sự hời hợt, nôn nóng và bất an trong quan niệm hôn nhân, tình yêu hiện đại.",
+ "由此可见与其耗费心力去追寻虚无缥缈的完美伴侣不如学会珍惜眼前人经营好手中的感情": "Từ đó có thể thấy, thay vì hao tâm tổn sức theo đuổi một \"người bạn đời hoàn hảo\" viển vông, chi bằng học cách trân trọng người trước mắt, vun đắp tốt tình cảm mình đang có.",
+ "归根结底幸福从来不在远方的邂逅而在日复一日的用心经营之中": "Suy cho cùng, hạnh phúc chưa bao giờ nằm ở những cuộc gặp gỡ nơi xa, mà nằm trong sự vun đắp tận tâm ngày qua ngày.",
+ "毕竟与其沉溺于虚构的浪漫想象不如脚踏实地经营眼前的感情这才是化解情感困惑最务实也最长久的办法": "Dù sao thì, thay vì chìm đắm trong những tưởng tượng lãng mạn hư cấu, chi bằng thực tế, vững vàng vun đắp tình cảm trước mắt, đó mới là cách thiết thực và bền lâu nhất để hóa giải những băn khoăn trong tình cảm.",
+ "电影是否一定要有教育意义是否一定要告诉人们某种道理": "Phim có nhất thiết phải có ý nghĩa giáo dục, có nhất thiết phải dạy con người một đạo lý nào đó không?",
+ "电影应该注重娱乐性还是教育性": "Phim nên chú trọng tính giải trí hay tính giáo dục?",
+ "总而言之影片的制作团队阵容强大明星云集": "Tóm lại, đội ngũ sản xuất phim rất hùng hậu, quy tụ nhiều ngôi sao.",
+ "这部电影讲述了一个现实生活中绝对不可能发生的故事": "Bộ phim kể một câu chuyện tuyệt đối không thể xảy ra ngoài đời thực.",
+ "电影无所谓有没有教育意义无所谓获奖不获奖只要观众认可就足够了": "Phim có ý nghĩa giáo dục hay không, đoạt giải hay không cũng chẳng quan trọng, chỉ cần khán giả công nhận là đủ.",
+ "故事的内容是这样的都市白领徐朗": "Nội dung câu chuyện như sau: Từ Lãng, một nhân viên văn phòng ở thành phố……"
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
