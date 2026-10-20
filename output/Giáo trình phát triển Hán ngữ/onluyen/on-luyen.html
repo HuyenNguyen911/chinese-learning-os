@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4590,7 +4590,54 @@ const SENTENCE_VI = {
  "他们的生活丰富多彩远不是一张办公桌加一台电脑组成的黑白电影": "Cuộc sống của họ muôn màu muôn vẻ, hoàn toàn không phải một bộ phim đen trắng chỉ gồm một cái bàn làm việc và một chiếc máy tính.",
  "让人欣慰的是也有相当多的经理人将环保慈善和教育作为人生的第二选择": "Điều đáng mừng là cũng có khá nhiều nhà quản lý chọn bảo vệ môi trường, từ thiện và giáo dục làm lựa chọn thứ hai của cuộc đời.",
  "你别跑那么远了正好我顺路捎带脚儿就买了": "Bạn đừng đi xa thế nữa, tôi tiện đường, mua luôn cho.",
- "工作狂懂得工作并快乐着的道理时不时忙里偷闲一番": "Người nghiện công việc hiểu được đạo lý \"vừa làm việc vừa vui vẻ\", thỉnh thoảng lại tranh thủ nghỉ ngơi giữa lúc bận rộn."
+ "工作狂懂得工作并快乐着的道理时不时忙里偷闲一番": "Người nghiện công việc hiểu được đạo lý \"vừa làm việc vừa vui vẻ\", thỉnh thoảng lại tranh thủ nghỉ ngơi giữa lúc bận rộn.",
+ "一位心理学家曾做过这样一个实验他让两个学生都做对30道题中的一半但是让学生A做对的题目尽量出现在前15道题而让学生B做对的题目尽量出现在后15道题然后让一些被试对两个学生进行评价两相比较谁更聪明一些": "Một nhà tâm lý học từng làm một thí nghiệm như sau: ông cho hai học sinh đều làm đúng một nửa trong số 30 câu hỏi, nhưng sắp xếp sao cho những câu học sinh A làm đúng nằm càng nhiều càng tốt ở 15 câu đầu, còn những câu học sinh B làm đúng nằm càng nhiều càng tốt ở 15 câu sau, rồi để một số người tham gia thí nghiệm đánh giá hai học sinh: so sánh hai người, ai thông minh hơn?",
+ "结果发现多数被试都认为学生A更聪明": "Kết quả cho thấy, đa số người tham gia đều cho rằng học sinh A thông minh hơn.",
+ "这就是第一印象效应": "Đây chính là hiệu ứng ấn tượng đầu tiên.",
+ "第一印象效应是指最初接触到的信息所形成的印象对以后评价的影响": "Hiệu ứng ấn tượng đầu tiên là chỉ sự ảnh hưởng của ấn tượng hình thành từ những thông tin tiếp nhận ban đầu đối với các đánh giá về sau.",
+ "心理学家认为第一印象主要是性别年龄衣着姿势面部表情等外部特征": "Các nhà tâm lý học cho rằng, ấn tượng đầu tiên chủ yếu đến từ những đặc điểm bên ngoài như giới tính, tuổi tác, trang phục, tư thế, nét mặt.",
+ "一般情况下一个人的体态姿势谈吐衣着打扮等都在一定程度上反映出这个人的内在素养和个性特征": "Thông thường, dáng vẻ, tư thế, cách ăn nói, cách ăn mặc trang điểm... của một người đều phản ánh ở một mức độ nhất định tố chất bên trong và đặc điểm tính cách của người đó.",
+ "学识修养差的暴发户不管怎么刻意修饰自己举手投足之间都看不出应有的优雅总会在不经意中露出马脚因为文化的修养是装不出来的": "Kẻ trọc phú kém học thức và tu dưỡng dù có cố tình tô vẽ bản thân thế nào, thì trong từng cử chỉ cũng chẳng thấy được nét thanh lịch đáng có, thế nào cũng sẽ vô tình \"lòi đuôi\", bởi vì sự tu dưỡng văn hóa là thứ không thể giả vờ được.",
+ "但是路遥知马力日久见人心仅凭第一印象就妄加判断以貌取人往往会带来不可弥补的错误": "Thế nhưng, \"đường dài mới biết ngựa hay, ở lâu mới biết lòng người\", chỉ dựa vào ấn tượng đầu tiên mà vội vàng phán xét, trông mặt mà bắt hình dong, thường sẽ dẫn đến những sai lầm không thể cứu vãn.",
+ "美国总统林肯曾因为相貌偏见拒绝了朋友推荐的一位才识过人的内阁成员": "Tổng thống Mỹ Lincoln từng vì định kiến về tướng mạo mà từ chối một thành viên nội các tài trí hơn người do bạn ông tiến cử.",
+ "当朋友愤怒地责怪林肯以貌取人时林肯回答说一个人过了四十岁就应该为自己的面孔负责": "Khi người bạn tức giận trách Lincoln trông mặt mà bắt hình dong, Lincoln đáp: \"Một người đã qua tuổi bốn mươi thì phải chịu trách nhiệm về gương mặt của mình.\"",
+ "这个故事告诉我们第一印象能产生巨大影响我们必须通过提高自身修养来提升自己的形象": "Câu chuyện này cho chúng ta biết ấn tượng đầu tiên có thể tạo ra ảnh hưởng to lớn, chúng ta phải nâng cao hình ảnh của bản thân bằng cách nâng cao sự tu dưỡng của chính mình.",
+ "远古时代外界已经对人类的祖先提出了要求迅速判断面对的是朋友还是敌人": "Từ thời xa xưa, thế giới bên ngoài đã đặt ra yêu cầu cho tổ tiên loài người: phải nhanh chóng phán đoán thứ mình đang đối mặt là bạn hay thù.",
+ "个人能否生存下来取决于他们对外界第一印象的准确判断能力": "Mỗi cá nhân có sống sót được hay không phụ thuộc vào khả năng phán đoán chính xác ấn tượng đầu tiên của họ về thế giới bên ngoài.",
+ "媒体策划专家有一句名言要给人好印象你只需要7秒钟": "Các chuyên gia hoạch định truyền thông có một câu nói nổi tiếng: muốn tạo ấn tượng tốt với người khác, bạn chỉ cần 7 giây.",
+ "第一印象有一半以上的内容与外表有关": "Hơn một nửa nội dung của ấn tượng đầu tiên liên quan đến ngoại hình.",
+ "不仅是一张漂亮的脸蛋还包括体态气质神情和衣着的细微差异": "Không chỉ là một khuôn mặt xinh đẹp, mà còn bao gồm cả những khác biệt tinh tế về dáng vẻ, khí chất, thần thái và trang phục.",
+ "第一印象有大约40%的内容与声音有关": "Khoảng 40% nội dung của ấn tượng đầu tiên liên quan đến giọng nói.",
+ "音调语气语速节奏都将影响第一印象的形成": "Âm điệu, ngữ khí, tốc độ nói, nhịp điệu đều sẽ ảnh hưởng đến sự hình thành ấn tượng đầu tiên.",
+ "第一印象中只有少于10%的内容与言语举止有关": "Trong ấn tượng đầu tiên, chỉ có dưới 10% nội dung liên quan đến lời nói và cử chỉ.",
+ "实验显示见到一个陌生人时你头发的样式比面部特征更能吸引对方的注意": "Thí nghiệm cho thấy, khi gặp một người lạ, kiểu tóc của bạn thu hút sự chú ý của đối phương hơn cả các đặc điểm trên khuôn mặt.",
+ "长发暗示着健康和性感短发看起来自信而成功": "Tóc dài gợi lên sự khỏe mạnh và gợi cảm, tóc ngắn trông tự tin và thành đạt.",
+ "此外握手也能传递重要信息": "Ngoài ra, cái bắt tay cũng có thể truyền tải những thông tin quan trọng.",
+ "研究发现那些握手时目光和你直接接触手掌干燥坚定有力自然摆动的人不仅能让你对他感觉良好还将取得你的信任": "Nghiên cứu phát hiện, những người khi bắt tay nhìn thẳng vào mắt bạn, lòng bàn tay khô ráo, nắm chắc và mạnh mẽ, lắc tay tự nhiên, không chỉ khiến bạn có cảm tình với họ mà còn giành được sự tin tưởng của bạn.",
+ "我们认识一个人先是通过眼耳等感性器官直接感受对方是个什么样的人": "Khi chúng ta làm quen với một người, trước tiên là dùng các giác quan như mắt, tai để trực tiếp cảm nhận đối phương là người như thế nào.",
+ "这就是人们所说的第一印象它属于感性认识": "Đây chính là điều người ta gọi là \"ấn tượng đầu tiên\", nó thuộc về nhận thức cảm tính.",
+ "然后通过看到和听到的东西进行分析推理判断上升到理性认识才可能得出这个人具有什么样的道德品质思想修养文化水准等实质性的结论": "Sau đó, thông qua việc phân tích, suy luận, phán đoán những gì đã thấy và nghe, nâng lên thành nhận thức lý tính, mới có thể rút ra kết luận thực chất về việc người này có phẩm chất đạo đức, tu dưỡng tư tưởng, trình độ văn hóa như thế nào.",
+ "因此一个人给别人的第一印象不好别人就会对他产生反感疏远情绪反之则会产生好感亲近情绪": "Vì vậy, nếu một người để lại ấn tượng đầu tiên không tốt cho người khác, người khác sẽ nảy sinh cảm giác ác cảm, xa cách với anh ta; ngược lại sẽ nảy sinh thiện cảm, muốn gần gũi.",
+ "当然正确认识一个人不能单靠第一印象": "Tất nhiên, muốn nhìn nhận đúng một người thì không thể chỉ dựa vào ấn tượng đầu tiên.",
+ "由于时间场合条件和信息不足等限制这个第一印象有时会和这个人的实际才智和内心世界相差甚远": "Do những hạn chế về thời gian, hoàn cảnh, điều kiện và thông tin không đầy đủ, ấn tượng đầu tiên này đôi khi khác xa với tài trí thực tế và thế giới nội tâm của người đó.",
+ "但是这第一印象所形成的认识由于种种原因在许多情况下难得有下一次的再认识或者就因为这糟糕的第一印象而失去下一次再认识的可能": "Nhưng nhận thức hình thành từ ấn tượng đầu tiên này, vì nhiều lý do khác nhau, trong rất nhiều trường hợp khó có dịp được nhận thức lại lần nữa, hoặc chính vì ấn tượng đầu tiên tồi tệ ấy mà mất đi cơ hội được nhìn nhận lại.",
+ "有人会说这是不是要我们为了给人留下良好的第一印象而去弄虚作假呢": "Có người sẽ hỏi, vậy có phải là muốn chúng ta vì để lại ấn tượng đầu tiên tốt đẹp cho người khác mà đi giả dối, gian dối hay không?",
+ "不是的": "Không phải vậy.",
+ "如果你仅仅为了给人留下良好的第一印象而把内心真实的东西掩盖起来或许可以一时取悦于人但不久就会在第二次第三次的接触中暴露出你的本来面目那反而更糟": "Nếu bạn chỉ vì muốn để lại ấn tượng đầu tiên tốt đẹp mà che giấu những điều chân thật bên trong, có lẽ có thể làm vừa lòng người khác nhất thời, nhưng chẳng bao lâu sau, qua lần tiếp xúc thứ hai, thứ ba, bộ mặt thật của bạn sẽ bị lộ ra, như thế còn tệ hơn.",
+ "要想给别人留下良好的能经受考验的第一印象平时就应养成文明的为人处世待人接物的好习惯": "Muốn để lại cho người khác ấn tượng đầu tiên tốt đẹp và đứng vững trước thử thách, thì ngày thường nên rèn luyện thói quen tốt là sống, cư xử và đối nhân xử thế một cách văn minh.",
+ "一项心理学实验表明即便两名学生答对的题目数量相同仅因正确答案出现的顺序不同便足以让旁观者对其聪明程度作出截然不同的判断这正是第一印象效应的典型体现": "Một thí nghiệm tâm lý học cho thấy, cho dù hai học sinh trả lời đúng cùng một số câu hỏi, chỉ vì thứ tự xuất hiện của các câu trả lời đúng khác nhau, cũng đủ khiến người quan sát đưa ra những đánh giá hoàn toàn khác nhau về \"mức độ thông minh\" của họ — đây chính là biểu hiện điển hình của hiệu ứng ấn tượng đầu tiên.",
+ "不可否认外部特征如衣着谈吐姿态往往在无形中左右着他人对我们的最初评价": "Không thể phủ nhận rằng, những đặc điểm bên ngoài như trang phục, cách ăn nói, dáng điệu thường vô hình chung chi phối đánh giá ban đầu của người khác về chúng ta.",
+ "然而与此同时路遥知马力日久见人心仅凭片刻印象便妄加论断难免有失公允甚至可能酿成难以弥补的误判": "Tuy nhiên, mặt khác, \"đường dài mới biết ngựa hay, ở lâu mới biết lòng người\", chỉ dựa vào ấn tượng chốc lát mà vội vàng kết luận thì khó tránh khỏi thiếu công bằng, thậm chí có thể dẫn đến những phán đoán sai lầm khó cứu vãn.",
+ "林肯曾因相貌偏见错失一位贤才足见此理": "Lincoln từng vì định kiến về tướng mạo mà bỏ lỡ một người tài, đủ thấy đạo lý này.",
+ "由此可见第一印象固然重要却绝非评判一个人的全部依据": "Từ đó có thể thấy, ấn tượng đầu tiên tuy quan trọng, nhưng tuyệt đối không phải là toàn bộ căn cứ để đánh giá một con người.",
+ "归根结底唯有不断提升自身修养才能真正赢得长久而非一时的认可": "Suy cho cùng, chỉ có không ngừng nâng cao sự tu dưỡng của bản thân mới có thể thực sự giành được sự công nhận lâu dài chứ không phải nhất thời.",
+ "这也提醒我们评判他人切忌急于求成唯有给予足够的时间与耐心才能看清一个人真正的品行与内在修养": "Điều này cũng nhắc nhở chúng ta, khi đánh giá người khác tuyệt đối không nên nóng vội, chỉ khi dành đủ thời gian và sự kiên nhẫn mới có thể nhìn rõ phẩm hạnh và sự tu dưỡng bên trong thực sự của một người.",
+ "你觉得路遥知马力日久见人心这句话有道理吗": "Bạn có thấy câu \"đường dài mới biết ngựa hay, ở lâu mới biết lòng người\" có lý không?",
+ "为了给人留下良好的第一印象可以适当弄虚作假吗": "Vì muốn để lại ấn tượng đầu tiên tốt đẹp cho người khác, có thể giả dối ở mức độ vừa phải không?",
+ "心理学家让一些被试对两个学生进行评价两相比较谁更聪明一些": "Nhà tâm lý học để một số người tham gia thí nghiệm đánh giá hai học sinh: so sánh hai người, ai thông minh hơn?",
+ "一个人的体态姿势谈吐衣着打扮等都在一定程度上反映出这个人的内在素养和个性特征": "Dáng vẻ, tư thế, cách ăn nói, cách ăn mặc trang điểm... của một người đều phản ánh ở một mức độ nhất định tố chất bên trong và đặc điểm tính cách của người đó.",
+ "学识修养差的暴发户总会在不经意中露出马脚因为文化的修养是装不出来的": "Kẻ trọc phú kém học thức và tu dưỡng thế nào cũng sẽ vô tình \"lòi đuôi\", bởi vì sự tu dưỡng văn hóa là thứ không thể giả vờ được.",
+ "在正常情况下第一印象或多或少反映出一个人的真实情况": "Trong tình huống bình thường, ấn tượng đầu tiên ít nhiều phản ánh con người thật của một người."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
