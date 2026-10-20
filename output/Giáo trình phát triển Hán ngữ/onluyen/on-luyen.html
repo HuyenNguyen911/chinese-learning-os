@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -3992,7 +3992,53 @@ const SENTENCE_VI = {
  "你认为最伟大的发明应该是什么": "Bạn cho rằng \"phát minh vĩ đại nhất\" là gì?",
  "电池的确是人类的一个重要发明然而电池对环境造成的污染也是我们不得不重视的一个事实": "Pin quả thật là một phát minh quan trọng của nhân loại, thế nhưng ô nhiễm môi trường do pin gây ra cũng là một sự thật mà chúng ta không thể không coi trọng.",
  "克隆技术在农业生物学医学等方面都有广泛的应用价值这固然是科技的进步但是克隆人却使人们不得不面对人类道德伦理的挑战": "Kỹ thuật nhân bản vô tính có giá trị ứng dụng rộng rãi trong nông nghiệp, sinh học, y học..., đây tất nhiên là một bước tiến của khoa học công nghệ, nhưng \"người nhân bản\" lại buộc con người phải đối mặt với thách thức về đạo đức luân lý.",
- "移动通信迅速发展很重要的原因在于它所带来的方便在于它对人类生活质量的提升": "Thông tin di động phát triển nhanh chóng, nguyên nhân rất quan trọng là ở sự tiện lợi mà nó mang lại, ở việc nó nâng cao chất lượng cuộc sống của con người."
+ "移动通信迅速发展很重要的原因在于它所带来的方便在于它对人类生活质量的提升": "Thông tin di động phát triển nhanh chóng, nguyên nhân rất quan trọng là ở sự tiện lợi mà nó mang lại, ở việc nó nâng cao chất lượng cuộc sống của con người.",
+ "据统计现代汉语中每年大概要出现1000个左右新词新语": "Theo thống kê, mỗi năm tiếng Hán hiện đại xuất hiện khoảng 1000 từ ngữ mới.",
+ "有的是随着新事物新现象新观念的出现而产生的如手机宽带有的是来自外语或汉语方言的如脱口秀买单有的是旧词语有了新的用法和含义如下海充电还有的是词语衍生或缩略形成的如由白领蓝领衍生的金领粉领个人演唱会的缩略形式个唱": "Có từ ra đời cùng với sự xuất hiện của sự vật mới, hiện tượng mới, quan niệm mới, như \"điện thoại di động\", \"băng thông rộng\"; có từ đến từ tiếng nước ngoài hoặc phương ngữ tiếng Hán, như \"talk show\", \"thanh toán hóa đơn\"; có từ là từ cũ mang cách dùng và hàm nghĩa mới, như \"下海\" (bỏ việc ra kinh doanh), \"充电\" (nạp thêm kiến thức); lại có từ hình thành do phái sinh hoặc rút gọn, như \"金领\" (cổ vàng), \"粉领\" (cổ hồng) phái sinh từ \"白领\" (cổ trắng), \"蓝领\" (cổ xanh), hay \"个唱\" là dạng rút gọn của \"个人演唱会\" (liveshow cá nhân).",
+ "语言学家告诉我们语言随社会的产生而产生随社会的发展而发展": "Các nhà ngôn ngữ học cho chúng ta biết, ngôn ngữ ra đời cùng với sự ra đời của xã hội và phát triển cùng với sự phát triển của xã hội.",
+ "语言是社会生活的一面镜子也是社会变化和发展的晴雨表": "Ngôn ngữ là tấm gương phản chiếu đời sống xã hội, cũng là phong vũ biểu cho những biến đổi và phát triển của xã hội.",
+ "当今世界科学技术的进步社会生活和生活观念的变化产生了很多新事物新现象随之我们的语言中也出现了不少新词新语": "Thế giới ngày nay, sự tiến bộ của khoa học kỹ thuật cùng những thay đổi trong đời sống và quan niệm sống đã sinh ra rất nhiều sự vật mới, hiện tượng mới, theo đó ngôn ngữ của chúng ta cũng xuất hiện không ít từ ngữ mới.",
+ "它们有的随着事物的消失而消亡有的逐渐在语言中稳定并保留了下来": "Trong số đó, có từ mất đi cùng với sự biến mất của sự vật, có từ dần dần ổn định và được giữ lại trong ngôn ngữ.",
+ "旧词语的淘汰新词新语的产生不仅反映了语言自身的规律也折射出政治科技文化和生活的变化": "Sự đào thải từ ngữ cũ và sự ra đời từ ngữ mới không chỉ phản ánh quy luật tự thân của ngôn ngữ, mà còn phản chiếu những thay đổi về chính trị, khoa học công nghệ, văn hóa và đời sống.",
+ "拼客指的是通过互联网或其他方式将互不相识素不相识的人集中在一起共同完成一件事或一项活动并分摊所需费用": "\"拼客\" là chỉ việc thông qua Internet hoặc các cách khác, tập hợp những người vốn hoàn toàn không quen biết nhau lại để cùng làm một việc hoặc một hoạt động, rồi chia nhau chi phí cần thiết.",
+ "这里的拼可不是拼命拼争而是拼凑拼合的意思": "Chữ \"拼\" ở đây không phải là liều mạng hay tranh giành, mà mang nghĩa ghép lại, góp chung.",
+ "他们中有的拼车拼餐拼房还有的拼卡拼游拼购总之对拼客们来讲生活中可拼的太多了": "Trong số họ, có người đi chung xe, ăn chung, ở ghép, có người dùng chung thẻ, đi du lịch chung, mua hàng chung; tóm lại, với dân \"拼客\", trong cuộc sống có quá nhiều thứ có thể góp chung.",
+ "他们既可以分摊成本共享优惠又能享受快乐结交朋友": "Họ vừa có thể chia sẻ chi phí, cùng hưởng ưu đãi, lại vừa được tận hưởng niềm vui và kết bạn.",
+ "用拼客们自己的话讲这是一种节约时尚快乐共赢的新型生活方式这是一种潮流一种理念也是一种生活态度": "Nói theo cách của chính những người \"拼客\", đây là một lối sống kiểu mới tiết kiệm, thời thượng, vui vẻ và đôi bên cùng có lợi; đây là một trào lưu, một quan niệm, và cũng là một thái độ sống.",
+ "拼房就是找人合租住房": "Ở ghép: tức là tìm người cùng thuê chung nhà.",
+ "有不少大学毕业刚刚参加工作的年轻人收入不高找个人和自己拼房既能分摊房租节省开支又能告别一个人的孤独享受家一样的生活": "Có không ít bạn trẻ vừa tốt nghiệp đại học, mới đi làm, thu nhập không cao, tìm một người ở ghép với mình thì vừa chia được tiền nhà, tiết kiệm chi tiêu, lại vừa thoát khỏi cảnh cô đơn một mình, được hưởng cuộc sống như ở nhà.",
+ "说来说去就是花得更少住得更好": "Nói tới nói lui, chính là tiêu ít hơn mà ở tốt hơn.",
+ "拼车就是几个人一起搭车上路": "Đi chung xe: tức là vài người cùng đi chung một chiếc xe.",
+ "可以是出租车也可以是私家车车费油费均摊或根据路程远近按比例分摊可以拼车上下班也可以拼车去郊游": "Có thể là taxi, cũng có thể là xe riêng; tiền xe, tiền xăng chia đều hoặc chia theo tỷ lệ quãng đường xa gần; có thể đi chung xe đi làm và về nhà, cũng có thể đi chung xe đi dã ngoại.",
+ "拼客们说公交太慢地铁太挤打车太贵说来说去还是拼车方便快捷经济实惠还能节约能源": "Dân \"拼客\" nói, xe buýt quá chậm, tàu điện ngầm quá đông, đi taxi quá đắt, nói tới nói lui, vẫn là đi chung xe tiện lợi nhanh chóng, kinh tế thiết thực, lại còn tiết kiệm được năng lượng.",
+ "拼卡现代都市的年轻人谁的口袋里没有几张卡呀": "Dùng chung thẻ: giới trẻ ở đô thị hiện đại, ai mà chẳng có vài cái thẻ trong túi?",
+ "购物卡美容卡游泳卡健身卡可这些卡一般都有使用期限一个人很难在规定的期限内用完一张卡": "Thẻ mua sắm, thẻ làm đẹp, thẻ bơi, thẻ tập gym, nhưng những thẻ này thường có thời hạn sử dụng, một người rất khó dùng hết một thẻ trong thời hạn quy định.",
+ "于是拼客们就两个人或更多人合办一张卡共用一张卡发挥卡的最大价值降低每个人的成本": "Thế là dân \"拼客\" hai người hoặc nhiều người cùng làm chung một thẻ, dùng chung một thẻ, phát huy tối đa giá trị của thẻ, giảm chi phí cho mỗi người.",
+ "达人可不是一个新词早在中国古代就有了表示的是明白事理的人豁达的人显贵的人": "\"达人\" không phải là một từ mới, từ thời Trung Quốc cổ đại đã có, chỉ người hiểu lẽ đời, người phóng khoáng, người hiển quý.",
+ "而现代达人指的是在某一领域某一方面非常专业非常精通的人也就是专家行家比高手还高手": "Còn \"达人\" thời hiện đại là chỉ người cực kỳ chuyên nghiệp, cực kỳ tinh thông trong một lĩnh vực, một phương diện nào đó, tức là chuyên gia, người trong nghề, còn cao tay hơn cả cao thủ.",
+ "不过关于它的来源也有不同的说法有人说达人一词来自日语还有人说它源自英语的talent": "Tuy nhiên, về nguồn gốc của nó cũng có những cách nói khác nhau, có người nói từ \"达人\" đến từ tiếng Nhật, cũng có người nói nó bắt nguồn từ từ \"talent\" trong tiếng Anh.",
+ "不管怎么样达人一词现在使用非常广泛尤其受到网友的推崇和喜爱只要是在某一方面有丰富的经验在某一方面是高手都可以被称为达人": "Dù thế nào đi nữa, từ \"达人\" hiện nay được dùng rất rộng rãi, đặc biệt được cư dân mạng chuộng và yêu thích; chỉ cần có kinh nghiệm phong phú ở một mặt nào đó, là cao thủ ở mặt nào đó, đều có thể được gọi là \"达人 ...\".",
+ "下面这些达人你应该能猜个八九不离十": "Những \"达人\" dưới đây, chắc bạn đoán được tám, chín phần mười.",
+ "音乐达人一定是在音乐方面有特殊才华的": "\"达人\" âm nhạc: chắc chắn là người có tài năng đặc biệt về âm nhạc.",
+ "减肥达人不用说一定熟悉并尝试过各类减肥方法": "\"达人\" giảm cân: khỏi phải nói, chắc chắn rành và đã thử qua đủ loại phương pháp giảm cân.",
+ "游戏达人理所当然熟悉几乎所有的游戏游戏中的所有难关对他来说都不在话下": "\"达人\" game: đương nhiên là rành gần như mọi trò chơi, mọi cửa ải khó trong game đối với họ đều chẳng đáng kể gì.",
+ "美食达人必定是爱吃会吃周围的餐厅饭店没有他不知道的": "\"达人\" ẩm thực: chắc chắn là người mê ăn, sành ăn, nhà hàng quán xá xung quanh không có chỗ nào họ không biết.",
+ "时尚达人他们对一切时尚元素一定不会陌生想知道时下最流行什么什么最时髦问他准没错": "\"达人\" thời trang: họ chắc chắn không xa lạ với mọi yếu tố thời trang, muốn biết hiện nay cái gì thịnh hành nhất, cái gì hợp mốt nhất, hỏi họ là chuẩn không cần chỉnh.",
+ "恋爱达人爱情专家的称号非他莫属有丰富的恋爱经验": "\"达人\" tình yêu: danh hiệu chuyên gia tình yêu không ai khác ngoài họ, có kinh nghiệm yêu đương phong phú.",
+ "除此之外你会在网上常常看到一些求助信息也都是请问各位达人如": "Ngoài ra, trên mạng bạn sẽ thường xuyên thấy một số tin nhờ giúp đỡ cũng đều kiểu \"Xin hỏi các vị \"达人\", ví dụ như...\".",
+ "如果你还不能理解达人的意思那就也在网上发个帖子可以这样问哪位达人指教一下什么是达人": "Nếu bạn vẫn chưa hiểu nghĩa của \"达人\", thì cũng đăng một bài lên mạng, có thể hỏi thế này: \"Vị \"达人\" nào chỉ giáo giúp với, \"达人\" là gì?\"",
+ "拼客一词的兴起折射出当代都市青年一种新型的生活理念通过与陌生人协作共享分摊成本共享优惠": "Sự thịnh hành của từ \"拼客\" phản chiếu một quan niệm sống kiểu mới của giới trẻ đô thị đương đại: thông qua hợp tác, chia sẻ với người lạ để chia nhau chi phí, cùng hưởng ưu đãi.",
+ "拼房拼车拼卡形式虽然多样内核却始终如一以较低的代价换取更为体面的生活品质": "Ở ghép, đi chung xe, dùng chung thẻ, hình thức tuy đa dạng nhưng cốt lõi trước sau vẫn như một: bỏ ra cái giá thấp hơn để đổi lấy chất lượng cuộc sống tươm tất hơn.",
+ "不可否认这种生活方式之所以广受年轻人青睐不仅在于经济实惠更在于它为原本疏离的都市人际关系注入了一丝温度陌生人因拼而相识因共同的需求而彼此扶持": "Không thể phủ nhận, lối sống này sở dĩ được giới trẻ ưa chuộng rộng rãi, không chỉ vì kinh tế thiết thực, mà còn vì nó truyền thêm chút hơi ấm cho các mối quan hệ vốn xa cách giữa người thành thị: người lạ quen nhau nhờ \"góp chung\", và nâng đỡ lẫn nhau vì cùng chung nhu cầu.",
+ "与此同时这也从侧面反映出都市青年面对高昂生活成本时的务实与智慧": "Mặt khác, điều này cũng phản ánh từ một góc độ sự thực tế và khôn ngoan của giới trẻ đô thị khi đối mặt với chi phí sinh hoạt đắt đỏ.",
+ "由此可见拼客现象绝非一时的权宜之计而是一种值得关注的兼具经济理性与社会温情的新型生活潮流": "Từ đó có thể thấy, hiện tượng \"拼客\" tuyệt nhiên không phải là giải pháp tình thế nhất thời, mà là một trào lưu sống kiểu mới đáng được quan tâm, vừa có lý tính kinh tế vừa có tình người trong xã hội.",
+ "这种共享理念与当下倡导的绿色节约型社会不谋而合也让人与人之间多了一份彼此信任与互助的温情": "Quan niệm chia sẻ này trùng khớp với xã hội xanh, tiết kiệm đang được khuyến khích hiện nay, cũng khiến giữa người với người có thêm một phần ấm áp của sự tin tưởng và giúp đỡ lẫn nhau.",
+ "选择一两个新词新语谈一谈它们反映了什么文化现象": "Chọn một hai từ ngữ mới, nói xem chúng phản ánh hiện tượng văn hóa gì.",
+ "结合具体例子谈谈新词语产生的原因": "Kết hợp ví dụ cụ thể, nói về nguyên nhân ra đời của từ ngữ mới.",
+ "现代达人指的是在某一领域某一方面非常专业非常精通的人也就是专家行家比高手还高手": "\"达人\" thời hiện đại là chỉ người cực kỳ chuyên nghiệp, cực kỳ tinh thông trong một lĩnh vực, một phương diện nào đó, tức là chuyên gia, người trong nghề, còn cao tay hơn cả cao thủ.",
+ "用拼客们自己的话讲这是一种节约时尚快乐共赢的新型生活方式": "Nói theo cách của chính những người \"拼客\", đây là một lối sống kiểu mới tiết kiệm, thời thượng, vui vẻ và đôi bên cùng có lợi.",
+ "公交太慢地铁太挤打车太贵说来说去还是拼车方便快捷经济实惠": "Xe buýt quá chậm, tàu điện ngầm quá đông, đi taxi quá đắt, nói tới nói lui, vẫn là đi chung xe tiện lợi nhanh chóng, kinh tế thiết thực.",
+ "据统计现代汉语中每年大概要出现1000个左右新词新语有的是随着新事物新现象新观念的出现而产生的如手机宽带有的是来自外语或汉语方言的如脱口秀买单": "Theo thống kê, mỗi năm tiếng Hán hiện đại xuất hiện khoảng 1000 từ ngữ mới, có từ ra đời cùng với sự xuất hiện của sự vật mới, hiện tượng mới, quan niệm mới, như \"điện thoại di động\", \"băng thông rộng\"; có từ đến từ tiếng nước ngoài hoặc phương ngữ tiếng Hán, như \"talk show\", \"thanh toán hóa đơn\"."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
