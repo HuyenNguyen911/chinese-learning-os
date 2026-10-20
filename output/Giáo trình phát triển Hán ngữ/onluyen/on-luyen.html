@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4410,7 +4410,48 @@ const SENTENCE_VI = {
  "总而言之影片的制作团队阵容强大明星云集": "Tóm lại, đội ngũ sản xuất phim rất hùng hậu, quy tụ nhiều ngôi sao.",
  "这部电影讲述了一个现实生活中绝对不可能发生的故事": "Bộ phim kể một câu chuyện tuyệt đối không thể xảy ra ngoài đời thực.",
  "电影无所谓有没有教育意义无所谓获奖不获奖只要观众认可就足够了": "Phim có ý nghĩa giáo dục hay không, đoạt giải hay không cũng chẳng quan trọng, chỉ cần khán giả công nhận là đủ.",
- "故事的内容是这样的都市白领徐朗": "Nội dung câu chuyện như sau: Từ Lãng, một nhân viên văn phòng ở thành phố……"
+ "故事的内容是这样的都市白领徐朗": "Nội dung câu chuyện như sau: Từ Lãng, một nhân viên văn phòng ở thành phố……",
+ "关于高尔夫运动的起源有种种不同的说法流传最广的一种是说高尔夫运动起源于15世纪的苏格兰": "Về nguồn gốc của môn golf có nhiều cách giải thích khác nhau, phổ biến nhất là cho rằng golf bắt nguồn từ Scotland vào thế kỷ 15.",
+ "据说当时苏格兰的牧羊人在放牧之余喜欢在一片绿色的草地上做一种打石子的游戏": "Tương truyền khi ấy, những người chăn cừu ở Scotland lúc rảnh rỗi sau khi chăn thả thường thích chơi một trò đánh đá trên một bãi cỏ xanh.",
+ "起初是用牧羊的鞭子击打石子后来改用木板把石子打进洞穴里去再后来才有了球杆": "Ban đầu họ dùng roi chăn cừu để đánh đá, sau đó chuyển sang dùng tấm gỗ đánh đá vào hang, rồi mãi về sau mới có gậy đánh bóng.",
+ "因为天气寒冷牧羊人玩这种游戏时经常带一瓶烈性酒靠饮酒来取暖": "Vì thời tiết giá lạnh, người chăn cừu khi chơi trò này thường mang theo một chai rượu mạnh, uống rượu để giữ ấm.",
+ "每打一个洞喝一口酒打完18个洞一瓶酒也差不多喝完了这也就形成了后来一场高尔夫球要打18个洞的习惯这一项规定一直沿袭到今天": "Mỗi lần đánh xong một lỗ thì uống một ngụm, đánh xong 18 lỗ thì chai rượu cũng gần cạn, từ đó hình thành thói quen một trận golf phải đánh 18 lỗ, và quy định này được giữ nguyên cho đến ngày nay.",
+ "高尔夫运动从产生到发展成为风行世界的体育运动项目经历了漫长的历史过程": "Từ khi ra đời cho đến khi trở thành môn thể thao thịnh hành khắp thế giới, golf đã trải qua một quá trình lịch sử lâu dài.",
+ "最开始它只是苏格兰牧羊人的游戏后来逐渐引起贵族和民间青年的浓厚兴趣成为苏格兰的一项传统项目而后传入英格兰": "Lúc đầu nó chỉ là trò chơi của những người chăn cừu Scotland, sau dần thu hút sự quan tâm mạnh mẽ của giới quý tộc và thanh niên trong dân gian, trở thành một môn truyền thống của Scotland, rồi sau đó du nhập vào Anh.",
+ "19世纪末传到美洲澳洲及南非20世纪初传到亚洲最终成为全世界闻名的一个运动项目": "Cuối thế kỷ 19 golf lan sang châu Mỹ, châu Úc và Nam Phi, đầu thế kỷ 20 lan sang châu Á, cuối cùng trở thành một môn thể thao nổi tiếng toàn thế giới.",
+ "由于打高尔夫球最早在贵族中盛行再加上场地和设备昂贵所以有贵族运动之称": "Do golf ban đầu thịnh hành trong giới quý tộc, cộng thêm sân bãi và dụng cụ đắt đỏ, nên nó được mệnh danh là \"môn thể thao quý tộc\".",
+ "高尔夫的英文GOLF是以绿色Green氧气Oxygen阳光Light和友谊Friendship这四个词的第一个字母组成的寓意就是在明媚的阳光下脚下是一片绿色的草地呼吸着新鲜的空气在大自然的怀抱里与朋友打球游戏": "Tên tiếng Anh \"GOLF\" được ghép từ chữ cái đầu của bốn từ: xanh (Green), oxy (Oxygen), ánh nắng (Light) và tình bạn (Friendship), hàm ý là dưới ánh nắng rực rỡ, chân bước trên thảm cỏ xanh, hít thở không khí trong lành, cùng bạn bè chơi bóng giữa vòng tay của thiên nhiên.",
+ "总之都是在描述高尔夫运动是在清新而美丽的环境中边散步边打球边聊天既愉快又轻松": "Tóm lại, tất cả đều nhằm miêu tả rằng chơi golf là vừa tản bộ, vừa đánh bóng, vừa trò chuyện trong một môi trường trong lành và tươi đẹp, vừa vui vẻ lại vừa thư thái.",
+ "一项运动能兼有上述这么多诱人的内容难怪它在我们现代社会中也备受欢迎呢": "Một môn thể thao có thể hội tụ ngần ấy điều hấp dẫn như trên, thảo nào nó cũng rất được ưa chuộng trong xã hội hiện đại của chúng ta.",
+ "与许多其他运动项目不同高尔夫大多是在没有裁判员监督的情形下进行的": "Khác với nhiều môn thể thao khác, golf phần lớn được tiến hành mà không có trọng tài giám sát.",
+ "这项运动依靠每个参与者主动为其他球员着想自觉遵守规则": "Môn thể thao này dựa vào việc mỗi người tham gia chủ động nghĩ cho những người chơi khác và tự giác tuân thủ luật lệ.",
+ "不论比赛多么激烈所有球员都自觉约束自己的行为在任何时候都表现出礼貌谦让和良好的运动精神": "Dù trận đấu có gay cấn đến đâu, mọi người chơi đều tự giác kiềm chế hành vi của mình, lúc nào cũng thể hiện sự lịch sự, nhường nhịn và tinh thần thể thao tốt đẹp.",
+ "这就是高尔夫运动的精髓所在": "Đó chính là tinh hoa của môn golf.",
+ "至于胜负简单来说就是选手用球杆击球入洞18洞为一轮杆数最少者获胜": "Còn về thắng thua, nói đơn giản là người chơi dùng gậy đánh bóng vào lỗ, 18 lỗ là một vòng, ai có số gậy (số cú đánh) ít nhất sẽ thắng.",
+ "参加高尔夫比赛的最大禁忌就是迟到": "Điều tối kỵ nhất khi tham gia thi đấu golf là đến muộn.",
+ "如果是与朋友间的比赛迟到会被列为最不受欢迎的球友倘若是正式比赛迟到轻则受罚重则丧失比赛资格": "Nếu đến muộn trong trận đấu giữa bạn bè với nhau, bạn sẽ bị xếp vào loại bạn chơi golf kém được chào đón nhất; còn nếu đến muộn trong trận đấu chính thức, nhẹ thì bị phạt, nặng thì mất tư cách thi đấu.",
+ "高尔夫比赛过去只有职业选手参加从1965年英国公开赛起业余选手也允许参加这大大推动了高尔夫运动在全世界的发展": "Trước đây các giải golf chỉ có vận động viên chuyên nghiệp tham gia; từ giải Anh Mở rộng năm 1965, vận động viên nghiệp dư cũng được phép tham gia, điều này đã thúc đẩy mạnh mẽ sự phát triển của golf trên toàn thế giới.",
+ "目前世界上高尔夫运动赛事十分频繁其中最著名的是世界男子职业高尔夫四大赛事包括每年4月举行的大师赛6月举行的美国公开赛7月举行的英国公开赛和8月举行的美国职业高尔夫球协会PGA锦标赛": "Hiện nay, các giải đấu golf trên thế giới diễn ra rất dày đặc, trong đó nổi tiếng nhất là bốn giải lớn của golf chuyên nghiệp nam thế giới, gồm giải Masters tổ chức vào tháng 4, giải Mỹ Mở rộng tháng 6, giải Anh Mở rộng tháng 7 và giải vô địch của Hiệp hội Golf Chuyên nghiệp Mỹ (PGA) tháng 8 hằng năm.",
+ "连续赢得这四项赛事在高尔夫球界被称为大满贯": "Liên tiếp giành chiến thắng ở cả bốn giải này được giới golf gọi là \"Grand Slam\".",
+ "在世界高尔夫球坛上泰格伍兹TigerWoods是当之无愧的头号种子选手也是世界上身价最高的运动员之一": "Trên làng golf thế giới, Tiger Woods là tay golf hạt giống số một xứng đáng, đồng thời là một trong những vận động viên có giá trị cao nhất thế giới.",
+ "自从1998年以来各大比赛都是伍兹唱主角他获得了14个大满贯赛冠军9次成为奖金王成为9个年度的最佳球员": "Kể từ năm 1998, Woods luôn là nhân vật chính ở các giải đấu lớn; anh đã giành 14 chức vô địch Grand Slam, 9 lần đứng đầu về tiền thưởng và 9 năm được bầu là tay golf xuất sắc nhất.",
+ "出色的成绩背后是巨大的收入": "Đằng sau thành tích xuất sắc là nguồn thu nhập khổng lồ.",
+ "伍兹2008年挣了接近11亿美元他和耐克Nike签订了1亿美元的天价合同时间长达5年": "Năm 2008 Woods kiếm được gần 110 triệu đô la Mỹ; anh đã ký với Nike một hợp đồng giá trên trời 100 triệu đô la, thời hạn đến 5 năm.",
+ "自从2002年取代舒马赫成为收入最高的运动员以来伍兹已经连续8年收入排名第一": "Kể từ năm 2002 thay thế Schumacher trở thành vận động viên có thu nhập cao nhất, Woods đã 8 năm liên tiếp đứng đầu bảng xếp hạng thu nhập.",
+ "但是由于他的绯闻让他代言的体育用品销量下降泰格伍兹2010年的收入与过去一年相比下降了2200万美元不过他依旧是美国体育界排名第一位的印钞机": "Nhưng vì scandal tình ái khiến doanh số các sản phẩm thể thao mà anh làm đại diện giảm sút, thu nhập năm 2010 của Tiger Woods giảm 22 triệu đô la so với năm trước, tuy vậy anh vẫn là \"cỗ máy in tiền\" số một của làng thể thao Mỹ.",
+ "泰格伍兹凭借十四座大满贯桂冠与惊人的商业代言一度稳坐世界体坛收入榜首然而一场绯闻却令其代言的体育用品销量应声下滑收入锐减两千余万美元": "Nhờ 14 danh hiệu Grand Slam cùng những hợp đồng quảng cáo thương mại đáng kinh ngạc, Tiger Woods từng vững vàng ở ngôi đầu bảng thu nhập của làng thể thao thế giới, thế nhưng một vụ scandal lại khiến doanh số các sản phẩm thể thao anh đại diện lập tức tụt dốc, thu nhập giảm mạnh hơn 20 triệu đô la.",
+ "不可否认顶尖运动员在赛场上所创造的辉煌成绩足以令其名利双收但与此同时公众人物的私德瑕疵同样会以更为迅猛的方式反噬其商业价值": "Không thể phủ nhận, những thành tích huy hoàng mà vận động viên hàng đầu tạo ra trên sân đấu đủ giúp họ danh lợi song toàn, nhưng mặt khác, những vết nhơ về đạo đức cá nhân của người của công chúng cũng sẽ quay lại tàn phá giá trị thương mại của họ với tốc độ còn nhanh hơn.",
+ "由此可见竞技成绩与个人声誉二者看似各自独立实则早已密不可分": "Từ đó có thể thấy, thành tích thi đấu và danh tiếng cá nhân tưởng như độc lập với nhau, nhưng thực ra từ lâu đã gắn bó khăng khít không thể tách rời.",
+ "值得深思的是在商业化程度日益加深的体育界运动员所承担的早已不仅是赛场上的胜负更包括其一言一行所应负有的社会责任": "Điều đáng suy ngẫm là, trong một làng thể thao ngày càng thương mại hóa sâu sắc, thứ vận động viên phải gánh vác từ lâu không chỉ là thắng thua trên sân đấu, mà còn là trách nhiệm xã hội đối với từng lời nói, việc làm của mình.",
+ "归根结底唯有德才兼备方能行稳致远": "Suy cho cùng, chỉ có tài đức vẹn toàn mới có thể đi vững và đi xa.",
+ "这也提醒着每一位站在聚光灯下的公众人物赛场上的辉煌固然耀眼场外的言行同样决定着他们能走多远": "Điều này cũng nhắc nhở mỗi người của công chúng đứng dưới ánh đèn sân khấu rằng: hào quang trên sân đấu tuy rực rỡ, nhưng lời nói và hành động ngoài sân cũng quyết định họ có thể đi được bao xa.",
+ "谈谈你最喜欢或最擅长的体育运动": "Hãy nói về môn thể thao mà bạn thích nhất hoặc giỏi nhất.",
+ "谈谈你对友谊第一比赛第二这句话的看法": "Hãy nói về quan điểm của bạn đối với câu \"Tình hữu nghị là trên hết, thi đấu là thứ hai\".",
+ "高尔夫运动起源于15世纪的苏格兰": "Golf bắt nguồn từ Scotland vào thế kỷ 15.",
+ "他靠反复地观看比赛录像来了解对手": "Anh ấy dựa vào việc xem đi xem lại video trận đấu để tìm hiểu đối thủ.",
+ "最开始它只是苏格兰牧羊人的游戏后来成为苏格兰的一项传统项目而后传入英格兰": "Lúc đầu nó chỉ là trò chơi của những người chăn cừu Scotland, sau đó trở thành một môn truyền thống của Scotland, rồi du nhập vào Anh.",
+ "19世纪末传到美洲澳洲及南非20世纪传到亚洲最终成为全世界闻名的一个运动项目": "Cuối thế kỷ 19 golf lan sang châu Mỹ, châu Úc và Nam Phi, thế kỷ 20 lan sang châu Á, cuối cùng trở thành một môn thể thao nổi tiếng toàn thế giới.",
+ "倘若是正式比赛迟到轻则受罚重则丧失比赛资格": "Nếu đến muộn trong trận đấu chính thức, nhẹ thì bị phạt, nặng thì mất tư cách thi đấu."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
