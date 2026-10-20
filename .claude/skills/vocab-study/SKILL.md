@@ -6,7 +6,7 @@ description: >
   flashcard (active recall + Leitner, neo theo Activation của vault, resume đúng thẻ khi lỡ đóng
   giữa chừng), chiết tự + mẹo nhớ tiếng Việt, phát âm 🔊. Cũng xử lý lệnh "áp dụng lên hạng" để ghi
   hàng chờ D→C (từ flashcard) vào tier-a.md. Use when user muốn "học từ vựng", "review từ vựng",
-  "sinh trang học từ", "cập nhật từ vựng theo bài", "áp dụng lên hạng".
+  "sinh trang học từ", "cập nhật từ vựng theo bài", "áp dụng lên hạng", "đồng bộ tiến độ".
 author: Chinese Learning OS
 ---
 
@@ -103,6 +103,12 @@ Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu
 - `exp_extra.json` — nhóm 生词拓展 thêm tay cho bài sheet 'Chung từ' thiếu (vd Bài 28).
 - `bai_titles.json` — map `{"<N>": "<标题 bài khóa>"}`. build_md gắn tên vào heading `## Bài N — <title>`, render_html hiện cạnh mỗi bài + nhãn flashcard. lesson-prep tự ghi khi bóc bài mới.
 - `tv.json`, `ct.json` — trung gian, tái sinh mỗi lần chạy bước 1 (không cần giữ tay).
+
+## Đồng bộ tiến độ giữa các máy (lệnh "đồng bộ tiến độ")
+- Tiến độ (SRS, cờ đánh dấu, ghi chú sửa) nằm trong `output/Giáo trình chuẩn/hsk6/study/tu-vung-progress.js` (`window.__PROGRESS=...`), trang nạp bằng `<script>` cạnh nó → `git pull` xong mở trang là tự nạp, không cần chọn file.
+- Nút "Xuất tiến độ" ghi thẳng file này vào repo (File System Access, chọn thư mục `study/` 1 lần mỗi máy; tự ghi lại sau mỗi lần học nếu Chrome còn quyền). Trình duyệt không ghi thẳng được → fallback tải file về.
+- Lệnh "đồng bộ tiến độ" → chạy `python .claude/skills/vocab-study/scripts/sync_progress.py` (ở `main`): fetch, gộp với bản origin, commit + push. Gộp theo `ts` từng từ (SRS/db), cờ theo `flagsTs` cả bản — không ghi đè nhau giữa các máy.
+- `tu-vung-progress.json` là định dạng cũ, không còn dùng.
 
 ## Nguyên tắc
 - Pinyin auto (pypinyin) + luật sửa 多音字 (朴→pǔ…), 儿化 (…儿→r), dấu `'`, âm theo ngữ cảnh từ.

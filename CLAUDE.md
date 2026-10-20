@@ -141,6 +141,7 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 | output/&lt;bộ giáo trình&gt;/hskN/buoiX_&lt;chude&gt;/baitap/ | Exercise Generator (baitap.json + hocsinh/worksheet.docx + audio + dapan/dapan.docx) |
 | knowledge/hsk-exam-bank/ | Exercise Generator (seed có review gate) |
 | output/Giáo trình chuẩn/hsk6/study/tu-vung.{md,html} | Vocab Study (đọc raw/Từ vựng.xlsx; đọc knowledge/vocabulary để lấy Activation; xem dòng tier-a.md bên dưới cho phạm vi ghi hẹp qua lệnh "áp dụng lên hạng") |
+| output/Giáo trình chuẩn/hsk6/study/tu-vung-progress.js | Trang tu-vung.html (nút Xuất / tự ghi) + Vocab Study `sync_progress.py` (gộp + commit + push; luôn về `main`) |
 | .claude/skills/vocab-study/data/* | Vocab Study (hanzi.json, mnemonic.json — tích lũy; desc_override + vi_override = lấp 释义/意义 trống, ex_override = **ghi đè** 例句 cá nhân hoá; exp_extra) |
 | .claude/skills/**/SKILL.md, CLAUDE.md | Close Session (chỉ sửa sau khi user duyệt từng mục; không đụng memory) |
 | knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D; **ghi đè** luật tier-*.md ở trên cho riêng file này). Vocab Study cũng được ghi, phạm vi hẹp: CHỈ sửa field Seen/Activation/Last Studied của entry đã có sẵn, CHỈ D→C, qua lệnh "áp dụng lên hạng" xử lý file export từ flashcard — không thêm entry mới, không đụng Confidence/Speaking/Writing/Activation B/A (2 mức đó vẫn chỉ lên qua dùng thật, do Learning Strategist batch update) |
