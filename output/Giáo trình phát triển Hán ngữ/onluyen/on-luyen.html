@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -4552,7 +4552,45 @@ const SENTENCE_VI = {
  "不要说驾照营业执照等需要年审的证书了连身份证也有个十年期或二十年期更换的规定": "Chưa nói đến bằng lái xe, giấy phép kinh doanh và những loại giấy tờ phải thẩm định hằng năm, ngay cả chứng minh nhân dân cũng có quy định phải đổi sau mười năm hoặc hai mươi năm.",
  "一段婚姻后再说我愿意不光更具真情实意更重要的是具有更强的责任感": "Sau một thời gian chung sống mà nói lại \"Anh/Em đồng ý\" thì không chỉ chân tình thật ý hơn, mà quan trọng hơn là mang tinh thần trách nhiệm mạnh mẽ hơn.",
  "那不只是减少了离婚的麻烦降低了离婚率它还将带来一系列有趣的新现象": "Như vậy không chỉ bớt được rắc rối khi ly hôn, giảm tỷ lệ ly hôn, mà còn kéo theo hàng loạt hiện tượng mới thú vị.",
- "如果一对情侣结婚时可以选择结婚证有效期那就减少了夫妻吵架的可能性用不着吵": "Nếu một cặp đôi khi kết hôn có thể chọn thời hạn hiệu lực của giấy kết hôn, thì sẽ giảm khả năng vợ chồng cãi nhau, chẳng cần cãi làm gì."
+ "如果一对情侣结婚时可以选择结婚证有效期那就减少了夫妻吵架的可能性用不着吵": "Nếu một cặp đôi khi kết hôn có thể chọn thời hạn hiệu lực của giấy kết hôn, thì sẽ giảm khả năng vợ chồng cãi nhau, chẳng cần cãi làm gì.",
+ "在我们周围不难遇到这样的人他们每天工作超过10个小时脑子里从来没有周末节假日的概念他们基本不会有上下班的界限家是一个有床的办公地点而办公室则随时可以成为加班时躺倒睡觉的家偶尔陪家人朋友逛逛街他们也多半是人在心不在脑子里念念不忘的还是工作对于工作他们可以说是已经到了一种痴迷的状态一旦离开了工作就会精神不振他们是工作狂": "Quanh ta, không khó để gặp những người như thế này: mỗi ngày họ làm việc hơn 10 tiếng, trong đầu chưa bao giờ có khái niệm cuối tuần hay ngày lễ; họ gần như không có ranh giới giữa giờ làm và giờ tan làm, nhà là một nơi làm việc có giường, còn văn phòng thì lúc nào cũng có thể thành \"nhà\" để nằm lăn ra ngủ khi tăng ca; thỉnh thoảng đi dạo phố cùng gia đình, bạn bè, họ cũng phần lớn là thân ở đó mà hồn ở đâu, trong đầu vẫn canh cánh chuyện công việc... Với công việc, có thể nói họ đã say mê đến mức ám ảnh, hễ rời xa công việc là tinh thần uể oải. Họ chính là những người nghiện công việc.",
+ "在崇尚竞争的现代社会工作狂经常是一个褒义词常常和雄心勃勃或责任感挂上钩许多人会很自豪地说我就是工作狂": "Trong xã hội hiện đại đề cao cạnh tranh, \"người nghiện công việc\" thường là một từ mang nghĩa tốt, hay được gắn với sự đầy tham vọng hoặc tinh thần trách nhiệm, nhiều người sẽ rất tự hào nói: \"Tôi chính là người nghiện công việc.\"",
+ "其一真正热爱自己的工作以此为乐乐此不疲激情不减": "Thứ nhất, thật sự yêu công việc của mình, lấy đó làm niềm vui, say mê không biết mệt, nhiệt huyết không hề giảm.",
+ "其二没有营造起真正属于自己的生活": "Thứ hai, chưa xây dựng được một cuộc sống thật sự của riêng mình.",
+ "这样的人或者因为客观原因与爱人两地分居家人不在身边或者缺少愉悦身心的兴趣爱好生活单调乏味只有同事没有朋友不得不从工作中寻找乐趣": "Những người này, hoặc vì lý do khách quan mà phải sống xa vợ/chồng, gia đình không ở bên cạnh, hoặc thiếu những sở thích giúp thư thái thân tâm, cuộc sống đơn điệu nhạt nhẽo, chỉ có đồng nghiệp mà không có bạn bè, nên đành phải tìm niềm vui trong công việc.",
+ "其三把工作当做逃避的手段": "Thứ ba, coi công việc là cách để trốn tránh.",
+ "这样的人可能在生活中有某种苦恼不满或比较自卑为了逃避或者忘却这些令人伤神的事只好疯狂地投入工作他们只有在忘我工作时才能获得自信并体会到快感": "Những người này có thể trong cuộc sống đang có nỗi phiền muộn, sự bất mãn nào đó hoặc khá tự ti; để trốn tránh hay quên đi những chuyện khiến mình đau đầu ấy, họ đành lao vào công việc một cách điên cuồng, chỉ khi làm việc quên mình họ mới có được sự tự tin và cảm nhận được niềm sảng khoái.",
+ "大多数经理人不是工作狂": "Phần lớn các nhà quản lý không phải là người nghiện công việc.",
+ "虽然他们承受着巨大的工作压力却依然保持着一颗热爱生活的心": "Tuy phải chịu áp lực công việc rất lớn, họ vẫn giữ được một trái tim yêu cuộc sống.",
+ "有的人喜欢旅行有一双探索和追求美的眼睛有的人偏爱美食有一张挑剔的嘴还有一个健康的胃还有的人喜欢音乐喜欢文学喜欢运动他们的生活丰富多彩远不是一张办公桌加一台电脑组成的黑白电影": "Có người thích du lịch, có một đôi mắt biết khám phá và theo đuổi cái đẹp; có người mê ẩm thực, có một cái miệng kén chọn cùng một cái dạ dày khỏe mạnh; lại có người thích âm nhạc, thích văn học, thích thể thao... Cuộc sống của họ muôn màu muôn vẻ, hoàn toàn không phải một bộ phim đen trắng chỉ gồm một cái bàn làm việc và một chiếc máy tính.",
+ "而让人欣慰的是也有相当多的经理人将环保慈善和教育作为人生的第二选择": "Điều đáng mừng là cũng có khá nhiều nhà quản lý chọn bảo vệ môi trường, từ thiện và giáo dục làm lựa chọn thứ hai của cuộc đời.",
+ "有经理人网友说我很早就在考虑慈善事业虽然我手里没有很多的富余资金但我尽我所能积极资助困难的人并鼓励身边的人参与": "Có một nhà quản lý là cư dân mạng chia sẻ: \"Tôi đã nghĩ đến hoạt động từ thiện từ rất sớm. Tuy trong tay tôi không có nhiều tiền dư dả, nhưng tôi cố hết sức mình, tích cực giúp đỡ những người khó khăn và khuyến khích những người xung quanh cùng tham gia.\"",
+ "有的经理人网友还说人类的文明全赖知识的传承传播知识是一件非常有意思的事": "Có nhà quản lý khác trên mạng còn nói: \"Văn minh nhân loại hoàn toàn dựa vào sự truyền thừa tri thức, truyền bá tri thức là một việc vô cùng thú vị.\"",
+ "作为社会的中坚力量经理人的言行举止既代表这个社会的文明程度也影响着其他阶层的人": "Là lực lượng nòng cốt của xã hội, lời nói và cử chỉ của các nhà quản lý vừa thể hiện trình độ văn minh của xã hội này, vừa ảnh hưởng đến những người thuộc các tầng lớp khác.",
+ "对比早期的拼命三郎式人生观现在的经理人更重视个人生活的品质工作与生活的平衡以及环保慈善教育这些维系社会和谐发展的重要因素": "So với nhân sinh quan kiểu \"liều mạng làm việc\" thời trước, các nhà quản lý ngày nay coi trọng hơn chất lượng cuộc sống cá nhân, sự cân bằng giữa công việc và cuộc sống, cũng như những yếu tố quan trọng duy trì sự phát triển hài hòa của xã hội như bảo vệ môi trường, từ thiện, giáo dục.",
+ "最后分享一下一位经理人网友的有趣留言我的生活目标很简单一把队伍带好二做一个好儿子好丈夫好父亲三成为一名准职业的业余网球高手": "Cuối cùng, xin chia sẻ một bình luận thú vị của một nhà quản lý trên mạng: \"Mục tiêu sống của tôi rất đơn giản: một là dẫn dắt đội ngũ thật tốt; hai là làm một người con tốt, người chồng tốt, người cha tốt; ba là trở thành một tay chơi quần vợt nghiệp dư giỏi gần như chuyên nghiệp.\"",
+ "很多人和朋友聊天儿时是三句话不离本行醉心于工作的点点滴滴": "Nhiều người khi trò chuyện với bạn bè thì cứ nói vài câu lại quay về chuyện nghề, say sưa kể từng chuyện nhỏ nhặt trong công việc.",
+ "这就是工作狂的表现": "Đó chính là biểu hiện của người nghiện công việc.",
+ "做个工作狂值不值": "Làm người nghiện công việc có đáng không?",
+ "这不能一概而论": "Chuyện này không thể vơ đũa cả nắm.",
+ "有人总在收拾同事的烂摊子或者不停地重复工作整日疲惫丧失了刚入行的激情最后靠辞职来调整我看就不值这种人只能称做过度工作者纯粹是工作量过多的问题而不是工作狂": "Có người lúc nào cũng phải dọn dẹp mớ hỗn độn của đồng nghiệp, hoặc liên tục làm đi làm lại một việc, cả ngày mệt mỏi, mất hết nhiệt huyết thuở mới vào nghề, cuối cùng phải nghỉ việc để điều chỉnh lại; theo tôi như thế là không đáng. Những người này chỉ có thể gọi là \"người làm việc quá sức\", đơn thuần là vấn đề khối lượng công việc quá nhiều, chứ không phải người nghiện công việc.",
+ "我们一般说这个人是个工作狂大多是他主动要成为一个工作狂懂得工作并快乐着的道理时不时忙里偷闲一番工作不但不会压垮身心反而会成为快乐生活的滋补品": "Khi ta nói ai đó là người nghiện công việc, phần lớn là người đó chủ động muốn trở thành người nghiện công việc, hiểu được đạo lý \"vừa làm việc vừa vui vẻ\", thỉnh thoảng lại tranh thủ nghỉ ngơi giữa lúc bận rộn; công việc không những không đè bẹp thân tâm, mà ngược lại còn trở thành liều thuốc bổ cho một cuộc sống vui vẻ.",
+ "例如我身边一个摄影师每天除去拍广告还总去酒吧音乐节等拍些根本不赚钱的照片这种发自内心的热爱实在可贵": "Ví dụ, một nhiếp ảnh gia quanh tôi, mỗi ngày ngoài chụp quảng cáo, còn hay đến quán bar, lễ hội âm nhạc... để chụp những bức ảnh chẳng kiếm ra đồng nào; tình yêu xuất phát từ tận đáy lòng như vậy thật đáng quý.",
+ "其实我们的社会还是很需要工作狂的但我们也要看清太多的人用全部的努力不过换来了普通的生活": "Thật ra xã hội chúng ta vẫn rất cần những người nghiện công việc, nhưng chúng ta cũng phải nhìn rõ rằng có quá nhiều người dốc toàn bộ nỗ lực mà cũng chỉ đổi lại được một cuộc sống bình thường.",
+ "就像两个人爬山一个人永远向往远处的风景一个人却始终留意欣赏路边的风景谁更辛苦呢": "Giống như hai người leo núi, một người luôn hướng về phong cảnh ở phía xa, một người lại luôn để ý thưởng thức cảnh vật ven đường, ai vất vả hơn?",
+ "经理人群体虽然承受着巨大的工作压力却并未因此沦为单一的工作机器旅行美食音乐公益皆是他们生活中不可或缺的组成部分": "Giới quản lý tuy phải chịu áp lực công việc rất lớn, nhưng không vì thế mà trở thành \"cỗ máy làm việc\" đơn điệu — du lịch, ẩm thực, âm nhạc, hoạt động công ích đều là những phần không thể thiếu trong cuộc sống của họ.",
+ "不可否认早期拼命三郎式的人生观一度被视为成功的必经之路然而随着社会观念的转变越来越多的人开始意识到事业的成就若以牺牲生活品质为代价终究得不偿失": "Không thể phủ nhận, nhân sinh quan kiểu \"liều mạng làm việc\" thời trước từng được coi là con đường tất yếu dẫn đến thành công; tuy nhiên cùng với sự thay đổi trong quan niệm xã hội, ngày càng nhiều người bắt đầu nhận ra rằng nếu thành tựu sự nghiệp phải trả giá bằng chất lượng cuộc sống thì rốt cuộc vẫn là được không bù mất.",
+ "与此同时投身环保慈善与教育事业已然成为不少经理人实现自我价值的新途径": "Mặt khác, dấn thân vào sự nghiệp bảo vệ môi trường, từ thiện và giáo dục đã trở thành con đường mới để không ít nhà quản lý hiện thực hóa giá trị bản thân.",
+ "由此可见真正的成功从来不是单一维度的事业攀升而是工作与生活的和谐并重": "Từ đó có thể thấy, thành công thực sự chưa bao giờ là sự thăng tiến sự nghiệp theo một chiều duy nhất, mà là sự hài hòa, coi trọng cả công việc lẫn cuộc sống.",
+ "归根结底唯有兼顾内心的丰盈与外在的成就方能称得上真正意义上的成功人士": "Suy cho cùng, chỉ có cân bằng được cả sự phong phú bên trong lẫn thành tựu bên ngoài mới có thể gọi là người thành công đúng nghĩa.",
+ "这一转变也从侧面说明社会评判成功的标准正在悄然改变单一的事业成就已不再是衡量人生价值的唯一尺度": "Sự chuyển biến này cũng gián tiếp cho thấy tiêu chuẩn đánh giá thành công của xã hội đang lặng lẽ thay đổi, thành tựu sự nghiệp đơn thuần không còn là thước đo duy nhất cho giá trị cuộc đời.",
+ "如果你工作了会不会成为工作狂": "Nếu bạn đi làm, bạn có trở thành người nghiện công việc không?",
+ "如果你的朋友是个工作狂你会怎么劝他": "Nếu bạn của bạn là người nghiện công việc, bạn sẽ khuyên họ thế nào?",
+ "偶尔陪家人朋友逛逛街他们也多半是人在心不在脑子里念念不忘的还是工作": "Thỉnh thoảng đi dạo phố cùng gia đình, bạn bè, họ cũng phần lớn là thân ở đó mà hồn ở đâu, trong đầu vẫn canh cánh chuyện công việc.",
+ "他们的生活丰富多彩远不是一张办公桌加一台电脑组成的黑白电影": "Cuộc sống của họ muôn màu muôn vẻ, hoàn toàn không phải một bộ phim đen trắng chỉ gồm một cái bàn làm việc và một chiếc máy tính.",
+ "让人欣慰的是也有相当多的经理人将环保慈善和教育作为人生的第二选择": "Điều đáng mừng là cũng có khá nhiều nhà quản lý chọn bảo vệ môi trường, từ thiện và giáo dục làm lựa chọn thứ hai của cuộc đời.",
+ "你别跑那么远了正好我顺路捎带脚儿就买了": "Bạn đừng đi xa thế nữa, tôi tiện đường, mua luôn cho.",
+ "工作狂懂得工作并快乐着的道理时不时忙里偷闲一番": "Người nghiện công việc hiểu được đạo lý \"vừa làm việc vừa vui vẻ\", thỉnh thoảng lại tranh thủ nghỉ ngơi giữa lúc bận rộn."
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
