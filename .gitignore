@@ -20,3 +20,11 @@ output/main-worktree/
 raw/Giáo trình phát triển hán ngữ/nói 1/tiengtrungthuonghai.vn.高级口语1mp3-zip
 raw/Giáo trình phát triển hán ngữ/nói 1/tiengtrungthuonghai.vn发展汉语高级口语1.pdf
 raw/Giáo trình phát triển hán ngữ/nói 2/tiengtrungthuonghai.vn.高级口语2mp3-zip
+
+# API key sinh ảnh
+scripts/imagegen/.env
+
+# Remotion video demo
+scripts/videogen/**/node_modules/
+scripts/videogen/**/out/
+scripts/videogen/**/gen.log
