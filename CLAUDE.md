@@ -20,6 +20,7 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
 - `/lesson-prep` → invoke Skill("lesson-prep")
 - `/critic` → invoke Skill("critic")
 - `/genimagevideo` → invoke Skill("genimagevideo")
+- `/talk-series` → invoke Skill("talk-series")
 
 ### Soft Route (intent detection — priority order)
 1. Explicit command → hard route
@@ -38,6 +39,9 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
    _(KHÔNG route sang critic khi user chỉ nhờ chấm bài viết tiếng Trung → rule 2; hoặc soi bug code → /code-review)_
 4g. "gen ảnh" / "tạo ảnh minh hoạ" / "tạo video" / "video từ vựng" / "video TikTok" / "remotion" / "giọng đọc cho video" → genimagevideo
    _(Có chữ "video" thắng rule 4d dù có "từ vựng". Ảnh cho slide .pptx của buổi dạy vẫn thuộc teaching-coach)_
+4h. "talk series" / "chủ đề tuần này" / "thẻ chủ đề" / "đặt câu hỏi thảo luận" / "post hellotalk" / "voice room" / "phiếu room" / "kịch bản clip chủ đề" → talk-series
+   _("chủ đề tuần này" thắng rule 4 "tuần này". Transcript room cần sửa lỗi → vẫn speaking-coach (rule 3).
+   Dựng/render video cho clip → genimagevideo (4g); talk-series chỉ xuất gói giao)_
 5. Ambiguous → hỏi 1 câu ngắn
 
 ### Confidence Rules
@@ -54,8 +58,8 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 
 | File | Đọc bởi |
 |---|---|
-| memory/user-profile.md | Learning Strategist, HSK6 Examiner, Speaking Coach, Exercise Generator |
-| memory/writing-dna.md | HSK6 Examiner, Speaking Coach |
+| memory/user-profile.md | Learning Strategist, HSK6 Examiner, Speaking Coach, Exercise Generator, Talk Series |
+| memory/writing-dna.md | HSK6 Examiner, Speaking Coach, Talk Series |
 | memory/learning-preferences.md | Learning Strategist |
 
 ## 4.5 Model Policy (tiết kiệm token)
@@ -151,6 +155,8 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 | raw/Từ vựng.xlsx | User / Lesson Prep (append dòng vocab mới) |
 | output/Giáo trình chuẩn/hsk6/lesson/**/lesson-prep/ | Lesson Prep (vocab_payload.json, exercise_payload.json, baitap.docx) |
 | output/Giáo trình phát triển Hán ngữ/onluyen/** | User (tool HTML tự chứa luyện HSKK cao cấp 30 buổi — chưa có skill nào sở hữu, sửa trực tiếp). Popup tra từ khớp nghĩa theo câu qua bảng `SENTENCE_VI` nhúng trong on-luyen.html (key = nguyên văn câu) → sửa/thêm câu chữ Hán hiển thị (课文/朗读/写作/阅读…) thì PHẢI dịch + cập nhật `SENTENCE_VI` cho các câu đó (1 agent dịch, 1 agent khác rà độc lập, test khớp câu trên trang), kẻo câu đó âm thầm mất khối "Trong câu" |
+| output/Giáo trình phát triển Hán ngữ/Talk series/** | Talk Series (`_so-chu-de.md`, `_gioi-thieu-series/`, mỗi chủ đề `NN_<chữ Hán>/` chỉ gồm `chu-de.html` + `post-content.md` + `clip/`) |
+| output/Giáo trình phát triển Hán ngữ/Talk series/_dau-an-ca-nhan.md | Talk Series — CHỈ ghi sau khi user duyệt từng dòng |
 | output/Gen ảnh_video/<slug>/ | Genimagevideo (mỗi video 1 project tự chứa: words/layout.json, assets/, public/, src/ Remotion; thành phẩm `video/<slug>.mp4` được commit; `node_modules/`, `out/` gitignored) |
 | .claude/skills/genimagevideo/scripts/imagegen/.env | User (API key ảnh + giọng — gitignored, KHÔNG commit/in ra) |
 | memory/* | User only |
@@ -159,7 +165,8 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 > `output/Giáo trình 3.0/` (hsk1, hsk2 — bám HSK 3.0), `output/Giáo trình chuẩn/`
 > (hsk6, gồm `lesson/`, `writing/`, `study/` — bám HSK Standard Course cũ), và
 > `output/Giáo trình phát triển Hán ngữ/` (bộ giáo trình mới, chưa có nội dung bài học —
-> riêng có sẵn `onluyen/` là tool luyện HSKK cao cấp độc lập, xem dòng onluyen ở §6).
+> riêng có sẵn `onluyen/` là tool luyện HSKK cao cấp độc lập, xem dòng onluyen ở §6; và
+> `Talk series/` là dự án luyện khẩu ngữ 1 chủ đề/tuần của skill talk-series).
 > Trong mỗi bộ, mỗi buổi 1 folder `hskN/buoiX_<chude>/` chứa `slide/` (Teaching Coach)
 > và `baitap/` (Exercise Generator). `<chude>` = slug chủ đề buổi, vd
 > `buoi2_luongtu_mausac`. Đưa học sinh: cả folder `baitap/hocsinh/`
@@ -185,3 +192,4 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 - **critic** — Phản biện độc lập một tài liệu/kết luận/kế hoạch trước khi chốt: luận điểm thiếu bằng chứng, kết luận vội, giả định ẩn, thông tin bỏ sót, mâu thuẫn logic, steelman phe đối lập, cách kiểm chứng; xếp mức 🔴/🟡/⚪. Chỉ đọc + báo cáo, không sửa file. Nếu vật bị phản biện do chính AI vừa tạo trong session → bắt buộc chạy trong subagent context sạch để tránh tự xác nhận.
 - **lesson-prep** — Bóc tách pptx bài khóa HSK6: convert (doc-analyzer) → phân loại → nạp từ vựng (tier-a + vocab-study) + xuất bài tập/bài viết ra .docx. Kiểm tra đáp án AI trước khi xuất.
 - **genimagevideo** — Sinh ảnh minh hoạ AI (tách nền) + giọng đọc (tự thu âm / TTS ViVibe-LucyLab / ElevenLabs) + video dạy từ vựng 9:16 kiểu poster bằng Remotion (đọc từ nào → khoanh đỏ chỗ đó trên nhân vật) → `output/Gen ảnh_video/<slug>/`. 2 cổng duyệt (nội dung, ảnh) trước khi làm giọng/render; quy tắc thiết kế trong `reference/design-rules.md`.
+- **talk-series** — Dự án luyện khẩu ngữ 1 chủ đề/tuần (发展汉语 高级口语 hoặc chủ đề đổi gió): thẻ chủ đề (nhánh câu hỏi + nói lại + dẫn dắt + câu trả lời của user, cài từ/mẫu câu bài + slang vừa phải, quét xu hướng) → post HelloTalk → gom bình luận → voice room → 3 clip TikTok/RedNote (giọng thật) → review. Luật cứng: không dạy đời, chống mùi AI, không nhắc nguồn sách. v0: bước 3-6 mới có khung → `output/Giáo trình phát triển Hán ngữ/Talk series/`.
