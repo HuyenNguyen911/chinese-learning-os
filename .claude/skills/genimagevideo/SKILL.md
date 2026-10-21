@@ -32,6 +32,14 @@ Biến trong `scripts/imagegen/.env`: `IMAGEGEN_URL`, `IMAGEGEN_KEY`, `IMAGEGEN_
 
 Cần sẵn trên máy: Python 3 (Pillow, numpy), Node ≥ 18, ffmpeg/ffprobe, Chrome hoặc Edge.
 
+Tuỳ chọn — rembg (tách nền bằng AI) trong venv RIÊNG của skill, không đụng Python chung
+(user không muốn nâng cấp pip toàn cục):
+```
+python -m venv .claude/skills/genimagevideo/.venv
+.claude/skills/genimagevideo/.venv/Scripts/python.exe -m pip install "rembg[cpu]"
+```
+Chỉ dùng khi tách nền theo màu thất bại — xem gotchas.md (rembg làm hỏng ảnh bộ phận rời).
+
 ## Quy trình (có cổng duyệt — không gộp bước)
 
 ### Bước 0 — Chốt yêu cầu
@@ -55,6 +63,10 @@ slots: x/y/iw/ih + `hl` = các elip `[cx, cy, rx, ry]` theo pixel ảnh nhân v�
 python gen_assets.py          # chỉ sinh ảnh chưa có;  python gen_assets.py lian etou  = sinh lại id đó
 python cutout.py              # tách nền -> assets/*.png + public/img + assets/contact.jpg
 ```
+Ảnh được sinh trên **nền xanh lá #00FF00** (đã ghi trong `layout.json → style`) rồi `cutout.py`
+tách đúng màu đó (chroma key + khử viền xanh) — chính xác, không đoán. Nếu chủ thể CÓ màu xanh lá
+(vd chủ đề màu sắc 绿色, lá cây) → đổi riêng prompt ảnh đó sang nền trắng; cutout tự nhận ra và
+dùng flood-fill.
 **Read `assets/contact.jpg`** và tự soát trước khi đưa user: ảnh trùng nhau? thừa chi tiết (tóc mọc
 trên mũi)? có chữ? phong cách lệch? Sinh lại đúng id lỗi. Rồi cho user xem contact sheet, chờ OK.
 

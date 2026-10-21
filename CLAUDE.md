@@ -19,6 +19,7 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
 - `/vocab-study` → invoke Skill("vocab-study")
 - `/lesson-prep` → invoke Skill("lesson-prep")
 - `/critic` → invoke Skill("critic")
+- `/genimagevideo` → invoke Skill("genimagevideo")
 
 ### Soft Route (intent detection — priority order)
 1. Explicit command → hard route
@@ -35,6 +36,8 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
 4e. "chuẩn bị bài" / "bóc bài khóa" / "lesson-prep" / "chuẩn bị buổi X" / "bài khóa của cô" → lesson-prep
 4f. "phản biện" / "bắt lỗi lập luận" / "chỗ này sai ở đâu" / "review giúp kết luận này" → critic
    _(KHÔNG route sang critic khi user chỉ nhờ chấm bài viết tiếng Trung → rule 2; hoặc soi bug code → /code-review)_
+4g. "gen ảnh" / "tạo ảnh minh hoạ" / "tạo video" / "video từ vựng" / "video TikTok" / "remotion" / "giọng đọc cho video" → genimagevideo
+   _(Có chữ "video" thắng rule 4d dù có "từ vựng". Ảnh cho slide .pptx của buổi dạy vẫn thuộc teaching-coach)_
 5. Ambiguous → hỏi 1 câu ngắn
 
 ### Confidence Rules
@@ -148,6 +151,8 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 | raw/Từ vựng.xlsx | User / Lesson Prep (append dòng vocab mới) |
 | output/Giáo trình chuẩn/hsk6/lesson/**/lesson-prep/ | Lesson Prep (vocab_payload.json, exercise_payload.json, baitap.docx) |
 | output/Giáo trình phát triển Hán ngữ/onluyen/** | User (tool HTML tự chứa luyện HSKK cao cấp 30 buổi — chưa có skill nào sở hữu, sửa trực tiếp). Popup tra từ khớp nghĩa theo câu qua bảng `SENTENCE_VI` nhúng trong on-luyen.html (key = nguyên văn câu) → sửa/thêm câu chữ Hán hiển thị (课文/朗读/写作/阅读…) thì PHẢI dịch + cập nhật `SENTENCE_VI` cho các câu đó (1 agent dịch, 1 agent khác rà độc lập, test khớp câu trên trang), kẻo câu đó âm thầm mất khối "Trong câu" |
+| output/Gen ảnh_video/<slug>/ | Genimagevideo (mỗi video 1 project tự chứa: words/layout.json, assets/, public/, src/ Remotion; thành phẩm `video/<slug>.mp4` được commit; `node_modules/`, `out/` gitignored) |
+| .claude/skills/genimagevideo/scripts/imagegen/.env | User (API key ảnh + giọng — gitignored, KHÔNG commit/in ra) |
 | memory/* | User only |
 
 > **Cấu trúc thư mục `output/`:** gom theo bộ giáo trình ở tầng đầu tiên —
@@ -179,3 +184,4 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 - **vocab-study** — Sinh trang học từ vựng theo bài (Quizlet-style) từ `raw/Từ vựng.xlsx` → `output/Giáo trình chuẩn/hsk6/study/tu-vung.html`: bảng 生词 + 生词拓展 (**sơ đồ cây**: gốc → nhánh có nghĩa), flashcard active-recall + Leitner (neo Activation, resume đúng thẻ), chiết tự + mẹo nhớ tiếng Việt (~1350 từ), tên bài, phát âm 🔊 (chọn giọng). Đọc knowledge/vocabulary; ghi hẹp qua lệnh "áp dụng lên hạng" (chỉ D→C, entry có sẵn — xem CLAUDE.md §6 dòng tier-a.md).
 - **critic** — Phản biện độc lập một tài liệu/kết luận/kế hoạch trước khi chốt: luận điểm thiếu bằng chứng, kết luận vội, giả định ẩn, thông tin bỏ sót, mâu thuẫn logic, steelman phe đối lập, cách kiểm chứng; xếp mức 🔴/🟡/⚪. Chỉ đọc + báo cáo, không sửa file. Nếu vật bị phản biện do chính AI vừa tạo trong session → bắt buộc chạy trong subagent context sạch để tránh tự xác nhận.
 - **lesson-prep** — Bóc tách pptx bài khóa HSK6: convert (doc-analyzer) → phân loại → nạp từ vựng (tier-a + vocab-study) + xuất bài tập/bài viết ra .docx. Kiểm tra đáp án AI trước khi xuất.
+- **genimagevideo** — Sinh ảnh minh hoạ AI (tách nền) + giọng đọc (tự thu âm / TTS ViVibe-LucyLab / ElevenLabs) + video dạy từ vựng 9:16 kiểu poster bằng Remotion (đọc từ nào → khoanh đỏ chỗ đó trên nhân vật) → `output/Gen ảnh_video/<slug>/`. 2 cổng duyệt (nội dung, ảnh) trước khi làm giọng/render; quy tắc thiết kế trong `reference/design-rules.md`.

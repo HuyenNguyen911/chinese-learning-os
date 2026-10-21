@@ -13,5 +13,7 @@
 | API ảnh bỏ qua `size: 2048x2048` | Model trả tối đa 1024×1024 | Không phóng ảnh nhỏ lên quá ~1.5× (mờ) — dùng ảnh riêng từng bộ phận |
 | Video có tiếng nhưng user không nghe | Trình xem mp4 trong VS Code không phát tiếng | Mở bằng app Windows: `cmd.exe //c start "" file.mp4` |
 | Bash heredoc dài chứa `'` lỗi "unexpected EOF" | Quoting trong Git Bash | Ghi file bằng tool Write thay vì heredoc |
-| Tách nền để lại khung nhạt hình chữ nhật (额头) | `cutout.py` flood-fill pixel gần trắng từ viền; viền nhạt của ảnh không đủ trắng | Sinh lại ảnh, hoặc hạ ngưỡng `TH` trong cutout.py |
+| Tách nền để lại khung nhạt hình chữ nhật (额头) | Flood-fill pixel gần trắng từ viền; ảnh nền trắng có viền nhạt không đủ trắng | **Sinh ảnh trên nền xanh #00FF00** → cutout tự dùng chroma key. Đã sửa được 额头 (viền tóc bo tròn tự nhiên) |
+| rembg làm hỏng ảnh bộ phận rời (thử 2026-10-21, 8 ảnh) | Model AI đoán "chủ thể" — với mảnh rời (trán, đôi mắt, mớ tóc) nó đoán sai | `isnet-anime`: mất cả đôi mắt, gần hết trán, nửa mớ tóc. `birefnet-general-lite`: xoá da trán, cắt lệch miệng, ~50s/ảnh CPU. → không dùng mặc định |
+| Model mặc định của rembg (`bria-rmbg`) | ~1GB, cần license thương mại | Luôn chỉ định `--model` khác nếu dùng rembg |
 | `git mv` báo "not under version control" | Thư mục vừa `mv` thường, chưa `git add` | Dùng `mv` rồi `git add -A <path>` |

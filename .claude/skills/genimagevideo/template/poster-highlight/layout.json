@@ -3,7 +3,7 @@
   "BỘ PHẬN CƠ THỂ",
   "TRONG TIẾNG HOA"
  ],
- "style": "Cute flat children's-book cartoon illustration, soft thick outlines, warm pastel colors, cream and tan skin tone. Isolated on a plain pure white background, no text, no letters, no shadow, centered, a single subject.",
+ "style": "Cute flat children's-book cartoon illustration, soft thick outlines, warm pastel colors, cream and tan skin tone. Isolated on a plain solid flat pure green (#00FF00) chroma-key background, the green fills the whole background evenly, no gradient, no shadow, no text, no letters, no border, centered, a single subject, the subject itself contains no green.",
  "characterPrompt": "a cute smiling little boy sitting on the floor facing front with both legs stretched straight out in front toward the viewer (not cross-legged), arms wide open, mustard-yellow hoodie, olive shorts, bare feet, curly brown hair, full body visible with all limbs clearly shown",
  "canvas": {
   "w": 1080,

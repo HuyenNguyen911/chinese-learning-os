@@ -23,6 +23,8 @@ raw/Giáo trình phát triển hán ngữ/nói 2/tiengtrungthuonghai.vn.高级�
 
 # genimagevideo: API key (ảnh + giọng) — KHÔNG commit
 .claude/skills/genimagevideo/scripts/imagegen/.env
+# genimagevideo: venv riêng cho rembg (tách nền) — cài lại bằng hướng dẫn trong SKILL.md
+.claude/skills/genimagevideo/.venv/
 
 # genimagevideo: project Remotion — node_modules, ảnh tĩnh nháp (out/), log.
 # Video thành phẩm nằm ở video/ và ĐƯỢC commit (backup như output khác).

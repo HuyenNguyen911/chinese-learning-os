@@ -18,8 +18,9 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 ## 3. Ảnh minh hoạ: không nền, không khung, mỗi thẻ một ảnh riêng
 - v3–v4 cắt ảnh từ một chân dung rồi đặt trong khung tròn/viền trắng → "cục cục dày dày",
   "bị giới hạn khung nên nhìn không rõ", mờ khi phóng (nguồn chỉ 1024px).
-- Chốt: mỗi bộ phận sinh **một ảnh riêng trên nền trắng → tách nền (PNG trong suốt)**, đặt thẳng
-  lên nền poster, không viền/bóng.
+- Chốt: mỗi bộ phận sinh **một ảnh riêng trên nền xanh lá #00FF00 → tách nền theo màu (PNG trong
+  suốt)**, đặt thẳng lên nền poster, không viền/bóng. Nền trắng cũ để lại khung nhạt vuông ở 额头.
+- Mảng da (trán, má) dễ thành "khối vuông": prompt thêm "soft rounded edges".
 
 ## 4. Không lặp hình giữa các thẻ
 - v1: 头, 脸, 额头 đều là "một khuôn mặt" → "trùng lặp".
