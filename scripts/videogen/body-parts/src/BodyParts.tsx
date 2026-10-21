@@ -1,16 +1,20 @@
-import { AbsoluteFill, Easing, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Sequence, Easing, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import words from "../words.json";
 import layout from "../layout.json";
+import durations from "./durations.json";
 
 export const FPS = 30;
 export const INTRO = 75;
-export const PER_WORD = 66;
 export const OUTRO = 60;
 
 type Slot = { x: number; y: number; iw: number; ih: number; side: string; t: number[]; crop?: number[] };
 const SLOTS = layout.slots as Record<string, Slot>;
 const CHAR = layout.char;
-const SEQ_END = INTRO + words.length * PER_WORD;
+// thời lượng mỗi từ = độ dài giọng đọc + ~1.1s để highlight/mũi tên, tối thiểu 54 khung
+const LEN = words.map((w) => Math.max(54, Math.ceil(((durations as Record<string, number>)[w.id] + 1.1) * FPS)));
+const START = LEN.map((_, i) => LEN.slice(0, i).reduce((a, b) => a + b, 0));
+export const SEQ_LEN = LEN.reduce((a, b) => a + b, 0);
+const SEQ_END = INTRO + SEQ_LEN;
 
 const HAN = "'Microsoft YaHei','Noto Sans SC','PingFang SC',sans-serif";
 const HEAD = "'Segoe UI Black','Arial Rounded MT Bold','Segoe UI',sans-serif";
@@ -25,8 +29,8 @@ const mix = (a: string, b: string, t: number) => {
 };
 
 // đường bao 0→1→0 cho từ đang đọc (vào nhanh-mềm, ra chậm-mềm, không bật đột ngột)
-const envelope = (local: number) =>
-  interpolate(local, [0, 16, PER_WORD - 16, PER_WORD], [0, 1, 1, 0], {
+const envelope = (local: number, len: number) =>
+  interpolate(local, [0, 16, len - 16, len], [0, 1, 1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
     easing: SMOOTH,
@@ -66,9 +70,9 @@ const Card = ({ w, i }: { w: (typeof words)[number]; i: number }) => {
   const { fps } = useVideoConfig();
   const s = SLOTS[w.id];
   const enter = spring({ frame: f - 14 - i * 3, fps, config: { damping: 16, stiffness: 80 } });
-  const local = f - INTRO - i * PER_WORD;
-  const active = local >= 0 && local < PER_WORD;
-  const k = active ? envelope(local) : 0;
+  const local = f - INTRO - START[i];
+  const active = local >= 0 && local < LEN[i];
+  const k = active ? envelope(local, LEN[i]) : 0;
   const seq = interpolate(f, [INTRO - 12, INTRO + 8, SEQ_END - 8, SEQ_END + 12], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const dim = 1 - 0.45 * seq * (1 - k);
   const floatY = 4 * Math.sin((f + i * 11) / 17);
@@ -104,8 +108,8 @@ const Card = ({ w, i }: { w: (typeof words)[number]; i: number }) => {
 
 const Pointer = ({ w, i }: { w: (typeof words)[number]; i: number }) => {
   const f = useCurrentFrame();
-  const local = f - INTRO - i * PER_WORD;
-  if (local < 0 || local >= PER_WORD) return null;
+  const local = f - INTRO - START[i];
+  if (local < 0 || local >= LEN[i]) return null;
   const s = SLOTS[w.id];
   const a = startPt(s), b = charPt(s.t);
   const dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy);
@@ -116,7 +120,7 @@ const Pointer = ({ w, i }: { w: (typeof words)[number]; i: number }) => {
   const tx = b.x - c.x, ty = b.y - c.y, tl = Math.hypot(tx, ty);
   const tip = { x: b.x - (tx / tl) * 22, y: b.y - (ty / tl) * 22 };
   const draw = interpolate(local, [8, 30], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.22, 1, 0.36, 1) });
-  const fade = interpolate(local, [PER_WORD - 14, PER_WORD], [1, 0], { extrapolateLeft: "clamp" });
+  const fade = interpolate(local, [LEN[i] - 14, LEN[i]], [1, 0], { extrapolateLeft: "clamp" });
   const ang = (Math.atan2(ty, tx) * 180) / Math.PI;
   const head = interpolate(draw, [0.85, 1], [0, 1], { extrapolateLeft: "clamp" });
   const ripple = (offset: number) => {
@@ -143,9 +147,9 @@ export const BodyParts = () => {
   const { fps } = useVideoConfig();
   const charIn = spring({ frame: f - 5, fps, config: { damping: 14, stiffness: 80 } });
   const h = (CHAR.w * CHAR.srcH) / CHAR.srcW;
-  const idx = Math.min(words.length - 1, Math.max(0, Math.floor((f - INTRO) / PER_WORD)));
+  const idx = Math.max(0, START.filter((st) => f - INTRO >= st).length - 1);
   const inSeq = f >= INTRO && f < SEQ_END;
-  const cam = inSeq ? envelope((f - INTRO) % PER_WORD) : 0;
+  const cam = inSeq ? envelope(f - INTRO - START[idx], LEN[idx]) : 0;
   const tgt = charPt(SLOTS[words[idx].id].t);
   const sway = 1.2 * Math.sin(f / 38);
   const breathe = 1 + 0.012 * Math.sin(f / 21);
@@ -156,6 +160,11 @@ export const BodyParts = () => {
         <Img src={staticFile("img/character.png")} style={{ position: "absolute", left: CHAR.x, top: CHAR.y, width: CHAR.w, height: h, transform: `scale(${charIn * breathe}) rotate(${sway}deg)`, transformOrigin: "50% 90%" }} />
         {words.map((w, i) => (
           <Card key={w.id} w={w} i={i} />
+        ))}
+        {words.map((w, i) => (
+          <Sequence key={`a-${w.id}`} from={INTRO + START[i] + 8}>
+            <Audio src={staticFile(`audio/${w.id}.wav`)} />
+          </Sequence>
         ))}
         {words.map((w, i) => (
           <Pointer key={w.id} w={w} i={i} />
