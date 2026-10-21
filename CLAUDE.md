@@ -147,7 +147,7 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 | knowledge/vocabulary/tier-a.md | User / Learning Strategist / Lesson Prep (append-only, chỉ thêm từ mới ⚪→Activation D; **ghi đè** luật tier-*.md ở trên cho riêng file này). Vocab Study cũng được ghi, phạm vi hẹp: CHỈ sửa field Seen/Activation/Last Studied của entry đã có sẵn, CHỈ D→C, qua lệnh "áp dụng lên hạng" xử lý file export từ flashcard — không thêm entry mới, không đụng Confidence/Speaking/Writing/Activation B/A (2 mức đó vẫn chỉ lên qua dùng thật, do Learning Strategist batch update) |
 | raw/Từ vựng.xlsx | User / Lesson Prep (append dòng vocab mới) |
 | output/Giáo trình chuẩn/hsk6/lesson/**/lesson-prep/ | Lesson Prep (vocab_payload.json, exercise_payload.json, baitap.docx) |
-| output/Giáo trình phát triển Hán ngữ/onluyen/** | User (tool HTML tự chứa luyện HSKK cao cấp 30 buổi — chưa có skill nào sở hữu, sửa trực tiếp) |
+| output/Giáo trình phát triển Hán ngữ/onluyen/** | User (tool HTML tự chứa luyện HSKK cao cấp 30 buổi — chưa có skill nào sở hữu, sửa trực tiếp). Popup tra từ khớp nghĩa theo câu qua bảng `SENTENCE_VI` nhúng trong on-luyen.html (key = nguyên văn câu) → sửa/thêm câu chữ Hán hiển thị (课文/朗读/写作/阅读…) thì PHẢI dịch + cập nhật `SENTENCE_VI` cho các câu đó (1 agent dịch, 1 agent khác rà độc lập, test khớp câu trên trang), kẻo câu đó âm thầm mất khối "Trong câu" |
 | memory/* | User only |
 
 > **Cấu trúc thư mục `output/`:** gom theo bộ giáo trình ở tầng đầu tiên —
