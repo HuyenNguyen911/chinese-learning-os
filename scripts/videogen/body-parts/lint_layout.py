@@ -15,6 +15,8 @@ for k, s in L["slots"].items():
     cw = max(s["iw"], MIN_CELL_W)
     boxes[k] = (s["x"] - cw / 2, s["y"], s["x"] + cw / 2, s["y"] + s["ih"] + L["textH"])
 c = L["char"]
+pn = L["panel"]
+boxes["_panel"] = (pn["x"], pn["y"], pn["x"] + pn["w"], pn["y"] + pn["h"])
 boxes["_character"] = (c["x"], c["y"], c["x"] + c["w"], c["y"] + c["w"] * c["srcH"] / c["srcW"])
 
 errs = []
