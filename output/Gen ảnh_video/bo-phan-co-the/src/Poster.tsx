@@ -13,8 +13,8 @@ type Slot = { x: number; y: number; iw: number; ih: number; hl: number[][] };
 const SLOTS = layout.slots as Record<string, Slot>;
 const CHAR = layout.char;
 
-// thời lượng mỗi từ = độ dài giọng đọc + ~1.1s, tối thiểu 54 khung
-const LEN = words.map((w) => Math.max(54, Math.ceil(((durations as Record<string, number>)[w.id] + 1.1) * FPS)));
+// thời lượng mỗi từ = độ dài giọng đọc (chưa có audio -> 0.6s) + ~1.1s, tối thiểu 54 khung
+const LEN = words.map((w) => Math.max(54, Math.ceil((((durations as Record<string, number>)[w.id] ?? 0.6) + 1.1) * FPS)));
 const START = LEN.map((_, i) => LEN.slice(0, i).reduce((a, b) => a + b, 0));
 export const SEQ_LEN = LEN.reduce((a, b) => a + b, 0);
 const SEQ_END = INTRO + SEQ_LEN;
@@ -48,8 +48,8 @@ const Title = () => {
   };
   return (
     <div style={{ position: "absolute", top: 60, width: "100%" }}>
-      {line(0, "#F08A4B", "BỘ PHẬN CƠ THỂ")}
-      {line(6, "#5AA9E6", "TRONG TIẾNG HOA")}
+      {line(0, "#F08A4B", layout.title[0])}
+      {line(6, "#5AA9E6", layout.title[1] ?? "")}
     </div>
   );
 };
@@ -96,7 +96,7 @@ const Highlight = () => {
   );
 };
 
-export const BodyParts = () => {
+export const Poster = () => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const charIn = spring({ frame: f - 5, fps, config: { damping: 14, stiffness: 80 } });

@@ -1,9 +1,10 @@
 {
-  "name": "body-parts-video",
+  "name": "__SLUG__",
   "private": true,
   "scripts": {
     "studio": "remotion studio src/index.ts",
-    "render": "remotion render src/index.ts BodyParts out/body-parts.mp4"
+    "still": "remotion still src/index.ts Poster out/still.png --frame=150",
+    "render": "remotion render src/index.ts Poster video/__SLUG__.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.250",

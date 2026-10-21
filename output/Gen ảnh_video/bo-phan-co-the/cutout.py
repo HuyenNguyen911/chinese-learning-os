@@ -29,7 +29,11 @@ def cut(im):
 
 files = sorted((here / "raw").glob("*.png"))
 for f in files:
-    cut(Image.open(f)).save(here / f.name)
+    im = cut(Image.open(f))
+    im.save(here / f.name)
+    pub = here.parent / "public" / "img"
+    pub.mkdir(parents=True, exist_ok=True)
+    im.save(pub / f.name)
 sheet = Image.new("RGB", (5 * 260, 3 * 280), (255, 200, 220))
 d = ImageDraw.Draw(sheet)
 for i, f in enumerate(files):

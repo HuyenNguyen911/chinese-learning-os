@@ -21,10 +21,12 @@ raw/Giáo trình phát triển hán ngữ/nói 1/tiengtrungthuonghai.vn.高级�
 raw/Giáo trình phát triển hán ngữ/nói 1/tiengtrungthuonghai.vn发展汉语高级口语1.pdf
 raw/Giáo trình phát triển hán ngữ/nói 2/tiengtrungthuonghai.vn.高级口语2mp3-zip
 
-# API key sinh ảnh
-scripts/imagegen/.env
+# genimagevideo: API key (ảnh + giọng) — KHÔNG commit
+.claude/skills/genimagevideo/scripts/imagegen/.env
 
-# Remotion video demo
-scripts/videogen/**/node_modules/
-scripts/videogen/**/out/
-scripts/videogen/**/gen.log
+# genimagevideo: project Remotion — node_modules, ảnh tĩnh nháp (out/), log.
+# Video thành phẩm nằm ở video/ và ĐƯỢC commit (backup như output khác).
+output/Gen ảnh_video/**/node_modules/
+output/Gen ảnh_video/**/out/
+output/Gen ảnh_video/**/gen.log
+.claude/skills/genimagevideo/template/**/node_modules/
