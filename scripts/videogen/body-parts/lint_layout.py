@@ -15,8 +15,14 @@ for k, s in L["slots"].items():
     cw = max(s["iw"], MIN_CELL_W)
     boxes[k] = (s["x"] - cw / 2, s["y"], s["x"] + cw / 2, s["y"] + s["ih"] + L["textH"])
 c = L["char"]
-pn = L["panel"]
-boxes["_panel"] = (pn["x"], pn["y"], pn["x"] + pn["w"], pn["y"] + pn["h"])
+FS = L.get("focusScale", 1.0)  # thẻ đang đọc phóng to quanh tâm -> vẫn phải nằm trong khung
+for k, s in L["slots"].items():
+    cw = max(s["iw"], MIN_CELL_W) * FS
+    ch = (s["ih"] + L["textH"]) * FS
+    cx, cy = s["x"], s["y"] + (s["ih"] + L["textH"]) / 2
+    if cx - cw / 2 < 0 or cx + cw / 2 > W or cy - ch / 2 < 0 or cy + ch / 2 > H:
+        print(f"{k}: khi phóng ×{FS} sẽ tràn khung")
+        sys.exit(1)
 boxes["_character"] = (c["x"], c["y"], c["x"] + c["w"], c["y"] + c["w"] * c["srcH"] / c["srcW"])
 
 errs = []
