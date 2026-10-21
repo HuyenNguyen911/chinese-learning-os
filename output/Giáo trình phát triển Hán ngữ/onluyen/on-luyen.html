@@ -3674,7 +3674,7 @@ function saveHskkResult(){
 
 /* Nghĩa TIẾNG VIỆT theo câu (ngữ cảnh) — Claude dịch sẵn, nhúng offline (user 2026-10-21: tra từ phải có nghĩa theo câu/bài văn lúc đó).
    Key = câu đã chuẩn hoá (chỉ giữ chữ Hán/số/%/chữ Latin, bỏ dấu câu) — khớp theo splitSentences() ở IIFE tra từ bên dưới.
-   Đã làm: 口语 Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 + 写作 第1课 (bài + dòng hướng dẫn). 阅读 còn là demo nên chưa dịch. Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
+   Đã làm: 口语 Bài 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 + 写作 第1课 (bài + dòng hướng dẫn). + 阅读 (5 bài đọc hiện có, kể cả câu hỏi + lựa chọn A-D). Các bài khác: chưa, tra từ vẫn chạy bình thường chỉ không có dòng 'Trong câu'. */
 const SENTENCE_VI = {
  "研究人员在英国医学期刊上发表的研究报告中称与快乐的人在一起你自己也会更快乐": "Theo báo cáo nghiên cứu đăng trên Tạp chí Y học Anh (BMJ), ở bên cạnh người vui vẻ thì bản thân bạn cũng sẽ vui hơn.",
  "你周围的人越快乐你也会越快乐": "Người xung quanh bạn càng vui thì bạn cũng càng vui.",
@@ -5289,7 +5289,60 @@ const SENTENCE_VI = {
  "用经过终于改写下面这句话并用经过终于重新造句": "Dùng mẫu \"经过……，终于……\" (trải qua…, cuối cùng…) để viết lại câu dưới đây, rồi dùng mẫu này đặt một câu mới.",
  "用对来说改写下面这句话并用对来说重新造句": "Dùng mẫu \"对……来说，……\" (đối với…, …) để viết lại câu dưới đây, rồi dùng mẫu này đặt một câu mới.",
  "用如果就而且改写下面这句话并用如果就而且重新造句": "Dùng mẫu \"如果……，就……，而且……\" (nếu…, thì…, hơn nữa…) để viết lại câu dưới đây, rồi dùng mẫu này đặt một câu mới.",
- "请指出下面的汉语短文格式题目标点位置等不准确的地方给予改正改后读一读": "Hãy chỉ ra những chỗ trình bày chưa đúng (tên bài, vị trí dấu câu…) trong đoạn văn tiếng Trung dưới đây, sửa lại, rồi đọc lại bài đã sửa."
+ "请指出下面的汉语短文格式题目标点位置等不准确的地方给予改正改后读一读": "Hãy chỉ ra những chỗ trình bày chưa đúng (tên bài, vị trí dấu câu…) trong đoạn văn tiếng Trung dưới đây, sửa lại, rồi đọc lại bài đã sửa.",
+ "文章一休闲与游戏": "Bài đọc 1 · Nghỉ ngơi giải trí và trò chơi",
+ "如今休闲已成为生活中的重要内容": "Ngày nay, \"nghỉ ngơi giải trí\" đã trở thành một phần quan trọng của cuộc sống.",
+ "从社会发展的规律看社会文明程度越高1": "Xét theo quy luật phát triển của xã hội, mức độ văn minh của xã hội càng cao thì [1].",
+ "因为人一忙就容易乱处理问题2": "Bởi vì con người hễ bận là dễ rối, xử lý vấn đề [2].",
+ "一选择合适的选项填入文中标号处": "Phần 1. Chọn phương án thích hợp điền vào chỗ được đánh số trong bài",
+ "休闲的内容就越丰富": "nội dung của nghỉ ngơi giải trí càng phong phú",
+ "刺激的活动就越多": "các hoạt động kích thích càng nhiều",
+ "就没了条理和智慧": "thì mất đi sự mạch lạc và khôn ngoan",
+ "就越容易成功": "thì càng dễ thành công",
+ "休闲的价值不言而喻是什么意思": "\"休闲的价值不言而喻\" có nghĩa là gì?",
+ "休闲的作用不说也很明白": "Tác dụng của việc nghỉ ngơi giải trí không cần nói cũng rõ",
+ "休闲需要用语言解释": "Nghỉ ngơi giải trí cần dùng lời để giải thích",
+ "休闲不重要": "Nghỉ ngơi giải trí không quan trọng",
+ "休闲很复杂": "Nghỉ ngơi giải trí rất phức tạp",
+ "三文章提到游戏在成长中的作用包括多选": "Phần 3. Bài viết nhắc đến những tác dụng của trò chơi đối với sự trưởng thành, bao gồm: (chọn nhiều đáp án)",
+ "培养智慧": "Bồi dưỡng trí tuệ",
+ "锻炼勇气": "Rèn luyện lòng dũng cảm",
+ "增加收入": "Tăng thu nhập",
+ "创造基础": "Tạo nền tảng",
+ "文章二没什么和有什么": "Bài đọc 2 · \"Không có gì\" và \"Có gì\"",
+ "示例段落有人总说没什么其实心里1": "(Đoạn văn mẫu) Có người lúc nào cũng nói \"không có gì\", thực ra trong lòng [1].",
+ "很在意": "rất để tâm",
+ "不在乎": "không bận tâm",
+ "作者认为没什么这句话": "Tác giả cho rằng câu nói \"không có gì\":",
+ "是客气的说法": "là cách nói khách sáo",
+ "是真心话": "là lời thật lòng",
+ "没有意义": "không có ý nghĩa",
+ "是命令": "là mệnh lệnh",
+ "文章三散步的益处": "Bài đọc 3 · Lợi ích của việc đi dạo",
+ "示例段落散步不仅能锻炼身体还能让人1": "(Đoạn văn mẫu) Đi dạo không chỉ rèn luyện được thân thể mà còn giúp con người [1].",
+ "放松心情": "thư giãn tinh thần",
+ "花更多钱": "tiêu nhiều tiền hơn",
+ "文章主要谈的是": "Bài viết chủ yếu bàn về:",
+ "散步的好处": "lợi ích của việc đi dạo",
+ "跑步的危险": "sự nguy hiểm của việc chạy bộ",
+ "饮食习惯": "thói quen ăn uống",
+ "工作压力": "áp lực công việc",
+ "文章四吃面的学问": "Bài đọc 4 · \"Nghệ thuật\" ăn mì",
+ "示例段落不同地区吃面的方式不同比如1": "(Đoạn văn mẫu) Cách ăn mì ở mỗi vùng mỗi khác, ví dụ như [1].",
+ "北方人喜欢拉面": "người miền Bắc thích mì kéo",
+ "南方人不吃面": "người miền Nam không ăn mì",
+ "根据文章下列说法正确的是": "Theo bài viết, nhận định nào dưới đây là đúng:",
+ "吃面很讲究": "Ăn mì rất cầu kỳ",
+ "面条起源不明": "Nguồn gốc của mì không rõ ràng",
+ "面条很贵": "Mì rất đắt",
+ "面条只在北方吃": "Mì chỉ được ăn ở miền Bắc",
+ "实用阅读选课通知": "Đọc hiểu thực tế · Thông báo đăng ký môn học",
+ "示例通知本学期选课将于9月20日开始截止到9月25日逾期不予办理": "(Thông báo mẫu) Việc đăng ký môn học của học kỳ này sẽ bắt đầu từ ngày 20 tháng 9 và kết thúc vào ngày 25 tháng 9, quá hạn sẽ không được giải quyết.",
+ "选课截止日期是": "Hạn chót đăng ký môn học là:",
+ "9月20日": "ngày 20 tháng 9",
+ "9月25日": "ngày 25 tháng 9",
+ "9月30日": "ngày 30 tháng 9",
+ "10月1日": "ngày 1 tháng 10"
 };
 
 /* ============ Tra pinyin + nghĩa khi bôi đen chữ Hán (user 2026-09-29) ============
@@ -5451,7 +5504,7 @@ const SENTENCE_VI = {
         if(at < 0) continue;
         cursor = at + s.length;
         if(start >= at && start < cursor){
-          const vi = SENTENCE_VI[normKey(s)] || SENTENCE_VI[normKey(s.replace(/^(\d+[.、]|[(（]\d+[)）])\s*/, ''))]; // câu đánh số "1. …" (回答问题) / "(1) …" (写作)
+          const vi = SENTENCE_VI[normKey(s)] || SENTENCE_VI[normKey(s.replace(/^(\d+[.、]|[(（]\d+[)）]|[A-D][.、])\s*/, ''))]; // câu đánh số "1. …" (回答问题) / "(1) …" (写作) / lựa chọn "A. …" (阅读)
           if(vi) return {zh: s, vi};
           break;
         }
