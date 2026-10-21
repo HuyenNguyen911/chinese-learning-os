@@ -3,16 +3,15 @@ import words from "../words.json";
 import layout from "../layout.json";
 import durations from "./durations.json";
 
-// MỘT hiệu ứng duy nhất: thẻ đang đọc phóng to + đổi đỏ + sáng; các thẻ khác mờ đi. Không mũi tên, không khung phụ.
+// MỘT hiệu ứng duy nhất: vòng đỏ khoanh đúng chỗ trên nhân vật. Thẻ đứng yên (chỉ chữ của từ đang đọc ngả đỏ, các thẻ khác mờ nhẹ).
 
 export const FPS = 30;
 export const INTRO = 75;
 export const OUTRO = 60;
 
-type Slot = { x: number; y: number; iw: number; ih: number; crop?: number[] };
+type Slot = { x: number; y: number; iw: number; ih: number; hl: number[][] };
 const SLOTS = layout.slots as Record<string, Slot>;
 const CHAR = layout.char;
-const FOCUS = layout.focusScale;
 
 // thời lượng mỗi từ = độ dài giọng đọc + ~1.1s, tối thiểu 54 khung
 const LEN = words.map((w) => Math.max(54, Math.ceil(((durations as Record<string, number>)[w.id] + 1.1) * FPS)));
@@ -34,6 +33,11 @@ const mix = (a: string, b: string, t: number) => {
 const envelope = (local: number, len: number) =>
   interpolate(local, [0, 14, len - 14, len], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: SMOOTH });
 
+const useSeq = () => {
+  const f = useCurrentFrame();
+  return interpolate(f, [INTRO - 12, INTRO + 8, SEQ_END - 8, SEQ_END + 12], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+};
+
 const Title = () => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -50,40 +54,45 @@ const Title = () => {
   );
 };
 
-// ảnh cắt từ chân dung: (cx,cy) tâm, cw bề ngang (tỉ lệ ảnh gốc), khung dw×dh
-const Crop = ({ crop, dw, dh }: { crop: number[]; dw: number; dh: number }) => {
-  const [cx, cy, cw] = crop;
-  const ch = (cw * dh) / dw;
-  const imgW = dw / cw;
-  return <Img src={staticFile("img/portrait.png")} style={{ position: "absolute", width: imgW, height: imgW, left: -(cx - cw / 2) * imgW, top: -(cy - ch / 2) * imgW, maxWidth: "none" }} />;
-};
-
 const Card = ({ w, i }: { w: (typeof words)[number]; i: number }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const seq = useSeq();
   const s = SLOTS[w.id];
   const enter = spring({ frame: f - 14 - i * 3, fps, config: { damping: 16, stiffness: 80 } });
   const local = f - INTRO - START[i];
-  const active = local >= 0 && local < LEN[i];
-  const k = active ? envelope(local, LEN[i]) : 0;
-  const seq = interpolate(f, [INTRO - 12, INTRO + 8, SEQ_END - 8, SEQ_END + 12], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const dim = 1 - 0.7 * seq * (1 - k);
+  const k = local >= 0 && local < LEN[i] ? envelope(local, LEN[i]) : 0;
+  const dim = 1 - 0.45 * seq * (1 - k);
   const cellW = Math.max(s.iw, 200);
-  const round = s.iw === s.ih ? "50%" : 40;
-  const visual = s.crop ? (
-    <div style={{ position: "relative", width: s.iw, height: s.ih, borderRadius: round, overflow: "hidden", background: "#fff", boxShadow: `0 4px 12px rgba(0,0,0,0.12), 0 0 ${30 * k}px ${8 * k}px rgba(229,57,43,${0.65 * k})` }}>
-      <Crop crop={s.crop} dw={s.iw} dh={s.ih} />
-    </div>
-  ) : (
-    <Img src={staticFile(`img/${w.id}.png`)} style={{ maxWidth: s.iw, maxHeight: s.ih, objectFit: "contain", filter: k > 0.02 ? `drop-shadow(0 0 ${22 * k}px rgba(229,57,43,${0.8 * k}))` : undefined }} />
-  );
   return (
-    <div style={{ position: "absolute", left: s.x - cellW / 2, top: s.y, width: cellW, textAlign: "center", opacity: enter * dim, transform: `scale(${enter * (1 + (FOCUS - 1) * k)})`, transformOrigin: "50% 50%", zIndex: active ? 5 : 1 }}>
-      <div style={{ height: s.ih, display: "flex", alignItems: "center", justifyContent: "center" }}>{visual}</div>
+    <div style={{ position: "absolute", left: s.x - cellW / 2, top: s.y, width: cellW, textAlign: "center", opacity: enter * dim, transform: `scale(${enter})` }}>
+      <div style={{ height: s.ih, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Img src={staticFile(`img/${w.id}.png`)} style={{ maxWidth: s.iw, maxHeight: s.ih, objectFit: "contain" }} />
+      </div>
       <div style={{ fontFamily: HAN, fontSize: 54, fontWeight: 700, lineHeight: 1.15, marginTop: 8, color: mix("#3E7CB1", RED, k) }}>{w.han}</div>
       <div style={{ fontFamily: HAN, fontSize: 28, lineHeight: 1.2, color: mix("#7A6A55", RED, k) }}>{w.pinyin}</div>
       <div style={{ position: "absolute", left: 0, right: 0, top: s.ih + 100, fontFamily: HAN, fontSize: 24, lineHeight: 1.2, color: RED, opacity: k }}>{w.vi}</div>
     </div>
+  );
+};
+
+// vòng đỏ trên nhân vật cho từ đang đọc
+const Highlight = () => {
+  const f = useCurrentFrame();
+  const t = f - INTRO;
+  if (t < 0 || f >= SEQ_END) return null;
+  const idx = Math.max(0, START.filter((st) => t >= st).length - 1);
+  const s = SLOTS[words[idx].id];
+  const local = t - START[idx];
+  const k = envelope(local, LEN[idx]);
+  const sc = CHAR.w / CHAR.srcW;
+  const pulse = 1 + 0.05 * Math.sin(local / 4);
+  return (
+    <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: k, zIndex: 10 }}>
+      {s.hl.map(([cx, cy, rx, ry], j) => (
+        <ellipse key={j} cx={CHAR.x + cx * sc} cy={CHAR.y + cy * sc} rx={Math.max(rx * sc, 24) * pulse} ry={Math.max(ry * sc, 24) * pulse} fill="rgba(229,57,43,0.14)" stroke={RED} strokeWidth={7} />
+      ))}
+    </svg>
   );
 };
 
@@ -92,14 +101,14 @@ export const BodyParts = () => {
   const { fps } = useVideoConfig();
   const charIn = spring({ frame: f - 5, fps, config: { damping: 14, stiffness: 80 } });
   const h = (CHAR.w * CHAR.srcH) / CHAR.srcW;
-  const seq = interpolate(f, [INTRO - 12, INTRO + 8, SEQ_END - 8, SEQ_END + 12], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ background: "#FFF3DC" }}>
       <Title />
-      <Img src={staticFile("img/character.png")} style={{ position: "absolute", left: CHAR.x, top: CHAR.y, width: CHAR.w, height: h, opacity: 1 - 0.55 * seq, transform: `scale(${charIn})`, transformOrigin: "50% 90%" }} />
+      <Img src={staticFile("img/character.png")} style={{ position: "absolute", left: CHAR.x, top: CHAR.y, width: CHAR.w, height: h, transform: `scale(${charIn})`, transformOrigin: "50% 90%" }} />
       {words.map((w, i) => (
         <Card key={w.id} w={w} i={i} />
       ))}
+      <Highlight />
       {words.map((w, i) => (
         <Sequence key={`a-${w.id}`} from={INTRO + START[i] + 8}>
           <Audio src={staticFile(`audio/${w.id}.wav`)} />
