@@ -7,8 +7,10 @@ Bấm đúp `Mo-Talk-series.bat` (thư mục Talk series) → script này:
      rồi commit ĐÚNG file đó + push. Chỉ push khi repo đang đứng nhánh main.
 """
 import http.server
+import ipaddress
 import json
 import re
+import socket
 import subprocess
 import sys
 import urllib.parse
@@ -37,9 +39,35 @@ def pull():
     return "Đã lấy bản mới nhất." if code == 0 else "Pull lỗi: " + out[-300:]
 
 
+def lan_ip():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        s.connect(("8.8.8.8", 80))
+        return s.getsockname()[0]
+    except OSError:
+        return "127.0.0.1"
+    finally:
+        s.close()
+
+
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *a, **k):
         super().__init__(*a, directory=str(TS), **k)
+
+    def allowed(self):
+        """Chỉ máy này + thiết bị trong mạng nhà (điện thoại cùng Wi-Fi)."""
+        ip = ipaddress.ip_address(self.client_address[0])
+        if ip.is_loopback or ip.is_private:
+            return True
+        self.send_error(403)
+        return False
+
+    def do_GET(self):
+        if not self.allowed():
+            return
+        if self.path == "/lan":
+            return self.reply({"base": f"http://{lan_ip()}:{PORT}"})
+        super().do_GET()
 
     def end_headers(self):
         self.send_header("Cache-Control", "no-store")
@@ -57,6 +85,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_POST(self):
+        if not self.allowed():
+            return
         if self.path != "/save":
             return self.send_error(404)
         req = json.loads(self.rfile.read(int(self.headers["Content-Length"])).decode("utf-8"))
@@ -98,11 +128,13 @@ if __name__ == "__main__":
     print(pull())
     url = f"http://localhost:{PORT}/" + urllib.parse.quote(sys.argv[1] if len(sys.argv) > 1 else latest_page())
     try:
-        srv = http.server.ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
+        srv = http.server.ThreadingHTTPServer(("0.0.0.0", PORT), Handler)
     except OSError:
         print("Máy chủ đã chạy sẵn → chỉ mở trang.")
         webbrowser.open(url)
         sys.exit(0)
-    print("Mở:", url, "\nĐể cửa sổ này mở trong lúc dùng trang. Đóng cửa sổ = tắt.")
+    print("Mở:", url)
+    print("Điện thoại (cùng Wi-Fi): bấm nút 📱 trên trang để quét mã.")
+    print("Để cửa sổ này mở trong lúc dùng trang. Đóng cửa sổ = tắt.")
     webbrowser.open(url)
     srv.serve_forever()
