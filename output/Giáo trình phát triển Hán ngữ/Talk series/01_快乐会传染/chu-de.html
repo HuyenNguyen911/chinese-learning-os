@@ -441,7 +441,7 @@ function soloCard(b) {
 }
 function renderMain() {
   const solo = S.mode === 'solo';
-  let h = `<h2>Mở đầu</h2><div class="card"><div class="st"><div class="v zh intro"><div class="txt">${rich(solo ? D.intro.solo : D.intro.group)}</div><button class="cp" title="Copy">📋</button></div></div></div>`;
+  let h = `<h2>Mở đầu</h2><div class="card"><div class="v zh intro"><div class="txt">${rich(solo ? D.intro.solo : D.intro.group)}</div><button class="cp" title="Copy">📋</button></div></div>`;
   if (solo) h += D.solo_blocks.map(soloCard).join('');
   else for (const g of D.groups) h += `<h2>${esc(g.label)}</h2>` + g.blocks.map(id => blockCard(BL[id])).join('');
   $('#main').innerHTML = h;
@@ -460,7 +460,7 @@ function renderMain() {
     };
     c.querySelectorAll('[data-del]').forEach(x => x.onclick = () => { S.chat[id].splice(+x.dataset.del, 1); save(); const y = scrollY; renderMain(); scrollTo(0, y); });
   });
-  document.querySelectorAll('.st .cp').forEach(b => b.onclick = () => copyText(b.parentElement.querySelector('.txt').innerText.trim()));
+  document.querySelectorAll('.v .cp').forEach(b => b.onclick = () => copyText(b.parentElement.querySelector('.txt').innerText.trim()));
   paint();
 }
 
