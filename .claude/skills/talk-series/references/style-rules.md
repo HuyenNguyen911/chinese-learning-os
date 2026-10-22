@@ -26,18 +26,27 @@ Dấu hiệu người thật (dùng vừa phải):
 - Đổi kiểu kết câu giữa các câu trả lời
 
 ## 3. Câu hỏi
+- Mở room bằng **đoạn mở đầu dẫn dắt** (chuyện nhỏ thật → "你们有没有这种时候？" → nêu chủ đề), KHÔNG đặt
+  "câu hỏi trung tâm" đứng riêng. Không báo ghi âm.
 - **1 câu ngắn** (< ~20 chữ), bắt đầu từ trải nghiệm cụ thể: "你上次……", "你会不会……", "你有没有……".
 - Xưng 你, không 您. Không 请 / 举例说明 / 您认为 (giọng đề thi).
 - **Không nêu tên xu hướng, không "有研究说"** — xu hướng là thứ để NGHĨ RA câu hỏi, giấu bên trong.
 - Muốn sâu thì dùng câu hỏi tiếp, đi từng bậc.
 
-## 4. Câu trả lời mẫu của user
-- 2-4 câu, khẩu ngữ, đơn giản, dễ đem vào phòng thi.
-- Tối đa **1 slang** + **1-2 từ/mẫu câu bài khoá**, phải trôi khi nói.
+## 4. Câu kể của user ("Tui kể trước")
+- **5-7 câu, kể thành chuyện**: bối cảnh cụ thể → chuyện xảy ra → cảm xúc → bây giờ nghĩ sao; có từ nối
+  (就是 / 然后 / 结果 / 后来 / 说真的 / 反正). KHÔNG cụt 2-4 câu kiểu liệt kê — nghe "cục súc".
+- Tối đa **1 slang** + **1-3 từ H6 / mẫu câu bài khoá**, phải trôi khi nói. Từ H6 đã nằm trong câu kể → KHÔNG lặp thêm dòng từ khoá riêng.
+- **Từ H6: lọc trong toàn bộ `raw/Từ vựng.xlsx`, ưu tiên từ khẩu ngữ** (难得, 过瘾, 炫耀, 憋, 巴不得, 吹牛…).
+  Từ 书面 (惩罚, 伴侣, 宣泄, 锦上添花…) chỉ dùng khi thật bí → để dành clip ③.
 - Mẫu câu văn viết (由于……所以……, 社交网络) → chuyển sang clip tóm tắt / câu HSKK, không ép vào lời nói room.
 - Câu HSKK (clip ③): bớt hoặc bỏ slang.
 - Chỗ cần chuyện thật → `[ngoặc vuông]`, không bịa đời tư user.
-- Phiếu room chỉ ghi **từ khoá**: `说到… → 我妈 → [chuyện] → 乐坏了 → 你们呢？`
+
+## 4b. Đoạn "Họ chưa hiểu / bí"
+- 1 đoạn **giải thích + diễn giải** câu hỏi (2-4 câu): nói lại bằng lời đơn giản → đưa 3-4 ví dụ tình huống cụ thể →
+  gợi hướng trả lời ("说一件就行", "说说你自己的感觉就行，没有标准答案"). KHÔNG dùng câu hỏi ngắn cụt kiểu A/B —
+  dễ làm cả 2 bên cùng bí.
 
 ## 5. Slang giới trẻ
 Chọn từ phổ biến lâu, tránh trend 1 tháng là tàn. Mỗi chủ đề có bảng slang + nghĩa Việt.
@@ -58,7 +67,16 @@ không nhắc nguồn sách, không lời hứa phóng đại, không đóng khu
 - Hashtag 3 ngôn ngữ (Trung / Việt / Anh), cố định `#每周一个话题 #MoiTuanMotChuDe`, + 2 hashtag chủ đề.
 - Hook series: "同一件事，每个人的想法都不一样，好想知道你们是怎么想的～"
 
-## 7. Kiểm tra trước khi giao
+## 7. Trang chu-de.html — chỉ nội dung dùng được
+User đọc và dùng trực tiếp trong room → KHÔNG đưa lên trang:
+- dòng nguồn / ngày cập nhật / trạng thái; nhắc quy tắc ("caption không nói đạo lý…"); ghi chú số liệu, link nguồn xu hướng;
+  bảng kiểm tra Socratic; danh sách từ 书面 / từ bài khoá không dùng
+- dịch nghĩa slang; dòng hướng dẫn cách dùng ("đọc to, chậm, rõ…", "~1 phút", "từng ý 1-2 câu")
+- đồng hồ, nút reset; ô ghi nhanh chung (đã có khung chat từng khối)
+- nội dung lặp: câu hỏi chỉ hiện 1 lần (ở tiêu đề khối); không tách tab trùng nhau
+Thông tin phương pháp / nguồn → để ở skill hoặc nói trong chat.
+
+## 8. Kiểm tra trước khi giao
 1. Quét từ báo động (mục 1).
 2. Đọc lướt: có câu nào cùng khuôn với câu trước không? có câu nào "đáng trích dẫn" không?
 3. Câu HSKK: soi qua 3 vai — giám khảo (ăn điểm?) / giáo viên (sai?) / người Trung bình thường (tự nhiên?).

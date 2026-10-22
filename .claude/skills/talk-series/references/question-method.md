@@ -1,12 +1,12 @@
 # Cách khai thác 1 chủ đề thành câu hỏi (Bước 0)
 
 ## Thứ tự làm
-1. **Nguyên liệu bài trước** (nếu theo sách): rút mẫu câu + từ của bài. Ghi chú mẫu nào là văn nói,
-   mẫu nào là văn viết (văn viết → dành cho clip). Mục "交际策略" của sách (vd 说到…… = cách mở
-   chủ đề) dùng làm câu mở nhánh trong room.
-2. **User tự đặt câu hỏi trước (QFT — Question Formulation Technique)**: user viết 5-10 câu hỏi
-   tiếng Trung về chủ đề, không lọc, không sửa, không bàn. Sau đó skill sửa câu chữ, xếp nhánh, bổ
-   sung loại còn thiếu, user chọn câu đem vào room. Mục đích: luyện + mang dấu ấn user + bớt mùi AI.
+1. **Nguyên liệu bài trước** (nếu theo sách — lấy từ `onluyen/on-luyen.html`, không OCR lại): rút mẫu câu + từ
+   của bài. Ghi chú mẫu nào là văn nói, mẫu nào là văn viết (văn viết → dành cho clip). Mục "交际策略" của sách
+   (vd 说到…… = cách mở chủ đề) dùng làm câu mở nhánh trong room.
+   **Từ H6:** lọc trong toàn bộ `raw/Từ vựng.xlsx`, ưu tiên từ khẩu ngữ hợp từng nhánh; 书面 chỉ khi bí → clip ③.
+2. **QFT (tuỳ chọn)**: user có thể tự viết 5-10 câu hỏi trước rồi skill sửa + xếp nhánh. Nếu user muốn skill
+   đề xuất luôn → làm luôn, câu user thêm sau sẽ xếp vào nhánh.
 3. **Bung nhánh**: 5-6 nhánh, mỗi nhánh dẫn sang 1 mảng đời sống khác nhau (niềm vui nhỏ, cảm xúc,
    bạn bè, gia đình, mạng xã hội, tiền, công việc…). Không xoay quanh chuyện học. Mỗi nhánh
    **1 câu chính + tối đa 1 câu tiếp** → không trùng trục. Chuẩn bị 6, room dùng 3-4 theo không khí.
@@ -19,17 +19,19 @@
    làm rõ / **giả định ngầm** / lý do-bằng chứng / **góc nhìn khác** / **hệ quả** / hỏi về chính câu hỏi.
    Thường thiếu giả định ngầm + hệ quả + góc nhìn khác → bổ sung bằng câu hỏi tiếp, giọng nhẹ.
 
-## Lọc câu hỏi trung tâm (đủ 4)
+## Lọc câu hỏi (đủ 4)
 - Ai cũng có trải nghiệm · Không có đáp án đúng · Không nhạy cảm (chính trị, quốc gia, tôn giáo,
   thu nhập cụ thể) · Trả lời được bằng 1 câu nhưng nói tiếp được 2 phút.
+- Room mở bằng **đoạn mở đầu dẫn dắt** (chuyện nhỏ thật → nêu chủ đề), không đặt câu hỏi trung tâm đứng riêng.
 
-## Mỗi câu hỏi có đủ 4 phần
-| Phần | Nội dung |
+## Mỗi khối câu hỏi (thứ tự nói)
+| Bước | Nội dung |
 |---|---|
-| **Hỏi** | 1 câu ngắn, từ trải nghiệm |
-| **Nói lại khi chưa hiểu** | 3 nấc: ① nói đơn giản hơn (bỏ thành ngữ, câu ngắn) ② đưa ví dụ/tình huống cụ thể ③ thu hẹp thành A/B hoặc có/không; cùng lắm chêm 1 từ khoá tiếng Anh |
-| **Dẫn dắt khi người khác bí** | ① đưa lựa chọn ② user trả lời trước làm mẫu ngắn ③ đổi câu quan điểm → câu trải nghiệm nhỏ ④ cho khung "你可以说'我觉得……因为……'" ⑤ cho nói tiếng Anh rồi giúp nói lại bằng tiếng Trung. Không ép: "没关系，想到了再说～" → chuyển người khác |
-| **User trả lời** | Theo `style-rules.md` mục 4 + từ khoá cho phiếu room |
+| **Câu hỏi** (tiêu đề khối) | 1 câu ngắn, từ trải nghiệm — chỉ hiện 1 lần |
+| **① Tui kể trước** | Câu kể 5-7 câu theo `style-rules.md` §4 (~1 phút), làm mẫu cho người nghe |
+| **② Mời** | 1 câu mời ngắn, vd 你们呢？最近有没有这种小事？ |
+| **Họ chưa hiểu / bí** | 1 đoạn giải thích + diễn giải + 3-4 ví dụ + gợi hướng trả lời (`style-rules.md` §4b), rồi "没关系，想到了再说～" |
+| **③ Hỏi sâu** | Câu hỏi tiếp + câu nối (为什么这么说？/ 能举个例子吗？/ 我跟你正好相反……) |
 
 ## Câu nối trong room
 - Câu nối tiếp dùng mọi chủ đề: 为什么这么说？/ 能举个例子吗？/ 那如果……呢？/ 我跟你正好相反……
@@ -41,10 +43,10 @@
 ## Room dưới 60 phút (mặc định)
 | Phút | Nội dung |
 |---|---|
-| 0-5 | Chào, báo ghi âm, nói chủ đề (vào luôn chế độ một mình nếu chưa ai) |
+| 0-5 | Đoạn mở đầu dẫn dắt (không báo ghi âm) |
 | 5-15 | Nhánh nhẹ, khởi động |
 | 15-35 | Nhánh quan điểm |
-| 35-50 | Tầng xu hướng / đào sâu |
-| 50-55 | User tự tóm tắt 1 phút (= nháp clip ①) + cảm ơn |
+| 35-55 | Tầng xu hướng / đào sâu → khối Chốt (câu hỏi lại chủ đề + chào) |
 
-Chế độ một mình: mỗi tầng tự trả lời 1 câu (1-2 phút) + 朗读 1 đoạn bài khoá + tóm tắt 1 phút ≈ 15-20 phút.
+Chưa ai vào (chế độ 🙋): **luyện đọc to** 朗读 HSKK → 课文一 → 课文二 → 课文三 (mỗi 课文 đọc rồi kể lại theo ý),
+không lặp khối câu hỏi. Không có bước "tóm tắt 1 phút" — clip ① lấy từ bản ghi âm.
