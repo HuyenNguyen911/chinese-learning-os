@@ -64,10 +64,10 @@ không nhắc nguồn sách, không lời hứa phóng đại, không đóng khu
 | TikTok | Người Việt học tiếng Trung | **Việt chính**, 1-2 câu Trung hay nhất làm "món học" |
 
 - Độ dài post HelloTalk: ngắn, 4-6 dòng, đọc vài giây là trả lời được.
-- Hashtag 3 ngôn ngữ (Trung / Việt / Anh), cố định `#每周一个话题 #MoiTuanMotChuDe`, + 2 hashtag chủ đề.
+- Hashtag **tối đa 5** mỗi bài — riêng RedNote tối đa ~8 vì tìm kiếm mạnh (user chốt 2026-10-22), cố định `#每周一个话题 #MoiTuanMotChuDe` + tối đa 3 tag chủ đề/nền tảng.
 - Hook series: "同一件事，每个人的想法都不一样，好想知道你们是怎么想的～"
 
-## 7. Trang chu-de.html — chỉ nội dung dùng được
+## 7. Trang chủ đề (NN_<tên>.html) — chỉ nội dung dùng được
 User đọc và dùng trực tiếp trong room → KHÔNG đưa lên trang:
 - dòng nguồn / ngày cập nhật / trạng thái; nhắc quy tắc ("caption không nói đạo lý…"); ghi chú số liệu, link nguồn xu hướng;
   bảng kiểm tra Socratic; danh sách từ 书面 / từ bài khoá không dùng

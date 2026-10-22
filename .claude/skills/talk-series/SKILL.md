@@ -1,6 +1,6 @@
 ---
 name: talk-series
-description: Dự án luyện khẩu ngữ "mỗi tuần 1 chủ đề" — chọn chủ đề (bài 发展汉语 高级口语 hoặc chủ đề đổi gió) → trang chủ đề chu-de.html (mở đầu dẫn dắt + khối câu hỏi: tui kể trước → mời → giải thích khi chưa hiểu/bí → hỏi sâu; checklist mục tiêu; chế độ chưa ai vào = luyện đọc) → post HelloTalk → gom bình luận → voice room → 3 clip TikTok/RedNote → review. Use when user nói "talk series", "chủ đề tuần này", "thẻ chủ đề", "đặt câu hỏi thảo luận", "post hellotalk", "voice room", "phiếu room", "kịch bản clip chủ đề", "/talk-series".
+description: Dự án luyện khẩu ngữ "mỗi tuần 1 chủ đề" — chọn chủ đề (bài 发展汉语 高级口语 hoặc chủ đề đổi gió) → trang chủ đề `NN_<tên>.html` (mở đầu dẫn dắt + khối câu hỏi: tui kể trước → mời → giải thích khi chưa hiểu/bí → hỏi sâu; checklist mục tiêu; chế độ chưa ai vào = luyện đọc) → post HelloTalk → gom bình luận → voice room → 3 clip TikTok/RedNote → review. Use when user nói "talk series", "chủ đề tuần này", "thẻ chủ đề", "đặt câu hỏi thảo luận", "post hellotalk", "voice room", "phiếu room", "kịch bản clip chủ đề", "/talk-series".
 ---
 
 # Talk Series
@@ -10,11 +10,11 @@ Bạn là người đồng hành cho dự án luyện khẩu ngữ công khai c�
 được nhiều hơn, tự nhiên hơn, dùng được từ vựng H6 + mẫu câu bài khóa** — content mạng
 xã hội là phương tiện, không phải đích.
 
-> **Trạng thái skill: v1 (2026-10-22).** Bước 0-2 chốt; `chu-de.html` đã có khuôn (chủ đề 01).
+> **Trạng thái skill: v1 (2026-10-22).** Bước 0-2 chốt; trang chủ đề đã có khuôn (chủ đề 01).
 > Bước 3-6 còn khung — chi tiết hoá khi chạy room/clip thật. Đồng bộ đa thiết bị: **TODO đang mở** (xem cuối file).
 
 ## Đọc bắt buộc trước khi làm
-1. `references/style-rules.md` — luật giọng văn, chống mùi AI, chống dạy đời, slang, luật trang chu-de.html. **Áp dụng cho MỌI output.**
+1. `references/style-rules.md` — luật giọng văn, chống mùi AI, chống dạy đời, slang, luật trang chủ đề. **Áp dụng cho MỌI output.**
 2. `references/question-method.md` — cách khai thác chủ đề thành khối câu hỏi (Bước 0).
 3. `<TS>/_dau-an-ca-nhan.md` — chất riêng của user (góp nhặt dần).
 4. `memory/user-profile.md`, `memory/writing-dna.md` — chỉ đọc.
@@ -28,27 +28,32 @@ Gốc: `output/Giáo trình phát triển Hán ngữ/Talk series/` (gọi tắt 
 ├── _dau-an-ca-nhan.md         # CẢ SERIES: chất riêng user — CHỈ ghi sau khi user duyệt từng dòng
 ├── _gioi-thieu-series/        # CẢ SERIES: post giới thiệu (đăng 1 lần)
 ├── Mo-Talk-series.bat         # (tạm, xem TODO đồng bộ) mở trang qua sync_server.py
-└── <NN>_<tên chữ Hán>/        # mỗi chủ đề 1 thư mục, vd 01_快乐会传染 — CHỈ 3 thứ (user muốn gọn, không ngợp)
-    ├── chu-de.html            # 1 trang dùng trực tiếp trên máy + trong room (xem bên dưới)
-    ├── post-content.md        # Bước 1 + 5: post HelloTalk, caption TikTok, caption RedNote (+ ngày đăng, link)
+└── <NN>/                      # mỗi chủ đề 1 thư mục đặt theo số tập (01, 02…) — CHỈ 2 thứ (user muốn gọn, không ngợp)
+    ├── <NN>_<tên-tiếng-Anh>.html  # vd 01_contagious-happiness.html — 1 trang dùng trực tiếp trên máy + trong room; tab 📝 Bài đăng chứa post HelloTalk + caption (xem bên dưới)
     └── clip/                  # Bước 4-5: clip1-tom-tat.md · clip2-langdu.md · clip3-hskk.md,
                                #   file ghi âm room, gói giao genimagevideo
 ```
-Không tạo thêm file/thư mục con ngoài 3 thứ trên. Transcript + sửa lỗi đầy đủ do **speaking-coach** lưu ở
+Không tạo thêm file/thư mục con ngoài 2 thứ trên (cùng cấp trong `<NN>/`). Post/caption KHÔNG có file .md riêng — nằm trong khối dữ liệu `post` của trang. Transcript + sửa lỗi đầy đủ do **speaking-coach** lưu ở
 `sessions/speaking/YYYY-MM-DD-<topic>.md`. Ảnh thống kê không lưu, chỉ ghi số.
 
-### `chu-de.html` — khuôn (mẫu: `01_快乐会传染/chu-de.html`)
+### Trang chủ đề `<NN>_<tên>.html` — khuôn (mẫu: `01/01_contagious-happiness.html`)
 Copy khuôn của chủ đề trước, **chỉ thay khối dữ liệu** `<script id="data" type="application/json">` — không sửa code hiển thị.
 Trang là công cụ user dùng thật, **không phải chỗ ghi chú của AI** (xem `style-rules.md` §7).
 
 **Bố cục — 1 trang, không tab, trải hết chiều ngang:**
-- Thanh trên: tên tập · nút 👥 **Có người vào** / 🙋 **Chưa ai vào** · nút lưu.
+- Thanh trên: tên tập · nút 👥 **Có người vào** / 🙋 **Chưa ai vào** / 📝 **Bài đăng** · nút lưu.
+- Cột trái **Mục tiêu** chỉ hiện ở 👥 (🙋 và 📝 ẩn cột này). Bôi đen chữ Hán ở mọi tab → popup pinyin + nghĩa.
 - Cột trái **Mục tiêu** (checklist thực hiện): Từ khoá bài (chip H6) · Mẫu câu bài khoá · Nói hết gợi ý (1 dòng/khối).
   Tick đồng bộ 2 chiều với nội dung; tick cả khối → tự tick từ + mẫu câu trong khối; bỏ tick khối → bỏ theo
   (trừ từ còn nằm trong khối khác đã tick). Mục tiêu đổi theo chế độ.
-- Nội dung **👥 Có người vào**: Mở đầu (đoạn dẫn dắt bằng chuyện nhỏ thật → nêu chủ đề) → các nhóm
-  Khởi động / Quan điểm / Đào sâu / Chốt. Mỗi **khối** = tiêu đề là câu hỏi (bấm để thu gọn) +
-  ① Tui kể trước · ② Mời · Họ chưa hiểu / bí · ③ Hỏi sâu (kèm câu nối ngay trong bước) + **khung chat** (user gõ ý hay /
+- Nội dung **👥 Có người vào**: Mở đầu = các dòng đánh số, mỗi dòng 1 nút copy. `intro.fixed` ①②③ **CỐ ĐỊNH mọi tập, chép nguyên**
+  (chào + tên 瑾玄 · câu slogan "同一件事，每个人想法都不一样…" · nhờ sửa nhẹ nhàng); `intro.group` ④⑤ đổi theo tập
+  (④ dẫn chủ đề bằng chuyện/quan sát → nêu chủ đề, ⑤ mời mọi người cùng nói)
+  → các nhóm khối → **Kết thúc** (cuối trang, cùng kiểu dòng đánh số): `outro.fixed` (hết giờ + cảm ơn đã sửa lỗi) và
+  `outro.fixed_end` (cảm ơn + hẹn gặp + 拜拜，晚安) **CỐ ĐỊNH mọi tập**; `outro.group` = 1 câu đùa nối về chủ đề tập đó.
+  Không có khối "Chốt" hỏi câu cuối (user bỏ 2026-10-22). → các nhóm
+  Khởi động / Quan điểm / Đào sâu. Mỗi **khối** = tiêu đề là câu hỏi (bấm để thu gọn) +
+  ① Tui kể trước · ② Mời (1 dòng gộp `invite` + `follow` — user thấy mời và hỏi sâu như nhau) · Họ chưa hiểu / bí + **khung chat** (user gõ ý hay /
   cách nói hay / lỗi được sửa, Enter) + nút 📋 copy từng đoạn.
 - Nội dung **🙋 Chưa ai vào** = **luyện đọc to**, thứ tự: 朗读 (HSKK) → 课文一 → 课文二 → 课文三
   (mỗi 课文: đọc to → kể lại theo ý → câu hỏi người nghe). KHÔNG lặp lại khối câu hỏi của chế độ 👥.
@@ -58,29 +63,41 @@ Trang là công cụ user dùng thật, **không phải chỗ ghi chú của AI*
 Trường của khối: `id, name, q, story, invite, help, follow`; khối đọc: `id, type:"read", name, paras, keys, end`.
 Trạng thái người dùng nằm ở `chat` + `room_state` (có `ts`); trang lấy bản mới hơn giữa file và trình duyệt.
 
-**Tên thư mục chủ đề:** `<số tập 2 chữ số>_<tên chữ Hán>` (vd `01_快乐会传染`) — dễ nhìn, xếp đúng thứ tự.
-**Mã chủ đề** (ghi trong `chu-de.html` + `_so-chu-de.md`, không dùng làm tên thư mục):
-`FZ-KY-B<số bài 2 chữ số>` (发展汉语 高级口语) | `FREE-<YYYYMMDD>-<slug>` (đổi gió).
+**Tên:** thư mục = số tập 2 chữ số (`01`); trang = `<số tập>_<tên tiếng Anh, chữ thường, nối bằng dấu gạch>.html` (vd `01_contagious-happiness.html`) —
+chỉ chữ Latin để đường dẫn không lỗi mã hoá. Không dùng mã chủ đề; nguồn (bài 口语 số mấy / đổi gió) ghi ở cột "Nguồn" trong `_so-chu-de.md`.
 **Nguồn bài 口语: `output/Giáo trình phát triển Hán ngữ/onluyen/on-luyen.html`** — đã OCR + làm sạch, **không OCR lại sách**:
 `LESSON_TEXTS[n]` (课文 nguyên văn) · `LANGUAGE_POINTS[n]` (表达方式) · `HSKK_LESSONS[n]` (`p2Text` 朗读, `p3` 回答问题) ·
 `hskk_p1_scripts.json` (`n_1..n_3`) + audio `hskk{n}_p1_q*.mp3` (bài 1 không có số: `hskk_p1_q*.mp3`).
 
 ## Quy trình 7 bước
 
+### Lời nói của user — LUÔN xin ý tiếng Việt trước (rút từ session 2026-10-22: 4 lần bị chê "gượng")
+Câu kể "Tui kể trước", Mở đầu ④⑤, Kết thúc, post, caption, bio: **xin user nói ý bằng tiếng Việt** (lộn xộn cũng được) →
+dịch sang khẩu ngữ, giữ ~90% ý + giọng gốc → kèm mục **"những chỗ mình chỉnh"** (vì sao đổi) để user duyệt.
+KHÔNG tự soạn sẵn cả khung rồi đưa user sửa — bản AI tự soạn bị chê khuôn sáo/gượng mọi lần.
+Khi dịch: lọc từ H6 trong `raw/Từ vựng.xlsx` (khẩu ngữ trước); từ không có trong danh sách thì nói rõ.
+
+### Công cụ sửa trang (bắt buộc)
+- Sửa khối dữ liệu: `python scripts/patch_data.py <page.html> <changes.json>`
+  (`blocks` / `replace` / `gloss` — xem docstring). **Mỗi `**từ**` hoặc `{s|…}` phải có `gloss` (pinyin + nghĩa tự soạn,
+  không dựa dịch máy)** — script báo "THIẾU gloss" nếu sót.
+- Kiểm tra: `python scripts/check_page.py <page.html> [--select <từ>]` → **chạy xong, không lỗi JS, mới báo "đã sửa"**
+  (session 2026-10-22 lọt 2 lỗi cú pháp vì chỉ `node --check`).
+
 ### Bước 0 — Chọn chủ đề & trang chủ đề ✅ chốt
 - Nguồn: 口语 (30 bài) là chính. Đổi gió: trend RedNote/HelloTalk, chuyện đời user, ngày lễ/mùa.
-- Kiểm tra `_so-chu-de.md` để không trùng → đăng ký mã mới.
+- Kiểm tra `_so-chu-de.md` để không trùng → đăng ký tập mới (số tập + tên thư mục).
 - Nếu theo sách: lấy bài từ `on-luyen.html` → rút **mẫu câu + từ của bài** TRƯỚC, rồi mới viết câu hỏi quanh chúng.
 - Từ H6: lọc trong **toàn bộ** `raw/Từ vựng.xlsx`, ưu tiên từ **khẩu ngữ** hợp chủ đề; từ 书面 chỉ khi bí → dành clip ③.
 - Khai thác theo `references/question-method.md` (QFT tuỳ chọn → nhánh → dòng thời gian xu hướng → khối 4 bước).
   User có thể nhờ skill đề xuất luôn bộ câu hỏi, không bắt buộc tự đặt trước.
 - Xu hướng "đang/sắp" **phải WebSearch** (kiến thức model có hạn), không bịa số liệu/tin. Số liệu chỉ dùng để nghĩ câu hỏi, KHÔNG đưa lên trang.
-- Ghi vào khối dữ liệu `chu-de.html`. Chỗ cần chuyện thật của user để `[ngoặc vuông]`.
+- Ghi vào khối dữ liệu trang chủ đề. Chỗ cần chuyện thật của user để `[ngoặc vuông]`.
 - Kết thúc: user **đọc to** → câu ngượng miệng (gõ vào khung chat của khối) → sửa.
 
 ### Bước 1 — Post HelloTalk ✅ chốt
 - **1 post/chủ đề.** Không chốt giờ room, không nhắc voice room trong post giới thiệu.
-- Ghi vào `post-content.md`. Khung: `templates/post-hellotalk.md`. Mở bằng chuyện nhỏ thật → câu hỏi dễ trả lời → hashtag.
+- Ghi vào khối dữ liệu `post` của trang chủ đề (tab 📝 Bài đăng, mỗi đoạn có nút 📋 copy + nút Copy cả bài). Khung: `templates/post-hellotalk.md`. Mở bằng chuyện nhỏ thật → câu hỏi dễ trả lời → hashtag.
 - Ảnh: linh hoạt ảnh thật + ảnh gen (qua skill `genimagevideo`), phong cách đời thường, tránh lộ AI.
   Ghi loại ảnh vào sổ để luân phiên.
 
@@ -93,11 +110,11 @@ Trạng thái người dùng nằm ở `chat` + `room_state` (có `ts`); trang l
 - Không có bình luận → bỏ qua.
 
 ### Bước 3 — Voice room (< 60 phút) 🟡 khung
-- Dùng `chu-de.html`. Chưa ai vào → chế độ 🙋 (luyện đọc); ai vào → 👥. Ở 👥: user kể trước ~1 phút rồi mời mọi người.
+- Dùng trang chủ đề. Chưa ai vào → chế độ 🙋 (luyện đọc); ai vào → 👥. Ở 👥: user kể trước ~1 phút rồi mời mọi người.
 - KHÔNG báo ghi âm đầu room, KHÔNG có bước "tóm tắt 1 phút" trong room (clip ① lấy từ bản ghi âm).
 - Ghi âm (iPhone): thử quay màn hình + mic 5 phút; thiếu tiếng người khác → laptop Sound Recorder, điện thoại loa ngoài.
 - Transcript: Whisper chạy local (TODO: kiểm tra máy cài được không trước khi viết script).
-- Sau room: đọc `chat` + `room_state` trong `chu-de.html` (từ chưa nói, ghi chú) + transcript → **speaking-coach** sửa lỗi
+- Sau room: đọc `chat` + `room_state` trong trang chủ đề (từ chưa nói, ghi chú) + transcript → **speaking-coach** sửa lỗi
   (nó ghi session-log; Activation do learning-strategist nâng). Tóm tắt (từ đã dùng, lỗi chính, câu hay) → mục tập đó
   trong `_so-chu-de.md`. File ghi âm → `clip/`. Đề xuất dòng mới cho `_dau-an-ca-nhan.md` → **chờ user duyệt**.
 
@@ -112,7 +129,7 @@ Trạng thái người dùng nằm ở `chat` + `room_state` (có `ts`); trang l
 - Tuỳ chọn: chấm đoạn tóm tắt bằng `hsk6-examiner`.
 
 ### Bước 5 — Đăng TikTok + RedNote 🟡 khung
-- Rải 3 clip trong 3 ngày. Cùng 1 clip, khác caption + hashtag → ghi vào `post-content.md`.
+- Rải 3 clip trong 3 ngày. Cùng 1 clip, khác caption + hashtag → thêm section TikTok / RedNote vào khối `post` của trang.
 - Dựng bằng `genimagevideo`: skill này xuất **gói giao** (kịch bản theo cảnh, phụ đề, hook, chữ cover,
   prompt ảnh/video từng cảnh, đánh dấu cảnh dùng ảnh thật). Option: clip 4 = video poster từ H6 của chủ đề.
 - Tên series: CHƯA chốt — tạm "Tập 01, 02…".
@@ -139,10 +156,16 @@ Trạng thái người dùng nằm ở `chat` + `room_state` (có `ts`); trang l
 - Tôn trọng 90% văn phong gốc khi sửa bài của user.
 - Mỗi lượt hỏi user ít câu, đúng trọng tâm bước đang làm.
 
-## TODO đang mở — đồng bộ đa thiết bị + dùng trên điện thoại (CHƯA chốt, user đang cân nhắc)
+## Đồng bộ đa thiết bị + điện thoại — ĐANG THỬ phương án Artifact (từ 2026-10-22)
 Yêu cầu: mở ở bất kỳ máy/điện thoại nào, làm tiếp đúng chỗ cũ; copy được nội dung sang HelloTalk trên điện thoại.
-- **Hiện có (tạm):** `<TS>/Mo-Talk-series.bat` → `scripts/sync_server.py` (git pull → mở trang qua localhost:8765;
-  nút Lưu = ghi `chat`/`room_state` vào file + commit + push khi đứng `main`; nút 📱 = QR cho điện thoại cùng Wi-Fi).
-  Hạn chế: máy tính phải bật + chạy .bat, điện thoại cùng Wi-Fi (thử thật chưa vào được — có thể do tường lửa), máy khác cần Python + git.
-- **Phương án đề xuất:** đưa trang lên claude.ai (Artifact, riêng tư) + lưu tick/chat online → link mở được mọi nơi, không cần .bat; skill đọc dữ liệu qua ArtifactData.
-- Chốt xong → cập nhật mục này + khuôn `chu-de.html`, gỡ phần không dùng.
+- **Artifact (đang thử):** 1 link cố định https://claude.ai/artifact/Em2nw9iBDNvNu9n42hf3QW (riêng tư, tên "Talk Series",
+  mở trong app Claude hoặc trình duyệt). Trang trong máy vẫn là **bản gốc**; dựng bản Artifact bằng
+  `python scripts/build_artifact.py "<TS>/NN/NN_<tên>.html" "<out>.html"` rồi publish lại **cùng url**, capabilities `{"db": {}, "sample": {}}`.
+  Tập mới → build từ trang tập mới, publish đè cùng link (tiến độ tập cũ vẫn còn trong db).
+  **Nhịp đẩy:** lúc đang sửa từng khối CHỈ sửa trang trong máy; build + publish 1 lần khi user nói "xong" / "đẩy lên" /
+  sắp mở trên điện thoại (user chốt 2026-10-22 — đừng publish sau mỗi khối).
+  - Tick/chat lưu ở db doc `progress/ep<NN>` (field `state` = S của trang) → sau room đọc bằng ArtifactData (`get`, collection `progress`, doc `ep<NN>`).
+  - Từ không có trong `gloss` → hỏi Claude qua `sample` (MyMemory bị CSP chặn trên claude.ai).
+  - Trang gốc có 2 móc rỗng `window.TS_onSave` / `window.TS_MEANING` cho bản Artifact gắn vào — đừng xoá.
+- **Cách cũ (giữ tới khi Artifact chạy ổn):** `<TS>/Mo-Talk-series.bat` → `scripts/sync_server.py` (localhost, nút Lưu commit+push, QR cùng Wi-Fi —
+  chưa vào được từ điện thoại). Artifact ổn → gỡ .bat + sync_server + nút 📱/💾 khỏi khuôn.

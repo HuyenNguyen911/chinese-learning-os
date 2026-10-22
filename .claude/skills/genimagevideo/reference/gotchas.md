@@ -5,6 +5,8 @@
 | `remotion still/render` lỗi `spawn EFTYPE` | Chromium headless Remotion tự tải về không chạy được | `remotion.config.ts` trong template tự chọn Chrome/Edge có sẵn (`Config.setBrowserExecutable`) |
 | Bundling lỗi `typescript.sys` undefined | TypeScript bản mới nhất (7.x) không tương thích esbuild-loader của Remotion 4.0.x | Ghim `typescript@5.6.3` (đã có trong package-lock của template) |
 | `tsc` báo `moduleResolution=node10 removed` | tsconfig cũ | Dùng `"moduleResolution": "bundler"` |
+| `gen_image.py -n 2` chỉ ra 1 ảnh (2026-10-22) | Model qua 9router bỏ qua `n` | Cần nhiều phương án → gọi nhiều lần, mỗi lần 1 prompt |
+| Xin `--size 1536x1024` nhận về 1264×848 (2026-10-22) | Model chỉ có vài khung cố định (ngang ≈ 3:2) | Nhận 3:2 rồi tự cắt bằng Pillow (vd 5:4 bìa RedNote); chủ thể lệch → cắt lệch theo chủ thể |
 | Python in tiếng Việt lỗi `UnicodeEncodeError cp1252` | Console Windows | Đầu mọi script: `sys.stdout.reconfigure(encoding="utf-8")` |
 | Gọi `api.lucylab.io` từ Python → 403 (curl thì được) | Cloudflare chặn User-Agent `Python-urllib` | Luôn gửi header `User-Agent: curl/8.4.0` |
 | LucyLab: "You already have an export in progress" | Tài khoản chỉ 1 job cùng lúc; job kẹt chặn job sau | TTS tuần tự; job lỗi tự `failed` sau ~1–2 phút. Không bắn song song |

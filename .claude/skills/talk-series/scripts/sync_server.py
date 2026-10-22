@@ -1,9 +1,9 @@
-"""Máy chủ nhỏ cho trang chu-de.html của Talk series.
+"""Máy chủ nhỏ cho trang chủ đề (NN/NN_<tên>.html) của Talk series.
 
 Bấm đúp `Mo-Talk-series.bat` (thư mục Talk series) → script này:
   1. git pull (lấy tiến độ mới nhất từ máy khác)
   2. mở trang chủ đề mới nhất trên trình duyệt qua http://localhost:8765
-  3. nhận nút "💾 Lưu + đồng bộ": ghi tick + chat vào khối dữ liệu của chu-de.html,
+  3. nhận nút "💾 Lưu + đồng bộ": ghi tick + chat vào khối dữ liệu của trang chủ đề,
      rồi commit ĐÚNG file đó + push. Chỉ push khi repo đang đứng nhánh main.
 """
 import http.server
@@ -91,7 +91,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return self.send_error(404)
         req = json.loads(self.rfile.read(int(self.headers["Content-Length"])).decode("utf-8"))
         page = (TS / urllib.parse.unquote(req["page"]).lstrip("/")).resolve()
-        if TS.resolve() not in page.parents or page.name != "chu-de.html" or not page.exists():
+        if TS.resolve() not in page.parents or not re.fullmatch(r"\d\d_.+\.html", page.name) or not page.exists():
             return self.reply({"saved": False, "msg": "Đường dẫn trang không hợp lệ."})
 
         main = on_main()
@@ -120,8 +120,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 def latest_page():
-    topics = sorted(p for p in TS.iterdir() if p.is_dir() and re.match(r"\d\d_", p.name) and (p / "chu-de.html").exists())
-    return f"{topics[-1].name}/chu-de.html" if topics else ""
+    pages = sorted(f for d in TS.iterdir() if d.is_dir() and re.fullmatch(r"\d\d", d.name) for f in d.glob(d.name + "_*.html"))
+    return pages[-1].relative_to(TS).as_posix() if pages else ""
 
 
 if __name__ == "__main__":
