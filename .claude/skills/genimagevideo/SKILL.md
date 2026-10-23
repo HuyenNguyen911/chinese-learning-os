@@ -100,6 +100,14 @@ Mở video cho user bằng ứng dụng Windows: `cmd.exe //c start "" "video/<s
 (**trình xem trong VS Code phát hình nhưng không ra tiếng** — đã xác nhận với user).
 Commit vào `main` theo luật Git Hygiene (CLAUDE.md §5.5); không push nếu user chưa bảo.
 
+## Nhân vật chibi (Talk series + video)
+- Ảnh chụp thật làm mẫu: `raw/nhan-vat/<tên>/` — **gitignored**, không lên GitHub. User tự bỏ ảnh vào; nhân vật đã có thì dùng lại, không xin lại ảnh.
+- Bản chibi + hồ sơ: `output/Gen ảnh_video/nhan-vat/<tên>/avatar.png` + `nhan-vat/README.md` (dấu hiệu nhận diện từng người — ĐỌC trước khi vẽ).
+- Phong cách chung: chibi đầu to, nét mảnh, tô phẳng pastel, nền mint trơn (để tách nền), không chữ/logo.
+- **Máy chủ 9router KHÔNG sửa được ảnh theo ảnh mẫu và KHÔNG có model video** (xem gotchas) → mỗi lần vẽ lại, nhân vật xê dịch.
+  Chỉnh chi tiết nhỏ (thêm đồng hồ, đổi tay) → **lật ảnh / vẽ đè bằng Pillow** trên tấm đã duyệt, không vẽ lại cả nhân vật.
+- Người thật khác (bạn bè, bố mẹ): chỉ vẽ theo ảnh khi user tự gửi; nhắc user hỏi ý người đó trước khi đăng công khai.
+
 ## Không làm
 - Không để AI vẽ chữ Hán/pinyin trong ảnh — chữ do Remotion vẽ bằng font thật.
 - Không gửi key tới endpoint tự đoán; không in key ra terminal; không commit `.env`.

@@ -1,6 +1,6 @@
 """Chạy thử trang chủ đề bằng Chrome/Edge ngầm (headless) — BẮT BUỘC trước khi báo "đã sửa".
 
-    python check_page.py "<TS>/NN/NN_<tên>.html" [--select 过瘾]
+    python check_page.py "<TS>/NN/NN_<tên>.html" [--select 过瘾] [--tab group|solo|post]
 
 In ra: số dòng Mở đầu + Kết thúc, số chip từ H6 ở cột Mục tiêu, lỗi JS (phải rỗng).
 --select <cụm>: giả lập bôi đen cụm đó → in nội dung popup pinyin + nghĩa.
@@ -13,6 +13,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 ap = argparse.ArgumentParser()
 ap.add_argument('page')
 ap.add_argument('--select', default='')
+ap.add_argument('--tab', default='group', choices=['group', 'solo', 'post'])
 a = ap.parse_args()
 
 BROWSERS = [r'C:\Program Files\Google\Chrome\Application\chrome.exe',
@@ -27,6 +28,8 @@ sel = a.select.replace('\\', '\\\\').replace('"', '\\"')
 probe = r'''<script>
 setTimeout(function(){
   var out=[];
+  var tb=document.querySelector('#mode button[data-m="%s"]'); if(tb) tb.click();
+  out.push('tab=%s', 'the_bai_dang='+document.querySelectorAll('#main [data-all]').length);
   var lines=document.querySelectorAll('.v.intro .txt').length;
   out.push('dong_mo_dau_ket_thuc='+lines, 'chip_H6='+document.querySelectorAll('#goal .chip').length);
   var W="%s";
@@ -46,7 +49,7 @@ setTimeout(function(){
     document.body.setAttribute('data-res', out.join('\n'));
   },2500);
 },1000);
-</script></body>''' % sel
+</script></body>''' % (a.tab, a.tab, sel)
 t = s.replace('<head>', '<head>' + head, 1).replace('</body>', probe, 1)
 with tempfile.TemporaryDirectory() as d:
     f = Path(d) / 'check.html'

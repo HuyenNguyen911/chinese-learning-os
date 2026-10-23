@@ -158,6 +158,8 @@ User không kiểm soát được git flow — TÔI phải tự kỷ luật. B�
 | output/Giáo trình phát triển Hán ngữ/Talk series/** | Talk Series (`_so-chu-de.md`, `_gioi-thieu-series/`, `Mo-Talk-series.bat` (tạm — TODO đồng bộ chưa chốt, xem SKILL.md), mỗi chủ đề thư mục `NN/` (01, 02…) chỉ gồm `NN_<tên-tiếng-Anh>.html` (đã gồm tab 📝 Bài đăng: post HelloTalk + caption) + `clip/` cùng cấp). Nguồn bài 口语 lấy từ `onluyen/on-luyen.html` (chỉ đọc), không OCR lại sách |
 | output/Giáo trình phát triển Hán ngữ/Talk series/_dau-an-ca-nhan.md | Talk Series — CHỈ ghi sau khi user duyệt từng dòng |
 | output/Gen ảnh_video/<slug>/ | Genimagevideo (mỗi video 1 project tự chứa: words/layout.json, assets/, public/, src/ Remotion; thành phẩm `video/<slug>.mp4` được commit; `node_modules/`, `out/` gitignored) |
+| output/Gen ảnh_video/nhan-vat/ | Genimagevideo (chibi `<tên>/avatar.png` + `README.md` hồ sơ nhân vật — dùng chung cho Talk series) |
+| raw/nhan-vat/ | User (ảnh chụp thật làm mẫu vẽ chibi — **gitignored**, không lên GitHub) |
 | .claude/skills/genimagevideo/scripts/imagegen/.env | User (API key ảnh + giọng — gitignored, KHÔNG commit/in ra) |
 | memory/* | User only |
 

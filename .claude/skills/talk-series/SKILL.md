@@ -81,7 +81,7 @@ Khi dịch: lọc từ H6 trong `raw/Từ vựng.xlsx` (khẩu ngữ trước); 
 - Sửa khối dữ liệu: `python scripts/patch_data.py <page.html> <changes.json>`
   (`blocks` / `replace` / `gloss` — xem docstring). **Mỗi `**từ**` hoặc `{s|…}` phải có `gloss` (pinyin + nghĩa tự soạn,
   không dựa dịch máy)** — script báo "THIẾU gloss" nếu sót.
-- Kiểm tra: `python scripts/check_page.py <page.html> [--select <từ>]` → **chạy xong, không lỗi JS, mới báo "đã sửa"**
+- Kiểm tra: `python scripts/check_page.py <page.html> [--select <từ>] [--tab group|solo|post]` → **chạy xong, không lỗi JS, mới báo "đã sửa"**
   (session 2026-10-22 lọt 2 lỗi cú pháp vì chỉ `node --check`).
 
 ### Bước 0 — Chọn chủ đề & trang chủ đề ✅ chốt
@@ -118,21 +118,24 @@ Khi dịch: lọc từ H6 trong `raw/Từ vựng.xlsx` (khẩu ngữ trước); 
   (nó ghi session-log; Activation do learning-strategist nâng). Tóm tắt (từ đã dùng, lỗi chính, câu hay) → mục tập đó
   trong `_so-chu-de.md`. File ghi âm → `clip/`. Đề xuất dòng mới cho `_dau-an-ca-nhan.md` → **chờ user duyệt**.
 
-### Bước 4 — Kịch bản 3 clip 🟡 khung
-- 3 clip ngắn 30-60s, **giọng thật của user**: ① tóm tắt các góc nhìn nghe được (từ bản ghi âm) → kết bằng câu hỏi
-  cho người xem (KHÔNG chốt quan điểm) ② 朗读 đoạn bài khoá 口语 (FREE → đoạn user tự viết)
-  ③ 回答问题 theo format HSKK cao cấp, bớt slang.
-- Mẫu câu văn viết của bài (由于…所以…) + từ H6 书面 đưa vào ① / ③, không ép vào lời nói room.
+### Bước 4 — 1 video + 1 bộ ảnh (chốt 2026-10-23) 🟡 đang dựng khuôn
+- **Mỗi tuần CHỈ 1 video dọc 9:16 (20-30s) + 1 bộ ảnh 3:4 (1080×1440)**, dùng chung cho mọi kênh — không làm content riêng
+  từng nền tảng (user mệt + tốn token). Bộ ảnh = các cảnh của video xuất tĩnh.
+- **Nhân vật chibi cử động** (không dùng ảnh tĩnh — "chán"): tấm gốc + các tấm "lật" (miệng mở, mắt nhắm…) vẽ đè bằng code,
+  nhép miệng theo **âm lượng** giọng thật, chớp mắt, nhún nhẹ. Nhân vật lấy từ `output/Gen ảnh_video/nhan-vat/` (xem genimagevideo).
+- **Kịch bản:** chia câu theo cảnh `c1…cN`; user thu **mỗi câu 1 file** `cN.m4a` → độ dài cảnh = độ dài file, phụ đề tự khớp.
+  Phải **thể hiện đúng ý chủ đề** (vd 传染 = có chuỗi lây người→người) và đặt user là người trong cuộc, không đứng nhìn.
+  Có thể lấy tình huống từ `onluyen/bai-mau-cau5-6.md` (giữ cụm đắt giá, BỎ câu kêu gọi kiểu 让我们…吧 / 正能量).
+- **Chữ trên video: toàn tiếng Trung**; từ khó (2-4 từ/clip) hiện thẻ 汉字 + pinyin + nghĩa Việt đúng cảnh. Chữ do code vẽ.
 - Câu sai trong room → sửa đúng → cài vào kịch bản (chữa lỗi bằng cách nói lại).
-- Phụ đề Trung + Việt; pinyin CHỈ cho từ H6 (sinh bằng pypinyin); từ H6 tô màu.
-- Kiểm tra câu ③ qua 3 vai: giám khảo HSKK / giáo viên / người Trung bình thường.
-- Tuỳ chọn: chấm đoạn tóm tắt bằng `hsk6-examiner`.
+- Dựng bằng `genimagevideo` (khuôn "clip kể chuyện" — đang làm).
 
-### Bước 5 — Đăng TikTok + RedNote 🟡 khung
-- Rải 3 clip trong 3 ngày. Cùng 1 clip, khác caption + hashtag → thêm section TikTok / RedNote vào khối `post` của trang.
-- Dựng bằng `genimagevideo`: skill này xuất **gói giao** (kịch bản theo cảnh, phụ đề, hook, chữ cover,
-  prompt ảnh/video từng cảnh, đánh dấu cảnh dùng ảnh thật). Option: clip 4 = video poster từ H6 của chủ đề.
-- Tên series: CHƯA chốt — tạm "Tập 01, 02…".
+### Bước 5 — Đăng 6 kênh 🟡 khung
+- Caption từng kênh nằm trong khối `post` của trang (mỗi kênh 1 thẻ copy; RedNote tách thẻ tiêu đề). Luật từng kênh: `style-rules.md` §6.
+- Định dạng: TikTok = video · Instagram = Reels (+ carousel, Story bình chọn) · Facebook = bài ảnh + chữ (Reels tự chia sẻ từ IG)
+  · Threads = chữ + 1 ảnh · RedNote = bài ảnh 图文 (từ khoá trong tiêu đề/thân) · HelloTalk = moment chữ + **file đọc to** (được sửa phát âm).
+- Quá sức → ưu tiên HelloTalk (được sửa) + TikTok (luyện nói khi quay).
+- Tên series: CHƯA chốt — đang dùng "📚 每周一个话题｜Vol. 01".
 
 ### Bước 6 — Review sau chủ đề 🟡 khung
 - User gửi **ảnh chụp trang thống kê** + link (không tự thống kê từ link được — nền tảng chặn).

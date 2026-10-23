@@ -32,3 +32,6 @@ output/Gen ảnh_video/**/node_modules/
 output/Gen ảnh_video/**/out/
 output/Gen ảnh_video/**/gen.log
 .claude/skills/genimagevideo/template/**/node_modules/
+# Ảnh chụp thật (user, bạn bè, người thân) dùng làm mẫu vẽ chibi — riêng tư, KHÔNG đưa lên GitHub.
+# Bản chibi đã vẽ nằm ở output/Gen ảnh_video/nhan-vat/ và được commit bình thường.
+raw/nhan-vat/

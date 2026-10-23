@@ -19,3 +19,6 @@
 | rembg làm hỏng ảnh bộ phận rời (thử 2026-10-21, 8 ảnh) | Model AI đoán "chủ thể" — với mảnh rời (trán, đôi mắt, mớ tóc) nó đoán sai | `isnet-anime`: mất cả đôi mắt, gần hết trán, nửa mớ tóc. `birefnet-general-lite`: xoá da trán, cắt lệch miệng, ~50s/ảnh CPU. → không dùng mặc định |
 | Model mặc định của rembg (`bria-rmbg`) | ~1GB, cần license thương mại | Luôn chỉ định `--model` khác nếu dùng rembg |
 | `git mv` báo "not under version control" | Thư mục vừa `mv` thường, chưa `git add` | Dùng `mv` rồi `git add -A <path>` |
+| `/v1/images/edits` trả HTTP 500; gửi `image` kèm `/images/generations` thì bị bỏ qua, ra nhân vật khác hẳn (2026-10-23) | 9router không hỗ trợ sửa ảnh theo ảnh mẫu | Chỉnh chi tiết bằng lật ảnh / vẽ đè Pillow; muốn giữ nhân vật thì dùng lại đúng tấm đã duyệt |
+| `/v1/models` không có model video nào (2026-10-23; danh sách cũng không đầy đủ — thiếu cả model ảnh đang dùng) | Router chỉ có model chat + ảnh ẩn | Chuyển động làm bằng Remotion (lật tấm, nhép miệng theo âm lượng), không đoán tên model video |
+| `OSError: [Errno 22] Invalid argument` khi lưu ảnh (2026-10-23) | File đích đang mở trong trình xem ảnh Windows (bị khoá) | Lưu sang tên mới, đổi tên sau khi user đóng trình xem |

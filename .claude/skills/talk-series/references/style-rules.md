@@ -41,6 +41,8 @@ Dấu hiệu người thật (dùng vừa phải):
   Từ 书面 (惩罚, 伴侣, 宣泄, 锦上添花…) chỉ dùng khi thật bí → để dành clip ③.
 - Mẫu câu văn viết (由于……所以……, 社交网络) → chuyển sang clip tóm tắt / câu HSKK, không ép vào lời nói room.
 - Câu HSKK (clip ③): bớt hoặc bỏ slang.
+- **Xưng hô linh hoạt, AI tự đề xuất theo ngữ cảnh:** kể chuyện thật của user → **我**; hỏi / rủ người xem → **你**.
+  Văn viết hay lược chủ ngữ (有没有过这种时候？) — trong lời nói video thì thêm đại từ cho rõ, gần gũi.
 - Chỗ cần chuyện thật → `[ngoặc vuông]`, không bịa đời tư user.
 
 ## 4b. Đoạn "Họ chưa hiểu / bí"
@@ -60,8 +62,11 @@ không nhắc nguồn sách, không lời hứa phóng đại, không đóng khu
 | Nền tảng | Người đọc chính | Bố cục |
 |---|---|---|
 | HelloTalk | Người Trung (hay bình luận/sửa) + người học | Khối **Trung trước**, Việt 1-2 câu sau (app có nút dịch) |
-| RedNote | Người Trung tò mò người nước ngoài học Trung | **Tiêu đề Trung + emoji** (ô riêng), thân Trung, cuối thêm 1-2 từ tiếng Việt kèm nghĩa làm điểm lạ |
-| TikTok | Người Việt học tiếng Trung | **Việt chính**, 1-2 câu Trung hay nhất làm "món học" |
+| RedNote | Người Trung tò mò người nước ngoài học Trung | **Tiêu đề Trung + emoji** (ô riêng, **≤ ~20 ký tự** kể cả dấu/khoảng trắng), thân Trung, cuối thêm 1-2 từ tiếng Việt kèm nghĩa làm điểm lạ |
+| TikTok | Người Việt học tiếng Trung | **Việt chính** (hoặc thêm ≥1 câu Việt), 1-2 câu Trung hay nhất làm "món học" |
+| Instagram | Hỗn hợp | Trung trước; **tối đa 5 hashtag** (Instagram giới hạn từ 12/2025 — quá 5 có thể không đăng được) |
+| Facebook | Bạn bè / người quen **người Việt** | Trung + **thêm 1-2 câu Việt** để bạn bè bình luận được |
+| Threads | Hỗn hợp | Ngắn, 1 câu hỏi gợi tranh luận; **chỉ 1 tag/bài**, đăng rồi không sửa được tag |
 
 - Độ dài post HelloTalk: ngắn, 4-6 dòng, đọc vài giây là trả lời được.
 - Hashtag **tối đa 5** mỗi bài — riêng RedNote tối đa ~8 vì tìm kiếm mạnh (user chốt 2026-10-22), cố định `#每周一个话题 #MoiTuanMotChuDe` + tối đa 3 tag chủ đề/nền tảng.
