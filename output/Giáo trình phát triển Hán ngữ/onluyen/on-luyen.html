@@ -5353,6 +5353,8 @@ const SENTENCE_VI = {
    ranh giới và/hoặc bản dịch không đáng tin, user yêu cầu bỏ hẳn, chỉ giữ pinyin + nghĩa từ.) */
 (function(){
   const MAX_LOOKUP_LEN = 30;
+  /* Tắt khối "Trong câu" (user 2026-10-23) — đặt true để bật lại; bảng SENTENCE_VI vẫn giữ nguyên. */
+  const SHOW_SENTENCE_CTX = false;
   const popup = document.getElementById('lookupPopup');
   const popupBody = document.getElementById('lp-body');
   const closeBtn = document.getElementById('lp-close');
@@ -5524,7 +5526,7 @@ const SENTENCE_VI = {
     const myToken = ++requestToken;
     currentRect = rect;
     const pinyin = getPinyin(selectedText);
-    const ctx = range ? findContext(range, selectedText) : null;
+    const ctx = (SHOW_SENTENCE_CTX && range) ? findContext(range, selectedText) : null;
     popupBody.innerHTML = `
       <div class="lp-word">${escapeHtml(selectedText)}</div>
       <div class="lp-pinyin">${escapeHtml(pinyin) || '—'}</div>

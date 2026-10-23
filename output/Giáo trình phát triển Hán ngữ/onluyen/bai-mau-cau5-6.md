@@ -353,3 +353,43 @@
 - 继承前人的智慧 — kế thừa trí tuệ người đi trước
 - 无论…还是…，几乎都建立在…的基础上 — dù… hay…, gần như đều xây trên nền…
 - 深远而持久 — sâu xa và bền lâu
+
+---
+
+## Bài 7 · 《网络新词》
+
+### Câu 5：选择一两个新词新语，谈一谈它们反映了什么文化现象。
+
+随着社会的发展，年轻人的流行语也越来越多。在越南，Z世代也创造了各种各样的新说法，我想介绍其中一个，就是"烂尾项目"。
+
+说到烂尾项目，大家首先会想到一些开发商。他们明明没有任何手续，却伪造文件、大肆宣传，打着"低价公寓"的旗号，还带客户去看样板房，让人相信项目真的存在。结果等到购房者去收房的时候，才发现根本没有房子，再打电话，已经打不通了。
+
+后来，年轻人就借用这个词，来调侃那些计划定得很宏大，却从来没有付诸行动的事。比如出去旅游，有朋友说："明天我们早点起床去海边看日出吧！"大家早就摸透了他的性格，就会笑着说："又是一个烂尾项目吧？"或者同事说"我要辞职了"，我们也会回一句："烂尾项目啊！"
+
+我觉得这个词一方面反映出，人们经历过受骗以后，对"光说不做"变得更加警惕；另一方面也体现了年轻人用幽默、自嘲的方式来面对生活的态度。由此可见，一个小小的流行语，其实也折射出了社会的情绪。
+
+**🧭 Flow**
+1. Mở: xã hội phát triển, từ thịnh hành của giới trẻ ngày càng nhiều → chọn giới thiệu 1 từ Gen Z Việt Nam: 烂尾项目.
+2. Nghĩa gốc: chủ đầu tư không có thủ tục nhưng làm giả hồ sơ, quảng cáo rầm rộ "căn hộ giá rẻ", dẫn khách xem nhà mẫu → người mua đến nhận nhà mới biết không có nhà, gọi điện không liên lạc được.
+3. Nghĩa mượn: giới trẻ dùng từ này trêu những việc kế hoạch to tát nhưng chẳng bao giờ làm.
+4. Ví dụ đời thường: bạn rủ "mai dậy sớm ra biển ngắm bình minh" → cả nhóm thuộc tính nó, cười "lại một dự án dở dang nữa à?"; đồng nghiệp nói "tôi nghỉ việc đây" → đáp "烂尾项目啊!"
+5. Hiện tượng phản ánh (2 mặt): (a) từng bị lừa nên cảnh giác hơn với kiểu "nói mà không làm"; (b) giới trẻ dùng hài hước, tự giễu để đối diện cuộc sống.
+6. Kết: một từ lóng nhỏ cũng phản chiếu tâm trạng xã hội.
+
+**💎 Cụm đắt giá**
+- 随着…的发展，…也越来越多 — cùng với sự phát triển của…, … ngày càng nhiều
+- 各种各样的新说法 — đủ kiểu cách nói mới
+- 我想介绍其中一个，就是… — tôi muốn giới thiệu một trong số đó, chính là…
+- 说到…，大家首先会想到… — nhắc đến…, mọi người đầu tiên sẽ nghĩ đến…
+- 明明…，却… — rõ ràng…, vậy mà lại…
+- 大肆宣传 / 打着…的旗号 — tuyên truyền rầm rộ / giương cờ…
+- 伪造文件 — làm giả hồ sơ
+- 根本没有…，再打电话，已经打不通了 — hoàn toàn không có…, gọi lại thì đã không liên lạc được
+- 借用这个词，来调侃… — mượn từ này để trêu…
+- 计划定得很宏大，却从来没有付诸行动 — kế hoạch đặt ra to tát nhưng chưa từng bắt tay làm
+- 早就摸透了他的性格 — đã nắm rõ tính anh ấy từ lâu
+- 一方面…，另一方面… — một mặt…, mặt khác…
+- 光说不做 — chỉ nói không làm
+- 变得更加警惕 — trở nên cảnh giác hơn
+- 用幽默、自嘲的方式来面对生活 — dùng hài hước, tự giễu để đối diện cuộc sống
+- 由此可见，…其实也折射出了… — từ đó có thể thấy,… thực ra cũng phản chiếu…
