@@ -1,0 +1,20 @@
+{
+  "name": "__SLUG__",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "still": "remotion still src/index.ts Story out/still.png --frame=150",
+    "render": "remotion render src/index.ts Story video/__SLUG__.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.250",
+    "@remotion/media-utils": "^4.0.250",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.250"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "typescript": "^5.6.3"
+  }
+}
