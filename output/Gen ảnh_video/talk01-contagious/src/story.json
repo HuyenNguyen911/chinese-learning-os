@@ -1,0 +1,146 @@
+{
+ "defaultSec": 3.4,
+ "scenes": [
+  {
+   "id": "c1",
+   "text": "你有没有过这种时候？",
+   "actors": [
+    {
+     "img": "jx3_smile",
+     "x": 540,
+     "feet": 1580,
+     "h": 980,
+     "bob": "voice"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "text": "刚回到家，也不知道发生了什么事，就看到爸爸妈妈都在开开心心地笑着。",
+   "actors": [
+    {
+     "img": "parents_sofa_laugh_v2",
+     "x": 690,
+     "feet": 1580,
+     "h": 600,
+     "bob": "laugh"
+    },
+    {
+     "img": "jx3_confused_b",
+     "x": 200,
+     "feet": 1580,
+     "h": 700,
+     "bob": "none",
+     "z": 1,
+     "from": -260
+    }
+   ],
+   "bubble": {
+    "text": "?",
+    "at": 0.55,
+    "x": 260,
+    "y": 810
+   }
+  },
+  {
+   "id": "c3",
+   "text": "你也不知不觉地跟着笑起来，心情一下子就好了。",
+   "actors": [
+    {
+     "img": "parents_sofa_talk_v2",
+     "x": 690,
+     "feet": 1580,
+     "h": 600,
+     "bob": "voice"
+    },
+    {
+     "img": "jx3_confused_b",
+     "x": 200,
+     "feet": 1580,
+     "h": 700,
+     "swap": {
+      "img": "jx3_laugh",
+      "at": 0.55
+     },
+     "bob": "none",
+     "z": 1
+    }
+   ],
+   "glow": [
+    {
+     "x": 860,
+     "y": 1070,
+     "at": 0.15
+    },
+    {
+     "x": 520,
+     "y": 1070,
+     "at": 0.35
+    },
+    {
+     "x": 200,
+     "y": 1210,
+     "at": 0.6
+    }
+   ],
+   "cards": [
+    {
+     "han": "不知不觉",
+     "py": "bù zhī bù jué",
+     "vi": "bất giác, lúc nào không hay",
+     "at": 0.25
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "text": "这大概就是快乐会“传染”吧？",
+   "actors": [
+    {
+     "img": "parents_sofa_laugh_v2",
+     "x": 690,
+     "feet": 1580,
+     "h": 600,
+     "bob": "laugh"
+    },
+    {
+     "img": "jx3_laugh",
+     "x": 200,
+     "feet": 1580,
+     "h": 700,
+     "bob": "laugh",
+     "z": 1
+    }
+   ],
+   "cards": [
+    {
+     "han": "传染",
+     "py": "chuán rǎn",
+     "vi": "lây (bệnh, cảm xúc)",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "text": "你最近有没有被谁的快乐感染过？来评论区聊聊吧～",
+   "actors": [
+    {
+     "img": "jx3_smile",
+     "x": 540,
+     "feet": 1580,
+     "h": 980,
+     "bob": "voice"
+    }
+   ],
+   "cards": [
+    {
+     "han": "感染",
+     "py": "gǎn rǎn",
+     "vi": "lây (cảm xúc)",
+     "at": 0.3
+    }
+   ]
+  }
+ ]
+}
