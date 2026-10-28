@@ -38,7 +38,11 @@ for s in story:
     if v in dur and v not in voice_span:
         voice_span[v] = (cur / FPS, cur / FPS + dur[v])
     cur += n
-TOTAL = cur / FPS
+SCENES_END = cur / FPS
+OUTRO = json.loads((here / "src" / "outro.json").read_text(encoding="utf-8"))["sec"]    # đoạn kết (Outro.tsx): nghỉ 0.4s + max(3.6, giọng + 1)
+OUTRO_START = round(SCENES_END * FPS + 0.4 * FPS) / FPS
+TOTAL = OUTRO_START + round(max(3.6, OUTRO + 1.0) * FPS) / FPS
+voice_span["outro"] = (OUTRO_START + 0.2, OUTRO_START + 0.2 + OUTRO)
 N = int(TOTAL * SR)
 t_all = np.arange(N) / SR
 at = lambda sid, p=0.0: starts[sid] + p * lens[sid]            # mốc trong cảnh theo tỉ lệ

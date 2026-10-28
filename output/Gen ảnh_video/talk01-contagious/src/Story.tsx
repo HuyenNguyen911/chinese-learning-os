@@ -4,6 +4,8 @@ import story from "./story.json";
 import durations from "./durations.json";
 import envelope from "./envelope.json";
 import sizes from "./sizes.json";
+import outro from "./outro.json";
+import { Outro, outroSec } from "./Outro";
 
 /* Clip kể chuyện 9:16: mỗi cảnh = 1 câu thoại. Độ dài cảnh = độ dài file giọng (durations.json, giây),
    chưa có giọng thì dùng story.defaultSec. Mọi mốc thời gian `at` là TỈ LỆ (0-1) của cảnh. */
@@ -49,7 +51,9 @@ for (const s of scenes) {
   layout.push({ s, start: cursor, n, voice, offset, chars });
   cursor += n;
 }
-export const TOTAL = cursor;
+const OUTRO_START = cursor + Math.round(0.4 * FPS);                 // hết cảnh cuối nghỉ 0.4s rồi vào đoạn kết
+export const TOTAL = OUTRO_START + Math.round(outroSec(outro.sec) * FPS);
+const WM_SPOTS: [number, number][] = [[60, 1855], [360, 1855], [640, 1770]];   // dấu chìm nhỏ đổi chỗ mỗi 6s
 
 const ease = Easing.bezier(0.45, 0, 0.55, 1);
 const FONT = '"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif';
@@ -210,6 +214,12 @@ const SceneView: React.FC<{ L: Layout }> = ({ L }) => {
   );
 };
 
+const Wm: React.FC = () => {
+  const f = useCurrentFrame();
+  const [x, y] = WM_SPOTS[Math.floor(f / FPS / 6) % WM_SPOTS.length];
+  return <div style={{ position: "absolute", left: x, top: y, fontSize: 26, fontWeight: 700, color: "#3a2a1c", opacity: 0.22, fontFamily: FONT }}>瑾玄在练嘴</div>;
+};
+
 export const Story: React.FC = () => {
   const voices = [...new Set(layout.map((L) => L.voice))];
   return (
@@ -220,6 +230,11 @@ export const Story: React.FC = () => {
         </Sequence>
       ))}
       <Audio src={staticFile("audio/bed.wav")} />
+      {/* chống copy + tên kênh: nhãn 禁止搬运 góc trên phải, tên kênh góc dưới phải, dấu chìm nhỏ đổi chỗ */}
+      <div style={{ position: "absolute", top: 60, right: 46, fontSize: 26, fontWeight: 700, color: "#D2382B", background: "#fff", border: "3px solid #D2382B", borderRadius: 10, padding: "3px 10px", fontFamily: FONT }}>禁止搬运</div>
+      <div style={{ position: "absolute", bottom: 40, right: 50, fontSize: 32, fontWeight: 800, color: "#fff", WebkitTextStroke: "8px #3a2a1c", paintOrder: "stroke fill" as any, fontFamily: FONT }}>@瑾玄在练嘴</div>
+      <Wm />
+      <Sequence from={OUTRO_START}><Outro text="谢谢大家的观看～喜欢的话，记得点赞、关注我哦！" /></Sequence>
       {voices.filter((v) => dur[v]).map((v) => {
         const g = layout.filter((L) => L.voice === v);
         return (
