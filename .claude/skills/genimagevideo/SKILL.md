@@ -110,6 +110,13 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk01-contagious/`. Cảnh khai b
 - **Khuôn mặt sống:** bảng `FACE` trong `Story.tsx` (toạ độ **dò từ pixel**, xem gotchas) cho `mouth`/`eyes`/`chat`; actor bật `talk` (nhép theo giọng/chữ), `mime` (nhép không thoại), `chat` (2 người nói xen kẽ trên cùng ảnh), `neutral` (miệng khép, chưa cười). Chớp mắt tự động nếu ảnh có `eyes`.
 - Render: `npm install` → `npm run render` → `video/<slug>.mp4`. Kiểm tra bằng `npx remotion still` + ảnh phóng to vùng mặt.
 
+## Ảnh bìa bài đăng (Talk series)
+Ví dụ: `output/Gen ảnh_video/talk01-contagious/src/Cover.tsx` → `cover/talk01-cover.png`.
+- **1 khung 3:4 (1080×1440) dùng chung mọi nền tảng** (RedNote/IG/FB/HelloTalk/TikTok ảnh) — user chọn, đỡ phải nhớ bản nào đăng đâu; bìa video TikTok lấy từ chính clip.
+- **Ghép từ ảnh nhân vật đã duyệt** trong `public/img/` của project clip, KHÔNG gen lại (gen lại → nhân vật xê dịch, lệch clip; không tốn lượt gen).
+- Thêm composition `Cover` (durationInFrames 1) vào `Root.tsx`, render: `npx remotion still src/index.ts Cover cover/<slug>-cover.png --frame=0` → Read ảnh tự soát rồi mở cho user.
+- Tiêu đề font thật ~104px (132px bị chê to); tiêu đề + mặt nhân vật dồn vùng giữa vì HelloTalk/FB cắt ảnh xem trước gần vuông.
+
 ## Nhân vật chibi (Talk series + video)
 - Ảnh chụp thật làm mẫu: `raw/nhan-vat/<tên>/` — **gitignored**, không lên GitHub. User tự bỏ ảnh vào; nhân vật đã có thì dùng lại, không xin lại ảnh.
 - Bản chibi + hồ sơ: `output/Gen ảnh_video/nhan-vat/<tên>/avatar.png` + `nhan-vat/README.md` (dấu hiệu nhận diện từng người — ĐỌC trước khi vẽ).
