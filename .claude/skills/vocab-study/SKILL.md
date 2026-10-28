@@ -23,6 +23,10 @@ author: Chinese Learning OS
 - **'Chung từ'**: cột `Bài, 生词(=chuỗi nhóm họ từ ngăn bởi 、hoặc -), …, 意义(ghi chú Việt)`.
   Đây là **生词拓展**.
 
+**Bài "Linh tinh"** (từ user góp nhặt ngoài bài khóa): cột `Bài` ghi `Linh tinh` (extract_xlsx map → số giữ chỗ 99;
+render hiện "Linh tinh", nằm trên cùng, không đụng đánh số Bài N thật). Quy trình khi user gửi list: đối chiếu trùng
+với cả 2 sheet + tier → báo kết quả trong chat → chỉ append từ MỚI (Pinyin/描述/意义/例如 tự soạn theo mẫu các bài) → pipeline 1→3→5.
+
 ## Output
 - `output/Giáo trình chuẩn/hsk6/study/tu-vung.md` — nguồn (bảng 生词 + 生词拓展), có thể sửa tay.
 - `output/Giáo trình chuẩn/hsk6/study/tu-vung.html` — trang học tự chứa (mở bằng trình duyệt).
@@ -58,6 +62,7 @@ SK=".claude/skills/vocab-study/scripts"
 # 3) dựng markdown nguồn
 "$PY" "$SK/build_md.py"
 # 4) (chỉ khi có TỪ MỚI) sinh mẹo nhớ — TĂNG DẦN, không chạy lại từ đã có
+#    (≲40 từ: viết thẳng JSON {từ: mẹo} cùng văn phong rồi merge_mnemonic.py, khỏi workflow)
 "$PY" "$SK/gen_mnemonic_wf.py"         # -> tạo data/wf_mnemonic.js cho từ còn thiếu
 #    rồi gọi tool: Workflow({scriptPath: ".../data/wf_mnemonic.js"})   # cần user bật orchestration
 #    lưu <output> workflow, rồi:

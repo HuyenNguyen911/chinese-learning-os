@@ -12,7 +12,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "data")
 XLSX = sys.argv[1] if len(sys.argv) > 1 else "raw/Từ vựng.xlsx"
 
+LINH_TINH = 99  # bài giữ chỗ "Linh tinh" (từ góp nhặt ngoài bài khóa)
+
 def bnum(v):
+    if re.match(r"\s*linh\s*tinh", str(v or ""), re.I):
+        return LINH_TINH
     m = re.match(r"\s*[Bb]ài\s*(\d+)", str(v or ""))
     return int(m.group(1)) if m else None
 

@@ -570,7 +570,7 @@ function beginStudy(cards,label){
   resetBody();sNext();
 }
 function startStudy(btn){var det=btn.closest('details');
-  var label='Bài '+det.getAttribute('data-bai');
+  var label=det.getAttribute('data-bai')=='99'?'Linh tinh':'Bài '+det.getAttribute('data-bai');
   var _bt=det.getAttribute('data-baititle');if(_bt)label+=' — '+_bt;
   beginStudy(cardsFrom(det.querySelectorAll('.panel.p1 tbody tr')),label);}
 function startStudyAll(){
@@ -741,7 +741,8 @@ P = ['<!doctype html>', '<html lang="vi"><head><meta charset="utf-8">',
 for num, header, rows, exp, btitle in bai:
     cnt = ('%d từ · %d nhóm 拓展' % (len(rows), len(exp))) if exp else ('%d từ' % len(rows))
     tlabel = ('<span class="btitle"> — %s</span>' % esc(btitle)) if btitle else ''
-    P.append('<details data-bai="%d" data-baititle="%s"><summary><span class="arw">▸</span>Bài %d%s<span class="flagcnt hidden"></span><span class="cnt">%s</span></summary>' % (num, esc(btitle), num, tlabel, cnt))
+    bname = "Linh tinh" if num == 99 else "Bài %d" % num  # 99 = bài giữ chỗ Linh tinh
+    P.append('<details data-bai="%d" data-baititle="%s"><summary><span class="arw">▸</span>%s%s<span class="flagcnt hidden"></span><span class="cnt">%s</span></summary>' % (num, esc(btitle), bname, tlabel, cnt))
     P.append('<div class="baitools"><button class="studybtn" onclick="startStudy(this)">🎓 Học bài này</button>')
     if exp:
         P.append('<button class="tabbtn on" onclick="tab(this,1)">Từ vựng (%d)</button>'

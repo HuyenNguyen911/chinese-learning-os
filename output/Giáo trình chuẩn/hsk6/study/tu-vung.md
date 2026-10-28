@@ -2650,3 +2650,46 @@
 - **屈** (chịu thiệt, khuất phục; gập lại): 屈就 qūjiù〖hạ mình nhận (chức vụ thấp hơn khả năng)〗 · 屈才 qūcái〖chôn vùi tài năng, phí tài〗 · 屈指可数 qūzhǐkěshǔ〖đếm trên đầu ngón tay, rất ít〗 · 首屈一指 shǒuqūyīzhǐ〖đứng đầu, số một〗 · 不屈不挠 bùqūbùnáo〖không khuất phục, kiên cường bất khuất〗 · 理屈词穷 lǐqūcíqióng〖đuối lý, hết lời để biện minh〗
 - **峭** (dốc đứng, hiểm trở): 陡峭 dǒuqiào〖dốc đứng〗 · 峭直 qiàozhí〖ngay thẳng, cương trực〗 · 峭壁 qiàobì〖vách đá dựng đứng〗 · 悬崖峭壁 xuányáqiàobì〖vách núi dựng đứng〗
 - **涌** (trào, tuôn ra): 汹涌 xiōngyǒng〖cuồn cuộn, dữ dội (sóng nước)〗 · 涌泉 yǒngquán〖suối trào, mạch nước phun〗 · 泉涌 quányǒng〖tuôn trào như suối〗 · 汹涌澎湃 xiōngyǒngpéngpài〖sóng cuộn cuồn cuộn dữ dội〗 · 泪如泉涌 lèirúquányǒng〖nước mắt tuôn như suối〗
+
+## Bài 99
+
+### 生词
+
+| 生词 | Pinyin | Nghĩa | 释义 | 例句 |
+| --- | --- | --- | --- | --- |
+| 一鸣惊人 | yìmíngjīngrén | bỗng nhiên nổi tiếng, một lần làm nên chuyện kinh người | 平时默默无闻，一做事就取得惊人的成绩 | 他练了三年口语，没想到在比赛里一鸣惊人，拿了第一名。 |
+| 世界屋脊 | shìjièwūjí | nóc nhà thế giới (chỉ cao nguyên Thanh Tạng) | 指青藏高原，因为地势极高 | 我一直想去世界屋脊看看，亲眼看看那里的雪山和蓝天。 |
+| 具备 | jùbèi | có đủ, có đầy đủ (điều kiện hoặc năng lực) | 拥有（某种条件或能力） | 想考HSK6，得先具备一定的词汇量和阅读速度。 |
+| 冲突 | chōngtū | xung đột, mâu thuẫn | 双方意见或利益不一致，产生矛盾 | 这周的课和公司的会议时间冲突了，我只好请假。 |
+| 喧嚣 | xuānxiāo | ồn ào, huyên náo | 声音杂乱、吵闹 | 城市里太喧嚣了，我周末就想找个安静的地方背单词。 |
+| 天下皆知 | tiānxiàjiēzhī | ai ai cũng biết, nổi tiếng khắp nơi | 世界上的人都知道，形容非常有名 | 他欠钱不还这件事，在我们这儿已经天下皆知了。 |
+| 头晕 | tóuyūn | chóng mặt, choáng đầu | 头脑发昏，感觉天旋地转 | 连着做了三套真题，我做完直接头晕了。 |
+| 契机 | qìjī | cơ hội, thời cơ then chốt | 事情发生转变的关键时机 | 那次考试没过，反而成了我认真练口语的契机。 |
+| 媒介 | méijiè | môi trường trung gian, phương tiện truyền thông | 使双方发生联系的中间事物 | 现在大家都靠短视频这个媒介来了解新闻。 |
+| 孔雀 | kǒngquè | con công | 一种鸟，雄鸟的尾巴羽毛很漂亮，能展开 | 动物园里的孔雀一开屏，周围的游客都拿出手机拍照。 |
+| 官印 | guānyìn | con dấu quan chức, ấn quan | 古代官员用来表示权力的印章 | 电视剧里，那个县官把官印往桌上一放，大家都不敢出声。 |
+| 宰相 | zǎixiàng | tể tướng | 古代皇帝之下地位最高的大臣 | 我最近在看一部历史剧，里面的宰相特别聪明。 |
+| 屏障 | píngzhàng | lá chắn, hàng rào bảo vệ | 起遮挡、保护作用的东西 | 这片森林是小镇天然的屏障，挡住了冬天的大风。 |
+| 征服 | zhēngfú | chinh phục | 用力量或努力使对方屈服，或克服困难 | 我的目标是先征服HSK6，再去征服HSKK高级。 |
+| 恭恭敬敬 | gōnggōngjìngjìng | cung kính, kính cẩn | 形容态度非常有礼貌、尊敬 | 见到老师，他恭恭敬敬地鞠了一个躬。 |
+| 愤愤不平 | fènfènbùpíng | bất bình, ấm ức | 心里很生气，觉得不公平 | 同事的功劳被抢了，他回家还一直愤愤不平。 |
+| 打草惊蛇 | dǎcǎojīngshé | đánh động đối phương, khiến họ cảnh giác | 行动不小心，让对方发现并提高警惕 | 咱们先别直接去问，免得打草惊蛇，让他提前有准备。 |
+| 扼杀 | èshā | bóp chết, hủy diệt | 用强力压制，使不能存在或发展 | 批评太多会扼杀孩子的好奇心，说话还是得注意。 |
+| 挥汗如雨 | huīhànrúyǔ | đổ mồ hôi như mưa, mồ hôi đầm đìa | 形容出汗很多，像下雨一样 | 夏天跑完八百米，大家都挥汗如雨，衣服全湿透了。 |
+| 摇篮 | yáolán | cái nôi; nơi khởi nguồn, nuôi dưỡng | 婴儿睡觉用的小床；比喻事物的发源地 | 长江和黄河是中华文明的摇篮。 |
+| 敬畏 | jìngwèi | lòng kính sợ, sự kính nể | 又尊敬又害怕的心情 | 站在大山面前，我心里不由得对大自然产生敬畏。 |
+| 曝晒 | pùshài | phơi dưới nắng gay gắt | 在强烈的阳光下长时间晒 | 手机别放在车里曝晒，温度太高容易出问题。 |
+| 概括 | gàikuò | khái quát, tóm tắt | 把主要内容简单地总结出来 | 写HSK6缩写的时候，关键是要学会概括每段的主要意思。 |
+| 横杆 | hénggān | xà ngang, thanh ngang (trong nhảy cao) | 横着放的杆子 | 跳高比赛里，他一次又一次地碰掉了横杆。 |
+| 溶剂 | róngjì | dung môi | 能溶解其他物质的液体 | 这种溶剂气味很大，用的时候要把窗户打开。 |
+| 狡猾 | jiǎohuá | khôn khéo, ranh mãnh, xảo quyệt | 聪明但不老实，爱耍手段 | 故事里的狐狸总是很狡猾，每次都骗过了别人。 |
+| 环纹 | huánwén | vân vòng, hoa văn hình vòng | 圆圈形状的花纹 | 树桩上的环纹一圈一圈的，数一数就知道树长了多少年。 |
+| 确凿 | quèzáo | xác thực, có căn cứ vững chắc | 非常确实，证据充分 | 没有确凿的证据，别随便说是他做的。 |
+| 细腻 | xìnì | tinh tế, tỉ mỉ, mịn màng | 细致、光滑；感情或描写很细致 | 这篇文章对人物心理的描写特别细腻，读着很有感觉。 |
+| 耗尽万贯 | hàojìnwànguàn | tiêu tốn hết vạn quan tiền, dốc cạn gia sản | 把大量的钱财全部花光 | 他为了治病耗尽万贯家财，最后什么都没剩下。 |
+| 走神儿 | zǒushénr | mất tập trung, lơ đãng | 注意力不集中，想别的事 | 早上读文章的时候我老走神儿，看了三遍才看懂。 |
+| 运转 | yùnzhuàn | vận hành, hoạt động | 按一定的方式转动或运行 | 机器运转了一整天，晚上才停下来检修。 |
+| 顶峰 | dǐngfēng | đỉnh núi; đỉnh cao | 山的最高处；比喻发展的最高点 | 希望考试那天，我的状态能到达最近的顶峰。 |
+| 颁奖词 | bānjiǎngcí | lời giới thiệu, nhận xét khi trao giải | 颁奖时宣读的介绍和评语 | 那段颁奖词写得很感人，我听了好几遍还想再听。 |
+| 魔幻 | móhuàn | huyền ảo, kỳ ảo | 神奇、不真实，像魔法一样 | 我挺喜欢魔幻小说，里面的世界跟现实完全不一样。 |
+| 鳞片 | línpiàn | vảy (cá, bò sát) | 鱼或爬行动物身上的小薄片 | 这种鱼的鳞片在灯光下会闪闪发光。 |
