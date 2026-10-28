@@ -50,6 +50,7 @@ với cả 2 sheet + tier → báo kết quả trong chat → chỉ append từ 
 - **🔊 Phát âm** (Web Speech API, giọng zh-CN của máy) — bảng + thẻ học (auto đọc khi lật).
 - ✏️ Sửa nội dung tại chỗ (lưu localStorage).
 - **🚩 Đánh dấu dòng đang học**: cờ per-dòng (bật/tắt tự do, localStorage) để tracking vị trí dừng bài giữa các buổi; badge 🚩N hiện trên summary mỗi Bài.
+- **Tab cấp trên: Từ vựng | Cụm ghi nhớ.** Tab *Cụm ghi nhớ* (từ `data/cum_ghi_nho.json`, không qua Excel) gom cụm cố định + từ dễ nhầm rút từ đề luyện điền từ H6: mỗi đề 1 nhóm gập `Điền từ H6 — Đề N` (bảng Từ | Pinyin | Cụm nhớ | Dễ nhầm với, 🔊), có 🎓 Học riêng. 汉→Việt: hiện từ, lật ra cụm; Việt→汉: hiện cụm với từ bị che ＿＿, nhớ ra từ. Tiến độ SRS lưu key `cum:<từ>` (không lẫn từ bài khóa), không có luồng D→C.
 
 ## Pipeline (chạy từ gốc repo; `PY` = python có pypinyin + openpyxl)
 ```bash
@@ -107,6 +108,7 @@ Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu
 - `ex_override.json` — 例句 cá nhân hoá (bám `memory/user-profile.md`). **GHI ĐÈ** câu bài khóa cho từ có trong file (vd Bài 15–28).
 - `exp_extra.json` — nhóm 生词拓展 thêm tay cho bài sheet 'Chung từ' thiếu (vd Bài 28).
 - `bai_titles.json` — map `{"<N>": "<标题 bài khóa>"}`. build_md gắn tên vào heading `## Bài N — <title>`, render_html hiện cạnh mỗi bài + nhãn flashcard. lesson-prep tự ghi khi bóc bài mới.
+- `cum_ghi_nho.json` — `{rules:[...], sections:[{title, items:[[từ, cụm nhớ, dễ nhầm với],...]}]}`. Mỗi đề user gửi = 1 section mới (user đặt tên, không đặt thì tự đánh số Đề N tiếp; không dùng "61–70" làm tên vì đề nào cũng vậy). Từ đã có ở đề trước → không tạo dòng mới, chỉ báo/bổ sung cách dùng vào dòng cũ. Build: chỉ cần bước 5 (render).
 - `tv.json`, `ct.json` — trung gian, tái sinh mỗi lần chạy bước 1 (không cần giữ tay).
 
 ## Đồng bộ tiến độ giữa các máy (lệnh "đồng bộ tiến độ")
