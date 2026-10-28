@@ -9,58 +9,158 @@
      "img": "jx3_smile",
      "x": 540,
      "feet": 1580,
-     "h": 980,
-     "bob": "voice"
+     "h": 920,
+     "bob": "voice",
+     "talk": true
     }
    ]
   },
   {
-   "id": "c2",
-   "text": "刚回到家，也不知道发生了什么事，就看到爸爸妈妈都在开开心心地笑着。",
+   "id": "c2a",
+   "voice": "c2",
+   "text": "刚回到家，",
+   "door": true,
    "actors": [
     {
      "img": "parents_sofa_laugh_v2",
-     "x": 690,
-     "feet": 1580,
-     "h": 600,
-     "bob": "laugh"
+     "x": 300,
+     "feet": 1440,
+     "h": 450,
+     "bob": "none",
+     "still": true,
+     "chat": true
+    },
+    {
+     "img": "jx3_smile",
+     "x": 830,
+     "feet": 1720,
+     "h": 900,
+     "bob": "none",
+     "from": 1350,
+     "fromSec": 1.1,
+     "walk": true,
+     "z": 1,
+     "neutral": true
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "voice": "c2",
+   "text": "还不知道发生了什么事，",
+   "door": true,
+   "actors": [
+    {
+     "img": "parents_sofa_laugh_v2",
+     "x": 300,
+     "feet": 1440,
+     "h": 450,
+     "bob": "none",
+     "still": true,
+     "chat": true
     },
     {
      "img": "jx3_confused_b",
-     "x": 200,
-     "feet": 1580,
-     "h": 700,
+     "x": 830,
+     "feet": 1720,
+     "h": 900,
      "bob": "none",
-     "z": 1,
-     "from": -260
+     "z": 1
     }
    ],
    "bubble": {
     "text": "?",
-    "at": 0.55,
-    "x": 260,
-    "y": 810
+    "at": 0.3,
+    "x": 690,
+    "y": 790
    }
   },
   {
-   "id": "c3",
-   "text": "你也不知不觉地跟着笑起来，心情一下子就好了。",
+   "id": "c2c",
+   "voice": "c2",
+   "text": "就看到爸爸妈妈都在开开心心地笑着。",
    "actors": [
     {
-     "img": "parents_sofa_talk_v2",
-     "x": 690,
+     "img": "parents_sofa_laugh_v2",
+     "x": 650,
      "feet": 1580,
-     "h": 600,
-     "bob": "voice"
+     "h": 660,
+     "bob": "none",
+     "still": true,
+     "chat": true,
+     "enter": {
+      "x": 300,
+      "feet": 1440,
+      "h": 450,
+      "sec": 0.7
+     }
     },
     {
      "img": "jx3_confused_b",
-     "x": 200,
+     "x": 130,
+     "feet": 1660,
+     "h": 500,
+     "bob": "none",
+     "z": 1,
+     "enter": {
+      "x": 830,
+      "feet": 1720,
+      "h": 900,
+      "sec": 0.7
+     }
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "silent": true,
+   "sec": 3.2,
+   "text": "",
+   "actors": [
+    {
+     "img": "parents_sofa_laugh_v2",
+     "bob": "none",
+     "still": true,
+     "chat": true,
+     "x": 650,
      "feet": 1580,
-     "h": 700,
+     "h": 660,
+     "lean": 0
+    },
+    {
+     "img": "jx3_confused_b",
+     "x": 130,
+     "feet": 1660,
+     "h": 500,
+     "bob": "none",
+     "mime": true,
+     "lean": 2.5,
+     "z": 1
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "voice": "c3",
+   "text": "你也不知不觉地跟着笑起来，",
+   "actors": [
+    {
+     "img": "parents_sofa_laugh_v2",
+     "x": 650,
+     "feet": 1580,
+     "h": 660,
+     "bob": "none",
+     "still": true,
+     "chat": true
+    },
+    {
+     "img": "jx3_confused_b",
+     "x": 130,
+     "feet": 1660,
+     "h": 500,
      "swap": {
       "img": "jx3_laugh",
-      "at": 0.55
+      "at": 0.6
      },
      "bob": "none",
      "z": 1
@@ -68,27 +168,51 @@
    ],
    "glow": [
     {
-     "x": 860,
-     "y": 1070,
-     "at": 0.15
+     "x": 831,
+     "y": 1100,
+     "at": 0.1
     },
     {
-     "x": 520,
-     "y": 1070,
-     "at": 0.35
+     "x": 490,
+     "y": 1100,
+     "at": 0.3
     },
     {
-     "x": 200,
-     "y": 1210,
-     "at": 0.6
+     "x": 130,
+     "y": 1285,
+     "at": 0.55
     }
    ],
    "cards": [
     {
      "han": "不知不觉",
      "py": "bù zhī bù jué",
-     "vi": "bất giác, lúc nào không hay",
-     "at": 0.25
+     "at": 0.2,
+     "en": "without realizing it"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "voice": "c3",
+   "text": "心情一下子就好了。",
+   "actors": [
+    {
+     "img": "parents_sofa_laugh_v2",
+     "x": 650,
+     "feet": 1580,
+     "h": 660,
+     "bob": "none",
+     "still": true,
+     "chat": true
+    },
+    {
+     "img": "jx3_laugh",
+     "x": 140,
+     "feet": 1660,
+     "h": 560,
+     "bob": "laugh",
+     "z": 1
     }
    ]
   },
@@ -97,48 +221,58 @@
    "text": "这大概就是快乐会“传染”吧？",
    "actors": [
     {
-     "img": "parents_sofa_laugh_v2",
-     "x": 690,
-     "feet": 1580,
-     "h": 600,
-     "bob": "laugh"
-    },
-    {
-     "img": "jx3_laugh",
-     "x": 200,
-     "feet": 1580,
-     "h": 700,
-     "bob": "laugh",
-     "z": 1
+     "img": "jx3_smile",
+     "x": 540,
+     "feet": 1620,
+     "h": 920,
+     "bob": "voice",
+     "talk": true
     }
    ],
    "cards": [
     {
      "han": "传染",
      "py": "chuán rǎn",
-     "vi": "lây (bệnh, cảm xúc)",
-     "at": 0.2
+     "at": 0.2,
+     "en": "to spread (illness, mood)"
     }
    ]
   },
   {
-   "id": "c5",
-   "text": "你最近有没有被谁的快乐感染过？来评论区聊聊吧～",
+   "id": "c5a",
+   "voice": "c5",
+   "text": "你最近有没有被谁的快乐感染过？",
    "actors": [
     {
      "img": "jx3_smile",
      "x": 540,
-     "feet": 1580,
-     "h": 980,
-     "bob": "voice"
+     "feet": 1620,
+     "h": 920,
+     "bob": "voice",
+     "talk": true
     }
    ],
    "cards": [
     {
      "han": "感染",
      "py": "gǎn rǎn",
-     "vi": "lây (cảm xúc)",
-     "at": 0.3
+     "at": 0.3,
+     "en": "to be affected by (a mood)"
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "voice": "c5",
+   "text": "来评论区聊聊吧～",
+   "actors": [
+    {
+     "img": "jx3_smile",
+     "x": 540,
+     "feet": 1620,
+     "h": 920,
+     "bob": "voice",
+     "talk": true
     }
    ]
   }
