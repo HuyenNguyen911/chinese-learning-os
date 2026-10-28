@@ -25,8 +25,10 @@ for i in ids:
     if src is None:
         missing.append(i); continue
     tmp = audio / f"{i}.tmp.wav"
+    # lọc ù/sôi nền nhẹ; KHÔNG dùng agate — nó cắt hơi ở dấu phẩy thành im bặt, nghe khựng
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-ar", str(SR), "-ac", "1",
-                    "-af", "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,areverse,"
+                    "-af", "highpass=f=90,afftdn=nr=12:nf=-50:tn=1,"
+                           "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,areverse,"
                            "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,areverse", str(tmp)], check=True)
     out = audio / f"{i}.wav"
     tmp.replace(out)

@@ -219,6 +219,7 @@ export const Story: React.FC = () => {
           <SceneView L={L} />
         </Sequence>
       ))}
+      <Audio src={staticFile("audio/bed.wav")} />
       {voices.filter((v) => dur[v]).map((v) => {
         const g = layout.filter((L) => L.voice === v);
         return (
