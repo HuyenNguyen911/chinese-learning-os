@@ -25,6 +25,12 @@ try:
 except FileNotFoundError:
     MN_JSON = "{}"
 
+try:
+    import json as _json
+    CUM = _json.load(open(os.path.join(DATA, "cum_ghi_nho.json"), encoding="utf-8"))
+except FileNotFoundError:
+    CUM = {"rules": [], "sections": []}
+
 MD = "output/Giáo trình chuẩn/hsk6/study/tu-vung.md"
 OUT = "output/Giáo trình chuẩn/hsk6/study/tu-vung.html"
 TIERS = [("A", "knowledge/vocabulary/tier-a.md"),
@@ -153,6 +159,18 @@ button{font-family:inherit;}
 .xlate-pop .xl-loading{opacity:.6;}
 .xlate-pop a{color:#8ecdf7;font-size:11px;display:block;margin-top:4px;text-decoration:none;}
 .xlate-pop a:hover{text-decoration:underline;}
+.toptabs{display:flex;gap:6px;padding:8px 14px 0;background:#fff;border-bottom:1px solid var(--bd);}
+.toptab{border:1px solid var(--bd);border-bottom:none;background:#eef1f8;color:#555;padding:7px 18px;border-radius:8px 8px 0 0;cursor:pointer;font-size:14.5px;}
+.toptab.on{background:var(--head);color:var(--headtx);font-weight:600;}
+#cum{padding:10px 14px 60px;}
+#cum.hidden,#root.hidden{display:none;}
+.cumrules{margin:6px 0 10px;padding:8px 14px;background:#fffbe6;border:1px solid #f0e2a0;border-radius:8px;font-size:14px;line-height:1.7;}
+.cumtools{display:flex;gap:8px;align-items:center;margin:4px 0 8px;font-size:13.5px;color:#555;}
+.cumtools select{padding:3px 6px;border:1px solid var(--bd);border-radius:6px;}
+#cum td.cw{font-weight:600;font-size:17px;white-space:nowrap;}
+#cum td.cp{color:#2f855a;white-space:nowrap;}
+#cum td.cc{color:#2f855a;font-size:15.5px;white-space:nowrap;}
+#cum td.cn{color:#b7791f;white-space:normal;}
 main{padding:10px 14px 60px;}
 details{margin:8px 0;border:1px solid var(--bd);border-radius:8px;background:#fff;overflow:hidden;}
 summary{list-style:none;cursor:pointer;padding:9px 12px;font-size:16px;font-weight:600;color:var(--head);background:#eef1f8;display:flex;align-items:center;gap:8px;min-height:38px;}
@@ -335,12 +353,22 @@ function tab(btn,which){var d=btn.closest('details');
   d.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});
   d.querySelector('.panel.p'+which).classList.add('on');}
 function filt(){var k=document.getElementById('q').value.trim().toLowerCase();
+  document.querySelectorAll('#cum details').forEach(function(d){var any=false;
+    d.querySelectorAll('tbody tr').forEach(function(tr){var hit=!k||tr.innerText.toLowerCase().indexOf(k)>-1;
+      tr.classList.toggle('hidden',!hit);if(hit)any=true;});
+    d.open=k?any:false;});
   document.querySelectorAll('#root details').forEach(function(d){var any=false;
     d.querySelectorAll('tbody tr').forEach(function(tr){var hit=!k||tr.innerText.toLowerCase().indexOf(k)>-1;
       tr.classList.toggle('hidden',!hit);if(hit)any=true;});
     d.querySelectorAll('.grp').forEach(function(g){var hit=!k||g.innerText.toLowerCase().indexOf(k)>-1;
       g.classList.toggle('hidden',!hit);if(hit)any=true;});
     d.open=k?any:false;});}
+function topTab(which){
+  document.getElementById('root').classList.toggle('hidden',which!=='tv');
+  document.getElementById('cum').classList.toggle('hidden',which!=='cum');
+  document.querySelectorAll('.toptab').forEach(function(b){b.classList.toggle('on',b.dataset.t===which);});
+  try{localStorage.setItem('hsk6study_toptab',which);}catch(e){}
+  filt();}
 function esc(s){var d=document.createElement('div');d.textContent=(s==null?'':s);return d.innerHTML;}
 /* ===== 🔊 phát âm (Web Speech API) ===== */
 var _zhVoices=[],_zhVoice=null,VKEY='hsk6vocab_voice';
@@ -533,6 +561,7 @@ function exportPromote(){
   PROM={};psave();updatePromoteBar();
   alert('Đã tải tu-vung-promote-to-c.json ('+n+' từ).\nLưu file này vào output/Giáo trình chuẩn/hsk6/study/ trong repo, rồi nhờ Claude chạy lệnh "áp dụng lên hạng" (skill vocab-study). Claude sẽ ghi vào tier-a.md rồi tự xoá file này — không cần commit riêng file JSON này, chỉ commit kết quả (tier-a.md + state/activation.md).');
 }
+function ky(c){return c.cum?'cum:'+c.w:c.w;}
 var ACTLVL={none:0,d:1,c:2,b:3,a:4};
 var ACTNAME={none:'⚪ kho (chưa học)',d:'D · mới học',c:'C · nhận ra',b:'B · dùng được',a:'A · tự tin dùng'};
 function sbox(w){return (SRS[w]&&SRS[w].box)||0;}
@@ -555,7 +584,7 @@ function cardsFrom(rows){
 }
 function beginStudy(cards,label){
   if(!cards.length){alert('Không có từ để học.');return;}
-  cards.forEach(function(c){if(!SRS[c.w])SRS[c.w]={box:c.lvl};}); // mốc khởi đầu khách quan theo Activation
+  cards.forEach(function(c){var k=ky(c);if(!SRS[k])SRS[k]={box:c.cum?1:c.lvl};}); // mốc khởi đầu khách quan theo Activation
   ssave();
   var saved=rload();
   if(saved.label===label && saved.q && saved.q.length && saved.done<saved.total &&
@@ -563,7 +592,7 @@ function beginStudy(cards,label){
     Sq=saved.q;Stotal=saved.total;Sdone=saved.done;Sagain=saved.again||0;Scapped=saved.capped||0;Slabel=label;Sdir=saved.dir||Sdir;
     var sd=document.getElementById('sdir');if(sd)sd.textContent=(Sdir==='zh2vi')?'汉 → Việt':'Việt → 汉';
   }else{
-    cards.sort(function(a,b){return sbox(a.w)-sbox(b.w);});
+    cards.sort(function(a,b){return sbox(ky(a))-sbox(ky(b));});
     Sq=cards.slice();Stotal=cards.length;Sdone=0;Sagain=0;Scapped=0;Slabel=label;
   }
   document.getElementById('study').classList.remove('hidden');
@@ -573,7 +602,18 @@ function startStudy(btn){var det=btn.closest('details');
   var label=det.getAttribute('data-bai')=='99'?'Linh tinh':'Bài '+det.getAttribute('data-bai');
   var _bt=det.getAttribute('data-baititle');if(_bt)label+=' — '+_bt;
   beginStudy(cardsFrom(det.querySelectorAll('.panel.p1 tbody tr')),label);}
+function cumCards(rows){var out=[];
+  rows.forEach(function(tr){if(tr.classList.contains('hidden'))return;
+    out.push({w:tr.getAttribute('data-w'),py:tr.getAttribute('data-pyd'),cum:tr.getAttribute('data-cum'),nham:tr.getAttribute('data-nham'),
+      act:'none',lvl:4,pys:[]});});
+  return out;}
+function startStudyCum(btn){var det=btn.closest('details');
+  beginStudy(cumCards(det.querySelectorAll('tbody tr')),'Cụm: '+det.getAttribute('data-baititle'));}
 function startStudyAll(){
+  if(!document.getElementById('cum').classList.contains('hidden')){
+    var cr=[];document.querySelectorAll('#cum tbody tr').forEach(function(tr){cr.push(tr);});
+    var cq=document.getElementById('q').value.trim();
+    return beginStudy(cumCards(cr), cq?('Cụm lọc: '+cq):'Cụm: tất cả');}
   var rows=[];document.querySelectorAll('#root .panel.p1 tbody tr').forEach(function(tr){rows.push(tr);});
   var q=document.getElementById('q').value.trim();
   beginStudy(cardsFrom(rows), q?('Lọc: '+q):'Tất cả bài');}
@@ -583,12 +623,13 @@ function sNext(){Sflip=false;
   if(!Sq.length){return sFinish();}
   Scur=Sq[0];
   var f=document.getElementById('sfront');
-  if(Sdir==='zh2vi'){f.className='sfront';f.textContent=Scur.w;}
+  if(Scur.cum){f.className='sfront';f.textContent=(Sdir==='zh2vi')?Scur.w:Scur.cum.split(Scur.w).join('＿＿');}
+  else if(Sdir==='zh2vi'){f.className='sfront';f.textContent=Scur.w;}
   else{f.className='sfront vi';f.textContent=(Scur.vi||Scur.rj);}
   var bd=document.getElementById('sbadge');
   bd.className='st '+(Scur.act||'none');
   bd.textContent=(Scur.act==='none'?'○':Scur.act.toUpperCase());
-  bd.title=ACTNAME[Scur.act]+' · hộp '+sbox(Scur.w)+'/5';
+  bd.title=ACTNAME[Scur.act]+' · hộp '+sbox(ky(Scur))+'/5';
   document.getElementById('sback').className='sback';
   document.getElementById('shint').style.display='';
   sProg();}
@@ -596,15 +637,18 @@ function sFlip(){if(Sflip)return;Sflip=true;
   var b=document.getElementById('sback');
   var h='<div class="py">'+esc(Scur.py)+'</div>';
   if(Sdir==='vi2zh')h+='<div class="zh">'+esc(Scur.w)+'</div>';
+  if(Scur.cum){h+='<div class="ln"><span class="lb">Cụm nhớ</span><span class="vi">'+esc(Scur.cum)+'</span></div>';
+    h+='<div class="ln"><span class="lb">Dễ nhầm</span><span>'+esc(Scur.nham)+'</span></div>';}
+  else{
   h+='<div class="ln"><span class="lb">Nghĩa</span><span class="vi">'+esc(Scur.vi)+'</span></div>';
   h+='<div class="ln"><span class="lb">释义</span><span>'+esc(Scur.rj)+'</span></div>';
   if(Scur.ex)h+='<div class="ln"><span class="lb">Ví dụ</span><span>'+esc(Scur.ex)+'</span></div>';
-  h+=chietTu(Scur.w,Scur.pys);
+  h+=chietTu(Scur.w,Scur.pys);}
   b.innerHTML=h;b.className='sback on';
   document.getElementById('shint').style.display='none';
   speak(Scur.w);}
-function sGrade(good){var w=Scur.w;if(!SRS[w])SRS[w]={box:Scur.lvl};
-  var cap=Math.max(1,Scur.lvl+1); // trần theo Activation của vault
+function sGrade(good){var w=ky(Scur);if(!SRS[w])SRS[w]={box:Scur.cum?1:Scur.lvl};
+  var cap=Scur.cum?5:Math.max(1,Scur.lvl+1); // trần theo Activation của vault
   if(good){
     if(sbox(w)>=cap){Scapped++;}            // kịch trần: chưa dùng thật thì không "thuộc hẳn"
     SRS[w].box=Math.min(sbox(w)+1,cap);SRS[w].ts=nowIso();
@@ -736,6 +780,8 @@ P = ['<!doctype html>', '<html lang="vi"><head><meta charset="utf-8">',
      '<div id="promobanner" class="syncbanner promo hidden">🎓 <span id="promocount">0</span> từ đã "Thuộc" từ mức D — sẵn sàng lên hạng C trong vault (chỉ recognition; B/A vẫn cần dùng thật).'
      '<button onclick="exportPromote()">Xuất danh sách</button>'
      '</div>',
+     '<div class="toptabs"><button class="toptab on" data-t="tv" onclick="topTab(&quot;tv&quot;)">Từ vựng</button>'
+     '<button class="toptab" data-t="cum" onclick="topTab(&quot;cum&quot;)">Cụm ghi nhớ</button></div>',
      '<main id="root">']
 
 for num, header, rows, exp, btitle in bai:
@@ -766,6 +812,21 @@ for num, header, rows, exp, btitle in bai:
     P.append('</details>')
 
 P.append('</main>')
+# tab Cụm ghi nhớ
+P.append('<section id="cum" class="hidden">')
+if CUM.get("rules"):
+    P.append('<div class="cumrules"><b>2 quy tắc chung</b><br>' + "<br>".join("%d. %s" % (i + 1, esc(r)) for i, r in enumerate(CUM["rules"])) + '</div>')
+PYFIX = {"别具一格": "bié jù yì gé"}
+for si, sec in enumerate(CUM.get("sections", [])):
+    P.append('<details data-baititle="%s"><summary><span class="arw">▸</span>%s<span class="cnt">%d từ</span></summary>' % (esc(sec["title"]), esc(sec["title"]), len(sec["items"])))
+    P.append('<div class="baitools"><button class="studybtn" onclick="startStudyCum(this)">🎓 Học nhóm này</button></div>')
+    P.append('<div class="tw"><table><thead><tr><th></th><th>Từ</th><th>Pinyin</th><th>Cụm nhớ</th><th>Dễ nhầm với</th></tr></thead><tbody>')
+    for w, cum, nham in sec["items"]:
+        pyd = PYFIX.get(w) or per_char_py(w)
+        P.append('<tr data-w="%s" data-cum="%s" data-nham="%s" data-pyd="%s"><td class="act"><button class="spk" title="Nghe" onclick="speak(%s)">🔊</button></td><td class="cw">%s</td><td class="cp">%s</td><td class="cc">%s</td><td class="cn">%s</td></tr>'
+                 % (esc(w), esc(cum), esc(nham), esc(pyd), esc(_json.dumps(w, ensure_ascii=False)), esc(w), esc(pyd), esc(cum), esc(nham)))
+    P.append('</tbody></table></div></details>')
+P.append('</section>')
 # study modal
 P.append('<div id="study" class="hidden" onclick="if(event.target.id===\'study\')closeStudy()">'
          '<div class="scard">'
@@ -783,6 +844,7 @@ P.append('<div id="study" class="hidden" onclick="if(event.target.id===\'study\'
 P.append('<script src="tu-vung-progress.js" onerror="void 0"></script>')
 P.append('<script>var HZ=' + HZ_JSON + ';var MN=' + MN_JSON + ';</script>')
 P.append('<script>' + JS + '</script>')
+P.append("<script>try{var _t=localStorage.getItem('hsk6study_toptab');if(_t==='cum')topTab('cum');}catch(e){}</script>")
 P.append('</body></html>')
 
 open(OUT, "w", encoding="utf-8").write("\n".join(P))
