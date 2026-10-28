@@ -57,3 +57,25 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 - **Cảnh không thoại** (`silent` + `sec`): cho phản ứng giữa các nhân vật (nhìn nhau, nhép miệng), không cần file giọng, không phụ đề.
 - Muốn tay/đầu cử động thật cần **tấm tư thế riêng do user cung cấp** rồi luân phiên (`swap`) — xem gotchas.
 
+
+## 10. Âm thanh clip (rút từ góp ý 2026-10-28, clip talk01-contagious)
+- **Nhạc nền nhẹ + hiệu ứng theo ngữ cảnh** (chỉ giọng thì "đơn điệu"): `make_bed.py` dựng 1 file `bed.wav` = nhạc (tự hạ còn ~50% khi có giọng, fade vào/ra) + hiệu ứng đặt theo mốc cảnh. Giọng vẫn là `<Audio>` riêng.
+- **Hiệu ứng phải là âm thật** (Mixkit / Freesound CC0 — xem gotchas), không tổng hợp bằng code.
+- **Tiếng cười nữ trẻ: kiểu khúc khích, líu lo** (Freesound 218308 "Girl, female, laughing, giggling", cắt từng tràng ngắn). Cười to/kéo dài kiểu "hilarious/cheerful" bị chê "đáng sợ".
+- **Bỏ âm "đáng sợ"**: cửa cọt kẹt, tra chìa khoá, tiếng đường phố mở đầu → chỉ giữ bước chân đi trong nhà cho cảnh về nhà.
+- Nhạc nền: đưa **3–5 đoạn ứng viên 25s** cho user nghe chọn, đừng đoán nhiều lần. Đã chốt: clip kể chuyện "Happy Home" (Mixkit 801), video 朗读 "A Happy Child" (Mixkit 532). Piano chậm / "Smile" bị chê buồn hoặc "không ăn nhập".
+
+## 11. Thương hiệu, chống copy, đoạn kết — MỌI video Talk series
+- **Chống copy:** nhãn đỏ nền trắng `禁止搬运` (góc trên phải) + tên kênh `@瑾玄在练嘴` + 1 dấu chìm nhỏ mờ đổi chỗ mỗi 6s ở mép dưới (không đè phụ đề/tên kênh). **Không** dùng watermark chéo phủ kín màn hình (user: "gây rối").
+- **Đoạn kết** = `Outro.tsx` (template/shared): thẻ hồ sơ (avatar 瑾玄 + tên kênh) → bàn tay chạm nút đỏ **"Follow"** → xám **"✓ Followed"** + tiếng tick → tim bật lên + pop. Câu thoại **luôn bằng giọng 瑾玄** (LucyLab "Huyền Babe", xem `nhan-vat/README.md`): `谢谢大家的观看～喜欢的话，记得点赞、关注我哦！` (video đọc: 收听).
+- **Chữ nhiều dòng rớt dòng theo ý** (sau ～。！？), mỗi dòng `nowrap` — "cùng câu mà rớt 1 chữ nó kỳ". Cỡ chữ câu kết ~46px (60 bị chê to).
+- **Chỉ giữ 1 bản final** mỗi video: render đè đúng tên `video/<slug>.mp4`; xoá bản nháp, ảnh nhân vật không chọn, giọng/nhạc thử trước khi commit (user: "không cần lưu nhiều rối").
+
+## 12. Video 朗读 (template/read-along) — bố cục user chốt 2026-10-28 (talk01-langdu)
+- Bài đọc = `p2Text` của bài trong `onluyen/on-luyen.html`, **giữ nguyên chữ + dấu câu** (chỉ đổi `"` → `“ ”` cho vừa ô). Tiêu đề = **tên bài 口语** (vd 快乐会传染), không ghi nguồn sách.
+- **1 dòng tiêu đề** `朗读 | <tên bài>` (朗读 đen có vệt xanh, tên bài xanh lá); bài đọc ngay dưới, căn trái, 21 chữ/dòng, dấu câu không đứng đầu dòng.
+- **Nền kem trơn** — không kẻ ô, không dòng kẻ mờ dưới chữ ("khó coi"). Chỉ có **vạch xanh tiến độ mảnh 3px** chạy dưới phần đã đọc.
+- Từ khoá tô đỏ = từ H6 trong `raw/Từ vựng.xlsx` + thành ngữ hay (~14 mục); thẻ góc phải dưới "重点词": 汉字 + pinyin + nghĩa. **Xuất 2 bản: EN và VI** (`Read` / `ReadVI`). Nghĩa phải theo ngữ cảnh câu, không thay bằng tục ngữ tiếng Anh na ná.
+- Chữ ký `—— @瑾玄在练嘴` ngay dưới dòng cuối bài; thẻ từ ngay dưới chữ ký.
+- **Nhân vật** (luân phiên theo bài — bài 1: 越黄) mặc đồng phục kiểu trường phù thuỷ (áo choàng đen lót đỏ, cà vạt sọc — không huy hiệu/logo thật), **nhìn thẳng**, cầm sách ngang hông, **to (~670px)** góc trái dưới, không đè chữ.
+- **Giọng:** Edge TTS theo giới tính nhân vật — nam `zh-CN-YunxiNeural`, nữ `zh-CN-XiaoxiaoNeural` (giọng thanh thiếu niên). Giọng clone "Huyền Babe" bị chê "lơ lớ, chưa tròn âm" cho bài đọc dài. **Đọc từng câu** (tách ở 。！？；：), tốc độ **-5%**, nghỉ thêm 0.2s sau 。 / 0.08s sau ；：. Đọc liền cả bài → đoạn đầu nhanh, nối chữ; tách vụn ở —— / trích dẫn → câu đầu chậm, đứt nhịp; -30% → quá chậm.

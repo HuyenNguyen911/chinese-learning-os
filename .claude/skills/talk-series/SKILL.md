@@ -130,7 +130,8 @@ Khi dịch: lọc từ H6 trong `raw/Từ vựng.xlsx` (khẩu ngữ trước); 
 - **Phụ đề đặt ở ĐẦU khung** (~200px từ mép trên), thẻ từ nằm ngay dưới — đặt ở đáy thì dễ bị nội dung post/nút nền tảng che và kém nổi bật (user chốt 2026-10-28). Mỗi đoạn phụ đề ≤ ~12 chữ Hán, tách ở dấu phẩy; 1 câu thoại có thể chia nhiều cảnh (vẫn 1 file giọng).
 - **Câu trong clip ↔ bài đăng 6 kênh phải đồng bộ:** sửa câu ở clip thì grep câu đó trong `NN_*.html` và sửa cả các khối post (tập 01: 5 chỗ).
 - Câu sai trong room → sửa đúng → cài vào kịch bản (chữa lỗi bằng cách nói lại).
-- Dựng bằng `genimagevideo` (khuôn "clip kể chuyện" — đang làm).
+- Dựng bằng `genimagevideo`: clip kể chuyện = khuôn `story-clip`; **clip ② 朗读 = khuôn `read-along`** (bài `p2Text` của bài 口语 tương ứng, 2 bản thẻ nghĩa EN + VI, nhân vật luân phiên theo bài).
+- **Mọi video** có nhạc nền nhẹ + hiệu ứng âm thật, chống copy (禁止搬运 + @瑾玄在练嘴 + dấu chìm nhỏ) và **đoạn kết Follow → ✓ Followed** bằng giọng 瑾玄 — genimagevideo `design-rules.md` §10–11.
 
 ### Bước 5 — Đăng 6 kênh 🟡 khung
 - Caption từng kênh nằm trong khối `post` của trang (mỗi kênh 1 thẻ copy; RedNote tách thẻ tiêu đề). Luật từng kênh: `style-rules.md` §6.

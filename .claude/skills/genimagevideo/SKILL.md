@@ -24,6 +24,8 @@ Ví dụ hoàn chỉnh đã được user duyệt: `output/Gen ảnh_video/bo-ph
   scripts/new_project.py        # tạo project mới từ template
   template/poster-highlight/    # code Remotion + script sinh ảnh/giọng (copy vào mỗi project)
   template/story-clip/          # clip kể chuyện 9:16 nhiều cảnh (Talk series) — xem mục "Clip kể chuyện"
+  template/read-along/          # video 朗读 9:16 (bài đọc chạy theo giọng + thẻ từ EN/VI) — xem mục "Video 朗读"
+  .venv/                        # Python riêng của skill (edge-tts 7.3.1; rembg tuỳ chọn) — KHÔNG dùng Python chung cho edge-tts
 output/Gen ảnh_video/<slug>/    # mỗi video 1 project tự chứa; thành phẩm ở video/<slug>.mp4
 ```
 
@@ -109,6 +111,16 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk01-contagious/`. Cảnh khai b
 - **Actor:** `img,x,feet,h,z`; `from`/`fromSec`/`walk` (bước vào), `enter:{x,feet,h,sec}` (thu/phóng từ vị trí cảnh trước), `swap:{img,at}` (đổi tư thế), `bob` (`voice`/`laugh`/`none`), `still` (ảnh đứng yên), `lean` (nghiêng người, độ).
 - **Khuôn mặt sống:** bảng `FACE` trong `Story.tsx` (toạ độ **dò từ pixel**, xem gotchas) cho `mouth`/`eyes`/`chat`; actor bật `talk` (nhép theo giọng/chữ), `mime` (nhép không thoại), `chat` (2 người nói xen kẽ trên cùng ảnh), `neutral` (miệng khép, chưa cười). Chớp mắt tự động nếu ảnh có `eyes`.
 - Render: `npm install` → `npm run render` → `video/<slug>.mp4`. Kiểm tra bằng `npx remotion still` + ảnh phóng to vùng mặt.
+- **Âm nền:** `python make_bed.py` (sau `make_durations.py`) → `public/audio/bed.wav` = nhạc nền tự hạ khi có giọng + hiệu ứng theo mốc cảnh. Âm thật từ Mixkit/Freesound CC0 vào `public/sfx/` (design-rules §10, gotchas).
+- **Đoạn kết + chống copy** đã gắn sẵn trong `Story.tsx` (`Outro.tsx`, `outro.json` = giây của `public/audio/outro.wav` giọng 瑾玄) — design-rules §11.
+
+## Video 朗读 (khuôn `template/read-along/`, dùng cho Talk series clip ②)
+Ví dụ đã chạy: `output/Gen ảnh_video/talk01-langdu/` (bài 1 快乐会传染, nhân vật 越黄). ĐỌC `reference/design-rules.md` §11–12 trước khi dựng.
+1. **Cổng nội dung:** bài đọc (`p2Text` trong `onluyen/on-luyen.html`, nguyên văn), tên bài, bảng ~14 từ khoá (汉字 · pinyin · EN · VI) → user duyệt → ghi `src/data.json` (`title, topic, channel, character, gender, text, words`).
+2. **Cổng ảnh:** nhân vật mặc đồng phục trường phù thuỷ, nhìn thẳng, cầm sách, nền mint → `python cutout_mint.py <tên>`; xem khung tĩnh `npx remotion still src/index.ts Read out/preview-en.png --frame=N` (+ `ReadVI`).
+3. **Giọng:** `.claude/skills/genimagevideo/.venv/Scripts/python.exe voice_edge.py` → `public/audio/read.wav` + `src/timing.json` (mốc từng chữ từ WordBoundary). User tự thu thì bỏ `read.m4a` vào `public/audio/` rồi `python align.py` (dò chỗ ngắt hơi ↔ dấu câu).
+4. Nhạc nền `public/audio/bg.mp3` (rất nhỏ, `loop`); đoạn kết `public/audio/outro.wav` (giọng 瑾玄, câu 收听) + `src/outro.json`.
+5. Render 2 bản: `npx remotion render src/index.ts Read video/<slug>-en.mp4` và `ReadVI … -vi.mp4` (~8 phút/bản, chạy tuần tự).
 
 ## Ảnh bìa bài đăng (Talk series)
 Ví dụ: `output/Gen ảnh_video/talk01-contagious/src/Cover.tsx` → `cover/talk01-cover.png`.
