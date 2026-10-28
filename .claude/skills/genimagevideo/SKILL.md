@@ -23,6 +23,7 @@ Ví dụ hoàn chỉnh đã được user duyệt: `output/Gen ảnh_video/bo-ph
   scripts/voicegen/tts.py       # TTS: --provider lucylab (ViVibe) | elevenlabs
   scripts/new_project.py        # tạo project mới từ template
   template/poster-highlight/    # code Remotion + script sinh ảnh/giọng (copy vào mỗi project)
+  template/story-clip/          # clip kể chuyện 9:16 nhiều cảnh (Talk series) — xem mục "Clip kể chuyện"
 output/Gen ảnh_video/<slug>/    # mỗi video 1 project tự chứa; thành phẩm ở video/<slug>.mp4
 ```
 
@@ -99,6 +100,15 @@ Kiểm bằng máy (tôi không xem/nghe được video): `ffprobe` có cả str
 Mở video cho user bằng ứng dụng Windows: `cmd.exe //c start "" "video/<slug>.mp4"`
 (**trình xem trong VS Code phát hình nhưng không ra tiếng** — đã xác nhận với user).
 Commit vào `main` theo luật Git Hygiene (CLAUDE.md §5.5); không push nếu user chưa bảo.
+
+## Clip kể chuyện (khuôn `template/story-clip/`, dùng cho Talk series)
+Ví dụ đã chạy: `output/Gen ảnh_video/talk01-contagious/`. Cảnh khai báo trong `src/story.json`; ĐỌC `reference/design-rules.md` §9 trước khi dựng.
+- **Cảnh:** `id`, `text` (phụ đề, ở đầu khung), `actors[]`, tuỳ chọn `bubble`, `cards` (`han`/`py`/`en` — nghĩa tiếng Anh), `glow`, `door`.
+- **Giọng:** 1 file/câu `public/audio/<voice>.m4a|wav`; nhiều cảnh dùng chung 1 câu bằng `"voice": "c2"` (thời lượng chia theo số chữ Hán). `python make_durations.py` → `durations.json` + `envelope.json`. Chưa có giọng: chạy im lặng, mỗi chữ ~0.24s.
+- **Cảnh không thoại:** `"silent": true, "sec": 3.2, "text": ""` (không cần file giọng).
+- **Actor:** `img,x,feet,h,z`; `from`/`fromSec`/`walk` (bước vào), `enter:{x,feet,h,sec}` (thu/phóng từ vị trí cảnh trước), `swap:{img,at}` (đổi tư thế), `bob` (`voice`/`laugh`/`none`), `still` (ảnh đứng yên), `lean` (nghiêng người, độ).
+- **Khuôn mặt sống:** bảng `FACE` trong `Story.tsx` (toạ độ **dò từ pixel**, xem gotchas) cho `mouth`/`eyes`/`chat`; actor bật `talk` (nhép theo giọng/chữ), `mime` (nhép không thoại), `chat` (2 người nói xen kẽ trên cùng ảnh), `neutral` (miệng khép, chưa cười). Chớp mắt tự động nếu ảnh có `eyes`.
+- Render: `npm install` → `npm run render` → `video/<slug>.mp4`. Kiểm tra bằng `npx remotion still` + ảnh phóng to vùng mặt.
 
 ## Nhân vật chibi (Talk series + video)
 - Ảnh chụp thật làm mẫu: `raw/nhan-vat/<tên>/` — **gitignored**, không lên GitHub. User tự bỏ ảnh vào; nhân vật đã có thì dùng lại, không xin lại ảnh.

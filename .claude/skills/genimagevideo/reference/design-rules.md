@@ -47,3 +47,13 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 ## 8. Giọng
 - TTS ViVibe giọng `cLZi…` bị user chê "dở thiệt" → ưu tiên user tự thu âm (đúng thanh điệu).
 - Giọng clone từ mẫu tiếng Việt dễ đọc tiếng Trung sai thanh — báo user trước khi dùng.
+
+## 9. Clip kể chuyện (story-clip) — rút từ góp ý của user 2026-10-27/28 (clip talk01-contagious)
+- **Bảng cảnh trước, dựng sau:** liệt kê từng cảnh (đoạn phụ đề, ai ở đâu, làm gì) cho user duyệt trước khi render; user từng chê "không giống bối cảnh đã bàn".
+- **Nhân vật không che nhau, không xếp 3 người ngang hàng** (chật). Chia lớp trước/sau (người ở gần camera lớn, người ở xa nhỏ vào góc) hoặc đứng 2 bên; cảnh chuyển thì thu/phóng nhân vật (`enter`) thay vì để chồng.
+- **Câu dài tách theo ý:** mỗi đoạn phụ đề ≤ ~12 chữ Hán, tách ở dấu phẩy; thời lượng chia theo số chữ Hán trong 1 file giọng (`voice`).
+- **Đúng cảm xúc theo tình tiết:** nhân vật chưa biết chuyện thì chưa cười (che miệng cười bằng miệng khép — `neutral`), cười sau.
+- **Người đang nói chuyện/cười phải có miệng nói xen kẽ** (`chat`/`mime`), không chỉ cười + nhún. Ảnh sofa 2 người: giữ ảnh liền khối, đứng yên — tách đôi ảnh để lắc riêng làm ghế "lung lay".
+- **Cảnh không thoại** (`silent` + `sec`): cho phản ứng giữa các nhân vật (nhìn nhau, nhép miệng), không cần file giọng, không phụ đề.
+- Muốn tay/đầu cử động thật cần **tấm tư thế riêng do user cung cấp** rồi luân phiên (`swap`) — xem gotchas.
+

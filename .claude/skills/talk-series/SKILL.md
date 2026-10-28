@@ -126,7 +126,9 @@ Khi dịch: lọc từ H6 trong `raw/Từ vựng.xlsx` (khẩu ngữ trước); 
 - **Kịch bản:** chia câu theo cảnh `c1…cN`; user thu **mỗi câu 1 file** `cN.m4a` → độ dài cảnh = độ dài file, phụ đề tự khớp.
   Phải **thể hiện đúng ý chủ đề** (vd 传染 = có chuỗi lây người→người) và đặt user là người trong cuộc, không đứng nhìn.
   Có thể lấy tình huống từ `onluyen/bai-mau-cau5-6.md` (giữ cụm đắt giá, BỎ câu kêu gọi kiểu 让我们…吧 / 正能量).
-- **Chữ trên video: toàn tiếng Trung**; từ khó (2-4 từ/clip) hiện thẻ 汉字 + pinyin + nghĩa Việt đúng cảnh. Chữ do code vẽ.
+- **Chữ trên video: toàn tiếng Trung**; từ khó (2-4 từ/clip) hiện thẻ 汉字 + pinyin + **nghĩa tiếng Anh** (user chốt 2026-10-28) đúng cảnh. Chữ do code vẽ.
+- **Phụ đề đặt ở ĐẦU khung** (~200px từ mép trên), thẻ từ nằm ngay dưới — đặt ở đáy thì dễ bị nội dung post/nút nền tảng che và kém nổi bật (user chốt 2026-10-28). Mỗi đoạn phụ đề ≤ ~12 chữ Hán, tách ở dấu phẩy; 1 câu thoại có thể chia nhiều cảnh (vẫn 1 file giọng).
+- **Câu trong clip ↔ bài đăng 6 kênh phải đồng bộ:** sửa câu ở clip thì grep câu đó trong `NN_*.html` và sửa cả các khối post (tập 01: 5 chỗ).
 - Câu sai trong room → sửa đúng → cài vào kịch bản (chữa lỗi bằng cách nói lại).
 - Dựng bằng `genimagevideo` (khuôn "clip kể chuyện" — đang làm).
 

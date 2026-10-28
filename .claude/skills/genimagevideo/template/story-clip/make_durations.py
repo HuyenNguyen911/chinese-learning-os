@@ -13,7 +13,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 here = Path(__file__).parent
 audio = here / "public" / "audio"
 audio.mkdir(parents=True, exist_ok=True)
-ids = [s["id"] for s in json.loads((here / "src" / "story.json").read_text(encoding="utf-8"))["scenes"]]
+ids = list(dict.fromkeys(s.get("voice", s["id"]) for s in json.loads((here / "src" / "story.json").read_text(encoding="utf-8"))["scenes"] if not s.get("silent")))  # 1 file giọng / câu, có thể chia nhiều cảnh
 FPS, SR = 30, 44100
 exts = (".m4a", ".mp3", ".wav", ".aac", ".ogg", ".flac", ".mp4")
 durations, envelope, missing = {}, {}, []
