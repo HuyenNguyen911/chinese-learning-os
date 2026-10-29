@@ -33,6 +33,11 @@ except FileNotFoundError:
 
 MD = "output/Giáo trình chuẩn/hsk6/study/tu-vung.md"
 OUT = "output/Giáo trình chuẩn/hsk6/study/tu-vung.html"
+# Biến thể Artifact (mở trên iPhone/claude.ai): đặt VOCAB_ARTIFACT_OUT=<đường dẫn> → bỏ <script src=tu-vung-progress.js>
+# (làm khung xem iOS báo "browser isn't supported"), ẩn nút Xuất/Nhập (đồng bộ qua cloud db thay thế)
+ARTIFACT_OUT = os.environ.get("VOCAB_ARTIFACT_OUT")
+if ARTIFACT_OUT:
+    OUT = ARTIFACT_OUT
 TIERS = [("A", "knowledge/vocabulary/tier-a.md"),
          ("B", "knowledge/vocabulary/tier-b.md"),
          ("C", "knowledge/vocabulary/tier-c.md")]
@@ -788,6 +793,8 @@ document.addEventListener('mousedown',function(e){
 document.addEventListener('keydown',function(e){if(e.key==='Escape')xlateHide();});
 """
 
+if ARTIFACT_OUT:
+    CSS += "\n.syncbtn,#syncbanner,#importbanner{display:none!important;}\n"
 P = ['<!doctype html>', '<html lang="vi"><head><meta charset="utf-8">',
      '<meta name="viewport" content="width=device-width, initial-scale=1">',
      '<title>生词 tích lũy — HSK6</title>', '<style>' + CSS + '</style></head><body>',
@@ -870,7 +877,8 @@ P.append('<div id="study" class="hidden" onclick="if(event.target.id===\'study\'
          '<div class="sfront" id="sfront"></div><div class="shint" id="shint">Bấm / Space để lật thẻ</div>'
          '<div class="sback" id="sback"></div></div>'
          '</div></div>')
-P.append('<script src="tu-vung-progress.js" onerror="void 0"></script>')
+if not ARTIFACT_OUT:
+    P.append('<script src="tu-vung-progress.js" onerror="void 0"></script>')
 P.append('<script>var HZ=' + HZ_JSON + ';var MN=' + MN_JSON + ';</script>')
 P.append('<script>' + JS + '</script>')
 P.append("<script>try{var _t=localStorage.getItem('hsk6study_toptab');if(_t==='cum')topTab('cum');}catch(e){}</script>")
