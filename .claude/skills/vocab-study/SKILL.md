@@ -117,6 +117,12 @@ Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu
 - Lệnh "đồng bộ tiến độ" → chạy `python .claude/skills/vocab-study/scripts/sync_progress.py` (ở `main`): fetch, gộp với bản origin, commit + push. Gộp theo `ts` từng từ (SRS/db), cờ theo `flagsTs` cả bản — không ghi đè nhau giữa các máy.
 - `tu-vung-progress.json` là định dạng cũ, không còn dùng.
 
+### Bản Artifact (học trên iPhone) + đồng bộ cloud
+- Link: https://claude.ai/artifact/9R3nYoyks9WtC73VdhDPm4 (riêng tư). Sinh bản này: `VOCAB_ARTIFACT_OUT=<file> python .claude/skills/vocab-study/scripts/render_html.py` rồi publish file đó lên link trên kèm `capabilities: {"db":{"rules":[{"path":"progress","read":"owner","write":"owner"}]}}`. Chạy không có biến này → bản cho máy tính (như cũ).
+- Biến thể Artifact **bỏ `<script src="tu-vung-progress.js">`** (thẻ này làm khung xem iOS báo "This browser isn't supported" — đã bisect) và ẩn nút Xuất/Nhập. Tiến độ tự đồng bộ qua document `progress/hsk6` (field `json` = snapshot, gộp bằng `mergeProgress` giống trên), debounce 2s sau mỗi lần học; máy tính + điện thoại mở cùng link là thấy chung.
+- Kéo tiến độ cloud về repo (lệnh "đồng bộ tiến độ" khi user học bằng Artifact): `ArtifactData get` collection `progress` doc `hsk6` với `out_dir` → `python .claude/skills/vocab-study/scripts/sync_progress.py <out_dir>/progress/hsk6.json`.
+- Nội dung bài mới → phải sinh lại + publish lại bản Artifact. Hàng chờ lên hạng C (`hsk6vocab_promote_v1`) vẫn lưu riêng từng thiết bị, chưa đồng bộ.
+
 ## Nguyên tắc
 - Pinyin auto (pypinyin) + luật sửa 多音字 (朴→pǔ…), 儿化 (…儿→r), dấu `'`, âm theo ngữ cảnh từ.
 - 释义 **ưu tiên cột 描述 của user**; chỉ tự sinh khi trống (`desc_override.json`).

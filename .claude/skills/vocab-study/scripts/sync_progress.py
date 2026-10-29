@@ -57,6 +57,11 @@ except FileNotFoundError:
 r = subprocess.run(["git", "show", "origin/%s:%s" % (BRANCH, F)], capture_output=True, text=True, encoding="utf-8")
 remote = parse(r.stdout) if r.returncode == 0 else {}
 
+# Tùy chọn: argv[1] = file JSON của document cloud progress/hsk6 (Claude đọc bằng ArtifactData, out_dir) → gộp thêm
+if len(sys.argv) > 1:
+    cloud = json.loads(json.load(open(sys.argv[1], encoding="utf-8"))["json"])
+    local = merge(local, cloud)
+
 merged = merge(local, remote)
 merged["exportedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
 new_text = "window.__PROGRESS=" + json.dumps(merged, ensure_ascii=False) + ";\n"
