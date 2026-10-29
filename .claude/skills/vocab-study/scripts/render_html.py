@@ -415,6 +415,7 @@ document.addEventListener('DOMContentLoaded',function(){
   document.querySelectorAll('#root tbody tr').forEach(initRow);
   document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
   autoLoadProgress();
+  cloudInit();
   updateSyncBar();
   updatePromoteBar();
 });
@@ -487,7 +488,35 @@ async function writeToRepo(interactive){
   return true;
 }
 var _autoT=null;
-function scheduleAutoSave(){clearTimeout(_autoT);_autoT=setTimeout(function(){writeToRepo(false).catch(function(){});},3000);}
+function scheduleAutoSave(){clearTimeout(_autoT);_autoT=setTimeout(function(){writeToRepo(false).catch(function(){});},3000);scheduleCloud();}
+/* --- Đồng bộ cloud (chỉ khi mở dạng Artifact có capability db): 1 doc riêng tư, gộp bằng mergeProgress → điện thoại ↔ máy tính cùng tiến độ --- */
+var CLOUD={doc:null,busy:false,again:false,last:''};
+function coreSig(P){return JSON.stringify([P.srs||{},P.db||{},P.flags||{},P.flagsTs||'']);}
+async function cloudInit(){
+  try{
+    if(!window.claude||!window.claude.use)return;
+    var d=await window.claude.use('db');if(!d)return;
+    CLOUD.doc=d.doc('progress/hsk6');
+    CLOUD.doc.onSnapshot(cloudPull,function(){CLOUD.doc=null;});
+  }catch(e){CLOUD.doc=null;}
+}
+function cloudPull(s){
+  var R={};
+  if(s.exists){try{R=JSON.parse(s.data().json)||{};}catch(e){R={};}}
+  var L=localSnapshot(),merged=mergeProgress(L,R);
+  if(coreSig(merged)!==coreSig(L)){applySnapshot(merged);toast('Đã nạp tiến độ từ cloud.');}
+  if(coreSig(merged)!==coreSig(R))cloudPush();else CLOUD.last=coreSig(R);
+}
+async function cloudPush(){
+  if(!CLOUD.doc)return;
+  if(CLOUD.busy){CLOUD.again=true;return;}
+  var snap=localSnapshot(),sig=coreSig(snap);if(sig===CLOUD.last)return;
+  CLOUD.busy=true;
+  try{await CLOUD.doc.set({json:JSON.stringify(snap),at:nowIso()});CLOUD.last=sig;}catch(e){}
+  CLOUD.busy=false;if(CLOUD.again){CLOUD.again=false;cloudPush();}
+}
+var _cloudT=null;
+function scheduleCloud(){clearTimeout(_cloudT);_cloudT=setTimeout(cloudPush,2000);}
 async function exportProgress(){
   try{if(await writeToRepo(true)){alert('Đã ghi tiến độ vào repo ('+PFILE+').\nBước còn lại: nhờ Claude "đồng bộ tiến độ" (hoặc chạy sync_progress.py) để commit + push.');return;}}
   catch(e){if(e&&e.name==='AbortError')return;}
