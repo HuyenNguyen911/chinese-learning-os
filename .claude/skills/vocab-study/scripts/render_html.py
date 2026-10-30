@@ -298,6 +298,13 @@ details.ctd>summary::-webkit-details-marker{display:none;}
 .sback .ln{display:flex;gap:8px;align-items:baseline;margin:7px auto;max-width:520px;text-align:left;font-size:15px;}
 .sback .ln .lb{flex:none;width:48px;font-size:10.5px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding-top:3px;}
 .sback .ln .vi{color:#b7791f;}
+.sback .cvi{font-size:16px;margin:2px 0 6px;}
+.sback .blk{text-align:left;max-width:560px;margin:10px auto;padding:8px 12px;border:1px solid #e3e3ea;border-radius:8px;font-size:15px;line-height:1.6;}
+.sback .bh{font-size:11px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px;}
+.sback .blk ul{margin:0;padding-left:18px;}
+.sback .cf+.cf{margin-top:8px;}
+.sback .cfp{color:#2f855a;}
+.sback .cfd{color:#b7791f;}
 .hzhead{display:flex;align-items:baseline;flex-wrap:wrap;gap:3px 8px;}
 .role{font-size:10px;padding:0 5px;border-radius:8px;margin-left:2px;vertical-align:middle;}
 .role.rn{background:#d5f5e3;color:#1e874b;}
@@ -638,7 +645,7 @@ function startStudy(btn){var det=btn.closest('details');
   beginStudy(cardsFrom(det.querySelectorAll('.panel.p1 tbody tr')),label);}
 function cumCards(rows){var out=[];
   rows.forEach(function(tr){if(tr.classList.contains('hidden'))return;
-    out.push({w:tr.getAttribute('data-w'),py:tr.getAttribute('data-pyd'),cum:tr.getAttribute('data-cum'),nham:tr.getAttribute('data-nham'),
+    out.push({w:tr.getAttribute('data-w'),py:tr.getAttribute('data-pyd'),cum:tr.getAttribute('data-cum'),nham:tr.getAttribute('data-nham'),card:tr.getAttribute('data-card')?JSON.parse(tr.getAttribute('data-card')):null,
       act:'none',lvl:4,pys:[]});});
   return out;}
 function startStudyCum(btn){var det=btn.closest('details');
@@ -671,7 +678,13 @@ function sFlip(){if(Sflip)return;Sflip=true;
   var b=document.getElementById('sback');
   var h='<div class="py">'+esc(Scur.py)+'</div>';
   if(Sdir==='vi2zh')h+='<div class="zh">'+esc(Scur.w)+'</div>';
-  if(Scur.cum){h+='<div class="ln"><span class="lb">Cụm nhớ</span><span class="vi">'+esc(Scur.cum)+'</span></div>';
+  if(Scur.card){var c=Scur.card;
+    h+='<div class="vi cvi">'+esc(c.vi)+'</div>';
+    h+='<div class="blk"><div class="bh">① Đặc điểm</div><ul>'+(c.trait||[]).map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>';
+    h+='<div class="blk"><div class="bh">② Dễ nhầm với</div>'+(c.conf||[]).map(function(x){
+      return '<div class="cf"><b>'+esc(x.w)+'</b> <span class="cfp">'+esc(x.py)+'</span> — '+esc(x.vi)+' <span class="cfd">'+esc(x.diff)+'</span></div>';}).join('')+'</div>';
+    if(c.q)h+='<div class="blk"><div class="bh">③ Xử lý</div><div>'+esc(c.q)+'</div></div>';}
+  else if(Scur.cum){h+='<div class="ln"><span class="lb">Cụm nhớ</span><span class="vi">'+esc(Scur.cum)+'</span></div>';
     h+='<div class="ln"><span class="lb">Dễ nhầm</span><span>'+esc(Scur.nham)+'</span></div>';}
   else{
   h+='<div class="ln"><span class="lb">Nghĩa</span><span class="vi">'+esc(Scur.vi)+'</span></div>';
@@ -857,7 +870,14 @@ for si, sec in enumerate(CUM.get("sections", [])):
     P.append('<details data-baititle="%s"><summary><span class="arw">▸</span>%s<span class="cnt">%d từ</span></summary>' % (esc(sec["title"]), esc(sec["title"]), len(sec["items"])))
     P.append('<div class="baitools"><button class="studybtn" onclick="startStudyCum(this)">🎓 Học nhóm này</button></div>')
     P.append('<div class="tw"><table><thead><tr><th></th><th>Từ</th><th>Pinyin</th><th>Cụm nhớ</th><th>Dễ nhầm với</th></tr></thead><tbody>')
-    for w, cum, nham in sec["items"]:
+    for it in sec["items"]:
+        if isinstance(it, dict):
+            w = it["w"]; pyd = it.get("py") or PYFIX.get(w) or per_char_py(w)
+            cum = it.get("cum", ""); nham = " · ".join("%s %s" % (c["w"], c.get("py", "")) for c in it.get("conf", []))
+            P.append('<tr data-w="%s" data-cum="%s" data-nham="%s" data-pyd="%s" data-card="%s"><td class="act"><button class="spk" title="Nghe" onclick="speak(%s)">🔊</button></td><td class="cw">%s</td><td class="cp">%s</td><td class="cc">%s</td><td class="cn">%s</td></tr>'
+                     % (esc(w), esc(cum), esc(nham), esc(pyd), esc(_json.dumps(it, ensure_ascii=False)), esc(_json.dumps(w, ensure_ascii=False)), esc(w), esc(pyd), esc(cum), esc(nham)))
+            continue
+        w, cum, nham = it
         pyd = PYFIX.get(w) or per_char_py(w)
         P.append('<tr data-w="%s" data-cum="%s" data-nham="%s" data-pyd="%s"><td class="act"><button class="spk" title="Nghe" onclick="speak(%s)">🔊</button></td><td class="cw">%s</td><td class="cp">%s</td><td class="cc">%s</td><td class="cn">%s</td></tr>'
                  % (esc(w), esc(cum), esc(nham), esc(pyd), esc(_json.dumps(w, ensure_ascii=False)), esc(w), esc(pyd), esc(cum), esc(nham)))
