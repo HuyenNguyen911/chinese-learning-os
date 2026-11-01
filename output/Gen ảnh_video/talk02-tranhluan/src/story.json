@@ -1,0 +1,365 @@
+{
+ "defaultSec": 3.4,
+ "scenes": [
+  {
+   "id": "c1a",
+   "voice": "c1",
+   "text": "早上七点，",
+   "actors": [
+    {
+     "img": "jx_run2",
+     "x": 460,
+     "feet": 1700,
+     "h": 980,
+     "bob": "none"
+    }
+   ],
+   "bg": "road",
+   "video": "c1",
+   "vstart": 0,
+   "who": "jx"
+  },
+  {
+   "id": "c1b",
+   "voice": "c1",
+   "text": "我已经冲出家门了！",
+   "actors": [
+    {
+     "img": "jx_run2",
+     "x": 460,
+     "feet": 1700,
+     "h": 980,
+     "bob": "none"
+    }
+   ],
+   "bg": "road",
+   "video": "c1",
+   "who": "jx"
+  },
+  {
+   "id": "c2a",
+   "voice": "c2",
+   "text": "我呢？睡到自然醒，",
+   "actors": [
+    {
+     "img": "yh_sleep",
+     "x": 540,
+     "feet": 1580,
+     "h": 1000,
+     "bob": "none",
+     "still": true
+    }
+   ],
+   "who": "yh",
+   "bg": "floor",
+   "video": "c2a",
+   "vstart": 5.8
+  },
+  {
+   "id": "c2b",
+   "voice": "c2",
+   "text": "吃完早饭，",
+   "actors": [
+    {
+     "img": "yh_breakfast",
+     "x": 540,
+     "feet": 1740,
+     "h": 1000,
+     "bob": "voice",
+     "talk": true
+    }
+   ],
+   "video": "c2b",
+   "vstart": 1.0,
+   "who": "yh"
+  },
+  {
+   "id": "c2c",
+   "voice": "c2",
+   "text": "老师就在家等我。",
+   "actors": [
+    {
+     "img": "yh_tutor",
+     "x": 540,
+     "feet": 1740,
+     "h": 900,
+     "bob": "none",
+     "still": true
+    }
+   ],
+   "video": "c2c",
+   "vstart": 0.5,
+   "who": "yh"
+  },
+  {
+   "id": "c3a",
+   "voice": "c3",
+   "text": "可你没有同学啊！",
+   "bg": "school",
+   "actors": [
+    {
+     "img": "jx_talk",
+     "x": 540,
+     "feet": 1760,
+     "h": 1020,
+     "bob": "voice",
+     "talk": true
+    }
+   ],
+   "video": "c3a",
+   "vstart": 0.5,
+   "who": "jx"
+  },
+  {
+   "id": "c3b",
+   "voice": "c3",
+   "text": "我们一起上课、一起玩，",
+   "bg": "school",
+   "actors": [
+    {
+     "img": "classroom",
+     "x": 540,
+     "feet": 1700,
+     "h": 760,
+     "bob": "none",
+     "still": true
+    }
+   ],
+   "video": "c3bc",
+   "vstart": 0.5,
+   "who": "jx"
+  },
+  {
+   "id": "c3c",
+   "voice": "c3",
+   "text": "多热闹！",
+   "bg": "school",
+   "actors": [
+    {
+     "img": "classroom",
+     "x": 540,
+     "feet": 1700,
+     "h": 760,
+     "bob": "laugh",
+     "still": true
+    }
+   ],
+   "video": "c3bc",
+   "who": "jx"
+  },
+  {
+   "id": "c4a",
+   "voice": "c4",
+   "text": "热闹有什么用？",
+   "actors": [
+    {
+     "img": "yh_proud",
+     "x": 540,
+     "feet": 1760,
+     "h": 1020,
+     "bob": "voice",
+     "talk": true
+    }
+   ],
+   "video": "c4",
+   "vstart": 4.0,
+   "who": "yh"
+  },
+  {
+   "id": "c4b",
+   "voice": "c4",
+   "text": "老师只教我一个，",
+   "actors": [
+    {
+     "img": "yh_proud",
+     "x": 540,
+     "feet": 1760,
+     "h": 1020,
+     "bob": "voice",
+     "talk": true
+    }
+   ],
+   "video": "c4",
+   "who": "yh"
+  },
+  {
+   "id": "c4c",
+   "voice": "c4",
+   "text": "这叫因材施教！",
+   "actors": [
+    {
+     "img": "yh_proud",
+     "x": 540,
+     "feet": 1760,
+     "h": 1020,
+     "bob": "voice",
+     "talk": true
+    }
+   ],
+   "video": "c4",
+   "who": "yh"
+  },
+  {
+   "id": "c5a",
+   "voice": "c5",
+   "text": "一个人学，多孤单啊！",
+   "bg": "duo",
+   "actors": [
+    {
+     "img": "jx_talk",
+     "x": 290,
+     "feet": 1760,
+     "h": 860,
+     "bob": "voice",
+     "talk": true,
+     "enter": {
+      "x": 540,
+      "feet": 1760,
+      "h": 1020,
+      "sec": 0.5
+     }
+    },
+    {
+     "img": "yh_proud",
+     "x": 800,
+     "feet": 1760,
+     "h": 860,
+     "bob": "none",
+     "from": 1300,
+     "fromSec": 0.5
+    }
+   ],
+   "who": "both",
+   "video": "c5",
+   "vstart": 0.5
+  },
+  {
+   "id": "c5b",
+   "voice": "c5",
+   "text": "学校才像个小社会。",
+   "bg": "duo",
+   "spark": true,
+   "actors": [
+    {
+     "img": "jx_talk",
+     "x": 290,
+     "feet": 1760,
+     "h": 860,
+     "bob": "voice",
+     "talk": true
+    },
+    {
+     "img": "yh_proud",
+     "x": 800,
+     "feet": 1760,
+     "h": 860,
+     "bob": "none"
+    }
+   ],
+   "who": "both",
+   "video": "c5"
+  },
+  {
+   "id": "c6a",
+   "voice": "c6",
+   "text": "在家照样交朋友，",
+   "bg": "duo",
+   "actors": [
+    {
+     "img": "jx_talk",
+     "x": 290,
+     "feet": 1760,
+     "h": 860,
+     "bob": "none",
+     "neutral": true
+    },
+    {
+     "img": "yh_shrug",
+     "x": 800,
+     "feet": 1760,
+     "h": 880,
+     "bob": "voice",
+     "talk": true
+    }
+   ],
+   "who": "both",
+   "video": "c6",
+   "vstart": 4.0
+  },
+  {
+   "id": "c6b",
+   "voice": "c6",
+   "text": "还不用浪费时间挤公交！",
+   "bg": "duo",
+   "spark": true,
+   "actors": [
+    {
+     "img": "jx_talk",
+     "x": 290,
+     "feet": 1760,
+     "h": 860,
+     "bob": "none",
+     "neutral": true
+    },
+    {
+     "img": "yh_shrug",
+     "x": 800,
+     "feet": 1760,
+     "h": 880,
+     "bob": "voice",
+     "talk": true
+    }
+   ],
+   "who": "both",
+   "video": "c6"
+  },
+  {
+   "id": "c7a",
+   "text": "你站哪一边？在学校，",
+   "bg": "duo",
+   "actors": [
+    {
+     "img": "jx_hips",
+     "x": 290,
+     "feet": 1760,
+     "h": 860,
+     "bob": "none"
+    },
+    {
+     "img": "yh_proud",
+     "x": 800,
+     "feet": 1760,
+     "h": 860,
+     "bob": "none"
+    }
+   ],
+   "who": "both",
+   "video": "c7a",
+   "vstart": 0.3
+  },
+  {
+   "id": "c7b",
+   "text": "还是在家？评论区见！",
+   "bg": "duo",
+   "actors": [
+    {
+     "img": "jx_behind",
+     "x": 290,
+     "feet": 1760,
+     "h": 860,
+     "bob": "none"
+    },
+    {
+     "img": "yh_wave",
+     "x": 800,
+     "feet": 1760,
+     "h": 880,
+     "bob": "none"
+    }
+   ],
+   "who": "both",
+   "video": "c7b",
+   "vstart": 0.2
+  }
+ ]
+}

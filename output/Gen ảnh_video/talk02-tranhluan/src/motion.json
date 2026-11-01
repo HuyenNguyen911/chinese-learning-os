@@ -1,0 +1,16 @@
+{
+ "common": "Animate THIS exact image. Keep exactly the same chibi characters (same faces, same eyes, same hair, same clothes), same background, same flat pastel cartoon style as the input image. Camera fixed, no zoom, no camera movement. Do not add any text, letters, numbers or new objects.",
+ "clips": {
+  "c1": "The girl in school uniform keeps running along the path towards the school building, legs and arms swinging, braids bouncing, toast held in her mouth, hurried but cheerful. She stays in the same place in the frame (running in place), only the grass and path gently move. The school building stays in the background.",
+  "c2a": "Top-down view from the ceiling stays the same. The boy sleeping in bed slowly opens his eyes, smiles, then stretches both arms up happily as he wakes up. The bed, floor and rug stay still.",
+  "c2b": "The boy happily picks up noodles with his chopsticks, eats them and chews with a satisfied smile, swinging his feet a little.",
+  "c2c": "The boy studies seriously: he looks at the laptop screen, then turns his head to look at the home tutor and nods, then looks back at the laptop. He does NOT look at the viewer. The tutor points at the laptop screen with a gentle smile, her mouth stays CLOSED, she does not talk.",
+  "c3a": "The girl in school uniform talks cheerfully to the viewer, gesturing with her hands, tilting her head, lively and expressive.",
+  "c3bc": "Only the girl in the MIDDLE talks: she speaks cheerfully and gestures with one hand. The two classmates on the left and right only laugh with their mouths closed or smiling, shoulders shaking, they do not talk.",
+  "c4": "The boy keeps his arms crossed, raises his chin proudly, nods smugly while talking to the viewer.",
+  "c5": "Only the girl on the left talks: she speaks and gestures with her hands to make her point. The boy on the right just listens silently: arms stay crossed, his mouth stays CLOSED the whole time, same calm face, only tiny breathing movement, no talking, no expression change.",
+  "c6": "Only the boy on the right talks: he shakes his head, then shrugs with both palms up and talks back with an easygoing smile. The girl on the left just listens silently: her mouth stays CLOSED the whole time, only small blinking and breathing, no talking.",
+  "c7a": "Both kids face the viewer and look straight at the camera. Only the girl on the left talks: she keeps both hands on her hips and asks the viewer a question with a playful confident face, small head tilt. The boy on the right keeps his arms crossed, looks straight at the viewer with a calm smug smile, his mouth stays CLOSED the whole time, no talking.",
+  "c7b": "Both kids face the viewer and look straight at the camera the whole time. Only the boy on the right talks: facing the camera directly, he talks to the viewer and waves his raised hand. The girl on the left keeps both hands behind her back, stands still looking straight at the viewer with a gentle closed-mouth smile, her mouth stays CLOSED, she does not talk and does not wave."
+ }
+}
