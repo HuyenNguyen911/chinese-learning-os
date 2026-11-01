@@ -168,8 +168,9 @@ const Versus: React.FC = () => (
   </AbsoluteFill>
 );
 
-/* Nhãn phe theo nhân vật đang có mặt: 瑾玄 = 🏫 去学校 (xanh), 越黄 = 🏠 在家上学 (cam); cả hai -> 2 nhãn trên đầu từng người + VS */
-const TAG = { jx: { t: "🏫 去学校", bg: "#BFE3CC" }, yh: { t: "🏠 在家上学", bg: "#FBD9B4" } };
+/* Nhãn phe theo nhân vật đang có mặt (scene.who = jx | yh | both); cả hai -> 2 nhãn đối xứng + VS */
+// nhãn phe lấy từ story.json "tags": { "jx": { "t": "🏫 去学校", "bg": "#BFE3CC" }, "yh": {...} } (talk02)
+const TAG = ((story as { tags?: Record<string, { t: string; bg: string }> }).tags ?? {}) as Record<"jx" | "yh", { t: string; bg: string }>;
 const Tags: React.FC<{ who: "jx" | "yh" | "both" }> = ({ who }) => {
   const pill = (k: "jx" | "yh", left: number, width: number) => (
     <div key={k} style={{ position: "absolute", left, width, top: 330, height: 110, borderRadius: 55, background: TAG[k].bg, border: "6px solid #3a2a1c", boxShadow: "0 7px 0 #3a2a1c", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: FONT, fontSize: 50, fontWeight: 800, color: "#3a2a1c", whiteSpace: "nowrap" }}>{TAG[k].t}</div>
@@ -219,12 +220,6 @@ const FACE: Record<string, { skin: string; mouth?: Part; eyes?: Part[]; chat?: P
   // <tên-ảnh-không-đuôi>: { skin: "#RRGGBB", mouth: { cx, cy, rx, ry, skin? }, eyes: [{...}, {...}], chat: [{...}] }
   // toạ độ theo TỈ LỆ ảnh (px / rộng, px / cao), dò từ pixel file ảnh — xem reference/gotchas.md
   // draw: ảnh miệng KHÉP (1 nét cười) -> vẽ đè miệng mở to/nhỏ theo giọng thay vì co giãn nét cười
-  jx_talk: { skin: "#FFDBC5", mouth: { cx: 0.4989, cy: 0.3289, rx: 0.0873, ry: 0.0191 } },
-  jx_wave: { skin: "#FFDCC7", mouth: { cx: 0.4165, cy: 0.3119, rx: 0.0746, ry: 0.0227 } },
-  yh_wave: { skin: "#FEE1CF", mouth: { cx: 0.473, cy: 0.372, rx: 0.055, ry: 0.016 } },
-  yh_proud: { skin: "#FEE1CF", draw: true, mouth: { cx: 0.499, cy: 0.385, rx: 0.084, ry: 0.012 } },
-  yh_shrug: { skin: "#FEE1CF", draw: true, mouth: { cx: 0.489, cy: 0.396, rx: 0.066, ry: 0.012 } },
-  yh_breakfast: { skin: "#FEE1CF", draw: true, mouth: { cx: 0.478, cy: 0.412, rx: 0.066, ry: 0.01 } },
 };
 const PAD = 1.3; // elip nền da phủ rộng hơn bộ phận gốc
 
