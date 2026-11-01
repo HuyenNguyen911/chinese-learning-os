@@ -20,7 +20,8 @@ raw, out, pub = here / "assets" / "raw", here / "assets", here / "public" / "img
 out.mkdir(exist_ok=True); pub.mkdir(parents=True, exist_ok=True)
 
 FLOOD_TOL = 42   # xa màu nền tối đa để flood-fill đi qua (gồm cả bóng elip dưới chân)
-KEY_TOL = 16     # pixel gần màu nền hơn mức này bị xoá dù không nối với viền
+KEY_TOL = 16     # pixel gần màu nền hơn mức này = ứng viên nền dù không nối với viền
+MIN_HOLE = 1500  # mảng ứng viên bên trong >= bao nhiêu pixel thì mới coi là nền (khe hở), nhỏ hơn = chi tiết
 
 
 def cut(path):
@@ -46,7 +47,22 @@ def cut(path):
             if 0 <= ny < h and 0 <= nx < w and near[ny, nx] and not seen[ny, nx]:
                 seen[ny, nx] = True; q.append((ny, nx))
     greenish = ((a[..., 1] - a[..., 0]) > 20) & ((a[..., 1] - a[..., 2]) > 8)  # bóng elip dưới chân còn sót
-    bgmask = seen | (dist < KEY_TOL) | greenish
+    # Vùng gần màu nền nằm BÊN TRONG: chỉ xoá mảng lớn (khe giữa chân bàn ghế, bóng sàn); mảng nhỏ là chi tiết
+    # thật (hoạ tiết sách, nếp chăn xanh nhạt) -> giữ, kẻo ảnh bị thủng lỗ.
+    cand = ((dist < KEY_TOL) | greenish) & ~seen
+    lab = np.zeros((h, w), bool)
+    for y0, x0 in zip(*np.nonzero(cand)):
+        if lab[y0, x0]: continue
+        comp = [(y0, x0)]; lab[y0, x0] = True; k = 0
+        while k < len(comp):
+            y, x = comp[k]; k += 1
+            for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                ny, nx = y + dy, x + dx
+                if 0 <= ny < h and 0 <= nx < w and cand[ny, nx] and not lab[ny, nx]:
+                    lab[ny, nx] = True; comp.append((ny, nx))
+        if len(comp) >= MIN_HOLE:
+            ys, xs = zip(*comp); seen[list(ys), list(xs)] = True
+    bgmask = seen
     alpha = np.where(bgmask, 0, 255).astype(np.uint8)
     al = Image.fromarray(alpha).filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(0.8))
     rgba = im.convert("RGBA"); rgba.putalpha(al)

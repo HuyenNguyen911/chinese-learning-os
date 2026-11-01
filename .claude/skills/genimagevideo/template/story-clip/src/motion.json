@@ -1,0 +1,6 @@
+{
+ "common": "Animate THIS exact image. Keep exactly the same chibi characters (same faces, same eyes, same hair, same clothes), same background, same flat pastel cartoon style as the input image. Camera fixed, no zoom, no camera movement. Do not add any text, letters, numbers or new objects.",
+ "clips": {
+  "c5": "Only the girl on the left talks: she speaks and gestures with her hands to make her point. The boy on the right just listens silently: arms stay crossed, his mouth stays CLOSED the whole time, same calm face, only tiny breathing movement, no talking, no expression change."
+ }
+}

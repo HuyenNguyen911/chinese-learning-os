@@ -58,12 +58,21 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 - Muốn tay/đầu cử động thật cần **tấm tư thế riêng do user cung cấp** rồi luân phiên (`swap`) — xem gotchas.
 
 
+- **Lời thoại khớp nhân vật:** chỉ người đang có lời mới mấp máy miệng; người nghe **ngậm miệng** (user sửa 4 lần, talk02). Một đoạn video chung cho 2 lượt thoại thì không khớp được → tách đoạn theo lượt nói.
+- **Khung 0 = ảnh xem trước:** cảnh đầu không mờ dần, phải thấy đủ nhân vật + chủ đề (vd nhãn phe 🏫 去学校 / 🏠 在家上学). Khung trắng/nhân vật bị cắt → người ta lướt qua.
+- **Nhún theo giọng rất nhẹ** (~4px): 16px bị chê "nhảy nhảy, nhức mắt".
+- **Góc nhìn nhất quán:** ảnh nhìn từ trên xuống (giường top-down) đặt trên nền sàn top-down, không đặt lên tường nhìn ngang ("giường dựng đứng").
+- **Cảnh 2 người cần chữ/biểu tượng ở tâm** (VS, tia sét) → nền **1 màu**; nền chia 2 màu trong video AI bị xê dịch làm mọi thứ trông lệch. Tia sét vẽ SVG (emoji lệch tâm).
+- Nhãn phe đi theo nhân vật đang có mặt (`scene.who`, chữ trong `story.json "tags"`); 2 nhãn đối xứng, VS nằm trong khe giữa, không đè lên nhãn.
+
 ## 10. Âm thanh clip (rút từ góp ý 2026-10-28, clip talk01-contagious)
 - **Nhạc nền nhẹ + hiệu ứng theo ngữ cảnh** (chỉ giọng thì "đơn điệu"): `make_bed.py` dựng 1 file `bed.wav` = nhạc (tự hạ còn ~50% khi có giọng, fade vào/ra) + hiệu ứng đặt theo mốc cảnh. Giọng vẫn là `<Audio>` riêng.
 - **Hiệu ứng phải là âm thật** (Mixkit / Freesound CC0 — xem gotchas), không tổng hợp bằng code.
 - **Tiếng cười nữ trẻ: kiểu khúc khích, líu lo** (Freesound 218308 "Girl, female, laughing, giggling", cắt từng tràng ngắn). Cười to/kéo dài kiểu "hilarious/cheerful" bị chê "đáng sợ".
 - **Bỏ âm "đáng sợ"**: cửa cọt kẹt, tra chìa khoá, tiếng đường phố mở đầu → chỉ giữ bước chân đi trong nhà cho cảnh về nhà.
 - Nhạc nền: đưa **3–5 đoạn ứng viên 25s** cho user nghe chọn, đừng đoán nhiều lần. Đã chốt: clip kể chuyện "Happy Home" (Mixkit 801), video 朗读 "A Happy Child" (Mixkit 532). Piano chậm / "Smile" bị chê buồn hoặc "không ăn nhập".
+
+- **Giọng mẫu TTS cho clip 2 nhân vật** (khi chưa thu giọng thật): 瑾玄 = Edge `zh-CN-XiaoyiNeural`, 越黄 = `zh-CN-YunxiaNeural`, giữ nguyên tông — nâng `--pitch` cho "trẻ hơn" bị chê "ép, không tự nhiên". Từ khó nghe rõ thì thêm dấu phẩy trước + đọc chậm câu đó (-5%) (孤单 talk02).
 
 ## 11. Thương hiệu, chống copy, đoạn kết — MỌI video Talk series
 - **Chống copy:** nhãn đỏ nền trắng `禁止搬运` (góc trên phải) + tên kênh `@瑾玄在练嘴` + 1 dấu chìm nhỏ mờ đổi chỗ mỗi 6s ở mép dưới (không đè phụ đề/tên kênh). **Không** dùng watermark chéo phủ kín màn hình (user: "gây rối").
@@ -79,3 +88,7 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 - Chữ ký `—— @瑾玄在练嘴` ngay dưới dòng cuối bài; thẻ từ ngay dưới chữ ký.
 - **Nhân vật** (luân phiên theo bài — bài 1: 越黄) mặc đồng phục kiểu trường phù thuỷ (áo choàng đen lót đỏ, cà vạt sọc — không huy hiệu/logo thật), **nhìn thẳng**, cầm sách ngang hông, **to (~670px)** góc trái dưới, không đè chữ.
 - **Giọng:** Edge TTS theo giới tính nhân vật — nam `zh-CN-YunxiNeural`, nữ `zh-CN-XiaoxiaoNeural` (giọng thanh thiếu niên). Giọng clone "Huyền Babe" bị chê "lơ lớ, chưa tròn âm" cho bài đọc dài. **Đọc từng câu** (tách ở 。！？；：), tốc độ **-5%**, nghỉ thêm 0.2s sau 。 / 0.08s sau ；：. Đọc liền cả bài → đoạn đầu nhanh, nối chữ; tách vụn ở —— / trích dẫn → câu đầu chậm, đứt nhịp; -30% → quá chậm.
+- **15s chuẩn bị** trước khi đọc (user chốt 2026-11-01, talk02): bài đọc + nhân vật hiện sẵn; ô thẻ 重点词 (lúc đầu trống) hiện `准备时间` + số xanh **15→4** + thanh thời gian, rồi **3·2·1 đỏ** kèm 3 tiếng *ting* (không đọc số, không làm mờ bài đọc) → bắt đầu đọc. Không cần cảnh mở đầu AI.
+- Nhạc nền 0.09 lúc chuẩn bị/đoạn kết, **hạ còn ~1/3 trong lúc đọc**.
+- Từ khoá đọc sát nhau (cách < 1s, thẻ chớp qua không kịp nhìn): khai `data.json "groups"` → cả cụm hiện sớm 1,5s thành danh sách, **Focus** từ đang đọc (to + rõ), từ khác nhỏ + mờ. Chỉ áp cho cụm khai báo; từ đơn lẻ giữ thẻ to theo giọng.
+- Nhân vật mặc đồng phục kiểu Harry Potter **không cần kính râm** (user bỏ, talk02).

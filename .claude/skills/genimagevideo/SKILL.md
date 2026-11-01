@@ -29,7 +29,9 @@ Ví dụ hoàn chỉnh đã được user duyệt: `output/Gen ảnh_video/bo-ph
 output/Gen ảnh_video/<slug>/    # mỗi video 1 project tự chứa; thành phẩm ở video/<slug>.mp4
 ```
 
-Biến trong `scripts/imagegen/.env`: `IMAGEGEN_URL`, `IMAGEGEN_KEY`, `IMAGEGEN_MODEL`,
+Biến trong `scripts/imagegen/.env`: `IMAGEGEN_URL` (`…/v1/images/generations`), `IMAGEGEN_KEY`, `IMAGEGEN_MODEL`
+(**`ag/gemini-3.1-flash-image`** — thiếu tiền tố `ag/` là rơi vào gói Gemini free hết lượt, lỗi 429), `VIDEOGEN_URL`
+(`…/v1/videos/generations`), `VIDEOGEN_MODEL` (`muse-web/muse-video`, dùng chung `IMAGEGEN_KEY`),
 `TTS_PROVIDER`, `VIVIBE_API_KEY`, `LUCYLAB_VOICE_ID`, `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID`,
 `ELEVENLABS_MODEL_ID`. Thiếu file `.env` → hỏi user key, **không** đoán endpoint để gửi key thử.
 
@@ -112,7 +114,22 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk01-contagious/`. Cảnh khai b
 - **Khuôn mặt sống:** bảng `FACE` trong `Story.tsx` (toạ độ **dò từ pixel**, xem gotchas) cho `mouth`/`eyes`/`chat`; actor bật `talk` (nhép theo giọng/chữ), `mime` (nhép không thoại), `chat` (2 người nói xen kẽ trên cùng ảnh), `neutral` (miệng khép, chưa cười). Chớp mắt tự động nếu ảnh có `eyes`.
 - Render: `npm install` → `npm run render` → `video/<slug>.mp4`. Kiểm tra bằng `npx remotion still` + ảnh phóng to vùng mặt.
 - **Âm nền:** `python make_bed.py` (sau `make_durations.py`) → `public/audio/bed.wav` = nhạc nền tự hạ khi có giọng + hiệu ứng theo mốc cảnh. Âm thật từ Mixkit/Freesound CC0 vào `public/sfx/` (design-rules §10, gotchas).
+- **Nền & hiệu ứng có sẵn (talk02):** `bg` = `home` | `school` (bảng đen) | `road` (đường tới trường) | `floor` (sàn nhìn từ trên xuống) | `duo` (1 màu, cảnh 2 người) | `versus`; `split` + `clock`; `spark` (tia sét SVG); `who` (`jx`|`yh`|`both`) + `story.json "tags"` = nhãn phe theo nhân vật; `video`/`vstart` = đoạn cử động thật (mục dưới). `FACE.draw` = vẽ miệng mở đè lên ảnh miệng khép.
 - **Đoạn kết + chống copy** đã gắn sẵn trong `Story.tsx` (`Outro.tsx`, `outro.json` = giây của `public/audio/outro.wav` giọng 瑾玄) — design-rules §11.
+
+## Cử động thật bằng muse-video (ảnh → video, dùng trong `story-clip`)
+Ví dụ đã chạy: `output/Gen ảnh_video/talk02-tranhluan/` (11 đoạn, user duyệt 2026-11-01). Ảnh tĩnh + Remotion trượt/nhún bị chê
+"giống mấy ảnh tĩnh ghép lại" → mỗi cảnh 1 đoạn cử động thật, giữ đúng nhân vật đã duyệt.
+1. Dựng bố cục cảnh bằng ảnh tĩnh như thường (story.json `actors`, nền `bg`) → xuất **khung sạch** (không chữ/logo — AI làm méo chữ):
+   `npx remotion still src/index.ts Story assets/keyframes/<id>.png --frame=N --props='{"clean":true}'`
+2. Mô tả chuyển động trong `src/motion.json` (`common` + `clips.<id>`): **ghi rõ AI nói, ai "mouth stays CLOSED"** (design-rules §9).
+3. `python gen_motion.py [id…]` (venv của skill) → `assets/motion/<id>.mp4` (10s, giữ tỉ lệ khung mẫu). **Gen lần lượt từng đoạn** —
+   3 yêu cầu song song bị máy chủ ngắt / 502. Mỗi đoạn ~1,5–4 phút.
+4. Soát cận mặt mỗi 0,5–1s (`ffmpeg -vf "fps=1,crop=…,tile=5x2"`): mặt giữ đúng chưa, người nghe có ngậm miệng không → chọn khúc đẹp.
+5. Chép sang `public/motion/`, gắn vào cảnh: `"video": "<id>", "vstart": <giây bắt đầu cắt>` (cảnh liền sau cùng video tự phát tiếp).
+   `Story.tsx` dựng **lớp video riêng**: 1 trình phát / đoạn, chồng mờ 10 khung giữa 2 đoạn, `premountFor` — hết nháy/giật.
+   Phụ đề, nhãn, tia sét, chống copy vẫn do Remotion vẽ chồng lên. Âm gốc của video tắt. Miệng AI không khớp từng chữ (giới hạn).
+6. Trước khi gọi muse-video lần đầu trong session → hỏi user (tốn lượt, ~4 phút/lần).
 
 ## Video 朗读 (khuôn `template/read-along/`, dùng cho Talk series clip ②)
 Ví dụ đã chạy: `output/Gen ảnh_video/talk01-langdu/` (bài 1 快乐会传染, nhân vật 越黄). ĐỌC `reference/design-rules.md` §11–12 trước khi dựng.
@@ -121,6 +138,8 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk01-langdu/` (bài 1 快乐会�
 3. **Giọng:** `.claude/skills/genimagevideo/.venv/Scripts/python.exe voice_edge.py` → `public/audio/read.wav` + `src/timing.json` (mốc từng chữ từ WordBoundary). User tự thu thì bỏ `read.m4a` vào `public/audio/` rồi `python align.py` (dò chỗ ngắt hơi ↔ dấu câu).
 4. Nhạc nền `public/audio/bg.mp3` (rất nhỏ, `loop`); đoạn kết `public/audio/outro.wav` (giọng 瑾玄, câu 收听) + `src/outro.json`.
 5. Render 2 bản: `npx remotion render src/index.ts Read video/<slug>-en.mp4` và `ReadVI … -vi.mp4` (~8 phút/bản, chạy tuần tự).
+6. Có sẵn trong khuôn (talk02): 15s chuẩn bị đếm trong ô thẻ + tiếng `public/sfx/ting.wav` (chép từ `talk02-langdu`), cụm từ đọc sát
+   nhau khai `data.json "groups": [["欠佳","不得已","另辟蹊径"]]` — xem design-rules §12.
 
 ## Ảnh bìa bài đăng (Talk series)
 Ví dụ: `output/Gen ảnh_video/talk01-contagious/src/Cover.tsx` → `cover/talk01-cover.png`.
@@ -133,7 +152,7 @@ Ví dụ: `output/Gen ảnh_video/talk01-contagious/src/Cover.tsx` → `cover/ta
 - Ảnh chụp thật làm mẫu: `raw/nhan-vat/<tên>/` — **gitignored**, không lên GitHub. User tự bỏ ảnh vào; nhân vật đã có thì dùng lại, không xin lại ảnh.
 - Bản chibi + hồ sơ: `output/Gen ảnh_video/nhan-vat/<tên>/avatar.png` + `nhan-vat/README.md` (dấu hiệu nhận diện từng người — ĐỌC trước khi vẽ).
 - Phong cách chung: chibi đầu to, nét mảnh, tô phẳng pastel, nền mint trơn (để tách nền), không chữ/logo.
-- **Máy chủ 9router KHÔNG sửa được ảnh theo ảnh mẫu và KHÔNG có model video** (xem gotchas) → mỗi lần vẽ lại, nhân vật xê dịch.
+- **Model ảnh của 9router KHÔNG sửa được ảnh theo ảnh mẫu** (xem gotchas) → mỗi lần vẽ lại, nhân vật xê dịch. (Muốn nhân vật **cử động** mà giữ đúng mặt → dùng muse-video ảnh→video, mục "Cử động thật".)
   Chỉnh chi tiết nhỏ (thêm đồng hồ, đổi tay) → **lật ảnh / vẽ đè bằng Pillow** trên tấm đã duyệt, không vẽ lại cả nhân vật.
 - Người thật khác (bạn bè, bố mẹ): chỉ vẽ theo ảnh khi user tự gửi; nhắc user hỏi ý người đó trước khi đăng công khai.
 
