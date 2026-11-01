@@ -1,0 +1,101 @@
+{
+ "title": "朗读",
+ "topic": "在家上学",
+ "channel": "@瑾玄在练嘴",
+ "character": "jx_front",
+ "gender": "female",
+ "text": "近年来，\"在家上学\"逐渐成为部分家长的教育选择，其背后原因却不尽相同。有人出于对传统文化的重视，希望孩子能在相对纯粹的环境中研读经典、培养涵养；也有人则是因为孩子在校表现欠佳，不得已另辟蹊径，寄望于量身定制的教育方式。不可否认，家庭教育在因材施教方面确实具有一定优势，能够根据孩子的个性与节奏灵活调整。然而，与此同时，脱离学校的集体生活，也可能使孩子缺乏与同龄人交往、竞争与协作的机会，长此以往，恐怕不利于其社会化发展。归根结底，无论选择何种方式，家长都应权衡利弊，既要关注知识的积累，更不能忽视孩子人格与社交能力的培养，唯有如此，才能真正为孩子的长远发展负责。",
+ "words": [
+  {
+   "han": "不尽相同",
+   "py": "bù jìn xiāngtóng",
+   "en": "not quite the same",
+   "vi": "không hẳn giống nhau"
+  },
+  {
+   "han": "纯粹",
+   "py": "chúncuì",
+   "en": "pure",
+   "vi": "thuần tuý, đơn thuần"
+  },
+  {
+   "han": "涵养",
+   "py": "hányǎng",
+   "en": "self-cultivation",
+   "vi": "sự tu dưỡng, phẩm chất"
+  },
+  {
+   "han": "欠佳",
+   "py": "qiànjiā",
+   "en": "below par",
+   "vi": "chưa tốt, còn kém"
+  },
+  {
+   "han": "不得已",
+   "py": "bùdéyǐ",
+   "en": "have no choice",
+   "vi": "bất đắc dĩ, đành phải"
+  },
+  {
+   "han": "另辟蹊径",
+   "py": "lìng pì xījìng",
+   "en": "find another way",
+   "vi": "tìm lối đi khác"
+  },
+  {
+   "han": "量身定制",
+   "py": "liàngshēn dìngzhì",
+   "en": "tailor-made",
+   "vi": "thiết kế riêng cho từng người"
+  },
+  {
+   "han": "因材施教",
+   "py": "yīn cái shī jiào",
+   "en": "teach to each one's aptitude",
+   "vi": "dạy theo năng lực từng người"
+  },
+  {
+   "han": "脱离",
+   "py": "tuōlí",
+   "en": "break away from",
+   "vi": "tách khỏi, rời xa"
+  },
+  {
+   "han": "长此以往",
+   "py": "cháng cǐ yǐ wǎng",
+   "en": "if this goes on",
+   "vi": "cứ kéo dài như thế"
+  },
+  {
+   "han": "归根结底",
+   "py": "guī gēn jié dǐ",
+   "en": "in the final analysis",
+   "vi": "suy cho cùng"
+  },
+  {
+   "han": "权衡利弊",
+   "py": "quánhéng lìbì",
+   "en": "weigh pros and cons",
+   "vi": "cân nhắc lợi hại"
+  },
+  {
+   "han": "人格",
+   "py": "réngé",
+   "en": "personality, character",
+   "vi": "nhân cách"
+  },
+  {
+   "han": "唯有",
+   "py": "wéiyǒu",
+   "en": "only (by)",
+   "vi": "chỉ có"
+  }
+ ],
+ "groups": [
+  [
+   "欠佳",
+   "不得已",
+   "另辟蹊径"
+  ]
+ ]
+}
