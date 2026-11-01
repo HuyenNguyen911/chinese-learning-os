@@ -1,6 +1,8 @@
 """Dựng bản Artifact (claude.ai) từ trang chủ đề trong máy — để mở được trên điện thoại / máy khác.
 
-    python build_artifact.py "<TS>/01/01_contagious-happiness.html" "<out>.html"
+    python build_artifact.py "<TS>/01/01_contagious-happiness.html" "<TS>/02/02_homeschool.html" … "<out>.html"
+
+Truyền MỌI trang tập theo thứ tự (tập cuối = khuôn + mở mặc định). Ô chọn tập ở thanh trên; link `…#ep01` mở thẳng tập đó.
 
 Trang trong máy vẫn là bản gốc (sửa ở đó, commit git). Bản Artifact:
   - bỏ khung <html>/<head>/<body> (claude.ai tự bọc), tên tab cố định "Talk Series";
@@ -12,8 +14,12 @@ Publish với capabilities {"db": {}, "sample": {}}.
 import re
 import sys
 
-src, dst = sys.argv[1], sys.argv[2]
-s = open(src, encoding='utf-8').read().replace('\r\n', '\n')
+srcs, dst = sys.argv[1:-1], sys.argv[-1]
+assert srcs, 'cần ít nhất 1 trang'
+DATA_RE = r'<script id="data" type="application/json">(.*?)</script>'
+# khuôn = trang cuối (tập mới nhất); dữ liệu của mọi tập nhúng kèm để chọn tập
+s = open(srcs[-1], encoding='utf-8').read().replace('\r\n', '\n')
+eps = [re.search(DATA_RE, open(p, encoding='utf-8').read(), re.S).group(1).strip() for p in srcs]
 
 
 def cut(pattern, repl='', count=1, flags=re.S):
@@ -36,8 +42,40 @@ cut(r'\s*<button class="btn" id="btnPhone".*?</button>\s*<button class="btn" id=
 cut(r'<script src="https://cdnjs\.cloudflare\.com/ajax/libs/qrcode-generator/[^"]*"></script>\n')
 cut(r'/\* ---------- Lưu: ghi vào file.*?(?=markSave\(\);\nrender\(\);)')
 
+# chọn tập: nhúng dữ liệu mọi tập, chép tập đang chọn (#ep02 trên link / lần chọn trước) vào #data trước khi trang chạy
+PICK = ''.join(f'\n<script type="application/json" class="ep-data">\n{e}\n</script>' for e in eps) + r'''
+<script>
+(function(){
+  const all = [...document.querySelectorAll('script.ep-data')].map(x => x.textContent);
+  const ids = all.map(t => JSON.parse(t).ep);
+  let want = (location.hash.match(/^#ep(\d+)/) || [])[1] || '';
+  if (!ids.includes(want)) { try { want = localStorage.getItem('talkseries:curEp') || ''; } catch(e) {} }
+  const i = ids.includes(want) ? ids.indexOf(want) : all.length - 1;
+  document.getElementById('data').textContent = all[i];
+  window.TS_EPS = all.map(t => { const d = JSON.parse(t); return {ep: d.ep, t: d.title_zh}; });
+})();
+</script>'''
+m = re.search(DATA_RE, s, re.S)
+s = s[:m.end()] + PICK + s[m.end():]
+cut(r'<div class="ttl zh" id="ttl"></div>', '<select class="epsel zh" id="epSel"></select><div class="ttl zh" id="ttl"></div>')
+
 ADAPTER = r'''
-<style>.syncst{font-size:12.5px;color:var(--mute);white-space:nowrap}</style>
+<style>.syncst{font-size:12.5px;color:var(--mute);white-space:nowrap}
+.epsel{font:inherit;font-weight:700;font-size:16px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:3px 6px;max-width:60vw}
+.epsel + .ttl{display:none}</style>
+<script>
+/* Ô chọn tập: đổi tập = ghi nhớ lựa chọn rồi tải lại trang. */
+(function(){
+  const sel = document.getElementById('epSel');
+  if(!sel || !window.TS_EPS) return;
+  sel.innerHTML = TS_EPS.map(e => `<option value="${esc(e.ep)}"${e.ep === D.ep ? ' selected' : ''}>Tập ${esc(e.ep)} · ${esc(e.t)}</option>`).join('');
+  sel.onchange = () => {
+    try { localStorage.setItem('talkseries:curEp', sel.value); } catch(e) {}
+    location.hash = 'ep' + sel.value;
+    location.reload();
+  };
+})();
+</script>
 <script>
 /* Bản Artifact: lưu tick/chat online (db) + tra nghĩa từ ngoài danh sách bằng Claude (sample). */
 (async function(){

@@ -14,6 +14,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument('page')
 ap.add_argument('--select', default='')
 ap.add_argument('--tab', default='group', choices=['group', 'solo', 'post'])
+ap.add_argument('--ep', default='', help='bản Artifact nhiều tập: mở tập này (vd 01)')
 a = ap.parse_args()
 
 BROWSERS = [r'C:\Program Files\Google\Chrome\Application\chrome.exe',
@@ -23,7 +24,11 @@ if not exe:
     sys.exit('Không thấy Chrome/Edge.')
 
 s = Path(a.page).read_text(encoding='utf-8')
-head = '<script>window.__e=[];addEventListener("error",e=>__e.push(e.message+"@"+e.lineno));</script>'
+if '<head>' not in s:  # bản Artifact (build_artifact.py) không có khung tài liệu
+    s = '<html><head></head><body>' + s + '</body></html>'
+if a.ep:
+    s = s.replace('<body>', '<body><script>location.hash="ep%s"</script>' % a.ep, 1)
+head ='<script>window.__e=[];addEventListener("error",e=>__e.push(e.message+"@"+e.lineno));</script>'
 sel = a.select.replace('\\', '\\\\').replace('"', '\\"')
 probe = r'''<script>
 setTimeout(function(){

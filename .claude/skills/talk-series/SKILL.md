@@ -76,6 +76,8 @@ Câu kể "Tui kể trước", Mở đầu ④⑤, Kết thúc, post, caption, b
 dịch sang khẩu ngữ, giữ ~90% ý + giọng gốc → kèm mục **"những chỗ mình chỉnh"** (vì sao đổi) để user duyệt.
 KHÔNG tự soạn sẵn cả khung rồi đưa user sửa — bản AI tự soạn bị chê khuôn sáo/gượng mọi lần.
 Khi dịch: lọc từ H6 trong `raw/Từ vựng.xlsx` (khẩu ngữ trước); từ không có trong danh sách thì nói rõ.
+Khối trùng câu 回答问题 của bài (vd "Trường hay nhà" ↔ câu 5, "Nếu làm ba mẹ" ↔ câu 6): lấy thêm ý + ví dụ thật từ bài mẫu user đã làm
+`onluyen/bai-mau-cau5-6.md` → chuyển sang giọng room (bỏ 首先/其次/总而言之, bỏ nhân vật sách như 文文 — người trong room không biết).
 
 ### Công cụ sửa trang (bắt buộc)
 - Sửa khối dữ liệu: `python scripts/patch_data.py <page.html> <changes.json>`
@@ -138,7 +140,9 @@ Khi dịch: lọc từ H6 trong `raw/Từ vựng.xlsx` (khẩu ngữ trước); 
 - Định dạng: TikTok = video · Instagram = Reels (+ carousel, Story bình chọn) · Facebook = bài ảnh + chữ (Reels tự chia sẻ từ IG)
   · Threads = chữ + 1 ảnh · RedNote = bài ảnh 图文 (từ khoá trong tiêu đề/thân) · HelloTalk = moment chữ + **file đọc to** (được sửa phát âm).
 - Quá sức → ưu tiên HelloTalk (được sửa) + TikTok (luyện nói khi quay).
-- Tên series: CHƯA chốt — đang dùng "📚 每周一个话题｜Vol. 01".
+- Tên series: CHƯA chốt. **Dòng tiêu đề đầu bài** (user chốt 2026-11-01): `📚 每周一个话题｜NN <câu chủ đề>` — 1 dòng, không "Vol.",
+  dùng chung RedNote nội dung / TikTok / Instagram / HelloTalk / Facebook; Threads không có. Vd `📚 每周一个话题｜02 去学校，还是在家学？`
+  (tập 01 còn bản cũ "Vol. 01").
 
 ### Bước 6 — Review sau chủ đề 🟡 khung
 - User gửi **ảnh chụp trang thống kê** + link (không tự thống kê từ link được — nền tảng chặn).
@@ -166,8 +170,10 @@ Khi dịch: lọc từ H6 trong `raw/Từ vựng.xlsx` (khẩu ngữ trước); 
 Yêu cầu: mở ở bất kỳ máy/điện thoại nào, làm tiếp đúng chỗ cũ; copy được nội dung sang HelloTalk trên điện thoại.
 - **Artifact (đang thử):** 1 link cố định https://claude.ai/artifact/Em2nw9iBDNvNu9n42hf3QW (riêng tư, tên "Talk Series",
   mở trong app Claude hoặc trình duyệt). Trang trong máy vẫn là **bản gốc**; dựng bản Artifact bằng
-  `python scripts/build_artifact.py "<TS>/NN/NN_<tên>.html" "<out>.html"` rồi publish lại **cùng url**, capabilities `{"db": {}, "sample": {}}`.
-  Tập mới → build từ trang tập mới, publish đè cùng link (tiến độ tập cũ vẫn còn trong db).
+  `python scripts/build_artifact.py "<TS>/01/01_….html" "<TS>/02/02_….html" … "<out>.html"` (truyền **MỌI tập** theo thứ tự,
+  tập cuối = mở mặc định) rồi publish lại **cùng url**, capabilities `{"db": {}, "sample": {}}`.
+  Trang có **ô chọn tập** ở thanh trên (nhớ lựa chọn lần trước); link `…#epNN` mở thẳng 1 tập. Tập mới → build lại với cả tập mới, publish cùng link.
+  Kiểm tra bản Artifact: `python scripts/check_page.py "<out>.html" --ep NN`.
   **Nhịp đẩy:** lúc đang sửa từng khối CHỈ sửa trang trong máy; build + publish 1 lần khi user nói "xong" / "đẩy lên" /
   sắp mở trên điện thoại (user chốt 2026-10-22 — đừng publish sau mỗi khối).
   - Tick/chat lưu ở db doc `progress/ep<NN>` (field `state` = S của trang) → sau room đọc bằng ArtifactData (`get`, collection `progress`, doc `ep<NN>`).
