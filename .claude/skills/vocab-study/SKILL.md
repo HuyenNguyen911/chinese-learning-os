@@ -74,6 +74,9 @@ SK=".claude/skills/vocab-study/scripts"
 #    (>~100 từ: wf_mnemonic.js dồn cả bài vào 1 agent → tự chia nhóm ~100 từ + thêm agent SOÁT độc lập mỗi nhóm:
 #     bộ/thành phần có thật trong chữ, âm Hán-Việt, khớp nghĩa; báo lỗi pinyin/nghĩa/释义 của dòng để sửa Excel.
 #     Lần 2026-11-02: 405 từ → bắt 7 mẹo sai + 4 dòng thiếu/sai nghĩa. merge_mnemonic nhận file {từ: mẹo})
+#    (>~100 từ mà user CHƯA bật orchestration: thay Workflow bằng ~3 agent nền, mỗi agent ~45 từ, ghi {từ: mẹo} ra
+#     scratchpad; rồi 1 agent SOÁT độc lập sửa trực tiếp các file đó trước khi gộp vào 1 file cho merge_mnemonic.
+#     Lần 2026-11-02 (+135 từ): soát sửa 6 mẹo, bắt thêm 3 dòng nghĩa/释义 lệch)
 "$PY" "$SK/gen_mnemonic_wf.py"         # -> tạo data/wf_mnemonic.js cho từ còn thiếu
 #    rồi gọi tool: Workflow({scriptPath: ".../data/wf_mnemonic.js"})   # cần user bật orchestration
 #    lưu <output> workflow, rồi:
@@ -118,7 +121,7 @@ Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu
 - `ex_override.json` — 例句 cá nhân hoá (bám `memory/user-profile.md`). **GHI ĐÈ** câu bài khóa cho từ có trong file (vd Bài 15–28).
 - `exp_extra.json` — nhóm 生词拓展 thêm tay cho bài sheet 'Chung từ' thiếu (vd Bài 28).
 - `bai_titles.json` — map `{"<N>": "<标题 bài khóa>"}`. build_md gắn tên vào heading `## Bài N — <title>`, render_html hiện cạnh mỗi bài + nhãn flashcard. lesson-prep tự ghi khi bóc bài mới.
-- `cum_ghi_nho.json` — `{rules:[...], sections:[{title, items:[...]}]}`. Mỗi item là dict `{w, py, vi, cum, trait:[đặc điểm, đi với], conf:[{w, py, vi, diff}], q}` (dạng cũ mảng `[từ, cụm nhớ, dễ nhầm]` vẫn đọc được). Thẻ lật ra 3 khối: ① Đặc điểm, ② Dễ nhầm với (1 dòng: từ pinyin — nghĩa + điểm khác), ③ Xử lý (`q`). Quy tắc viết: không lặp ý giữa các khối/dòng nghĩa; `q` là 1 câu hỏi ngắn, tiếng Việt dễ hiểu, nêu 2 hướng để chọn từ (vd "Đề đang nói A, hay nói B?"); CHỈ ghi chú từ + từ dễ nhầm để ôn thi, KHÔNG giải đề/không chọn đáp án thay user; `cum` phải chứa nguyên chữ `w` (dùng để che ＿＿). Mỗi đề user gửi = 1 section mới (user đặt tên, không đặt thì tự đánh số Đề N tiếp; không dùng "61–70" làm tên vì đề nào cũng vậy). Từ đã có ở đề trước → không tạo dòng mới, chỉ báo/bổ sung cách dùng vào dòng cũ. Build: chỉ cần bước 5 (render).
+- `cum_ghi_nho.json` — `{rules:[...], sections:[{title, items:[...]}]}`. Mỗi item là dict `{w, py, vi, cum, trait:[đặc điểm, đi với], conf:[{w, py, vi, diff}], q}` (dạng cũ mảng `[từ, cụm nhớ, dễ nhầm]` vẫn đọc được). Thẻ lật ra 3 khối: ① Đặc điểm, ② Dễ nhầm với (1 dòng: từ pinyin — nghĩa + điểm khác), ③ Xử lý (`q`). Quy tắc viết: không lặp ý giữa các khối/dòng nghĩa; `q` là 1 câu hỏi ngắn, tiếng Việt dễ hiểu, nêu 2 hướng để chọn từ (vd "Đề đang nói A, hay nói B?"); CHỈ ghi chú từ + từ dễ nhầm để ôn thi, KHÔNG giải đề/không chọn đáp án thay user; `cum` phải chứa nguyên chữ `w` (dùng để che ＿＿). Mỗi đề user gửi = 1 section mới (user đặt tên, không đặt thì tự đánh số Đề N tiếp; không dùng "61–70" làm tên vì đề nào cũng vậy). Từ đã có ở đề trước → không tạo dòng mới, chỉ báo/bổ sung cách dùng vào dòng cũ. Câu đã có đáp án (user ghi "Đáp án đúng") → dòng chính lấy TỪ ĐÁP ÁN, các phương án còn lại vào "Dễ nhầm với"; câu chưa có đáp án → lấy từ hợp nghĩa nhất, hai từ cùng đi được (vd 显示/表明) thì ghi lưu ý "xem cả câu" ở `q`. Build: chỉ cần bước 5 (render).
 - `tv.json`, `ct.json` — trung gian, tái sinh mỗi lần chạy bước 1 (không cần giữ tay).
 
 ## Đồng bộ tiến độ giữa các máy (lệnh "đồng bộ tiến độ")
