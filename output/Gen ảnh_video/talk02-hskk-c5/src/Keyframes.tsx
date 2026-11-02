@@ -95,14 +95,33 @@ export const K1: React.FC = () => (<AbsoluteFill><Room /><P img="fam4_sofa_b" x=
 export const K2: React.FC = () => (<AbsoluteFill><Room /><P img="fam4_hugl_b" x={650} feet={690} h={520} /><P img="yh_w_puzzled_a" x={150} feet={690} h={450} /></AbsoluteFill>);
 export const K3: React.FC = () => (<AbsoluteFill><Room /><P img="fam4_hugl_b" x={700} feet={690} h={520} /><P img="yh_w_stroll_b" x={330} feet={695} h={440} /><Heart x={640} y={110} s={44} /><Heart x={1010} y={140} s={40} /></AbsoluteFill>);
 export const K4: React.FC = () => (<AbsoluteFill><AbsoluteFill><Img src={staticFile("img/bg_study.png")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 88%" }} /></AbsoluteFill><P img="yh_w_desk_hb_b" x={330} feet={700} h={620} /></AbsoluteFill>);
-export const K5: React.FC = () => (<AbsoluteFill><Room /><P img="fam4_read" x={690} feet={660} h={430} /><P img="yh_w_run" x={130} feet={700} h={450} /></AbsoluteFill>);
+export const K5: React.FC = () => (<AbsoluteFill><Room /><P img="fam4_read" x={690} feet={660} h={430} /><P img="yh_w_stroll_b" x={405} feet={705} h={430} /></AbsoluteFill>);
 export const K6: React.FC = () => (<AbsoluteFill><Room /><P img="yh_w_phone_s_b" x={420} feet={700} h={580} /><Bubble x={850} y={190} w={240} /><Bubble x={900} y={280} w={190} /><Bubble x={160} y={230} w={210} /></AbsoluteFill>);
 export const K7: React.FC = () => (<AbsoluteFill><AbsoluteFill><Img src={staticFile("img/bg_cafe.png")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 88%" }} /></AbsoluteFill><P img="friends4_c" x={290} feet={700} h={480} /></AbsoluteFill>);
 export const K8: React.FC = () => (<AbsoluteFill><Room /><P img="fam4_sofa_b" x={640} feet={660} h={440} /><P img="yh_w_wave" x={250} feet={705} h={450} /><Heart x={560} y={190} /><Heart x={470} y={320} s={40} /><Heart x={760} y={110} s={44} /></AbsoluteFill>);
 export const K9: React.FC = () => (<AbsoluteFill><AbsoluteFill><Img src={staticFile("img/bg_street.png")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 88%" }} /></AbsoluteFill><P img="friends4_c" x={290} feet={700} h={500} /><Heart x={200} y={170} s={44} /><Heart x={1020} y={150} s={50} /><Heart x={640} y={70} s={40} /></AbsoluteFill>);
 
-export const K10: React.FC = () => (<AbsoluteFill><Img src={staticFile("img/bg_street.png")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 88%" }} /><P img="yh_w_stroll_b" x={420} feet={700} h={480} /></AbsoluteFill>);
+const House: React.FC<{ x: number }> = ({ x }) => (
+  <>
+    <div style={{ position: "absolute", left: x, top: 250, width: 380, height: 240, background: "#F1D9B4", border: "6px solid #B98655", borderRadius: 8 }} />
+    <div style={{ position: "absolute", left: x - 34, top: 170, width: 448, height: 110, background: "#fff", border: "6px solid #CBD9E6", borderRadius: "50% 50% 8px 8px / 100% 100% 8px 8px" }} />
+    <div style={{ position: "absolute", left: x + 40, top: 320, width: 100, height: 100, background: "#FFE49A", border: "6px solid #fff", boxShadow: "0 0 30px 10px rgba(255,210,120,.5)" }} />
+    <div style={{ position: "absolute", left: x + 225, top: 340, width: 90, height: 150, background: "#C0553B", border: "6px solid #8E3C28", borderRadius: "45px 45px 0 0" }} />
+  </>
+);
+/* nền tuyết riêng: nhà đứng trên nền tuyết, lối đi nhỏ dẫn từ dưới-trái thẳng tới cửa (không dùng bg_street vì đường lớn) */
+export const K10: React.FC = () => (
+  <AbsoluteFill>
+    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#CFE3F1,#EEF5FA)" }} />
+    {[[80, 70, 150], [420, 40, 120], [1090, 90, 150]].map(([x, y, w], i) => <div key={i} style={{ position: "absolute", left: x, top: y, width: w, height: 40, borderRadius: 20, background: "#fff", opacity: 0.8 }} />)}
+    {[[60, 160], [250, 110], [520, 190], [900, 130], [1200, 200], [700, 60]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x, top: y, width: 16, height: 16, borderRadius: "50%", background: "#fff", boxShadow: "0 0 8px #fff" }} />)}
+    <div style={{ position: "absolute", left: 0, top: 480, width: 1280, height: 240, background: "#FAFCFE" }} />
+    <div style={{ position: "absolute", left: 0, top: 480, width: 1280, height: 240, background: "#D5E2EE", clipPath: "polygon(930px 10px, 1010px 10px, 1000px 240px, 150px 240px)" }} />
+    <House x={780} />
+    <P img="yh_w_stroll_b" x={470} feet={690} h={400} />
+  </AbsoluteFill>
+);
 export const K11: React.FC = () => (<AbsoluteFill><Room /><P img="friends4_table" x={290} feet={700} h={500} /></AbsoluteFill>);
 export const K12: React.FC = () => (<AbsoluteFill><Img src={staticFile("img/bg_study.png")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 88%" }} /><P img="yh_papers" x={340} feet={700} h={610} /></AbsoluteFill>);
-export const K13: React.FC = () => (<AbsoluteFill><Img src={staticFile("img/bg_street.png")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 88%" }} /><P img="friends4_walk" x={280} feet={700} h={500} /></AbsoluteFill>);
-export const K14: React.FC = () => (<AbsoluteFill><Room /><P img="yh_encourage" x={380} feet={700} h={520} /></AbsoluteFill>);
+export const K13: React.FC = () => (<AbsoluteFill><Img src={staticFile("img/bg_street.png")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 88%" }} /><P img="friends4_c" x={300} feet={700} h={520} /></AbsoluteFill>);
+export const K14: React.FC = () => (<AbsoluteFill><Room /><P img="yh_thumb" x={370} feet={700} h={500} /><P img="jx3_smile" x={650} feet={700} h={520} /></AbsoluteFill>);

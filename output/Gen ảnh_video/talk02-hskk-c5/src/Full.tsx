@@ -24,10 +24,11 @@ const LN: Ln[] = lines.idx.map((s, i) => {
 });
 // ---- clip minh hoạ theo dòng (số dòng 1-based)
 const CLIPS = [[1, 3, "K1"], [4, 6, "K10"], [7, 8, "K2"], [9, 11, "K3"], [12, 13, "K11"], [14, 14, "K12"], [15, 16, "K4"], [17, 19, "K5"], [20, 20, "K6"], [21, 22, "K13"], [23, 24, "K7"], [25, 26, "K8"], [27, 30, "K14"], [31, 32, "K9"]] as [number, number, string][];
+const USE: Record<string, number> = { K13: 7.5 };                     // K13: nhóm bạn tiến sát camera, cuối clip bị cắt mặt -> chỉ dùng 7,5s đầu
 const TAIL = new Set(["K4"]);                                         // clip lấy phần CUỐI (nắm đấm mừng) cho khớp đoạn đọc
 const SEGS = CLIPS.map(([a, b, id]) => {
   const s = LN[a - 1].t0, e = b < LN.length ? LN[b].t0 : ANS, dur = e - s;
-  const rate = Math.min(1.6, Math.max(0.8, 10 / dur));              // clip gốc 10s: nén/giãn cho vừa đoạn đọc
+  const rate = Math.min(1.6, Math.max(0.8, (USE[id] ?? 10) / dur));  // clip gốc 10s (hoặc phần dùng được USE): nén/giãn cho vừa đoạn đọc
   const startSec = TAIL.has(id) ? Math.max(0, 10 - dur * rate - 0.2) : 0;
   return { id, s, e, dur, rate, startSec };
 });
@@ -39,11 +40,12 @@ const S3_LIST = ["cyd", "dll", "bzbj", "pbjd", "crj", "znl"] as (keyof typeof PH
 const Q0 = 0.7;
 const S1_END = Q0 + intro.q + 1.0;
 const S2_0 = S1_END, S2_END = S2_0 + 12.5;
-const S3_0 = S2_END, S3_STEP = 2.4, S3_END = S3_0 + 1.0 + S3_LIST.length * S3_STEP + 0.8;
+const S3_0 = S2_END, S3_STEP = 3.0, S3_END = S3_0 + 1.0 + S3_LIST.length * S3_STEP + 0.8;
 const S4_0 = S3_END, NOW0 = S4_0 + 0.3, A0 = NOW0 + intro.now + 0.7;
 const ANS_END = A0 + ANS, OUT0 = ANS_END + 1.2;
 export const TOTAL = Math.round((OUT0 + outroSec(outro.sec)) * FPS);
 
+const PD = [intro.p0, intro.p1, intro.p2, intro.p3, intro.p4, intro.p5];       // độ dài giọng từng cụm
 const ease = Easing.bezier(0.45, 0, 0.55, 1);
 const WM = [[470, 1850], [780, 1850], [620, 1820], [300, 1850]];
 
@@ -75,9 +77,9 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
 
   // nhạc nền: hạ khi có giọng
   const voices: [number, number][] = [[Q0, Q0 + intro.q], [NOW0, NOW0 + intro.now], [A0, ANS_END], [OUT0 + 0.2, OUT0 + 0.2 + outro.sec],
-    ...S3_LIST.map((_, i) => [S3_0 + 1.0 + i * S3_STEP, S3_0 + 1.0 + i * S3_STEP + 2.0] as [number, number])];
-  const duck = Math.min(...voices.map(([s, e]) => interpolate(t, [s - 0.3, s, e, e + 0.5], [1, 0.42, 0.42, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })));
-  const bgVol = 0.07 * duck * Math.min(1, t / 1.5, (TOTAL / fps - t) / 2.0);
+    ...S3_LIST.map((_, i) => [S3_0 + 1.0 + i * S3_STEP, S3_0 + 1.0 + i * S3_STEP + PD[i]] as [number, number])];
+  const duck = Math.min(...voices.map(([s, e]) => interpolate(t, [s - 0.3, s, e, e + 0.5], [1, 0.3, 0.3, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })));
+  const bgVol = 0.22 * duck * Math.min(1, t / 1.5, (TOTAL / fps - t) / 2.0);
 
   const inS1 = t < S2_0, inS2 = t >= S2_0 && t < S3_0, inS3 = t >= S3_0 && t < S4_0, inS4 = t >= S4_0 && t < OUT0;
   const sceneFade = (a: number, b: number) => Math.min(k(a, a + 0.35), 1 - k(b - 0.35, b));
@@ -136,7 +138,7 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
             const p = PH[key];
             const a = S3_0 + 1.0 + i * S3_STEP;
             const sp = spring({ frame: f - Math.round(a * fps), fps, config: { damping: 14 } });
-            const on = t >= a && t < a + 2.0;
+            const on = t >= a && t < a + PD[i] + 0.4;
             return (
               <div key={key} style={{ opacity: Math.min(1, sp), transform: `translateY(${(1 - Math.min(1, sp)) * 30}px) scale(${on ? 1.03 : 1})` }}>
                 <Card style={{ left: 46, right: 46, top: 230 + i * 230, height: 200, display: "flex", alignItems: "center", gap: 30, padding: "0 40px", borderRadius: 28, borderColor: on ? C.red : "#E9B7B0" }}>
