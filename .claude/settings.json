@@ -43,6 +43,13 @@
             "shell": "bash",
             "command": "bash .claude/hooks/session-start-agentmemory.sh",
             "timeout": 10
+          },
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "bash .claude/hooks/session-start-vocab-artifact.sh",
+            "timeout": 60,
+            "statusMessage": "Kiểm tra bản Artifact từ vựng..."
           }
         ]
       }
