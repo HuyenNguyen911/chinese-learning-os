@@ -38,3 +38,12 @@
 | `ffmpeg … -af` báo "No option name" (2026-11-01) | ffmpeg đi kèm Remotion bị cắt bớt filter | `winget install Gyan.FFmpeg`; chưa mở lại VS Code thì thêm `$LOCALAPPDATA/Microsoft/WinGet/Packages/Gyan.FFmpeg_*/ffmpeg-*/bin` vào PATH |
 | Studio vẫn hiện ảnh cũ sau khi thay file cùng tên (2026-11-01) | Trình duyệt cache `public/img` | Đổi tên file (vd `jx_run2`) hoặc Ctrl+F5 |
 | `cutout_mint` làm thủng trang sách / chăn xanh nhạt, hoặc sót mint giữa chân bàn ghế (2026-11-01) | Xoá mọi pixel gần màu nền dù nằm trong | Bản mới: mảng gần-màu-nền bên trong chỉ xoá khi ≥ `MIN_HOLE` (1500px) |
+| `gen_motion.py` lỗi KeyError `VIDEOGEN_URL` (2026-11-02, máy này) | `.env` thiếu `VIDEOGEN_URL`/`VIDEOGEN_MODEL` | KHÔNG sửa `.env`; truyền qua biến môi trường: `VIDEOGEN_URL` = `IMAGEGEN_URL` đổi `images/generations`→`videos/generations`, `VIDEOGEN_MODEL=muse-web/muse-video` |
+| Clip muse-video có tiếng cười nói không cần (2026-11-02) | Model tự sinh âm thanh | `gen_motion.py` (bản template/hskk-answer) tự `ffmpeg -an -c:v copy` ngay sau khi gen |
+| 2 luồng muse-video song song vẫn chạy được (2026-11-02) | Rule "gen lần lượt" ở trên áp dụng khi 3 luồng | Tối đa 2 luồng song song; mỗi đoạn 70-110s |
+| Camera tự zoom dù ghi "camera static" (2026-11-02) | Cảnh ôm sát | Muốn zoom viết "one slow smooth push-in … ending as a medium close-up" (nghe lời); muốn đứng yên chỉ viết "static locked-off shot" và tránh cảnh nhân vật chồng nhau |
+| Nhân vật đổi nét giữa clip (tóc xoăn, mỗi người 2 ly, thư biến mất) (2026-11-02) | Model trôi nhận diện | Viết thẳng vào prompt ("hair stays straight, NEVER curly", "each person holds EXACTLY ONE cup"); soát 1 khung/giây; xấu thì gen lại hoặc cắt đoạn |
+| Vật cầm trên tay (thư) vẽ đè bằng CSS trông "thừa tay" (2026-11-02) | Tay giả chồng tay thật của người ôm | Gen lại ảnh nhóm với vật nằm trong tay do AI vẽ; chỉ dùng overlay CSS khi vật đứng riêng |
+| Đổi màu áo mà giữ nguyên mặt (2026-11-02) | Gen lại cả nhân vật làm mặt xê dịch | Đổi màu bằng HSV (numpy) trên ảnh đã duyệt: chọn vùng theo (H,S,V) + giới hạn theo chiều cao ảnh để khỏi dính miệng/tóc/giày; họa tiết hoa nhí = nền hoa × shading gốc |
+| Đổi tên thư mục dự án lỗi `Device or resource busy` (2026-11-02) | Trình xem ảnh/video Windows còn mở file trong thư mục | Đóng cửa sổ xem rồi đổi, hoặc để nguyên tên |
+| `remotion render` lỗi `Unexpected header byte` / cảnh báo webpack cache (2026-11-02) | Cache webpack hỏng | `rm -rf node_modules/.cache` rồi render lại; ghi log đầy đủ `> out/render.log` (đừng chỉ `tail`) |
