@@ -62,6 +62,10 @@ Skills chỉ **đọc** memory files. User là người duy nhất được ghi.
 | memory/writing-dna.md | HSK6 Examiner, Speaking Coach, Talk Series |
 | memory/learning-preferences.md | Learning Strategist |
 
+> **agentmemory** (MCP, `.mcp.json`) là kho **riêng**, khác `memory/*`. Claude tự recall/save theo
+> hook `.claude/hooks/session-start-agentmemory.sh`; dữ liệu ở `C:\Users\PC\.agentmemory\chinese-learning-os.json`
+> (ngoài repo). Quy tắc "user only" chỉ áp dụng cho `memory/*`.
+
 ## 4.5 Model Policy (tiết kiệm token)
 Default = **Sonnet** (nhanh, rẻ, đủ tốt cho ~80% việc: sinh slide, trang từ vựng,
 bài tập, bóc pptx, sửa lỗi nhẹ). Khi gặp việc KHÓ dưới đây, **chủ động nhắc user**:
