@@ -680,6 +680,7 @@ function sFlip(){if(Sflip)return;Sflip=true;
   if(Sdir==='vi2zh')h+='<div class="zh">'+esc(Scur.w)+'</div>';
   if(Scur.card){var c=Scur.card;
     h+='<div class="vi cvi">'+esc(c.vi)+'</div>';
+    if(c.cum)h+='<div class="blk"><div class="bh">Cụm mẫu</div><div class="cumfull">'+c.cum.split(Scur.w).map(esc).join('<b>'+esc(Scur.w)+'</b>')+'</div></div>';
     h+='<div class="blk"><div class="bh">① Đặc điểm</div><ul>'+(c.trait||[]).map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>';
     h+='<div class="blk"><div class="bh">② Dễ nhầm với</div>'+(c.conf||[]).map(function(x){
       return '<div class="cf"><b>'+esc(x.w)+'</b> <span class="cfp">'+esc(x.py)+'</span> — '+esc(x.vi)+' <span class="cfd">'+esc(x.diff)+'</span></div>';}).join('')+'</div>';
