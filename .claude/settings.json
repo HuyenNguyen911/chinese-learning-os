@@ -37,6 +37,12 @@
             "command": "bash .claude/hooks/session-start-git-check.sh",
             "timeout": 20,
             "statusMessage": "Kiểm tra git status/fetch..."
+          },
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "bash .claude/hooks/session-start-agentmemory.sh",
+            "timeout": 10
           }
         ]
       }
