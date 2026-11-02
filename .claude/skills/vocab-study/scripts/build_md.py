@@ -36,7 +36,13 @@ ER_KEEP = {"婴儿", "女儿", "儿子", "儿童", "幼儿", "孤儿", "育儿",
            "健儿", "男儿", "混血儿", "少儿", "托儿所", "儿女"}
 PINYIN_OVERRIDE = {"古朴": "gǔpǔ", "简朴": "jiǎnpǔ", "巴不得": "bābude",
                    "恨不得": "hènbude", "堵得慌": "dǔdehuāng",
-                   "琢磨": "zuómo"}  # nghĩa "suy nghĩ, cân nhắc" (không phải zhuómó = đẽo gọt)
+                   "琢磨": "zuómo",  # nghĩa "suy nghĩ, cân nhắc" (không phải zhuómó = đẽo gọt)
+                   # Linh tinh: pypinyin sai 多音字 / thanh nhẹ / biến điệu 一 (quy ước: thanh gốc)
+                   "世界屋脊": "shìjièwūjǐ", "红彤彤": "hóngtōngtōng", "做作": "zuòzuo",
+                   "俏皮": "qiàopi", "广为流传": "guǎngwéiliúchuán", "不失为": "bùshīwéi",
+                   "密实": "mìshi", "名堂": "míngtang", "和尚": "héshang",
+                   "一事无成": "yīshìwúchéng", "收成": "shōucheng", "随和": "suíhe",
+                   "卖弄": "màinong", "出手相助": "chūshǒuxiāngzhù"}
 _VOWEL = set("aāáǎàoōóǒòeēéěê")
 
 def py(w):
