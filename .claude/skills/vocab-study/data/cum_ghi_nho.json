@@ -2732,6 +2732,1127 @@
      "q": "Đề đang nói dù xảy ra thế nào vẫn…, hay chọn thà chịu thiệt, hay thêm lý do?"
     }
    ]
+  },
+  {
+   "title": "Điền từ H6 — Đề 4",
+   "items": [
+    {
+     "w": "次序",
+     "py": "cì xù",
+     "vi": "thứ tự trước sau",
+     "cum": "按照一定的次序",
+     "trait": [
+      "Danh từ: trình tự trước sau của các bước làm việc",
+      "Đi với: 按次序, 有次序, 排列次序"
+     ],
+     "conf": [
+      {
+       "w": "秩序",
+       "py": "zhì xù",
+       "vi": "trật tự",
+       "diff": "trạng thái ổn định, không loạn của xã hội/nơi chốn (维持秩序)"
+      },
+      {
+       "w": "名次",
+       "py": "míng cì",
+       "vi": "thứ hạng",
+       "diff": "vị trí xếp hạng khi thi đấu (争名次)"
+      },
+      {
+       "w": "规范",
+       "py": "guī fàn",
+       "vi": "chuẩn mực",
+       "diff": "tiêu chuẩn phải tuân theo (规范行为)"
+      }
+     ],
+     "q": "Đề đang nói thứ tự các bước, hay trật tự xã hội, thứ hạng thi đấu, hay chuẩn mực?"
+    },
+    {
+     "w": "逐步",
+     "py": "zhú bù",
+     "vi": "từng bước",
+     "cum": "逐步向前",
+     "trait": [
+      "Phó từ: tiến lên từng bước, có kế hoạch, có chủ ý",
+      "Mẫu: 逐步 + động từ (逐步提高, 逐步改善)"
+     ],
+     "conf": [
+      {
+       "w": "逐渐",
+       "py": "zhú jiàn",
+       "vi": "dần dần",
+       "diff": "tự thay đổi từ từ, không cần chủ ý (天气逐渐变冷)"
+      },
+      {
+       "w": "依旧",
+       "py": "yī jiù",
+       "vi": "vẫn như cũ",
+       "diff": "trạng thái không đổi (风景依旧)"
+      },
+      {
+       "w": "仍旧",
+       "py": "réng jiù",
+       "vi": "vẫn",
+       "diff": "như 依旧, nhấn việc vẫn tiếp diễn, không đổi"
+      }
+     ],
+     "q": "Đề đang nói chủ động tiến từng bước, hay tự thay đổi dần, hay vẫn như cũ?"
+    },
+    {
+     "w": "事与愿违",
+     "py": "shì yǔ yuàn wéi",
+     "vi": "kết quả trái mong muốn",
+     "cum": "必将事倍功半，事与愿违",
+     "trait": [
+      "Thành ngữ: kết quả ngược lại với mong muốn",
+      "Đi với: 往往事与愿违, 结果事与愿违"
+     ],
+     "conf": [
+      {
+       "w": "南辕北辙",
+       "py": "nán yuán běi zhé",
+       "vi": "ngược đường",
+       "diff": "chọn sai hướng nên không thể tới đích (cách làm trái mục đích)"
+      },
+      {
+       "w": "急于求成",
+       "py": "jí yú qiú chéng",
+       "vi": "nóng lòng thành công",
+       "diff": "nói thái độ nóng vội, không phải kết quả"
+      },
+      {
+       "w": "半途而废",
+       "py": "bàn tú ér fèi",
+       "vi": "bỏ dở giữa chừng",
+       "diff": "dừng lại không làm tiếp"
+      }
+     ],
+     "q": "Đề đang nói kết quả trái mong muốn, hay thái độ nóng vội, bỏ dở giữa chừng, hay đi sai hướng?"
+    },
+    {
+     "w": "鲜明",
+     "py": "xiān míng",
+     "vi": "rõ nét, nổi bật",
+     "cum": "民族特色鲜明",
+     "trait": [
+      "Tính từ: rõ ràng, nổi bật, dễ nhận ra",
+      "Đi với: 特色鲜明, 对比鲜明, 个性鲜明, 立场鲜明"
+     ],
+     "conf": [
+      {
+       "w": "开明",
+       "py": "kāi míng",
+       "vi": "cởi mở",
+       "diff": "tư tưởng không bảo thủ, nói về người"
+      },
+      {
+       "w": "英明",
+       "py": "yīng míng",
+       "vi": "sáng suốt",
+       "diff": "người lãnh đạo, quyết sách sáng suốt"
+      },
+      {
+       "w": "高明",
+       "py": "gāo míng",
+       "vi": "cao tay",
+       "diff": "tài giỏi, cách làm hay"
+      }
+     ],
+     "q": "Đề đang tả nét đặc sắc rõ ràng, hay tính cách cởi mở, sáng suốt, cao tay?"
+    },
+    {
+     "w": "价值",
+     "py": "jià zhí",
+     "vi": "giá trị",
+     "cum": "很高的历史、科学和艺术价值",
+     "trait": [
+      "Danh từ: giá trị, ích lợi của sự vật",
+      "Đi với: 有价值, 艺术价值, 研究价值, 价值观"
+     ],
+     "conf": [
+      {
+       "w": "意义",
+       "py": "yì yì",
+       "vi": "ý nghĩa",
+       "diff": "tầm quan trọng, nội hàm (有意义)"
+      },
+      {
+       "w": "代价",
+       "py": "dài jià",
+       "vi": "cái giá phải trả",
+       "diff": "cái phải bỏ ra, hy sinh để đạt được điều gì"
+      },
+      {
+       "w": "品味",
+       "py": "pǐn wèi",
+       "vi": "gu, thẩm mỹ",
+       "diff": "trình độ thưởng thức, sở thích (有品味)"
+      }
+     ],
+     "q": "Đề đang nói giá trị của di sản, hay ý nghĩa, cái giá phải trả, hay gu thẩm mỹ?"
+    },
+    {
+     "w": "举足轻重",
+     "py": "jǔ zú qīng zhòng",
+     "vi": "giữ vị trí then chốt",
+     "cum": "占有举足轻重的地位",
+     "trait": [
+      "Thành ngữ: ở vị trí then chốt, ảnh hưởng lớn",
+      "Mẫu: 起/占有 + 举足轻重的作用/地位"
+     ],
+     "conf": [
+      {
+       "w": "与日俱增",
+       "py": "yǔ rì jù zēng",
+       "vi": "ngày càng tăng",
+       "diff": "số lượng, mức độ tăng theo ngày"
+      },
+      {
+       "w": "朝气蓬勃",
+       "py": "zhāo qì péng bó",
+       "vi": "đầy sức sống",
+       "diff": "tả người/tập thể trẻ hăng hái"
+      },
+      {
+       "w": "得天独厚",
+       "py": "dé tiān dú hòu",
+       "vi": "được trời ưu ái",
+       "diff": "điều kiện tự nhiên, hoàn cảnh đặc biệt tốt"
+      }
+     ],
+     "q": "Đề đang nói vị trí quan trọng, hay tăng dần, đầy sức sống, hay điều kiện ưu đãi?"
+    },
+    {
+     "w": "修建",
+     "py": "xiū jiàn",
+     "vi": "xây dựng",
+     "cum": "把花圃修建得像钟面一样",
+     "trait": [
+      "Động từ: xây mới công trình, bố trí thành hình",
+      "Đi với: 修建公路, 修建水库, 修建花圃"
+     ],
+     "conf": [
+      {
+       "w": "维修",
+       "py": "wéi xiū",
+       "vi": "bảo dưỡng, sửa",
+       "diff": "đồ/công trình hỏng được sửa (维修电梯)"
+      },
+      {
+       "w": "修复",
+       "py": "xiū fù",
+       "vi": "phục hồi",
+       "diff": "đưa về trạng thái ban đầu (修复文物)"
+      },
+      {
+       "w": "装修",
+       "py": "zhuāng xiū",
+       "vi": "trang trí nội thất",
+       "diff": "làm nội thất cho nhà đã xây"
+      }
+     ],
+     "q": "Đề đang nói xây dựng mới, hay sửa chữa, phục hồi, hay trang trí nội thất?"
+    },
+    {
+     "w": "陆续",
+     "py": "lù xù",
+     "vi": "lần lượt, nối tiếp",
+     "cum": "24小时内陆续开放",
+     "trait": [
+      "Phó từ: hết cái này đến cái khác, không cùng lúc",
+      "Đi với: 陆续到达, 陆续开放, 陆续离开"
+     ],
+     "conf": [
+      {
+       "w": "顿时",
+       "py": "dùn shí",
+       "vi": "ngay lập tức",
+       "diff": "đột ngột, một lần, không kéo dài"
+      },
+      {
+       "w": "一向",
+       "py": "yí xiàng",
+       "vi": "từ trước đến nay",
+       "diff": "luôn như vậy trong quá khứ đến giờ"
+      },
+      {
+       "w": "一贯",
+       "py": "yí guàn",
+       "vi": "nhất quán",
+       "diff": "thái độ, phong cách không đổi từ đầu đến cuối"
+      }
+     ],
+     "q": "Đề đang nói nối tiếp từng cái, hay xảy ra tức thì, hay luôn như thế từ trước?"
+    },
+    {
+     "w": "大致",
+     "py": "dà zhì",
+     "vi": "đại khái",
+     "cum": "现在大致是几点钟",
+     "trait": [
+      "Phó từ: đại thể, gần đúng, không chính xác tuyệt đối",
+      "Đi với: 大致相同, 大致了解"
+     ],
+     "conf": [
+      {
+       "w": "大约",
+       "py": "dà yuē",
+       "vi": "khoảng",
+       "diff": "ước lượng con số, thời gian (大约五点)"
+      },
+      {
+       "w": "终究",
+       "py": "zhōng jiū",
+       "vi": "rốt cuộc vẫn",
+       "diff": "khẳng định kết quả cuối cùng không đổi"
+      },
+      {
+       "w": "暂且",
+       "py": "zàn qiě",
+       "vi": "tạm thời",
+       "diff": "tạm gác lại, chờ sau"
+      }
+     ],
+     "q": "Đề đang ước chừng gần đúng, hay khẳng định kết quả cuối, hay tạm thời?"
+    },
+    {
+     "w": "名副其实",
+     "py": "míng fù qí shí",
+     "vi": "đúng với tên gọi",
+     "cum": "是名副其实的“悬浮”",
+     "trait": [
+      "Thành ngữ: tên và thực chất khớp nhau",
+      "Mẫu: 是名副其实的 + danh từ"
+     ],
+     "conf": [
+      {
+       "w": "不言而喻",
+       "py": "bù yán ér yù",
+       "vi": "không cần nói cũng hiểu",
+       "diff": "điều quá rõ ràng, dùng làm vị ngữ"
+      },
+      {
+       "w": "理所当然",
+       "py": "lǐ suǒ dāng rán",
+       "vi": "đương nhiên",
+       "diff": "hợp lý, nên như thế"
+      },
+      {
+       "w": "归根到底",
+       "py": "guī gēn dào dǐ",
+       "vi": "xét cho cùng",
+       "diff": "nêu kết luận gốc rễ ở cuối lập luận"
+      }
+     ],
+     "q": "Đề đang nói tên đúng với thực chất, hay điều quá rõ, đương nhiên, hay kết luận cuối?"
+    },
+    {
+     "w": "摇荡",
+     "py": "yáo dàng",
+     "vi": "lắc lư, đung đưa",
+     "cum": "左右摇荡",
+     "trait": [
+      "Động từ: lắc qua lại, đung đưa nhẹ",
+      "Đi với: 左右摇荡, 在水中摇荡"
+     ],
+     "conf": [
+      {
+       "w": "振动",
+       "py": "zhèn dòng",
+       "vi": "rung",
+       "diff": "rung nhanh biên độ nhỏ (声带振动)"
+      },
+      {
+       "w": "摇滚",
+       "py": "yáo gǔn",
+       "vi": "nhạc rock",
+       "diff": "danh từ, thể loại nhạc, không phải động tác"
+      },
+      {
+       "w": "动荡",
+       "py": "dòng dàng",
+       "vi": "bất ổn",
+       "diff": "tình hình xã hội/thời cuộc không ổn định"
+      }
+     ],
+     "q": "Đề đang tả lắc lư qua lại, hay rung, nhạc rock, hay bất ổn?"
+    },
+    {
+     "w": "极其",
+     "py": "jí qí",
+     "vi": "cực kỳ",
+     "cum": "极其稳定",
+     "trait": [
+      "Phó từ: mức độ rất cao, hơi trang trọng",
+      "Đi với: 极其重要, 极其困难"
+     ],
+     "conf": [
+      {
+       "w": "格外",
+       "py": "gé wài",
+       "vi": "đặc biệt (hơn thường lệ)",
+       "diff": "so với bình thường thì hơn hẳn (今天格外冷)"
+      },
+      {
+       "w": "异常",
+       "py": "yì cháng",
+       "vi": "khác thường",
+       "diff": "mức độ bất thường, hay tả điều lạ"
+      },
+      {
+       "w": "万分",
+       "py": "wàn fēn",
+       "vi": "vô cùng",
+       "diff": "đi với cảm xúc (万分感谢, 万分焦急)"
+      }
+     ],
+     "q": "Đề cần phó từ chỉ mức độ cao, hay hơn thường lệ, khác thường, hay cảm xúc cực độ?"
+    },
+    {
+     "w": "感觉",
+     "py": "gǎn jué",
+     "vi": "cảm giác",
+     "cum": "眩晕的感觉",
+     "trait": [
+      "Danh/động từ: cảm giác trực tiếp của cơ thể",
+      "Đi với: 有…的感觉, 感觉到"
+     ],
+     "conf": [
+      {
+       "w": "感想",
+       "py": "gǎn xiǎng",
+       "vi": "cảm tưởng",
+       "diff": "suy nghĩ sau khi trải qua/xem (谈感想)"
+      },
+      {
+       "w": "知觉",
+       "py": "zhī jué",
+       "vi": "tri giác",
+       "diff": "thuật ngữ tâm lý/y học (失去知觉)"
+      },
+      {
+       "w": "感受",
+       "py": "gǎn shòu",
+       "vi": "cảm nhận",
+       "diff": "trải nghiệm sâu, thường dùng 感受到"
+      }
+     ],
+     "q": "Đề đang nói cảm giác cơ thể, hay cảm tưởng, tri giác, hay trải nghiệm sâu?"
+    },
+    {
+     "w": "挑战",
+     "py": "tiǎo zhàn",
+     "vi": "thách thức",
+     "cum": "对自身的挑战",
+     "trait": [
+      "Danh/động từ: thách thức, đối đầu với điều khó",
+      "Đi với: 接受挑战, 挑战自我, 向…挑战"
+     ],
+     "conf": [
+      {
+       "w": "战斗",
+       "py": "zhàn dòu",
+       "vi": "chiến đấu",
+       "diff": "đánh nhau thật, quân sự"
+      },
+      {
+       "w": "竞赛",
+       "py": "jìng sài",
+       "vi": "thi đấu",
+       "diff": "cuộc thi có luật, giành hạng"
+      },
+      {
+       "w": "较量",
+       "py": "jiào liàng",
+       "vi": "đọ sức",
+       "diff": "so tài giữa hai bên"
+      }
+     ],
+     "q": "Đề đang nói thách thức bản thân, hay chiến đấu, thi đấu, đọ sức?"
+    },
+    {
+     "w": "奥秘",
+     "py": "ào mì",
+     "vi": "điều huyền bí",
+     "cum": "哪里有奥秘",
+     "trait": [
+      "Danh từ: bí mật sâu xa của tự nhiên, khoa học",
+      "Đi với: 探索奥秘, 宇宙的奥秘"
+     ],
+     "conf": [
+      {
+       "w": "机遇",
+       "py": "jī yù",
+       "vi": "cơ hội",
+       "diff": "dịp thuận lợi (抓住机遇)"
+      },
+      {
+       "w": "神话",
+       "py": "shén huà",
+       "vi": "thần thoại",
+       "diff": "truyện thần kỳ, hoặc việc phi thường"
+      },
+      {
+       "w": "疑惑",
+       "py": "yí huò",
+       "vi": "nghi hoặc",
+       "diff": "tâm trạng không hiểu, nghi ngờ"
+      }
+     ],
+     "q": "Đề đang nói điều bí ẩn đáng khám phá, hay cơ hội, thần thoại, nghi hoặc?"
+    },
+    {
+     "w": "喜悦",
+     "py": "xǐ yuè",
+     "vi": "niềm vui",
+     "cum": "成功的喜悦",
+     "trait": [
+      "Danh/tính từ: niềm vui trong lòng, trang trọng",
+      "Đi với: 成功的喜悦, 喜悦的心情"
+     ],
+     "conf": [
+      {
+       "w": "欢乐",
+       "py": "huān lè",
+       "vi": "vui vẻ",
+       "diff": "không khí vui, nhiều người (节日的欢乐)"
+      },
+      {
+       "w": "美妙",
+       "py": "měi miào",
+       "vi": "tuyệt diệu",
+       "diff": "tả âm nhạc, cảnh đẹp, không phải cảm xúc"
+      },
+      {
+       "w": "光彩",
+       "py": "guāng cǎi",
+       "vi": "vẻ vang",
+       "diff": "danh dự, ánh sáng rực rỡ (不光彩)"
+      }
+     ],
+     "q": "Đề đang nói niềm vui trong lòng, hay không khí vui, tuyệt diệu, vẻ vang?"
+    },
+    {
+     "w": "遏制",
+     "py": "è zhì",
+     "vi": "kìm hãm",
+     "cum": "都遏制不住人类探寻未知世界的激情",
+     "trait": [
+      "Động từ: ngăn, kìm lại thứ đang mạnh lên",
+      "Đi với: 遏制不住, 遏制蔓延, 遏制冲动"
+     ],
+     "conf": [
+      {
+       "w": "制止",
+       "py": "zhì zhǐ",
+       "vi": "ngăn chặn",
+       "diff": "ngăn hành vi đang diễn ra (制止打架)"
+      },
+      {
+       "w": "克制",
+       "py": "kè zhì",
+       "vi": "kiềm chế",
+       "diff": "tự kiềm chế cảm xúc của bản thân"
+      },
+      {
+       "w": "压制",
+       "py": "yā zhì",
+       "vi": "đàn áp",
+       "diff": "dùng quyền lực dập ý kiến, sức mạnh"
+      }
+     ],
+     "q": "Đề đang nói kìm lại một sức mạnh, hay ngăn hành vi, tự kiềm chế, hay đàn áp?"
+    },
+    {
+     "w": "迈",
+     "py": "mài",
+     "vi": "bước",
+     "cum": "迈向全新领域",
+     "trait": [
+      "Động từ: bước chân lớn; tiến tới",
+      "Đi với: 迈步, 迈向, 迈出第一步"
+     ],
+     "conf": [
+      {
+       "w": "蹦",
+       "py": "bèng",
+       "vi": "nhảy tưng",
+       "diff": "nhảy lên ngắn"
+      },
+      {
+       "w": "跨",
+       "py": "kuà",
+       "vi": "bước qua, vượt",
+       "diff": "bước qua vật cản hoặc ranh giới (跨国)"
+      },
+      {
+       "w": "奔",
+       "py": "bēn",
+       "vi": "chạy gấp",
+       "diff": "chạy nhanh về một đích cụ thể (奔向)"
+      }
+     ],
+     "q": "Đề đang nói bước tiến, hay nhảy, bước qua, hay chạy gấp?"
+    },
+    {
+     "w": "背景",
+     "py": "bèi jǐng",
+     "vi": "bối cảnh",
+     "cum": "以她7岁到13岁的生活为背景",
+     "trait": [
+      "Danh từ: bối cảnh, nền của câu chuyện hay sự kiện",
+      "Mẫu: 以…为背景"
+     ],
+     "conf": [
+      {
+       "w": "情节",
+       "py": "qíng jié",
+       "vi": "tình tiết",
+       "diff": "diễn biến trong truyện"
+      },
+      {
+       "w": "情景",
+       "py": "qíng jǐng",
+       "vi": "cảnh tượng",
+       "diff": "cảnh cụ thể đang diễn ra"
+      },
+      {
+       "w": "前景",
+       "py": "qián jǐng",
+       "vi": "triển vọng",
+       "diff": "viễn cảnh tương lai"
+      }
+     ],
+     "q": "Đề đang nói bối cảnh nền, hay tình tiết, cảnh tượng, hay triển vọng?"
+    },
+    {
+     "w": "细腻",
+     "py": "xì nì",
+     "vi": "tinh tế, mịn",
+     "cum": "细腻的笔触",
+     "trait": [
+      "Tính từ: tinh tế, mềm mại (nét bút, cảm xúc, làn da)",
+      "Đi với: 细腻的笔触, 感情细腻"
+     ],
+     "conf": [
+      {
+       "w": "精确",
+       "py": "jīng què",
+       "vi": "chính xác",
+       "diff": "số liệu, đo lường chuẩn"
+      },
+      {
+       "w": "细致",
+       "py": "xì zhì",
+       "vi": "tỉ mỉ",
+       "diff": "làm việc cẩn thận từng chi tiết (工作细致)"
+      },
+      {
+       "w": "精致",
+       "py": "jīng zhì",
+       "vi": "tinh xảo",
+       "diff": "đồ vật làm công phu"
+      }
+     ],
+     "q": "Đề đang tả nét bút tinh tế, hay chính xác, tỉ mỉ, tinh xảo?"
+    },
+    {
+     "w": "幅",
+     "py": "fú",
+     "vi": "bức",
+     "cum": "一幅二十世纪二三十年代老北京的生活画卷",
+     "trait": [
+      "Lượng từ: tranh, ảnh, bản đồ, vải khổ rộng",
+      "Đi với: 一幅画, 一幅地图, 一幅画卷"
+     ],
+     "conf": [
+      {
+       "w": "丛",
+       "py": "cóng",
+       "vi": "bụi",
+       "diff": "cỏ, hoa mọc thành bụi"
+      },
+      {
+       "w": "副",
+       "py": "fù",
+       "vi": "bộ, cặp",
+       "diff": "đồ đi thành bộ (一副眼镜, 一副对联)"
+      },
+      {
+       "w": "串",
+       "py": "chuàn",
+       "vi": "chuỗi",
+       "diff": "vật xâu thành chuỗi (一串钥匙)"
+      }
+     ],
+     "q": "Danh từ phía sau là tranh/cuộn, hay bụi, bộ, chuỗi?"
+    },
+    {
+     "w": "感染",
+     "py": "gǎn rǎn",
+     "vi": "cảm hóa; lây nhiễm",
+     "cum": "感染了很多读者",
+     "trait": [
+      "Động từ: truyền cảm xúc cho người; nhiễm bệnh",
+      "Đi với: 感染力, 被…感染, 感染病毒"
+     ],
+     "conf": [
+      {
+       "w": "激励",
+       "py": "jī lì",
+       "vi": "khích lệ",
+       "diff": "thúc người ta cố gắng"
+      },
+      {
+       "w": "勉励",
+       "py": "miǎn lì",
+       "vi": "khuyến khích",
+       "diff": "người trên động viên, khuyên bảo"
+      },
+      {
+       "w": "感慨",
+       "py": "gǎn kǎi",
+       "vi": "cảm khái",
+       "diff": "cảm xúc thổn thức của chính người nói"
+      }
+     ],
+     "q": "Đề đang nói tác phẩm làm người đọc rung động, hay thúc cố gắng, khuyên bảo, hay thổn thức?"
+    },
+    {
+     "w": "显示",
+     "py": "xiǎn shì",
+     "vi": "cho thấy, hiển thị",
+     "cum": "研究显示",
+     "trait": [
+      "Động từ: để lộ ra rõ; chủ thể là số liệu, thiết bị",
+      "Đi với: 研究显示, 数据显示, 屏幕显示"
+     ],
+     "conf": [
+      {
+       "w": "表明",
+       "py": "biǎo míng",
+       "vi": "chứng tỏ",
+       "diff": "nhấn kết luận rút ra (研究表明)"
+      },
+      {
+       "w": "声明",
+       "py": "shēng míng",
+       "vi": "tuyên bố",
+       "diff": "công khai nêu lập trường"
+      },
+      {
+       "w": "表示",
+       "py": "biǎo shì",
+       "vi": "bày tỏ",
+       "diff": "chủ thể là người nói ý kiến, thái độ"
+      }
+     ],
+     "q": "Chủ ngữ là nghiên cứu/số liệu, hay người phát biểu? (显示 và 表明 đều đi với 研究, xem cả câu)"
+    },
+    {
+     "w": "频率",
+     "py": "pín lǜ",
+     "vi": "tần suất",
+     "cum": "谈话频率高",
+     "trait": [
+      "Danh từ: số lần lặp lại trong một đơn vị thời gian",
+      "Đi với: 频率高/低, 使用频率"
+     ],
+     "conf": [
+      {
+       "w": "程度",
+       "py": "chéng dù",
+       "vi": "mức độ",
+       "diff": "độ nặng nhẹ, trình độ"
+      },
+      {
+       "w": "周期",
+       "py": "zhōu qī",
+       "vi": "chu kỳ",
+       "diff": "khoảng thời gian lặp lại (周期长)"
+      },
+      {
+       "w": "幅度",
+       "py": "fú dù",
+       "vi": "biên độ",
+       "diff": "mức dao động, thay đổi (大幅度)"
+      }
+     ],
+     "q": "Đề đang nói số lần nói chuyện, hay mức độ, chu kỳ, biên độ?"
+    },
+    {
+     "w": "优势",
+     "py": "yōu shì",
+     "vi": "ưu thế",
+     "cum": "明显的优势",
+     "trait": [
+      "Danh từ: vị thế hơn người khác",
+      "Đi với: 有优势, 占优势, 竞争优势"
+     ],
+     "conf": [
+      {
+       "w": "声势",
+       "py": "shēng shì",
+       "vi": "thanh thế",
+       "diff": "khí thế, tiếng vang của hoạt động"
+      },
+      {
+       "w": "优点",
+       "py": "yōu diǎn",
+       "vi": "ưu điểm",
+       "diff": "điểm tốt của người/vật, đối lập 缺点"
+      },
+      {
+       "w": "气势",
+       "py": "qì shì",
+       "vi": "khí thế",
+       "diff": "vẻ hùng mạnh (气势磅礴)"
+      }
+     ],
+     "q": "Đề đang nói lợi thế vượt người khác, hay thanh thế, ưu điểm, khí thế?"
+    },
+    {
+     "w": "承受",
+     "py": "chéng shòu",
+     "vi": "chịu đựng",
+     "cum": "能承受这么大的压力",
+     "trait": [
+      "Động từ: chịu được (áp lực, sức nặng, đả kích)",
+      "Đi với: 承受压力, 承受不住"
+     ],
+     "conf": [
+      {
+       "w": "负担",
+       "py": "fù dān",
+       "vi": "gánh vác",
+       "diff": "gánh chi phí, trách nhiệm (负担费用)"
+      },
+      {
+       "w": "承担",
+       "py": "chéng dān",
+       "vi": "đảm nhận",
+       "diff": "nhận trách nhiệm, nhiệm vụ (承担责任)"
+      },
+      {
+       "w": "遭受",
+       "py": "zāo shòu",
+       "vi": "gặp phải",
+       "diff": "bị điều xấu giáng xuống (遭受损失)"
+      }
+     ],
+     "q": "Đề đang nói chịu được áp lực vật lý, hay gánh chi phí, nhận trách nhiệm, hay gặp tổn thất?"
+    },
+    {
+     "w": "分散",
+     "py": "fēn sàn",
+     "vi": "phân tán",
+     "cum": "均匀地分散到蛋壳的各个部分",
+     "trait": [
+      "Động từ: tản ra nhiều chỗ, chia rải",
+      "Đi với: 分散注意力, 分散压力, 分散在各地"
+     ],
+     "conf": [
+      {
+       "w": "分解",
+       "py": "fēn jiě",
+       "vi": "phân giải",
+       "diff": "tách chất thành thành phần nhỏ"
+      },
+      {
+       "w": "扩散",
+       "py": "kuò sàn",
+       "vi": "khuếch tán",
+       "diff": "lan rộng ra ngoài (扩散到空气中)"
+      },
+      {
+       "w": "解散",
+       "py": "jiě sàn",
+       "vi": "giải tán",
+       "diff": "tổ chức, đám đông bị giải tán"
+      }
+     ],
+     "q": "Đề đang nói chia đều ra nhiều chỗ, hay phân giải, lan rộng, giải tán?"
+    },
+    {
+     "w": "启发",
+     "py": "qǐ fā",
+     "vi": "gợi mở",
+     "cum": "建筑师由此得到启发",
+     "trait": [
+      "Động/danh từ: khơi dậy suy nghĩ, gợi ý",
+      "Đi với: 受到启发, 得到启发, 启发学生"
+     ],
+     "conf": [
+      {
+       "w": "启示",
+       "py": "qǐ shì",
+       "vi": "điều rút ra",
+       "diff": "nhấn bài học giác ngộ (给人启示)"
+      },
+      {
+       "w": "示意",
+       "py": "shì yì",
+       "vi": "ra hiệu",
+       "diff": "dùng cử chỉ, động tác ra hiệu"
+      },
+      {
+       "w": "启蒙",
+       "py": "qǐ méng",
+       "vi": "khai sáng",
+       "diff": "truyền kiến thức nhập môn, thức tỉnh"
+      }
+     ],
+     "q": "Đề đang nói được gợi ý rồi nghĩ ra, hay bài học rút ra, ra hiệu, khai sáng?"
+    },
+    {
+     "w": "坚固",
+     "py": "jiān gù",
+     "vi": "kiên cố",
+     "cum": "既坚固又省料",
+     "trait": [
+      "Tính từ: cứng chắc, khó hỏng (vật thể, công trình)",
+      "Đi với: 坚固的堡垒, 坚固耐用"
+     ],
+     "conf": [
+      {
+       "w": "牢固",
+       "py": "láo gù",
+       "vi": "chắc chắn",
+       "diff": "gắn chặt, không lung lay (cả cụ thể lẫn trừu tượng: 基础牢固)"
+      },
+      {
+       "w": "坚定",
+       "py": "jiān dìng",
+       "vi": "kiên định",
+       "diff": "ý chí, lập trường vững"
+      },
+      {
+       "w": "坚强",
+       "py": "jiān qiáng",
+       "vi": "kiên cường",
+       "diff": "ý chí con người không khuất phục"
+      }
+     ],
+     "q": "Đề đang tả công trình cứng chắc, hay ý chí kiên định, kiên cường?"
+    },
+    {
+     "w": "灵敏",
+     "py": "líng mǐn",
+     "vi": "nhạy",
+     "cum": "听力更加灵敏",
+     "trait": [
+      "Tính từ: phản ứng nhanh với kích thích (giác quan, máy móc)",
+      "Đi với: 嗅觉灵敏, 反应灵敏, 灵敏度"
+     ],
+     "conf": [
+      {
+       "w": "机灵",
+       "py": "jī ling",
+       "vi": "lanh lợi",
+       "diff": "người thông minh, nhanh trí"
+      },
+      {
+       "w": "敏捷",
+       "py": "mǐn jié",
+       "vi": "nhanh nhẹn",
+       "diff": "động tác, tư duy nhanh (动作敏捷)"
+      },
+      {
+       "w": "灵活",
+       "py": "líng huó",
+       "vi": "linh hoạt",
+       "diff": "dễ xoay chuyển, không cứng nhắc (头脑灵活)"
+      }
+     ],
+     "q": "Đề đang tả giác quan nhạy, hay người lanh lợi, nhanh nhẹn, linh hoạt?"
+    },
+    {
+     "w": "倾听",
+     "py": "qīng tīng",
+     "vi": "lắng nghe",
+     "cum": "倾听周围的声音",
+     "trait": [
+      "Động từ: nghe chăm chú, nghiêm túc",
+      "Đi với: 倾听意见, 倾听心声"
+     ],
+     "conf": [
+      {
+       "w": "辨认",
+       "py": "biàn rèn",
+       "vi": "nhận ra",
+       "diff": "nhận ra ai/cái gì qua đặc điểm"
+      },
+      {
+       "w": "打听",
+       "py": "dǎ ting",
+       "vi": "hỏi thăm",
+       "diff": "dò hỏi tin tức, không liên quan nghe âm"
+      },
+      {
+       "w": "分辨",
+       "py": "fēn biàn",
+       "vi": "phân biệt",
+       "diff": "tách rõ những thứ gần giống (分辨真假)"
+      }
+     ],
+     "q": "Đề đang nói nghe chăm chú, hay nhận ra, hỏi thăm, phân biệt?"
+    },
+    {
+     "w": "来源",
+     "py": "lái yuán",
+     "vi": "nguồn gốc",
+     "cum": "确定声音的来源",
+     "trait": [
+      "Danh từ: nơi phát ra, nơi bắt nguồn cụ thể",
+      "Đi với: 消息来源, 来源于, 经济来源"
+     ],
+     "conf": [
+      {
+       "w": "起源",
+       "py": "qǐ yuán",
+       "vi": "khởi nguồn",
+       "diff": "khởi đầu lịch sử (人类的起源)"
+      },
+      {
+       "w": "源泉",
+       "py": "yuán quán",
+       "vi": "nguồn suối",
+       "diff": "nguồn nuôi dưỡng, nghĩa ẩn dụ (力量的源泉)"
+      },
+      {
+       "w": "根源",
+       "py": "gēn yuán",
+       "vi": "gốc rễ",
+       "diff": "nguyên nhân sâu xa của điều xấu (问题的根源)"
+      }
+     ],
+     "q": "Đề đang nói chỗ phát ra, hay khởi đầu lịch sử, nguồn nuôi dưỡng, hay gốc rễ sự cố?"
+    },
+    {
+     "w": "本身",
+     "py": "běn shēn",
+     "vi": "bản thân (sự vật)",
+     "cum": "星星本身的亮度",
+     "trait": [
+      "Đại từ: chính sự vật đang nói, đối lập với bên ngoài",
+      "Đi với: 事物本身, 问题本身"
+     ],
+     "conf": [
+      {
+       "w": "本人",
+       "py": "běn rén",
+       "vi": "bản thân người",
+       "diff": "chính người đó (本人到场)"
+      },
+      {
+       "w": "人家",
+       "py": "rén jia",
+       "vi": "người ta",
+       "diff": "người khác hoặc chính mình, khẩu ngữ"
+      },
+      {
+       "w": "各自",
+       "py": "gè zì",
+       "vi": "mỗi bên",
+       "diff": "từng người, từng bên riêng"
+      }
+     ],
+     "q": "Đề đang nói chính ngôi sao (đối lập bên ngoài), hay chính con người, người khác, từng bên?"
+    },
+    {
+     "w": "遮挡",
+     "py": "zhē dǎng",
+     "vi": "che chắn",
+     "cum": "遮挡阳光、遮挡视线",
+     "trait": [
+      "Động từ: dùng vật chắn ngang tầm nhìn/ánh sáng",
+      "Đi với: 遮挡视线, 遮挡阳光, 被…遮挡"
+     ],
+     "conf": [
+      {
+       "w": "掩盖",
+       "py": "yǎn gài",
+       "vi": "che giấu",
+       "diff": "che đi sự thật, cảm xúc (掩盖真相)"
+      },
+      {
+       "w": "掩饰",
+       "py": "yǎn shì",
+       "vi": "che đậy",
+       "diff": "cố giấu lỗi, cảm xúc bằng vẻ ngoài"
+      },
+      {
+       "w": "覆盖",
+       "py": "fù gài",
+       "vi": "bao phủ",
+       "diff": "phủ kín bề mặt (积雪覆盖)"
+      }
+     ],
+     "q": "Đề đang nói vật chắn ngang ánh sáng, hay che giấu sự thật, che đậy, bao phủ?"
+    },
+    {
+     "w": "绝对",
+     "py": "jué duì",
+     "vi": "tuyệt đối",
+     "cum": "不是绝对透明的",
+     "trait": [
+      "Phó/tính từ: tuyệt đối, không điều kiện, không ngoại lệ",
+      "Mẫu: 不是绝对…的, 绝对不…"
+     ],
+     "conf": [
+      {
+       "w": "完全",
+       "py": "wán quán",
+       "vi": "hoàn toàn",
+       "diff": "đầy đủ, không thiếu (完全同意)"
+      },
+      {
+       "w": "彻底",
+       "py": "chè dǐ",
+       "vi": "triệt để",
+       "diff": "đến tận gốc, không còn sót (彻底解决)"
+      },
+      {
+       "w": "必然",
+       "py": "bì rán",
+       "vi": "tất nhiên",
+       "diff": "tính tất yếu của kết quả, không phải mức độ"
+      }
+     ],
+     "q": "Đề đang nói mức độ tuyệt đối không ngoại lệ, hay hoàn toàn đủ cả, triệt để, tất nhiên?"
+    },
+    {
+     "w": "好像",
+     "py": "hǎo xiàng",
+     "vi": "hình như, như là",
+     "cum": "好像在闪烁",
+     "trait": [
+      "Phó từ: dường như, tả cảm giác không chắc",
+      "Đi với: 好像…一样, 好像…似的"
+     ],
+     "conf": [
+      {
+       "w": "仿佛",
+       "py": "fǎng fú",
+       "vi": "dường như",
+       "diff": "văn viết, ví von sinh động (仿佛置身仙境)"
+      },
+      {
+       "w": "似乎",
+       "py": "sì hū",
+       "vi": "hình như",
+       "diff": "phỏng đoán khách quan, thiên về văn viết"
+      },
+      {
+       "w": "类似",
+       "py": "lèi sì",
+       "vi": "tương tự",
+       "diff": "hai thứ giống nhau, không phải ảo giác"
+      }
+     ],
+     "q": "Đề đang tả ảo giác 'như đang nhấp nháy', hay văn viết ví von, phỏng đoán, hay hai thứ giống nhau?"
+    }
+   ]
   }
  ]
 }
