@@ -1,0 +1,29 @@
+{
+ "common": "Animate THIS exact image. Keep exactly the same chibi characters (same faces, same eyes, same hair, same clothes, same small watch), same background, same flat pastel cartoon style as the input image. Camera fixed, no zoom, no camera movement unless asked. Nobody talks to the camera. Do not add any text, letters, numbers, new people or new objects (except where asked). Natural, calm, believable movement; no side-to-side swaying.",
+ "clips": {
+  "K1": "The boy walks calmly and naturally along the path toward the school gate on the right, arms hanging relaxed and swinging slightly, holding his books against his chest with one arm, with a bright decided smile. He keeps walking toward the school; the house stays behind him.",
+  "K2a": "The boy in bed slowly stretches both arms up even higher, yawns with a big relaxed smile, then lowers his arms and rubs one eye sleepily and smiles happily. Sunlight from the window shimmers softly. No hurry at all.",
+  "K2b": "The boy leisurely picks up noodles with his chopsticks, eats them and chews slowly with a satisfied relaxed smile, swinging his feet a little under the chair. Then he takes a sip of milk. Calm, unhurried breakfast.",
+  "K3": "The boy keeps drawing on the whiteboard with the marker: he adds a new colored block to the grid, then draws a check mark in one block and nods to himself with a proud relaxed smile. The board shows only shapes, never letters or numbers.",
+  "K4a": "The boy types quickly and happily on the laptop, eyes shining with excitement, nods to himself when the colorful blocks on the screen light up. The screen shows only colorful blocks, never letters.",
+  "K4b": "The boy plays the piano with both hands moving over the keys, swaying his head gently to the music with eyes half closed in enjoyment; small music notes float up and fade.",
+  "K4c": "The boy jogs happily along the park path, legs and arms moving in a natural running rhythm, breathing easily with a joyful face; leaves move slightly in the breeze. He stays roughly in the same place in the frame while the path moves.",
+  "K4d": "The boy stirs the vegetables in the pan with the spatula, steam rises, he leans in to smell it, then smiles proudly and gives a small happy nod.",
+  "K4e": "The boy dips his brush in the palette and paints new strokes on the landscape picture on the easel, then leans back a little to look at it with a satisfied happy smile.",
+  "K5": "The boy keeps his arm opened toward the school gate as if proudly presenting the school, then turns his head toward the school and back with a happy confident smile, giving a small nod. He stays in place.",
+  "K6": "The four classmates chat and laugh lively in a small circle: they take turns talking with their mouths moving and hand gestures, laughing together, small nods. The red-tie boy talks the most, warm and outgoing. They stay in their places.",
+  "K7": "The four classmates lean in over the open textbook discussing: one points at the page, the red-tie boy nods and points too, the others nod and talk with their mouths moving, very engaged. They stay seated, no swaying.",
+  "K8": "The red-tie boy keeps his hand raised high and eagerly speaks to share his idea, mouth moving, bright excited face; the classmates at nearby desks turn toward him, smile and nod in agreement.",
+  "K10": "The two boys compare their test papers: they point at the papers, look at each other, talk with mouths moving, the red-tie boy nods as if realizing something. They stay seated.",
+  "K11": "The boy with round glasses kindly points at the open notebook and explains. The red-tie boy looks PUZZLED, clearly NOT angry: his eyes stay WIDE OPEN, eyebrows raised, small 'o' mouth, he tilts his head and scratches his head with one hand. His eyes never close and his mouth never frowns.",
+  "K12": "The red-tie boy's face lights up with an 'aha' expression, he quickly corrects something in his notebook with the pencil, then gives a bigger thumbs up to the boy with glasses, who smiles and gives a thumbs up back.",
+  "K13": "The red-tie boy explains something in the notebook with his pencil while the girl with the bob listens and nods; then she points at her own textbook and explains something back while he nods. At the end they smile and give each other a light high five.",
+  "K15": "The boy alone at his desk chews lightly on his pencil, frowns slightly in puzzlement, looks at the homework, scratches his head, then sighs and rests his chin on his hand. Nobody else is there. Quiet, a little lonely.",
+  "K16": "The school fair is lively: the red-tie boy hands the cup of juice to the younger student with a smile, the classmates at the stall serve drinks and handle the little cash box, everyone moving cheerfully, bunting flutters gently.",
+  "K17": "The boy reads the thick book with deep interest, slowly turns a page, his eyes follow the lines, a small smile of discovery. Soft calm light.",
+  "K18": "The four classmates build the cardboard bridge model together: one holds pieces steady, one adds glue, the red-tie boy carefully places the top part, then they all smile and nod at their work.",
+  "K19": "The two girls start with arms crossed, turned away from each other. The red-tie boy gently speaks to both with a kind smile; the girls slowly uncross their arms, turn toward each other, smile shyly and shake hands. The boy with glasses smiles.",
+  "K20": "The young man in the red t-shirt explains his idea with open hand gestures, mouth moving; the two colleagues look at the laptop, then at him, smile and nod in agreement. Relaxed, friendly team meeting.",
+  "K21": "The four graduates stand shoulder to shoulder smiling proudly, then all toss their graduation caps up into the air together and laugh with joy as the caps fly up. While this happens, the camera does one slow smooth push-in toward the group."
+ }
+}

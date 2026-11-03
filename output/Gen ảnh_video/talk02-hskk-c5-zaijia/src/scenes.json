@@ -1,0 +1,115 @@
+{
+ "style": "Flat pastel chibi cartoon illustration, thin clean outlines, soft flat colors, big heads, cute and warm, wide 3:2 landscape shot, minimal simple background with few details, no text, no letters, no numbers, no logos anywhere.",
+ "yh": "The main boy (YH): very round face, light-brown fluffy layered hair with a messy spiky fringe covering his forehead and covering his ears (no middle parting), solid dark-brown vertical oval eyes with NO highlights and no eyelids, short thin curved eyebrows visible under the fringe, dot nose, gentle calm smile. On his LEFT wrist (only the left one) he wears a SMALL, slim, normal-sized black round sports watch with a thin strap — the watch face is clearly smaller than his wrist width, subtle, not chunky (grey bezel, tiny orange accent, no logo), plus a thin red string bracelet on the same wrist. YH appears only ONCE in the picture (never two copies of him, nobody else looks like him), and there are no extra hands or arms in the foreground.",
+ "uniform": "YH wears a school uniform: white short-sleeve shirt, bright red tie, navy trousers, white sneakers with red trim.",
+ "friends": "His classmates in the same school uniform style (white shirts, navy ties, navy trousers or navy pleated skirts): a girl with a short brown bob and a yellow hair clip; a boy with black hair and round black glasses; a girl with long wavy brown hair and a pink hair ribbon. IMPORTANT: YH is EXACTLY the same height, head size and body size as each of his classmates — all four kids are drawn at the same scale, YH is NOT bigger and NOT closer to the camera than them.",
+ "home": "YH wears a fresh casual home outfit: a soft light-grey hoodie with a red front pocket and red drawstrings, navy jogger pants, and red socks or red-trimmed white sneakers.",
+ "scenes": {
+  "K1": [
+   "uniform",
+   "A younger YH stands on a sunny sidewalk at a fork in the path: on the left a small cosy house, on the right a friendly school gate with a small building behind it. He looks toward the school with a bright decided smile, one foot stepping toward the school. He holds two books against his chest with one arm. Simple sky, a couple of trees."
+  ],
+  "K5": [
+   "uniform",
+   "YH stands in front of a friendly school gate (simple gate, small school building with a clock-less facade, a few trees), facing the viewer at three-quarter angle, one arm opened wide toward the school as if proudly presenting it, happy confident smile."
+  ],
+  "K2a": [
+   "home",
+   "At home on a sunny late morning, YH sits up in his bed under a light-blue blanket, stretching both of his own arms up high with a relaxed happy smile, no rush at all; the small watch is on his raised LEFT wrist. Only YH is in the picture: exactly two arms and two hands, both belonging to him, no other hands or arms anywhere, no close-up foreground objects. Medium-wide shot showing the whole bed. Simple cosy bedroom: bright sunlight through a window, a simple round wall clock without numbers, a small bedside lamp. Minimal details."
+  ],
+  "K2b": [
+   "home",
+   "At home, YH sits at a small round wooden table by a sunny window, leisurely eating breakfast: holding chopsticks and eating noodles from a bowl with a satisfied relaxed smile, a glass of milk on the table, legs swinging. Simple warm cream wall, minimal details."
+  ],
+  "K3": [
+   "home",
+   "At home, seen from the side, YH stands in front of a small whiteboard on the wall of his simple room, happily drawing his own weekly study plan as colorful blocks in a grid with a marker, ticking one block with a check mark, confident relaxed smile. There is exactly ONE boy in the whole picture (only one YH, never a second copy of him). Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers."
+  ],
+  "K4a": [
+   "home",
+   "At home, YH sits at a tidy desk coding with great focus and excitement, eyes shining, typing fast on a slim silver aluminum MacBook laptop; next to the laptop stands a large desktop computer monitor on a stand, both screens showing only colorful lines of code blocks, a professional programmer setup with a small desk lamp. Simple room, minimal details. Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers. The back of the laptop lid is plain silver."
+  ],
+  "K4b": [
+   "home",
+   "At home, YH happily plays a small upright piano in a simple living room, eyes half closed enjoying the music, little music notes floating in the air."
+  ],
+  "K4c": [
+   "home",
+   "YH jogs happily along a quiet tree-lined path in a small park near his home in the morning sunshine, wearing sneakers, relaxed joyful face. Simple background."
+  ],
+  "K4d": [
+   "home",
+   "At home in a simple bright kitchen, YH wears a small apron over his red t-shirt and happily cooks, stirring a pan of vegetables on the stove, steam rising, proud smile."
+  ],
+  "K4e": [
+   "home",
+   "At home, YH sits at a table by the window painting a colorful landscape picture on a small easel with a brush, a palette in his other hand, totally absorbed and happy."
+  ],
+  "K6": [
+   "uniform",
+   "friends",
+   "Break time in a simple sunny schoolyard: YH stands chatting and laughing lively with his three classmates in a small circle, everyone talking happily with hand gestures. YH is the same body size as the others. Simple background: a few trees, part of the school building."
+  ],
+  "K7": [
+   "uniform",
+   "friends",
+   "In a simple bright classroom, seen from the front at eye level, YH and his three classmates sit side by side in ONE straight row behind two pushed-together desks, all at the same distance from the camera so all four look exactly the same size; they lean in over an open textbook on the desks, one points at the page, all very engaged. Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers."
+  ],
+  "K8": [
+   "uniform",
+   "friends",
+   "In a simple bright classroom with desks and chairs arranged in perfectly neat straight rows, all facing the same direction toward the front, YH sits at his desk and raises his hand high, eager to share his idea with a bright excited face; two classmates at nearby desks in the same tidy rows turn toward him, smiling and nodding."
+  ],
+  "K10": [
+   "uniform",
+   "friends",
+   "In a classroom, YH and the boy with round black glasses sit side by side at a desk comparing their test papers, pointing at the papers and discussing, curious friendly faces. Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers."
+  ],
+  "K11": [
+   "uniform",
+   "friends",
+   "In a classroom, the boy with round black glasses kindly points at a spot in YH's open notebook. YH looks PUZZLED, not angry: eyes wide open, eyebrows raised high, mouth a small 'o', scratching his head with one hand. Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers. Only these two boys are at the desk in focus; YH is the only kid with light-brown hair and a red tie."
+  ],
+  "K12": [
+   "uniform",
+   "friends",
+   "In a classroom, YH suddenly understands: he smiles brightly with an 'aha' face, holding a pencil over his notebook correcting his work, and gives a thumbs up to the boy with round black glasses next to him, who smiles back. Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers."
+  ],
+  "K13": [
+   "uniform",
+   "friends",
+   "In a classroom, YH and the girl with the short brown bob sit side by side at one desk helping each other: YH explains something in her notebook with his pencil, she listens and nods with a smile, her own textbook open in front of them. Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers."
+  ],
+  "K15": [
+   "home",
+   "At home in a quiet simple room, YH sits alone at his desk stuck on his homework: chin resting on one hand, pencil in his mouth, eyebrows raised, puzzled and a bit lonely, a small question-mark-like cloud of confusion above him (no text). Nobody else around. Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers."
+  ],
+  "K16": [
+   "uniform",
+   "friends",
+   "A lively school fair in a simple schoolyard: small colorful stalls with bunting; YH and his classmates each have a role, one sells drinks, one handles a small cash box, YH hands a cup of juice to a younger student with a smile. Busy cheerful mini-society feeling, simple shapes, minimal details. Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers."
+  ],
+  "K17": [
+   "uniform",
+   "Inside a calm, simple school library with a few bookshelves, YH sits at a wooden table reading a thick book with deep interest, a small stack of books next to him, soft light."
+  ],
+  "K18": [
+   "uniform",
+   "friends",
+   "In a classroom, YH and his three classmates work together on a group project: building a cardboard bridge model on a table, one holds pieces, one glues, YH carefully places the top part, everyone cooperating happily."
+  ],
+  "K19": [
+   "uniform",
+   "friends",
+   "In a school corridor, the girl with the short brown bob and the girl with long wavy hair stand with arms crossed and faces turned away from each other after a small quarrel; YH stands between them, gently putting one hand near each girl's shoulder, smiling kindly as he helps them make peace."
+  ],
+  "K20": [
+   "Grown-up YH (same face and hair, a bit taller) in casual clothes: red t-shirt and beige trousers, white sneakers with red trim. In a bright simple modern workspace, he sits at a meeting table with two friendly colleagues around a laptop, confidently sharing an idea with an open hand gesture while the colleagues nod and smile. Any paper, board or screen shows only simple colored shapes, lines and check marks, never letters or numbers. YH appears only ONCE, sitting at the table; nobody stands in the foreground; the two colleagues are different adults (a woman with a dark ponytail and a man with short black hair)."
+  ],
+  "K21": [
+   "uniform",
+   "friends",
+   "Graduation day in front of the simple school gate: YH and his three classmates in their uniforms each wear a black graduation cap, standing side by side shoulder to shoulder, smiling proudly and about to toss their caps in the air. YH stands in the middle. Blue sky, a few trees. YH still wears his bright red tie clearly visible, same size as his friends."
+  ]
+ }
+}
