@@ -1,0 +1,18 @@
+{
+ "common": "Animate THIS exact image. Keep exactly the same chibi characters (same faces, same eyes, same hair, same clothes), same background, same flat pastel cartoon style as the input image. Camera fixed, no zoom, no camera movement. Nobody talks to the camera: mouths are smiling, laughing or still. Do not add any text, letters, numbers or new objects. Do NOT add any sparkles, stars, glitter, light bursts or glow effects.",
+ "clips": {
+  "K1": "The young woman reads her laptop screen: her eyes widen in happy surprise, she covers her mouth with one hand to stay quiet and giggles silently, her shoulders bounce with joy, then she quietly pumps her other fist under the desk. The colleagues in the background keep typing calmly.",
+  "K2": "The young woman hugs her phone to her chest and tiptoes quickly and quietly toward the open office door, glancing back once with a happy secretive smile, then steps out through the door. The colleagues at their desks keep working and do not notice.",
+  "K3": "The young woman talks happily on the phone pressed to her ear, nodding, bouncing a little on her toes with excitement and waving her free hand, smiling brightly.",
+  "K4": "The smartphone on the counter vibrates and rings. The mother and the father both turn toward it with curious happy faces; the mother puts down her spatula and picks up the phone, the father dries his hands. Calm natural movements.",
+  "K5": "The mother talks happily on the phone, delighted, the father beside her listens with a big smile and nods. The round chat bubbles with relatives' avatar faces gently float toward them one after another.",
+  "K6": "The father and mother stand close in front of the wall in a warm moment, both laughing with squinting happy eyes; the father keeps his arm around the mother's shoulders and gently pats her shoulder, the mother leans her head on his shoulder. They look up at the framed picture and then at each other. No swaying.",
+  "K7": "The three friends pat the young woman on the shoulder and give her thumbs-up, praising her, laughing and chatting; she smiles happily and slightly bashfully, nodding. Everyone stays seated.",
+  "K8": "All four friends raise their cups together and clink them in a cheerful toast, laughing; each person holds exactly ONE cup in one hand at all times, then each takes a sip from their own single cup.",
+  "K9": "The young woman sits on the bed in the soft lamp light, typing on her phone with a thoughtful tender smile, her thumbs moving; the thought bubbles above her gently float and glow. Calm, quiet night atmosphere.",
+  "K10": "The young woman smiles happily at her phone as the small round comment bubbles with coworker avatars pop up gently one after another around the phone; she giggles with joy.",
+  "K11": "The young woman hugs her pillow tightly, smiling warmly and touched, looking at her phone; the round bubbles with avatars of her parents, friends and coworkers drift gently around her.",
+  "K12": "Everyone at the dinner table laughs and chats happily together, the friends raise their cups and clink them, the parents smile warmly at the young woman. Everyone stays seated with natural lively gestures, no swaying.",
+  "K13": "Everyone at the dinner table lifts their cups, clinks them together in a warm toast and laughs happily; the young woman's parents smile warmly at her and the father pats the mother's hand. Everyone stays seated with natural gentle gestures, no swaying."
+ }
+}
