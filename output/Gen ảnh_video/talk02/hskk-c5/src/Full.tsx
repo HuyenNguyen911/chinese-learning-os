@@ -26,7 +26,7 @@ const LN: Ln[] = lines.idx.map((s, i) => {
 // K4 = ô ghép 5 sở thích ở nhà (K4a…K4e bật lần lượt), không phải 1 clip
 const CLIPS = [[1, 3, "K1"], [4, 5, "K2a"], [6, 6, "K2b"], [7, 8, "K3"], [9, 9, "K4"], [10, 12, "K5"], [13, 14, "K6"], [15, 16, "K7"], [17, 18, "K8"], [19, 20, "K10"],
   [21, 22, "K11"], [23, 24, "K12"], [25, 25, "K13"], [26, 26, "K15"], [27, 27, "K16"], [28, 29, "K17"], [30, 30, "K18"], [31, 31, "K19"], [32, 33, "K20"], [34, 38, "K21"]] as [number, number, string][];
-const USE: Record<string, number> = { K2a: 5, K8: 7.5, K6: 4.5 };     // clip chỉ dùng được N giây đầu: K2a sau 6s tóc đổi màu/mặt khác; K8 clip gốc chỉ 7,6s; K6 sau 5s mọc thêm bạn tóc vàng
+const USE: Record<string, number> = { K2a: 5, K8: 7.5, K6: 4.5, K5: 6.3 };  // clip chỉ dùng được N giây đầu: K2a sau 6s tóc đổi màu/mặt khác; K8 giữ nhịp cũ 7,5s; K6 sau 5s mọc thêm bạn tóc vàng; K5 (bản 2026-11-03) clip gốc chỉ 7,08s
 const TAIL = new Set<string>([]);                                     // clip lấy phần CUỐI cho khớp đoạn đọc
 const K4_TILES = ["K4a", "K4b", "K4c", "K4d", "K4e"];
 const SEGS = CLIPS.map(([a, b, id]) => {
@@ -133,7 +133,7 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
 
       {/* S1: câu hỏi giữa khung */}
       {inS1 && (
-        <AbsoluteFill style={{ opacity: Math.min(1, k(0, 0.4)) * (1 - k(S1_END - 0.3, S1_END)) }}>
+        <AbsoluteFill style={{ opacity: 1 - k(S1_END - 0.3, S1_END) }}>{/* KHÔNG fade-in: khung 0 = bìa feed, phải có câu hỏi + nhân vật */}
           <Peeker x={820} y={640} w={210} />
           <Card style={{ left: 46, right: 46, top: 640, height: 500, display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 56px" }}>
             <div style={{ fontSize: 64, fontWeight: 800, color: C.ink, lineHeight: 1.45, whiteSpace: "nowrap" }}>
@@ -154,8 +154,8 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
             const sp = spring({ frame: f - Math.round(a * fps), fps, config: { damping: 14 } });
             return <div key={b.i} style={{ opacity: Math.min(1, sp), transform: `translateY(${(1 - Math.min(1, sp)) * 24}px)` }}><Branch i={b.i} y={b.y} idea={b.idea} ex={b.ex} /></div>;
           })}
-          <div style={{ position: "absolute", right: 20, top: 1750 - 440, height: 440, width: (520 / 917) * 440, opacity: k(S2_0 + 0.3, S2_0 + 0.8) }}>
-            <Img src={staticFile("img/yh_w_wave.png")} style={{ width: "100%", height: "100%" }} />
+          <div style={{ position: "absolute", right: 20, top: 1750 - 440, height: 440, width: (544 / 1091) * 440, opacity: k(S2_0 + 0.3, S2_0 + 0.8) }}>
+            <Img src={staticFile("img/yh_uni_wave.png")} style={{ width: "100%", height: "100%" }} />
           </div>
         </AbsoluteFill>
       )}
