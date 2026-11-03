@@ -30,8 +30,8 @@ export const SEC = [
 export type Ph = { han: string; py?: string; en: string; vi: string };
 export const PH: Record<string, Ph> = {
   dyst: { han: "第一时间", py: "dì-yī shíjiān", en: "right away, first thing", vi: "ngay lập tức, đầu tiên" },
-  zyyl: { han: "这样一来", en: "that way", vi: "như vậy thì, thế là" },
-  gzyd: { han: "更重要的是", en: "more importantly", vi: "quan trọng hơn là" },
+  zyyl: { han: "这样一来", py: "zhèyàng yī lái", en: "that way", vi: "như vậy thì, thế là" },
+  gzyd: { han: "更重要的是", py: "gèng zhòngyào de shì", en: "more importantly", vi: "quan trọng hơn là" },
   wwgjao: { han: "为我感到骄傲", py: "wèi wǒ gǎndào jiāo'ào", en: "proud of me", vi: "tự hào về mình" },
   cdznl: { han: "传递正能量", py: "chuándì zhèngnéngliàng", en: "pass on positive energy", vi: "lan tỏa năng lượng tích cực" },
   bzy: { han: "不在于…而在于…", py: "bú zàiyú… ér zàiyú…", en: "not about…, but about…", vi: "không nằm ở…, mà ở…" },
