@@ -1,4 +1,4 @@
-# talk02-hskk-c5-zaijia — Video HSKK 高级 · Chủ đề 2 《在家上学》 · Câu 5
+# talk02/hskk-c5 — Video HSKK 高级 · Chủ đề 2 《在家上学》 · Câu 5
 
 Khuôn `template/hskk-answer`. Nguồn: `onluyen/bai-mau-cau5-6.md` (Bài 2, Câu 5).
 
@@ -14,7 +14,7 @@ Khuôn `template/hskk-answer`. Nguồn: `onluyen/bai-mau-cau5-6.md` (Bài 2, Câ
 
 ## Làm tiếp ở máy khác
 ```bash
-cd "output/Gen ảnh_video/talk02-hskk-c5-zaijia"
+cd "output/Gen ảnh_video/talk02/hskk-c5"
 npm ci
 bash chunk_render.sh FullVI video/talk02-hskk-c5-vi.mp4   # render chia đoạn (chống "No frame found"); chạy lại = làm tiếp
 bash chunk_render.sh FullEN video/talk02-hskk-c5-en.mp4
