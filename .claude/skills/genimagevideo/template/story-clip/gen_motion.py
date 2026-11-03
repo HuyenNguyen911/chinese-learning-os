@@ -18,6 +18,10 @@ here = Path(__file__).parent
 for line in (IMAGEGEN.parent / ".env").read_text(encoding="utf-8").splitlines():
     if "=" in line and not line.startswith("#"):
         k, v = line.split("=", 1); os.environ.setdefault(k.strip(), v.strip())
+# .env máy này có thể thiếu VIDEOGEN_*: suy từ IMAGEGEN_URL (cùng cổng 9router), không sửa .env
+if not os.environ.get("VIDEOGEN_URL") and os.environ.get("IMAGEGEN_URL"):
+    os.environ["VIDEOGEN_URL"] = os.environ["IMAGEGEN_URL"].replace("images/generations", "videos/generations")
+os.environ.setdefault("VIDEOGEN_MODEL", "muse-web/muse-video")
 
 cfg = json.loads((here / "src" / "motion.json").read_text(encoding="utf-8"))
 out = here / "assets" / "motion"; out.mkdir(parents=True, exist_ok=True)

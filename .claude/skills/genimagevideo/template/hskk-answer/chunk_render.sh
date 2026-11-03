@@ -5,6 +5,10 @@ cd "$(dirname "$0")"
 COMP=$1; OUT=$2; STEP=${3:-600}; D=out/ch-$COMP
 [ -z "$COMP" ] || [ -z "$OUT" ] && { echo "usage: bash chunk_render.sh <Composition> <out.mp4> [step]"; exit 1; }
 mkdir -p $D
+# Soát trước: clip/audio hỏng (vd commit lúc đang mã hoá dở → "moov atom not found") chỉ lộ ra giữa lúc render
+BAD=0; for m in public/motion/*.mp4 public/audio/*; do [ -f "$m" ] || continue
+  ffprobe -v error -show_entries format=duration -of csv=p=0 "$m" > /dev/null 2>&1 || { echo "FILE HỎNG: $m"; BAD=1; }; done
+[ $BAD = 1 ] && { echo "dừng — gen/mã hoá lại file hỏng rồi chạy lại"; exit 1; }
 TOTAL=$(npx remotion compositions src/index.ts 2>/dev/null | sed 's/\x1b\[[0-9;]*m//g' | awk -v c="$COMP" '$1==c {print $4}')
 [ -z "$TOTAL" ] && { echo "không đọc được số khung của $COMP"; exit 1; }
 : > $D/list.txt; i=0
@@ -13,10 +17,10 @@ for ((s=0; s<TOTAL; s+=STEP)); do
   if [ ! -f $f ]; then
     for try in 1 2 3; do
       conc=$([ $try = 1 ] && echo 3 || echo 1)
-      npx remotion render src/index.ts $COMP $f --frames=$s-$e --concurrency=$conc --muted > $D/c$i.log 2>&1 && break
-      rm -f $f; echo "đoạn $i lỗi (lần $try, $conc luồng)"
+      npx remotion render src/index.ts $COMP $f --frames=$s-$e --concurrency=$conc --muted > $D/c$i.try$try.log 2>&1 && break
+      rm -f $f; echo "đoạn $i lỗi (lần $try, $conc luồng) — $(grep -m1 -iE 'error|No frame|moov' $D/c$i.try$try.log | sed 's/\x1b\[[0-9;]*m//g' | cut -c1-160)"
     done
-    [ -f $f ] || { echo "đoạn $i FAILED — xem $D/c$i.log"; exit 1; }
+    [ -f $f ] || { echo "đoạn $i FAILED — xem $D/c$i.try*.log"; exit 1; }
   fi
   echo "file 'c$i.mp4'" >> $D/list.txt; echo "đoạn $i xong ($s-$e)"; i=$((i+1))
 done
