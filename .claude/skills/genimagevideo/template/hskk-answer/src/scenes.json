@@ -1,0 +1,135 @@
+{
+ "style": "Flat pastel chibi cartoon illustration, thin clean outlines, soft flat colors, big heads, cute and warm, wide 3:2 landscape shot, minimal simple background with few details, light airy color palette (ivory white, soft sage green, pale sky blue, light natural wood), no text, no letters, no numbers, no logos anywhere. At most one or two tiny stars, no glitter. Every face is kind and gentle.",
+ "jx": "The mother (JX), a young woman about 30: pretty chibi face, big shiny brown eyes with highlights, rosy cheeks, long straight black hair parted in the middle and tied into two long braids with small pink ribbons, kind smile. JX appears only ONCE in the picture.",
+ "jx_home": "JX wears a trendy youthful outfit: a cream cropped knit sweater with puffy sleeves, a short light-pink pleated skirt above the knee, white socks.",
+ "jx_out": "JX wears a trendy youthful outfit: a cream cropped knit sweater with puffy sleeves under a light-beige short coat, a short light-pink pleated skirt above the knee, white sneakers.",
+ "yh": "The father (YH), a young man about 30: very round face, light-brown fluffy layered hair with a messy spiky fringe covering his forehead and covering his ears (no middle parting), solid dark-brown vertical oval eyes with NO highlights and no eyelids, short thin curved eyebrows visible under the fringe, dot nose, gentle calm smile. On his LEFT wrist (only the left one) he wears a SMALL slim black round sports watch with a thin strap, smaller than his wrist width (grey bezel, tiny orange accent, no logo), plus a thin red string bracelet on the same wrist. YH appears only ONCE in the picture (never two copies of him). YH is the same height as JX, normal adult proportions, same scale as her.",
+ "yh_home": "YH wears a relaxed outfit: a soft sage-green crewneck knit sweater with the collar of a red t-shirt peeking out, light-beige chinos, white sneakers with red trim.",
+ "yh_out": "YH wears a relaxed outfit: a soft sage-green crewneck knit sweater over a red t-shirt, a light-grey casual jacket, light-beige chinos, white sneakers with red trim.",
+ "son": "Their son, a small boy about 7 years old (clearly a child, about half the height of an adult): round face, short dark-brown hair with a soft fringe, big round dark-brown eyes with a tiny highlight, rosy cheeks, cheerful. He appears only ONCE in the picture.",
+ "son_home": "The boy wears a mustard-yellow sweater, navy shorts and white socks.",
+ "son_uniform": "The boy wears a school uniform: white shirt, navy sweater vest, navy shorts, white knee socks, red sneakers.",
+ "kids": "His classmates are about 7 years old, same height and same scale as him, in the same school uniform (white shirts, navy sweater vests, navy shorts or navy pleated skirts): a girl with a short brown bob and a yellow hair clip, a boy with black hair and round black glasses, a girl with two short pigtails with pink bobbles.",
+ "teacher": "Their teacher is a kind young woman with a low ponytail, a light-blue blouse and a grey skirt, gentle smile.",
+ "nobody_text": "Any paper, board, brochure, phone or screen shows only simple colored shapes, lines and pictures, never letters or numbers.",
+ "scenes": {
+  "K1": [
+   "jx",
+   "jx_home",
+   "yh",
+   "yh_home",
+   "son",
+   "son_home",
+   "nobody_text",
+   "In the evening in a simple bright living room, JX and YH sit side by side at a light wooden table, planning together: YH taps a small calculator, JX writes in a notebook, both thoughtful and calm. On a rug nearby their little son happily builds a tower of colorful toy blocks. Minimal details, a floor lamp, a plant."
+  ],
+  "K2": [
+   "jx",
+   "jx_home",
+   "yh",
+   "yh_home",
+   "nobody_text",
+   "In the simple bright living room, JX and YH sit close together on a light sofa, holding one open school brochure between them that shows a picture of a friendly school building and happy children; they look at each other and nod with a warm decided smile. Medium shot, minimal details."
+  ],
+  "K3": [
+   "son",
+   "son_uniform",
+   "kids",
+   "nobody_text",
+   "In a bright simple art classroom, the little boy and his classmates sit at small easels painting colorful watercolor pictures (a sun, flowers, a rainbow), paint palettes in hand, a little paint on the boy's cheek, everyone smiling happily. Easels lined up neatly. Minimal details."
+  ],
+  "K4": [
+   "son",
+   "son_uniform",
+   "kids",
+   "On a sunny school sports field with green grass, the little boy happily kicks a football while his classmates run beside him laughing; a simple goal and a few trees behind. Wide shot, minimal details."
+  ],
+  "K5": [
+   "son",
+   "son_uniform",
+   "kids",
+   "teacher",
+   "In a sunny school courtyard during break time, the little boy laughs and plays with his classmates; their kind teacher stands next to him and gently pats his head, he looks up at her with a big smile. A small tree, a bench, minimal details."
+  ],
+  "K6": [
+   "son",
+   "son_uniform",
+   "In a bright simple school canteen, there are EXACTLY TWO children in the picture: the little boy and a girl classmate with a short brown bob and a yellow hair clip (white shirt, navy sweater vest, navy pleated skirt). Her lunch box has fallen upside down on the floor by her feet and she looks sad with teary eyes; the little boy kindly holds out his own open lunch box toward her to share his food, and she starts to smile. No other children anywhere. Long tables lined up neatly in the background, minimal details."
+  ],
+  "K7": [
+   "son",
+   "son_uniform",
+   "kids",
+   "teacher",
+   "nobody_text",
+   "In a bright classroom, a big colorful poster of planets and pictures is pinned neatly in the CENTER of the green blackboard, fully inside the blackboard frame, aligned straight and level (not hanging below the board, not overlapping its bottom edge). The little boy and two classmates stand together in front of the blackboard giving a group presentation: the boy points up at the poster with a happy smile, his teammates smile beside him. The teacher and other kids at neat straight rows of desks watch and clap gently. Minimal details."
+  ],
+  "K8": [
+   "son",
+   "son_uniform",
+   "kids",
+   "teacher",
+   "nobody_text",
+   "In a bright classroom quiz game, the teacher holds up a picture card of an apple; the little boy shoots his hand up first with an excited smile, faster than his classmates who are just starting to raise their hands. Desks in neat straight rows, minimal details."
+  ],
+  "K9": [
+   "son",
+   "son_uniform",
+   "kids",
+   "In a sunny school garden on a class trip, the little boy kneels and looks closely at a green leaf with a ladybug through a big magnifying glass, eyes wide with wonder and delight; a classmate leans in curiously beside him. Flowers, small plants, simple background."
+  ],
+  "K10": [
+   "nobody_text",
+   "In a simple cosy study room at home, a small girl about 8 (WENWEN) with two short black pigtails, round face and a lilac sweater sits at a little desk learning happily; her mother (short black bob, thin round glasses, cream blouse) points at a small whiteboard on the wall showing simple shapes, and her father (short black hair, navy cardigan) sits beside the girl holding an open book and smiling. Calm warm home-school atmosphere, minimal details."
+  ],
+  "K11": [
+   "jx",
+   "jx_out",
+   "yh",
+   "yh_out",
+   "son",
+   "son_home",
+   "In the morning at the front door of a simple bright apartment, JX and YH hurry to leave for work: JX slings her work bag on her shoulder and holds a coffee cup, YH checks the time on the small watch on his LEFT wrist while holding his laptop bag; both look busy but still kind. Their little son stands in the hallway in his sweater holding a toy, watching them. The door is properly set in the wall. Minimal details."
+  ],
+  "K12": [
+   "jx",
+   "jx_home",
+   "yh",
+   "yh_home",
+   "nobody_text",
+   "On the light sofa in the living room, JX and YH lean in to look at one phone that JX holds, showing a tutor price page (only simple shapes and a big gold coin icon). Both are SHOCKED in a funny way: mouths open in a round 'O', eyes wide, eyebrows raised high; JX presses her free hand to her cheek, YH scratches the back of his head with his RIGHT hand. They are surprised, NOT smiling and NOT angry. YH wears exactly ONE watch, only on his LEFT wrist, and nothing on his right wrist. Medium shot, minimal details."
+  ],
+  "K13": [
+   "jx",
+   "jx_home",
+   "son",
+   "son_home",
+   "nobody_text",
+   "A small bright open-plan home: on the LEFT a small kitchen with a stove, on the RIGHT a separate small work desk with a chair, a silver MacBook Pro showing a video-meeting grid of tiny faces and a phone next to it. JX sits at the work desk typing on the laptop during the video meeting, a sweat drop on her forehead, NOT smiling: frowning, eyebrows knitted, mouth in a worried wavy line, clearly stressed and overwhelmed; in the background the pot on the stove is starting to bubble over with steam. Her little son (in his MUSTARD-YELLOW sweater and NAVY shorts, same outfit as always) stands right next to her chair, his whole body and face turned TOWARD HER (side view, facing her, not facing the viewer), holding his homework sheet up toward her face with both hands and asking her something. Minimal details."
+  ],
+  "K14": [
+   "jx",
+   "jx_home",
+   "yh",
+   "yh_home",
+   "At night in the softly lit simple living room, JX slumps heavily back into the sofa with a pained tired face, eyes squeezed, both hands pressed to her temples as if she has a headache; YH sits next to her also exhausted, rubbing his forehead with one hand and sighing. A floor lamp, minimal details."
+  ],
+  "K15": [
+   "jx",
+   "jx_out",
+   "yh",
+   "yh_out",
+   "son",
+   "son_uniform",
+   "On a sunny morning at a friendly school gate (simple gate, small school building with no clock, a few trees), JX and YH hold their little son's hands on both sides; the son wears a small backpack and waves goodbye happily as he steps toward the school, JX and YH smile proudly and warmly. Wide shot, minimal details."
+  ],
+  "K13b": [
+   "jx",
+   "jx_home",
+   "son",
+   "son_home",
+   "nobody_text",
+   "A small bright open-plan home: on the LEFT a small kitchen with a stove, on the RIGHT a separate small work desk with a chair, a silver MacBook Pro showing a video-meeting grid of tiny faces and a phone next to it. JX has rushed to the stove: wearing a kitchen oven mitt she grabs the handle of the pot that is boiling over with big puffs of steam and quickly lifts it off the burner, eyes wide, sweat drops flying, flustered; behind her the laptop on the desk still shows the video meeting and the phone is buzzing. Her little son has followed her and stands right behind her, his whole body and face turned TOWARD HER (side view, facing her, not facing the viewer), still holding his homework sheet up toward her. Minimal details."
+  ]
+ }
+}

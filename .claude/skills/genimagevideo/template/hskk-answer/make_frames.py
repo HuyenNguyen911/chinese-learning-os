@@ -15,9 +15,10 @@ t = json.loads((here / "src/timing.json").read_text(encoding="utf-8"))
 idx = json.loads((here / "src/lines.json").read_text(encoding="utf-8"))["idx"]
 CH, ANS = t["chars"], t["end"]
 # phải khớp CLIPS / USE trong src/Full.tsx
-CLIPS = [(1, 3, "K1"), (4, 5, "K2"), (6, 8, "K3"), (9, 9, "K4"), (10, 10, "K5"), (11, 13, "K6"), (14, 14, "K7"), (15, 15, "K8"),
-         (16, 17, "K9"), (18, 18, "K10"), (19, 21, "K11"), (22, 25, "K12"), (26, 27, "K13")]
-USE: dict[str, float] = {}
+CLIPS = [(1, 2, "K1"), (3, 3, "K2"), (4, 6, "K3"), (7, 8, "K4"), (9, 10, "K5"), (11, 11, "K6"), (12, 13, "K7"), (14, 15, "K8"),
+         (16, 17, "K9"), (18, 20, "K10"), (21, 21, "K11"), (22, 23, "K12"), (24, 24, "K13"), (25, 25, "K13b"), (26, 26, "K14"), (27, 28, "K15")]
+USE: dict[str, float] = {"K9": 9.0, "K12": 6.0, "K13": 5.5, "K13b": 5.0}
+START: dict[str, float] = {"K9": 1.0}   # bỏ đoạn đầu lỗi (đổi nền / giật khung)
 TAIL = 3.0          # dư thêm (giây) so với đoạn đọc: phủ phần chồng mờ trước/sau + đoạn cuối kéo tới outro
 
 res = {}
@@ -30,7 +31,8 @@ for a, b, k in CLIPS:
     need = dur + TAIL
     d = here / "public/frames" / k
     shutil.rmtree(d, ignore_errors=True); d.mkdir(parents=True)
-    vf = (f"trim=0:{use},setpts=(PTS-STARTPTS)/{rate:.4f},fps=30,tpad=stop_mode=clone:stop_duration=6,"
+    st = START.get(k, 0)
+    vf = (f"trim={st}:{st + use},setpts=(PTS-STARTPTS)/{rate:.4f},fps=30,tpad=stop_mode=clone:stop_duration=6,"
           f"trim=duration={need:.3f},scale=1000:-2")
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(here / "assets/motion" / f"{k}.mp4"), "-vf", vf,
                     "-q:v", "3", str(d / "%04d.jpg")], check=True)

@@ -147,6 +147,7 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk01/langdu/` (bài 1 快乐会�
 
 ## Video HSKK 回答问题 (khuôn `template/hskk-answer/`, câu 5 & 6 mỗi chủ đề Talk series)
 Ví dụ đã chạy: `output/Gen ảnh_video/talk01/hskk-c5/` (Chủ đề 1 · câu 5). 1 video/câu × 2 bản EN/VI, ~2-3 phút. ĐỌC `template/hskk-answer/README.md` (luồng 7 bước) + `reference/design-rules.md` §13 trước khi dựng.
+- Tạo project: `python .claude/skills/genimagevideo/scripts/new_project.py talkNN/hskk-cN --template hskk-answer` (**phải có `--template`**, mặc định là poster-highlight). Nếu có project HSKK mới hơn khuôn thì chép `src/` + script của project đó (bản mới nhất: `talk02/hskk-c6`) rồi thay nội dung.
 - Nguồn = `onluyen/bai-mau-cau5-6.md` của user (không tự soạn). Cổng nội dung (phụ đề + dịch + mindmap + cụm khó + storyboard ~14 cảnh) → giọng → khung tĩnh K1…Kn → clip muse-video (tự bỏ tiếng) → ghép `Full.tsx` → render FullVI/FullEN (**bàn giao đủ cả 2 bản**, liệt kê `video/` trước khi báo xong; video có clip muse-video → render bằng `bash chunk_render.sh FullEN video/<slug>-en.mp4`, xem gotchas). Nhạc nền suốt video. Làm lần lượt chủ đề 1 c5, c6 → chủ đề 2 c5, c6…
 
 ## Ảnh bìa bài đăng (Talk series)

@@ -5,11 +5,11 @@ import edge_tts
 sys.stdout.reconfigure(encoding="utf-8")
 here = Path(__file__).parent
 out = here / "public" / "audio"
-VOICE, RATE, PITCH = "zh-CN-YunxiaNeural", "+8%", "+4Hz"
+VOICE, RATE, PITCH = "zh-CN-XiaoxiaoNeural", "+0%", "+0Hz"
 ITEMS = {
-    "q": "你同意“快乐也会传染”这种说法吗？请说说你的看法和理由。",
+    "q": "如果你有了子女，你会为他或她选择哪种学习方式？",
     "now": "现在开始。",
-    "p0": "常言道", "p1": "独乐乐不如众乐乐", "p2": "不知不觉", "p3": "迫不及待", "p4": "传染源", "p5": "正能量",
+    "p0": "更倾向于", "p1": "偏科", "p2": "人际交往", "p3": "亲自", "p4": "承受不了", "p5": "出于对孩子将来的考虑",
 }
 res = {}
 for k, text in ITEMS.items():

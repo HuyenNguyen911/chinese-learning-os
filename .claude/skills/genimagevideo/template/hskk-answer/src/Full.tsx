@@ -9,7 +9,7 @@ import frames from "./frames.json";
 import { Outro, outroSec } from "./Outro";
 import { C, FONT, SANS, SEC, PH, Title, Chrome, Peeker, Card, Tag, Branch, t as tr, Lang, Ph } from "./Frames";
 
-/* VIDEO HOÀN CHỈNH HSKK 高级 · Chủ đề 1 · 回答问题 (9:16, 1080x1920).
+/* VIDEO HOÀN CHỈNH HSKK 高级 · Chủ đề 2 (在家上学) · câu 6 · 回答问题 (9:16, 1080x1920).
    Cảnh: S1 câu hỏi -> S2 mindmap -> S3 cụm đáng học -> 现在开始 -> S4 clip minh hoạ + phụ đề kiểu phim (Hán trên, dịch dưới) -> kết follow.
    Nhạc nền chạy SUỐT video (nhỏ, tự hạ khi có giọng). Clip muse-video đã bỏ tiếng. */
 export const FPS = 30;
@@ -24,18 +24,18 @@ const LN: Ln[] = lines.idx.map((s, i) => {
   return { zh: TXT.slice(s, e), vi: lines.vi[i], en: lines.en[i], t0: CH[s], t1: i + 1 < lines.idx.length ? CH[lines.idx[i + 1]] : ANS };
 });
 // ---- clip minh hoạ theo dòng (số dòng 1-based)
-const CLIPS = [[1, 3, "K1"], [4, 6, "K10"], [7, 8, "K2"], [9, 11, "K3"], [12, 13, "K11"], [14, 14, "K12"], [15, 16, "K4"], [17, 19, "K5"], [20, 20, "K6"], [21, 22, "K13"], [23, 24, "K7"], [25, 26, "K8"], [27, 30, "K14"], [31, 32, "K9"]] as [number, number, string][];
-const TAIL = new Set(["K4"]);                                         // clip lấy phần CUỐI (nắm đấm mừng) cho khớp đoạn đọc
+const CLIPS = [[1, 2, "K1"], [3, 3, "K2"], [4, 6, "K3"], [7, 8, "K4"], [9, 10, "K5"], [11, 11, "K6"], [12, 13, "K7"], [14, 15, "K8"], [16, 17, "K9"], [18, 20, "K10"], [21, 21, "K11"], [22, 23, "K12"], [24, 24, "K13"], [25, 25, "K13b"], [26, 26, "K14"], [27, 28, "K15"]] as [number, number, string][];
+const TAIL = new Set<string>();                                       // clip nào lấy phần CUỐI (không dùng ở video này)
+const USE: Record<string, number> = { K9: 9.0, K12: 6.0, K13: 5.5, K13b: 5.0 };                               // chỉ dùng X giây đầu của clip (phải khớp USE trong make_frames.py)
 const SEGS = CLIPS.map(([a, b, id]) => {
-  // clip cuối còn chạy tiếp tới OUT0+0.5 (= ANS+1.7) -> tính tốc độ trên ANS+2.5 để không đòi khung vượt quá 10s clip
-  const s = LN[a - 1].t0, e = b < LN.length ? LN[b].t0 : ANS + 2.5, dur = e - s;
-  const rate = Math.min(1.6, Math.max(0.8, 10 / dur));              // clip gốc 10s: nén/giãn cho vừa đoạn đọc
+  const s = LN[a - 1].t0, e = b < LN.length ? LN[b].t0 : ANS, dur = e - s;
+  const rate = Math.min(1.6, Math.max(0.8, (USE[id] ?? 10) / dur));  // clip gốc 10s (hoặc USE): nén/giãn cho vừa đoạn đọc
   const startSec = TAIL.has(id) ? Math.max(0, 10 - dur * rate - 0.2) : 0;
   return { id, s, e, dur, rate, startSec };
 });
 // ---- dòng nào có cụm đáng học (số dòng 1-based)
-const PHRASE_AT: Record<number, keyof typeof PH> = { 10: "bzbj", 12: "cyd", 13: "dll", 20: "pbjd", 25: "znl", 32: "crj" };
-const S3_LIST = ["cyd", "dll", "bzbj", "pbjd", "crj", "znl"] as (keyof typeof PH)[];
+const PHRASE_AT: Record<number, keyof typeof PH> = { 3: "qxy", 8: "pk", 13: "rjjw", 20: "qz", 23: "csbl", 27: "cy" };
+const S3_LIST = ["qxy", "pk", "rjjw", "qz", "csbl", "cy"] as (keyof typeof PH)[];
 
 // ---- lịch cảnh (giây, toàn video)
 const Q0 = 0.7;
@@ -46,8 +46,7 @@ const S4_0 = S3_END, NOW0 = S4_0 + 0.3, A0 = NOW0 + intro.now + 0.7;
 const ANS_END = A0 + ANS, OUT0 = ANS_END + 1.2;
 export const TOTAL = Math.round((OUT0 + outroSec(outro.sec)) * FPS);
 
-/* clip minh hoạ = chuỗi ảnh JPG đã cắt sẵn khớp lời đọc (make_frames.py) — KHÔNG phát mp4: OffthreadVideo lỗi ngẫu nhiên
-   "No frame found at position …" (khung/clip khác nhau mỗi lần render). CLIPS/USE phải khớp make_frames.py. */
+/* clip minh hoạ = chuỗi ảnh JPG đã cắt sẵn khớp lời đọc (make_frames.py) — không phát mp4 vì OffthreadVideo lỗi ngẫu nhiên trên máy này */
 const FR = frames as Record<string, number>;
 const SegFrames: React.FC<{ id: string; style: React.CSSProperties }> = ({ id, style }) => {
   const f = useCurrentFrame();
@@ -108,10 +107,10 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
           <Peeker x={820} y={600} w={210} />
           <Card style={{ left: 46, right: 46, top: 600, height: 640, display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 56px" }}>
             <div style={{ fontSize: 64, fontWeight: 800, color: C.ink, lineHeight: 1.45, whiteSpace: "nowrap" }}>
-              你同意<span style={{ color: C.red }}>“快乐也会传染”</span><br />这种说法吗？<br />请说说你的看法和理由。
+              如果你有了子女，<br />你会为他/她选择<br /><span style={{ color: C.red }}>哪种学习方式</span>？
             </div>
             <div style={{ fontSize: 38, color: C.green, marginTop: 34, fontFamily: SANS, lineHeight: 1.35 }}>
-              {tr(lang, "Do you agree that “happiness is contagious”? Share your view and reasons.", "Bạn có đồng ý rằng “niềm vui cũng lây lan” không? Hãy nói quan điểm và lý do của bạn.")}
+              {tr(lang, "If you had children, which way of learning would you choose for them?", "Nếu sau này có con, bạn sẽ chọn cách học nào cho con?")}
             </div>
           </Card>
         </AbsoluteFill>
@@ -120,20 +119,21 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
       {/* S2: mindmap, các nhánh hiện lần lượt */}
       {inS2 && (
         <AbsoluteFill style={{ opacity: sceneFade(S2_0, S2_END) }}>
-          <div style={{ position: "absolute", left: 170, width: 660, top: 200, height: 130, borderRadius: 26, background: "#E4ECFA", border: "5px solid #3A6EBE", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 58, fontWeight: 800, color: "#2B57A0" }}>快乐会传染？</div>
-          <div style={{ position: "absolute", left: 100, top: 330, width: 0, height: 1130, borderLeft: `5px dashed ${C.line}` }} />
+          <div style={{ position: "absolute", left: 170, width: 660, top: 200, height: 130, borderRadius: 26, background: "#E4ECFA", border: "5px solid #3A6EBE", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 58, fontWeight: 800, color: "#2B57A0" }}>为孩子选择学习方式</div>
+          <div style={{ position: "absolute", left: 100, top: 330, width: 0, height: 1330, borderLeft: `5px dashed ${C.line}` }} />
           {[
-            { i: 0, y: 400, idea: "快乐确实会传染", ex: "一家人团聚的情景" },
-            { i: 1, y: 700, idea: "身边人快乐，你也快乐", ex: "例：回到家，看到家人笑，你也跟着笑" },
-            { i: 2, y: 1040, idea: "独乐乐不如众乐乐", ex: "例：考过HSK六级，告诉家人朋友，一起庆祝" },
-            { i: 3, y: 1380, idea: "快乐是正能量", ex: "做快乐的“传染源”" },
+            { i: 0, y: 370, idea: "根据环境和经济条件", ex: "更倾向于去学校" },
+            { i: 1, y: 620, idea: "丰富的学习环境", ex: "全面发展，而不是偏科" },
+            { i: 2, y: 870, idea: "认识朋友、老师", ex: "人际交往 + 反应能力" },
+            { i: 3, y: 1120, idea: "在家上学的问题", ex: "家教太贵 / 自己教没时间" },
+            { i: 4, y: 1370, idea: "出于对孩子将来的考虑", ex: "选择学校" },
           ].map((b, n) => {
-            const a = S2_0 + 0.6 + n * 2.6;
+            const a = S2_0 + 0.6 + n * 2.2;
             const sp = spring({ frame: f - Math.round(a * fps), fps, config: { damping: 14 } });
             return <div key={b.i} style={{ opacity: Math.min(1, sp), transform: `translateY(${(1 - Math.min(1, sp)) * 24}px)` }}><Branch i={b.i} y={b.y} idea={b.idea} ex={b.ex} /></div>;
           })}
-          <div style={{ position: "absolute", right: 20, top: 1750 - 440, height: 440, width: (520 / 917) * 440, opacity: k(S2_0 + 0.3, S2_0 + 0.8) }}>
-            <Img src={staticFile("img/yh_w_wave.png")} style={{ width: "100%", height: "100%" }} />
+          <div style={{ position: "absolute", right: 20, top: 1750 - 440, height: 440, width: (364 / 845) * 440, opacity: k(S2_0 + 0.3, S2_0 + 0.8) }}>
+            <Img src={staticFile("img/jx3_smile.png")} style={{ width: "100%", height: "100%" }} />
           </div>
         </AbsoluteFill>
       )}
@@ -166,7 +166,7 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
       {inS4 && (
         <AbsoluteFill style={{ opacity: k(S4_0, S4_0 + 0.4) }}>
           <div style={{ position: "absolute", left: 0, right: 0, top: 170, fontSize: 46, fontWeight: 800, color: C.ink, textAlign: "center", lineHeight: 1.35, whiteSpace: "nowrap" }}>
-            你同意“快乐也会传染”这种说法吗？<br />请说说你的看法和理由。
+            如果你有了子女，<br />你会为他/她选择哪种学习方式？
           </div>
           <div style={{ position: "absolute", left: 46, right: 46, top: 430, height: 556, borderRadius: 36, overflow: "hidden", border: `4px solid ${C.green}`, background: "#E3F2E9" }}>
             {t < A0 && <Img src={staticFile("img/K1_key.png")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} />}
@@ -204,7 +204,7 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
 
       {/* chống copy + tên chủ đề */}
       <div style={{ position: "absolute", top: 70, right: 46, fontSize: 24, fontWeight: 700, color: C.red, background: "#fff", border: `3px solid ${C.red}`, borderRadius: 10, padding: "3px 10px" }}>禁止搬运</div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 1790, textAlign: "center", fontSize: 30, color: C.sub, opacity: 0.8 }}>快乐会传染 · {tr(lang, "Happiness is contagious", "Niềm vui lây lan")}</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1790, textAlign: "center", fontSize: 30, color: C.sub, opacity: 0.8 }}>在家上学 · {tr(lang, "Homeschooling", "Học ở nhà")}</div>
       <div style={{ position: "absolute", left: wm[0], top: wm[1], fontSize: 26, fontWeight: 700, color: C.ink, opacity: 0.16 }}>瑾玄在练嘴</div>
 
       <Sequence from={Math.round(OUT0 * fps)}><Outro text="谢谢大家的观看～喜欢的话，记得点赞、关注我哦！" /></Sequence>

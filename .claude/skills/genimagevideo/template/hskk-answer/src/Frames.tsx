@@ -1,39 +1,40 @@
 import React from "react";
 import { AbsoluteFill, Img, staticFile } from "remotion";
 
-/* KHUNG HÌNH MẪU v3 (chưa có giọng/chuyển động) — video HSKK 高级 · Chủ đề 1 (快乐会传染) · câu hỏi 5.
-   Nội dung lấy từ onluyen/bai-mau-cau5-6.md (Bài 1, Câu 5). Bản dịch EN/VI là bản nháp của Claude, cần user rà.
+/* KHUNG HÌNH MẪU v3 (chưa có giọng/chuyển động) — video HSKK 高级 · Chủ đề 2 (在家上学) · câu hỏi 6.
+   Nội dung lấy từ onluyen/bai-mau-cau5-6.md (Bài 2, Câu 6). Bản dịch EN/VI là bản nháp của Claude, cần user rà.
    Nhân vật = 越黄 (yh, giọng nam trẻ). */
 export const W = 1080, H = 1920;
 export const FONT = '"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif';
 export const SANS = '"Segoe UI",sans-serif';
 export const C = { ink: "#26231f", red: "#D2382B", green: "#3E8E5E", mint: "#BFE3CC", line: "#DCD5C6", bg: "#FFFBF2", sub: "#5b5248" };
-const YH = { src: "img/yh_front.png", w: 424, h: 925, vis: 0.38 };       // vis = tỉ lệ chiều cao ảnh từ đỉnh tóc tới dưới miệng
+const YH = { src: "img/jx3_smile.png", w: 364, h: 845, vis: 0.30 };       // vis = tỉ lệ chiều cao ảnh từ đỉnh tóc tới dưới miệng
 
 export type Lang = "en" | "vi";
 export const t = (lang: Lang, en: string, vi: string) => (lang === "vi" ? vi : en);
 
-export const TOPIC = (l: Lang) => `快乐会传染 · ${t(l, "Happiness is contagious", "Niềm vui lây lan")}`;
-export const Q = "你同意“快乐也会传染”这种说法吗？请说说你的看法和理由。";
-export const QT = (l: Lang) => t(l, "Do you agree that “happiness is contagious”? Share your view and reasons.", "Bạn có đồng ý rằng “niềm vui cũng lây lan” không? Hãy nói quan điểm và lý do của bạn.");
+export const TOPIC = (l: Lang) => `在家上学 · ${t(l, "Homeschooling", "Học ở nhà")}`;
+export const Q = "如果你有了子女，你会为他/她选择哪种学习方式？";
+export const QT = (l: Lang) => t(l, "If you had children, which way of learning would you choose for them?", "Nếu sau này có con, bạn sẽ chọn cách học nào cho con?");
 
 // 4 phần của bài (màu theo mindmap tham khảo). Chỉ dùng ở mindmap, KHÔNG hiện ở phần đọc (user bỏ thẻ mở/thân/kết ở S4)
 export const SEC = [
   { zh: "开头", c: "#E8503A", tint: "#FCE3DF" },
   { zh: "理由一", c: "#F59A23", tint: "#FDEBD0" },
   { zh: "理由二", c: "#3A6EBE", tint: "#DCE6F6" },
+  { zh: "另外", c: "#8A5CC9", tint: "#EBE1F7" },
   { zh: "结尾", c: "#2FA36B", tint: "#D9F1E3" },
 ];
 
 // Cụm đáng học: chỉ cụm KHÓ / vế ngắn (cụm dễ + câu dài bỏ). py = chỉ hiện khi khó đọc.
 export type Ph = { han: string; py?: string; en: string; vi: string };
 export const PH: Record<string, Ph> = {
-  cyd: { han: "常言道", py: "chángyándào", en: "as the saying goes", vi: "người ta thường nói" },
-  dll: { han: "独乐乐不如众乐乐", py: "dú lè lè bù rú zhòng lè lè", en: "joy shared is joy doubled", vi: "vui một mình không bằng vui cùng nhau" },
-  bzbj: { han: "不知不觉", py: "bù zhī bù jué", en: "without realizing it", vi: "bất giác, lúc nào không hay" },
-  pbjd: { han: "迫不及待", py: "pò bù jí dài", en: "can't wait", vi: "nóng lòng" },
-  crj: { han: "传染源", py: "chuánrǎnyuán", en: "source of infection", vi: "nguồn lây" },
-  znl: { han: "正能量", en: "positive energy", vi: "năng lượng tích cực" },
+  qxy: { han: "更倾向于", py: "gèng qīngxiàng yú", en: "lean more toward", vi: "nghiêng về…" },
+  pk: { han: "偏科", py: "piānkē", en: "favor one subject", vi: "học lệch" },
+  rjjw: { han: "人际交往", py: "rénjì jiāowǎng", en: "social interaction", vi: "giao tiếp với mọi người" },
+  qz: { han: "亲自", py: "qīnzì", en: "in person, oneself", vi: "đích thân, tự mình" },
+  csbl: { han: "承受不了", py: "chéngshòu bù liǎo", en: "can't afford / bear", vi: "kham không nổi" },
+  cy: { han: "出于对…的考虑", py: "chūyú duì… de kǎolǜ", en: "out of concern for…", vi: "vì nghĩ cho…" },
 };
 
 /* ---------- phần dùng chung ---------- */
@@ -123,12 +124,13 @@ export const Branch: React.FC<{ i: number; y: number; idea: string; ex?: string 
 export const S2: React.FC<{ lang: Lang }> = ({ lang }) => (
   <AbsoluteFill style={{ background: C.bg, fontFamily: FONT }}>
     <Title />
-    <div style={{ position: "absolute", left: 170, width: 680, top: 200, height: 130, borderRadius: 26, background: "#E4ECFA", border: "5px solid #3A6EBE", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 58, fontWeight: 800, color: "#2B57A0" }}>快乐会传染？</div>
-    <div style={{ position: "absolute", left: 100, top: 330, width: 0, height: 1130, borderLeft: `5px dashed ${C.line}` }} />
-    <Branch i={0} y={400} idea="快乐确实会传染" ex="一家人团聚的情景" />
-    <Branch i={1} y={700} idea="身边人快乐，你也快乐" ex="例：回到家，看到家人笑，你也跟着笑" />
-    <Branch i={2} y={1040} idea="独乐乐不如众乐乐" ex="例：考过HSK六级，告诉家人朋友，一起庆祝" />
-    <Branch i={3} y={1380} idea="快乐是正能量" ex="做快乐的“传染源”" />
+    <div style={{ position: "absolute", left: 170, width: 680, top: 200, height: 130, borderRadius: 26, background: "#E4ECFA", border: "5px solid #3A6EBE", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 58, fontWeight: 800, color: "#2B57A0" }}>分享快乐的方式</div>
+    <div style={{ position: "absolute", left: 100, top: 330, width: 0, height: 1330, borderLeft: `5px dashed ${C.line}` }} />
+    <Branch i={0} y={370} idea="每个人都有自己的方式" ex="例：升职了" />
+    <Branch i={1} y={620} idea="第一时间打电话给爸妈" ex="亲戚很快知道，爸妈为我骄傲" />
+    <Branch i={2} y={870} idea="告诉最好的朋友" ex="一起出去庆祝" />
+    <Branch i={3} y={1120} idea="发一篇帖子" ex="分享努力的过程，传递正能量" />
+    <Branch i={4} y={1370} idea="幸福在于有人陪你开心" ex="快乐加倍，世界更温暖" />
     <Standing right={20} feet={1750} h={440} />
     <Chrome n={1} lang={lang} />
   </AbsoluteFill>
