@@ -20,6 +20,6 @@ for ((s=0; s<TOTAL; s+=STEP)); do
   fi
   echo "file 'c$i.mp4'" >> $D/list.txt; echo "đoạn $i xong ($s-$e)"; i=$((i+1))
 done
-npx remotion render src/index.ts $COMP $D/audio.wav --codec=wav > $D/audio.log 2>&1 || { echo "audio FAILED"; exit 1; }
+npx remotion render src/index.ts $COMP $D/audio.wav --codec=wav --timeout=180000 > $D/audio.log 2>&1 || { echo "audio FAILED"; exit 1; }
 ffmpeg -v error -y -f concat -safe 0 -i $D/list.txt -c copy $D/v.mp4 &&
 ffmpeg -v error -y -i $D/v.mp4 -i $D/audio.wav -c:v copy -c:a aac -b:a 192k -shortest "$OUT" && echo "DONE → $OUT"
