@@ -48,7 +48,7 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 - TTS ViVibe giọng `cLZi…` bị user chê "dở thiệt" → ưu tiên user tự thu âm (đúng thanh điệu).
 - Giọng clone từ mẫu tiếng Việt dễ đọc tiếng Trung sai thanh — báo user trước khi dùng.
 
-## 9. Clip kể chuyện (story-clip) — rút từ góp ý của user 2026-10-27/28 (clip talk01-contagious)
+## 9. Clip kể chuyện (story-clip) — rút từ góp ý của user 2026-10-27/28 (clip talk01/contagious)
 - **Bảng cảnh trước, dựng sau:** liệt kê từng cảnh (đoạn phụ đề, ai ở đâu, làm gì) cho user duyệt trước khi render; user từng chê "không giống bối cảnh đã bàn".
 - **Nhân vật không che nhau, không xếp 3 người ngang hàng** (chật). Chia lớp trước/sau (người ở gần camera lớn, người ở xa nhỏ vào góc) hoặc đứng 2 bên; cảnh chuyển thì thu/phóng nhân vật (`enter`) thay vì để chồng.
 - **Câu dài tách theo ý:** mỗi đoạn phụ đề ≤ ~12 chữ Hán, tách ở dấu phẩy; thời lượng chia theo số chữ Hán trong 1 file giọng (`voice`).
@@ -65,7 +65,7 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 - **Cảnh 2 người cần chữ/biểu tượng ở tâm** (VS, tia sét) → nền **1 màu**; nền chia 2 màu trong video AI bị xê dịch làm mọi thứ trông lệch. Tia sét vẽ SVG (emoji lệch tâm).
 - Nhãn phe đi theo nhân vật đang có mặt (`scene.who`, chữ trong `story.json "tags"`); 2 nhãn đối xứng, VS nằm trong khe giữa, không đè lên nhãn.
 
-## 10. Âm thanh clip (rút từ góp ý 2026-10-28, clip talk01-contagious)
+## 10. Âm thanh clip (rút từ góp ý 2026-10-28, clip talk01/contagious)
 - **Nhạc nền nhẹ + hiệu ứng theo ngữ cảnh** (chỉ giọng thì "đơn điệu"): `make_bed.py` dựng 1 file `bed.wav` = nhạc (tự hạ còn ~50% khi có giọng, fade vào/ra) + hiệu ứng đặt theo mốc cảnh. Giọng vẫn là `<Audio>` riêng.
 - **Hiệu ứng phải là âm thật** (Mixkit / Freesound CC0 — xem gotchas), không tổng hợp bằng code.
 - **Tiếng cười nữ trẻ: kiểu khúc khích, líu lo** (Freesound 218308 "Girl, female, laughing, giggling", cắt từng tràng ngắn). Cười to/kéo dài kiểu "hilarious/cheerful" bị chê "đáng sợ".
@@ -80,7 +80,7 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 - **Chữ nhiều dòng rớt dòng theo ý** (sau ～。！？), mỗi dòng `nowrap` — "cùng câu mà rớt 1 chữ nó kỳ". Cỡ chữ câu kết ~46px (60 bị chê to).
 - **Chỉ giữ 1 bản final** mỗi video: render đè đúng tên `video/<slug>.mp4`; xoá bản nháp, ảnh nhân vật không chọn, giọng/nhạc thử trước khi commit (user: "không cần lưu nhiều rối").
 
-## 12. Video 朗读 (template/read-along) — bố cục user chốt 2026-10-28 (talk01-langdu)
+## 12. Video 朗读 (template/read-along) — bố cục user chốt 2026-10-28 (talk01/langdu)
 - Bài đọc = `p2Text` của bài trong `onluyen/on-luyen.html`, **giữ nguyên chữ + dấu câu** (chỉ đổi `"` → `“ ”` cho vừa ô). Tiêu đề = **tên bài 口语** (vd 快乐会传染), không ghi nguồn sách.
 - **1 dòng tiêu đề** `朗读 | <tên bài>` (朗读 đen có vệt xanh, tên bài xanh lá); bài đọc ngay dưới, căn trái, 21 chữ/dòng, dấu câu không đứng đầu dòng.
 - **Nền kem trơn** — không kẻ ô, không dòng kẻ mờ dưới chữ ("khó coi"). Chỉ có **vạch xanh tiến độ mảnh 3px** chạy dưới phần đã đọc.

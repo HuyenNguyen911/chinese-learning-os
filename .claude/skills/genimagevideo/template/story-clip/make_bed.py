@@ -1,4 +1,4 @@
-"""[VÍ DỤ từ talk01-contagious — sửa phần "hiệu ứng" theo cảnh của clip mới; cần public/sfx/*.mp3 + music_*.mp3]
+"""[VÍ DỤ từ talk01/contagious — sửa phần "hiệu ứng" theo cảnh của clip mới; cần public/sfx/*.mp3 + music_*.mp3]
 Dựng lớp NỀN âm thanh (nhạc nền không lời + hiệu ứng) -> public/audio/bed.wav, dài đúng TOTAL của clip.
 Mốc thời gian lấy từ src/story.json + src/durations.json (cùng công thức chia cảnh với Story.tsx), nên
 chạy SAU make_durations.py. Giọng đọc vẫn là các <Audio> riêng; nhạc tự hạ nhỏ khi có giọng (ducking).

@@ -1,6 +1,6 @@
 # template/hskk-answer — video HSKK 高级 回答问题 (câu 5, câu 6 mỗi chủ đề Talk series)
 
-Khuôn rút từ `output/Gen ảnh_video/talk02-hskk-c5/` (Chủ đề 1 · 快乐会传染 · câu 5; thư mục dự án lỡ đặt tên talk02 — thực chứa chủ đề 1). 1 video / câu hỏi, 2 bản EN + VI (chỉ khác phụ đề dịch).
+Khuôn rút từ `output/Gen ảnh_video/talk01/hskk-c5/` (Chủ đề 1 · 快乐会传染 · câu 5). 1 video / câu hỏi, 2 bản EN + VI (chỉ khác phụ đề dịch).
 
 ## Luồng
 1. **Nguồn nội dung:** `onluyen/bai-mau-cau5-6.md` (bài mẫu + Flow + cụm đắt giá) — user đã làm sẵn, KHÔNG tự soạn. Câu hỏi: `HSKK_LESSONS[n].p3` trong `on-luyen.html`.

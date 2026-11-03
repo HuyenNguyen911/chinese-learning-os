@@ -2,7 +2,7 @@
 
   python .claude/skills/genimagevideo/scripts/new_project.py <slug> [--template poster-highlight] [--no-install]
 
-slug: không dấu, nối gạch ngang (vd mau-sac, do-an). Project tự chứa: data (words/layout.json),
+slug: không dấu, nối gạch ngang (vd mau-sac, do-an); video Talk series dùng talkNN/<loại> (vd talk03/langdu). Project tự chứa: data (words/layout.json),
 script sinh ảnh/giọng, code Remotion. Template copy kèm DATA MẪU (bộ phận cơ thể) để sửa đè.
 """
 import argparse, json, shutil, subprocess, sys
@@ -28,7 +28,7 @@ if dest.exists():
 
 shutil.copytree(src, dest, ignore=shutil.ignore_patterns("node_modules", "out", "video", "assets", "public", "gen.log"))
 pkg = dest / "package.json"
-pkg.write_text(pkg.read_text(encoding="utf-8").replace("__SLUG__", a.slug), encoding="utf-8")
+pkg.write_text(pkg.read_text(encoding="utf-8").replace("__SLUG__", a.slug.replace("/", "-")), encoding="utf-8")
 for d in ("assets/raw", "public/img", "public/audio", "video", "out"):
     (dest / d).mkdir(parents=True, exist_ok=True)
 (dest / "src" / "durations.json").write_text("{}", encoding="utf-8")
@@ -43,4 +43,4 @@ Tiếp theo (trong thư mục project):
   2. python lint_layout.py
   3. python gen_assets.py && python cutout.py   -> xem assets/contact.jpg
   4. python gen_voice.py [--no-tts]             -> public/audio + src/durations.json
-  5. npm run still  (ảnh tĩnh kiểm tra)  ->  npm run render  -> video/{a.slug}.mp4""")
+  5. npm run still  (ảnh tĩnh kiểm tra)  ->  npm run render  -> video/{a.slug.replace("/", "-")}.mp4""")

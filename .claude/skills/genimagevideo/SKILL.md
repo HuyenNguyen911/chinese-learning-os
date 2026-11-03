@@ -28,6 +28,8 @@ Ví dụ hoàn chỉnh đã được user duyệt: `output/Gen ảnh_video/bo-ph
   template/read-along/          # video 朗读 9:16 (bài đọc chạy theo giọng + thẻ từ EN/VI) — xem mục "Video 朗读"
   .venv/                        # Python riêng của skill (edge-tts 7.3.1; rembg tuỳ chọn) — KHÔNG dùng Python chung cho edge-tts
 output/Gen ảnh_video/<slug>/    # mỗi video 1 project tự chứa; thành phẩm ở video/<slug>.mp4
+output/Gen ảnh_video/talkNN/<loại>/  # video Talk series gom theo chủ đề: talk01/{contagious,langdu,hskk-c5,hskk-c6}, talk02/{langdu,tranhluan,hskk-c5}…
+                                     #   tạo mới: new_project.py talkNN/<loại> (vd talk03/langdu); <loại> = langdu | tranhluan | hskk-c5 | hskk-c6 | <tên clip kể chuyện>
 ```
 
 Biến trong `scripts/imagegen/.env`: `IMAGEGEN_URL` (`…/v1/images/generations`), `IMAGEGEN_KEY`, `IMAGEGEN_MODEL`
@@ -107,7 +109,7 @@ Mở video cho user bằng ứng dụng Windows: `cmd.exe //c start "" "video/<s
 Commit vào `main` theo luật Git Hygiene (CLAUDE.md §5.5); không push nếu user chưa bảo.
 
 ## Clip kể chuyện (khuôn `template/story-clip/`, dùng cho Talk series)
-Ví dụ đã chạy: `output/Gen ảnh_video/talk01-contagious/`. Cảnh khai báo trong `src/story.json`; ĐỌC `reference/design-rules.md` §9 trước khi dựng.
+Ví dụ đã chạy: `output/Gen ảnh_video/talk01/contagious/`. Cảnh khai báo trong `src/story.json`; ĐỌC `reference/design-rules.md` §9 trước khi dựng.
 - **Cảnh:** `id`, `text` (phụ đề, ở đầu khung), `actors[]`, tuỳ chọn `bubble`, `cards` (`han`/`py`/`en` — nghĩa tiếng Anh), `glow`, `door`.
 - **Giọng:** 1 file/câu `public/audio/<voice>.m4a|wav`; nhiều cảnh dùng chung 1 câu bằng `"voice": "c2"` (thời lượng chia theo số chữ Hán). `python make_durations.py` → `durations.json` + `envelope.json`. Chưa có giọng: chạy im lặng, mỗi chữ ~0.24s.
 - **Cảnh không thoại:** `"silent": true, "sec": 3.2, "text": ""` (không cần file giọng).
@@ -119,7 +121,7 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk01-contagious/`. Cảnh khai b
 - **Đoạn kết + chống copy** đã gắn sẵn trong `Story.tsx` (`Outro.tsx`, `outro.json` = giây của `public/audio/outro.wav` giọng 瑾玄) — design-rules §11.
 
 ## Cử động thật bằng muse-video (ảnh → video, dùng trong `story-clip`)
-Ví dụ đã chạy: `output/Gen ảnh_video/talk02-tranhluan/` (11 đoạn, user duyệt 2026-11-01). Ảnh tĩnh + Remotion trượt/nhún bị chê
+Ví dụ đã chạy: `output/Gen ảnh_video/talk02/tranhluan/` (11 đoạn, user duyệt 2026-11-01). Ảnh tĩnh + Remotion trượt/nhún bị chê
 "giống mấy ảnh tĩnh ghép lại" → mỗi cảnh 1 đoạn cử động thật, giữ đúng nhân vật đã duyệt.
 1. Dựng bố cục cảnh bằng ảnh tĩnh như thường (story.json `actors`, nền `bg`) → xuất **khung sạch** (không chữ/logo — AI làm méo chữ):
    `npx remotion still src/index.ts Story assets/keyframes/<id>.png --frame=N --props='{"clean":true}'`
@@ -133,22 +135,22 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk02-tranhluan/` (11 đoạn, us
 6. Trước khi gọi muse-video lần đầu trong session → hỏi user (tốn lượt, ~4 phút/lần).
 
 ## Video 朗读 (khuôn `template/read-along/`, dùng cho Talk series clip ②)
-Ví dụ đã chạy: `output/Gen ảnh_video/talk01-langdu/` (bài 1 快乐会传染, nhân vật 越黄). ĐỌC `reference/design-rules.md` §11–12 trước khi dựng.
+Ví dụ đã chạy: `output/Gen ảnh_video/talk01/langdu/` (bài 1 快乐会传染, nhân vật 越黄). ĐỌC `reference/design-rules.md` §11–12 trước khi dựng.
 1. **Cổng nội dung:** bài đọc (`p2Text` trong `onluyen/on-luyen.html`, nguyên văn), tên bài, bảng ~14 từ khoá (汉字 · pinyin · EN · VI) → user duyệt → ghi `src/data.json` (`title, topic, channel, character, gender, text, words`).
 2. **Cổng ảnh:** nhân vật mặc đồng phục trường phù thuỷ, nhìn thẳng, cầm sách, nền mint → `python cutout_mint.py <tên>`; xem khung tĩnh `npx remotion still src/index.ts Read out/preview-en.png --frame=N` (+ `ReadVI`).
 3. **Giọng:** `.claude/skills/genimagevideo/.venv/Scripts/python.exe voice_edge.py` → `public/audio/read.wav` + `src/timing.json` (mốc từng chữ từ WordBoundary). User tự thu thì bỏ `read.m4a` vào `public/audio/` rồi `python align.py` (dò chỗ ngắt hơi ↔ dấu câu).
 4. Nhạc nền `public/audio/bg.mp3` (rất nhỏ, `loop`); đoạn kết `public/audio/outro.wav` (giọng 瑾玄, câu 收听) + `src/outro.json`.
 5. Render 2 bản: `npx remotion render src/index.ts Read video/<slug>-en.mp4` và `ReadVI … -vi.mp4` (~8 phút/bản, chạy tuần tự).
    **Bàn giao = đủ cả 2 bản `-en` + `-vi`** — liệt kê `video/` trước khi báo xong; làm/sửa 1 bản thì kiểm + render luôn bản kia (user từng tự phát hiện thiếu EN).
-6. Có sẵn trong khuôn (talk02): 15s chuẩn bị đếm trong ô thẻ + tiếng `public/sfx/ting.wav` (chép từ `talk02-langdu`), cụm từ đọc sát
+6. Có sẵn trong khuôn (talk02): 15s chuẩn bị đếm trong ô thẻ + tiếng `public/sfx/ting.wav` (chép từ `talk02/langdu`), cụm từ đọc sát
    nhau khai `data.json "groups": [["欠佳","不得已","另辟蹊径"]]` — xem design-rules §12.
 
 ## Video HSKK 回答问题 (khuôn `template/hskk-answer/`, câu 5 & 6 mỗi chủ đề Talk series)
-Ví dụ đã chạy: `output/Gen ảnh_video/talk02-hskk-c5/` (Chủ đề 1 · câu 5; tên thư mục lỡ là talk02). 1 video/câu × 2 bản EN/VI, ~2-3 phút. ĐỌC `template/hskk-answer/README.md` (luồng 7 bước) + `reference/design-rules.md` §13 trước khi dựng.
+Ví dụ đã chạy: `output/Gen ảnh_video/talk01/hskk-c5/` (Chủ đề 1 · câu 5). 1 video/câu × 2 bản EN/VI, ~2-3 phút. ĐỌC `template/hskk-answer/README.md` (luồng 7 bước) + `reference/design-rules.md` §13 trước khi dựng.
 - Nguồn = `onluyen/bai-mau-cau5-6.md` của user (không tự soạn). Cổng nội dung (phụ đề + dịch + mindmap + cụm khó + storyboard ~14 cảnh) → giọng → khung tĩnh K1…Kn → clip muse-video (tự bỏ tiếng) → ghép `Full.tsx` → render FullVI/FullEN (**bàn giao đủ cả 2 bản**, liệt kê `video/` trước khi báo xong; video có clip muse-video → render bằng `bash chunk_render.sh FullEN video/<slug>-en.mp4`, xem gotchas). Nhạc nền suốt video. Làm lần lượt chủ đề 1 c5, c6 → chủ đề 2 c5, c6…
 
 ## Ảnh bìa bài đăng (Talk series)
-Ví dụ: `output/Gen ảnh_video/talk01-contagious/src/Cover.tsx` → `cover/talk01-cover.png`.
+Ví dụ: `output/Gen ảnh_video/talk01/contagious/src/Cover.tsx` → `cover/talk01-cover.png`.
 - **1 khung 3:4 (1080×1440) dùng chung mọi nền tảng** (RedNote/IG/FB/HelloTalk/TikTok ảnh) — user chọn, đỡ phải nhớ bản nào đăng đâu; bìa video TikTok lấy từ chính clip.
 - **Ghép từ ảnh nhân vật đã duyệt** trong `public/img/` của project clip, KHÔNG gen lại (gen lại → nhân vật xê dịch, lệch clip; không tốn lượt gen).
 - Thêm composition `Cover` (durationInFrames 1) vào `Root.tsx`, render: `npx remotion still src/index.ts Cover cover/<slug>-cover.png --frame=0` → Read ảnh tự soát rồi mở cho user.
