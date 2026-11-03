@@ -1,10 +1,11 @@
 import React from "react";
-import { AbsoluteFill, Audio, Easing, Img, OffthreadVideo, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Easing, Img, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import data from "./data.json";
 import timing from "./timing.json";
 import intro from "./intro.json";
 import outro from "./outro.json";
 import lines from "./lines.json";
+import frames from "./frames.json";
 import { Outro, outroSec } from "./Outro";
 import { C, FONT, SANS, SEC, PH, Title, Chrome, Peeker, Card, Tag, Branch, t as tr, Lang, Ph } from "./Frames";
 
@@ -40,11 +41,19 @@ const S3_LIST = ["cyd", "dll", "bzbj", "pbjd", "crj", "znl"] as (keyof typeof PH
 const Q0 = 0.7;
 const S1_END = Q0 + intro.q + 1.0;
 const S2_0 = S1_END, S2_END = S2_0 + 12.5;
-const S3_0 = S2_END, S3_STEP = 2.4, S3_END = S3_0 + 1.0 + S3_LIST.length * S3_STEP + 0.8;
+const S3_0 = S2_END, S3_STEP = 3.0, S3_END = S3_0 + 1.0 + S3_LIST.length * S3_STEP + 0.8;
 const S4_0 = S3_END, NOW0 = S4_0 + 0.3, A0 = NOW0 + intro.now + 0.7;
 const ANS_END = A0 + ANS, OUT0 = ANS_END + 1.2;
 export const TOTAL = Math.round((OUT0 + outroSec(outro.sec)) * FPS);
 
+/* clip minh hoạ = chuỗi ảnh JPG đã cắt sẵn khớp lời đọc (make_frames.py) — KHÔNG phát mp4: OffthreadVideo lỗi ngẫu nhiên
+   "No frame found at position …" (khung/clip khác nhau mỗi lần render). CLIPS/USE phải khớp make_frames.py. */
+const FR = frames as Record<string, number>;
+const SegFrames: React.FC<{ id: string; style: React.CSSProperties }> = ({ id, style }) => {
+  const f = useCurrentFrame();
+  const i = Math.max(0, Math.min(FR[id] - 1, f));
+  return <Img src={staticFile(`frames/${id}/${String(i + 1).padStart(4, "0")}.jpg`)} style={style} />;
+};
 const ease = Easing.bezier(0.45, 0, 0.55, 1);
 const WM = [[470, 1850], [780, 1850], [620, 1820], [300, 1850]];
 
@@ -52,7 +61,7 @@ const Sub: React.FC<{ ln: Ln; lang: Lang; dim?: boolean; hl?: string }> = ({ ln,
   const i = hl ? ln.zh.indexOf(hl) : -1;
   return (
     <div style={{ opacity: dim ? 0.4 : 1, textAlign: "center", whiteSpace: "nowrap" }}>
-      <div style={{ fontSize: dim ? 46 : 62, fontWeight: 700, color: C.ink, lineHeight: 1.3 }}>
+      <div style={{ fontSize: Math.min(dim ? 46 : 62, 980 / ln.zh.length), fontWeight: 700, color: C.ink, lineHeight: 1.3 }}>
         {i >= 0 ? <>{ln.zh.slice(0, i)}<span style={{ color: C.red, fontWeight: 800 }}>{hl}</span>{ln.zh.slice(i + hl!.length)}</> : ln.zh}
       </div>
       <div style={{ fontSize: dim ? 29 : 36, color: C.green, marginTop: 8, fontFamily: SANS, lineHeight: 1.3 }}>{lang === "vi" ? ln.vi : ln.en}</div>
@@ -77,8 +86,8 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
   // nhạc nền: hạ khi có giọng
   const voices: [number, number][] = [[Q0, Q0 + intro.q], [NOW0, NOW0 + intro.now], [A0, ANS_END], [OUT0 + 0.2, OUT0 + 0.2 + outro.sec],
     ...S3_LIST.map((_, i) => [S3_0 + 1.0 + i * S3_STEP, S3_0 + 1.0 + i * S3_STEP + 2.0] as [number, number])];
-  const duck = Math.min(...voices.map(([s, e]) => interpolate(t, [s - 0.3, s, e, e + 0.5], [1, 0.42, 0.42, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })));
-  const bgVol = 0.07 * duck * Math.min(1, t / 1.5, (TOTAL / fps - t) / 2.0);
+  const duck = Math.min(...voices.map(([s, e]) => interpolate(t, [s - 0.3, s, e, e + 0.5], [1, 0.3, 0.3, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })));
+  const bgVol = 0.22 * duck * Math.min(1, t / 1.5, (TOTAL / fps - t) / 2.0);
 
   const inS1 = t < S2_0, inS2 = t >= S2_0 && t < S3_0, inS3 = t >= S3_0 && t < S4_0, inS4 = t >= S4_0 && t < OUT0;
   const sceneFade = (a: number, b: number) => Math.min(k(a, a + 0.35), 1 - k(b - 0.35, b));
@@ -95,7 +104,7 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
 
       {/* S1: câu hỏi giữa khung */}
       {inS1 && (
-        <AbsoluteFill style={{ opacity: Math.min(1, k(0, 0.4)) * (1 - k(S1_END - 0.3, S1_END)) }}>
+        <AbsoluteFill style={{ opacity: 1 - k(S1_END - 0.3, S1_END) }}>
           <Peeker x={820} y={600} w={210} />
           <Card style={{ left: 46, right: 46, top: 600, height: 640, display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 56px" }}>
             <div style={{ fontSize: 64, fontWeight: 800, color: C.ink, lineHeight: 1.45, whiteSpace: "nowrap" }}>
@@ -159,7 +168,6 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
           <div style={{ position: "absolute", left: 0, right: 0, top: 170, fontSize: 46, fontWeight: 800, color: C.ink, textAlign: "center", lineHeight: 1.35, whiteSpace: "nowrap" }}>
             你同意“快乐也会传染”这种说法吗？<br />请说说你的看法和理由。
           </div>
-          <Peeker x={880} y={430} w={170} />
           <div style={{ position: "absolute", left: 46, right: 46, top: 430, height: 556, borderRadius: 36, overflow: "hidden", border: `4px solid ${C.green}`, background: "#E3F2E9" }}>
             {t < A0 && <Img src={staticFile("img/K1_key.png")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} />}
             {SEGS.map((sg, n) => {
@@ -168,7 +176,7 @@ export const Full: React.FC<{ lang: Lang }> = ({ lang }) => {
               const op = n === 0 && t < A0 + sg.s + 0.3 ? 1 : interpolate(t, [from, from + 0.3, to - 0.3, to], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
               return (
                 <Sequence key={sg.id} from={Math.round(from * fps)}>
-                  <OffthreadVideo src={staticFile(`motion/${sg.id}.mp4`)} muted playbackRate={sg.rate} startFrom={Math.round(sg.startSec * fps)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", opacity: n === SEGS.length - 1 ? op : op }} />
+                  <SegFrames id={sg.id} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", opacity: n === SEGS.length - 1 ? op : op }} />
                 </Sequence>
               );
             })}

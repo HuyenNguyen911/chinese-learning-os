@@ -45,6 +45,6 @@ def gen(cid):
         return f"{cid}: LỖI {e}"
 
 
-with ThreadPoolExecutor(3) as ex:
+with ThreadPoolExecutor(2) as ex:
     for msg in ex.map(gen, ids):
         print(msg, flush=True)

@@ -16,3 +16,8 @@ Mỗi nhân vật 1 thư mục, tên không dấu, không chữ Hán (vd `jinxua
 
 Mỗi nhân vật nên có: `avatar.png` (ảnh gốc chibi) + các tấm "lật" cùng khung để làm chuyển động:
 `mieng-mo.png` (miệng mở), `mat-nham.png` (mắt nhắm), `vay-tay.png` (vẫy tay) — chỉ khác đúng 1 chi tiết so với tấm gốc.
+
+### Ghi chú vẽ nguyên cảnh (2026-11-03, video HSKK câu 6 · 瑾玄)
+- **Ba mẹ của 瑾玄 = `baba/` + `mama/`** (KHÔNG dùng `gia-dinh-hskk/` — đó là gia đình của 越黄). Trang phục đổi theo chủ đề được; **ba đi giày thể thao trắng** (không dép); **mẹ trang điểm nhạt** (môi hồng nhạt, không son đỏ), nét hiền hậu.
+- **瑾玄 mặc trẻ trung, thời trang** (vd croptop len kem tay phồng + chân váy xếp ly hồng, sneaker trắng, tết 2 bím có nơ); váy dài qua gối + cardigan bị chê "như bà cô". Đồ ngủ: váy ngủ satin ngắn có bèo.
+- Giọng đọc bài tiếng Trung của 瑾玄 (TTS): `zh-CN-XiaoxiaoNeural` rate gốc. Giọng kết follow vẫn là Huyền Babe (bảng trên).

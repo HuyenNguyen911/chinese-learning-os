@@ -31,6 +31,10 @@ raw/Giáo trình phát triển hán ngữ/nói 2/tiengtrungthuonghai.vn.高级�
 output/Gen ảnh_video/**/node_modules/
 output/Gen ảnh_video/**/out/
 output/Gen ảnh_video/**/gen.log
+# ảnh JPG từng khung clip (make_frames.py sinh lại, ~250 MB/video) + đoạn clip cắt tạm
+output/Gen ảnh_video/**/public/frames/
+output/Gen ảnh_video/**/public/motion/seg_*
+output/Gen ảnh_video/**/assets/motion_fix/
 .claude/skills/genimagevideo/template/**/node_modules/
 # Ảnh chụp thật (user, bạn bè, người thân) dùng làm mẫu vẽ chibi — riêng tư, KHÔNG đưa lên GitHub.
 # Bản chibi đã vẽ nằm ở output/Gen ảnh_video/nhan-vat/ và được commit bình thường.
