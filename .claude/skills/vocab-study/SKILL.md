@@ -30,9 +30,9 @@ user đã sửa 2 lần vì tự ghi trước khi duyệt, rồi lại dừng �
    nghĩa ngắn) / từ đã có / từ loại + lý do → **DỪNG chờ user chốt**. Chưa ghi Excel, chưa render.
    Tiêu chí lọc khi user gửi đề: bỏ từ trùng; giữ cấp 6 và 7-9 theo `raw/hsk3.0-dagang.pdf.txt` (dòng `STT cấp 词 pinyin`)
    + thành ngữ / từ ngoài 大纲 đáng học; loại cấp ≤5, từ quá dễ, thuật ngữ quá chuyên.
-2. **Pha làm** (sau khi chốt) — chạy một mạch, không hỏi lại: append từ MỚI (Pinyin/描述/意义/例如 tự soạn theo mẫu;
+2. **Pha làm** (sau khi user chốt RÕ RÀNG — câu mơ hồ kiểu "đủ để ôn thi" không tính là chốt, hỏi lại 1 câu) — chạy một mạch, không hỏi lại: append từ MỚI (Pinyin/描述/意义/例如 tự soạn theo mẫu;
    例句 lấy nguyên câu trong đề, câu 病句 dùng bản đã sửa, từ chỉ có ở phương án thì tự đặt câu) → 1→2→3 → kiểm pinyin
-   (mục Nguyên tắc) → mẹo nhớ (bước 4) → 5 → render + publish bản Artifact điện thoại. Commit/push vẫn hỏi theo Git Hygiene.
+   (mục Nguyên tắc) → mẹo nhớ (bước 4) → 5 → render + publish bản Artifact điện thoại. Xong thì commit + push NGAY (shared-data → `main`, kiểm `git branch --show-current` trước) — không để file lơ lửng, session khác sẽ báo lệch file.
 
 ## Output
 - `output/Giáo trình chuẩn/hsk6/study/tu-vung.md` — nguồn (bảng 生词 + 生词拓展), có thể sửa tay.
@@ -61,7 +61,7 @@ user đã sửa 2 lần vì tự ghi trước khi duyệt, rồi lại dừng �
 
 ## Pipeline (chạy từ gốc repo; `PY` = python có pypinyin + openpyxl)
 ```bash
-PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"
+PY="C:/Users/huyennhm/AppData/Local/Programs/Python/Python312/python.exe"   # máy khác (không có file này) → PY=python
 SK=".claude/skills/vocab-study/scripts"
 # 1) Excel -> data/tv.json + data/ct.json
 "$PY" "$SK/extract_xlsx.py"            # hoặc truyền đường dẫn xlsx khác
@@ -121,7 +121,7 @@ Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu
 - `ex_override.json` — 例句 cá nhân hoá (bám `memory/user-profile.md`). **GHI ĐÈ** câu bài khóa cho từ có trong file (vd Bài 15–28).
 - `exp_extra.json` — nhóm 生词拓展 thêm tay cho bài sheet 'Chung từ' thiếu (vd Bài 28).
 - `bai_titles.json` — map `{"<N>": "<标题 bài khóa>"}`. build_md gắn tên vào heading `## Bài N — <title>`, render_html hiện cạnh mỗi bài + nhãn flashcard. lesson-prep tự ghi khi bóc bài mới.
-- `cum_ghi_nho.json` — `{rules:[...], sections:[{title, items:[...]}]}`. Mỗi item là dict `{w, py, vi, cum, trait:[đặc điểm, đi với], conf:[{w, py, vi, diff}], q}` (dạng cũ mảng `[từ, cụm nhớ, dễ nhầm]` vẫn đọc được). Thẻ lật ra 3 khối: ① Đặc điểm, ② Dễ nhầm với (1 dòng: từ pinyin — nghĩa + điểm khác), ③ Xử lý (`q`). Quy tắc viết: không lặp ý giữa các khối/dòng nghĩa; `q` là 1 câu hỏi ngắn, tiếng Việt dễ hiểu, nêu 2 hướng để chọn từ (vd "Đề đang nói A, hay nói B?"); CHỈ ghi chú từ + từ dễ nhầm để ôn thi, KHÔNG giải đề/không chọn đáp án thay user; `cum` phải chứa nguyên chữ `w` (dùng để che ＿＿). Mỗi đề user gửi = 1 section mới (user đặt tên, không đặt thì tự đánh số Đề N tiếp; không dùng "61–70" làm tên vì đề nào cũng vậy). Từ đã có ở đề trước → không tạo dòng mới, chỉ báo/bổ sung cách dùng vào dòng cũ. Câu đã có đáp án (user ghi "Đáp án đúng") → dòng chính lấy TỪ ĐÁP ÁN, các phương án còn lại vào "Dễ nhầm với"; câu chưa có đáp án → lấy từ hợp nghĩa nhất, hai từ cùng đi được (vd 显示/表明) thì ghi lưu ý "xem cả câu" ở `q`. Build: chỉ cần bước 5 (render).
+- `cum_ghi_nho.json` — `{rules:[...], sections:[{title, items:[...]}]}`. Mỗi item là dict `{w, py, vi, cum, trait:[đặc điểm, đi với], conf:[{w, py, vi, diff}], q}` (dạng cũ mảng `[từ, cụm nhớ, dễ nhầm]` vẫn đọc được). Thẻ lật ra 3 khối: ① Đặc điểm, ② Dễ nhầm với (1 dòng: từ pinyin — nghĩa + điểm khác), ③ Xử lý (`q`). Quy tắc viết: không lặp ý giữa các khối/dòng nghĩa; `q` là 1 câu hỏi ngắn, tiếng Việt dễ hiểu, nêu 2 hướng để chọn từ (vd "Đề đang nói A, hay nói B?"); CHỈ ghi chú từ + từ dễ nhầm để ôn thi, KHÔNG giải đề/không chọn đáp án thay user; `cum` phải chứa nguyên chữ `w` (dùng để che ＿＿). `rules` hiện để rỗng `[]` (user đã bỏ thẻ "2 quy tắc chung" 2026-11-04) — không thêm lại nếu user không yêu cầu. Trước khi ghi JSON, trình trong chat danh sách từ chính của đề (kèm chỗ tự chọn do chưa có đáp án) cho user duyệt. Mỗi đề user gửi = 1 section mới (user đặt tên, không đặt thì tự đánh số Đề N tiếp; không dùng "61–70" làm tên vì đề nào cũng vậy). Từ đã có ở đề trước → không tạo dòng mới, chỉ báo/bổ sung cách dùng vào dòng cũ. Câu đã có đáp án (user ghi "Đáp án đúng") → dòng chính lấy TỪ ĐÁP ÁN, các phương án còn lại vào "Dễ nhầm với"; câu chưa có đáp án → lấy từ hợp nghĩa nhất, hai từ cùng đi được (vd 显示/表明) thì ghi lưu ý "xem cả câu" ở `q`. Build: chỉ cần bước 5 (render).
 - `tv.json`, `ct.json` — trung gian, tái sinh mỗi lần chạy bước 1 (không cần giữ tay).
 
 ## Đồng bộ tiến độ giữa các máy (lệnh "đồng bộ tiến độ")
@@ -135,7 +135,7 @@ Khi cột 意义 trống nhiều hoặc cần thay 例句 bài khóa bằng câu
 - Biến thể Artifact **bỏ `<script src="tu-vung-progress.js">`** (thẻ này làm khung xem iOS báo "This browser isn't supported" — đã bisect) và ẩn nút Xuất/Nhập. Tiến độ tự đồng bộ qua document `progress/hsk6` (field `json` = snapshot, gộp bằng `mergeProgress` giống trên), debounce 2s sau mỗi lần học; máy tính + điện thoại mở cùng link là thấy chung.
 - Kéo tiến độ cloud về repo (lệnh "đồng bộ tiến độ" khi user học bằng Artifact): `ArtifactData get` collection `progress` doc `hsk6` với `out_dir` → `python .claude/skills/vocab-study/scripts/sync_progress.py <out_dir>/progress/hsk6.json`.
 - Nội dung bài mới → phải sinh lại + publish lại bản Artifact. Hàng chờ lên hạng C (`hsk6vocab_promote_v1`) vẫn lưu riêng từng thiết bị, chưa đồng bộ.
-- **Tự nhắc republish:** hook SessionStart `.claude/hooks/session-start-vocab-artifact.sh` render biến thể Artifact, so sha256 với `.claude/skills/vocab-study/artifact-published.sha` (hash bản đã publish lần cuối); lệch → nhắc Claude tự republish (user đã duyệt trước, không hỏi lại). Hook chỉ phát hiện + nhắc — Artifact là tool của Claude nên hook không tự publish được. Republish xong PHẢI ghi lại hash file vừa publish vào `artifact-published.sha` (`sha256sum <file> | cut -d' ' -f1`), nếu không phiên sau hook nhắc lại.
+- **Tự nhắc republish:** hook SessionStart `.claude/hooks/session-start-vocab-artifact.sh` render biến thể Artifact, so sha256 với `.claude/skills/vocab-study/artifact-published.sha` (hash bản đã publish lần cuối); lệch → nhắc Claude tự republish (user đã duyệt trước, không hỏi lại). Hook chỉ phát hiện + nhắc — Artifact là tool của Claude nên hook không tự publish được. Republish xong PHẢI ghi lại hash file vừa publish vào `artifact-published.sha` (`sha256sum <file> | cut -d' ' -f1 | tr -d '\\'` — đường dẫn có `\` làm sha256sum chèn `\` đầu dòng; kiểm đủ 64 ký tự hex), nếu không phiên sau hook nhắc lại.
 - **Bẫy khi publish:** bị từ chối "chưa xem live" → `Artifact read` url (path `index.html`, lưu file) rồi `Read` vài dòng cuối file đã lưu, publish lại; KHÔNG truyền `capabilities` (giữ nguyên db). Có thể phiên khác cũng publish cùng link — đọc diff trong thông báo từ chối, bản live chỉ thiếu phần mình vừa sửa thì publish tiếp, không mất gì.
 
 ## Nguyên tắc

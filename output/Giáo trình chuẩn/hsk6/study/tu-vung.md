@@ -894,7 +894,7 @@
 | 头脑 | tóunǎo | đầu óc; khả năng tư duy, sự tỉnh táo | 思考的能力或清醒的意识。 | 遇到紧急情况一定要保持清醒的头脑。 |
 | 遭遇 | zāoyù | gặp phải, đối mặt (chuyện không may) | 遇到不好的事情。 | 他在旅途中遭遇了严重的车祸。 |
 | 灾难 | zāinàn | tai họa, thảm họa | 非常严重的灾害或不幸。 | 这场地震给当地人民带来了巨大灾难。 |
-| 饥饿 | jīè | đói, đói khát (thiếu thức ăn) | 肚子很饿、缺少食物。 | 在灾区，很多孩子仍然忍受着饥饿。 |
+| 饥饿 | jī'è | đói, đói khát (thiếu thức ăn) | 肚子很饿、缺少食物。 | 在灾区，很多孩子仍然忍受着饥饿。 |
 | 风暴 | fēngbào | bão tố, giông bão | 强烈的风和雨的天气现象。 | 船在海上遇到了猛烈的风暴。 |
 | 鼓动 | gǔdòng | cổ động | 激发别人去做某事。 | 他的演讲鼓动很多人参加了这次活动。 |
 | 抢救 | qiǎngjiù | cấp cứu, cứu chữa khẩn cấp | 紧急救护生命或物品。 | 医生们正在全力抢救受伤的病人。 |
@@ -1442,7 +1442,7 @@
 - **融** (tan, hòa tan, dung hòa): 融化 rónghuà〖tan chảy, tan ra〗 · 融和 rónghé〖ấm áp hòa hợp (khí hậu, không khí)〗 · 融合 rónghé〖hòa hợp, dung hợp, hợp nhất〗 · 融汇 rónghuì〖hội tụ, dung hợp (kiến thức, dòng chảy)〗 · 融会贯通 rónghuìguàntōng〖thông hiểu thấu đáo, vận dụng nhuần nhuyễn〗 · 水乳交融 shuǐrǔjiāoróng〖hòa quyện khăng khít như nước với sữa〗
 - **珍** (quý, trân quý): 珍珠 zhēnzhū〖ngọc trai〗 · 珍稀 zhēnxī〖quý hiếm〗 · 珍视 zhēnshì〖coi trọng, trân trọng〗 · 珍爱 zhēn'ài〖yêu quý, trân quý〗 · 如数家珍 rúshǔjiāzhēn〖kể vanh vách như đếm của báu nhà mình, rất am hiểu〗 · 珍禽异兽 zhēnqínyìshòu〖chim quý thú lạ〗 · 山珍海味 shānzhēnhǎiwèi〖sơn hào hải vị〗
 - **珠** (ngọc, hạt tròn nhỏ): 珠子 zhūzi〖hạt (chuỗi), hạt cườm〗 · 露珠 lùzhū〖giọt sương〗 · 泪珠 lèizhū〖giọt lệ, giọt nước mắt〗 · 圆珠笔 yuánzhūbǐ〖bút bi〗 · 鱼目混珠 yúmùhùnzhū〖vàng thau lẫn lộn, hàng giả trà trộn hàng thật〗 · 珠联璧合 zhūliánbìhé〖kết hợp hoàn hảo, xứng đôi vừa lứa〗
-- **遏** (ngăn chặn, kìm lại): 怒不可遏 nùbùkěè〖giận không kìm được, giận tím người〗 · 遏止 èzhǐ〖ngăn chặn, chặn đứng〗 · 遏制 èzhì〖kiềm chế, khống chế〗 · 阻遏 zǔè〖ngăn cản, cản trở〗
+- **遏** (ngăn chặn, kìm lại): 怒不可遏 nùbùkě'è〖giận không kìm được, giận tím người〗 · 遏止 èzhǐ〖ngăn chặn, chặn đứng〗 · 遏制 èzhì〖kiềm chế, khống chế〗 · 阻遏 zǔ'è〖ngăn cản, cản trở〗
 - **昂** (ngẩng lên; hăng hái, cao): 昂首 ángshǒu〖ngẩng đầu lên〗 · 昂首阔步 ángshǒukuòbù〖ngẩng đầu ưỡn ngực bước đi hiên ngang〗 · 昂然 ángrán〖hiên ngang, hùng dũng〗 · 慷慨激昂 kāngkǎijī'áng〖hùng hồn sôi nổi, khảng khái hăng say〗 · 高昂 gāo'áng〖cao ngất (giá cả); phấn chấn cao độ (tinh thần)〗 · 斗志昂然 dòuzhì'ángrán〖ý chí chiến đấu hăng hái sôi sục〗
 
 ## Bài 23 — 大数据时代
@@ -1584,7 +1584,7 @@
 - **遮** (che, che giấu): 一手遮天 yīshǒuzhētiān〖một tay che trời, lộng quyền che giấu sự thật〗 · 遮遮掩掩 zhēzhēyǎnyǎn〖giấu giấu diếm diếm, úp úp mở mở〗 · 遮挡 zhēdǎng〖che chắn〗 · 遮蔽 zhēbì〖che khuất, che lấp〗 · 遮盖 zhēgài〖che phủ, che đậy〗
 - **哀** (bi thương, đau buồn): 哀伤 āishāng〖đau buồn, bi thương〗 · 哀泣 āiqì〖khóc than bi ai〗 · 哀叹 āitàn〖than thở, thở than〗 · 哀愁 āichóu〖sầu muộn, buồn rầu〗 · 哀痛 āitòng〖đau đớn xót thương〗 · 哀号 āiháo〖gào khóc thảm thiết〗 · 哀鸣 āimíng〖kêu than bi thương (tiếng kêu ai oán)〗
 - **酷** (khắc nghiệt, tàn khốc; cực kỳ): 冷酷 lěngkù〖lạnh lùng tàn nhẫn〗 · 严酷 yánkù〖nghiêm khắc, khắc nghiệt〗 · 酷爱 kù'ài〖say mê, rất yêu thích〗 · 酷寒 kùhán〖rét cắt da cắt thịt, giá lạnh khắc nghiệt〗 · 酷热 kùrè〖nóng bức khắc nghiệt, nóng như thiêu〗 · 酷似 kùsì〖giống hệt, giống như đúc〗
-- **凶** (hung ác, dữ tợn): 凶残 xiōngcán〖hung tàn, hung ác tàn bạo〗 · 凶狠 xiōnghěn〖hung dữ, hung ác〗 · 凶恶 xiōngè〖hung ác, dữ tợn〗 · 凶险 xiōngxiǎn〖nguy hiểm, hiểm ác〗 · 凶猛 xiōngměng〖hung mãnh, dữ tợn〗 · 行凶 xíngxiōng〖hành hung, gây án〗 · 凶器 xiōngqì〖hung khí〗 · 凶犯 xiōngfàn〖hung phạm, kẻ gây án〗 · 帮凶 bāngxiōng〖đồng phạm, tòng phạm〗
+- **凶** (hung ác, dữ tợn): 凶残 xiōngcán〖hung tàn, hung ác tàn bạo〗 · 凶狠 xiōnghěn〖hung dữ, hung ác〗 · 凶恶 xiōng'è〖hung ác, dữ tợn〗 · 凶险 xiōngxiǎn〖nguy hiểm, hiểm ác〗 · 凶猛 xiōngměng〖hung mãnh, dữ tợn〗 · 行凶 xíngxiōng〖hành hung, gây án〗 · 凶器 xiōngqì〖hung khí〗 · 凶犯 xiōngfàn〖hung phạm, kẻ gây án〗 · 帮凶 bāngxiōng〖đồng phạm, tòng phạm〗
 - **冤** (oan, oan ức): 不白之冤 bùbáizhīyuān〖nỗi oan không thể giãi bày, oan ức không rửa được〗 · 冤屈 yuānqū〖oan ức, uất ức〗 · 冤枉 yuānwǎng〖oan uổng, oan〗 · 冤仇 yuānchóu〖oan cừu, thù oán〗 · 无冤无仇 wúyuānwúchóu〖không oán không thù〗
 - **雪** (tuyết; rửa (oan, nhục)): 雪花 xuěhuā〖bông tuyết〗 · 冰天雪地 bīngtiānxuědì〖băng trời tuyết đất, trời đông giá rét〗 · 雪崩 xuěbēng〖tuyết lở〗 · 雪耻 xuěchǐ〖rửa nhục〗 · 雪冤 xuěyuān〖rửa oan, giải oan〗 · 报仇雪恨 bàochóuxuěhèn〖báo thù rửa hận〗 · 雪亮 xuěliàng〖sáng như tuyết, sáng quắc, tinh tường (mắt)〗 · 雪中送炭 xuězhōngsòngtàn〖giúp đỡ đúng lúc khó khăn (tặng than giữa trời tuyết)〗 · 雪上加霜 xuěshàngjiāshuāng〖họa vô đơn chí, khó khăn chồng chất khó khăn〗
 
@@ -2259,7 +2259,7 @@
 | --- | --- | --- | --- | --- |
 | 起源 | qǐyuán | nguồn gốc, khởi nguyên | 事情开始的地方或原因 | 老师说汉字的起源要从甲骨文讲起，我这才第一次认真了解。 |
 | 文献 | wénxiàn | văn hiến, tài liệu (sách vở) | 记录知识、历史的书面资料 | 写HSK6作文找不到灵感时，我会翻翻中国文化方面的文献找素材。 |
-| 凶恶 | xiōngè | hung ác, dữ tợn | 样子很可怕，让人害怕 | 门神画上的门神表情都很凶恶，据说是为了吓跑妖怪。 |
+| 凶恶 | xiōng'è | hung ác, dữ tợn | 样子很可怕，让人害怕 | 门神画上的门神表情都很凶恶，据说是为了吓跑妖怪。 |
 | 揭露 | jiēlù | vạch trần, phơi bày | 把隐藏的事情或真相说出来 | 这篇阅读理解揭露了古代年画背后的一个有趣传说。 |
 | 昌盛 | chāngshèng | hưng thịnh, phồn vinh | 国家、事业很兴旺发达 | 唐宋时期文化昌盛，很多传统艺术都是那时候发展起来的。 |
 | 题材 | tícái | đề tài (sáng tác) | 写作、绘画等作品选用的内容 | 这次HSK6作文的题材是传统文化，正好我最近在学年画。 |
