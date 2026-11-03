@@ -1,7 +1,7 @@
 # Khung post HelloTalk (post chủ đề hằng tuần)
 
 ```
-📚 每周一个话题｜NN <câu chủ đề>
+📚 每周一个话题｜NN <tên bài khoá>   ← vd 03 活人图书馆 (không dùng câu hỏi, user chốt 2026-11-03)
 [Chuyện nhỏ thật của user, 1-2 câu tiếng Trung — có cảm xúc, có 1 emoji]
 [Câu hỏi dễ trả lời ngay — ưu tiên mở 2 luồng để người đọc chọn phe]
 

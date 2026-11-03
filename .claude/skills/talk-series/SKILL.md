@@ -100,6 +100,9 @@ Khối trùng câu 回答问题 của bài (vd "Trường hay nhà" ↔ câu 5, 
 ### Bước 1 — Post HelloTalk ✅ chốt
 - **1 post/chủ đề.** Không chốt giờ room, không nhắc voice room trong post giới thiệu.
 - Ghi vào khối dữ liệu `post` của trang chủ đề (tab 📝 Bài đăng, mỗi đoạn có nút 📋 copy + nút Copy cả bài). Khung: `templates/post-hellotalk.md`. Mở bằng chuyện nhỏ thật → câu hỏi dễ trả lời → hashtag.
+- **Cổng duyệt caption:** duyệt bản HelloTalk xong thì trình **toàn văn từng kênh còn lại** (RedNote tiêu đề + nội dung, TikTok, IG, FB, Threads)
+  cho user duyệt rồi mới ghi vào trang — KHÔNG ghi thẳng (2026-11-03 bị user bắt: "bạn đã đưa nội dung tôi duyệt đâu").
+- Câu thắc mắc thật của user (vd "đi nghe anh chị chia sẻ có tính là 活人图书馆 không?") là móc tốt để người đọc vào cho ý kiến — giữ trong post.
 - Ảnh: linh hoạt ảnh thật + ảnh gen (qua skill `genimagevideo`), phong cách đời thường, tránh lộ AI.
   Ghi loại ảnh vào sổ để luân phiên.
 
@@ -140,9 +143,9 @@ Khối trùng câu 回答问题 của bài (vd "Trường hay nhà" ↔ câu 5, 
 - Định dạng: TikTok = video · Instagram = Reels (+ carousel, Story bình chọn) · Facebook = bài ảnh + chữ (Reels tự chia sẻ từ IG)
   · Threads = chữ + 1 ảnh · RedNote = bài ảnh 图文 (từ khoá trong tiêu đề/thân) · HelloTalk = moment chữ + **file đọc to** (được sửa phát âm).
 - Quá sức → ưu tiên HelloTalk (được sửa) + TikTok (luyện nói khi quay).
-- Tên series: CHƯA chốt. **Dòng tiêu đề đầu bài** (user chốt 2026-11-01): `📚 每周一个话题｜NN <câu chủ đề>` — 1 dòng, không "Vol.",
-  dùng chung RedNote nội dung / TikTok / Instagram / HelloTalk / Facebook; Threads không có. Vd `📚 每周一个话题｜02 去学校，还是在家学？`
-  (tập 01 còn bản cũ "Vol. 01").
+- Tên series: CHƯA chốt. **Dòng tiêu đề đầu bài** (user chốt 2026-11-03): `📚 每周一个话题｜NN <tên bài khoá>` — 1 dòng, không "Vol.",
+  KHÔNG dùng câu hỏi; dùng chung RedNote nội dung / TikTok / Instagram / HelloTalk / Facebook; Threads không có. Vd `📚 每周一个话题｜03 活人图书馆`
+  (tập 01 "Vol. 01", tập 02 "02 去学校，还是在家学？" là bản cũ). Ô tiêu đề RedNote riêng vẫn được ghép tên bài + câu gây tò mò.
 
 ### Bước 6 — Review sau chủ đề 🟡 khung
 - User gửi **ảnh chụp trang thống kê** + link (không tự thống kê từ link được — nền tảng chặn).

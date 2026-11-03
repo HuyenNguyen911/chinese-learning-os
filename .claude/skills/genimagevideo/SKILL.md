@@ -137,6 +137,9 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk02/tranhluan/` (11 đoạn, us
 ## Video 朗读 (khuôn `template/read-along/`, dùng cho Talk series clip ②)
 Ví dụ đã chạy: `output/Gen ảnh_video/talk01/langdu/` (bài 1 快乐会传染, nhân vật 越黄). ĐỌC `reference/design-rules.md` §11–12 trước khi dựng.
 1. **Cổng nội dung:** bài đọc (`p2Text` trong `onluyen/on-luyen.html`, nguyên văn), tên bài, bảng ~14 từ khoá (汉字 · pinyin · EN · VI) → user duyệt → ghi `src/data.json` (`title, topic, channel, character, gender, text, words`).
+   **Trước khi đưa bảng:** grep từng từ trong `output/Gen ảnh_video/talk*/*/src/*.{json,tsx}` — từ đã làm thẻ ở video khác (langdu `words`, HSKK cụm đáng học) → thay từ khác trong bài
+   (2026-11-03 phải dừng render giữa chừng vì 不可否认 trùng talk02/hskk-c5). Nhân vật luân phiên: 01 越黄 · 02 瑾玄 · 03 越黄 (tấm chuẩn `talk01/langdu/public/img/yh_front_v1.png`, không gen lại);
+   giọng 越黄 = `--voice zh-CN-YunxiaNeural --rate +8%`. Nhanh nhất: chép code + `public/` từ project langdu gần nhất rồi thay `data.json`/`sizes.json`.
 2. **Cổng ảnh:** nhân vật mặc đồng phục trường phù thuỷ, nhìn thẳng, cầm sách, nền mint → `python cutout_mint.py <tên>`; xem khung tĩnh `npx remotion still src/index.ts Read out/preview-en.png --frame=N` (+ `ReadVI`).
 3. **Giọng:** `.claude/skills/genimagevideo/.venv/Scripts/python.exe voice_edge.py` → `public/audio/read.wav` + `src/timing.json` (mốc từng chữ từ WordBoundary). User tự thu thì bỏ `read.m4a` vào `public/audio/` rồi `python align.py` (dò chỗ ngắt hơi ↔ dấu câu).
 4. Nhạc nền `public/audio/bg.mp3` (rất nhỏ, `loop`); đoạn kết `public/audio/outro.wav` (giọng 瑾玄, câu 收听) + `src/outro.json`.
@@ -156,6 +159,11 @@ Ví dụ: `output/Gen ảnh_video/talk01/contagious/src/Cover.tsx` → `cover/ta
 - **Ghép từ ảnh nhân vật đã duyệt** trong `public/img/` của project clip, KHÔNG gen lại (gen lại → nhân vật xê dịch, lệch clip; không tốn lượt gen).
 - Thêm composition `Cover` (durationInFrames 1) vào `Root.tsx`, render: `npx remotion still src/index.ts Cover cover/<slug>-cover.png --frame=0` → Read ảnh tự soát rồi mở cho user.
 - Tiêu đề font thật ~104px (132px bị chê to); tiêu đề + mặt nhân vật dồn vùng giữa vì HelloTalk/FB cắt ảnh xem trước gần vuông.
+- **Chưa có project clip** (vd tập 03): vẽ NGUYÊN CẢNH bằng `gen_image.py --size 1536x1024` (mô tả 瑾玄/越黄 theo `nhan-vat/README.md`) → sửa chi tiết bằng Pillow
+  → ghép chữ bằng `cover.html` + Chrome headless (mẫu + lệnh: `talk03/cover/README.md`). Gen 2 phương án/lượt, soát từng tấm trước khi đưa user.
+- **Bài học cảnh bìa (2026-11-03):** phải thể hiện đúng KHÁI NIỆM bài, nhìn là hiểu không cần chữ (活人图书馆 = phòng đọc nhiều "cuốn sách người"
+  đeo thẻ quyển sách, 1 ghế trống chờ được mượn); 2 người ngồi đối diện = bị đọc thành "hẹn hò"; cảnh **tối giản** (ít bàn, tường trơn, ít cây — bị chê "nhiều hoạ tiết");
+  người nghe là người lớn, không trẻ con; bìa trơn bị chê "thiếu hiệu ứng" → thêm tia sáng toả mờ dần (giống tập 01) + vài ✨ (không đè mặt) + bong bóng thoại ngắn nói ý chủ đề.
 
 ## Nhân vật chibi (Talk series + video)
 - Ảnh chụp thật làm mẫu: `raw/nhan-vat/<tên>/` — **gitignored**, không lên GitHub. User tự bỏ ảnh vào; nhân vật đã có thì dùng lại, không xin lại ảnh.

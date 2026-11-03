@@ -10,6 +10,12 @@
 3. **Bung nhánh**: 5-6 nhánh, mỗi nhánh dẫn sang 1 mảng đời sống khác nhau (niềm vui nhỏ, cảm xúc,
    bạn bè, gia đình, mạng xã hội, tiền, công việc…). Không xoay quanh chuyện học. Mỗi nhánh
    **1 câu chính + tối đa 1 câu tiếp** → không trùng trục. Chuẩn bị 6, room dùng 3-4 theo không khí.
+   **Bắt buộc ≥ 2 khối hỏi THẲNG chủ đề bài** (vd 活人图书馆: "你会去听讲座/找人一对一咨询吗？→ 要是能免费'借'一个人聊…" và
+   "要是让你去当那本'书'…"), đặt đầu nhóm Quan điểm — các nhánh đời sống chỉ là đường dẫn vào, không thay chủ đề
+   (2026-11-03 user: "đặt câu hỏi khai thác mà tui quên luôn chủ đề"). Khối trùng câu 5/6 HSKK → lấy ý từ `bai-mau-cau5-6.md`.
+   **Câu hỏi viết như hỏi bạn bè** (ngắn, đời thường); thuật ngữ của bài (借人, 书名, 当一本书) chỉ dùng sau khi mở đầu ④
+   đã giới thiệu khái niệm — bộ đầu dùng thẳng thuật ngữ bị chê "chưa tự nhiên". Trước khi chốt: grep `_so-chu-de` + trang các tập
+   trước để không trùng khối (vd 搭子 đã có ở tập 01).
 4. **Quét dòng thời gian xu hướng**: quá khứ → hiện tại → đang nổi/sắp tới (phần "đang/sắp" phải
    WebSearch: hot search Weibo, RedNote, tin tức). Lọc 2-4 **thay đổi** đáng nói. KHÔNG dán nhãn
    tốt/xấu — có thể tốt, chưa tốt, hoặc chưa nhận định được. Mỗi thay đổi đẻ ra câu hỏi đời thường

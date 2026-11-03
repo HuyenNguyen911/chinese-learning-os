@@ -71,7 +71,7 @@ không nhắc nguồn sách, không lời hứa phóng đại, không đóng khu
 - Độ dài post HelloTalk: ngắn, 4-6 dòng, đọc vài giây là trả lời được.
 - Hashtag **tối đa 5** mỗi bài — riêng RedNote tối đa ~8 vì tìm kiếm mạnh (user chốt 2026-10-22), cố định `#每周一个话题 #MoiTuanMotChuDe` + tối đa 3 tag chủ đề/nền tảng.
 - Hook series: "同一件事，每个人的想法都不一样，好想知道你们是怎么想的～"
-- Dòng đầu bài: `📚 每周一个话题｜NN <câu chủ đề>` — 1 dòng, không "Vol.", chung mọi kênh trừ Threads (user chốt 2026-11-01).
+- Dòng đầu bài: `📚 每周一个话题｜NN <tên bài khoá>` (vd `03 活人图书馆`, không dùng câu hỏi) — 1 dòng, không "Vol.", chung mọi kênh trừ Threads (user chốt 2026-11-03).
 
 ## 7. Trang chủ đề (NN_<tên>.html) — chỉ nội dung dùng được
 User đọc và dùng trực tiếp trong room → KHÔNG đưa lên trang:
