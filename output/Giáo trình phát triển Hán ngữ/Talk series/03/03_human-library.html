@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01 快乐会传染</title>
+<!-- ============ KHỐI DỮ LIỆU — skill talk-series chỉ sửa khối này ============
+  Cú pháp chữ: **từ H6**  ·  {p0|mẫu câu số 0}  ·  {s|slang}  ·  [chỗ thay chuyện thật]
+-->
+<script id="data" type="application/json">
+{
+  "ep": "03",
+  "title_zh": "活人图书馆",
+  "title_vi": "Thư viện người sống",
+  "patterns": [
+    {
+      "p": "虽然……，……却……，而是……",
+      "ex": "虽然名字叫图书馆，这里却没有一本书，而是出借一个个“大活人”"
+    },
+    {
+      "p": "所谓……，指的(就是)……",
+      "ex": "所谓“借阅”，指的就是和“书”面对面交流"
+    },
+    {
+      "p": "……，进而……",
+      "ex": "先增强交流，进而消除偏见"
+    },
+    {
+      "p": "……，为的是……",
+      "ex": "组建活人图书馆，为的是增强人与人之间的交流"
+    },
+    {
+      "p": "……，以便……",
+      "ex": "编写自己的“标签”和“简介”，以便吸引更多读者"
+    }
+  ],
+  "intro": {
+    "fixed": [
+      "哈喽大家好～欢迎欢迎！我是瑾玄。",
+      "同一件事，每个人想法都不一样，我特别好奇大家是怎么想的。",
+      "我在练口语，有说得不对的地方，还请大家多多指教，温柔一点哈～"
+    ],
+    "group": [
+      "好，来吧！我这个人吧，见了陌生人基本说不出话来 😂 可是前几天我听说有一种图书馆，{p0|虽然叫图书馆，里面却没有一本书，而是可以“借”人}——你可以“借”一个陌生人，面对面聊半个多小时。我第一反应是：天哪，我肯定不敢去借 😂 所以今天想聊聊：跟陌生人、跟和自己不一样的人，到底能聊些什么？",
+      "大家有什么想法，随时上麦一起聊哈～"
+    ]
+  },
+  "groups": [
+    {
+      "label": "Khởi động",
+      "blocks": [
+        "A",
+        "B",
+        "F"
+      ]
+    },
+    {
+      "label": "Quan điểm",
+      "blocks": [
+        "G",
+        "H",
+        "E",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "label": "Đào sâu",
+      "blocks": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Người lạ",
+      "q": "你有没有跟不认识的人，一聊就聊了好久？",
+      "story": "说真的，这个我还真没有 😂 我这个人有点{s|社恐}，一般是认识的人我才聊得起来。就算是认识的，要是聊不到一块儿去，我也不怎么说话，更别说陌生人了。除非是朋友介绍的，中间有个人搭桥，我才会慢慢放开一点。跟不认识的人，我总觉得隔着点什么，心里会有点**警惕**，所以很少主动搭话，更聊不久。现在能在这儿跟大家聊这么多，{p3|为的是练口语}，我是硬着头皮上的 😂",
+      "invite": "你们呢？会跟陌生人聊天吗？",
+      "follow": "聊什么了？后来还联系吗？",
+      "help": "就是说，你有没有遇到过这种情况：在车上、在咖啡店，或者排队的时候，旁边一个不认识的人跟你搭话，结果你们越聊越投机，聊了很久？也可能是旅行的时候，或者在网上。说一次就行；没有也没关系，说说你平时会不会跟陌生人聊天。"
+    },
+    {
+      "id": "B",
+      "name": "Ấn tượng đầu",
+      "q": "别人第一次见你，一般会觉得你是什么样的人？",
+      "story": "好多人第一次见我，都说我很{s|高冷} 😂 说我看起来不太好搭话，做事也挺严肃的，像那种很难搞的人。我想可能是因为我这张脸吧，**天生**就不太爱笑，不笑的时候就好像在说“别过来”。说实话，我自己也搞不太清楚，我明明没这个意思啊。反正……挺奇怪的。",
+      "invite": "你们呢？",
+      "follow": "准吗？😂",
+      "help": "就是第一次见面的时候，别人对你的印象。比如有人觉得你很好说话，有人觉得你很安静，也有人觉得你很凶 😂 朋友后来有没有跟你说过：“我第一次见你的时候，以为你是……”？说说就行，准不准都没关系。"
+    },
+    {
+      "id": "F",
+      "name": "Nhìn lầm người",
+      "q": "有没有一个人，你一开始看不惯，后来发现人挺好的？",
+      "story": "说实话，我好像没有这种经历 😂 要是我一开始就看不惯一个人，后来基本也还是看不惯。不过我很少第一眼就下结论。我一般会先看看他怎么说话、怎么做事，还有他的表情什么的，多看几次，看看我们是不是{s|同频}。要是不合拍，那就算了，**起码**的礼貌还是会有的。",
+      "invite": "你们有没有这样的人？",
+      "follow": "是什么让你改变看法的？",
+      "help": "就是说，有没有一个人，你刚认识的时候不太喜欢他，觉得他有点烦、有点怪，或者说话不好听；可是相处久了，你发现他人还不错？可能是同事、同学，也可能是亲戚。说一个人就行。"
+    },
+    {
+      "id": "G",
+      "name": "Học từ người thật",
+      "q": "你平时会去听讲座、参加workshop，或者找人一对一咨询吗？",
+      "story": "我上大学的时候去得比较多，主要是听一些讲将来方向的讲座。那时候挺**迷茫**的，就想听听学长学姐他们是怎么走过来的，多学一点。要是遇到那种特别特别头疼、自己怎么想都想不通的问题，我就会约一个认识的**前辈**，就是我的mentor，专门跟他聊这件事，请他帮我理一理。说真的，跟真人面对面聊，比自己在网上查管用多了。",
+      "invite": "你们呢？会去吗？",
+      "follow": "要是有个地方可以免费“借”一个人，面对面聊半个小时，你会去吗？想借谁？",
+      "help": "就是说，你会不会为了学点什么、解决点什么问题，专门去找“真人”？比如去听一个讲座、参加一个小活动，或者找一个过来人、一个专家一对一聊聊。还是你更习惯自己看书、上网查？说说你自己就行。"
+    },
+    {
+      "id": "H",
+      "name": "Nếu mình là “sách”",
+      "q": "要是让你去当那本“书”，你会讲自己的哪段经历？",
+      "story": "要是我当一本“书”，书名大概叫《寻找自己》吧 😂 我不是什么成功人士，就是一个普通人，一边犯错，一边慢慢找到自己。比如学中文，一开始我根本不敢开口，怕说错，怕别人听不懂。后来发现，只有敢开口，才知道自己能说到什么程度。所以现在就算说得不好，我也不想停下来，就像现在在这儿跟你们聊天一样 😂",
+      "invite": "你们呢？",
+      "follow": "你觉得谁会来“借”你？",
+      "help": "就是假如有一个“活人图书馆”，你不是去借书的，你自己就是那本“书”，别人来找你聊半个小时。你会讲什么？可以是你的工作、你去过的地方、你的爱好，也可以是你走过的一段弯路。说一段就行，不用很厉害。"
+    },
+    {
+      "id": "E",
+      "name": "Lúc buồn",
+      "q": "你心情不好的时候，一般找谁说？",
+      "story": "我心情不好的时候，很少找人说，我一般是去吃东西 😂 我觉得这个比找人说有用多了，人是铁饭是钢嘛。真的，吃饱了以后，脑子好像就转起来了，会想到好多不一样的办法。要是真遇到什么解决不了的事，我就去**请教**一些过来人，看看他们当时是怎么处理的，就这样。",
+      "invite": "你们呢？心情不好一般怎么办？",
+      "follow": "你找的那个人，是会听，还是会给你讲道理？😂",
+      "help": "就是你不开心的时候，一般会怎么办？是找朋友、找家人说说，还是自己一个人待着？有的人会去吃东西、睡觉、打游戏、听歌。说说你自己的习惯就行，没有标准答案。"
+    },
+    {
+      "id": "C",
+      "name": "Nói nhiều nhất với ai",
+      "q": "你平时跟谁话最多？",
+      "story": "说出来有点不好意思，能让我一直说个不停的，大概只有我对象了 😂 跟朋友、家人，我反而话不多，一般是他们说，我听。可是在对象面前，我就像换了个人，天南地北什么都聊，连那种特别无聊的问题都会问，比如：“如果我变成一只蟑螂，你还爱我吗？”😂",
+      "invite": "你们呢？跟谁话最多？",
+      "follow": "在他面前，你会变成另一个人吗？",
+      "help": "就是你平时跟谁聊得最多、话最多？可能是你妈妈、你最好的朋友、你对象，也可能是你家的猫 😂 在他面前，你是不是跟平时不太一样？说一个人就行。"
+    },
+    {
+      "id": "D",
+      "name": "Mở lời với người lạ",
+      "q": "跟不太熟的人聊天，你一般怎么开头？",
+      "story": "我刚才也说了，我很少跟陌生人聊天。不过要是非聊不可，为了不**尴尬**，我一般会拿自己的小烦恼开头，请人家给我出出主意。不会聊太私人的，就是一些兴趣爱好的事。比如我会说：“你的皮肤怎么这么好啊！我的有点干，都不知道怎么保养，你平时是怎么弄的？”或者问问人家平时做不做运动。然后就顺着这个话题，一点一点聊下去。",
+      "invite": "你们一般怎么开头？",
+      "follow": "有没有哪次开头开得特别尴尬？😂",
+      "help": "就是你跟一个不太熟的人在一起，比如新同事、朋友的朋友，或者坐在你旁边的人，你一般会先说什么？问天气、问工作，还是先夸他一句？说说你的小方法就行，没有方法也没关系 😂"
+    },
+    {
+      "id": "T1",
+      "name": "Bạn mới khi lớn",
+      "q": "你觉得长大以后，是不是越来越难交到新朋友了？",
+      "story": "我觉得是。长大以后，人就变得**挑剔**了，交朋友之前心里会先打个分：性格怎么样、合不合得来、是不是一路人……各种标准过一遍，才决定要不要做朋友。小孩子就不一样了，把他们放在一块儿，五分钟就玩到一起了，谁也不管谁是谁 😂",
+      "invite": "你们觉得呢？",
+      "follow": "你最近一个新朋友是怎么认识的？",
+      "help": "就是说，小时候交朋友很容易，一起玩一次就是朋友了。可是长大以后，上班、忙，好像很难再认识新朋友了；就算认识了，也很难变成好朋友。你有这种感觉吗？你最近认识的新朋友，是在哪儿认识的？说说就行。"
+    },
+    {
+      "id": "T2",
+      "name": "MBTI",
+      "q": "你信MBTI吗？",
+      "story": "MBTI我就是拿来参考一下，想快点知道一个人大概是什么性格，不会太**迷信**它。不过我平时用得不多，那些字母是什么意思，我老是记不住 😂 我自己每次测出来都不一样，反正大概是E、S、J这几个，剩下的每次都在变。说来也奇怪，测出来是E人，可是见了陌生人我就不想说话 😂 我听说好多大公司招人的时候也会看这个，不知道是真的假的。",
+      "invite": "你们有人被公司测过吗？",
+      "follow": "认识新朋友，你会先问人家是I人还是E人吗？",
+      "help": "MBTI就是那个性格测试，测出来是四个字母，比如INFP、ESTJ。现在很多人认识新朋友，会先问“你是I人还是E人”。I人比较内向，E人比较外向。你测过吗？你觉得准不准？说说你自己的感觉就行。"
+    },
+    {
+      "id": "T4",
+      "name": "Đánh giá qua mạng",
+      "q": "刷到一条评论，你会不会马上就觉得这个人怎么样了？",
+      "story": "这个我好像没什么发言权 😂 我上网基本就是看剧，评论区很少点开。所以也没被人误会过，也很少去猜写评论的人是什么样的。",
+      "invite": "你们会看评论区吗？有时候评论比视频还好看吧？",
+      "follow": "你在网上被人误会过吗？",
+      "help": "就是在网上刷视频、看新闻的时候，你会看下面的评论吗？看到一条评论，你会不会马上觉得“这个人肯定是……”？或者你自己写的评论，被别人误会过吗？说一件小事就行，没有也没关系。"
+    },
+    {
+      "id": "T5",
+      "name": "Khác thế hệ",
+      "q": "你跟爸妈那一辈的人，聊得来吗？",
+      "story": "十年前的我，跟爸妈基本没什么话说，好像隔着一层**隔阂**。现在不一样了，能聊的东西多了好多。比如我现在也到了要考虑结婚的年纪，这些事爸妈都经历过，有的现在也还在经历，所以我们有很多一样的地方，聊起来容易多了，他们说的话我也更听得进去了。",
+      "invite": "你们呢？跟爸妈聊得来吗？",
+      "follow": "有什么事是你们怎么也说不到一块儿的？",
+      "help": "就是你跟爸妈，或者跟他们差不多年纪的长辈，平时聊得来吗？比如聊工作、聊结婚、聊手机、聊钱，有没有哪些话题一聊就吵，或者怎么说他们都不懂？说说你自己家的情况就行。"
+    }
+  ],
+  "solo_blocks": [
+    {
+      "id": "P",
+      "type": "read",
+      "name": "朗读 (HSKK)",
+      "paras": [
+        "所谓\"活人图书馆\"，其价值并不在于借阅的形式本身，而在于它为偏见与隔阂提供了一条消解的途径。不可否认，人们往往习惯凭借身份、职业或外在标签去评判他人，却鲜少愿意静下心来倾听对方真实的经历与想法。与此同时，\"活人图书馆\"恰恰打破了这一惯性——借阅者与\"图书\"面对面交流，得以听见被误解者的真实声音。值得注意的是，这些\"图书\"大多是承受着种种偏见的普通人，他们自愿分享，不计报酬，所求不过是被理解。由此可见，消除歧视的关键，往往不在宏大的制度变革，而在于每一次真诚的对话与倾听。唯有如此，隔阂才能逐渐消融，理解才能悄然滋生。这种借由\"借阅\"达成的坦诚相见，远比网络上空泛的标签与争论来得真实而深刻，也更能触及人心最柔软之处。"
+      ],
+      "keys": [],
+      "end": ""
+    },
+    {
+      "id": "K1",
+      "type": "read",
+      "name": "课文一 · 什么是活人图书馆",
+      "paras": [
+        "你听说过\"活人图书馆\"吗？其实不难理解，就是以人为\"书\"，人就是这座图书馆的馆藏。{p0|虽然名字叫图书馆，这里却没有一本传统意义上的书，而是出借一个个\"大活人\"}。如果你对某个领域感兴趣或者有困惑，都可以\"借阅\"。{p1|所谓\"借阅\"，指的就是和\"书\"进行面对面的交流学习}；与此同时，也让那些拥有宝贵成功经验的\"书\"们能够将自己的\"财富\"传给其他人。",
+        "活人图书馆中的\"书\"，其实是和我们大多数人一样的普普通通的人。但由于各种不同的原因，这些人和我们在某些方面又是不同的。这种不同可能是因为身份、经历，也可能是因为爱好、特长，等等。",
+        "活人图书馆中的\"书\"是开放的、愿意和众人分享自己经历的人。他们用\"口述\"方式让\"读者\"了解自己的处境、想法，和希望能增强交流，{p2|进而消除人类偏见}。在这里，每个人都是一部\"活自传\"。"
+      ],
+      "keys": [
+        "有一种图书馆，借的不是书，是人",
+        "所谓借阅，就是跟“书”面对面聊",
+        "这些“书”都是普普通通的人",
+        "只是身份、经历或者爱好跟我们不太一样",
+        "他们愿意把自己的故事讲出来",
+        "为的是大家多交流，少点偏见",
+        "要是让我去借……"
+      ],
+      "end": "你们听说过活人图书馆吗？"
+    },
+    {
+      "id": "K2",
+      "type": "read",
+      "name": "课文二 · 有趣的借阅规定",
+      "paras": [
+        "\"活人图书馆\"的组织者经常会被问到的问题是：谁是你们那里最受欢迎的\"书\"？图书管理员是最有权威的，他们判定的标准是被\"借阅\"的次数。不同的国家会有不同的\"最受欢迎的书\"。排在丹麦\"大活人图书馆\"排行榜首位的是\"阿拉伯人\"；葡萄牙\"图书馆\"被\"借阅\"次数最多的是一位移民；而英国则是一名前黑社会成员。",
+        "当然，并非所有人都能有幸成为一本\"书\"。为了保证\"图书\"质量，\"图书馆\"会花大量时间进行筛选。他们会和每本\"候选书\"进行谈话，\"候选书\"需要说明自己的主题以及为什么希望成为一本\"书\"。无论主题是什么，成为\"书\"的动机正确与否是最重要的。",
+        "活人图书馆的\"书\"，是坚持自己的信念并勇敢地和大家分享的人。目前丹麦\"活人图书馆\"里共有55本这样的\"书\"。他们其实都是一些承受着种种偏见的普通人，他们来做\"图书\"供人\"阅读\"完全出于自愿，而且不需要报酬。\"图书馆\"鼓励\"读者\"提问或发表看法，但一切都要以尊重\"图书\"为准。",
+        "借阅规定：\"读者\"需要事先办理一张借阅卡，每次的\"借阅\"内容都会在卡上有记录。每本\"书\"可以由一群人分享，但\"借阅\"时间一般不得超过45分钟。\"读者\"每次只能借走一本\"书\"，但是把\"书\"带回家是绝对不允许的，只能在图书馆限定的区域内\"阅读\"。至于在图书馆的咖啡馆还是楼梯上，由\"读者\"和\"书\"共同商量。如果你不知道自己该选哪本\"书\"，可以求助图书馆管理员——他们会出示一张\"书目\"，让你从中选择自己感兴趣的。\"书\"也有选择\"读者\"的权利，如果感觉受到冒犯，\"书\"可以自己回图书馆。"
+      ],
+      "keys": [
+        "最受欢迎的“书”，看被借了多少次",
+        "每个国家不一样：丹麦是阿拉伯人，葡萄牙是移民，英国是前黑社会成员",
+        "不是谁都能当“书”，要先谈话、筛选",
+        "最重要的是动机对不对",
+        "“书”都是自愿的，也不要报酬",
+        "要办借阅卡，一次一般不超过45分钟",
+        "不能带回家；“书”觉得被冒犯了，可以自己走",
+        "我觉得最有意思的是……"
+      ],
+      "end": "这些规定里，你觉得哪条最有意思？"
+    },
+    {
+      "id": "K3",
+      "type": "read",
+      "name": "课文三 · 组建“活人图书馆”，征集“活人”",
+      "paras": [
+        "{p3|组建活人图书馆，为的是增强人与人之间的交流}，交流彼此的经验，消除各种偏见。活人图书馆中的\"书\"都是志愿者，和图书馆一样，我们的借阅服务也是免费的。",
+        "作为\"书\"，{p4|可以编写自己的\"标签\"和\"简介\"，以便吸引更多的读者}。因此，我们需要那些想成为\"书\"的志愿者提交自己的申请，内容包括自己的\"书名\"（不是姓名）、\"简介\"（不是简历）、\"标签\"（不是身份）等。",
+        "整个活动的流程如下：愿意和大家分享经历的志愿者向我们提交申请表；我们根据收到的申请表编制\"图书目录\"，并向读者公布；读者向我们申请借阅某\"书\"；由我们通知作为\"图书\"的志愿者，在某个相对集中固定的时间、地点，读者进行\"阅读\"；读者根据自己的\"阅读经历\"向我们提交\"书评\"，这些书评有机会成为\"图书目录\"中的新的介绍内容。"
+      ],
+      "keys": [
+        "办活人图书馆，为的是让人多交流、少偏见",
+        "“书”都是志愿者，借阅也免费",
+        "可以自己写“标签”和“简介”，以便吸引读者",
+        "申请要写书名、简介、标签——不是姓名、简历、身份",
+        "流程：申请 → 编目录 → 读者申请 → 约时间地点 → 写书评",
+        "书评还可能变成新的介绍",
+        "要是我当一本“书”，我的书名是……"
+      ],
+      "end": "如果让你当一本“书”，你的书名叫什么？"
+    }
+  ],
+  "chat": {},
+  "post": {
+    "sections": [
+      {
+        "name": "RedNote · Tiêu đề",
+        "parts": [
+          "活人图书馆？原来人也能被“借”走😳"
+        ]
+      },
+      {
+        "name": "RedNote · Nội dung",
+        "parts": [
+          "📚 每周一个话题｜03 活人图书馆\n\n我今天才知道，原来还有“活人图书馆”这种东西 😳 借的不是书，是人！找个陌生人面对面聊半小时，还不要钱。\n\n我上大学那会儿老去听学长学姐讲经历，这个算不算啊？😂\n\n你们听说过吗？要是能“借”，你想借谁？评论区聊聊～\n\n🇻🇳 顺便教大家两个越南语：“thư viện” = 图书馆，“mượn” = 借",
+          "#每周一个话题 #MoiTuanMotChuDe #学中文 #中文口语 #外国人学中文 #活人图书馆 #真人图书馆"
+        ]
+      },
+      {
+        "name": "TikTok",
+        "parts": [
+          "📚 每周一个话题｜03 活人图书馆\n\nNay tui mới biết có cái gọi là “thư viện người sống” 😳 Không mượn sách mà mượn… người! Ngồi tám với người lạ nửa tiếng, free luôn.\nHồi sinh viên tui hay đi nghe anh chị khoá trên chia sẻ, vậy có tính không ta? 😂\n\n借的不是书，是人！\n\nAi biết khái niệm này rồi thì chia sẻ tui với! Nếu được mượn, bạn muốn mượn ai?",
+          "#每周一个话题 #MoiTuanMotChuDe #hoctiengtrung #中文口语 #活人图书馆"
+        ]
+      },
+      {
+        "name": "Instagram",
+        "parts": [
+          "📚 每周一个话题｜03 活人图书馆\n\n我今天才知道，原来还有“活人图书馆”这种东西 😳 借的不是书，是人！找个陌生人面对面聊半小时，还不要钱。\n\n我上大学那会儿老去听学长学姐讲经历，这个算不算啊？😂\n\n你们听说过吗？要是能“借”，你想借谁？",
+          "#每周一个话题 #MoiTuanMotChuDe #学中文 #中文口语 #languageexchange"
+        ]
+      },
+      {
+        "name": "HelloTalk",
+        "parts": [
+          "📚 每周一个话题｜03 活人图书馆\n\n我今天才知道，原来还有“活人图书馆”这种东西 😳 借的不是书，是人！找个陌生人面对面聊半小时，还不要钱。\n我上大学那会儿老去听学长学姐讲经历，这个算不算啊？😂\n你们听说过吗？要是能“借”，你想借谁？\n\nNay tui mới biết có cái gọi là “thư viện người sống” 😳 Không mượn sách mà mượn… người, ngồi tám với người lạ nửa tiếng, free luôn. Hồi sinh viên tui hay đi nghe anh chị khoá trên chia sẻ, vậy có tính không ta? 😂 Ai biết khái niệm này rồi thì chia sẻ tui với! Nếu được mượn, bạn muốn mượn ai?",
+          "#每周一个话题 #MoiTuanMotChuDe #中文口语 #languageexchange #活人图书馆"
+        ]
+      },
+      {
+        "name": "Facebook",
+        "parts": [
+          "📚 每周一个话题｜03 活人图书馆\n\n我今天才知道，原来还有“活人图书馆”这种东西 😳 借的不是书，是人！找个陌生人面对面聊半小时，还不要钱。\n\n我上大学那会儿老去听学长学姐讲经历，这个算不算啊？😂\n\n你们听说过吗？要是能“借”，你想借谁？\n\nNay tui mới biết có cái gọi là “thư viện người sống” 😳 Không mượn sách mà mượn… người, ngồi tám với người lạ nửa tiếng, free luôn. Hồi sinh viên tui hay đi nghe anh chị khoá trên chia sẻ, vậy có tính không ta? 😂 Ai biết khái niệm này rồi thì chia sẻ tui với! Nếu được mượn, bạn muốn mượn ai?",
+          "#每周一个话题 #MoiTuanMotChuDe #学中文 #中文口语"
+        ]
+      },
+      {
+        "name": "Threads",
+        "parts": [
+          "我今天才知道还有“活人图书馆”：借的不是书，是人 😳\n\n上大学那会儿老去听学长学姐讲经历，这个算不算？你听说过吗？",
+          "#每周一个话题"
+        ]
+      }
+    ]
+  },
+  "room_state": {},
+  "gloss": {
+    "社恐": {
+      "py": "shè kǒng",
+      "vi": "sợ giao tiếp xã hội, ngại người lạ (nói vui)"
+    },
+    "高冷": {
+      "py": "gāo lěng",
+      "vi": "trông lạnh lùng, khó bắt chuyện"
+    },
+    "同频": {
+      "py": "tóng pín",
+      "vi": "cùng tần số, hợp nhau"
+    },
+    "警惕": {
+      "py": "jǐng tì",
+      "vi": "cảnh giác, đề phòng"
+    },
+    "天生": {
+      "py": "tiān shēng",
+      "vi": "bẩm sinh, trời sinh"
+    },
+    "起码": {
+      "py": "qǐ mǎ",
+      "vi": "tối thiểu, ít nhất"
+    },
+    "请教": {
+      "py": "qǐng jiào",
+      "vi": "xin chỉ giáo, hỏi ý kiến người có kinh nghiệm"
+    },
+    "尴尬": {
+      "py": "gān gà",
+      "vi": "ngượng ngùng, khó xử"
+    },
+    "迷信": {
+      "py": "mí xìn",
+      "vi": "tin mù quáng"
+    },
+    "挑剔": {
+      "py": "tiāo ti",
+      "vi": "kén chọn, khó tính"
+    },
+    "隔阂": {
+      "py": "gé hé",
+      "vi": "khoảng cách, ngăn cách (trong quan hệ)"
+    },
+    "鲜少": {
+      "py": "xiǎn shǎo",
+      "vi": "hiếm khi"
+    },
+    "惯性": {
+      "py": "guàn xìng",
+      "vi": "thói quen, quán tính"
+    },
+    "歧视": {
+      "py": "qí shì",
+      "vi": "kỳ thị, phân biệt đối xử"
+    },
+    "消融": {
+      "py": "xiāo róng",
+      "vi": "tan chảy, tan biến"
+    },
+    "悄然滋生": {
+      "py": "qiǎo rán zī shēng",
+      "vi": "lặng lẽ nảy sinh"
+    },
+    "坦诚相见": {
+      "py": "tǎn chéng xiāng jiàn",
+      "vi": "thẳng thắn chân thành với nhau"
+    },
+    "空泛": {
+      "py": "kōng fàn",
+      "vi": "chung chung, rỗng tuếch"
+    },
+    "不计报酬": {
+      "py": "bú jì bào chou",
+      "vi": "không màng thù lao"
+    },
+    "馆藏": {
+      "py": "guǎn cáng",
+      "vi": "tài liệu lưu trữ của thư viện"
+    },
+    "筛选": {
+      "py": "shāi xuǎn",
+      "vi": "sàng lọc, chọn lọc"
+    },
+    "冒犯": {
+      "py": "mào fàn",
+      "vi": "xúc phạm, mạo phạm"
+    },
+    "迷茫": {
+      "py": "mí máng",
+      "vi": "mông lung, hoang mang (không biết đi đường nào)"
+    },
+    "前辈": {
+      "py": "qián bèi",
+      "vi": "người đi trước, tiền bối"
+    }
+  },
+  "outro": {
+    "fixed": [
+      "聊得差不多了，时间也到了，今天就先聊到这儿吧。",
+      "今天谢谢大家陪我聊天，还帮我纠正了这么多中文～"
+    ],
+    "group": [
+      "今天你们“借”了我一个小时，记得按时还哦 😂"
+    ],
+    "fixed_end": [
+      "真的特别特别感谢大家！期待下次再见～拜拜，晚安！"
+    ]
+  }
+}
+</script>
+<!-- ============ HẾT KHỐI DỮ LIỆU ============ -->
+<style>
+:root{--bg:#faf8f4;--card:#fff;--ink:#23201c;--mute:#857c71;--line:#ebe4d9;--acc:#c4492d;--acc2:#2f6f6a;--soft:#f4efe7;--ok:#2e7d4f;--h6:#c4492d;--h6bg:#fbe9e4;--pat:#2f6f6a;--patbg:#e3f1ef}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1a18;--card:#242220;--ink:#ece6dc;--mute:#a39a8e;--line:#36322d;--acc:#ec7a5c;--acc2:#6cc0b8;--soft:#2d2a26;--ok:#5fbf86;--h6:#f08a6c;--h6bg:#3a2a25;--pat:#6cc0b8;--patbg:#203432}}
+:root[data-theme="dark"]{--bg:#1b1a18;--card:#242220;--ink:#ece6dc;--mute:#a39a8e;--line:#36322d;--acc:#ec7a5c;--acc2:#6cc0b8;--soft:#2d2a26;--ok:#5fbf86;--h6:#f08a6c;--h6bg:#3a2a25;--pat:#6cc0b8;--patbg:#203432}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 "Segoe UI","Microsoft YaHei","PingFang SC",sans-serif}
+.zh{font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;padding:8px 16px;flex-wrap:wrap}
+.ttl{font-weight:700;font-size:17px}.ttl small{color:var(--mute);font-weight:400;margin-left:6px}
+.sp{flex:1}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:4px 12px;cursor:pointer;font:inherit;font-size:14px}
+.btn:hover{border-color:var(--acc)}
+.mode{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.mode button{border:0;background:var(--card);color:var(--mute);padding:4px 12px;cursor:pointer;font:inherit;font-size:14px}
+.mode button.on{background:var(--acc2);color:#fff}
+.wrap{padding:16px 20px;display:grid;grid-template-columns:280px 1fr;gap:20px;align-items:start}
+@media (max-width:860px){.wrap{grid-template-columns:1fr}}
+/* chế độ Chưa ai vào: không có cột Mục tiêu */
+.wrap.nogoal{grid-template-columns:1fr}.wrap.nogoal aside{display:none}
+aside{position:sticky;top:64px;max-height:calc(100vh - 76px);overflow:auto}
+@media (max-width:860px){aside{position:static;max-height:none}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 12px}
+.lbl{font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.05em;display:flex;justify-content:space-between}
+.lbl b{color:var(--ink)}
+.goal{margin:6px 0 14px}
+.chip{display:inline-block;border-radius:999px;padding:1px 10px;margin:3px 3px 0 0;font-size:15px;background:var(--h6bg);color:var(--h6);cursor:pointer;user-select:none}
+.chip.on{background:var(--ok);color:#fff}
+.ck{display:flex;gap:8px;align-items:flex-start;padding:3px 0;cursor:pointer;font-size:14px}
+.ck input{accent-color:var(--ok);width:16px;height:16px;margin-top:3px;flex:none;cursor:pointer}
+.ck.on>span{color:var(--mute);text-decoration:line-through}
+.ck small{color:var(--mute)}
+.bar{height:6px;background:var(--soft);border-radius:3px;overflow:hidden;margin-top:6px}.bar div{height:100%;background:var(--ok);transition:.3s}
+h2{font-size:13px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em;margin:22px 0 8px}
+h2:first-child{margin-top:0}
+.intro{font-size:18px;line-height:1.8}
+.v.intro{padding:6px 0}.v.intro + .v.intro{border-top:1px dashed var(--line)}
+.v.intro .num{color:var(--mute);font-size:15px;padding-top:4px;flex:none}
+/* khối câu hỏi */
+.blk.done{opacity:.55}
+.bh{display:flex;gap:10px;align-items:flex-start}
+.bh .tick{width:22px;height:22px;flex:none;margin-top:5px;accent-color:var(--ok);cursor:pointer}
+.bh .q{flex:1;font-size:21px;line-height:1.45;font-weight:600;cursor:pointer}
+.bh .tg{border:0;background:none;color:var(--mute);font-size:18px;cursor:pointer;padding:2px 6px}
+.bh .nm{display:block;font-size:12px;color:var(--mute);font-weight:400;text-transform:uppercase;letter-spacing:.05em;font-family:"Segoe UI",sans-serif}
+.bb{margin-top:10px}
+.blk.shut .bb{display:none}
+.st{display:grid;grid-template-columns:92px 1fr;gap:4px 12px;padding:7px 0;border-top:1px dashed var(--line)}
+.st .k{font-size:13px;color:var(--mute);padding-top:3px}
+.st .k b{display:block;color:var(--ink);font-size:14px}
+.st .v{font-size:16px}
+.st.tell .v{font-size:17px;line-height:1.85}
+.st .sub{color:var(--mute);font-size:13px;margin-right:6px;font-family:"Segoe UI",sans-serif}
+.st p{margin:0 0 2px}
+.w{color:var(--h6);font-weight:700;cursor:pointer;border-bottom:2px solid transparent}
+.w.on{color:var(--ok);border-color:var(--ok)}
+.pt{background:var(--patbg);border-radius:4px;padding:0 2px;cursor:pointer}
+.pt.on{outline:2px solid var(--ok)}
+.sl{border-bottom:1px dotted var(--mute)}
+.sl small{color:var(--mute);font-size:12px;margin-left:2px;font-family:"Segoe UI",sans-serif}
+.keys span{display:inline-block;background:var(--soft);border-radius:6px;padding:1px 8px;margin:3px 3px 0 0}
+.keys .arr{background:none;padding:0;color:var(--mute)}
+/* khung chat */
+.chat{margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+.msgs{display:flex;flex-direction:column;gap:4px;margin-bottom:6px}
+.msg{align-self:flex-start;background:var(--soft);border-radius:10px;padding:4px 10px;font-size:15px;max-width:100%;display:flex;gap:8px;align-items:baseline}
+.msg time{font-size:11px;color:var(--mute)}
+.msg button{border:0;background:none;color:var(--mute);cursor:pointer;font-size:12px;padding:0}
+.chat input{width:100%;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--bg);color:var(--ink)}
+.chat input:focus{outline:none;border-color:var(--acc2)}
+.note{font-size:14px;color:var(--mute)}
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);width:min(560px,92vw)}
+dialog textarea{width:100%;height:220px;font:inherit;font-size:14px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px}
+.toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 16px;border-radius:8px;opacity:0;transition:.3s;pointer-events:none}
+.toast.on{opacity:1}
+.v{display:flex;gap:6px;align-items:flex-start}.v .txt{flex:1;min-width:0}
+.cp{border:0;background:none;cursor:pointer;opacity:.35;font-size:14px;padding:2px 4px;flex:none}.cp:hover{opacity:1}
+.bh .cp{margin-top:4px}
+@media (max-width:860px){aside{order:2}.st{grid-template-columns:1fr;gap:0}.st .k{padding-top:0}.bh .q{font-size:19px}header{padding:6px 10px}.wrap{padding:10px}}
+
+.btn.dirty{border-color:var(--acc);color:var(--acc);font-weight:600}
+.btn.dirty::after{content:" •"}
+/* Bôi đen chữ Hán → popup pinyin + nghĩa (cùng cách với on-luyen.html) */
+.cpall{background:var(--soft);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer;font-size:13px;margin-left:auto}
+#main [data-all] .v{padding:8px 0;border-top:1px dashed var(--line);font-size:17px;line-height:1.8}
+.lookupPopup{position:fixed;z-index:200;max-width:300px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.22);padding:14px 16px;font-size:13.5px;line-height:1.6}
+.lookupPopup[hidden]{display:none}
+.lookupPopup .lp-word{font-size:18px;font-weight:700;color:var(--acc)}
+.lookupPopup .lp-pinyin{color:var(--mute);font-size:13px;margin:2px 0 8px}
+.lookupPopup .lp-mean b{color:var(--mute);font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;display:block;margin-bottom:2px}
+.lookupPopup .lp-close{position:absolute;top:6px;right:8px;cursor:pointer;color:var(--mute);font-size:13px;background:none;border:none;padding:4px}
+.lookupPopup .lp-loading{color:var(--mute);font-style:italic}
+</style>
+</head>
+<body>
+<header>
+  <div class="ttl zh" id="ttl"></div>
+  <div class="sp"></div>
+  <div class="mode" id="mode"><button data-m="group">👥 Có người vào</button><button data-m="solo">🙋 Chưa ai vào</button><button data-m="post">📝 Bài đăng</button></div>
+  <button class="btn" id="btnPhone" title="Mở trang này trên điện thoại (cùng Wi-Fi)">📱 Điện thoại</button>
+  <button class="btn" id="btnSave" title="Ghi tick + chat vào file, commit + push git để máy khác mở là làm tiếp">💾 Lưu + đồng bộ</button>
+</header>
+<div class="wrap">
+  <aside id="goal"></aside>
+  <main id="main"></main>
+</div>
+<dialog id="dlg"><p id="dlgT"></p><p><button class="btn" onclick="dlg.close()">Đóng</button></p></dialog>
+<div class="toast" id="toast"></div>
+<div class="lookupPopup" id="lookupPopup" hidden><button class="lp-close" id="lp-close" title="Đóng">✕</button><div id="lp-body"></div></div>
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.26.0/dist/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'talkseries:v4:ep' + D.ep;
+try { const old = 'talkseries:v4:FZ-KY-B01'; if (D.ep === '01' && !localStorage.getItem(KEY) && localStorage.getItem(old)) localStorage.setItem(KEY, localStorage.getItem(old)); } catch (e) {}
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const BL = Object.fromEntries([...D.blocks, ...D.solo_blocks].map(b => [b.id, b]));
+
+/* chữ có đánh dấu → HTML (từ H6 / mẫu câu / slang bấm được) */
+function rich(s, plain = false) {
+  if (plain) return esc(s).replace(/\{p\d\|(.+?)\}/g, '$1').replace(/\{s\|(.+?)\}/g, '$1').replace(/\*\*(.+?)\*\*/g, '$1');
+  return esc(s)
+    .replace(/\{p(\d)\|(.+?)\}/g, (_, i, t) => `<span class="pt" data-p="${i}" title="Mẫu câu: ${esc(D.patterns[i].p)}">${t}</span>`)
+    .replace(/\{s\|(.+?)\}/g, '$1')
+    .replace(/\*\*(.+?)\*\*/g, (_, t) => `<span class="w" data-w="${t}">${t}</span>`);
+}
+const wordsIn = s => [...String(s).matchAll(/\*\*(.+?)\*\*/g)].map(m => m[1]);
+const patsIn = s => [...String(s).matchAll(/\{p(\d)\|/g)].map(m => +m[1]);
+const blockText = b => [b.q, b.story, b.follow, b.help, ...(b.paras || [])].join(' ');
+
+/* ---------- trạng thái: lấy bản mới hơn giữa file (đã đồng bộ git) và trình duyệt này ---------- */
+let S = {mode:'group', word:{}, pat:{}, blk:{}, shut:{}, chat:{}, ts:''};
+const fromFile = Object.assign({}, D.room_state || {}, {chat: D.chat || {}});
+let local = null; try { local = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch(e) {}
+Object.assign(S, (local && (local.ts || '') >= (fromFile.ts || '')) ? local : fromFile);
+let dirty = !!(local && (local.ts || '') > (fromFile.ts || ''));
+const markSave = () => $('#btnSave')?.classList.toggle('dirty', dirty);
+const save = () => { S.ts = new Date().toISOString(); dirty = true; try { localStorage.setItem(KEY, JSON.stringify(S)); } catch(e) {} markSave(); window.TS_onSave?.(); };
+const toast = m => { const t = $('#toast'); t.textContent = m; t.classList.add('on'); setTimeout(() => t.classList.remove('on'), 2600); };
+
+$('#ttl').innerHTML = `Tập ${esc(D.ep)} · ${esc(D.title_zh)}<small>${esc(D.title_vi)}</small>`;
+
+/* ---------- theo chế độ ---------- */
+const curBlocks = () => S.mode === 'solo' ? D.solo_blocks : D.blocks;
+const introLines = () => [...(D.intro.fixed || []), ...[].concat(D.intro.group || [])];
+const outroLines = () => D.outro ? [...(D.outro.fixed || []), ...(D.outro.group || []), ...(D.outro.fixed_end || [])] : [];
+const curText = () => [...(S.mode === 'solo' ? [] : [...introLines(), ...outroLines()]), ...curBlocks().map(blockText)].join(' ');
+const curWords = () => [...new Set(wordsIn(curText()))];
+const curPats = () => [...new Set(patsIn(curText()))].sort();
+
+/* ---------- đồng bộ tick: 1 chỗ đổi → mọi chỗ đổi ---------- */
+function paint() {
+  document.querySelectorAll('[data-w]').forEach(e => e.classList.toggle('on', !!S.word[e.dataset.w]));
+  document.querySelectorAll('.pt[data-p]').forEach(e => e.classList.toggle('on', !!S.pat[e.dataset.p]));
+  document.querySelectorAll('.ck input[data-p]').forEach(e => { e.checked = !!S.pat[e.dataset.p]; e.parentElement.classList.toggle('on', e.checked); });
+  document.querySelectorAll('.blk').forEach(e => { const id = e.dataset.b; e.classList.toggle('done', !!S.blk[id]); e.querySelector('.tick').checked = !!S.blk[id]; });
+  document.querySelectorAll('.ck input[data-b]').forEach(e => { e.checked = !!S.blk[e.dataset.b]; e.parentElement.classList.toggle('on', e.checked); });
+  const W = curWords(), P = curPats(), L = curBlocks();
+  const nW = W.filter(w => S.word[w]).length, nP = P.filter(i => S.pat[i]).length, nB = L.filter(b => S.blk[b.id]).length;
+  const tot = W.length + P.length + L.length;
+  $('#gW').textContent = `${nW}/${W.length}`; $('#gP').textContent = `${nP}/${P.length}`; $('#gB').textContent = `${nB}/${L.length}`;
+  $('#gT').textContent = `${nW + nP + nB}/${tot}`; $('#gBar').style.width = ((nW + nP + nB) / tot * 100) + '%';
+}
+function setBlock(id, on) {
+  S.blk[id] = on;
+  const b = BL[id], ws = wordsIn(blockText(b)), ps = patsIn(blockText(b));
+  if (on) { ws.forEach(w => S.word[w] = true); ps.forEach(i => S.pat[i] = true); }
+  else {
+    /* bỏ tick khối → bỏ luôn từ/mẫu câu của khối, trừ khi một khối khác đã xong cũng có */
+    const other = Object.keys(S.blk).filter(k => S.blk[k] && k !== id && BL[k]).map(k => blockText(BL[k])).join(' ');
+    const ow = new Set(wordsIn(other)), op = new Set(patsIn(other));
+    ws.forEach(w => { if (!ow.has(w)) S.word[w] = false; }); ps.forEach(i => { if (!op.has(i)) S.pat[i] = false; });
+  }
+  save(); paint();
+}
+document.addEventListener('click', e => {
+  const w = e.target.closest('.w[data-w], .chip[data-w]'); if (w) { S.word[w.dataset.w] = !S.word[w.dataset.w]; save(); paint(); return; }
+  const p = e.target.closest('.pt[data-p]'); if (p) { S.pat[p.dataset.p] = !S.pat[p.dataset.p]; save(); paint(); }
+});
+
+/* ---------- cột Mục tiêu ---------- */
+function renderGoal() {
+  $('#goal').innerHTML = `<div class="card">
+    <div class="lbl">Mục tiêu <b id="gT"></b></div><div class="bar"><div id="gBar"></div></div>
+    <div class="goal" style="margin-top:12px"><div class="lbl">Từ khoá bài <b id="gW"></b></div>
+      ${curWords().map(w => `<span class="chip zh" data-w="${esc(w)}">${esc(w)}</span>`).join('')}</div>
+    <div class="goal"><div class="lbl">Mẫu câu bài khoá <b id="gP"></b></div>
+      ${curPats().map(i => `<label class="ck zh"><input type="checkbox" data-p="${i}"><span>${esc(D.patterns[i].p)}<br><small>${esc(D.patterns[i].ex)}</small></span></label>`).join('')}</div>
+    <div class="goal"><div class="lbl">${S.mode === 'solo' ? 'Đã đọc' : 'Nói hết gợi ý'} <b id="gB"></b></div>
+      ${curBlocks().map(b => `<label class="ck"><input type="checkbox" data-b="${b.id}"><span>${esc(b.name)}</span></label>`).join('')}</div>
+  </div>`;
+  $('#goal').querySelectorAll('input[data-p]').forEach(i => i.onchange = () => { S.pat[i.dataset.p] = i.checked; save(); paint(); });
+  $('#goal').querySelectorAll('input[data-b]').forEach(i => i.onchange = () => setBlock(i.dataset.b, i.checked));
+}
+
+/* ---------- khối ---------- */
+const chatBox = id => `<div class="chat"><div class="msgs">${(S.chat[id] || []).map((m, i) => `<div class="msg zh"><span>${esc(m.t)}</span><time>${esc(String(m.at).slice(5))}</time><button data-del="${i}" title="Xoá">✕</button></div>`).join('')}</div>
+  <input class="zh" data-chat="${id}" placeholder="Ghi lại: ý hay, cách nói hay, lỗi được sửa… (Enter)"></div>`;
+const head = (b, title, nm = b.name) => `<div class="bh"><input type="checkbox" class="tick" title="Xong">
+  <div class="q zh">${nm ? `<span class="nm">${esc(nm)}</span>` : ''}${title}</div><button class="cp" title="Copy">📋</button><button class="tg">${S.shut[b.id] ? '▸' : '▾'}</button></div>`;
+const row = (k, v, cls = '') => `<div class="st ${cls}"><div class="k"><b>${k}</b></div><div class="v zh"><div class="txt">${v}</div><button class="cp" title="Copy">📋</button></div></div>`;
+const line = t => `<p class="txt">${t}</p>`;
+function blockCard(b) {
+  let r = row('① Tui kể trước', rich(b.story), 'tell');
+  const ask = [b.invite, b.follow].filter(Boolean);
+  if (ask.length) r += row('② Mời', ask.map(t => `<p>${rich(t)}</p>`).join('') + '<p class="note">为什么这么说？ · 能举个例子吗？ · 我跟你正好相反……</p>');
+  if (b.help) r += row('Họ chưa hiểu / bí', rich(b.help) + '<p class="note">没关系，想到了再说～</p>');
+  return `<div class="card blk ${S.shut[b.id] ? 'shut' : ''}" data-b="${b.id}">${head(b, rich(b.q))}<div class="bb">${r}${chatBox(b.id)}</div></div>`;
+}
+function soloCard(b) {
+  const r = `<div class="st tell" style="display:block;border-top:0"><div class="v zh"><div class="txt">${b.paras.map(p => `<p style="margin-bottom:10px">${rich(p, true)}</p>`).join('')}</div><button class="cp" title="Copy">📋</button></div></div>`;
+  return `<div class="card blk ${S.shut[b.id] ? 'shut' : ''}" data-b="${b.id}">${head(b, esc(b.name), '').replace('<button class="cp" title="Copy">📋</button>', '')}<div class="bb">${r}</div></div>`;
+}
+function postSection(sec) {
+  const parts = sec.parts.map(t => `<div class="v zh"><div class="txt">${esc(t).replace(/\n/g, '<br>')}</div><button class="cp" title="Copy">📋</button></div>`).join('');
+  return `<div class="card" data-all="${esc(sec.parts.join('\n\n'))}"><div class="bh"><div class="q zh">${esc(sec.name)}</div><button class="cpall" title="Copy cả bài">📋 Copy cả bài</button></div><div class="bb">${parts}</div></div>`;
+}
+const lineCard = (title, lines) => `<h2>${title}</h2><div class="card">${lines.map((t, i) => `<div class="v zh intro"><span class="num">${'①②③④⑤⑥⑦⑧⑨'[i]}</span><div class="txt">${rich(t)}</div><button class="cp" title="Copy">📋</button></div>`).join('')}</div>`;
+function renderMain() {
+  if (S.mode === 'post') {
+    $('#main').innerHTML = (D.post?.sections || []).map(postSection).join('');
+    document.querySelectorAll('.cpall').forEach(b => b.onclick = () => copyText(b.closest('[data-all]').dataset.all));
+    document.querySelectorAll('.v .cp').forEach(b => b.onclick = () => copyText(b.parentElement.querySelector('.txt').innerText.trim()));
+    return paint();
+  }
+  const solo = S.mode === 'solo';
+  let h = solo ? '' : lineCard('Mở đầu', introLines());
+  if (solo) h += D.solo_blocks.map(soloCard).join('');
+  else { for (const g of D.groups) h += `<h2>${esc(g.label)}</h2>` + g.blocks.map(id => blockCard(BL[id])).join(''); h += lineCard('Kết thúc', outroLines()); }
+  $('#main').innerHTML = h;
+  document.querySelectorAll('.blk').forEach(c => {
+    const id = c.dataset.b;
+    c.querySelector('.tick').onchange = e => setBlock(id, e.target.checked);
+    const tg = () => { S.shut[id] = !S.shut[id]; save(); c.classList.toggle('shut', S.shut[id]); c.querySelector('.tg').textContent = S.shut[id] ? '▸' : '▾'; };
+    c.querySelector('.tg').onclick = tg;
+    c.querySelector('.q').onclick = e => { if (!e.target.closest('.w,.pt')) tg(); };
+    const hc = c.querySelector('.bh .cp'); if (hc) hc.onclick = () => copyText(c.querySelector('.q').innerText.replace(c.querySelector('.nm')?.innerText || '', '').trim());
+    const inp = c.querySelector('[data-chat]');
+    if (inp) inp.onkeydown = e => {
+      if (e.key !== 'Enter' || e.isComposing || !inp.value.trim()) return;
+      (S.chat[id] ||= []).push({t: inp.value.trim(), at: new Date().toLocaleString('sv').slice(0, 16)}); save();
+      const y = scrollY; renderMain(); scrollTo(0, y); $(`[data-chat="${id}"]`).focus();
+    };
+    c.querySelectorAll('[data-del]').forEach(x => x.onclick = () => { S.chat[id].splice(+x.dataset.del, 1); save(); const y = scrollY; renderMain(); scrollTo(0, y); });
+  });
+  document.querySelectorAll('.v .cp').forEach(b => b.onclick = () => copyText(b.parentElement.querySelector('.txt').innerText.trim()));
+  paint();
+}
+
+/* ---------- copy (chạy được cả trên điện thoại qua http trong mạng nhà) ---------- */
+async function copyText(t) {
+  try { await navigator.clipboard.writeText(t); }
+  catch(e) { const a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', ''); a.style.cssText = 'position:fixed;top:0;opacity:0'; document.body.appendChild(a); a.select(); a.setSelectionRange(0, t.length); document.execCommand('copy'); a.remove(); }
+  toast('Đã copy');
+}
+function render() {
+  document.querySelectorAll('#mode button').forEach(b => b.classList.toggle('on', b.dataset.m === S.mode));
+  document.querySelector('.wrap').classList.toggle('nogoal', S.mode !== 'group');
+  renderGoal(); renderMain();
+}
+document.querySelectorAll('#mode button').forEach(b => b.onclick = () => { S.mode = b.dataset.m; save(); render(); scrollTo(0, 0); });
+
+/* ---------- Lưu: ghi vào file + commit + push (cần mở trang bằng Mo-Talk-series.bat) ---------- */
+const viaServer = location.protocol.startsWith('http');
+$('#btnSave').onclick = async () => {
+  if (!viaServer) {
+    $('#dlgT').innerHTML = 'Trang đang mở trực tiếp từ file nên chưa đẩy lên git được.<br><br>Mở thư mục <b>Talk series</b> → bấm đúp <b>Mo-Talk-series.bat</b> → trang tự mở lại → bấm Lưu. Tick và chat vẫn còn nguyên.';
+    return dlg.showModal();
+  }
+  const btn = $('#btnSave'); btn.disabled = true; btn.textContent = '⏳ Đang lưu…';
+  try {
+    const st = {mode: S.mode, word: S.word, pat: S.pat, blk: S.blk, shut: S.shut, ts: S.ts};
+    const r = await fetch('/save', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({page: decodeURIComponent(location.pathname), chat: S.chat, room_state: st})});
+    const j = await r.json(); toast(j.msg); if (j.saved) { dirty = false; markSave(); }
+  } catch(e) { toast('Không gọi được máy chủ lưu — cửa sổ Mo-Talk-series.bat còn mở không?'); }
+  btn.disabled = false; btn.textContent = '💾 Lưu + đồng bộ';
+};
+/* ---------- 📱 mở trên điện thoại (cùng Wi-Fi) ---------- */
+$('#btnPhone').onclick = async () => {
+  if (!viaServer) { $('#dlgT').innerHTML = 'Mở trang bằng <b>Mo-Talk-series.bat</b> trước, rồi bấm lại nút này.'; return dlg.showModal(); }
+  try {
+    const j = await (await fetch('/lan')).json();
+    const url = j.base + location.pathname;
+    let qr = '';
+    if (window.qrcode) { const q = qrcode(0, 'M'); q.addData(url); q.make(); qr = q.createSvgTag({cellSize: 6, margin: 2, scalable: true}); }
+    $('#dlgT').innerHTML = `Điện thoại vào <b>cùng Wi-Fi</b> với máy tính → quét mã:<div style="width:220px;background:#fff;padding:6px;border-radius:8px;margin:10px 0">${qr}</div><code>${esc(url)}</code><br><span class="note">Lần đầu Windows có thể hỏi cho phép Python dùng mạng → chọn “Private network”.</span>`;
+  } catch(e) { $('#dlgT').textContent = 'Không lấy được địa chỉ mạng — cửa sổ Mo-Talk-series.bat còn mở không?'; }
+  dlg.showModal();
+};
+markSave();
+render();
+</script>
+<script>
+/* Bôi đen chữ Hán → popup pinyin (pinyin-pro, offline sau khi tải) + nghĩa (MyMemory, cần internet). Không bật trong ô nhập. */
+(function(){
+  const MAX_LOOKUP_LEN = 30;
+  const popup = document.getElementById('lookupPopup'), popupBody = document.getElementById('lp-body');
+  const translateCache = new Map();
+  let requestToken = 0, currentRect = null;
+  const hideLookup = () => { popup.hidden = true; currentRect = null; };
+  document.getElementById('lp-close').addEventListener('click', hideLookup);
+  const isFormField = n => !!(n && n.closest && n.closest('input,textarea,[contenteditable="true"]'));
+  const MEANING_OVERRIDES = {
+    '不可否认': 'Không thể phủ nhận',
+    '与此同时': 'Đồng thời, cùng lúc đó',
+    '长此以往': 'Cứ kéo dài như vậy, nếu cứ tiếp diễn như thế',
+    '归根结底': 'Nói cho cùng, xét đến cùng',
+    '由此可见': 'Qua đó có thể thấy',
+    '另辟蹊径': 'Tìm một hướng đi khác, mở lối riêng',
+    '寄望于': 'Đặt hy vọng vào, kỳ vọng vào',
+    '权衡利弊': 'Cân nhắc được mất, cân nhắc lợi hại',
+    '诚然': 'Quả thật, đúng là (thừa nhận trước khi phản biện)',
+    '值得注意的是': 'Điều đáng chú ý là',
+    '换言之': 'Nói cách khác',
+    '须知': 'Cần biết rằng, nên biết là',
+    '正所谓': 'Đúng như câu người ta vẫn nói',
+    '毕竟': 'Dù sao, xét cho cùng',
+    '值得深思的是': 'Điều đáng suy ngẫm là',
+    '可见一斑': 'Qua đó thấy được phần nào của cả vấn đề',
+    '值得借鉴的是': 'Điều đáng học hỏi, tham khảo là',
+    '殊不知': 'Nào ngờ, không ngờ rằng',
+    '坐吃山空': 'Ngồi không ăn tiêu thì núi vàng cũng cạn (ăn bám mãi rồi cũng hết)',
+    '不容忽视': 'Không thể xem nhẹ, không thể bỏ qua',
+    '耐人寻味': 'Đáng để suy ngẫm, càng ngẫm càng thấy thú vị',
+    '可谓': 'Có thể nói là',
+    '罄竹难书': 'Nhiều vô kể, kể không xuể (tội lỗi/khuyết điểm quá nhiều)',
+    '未免': 'Không tránh khỏi, có phần (hơi...)',
+    '足见': 'Đủ thấy, đủ để chứng tỏ',
+    '莫衷一是': 'Không ai thống nhất được, mỗi người một ý',
+    '不谋而合': 'Không hẹn mà gặp, trùng hợp ăn ý',
+    '宽带': 'Băng thông rộng (internet cáp quang/ADSL)',
+    '手机': 'Điện thoại di động',
+  };
+
+  function translate(text){
+    const key = 'zh|' + text;
+    if(translateCache.has(key)) return translateCache.get(key);
+    if(Object.prototype.hasOwnProperty.call(MEANING_OVERRIDES, text)){ const p = Promise.resolve(MEANING_OVERRIDES[text]); translateCache.set(key, p); return p; }
+    if(window.TS_MEANING){ const p = window.TS_MEANING(text); translateCache.set(key, p); p.catch(() => translateCache.delete(key)); return p; }
+    const mm = (q, pair) => fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=${pair}`).then(r => { if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+      .then(d => { const t = d && d.responseData && d.responseData.translatedText; if(!t) throw new Error('empty'); return t; });
+    const looksEnglish = s => /^[\x00-\x7F]+$/.test(s) && /[A-Za-z]{2}/.test(s);
+    const p = mm(text, 'zh-CN|vi').then(t => {
+      if(!looksEnglish(t)) return t;
+      return mm(t, 'en|vi').then(v => looksEnglish(v) ? `${t} (tiếng Anh)` : v).catch(() => `${t} (tiếng Anh)`);
+    });
+    translateCache.set(key, p);
+    return p;
+  }
+  function getPinyin(text){
+    try{ if(window.pinyinPro && typeof window.pinyinPro.pinyin === 'function') return window.pinyinPro.pinyin(text, {toneType:'symbol', type:'string'}); }catch(e){}
+    return '';
+  }
+  const escapeHtml = s => (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function positionPopup(){
+    if(!currentRect) return;
+    const margin = 8, w = popup.offsetWidth, h = popup.offsetHeight;
+    let left = currentRect.left, top = currentRect.bottom + margin;
+    if(left + w > innerWidth - margin) left = innerWidth - w - margin;
+    if(left < margin) left = margin;
+    if(top + h > innerHeight - margin) top = currentRect.top - h - margin;
+    if(top < margin) top = margin;
+    popup.style.left = left + 'px'; popup.style.top = top + 'px';
+  }
+  function showLookup(text, rect){
+    const myToken = ++requestToken;
+    currentRect = rect;
+    const G = (typeof D !== 'undefined' && D.gloss) || {};
+    const key = G[text] ? text : (() => { const ks = Object.keys(G).filter(k => text.includes(k)).sort((a, b) => b.length - a.length); return ks.length && text.length - ks[0].length <= 2 ? ks[0] : ''; })();
+    if(key){
+      popupBody.innerHTML = `<div class="lp-word">${escapeHtml(text)}</div><div class="lp-pinyin">${escapeHtml(key === text ? G[key].py : getPinyin(text))}</div><div class="lp-mean"><b>Nghĩa${key === text ? '' : ' · ' + escapeHtml(key)}</b>${escapeHtml(G[key].vi)}</div>`;
+      popup.hidden = false; positionPopup();
+      return;
+    }
+    popupBody.innerHTML = `<div class="lp-word">${escapeHtml(text)}</div><div class="lp-pinyin">${escapeHtml(getPinyin(text)) || '—'}</div><div class="lp-mean" id="lp-mean-word"><b>Nghĩa</b><span class="lp-loading">đang tra…</span></div>`;
+    popup.hidden = false; positionPopup();
+    translate(text).then(t => {
+      if(myToken !== requestToken) return;
+      const el = document.getElementById('lp-mean-word'); if(el) el.innerHTML = `<b>Nghĩa</b>${escapeHtml(t)}`; positionPopup();
+    }).catch(() => {
+      if(myToken !== requestToken) return;
+      const el = document.getElementById('lp-mean-word'); if(el) el.innerHTML = `<b>Nghĩa</b><span class="lp-loading">Không tra được (cần internet)</span>`; positionPopup();
+    });
+  }
+  function handleSelection(){
+    const sel = getSelection();
+    if(!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    const text = sel.toString().trim();
+    if(!text || !/[一-鿿]/.test(text) || text.length > MAX_LOOKUP_LEN) return;
+    const range = sel.getRangeAt(0);
+    const el = n => n.nodeType === 3 ? n.parentElement : n;
+    if(isFormField(el(range.startContainer)) || isFormField(el(range.endContainer))) return;
+    showLookup(text, range.getBoundingClientRect());
+  }
+  document.addEventListener('mouseup', e => { if(!popup.contains(e.target)) setTimeout(handleSelection, 0); });
+  document.addEventListener('touchend', () => setTimeout(handleSelection, 0));
+  document.addEventListener('keyup', e => { if(e.shiftKey) setTimeout(handleSelection, 0); });
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') hideLookup(); });
+  document.addEventListener('mousedown', e => { if(!popup.hidden && !popup.contains(e.target)) hideLookup(); });
+  addEventListener('scroll', hideLookup, true);
+})();
+</script>
+</body>
+</html>

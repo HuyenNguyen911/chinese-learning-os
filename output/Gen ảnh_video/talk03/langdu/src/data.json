@@ -1,0 +1,108 @@
+{
+ "title": "朗读",
+ "topic": "活人图书馆",
+ "channel": "@瑾玄在练嘴",
+ "character": "yh_front_v1",
+ "gender": "male",
+ "text": "所谓\"活人图书馆\"，其价值并不在于借阅的形式本身，而在于它为偏见与隔阂提供了一条消解的途径。不可否认，人们往往习惯凭借身份、职业或外在标签去评判他人，却鲜少愿意静下心来倾听对方真实的经历与想法。与此同时，\"活人图书馆\"恰恰打破了这一惯性——借阅者与\"图书\"面对面交流，得以听见被误解者的真实声音。值得注意的是，这些\"图书\"大多是承受着种种偏见的普通人，他们自愿分享，不计报酬，所求不过是被理解。由此可见，消除歧视的关键，往往不在宏大的制度变革，而在于每一次真诚的对话与倾听。唯有如此，隔阂才能逐渐消融，理解才能悄然滋生。这种借由\"借阅\"达成的坦诚相见，远比网络上空泛的标签与争论来得真实而深刻，也更能触及人心最柔软之处。",
+ "words": [
+  {
+   "han": "隔阂",
+   "py": "géhé",
+   "en": "barrier, rift",
+   "vi": "khoảng cách, ngăn cách"
+  },
+  {
+   "han": "消解",
+   "py": "xiāojiě",
+   "en": "to dissolve",
+   "vi": "hoá giải, xoá tan"
+  },
+  {
+   "han": "凭借",
+   "py": "píngjiè",
+   "en": "to rely on",
+   "vi": "dựa vào"
+  },
+  {
+   "han": "评判",
+   "py": "píngpàn",
+   "en": "to judge",
+   "vi": "đánh giá, phán xét"
+  },
+  {
+   "han": "鲜少",
+   "py": "xiǎnshǎo",
+   "en": "seldom",
+   "vi": "hiếm khi"
+  },
+  {
+   "han": "倾听",
+   "py": "qīngtīng",
+   "en": "to listen closely",
+   "vi": "lắng nghe"
+  },
+  {
+   "han": "惯性",
+   "py": "guànxìng",
+   "en": "habit, inertia",
+   "vi": "thói quen, quán tính"
+  },
+  {
+   "han": "得以",
+   "py": "déyǐ",
+   "en": "to be able to",
+   "vi": "nhờ đó mà có thể"
+  },
+  {
+   "han": "不计报酬",
+   "py": "bú jì bàochou",
+   "en": "ask nothing in return",
+   "vi": "không màng thù lao"
+  },
+  {
+   "han": "歧视",
+   "py": "qíshì",
+   "en": "discrimination",
+   "vi": "kỳ thị"
+  },
+  {
+   "han": "悄然滋生",
+   "py": "qiǎorán zīshēng",
+   "en": "quietly grow",
+   "vi": "lặng lẽ nảy sinh"
+  },
+  {
+   "han": "坦诚相见",
+   "py": "tǎnchéng xiāngjiàn",
+   "en": "open and honest",
+   "vi": "thẳng thắn chân thành"
+  },
+  {
+   "han": "空泛",
+   "py": "kōngfàn",
+   "en": "vague, empty",
+   "vi": "chung chung, rỗng"
+  },
+  {
+   "han": "触及",
+   "py": "chùjí",
+   "en": "to touch, reach",
+   "vi": "chạm tới"
+  }
+ ],
+ "groups": [
+  [
+   "隔阂",
+   "消解"
+  ],
+  [
+   "凭借",
+   "评判"
+  ],
+  [
+   "鲜少",
+   "倾听"
+  ]
+ ]
+}
