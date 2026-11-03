@@ -7,13 +7,12 @@ Nhân vật nam -> zh-CN-YunxiNeural (nam thiếu niên); nữ -> zh-CN-Xiaoxiao
 Tốc độ: gần nhịp bản xứ (-5%). Đọc TỪNG CÂU (tách ở 。！？；：) rồi ghép, nghỉ thêm 0.2s sau 。 / 0.08s sau ；：
 — đọc liền cả bài thì đoạn đầu nhanh, nối chữ; tách vụn hơn thì câu đầu lại chậm, đứt nhịp (user chê 2026-10-28).
 Mốc từng chữ lấy từ WordBoundary của Edge (cộng thêm mốc đầu mỗi câu). Hậu kỳ: chuẩn độ to -16 LUFS,
-tăng nhẹ dải trầm cho giọng dày, nén nhẹ — KHÔNG cắt lặng đầu (giữ đúng mốc). Cần ffmpeg + numpy.
+tăng nhẹ dải trầm cho giọng dày, nén nhẹ — KHÔNG cắt lặng đầu (giữ đúng mốc). Cần ffmpeg.
 """
 import argparse, asyncio, json, re, subprocess, sys
 from pathlib import Path
 
 import edge_tts
-import numpy as np
 
 sys.stdout.reconfigure(encoding="utf-8")
 here = Path(__file__).parent
@@ -54,17 +53,17 @@ async def synth(t):
 pcm, marks, t0 = [], [], 0.0
 for ch in chunks:
     mp3, m = asyncio.run(synth(ch))
-    x = np.frombuffer(subprocess.run(["ffmpeg", "-loglevel", "error", "-i", "pipe:0", "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"],
-                                     input=mp3, capture_output=True, check=True).stdout, np.int16)
+    x = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", "pipe:0", "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"],
+                       input=mp3, capture_output=True, check=True).stdout          # PCM 16-bit: 2 byte/mẫu (bỏ numpy — venv máy này hỏng numpy)
     marks += [(t0 + o, d, w) for o, d, w in m]
-    pause = np.zeros(int(PAUSE(ch) * SR), np.int16)
+    pause = bytes(2 * int(PAUSE(ch) * SR))
     pcm += [x, pause]
-    t0 += (len(x) + len(pause)) / SR
-raw = np.concatenate(pcm)[: -len(pause)]
+    t0 += (len(x) + len(pause)) / 2 / SR
+raw = b"".join(pcm)[: -len(pause)]
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "s16le", "-ar", str(SR), "-ac", "1", "-i", "pipe:0", "-ar", "44100", "-af",
                 "highpass=f=70,equalizer=f=180:t=q:w=1:g=3,equalizer=f=3500:t=q:w=1.5:g=1.5,"
                 "acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120,loudnorm=I=-16:TP=-1.5:LRA=9",
-                str(audio / "read.wav")], input=raw.tobytes(), check=True)
+                str(audio / "read.wav")], input=raw, check=True)
 print("số câu:", len(chunks))
 dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(audio / "read.wav")],
                            capture_output=True, text=True).stdout)

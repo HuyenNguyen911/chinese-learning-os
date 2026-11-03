@@ -26,7 +26,8 @@ const LN: Ln[] = lines.idx.map((s, i) => {
 const CLIPS = [[1, 3, "K1"], [4, 6, "K10"], [7, 8, "K2"], [9, 11, "K3"], [12, 13, "K11"], [14, 14, "K12"], [15, 16, "K4"], [17, 19, "K5"], [20, 20, "K6"], [21, 22, "K13"], [23, 24, "K7"], [25, 26, "K8"], [27, 30, "K14"], [31, 32, "K9"]] as [number, number, string][];
 const TAIL = new Set(["K4"]);                                         // clip lấy phần CUỐI (nắm đấm mừng) cho khớp đoạn đọc
 const SEGS = CLIPS.map(([a, b, id]) => {
-  const s = LN[a - 1].t0, e = b < LN.length ? LN[b].t0 : ANS, dur = e - s;
+  // clip cuối còn chạy tiếp tới OUT0+0.5 (= ANS+1.7) -> tính tốc độ trên ANS+2.5 để không đòi khung vượt quá 10s clip
+  const s = LN[a - 1].t0, e = b < LN.length ? LN[b].t0 : ANS + 2.5, dur = e - s;
   const rate = Math.min(1.6, Math.max(0.8, 10 / dur));              // clip gốc 10s: nén/giãn cho vừa đoạn đọc
   const startSec = TAIL.has(id) ? Math.max(0, 10 - dur * rate - 0.2) : 0;
   return { id, s, e, dur, rate, startSec };
