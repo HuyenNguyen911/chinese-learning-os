@@ -440,10 +440,8 @@ footer.credit{text-align:center; color:var(--ink-faint); font-size:11.5px; margi
   <main class="mainCol">
 
   <nav class="tabs" role="tablist">
-    <button role="tab" aria-selected="true" data-part="p1" id="tab-p1-btn">Phần 1 · 要点</button>
-    <button role="tab" aria-selected="false" data-part="p2">Phần 2 · 模拟测试</button>
-    <button role="tab" aria-selected="false" data-part="p3">Phần 3 · 总结</button>
-    <span id="lesson-cite" class="mono"></span>
+    <button role="tab" aria-selected="true" data-part="p2">Phần 1 · 模拟测试</button>
+    <button role="tab" aria-selected="false" data-part="p1" id="tab-p1-btn">Phần 2 · 要点</button>    <span id="lesson-cite" class="mono"></span>
   </nav>
 
   <!-- ============ 听力 ============ -->
@@ -888,7 +886,9 @@ function goToDay(n){
      THEO THIẾT KẾ không có Phần 1 — không được ẩn kẻo tưởng nhầm là đã xong hết. */
   const noPart1 = (day.tab === 'doc' || day.tab === 'viet');
   document.getElementById('tab-p1-btn').hidden = noPart1;
-  showPart(noPart1 ? 'p2' : 'p1');
+  /* Thứ tự tab: 模拟测试 (p2) hiện đầu = "Phần 1", 要点 (p1) = "Phần 2" (user 2026-11-04).
+     Nút Phần 3 · 总结 đã bỏ khỏi thanh tab (code showSummary/panel-summary giữ lại, chưa xoá). */
+  showPart('p2');
   document.getElementById('sidebar').classList.remove('open');
   document.getElementById('sidebarScrim').classList.remove('open');
   renderSidebar();
@@ -2420,7 +2420,7 @@ function refreshSummary(){
   let html = '';
   if(day.tab === 'nghe'){
     if(!Object.keys(ngheResults).length){
-      html += `<div style="margin-bottom:10px; color:var(--ink-faint)">Chưa nộp bài trắc nghiệm nào ở Phần 2 (一/二/三/五/六).</div>`;
+      html += `<div style="margin-bottom:10px; color:var(--ink-faint)">Chưa nộp bài trắc nghiệm nào ở Phần 1 (一/二/三/五/六).</div>`;
     } else {
       ['ex3','ex5','ex6'].forEach(k=>{
         if(ngheResults[k]) html += `<div style="margin-bottom:6px">${ngheResults[k].label}：<b>${ngheResults[k].correct}</b> / ${ngheResults[k].total}</div>`;
@@ -2436,7 +2436,7 @@ function refreshSummary(){
   if(day.tab === 'doc'){
     const graded = DOC_ARTICLES.filter(a=>docResults[a.key]);
     if(!graded.length){
-      html += `<div style="margin-bottom:10px; color:var(--ink-faint)">Chưa nộp bài nào ở Phần 2.</div>`;
+      html += `<div style="margin-bottom:10px; color:var(--ink-faint)">Chưa nộp bài nào ở Phần 1.</div>`;
     } else {
       html += graded.map(a=>`<div style="margin-bottom:6px">${a.label}：<b>${docResults[a.key].correct}</b> / ${docResults[a.key].total}</div>`).join('');
       const totalCorrect = graded.reduce((s,a)=>s+docResults[a.key].correct,0);
@@ -2455,7 +2455,7 @@ function refreshSummary(){
       return fb && fb.style.display !== 'none' && !fb.classList.contains('loading');
     });
     if(!gradedFb.length){
-      html += `<div style="margin-bottom:10px; color:var(--ink-faint)">Chưa nộp bài viết nào ở Phần 2.</div>`;
+      html += `<div style="margin-bottom:10px; color:var(--ink-faint)">Chưa nộp bài viết nào ở Phần 1.</div>`;
     } else {
       gradedFb.forEach(f=>{
         const fb = document.getElementById(f.id);
