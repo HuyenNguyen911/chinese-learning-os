@@ -1,0 +1,172 @@
+{
+ "style": "Flat pastel chibi cartoon illustration, thin clean outlines, soft flat colors, big heads, cute and warm, wide 3:2 landscape shot, minimal simple background with few details, light airy color palette (ivory white, soft sage green, pale sky blue, light natural wood), no text, no letters, no numbers, no logos anywhere. At most one or two tiny stars, no glitter. Every face is kind and gentle.",
+ "jx": "JX, a young woman about 25: pretty chibi face, big shiny brown eyes with highlights, rosy cheeks, long straight black hair parted in the middle, neatly combed and tied into two TIGHT, TIDY long braids with small pink ribbons (smooth sleek hair, absolutely no loose or flyaway strands), kind smile. JX appears only ONCE in the picture.",
+ "jx_out": "JX wears a trendy youthful outfit: a cream cropped knit sweater with puffy sleeves, a short light-pink pleated skirt above the knee, white socks and white sneakers.",
+ "jx_badge": "Inside the library JX wears a small badge shaped like an open book on her chest.",
+ "reader": "The reader is a friendly young man about 25: short neat black hair, round thin-framed glasses, kind face, a sage-green crewneck sweater, beige trousers, white sneakers. He appears only ONCE in the picture and is about the same height as JX.",
+ "library": "Setting: a bright, MINIMAL modern library reading room - light wood floor, plain ivory walls, one or two low bookshelves, a few small round light-wood tables with two chairs each, big window with soft daylight, one or two plants. Few details.",
+ "nobody_text": "Any paper, board, brochure, phone or screen shows only simple colored shapes, lines and pictures, never letters or numbers.",
+ "vendor": "The street food vendor is a kind, cheerful middle-aged Chinese man with a round face, short black hair, a white apron and a small white cap. He appears only ONCE.",
+ "street": "Setting: a bright, MINIMAL street-food corner on a sunny day - one small wooden food stall with bamboo steamers of steamed buns and dumplings, a simple awning, a light paved sidewalk, one or two plants. Few details.",
+ "scenes": {
+  "K1": [
+   "jx",
+   "jx_out",
+   "jx_badge",
+   "library",
+   "nobody_text",
+   "JX sits alone at a small round light-wood table in the library with a calm friendly smile, hands folded on the table, waiting to be borrowed; an empty chair opposite her. A small standing table sign in front of her shows only a drawing of an open book (no text). Side-front view."
+  ],
+  "K2": [
+   "jx",
+   "jx_out",
+   "jx_badge",
+   "reader",
+   "library",
+   "nobody_text",
+   "JX sits at a small round light-wood table. The reader has just sat down opposite her, holding a small borrowing card that shows only a tiny drawing of a face (no text). JX places one hand on her chest, introducing herself with a warm gentle smile. Beside JX's head floats a round white thought bubble showing a tiny chibi JX holding a little glowing lantern, walking along a winding path and looking around curiously, searching. Side-front view, both clearly visible."
+  ],
+  "K3b": [
+   "jx",
+   "jx_out",
+   "jx_badge",
+   "reader",
+   "library",
+   "nobody_text",
+   "JX and the reader sit facing each other at the same small round light-wood table (both seated on chairs, like a conversation). JX opens a big book on the table; its pages glow softly and a ribbon of warm golden light and floating pages swirls up out of the book, as if a memory is beginning. The reader watches the light with wonder. Side-front view, both clearly visible."
+  ],
+  "K4": [
+   "jx",
+   "jx_out",
+   "nobody_text",
+   "MEMORY scene: JX stands at a crossroads of two simple paths in a soft green field, beside a wooden signpost with two blank arrow signs. She looks WORRIED and anxious: eyebrows drawn together, lips pressed, both hands clutched together in front of her chest, looking from one path to the other. No papers or other objects on the ground. Few details."
+  ],
+  "K5": [
+   "jx",
+   "jx_out",
+   "classroom",
+   "teacher",
+   "classmates_m",
+   "board_text",
+   "MEMORY scene: WIDE SIDE VIEW of a spacious classroom: all the desks and students are grouped in the LEFT HALF of the picture; the chalkboard is on the far RIGHT wall, separated from the front desks by a WIDE EMPTY stretch of floor (about four desks long), like a big open teaching area; the chalkboard hangs on the wall at the RIGHT side of the picture; all desks face the board, so JX and her classmates sit facing RIGHT towards the board (seen from a side three-quarter angle, so JX's face is visible in three-quarter profile looking at the board). The teacher stands next to the board, half-turned towards the students, holding a piece of chalk, friendly. JX sits in the front row facing the board, calm and focused, writing in her notebook with a pen (only scribbles), a Chinese textbook open on her desk (only pictures). The two classmates sit behind her facing the board. No sweat drop."
+  ],
+  "K6": [
+   "jx",
+   "jx_out",
+   "classroom",
+   "teacher",
+   "classmates_m",
+   "board_text",
+   "MEMORY scene: WIDE SIDE VIEW of a spacious classroom: all the desks and students are grouped in the LEFT HALF of the picture; the chalkboard is on the far RIGHT wall, separated from the front desks by a WIDE EMPTY stretch of floor (about four desks long), like a big open teaching area; the chalkboard hangs on the wall at the RIGHT side of the picture; all desks face the board, so JX and her classmates sit facing RIGHT towards the board (seen from a side three-quarter angle, so JX's face is visible in three-quarter profile looking at the board). The teacher stands next to the board, facing the students, asking the class a question with a friendly open-hand gesture. JX, seated in the front row facing the board, keeps BOTH hands down on her desk (she does NOT raise her hand), shrinking a little in her seat with a small sweat drop on her forehead and nervous eyes, avoiding being called on. The classmates sit behind her facing the board."
+  ],
+  "K6b": [
+   "jx",
+   "jx_out",
+   "vendor",
+   "street",
+   "shop_sign",
+   "MEMORY scene: JX walks along the sidewalk and stops a few steps away from the food stall, peeking at the steamed buns with hungry eyes, but hesitating shyly, hands clutching the strap of her small shoulder bag, a little nervous. The vendor is busy at the stall in the background. Side view."
+  ],
+  "K7a": [
+   "jx",
+   "jx_out",
+   "vendor",
+   "street",
+   "shop_sign",
+   "JX takes a brave step forward to the food stall and orders, pointing at a small menu board that shows only pictures of buns and dumplings (no text), speaking with a slightly nervous but brave smile; the vendor leans in, listening patiently with a kind nod. Side-front view, both clearly visible."
+  ],
+  "K7b": [
+   "jx",
+   "jx_out",
+   "vendor",
+   "street",
+   "shop_sign",
+   "MEMORY scene: the vendor gives JX a warm thumbs-up with a big smile while handing her a paper bag of steamed buns. JX holds the warm buns with both hands, beaming with joy, eyes sparkling, a couple of tiny sparkles around her. Side-front view."
+  ],
+  "K8": [
+   "jx",
+   "jx_out",
+   "jx_badge",
+   "reader",
+   "library",
+   "nobody_text",
+   "JX and the reader sit facing each other at the same small round light-wood table (both seated on chairs, like a conversation). JX happily tells her story, gesturing with one hand and smiling; the reader listens with interest, chin on his hand. No papers on the floor. Side-front view, both clearly visible."
+  ],
+  "K8b": [
+   "jx",
+   "jx_out",
+   "jx_badge",
+   "reader",
+   "library",
+   "nobody_text",
+   "JX and the reader sit facing each other at the same small round light-wood table (both seated on chairs, like a conversation). The reader leans forward over the table towards JX with curious eyes, about to ask her a question, one hand raised slightly; JX listens attentively. Side-front view, both clearly visible."
+  ],
+  "K9": [
+   "jx",
+   "jx_hike",
+   "mountain",
+   "nobody_text",
+   "MEMORY scene: JX walks up the rocky winding mountain trail with her small backpack, a bit tired but steady, under soft grey clouds. Side view, walking uphill to the right."
+  ],
+  "K10": [
+   "jx",
+   "jx_hike",
+   "mountain",
+   "nobody_text",
+   "EPIC MEMORY scene: strong wind and slanting heavy rain on the steep mountain trail; JX grips her light-pink umbrella tightly against the wind with one hand and pumps the other fist, stepping powerfully up onto a big rock, leaning forward, her face fiercely DETERMINED (brows furrowed, jaw set, eyes fixed on the summit, not smiling). Ahead at the top of the trail, bright golden sunlight breaks through the dark clouds in rays, lighting the summit. Dynamic low-angle view from below, dramatic and inspiring. No papers or other objects on the ground. Braids neat."
+  ],
+  "K11": [
+   "jx",
+   "jx_out",
+   "jx_badge",
+   "reader",
+   "library",
+   "nobody_text",
+   "Back in the library: JX speaks to the reader sincerely, one hand on the open book on the table; the reader listens very attentively, leaning slightly forward. Side-front view, both clearly visible."
+  ],
+  "K12": [
+   "jx",
+   "jx_out",
+   "jx_badge",
+   "reader",
+   "library",
+   "nobody_text",
+   "JX and the reader sit facing each other at the same small round light-wood table (both seated on chairs, like a conversation). The reader nods slowly with a moved, warm expression, his face lighting up with understanding; JX smiles gently at him. Side-front view, both clearly visible."
+  ],
+  "K13": [
+   "jx",
+   "jx_out",
+   "jx_badge",
+   "reader",
+   "library",
+   "nobody_text",
+   "In the library: JX holds out a small glowing warm-golden light in her open palms towards the reader. The light flows into the reader's chest; around him float a few tiny simple icons: a small book, a light bulb and a little flame. The reader sits up straight, fists clenched, with a determined, confident, never-give-up look. Side-front view, both clearly visible."
+  ],
+  "K14": [
+   "jx",
+   "jx_out",
+   "jx_badge",
+   "reader",
+   "library",
+   "nobody_text",
+   "In the library: the reader stands up from his chair with a bright confident smile and waves goodbye to JX, holding the book close to his chest; JX waves back happily from her seat. Side-front view, both clearly visible."
+  ],
+  "K5x": [
+   "jx",
+   "jx_out",
+   "classroom",
+   "teacher",
+   "classmates_m",
+   "board_text",
+   "MEMORY scene: WIDE SIDE VIEW of a spacious classroom: all the desks and students are grouped in the LEFT HALF of the picture; the chalkboard is on the far RIGHT wall, separated from the front desks by a WIDE EMPTY stretch of floor (about four desks long), like a big open teaching area; the chalkboard hangs on the wall at the RIGHT side of the picture; all desks face the board, so JX and her classmates sit facing RIGHT towards the board (seen from a side three-quarter angle, so JX's face is visible in three-quarter profile looking at the board). The teacher stands next to the board, half-turned towards the students, holding a piece of chalk, friendly. JX sits in the front row with her body AND head turned towards the board on the right (we see her face in three-quarter PROFILE, her eyes looking at the board, NOT at the viewer), calm and focused, writing in her notebook with a pen (only scribbles), a Chinese textbook open on her desk (only pictures). The two classmates sit behind her facing the board. No sweat drop."
+  ]
+ },
+ "classroom": "Setting: a bright, MINIMAL Chinese-language classroom - a light-green chalkboard, a few light-wood desks, big window with daylight. Few details.",
+ "teacher": "The teacher is a kind young Chinese woman with a low ponytail, a light-blue blouse and a grey skirt, gentle smile. She appears only ONCE.",
+ "classmates": "Two or three classmates (young adults, same chibi scale) in casual clothes sit at desks.",
+ "mountain": "Setting: a simple winding mountain trail with rocks and a few pine trees, soft grey clouds in the sky. Few details.",
+ "jx_hike": "JX wears a cream knit sweater, light-pink pleated skirt over light leggings, white sneakers and a small light-brown backpack.",
+ "board_text": "EXCEPTION to the no-text rule for the chalkboard only: the light-green board shows a short Chinese lesson written neatly in white chalk in clear, correctly written simplified Chinese characters, exactly these three lines: '第三课 我的爱好' / '我喜欢看书。' / '你喜欢什么？' (no other writing anywhere else).",
+ "shop_sign": "EXCEPTION to the no-text rule for the shop sign only: a red wooden signboard on the stall shows exactly the four simplified Chinese characters '老王包子' in large clear golden calligraphy, correctly written (no other writing anywhere else).",
+ "classmates_m": "Two classmates, both YOUNG MEN (short hair, casual sweaters, same chibi scale), sit at desks behind her. There is only ONE girl with braids in the whole picture: JX."
+}
