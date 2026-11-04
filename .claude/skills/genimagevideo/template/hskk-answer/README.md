@@ -17,3 +17,10 @@ Nội dung mẫu hiện tại = **Chủ đề 2 · câu 6 (在家上学)**, đ�
 **Cắt clip:** `make_frames.py` có `USE = { id: giây dùng }` (phải khớp `USE` trong `Full.tsx`) và `START = { id: giây bỏ đầu }` (đoạn đầu clip bị đổi nền / giật khung). Cần thêm `public/` (audio, img, motion, sfx, `bg.mp3`, `jx_avatar.png`, `yh_front.png`) như project gốc.
 
 **Thứ tự VI/EN:** render VI trước, user xem + chốt rồi mới render EN (`FullEN`) theo bản VI đã chốt — không chạy liền cả hai.
+
+**Bản mới nhất để chép = `talk03/hskk-c5` (2026-11-04)** — khuôn này vẫn là bản talk02; chép `src/` + `make_frames.py` từ talk03 sẽ có sẵn:
+- `CLIPS` nhận **dòng 0** (`lineT(0)` = lúc 现在开始, cảnh mở màn trước khi đọc) và **dòng ảo** sau câu cuối (`VIRT = [0, 3.0, 7.5]` → cảnh kết không lời, `OUT0 = ANS_END + HOLD`). `make_frames.py` phải có cùng `CLIPS`/`VIRT`/`USE`/`START`.
+- Tốc độ clip ≤ 1.0 (không tua nhanh); hồi tưởng: `FLASH` = các cảnh phủ sepia + viền tối, loé trắng ở đầu cảnh hồi tưởng đầu và cảnh hiện tại kế tiếp; cảnh dẫn vào hồi tưởng đẩy cận (`zoom`, `transformOrigin`).
+- Phụ đề: dòng dịch tự thu chữ `min(36, 1000 / (0.52 × số ký tự))` — câu dịch dài từng bị cắt mép khung.
+- `ITEMS` trong `tts_intro.py` (`p0…p5`) phải **cùng thứ tự** với `S3_LIST` trong `Full.tsx` — lệch thì thẻ 挑 hiện mà giọng đọc 真诚 (user tưởng "gen từ danh sách cũ").
+- Đổi câu chữ bài đọc → chỉ cần chạy lại `voice_edge.py` + sửa `lines.json`/`PHRASE_AT`/`CLIPS` theo số dòng mới; clip không phải gen lại.

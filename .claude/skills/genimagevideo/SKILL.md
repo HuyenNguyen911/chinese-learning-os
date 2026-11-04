@@ -143,14 +143,15 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk01/langdu/` (bài 1 快乐会�
 2. **Cổng ảnh:** nhân vật mặc đồng phục trường phù thuỷ, nhìn thẳng, cầm sách, nền mint → `python cutout_mint.py <tên>`; xem khung tĩnh `npx remotion still src/index.ts Read out/preview-en.png --frame=N` (+ `ReadVI`).
 3. **Giọng:** `.claude/skills/genimagevideo/.venv/Scripts/python.exe voice_edge.py` → `public/audio/read.wav` + `src/timing.json` (mốc từng chữ từ WordBoundary). User tự thu thì bỏ `read.m4a` vào `public/audio/` rồi `python align.py` (dò chỗ ngắt hơi ↔ dấu câu).
 4. Nhạc nền `public/audio/bg.mp3` (rất nhỏ, `loop`); đoạn kết `public/audio/outro.wav` (giọng 瑾玄, câu 收听) + `src/outro.json`.
-5. Render 2 bản: `npx remotion render src/index.ts Read video/<slug>-en.mp4` và `ReadVI … -vi.mp4` (~8 phút/bản, chạy tuần tự).
-   **Bàn giao = đủ cả 2 bản `-en` + `-vi`** — liệt kê `video/` trước khi báo xong; làm/sửa 1 bản thì kiểm + render luôn bản kia (user từng tự phát hiện thiếu EN).
+5. Render **bản VI trước**: `npx remotion render src/index.ts ReadVI video/<slug>-vi.mp4` (~8 phút) → mở cho user → **chờ chốt** → mới render EN `Read … -en.mp4` (render liền 2 bản thì mỗi lần sửa phải render lại cả 2 — user nhắc 2026-11-03).
+   **Bàn giao = đủ cả 2 bản `-en` + `-vi`** — liệt kê `video/` trước khi báo xong (user từng tự phát hiện thiếu EN).
 6. Có sẵn trong khuôn (talk02): 15s chuẩn bị đếm trong ô thẻ + tiếng `public/sfx/ting.wav` (chép từ `talk02/langdu`), cụm từ đọc sát
-   nhau khai `data.json "groups": [["欠佳","不得已","另辟蹊径"]]` — xem design-rules §12.
+   nhau khai `data.json "groups": [["欠佳","不得已","另辟蹊径"]]` — xem design-rules §12. **Chỉ khai `groups` sau khi đo `timing.json`** thấy các từ cách nhau 0,5–1s;
+   không chép `groups` từ tập trước (talk03 chép nhầm 3 cụm cách nhau 1,4–3,1s → user hỏi "sao 1 thẻ 2 từ", phải bỏ gộp + render lại).
 
 ## Video HSKK 回答问题 (khuôn `template/hskk-answer/`, câu 5 & 6 mỗi chủ đề Talk series)
 Ví dụ đã chạy: `output/Gen ảnh_video/talk01/hskk-c5/` (Chủ đề 1 · câu 5). 1 video/câu × 2 bản EN/VI, ~2-3 phút. ĐỌC `template/hskk-answer/README.md` (luồng 7 bước) + `reference/design-rules.md` §13 trước khi dựng.
-- Tạo project: `python .claude/skills/genimagevideo/scripts/new_project.py talkNN/hskk-cN --template hskk-answer` (**phải có `--template`**, mặc định là poster-highlight). Nếu có project HSKK mới hơn khuôn thì chép `src/` + script của project đó (bản mới nhất: `talk02/hskk-c6`) rồi thay nội dung.
+- Tạo project: `python .claude/skills/genimagevideo/scripts/new_project.py talkNN/hskk-cN --template hskk-answer` (**phải có `--template`**, mặc định là poster-highlight). Nếu có project HSKK mới hơn khuôn thì chép `src/` + script của project đó (bản mới nhất: `talk03/hskk-c5` — có dòng 0/dòng ảo, hồi tưởng sepia, phụ đề tự thu chữ) rồi thay nội dung.
 - Nguồn = `onluyen/bai-mau-cau5-6.md` của user (không tự soạn). Cổng nội dung (phụ đề + dịch + mindmap + cụm khó + storyboard ~14 cảnh) → giọng → khung tĩnh K1…Kn → clip muse-video (tự bỏ tiếng) → ghép `Full.tsx` → render FullVI/FullEN (**bàn giao đủ cả 2 bản**, liệt kê `video/` trước khi báo xong; video có clip muse-video → render bằng `bash chunk_render.sh FullEN video/<slug>-en.mp4`, xem gotchas). Nhạc nền suốt video. Làm lần lượt chủ đề 1 c5, c6 → chủ đề 2 c5, c6…
 
 ## Ảnh bìa bài đăng (Talk series)
