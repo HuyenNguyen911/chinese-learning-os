@@ -1,0 +1,15 @@
+{
+ "common": "Animate THIS exact image. Keep exactly the same chibi characters (same faces, eyes, hair, clothes), same park background, same flat pastel cartoon style. Vertical 9:16 frame, camera fixed, no zoom, no camera movement. The girl's two braids stay neat and tidy, no loose or flyaway hair. The boy is always cheerful with a warm, symmetrical, friendly smile (never a smirk, never a lopsided grin, never sad), eyes open. Do not add any text, letters, numbers or new objects. Characters stay in place.",
+ "clips": {
+  "m_walk": "The girl and the boy walk side by side towards the LEFT side of the frame for the whole clip, both keep facing and looking left, steady walking cycle with arms and legs swinging, walking in place while the path, bench and trees slowly slide to the RIGHT. Both mouths stay CLOSED. Never turn around.",
+  "m_ask": "The boy asks the girl a question with a warm friendly smile: ONLY the boy's mouth opens and closes as he talks, eyebrows raised, a small playful head tilt. The girl's mouth stays CLOSED, she listens curiously and blinks.",
+  "m_p2": "The girl tilts her head, finger on her chin, and says a short puzzled word: ONLY the girl's mouth opens and closes. The boy's mouth stays CLOSED, he watches her with a warm amused smile.",
+  "m_p3": "The girl proudly taps her own chest with her thumb, nods with a bright confident smile and talks: ONLY the girl's mouth opens and closes. The boy's mouth stays CLOSED, he smiles warmly.",
+  "m_p4": "The girl happily counts on her fingers one by one, very proud, talking: ONLY the girl's mouth opens and closes. The boy keeps one hand over his CLOSED mouth, his shoulders shake a little as he holds back a laugh.",
+  "m_p5": "The boy waves his hand side to side in a teasing 'no, no' gesture, laughing playfully and talking: ONLY the boy's mouth opens and closes. The girl's mouth stays CLOSED, she blinks innocently.",
+  "m_p6": "The boy points at the girl playfully, teasing her with a bright friendly laugh and talking: ONLY the boy's mouth opens and closes. The girl's mouth stays CLOSED, hands on hips, a little pout.",
+  "m_p7": "The girl spreads her palms upward, totally puzzled, and asks a question: ONLY the girl's mouth opens and closes; the small question mark above her head gently bobs. The boy's mouth stays CLOSED, he smiles warmly.",
+  "m_look": "Both characters keep looking DIRECTLY into the camera the whole time, they blink and smile curiously; BOTH mouths stay CLOSED. Nobody turns to the other.",
+  "m_q": "Both characters keep looking DIRECTLY into the camera the whole time. ONLY the boy talks to the viewer with a warm friendly smile (his mouth opens and closes), a small friendly head tilt; the girl's mouth stays CLOSED, she nods slightly, still looking at the camera. Nobody turns to the other."
+ }
+}

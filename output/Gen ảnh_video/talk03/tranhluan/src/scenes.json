@@ -1,0 +1,70 @@
+{
+ "style": "Flat pastel chibi cartoon illustration, thin clean outlines, soft flat colors, big heads, cute and warm, TALL VERTICAL 9:16 portrait picture divided into three equal horizontal bands: TOP THIRD = soft sky with a few clouds and the leafy tops of trees; MIDDLE THIRD = the two characters standing full-body on the park path (their heads start just below the top third, their feet end just above the bottom third); BOTTOM THIRD = a wide green lawn in the foreground with small flowers and grass tufts. The characters fit inside the middle third only and never extend into the top or bottom third, minimal simple background with few details, light airy color palette (ivory white, soft sage green, pale sky blue, light natural wood), no text, no letters, no numbers, no logos anywhere. At most one or two tiny stars, no glitter. Every face is kind and gentle.",
+ "jx": "JX, a young woman about 25: pretty chibi face, big shiny brown eyes with highlights, rosy cheeks, long straight black hair parted in the middle and neatly combed and tied into two TIGHT, TIDY long braids with small pink ribbons (smooth sleek hair, absolutely no loose or flyaway strands), kind smile. JX appears only ONCE in the picture.",
+ "jx_out": "JX wears a trendy youthful summer outfit: a fitted white short-sleeve tee tucked into a light-blue denim A-line mini skirt, a cropped baby-blue knit cardigan worn open over the tee, white socks and white sneakers; two long braids with small pink ribbons stay the same.",
+ "yh": "YH, a young man about 25: very round face, light-brown fluffy layered hair with a messy spiky fringe covering his forehead and covering his ears (no middle parting), solid dark-brown vertical oval eyes with NO highlights and no eyelids, short thin curved eyebrows visible under the fringe, dot nose, gentle calm smile. On his LEFT wrist (only the left one) he wears a SMALL slim black round sports watch with a thin strap, smaller than his wrist width (grey bezel, tiny orange accent, no logo), plus a thin red string bracelet on the same wrist. YH appears only ONCE in the picture (never two copies of him).  YH and JX are almost the same height (YH only a few centimeters taller), same chibi scale. On his LEFT wrist (the left one only) he wears the small black sports watch AND the thin red string bracelet side by side; his RIGHT wrist is completely bare.",
+ "yh_out": "YH wears a relaxed casual outfit: a red zip-up hoodie worn open over a plain white t-shirt, light-beige cargo shorts, white sneakers with red trim.",
+ "park": "Setting: a bright, MINIMAL city park path on a sunny day - light paved path, a few soft green round trees, one wooden bench, pale sky blue with one or two simple clouds, few details.",
+ "scenes": {
+  "P1": [
+   "jx",
+   "jx_out",
+   "yh",
+   "yh_out",
+   "park",
+   "PURE SIDE PROFILE facing LEFT: JX and YH walk side by side along the park path, BOTH in perfect side profile with faces, noses, chests, knees and toes ALL pointing to the LEFT edge of the picture. Both look straight ahead to the left (neither looks at the other, nobody looks right or at the viewer). Same pace, mid-stride, relaxed and happy; only one eye visible each; full body visible; a small gap between them."
+  ],
+  "P2": [
+   "jx",
+   "jx_out",
+   "yh",
+   "yh_out",
+   "park",
+   "JX and YH have stopped on the park path facing each other in a three-quarter view, full body visible, JX on the left, YH on the right, same height. JX is confidently pointing at herself with one thumb, proud bright smile, chin up, as if saying 'I go there all the time!'; YH looks at her with a slightly puzzled raised eyebrow."
+  ],
+  "P3": [
+   "jx",
+   "jx_out",
+   "yh",
+   "yh_out",
+   "park",
+   "JX and YH stand facing each other in a three-quarter view on the park path, full body visible, JX on the left, YH on the right, same height. YH waves one hand side to side in a 'no, no' gesture with an awkward helpless smile; JX tilts her head, holding her hand to her cheek, innocent."
+  ],
+  "P4": [
+   "jx",
+   "jx_out",
+   "yh",
+   "yh_out",
+   "park",
+   "JX and YH stand facing each other on the park path in a three-quarter view, full body visible, same height. JX has a blank innocent puzzled look with a small question mark floating above her head (a simple ? shape only), YH points at her with a small helpless laugh."
+  ],
+  "P5": [
+   "jx",
+   "jx_out",
+   "yh",
+   "yh_out",
+   "park",
+   "JX and YH stand side by side on the park path, both turned to face the viewer straight on, front view, full body, same height, JX on the left, YH on the right; both have wide round curious eyes, eyebrows raised high, mouths slightly open in a small 'o' as if asking the viewer a question; YH's left hand (picture's right side) shows the watch."
+  ],
+  "K1": [
+   "jx",
+   "jx_out",
+   "yh",
+   "yh_out",
+   "yh_play",
+   "park",
+   "PURE SIDE PROFILE facing LEFT: JX and YH walk side by side along the park path, BOTH in perfect side profile with faces, noses, chests, knees and toes ALL pointing to the LEFT edge of the picture, both looking straight ahead to the left. Same pace, mid-stride, relaxed and happy; full body visible."
+  ],
+  "K8": [
+   "jx",
+   "jx_out",
+   "yh",
+   "yh_out",
+   "yh_play",
+   "park",
+   "JX and YH stand side by side on the park path, both turned to face the viewer straight on and looking DIRECTLY INTO the camera, front view, full body, same height, JX on the left, YH on the right; JX smiles curiously, YH has a cheeky playful grin as if about to ask the viewer a question."
+  ]
+ },
+ "size": "1024x1536",
+ "yh_play": "YH's expression: a warm, open, friendly cheerful smile that is SYMMETRICAL on both sides (NOT a smirk, NOT a lopsided or one-sided grin, NOT a sly look), bright open eyes; his playfulness shows through lively gestures, never sad."
+}
