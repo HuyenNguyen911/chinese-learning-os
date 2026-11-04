@@ -133,6 +133,10 @@ Ví dụ đã chạy: `output/Gen ảnh_video/talk02/tranhluan/` (11 đoạn, us
    `Story.tsx` dựng **lớp video riêng**: 1 trình phát / đoạn, chồng mờ 10 khung giữa 2 đoạn, `premountFor` — hết nháy/giật.
    Phụ đề, nhãn, tia sét, chống copy vẫn do Remotion vẽ chồng lên. Âm gốc của video tắt. Miệng AI không khớp từng chữ (giới hạn).
 6. Trước khi gọi muse-video lần đầu trong session → hỏi user (tốn lượt, ~4 phút/lần).
+7. **1 câu thoại = 1 đoạn muse riêng** (talk03/tranhluan, user sửa 2 lần 2026-11-04): gộp 2-3 câu/đoạn → miệng, hành động, phụ đề lệch nhau.
+   Lời nhắc mỗi đoạn ghi rõ CHỈ người nói "mouth opens and closes", người kia "mouth stays CLOSED". Soát **2 khung/giây, cắt vào vùng mặt** (1 khung/giây bỏ sót).
+8. **Bố cục clip tranh luận (chốt talk03, giống talk02-tranhluan.mp4):** cảnh dọc 9:16 PHỦ KÍN, phụ đề chữ trắng viền nâu ở trên; KHÔNG đóng khung ảnh, KHÔNG chip tên người nói, KHÔNG thẻ từ.
+   Nhân vật ~40% chiều cao, đứng giữa khung. Model ảnh KHÔNG nghe lệnh "vẽ nhân vật nhỏ" (thử 3 kiểu đều hỏng) → vẽ **nền trống** (1024x1536) + **cặp nhân vật trên nền mint** (`gen_pairs.py`) → `cutout_mint.py` → `compose_key.py <tư thế> <id> 0.40 0.75` (cao 40%, chân ở 75%) = khung khởi đầu cho muse. Mẫu: `talk03/tranhluan/` (README).
 
 ## Video 朗读 (khuôn `template/read-along/`, dùng cho Talk series clip ②)
 Ví dụ đã chạy: `output/Gen ảnh_video/talk01/langdu/` (bài 1 快乐会传染, nhân vật 越黄). ĐỌC `reference/design-rules.md` §11–12 trước khi dựng.

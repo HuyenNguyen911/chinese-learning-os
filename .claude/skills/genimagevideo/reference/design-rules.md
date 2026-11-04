@@ -63,6 +63,7 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 - **Nhún theo giọng rất nhẹ** (~4px): 16px bị chê "nhảy nhảy, nhức mắt".
 - **Góc nhìn nhất quán:** ảnh nhìn từ trên xuống (giường top-down) đặt trên nền sàn top-down, không đặt lên tường nhìn ngang ("giường dựng đứng").
 - **Cảnh 2 người cần chữ/biểu tượng ở tâm** (VS, tia sét) → nền **1 màu**; nền chia 2 màu trong video AI bị xê dịch làm mọi thứ trông lệch. Tia sét vẽ SVG (emoji lệch tâm).
+- **Cỡ nhân vật trong clip dọc (talk03):** cả cặp ~40% chiều cao khung, đứng giữa (không sát đáy, không to "ngợp"). Chỉnh bằng ghép (`compose_key.py`), không bằng lời nhắc.
 - Nhãn phe đi theo nhân vật đang có mặt (`scene.who`, chữ trong `story.json "tags"`); 2 nhãn đối xứng, VS nằm trong khe giữa, không đè lên nhãn.
 
 ## 10. Âm thanh clip (rút từ góp ý 2026-10-28, clip talk01/contagious)
@@ -78,6 +79,7 @@ Mỗi quy tắc kèm lỗi thật đã bị chê, để hiểu *vì sao*, không
 - **Chống copy:** nhãn đỏ nền trắng `禁止搬运` (góc trên phải) + tên kênh `@瑾玄在练嘴` + 1 dấu chìm nhỏ mờ đổi chỗ mỗi 6s ở mép dưới (không đè phụ đề/tên kênh). **Không** dùng watermark chéo phủ kín màn hình (user: "gây rối").
 - **Đoạn kết** = `Outro.tsx` (template/shared): thẻ hồ sơ (avatar 瑾玄 + tên kênh) → bàn tay chạm nút đỏ **"Follow"** → xám **"✓ Followed"** + tiếng tick → tim bật lên + pop. Câu thoại **luôn bằng giọng 瑾玄** (LucyLab "Huyền Babe", xem `nhan-vat/README.md`): `谢谢大家的观看～喜欢的话，记得点赞、关注我哦！` (video đọc: 收听).
 - **Chữ nhiều dòng rớt dòng theo ý** (sau ～。！？), mỗi dòng `nowrap` — "cùng câu mà rớt 1 chữ nó kỳ". Cỡ chữ câu kết ~46px (60 bị chê to).
+- **Checklist trước khi render (user nhắc nhiều lần, lần gần nhất talk03/tranhluan 2026-11-04):** khung 0 đã có nhân vật + tiêu đề (không mờ dần từ nền trống); vào đoạn kết follow thì ẩn phụ đề câu cuối; nhạc nền chạy SUỐT cả đoạn kết (tắt nhạc → lộ tạp âm giọng kết).
 - **Chỉ giữ 1 bản final** mỗi video: render đè đúng tên `video/<slug>.mp4`; xoá bản nháp, ảnh nhân vật không chọn, giọng/nhạc thử trước khi commit (user: "không cần lưu nhiều rối").
 
 ## 12. Video 朗读 (template/read-along) — bố cục user chốt 2026-10-28 (talk01/langdu)
