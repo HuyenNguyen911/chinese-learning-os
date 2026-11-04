@@ -1,0 +1,116 @@
+{
+ "style": "Flat pastel chibi cartoon illustration, thin clean outlines, soft flat colors, big heads, cute and warm, wide 3:2 landscape shot, minimal simple background with few details, light airy color palette (ivory white, soft sage green, pale sky blue, light natural wood), no text, no letters, no numbers, no logos anywhere. At most one or two tiny stars, no glitter. Every face is kind and gentle.",
+ "yh": "The main young man (YH), about 22 years old: very round face, light-brown fluffy layered hair with a messy spiky fringe covering his forehead and covering his ears (no middle parting), solid dark-brown vertical oval eyes with NO highlights and no eyelids, short thin curved eyebrows visible under the fringe, dot nose, gentle calm smile. On his LEFT wrist he wears BOTH a SMALL slim black round sports watch with a thin strap (smaller than his wrist width, grey bezel, tiny orange accent, no logo) AND a thin red string bracelet right next to it; his RIGHT wrist is bare. No bag, no backpack. YH appears only ONCE in the picture (never two copies of him). YH is a young man who looks youthful and boyish: whenever FF is in the picture, YH is clearly SHORTER than FF (his head reaches about FF's shoulder) and looks younger than him; same cute chibi style.",
+ "yh_out": "YH wears a cool stylish summer outfit: an oversized light-blue short-sleeve denim shirt worn OPEN over a red t-shirt, loose beige knee-length shorts, white sneakers with red trim.",
+ "ff": "FF's fixed look (identical in every picture): about 30, broad-shouldered, taller than YH, cute chibi style with a big head; a slightly square jaw, thick straight black eyebrows, calm dark narrow eyes, small straight nose, clean-shaven smooth face (NO beard, NO stubble); glossy black hair SLICKED BACK with a little volume on top (never short messy hair, never a fringe). His LEFT forearm only is covered by a dark-grey phoenix tattoo (no letters); his RIGHT forearm is clean skin with no tattoo. He wears a black leather jacket with the sleeves pushed up over a plain white t-shirt, black jeans, black boots. FF appears only ONCE in the picture.",
+ "ff_past": "FLASHBACK memory scene, a few years earlier. FF's fixed look (identical in every picture): about 30, broad-shouldered, taller than YH, cute chibi style with a big head; a slightly square jaw, thick straight black eyebrows, calm dark narrow eyes, small straight nose, clean-shaven smooth face (NO beard, NO stubble); glossy black hair SLICKED BACK with a little volume on top (never short messy hair, never a fringe). FF appears only ONCE in the picture - never two copies of him.",
+ "books": "Other human books in the library, each wearing a small open-book-shaped badge on the chest: a kind grey-haired grandmother in a lavender cardigan, a young woman in a wheelchair with a short bob and a mint sweater, a cheerful round middle-aged chef in a white chef jacket. All are adults; readers sitting opposite them are adults too.",
+ "librarian": "The librarian is a friendly middle-aged woman with short wavy hair, round glasses and a sage-green cardigan.",
+ "library": "Setting: a bright, MINIMAL modern library reading room - light wood floor, plain ivory walls, one or two low bookshelves, a few small round light-wood tables with two chairs each, big window with soft daylight, one or two plants. Few details.",
+ "nobody_text": "Any paper, board, brochure, phone or screen shows only simple colored shapes, lines and pictures, never letters or numbers.",
+ "scenes": {
+  "K1": [
+   "yh",
+   "yh_out",
+   "ff",
+   "A bright, simple, minimal apartment lobby with one elevator whose silver doors are wide OPEN. Inside the elevator FF stands calmly, politely holding one hand out to keep the door open for YH, his tattooed LEFT forearm clearly visible. Outside, YH stands UPRIGHT about one step in front of the doors (back straight, not crouching), has just noticed the tattoo: a slightly hesitant, serious face, eyes on the tattoo, raising one hand in a small polite 'no thanks, I will take the next one' gesture. Side-front view, both clearly visible."
+  ],
+  "K2": [
+   "yh",
+   "yh_out",
+   "nobody_text",
+   "Front view at the open glass door of a bright modern library. YH holds a small flyer printed with only a simple drawing of an open book and two smiling face silhouettes, looks at it curiously, and steps through the doorway with a small interested smile. Behind him inside we glimpse a calm bright reading room."
+  ],
+  "K3": [
+   "library",
+   "yh",
+   "yh_out",
+   "librarian",
+   "nobody_text",
+   "At a light-wood library counter, the librarian stamps a small pale-blue borrowing card and hands it to YH. YH holds the card in his RIGHT hand but his face is already turned toward the reading room on the right, curious, where people sit and talk in pairs (small in the background)."
+  ],
+  "K4": [
+   "library",
+   "books",
+   "nobody_text",
+   "Wide shot of the reading room: at three small round tables, pairs of adults sit FACE TO FACE and talk warmly - the grandmother talks with a young woman reader, the chef laughs with a middle-aged man reader, the woman in the wheelchair chats with a young adult reader. Every book person wears the open-book badge. Calm, friendly atmosphere."
+  ],
+  "K5": [
+   "library",
+   "yh",
+   "yh_out",
+   "nobody_text",
+   "Medium shot, ONLY ONE person in the picture (YH, exactly one copy). YH stands in profile facing RIGHT in front of a light-wood wall board covered with a neat grid of small portrait cards (simple drawn faces only, no letters). His RIGHT index finger touches one card showing a man with slicked-back black hair. YH looks surprised - eyes wide, eyebrows raised, mouth a small o."
+  ],
+  "K6": [
+   "library",
+   "yh",
+   "yh_out",
+   "ff",
+   "ff_badge",
+   "Side view at a small round table by the window: YH (left) and FF (right) sit FACE TO FACE. YH sits a bit stiff and shy, hands on his knees. FF, relaxed and kind, has pushed up his left sleeve to show the phoenix tattoo and is starting to speak gently, one hand open. On the table between them stands a small sand hourglass with sand just beginning to fall."
+  ],
+  "K7": [
+   "ff_past",
+   "ff_gear",
+   "Dramatic but not scary: at night a small two-story house has orange flames and grey smoke at its windows. FF in full firefighter gear runs OUT of the doorway carrying a small crying girl (about 5) wrapped in a blanket safely in his arms, shielding her. Other firefighters and a fire truck are small in the background. No injuries shown."
+  ],
+  "K8": [
+   "ff_past",
+   "ff_gear",
+   "Dramatic, intense close-medium shot inside a burning room full of orange flames, glowing embers and thick smoke. A burning wooden beam is crashing down from the ceiling; FF crouches low and wraps his whole body around a small frightened girl (about 5) to shield her, raising his LEFT forearm above them so the flaming beam hits his arm instead of her. His face is streaked with soot and sweat, teeth gritted, eyes fierce and determined - enduring the pain without hesitation. Sparks fly around them. Heroic and tense, but no blood or wounds shown."
+  ],
+  "K9": [
+   "ff_past",
+   "Inside a simple city bus, medium shot with EXACTLY THREE people: (1) FF on the RIGHT, sitting by the window in a plain grey SHORT-SLEEVE t-shirt and jeans (arms bare, he does not touch his sleeve), hands resting on his knees. His LEFT forearm (the arm on the viewer's RIGHT side, nearest the window) has a large old burn scar covering most of the forearm: soft pinkish-beige and light-brown patches with a slightly uneven, wrinkled texture - clearly noticeable but drawn gently, NOT bloody, NOT dark red or purple. His RIGHT arm is clean. He looks down sadly and quietly. (2) On the LEFT a mother in her late thirties with a short black bob haircut and thin round glasses, mustard-yellow blouse and dark-grey trousers, holds the overhead rail and glances at his arm with an uneasy, startled look, pulling her son closer. (3) Her small son (about 6, short black hair, striped orange-and-white t-shirt, navy shorts) hides behind her, peeking at FF with fear. No girls with long brown hair, no other passengers."
+  ],
+  "K10": [
+   "ff_past",
+   "A clean, calm tattoo studio with a plain ivory wall and one plant. Side view: FF in everyday clothes (plain white t-shirt, black jeans, NO uniform, NO helmet) sits on the RIGHT with his LEFT forearm resting on a padded armrest between them; that forearm shows a nearly finished dark-grey phoenix tattoo covering the old scar. The tattoo artist (a woman with a bun, black apron, black gloves) sits on a stool on the LEFT, FACING FF and his arm (side view, her face and body turned toward him, not toward the viewer), carefully finishing the last feather with the tattoo machine. FF looks at his arm with a peaceful, quiet smile."
+  ],
+  "K11": [
+   "library",
+   "yh",
+   "yh_out",
+   "ff",
+   "ff_badge",
+   "nobody_text",
+   "Back to the present, bright daylight. At the small round table, FF holds up his phone to show YH a photo (simple drawing of a group of firefighters in uniform smiling together, no letters), FF smiling proudly. YH leans forward, deeply moved, eyes glistening, a soft touched smile, listening closely. The hourglass on the table is half empty."
+  ],
+  "K12": [
+   "library",
+   "books",
+   "Gentle wide shot across the reading room: the grandmother shows an old photo to a young adult reader who listens attentively; the woman in the wheelchair talks with her hands while her reader nods; the chef laughs while his reader smiles. Each table feels like its own warm story."
+  ],
+  "K13": [
+   "library",
+   "yh",
+   "yh_out",
+   "ff",
+   "ff_badge",
+   "Side view at the small round table, the hourglass on the table is now completely EMPTY. Both are standing: YH places his RIGHT hand on his chest and bows his head slightly toward FF in sincere thanks, his whole body and face turned TOWARD FF (side view, not facing the viewer). FF smiles warmly and reaches out his hand for a handshake."
+  ],
+  "K14": [
+   "yh",
+   "yh_out",
+   "EXACTLY ONE copy of YH in the picture (only one brown-haired young man). Wide side view: on the LEFT the library entrance with a few low steps; YH, who has just come down the steps, walks toward the RIGHT along a sunny street, away from the library, in profile, head turned slightly to look around with a new warm, thoughtful smile. Along the street on the RIGHT: an old security guard waving, a street vendor arranging fruit on a cart, a few passers-by. YH walks upright and calm, looking a bit more mature. Simple background, a couple of trees."
+  ],
+  "K15a": [
+   "yh",
+   "yh_out",
+   "DIRECTION: everyone and the cart move toward the LEFT. Strict side view on a simple Saigon-style street (tamarind trees, a few motorbikes far away). A heavy wooden fruit cart rolls toward the LEFT. YH, drawn in side profile facing LEFT, is behind the cart on the right, leaning forward and pushing its handles with both hands, smiling. A small elderly grandmother vendor (grey hair in a bun, conical hat on her back, brown blouse) walks a little ahead on the far LEFT, drawn in side profile facing LEFT and stepping toward the LEFT, her back toward the cart; she smiles contentedly. Nobody faces the viewer and nobody faces right."
+  ],
+  "K15b": [
+   "yh",
+   "yh_out",
+   "DIRECTION: both people face and walk toward the RIGHT side of the picture, toward a small simple shop door on the far right. Side view on a sunny Saigon-style street. A young woman (long black hair in a low ponytail, pale-yellow blouse, beige trousers) walks toward the RIGHT struggling with a tall wobbly stack of three heavy cardboard boxes in her arms. YH walks right beside her (on her left, slightly behind), also facing the RIGHT, reaching out with both hands to lift the top two boxes off her stack to carry them for her, with a kind smile. Nobody faces the viewer."
+  ],
+  "K1a": [
+   "yh",
+   "yh_out",
+   "The same bright, minimal apartment lobby (pale sage-green lower wall, ivory upper wall, light wood floor). One elevator with silver doors CLOSED on the LEFT side of the picture, a small call button panel beside it (no numbers, no letters). YH is drawn in strict SIDE PROFILE standing on the right, his nose, eyes, chest and toes all pointing to the LEFT toward the closed elevator doors (we see only the side of his face), waiting calmly with hands relaxed. He does NOT look at the viewer. Nobody else in the picture."
+  ]
+ },
+ "ff_badge": "Inside the library FF wears a small badge shaped like an open book on his chest.",
+ "ff_gear": "In this scene FF wears a firefighter uniform (dark-navy turnout coat and trousers with yellow reflective stripes) and a yellow helmet; his black slicked-back hair is visible under the helmet edge."
+}
