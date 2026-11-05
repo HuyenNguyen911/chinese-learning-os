@@ -26,8 +26,8 @@ author: Chinese Learning OS
 **Từ luyện đề** (góp nhặt ngoài bài khóa, trước 2026-11-05 gọi là "Linh tinh"): cột `Bài` ghi `<kênh> · <tên đề>`,
 vd `study4 · Đề 10` (extract_xlsx → key `LD|kênh|đề`; nhãn cũ `Linh tinh` vẫn đọc được → "Chưa rõ đề"). Mỗi đề mới =
 1 nhóm riêng, KHÔNG dồn chung (user ngợp khi 1 nhóm phình ~1000 từ). Đề dài (>~100 từ) → hỏi user có tách đôi không
-(2026-11-05 user tách Đề 8 cũ 101 từ thành Đề 7 đọc + Đề 8 nghe). 573 từ cũ không rõ đề đã chia `study4 · Chưa rõ đề 1…6`
-(~95 từ/nhóm). Số đề từ vựng và số đề cụm ghi nhớ KHÔNG cần khớp nhau (user không nhớ). Quy trình khi user gửi list / đề (2 pha —
+(2026-11-05 user tách Đề 8 cũ 101 từ thành Đề 7 đọc + Đề 8 nghe). study4 chỉ có 9 đề (Đề 1–9): 573 từ cũ không rõ
+nguồn đã được user cho **rải đều vào cả 9 đề** (~110 từ/đề, Đề 4 giữ 135) — KHÔNG tạo nhóm "Chưa rõ đề". Số đề từ vựng và số đề cụm ghi nhớ KHÔNG cần khớp nhau (user không nhớ). Quy trình khi user gửi list / đề (2 pha —
 user đã sửa 2 lần vì tự ghi trước khi duyệt, rồi lại dừng ở bóc tách):
 0. User nói "bóc tách từ vựng tiếp" mà **chưa dán nội dung** → chờ user gửi đề, KHÔNG tự lục `raw/`/lesson tìm bài
    (2026-11-05 user: "tui đã gửi đâu mà chạy dữ dẹ").
