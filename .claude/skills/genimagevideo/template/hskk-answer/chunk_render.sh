@@ -1,6 +1,7 @@
 #!/bin/bash
 # Render chia đoạn — chống lỗi "No frame found at position" khi render dài nhiều clip OffthreadVideo (xem reference/gotchas.md).
 # Dùng: bash chunk_render.sh FullEN video/<slug>-en.mp4 [STEP=600]   (chạy ở thư mục project; đoạn đã xong được giữ, chạy lại = làm tiếp)
+# ⚠ Đã SỬA nội dung (lines/ảnh/clip) → rm -rf out/ch-<Comp> TRƯỚC khi render lại, không thì ghép lại đoạn cũ. Chỉ giữ đoạn cũ khi render bị ngắt giữa chừng.
 cd "$(dirname "$0")"
 COMP=$1; OUT=$2; STEP=${3:-600}; D=out/ch-$COMP
 [ -z "$COMP" ] || [ -z "$OUT" ] && { echo "usage: bash chunk_render.sh <Composition> <out.mp4> [step]"; exit 1; }
