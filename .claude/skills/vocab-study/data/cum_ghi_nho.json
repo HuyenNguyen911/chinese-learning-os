@@ -6717,6 +6717,869 @@
      "q": "Đề nói luyện tập bài bản cho vận động viên, hay nuôi dạy, đào tạo nghề, hay tập cho khoẻ?"
     }
    ]
+  },
+  {
+   "title": "Điền từ H6 — Đề 9",
+   "items": [
+    {
+     "w": "无疑",
+     "py": "wú yí",
+     "vi": "chắc chắn, không còn nghi ngờ",
+     "cum": "这无疑是最好的选择",
+     "trait": [
+      "Phó từ: khẳng định mạnh, giọng chắc nịch",
+      "Đi với: 无疑是…, 无疑会…",
+      "Ví dụ: 无疑是个好办法"
+     ],
+     "conf": [
+      {
+       "w": "恐怕",
+       "py": "kǒng pà",
+       "vi": "e rằng",
+       "diff": "phỏng đoán, giọng lo ngại, không chắc"
+      },
+      {
+       "w": "估计",
+       "py": "gū jì",
+       "vi": "ước chừng",
+       "diff": "dự đoán nhẹ, có thể sai"
+      }
+     ],
+     "q": "Đề nói chắc chắn không nghi ngờ, hay chỉ phỏng đoán, e ngại?"
+    },
+    {
+     "w": "内涵",
+     "py": "nèi hán",
+     "vi": "nội hàm, chiều sâu",
+     "cum": "这道菜很有文化内涵",
+     "trait": [
+      "Danh từ: ý nghĩa, giá trị chiều sâu bên trong",
+      "Đi với: 文化内涵, 丰富的内涵, 有内涵",
+      "Ví dụ: 缺乏内涵"
+     ],
+     "conf": [
+      {
+       "w": "内容",
+       "py": "nèi róng",
+       "vi": "nội dung",
+       "diff": "cái được chứa trong sách, lời nói, không nhấn chiều sâu"
+      }
+     ],
+     "q": "Đề nói chiều sâu ý nghĩa, hay nói cái chứa bên trong (nội dung)?"
+    },
+    {
+     "w": "修养",
+     "py": "xiū yǎng",
+     "vi": "tu dưỡng, trình độ học vấn đạo đức",
+     "cum": "他很有文化修养",
+     "trait": [
+      "Danh từ: trình độ do rèn luyện, học hỏi mà có",
+      "Đi với: 文化修养, 艺术修养, 有修养",
+      "Ví dụ: 提高个人修养"
+     ],
+     "conf": [
+      {
+       "w": "教养",
+       "py": "jiào yǎng",
+       "vi": "gia giáo",
+       "diff": "do nhà trường, gia đình dạy (有教养的孩子)"
+      },
+      {
+       "w": "素质",
+       "py": "sù zhì",
+       "vi": "tố chất",
+       "diff": "phẩm chất, năng lực nền tảng (综合素质)"
+      },
+      {
+       "w": "个性",
+       "py": "gè xìng",
+       "vi": "cá tính",
+       "diff": "nét riêng của từng người, không phải trình độ"
+      }
+     ],
+     "q": "Đề nói trình độ tự rèn luyện, hay do gia đình dạy, hay tố chất nền tảng, hay nét riêng?"
+    },
+    {
+     "w": "束缚",
+     "py": "shù fù",
+     "vi": "trói buộc, ràng buộc",
+     "cum": "打破传统思想的束缚",
+     "trait": [
+      "Động/danh từ: bị cản trở, không được tự do phát triển",
+      "Đi với: 打破束缚, 摆脱束缚, 思想的束缚",
+      "Ví dụ: 受传统观念束缚"
+     ],
+     "conf": [
+      {
+       "w": "约束",
+       "py": "yuē shù",
+       "vi": "ràng buộc, kiềm chế",
+       "diff": "dùng quy định hạn chế hành vi (约束自己)"
+      },
+      {
+       "w": "拘束",
+       "py": "jū shù",
+       "vi": "gò bó, e dè",
+       "diff": "nói cảm giác ngượng ngùng của người (显得拘束)"
+      }
+     ],
+     "q": "Đề nói bị trói không phát triển được, hay dùng quy định để kiềm chế, hay cảm giác gò bó, e dè?"
+    },
+    {
+     "w": "艰辛",
+     "py": "jiān xīn",
+     "vi": "gian khổ, vất vả",
+     "cum": "付出了艰辛的劳动",
+     "trait": [
+      "Tính từ/danh từ: khó khăn, nhọc nhằn, thường kèm sự chịu đựng",
+      "Đi với: 艰辛的劳动, 艰辛的历程, 历尽艰辛",
+      "Ví dụ: 创业艰辛"
+     ],
+     "conf": [
+      {
+       "w": "辛勤",
+       "py": "xīn qín",
+       "vi": "cần cù",
+       "diff": "nhấn chăm chỉ (辛勤工作), sắc thái khen"
+      },
+      {
+       "w": "艰难",
+       "py": "jiān nán",
+       "vi": "khó khăn",
+       "diff": "tình thế khó vượt qua (艰难的处境)"
+      }
+     ],
+     "q": "Đề nói công sức vất vả nặng nhọc, hay sự chăm chỉ, hay hoàn cảnh khó vượt qua?"
+    },
+    {
+     "w": "虚假",
+     "py": "xū jiǎ",
+     "vi": "giả dối, không thật",
+     "cum": "不能做虚假广告",
+     "trait": [
+      "Tính từ: không đúng sự thật, cố tình làm giả",
+      "Đi với: 虚假广告, 虚假信息, 虚假宣传",
+      "Ví dụ: 数据虚假"
+     ],
+     "conf": [
+      {
+       "w": "虚伪",
+       "py": "xū wěi",
+       "vi": "đạo đức giả",
+       "diff": "nói người, bề ngoài tốt bên trong khác (为人虚伪)"
+      },
+      {
+       "w": "虚荣",
+       "py": "xū róng",
+       "vi": "hư vinh",
+       "diff": "thích khoe, thích được khen (虚荣心)"
+      }
+     ],
+     "q": "Đề nói sự việc, thông tin giả, hay người đạo đức giả, hay tính ham hư vinh?"
+    },
+    {
+     "w": "清澈",
+     "py": "qīng chè",
+     "vi": "trong vắt",
+     "cum": "河水清澈见底",
+     "trait": [
+      "Tính từ: nước hay ánh mắt trong, nhìn thấu",
+      "Đi với: 清澈见底, 清澈的湖水, 清澈的眼睛",
+      "Ví dụ: 溪水清澈"
+     ],
+     "conf": [
+      {
+       "w": "清洁",
+       "py": "qīng jié",
+       "vi": "sạch sẽ",
+       "diff": "không bẩn, vệ sinh (清洁卫生)"
+      },
+      {
+       "w": "透明",
+       "py": "tòu míng",
+       "vi": "trong suốt",
+       "diff": "ánh sáng xuyên qua được (透明玻璃)"
+      },
+      {
+       "w": "清晰",
+       "py": "qīng xī",
+       "vi": "rõ nét",
+       "diff": "hình ảnh, âm thanh, ý nghĩ rõ ràng"
+      }
+     ],
+     "q": "Đề tả nước trong, nhìn thấu đáy, hay sạch sẽ, hay trong suốt, hay rõ nét?"
+    },
+    {
+     "w": "流连忘返",
+     "py": "liú lián wàng fǎn",
+     "vi": "lưu luyến quên về",
+     "cum": "美景让游客流连忘返",
+     "trait": [
+      "Thành ngữ: mê cảnh đẹp, không nỡ rời",
+      "Đi với: 令人/让人流连忘返, thường làm vị ngữ",
+      "Ví dụ: 西湖美景令人流连忘返"
+     ],
+     "conf": [
+      {
+       "w": "络绎不绝",
+       "py": "luò yì bù jué",
+       "vi": "nườm nượp",
+       "diff": "người, xe đi lại liên tục, nói số lượng"
+      },
+      {
+       "w": "川流不息",
+       "py": "chuān liú bù xī",
+       "vi": "tấp nập không ngớt",
+       "diff": "dòng xe, người chảy không ngừng"
+      }
+     ],
+     "q": "Đề nói mê cảnh đẹp không muốn về, hay dòng người, xe nối nhau không dứt?"
+    },
+    {
+     "w": "灵魂",
+     "py": "líng hún",
+     "vi": "linh hồn, hồn cốt",
+     "cum": "他是球队的灵魂人物",
+     "trait": [
+      "Danh từ: phần tinh thần; nghĩa bóng là cốt lõi, nhân vật trung tâm",
+      "Đi với: 灵魂人物, 艺术的灵魂",
+      "Ví dụ: 诚信是企业的灵魂"
+     ],
+     "conf": [
+      {
+       "w": "灵感",
+       "py": "líng gǎn",
+       "vi": "cảm hứng",
+       "diff": "ý tưởng chợt đến khi sáng tác"
+      },
+      {
+       "w": "心灵",
+       "py": "xīn líng",
+       "vi": "tâm hồn",
+       "diff": "thế giới nội tâm, trí tuệ, tình cảm (心灵的窗户)"
+      }
+     ],
+     "q": "Đề nói phần cốt lõi, linh hồn của sự vật, hay cảm hứng chợt đến, hay thế giới nội tâm?"
+    },
+    {
+     "w": "含糊",
+     "py": "hán hu",
+     "vi": "mập mờ, qua loa",
+     "cum": "他对原则问题毫不含糊",
+     "trait": [
+      "Tính từ: không rõ ràng, lấp lửng; hay dùng phủ định",
+      "Đi với: 毫不含糊, 含糊其辞, 态度含糊",
+      "Ví dụ: 说话含糊"
+     ],
+     "conf": [
+      {
+       "w": "分歧",
+       "py": "fēn qí",
+       "vi": "bất đồng",
+       "diff": "khác biệt ý kiến giữa người với người"
+      },
+      {
+       "w": "矛盾",
+       "py": "máo dùn",
+       "vi": "mâu thuẫn",
+       "diff": "hai mặt đối lập, hoặc xích mích"
+      }
+     ],
+     "q": "Đề nói thái độ, lời nói không rõ ràng, hay ý kiến bất đồng, hay mâu thuẫn đối lập?"
+    },
+    {
+     "w": "题材",
+     "py": "tí cái",
+     "vi": "đề tài, chất liệu sáng tác",
+     "cum": "这部电影的题材很新颖",
+     "trait": [
+      "Danh từ: chất liệu nội dung của tác phẩm văn nghệ",
+      "Đi với: 创作题材, 历史题材, 题材新颖",
+      "Ví dụ: 选择题材"
+     ],
+     "conf": [
+      {
+       "w": "作品",
+       "py": "zuò pǐn",
+       "vi": "tác phẩm",
+       "diff": "bản thân thứ đã sáng tác xong"
+      },
+      {
+       "w": "著作",
+       "py": "zhù zuò",
+       "vi": "trước tác",
+       "diff": "sách, công trình học thuật dài"
+      },
+      {
+       "w": "理论",
+       "py": "lǐ lùn",
+       "vi": "lý luận",
+       "diff": "hệ thống quan điểm, không phải chất liệu"
+      }
+     ],
+     "q": "Đề nói chất liệu để sáng tác, hay tác phẩm đã xong, hay sách học thuật, hay lý luận?"
+    },
+    {
+     "w": "毅然",
+     "py": "yì rán",
+     "vi": "kiên quyết, dứt khoát",
+     "cum": "他毅然辞去了工作",
+     "trait": [
+      "Phó từ: quyết tâm, không do dự dù khó khăn",
+      "Đi với: 毅然决然, 毅然决定, 毅然离开",
+      "Ví dụ: 毅然参军"
+     ],
+     "conf": [
+      {
+       "w": "果然",
+       "py": "guǒ rán",
+       "vi": "quả nhiên",
+       "diff": "kết quả đúng như dự đoán"
+      },
+      {
+       "w": "固然",
+       "py": "gù rán",
+       "vi": "tuy rằng",
+       "diff": "thừa nhận một mặt, sau thường có 但是"
+      },
+      {
+       "w": "自然",
+       "py": "zì rán",
+       "vi": "đương nhiên, tự nhiên",
+       "diff": "điều hiển nhiên hoặc tự nhiên, không gượng ép"
+      }
+     ],
+     "q": "Đề nói quyết tâm dứt khoát, hay kết quả đúng như đoán, hay nhượng bộ rồi chuyển ý?"
+    },
+    {
+     "w": "整顿",
+     "py": "zhěng dùn",
+     "vi": "chấn chỉnh",
+     "cum": "政府开始整顿市场秩序",
+     "trait": [
+      "Động từ: chỉnh đốn tổ chức, trật tự đang lộn xộn",
+      "Đi với: 整顿市场, 整顿作风, 整顿秩序",
+      "Ví dụ: 全面整顿"
+     ],
+     "conf": [
+      {
+       "w": "整理",
+       "py": "zhěng lǐ",
+       "vi": "sắp xếp",
+       "diff": "làm gọn đồ vật, tài liệu (整理资料)"
+      },
+      {
+       "w": "整治",
+       "py": "zhěng zhì",
+       "vi": "xử lý, cải tạo",
+       "diff": "trị hẳn vấn đề lớn (整治环境)"
+      }
+     ],
+     "q": "Đề nói chấn chỉnh trật tự tổ chức, hay sắp gọn đồ, tài liệu, hay xử lý dứt điểm một vấn đề?"
+    },
+    {
+     "w": "担负",
+     "py": "dān fù",
+     "vi": "gánh vác",
+     "cum": "他担负着重要的任务",
+     "trait": [
+      "Động từ: nhận trách nhiệm nặng, trang trọng",
+      "Đi với: 担负重任, 担负责任, 担负起…",
+      "Ví dụ: 担负使命"
+     ],
+     "conf": [
+      {
+       "w": "承担",
+       "py": "chéng dān",
+       "vi": "đảm nhận",
+       "diff": "nhận trách nhiệm, chi phí, hậu quả (承担责任)"
+      },
+      {
+       "w": "负责",
+       "py": "fù zé",
+       "vi": "chịu trách nhiệm",
+       "diff": "đảm trách, tận tâm với việc (对工作负责)"
+      }
+     ],
+     "q": "Đề nói gánh nhiệm vụ nặng, hay nhận trách nhiệm, chi phí, hay tận tâm phụ trách?"
+    },
+    {
+     "w": "采访",
+     "py": "cǎi fǎng",
+     "vi": "phỏng vấn, đưa tin",
+     "cum": "记者去现场采访目击者",
+     "trait": [
+      "Động từ: nhà báo đi tìm hiểu, hỏi thông tin",
+      "Đi với: 采访记者, 接受采访, 现场采访",
+      "Ví dụ: 采访名人"
+     ],
+     "conf": [
+      {
+       "w": "采集",
+       "py": "cǎi jí",
+       "vi": "thu thập (mẫu vật)",
+       "diff": "hái, gom mẫu, tư liệu (采集标本)"
+      },
+      {
+       "w": "访问",
+       "py": "fǎng wèn",
+       "vi": "thăm hỏi",
+       "diff": "đến thăm chính thức, hoặc truy cập"
+      },
+      {
+       "w": "咨询",
+       "py": "zī xún",
+       "vi": "tư vấn",
+       "diff": "hỏi ý kiến chuyên gia (法律咨询)"
+      }
+     ],
+     "q": "Đề nói nhà báo đi phỏng vấn, hay thu thập mẫu vật, hay thăm chính thức, hay hỏi tư vấn?"
+    },
+    {
+     "w": "可观",
+     "py": "kě guān",
+     "vi": "đáng kể",
+     "cum": "他的收入相当可观",
+     "trait": [
+      "Tính từ: số lượng, mức độ khá lớn, đáng nể",
+      "Đi với: 收入可观, 数量可观, 成绩可观",
+      "Ví dụ: 效益可观"
+     ],
+     "conf": [
+      {
+       "w": "壮观",
+       "py": "zhuàng guān",
+       "vi": "hùng vĩ",
+       "diff": "cảnh tượng hoành tráng, nhìn mà choáng"
+      },
+      {
+       "w": "宏观",
+       "py": "hóng guān",
+       "vi": "vĩ mô",
+       "diff": "nhìn toàn cục (宏观经济)"
+      },
+      {
+       "w": "美观",
+       "py": "měi guān",
+       "vi": "đẹp mắt",
+       "diff": "hình thức đẹp, gọn"
+      }
+     ],
+     "q": "Đề nói số lượng, thu nhập đáng kể, hay cảnh hùng vĩ, hay nhìn vĩ mô, hay hình thức đẹp?"
+    },
+    {
+     "w": "播种",
+     "py": "bō zhǒng",
+     "vi": "gieo hạt",
+     "cum": "春天是播种的季节",
+     "trait": [
+      "Động từ: gieo hạt giống; nghĩa bóng là gieo nhân",
+      "Đi với: 春天播种, 播种希望, 播种与收获",
+      "Ví dụ: 先播种,后收获"
+     ],
+     "conf": [
+      {
+       "w": "培育",
+       "py": "péi yù",
+       "vi": "nuôi dưỡng, ươm",
+       "diff": "chăm sóc cả quá trình (培育新品种, 培育人才)"
+      },
+      {
+       "w": "照料",
+       "py": "zhào liào",
+       "vi": "chăm sóc",
+       "diff": "trông nom hằng ngày (照料病人)"
+      }
+     ],
+     "q": "Đề nói bước gieo hạt ban đầu, hay quá trình ươm trồng lâu dài, hay chăm sóc hằng ngày?"
+    },
+    {
+     "w": "一无所有",
+     "py": "yī wú suǒ yǒu",
+     "vi": "trắng tay",
+     "cum": "他刚到城市时一无所有",
+     "trait": [
+      "Thành ngữ: không có gì cả, nghèo trơ",
+      "Đi với: 变得一无所有, 一无所有的人",
+      "Ví dụ: 破产后一无所有"
+     ],
+     "conf": [
+      {
+       "w": "众所周知",
+       "py": "zhòng suǒ zhōu zhī",
+       "vi": "ai cũng biết",
+       "diff": "khác hẳn nghĩa, chỉ điều được biết rộng rãi"
+      },
+      {
+       "w": "一帆风顺",
+       "py": "yī fān fēng shùn",
+       "vi": "thuận buồm xuôi gió",
+       "diff": "mọi việc suôn sẻ, không gặp trở ngại"
+      }
+     ],
+     "q": "Đề nói trắng tay không có gì, hay điều ai cũng biết, hay mọi việc suôn sẻ?"
+    },
+    {
+     "w": "俗话",
+     "py": "sú huà",
+     "vi": "tục ngữ, câu nói dân gian",
+     "cum": "俗话说,良药苦口利于病",
+     "trait": [
+      "Danh từ: câu nói dân gian lưu truyền, dễ hiểu",
+      "Đi với: 俗话说, 俗话说得好",
+      "Ví dụ: 正如俗话所说"
+     ],
+     "conf": [
+      {
+       "w": "谚语",
+       "py": "yàn yǔ",
+       "vi": "ngạn ngữ",
+       "diff": "câu cố định đúc kết kinh nghiệm (农业谚语)"
+      },
+      {
+       "w": "寓言",
+       "py": "yù yán",
+       "vi": "ngụ ngôn",
+       "diff": "truyện ngắn có bài học"
+      },
+      {
+       "w": "闲话",
+       "py": "xián huà",
+       "vi": "chuyện phiếm",
+       "diff": "lời bàn tán, không phải câu truyền miệng"
+      }
+     ],
+     "q": "Đề nói câu nói dân gian quen thuộc, hay câu đúc kết kinh nghiệm, hay truyện ngụ ngôn, hay chuyện phiếm?"
+    },
+    {
+     "w": "诊断",
+     "py": "zhěn duàn",
+     "vi": "chẩn đoán",
+     "cum": "医生正在诊断病情",
+     "trait": [
+      "Động từ: bác sĩ xác định bệnh gì",
+      "Đi với: 诊断病情, 诊断结果, 确诊",
+      "Ví dụ: 诊断为感冒"
+     ],
+     "conf": [
+      {
+       "w": "治疗",
+       "py": "zhì liáo",
+       "vi": "điều trị",
+       "diff": "chữa bệnh sau khi biết bệnh"
+      },
+      {
+       "w": "预防",
+       "py": "yù fáng",
+       "vi": "phòng ngừa",
+       "diff": "làm trước khi bệnh xảy ra"
+      },
+      {
+       "w": "抢救",
+       "py": "qiǎng jiù",
+       "vi": "cấp cứu",
+       "diff": "cứu gấp người nguy kịch"
+      }
+     ],
+     "q": "Đề nói xác định bệnh, hay chữa bệnh, hay phòng bệnh, hay cứu gấp?"
+    },
+    {
+     "w": "鉴于",
+     "py": "jiàn yú",
+     "vi": "xét thấy, vì…",
+     "cum": "鉴于目前的情况,我们决定推迟",
+     "trait": [
+      "Giới từ/liên từ: lấy tình hình làm căn cứ để quyết định",
+      "Đi với: 鉴于…, 所以/因此…",
+      "Ví dụ: 鉴于此"
+     ],
+     "conf": [
+      {
+       "w": "善于",
+       "py": "shàn yú",
+       "vi": "giỏi về",
+       "diff": "năng lực làm tốt (善于沟通)"
+      },
+      {
+       "w": "勇于",
+       "py": "yǒng yú",
+       "vi": "dám",
+       "diff": "dũng cảm làm (勇于承认)"
+      },
+      {
+       "w": "便于",
+       "py": "biàn yú",
+       "vi": "tiện cho",
+       "diff": "dễ làm hơn (便于携带)"
+      }
+     ],
+     "q": "Đề nêu căn cứ để kết luận, hay giỏi, dám làm, hay tiện cho việc gì?"
+    },
+    {
+     "w": "情节",
+     "py": "qíng jié",
+     "vi": "tình tiết",
+     "cum": "这部小说的情节很吸引人",
+     "trait": [
+      "Danh từ: chuỗi diễn biến của truyện, vụ việc",
+      "Đi với: 故事情节, 情节复杂, 情节严重",
+      "Ví dụ: 情节曲折"
+     ],
+     "conf": [
+      {
+       "w": "情形",
+       "py": "qíng xíng",
+       "vi": "tình hình, cảnh",
+       "diff": "tình trạng chung của sự việc"
+      },
+      {
+       "w": "情景",
+       "py": "qíng jǐng",
+       "vi": "cảnh tượng",
+       "diff": "khung cảnh cụ thể nhìn thấy"
+      },
+      {
+       "w": "情况",
+       "py": "qíng kuàng",
+       "vi": "tình hình",
+       "diff": "phổ biến, nói chung, trung tính"
+      }
+     ],
+     "q": "Đề nói chuỗi diễn biến câu chuyện, hay tình hình chung, hay cảnh tượng cụ thể?"
+    },
+    {
+     "w": "危害",
+     "py": "wēi hài",
+     "vi": "gây hại, tác hại",
+     "cum": "吸烟危害健康",
+     "trait": [
+      "Động/danh từ: gây hại lớn, ảnh hưởng nghiêm trọng",
+      "Đi với: 危害健康, 危害社会, 严重危害",
+      "Ví dụ: 造成危害"
+     ],
+     "conf": [
+      {
+       "w": "损害",
+       "py": "sǔn hài",
+       "vi": "làm tổn hại",
+       "diff": "làm hỏng lợi ích, danh dự (损害形象)"
+      },
+      {
+       "w": "迫害",
+       "py": "pò hài",
+       "vi": "ngược đãi",
+       "diff": "dùng quyền lực áp bức người"
+      },
+      {
+       "w": "伤害",
+       "py": "shāng hài",
+       "vi": "làm tổn thương",
+       "diff": "gây đau về thân thể, tình cảm"
+      }
+     ],
+     "q": "Đề nói gây hại lớn, hay làm tổn hại lợi ích, hay ngược đãi, hay làm tổn thương?"
+    },
+    {
+     "w": "技能",
+     "py": "jì néng",
+     "vi": "kỹ năng",
+     "cum": "工人需要掌握专业技能",
+     "trait": [
+      "Danh từ: năng lực làm việc đã học và luyện",
+      "Đi với: 掌握技能, 专业技能, 职业技能",
+      "Ví dụ: 生存技能"
+     ],
+     "conf": [
+      {
+       "w": "技巧",
+       "py": "jì qiǎo",
+       "vi": "kỹ xảo",
+       "diff": "mẹo khéo trong cách làm (说话技巧)"
+      },
+      {
+       "w": "才干",
+       "py": "cái gàn",
+       "vi": "tài cán",
+       "diff": "năng lực làm việc, tổ chức người"
+      }
+     ],
+     "q": "Đề nói kỹ năng nghề, hay mẹo khéo trong cách làm, hay năng lực tổ chức, điều hành?"
+    },
+    {
+     "w": "精致",
+     "py": "jīng zhì",
+     "vi": "tinh xảo",
+     "cum": "这个杯子做工很精致",
+     "trait": [
+      "Tính từ: nhỏ gọn, làm công phu, chi tiết đẹp",
+      "Đi với: 做工精致, 精致的点心, 精致小巧",
+      "Ví dụ: 装修精致"
+     ],
+     "conf": [
+      {
+       "w": "优雅",
+       "py": "yōu yǎ",
+       "vi": "thanh nhã",
+       "diff": "dáng vẻ, phong thái đẹp, nói người"
+      },
+      {
+       "w": "华丽",
+       "py": "huá lì",
+       "vi": "lộng lẫy",
+       "diff": "rực rỡ, sang trọng, nói bề ngoài"
+      }
+     ],
+     "q": "Đề nói đồ làm công phu, tinh xảo, hay phong thái thanh nhã, hay vẻ lộng lẫy?"
+    },
+    {
+     "w": "培训",
+     "py": "péi xùn",
+     "vi": "bồi dưỡng, đào tạo",
+     "cum": "公司给新员工做岗位培训",
+     "trait": [
+      "Động/danh từ: học ngắn hạn để làm tốt một việc",
+      "Đi với: 岗位培训, 参加培训, 培训班",
+      "Ví dụ: 接受培训"
+     ],
+     "conf": [
+      {
+       "w": "训练",
+       "py": "xùn liàn",
+       "vi": "huấn luyện",
+       "diff": "luyện kỹ năng, thể chất lặp lại (体育训练)"
+      },
+      {
+       "w": "培养",
+       "py": "péi yǎng",
+       "vi": "nuôi dưỡng",
+       "diff": "bồi lâu dài năng lực, thói quen (培养兴趣)"
+      },
+      {
+       "w": "锻炼",
+       "py": "duàn liàn",
+       "vi": "rèn luyện",
+       "diff": "rèn thể chất, ý chí (锻炼身体)"
+      }
+     ],
+     "q": "Đề nói lớp bồi dưỡng ngắn hạn, hay luyện lặp lại, hay nuôi dưỡng lâu dài, hay rèn thể lực?"
+    },
+    {
+     "w": "搀扶",
+     "py": "chān fú",
+     "vi": "dìu đỡ",
+     "cum": "他搀扶着老人过马路",
+     "trait": [
+      "Động từ: đỡ người yếu, đi lại khó khăn",
+      "Đi với: 搀扶老人, 互相搀扶",
+      "Ví dụ: 在家人搀扶下走路"
+     ],
+     "conf": [
+      {
+       "w": "扛",
+       "py": "káng",
+       "vi": "vác",
+       "diff": "đặt vật nặng lên vai (扛行李)"
+      },
+      {
+       "w": "捧",
+       "py": "pěng",
+       "vi": "bưng",
+       "diff": "hai tay nâng vật (捧着花)"
+      },
+      {
+       "w": "拄",
+       "py": "zhǔ",
+       "vi": "chống",
+       "diff": "dùng gậy làm điểm tựa (拄拐杖)"
+      }
+     ],
+     "q": "Đề nói dìu người, hay vác lên vai, hay bưng hai tay, hay chống gậy?"
+    },
+    {
+     "w": "终究",
+     "py": "zhōng jiū",
+     "vi": "rốt cuộc, suy cho cùng",
+     "cum": "他终究还是答应了",
+     "trait": [
+      "Phó từ: nhấn kết cục không thể thay đổi",
+      "Đi với: 终究会…, 终究是…",
+      "Ví dụ: 真相终究会大白"
+     ],
+     "conf": [
+      {
+       "w": "始终",
+       "py": "shǐ zhōng",
+       "vi": "từ đầu đến cuối",
+       "diff": "trước sau không đổi (始终如一)"
+      },
+      {
+       "w": "永远",
+       "py": "yǒng yuǎn",
+       "vi": "mãi mãi",
+       "diff": "kéo dài không hạn định về tương lai"
+      }
+     ],
+     "q": "Đề nhấn kết cục cuối cùng không đổi, hay trước sau như một, hay mãi mãi về sau?"
+    },
+    {
+     "w": "迫害",
+     "py": "pò hài",
+     "vi": "ngược đãi, hãm hại",
+     "cum": "他遭到了不公正的迫害",
+     "trait": [
+      "Động từ: dùng thế lực áp bức, hãm hại người",
+      "Đi với: 遭到迫害, 受迫害, 政治迫害",
+      "Ví dụ: 迫害无辜"
+     ],
+     "conf": [
+      {
+       "w": "危害",
+       "py": "wēi hài",
+       "vi": "gây hại",
+       "diff": "tác hại chung cho sức khỏe, xã hội (危害健康)"
+      },
+      {
+       "w": "损害",
+       "py": "sǔn hài",
+       "vi": "tổn hại",
+       "diff": "làm hỏng lợi ích, danh dự"
+      }
+     ],
+     "q": "Đề nói bị người có thế lực hãm hại, hay chỉ gây tác hại chung, hay làm tổn hại lợi ích?"
+    },
+    {
+     "w": "拄",
+     "py": "zhǔ",
+     "vi": "chống (gậy)",
+     "cum": "老人拄着拐杖慢慢走",
+     "trait": [
+      "Động từ: dùng gậy, vật cứng để tựa cho vững",
+      "Đi với: 拄着拐杖, 拄着下巴",
+      "Ví dụ: 拄着拐棍"
+     ],
+     "conf": [
+      {
+       "w": "扛",
+       "py": "káng",
+       "vi": "vác",
+       "diff": "đặt lên vai mang đi"
+      },
+      {
+       "w": "捧",
+       "py": "pěng",
+       "vi": "bưng",
+       "diff": "hai tay nâng, giữ vật"
+      },
+      {
+       "w": "搀扶",
+       "py": "chān fú",
+       "vi": "dìu đỡ",
+       "diff": "người đỡ người"
+      }
+     ],
+     "q": "Đề nói tự chống gậy cho vững, hay vác lên vai, hay bưng hai tay?"
+    }
+   ]
   }
  ]
 }
