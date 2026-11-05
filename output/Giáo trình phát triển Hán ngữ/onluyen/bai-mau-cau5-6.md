@@ -396,6 +396,53 @@
 
 ---
 
+## Bài 8 · 《最省钱的瘦身方法》
+
+### Câu 5：健身的重要性是什么？
+
+不可否认，锻炼身体对每个人的生活质量都非常重要。也正因为如此，健身越来越受到大家的关注。在我看来，健身是生活中不可缺少的一部分，但方法很关键。
+
+每个人的生活环境和身体条件都不一样，所以首先要找到适合自己的方法，这样才能带来你想要的效果。
+
+就拿我自己来说吧，我特别爱运动，但我更喜欢那些不花钱、又容易做到的方式。我家离公园很近，所以每天清晨我都会去那儿锻炼，散散步、跑跑步。在那儿，我还能遇到一些志同道合的人，大家一起锻炼，心情也更愉快。有时候我也会在家做家务，比如收拾房间、布置屋子，既能消耗热量，又能把家弄得干干净净，可谓一举两得。
+
+当然，大多数事情都贵在坚持，健身也不例外。有研究显示，一个好习惯要真正变成不需要刻意努力的自然反应，至少需要连续坚持六十六天左右。如果三天打鱼、两天晒网，方法再好也难以见效。换句话说，世界上没有什么东西是可以在短时间内轻轻松松得到的。显而易见，不坚持的话，之前的努力就都白费了。
+
+总的来说，健身的方法多种多样，关键是要找到既能带来良好效果、又能让自己坚持下去的方法。只有持之以恒，才能真正达到目的，这才是长久之计。
+
+**🧭 Flow**
+1. Mở bằng nhượng bộ: rèn luyện thân thể quan trọng với chất lượng sống → nên tập thể hình ngày càng được quan tâm.
+2. Lập trường: tập luyện là phần không thể thiếu, nhưng **phương pháp** mới là then chốt.
+3. Ý 1 – chọn cách hợp mình: hoàn cảnh, thể trạng mỗi người khác nhau → phải tìm cách phù hợp mới có hiệu quả.
+4. Ví dụ bản thân: thích cách không tốn tiền, dễ làm — sáng sớm ra công viên gần nhà đi bộ, chạy bộ, gặp người cùng chí hướng nên vui hơn; ở nhà làm việc nhà vừa đốt calo vừa sạch nhà (一举两得).
+5. Ý 2 – quý ở kiên trì: dẫn nghiên cứu ~66 ngày để thói quen thành phản xạ; 三天打鱼、两天晒网 thì cách hay mấy cũng vô ích; không gì có được nhẹ nhàng trong thời gian ngắn.
+6. Kết: phương pháp đa dạng, cốt là tìm cách vừa hiệu quả vừa duy trì được; chỉ có bền bỉ mới đạt mục đích — kế lâu dài.
+
+**💎 Cụm đắt giá**
+- 不可否认，… — không thể phủ nhận
+- 也正因为如此，… — cũng chính vì vậy
+- 越来越受到大家的关注 — ngày càng được mọi người quan tâm
+- …是生活中不可缺少的一部分，但…很关键 — … là phần không thể thiếu, nhưng… mới là then chốt
+- 生活环境和身体条件都不一样 — hoàn cảnh sống và thể trạng đều khác nhau
+- 找到适合自己的方法 — tìm ra cách phù hợp với mình
+- 就拿我自己来说吧，… — lấy ngay bản thân tôi làm ví dụ
+- 不花钱、又容易做到的方式 — cách không tốn tiền mà dễ làm
+- 散散步、跑跑步 — đi dạo, chạy bộ (lặp động từ, giọng khẩu ngữ)
+- 志同道合的人 — người cùng chí hướng
+- 既能消耗热量，又能… — vừa đốt được calo, vừa…
+- 可谓一举两得 — có thể nói là một công đôi việc
+- 贵在坚持，…也不例外 — quý ở sự kiên trì, … cũng không ngoại lệ
+- 有研究显示，… — có nghiên cứu cho thấy (dẫn số liệu tăng sức thuyết phục)
+- 不需要刻意努力的自然反应 — phản xạ tự nhiên không cần cố gắng gượng ép
+- 三天打鱼、两天晒网 — bữa đực bữa cái, làm không đều
+- 方法再好也难以见效 — cách hay mấy cũng khó thấy hiệu quả
+- 换句话说，… — nói cách khác
+- 之前的努力就都白费了 — công sức trước đó đổ sông đổ biển
+- 只有持之以恒，才能… — chỉ có bền bỉ mới…
+- 这才是长久之计 — đó mới là kế lâu dài
+
+---
+
 ## Bài 9 · 《到底谁的错》
 
 ### Câu 5：什么是理想的职业？你的理想职业是什么？
