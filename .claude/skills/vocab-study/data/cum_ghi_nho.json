@@ -4661,99 +4661,6 @@
      "q": "Đề nói yếu tố tác động lên cơ thể, hay tấn công, quấy rầy, hay gây phiền?"
     },
     {
-     "w": "兴奋",
-     "py": "xīng fèn",
-     "vi": "hưng phấn, kích thích hoạt động",
-     "cum": "引起哈欠中枢兴奋",
-     "trait": [
-      "Tính từ/động từ: trạng thái hoạt động mạnh (thần kinh hay cảm xúc)",
-      "Đi với: 兴奋不已, 神经兴奋, 使人兴奋"
-     ],
-     "conf": [
-      {
-       "w": "异常",
-       "py": "yì cháng",
-       "vi": "bất thường",
-       "diff": "khác thường, thường đi 反应异常"
-      },
-      {
-       "w": "快乐",
-       "py": "kuài lè",
-       "vi": "vui vẻ",
-       "diff": "cảm xúc vui, không phải trạng thái thần kinh"
-      },
-      {
-       "w": "激动",
-       "py": "jī dòng",
-       "vi": "xúc động",
-       "diff": "cảm xúc dâng trào, thường nói người"
-      }
-     ],
-     "q": "Đề nói thần kinh hoạt động mạnh, hay bất thường, vui vẻ, hay xúc động?"
-    },
-    {
-     "w": "遵照",
-     "py": "zūn zhào",
-     "vi": "làm theo, tuân theo",
-     "cum": "严格遵照指令运动",
-     "trait": [
-      "Giới từ/động từ: làm theo chỉ thị, quy định",
-      "Đi với: 遵照指示, 遵照规定, 遵照执行"
-     ],
-     "conf": [
-      {
-       "w": "服从",
-       "py": "fú cóng",
-       "vi": "phục tùng",
-       "diff": "nghe theo người có quyền lực"
-      },
-      {
-       "w": "采取",
-       "py": "cǎi qǔ",
-       "vi": "áp dụng",
-       "diff": "chọn biện pháp (采取措施)"
-      },
-      {
-       "w": "贯彻",
-       "py": "guàn chè",
-       "vi": "quán triệt",
-       "diff": "thực hiện triệt để chính sách"
-      }
-     ],
-     "q": "Đề nói làm theo chỉ thị, hay phục tùng người, chọn biện pháp, hay quán triệt chính sách?"
-    },
-    {
-     "w": "担心",
-     "py": "dān xīn",
-     "vi": "lo lắng",
-     "cum": "担心父母责备他",
-     "trait": [
-      "Động từ: lo sự việc xấu xảy ra, thường + mệnh đề",
-      "Đi với: 担心……会……, 担心不已, 不用担心"
-     ],
-     "conf": [
-      {
-       "w": "担忧",
-       "py": "dān yōu",
-       "vi": "lo âu",
-       "diff": "lo nặng, văn viết, hay nói tình hình lớn"
-      },
-      {
-       "w": "忧虑",
-       "py": "yōu lǜ",
-       "vi": "ưu lự",
-       "diff": "lo lắng nặng nề, trang trọng"
-      },
-      {
-       "w": "害怕",
-       "py": "hài pà",
-       "vi": "sợ",
-       "diff": "sợ hãi, cảm giác trực tiếp"
-      }
-     ],
-     "q": "Đề nói lo sẽ xảy ra, hay lo nặng văn viết, ưu lự, hay sợ?"
-    },
-    {
      "w": "不以为然",
      "py": "bù yǐ wéi rán",
      "vi": "không cho là đúng, thờ ơ",
@@ -4783,68 +4690,6 @@
       }
      ],
      "q": "Đề nói không coi là đúng/không đáng, hay thờ ơ lạnh nhạt, không làm nên chuyện, hay quá rõ?"
-    },
-    {
-     "w": "保持",
-     "py": "bǎo chí",
-     "vi": "duy trì, giữ",
-     "cum": "父母保持沉默",
-     "trait": [
-      "Động từ: giữ nguyên trạng thái tốt/đang có",
-      "Đi với: 保持沉默, 保持联系, 保持平衡"
-     ],
-     "conf": [
-      {
-       "w": "维持",
-       "py": "wéi chí",
-       "vi": "duy trì (khó khăn)",
-       "diff": "gắng giữ để không sụp (维持生活)"
-      },
-      {
-       "w": "坚持",
-       "py": "jiān chí",
-       "vi": "kiên trì",
-       "diff": "tiếp tục làm điều khó"
-      },
-      {
-       "w": "支持",
-       "py": "zhī chí",
-       "vi": "ủng hộ",
-       "diff": "giúp đỡ, tán thành"
-      }
-     ],
-     "q": "Đề nói giữ nguyên trạng thái, hay gắng duy trì, kiên trì làm, hay ủng hộ?"
-    },
-    {
-     "w": "紧张",
-     "py": "jǐn zhāng",
-     "vi": "căng thẳng, hồi hộp",
-     "cum": "心里反而会紧张",
-     "trait": [
-      "Tính từ: tâm trạng căng, không thoải mái",
-      "Đi với: 心里紧张, 紧张不安, 情绪紧张"
-     ],
-     "conf": [
-      {
-       "w": "平静",
-       "py": "píng jìng",
-       "vi": "bình tĩnh",
-       "diff": "ngược nghĩa (xem Đề 2)"
-      },
-      {
-       "w": "慌张",
-       "py": "huāng zhāng",
-       "vi": "hoảng hốt",
-       "diff": "luống cuống mất bình tĩnh"
-      },
-      {
-       "w": "谨慎",
-       "py": "jǐn shèn",
-       "vi": "thận trọng",
-       "diff": "cẩn thận, không phải cảm xúc"
-      }
-     ],
-     "q": "Đề nói tâm trạng căng thẳng, hay hoảng hốt, thận trọng, hay bình tĩnh?"
     }
    ]
   },
@@ -5565,37 +5410,6 @@
      "q": "Đề nói tư duy suy luận chặt chẽ, hay trừu tượng đối lập hình tượng, hay phức tạp? 逻辑 và 抽象 gần nhau, xem cả câu."
     },
     {
-     "w": "方式",
-     "py": "fāng shì",
-     "vi": "phương thức, cách thức",
-     "cum": "这两种思维方式迥然不同",
-     "trait": [
-      "Danh từ: cách làm/cách nghĩ",
-      "Đi với: 思维方式, 生活方式, 表达方式"
-     ],
-     "conf": [
-      {
-       "w": "形式",
-       "py": "xíng shì",
-       "vi": "hình thức",
-       "diff": "dáng vẻ bên ngoài"
-      },
-      {
-       "w": "过程",
-       "py": "guò chéng",
-       "vi": "quá trình",
-       "diff": "diễn biến từ đầu tới cuối"
-      },
-      {
-       "w": "能力",
-       "py": "néng lì",
-       "vi": "năng lực",
-       "diff": "khả năng làm được"
-      }
-     ],
-     "q": "Đề nói cách thức nghĩ/làm, hay hình thức bên ngoài, quá trình, hay năng lực?"
-    },
-    {
      "w": "神奇",
      "py": "shén qí",
      "vi": "thần kỳ",
@@ -5627,68 +5441,6 @@
      "q": "Đề nói kỳ lạ như có phép màu, hay bí ẩn, hay khéo léo? 神奇 và 奇妙 gần nhau, xem cả câu."
     },
     {
-     "w": "积累",
-     "py": "jī lěi",
-     "vi": "tích lũy",
-     "cum": "从小事一点一滴积累而来",
-     "trait": [
-      "Động từ: gom góp dần theo thời gian (kinh nghiệm, kiến thức, của cải)",
-      "Đi với: 积累经验, 积累财富, 日积月累"
-     ],
-     "conf": [
-      {
-       "w": "取得",
-       "py": "qǔ dé",
-       "vi": "giành được",
-       "diff": "lấy được kết quả (取得成绩)"
-      },
-      {
-       "w": "争取",
-       "py": "zhēng qǔ",
-       "vi": "cố giành",
-       "diff": "chủ động tranh thủ, nhấn vào cố gắng"
-      },
-      {
-       "w": "获得",
-       "py": "huò dé",
-       "vi": "thu được",
-       "diff": "nhận được, thiên về kết quả"
-      }
-     ],
-     "q": "Đề nói gom góp dần theo thời gian, hay giành được kết quả, hay chủ động tranh thủ?"
-    },
-    {
-     "w": "办法",
-     "py": "bàn fǎ",
-     "vi": "cách, biện pháp",
-     "cum": "试过各种办法",
-     "trait": [
-      "Danh từ: cách giải quyết một việc cụ thể",
-      "Đi với: 想办法, 没办法, 好办法"
-     ],
-     "conf": [
-      {
-       "w": "想法",
-       "py": "xiǎng fǎ",
-       "vi": "ý nghĩ",
-       "diff": "suy nghĩ trong đầu"
-      },
-      {
-       "w": "方法",
-       "py": "fāng fǎ",
-       "vi": "phương pháp",
-       "diff": "cách làm có hệ thống, hay dùng trong học thuật"
-      },
-      {
-       "w": "途径",
-       "py": "tú jìng",
-       "vi": "con đường, kênh",
-       "diff": "đường để đạt mục tiêu (qua kênh nào)"
-      }
-     ],
-     "q": "Đề nói cách xử lý việc cụ thể, hay ý nghĩ, phương pháp có hệ thống, hay kênh/đường đi?"
-    },
-    {
      "w": "障碍",
      "py": "zhàng ài",
      "vi": "chướng ngại",
@@ -5718,37 +5470,6 @@
       }
      ],
      "q": "Đề nói thứ chắn đường, hay điều kiện, nền tảng, hay kết quả?"
-    },
-    {
-     "w": "可能",
-     "py": "kě néng",
-     "vi": "có thể (khả năng)",
-     "cum": "才可能是一个最大的绊脚石",
-     "trait": [
-      "Phó từ/tính từ: khả năng xảy ra, chưa chắc chắn",
-      "Đi với: 可能会, 很可能, 有可能"
-     ],
-     "conf": [
-      {
-       "w": "能够",
-       "py": "néng gòu",
-       "vi": "có thể (đủ năng lực/điều kiện)",
-       "diff": "nói người/vật có đủ khả năng làm"
-      },
-      {
-       "w": "可以",
-       "py": "kě yǐ",
-       "vi": "có thể, được phép",
-       "diff": "được phép hoặc có khả năng chung"
-      },
-      {
-       "w": "允许",
-       "py": "yǔn xǔ",
-       "vi": "cho phép",
-       "diff": "chủ thể cho phép làm"
-      }
-     ],
-     "q": "Đề nói khả năng xảy ra (chưa chắc), hay đủ năng lực, hay được phép, hay cho phép?"
     },
     {
      "w": "家喻户晓",
@@ -5813,6 +5534,321 @@
      "q": "Đề nói ý kiến mỗi người một khác, hay nhất trí, khó vừa lòng, hay a dua?"
     },
     {
+     "w": "证实",
+     "py": "zhèng shí",
+     "vi": "xác nhận, chứng thực",
+     "cum": "证实了女娲文化的发源地在陕西",
+     "trait": [
+      "Động từ: dùng bằng chứng xác nhận điều có thật",
+      "Đi với: 证实了…, 被证实, 得到证实"
+     ],
+     "conf": [
+      {
+       "w": "论证",
+       "py": "lùn zhèng",
+       "vi": "luận chứng",
+       "diff": "lập luận chặt để chứng minh"
+      },
+      {
+       "w": "更正",
+       "py": "gēng zhèng",
+       "vi": "đính chính",
+       "diff": "sửa lại chỗ sai"
+      },
+      {
+       "w": "证明",
+       "py": "zhèng míng",
+       "vi": "chứng minh",
+       "diff": "chứng minh nói chung; gần 证实, xem cả câu"
+      }
+     ],
+     "q": "Đề nói bằng chứng xác nhận điều đã có, hay lập luận chứng minh, hay sửa sai? 证实 và 证明 gần nhau, xem cả câu."
+    }
+   ]
+  },
+  {
+   "title": "Điền từ H6 — Đề 7",
+   "items": [
+    {
+     "w": "兴奋",
+     "py": "xīng fèn",
+     "vi": "hưng phấn, kích thích hoạt động",
+     "cum": "引起哈欠中枢兴奋",
+     "trait": [
+      "Tính từ/động từ: trạng thái hoạt động mạnh (thần kinh hay cảm xúc)",
+      "Đi với: 兴奋不已, 神经兴奋, 使人兴奋"
+     ],
+     "conf": [
+      {
+       "w": "异常",
+       "py": "yì cháng",
+       "vi": "bất thường",
+       "diff": "khác thường, thường đi 反应异常"
+      },
+      {
+       "w": "快乐",
+       "py": "kuài lè",
+       "vi": "vui vẻ",
+       "diff": "cảm xúc vui, không phải trạng thái thần kinh"
+      },
+      {
+       "w": "激动",
+       "py": "jī dòng",
+       "vi": "xúc động",
+       "diff": "cảm xúc dâng trào, thường nói người"
+      }
+     ],
+     "q": "Đề nói thần kinh hoạt động mạnh, hay bất thường, vui vẻ, hay xúc động?"
+    },
+    {
+     "w": "遵照",
+     "py": "zūn zhào",
+     "vi": "làm theo, tuân theo",
+     "cum": "严格遵照指令运动",
+     "trait": [
+      "Giới từ/động từ: làm theo chỉ thị, quy định",
+      "Đi với: 遵照指示, 遵照规定, 遵照执行"
+     ],
+     "conf": [
+      {
+       "w": "服从",
+       "py": "fú cóng",
+       "vi": "phục tùng",
+       "diff": "nghe theo người có quyền lực"
+      },
+      {
+       "w": "采取",
+       "py": "cǎi qǔ",
+       "vi": "áp dụng",
+       "diff": "chọn biện pháp (采取措施)"
+      },
+      {
+       "w": "贯彻",
+       "py": "guàn chè",
+       "vi": "quán triệt",
+       "diff": "thực hiện triệt để chính sách"
+      }
+     ],
+     "q": "Đề nói làm theo chỉ thị, hay phục tùng người, chọn biện pháp, hay quán triệt chính sách?"
+    },
+    {
+     "w": "担心",
+     "py": "dān xīn",
+     "vi": "lo lắng",
+     "cum": "担心父母责备他",
+     "trait": [
+      "Động từ: lo sự việc xấu xảy ra, thường + mệnh đề",
+      "Đi với: 担心……会……, 担心不已, 不用担心"
+     ],
+     "conf": [
+      {
+       "w": "担忧",
+       "py": "dān yōu",
+       "vi": "lo âu",
+       "diff": "lo nặng, văn viết, hay nói tình hình lớn"
+      },
+      {
+       "w": "忧虑",
+       "py": "yōu lǜ",
+       "vi": "ưu lự",
+       "diff": "lo lắng nặng nề, trang trọng"
+      },
+      {
+       "w": "害怕",
+       "py": "hài pà",
+       "vi": "sợ",
+       "diff": "sợ hãi, cảm giác trực tiếp"
+      }
+     ],
+     "q": "Đề nói lo sẽ xảy ra, hay lo nặng văn viết, ưu lự, hay sợ?"
+    },
+    {
+     "w": "保持",
+     "py": "bǎo chí",
+     "vi": "duy trì, giữ",
+     "cum": "父母保持沉默",
+     "trait": [
+      "Động từ: giữ nguyên trạng thái tốt/đang có",
+      "Đi với: 保持沉默, 保持联系, 保持平衡"
+     ],
+     "conf": [
+      {
+       "w": "维持",
+       "py": "wéi chí",
+       "vi": "duy trì (khó khăn)",
+       "diff": "gắng giữ để không sụp (维持生活)"
+      },
+      {
+       "w": "坚持",
+       "py": "jiān chí",
+       "vi": "kiên trì",
+       "diff": "tiếp tục làm điều khó"
+      },
+      {
+       "w": "支持",
+       "py": "zhī chí",
+       "vi": "ủng hộ",
+       "diff": "giúp đỡ, tán thành"
+      }
+     ],
+     "q": "Đề nói giữ nguyên trạng thái, hay gắng duy trì, kiên trì làm, hay ủng hộ?"
+    },
+    {
+     "w": "紧张",
+     "py": "jǐn zhāng",
+     "vi": "căng thẳng, hồi hộp",
+     "cum": "心里反而会紧张",
+     "trait": [
+      "Tính từ: tâm trạng căng, không thoải mái",
+      "Đi với: 心里紧张, 紧张不安, 情绪紧张"
+     ],
+     "conf": [
+      {
+       "w": "平静",
+       "py": "píng jìng",
+       "vi": "bình tĩnh",
+       "diff": "ngược nghĩa (xem Đề 2)"
+      },
+      {
+       "w": "慌张",
+       "py": "huāng zhāng",
+       "vi": "hoảng hốt",
+       "diff": "luống cuống mất bình tĩnh"
+      },
+      {
+       "w": "谨慎",
+       "py": "jǐn shèn",
+       "vi": "thận trọng",
+       "diff": "cẩn thận, không phải cảm xúc"
+      }
+     ],
+     "q": "Đề nói tâm trạng căng thẳng, hay hoảng hốt, thận trọng, hay bình tĩnh?"
+    },
+    {
+     "w": "方式",
+     "py": "fāng shì",
+     "vi": "phương thức, cách thức",
+     "cum": "这两种思维方式迥然不同",
+     "trait": [
+      "Danh từ: cách làm/cách nghĩ",
+      "Đi với: 思维方式, 生活方式, 表达方式"
+     ],
+     "conf": [
+      {
+       "w": "形式",
+       "py": "xíng shì",
+       "vi": "hình thức",
+       "diff": "dáng vẻ bên ngoài"
+      },
+      {
+       "w": "过程",
+       "py": "guò chéng",
+       "vi": "quá trình",
+       "diff": "diễn biến từ đầu tới cuối"
+      },
+      {
+       "w": "能力",
+       "py": "néng lì",
+       "vi": "năng lực",
+       "diff": "khả năng làm được"
+      }
+     ],
+     "q": "Đề nói cách thức nghĩ/làm, hay hình thức bên ngoài, quá trình, hay năng lực?"
+    },
+    {
+     "w": "积累",
+     "py": "jī lěi",
+     "vi": "tích lũy",
+     "cum": "从小事一点一滴积累而来",
+     "trait": [
+      "Động từ: gom góp dần theo thời gian (kinh nghiệm, kiến thức, của cải)",
+      "Đi với: 积累经验, 积累财富, 日积月累"
+     ],
+     "conf": [
+      {
+       "w": "取得",
+       "py": "qǔ dé",
+       "vi": "giành được",
+       "diff": "lấy được kết quả (取得成绩)"
+      },
+      {
+       "w": "争取",
+       "py": "zhēng qǔ",
+       "vi": "cố giành",
+       "diff": "chủ động tranh thủ, nhấn vào cố gắng"
+      },
+      {
+       "w": "获得",
+       "py": "huò dé",
+       "vi": "thu được",
+       "diff": "nhận được, thiên về kết quả"
+      }
+     ],
+     "q": "Đề nói gom góp dần theo thời gian, hay giành được kết quả, hay chủ động tranh thủ?"
+    },
+    {
+     "w": "办法",
+     "py": "bàn fǎ",
+     "vi": "cách, biện pháp",
+     "cum": "试过各种办法",
+     "trait": [
+      "Danh từ: cách giải quyết một việc cụ thể",
+      "Đi với: 想办法, 没办法, 好办法"
+     ],
+     "conf": [
+      {
+       "w": "想法",
+       "py": "xiǎng fǎ",
+       "vi": "ý nghĩ",
+       "diff": "suy nghĩ trong đầu"
+      },
+      {
+       "w": "方法",
+       "py": "fāng fǎ",
+       "vi": "phương pháp",
+       "diff": "cách làm có hệ thống, hay dùng trong học thuật"
+      },
+      {
+       "w": "途径",
+       "py": "tú jìng",
+       "vi": "con đường, kênh",
+       "diff": "đường để đạt mục tiêu (qua kênh nào)"
+      }
+     ],
+     "q": "Đề nói cách xử lý việc cụ thể, hay ý nghĩ, phương pháp có hệ thống, hay kênh/đường đi?"
+    },
+    {
+     "w": "可能",
+     "py": "kě néng",
+     "vi": "có thể (khả năng)",
+     "cum": "才可能是一个最大的绊脚石",
+     "trait": [
+      "Phó từ/tính từ: khả năng xảy ra, chưa chắc chắn",
+      "Đi với: 可能会, 很可能, 有可能"
+     ],
+     "conf": [
+      {
+       "w": "能够",
+       "py": "néng gòu",
+       "vi": "có thể (đủ năng lực/điều kiện)",
+       "diff": "nói người/vật có đủ khả năng làm"
+      },
+      {
+       "w": "可以",
+       "py": "kě yǐ",
+       "vi": "có thể, được phép",
+       "diff": "được phép hoặc có khả năng chung"
+      },
+      {
+       "w": "允许",
+       "py": "yǔn xǔ",
+       "vi": "cho phép",
+       "diff": "chủ thể cho phép làm"
+      }
+     ],
+     "q": "Đề nói khả năng xảy ra (chưa chắc), hay đủ năng lực, hay được phép, hay cho phép?"
+    },
+    {
      "w": "有关",
      "py": "yǒu guān",
      "vi": "có liên quan",
@@ -5844,35 +5880,128 @@
      "q": "Đề nói có dính dáng tới (有关), hay liên đới logic, tương quan, hay nối liền? 有关 và 相关 gần nhau, xem cả câu."
     },
     {
-     "w": "证实",
-     "py": "zhèng shí",
-     "vi": "xác nhận, chứng thực",
-     "cum": "证实了女娲文化的发源地在陕西",
+     "w": "表演",
+     "py": "biǎo yǎn",
+     "vi": "biểu diễn",
+     "cum": "游泳比赛间歇时的水中表演项目",
      "trait": [
-      "Động từ: dùng bằng chứng xác nhận điều có thật",
-      "Đi với: 证实了…, 被证实, 得到证实"
+      "Động từ/danh từ: trình diễn cho người xem",
+      "Đi với: 表演项目, 表演节目, 精彩表演"
      ],
      "conf": [
       {
-       "w": "论证",
-       "py": "lùn zhèng",
-       "vi": "luận chứng",
-       "diff": "lập luận chặt để chứng minh"
+       "w": "竞赛",
+       "py": "jìng sài",
+       "vi": "thi đấu",
+       "diff": "cuộc thi có thắng thua"
       },
       {
-       "w": "更正",
-       "py": "gēng zhèng",
-       "vi": "đính chính",
-       "diff": "sửa lại chỗ sai"
+       "w": "演出",
+       "py": "yǎn chū",
+       "vi": "buổi diễn",
+       "diff": "buổi diễn trên sân khấu (演出团), ít đi với 项目"
       },
       {
-       "w": "证明",
-       "py": "zhèng míng",
-       "vi": "chứng minh",
-       "diff": "chứng minh nói chung; gần 证实, xem cả câu"
+       "w": "娱乐",
+       "py": "yú lè",
+       "vi": "giải trí",
+       "diff": "vui chơi chung, không phải trình diễn"
       }
      ],
-     "q": "Đề nói bằng chứng xác nhận điều đã có, hay lập luận chứng minh, hay sửa sai? 证实 và 证明 gần nhau, xem cả câu."
+     "q": "Đề nói tiết mục trình diễn, hay thi đấu, buổi diễn sân khấu, hay vui chơi?"
+    },
+    {
+     "w": "结合",
+     "py": "jié hé",
+     "vi": "kết hợp",
+     "cum": "游泳、舞蹈和音乐的完美结合",
+     "trait": [
+      "Động từ/danh từ: nhiều thứ hoà vào nhau thành một",
+      "Đi với: 完美结合, 理论与实践相结合"
+     ],
+     "conf": [
+      {
+       "w": "配合",
+       "py": "pèi hé",
+       "vi": "phối hợp",
+       "diff": "người với người cùng làm ăn ý"
+      },
+      {
+       "w": "联合",
+       "py": "lián hé",
+       "vi": "liên hợp",
+       "diff": "các tổ chức liên kết lại"
+      },
+      {
+       "w": "组合",
+       "py": "zǔ hé",
+       "vi": "tổ hợp",
+       "diff": "ghép thành nhóm/bộ (组合家具)"
+      }
+     ],
+     "q": "Đề nói nhiều thứ hoà làm một, hay người phối hợp ăn ý, tổ chức liên kết, hay ghép bộ?"
+    },
+    {
+     "w": "优雅",
+     "py": "yōu yǎ",
+     "vi": "tao nhã, thanh lịch",
+     "cum": "一项艺术性很强的优雅的体育运动",
+     "trait": [
+      "Tính từ: đẹp có khí chất, nhẹ nhàng thanh lịch",
+      "Đi với: 优雅的动作, 举止优雅"
+     ],
+     "conf": [
+      {
+       "w": "优美",
+       "py": "yōu měi",
+       "vi": "đẹp đẽ",
+       "diff": "đẹp nói chung (phong cảnh, giai điệu)"
+      },
+      {
+       "w": "精致",
+       "py": "jīng zhì",
+       "vi": "tinh xảo",
+       "diff": "đồ vật làm khéo"
+      },
+      {
+       "w": "华丽",
+       "py": "huá lì",
+       "vi": "lộng lẫy",
+       "diff": "rực rỡ, cầu kỳ"
+      }
+     ],
+     "q": "Đề nói khí chất thanh lịch, hay đẹp nói chung, đồ làm khéo, hay lộng lẫy? 优雅 và 优美 gần nhau, xem cả câu."
+    },
+    {
+     "w": "训练",
+     "py": "xùn liàn",
+     "vi": "huấn luyện",
+     "cum": "需要多年的训练",
+     "trait": [
+      "Động từ/danh từ: luyện tập có hệ thống (thể thao, quân sự)",
+      "Đi với: 刻苦训练, 专业训练, 训练有素"
+     ],
+     "conf": [
+      {
+       "w": "培养",
+       "py": "péi yǎng",
+       "vi": "bồi dưỡng",
+       "diff": "nuôi dạy người/thói quen lâu dài"
+      },
+      {
+       "w": "培训",
+       "py": "péi xùn",
+       "vi": "đào tạo",
+       "diff": "khoá đào tạo nghề, nhân viên"
+      },
+      {
+       "w": "锻炼",
+       "py": "duàn liàn",
+       "vi": "rèn luyện",
+       "diff": "tập cho khoẻ người"
+      }
+     ],
+     "q": "Đề nói luyện tập bài bản cho vận động viên, hay nuôi dạy, đào tạo nghề, hay tập cho khoẻ?"
     }
    ]
   },
@@ -6562,99 +6691,6 @@
      "q": "Đề nói không bị gò bó, hay tự nguyện, sảng khoái, hay một mình?"
     },
     {
-     "w": "表演",
-     "py": "biǎo yǎn",
-     "vi": "biểu diễn",
-     "cum": "游泳比赛间歇时的水中表演项目",
-     "trait": [
-      "Động từ/danh từ: trình diễn cho người xem",
-      "Đi với: 表演项目, 表演节目, 精彩表演"
-     ],
-     "conf": [
-      {
-       "w": "竞赛",
-       "py": "jìng sài",
-       "vi": "thi đấu",
-       "diff": "cuộc thi có thắng thua"
-      },
-      {
-       "w": "演出",
-       "py": "yǎn chū",
-       "vi": "buổi diễn",
-       "diff": "buổi diễn trên sân khấu (演出团), ít đi với 项目"
-      },
-      {
-       "w": "娱乐",
-       "py": "yú lè",
-       "vi": "giải trí",
-       "diff": "vui chơi chung, không phải trình diễn"
-      }
-     ],
-     "q": "Đề nói tiết mục trình diễn, hay thi đấu, buổi diễn sân khấu, hay vui chơi?"
-    },
-    {
-     "w": "结合",
-     "py": "jié hé",
-     "vi": "kết hợp",
-     "cum": "游泳、舞蹈和音乐的完美结合",
-     "trait": [
-      "Động từ/danh từ: nhiều thứ hoà vào nhau thành một",
-      "Đi với: 完美结合, 理论与实践相结合"
-     ],
-     "conf": [
-      {
-       "w": "配合",
-       "py": "pèi hé",
-       "vi": "phối hợp",
-       "diff": "người với người cùng làm ăn ý"
-      },
-      {
-       "w": "联合",
-       "py": "lián hé",
-       "vi": "liên hợp",
-       "diff": "các tổ chức liên kết lại"
-      },
-      {
-       "w": "组合",
-       "py": "zǔ hé",
-       "vi": "tổ hợp",
-       "diff": "ghép thành nhóm/bộ (组合家具)"
-      }
-     ],
-     "q": "Đề nói nhiều thứ hoà làm một, hay người phối hợp ăn ý, tổ chức liên kết, hay ghép bộ?"
-    },
-    {
-     "w": "优雅",
-     "py": "yōu yǎ",
-     "vi": "tao nhã, thanh lịch",
-     "cum": "一项艺术性很强的优雅的体育运动",
-     "trait": [
-      "Tính từ: đẹp có khí chất, nhẹ nhàng thanh lịch",
-      "Đi với: 优雅的动作, 举止优雅"
-     ],
-     "conf": [
-      {
-       "w": "优美",
-       "py": "yōu měi",
-       "vi": "đẹp đẽ",
-       "diff": "đẹp nói chung (phong cảnh, giai điệu)"
-      },
-      {
-       "w": "精致",
-       "py": "jīng zhì",
-       "vi": "tinh xảo",
-       "diff": "đồ vật làm khéo"
-      },
-      {
-       "w": "华丽",
-       "py": "huá lì",
-       "vi": "lộng lẫy",
-       "diff": "rực rỡ, cầu kỳ"
-      }
-     ],
-     "q": "Đề nói khí chất thanh lịch, hay đẹp nói chung, đồ làm khéo, hay lộng lẫy? 优雅 và 优美 gần nhau, xem cả câu."
-    },
-    {
      "w": "技巧",
      "py": "jì qiǎo",
      "vi": "kỹ xảo",
@@ -6684,37 +6720,6 @@
       }
      ],
      "q": "Đề nói sự khéo léo khi thực hiện động tác, hay độ nhanh, năng lực nghề, hay tài làm việc?"
-    },
-    {
-     "w": "训练",
-     "py": "xùn liàn",
-     "vi": "huấn luyện",
-     "cum": "需要多年的训练",
-     "trait": [
-      "Động từ/danh từ: luyện tập có hệ thống (thể thao, quân sự)",
-      "Đi với: 刻苦训练, 专业训练, 训练有素"
-     ],
-     "conf": [
-      {
-       "w": "培养",
-       "py": "péi yǎng",
-       "vi": "bồi dưỡng",
-       "diff": "nuôi dạy người/thói quen lâu dài"
-      },
-      {
-       "w": "培训",
-       "py": "péi xùn",
-       "vi": "đào tạo",
-       "diff": "khoá đào tạo nghề, nhân viên"
-      },
-      {
-       "w": "锻炼",
-       "py": "duàn liàn",
-       "vi": "rèn luyện",
-       "diff": "tập cho khoẻ người"
-      }
-     ],
-     "q": "Đề nói luyện tập bài bản cho vận động viên, hay nuôi dạy, đào tạo nghề, hay tập cho khoẻ?"
     }
    ]
   },
