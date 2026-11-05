@@ -433,3 +433,41 @@
 - 财务自由 / 丰厚多元的福利 — tự do tài chính / phúc lợi hậu hĩnh, đa dạng
 - 为高质量的生活提供保障 — bảo đảm cho cuộc sống chất lượng cao
 - 付出了努力、做出了业绩，就理应得到相应的回报 — đã bỏ công, làm ra thành tích thì đương nhiên đáng được đền đáp tương xứng
+
+### Câu 6：大学生就业难更多是自身原因还是社会原因？
+
+近年来，不管在哪个国家，大学生找工作难都是一个显而易见的现象。这不仅影响到学生本身，还波及到整个经济，所以受到了公众的广泛关注。在我看来，大学生自身和社会两方面都有原因。
+
+先从自身来看。很多大学生期望的收入和实际能力并不匹配。他们读大学的成本不低，付出了很多时间和精力，所以希望收入高一点，作为补偿；同时又希望工作不要太辛苦。但企业觉得他们的能力还不够，结果就出现了"招工难"和"就业难"并存的现象。
+
+再从社会来看。在降低成本的压力下，一些企业裁掉了不太重要的员工，也更倾向于招有经验的人，这使得刚毕业的大学生拿到录用通知的机会很小。另外，学校教育和实际需求脱节的问题也很严重。很多公司反映，毕业生太"学院派"，知识很扎实，但不懂得如何实际运用，专业能力和软实力都达不到要求，这让企业的招聘工作变得非常棘手。
+
+总之，在这个竞争激烈的时代，大学生必须主动适应，尽快提高自己的能力，才能满足市场的要求。同时，国家也应该有长远的规划，比如重新审视学校的教学大纲，提高课程的实用性。说到底，只有供需两端一起调整，才能真正解决这个问题。
+
+**🧭 Flow**
+1. Mở: sinh viên khó tìm việc là hiện tượng rõ ràng ở mọi nước → ảnh hưởng cả bản thân SV lẫn nền kinh tế → được dư luận quan tâm.
+2. Lập trường: cả bản thân lẫn xã hội đều có nguyên nhân.
+3. Phía bản thân: kỳ vọng thu nhập không khớp năng lực thực — học phí cao, bỏ nhiều công sức nên muốn lương cao bù lại, lại không muốn việc vất vả → doanh nghiệp chê chưa đủ năng lực → "khó tuyển" và "khó xin việc" cùng tồn tại.
+4. Phía xã hội (2 ý): (a) áp lực cắt giảm chi phí → doanh nghiệp sa thải, chuộng người có kinh nghiệm → SV mới ra trường khó có thư mời; (b) giáo dục tách rời nhu cầu thực tế → SV "kinh viện", kiến thức chắc nhưng không biết vận dụng, chuyên môn lẫn kỹ năng mềm đều chưa đạt.
+5. Giải pháp 2 phía: SV chủ động thích nghi, nâng năng lực; nhà nước quy hoạch dài hạn, xem lại chương trình, tăng tính thực tiễn.
+6. Kết: chỉ khi cung và cầu cùng điều chỉnh mới giải quyết tận gốc.
+
+**💎 Cụm đắt giá**
+- 不管在哪个国家，…都是一个显而易见的现象 — dù ở nước nào,… cũng là hiện tượng ai cũng thấy
+- 不仅影响到…，还波及到… — không chỉ ảnh hưởng…, còn lan sang…
+- 受到了公众的广泛关注 — được dư luận quan tâm rộng rãi
+- 先从…来看。… 再从…来看。 — trước xét từ…; tiếp xét từ… (khung 2 phía rất gọn)
+- 期望的收入和实际能力并不匹配 — thu nhập kỳ vọng không khớp năng lực thực tế
+- 作为补偿 — coi như bù đắp
+- "招工难"和"就业难"并存的现象 — hiện tượng "khó tuyển người" và "khó xin việc" cùng tồn tại
+- 在降低成本的压力下 — dưới áp lực cắt giảm chi phí
+- 更倾向于… — nghiêng về…, chuộng…
+- 这使得… — điều này khiến…
+- 学校教育和实际需求脱节 — giáo dục nhà trường tách rời nhu cầu thực tế
+- 太"学院派"，知识很扎实，但不懂得如何实际运用 — quá "kinh viện", kiến thức vững nhưng không biết vận dụng
+- 专业能力和软实力都达不到要求 — chuyên môn lẫn kỹ năng mềm đều chưa đạt
+- 变得非常棘手 — trở nên rất nan giải
+- 主动适应 — chủ động thích nghi
+- 有长远的规划 — có quy hoạch dài hạn
+- 重新审视…的教学大纲 — xem xét lại chương trình giảng dạy
+- 说到底，只有供需两端一起调整，才能真正解决… — suy cho cùng, chỉ khi cung cầu cùng điều chỉnh mới thật sự giải quyết…
