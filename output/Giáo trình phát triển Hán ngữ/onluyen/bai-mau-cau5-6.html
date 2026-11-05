@@ -417,7 +417,47 @@ L.forEach(l=>l.addEventListener('click',()=>{const a=document.querySelector(l.ha
  let token=0,rect=null;const cache=new Map();
  const esc=s=>(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const OVR={'不可否认':'Không thể phủ nhận','与此同时':'Đồng thời, cùng lúc đó','由此可见':'Qua đó có thể thấy','归根结底':'Nói cho cùng, xét đến cùng','长此以往':'Cứ kéo dài như vậy','毋庸置疑':'Không cần nghi ngờ','久而久之':'Lâu dần','说到底':'Suy cho cùng','毕竟':'Dù sao, xét cho cùng','烂尾项目':'Dự án dở dang, bỏ dở giữa chừng (từ lóng Gen Z VN: kế hoạch hứa to nhưng không làm)','烂尾':'Dở dang, bỏ dở giữa chừng (công trình/dự án)','调侃':'Trêu chọc, đùa cợt','折射':'Phản chiếu, phản ánh','付诸行动':'Bắt tay vào làm, biến thành hành động','自嘲':'Tự giễu'};
- const py=t=>{try{return window.pinyinPro.pinyin(t,{toneType:'symbol',type:'string'})}catch(e){return ''}};
+ const py=function(text){
+    /* Pinyin ghép theo TỪ (Intl.Segmenter tách từ, âm tiết trong từ viết liền, từ cách nhau 1 dấu cách),
+       dấu câu dính từ đứng trước, viết hoa đầu câu — thay cho kiểu cách đều từng chữ của pinyin-pro. */
+    try{
+      const P = window.pinyinPro;
+      if(!P || typeof P.pinyin !== 'function') return '';
+      const flat = () => P.pinyin(text, {toneType:'symbol', type:'string'});
+      if(typeof Intl === 'undefined' || typeof Intl.Segmenter !== 'function') return flat();
+      const syl = P.pinyin(text, {toneType:'symbol', type:'array', nonZh:'removed'});
+      const HAN = /[\u4e00-\u9fff\u3400-\u4dbf]/;
+      const PUNCT = {'，':',','、':',','。':'.','！':'!','？':'?','：':':','；':';','（':'(','）':')','“':'"','”':'"','‘':"'",'’':"'",'《':'"','》':'"','…':'...','……':'...','—':'-','—':'-'};
+      let si = 0, out = '', needSpace = false;
+      for(const seg of new Intl.Segmenter('zh', {granularity:'word'}).segment(text)){
+        const s = seg.segment;
+        if(HAN.test(s)){
+          let w = '';
+          for(const ch of s){
+            if(HAN.test(ch)){
+              let y = syl[si++] || '';
+              if(w && /^[aoeāáǎàōóǒòēéěè]/i.test(y)) w += "'";
+              w += y;
+            }else w += ch;
+          }
+          if(out && needSpace) out += ' ';
+          out += w; needSpace = true;
+        }else if(/^\s+$/.test(s)){
+          needSpace = !!out;
+        }else{
+          let t = '';
+          for(const ch of s) t += (PUNCT[ch] !== undefined ? PUNCT[ch] : ch);
+          const opening = /^["'(]$/.test(t) && !(t === '"' && (out.match(/"/g)||[]).length % 2 === 1);
+          if(/^[,.!?:;)"'…]+$|^\.\.\.$/.test(t) && !opening) { out += t; needSpace = true; }
+          else if(opening){ if(out && needSpace) out += ' '; out += t; needSpace = false; }
+          else { if(out && needSpace) out += ' '; out += t; needSpace = true; }
+        }
+      }
+      out = out.replace(/ - - /g, ' — ').trim();
+      if(/[。！？]/.test(text)) out = out.replace(/(^|[.!?]["']?\s+)([a-zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ])/g, (m, a, b) => a + b.toUpperCase());
+      return out || flat();
+    }catch(e){ try{ return window.pinyinPro.pinyin(text, {toneType:'symbol', type:'string'}); }catch(_){ return ''; } }
+};
  const eng=s=>/^[\x00-\x7F]+$/.test(s)&&/[A-Za-z]{2}/.test(s);
  const mm=(q,p)=>fetch('https://api.mymemory.translated.net/get?q='+encodeURIComponent(q)+'&langpair='+p).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{const t=d&&d.responseData&&d.responseData.translatedText;if(!t)throw 0;return t});
  function tr(t){if(OVR[t])return Promise.resolve(OVR[t]);if(cache.has(t))return cache.get(t);

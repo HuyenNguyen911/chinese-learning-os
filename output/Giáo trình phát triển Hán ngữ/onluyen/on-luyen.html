@@ -5436,12 +5436,45 @@ const SENTENCE_VI = {
   }
 
   function getPinyin(text){
-    try{
-      if(window.pinyinPro && typeof window.pinyinPro.pinyin === 'function'){
-        return window.pinyinPro.pinyin(text, {toneType:'symbol', type:'string'});
-      }
-    }catch(e){}
-    return '';
+      /* Pinyin ghép theo TỪ (Intl.Segmenter tách từ, âm tiết trong từ viết liền, từ cách nhau 1 dấu cách),
+         dấu câu dính từ đứng trước, viết hoa đầu câu — thay cho kiểu cách đều từng chữ của pinyin-pro. */
+      try{
+        const P = window.pinyinPro;
+        if(!P || typeof P.pinyin !== 'function') return '';
+        const flat = () => P.pinyin(text, {toneType:'symbol', type:'string'});
+        if(typeof Intl === 'undefined' || typeof Intl.Segmenter !== 'function') return flat();
+        const syl = P.pinyin(text, {toneType:'symbol', type:'array', nonZh:'removed'});
+        const HAN = /[\u4e00-\u9fff\u3400-\u4dbf]/;
+        const PUNCT = {'，':',','、':',','。':'.','！':'!','？':'?','：':':','；':';','（':'(','）':')','“':'"','”':'"','‘':"'",'’':"'",'《':'"','》':'"','…':'...','……':'...','—':'-','—':'-'};
+        let si = 0, out = '', needSpace = false;
+        for(const seg of new Intl.Segmenter('zh', {granularity:'word'}).segment(text)){
+          const s = seg.segment;
+          if(HAN.test(s)){
+            let w = '';
+            for(const ch of s){
+              if(HAN.test(ch)){
+                let y = syl[si++] || '';
+                if(w && /^[aoeāáǎàōóǒòēéěè]/i.test(y)) w += "'";
+                w += y;
+              }else w += ch;
+            }
+            if(out && needSpace) out += ' ';
+            out += w; needSpace = true;
+          }else if(/^\s+$/.test(s)){
+            needSpace = !!out;
+          }else{
+            let t = '';
+            for(const ch of s) t += (PUNCT[ch] !== undefined ? PUNCT[ch] : ch);
+            const opening = /^["'(]$/.test(t) && !(t === '"' && (out.match(/"/g)||[]).length % 2 === 1);
+            if(/^[,.!?:;)"'…]+$|^\.\.\.$/.test(t) && !opening) { out += t; needSpace = true; }
+            else if(opening){ if(out && needSpace) out += ' '; out += t; needSpace = false; }
+            else { if(out && needSpace) out += ' '; out += t; needSpace = true; }
+          }
+        }
+        out = out.replace(/ - - /g, ' — ').trim();
+        if(/[。！？]/.test(text)) out = out.replace(/(^|[.!?]["']?\s+)([a-zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ])/g, (m, a, b) => a + b.toUpperCase());
+        return out || flat();
+      }catch(e){ try{ return window.pinyinPro.pinyin(text, {toneType:'symbol', type:'string'}); }catch(_){ return ''; } }
   }
 
   function escapeHtml(s){
