@@ -42,7 +42,7 @@ Trang là công cụ user dùng thật, **không phải chỗ ghi chú của AI*
 
 **Bố cục — 1 trang, không tab, trải hết chiều ngang:**
 - Thanh trên: tên tập · nút 👥 **Có người vào** / 🙋 **Chưa ai vào** / 📝 **Bài đăng** · nút lưu.
-- Cột trái **Mục tiêu** chỉ hiện ở 👥 (🙋 và 📝 ẩn cột này). Bôi đen chữ Hán ở mọi tab → popup pinyin + nghĩa.
+- Cột trái **Mục tiêu** chỉ hiện ở 👥 (🙋 và 📝 ẩn cột này). Bôi đen chữ Hán ở mọi tab → popup pinyin + nghĩa. Hàm `getPinyin` của popup ghép pinyin **theo từ** (`Intl.Segmenter`, viết hoa đầu câu, dấu câu dính từ trước) — trang mới PHẢI copy hàm này từ `01/01_contagious-happiness.html`, không gọi `pinyinPro.pinyin(..., {type:'string'})` trực tiếp (ra kiểu cách đều từng chữ, 2026-11-05).
 - Cột trái **Mục tiêu** (checklist thực hiện): Từ khoá bài (chip H6) · Mẫu câu bài khoá · Nói hết gợi ý (1 dòng/khối).
   Tick đồng bộ 2 chiều với nội dung; tick cả khối → tự tick từ + mẫu câu trong khối; bỏ tick khối → bỏ theo
   (trừ từ còn nằm trong khối khác đã tick). Mục tiêu đổi theo chế độ.
