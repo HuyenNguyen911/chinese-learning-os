@@ -116,6 +116,8 @@ def exp_line(members, note, label):
         head += " (%s)" % cell(note)
     return "- %s: %s" % (head, chips)
 
+SEEN = set()  # chống trùng toàn trang: từ xuất hiện lần đầu (bài khóa trước, rồi luyện đề) mới được giữ
+
 def build_bai(n):
     rows = tv.get(str(n), [])
     words, seeds = [], []
@@ -128,10 +130,18 @@ def build_bai(n):
                 seeds.append((w, r["ex"]))
             # single-char rỗng: bỏ (đã có trong 'Chung từ')
             continue
+        if w in SEEN:
+            print("  bỏ trùng:", w, "(%s)" % n)
+            continue
+        SEEN.add(w)
         words.append(r)
     # ---- 生词 table ----
-    _t = TITLES.get(str(n), "").strip()
-    heading = "## Bài %d — %s" % (n, _t) if _t else "## Bài %d" % n
+    if str(n).startswith("LD|"):  # luyện đề: "## Đề: <kênh> · <tên đề>"
+        _, kenh, de = str(n).split("|", 2)
+        heading = "## Đề: %s · %s" % (kenh, de)
+    else:
+        _t = TITLES.get(str(n), "").strip()
+        heading = "## Bài %d — %s" % (n, _t) if _t else "## Bài %d" % n
     out = [heading, "", "### 生词", "",
            "| 生词 | Pinyin | Nghĩa | 释义 | 例句 |", "| --- | --- | --- | --- | --- |"]
     for r in words:
@@ -177,5 +187,8 @@ _maxn = max((int(k) for k in tv if str(k).isdigit()), default=0)
 for n in range(1, _maxn + 1):
     if str(n) in tv:
         parts.append(build_bai(n))
+_ld = [k for k in tv if str(k).startswith("LD|")]  # luyện đề: theo thứ tự xuất hiện trong Excel
+for k in _ld:
+    parts.append(build_bai(k))
 open(OUT, "w", encoding="utf-8").write("\n".join(parts))
-print("built", OUT, "| bài:", sum(1 for n in range(1, _maxn + 1) if str(n) in tv))
+print("built", OUT, "| bài:", sum(1 for n in range(1, _maxn + 1) if str(n) in tv), "| đề:", len(_ld))

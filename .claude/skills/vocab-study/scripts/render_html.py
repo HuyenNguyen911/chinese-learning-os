@@ -67,14 +67,16 @@ ACTMAP = {"A": ("A", "a", "Activation A · tự tin dùng"),
 
 txt = open(MD, encoding="utf-8").read()
 idx = txt.find("## Bài")
-sections = re.split(r"\n(?=## Bài )", txt[idx:])
-bai = []
+sections = re.split(r"\n(?=## (?:Bài |Đề: ))", txt[idx:])
+bai = []   # bài khóa: (num, header, rows, exp, title)
+ld = []    # luyện đề: (kenh, de, header, rows)
 for sec in sections:
     mm = re.match(r"## Bài (\d+)(?:\s*—\s*(.+))?", sec)
-    if not mm:
+    md = re.match(r"## Đề: (.+?) · (.+)", sec)
+    if not mm and not md:
         continue
-    num = int(mm.group(1))
-    btitle = (mm.group(2) or "").strip()
+    num = int(mm.group(1)) if mm else None
+    btitle = (mm.group(2) or "").strip() if mm else ""
     header, rows, exp = None, [], []
     for ln in sec.splitlines():
         s = ln.strip()
@@ -89,9 +91,44 @@ for sec in sections:
                     rows.append(cs)
         elif s.startswith("- ") and "**" in s:
             exp.append(s[2:].strip())
-    if rows:
+    if rows and md:
+        ld.append((md.group(1).strip(), md.group(2).strip().splitlines()[0].strip(), header, rows))
+    elif rows:
         bai.append((num, header, rows, exp, btitle))
 bai.sort(key=lambda x: x[0], reverse=True)
+VHEADER = bai[0][1] if bai else (ld[0][2] if ld else [])
+
+# ---- Cụm ghi nhớ: chuẩn hoá + chống trùng ----
+# 1) cùng 1 từ ở nhiều đề cụm → giữ đề trước, gộp "dễ nhầm" của đề sau vào
+# 2) từ đã có dòng từ vựng (bài khóa / luyện đề) → GỘP vào dòng đó (XCARD), bỏ khỏi bảng cụm
+def _cum_item(it):
+    if isinstance(it, dict):
+        return dict(it)
+    w, cum, nham = it
+    return {"w": w, "cum": cum, "nham": nham}
+
+VOCAB_W = {r[0] for _, _, rows, _, _ in bai for r in rows} | {r[0] for _, _, _, rows in ld for r in rows}
+CUM_SEEN, XCARD, CUM_LEFT = {}, {}, []   # CUM_LEFT: [(kenh, de, [item])]
+for sec in CUM.get("sections", []):
+    mde = re.search(r"(Đề\s*\d+)", sec["title"])
+    de = re.sub(r"\s+", " ", mde.group(1)) if mde else sec["title"]
+    kenh = sec.get("kenh", "study4")
+    left = []
+    for it in sec["items"]:
+        it = _cum_item(it)
+        w = it["w"]
+        if w in CUM_SEEN:  # trùng giữa các đề cụm → gộp dễ nhầm vào bản đầu
+            old = CUM_SEEN[w]; have = {c["w"] for c in old.get("conf", [])}
+            old.setdefault("conf", []).extend(c for c in it.get("conf", []) if c["w"] not in have)
+            print("  gộp cụm trùng:", w, "(%s)" % sec["title"])
+            continue
+        CUM_SEEN[w] = it
+        if w in VOCAB_W:
+            XCARD[w] = it
+        else:
+            left.append(it)
+    if left:
+        CUM_LEFT.append((kenh, de, left))
 
 def esc(x):
     return html.escape(x)
@@ -167,15 +204,14 @@ button{font-family:inherit;}
 .toptabs{display:flex;gap:6px;padding:8px 14px 0;background:#fff;border-bottom:1px solid var(--bd);}
 .toptab{border:1px solid var(--bd);border-bottom:none;background:#eef1f8;color:#555;padding:7px 18px;border-radius:8px 8px 0 0;cursor:pointer;font-size:14.5px;}
 .toptab.on{background:var(--head);color:var(--headtx);font-weight:600;}
-#cum{padding:10px 14px 60px;}
-#cum.hidden,#root.hidden{display:none;}
-.cumrules{margin:6px 0 10px;padding:8px 14px;background:#fffbe6;border:1px solid #f0e2a0;border-radius:8px;font-size:14px;line-height:1.7;}
-.cumtools{display:flex;gap:8px;align-items:center;margin:4px 0 8px;font-size:13.5px;color:#555;}
-.cumtools select{padding:3px 6px;border:1px solid var(--bd);border-radius:6px;}
-#cum td.cw{font-weight:600;font-size:17px;white-space:nowrap;}
-#cum td.cp{color:#2f855a;white-space:nowrap;}
-#cum td.cc{color:#2f855a;font-size:15.5px;white-space:nowrap;}
-#cum td.cn{color:#b7791f;white-space:normal;}
+#ld{padding:10px 14px 60px;}
+#ld.hidden,#root.hidden{display:none;}
+h2.kenh{font-size:15px;color:#555;margin:14px 2px 4px;text-transform:uppercase;letter-spacing:.5px;}
+.cumtag{border:none;background:none;cursor:pointer;font-size:14px;padding:0 2px;}
+.pc td.cw{font-weight:600;font-size:17px;white-space:nowrap;}
+.pc td.cp{color:#2f855a;white-space:nowrap;}
+.pc td.cc{color:#2f855a;font-size:15.5px;white-space:nowrap;}
+.pc td.cn{color:#b7791f;white-space:normal;}
 main{padding:10px 14px 60px;}
 details{margin:8px 0;border:1px solid var(--bd);border-radius:8px;background:#fff;overflow:hidden;}
 summary{list-style:none;cursor:pointer;padding:9px 12px;font-size:16px;font-weight:600;color:var(--head);background:#eef1f8;display:flex;align-items:center;gap:8px;min-height:38px;}
@@ -342,7 +378,7 @@ function toggleFlag(btn){var tr=btn.closest('tr');var w=tr.getAttribute('data-w'
   FLAGS[w]=!FLAGS[w];if(!FLAGS[w])delete FLAGS[w];fsave();var _m=syncMeta();_m.flagsTs=nowIso();saveSyncMeta(_m);markDirty();
   applyFlag(tr);updateBaiFlagCount(tr.closest('details'));}
 function updateBaiFlagCount(det){if(!det)return;
-  var n=det.querySelectorAll('.panel.p1 tbody tr.flagged').length;
+  var n=det.querySelectorAll('.panel.pv tbody tr.flagged').length;
   var b=det.querySelector('.flagcnt');if(!b)return;
   b.textContent=n?('🚩'+n):'';b.classList.toggle('hidden',!n);}
 function initRow(tr){var w=tr.getAttribute('data-w');var r=DB[w];
@@ -365,19 +401,16 @@ function tab(btn,which){var d=btn.closest('details');
   d.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});
   d.querySelector('.panel.p'+which).classList.add('on');}
 function filt(){var k=document.getElementById('q').value.trim().toLowerCase();
-  document.querySelectorAll('#cum details').forEach(function(d){var any=false;
-    d.querySelectorAll('tbody tr').forEach(function(tr){var hit=!k||tr.innerText.toLowerCase().indexOf(k)>-1;
-      tr.classList.toggle('hidden',!hit);if(hit)any=true;});
-    d.open=k?any:false;});
-  document.querySelectorAll('#root details').forEach(function(d){var any=false;
+  document.querySelectorAll('#root details, #ld details').forEach(function(d){var any=false;
     d.querySelectorAll('tbody tr').forEach(function(tr){var hit=!k||tr.innerText.toLowerCase().indexOf(k)>-1;
       tr.classList.toggle('hidden',!hit);if(hit)any=true;});
     d.querySelectorAll('.grp').forEach(function(g){var hit=!k||g.innerText.toLowerCase().indexOf(k)>-1;
       g.classList.toggle('hidden',!hit);if(hit)any=true;});
     d.open=k?any:false;});}
 function topTab(which){
+  if(which!=='ld')which='tv';
   document.getElementById('root').classList.toggle('hidden',which!=='tv');
-  document.getElementById('cum').classList.toggle('hidden',which!=='cum');
+  document.getElementById('ld').classList.toggle('hidden',which!=='ld');
   document.querySelectorAll('.toptab').forEach(function(b){b.classList.toggle('on',b.dataset.t===which);});
   try{localStorage.setItem('hsk6study_toptab',which);}catch(e){}
   filt();}
@@ -424,8 +457,8 @@ function speak(t){
 }
 function spkRow(btn){speak(btn.closest('tr').getAttribute('data-w'));}
 document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('#root tbody tr').forEach(initRow);
-  document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
+  document.querySelectorAll('#root .pv tbody tr, #ld .pv tbody tr').forEach(initRow);
+  document.querySelectorAll('#root details, #ld details').forEach(updateBaiFlagCount);
   autoLoadProgress();
   cloudInit();
   updateSyncBar();
@@ -456,8 +489,8 @@ function localSnapshot(){return {db:DB,flags:FLAGS,srs:SRS,flagsTs:syncMeta().fl
 function applySnapshot(P){
   DB=P.db||{};store(DB);FLAGS=P.flags||{};fsave();SRS=P.srs||{};ssave();
   var m=syncMeta();m.flagsTs=P.flagsTs||m.flagsTs||'';saveSyncMeta(m);
-  document.querySelectorAll('#root tbody tr').forEach(initRow);
-  document.querySelectorAll('#root details').forEach(updateBaiFlagCount);
+  document.querySelectorAll('#root .pv tbody tr, #ld .pv tbody tr').forEach(initRow);
+  document.querySelectorAll('#root details, #ld details').forEach(updateBaiFlagCount);
 }
 function toast(t){var d=document.createElement('div');d.textContent=t;
   d.style.cssText='position:fixed;bottom:18px;right:18px;background:#1a4a8a;color:#fff;padding:10px 14px;border-radius:8px;font-size:13px;z-index:99999;box-shadow:0 2px 8px #0004';
@@ -619,7 +652,8 @@ function cardsFrom(rows){
     if(!w)return;
     out.push({w:w,py:td[2].textContent.trim(),vi:td[3].textContent.trim(),
               rj:td[4].textContent.trim(),ex:td[5].textContent.trim(),act:act,lvl:ACTLVL[act],
-              pys:(tr.getAttribute('data-py')||'').split(' ').filter(Boolean)});
+              pys:(tr.getAttribute('data-py')||'').split(' ').filter(Boolean),
+              xcard:tr.getAttribute('data-xcard')?JSON.parse(tr.getAttribute('data-xcard')):null});
   });
   return out;
 }
@@ -640,23 +674,34 @@ function beginStudy(cards,label){
   resetBody();sNext();
 }
 function startStudy(btn){var det=btn.closest('details');
-  var label=det.getAttribute('data-bai')=='99'?'Linh tinh':'Bài '+det.getAttribute('data-bai');
-  var _bt=det.getAttribute('data-baititle');if(_bt)label+=' — '+_bt;
-  beginStudy(cardsFrom(det.querySelectorAll('.panel.p1 tbody tr')),label);}
+  var label=det.getAttribute('data-label')||'';
+  var on=det.querySelector('.panel.on');
+  if(on&&on.classList.contains('pc'))return beginStudy(cumCards(on.querySelectorAll('tbody tr')),'Cụm: '+label);
+  beginStudy(cardsFrom(det.querySelectorAll('.panel.pv tbody tr')),label);}
+function cumInfo(btn){var tr=btn.closest('tr');var c={};try{c=JSON.parse(tr.getAttribute('data-xcard'))||{};}catch(e){}
+  var nh=c.nham||(c.conf||[]).map(function(x){return x.w+' '+(x.py||'')+(x.vi?' — '+x.vi:'');}).join('\n');
+  alert('🧩 Cụm nhớ: '+(c.cum||'')+(nh?'\n\nDễ nhầm với:\n'+nh:'')+(c.q?'\n\nXử lý: '+c.q:''));}
+function cumHtml(c,w){var h='';
+  if(c.cum)h+='<div class="blk"><div class="bh">Cụm mẫu</div><div class="cumfull">'+c.cum.split(w).map(esc).join('<b>'+esc(w)+'</b>')+'</div></div>';
+  if(c.trait&&c.trait.length)h+='<div class="blk"><div class="bh">① Đặc điểm</div><ul>'+c.trait.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>';
+  if(c.conf&&c.conf.length)h+='<div class="blk"><div class="bh">② Dễ nhầm với</div>'+c.conf.map(function(x){
+    return '<div class="cf"><b>'+esc(x.w)+'</b> <span class="cfp">'+esc(x.py)+'</span> — '+esc(x.vi)+' <span class="cfd">'+esc(x.diff)+'</span></div>';}).join('')+'</div>';
+  else if(c.nham)h+='<div class="blk"><div class="bh">② Dễ nhầm với</div><div>'+esc(c.nham)+'</div></div>';
+  if(c.q)h+='<div class="blk"><div class="bh">③ Xử lý</div><div>'+esc(c.q)+'</div></div>';
+  return h;}
 function cumCards(rows){var out=[];
   rows.forEach(function(tr){if(tr.classList.contains('hidden'))return;
     out.push({w:tr.getAttribute('data-w'),py:tr.getAttribute('data-pyd'),cum:tr.getAttribute('data-cum'),nham:tr.getAttribute('data-nham'),card:tr.getAttribute('data-card')?JSON.parse(tr.getAttribute('data-card')):null,
       act:'none',lvl:4,pys:[]});});
   return out;}
-function startStudyCum(btn){var det=btn.closest('details');
-  beginStudy(cumCards(det.querySelectorAll('tbody tr')),'Cụm: '+det.getAttribute('data-baititle'));}
 function startStudyAll(){
-  if(!document.getElementById('cum').classList.contains('hidden')){
-    var cr=[];document.querySelectorAll('#cum tbody tr').forEach(function(tr){cr.push(tr);});
-    var cq=document.getElementById('q').value.trim();
-    return beginStudy(cumCards(cr), cq?('Cụm lọc: '+cq):'Cụm: tất cả');}
-  var rows=[];document.querySelectorAll('#root .panel.p1 tbody tr').forEach(function(tr){rows.push(tr);});
   var q=document.getElementById('q').value.trim();
+  if(!document.getElementById('ld').classList.contains('hidden')){
+    var vr=[],cr=[];
+    document.querySelectorAll('#ld .panel.pv tbody tr').forEach(function(tr){vr.push(tr);});
+    document.querySelectorAll('#ld .panel.pc tbody tr').forEach(function(tr){cr.push(tr);});
+    return beginStudy(cardsFrom(vr).concat(cumCards(cr)), q?('Luyện đề lọc: '+q):'Luyện đề: tất cả');}
+  var rows=[];document.querySelectorAll('#root .panel.pv tbody tr').forEach(function(tr){rows.push(tr);});
   beginStudy(cardsFrom(rows), q?('Lọc: '+q):'Tất cả bài');}
 function resetBody(){document.getElementById('sbody').innerHTML=
   '<div class="sfront" id="sfront"></div><div class="shint" id="shint">Bấm để lật thẻ</div><div class="sback" id="sback"></div>';}
@@ -679,18 +724,14 @@ function sFlip(){if(Sflip)return;Sflip=true;
   var h='<div class="py">'+esc(Scur.py)+'</div>';
   if(Sdir==='vi2zh')h+='<div class="zh">'+esc(Scur.w)+'</div>';
   if(Scur.card){var c=Scur.card;
-    h+='<div class="vi cvi">'+esc(c.vi)+'</div>';
-    if(c.cum)h+='<div class="blk"><div class="bh">Cụm mẫu</div><div class="cumfull">'+c.cum.split(Scur.w).map(esc).join('<b>'+esc(Scur.w)+'</b>')+'</div></div>';
-    h+='<div class="blk"><div class="bh">① Đặc điểm</div><ul>'+(c.trait||[]).map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>';
-    h+='<div class="blk"><div class="bh">② Dễ nhầm với</div>'+(c.conf||[]).map(function(x){
-      return '<div class="cf"><b>'+esc(x.w)+'</b> <span class="cfp">'+esc(x.py)+'</span> — '+esc(x.vi)+' <span class="cfd">'+esc(x.diff)+'</span></div>';}).join('')+'</div>';
-    if(c.q)h+='<div class="blk"><div class="bh">③ Xử lý</div><div>'+esc(c.q)+'</div></div>';}
+    h+='<div class="vi cvi">'+esc(c.vi)+'</div>'+cumHtml(c,Scur.w);}
   else if(Scur.cum){h+='<div class="ln"><span class="lb">Cụm nhớ</span><span class="vi">'+esc(Scur.cum)+'</span></div>';
     h+='<div class="ln"><span class="lb">Dễ nhầm</span><span>'+esc(Scur.nham)+'</span></div>';}
   else{
   h+='<div class="ln"><span class="lb">Nghĩa</span><span class="vi">'+esc(Scur.vi)+'</span></div>';
   h+='<div class="ln"><span class="lb">释义</span><span>'+esc(Scur.rj)+'</span></div>';
   if(Scur.ex)h+='<div class="ln"><span class="lb">Ví dụ</span><span>'+esc(Scur.ex)+'</span></div>';
+  if(Scur.xcard)h+=cumHtml(Scur.xcard,Scur.w);
   h+=chietTu(Scur.w,Scur.pys);}
   b.innerHTML=h;b.className='sback on';
   document.getElementById('shint').style.display='none';
@@ -830,59 +871,96 @@ P = ['<!doctype html>', '<html lang="vi"><head><meta charset="utf-8">',
      '<div id="promobanner" class="syncbanner promo hidden">🎓 <span id="promocount">0</span> từ đã "Thuộc" từ mức D — sẵn sàng lên hạng C trong vault (chỉ recognition; B/A vẫn cần dùng thật).'
      '<button onclick="exportPromote()">Xuất danh sách</button>'
      '</div>',
-     '<div class="toptabs"><button class="toptab on" data-t="tv" onclick="topTab(&quot;tv&quot;)">Từ vựng</button>'
-     '<button class="toptab" data-t="cum" onclick="topTab(&quot;cum&quot;)">Cụm ghi nhớ</button></div>',
+     '<div class="toptabs"><button class="toptab on" data-t="tv" onclick="topTab(&quot;tv&quot;)">Bài khóa</button>'
+     '<button class="toptab" data-t="ld" onclick="topTab(&quot;ld&quot;)">Luyện đề</button></div>',
      '<main id="root">']
 
+PYFIX = {"别具一格": "bié jù yì gé"}
+
+def cum_nham(it):
+    return it.get("nham") or " · ".join("%s %s" % (c["w"], c.get("py", "")) for c in it.get("conf", []))
+
+def vocab_row(r):
+    w = r[0]
+    cells = '<td class="w data">%s</td>' % esc(w) + "".join('<td class="data">%s</td>' % esc(c) for c in r[1:])
+    xc = XCARD.get(w)
+    xbtn = ('<button class="cumtag" title="Có cụm ghi nhớ: %s" onclick="cumInfo(this)">🧩</button>' % esc(xc.get("cum", ""))) if xc else ''
+    act = ('<td class="act">%s<button class="spk" title="Nghe" onclick="spkRow(this)">🔊</button>%s'
+           '<button class="flagbtn" title="Đánh dấu: đang học tới đây" onclick="toggleFlag(this)">⚑</button>'
+           '<button class="rowedit" title="Sửa dòng này" onclick="er(this)">✏️</button></td>') % (status_cell(w), xbtn)
+    xattr = (' data-xcard="%s"' % esc(_json.dumps(xc, ensure_ascii=False))) if xc else ''
+    return '<tr data-w="%s" data-py="%s"%s>%s%s</tr>' % (esc(w), esc(per_char_py(w)), xattr, act, cells)
+
+def vocab_table(header, rows):
+    return ('<div class="tw"><table><thead><tr><th></th>' + "".join('<th>%s</th>' % esc(h) for h in header)
+            + '</tr></thead><tbody>' + "".join(vocab_row(r) for r in rows) + '</tbody></table></div>')
+
+def cum_row(it):
+    w = it["w"]; pyd = it.get("py") or PYFIX.get(w) or per_char_py(w)
+    cum = it.get("cum", ""); nham = cum_nham(it)
+    card = '' if "nham" in it else ' data-card="%s"' % esc(_json.dumps(it, ensure_ascii=False))
+    return ('<tr data-w="%s" data-cum="%s" data-nham="%s" data-pyd="%s"%s><td class="act"><button class="spk" title="Nghe" onclick="speak(%s)">🔊</button></td><td class="cw">%s</td><td class="cp">%s</td><td class="cc">%s</td><td class="cn">%s</td></tr>'
+            % (esc(w), esc(cum), esc(nham), esc(pyd), card, esc(_json.dumps(w, ensure_ascii=False)), esc(w), esc(pyd), esc(cum), esc(nham)))
+
+def cum_table(items):
+    return ('<div class="tw"><table><thead><tr><th></th><th>Từ</th><th>Pinyin</th><th>Cụm nhớ</th><th>Dễ nhầm với</th></tr></thead><tbody>'
+            + "".join(cum_row(it) for it in items) + '</tbody></table></div>')
+
+# ===== Tab 1: Bài khóa =====
 for num, header, rows, exp, btitle in bai:
     cnt = ('%d từ · %d nhóm 拓展' % (len(rows), len(exp))) if exp else ('%d từ' % len(rows))
     tlabel = ('<span class="btitle"> — %s</span>' % esc(btitle)) if btitle else ''
-    bname = "Linh tinh" if num == 99 else "Bài %d" % num  # 99 = bài giữ chỗ Linh tinh
-    P.append('<details data-bai="%d" data-baititle="%s"><summary><span class="arw">▸</span>%s%s<span class="flagcnt hidden"></span><span class="cnt">%s</span></summary>' % (num, esc(btitle), bname, tlabel, cnt))
+    label = "Bài %d" % num + (" — " + btitle if btitle else "")
+    P.append('<details data-label="%s"><summary><span class="arw">▸</span>Bài %d%s<span class="flagcnt hidden"></span><span class="cnt">%s</span></summary>' % (esc(label), num, tlabel, cnt))
     P.append('<div class="baitools"><button class="studybtn" onclick="startStudy(this)">🎓 Học bài này</button>')
     if exp:
         P.append('<button class="tabbtn on" onclick="tab(this,1)">Từ vựng (%d)</button>'
                  '<button class="tabbtn" onclick="tab(this,2)">生词拓展 (%d)</button>' % (len(rows), len(exp)))
     P.append('</div>')
-    P.append('<div class="panel p1 on"><div class="tw"><table><thead><tr><th></th>'
-             + "".join('<th>%s</th>' % esc(h) for h in header) + '</tr></thead><tbody>')
-    for r in rows:
-        w = r[0]
-        cells = '<td class="w data">%s</td>' % esc(w) + "".join('<td class="data">%s</td>' % esc(c) for c in r[1:])
-        act = ('<td class="act">%s<button class="spk" title="Nghe" onclick="spkRow(this)">🔊</button>'
-               '<button class="flagbtn" title="Đánh dấu: đang học tới đây" onclick="toggleFlag(this)">⚑</button>'
-               '<button class="rowedit" title="Sửa dòng này" onclick="er(this)">✏️</button></td>') % status_cell(w)
-        P.append('<tr data-w="%s" data-py="%s">%s%s</tr>' % (esc(w), esc(per_char_py(w)), act, cells))
-    P.append('</tbody></table></div></div>')
+    P.append('<div class="panel p1 pv on">' + vocab_table(header, rows) + '</div>')
     if exp:
         P.append('<div class="panel p2"><div class="exp">')
         for line in exp:
             P.append(render_exp(line))
         P.append('</div></div>')
     P.append('</details>')
-
 P.append('</main>')
-# tab Cụm ghi nhớ
-P.append('<section id="cum" class="hidden">')
-if CUM.get("rules"):
-    P.append('<div class="cumrules"><b>2 quy tắc chung</b><br>' + "<br>".join("%d. %s" % (i + 1, esc(r)) for i, r in enumerate(CUM["rules"])) + '</div>')
-PYFIX = {"别具一格": "bié jù yì gé"}
-for si, sec in enumerate(CUM.get("sections", [])):
-    P.append('<details data-baititle="%s"><summary><span class="arw">▸</span>%s<span class="cnt">%d từ</span></summary>' % (esc(sec["title"]), esc(sec["title"]), len(sec["items"])))
-    P.append('<div class="baitools"><button class="studybtn" onclick="startStudyCum(this)">🎓 Học nhóm này</button></div>')
-    P.append('<div class="tw"><table><thead><tr><th></th><th>Từ</th><th>Pinyin</th><th>Cụm nhớ</th><th>Dễ nhầm với</th></tr></thead><tbody>')
-    for it in sec["items"]:
-        if isinstance(it, dict):
-            w = it["w"]; pyd = it.get("py") or PYFIX.get(w) or per_char_py(w)
-            cum = it.get("cum", ""); nham = " · ".join("%s %s" % (c["w"], c.get("py", "")) for c in it.get("conf", []))
-            P.append('<tr data-w="%s" data-cum="%s" data-nham="%s" data-pyd="%s" data-card="%s"><td class="act"><button class="spk" title="Nghe" onclick="speak(%s)">🔊</button></td><td class="cw">%s</td><td class="cp">%s</td><td class="cc">%s</td><td class="cn">%s</td></tr>'
-                     % (esc(w), esc(cum), esc(nham), esc(pyd), esc(_json.dumps(it, ensure_ascii=False)), esc(_json.dumps(w, ensure_ascii=False)), esc(w), esc(pyd), esc(cum), esc(nham)))
-            continue
-        w, cum, nham = it
-        pyd = PYFIX.get(w) or per_char_py(w)
-        P.append('<tr data-w="%s" data-cum="%s" data-nham="%s" data-pyd="%s"><td class="act"><button class="spk" title="Nghe" onclick="speak(%s)">🔊</button></td><td class="cw">%s</td><td class="cp">%s</td><td class="cc">%s</td><td class="cn">%s</td></tr>'
-                 % (esc(w), esc(cum), esc(nham), esc(pyd), esc(_json.dumps(w, ensure_ascii=False)), esc(w), esc(pyd), esc(cum), esc(nham)))
-    P.append('</tbody></table></div></details>')
+
+# ===== Tab 2: Luyện đề (kênh → đề; mỗi đề: Từ vựng | Cụm ghi nhớ) =====
+LDB = {}   # (kenh, de) -> {"rows": [...], "cum": [...]}
+KORD = []
+for kenh, de, header, rows in ld:
+    LDB.setdefault((kenh, de), {"rows": [], "cum": []})["rows"] += rows
+    if kenh not in KORD: KORD.append(kenh)
+for kenh, de, items in CUM_LEFT:
+    LDB.setdefault((kenh, de), {"rows": [], "cum": []})["cum"] += items
+    if kenh not in KORD: KORD.append(kenh)
+
+def de_key(de):  # đề đánh số mới nhất trên cùng, rồi "Chưa rõ đề N"
+    m = re.match(r"Đề\s*(\d+)$", de)
+    if m: return (0, -int(m.group(1)), de)
+    m = re.match(r"Chưa rõ đề\s*(\d*)$", de)
+    if m: return (1, -int(m.group(1) or 0), de)
+    return (2, 0, de)
+
+P.append('<section id="ld" class="hidden">')
+for kenh in KORD:
+    P.append('<h2 class="kenh">%s</h2>' % esc(kenh))
+    for (k, de) in sorted([x for x in LDB if x[0] == kenh], key=lambda x: de_key(x[1])):
+        g = LDB[(k, de)]; rows, items = g["rows"], g["cum"]
+        cnt = " · ".join(x for x in [("%d từ" % len(rows)) if rows else "", ("%d cụm" % len(items)) if items else ""] if x)
+        label = "%s · %s" % (kenh, de)
+        P.append('<details data-label="%s"><summary><span class="arw">▸</span>%s<span class="flagcnt hidden"></span><span class="cnt">%s</span></summary>' % (esc(label), esc(de), cnt))
+        P.append('<div class="baitools"><button class="studybtn" onclick="startStudy(this)">🎓 Học</button>')
+        if rows and items:
+            P.append('<button class="tabbtn on" onclick="tab(this,1)">Từ vựng (%d)</button>'
+                     '<button class="tabbtn" onclick="tab(this,2)">Cụm ghi nhớ (%d)</button>' % (len(rows), len(items)))
+        P.append('</div>')
+        if rows:
+            P.append('<div class="panel p1 pv on">' + vocab_table(VHEADER, rows) + '</div>')
+        if items:
+            P.append('<div class="panel %s pc%s">' % ("p2" if rows else "p1", "" if rows else " on") + cum_table(items) + '</div>')
+        P.append('</details>')
 P.append('</section>')
 # study modal
 P.append('<div id="study" class="hidden" onclick="if(event.target.id===\'study\')closeStudy()">'
@@ -902,7 +980,7 @@ if not ARTIFACT_OUT:
     P.append('<script src="tu-vung-progress.js" onerror="void 0"></script>')
 P.append('<script>var HZ=' + HZ_JSON + ';var MN=' + MN_JSON + ';</script>')
 P.append('<script>' + JS + '</script>')
-P.append("<script>try{var _t=localStorage.getItem('hsk6study_toptab');if(_t==='cum')topTab('cum');}catch(e){}</script>")
+P.append("<script>try{var _t=localStorage.getItem('hsk6study_toptab');if(_t==='ld'||_t==='cum')topTab('ld');}catch(e){}</script>")
 P.append('</body></html>')
 
 open(OUT, "w", encoding="utf-8").write("\n".join(P))

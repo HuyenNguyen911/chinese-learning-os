@@ -23,8 +23,11 @@ author: Chinese Learning OS
 - **'Chung từ'**: cột `Bài, 生词(=chuỗi nhóm họ từ ngăn bởi 、hoặc -), …, 意义(ghi chú Việt)`.
   Đây là **生词拓展**.
 
-**Bài "Linh tinh"** (từ user góp nhặt ngoài bài khóa): cột `Bài` ghi `Linh tinh` (extract_xlsx map → số giữ chỗ 99;
-render hiện "Linh tinh", nằm trên cùng, không đụng đánh số Bài N thật). Quy trình khi user gửi list / đề (2 pha —
+**Từ luyện đề** (góp nhặt ngoài bài khóa, trước 2026-11-05 gọi là "Linh tinh"): cột `Bài` ghi `<kênh> · <tên đề>`,
+vd `study4 · Đề 10` (extract_xlsx → key `LD|kênh|đề`; nhãn cũ `Linh tinh` vẫn đọc được → "Chưa rõ đề"). Mỗi đề mới =
+1 nhóm riêng, KHÔNG dồn chung (user ngợp khi 1 nhóm phình ~1000 từ). Đề dài (>~100 từ) → hỏi user có tách đôi không
+(2026-11-05 user tách Đề 8 cũ 101 từ thành Đề 7 đọc + Đề 8 nghe). 573 từ cũ không rõ đề đã chia `study4 · Chưa rõ đề 1…6`
+(~95 từ/nhóm). Số đề từ vựng và số đề cụm ghi nhớ KHÔNG cần khớp nhau (user không nhớ). Quy trình khi user gửi list / đề (2 pha —
 user đã sửa 2 lần vì tự ghi trước khi duyệt, rồi lại dừng ở bóc tách):
 0. User nói "bóc tách từ vựng tiếp" mà **chưa dán nội dung** → chờ user gửi đề, KHÔNG tự lục `raw/`/lesson tìm bài
    (2026-11-05 user: "tui đã gửi đâu mà chạy dữ dẹ").
@@ -62,7 +65,8 @@ user đã sửa 2 lần vì tự ghi trước khi duyệt, rồi lại dừng �
 - **🔊 Phát âm** (Web Speech API, giọng zh-CN của máy) — bảng + thẻ học (auto đọc khi lật).
 - ✏️ Sửa nội dung tại chỗ (lưu localStorage).
 - **🚩 Đánh dấu dòng đang học**: cờ per-dòng (bật/tắt tự do, localStorage) để tracking vị trí dừng bài giữa các buổi; badge 🚩N hiện trên summary mỗi Bài.
-- **Tab cấp trên: Từ vựng | Cụm ghi nhớ.** Tab *Cụm ghi nhớ* (từ `data/cum_ghi_nho.json`, không qua Excel) gom cụm cố định + từ dễ nhầm rút từ đề luyện điền từ H6: mỗi đề 1 nhóm gập `Điền từ H6 — Đề N` (bảng Từ | Pinyin | Cụm nhớ | Dễ nhầm với, 🔊), có 🎓 Học riêng. 汉→Việt: hiện từ, lật ra cụm; Việt→汉: hiện cụm với từ bị che ＿＿, nhớ ra từ. Tiến độ SRS lưu key `cum:<từ>` (không lẫn từ bài khóa), không có luồng D→C.
+- **Tab cấp trên: Bài khóa | Luyện đề** (từ 2026-11-05). *Luyện đề*: nhóm theo kênh (`study4`, kênh khác sau này) → mỗi đề 1 khối gập, đề số mới nhất trên cùng rồi tới "Chưa rõ đề N"; trong khối có tab con **Từ vựng | Cụm ghi nhớ** (đề chỉ có 1 loại thì không có tab con). 🎓 Học học đúng tab con đang mở. Cụm lấy từ `data/cum_ghi_nho.json` (không qua Excel), section `Điền từ H6 — Đề N` → khối `Đề N` của kênh `kenh` (mặc định study4). Thẻ cụm 汉→Việt: hiện từ, lật ra cụm; Việt→汉: hiện cụm với từ bị che ＿＿. Tiến độ SRS key `cum:<từ>`, không có luồng D→C.
+- **Không trùng lặp trên toàn trang** (user yêu cầu 2026-11-05): build_md bỏ từ đã xuất hiện trước (bài khóa trước, rồi luyện đề theo thứ tự Excel; vd 鸦雀无声 Bài 6 bỏ, giữ Bài 1). Cụm trùng giữa các đề → giữ đề đầu, gộp "dễ nhầm" của đề sau. Từ vừa có dòng từ vựng vừa có cụm → **gộp vào dòng từ vựng** (nút 🧩 xem nhanh, thẻ lật ra thêm Cụm mẫu/Dễ nhầm/Xử lý), không hiện ở bảng cụm. Nên khi thêm cụm cho đề mới, từ đã có ở từ vựng vẫn ghi vào JSON bình thường — render tự gộp.
 
 ## Pipeline (chạy từ gốc repo; `PY` = python có pypinyin + openpyxl)
 ```bash
