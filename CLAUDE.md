@@ -34,6 +34,7 @@ Hệ thống huấn luyện tiếng Trung dài hạn. Mục tiêu: HSK6 220-240+
    hiện chưa có skill nào sở hữu → xử lý trực tiếp, không qua skill)_
 4c. "đóng session" / "kết thúc buổi" / "kết thúc session" / "close session" → close-session
 4d. "học từ vựng" / "review từ vựng" / "sinh trang học từ" / "cập nhật từ vựng theo bài" / "tu-vung" / "áp dụng lên hạng" → vocab-study
+   _(Bóc từ vựng từ list/đề dán trực tiếp, không có file pptx bài khóa → vocab-study: từ vào bài Linh tinh, cụm/từ dễ nhầm vào tab Cụm ghi nhớ theo đề. KHÔNG route sang lesson-prep, KHÔNG tự đặt "Bài N" mới)_
 4e. "chuẩn bị bài" / "bóc bài khóa" / "lesson-prep" / "chuẩn bị buổi X" / "bài khóa của cô" → lesson-prep
 4f. "phản biện" / "bắt lỗi lập luận" / "chỗ này sai ở đâu" / "review giúp kết luận này" → critic
    _(KHÔNG route sang critic khi user chỉ nhờ chấm bài viết tiếng Trung → rule 2; hoặc soi bug code → /code-review)_
