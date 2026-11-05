@@ -441,6 +441,47 @@
 - 只有持之以恒，才能… — chỉ có bền bỉ mới…
 - 这才是长久之计 — đó mới là kế lâu dài
 
+### Câu 6：一个人的身材到底有多重要？
+
+对于身材，每个人都有自己的看法。有人认为身材就是他们的生命，是他们的面子、甚至是一种资源。而在我看来，身材固然重要，但它只是生活的一部分。换句话说，身材的意义主要体现在心理和健康两个方面。
+
+第一，注重身材是一件好事，它能让人更自信，对生活也更有动力。显而易见，很多女性为了穿上自己喜欢的衣服而努力减肥，等她真正穿上的时候，整个人都更自信了，在工作和生活中也更加大方。归根到底，爱美之心，人皆有之。但是，如果一个人只顾着身材，却忽视了自己的性格、心态这些真正决定一个人价值的东西，那么别人很可能会把你看成一个花瓶，外表光鲜亮丽，内心却空洞无物。
+
+第二，身材也是衡量身体健康的一个重要指标。如果你保持匀称、合理的身材，就可以降低患慢性病的风险。另外，经常锻炼身体能让你保持柔韧和良好的体型。在这样的状态下，你不仅生活充满活力，还能吸引同频的人，大家一起变得更好。网上有句话说：“身材养眼，好运连连。”这话虽然有点夸张，但也有一定的道理。
+
+总的来说，身材之所以重要，是因为我们把它看作健康、自律和正能量的象征。所以，我们应该由内而外地提升自己，让内在和外在相得益彰。
+
+**🧭 Flow**
+1. Mở: mỗi người một cách nhìn — có người coi vóc dáng là sinh mệnh, thể diện, thậm chí là "tài nguyên".
+2. Lập trường: vóc dáng quan trọng thật, nhưng chỉ là một phần cuộc sống; ý nghĩa nằm ở 2 mặt: tâm lý và sức khỏe.
+3. Mặt tâm lý: chú ý vóc dáng giúp tự tin, có động lực — ví dụ phụ nữ giảm cân để mặc được đồ mình thích → tự tin, phóng khoáng hơn; 爱美之心，人皆有之.
+4. Nhượng bộ ngược: chỉ lo vóc dáng mà bỏ quên tính cách, tâm thế → bị coi là "bình hoa", ngoài bóng bẩy trong rỗng tuếch.
+5. Mặt sức khỏe: vóc dáng cân đối giảm nguy cơ bệnh mãn tính; tập luyện giữ dẻo dai, dáng đẹp → tràn sức sống, hút người cùng tần số; câu nói vui trên mạng "身材养眼，好运连连" — phóng đại nhưng có lý.
+6. Kết: vóc dáng quan trọng vì là biểu tượng của sức khỏe, kỷ luật, năng lượng tích cực → nâng mình từ trong ra ngoài, trong ngoài cùng tôn nhau lên.
+
+**💎 Cụm đắt giá**
+- 对于…，每个人都有自己的看法 — về…, mỗi người có cách nhìn riêng
+- 有人认为…，而在我看来，… — có người cho rằng…, còn theo tôi…
+- …固然重要，但它只是…的一部分 — … quan trọng thật, nhưng chỉ là một phần của…
+- 换句话说，…主要体现在…两个方面 — nói cách khác, … chủ yếu thể hiện ở hai mặt…
+- 对生活也更有动力 — có thêm động lực sống
+- 为了…而努力… — vì… mà cố gắng…
+- 在工作和生活中也更加大方 — trong công việc lẫn cuộc sống đều tự tin, phóng khoáng hơn
+- 归根到底，爱美之心，人皆有之 — suy cho cùng, ai cũng có lòng yêu cái đẹp
+- 只顾着…，却忽视了… — chỉ mải lo…, lại bỏ quên…
+- 真正决定一个人价值的东西 — thứ thật sự quyết định giá trị một người
+- 把你看成一个花瓶 — coi bạn là "bình hoa" (đẹp mà vô dụng)
+- 外表光鲜亮丽，内心却空洞无物 — bề ngoài bóng bẩy, bên trong rỗng tuếch
+- 衡量身体健康的一个重要指标 — thước đo quan trọng của sức khỏe
+- 匀称、合理的身材 — vóc dáng cân đối, hợp lý
+- 降低患慢性病的风险 — giảm nguy cơ mắc bệnh mãn tính
+- 吸引同频的人 — thu hút người cùng tần số
+- 这话虽然有点夸张，但也有一定的道理 — câu này hơi phóng đại nhưng cũng có lý
+- …之所以重要，是因为… — sở dĩ… quan trọng là vì…
+- 健康、自律和正能量的象征 — biểu tượng của sức khỏe, kỷ luật và năng lượng tích cực
+- 由内而外地提升自己 — nâng cấp bản thân từ trong ra ngoài
+- 让内在和外在相得益彰 — để nội tâm và vẻ ngoài tôn nhau lên
+
 ---
 
 ## Bài 9 · 《到底谁的错》
