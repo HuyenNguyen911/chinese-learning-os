@@ -5875,6 +5875,848 @@
      "q": "Đề nói bằng chứng xác nhận điều đã có, hay lập luận chứng minh, hay sửa sai? 证实 và 证明 gần nhau, xem cả câu."
     }
    ]
+  },
+  {
+   "title": "Điền từ H6 — Đề 7",
+   "items": [
+    {
+     "w": "直接",
+     "py": "zhí jiē",
+     "vi": "trực tiếp",
+     "cum": "与叶面表面积有直接关系",
+     "trait": [
+      "Tính từ: không qua trung gian, tác động thẳng",
+      "Đi với: 直接关系, 直接影响, 直接原因"
+     ],
+     "conf": [
+      {
+       "w": "敏感",
+       "py": "mǐn gǎn",
+       "vi": "nhạy cảm",
+       "diff": "nói người/vật dễ phản ứng (敏感话题), không đi với 关系"
+      },
+      {
+       "w": "良好",
+       "py": "liáng hǎo",
+       "vi": "tốt đẹp",
+       "diff": "đánh giá tốt (良好的关系 = quan hệ tốt giữa người với người)"
+      },
+      {
+       "w": "复杂",
+       "py": "fù zá",
+       "vi": "phức tạp",
+       "diff": "nhiều mặt rối rắm (关系复杂), cấu trúc 有…关系 ít dùng"
+      }
+     ],
+     "q": "Đề nói hai thứ ảnh hưởng thẳng lên nhau, hay quan hệ tốt đẹp, rối rắm, hay dễ phản ứng?"
+    },
+    {
+     "w": "效果",
+     "py": "xiào guǒ",
+     "vi": "hiệu quả",
+     "cum": "影响到净化效果",
+     "trait": [
+      "Danh từ: kết quả tốt mà một việc/biện pháp tạo ra",
+      "Đi với: 净化效果, 治疗效果, 效果明显"
+     ],
+     "conf": [
+      {
+       "w": "成果",
+       "py": "chéng guǒ",
+       "vi": "thành quả",
+       "diff": "thứ làm ra sau nỗ lực (研究成果, 劳动成果)"
+      },
+      {
+       "w": "结果",
+       "py": "jié guǒ",
+       "vi": "kết quả",
+       "diff": "kết cục trung tính của sự việc (比赛结果)"
+      },
+      {
+       "w": "后果",
+       "py": "hòu guǒ",
+       "vi": "hậu quả",
+       "diff": "kết cục xấu (后果严重)"
+      }
+     ],
+     "q": "Đề nói mức tác dụng của biện pháp, hay thứ làm ra sau nỗ lực, kết cục trung tính, hay kết cục xấu?"
+    },
+    {
+     "w": "合适",
+     "py": "hé shì",
+     "vi": "vừa, phù hợp",
+     "cum": "放两盆比较合适",
+     "trait": [
+      "Tính từ: vừa vặn với yêu cầu thực tế (số lượng, kích cỡ)",
+      "Đi với: 比较合适, 大小合适, 合适的人选"
+     ],
+     "conf": [
+      {
+       "w": "合理",
+       "py": "hé lǐ",
+       "vi": "hợp lý",
+       "diff": "đúng lý lẽ, logic (价格合理, 安排合理)"
+      },
+      {
+       "w": "理想",
+       "py": "lǐ xiǎng",
+       "vi": "lý tưởng",
+       "diff": "đạt mức mong muốn nhất (理想的工作)"
+      },
+      {
+       "w": "正常",
+       "py": "zhèng cháng",
+       "vi": "bình thường",
+       "diff": "đúng trạng thái thường ngày, không khác lạ"
+      }
+     ],
+     "q": "Đề nói vừa với nhu cầu thực tế, hay đúng lý lẽ, hay đạt mức mong muốn, hay bình thường?"
+    },
+    {
+     "w": "新陈代谢",
+     "py": "xīn chén dài xiè",
+     "vi": "trao đổi chất",
+     "cum": "有利于促进新陈代谢",
+     "trait": [
+      "Thành ngữ/thuật ngữ: cũ thải ra, mới thay vào; trao đổi chất của cơ thể",
+      "Đi với: 促进新陈代谢, 新陈代谢加快"
+     ],
+     "conf": [
+      {
+       "w": "欣欣向荣",
+       "py": "xīn xīn xiàng róng",
+       "vi": "phồn vinh, tươi tốt",
+       "diff": "tả cây cối/sự nghiệp phát triển mạnh"
+      },
+      {
+       "w": "循序渐进",
+       "py": "xún xù jiàn jìn",
+       "vi": "tuần tự tiến dần",
+       "diff": "cách học/làm từng bước"
+      },
+      {
+       "w": "安居乐业",
+       "py": "ān jū lè yè",
+       "vi": "an cư lạc nghiệp",
+       "diff": "tả đời sống người dân ổn định"
+      }
+     ],
+     "q": "Đề nói quá trình trong cơ thể, hay sự phát triển tươi tốt, cách làm từng bước, hay đời sống yên ổn?"
+    },
+    {
+     "w": "部位",
+     "py": "bù wèi",
+     "vi": "bộ phận, vị trí (trên cơ thể)",
+     "cum": "身体各部位获得的氧气",
+     "trait": [
+      "Danh từ: một chỗ cụ thể trên cơ thể/máy móc",
+      "Đi với: 身体各部位, 受伤部位"
+     ],
+     "conf": [
+      {
+       "w": "部门",
+       "py": "bù mén",
+       "vi": "ban ngành",
+       "diff": "đơn vị trong tổ chức (政府部门)"
+      },
+      {
+       "w": "位置",
+       "py": "wèi zhì",
+       "vi": "vị trí, chỗ",
+       "diff": "chỗ đặt/đứng trong không gian, không gắn với thân thể"
+      },
+      {
+       "w": "部分",
+       "py": "bù fen",
+       "vi": "phần",
+       "diff": "một phần của tổng thể bất kỳ, quá chung"
+      }
+     ],
+     "q": "Đề nói chỗ cụ thể trên cơ thể, hay đơn vị trong tổ chức, chỗ trong không gian, hay một phần chung chung?"
+    },
+    {
+     "w": "疲劳",
+     "py": "pí láo",
+     "vi": "mệt mỏi",
+     "cum": "人就不容易疲劳",
+     "trait": [
+      "Tính từ: cơ thể/não mệt do làm việc quá sức, thiếu oxy",
+      "Đi với: 容易疲劳, 视觉疲劳, 消除疲劳"
+     ],
+     "conf": [
+      {
+       "w": "疲倦",
+       "py": "pí juàn",
+       "vi": "mệt mỏi, uể oải",
+       "diff": "nghiêng về buồn ngủ, mất sức sống (感到疲倦)"
+      },
+      {
+       "w": "镇静",
+       "py": "zhèn jìng",
+       "vi": "bình tĩnh",
+       "diff": "trạng thái tâm lý trấn tĩnh"
+      },
+      {
+       "w": "压抑",
+       "py": "yā yì",
+       "vi": "ngột ngạt, dồn nén",
+       "diff": "cảm xúc bị đè nén"
+      }
+     ],
+     "q": "Đề nói cơ thể mệt do thiếu sức, hay uể oải buồn ngủ, bình tĩnh, hay dồn nén? 疲劳 và 疲倦 gần nhau, xem cả câu."
+    },
+    {
+     "w": "激发",
+     "py": "jī fā",
+     "vi": "khơi dậy, kích phát",
+     "cum": "激发我们对成功的渴望",
+     "trait": [
+      "Động từ: làm trỗi dậy cảm xúc/tiềm năng bên trong",
+      "Đi với: 激发兴趣, 激发热情, 激发潜能"
+     ],
+     "conf": [
+      {
+       "w": "推动",
+       "py": "tuī dòng",
+       "vi": "thúc đẩy",
+       "diff": "đẩy công việc/sự phát triển tiến lên"
+      },
+      {
+       "w": "导致",
+       "py": "dǎo zhì",
+       "vi": "dẫn đến",
+       "diff": "gây ra kết quả, thường xấu"
+      },
+      {
+       "w": "传播",
+       "py": "chuán bō",
+       "vi": "truyền bá",
+       "diff": "lan rộng thông tin/bệnh"
+      }
+     ],
+     "q": "Đề nói khơi dậy cảm xúc bên trong, hay đẩy sự việc tiến lên, gây ra kết quả, hay lan truyền?"
+    },
+    {
+     "w": "焦虑",
+     "py": "jiāo lǜ",
+     "vi": "lo âu",
+     "cum": "让我们更加焦虑、害怕失败",
+     "trait": [
+      "Tính từ: lo lắng bồn chồn về việc chưa xảy ra",
+      "Đi với: 感到焦虑, 焦虑不安, 考前焦虑"
+     ],
+     "conf": [
+      {
+       "w": "得意",
+       "py": "dé yì",
+       "vi": "đắc ý",
+       "diff": "vui vì thành công, ngược nghĩa"
+      },
+      {
+       "w": "恐惧",
+       "py": "kǒng jù",
+       "vi": "sợ hãi",
+       "diff": "sợ mạnh trước mối đe doạ, thường làm tân ngữ (对…的恐惧)"
+      },
+      {
+       "w": "疑惑",
+       "py": "yí huò",
+       "vi": "nghi hoặc",
+       "diff": "không hiểu, thắc mắc"
+      }
+     ],
+     "q": "Đề nói lo bồn chồn, hay đắc ý, sợ hãi, hay thắc mắc?"
+    },
+    {
+     "w": "挫折",
+     "py": "cuò zhé",
+     "vi": "thất bại, trắc trở",
+     "cum": "成为我们无法承受的挫折",
+     "trait": [
+      "Danh từ: vấp ngã, thất bại trên đường làm việc",
+      "Đi với: 遭受挫折, 承受挫折, 面对挫折"
+     ],
+     "conf": [
+      {
+       "w": "奇迹",
+       "py": "qí jì",
+       "vi": "kỳ tích",
+       "diff": "điều phi thường tốt đẹp"
+      },
+      {
+       "w": "痛苦",
+       "py": "tòng kǔ",
+       "vi": "đau khổ",
+       "diff": "cảm giác đau trong lòng, không phải sự vấp ngã"
+      },
+      {
+       "w": "刺激",
+       "py": "cì jī",
+       "vi": "kích thích",
+       "diff": "tác động mạnh vào giác quan/tâm lý"
+      }
+     ],
+     "q": "Đề nói sự vấp ngã, hay điều phi thường, cảm giác đau, hay tác động mạnh?"
+    },
+    {
+     "w": "通常",
+     "py": "tōng cháng",
+     "vi": "thông thường",
+     "cum": "这个成语的含义通常不是很好",
+     "trait": [
+      "Phó từ/tính từ: nói chung, theo lệ thường",
+      "Đi với: 通常情况下, 通常来说"
+     ],
+     "conf": [
+      {
+       "w": "尤其",
+       "py": "yóu qí",
+       "vi": "đặc biệt là",
+       "diff": "nhấn một phần nổi bật trong nhóm"
+      },
+      {
+       "w": "偶然",
+       "py": "ǒu rán",
+       "vi": "ngẫu nhiên",
+       "diff": "tình cờ, không theo quy luật"
+      },
+      {
+       "w": "经常",
+       "py": "jīng cháng",
+       "vi": "thường xuyên",
+       "diff": "tần suất hành động lặp lại, không dùng cho nghĩa của từ"
+      }
+     ],
+     "q": "Đề nói theo lệ chung, hay nhấn một phần, hay tình cờ, hay lặp lại nhiều lần?"
+    },
+    {
+     "w": "作品",
+     "py": "zuò pǐn",
+     "vi": "tác phẩm",
+     "cum": "文学作品借文字表达思想情感",
+     "trait": [
+      "Danh từ: sản phẩm sáng tác văn học, nghệ thuật",
+      "Đi với: 文学作品, 艺术作品, 影视作品"
+     ],
+     "conf": [
+      {
+       "w": "著作",
+       "py": "zhù zuò",
+       "vi": "trước tác, sách",
+       "diff": "sách chuyên khảo/học thuật (学术著作)"
+      },
+      {
+       "w": "理论",
+       "py": "lǐ lùn",
+       "vi": "lý luận",
+       "diff": "hệ thống quan điểm, không phải sáng tác"
+      },
+      {
+       "w": "题材",
+       "py": "tí cái",
+       "vi": "đề tài",
+       "diff": "chất liệu, chủ đề của tác phẩm"
+      }
+     ],
+     "q": "Đề nói sản phẩm sáng tác, hay sách học thuật, hệ thống quan điểm, hay đề tài?"
+    },
+    {
+     "w": "含糊",
+     "py": "hán hu",
+     "vi": "mơ hồ, không rõ ràng",
+     "cum": "文字上面有含糊",
+     "trait": [
+      "Tính từ: nói/viết không rõ, lấp lửng",
+      "Đi với: 含糊不清, 说话含糊, 毫不含糊"
+     ],
+     "conf": [
+      {
+       "w": "分歧",
+       "py": "fēn qí",
+       "vi": "bất đồng",
+       "diff": "ý kiến khác nhau giữa nhiều người"
+      },
+      {
+       "w": "矛盾",
+       "py": "máo dùn",
+       "vi": "mâu thuẫn",
+       "diff": "hai điều chống nhau"
+      },
+      {
+       "w": "错误",
+       "py": "cuò wù",
+       "vi": "sai lầm",
+       "diff": "sai hẳn, không phải chỉ thiếu rõ"
+      }
+     ],
+     "q": "Đề nói chữ nghĩa lấp lửng không rõ, hay bất đồng ý kiến, chống nhau, hay sai hẳn?"
+    },
+    {
+     "w": "宣传",
+     "py": "xuān chuán",
+     "vi": "tuyên truyền, quảng bá",
+     "cum": "城市和企业的宣传",
+     "trait": [
+      "Động từ/danh từ: giới thiệu rộng rãi để nhiều người biết",
+      "Đi với: 宣传城市形象, 宣传活动, 广告宣传"
+     ],
+     "conf": [
+      {
+       "w": "宣布",
+       "py": "xuān bù",
+       "vi": "tuyên bố",
+       "diff": "công bố chính thức một quyết định"
+      },
+      {
+       "w": "传达",
+       "py": "chuán dá",
+       "vi": "truyền đạt",
+       "diff": "chuyển lời/ý tới người khác (传达指示)"
+      },
+      {
+       "w": "介绍",
+       "py": "jiè shào",
+       "vi": "giới thiệu",
+       "diff": "giới thiệu thông thường, không mang tính quảng bá"
+      }
+     ],
+     "q": "Đề nói quảng bá rộng rãi, hay công bố quyết định, chuyển lời, hay giới thiệu bình thường?"
+    },
+    {
+     "w": "和谐",
+     "py": "hé xié",
+     "vi": "hài hoà",
+     "cum": "营造和谐的城市文化氛围",
+     "trait": [
+      "Tính từ: các phần hợp nhau, êm đẹp",
+      "Đi với: 和谐社会, 和谐氛围, 色彩和谐"
+     ],
+     "conf": [
+      {
+       "w": "和平",
+       "py": "hé píng",
+       "vi": "hoà bình",
+       "diff": "không chiến tranh"
+      },
+      {
+       "w": "和蔼",
+       "py": "hé ǎi",
+       "vi": "hoà nhã",
+       "diff": "thái độ dễ gần của người (和蔼可亲)"
+      },
+      {
+       "w": "和睦",
+       "py": "hé mù",
+       "vi": "hoà thuận",
+       "diff": "quan hệ giữa người với người (家庭和睦)"
+      }
+     ],
+     "q": "Đề nói bầu không khí hài hoà, hay không chiến tranh, thái độ dễ gần, hay quan hệ người thân hoà thuận?"
+    },
+    {
+     "w": "增强",
+     "py": "zēng qiáng",
+     "vi": "tăng cường",
+     "cum": "从而增强城市综合竞争力",
+     "trait": [
+      "Động từ: làm cho mạnh hơn (sức mạnh, năng lực, ý thức)",
+      "Đi với: 增强竞争力, 增强体质, 增强信心"
+     ],
+     "conf": [
+      {
+       "w": "增添",
+       "py": "zēng tiān",
+       "vi": "thêm vào",
+       "diff": "thêm thứ cụ thể/không khí (增添乐趣)"
+      },
+      {
+       "w": "提炼",
+       "py": "tí liàn",
+       "vi": "chắt lọc",
+       "diff": "rút tinh chất/ý chính"
+      },
+      {
+       "w": "推广",
+       "py": "tuī guǎng",
+       "vi": "phổ biến, mở rộng",
+       "diff": "làm cho lan rộng (推广经验)"
+      }
+     ],
+     "q": "Đề nói làm mạnh hơn năng lực, hay thêm vào, chắt lọc, hay lan rộng?"
+    },
+    {
+     "w": "改善",
+     "py": "gǎi shàn",
+     "vi": "cải thiện",
+     "cum": "应用现代科学技术改善生产条件",
+     "trait": [
+      "Động từ: làm điều kiện/đời sống tốt hơn",
+      "Đi với: 改善条件, 改善生活, 改善关系"
+     ],
+     "conf": [
+      {
+       "w": "改革",
+       "py": "gǎi gé",
+       "vi": "cải cách",
+       "diff": "thay đổi chế độ, cơ cấu lớn"
+      },
+      {
+       "w": "改良",
+       "py": "gǎi liáng",
+       "vi": "cải lương, cải tạo",
+       "diff": "sửa giống/sản phẩm cho tốt hơn (改良品种)"
+      },
+      {
+       "w": "改进",
+       "py": "gǎi jìn",
+       "vi": "cải tiến",
+       "diff": "nâng cách làm/kỹ thuật (改进方法)"
+      }
+     ],
+     "q": "Đề nói làm điều kiện tốt hơn, hay đổi chế độ, sửa giống, hay nâng cách làm?"
+    },
+    {
+     "w": "利用率",
+     "py": "lì yòng lǜ",
+     "vi": "tỉ lệ sử dụng",
+     "cum": "提高资源的利用率",
+     "trait": [
+      "Danh từ: 利用 + hậu tố 率 = tỉ lệ",
+      "Đi với: 提高利用率, 资源利用率"
+     ],
+     "conf": [
+      {
+       "w": "化",
+       "py": "huà",
+       "vi": "hoá (hậu tố)",
+       "diff": "biến thành (现代化), không ghép với 利用"
+      },
+      {
+       "w": "性",
+       "py": "xìng",
+       "vi": "tính (hậu tố)",
+       "diff": "tính chất (可能性)"
+      },
+      {
+       "w": "度",
+       "py": "dù",
+       "vi": "độ (hậu tố)",
+       "diff": "mức độ (知名度), không ghép 利用度"
+      }
+     ],
+     "q": "Đề cần hậu tố chỉ tỉ lệ đo được, hay biến thành, tính chất, hay mức độ?"
+    },
+    {
+     "w": "不断",
+     "py": "bú duàn",
+     "vi": "không ngừng",
+     "cum": "还可以不断扩大资源利用的范围",
+     "trait": [
+      "Phó từ: liên tục, ngày càng (đi trước động từ)",
+      "Đi với: 不断扩大, 不断提高, 不断发展"
+     ],
+     "conf": [
+      {
+       "w": "持续",
+       "py": "chí xù",
+       "vi": "liên tục kéo dài",
+       "diff": "trạng thái kéo dài không đứt (持续下雨), hay làm vị ngữ"
+      },
+      {
+       "w": "反复",
+       "py": "fǎn fù",
+       "vi": "lặp đi lặp lại",
+       "diff": "làm đi làm lại cùng một việc"
+      },
+      {
+       "w": "逐渐",
+       "py": "zhú jiàn",
+       "vi": "dần dần",
+       "diff": "thay đổi chậm từng chút, tự nhiên"
+      }
+     ],
+     "q": "Đề nói liên tục ngày càng hơn, hay kéo dài không đứt, làm đi làm lại, hay đổi chậm từng chút?"
+    },
+    {
+     "w": "发挥",
+     "py": "fā huī",
+     "vi": "phát huy",
+     "cum": "使资源发挥更大的作用",
+     "trait": [
+      "Động từ: làm cho năng lực/tác dụng thể hiện ra",
+      "Đi với: 发挥作用, 发挥优势, 发挥水平"
+     ],
+     "conf": [
+      {
+       "w": "发生",
+       "py": "fā shēng",
+       "vi": "xảy ra",
+       "diff": "sự việc xảy ra (发生变化)"
+      },
+      {
+       "w": "发动",
+       "py": "fā dòng",
+       "vi": "phát động, khởi động",
+       "diff": "bắt đầu chiến dịch/máy móc"
+      },
+      {
+       "w": "发扬",
+       "py": "fā yáng",
+       "vi": "phát huy (truyền thống)",
+       "diff": "đi với truyền thống, tinh thần (发扬传统)"
+      }
+     ],
+     "q": "Đề nói thể hiện tác dụng, hay sự việc xảy ra, khởi động, hay giữ truyền thống?"
+    },
+    {
+     "w": "习俗",
+     "py": "xí sú",
+     "vi": "tập tục",
+     "cum": "大部分地区的习俗是差不多的",
+     "trait": [
+      "Danh từ: thói quen lâu đời của một vùng, dân tộc",
+      "Đi với: 民间习俗, 节日习俗, 风俗习惯"
+     ],
+     "conf": [
+      {
+       "w": "风俗",
+       "py": "fēng sú",
+       "vi": "phong tục",
+       "diff": "gần nghĩa, nghiêng về nếp xã hội chung; xem cả câu"
+      },
+      {
+       "w": "规矩",
+       "py": "guī ju",
+       "vi": "quy tắc, phép tắc",
+       "diff": "luật lệ phải theo"
+      },
+      {
+       "w": "兴趣",
+       "py": "xìng qù",
+       "vi": "hứng thú",
+       "diff": "sở thích cá nhân"
+      }
+     ],
+     "q": "Đề nói tập tục lễ tết, hay phép tắc phải theo, hay sở thích? 习俗 và 风俗 gần nhau, xem cả câu."
+    },
+    {
+     "w": "提供",
+     "py": "tí gōng",
+     "vi": "cung cấp, tạo",
+     "cum": "给未婚男女相互认识提供了一个机会",
+     "trait": [
+      "Động từ: đưa ra điều kiện, cơ hội, thông tin",
+      "Đi với: 提供机会, 提供帮助, 提供服务"
+     ],
+     "conf": [
+      {
+       "w": "制造",
+       "py": "zhì zào",
+       "vi": "chế tạo, gây ra",
+       "diff": "làm ra hàng hoá, hoặc gây chuyện (制造麻烦)"
+      },
+      {
+       "w": "创造",
+       "py": "chuàng zào",
+       "vi": "sáng tạo",
+       "diff": "tạo ra cái mới (创造条件) — chủ ngữ phải chủ động làm"
+      },
+      {
+       "w": "挽回",
+       "py": "wǎn huí",
+       "vi": "cứu vãn",
+       "diff": "lấy lại cái đã mất"
+      }
+     ],
+     "q": "Đề nói đưa ra cơ hội, hay làm ra hàng/gây chuyện, tạo cái mới, hay cứu vãn?"
+    },
+    {
+     "w": "自由",
+     "py": "zì yóu",
+     "vi": "tự do",
+     "cum": "年轻女孩儿不允许出外自由活动",
+     "trait": [
+      "Tính từ/danh từ: không bị gò bó",
+      "Đi với: 自由活动, 自由选择, 言论自由"
+     ],
+     "conf": [
+      {
+       "w": "自愿",
+       "py": "zì yuàn",
+       "vi": "tự nguyện",
+       "diff": "tự mình muốn, không bị ép"
+      },
+      {
+       "w": "痛快",
+       "py": "tòng kuai",
+       "vi": "sảng khoái",
+       "diff": "thoải mái, vui sướng"
+      },
+      {
+       "w": "单独",
+       "py": "dān dú",
+       "vi": "một mình",
+       "diff": "riêng lẻ không có ai cùng"
+      }
+     ],
+     "q": "Đề nói không bị gò bó, hay tự nguyện, sảng khoái, hay một mình?"
+    },
+    {
+     "w": "表演",
+     "py": "biǎo yǎn",
+     "vi": "biểu diễn",
+     "cum": "游泳比赛间歇时的水中表演项目",
+     "trait": [
+      "Động từ/danh từ: trình diễn cho người xem",
+      "Đi với: 表演项目, 表演节目, 精彩表演"
+     ],
+     "conf": [
+      {
+       "w": "竞赛",
+       "py": "jìng sài",
+       "vi": "thi đấu",
+       "diff": "cuộc thi có thắng thua"
+      },
+      {
+       "w": "演出",
+       "py": "yǎn chū",
+       "vi": "buổi diễn",
+       "diff": "buổi diễn trên sân khấu (演出团), ít đi với 项目"
+      },
+      {
+       "w": "娱乐",
+       "py": "yú lè",
+       "vi": "giải trí",
+       "diff": "vui chơi chung, không phải trình diễn"
+      }
+     ],
+     "q": "Đề nói tiết mục trình diễn, hay thi đấu, buổi diễn sân khấu, hay vui chơi?"
+    },
+    {
+     "w": "结合",
+     "py": "jié hé",
+     "vi": "kết hợp",
+     "cum": "游泳、舞蹈和音乐的完美结合",
+     "trait": [
+      "Động từ/danh từ: nhiều thứ hoà vào nhau thành một",
+      "Đi với: 完美结合, 理论与实践相结合"
+     ],
+     "conf": [
+      {
+       "w": "配合",
+       "py": "pèi hé",
+       "vi": "phối hợp",
+       "diff": "người với người cùng làm ăn ý"
+      },
+      {
+       "w": "联合",
+       "py": "lián hé",
+       "vi": "liên hợp",
+       "diff": "các tổ chức liên kết lại"
+      },
+      {
+       "w": "组合",
+       "py": "zǔ hé",
+       "vi": "tổ hợp",
+       "diff": "ghép thành nhóm/bộ (组合家具)"
+      }
+     ],
+     "q": "Đề nói nhiều thứ hoà làm một, hay người phối hợp ăn ý, tổ chức liên kết, hay ghép bộ?"
+    },
+    {
+     "w": "优雅",
+     "py": "yōu yǎ",
+     "vi": "tao nhã, thanh lịch",
+     "cum": "一项艺术性很强的优雅的体育运动",
+     "trait": [
+      "Tính từ: đẹp có khí chất, nhẹ nhàng thanh lịch",
+      "Đi với: 优雅的动作, 举止优雅"
+     ],
+     "conf": [
+      {
+       "w": "优美",
+       "py": "yōu měi",
+       "vi": "đẹp đẽ",
+       "diff": "đẹp nói chung (phong cảnh, giai điệu)"
+      },
+      {
+       "w": "精致",
+       "py": "jīng zhì",
+       "vi": "tinh xảo",
+       "diff": "đồ vật làm khéo"
+      },
+      {
+       "w": "华丽",
+       "py": "huá lì",
+       "vi": "lộng lẫy",
+       "diff": "rực rỡ, cầu kỳ"
+      }
+     ],
+     "q": "Đề nói khí chất thanh lịch, hay đẹp nói chung, đồ làm khéo, hay lộng lẫy? 优雅 và 优美 gần nhau, xem cả câu."
+    },
+    {
+     "w": "技巧",
+     "py": "jì qiǎo",
+     "vi": "kỹ xảo",
+     "cum": "需要力量和技巧",
+     "trait": [
+      "Danh từ: kỹ thuật khéo léo trong thể thao/nghệ thuật",
+      "Đi với: 力量和技巧, 写作技巧, 掌握技巧"
+     ],
+     "conf": [
+      {
+       "w": "速度",
+       "py": "sù dù",
+       "vi": "tốc độ",
+       "diff": "độ nhanh"
+      },
+      {
+       "w": "技能",
+       "py": "jì néng",
+       "vi": "kỹ năng",
+       "diff": "năng lực nghề nghiệp (职业技能)"
+      },
+      {
+       "w": "才干",
+       "py": "cái gàn",
+       "vi": "tài cán",
+       "diff": "năng lực làm việc, quản lý"
+      }
+     ],
+     "q": "Đề nói sự khéo léo khi thực hiện động tác, hay độ nhanh, năng lực nghề, hay tài làm việc?"
+    },
+    {
+     "w": "训练",
+     "py": "xùn liàn",
+     "vi": "huấn luyện",
+     "cum": "需要多年的训练",
+     "trait": [
+      "Động từ/danh từ: luyện tập có hệ thống (thể thao, quân sự)",
+      "Đi với: 刻苦训练, 专业训练, 训练有素"
+     ],
+     "conf": [
+      {
+       "w": "培养",
+       "py": "péi yǎng",
+       "vi": "bồi dưỡng",
+       "diff": "nuôi dạy người/thói quen lâu dài"
+      },
+      {
+       "w": "培训",
+       "py": "péi xùn",
+       "vi": "đào tạo",
+       "diff": "khoá đào tạo nghề, nhân viên"
+      },
+      {
+       "w": "锻炼",
+       "py": "duàn liàn",
+       "vi": "rèn luyện",
+       "diff": "tập cho khoẻ người"
+      }
+     ],
+     "q": "Đề nói luyện tập bài bản cho vận động viên, hay nuôi dạy, đào tạo nghề, hay tập cho khoẻ?"
+    }
+   ]
   }
  ]
 }
