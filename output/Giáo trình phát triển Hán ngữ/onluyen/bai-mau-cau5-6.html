@@ -554,7 +554,7 @@ article.closed .cau{display:none}article.closed h2{margin-bottom:16px}
 </div></div></section>
 </article>
 </main></div><div id="lookupPopup" class="lookupPopup" hidden><button class="lp-close" id="lp-close" aria-label="Đóng">✕</button><div id="lp-body"></div></div>
-<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.26.0/dist/index.js"></script>
 <script>const L=[...document.querySelectorAll('nav a')],A=[...document.querySelectorAll('article')];const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)L.forEach(a=>a.classList.toggle('on',a.hash==='#'+x.target.id))}),{rootMargin:'0px 0px -70% 0px'});A.forEach(a=>io.observe(a));
 /* Nút thu gọn từng bài: bấm nút hoặc tiêu đề; bấm mục ở thanh bên thì tự mở bài đó. */
 A.forEach(a=>{const h2=a.querySelector('h2'),b=document.createElement('button');b.className='tg';b.type='button';b.textContent='Thu gọn';
@@ -569,35 +569,109 @@ L.forEach(l=>l.addEventListener('click',()=>{const a=document.querySelector(l.ha
  document.getElementById('lp-close').onclick=()=>popup.hidden=true;
  let token=0,rect=null;const cache=new Map();
  const esc=s=>(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const OVR={'不可否认':'Không thể phủ nhận','与此同时':'Đồng thời, cùng lúc đó','由此可见':'Qua đó có thể thấy','归根结底':'Nói cho cùng, xét đến cùng','长此以往':'Cứ kéo dài như vậy','毋庸置疑':'Không cần nghi ngờ','久而久之':'Lâu dần','说到底':'Suy cho cùng','毕竟':'Dù sao, xét cho cùng','烂尾项目':'Dự án dở dang, bỏ dở giữa chừng (từ lóng Gen Z VN: kế hoạch hứa to nhưng không làm)','烂尾':'Dở dang, bỏ dở giữa chừng (công trình/dự án)','调侃':'Trêu chọc, đùa cợt','折射':'Phản chiếu, phản ánh','付诸行动':'Bắt tay vào làm, biến thành hành động','自嘲':'Tự giễu','自主权':'Quyền tự chủ','理应':'Lẽ ra phải, đương nhiên nên','跳槽':'Nhảy việc','晋升':'Thăng chức','实实在在':'Thực tế, rõ ràng, chắc chắn','财务自由':'Tự do tài chính','成就感':'Cảm giác thành tựu','显而易见':'Rõ ràng, ai cũng thấy','波及':'Lan tới, ảnh hưởng tới','匹配':'Khớp, tương xứng','并存':'Cùng tồn tại','裁掉':'Cắt bỏ, sa thải','录用通知':'Thư mời nhận việc (offer)','脱节':'Tách rời, không ăn khớp','学院派':'Kinh viện, nặng lý thuyết sách vở','软实力':'Kỹ năng mềm, sức mạnh mềm','棘手':'Nan giải, khó xử lý','教学大纲':'Chương trình/đề cương giảng dạy','供需':'Cung và cầu','志同道合':'Cùng chí hướng','一举两得':'Một công đôi việc','贵在坚持':'Quý ở sự kiên trì','三天打鱼、两天晒网':'Bữa đực bữa cái, làm không đều','三天打鱼':'Bữa đực bữa cái (làm không đều)','持之以恒':'Bền bỉ, kiên trì lâu dài','长久之计':'Kế lâu dài','刻意':'Cố ý, gượng ép','白费':'Uổng phí','见效':'Thấy hiệu quả','固然':'Tuy là, đành rằng','爱美之心，人皆有之':'Ai cũng có lòng yêu cái đẹp','花瓶':'Bình hoa (người đẹp mà vô dụng)','光鲜亮丽':'Bóng bẩy, lộng lẫy','空洞无物':'Rỗng tuếch, trống rỗng','匀称':'Cân đối','慢性病':'Bệnh mãn tính','同频':'Cùng tần số, hợp nhau','养眼':'Đẹp mắt, dễ nhìn','自律':'Kỷ luật bản thân','由内而外':'Từ trong ra ngoài','相得益彰':'Bổ trợ, tôn nhau lên'};
- const py=function(text){
-    /* Pinyin ghép theo TỪ (Intl.Segmenter tách từ, âm tiết trong từ viết liền, từ cách nhau 1 dấu cách),
-       dấu câu dính từ đứng trước, viết hoa đầu câu — thay cho kiểu cách đều từng chữ của pinyin-pro. */
+ const OVR={'日积月累':'Ngày góp tháng gom, tích tiểu thành đại','不可否认':'Không thể phủ nhận','与此同时':'Đồng thời, cùng lúc đó','由此可见':'Qua đó có thể thấy','归根结底':'Nói cho cùng, xét đến cùng','长此以往':'Cứ kéo dài như vậy','毋庸置疑':'Không cần nghi ngờ','久而久之':'Lâu dần','说到底':'Suy cho cùng','毕竟':'Dù sao, xét cho cùng','烂尾项目':'Dự án dở dang, bỏ dở giữa chừng (từ lóng Gen Z VN: kế hoạch hứa to nhưng không làm)','烂尾':'Dở dang, bỏ dở giữa chừng (công trình/dự án)','调侃':'Trêu chọc, đùa cợt','折射':'Phản chiếu, phản ánh','付诸行动':'Bắt tay vào làm, biến thành hành động','自嘲':'Tự giễu','自主权':'Quyền tự chủ','理应':'Lẽ ra phải, đương nhiên nên','跳槽':'Nhảy việc','晋升':'Thăng chức','实实在在':'Thực tế, rõ ràng, chắc chắn','财务自由':'Tự do tài chính','成就感':'Cảm giác thành tựu','显而易见':'Rõ ràng, ai cũng thấy','波及':'Lan tới, ảnh hưởng tới','匹配':'Khớp, tương xứng','并存':'Cùng tồn tại','裁掉':'Cắt bỏ, sa thải','录用通知':'Thư mời nhận việc (offer)','脱节':'Tách rời, không ăn khớp','学院派':'Kinh viện, nặng lý thuyết sách vở','软实力':'Kỹ năng mềm, sức mạnh mềm','棘手':'Nan giải, khó xử lý','教学大纲':'Chương trình/đề cương giảng dạy','供需':'Cung và cầu','志同道合':'Cùng chí hướng','一举两得':'Một công đôi việc','贵在坚持':'Quý ở sự kiên trì','三天打鱼、两天晒网':'Bữa đực bữa cái, làm không đều','三天打鱼':'Bữa đực bữa cái (làm không đều)','持之以恒':'Bền bỉ, kiên trì lâu dài','长久之计':'Kế lâu dài','刻意':'Cố ý, gượng ép','白费':'Uổng phí','见效':'Thấy hiệu quả','固然':'Tuy là, đành rằng','爱美之心，人皆有之':'Ai cũng có lòng yêu cái đẹp','花瓶':'Bình hoa (người đẹp mà vô dụng)','光鲜亮丽':'Bóng bẩy, lộng lẫy','空洞无物':'Rỗng tuếch, trống rỗng','匀称':'Cân đối','慢性病':'Bệnh mãn tính','同频':'Cùng tần số, hợp nhau','养眼':'Đẹp mắt, dễ nhìn','自律':'Kỷ luật bản thân','由内而外':'Từ trong ra ngoài','相得益彰':'Bổ trợ, tôn nhau lên'};
+ /* Dịch qua MyMemory, có 2 lớp chống rác (user báo 2026-11-06: 日积月累 ra "Máº¹o cá»§a hÃ´m nay"):
+     (1) sửa chữ bị mã hoá 2 lần (UTF-8 đọc nhầm thành cp1252); (2) mục lấy từ kho Public_Corpora
+     (chuỗi giao diện phần mềm, vd "Tip of the day") hoặc vẫn còn hỏng → dịch lại bằng Google (gtx). */
+  window.__mmGet = window.__mmGet || (function(){
+    const CP = {'€':0x80,'‚':0x82,'ƒ':0x83,'„':0x84,'…':0x85,'†':0x86,'‡':0x87,'ˆ':0x88,'‰':0x89,'Š':0x8a,'‹':0x8b,'Œ':0x8c,'Ž':0x8e,'‘':0x91,'’':0x92,'“':0x93,'”':0x94,'•':0x95,'–':0x96,'—':0x97,'˜':0x98,'™':0x99,'š':0x9a,'›':0x9b,'œ':0x9c,'ž':0x9e,'Ÿ':0x9f};
+    const MOJI = /Ã.|Â.|Ä[\u0080-\u00ff‘’“”‹›]|á[º»¹¼½¾ºˆ‰]|Æ[°¡]|Ä‘/;
+    function fixMoji(s){
+      if(!MOJI.test(s)) return s;
+      try{
+        const b = [];
+        for(const ch of s){ const c = ch.charCodeAt(0); if(c < 256) b.push(c); else if(CP[ch] !== undefined) b.push(CP[ch]); else return s; }
+        return new TextDecoder('utf-8', {fatal:true}).decode(new Uint8Array(b));
+      }catch(e){ return s; }
+    }
+    const gtx = (q, pair) => {
+      const [sl, tl] = pair.split('|');
+      return fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=' + sl + '&tl=' + tl + '&dt=t&q=' + encodeURIComponent(q))
+        .then(r => { if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+        .then(d => { const t = (d && d[0] || []).map(x => x && x[0] || '').join('').replace(/\u200b/g, '').trim(); if(!t) throw new Error('empty'); return t; });
+    };
+    return function(q, pair){
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(q) + '&langpair=' + pair)
+        .then(r => { if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+        .then(d => {
+          const raw = d && d.responseData && d.responseData.translatedText;
+          if(!raw) throw new Error('empty');
+          const top = (d.matches || []).find(m => m && m.translation === raw);
+          const junk = (top && top['created-by'] === 'Public_Corpora') || MOJI.test(raw);
+          const fixed = fixMoji(raw);
+          if(!junk) return fixed;
+          return gtx(q, pair).catch(() => MOJI.test(fixed) ? Promise.reject(new Error('garbled')) : fixed);
+        })
+        .catch(err => gtx(q, pair).catch(() => { throw err; }));
+    };
+  })();
+/* Tách từ cho pinyin: ưu tiên Intl.Segmenter; nếu trình duyệt không có hoặc tách tiếng Trung thành
+     từng chữ (bản thiếu dữ liệu từ điển — user gặp 2026-11-06) → tải từ điển từ ghép của pinyin-pro
+     (@pinyin-pro/data modern, ~620KB, 1 lần) rồi tách bằng pinyinPro.segment. Chưa tải xong → trả null. */
+  window.__pySeg = window.__pySeg || (function(){
+    const st = {mode:'char'};
+    try{
+      if(typeof Intl !== 'undefined' && typeof Intl.Segmenter === 'function'){
+        const n = Array.from(new Intl.Segmenter('zh', {granularity:'word'}).segment('我们正在学习汉语')).length;
+        if(n <= 5) st.mode = 'intl';
+      }
+    }catch(e){}
+    if(st.mode !== 'intl'){
+      fetch('https://cdn.jsdelivr.net/npm/@pinyin-pro/data@1.3.1/json/modern.json')
+        .then(r => { if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+        .then(d => { const P = window.pinyinPro; if(P && typeof P.addDict === 'function' && typeof P.segment === 'function'){ const EXTRA = {'日本':'rì běn','中国':'zhōng guó','越南':'yuè nán','美国':'měi guó','一次':'yí cì','一个':'yí gè','一些':'yì xiē','瓶盖':'píng gài','每次':'měi cì','这次':'zhè cì'};
+            for(const k in EXTRA) if(!d[k]) d[k] = [EXTRA[k], 1e-7]; // vá vài từ hay bị tách lẻ
+            P.addDict(d, 'modern'); st.mode = 'dict'; } })
+        .catch(e => { try{ console.warn('[pinyin] không tải được từ điển tách từ', e); }catch(_){} });
+    }
+    st.segment = function(text){
+      let a = null;
+      if(st.mode === 'intl') a = Array.from(new Intl.Segmenter('zh', {granularity:'word'}).segment(text)).map(s => s.segment);
+      else if(st.mode === 'dict') a = window.pinyinPro.segment(text, {format:8}).map(x => x.join(''));
+      if(!a) return null;
+      const out = []; // gộp chữ Latin/số liền nhau (HSK6) thành 1 đoạn
+      for(const s of a){ if(out.length && /^[A-Za-z0-9.]+$/.test(s) && /^[A-Za-z0-9.]+$/.test(out[out.length-1])) out[out.length-1] += s; else out.push(s); }
+      return out;
+    };
+    return st;
+  })();
+  const py=function(text){
+    /* Pinyin ghép theo TỪ (tách từ qua window.__pySeg, âm tiết trong từ viết liền, từ cách nhau 1 dấu cách),
+       dấu câu dính từ đứng trước, viết hoa đầu câu + tên riêng, 地 trợ từ = de, thành ngữ 4 chữ tách 2+2. */
     try{
       const P = window.pinyinPro;
       if(!P || typeof P.pinyin !== 'function') return '';
       const flat = () => P.pinyin(text, {toneType:'symbol', type:'string'});
-      if(typeof Intl === 'undefined' || typeof Intl.Segmenter !== 'function') return flat();
+      const segs = window.__pySeg && window.__pySeg.segment(text);
+      if(!segs) return flat();
       const syl = P.pinyin(text, {toneType:'symbol', type:'array', nonZh:'removed'});
       const HAN = /[\u4e00-\u9fff\u3400-\u4dbf]/;
-      const PUNCT = {'，':',','、':',','。':'.','！':'!','？':'?','：':':','；':';','（':'(','）':')','“':'"','”':'"','‘':"'",'’':"'",'《':'"','》':'"','…':'...','……':'...','—':'-','—':'-'};
-      let si = 0, out = '', needSpace = false;
-      for(const seg of new Intl.Segmenter('zh', {granularity:'word'}).segment(text)){
-        const s = seg.segment;
+      const PROPER = /^(中国|日本|美国|英国|法国|德国|韩国|越南|泰国|俄罗斯|印度|北京|上海|广州|深圳|香港|台湾|西安|河内|胡志明市|欧洲|亚洲|非洲|长城|春节|中秋节)$/;
+      const PUNCT = {'，':',','、':',','。':'.','！':'!','？':'?','：':':','；':';','（':'(','）':')','“':'"','”':'"','‘':"'",'’':"'",'《':'"','》':'"','…':'...','—':'-'};
+      let si = 0, out = '', needSpace = false, prevHan = false;
+      for(const s of segs){
         if(HAN.test(s)){
+          const ys = [];
           let w = '';
           for(const ch of s){
             if(HAN.test(ch)){
               let y = syl[si++] || '';
+              if(ch === '地' && ((s === '地' && prevHan) || /^(.)\1地$|^(.)\2(.)\3地$/.test(s))) y = 'de'; // 地 trợ từ: đứng riêng sau từ, hoặc sau láy AA/AABB (慢慢地)
               if(w && /^[aoeāáǎàōóǒòēéěè]/i.test(y)) w += "'";
-              w += y;
+              w += y; ys.push(y);
             }else w += ch;
           }
+          if(s.length === 4 && ys.length === 4 && /^[\u4e00-\u9fff]{4}$/.test(s)){
+            const j = (a, b) => a + (/^[aoeāáǎàōóǒòēéěè]/i.test(b) ? "'" : '') + b;
+            w = j(ys[0], ys[1]) + ' ' + j(ys[2], ys[3]);
+          }
+          if(PROPER.test(s)) w = w.charAt(0).toUpperCase() + w.slice(1);
           if(out && needSpace) out += ' ';
-          out += w; needSpace = true;
+          out += w; needSpace = true; prevHan = true;
         }else if(/^\s+$/.test(s)){
           needSpace = !!out;
         }else{
+          prevHan = false;
           let t = '';
           for(const ch of s) t += (PUNCT[ch] !== undefined ? PUNCT[ch] : ch);
           const opening = /^["'(]$/.test(t) && !(t === '"' && (out.match(/"/g)||[]).length % 2 === 1);
@@ -610,9 +684,9 @@ L.forEach(l=>l.addEventListener('click',()=>{const a=document.querySelector(l.ha
       if(/[。！？]/.test(text)) out = out.replace(/(^|[.!?]["']?\s+)([a-zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ])/g, (m, a, b) => a + b.toUpperCase());
       return out || flat();
     }catch(e){ try{ return window.pinyinPro.pinyin(text, {toneType:'symbol', type:'string'}); }catch(_){ return ''; } }
-};
+  };
  const eng=s=>/^[\x00-\x7F]+$/.test(s)&&/[A-Za-z]{2}/.test(s);
- const mm=(q,p)=>fetch('https://api.mymemory.translated.net/get?q='+encodeURIComponent(q)+'&langpair='+p).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{const t=d&&d.responseData&&d.responseData.translatedText;if(!t)throw 0;return t});
+ const mm = (q, pair) => window.__mmGet(q, pair);
  function tr(t){if(OVR[t])return Promise.resolve(OVR[t]);if(cache.has(t))return cache.get(t);
   const p=mm(t,'zh-CN|vi').then(v=>eng(v)?mm(v,'en|vi').then(x=>eng(x)?v+' (tiếng Anh)':x).catch(()=>v+' (tiếng Anh)'):v);cache.set(t,p);return p}
  function place(){if(!rect)return;const m=8,w=popup.offsetWidth,h=popup.offsetHeight;let l=rect.left,t=rect.bottom+m;

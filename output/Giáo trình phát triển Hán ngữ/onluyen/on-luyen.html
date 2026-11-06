@@ -518,7 +518,7 @@ footer.credit{text-align:center; color:var(--ink-faint); font-size:11.5px; margi
   <div id="lp-body"></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.26.0/dist/index.js"></script>
 <script>
 /* Icon "i" hover ra tip ngắn tại mỗi dạng bài tập (nghe/nói/đọc/viết) — user 2026-09-18:
    không biết làm dạng đó thì hover xem mẹo, tip phải ngắn gọn/logic/áp dụng được ngay. */
@@ -5377,6 +5377,7 @@ const SENTENCE_VI = {
      2026-10-02). Tra các cụm hay dùng này từ từ điển tay trước, chỉ gọi API cho
      phần còn lại. */
   const MEANING_OVERRIDES = {
+    '日积月累': 'Ngày góp tháng gom, tích tiểu thành đại',
     '不可否认': 'Không thể phủ nhận',
     '与此同时': 'Đồng thời, cùng lúc đó',
     '长此以往': 'Cứ kéo dài như vậy, nếu cứ tiếp diễn như thế',
@@ -5416,14 +5417,9 @@ const SENTENCE_VI = {
       translateCache.set(key, p);
       return p;
     }
-    const mm = (q, pair)=>fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=${pair}`).then(r=>{
-      if(!r.ok) throw new Error('http '+r.status);
-      return r.json();
-    }).then(data=>{
-      const t = data && data.responseData && data.responseData.translatedText;
-      if(!t) throw new Error('empty');
-      return t;
-    });
+    /* Bản Artifact (claude.ai chặn MyMemory/Google bằng CSP) → hỏi Claude qua capability `sample`. */
+    if(window.OL_MEANING){ const p = window.OL_MEANING(text); translateCache.set(key, p); p.catch(()=>translateCache.delete(key)); return p; }
+    const mm = (q, pair) => window.__mmGet(q, pair);
     /* Với từ ngắn (vd 宽带), MyMemory hay trả thẳng bản tiếng Anh dù đã xin zh-CN|vi (user 2026-10-21).
        Kết quả toàn ASCII = chưa phải tiếng Việt → dịch tiếp en→vi; nếu vẫn lỗi thì giữ bản tiếng Anh. */
     const looksEnglish = s => /^[\x00-\x7F]+$/.test(s) && /[A-Za-z]{2}/.test(s);
@@ -5435,46 +5431,120 @@ const SENTENCE_VI = {
     return p;
   }
 
-  function getPinyin(text){
-      /* Pinyin ghép theo TỪ (Intl.Segmenter tách từ, âm tiết trong từ viết liền, từ cách nhau 1 dấu cách),
-         dấu câu dính từ đứng trước, viết hoa đầu câu — thay cho kiểu cách đều từng chữ của pinyin-pro. */
+  /* Dịch qua MyMemory, có 2 lớp chống rác (user báo 2026-11-06: 日积月累 ra "Máº¹o cá»§a hÃ´m nay"):
+     (1) sửa chữ bị mã hoá 2 lần (UTF-8 đọc nhầm thành cp1252); (2) mục lấy từ kho Public_Corpora
+     (chuỗi giao diện phần mềm, vd "Tip of the day") hoặc vẫn còn hỏng → dịch lại bằng Google (gtx). */
+  window.__mmGet = window.__mmGet || (function(){
+    const CP = {'€':0x80,'‚':0x82,'ƒ':0x83,'„':0x84,'…':0x85,'†':0x86,'‡':0x87,'ˆ':0x88,'‰':0x89,'Š':0x8a,'‹':0x8b,'Œ':0x8c,'Ž':0x8e,'‘':0x91,'’':0x92,'“':0x93,'”':0x94,'•':0x95,'–':0x96,'—':0x97,'˜':0x98,'™':0x99,'š':0x9a,'›':0x9b,'œ':0x9c,'ž':0x9e,'Ÿ':0x9f};
+    const MOJI = /Ã.|Â.|Ä[\u0080-\u00ff‘’“”‹›]|á[º»¹¼½¾ºˆ‰]|Æ[°¡]|Ä‘/;
+    function fixMoji(s){
+      if(!MOJI.test(s)) return s;
       try{
-        const P = window.pinyinPro;
-        if(!P || typeof P.pinyin !== 'function') return '';
-        const flat = () => P.pinyin(text, {toneType:'symbol', type:'string'});
-        if(typeof Intl === 'undefined' || typeof Intl.Segmenter !== 'function') return flat();
-        const syl = P.pinyin(text, {toneType:'symbol', type:'array', nonZh:'removed'});
-        const HAN = /[\u4e00-\u9fff\u3400-\u4dbf]/;
-        const PUNCT = {'，':',','、':',','。':'.','！':'!','？':'?','：':':','；':';','（':'(','）':')','“':'"','”':'"','‘':"'",'’':"'",'《':'"','》':'"','…':'...','……':'...','—':'-','—':'-'};
-        let si = 0, out = '', needSpace = false;
-        for(const seg of new Intl.Segmenter('zh', {granularity:'word'}).segment(text)){
-          const s = seg.segment;
-          if(HAN.test(s)){
-            let w = '';
-            for(const ch of s){
-              if(HAN.test(ch)){
-                let y = syl[si++] || '';
-                if(w && /^[aoeāáǎàōóǒòēéěè]/i.test(y)) w += "'";
-                w += y;
-              }else w += ch;
-            }
-            if(out && needSpace) out += ' ';
-            out += w; needSpace = true;
-          }else if(/^\s+$/.test(s)){
-            needSpace = !!out;
-          }else{
-            let t = '';
-            for(const ch of s) t += (PUNCT[ch] !== undefined ? PUNCT[ch] : ch);
-            const opening = /^["'(]$/.test(t) && !(t === '"' && (out.match(/"/g)||[]).length % 2 === 1);
-            if(/^[,.!?:;)"'…]+$|^\.\.\.$/.test(t) && !opening) { out += t; needSpace = true; }
-            else if(opening){ if(out && needSpace) out += ' '; out += t; needSpace = false; }
-            else { if(out && needSpace) out += ' '; out += t; needSpace = true; }
+        const b = [];
+        for(const ch of s){ const c = ch.charCodeAt(0); if(c < 256) b.push(c); else if(CP[ch] !== undefined) b.push(CP[ch]); else return s; }
+        return new TextDecoder('utf-8', {fatal:true}).decode(new Uint8Array(b));
+      }catch(e){ return s; }
+    }
+    const gtx = (q, pair) => {
+      const [sl, tl] = pair.split('|');
+      return fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=' + sl + '&tl=' + tl + '&dt=t&q=' + encodeURIComponent(q))
+        .then(r => { if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+        .then(d => { const t = (d && d[0] || []).map(x => x && x[0] || '').join('').replace(/\u200b/g, '').trim(); if(!t) throw new Error('empty'); return t; });
+    };
+    return function(q, pair){
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(q) + '&langpair=' + pair)
+        .then(r => { if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+        .then(d => {
+          const raw = d && d.responseData && d.responseData.translatedText;
+          if(!raw) throw new Error('empty');
+          const top = (d.matches || []).find(m => m && m.translation === raw);
+          const junk = (top && top['created-by'] === 'Public_Corpora') || MOJI.test(raw);
+          const fixed = fixMoji(raw);
+          if(!junk) return fixed;
+          return gtx(q, pair).catch(() => MOJI.test(fixed) ? Promise.reject(new Error('garbled')) : fixed);
+        })
+        .catch(err => gtx(q, pair).catch(() => { throw err; }));
+    };
+  })();
+/* Tách từ cho pinyin: ưu tiên Intl.Segmenter; nếu trình duyệt không có hoặc tách tiếng Trung thành
+     từng chữ (bản thiếu dữ liệu từ điển — user gặp 2026-11-06) → tải từ điển từ ghép của pinyin-pro
+     (@pinyin-pro/data modern, ~620KB, 1 lần) rồi tách bằng pinyinPro.segment. Chưa tải xong → trả null. */
+  window.__pySeg = window.__pySeg || (function(){
+    const st = {mode:'char'};
+    try{
+      if(typeof Intl !== 'undefined' && typeof Intl.Segmenter === 'function'){
+        const n = Array.from(new Intl.Segmenter('zh', {granularity:'word'}).segment('我们正在学习汉语')).length;
+        if(n <= 5) st.mode = 'intl';
+      }
+    }catch(e){}
+    if(st.mode !== 'intl'){
+      fetch('https://cdn.jsdelivr.net/npm/@pinyin-pro/data@1.3.1/json/modern.json')
+        .then(r => { if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+        .then(d => { const P = window.pinyinPro; if(P && typeof P.addDict === 'function' && typeof P.segment === 'function'){ const EXTRA = {'日本':'rì běn','中国':'zhōng guó','越南':'yuè nán','美国':'měi guó','一次':'yí cì','一个':'yí gè','一些':'yì xiē','瓶盖':'píng gài','每次':'měi cì','这次':'zhè cì'};
+            for(const k in EXTRA) if(!d[k]) d[k] = [EXTRA[k], 1e-7]; // vá vài từ hay bị tách lẻ
+            P.addDict(d, 'modern'); st.mode = 'dict'; } })
+        .catch(e => { try{ console.warn('[pinyin] không tải được từ điển tách từ', e); }catch(_){} });
+    }
+    st.segment = function(text){
+      let a = null;
+      if(st.mode === 'intl') a = Array.from(new Intl.Segmenter('zh', {granularity:'word'}).segment(text)).map(s => s.segment);
+      else if(st.mode === 'dict') a = window.pinyinPro.segment(text, {format:8}).map(x => x.join(''));
+      if(!a) return null;
+      const out = []; // gộp chữ Latin/số liền nhau (HSK6) thành 1 đoạn
+      for(const s of a){ if(out.length && /^[A-Za-z0-9.]+$/.test(s) && /^[A-Za-z0-9.]+$/.test(out[out.length-1])) out[out.length-1] += s; else out.push(s); }
+      return out;
+    };
+    return st;
+  })();
+  function getPinyin(text){
+    /* Pinyin ghép theo TỪ (tách từ qua window.__pySeg, âm tiết trong từ viết liền, từ cách nhau 1 dấu cách),
+       dấu câu dính từ đứng trước, viết hoa đầu câu + tên riêng, 地 trợ từ = de, thành ngữ 4 chữ tách 2+2. */
+    try{
+      const P = window.pinyinPro;
+      if(!P || typeof P.pinyin !== 'function') return '';
+      const flat = () => P.pinyin(text, {toneType:'symbol', type:'string'});
+      const segs = window.__pySeg && window.__pySeg.segment(text);
+      if(!segs) return flat();
+      const syl = P.pinyin(text, {toneType:'symbol', type:'array', nonZh:'removed'});
+      const HAN = /[\u4e00-\u9fff\u3400-\u4dbf]/;
+      const PROPER = /^(中国|日本|美国|英国|法国|德国|韩国|越南|泰国|俄罗斯|印度|北京|上海|广州|深圳|香港|台湾|西安|河内|胡志明市|欧洲|亚洲|非洲|长城|春节|中秋节)$/;
+      const PUNCT = {'，':',','、':',','。':'.','！':'!','？':'?','：':':','；':';','（':'(','）':')','“':'"','”':'"','‘':"'",'’':"'",'《':'"','》':'"','…':'...','—':'-'};
+      let si = 0, out = '', needSpace = false, prevHan = false;
+      for(const s of segs){
+        if(HAN.test(s)){
+          const ys = [];
+          let w = '';
+          for(const ch of s){
+            if(HAN.test(ch)){
+              let y = syl[si++] || '';
+              if(ch === '地' && ((s === '地' && prevHan) || /^(.)\1地$|^(.)\2(.)\3地$/.test(s))) y = 'de'; // 地 trợ từ: đứng riêng sau từ, hoặc sau láy AA/AABB (慢慢地)
+              if(w && /^[aoeāáǎàōóǒòēéěè]/i.test(y)) w += "'";
+              w += y; ys.push(y);
+            }else w += ch;
           }
+          if(s.length === 4 && ys.length === 4 && /^[\u4e00-\u9fff]{4}$/.test(s)){
+            const j = (a, b) => a + (/^[aoeāáǎàōóǒòēéěè]/i.test(b) ? "'" : '') + b;
+            w = j(ys[0], ys[1]) + ' ' + j(ys[2], ys[3]);
+          }
+          if(PROPER.test(s)) w = w.charAt(0).toUpperCase() + w.slice(1);
+          if(out && needSpace) out += ' ';
+          out += w; needSpace = true; prevHan = true;
+        }else if(/^\s+$/.test(s)){
+          needSpace = !!out;
+        }else{
+          prevHan = false;
+          let t = '';
+          for(const ch of s) t += (PUNCT[ch] !== undefined ? PUNCT[ch] : ch);
+          const opening = /^["'(]$/.test(t) && !(t === '"' && (out.match(/"/g)||[]).length % 2 === 1);
+          if(/^[,.!?:;)"'…]+$|^\.\.\.$/.test(t) && !opening) { out += t; needSpace = true; }
+          else if(opening){ if(out && needSpace) out += ' '; out += t; needSpace = false; }
+          else { if(out && needSpace) out += ' '; out += t; needSpace = true; }
         }
-        out = out.replace(/ - - /g, ' — ').trim();
-        if(/[。！？]/.test(text)) out = out.replace(/(^|[.!?]["']?\s+)([a-zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ])/g, (m, a, b) => a + b.toUpperCase());
-        return out || flat();
-      }catch(e){ try{ return window.pinyinPro.pinyin(text, {toneType:'symbol', type:'string'}); }catch(_){ return ''; } }
+      }
+      out = out.replace(/ - - /g, ' — ').trim();
+      if(/[。！？]/.test(text)) out = out.replace(/(^|[.!?]["']?\s+)([a-zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ])/g, (m, a, b) => a + b.toUpperCase());
+      return out || flat();
+    }catch(e){ try{ return window.pinyinPro.pinyin(text, {toneType:'symbol', type:'string'}); }catch(_){ return ''; } }
   }
 
   function escapeHtml(s){
@@ -5602,6 +5672,23 @@ const SENTENCE_VI = {
   document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') hideLookup(); });
   document.addEventListener('mousedown', (e)=>{ if(!popup.hidden && !popup.contains(e.target)) hideLookup(); });
   window.addEventListener('scroll', hideLookup, true);
+})();
+
+/* Chỉ chạy khi trang mở dạng Artifact trên claude.ai (có `claude.use`): nghĩa khi bôi đen lấy từ Claude
+   theo ngữ cảnh câu — mở file trong máy thì `claude` không tồn tại, bỏ qua, vẫn dùng MyMemory/Google. */
+(async function(){
+  try{
+    if(typeof claude === 'undefined' || !claude || typeof claude.use !== 'function') return;
+    const sample = await claude.use('sample');
+    if(!sample) return;
+    window.OL_MEANING = async function(text){
+      const sel = getSelection();
+      const el = sel && sel.anchorNode && (sel.anchorNode.nodeType === 3 ? sel.anchorNode.parentElement : sel.anchorNode);
+      const ctx = el ? ((el.closest && el.closest('p,.passage,.stem,.q,.prompt,.taskCard,td,li')) || el).innerText.slice(0, 300) : '';
+      const r = await sample('Dịch sang tiếng Việt cụm tiếng Trung "' + text + '" theo đúng nghĩa trong câu bên dưới. Lời dịch dễ hiểu, tự nhiên, nghe hay (thành ngữ thì tìm câu tiếng Việt tương đương, có chút văn vẻ); tối đa 15 từ, không pinyin, không giải thích thêm.\nCâu: ' + ctx, {modelTier: 'quick'});
+      return (r && r.text || '').trim();
+    };
+  }catch(e){}
 })();
 
 /* Mở đúng tab của buổi đang chọn (khớp với sidebar) ngay khi tải trang xong */
