@@ -53,6 +53,9 @@ user đã sửa 2 lần vì tự ghi trước khi duyệt, rồi lại dừng �
 - **Trạng thái ôn** ⚪/D/C/B/A đọc từ `knowledge/vocabulary/tier-*.md` (Activation).
 - **🎓 Học**: flashcard active-recall + lặp ngắt quãng Leitner (localStorage);
   chấm ❌ Chưa / ✅ Thuộc; **trần thăng hạng = Activation+1** (chưa dùng thật thì không "thuộc hẳn").
+- **Popup bôi đen** (`render_html.py`): hiện pinyin ghép theo từ (`__pySeg` + `xlPinyin`, pinyin-pro@3.26.0) + nghĩa —
+  ưu tiên nghĩa trong bảng 生词/sơ đồ 拓展 của chính trang (`xlDict()`), không có mới dịch Google gtx. Hỗ trợ
+  touchend (iPhone). Logic pinyin dùng chung với Talk Series + onluyen → sửa ở 1 nơi phải đồng bộ cả 3.
 - **Resume đúng thẻ**: đóng popup giữa chừng (lỡ tay / đổi ý) → mở lại đúng bài sẽ hỏi tiếp tục từ
   vị trí dừng (localStorage `hsk6study_resume_v1`), không bắt học lại từ đầu. Tự xoá khi học xong hẳn.
 - **Lên hạng C (chỉ D→C, recognition-only)**: bấm "Thuộc" lần đầu với 1 từ đang D → queue ngay

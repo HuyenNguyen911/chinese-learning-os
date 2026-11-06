@@ -110,7 +110,7 @@ ADAPTER = r'''
     const sel = getSelection();
     const el = sel && sel.anchorNode && (sel.anchorNode.nodeType === 3 ? sel.anchorNode.parentElement : sel.anchorNode);
     const ctx = el ? (el.closest('p,.txt,.q,.msg') || el).innerText.slice(0, 300) : '';
-    const r = await sample('Giải nghĩa ngắn gọn bằng tiếng Việt (tối đa 15 từ, không pinyin, không giải thích thêm) cụm tiếng Trung "' + text + '" theo đúng nghĩa trong câu sau:\n' + ctx, {modelTier: 'quick'});
+    const r = await sample('Dịch sang tiếng Việt cụm tiếng Trung "' + text + '" theo đúng nghĩa trong câu bên dưới. Lời dịch dễ hiểu, tự nhiên, nghe hay (thành ngữ thì tìm câu tiếng Việt tương đương, có chút văn vẻ); tối đa 15 từ, không pinyin, không giải thích thêm.\nCâu: ' + ctx, {modelTier: 'quick'});
     return r.text.trim();
   };
 })();
