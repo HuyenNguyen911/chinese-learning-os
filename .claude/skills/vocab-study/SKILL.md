@@ -26,7 +26,8 @@ author: Chinese Learning OS
 **Từ luyện đề** (góp nhặt ngoài bài khóa, trước 2026-11-05 gọi là "Linh tinh"): cột `Bài` ghi `<kênh> · <tên đề>`,
 vd `study4 · Đề 10` (extract_xlsx → key `LD|kênh|đề`; nhãn cũ `Linh tinh` vẫn đọc được → "Chưa rõ đề"). Mỗi đề mới =
 1 nhóm riêng, KHÔNG dồn chung (user ngợp khi 1 nhóm phình ~1000 từ). Đề dài (>~100 từ) → hỏi user có tách đôi không
-(2026-11-05 user tách Đề 8 cũ 101 từ thành Đề 7 đọc + Đề 8 nghe). study4 chỉ có 9 đề (Đề 1–9): 573 từ cũ không rõ
+(2026-11-05 user tách Đề 8 cũ 101 từ thành Đề 7 đọc + Đề 8 nghe). study4 hiện có Đề 1–10 (đề mới mặc định gắn
+study4 trừ khi user nói nguồn khác); 573 từ cũ không rõ
 nguồn đã được user cho **rải đều vào cả 9 đề** (~110 từ/đề, Đề 4 giữ 135) — KHÔNG tạo nhóm "Chưa rõ đề". Số đề từ vựng và số đề cụm ghi nhớ KHÔNG cần khớp nhau (user không nhớ). Quy trình khi user gửi list / đề (2 pha —
 user đã sửa 2 lần vì tự ghi trước khi duyệt, rồi lại dừng ở bóc tách):
 0. User nói "bóc tách từ vựng tiếp" mà **chưa dán nội dung** → chờ user gửi đề, KHÔNG tự lục `raw/`/lesson tìm bài
@@ -38,6 +39,9 @@ user đã sửa 2 lần vì tự ghi trước khi duyệt, rồi lại dừng �
    nghĩa ngắn) / từ đã có / từ loại + lý do → **DỪNG chờ user chốt**. Chưa ghi Excel, chưa render.
    Tiêu chí lọc khi user gửi đề: bỏ từ trùng; giữ cấp 6 và 7-9 theo `raw/hsk3.0-dagang.pdf.txt` (dòng `STT cấp 词 pinyin`)
    + thành ngữ / từ ngoài 大纲 đáng học; loại cấp ≤5, từ quá dễ, thuật ngữ quá chuyên.
+   **Lọc gọn ngay từ đầu: mặc định ≤ ~80 từ/đề** (+ ~25 cụm câu 61-70) — chỉ giữ từ đáng DÙNG thật (thành ngữ hay
+   cho viết/nói, từ hay ra đề); bỏ từ văn chương hiếm, từ chỉ có ở phương án, từ chỉ cần nhận diện. Đề 10
+   (2026-11-06) trình 185 từ → user: "từ nhiều" → lọc còn 75 thì OK, không cần tách đề.
 2. **Pha làm** (sau khi user chốt RÕ RÀNG — câu mơ hồ kiểu "đủ để ôn thi" không tính là chốt, hỏi lại 1 câu) — chạy một mạch, không hỏi lại: append từ MỚI (Pinyin/描述/意义/例如 tự soạn theo mẫu;
    例句 lấy nguyên câu trong đề, câu 病句 dùng bản đã sửa, từ chỉ có ở phương án thì tự đặt câu) → 1→2→3 → kiểm pinyin
    (mục Nguyên tắc) → mẹo nhớ (bước 4) → 5 → render + publish bản Artifact điện thoại. Xong thì commit + push NGAY (shared-data → `main`, kiểm `git branch --show-current` trước) — không để file lơ lửng, session khác sẽ báo lệch file.
