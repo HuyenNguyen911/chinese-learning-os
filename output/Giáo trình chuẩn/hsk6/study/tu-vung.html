@@ -2,6 +2,7 @@
 <html lang="vi"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>生词 tích lũy — HSK6</title>
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.26.0/dist/index.js"></script>
 <style>
 :root{--bd:#dcdcdc;--head:#2b3a67;--headtx:#fff;--zebra:#f7f9fc;--accent:#2b6cb0;--study:#6d28d9;}
 *{box-sizing:border-box;}
@@ -28,6 +29,7 @@ button{font-family:inherit;}
 .syncbanner.promo .x{color:#1a6b1a;}
 .xlate-pop{position:fixed;z-index:9999;background:#1a1a1a;color:#fff;padding:8px 12px;border-radius:8px;font-size:13px;max-width:280px;box-shadow:0 4px 16px rgba(0,0,0,.3);line-height:1.5;}
 .xlate-pop .xl-loading{opacity:.6;}
+.xlate-pop .xl-py{color:#9be3b0;font-size:13.5px;margin-bottom:3px;}
 .xlate-pop a{color:#8ecdf7;font-size:11px;display:block;margin-top:4px;text-decoration:none;}
 .xlate-pop a:hover{text-decoration:underline;}
 .toptabs{display:flex;gap:6px;padding:8px 14px 0;background:#fff;border-bottom:1px solid var(--bd);}
@@ -4298,13 +4300,117 @@ document.addEventListener('keydown',function(e){
   else if(e.key==='s'||e.key==='S')speak(Scur&&Scur.w);
   else if(e.key==='Escape')closeStudy();});
 
-/* ===== Bôi đen dịch nhanh (Google Translate zh→vi) ===== */
+/* ===== Bôi đen: pinyin ghép theo TỪ + nghĩa (user 2026-11-06) =====
+   Nghĩa: ưu tiên nghĩa soạn sẵn trong chính trang (cột Nghĩa bảng 生词 + nhánh 生词拓展) — khớp đúng
+   cụm bôi đen thì dùng luôn (dễ hiểu, đúng ngữ cảnh học); không có thì Google Translate (cần mạng,
+   trên claude.ai có thể bị chặn → hiện link mở Google Translate). */
+/* Tách từ cho pinyin: ưu tiên Intl.Segmenter; nếu trình duyệt không có hoặc tách tiếng Trung thành
+   từng chữ (bản thiếu dữ liệu từ điển — user gặp 2026-11-06) → tải từ điển từ ghép của pinyin-pro
+   (@pinyin-pro/data modern, ~620KB, 1 lần) rồi tách bằng pinyinPro.segment. Chưa tải xong → trả null. */
+window.__pySeg = window.__pySeg || (function(){
+  const st = {mode:'char'};
+  try{
+    if(typeof Intl !== 'undefined' && typeof Intl.Segmenter === 'function'){
+      const n = Array.from(new Intl.Segmenter('zh', {granularity:'word'}).segment('我们正在学习汉语')).length;
+      if(n <= 5) st.mode = 'intl';
+    }
+  }catch(e){}
+  if(st.mode !== 'intl'){
+    fetch('https://cdn.jsdelivr.net/npm/@pinyin-pro/data@1.3.1/json/modern.json')
+      .then(r => { if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+      .then(d => { const P = window.pinyinPro; if(P && typeof P.addDict === 'function' && typeof P.segment === 'function'){ const EXTRA = {'日本':'rì běn','中国':'zhōng guó','越南':'yuè nán','美国':'měi guó','一次':'yí cì','一个':'yí gè','一些':'yì xiē','瓶盖':'píng gài','每次':'měi cì','这次':'zhè cì'};
+          for(const k in EXTRA) if(!d[k]) d[k] = [EXTRA[k], 1e-7]; // vá vài từ hay bị tách lẻ
+          P.addDict(d, 'modern'); st.mode = 'dict'; } })
+      .catch(e => { try{ console.warn('[pinyin] không tải được từ điển tách từ', e); }catch(_){} });
+  }
+  st.segment = function(text){
+    let a = null;
+    if(st.mode === 'intl') a = Array.from(new Intl.Segmenter('zh', {granularity:'word'}).segment(text)).map(s => s.segment);
+    else if(st.mode === 'dict') a = window.pinyinPro.segment(text, {format:8}).map(x => x.join(''));
+    if(!a) return null;
+    const out = []; // gộp chữ Latin/số liền nhau (HSK6) thành 1 đoạn
+    for(const s of a){ if(out.length && /^[A-Za-z0-9.]+$/.test(s) && /^[A-Za-z0-9.]+$/.test(out[out.length-1])) out[out.length-1] += s; else out.push(s); }
+    return out;
+  };
+  return st;
+})();
+function xlPinyin(text){
+  /* Pinyin ghép theo TỪ (tách từ qua window.__pySeg, âm tiết trong từ viết liền, từ cách nhau 1 dấu cách),
+     dấu câu dính từ đứng trước, viết hoa đầu câu + tên riêng, 地 trợ từ = de, thành ngữ 4 chữ tách 2+2. */
+  try{
+    const P = window.pinyinPro;
+    if(!P || typeof P.pinyin !== 'function') return '';
+    const flat = () => P.pinyin(text, {toneType:'symbol', type:'string'});
+    const segs = window.__pySeg && window.__pySeg.segment(text);
+    if(!segs) return flat();
+    const syl = P.pinyin(text, {toneType:'symbol', type:'array', nonZh:'removed'});
+    const HAN = /[\u4e00-\u9fff\u3400-\u4dbf]/;
+    const PROPER = /^(中国|日本|美国|英国|法国|德国|韩国|越南|泰国|俄罗斯|印度|北京|上海|广州|深圳|香港|台湾|西安|河内|胡志明市|欧洲|亚洲|非洲|长城|春节|中秋节)$/;
+    const PUNCT = {'，':',','、':',','。':'.','！':'!','？':'?','：':':','；':';','（':'(','）':')','“':'"','”':'"','‘':"'",'’':"'",'《':'"','》':'"','…':'...','—':'-'};
+    let si = 0, out = '', needSpace = false, prevHan = false;
+    for(const s of segs){
+      if(HAN.test(s)){
+        const ys = [];
+        let w = '';
+        for(const ch of s){
+          if(HAN.test(ch)){
+            let y = syl[si++] || '';
+            if(ch === '地' && ((s === '地' && prevHan) || /^(.)\1地$|^(.)\2(.)\3地$/.test(s))) y = 'de'; // 地 trợ từ: đứng riêng sau từ, hoặc sau láy AA/AABB (慢慢地)
+            if(w && /^[aoeāáǎàōóǒòēéěè]/i.test(y)) w += "'";
+            w += y; ys.push(y);
+          }else w += ch;
+        }
+        if(s.length === 4 && ys.length === 4 && /^[\u4e00-\u9fff]{4}$/.test(s)){
+          const j = (a, b) => a + (/^[aoeāáǎàōóǒòēéěè]/i.test(b) ? "'" : '') + b;
+          w = j(ys[0], ys[1]) + ' ' + j(ys[2], ys[3]);
+        }
+        if(PROPER.test(s)) w = w.charAt(0).toUpperCase() + w.slice(1);
+        if(out && needSpace) out += ' ';
+        out += w; needSpace = true; prevHan = true;
+      }else if(/^\s+$/.test(s)){
+        needSpace = !!out;
+      }else{
+        prevHan = false;
+        let t = '';
+        for(const ch of s) t += (PUNCT[ch] !== undefined ? PUNCT[ch] : ch);
+        const opening = /^["'(]$/.test(t) && !(t === '"' && (out.match(/"/g)||[]).length % 2 === 1);
+        if(/^[,.!?:;)"'…]+$|^\.\.\.$/.test(t) && !opening) { out += t; needSpace = true; }
+        else if(opening){ if(out && needSpace) out += ' '; out += t; needSpace = false; }
+        else { if(out && needSpace) out += ' '; out += t; needSpace = true; }
+      }
+    }
+    out = out.replace(/ - - /g, ' — ').trim();
+    if(/[。！？]/.test(text)) out = out.replace(/(^|[.!?]["']?\s+)([a-zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ])/g, (m, a, b) => a + b.toUpperCase());
+    return out || flat();
+  }catch(e){ try{ return window.pinyinPro.pinyin(text, {toneType:'symbol', type:'string'}); }catch(_){ return ''; } }
+}
+var _xlDict=null;
+function xlDict(){
+  if(_xlDict) return _xlDict;
+  _xlDict={};
+  document.querySelectorAll('table').forEach(function(t){
+    var hs=[].map.call(t.querySelectorAll('thead th'),function(th){return th.textContent.trim();});
+    var iw=hs.indexOf('生词'), iv=hs.indexOf('Nghĩa');
+    if(iw<0||iv<0) return;
+    t.querySelectorAll('tbody tr').forEach(function(tr){
+      var td=tr.children, w=td[iw]&&td[iw].textContent.trim(), v=td[iv]&&td[iv].textContent.trim();
+      if(w&&v&&!_xlDict[w]) _xlDict[w]=v;
+    });
+  });
+  document.querySelectorAll('.branch').forEach(function(b){
+    var h=b.querySelector('.bh'), g=b.querySelector('.bg');
+    if(h&&g){ var w=h.textContent.trim(); if(w&&!_xlDict[w]) _xlDict[w]=g.textContent.trim(); }
+  });
+  return _xlDict;
+}
 var _xlatePop=null;
 function xlateHide(){if(_xlatePop){_xlatePop.remove();_xlatePop=null;}}
 function xlateShow(text,rect){
   xlateHide();
   var p=document.createElement('div');p.className='xlate-pop';
-  p.innerHTML='<span class="xl-loading">Đang dịch…</span>';
+  var py=xlPinyin(text);
+  var head=(py?'<div class="xl-py">'+esc(py)+'</div>':'');
+  p.innerHTML=head+'<span class="xl-loading">Đang dịch…</span>';
   document.body.appendChild(p);
   var top=Math.min(rect.bottom+8,window.innerHeight-60);
   var left=Math.max(8,Math.min(rect.left,window.innerWidth-p.offsetWidth-12));
@@ -4312,17 +4418,19 @@ function xlateShow(text,rect){
   _xlatePop=p;
   var gtUrl='https://translate.google.com/?sl=zh-CN&tl=vi&text='+encodeURIComponent(text)+'&op=translate';
   var link='<a href="'+gtUrl+'" target="_blank" rel="noopener">Mở Google Translate ↗</a>';
+  var own=xlDict()[text];
+  if(own){ p.innerHTML=head+esc(own)+link; return; }
   fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=zh-CN&tl=vi&dt=t&q='+encodeURIComponent(text))
     .then(function(r){return r.json();})
     .then(function(data){
-      var out=data[0].map(function(x){return x[0];}).join('');
-      if(_xlatePop===p)p.innerHTML=esc(out)+link;
+      var out=data[0].map(function(x){return x[0];}).join('').replace(/\u200b/g,'');
+      if(_xlatePop===p)p.innerHTML=head+esc(out)+link;
     })
     .catch(function(){
-      if(_xlatePop===p)p.innerHTML='(không dịch được — cần mạng)'+link;
+      if(_xlatePop===p)p.innerHTML=head+'(không dịch được — cần mạng)'+link;
     });
 }
-document.addEventListener('mouseup',function(e){
+function xlOnSelect(e){
   if(_xlatePop&&_xlatePop.contains(e.target))return;
   var sel=window.getSelection();
   var text=sel?sel.toString().trim():'';
@@ -4330,7 +4438,9 @@ document.addEventListener('mouseup',function(e){
   var rect=sel.getRangeAt(0).getBoundingClientRect();
   if(!rect||(rect.width===0&&rect.height===0)){xlateHide();return;}
   xlateShow(text,rect);
-});
+}
+document.addEventListener('mouseup',xlOnSelect);
+document.addEventListener('touchend',function(e){setTimeout(function(){xlOnSelect(e);},0);});
 document.addEventListener('mousedown',function(e){
   if(_xlatePop&&!_xlatePop.contains(e.target))xlateHide();
 });
