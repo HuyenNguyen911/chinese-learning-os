@@ -7585,6 +7585,848 @@
      "q": "Đề nói tự chống gậy cho vững, hay vác lên vai, hay bưng hai tay?"
     }
    ]
+  },
+  {
+   "title": "Điền từ H6 — Đề 10",
+   "items": [
+    {
+     "w": "素质",
+     "py": "sù zhì",
+     "vi": "tố chất, năng lực tổng hợp",
+     "cum": "现代人必备的素质",
+     "trait": [
+      "Danh từ: năng lực, phẩm chất tổng hợp của con người",
+      "Đi với: 综合素质, 提高素质, 心理素质"
+     ],
+     "conf": [
+      {
+       "w": "品质",
+       "py": "pǐn zhì",
+       "vi": "phẩm chất; chất lượng",
+       "diff": "nói đạo đức con người hoặc chất lượng hàng"
+      },
+      {
+       "w": "品德",
+       "py": "pǐn dé",
+       "vi": "phẩm đức",
+       "diff": "chỉ đạo đức cá nhân"
+      },
+      {
+       "w": "道德",
+       "py": "dào dé",
+       "vi": "đạo đức",
+       "diff": "chuẩn mực xã hội, không phải năng lực"
+      }
+     ],
+     "q": "Đề nói năng lực, kỹ năng cần có, hay nói đạo đức, chất lượng?"
+    },
+    {
+     "w": "传递",
+     "py": "chuán dì",
+     "vi": "truyền, chuyển qua lại",
+     "cum": "相互传递信息",
+     "trait": [
+      "Động từ: chuyển từ bên này sang bên kia",
+      "Đi với: 传递信息, 传递火炬, 传递温暖"
+     ],
+     "conf": [
+      {
+       "w": "传授",
+       "py": "chuán shòu",
+       "vi": "truyền thụ",
+       "diff": "dạy kiến thức, kỹ năng (thầy → trò)"
+      },
+      {
+       "w": "传播",
+       "py": "chuán bō",
+       "vi": "truyền bá",
+       "diff": "lan rộng ra nhiều người"
+      },
+      {
+       "w": "传达",
+       "py": "chuán dá",
+       "vi": "truyền đạt",
+       "diff": "chuyển lời, chỉ thị từ trên xuống"
+      }
+     ],
+     "q": "Đề nói chuyển qua lại giữa hai người, hay dạy, lan rộng, truyền lệnh?"
+    },
+    {
+     "w": "手段",
+     "py": "shǒu duàn",
+     "vi": "phương tiện, cách thức",
+     "cum": "交流和沟通的基本手段",
+     "trait": [
+      "Danh từ: công cụ, biện pháp để đạt mục đích",
+      "Đi với: 基本手段, 采取手段, 宣传手段"
+     ],
+     "conf": [
+      {
+       "w": "手法",
+       "py": "shǒu fǎ",
+       "vi": "thủ pháp",
+       "diff": "kỹ thuật nghệ thuật, viết văn"
+      },
+      {
+       "w": "途径",
+       "py": "tú jìng",
+       "vi": "con đường, kênh",
+       "diff": "đường đi để đạt tới"
+      },
+      {
+       "w": "模式",
+       "py": "mó shì",
+       "vi": "mô hình",
+       "diff": "khuôn mẫu, kiểu hệ thống"
+      }
+     ],
+     "q": "Đề nói công cụ để làm việc, hay kỹ xảo nghệ thuật, con đường, khuôn mẫu?"
+    },
+    {
+     "w": "名扬中外",
+     "py": "míng yáng zhōng wài",
+     "vi": "nổi tiếng trong và ngoài nước",
+     "cum": "东巴文化却名扬中外",
+     "trait": [
+      "Thành ngữ: tên tuổi vang xa",
+      "Làm vị ngữ, hay đi sau 却 / 早已"
+     ],
+     "conf": [
+      {
+       "w": "博大精深",
+       "py": "bó dà jīng shēn",
+       "vi": "rộng lớn sâu sắc",
+       "diff": "nói nội dung tư tưởng, văn hoá đồ sộ"
+      },
+      {
+       "w": "得天独厚",
+       "py": "dé tiān dú hòu",
+       "vi": "trời ưu đãi riêng",
+       "diff": "điều kiện tự nhiên đặc biệt tốt"
+      },
+      {
+       "w": "难能可贵",
+       "py": "nán néng kě guì",
+       "vi": "khó làm được nên đáng quý",
+       "diff": "khen việc khó làm được"
+      }
+     ],
+     "q": "Đề nói tiếng tăm lan xa (gây chú ý), hay nói nội dung sâu rộng, điều kiện tốt?"
+    },
+    {
+     "w": "关注",
+     "py": "guān zhù",
+     "vi": "quan tâm, chú ý theo dõi",
+     "cum": "引起世人的兴趣和关注",
+     "trait": [
+      "Động / danh từ: để ý theo dõi",
+      "Đi với: 引起关注, 受到关注, 关注度"
+     ],
+     "conf": [
+      {
+       "w": "注视",
+       "py": "zhù shì",
+       "vi": "nhìn chăm chú",
+       "diff": "hành động dùng mắt nhìn"
+      },
+      {
+       "w": "注重",
+       "py": "zhù zhòng",
+       "vi": "coi trọng",
+       "diff": "chủ ngữ coi trọng một mặt nào đó"
+      },
+      {
+       "w": "关怀",
+       "py": "guān huái",
+       "vi": "quan tâm chăm sóc",
+       "diff": "tình cảm che chở (trên → dưới)"
+      }
+     ],
+     "q": "Đề nói sự chú ý của mọi người, hay nhìn bằng mắt, coi trọng, chăm sóc?"
+    },
+    {
+     "w": "誉为",
+     "py": "yù wéi",
+     "vi": "được ca ngợi là",
+     "cum": "被誉为世界唯一存活着的象形文字",
+     "trait": [
+      "Động từ: 被誉为… = được tôn vinh là…",
+      "Luôn mang sắc thái khen"
+     ],
+     "conf": [
+      {
+       "w": "称为",
+       "py": "chēng wéi",
+       "vi": "gọi là",
+       "diff": "trung tính, không có ý khen"
+      },
+      {
+       "w": "竖",
+       "py": "shù",
+       "vi": "dựng đứng",
+       "diff": "dựng vật thẳng lên"
+      },
+      {
+       "w": "耸",
+       "py": "sǒng",
+       "vi": "nhô cao",
+       "diff": "núi, vai nhô lên"
+      }
+     ],
+     "q": "Đề nói được khen tặng danh hiệu, hay chỉ gọi tên trung tính?"
+    },
+    {
+     "w": "可靠",
+     "py": "kě kào",
+     "vi": "đáng tin cậy",
+     "cum": "亲眼所见才是真实可靠的",
+     "trait": [
+      "Tính từ: tin được, chắc chắn",
+      "Đi với: 真实可靠, 可靠的消息, 安全可靠"
+     ],
+     "conf": [
+      {
+       "w": "依赖",
+       "py": "yī lài",
+       "vi": "dựa dẫm",
+       "diff": "động từ, dựa vào người / vật khác"
+      },
+      {
+       "w": "踏实",
+       "py": "tā shi",
+       "vi": "vững vàng, yên tâm",
+       "diff": "tính cách chăm chỉ hoặc lòng yên ổn"
+      },
+      {
+       "w": "周密",
+       "py": "zhōu mì",
+       "vi": "chu đáo, kín kẽ",
+       "diff": "kế hoạch suy nghĩ kỹ"
+      }
+     ],
+     "q": "Đề nói thông tin đáng tin, hay người chăm chỉ, kế hoạch kín kẽ?"
+    },
+    {
+     "w": "自以为是",
+     "py": "zì yǐ wéi shì",
+     "vi": "cho mình là đúng",
+     "cum": "欺骗许多自以为是的头脑",
+     "trait": [
+      "Thành ngữ chê: tự cho mình đúng, không nghe ai",
+      "Hay làm định ngữ: 自以为是的人"
+     ],
+     "conf": [
+      {
+       "w": "一丝不苟",
+       "py": "yī sī bù gǒu",
+       "vi": "cẩn thận từng li",
+       "diff": "khen làm việc tỉ mỉ"
+      },
+      {
+       "w": "称心如意",
+       "py": "chèn xīn rú yì",
+       "vi": "vừa lòng đẹp ý",
+       "diff": "việc đúng ý mình"
+      },
+      {
+       "w": "有条不紊",
+       "py": "yǒu tiáo bù wěn",
+       "vi": "ngăn nắp đâu ra đấy",
+       "diff": "làm việc có thứ tự"
+      }
+     ],
+     "q": "Đề chê người tự tin mù quáng, hay khen cẩn thận, ngăn nắp?"
+    },
+    {
+     "w": "智力",
+     "py": "zhì lì",
+     "vi": "trí lực, trí óc",
+     "cum": "激活他们的智力",
+     "trait": [
+      "Danh từ: khả năng tư duy, nhận thức",
+      "Đi với: 开发智力, 智力发展, 智力水平"
+     ],
+     "conf": [
+      {
+       "w": "智慧",
+       "py": "zhì huì",
+       "vi": "trí tuệ, sự khôn ngoan",
+       "diff": "hiểu biết sáng suốt tích luỹ"
+      },
+      {
+       "w": "想象",
+       "py": "xiǎng xiàng",
+       "vi": "tưởng tượng",
+       "diff": "hoạt động nghĩ ra hình ảnh"
+      },
+      {
+       "w": "见解",
+       "py": "jiàn jiě",
+       "vi": "kiến giải",
+       "diff": "quan điểm, cách nhìn"
+      }
+     ],
+     "q": "Đề nói năng lực trí óc được kích hoạt, hay sự khôn ngoan, quan điểm?"
+    },
+    {
+     "w": "面临",
+     "py": "miàn lín",
+     "vi": "đứng trước, đối mặt (vấn đề)",
+     "cum": "每个人都面临着一堆问题",
+     "trait": [
+      "Động từ: đang ở trước tình huống khó",
+      "Đi với: 面临问题, 面临挑战, 面临危机"
+     ],
+     "conf": [
+      {
+       "w": "面对",
+       "py": "miàn duì",
+       "vi": "đối diện",
+       "diff": "chủ động quay mặt về phía người / việc"
+      },
+      {
+       "w": "掌握",
+       "py": "zhǎng wò",
+       "vi": "nắm vững",
+       "diff": "kiến thức, kỹ năng"
+      },
+      {
+       "w": "控制",
+       "py": "kòng zhì",
+       "vi": "kiểm soát",
+       "diff": "khống chế"
+      }
+     ],
+     "q": "Đề nói vấn đề đang ập tới (面临着), hay chủ động đối diện, nắm, kiểm soát?"
+    },
+    {
+     "w": "倾听",
+     "py": "qīng tīng",
+     "vi": "lắng nghe",
+     "cum": "没有精力来倾听你的烦恼",
+     "trait": [
+      "Động từ: nghe chăm chú, thấu hiểu",
+      "Đi với: 倾听烦恼, 倾听心声, 学会倾听"
+     ],
+     "conf": [
+      {
+       "w": "承受",
+       "py": "chéng shòu",
+       "vi": "chịu đựng",
+       "diff": "áp lực, đau khổ"
+      },
+      {
+       "w": "宣传",
+       "py": "xuān chuán",
+       "vi": "tuyên truyền",
+       "diff": "phổ biến ra ngoài"
+      },
+      {
+       "w": "处理",
+       "py": "chǔ lǐ",
+       "vi": "xử lý",
+       "diff": "giải quyết việc"
+      }
+     ],
+     "q": "Đề nói nghe người khác tâm sự, hay chịu đựng, giải quyết giùm?"
+    },
+    {
+     "w": "情绪",
+     "py": "qíng xù",
+     "vi": "cảm xúc, tâm trạng",
+     "cum": "变成你情绪垃圾的接收站",
+     "trait": [
+      "Danh từ: trạng thái vui buồn nhất thời",
+      "Đi với: 情绪垃圾, 控制情绪, 负面情绪"
+     ],
+     "conf": [
+      {
+       "w": "感情",
+       "py": "gǎn qíng",
+       "vi": "tình cảm",
+       "diff": "sự gắn bó giữa người với người"
+      },
+      {
+       "w": "精神",
+       "py": "jīng shén",
+       "vi": "tinh thần",
+       "diff": "ý chí, sức sống"
+      },
+      {
+       "w": "思维",
+       "py": "sī wéi",
+       "vi": "tư duy",
+       "diff": "cách suy nghĩ"
+      }
+     ],
+     "q": "Đề nói cảm xúc tiêu cực trút ra, hay tình cảm gắn bó, tinh thần?"
+    },
+    {
+     "w": "精华",
+     "py": "jīng huá",
+     "vi": "tinh hoa",
+     "cum": "深层海水是海洋的精华",
+     "trait": [
+      "Danh từ: phần tốt nhất, quý nhất",
+      "Đi với: 吸取精华, 文化精华, 精华所在"
+     ],
+     "conf": [
+      {
+       "w": "核心",
+       "py": "hé xīn",
+       "vi": "hạt nhân, cốt lõi",
+       "diff": "phần trung tâm quan trọng"
+      },
+      {
+       "w": "重心",
+       "py": "zhòng xīn",
+       "vi": "trọng tâm",
+       "diff": "điểm trọng lượng / việc chính"
+      },
+      {
+       "w": "奇迹",
+       "py": "qí jì",
+       "vi": "kỳ tích",
+       "diff": "việc phi thường"
+      }
+     ],
+     "q": "Đề nói phần quý nhất, giàu dinh dưỡng, hay phần trung tâm, trọng tâm?"
+    },
+    {
+     "w": "充分",
+     "py": "chōng fèn",
+     "vi": "đầy đủ, hết mức",
+     "cum": "充分利用深层海水",
+     "trait": [
+      "Tính / phó từ: làm hết mức, tận dụng",
+      "Đi với: 充分利用, 充分发挥, 充分准备"
+     ],
+     "conf": [
+      {
+       "w": "充足",
+       "py": "chōng zú",
+       "vi": "dồi dào",
+       "diff": "số lượng đủ (阳光充足), không đứng trước động từ"
+      },
+      {
+       "w": "彻底",
+       "py": "chè dǐ",
+       "vi": "triệt để",
+       "diff": "đến tận cùng: 彻底解决"
+      },
+      {
+       "w": "深刻",
+       "py": "shēn kè",
+       "vi": "sâu sắc",
+       "diff": "ấn tượng, nhận thức"
+      }
+     ],
+     "q": "Đề nói tận dụng hết mức (đứng trước động từ), hay số lượng dồi dào?"
+    },
+    {
+     "w": "视线",
+     "py": "shì xiàn",
+     "vi": "đường nhìn, tầm mắt",
+     "cum": "司机的视线会受到影响",
+     "trait": [
+      "Danh từ: đường mắt nhìn tới",
+      "Đi với: 视线模糊, 挡住视线, 转移视线"
+     ],
+     "conf": [
+      {
+       "w": "视野",
+       "py": "shì yě",
+       "vi": "tầm nhìn (rộng)",
+       "diff": "phạm vi thấy được, nghĩa bóng là hiểu biết"
+      },
+      {
+       "w": "眼神",
+       "py": "yǎn shén",
+       "vi": "ánh mắt",
+       "diff": "thần thái trong mắt"
+      },
+      {
+       "w": "眼色",
+       "py": "yǎn sè",
+       "vi": "ra hiệu bằng mắt",
+       "diff": "nháy mắt ra hiệu"
+      }
+     ],
+     "q": "Đề nói đường nhìn bị cản, hay phạm vi rộng, ánh mắt?"
+    },
+    {
+     "w": "模糊",
+     "py": "mó hu",
+     "vi": "mờ, không rõ",
+     "cum": "眼前模糊不清",
+     "trait": [
+      "Tính từ: nhìn không rõ",
+      "Đi với: 模糊不清, 视线模糊, 记忆模糊"
+     ],
+     "conf": [
+      {
+       "w": "含糊",
+       "py": "hán hu",
+       "vi": "mập mờ",
+       "diff": "lời nói không rõ ràng"
+      },
+      {
+       "w": "混乱",
+       "py": "hùn luàn",
+       "vi": "hỗn loạn",
+       "diff": "trật tự rối"
+      },
+      {
+       "w": "疲倦",
+       "py": "pí juàn",
+       "vi": "mệt mỏi",
+       "diff": "cơ thể mệt"
+      }
+     ],
+     "q": "Đề nói hình ảnh nhìn mờ, hay lời nói mập mờ, trật tự rối?"
+    },
+    {
+     "w": "消除",
+     "py": "xiāo chú",
+     "vi": "loại bỏ, xoá đi",
+     "cum": "尽快消除雾气",
+     "trait": [
+      "Động từ: làm mất đi cái xấu (có tân ngữ)",
+      "Đi với: 消除雾气, 消除误会, 消除疲劳"
+     ],
+     "conf": [
+      {
+       "w": "消耗",
+       "py": "xiāo hào",
+       "vi": "tiêu hao",
+       "diff": "dùng hết năng lượng, tài nguyên"
+      },
+      {
+       "w": "消失",
+       "py": "xiāo shī",
+       "vi": "biến mất",
+       "diff": "tự mất, không mang tân ngữ"
+      },
+      {
+       "w": "消化",
+       "py": "xiāo huà",
+       "vi": "tiêu hoá",
+       "diff": "thức ăn, kiến thức"
+      }
+     ],
+     "q": "Đề nói chủ động xoá cái xấu, hay tự biến mất, tiêu hao?"
+    },
+    {
+     "w": "装饰",
+     "py": "zhuāng shì",
+     "vi": "đồ trang trí, trang sức",
+     "cum": "炫耀奢华的装饰",
+     "trait": [
+      "Danh / động từ: đồ trang trí; trang trí",
+      "Đi với: 装饰品, 室内装饰"
+     ],
+     "conf": [
+      {
+       "w": "象征",
+       "py": "xiàng zhēng",
+       "vi": "biểu tượng",
+       "diff": "đại diện cho một ý nghĩa"
+      },
+      {
+       "w": "时装",
+       "py": "shí zhuāng",
+       "vi": "thời trang",
+       "diff": "quần áo hợp mốt"
+      },
+      {
+       "w": "潮流",
+       "py": "cháo liú",
+       "vi": "trào lưu",
+       "diff": "xu hướng"
+      }
+     ],
+     "q": "Đề nói món đồ để khoe, hay biểu tượng ý nghĩa, xu hướng?"
+    },
+    {
+     "w": "取而代之",
+     "py": "qǔ ér dài zhī",
+     "vi": "thay thế vào chỗ đó",
+     "cum": "取而代之的是仿皮草材料",
+     "trait": [
+      "Thành ngữ: cái mới thay cái cũ",
+      "Mẫu: …不再是…，取而代之的是…"
+     ],
+     "conf": [
+      {
+       "w": "优胜劣汰",
+       "py": "yōu shèng liè tài",
+       "vi": "mạnh còn yếu bị loại",
+       "diff": "quy luật cạnh tranh"
+      },
+      {
+       "w": "供不应求",
+       "py": "gōng bù yìng qiú",
+       "vi": "cung không đủ cầu",
+       "diff": "hàng bán chạy"
+      },
+      {
+       "w": "层出不穷",
+       "py": "céng chū bù qióng",
+       "vi": "xuất hiện liên tục",
+       "diff": "cái mới ra mãi"
+      }
+     ],
+     "q": "Đề nói cái mới thay thế cái cũ, hay cạnh tranh loại bỏ, cung thiếu cầu?"
+    },
+    {
+     "w": "时尚",
+     "py": "shí shàng",
+     "vi": "thời thượng, hợp mốt",
+     "cum": "最时尚的款式",
+     "trait": [
+      "Tính / danh từ: hợp xu hướng hiện tại",
+      "Đi với: 时尚款式, 时尚人士, 追求时尚"
+     ],
+     "conf": [
+      {
+       "w": "时髦",
+       "py": "shí máo",
+       "vi": "mốt, sành điệu",
+       "diff": "khẩu ngữ hơn, đôi khi hơi chê"
+      },
+      {
+       "w": "新颖",
+       "py": "xīn yǐng",
+       "vi": "mới lạ",
+       "diff": "nội dung, thiết kế lạ, độc đáo"
+      },
+      {
+       "w": "完美",
+       "py": "wán měi",
+       "vi": "hoàn mỹ",
+       "diff": "không có khuyết điểm"
+      }
+     ],
+     "q": "Đề nói hợp mốt (văn viết), hay mới lạ, hoàn hảo?"
+    },
+    {
+     "w": "成就",
+     "py": "chéng jiù",
+     "vi": "thành tựu",
+     "cum": "很高的艺术成就",
+     "trait": [
+      "Danh từ: kết quả lớn đạt được",
+      "Đi với: 艺术成就, 取得成就, 成就感"
+     ],
+     "conf": [
+      {
+       "w": "成果",
+       "py": "chéng guǒ",
+       "vi": "thành quả",
+       "diff": "kết quả cụ thể của công việc, nghiên cứu"
+      },
+      {
+       "w": "财富",
+       "py": "cái fù",
+       "vi": "của cải",
+       "diff": "tiền bạc, tài sản"
+      },
+      {
+       "w": "风格",
+       "py": "fēng gé",
+       "vi": "phong cách",
+       "diff": "đặc điểm riêng"
+      }
+     ],
+     "q": "Đề nói thành tựu tầm cỡ (艺术成就), hay kết quả cụ thể, phong cách?"
+    },
+    {
+     "w": "独特",
+     "py": "dú tè",
+     "vi": "độc đáo, riêng biệt",
+     "cum": "以其独特的原料材质",
+     "trait": [
+      "Tính từ: chỉ riêng mình có",
+      "Đi với: 独特的风格, 独特的魅力"
+     ],
+     "conf": [
+      {
+       "w": "特殊",
+       "py": "tè shū",
+       "vi": "đặc thù",
+       "diff": "khác thường, tình huống đặc biệt"
+      },
+      {
+       "w": "罕见",
+       "py": "hǎn jiàn",
+       "vi": "hiếm thấy",
+       "diff": "ít gặp"
+      },
+      {
+       "w": "坚固",
+       "py": "jiān gù",
+       "vi": "vững chắc",
+       "diff": "đồ vật chắc"
+      }
+     ],
+     "q": "Đề khen nét riêng có một không hai, hay nói khác thường, hiếm gặp?"
+    },
+    {
+     "w": "千姿百态",
+     "py": "qiān zī bǎi tài",
+     "vi": "muôn hình vạn trạng",
+     "cum": "千姿百态的造型艺术",
+     "trait": [
+      "Thành ngữ: hình dáng phong phú đa dạng",
+      "Hay đi với: 造型, 花朵, 山石"
+     ],
+     "conf": [
+      {
+       "w": "物美价廉",
+       "py": "wù měi jià lián",
+       "vi": "hàng tốt giá rẻ",
+       "diff": "nói giá cả"
+      },
+      {
+       "w": "喜闻乐见",
+       "py": "xǐ wén lè jiàn",
+       "vi": "được ưa thích",
+       "diff": "nghệ thuật quần chúng thích xem"
+      },
+      {
+       "w": "朝气蓬勃",
+       "py": "zhāo qì péng bó",
+       "vi": "tràn đầy sức sống",
+       "diff": "nói con người, tuổi trẻ"
+      }
+     ],
+     "q": "Đề nói hình dáng đa dạng, hay giá rẻ, được ưa chuộng, sức sống?"
+    },
+    {
+     "w": "镇定",
+     "py": "zhèn dìng",
+     "vi": "bình tĩnh, điềm tĩnh",
+     "cum": "他表现得非常镇定",
+     "trait": [
+      "Tính từ: không hoảng trước việc lớn",
+      "Đi với: 表现镇定, 保持镇定, 镇定自若"
+     ],
+     "conf": [
+      {
+       "w": "镇静",
+       "py": "zhèn jìng",
+       "vi": "trấn tĩnh",
+       "diff": "nghiêng về giữ lòng yên (镇静剂)"
+      },
+      {
+       "w": "平静",
+       "py": "píng jìng",
+       "vi": "yên bình",
+       "diff": "tâm trạng / mặt nước lặng"
+      },
+      {
+       "w": "稳定",
+       "py": "wěn dìng",
+       "vi": "ổn định",
+       "diff": "tình hình, chất lượng không dao động"
+      }
+     ],
+     "q": "Đề nói phong độ thi đấu điềm tĩnh, hay mặt nước yên, tình hình ổn định?"
+    },
+    {
+     "w": "潜力",
+     "py": "qián lì",
+     "vi": "tiềm năng",
+     "cum": "具有非常大的潜力",
+     "trait": [
+      "Danh từ: khả năng chưa bộc lộ hết",
+      "Đi với: 发挥潜力, 有潜力, 潜力股"
+     ],
+     "conf": [
+      {
+       "w": "实力",
+       "py": "shí lì",
+       "vi": "thực lực",
+       "diff": "sức mạnh hiện có"
+      },
+      {
+       "w": "魅力",
+       "py": "mèi lì",
+       "vi": "sức hút",
+       "diff": "cuốn hút người khác"
+      },
+      {
+       "w": "势力",
+       "py": "shì lì",
+       "vi": "thế lực",
+       "diff": "quyền lực, phe phái"
+      }
+     ],
+     "q": "Đề nói khả năng còn ẩn chờ phát triển, hay sức mạnh hiện tại, sức hút?"
+    },
+    {
+     "w": "经营",
+     "py": "jīng yíng",
+     "vi": "kinh doanh, điều hành",
+     "cum": "父亲经营台球生意",
+     "trait": [
+      "Động từ: điều hành làm ăn",
+      "Đi với: 经营生意, 经营商店, 经营管理"
+     ],
+     "conf": [
+      {
+       "w": "承包",
+       "py": "chéng bāo",
+       "vi": "nhận thầu, nhận khoán",
+       "diff": "làm theo hợp đồng khoán"
+      },
+      {
+       "w": "主持",
+       "py": "zhǔ chí",
+       "vi": "chủ trì, dẫn",
+       "diff": "cuộc họp, chương trình"
+      },
+      {
+       "w": "实施",
+       "py": "shí shī",
+       "vi": "thực thi",
+       "diff": "kế hoạch, chính sách"
+      }
+     ],
+     "q": "Đề nói tự làm ăn buôn bán, hay nhận thầu, dẫn chương trình, thực thi?"
+    },
+    {
+     "w": "正规",
+     "py": "zhèng guī",
+     "vi": "chính quy, bài bản",
+     "cum": "接受正规训练",
+     "trait": [
+      "Tính từ: theo đúng quy chuẩn",
+      "Đi với: 正规训练, 正规渠道, 正规军"
+     ],
+     "conf": [
+      {
+       "w": "正当",
+       "py": "zhèng dàng",
+       "vi": "chính đáng",
+       "diff": "hợp lý, hợp pháp: 正当理由"
+      },
+      {
+       "w": "正经",
+       "py": "zhèng jing",
+       "vi": "đứng đắn",
+       "diff": "nghiêm túc, đàng hoàng"
+      },
+      {
+       "w": "正义",
+       "py": "zhèng yì",
+       "vi": "chính nghĩa",
+       "diff": "công lý"
+      }
+     ],
+     "q": "Đề nói huấn luyện bài bản, hay lý do chính đáng, người đứng đắn?"
+    }
+   ]
   }
  ]
 }

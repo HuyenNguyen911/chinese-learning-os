@@ -44,7 +44,8 @@ PINYIN_OVERRIDE = {"古朴": "gǔpǔ", "简朴": "jiǎnpǔ", "巴不得": "bābu
                    "密实": "mìshi", "名堂": "míngtang", "和尚": "héshang",
                    "一事无成": "yīshìwúchéng", "收成": "shōucheng", "随和": "suíhe",
                    "卖弄": "màinong", "出手相助": "chūshǒuxiāngzhù",
-                   "独一无二": "dúyīwú'èr", "无恶不作": "wú'èbùzuò", "瞧不起": "qiáobuqǐ"}
+                   "独一无二": "dúyīwú'èr", "无恶不作": "wú'èbùzuò", "瞧不起": "qiáobuqǐ",
+                   "恭维": "gōngwei", "世故": "shìgu", "不见得": "bùjiànde"}
 _VOWEL = set("aāáǎàoōóǒòeēéěèê")  # có è: 无恶不作 wú'è…
 
 def py(w):
