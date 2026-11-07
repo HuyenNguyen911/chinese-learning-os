@@ -34,7 +34,7 @@ HAN = r"[一-鿿]"
 
 ER_KEEP = {"婴儿", "女儿", "儿子", "儿童", "幼儿", "孤儿", "育儿", "宠儿",
            "健儿", "男儿", "混血儿", "少儿", "托儿所", "儿女"}
-PINYIN_OVERRIDE = {"古朴": "gǔpǔ", "简朴": "jiǎnpǔ", "巴不得": "bābude",
+PINYIN_OVERRIDE = {"磕磕绊绊": "kēkebànbàn", "古朴": "gǔpǔ", "简朴": "jiǎnpǔ", "巴不得": "bābude",
                    "游子": "yóuzǐ", "硕果累累": "shuòguǒléiléi", "伤痕累累": "shānghénléiléi",
                    "恨不得": "hènbude", "堵得慌": "dǔdehuāng",
                    "琢磨": "zuómo",  # nghĩa "suy nghĩ, cân nhắc" (không phải zhuómó = đẽo gọt)

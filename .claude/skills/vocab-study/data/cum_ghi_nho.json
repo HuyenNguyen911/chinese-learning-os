@@ -8427,6 +8427,724 @@
      "q": "Đề nói huấn luyện bài bản, hay lý do chính đáng, người đứng đắn?"
     }
    ]
+  },
+  {
+   "title": "Điền từ H6 — Đề 11",
+   "items": [
+    {
+     "w": "期待",
+     "py": "qī dài",
+     "vi": "mong đợi (có cảm xúc tích cực)",
+     "cum": "按照别人对自己的期待去生活",
+     "trait": [
+      "Động/danh từ: mong chờ điều tốt sẽ đến",
+      "Đi với: 满怀期待, 令人期待, 不负期待"
+     ],
+     "conf": [
+      {
+       "w": "期望",
+       "py": "qī wàng",
+       "vi": "kỳ vọng",
+       "diff": "hy vọng người khác đạt kết quả, hay đi với 对…的期望"
+      },
+      {
+       "w": "渴望",
+       "py": "kě wàng",
+       "vi": "khao khát",
+       "diff": "mong rất mạnh, của chính mình"
+      },
+      {
+       "w": "指望",
+       "py": "zhǐ wàng",
+       "vi": "trông cậy",
+       "diff": "dựa vào ai/điều gì để có kết quả"
+      }
+     ],
+     "q": "Đề nói người khác mong đợi mình, hay mình khao khát/trông cậy?"
+    },
+    {
+     "w": "假设",
+     "py": "jiǎ shè",
+     "vi": "giả sử, giả định",
+     "cum": "假设有人像对待成功人士那样对待你",
+     "trait": [
+      "Động từ: giả định một tình huống (thường đầu mệnh đề)",
+      "Đi với: 假设…那么…, 一个假设, 大胆假设"
+     ],
+     "conf": [
+      {
+       "w": "设想",
+       "py": "shè xiǎng",
+       "vi": "hình dung, tưởng tượng",
+       "diff": "nghĩ trước về điều chưa xảy ra, ít dùng làm liên từ"
+      },
+      {
+       "w": "假使",
+       "py": "jiǎ shǐ",
+       "vi": "nếu như",
+       "diff": "liên từ thuần túy, không là danh từ"
+      },
+      {
+       "w": "一旦",
+       "py": "yí dàn",
+       "vi": "một khi",
+       "diff": "nhấn mạnh 'khi việc đó đã xảy ra' → hệ quả"
+      }
+     ],
+     "q": "Đề cần liên từ 'giả sử' mở câu điều kiện, hay 'một khi xảy ra'?"
+    },
+    {
+     "w": "表现",
+     "py": "biǎo xiàn",
+     "vi": "thể hiện, biểu hiện",
+     "cum": "表现出与成功者一样的能力",
+     "trait": [
+      "Động/danh từ: bộc lộ ra ngoài (năng lực, thái độ)",
+      "Đi với: 表现出, 表现优秀, 平时的表现"
+     ],
+     "conf": [
+      {
+       "w": "发表",
+       "py": "fā biǎo",
+       "vi": "đăng, phát biểu",
+       "diff": "công bố ý kiến, bài viết"
+      },
+      {
+       "w": "演变",
+       "py": "yǎn biàn",
+       "vi": "diễn biến, biến đổi",
+       "diff": "quá trình thay đổi lâu dài"
+      },
+      {
+       "w": "表明",
+       "py": "biǎo míng",
+       "vi": "cho thấy, tỏ rõ",
+       "diff": "nói rõ quan điểm/sự thật"
+      }
+     ],
+     "q": "Đề nói năng lực lộ ra ngoài, hay công bố ý kiến, hay biến đổi dần?"
+    },
+    {
+     "w": "循环",
+     "py": "xún huán",
+     "vi": "tuần hoàn",
+     "cum": "被血液带进循环系统",
+     "trait": [
+      "Danh/động từ: quay vòng lặp lại",
+      "Đi với: 循环系统, 良性循环, 恶性循环"
+     ],
+     "conf": [
+      {
+       "w": "扩散",
+       "py": "kuò sàn",
+       "vi": "lan rộng",
+       "diff": "tản ra xung quanh, không quay vòng"
+      },
+      {
+       "w": "渗透",
+       "py": "shèn tòu",
+       "vi": "thấm",
+       "diff": "đi từ ngoài vào trong qua lớp ngăn"
+      },
+      {
+       "w": "排放",
+       "py": "pái fàng",
+       "vi": "thải ra",
+       "diff": "đưa chất thải ra ngoài"
+      }
+     ],
+     "q": "Đề nói hệ máu chạy vòng, hay chất lan ra / thấm vào / thải ra?"
+    },
+    {
+     "w": "醉",
+     "py": "zuì",
+     "vi": "say",
+     "cum": "人就醉了",
+     "trait": [
+      "Động từ: say rượu (đích thực) hoặc mê say",
+      "Đi với: 喝醉, 醉酒, 陶醉"
+     ],
+     "conf": [
+      {
+       "w": "晕",
+       "py": "yūn",
+       "vi": "chóng mặt, choáng",
+       "diff": "do mệt/bệnh, không nhất thiết do rượu"
+      },
+      {
+       "w": "馋",
+       "py": "chán",
+       "vi": "thèm ăn",
+       "diff": "thèm thức ăn, không phải trạng thái sau uống"
+      },
+      {
+       "w": "痒",
+       "py": "yǎng",
+       "vi": "ngứa",
+       "diff": "cảm giác trên da"
+      }
+     ],
+     "q": "Đề nói hậu quả sau khi uống rượu, hay chóng mặt/thèm/ngứa chung chung?"
+    },
+    {
+     "w": "中心",
+     "py": "zhōng xīn",
+     "vi": "trung tâm",
+     "cum": "最早的加工中心在福州",
+     "trait": [
+      "Danh từ: nơi tập trung chính của hoạt động",
+      "Đi với: 加工中心, 文化中心, 以…为中心"
+     ],
+     "conf": [
+      {
+       "w": "基地",
+       "py": "jī dì",
+       "vi": "căn cứ",
+       "diff": "nơi làm nền cho sản xuất/huấn luyện"
+      },
+      {
+       "w": "核心",
+       "py": "hé xīn",
+       "vi": "cốt lõi",
+       "diff": "phần quan trọng nhất của vấn đề"
+      },
+      {
+       "w": "重心",
+       "py": "zhòng xīn",
+       "vi": "trọng tâm",
+       "diff": "điểm nhấn của công việc, cũng là trọng tâm vật lý"
+      }
+     ],
+     "q": "Đề nói nơi tập trung chế biến, hay phần cốt lõi, hay điểm nhấn?"
+    },
+    {
+     "w": "促使",
+     "py": "cù shǐ",
+     "vi": "thúc đẩy khiến cho",
+     "cum": "促使茶叶吸附鲜花的芬芳香气",
+     "trait": [
+      "Động từ: dùng tác động khiến sự việc xảy ra",
+      "Đi với: 促使…发生, 促使…转变"
+     ],
+     "conf": [
+      {
+       "w": "致使",
+       "py": "zhì shǐ",
+       "vi": "khiến cho (hậu quả xấu)",
+       "diff": "thường nói kết quả tiêu cực"
+      },
+      {
+       "w": "促进",
+       "py": "cù jìn",
+       "vi": "thúc đẩy phát triển",
+       "diff": "đối tượng là sự việc/quá trình, không đi với người + động từ"
+      },
+      {
+       "w": "改进",
+       "py": "gǎi jìn",
+       "vi": "cải tiến",
+       "diff": "làm cho tốt hơn"
+      }
+     ],
+     "q": "Đề cần 'khiến X làm gì' với kết quả trung tính, hay hậu quả xấu / thúc đẩy phát triển?"
+    },
+    {
+     "w": "天然",
+     "py": "tiān rán",
+     "vi": "thiên nhiên, tự nhiên (không nhân tạo)",
+     "cum": "保持天然香味",
+     "trait": [
+      "Tính từ: do thiên nhiên tạo ra, chưa gia công",
+      "Đi với: 天然气, 天然材料, 天然香味"
+     ],
+     "conf": [
+      {
+       "w": "天生",
+       "py": "tiān shēng",
+       "vi": "bẩm sinh",
+       "diff": "nói người/vật có từ lúc sinh ra"
+      },
+      {
+       "w": "自然",
+       "py": "zì rán",
+       "vi": "tự nhiên",
+       "diff": "thiên nhiên hoặc không gượng ép"
+      },
+      {
+       "w": "天真",
+       "py": "tiān zhēn",
+       "vi": "ngây thơ",
+       "diff": "tính cách trong sáng"
+      }
+     ],
+     "q": "Đề nói không pha chế nhân tạo, hay bẩm sinh, hay ngây thơ?"
+    },
+    {
+     "w": "抛弃",
+     "py": "pāo qì",
+     "vi": "vứt bỏ, ruồng bỏ",
+     "cum": "被这个世界抛弃了",
+     "trait": [
+      "Động từ: vứt đi, bỏ rơi (người, thói quen, quan điểm)",
+      "Đi với: 抛弃旧观念, 被抛弃"
+     ],
+     "conf": [
+      {
+       "w": "淘汰",
+       "py": "táo tài",
+       "vi": "đào thải",
+       "diff": "bị loại vì không đáp ứng yêu cầu, có sự cạnh tranh"
+      },
+      {
+       "w": "打击",
+       "py": "dǎ jī",
+       "vi": "đả kích",
+       "diff": "làm tổn thương, không có nghĩa bỏ"
+      },
+      {
+       "w": "流浪",
+       "py": "liú làng",
+       "vi": "lang thang",
+       "diff": "không có nơi cố định"
+      }
+     ],
+     "q": "Đề nói bị bỏ rơi cảm xúc, hay bị loại vì không theo kịp?"
+    },
+    {
+     "w": "尝试",
+     "py": "cháng shì",
+     "vi": "thử",
+     "cum": "何不去尝试听听当今的流行音乐",
+     "trait": [
+      "Động/danh từ: thử làm điều mới",
+      "Đi với: 大胆尝试, 尝试一下, 一次尝试"
+     ],
+     "conf": [
+      {
+       "w": "体验",
+       "py": "tǐ yàn",
+       "vi": "trải nghiệm",
+       "diff": "tự mình sống qua để cảm nhận"
+      },
+      {
+       "w": "挑战",
+       "py": "tiǎo zhàn",
+       "vi": "thách thức",
+       "diff": "đối đầu với khó khăn"
+      },
+      {
+       "w": "试图",
+       "py": "shì tú",
+       "vi": "cố gắng, toan",
+       "diff": "có ý định, thường chưa thành"
+      }
+     ],
+     "q": "Đề nói thử làm điều mới, hay trải nghiệm sâu, hay cố gắng toan làm?"
+    },
+    {
+     "w": "充满",
+     "py": "chōng mǎn",
+     "vi": "tràn đầy",
+     "cum": "对这个世界充满善意",
+     "trait": [
+      "Động từ: đầy ắp (tình cảm, hy vọng)",
+      "Đi với: 充满信心, 充满希望, 充满善意"
+     ],
+     "conf": [
+      {
+       "w": "存在",
+       "py": "cún zài",
+       "vi": "tồn tại",
+       "diff": "có sự hiện hữu, không nói mức độ"
+      },
+      {
+       "w": "盛行",
+       "py": "shèng xíng",
+       "vi": "thịnh hành",
+       "diff": "phong trào lan rộng"
+      },
+      {
+       "w": "充当",
+       "py": "chōng dāng",
+       "vi": "đảm nhận vai",
+       "diff": "giữ một vai trò"
+      }
+     ],
+     "q": "Đề nói lòng tràn đầy cảm xúc, hay có tồn tại / đang thịnh hành?"
+    },
+    {
+     "w": "悲观",
+     "py": "bēi guān",
+     "vi": "bi quan",
+     "cum": "当你悲观、郁闷",
+     "trait": [
+      "Tính từ: nhìn mọi việc theo hướng xấu",
+      "Đi với: 悲观失望, 过于悲观, 持悲观态度"
+     ],
+     "conf": [
+      {
+       "w": "悲哀",
+       "py": "bēi āi",
+       "vi": "đau buồn",
+       "diff": "nỗi buồn cụ thể, sâu"
+      },
+      {
+       "w": "愤怒",
+       "py": "fèn nù",
+       "vi": "phẫn nộ",
+       "diff": "tức giận"
+      },
+      {
+       "w": "急躁",
+       "py": "jí zào",
+       "vi": "nóng nảy",
+       "diff": "thiếu kiên nhẫn"
+      }
+     ],
+     "q": "Đề nói thái độ nhìn mọi thứ tiêu cực, hay nỗi đau buồn cụ thể?"
+    },
+    {
+     "w": "语气",
+     "py": "yǔ qì",
+     "vi": "giọng điệu",
+     "cum": "不要用强硬的语气",
+     "trait": [
+      "Danh từ: thái độ thể hiện qua cách nói",
+      "Đi với: 肯定的语气, 缓和语气, 语气强硬"
+     ],
+     "conf": [
+      {
+       "w": "气势",
+       "py": "qì shì",
+       "vi": "khí thế",
+       "diff": "vẻ mạnh mẽ tổng thể"
+      },
+      {
+       "w": "口气",
+       "py": "kǒu qì",
+       "vi": "khẩu khí",
+       "diff": "giọng nói cũng thể hiện địa vị/lập trường"
+      },
+      {
+       "w": "声调",
+       "py": "shēng diào",
+       "vi": "thanh điệu, cao độ giọng",
+       "diff": "cao thấp của giọng, không chỉ thái độ"
+      }
+     ],
+     "q": "Đề nói thái độ trong lời nói, hay khí thế, hay cao thấp của giọng?"
+    },
+    {
+     "w": "声调",
+     "py": "shēng diào",
+     "vi": "âm điệu, cao độ giọng",
+     "cum": "更高的声调",
+     "trait": [
+      "Danh từ: độ cao thấp của giọng nói",
+      "Đi với: 提高声调, 降低声调"
+     ],
+     "conf": [
+      {
+       "w": "语气",
+       "py": "yǔ qì",
+       "vi": "giọng điệu",
+       "diff": "thái độ thể hiện qua lời"
+      },
+      {
+       "w": "节奏",
+       "py": "jié zòu",
+       "vi": "nhịp",
+       "diff": "tốc độ nhanh chậm đều đặn"
+      },
+      {
+       "w": "口气",
+       "py": "kǒu qì",
+       "vi": "khẩu khí",
+       "diff": "lập trường qua cách nói"
+      }
+     ],
+     "q": "Đề nói cao thấp của giọng, hay thái độ, hay nhịp nói?"
+    },
+    {
+     "w": "反抗",
+     "py": "fǎn kàng",
+     "vi": "phản kháng",
+     "cum": "对方反抗越大",
+     "trait": [
+      "Động/danh từ: chống lại sự áp bức hay áp đặt",
+      "Đi với: 激烈反抗, 奋起反抗, 引起反抗"
+     ],
+     "conf": [
+      {
+       "w": "抗议",
+       "py": "kàng yì",
+       "vi": "phản đối",
+       "diff": "nêu ý kiến phản đối công khai"
+      },
+      {
+       "w": "对抗",
+       "py": "duì kàng",
+       "vi": "đối kháng",
+       "diff": "hai bên chống nhau"
+      },
+      {
+       "w": "抵抗",
+       "py": "dǐ kàng",
+       "vi": "chống cự",
+       "diff": "ngăn cản sự tấn công/bệnh"
+      }
+     ],
+     "q": "Đề nói bên bị ép chống lại, hay phản đối bằng lời, hay hai bên đối đầu?"
+    },
+    {
+     "w": "沮丧",
+     "py": "jǔ sàng",
+     "vi": "chán nản",
+     "cum": "为沮丧的人说一句鼓励的话",
+     "trait": [
+      "Tính từ: nản lòng, mất tinh thần sau thất bại",
+      "Đi với: 垂头丧气, 感到沮丧, 沮丧的心情"
+     ],
+     "conf": [
+      {
+       "w": "忧郁",
+       "py": "yōu yù",
+       "vi": "u uất",
+       "diff": "buồn kéo dài, âm thầm"
+      },
+      {
+       "w": "寂寞",
+       "py": "jì mò",
+       "vi": "cô đơn",
+       "diff": "thiếu người bên cạnh"
+      },
+      {
+       "w": "惭愧",
+       "py": "cán kuì",
+       "vi": "hổ thẹn",
+       "diff": "vì mình có lỗi"
+      }
+     ],
+     "q": "Đề nói nản lòng sau thất bại, hay u buồn, cô đơn, xấu hổ?"
+    },
+    {
+     "w": "自卑",
+     "py": "zì bēi",
+     "vi": "tự ti",
+     "cum": "为自卑的人说一句增添信心的话",
+     "trait": [
+      "Tính từ: cho rằng mình kém",
+      "Đi với: 自卑感, 产生自卑, 自卑心理"
+     ],
+     "conf": [
+      {
+       "w": "自觉",
+       "py": "zì jué",
+       "vi": "tự giác",
+       "diff": "chủ động làm"
+      },
+      {
+       "w": "自私",
+       "py": "zì sī",
+       "vi": "ích kỷ",
+       "diff": "chỉ nghĩ cho mình"
+      },
+      {
+       "w": "自满",
+       "py": "zì mǎn",
+       "vi": "tự mãn",
+       "diff": "cho là mình đã đủ giỏi"
+      }
+     ],
+     "q": "Đề cần người thiếu tự tin, hay tự giác, ích kỷ, tự mãn?"
+    },
+    {
+     "w": "安慰",
+     "py": "ān wèi",
+     "vi": "an ủi",
+     "cum": "说一句安慰同情的话",
+     "trait": [
+      "Động/tính từ: làm dịu nỗi đau của người khác",
+      "Đi với: 安慰别人, 得到安慰, 自我安慰"
+     ],
+     "conf": [
+      {
+       "w": "慰问",
+       "py": "wèi wèn",
+       "vi": "thăm hỏi, ủy lạo",
+       "diff": "đến thăm người gặp khó khăn/thiên tai"
+      },
+      {
+       "w": "辜负",
+       "py": "gū fù",
+       "vi": "phụ lòng",
+       "diff": "không đáp lại kỳ vọng"
+      },
+      {
+       "w": "嘱咐",
+       "py": "zhǔ fù",
+       "vi": "dặn dò",
+       "diff": "dặn người khác điều cần làm"
+      }
+     ],
+     "q": "Đề nói lời xoa dịu nỗi đau, hay thăm hỏi, phụ lòng, dặn dò?"
+    },
+    {
+     "w": "锦上添花",
+     "py": "jǐn shàng tiān huā",
+     "vi": "thêm hoa lên gấm",
+     "cum": "雪中送炭比锦上添花好",
+     "trait": [
+      "Thành ngữ: làm điều tốt đẹp thêm tốt đẹp",
+      "Đối lập: 雪中送炭"
+     ],
+     "conf": [
+      {
+       "w": "雪上加霜",
+       "py": "xuě shàng jiā shuāng",
+       "vi": "họa vô đơn chí",
+       "diff": "đã khổ lại thêm khổ"
+      },
+      {
+       "w": "知足常乐",
+       "py": "zhī zú cháng lè",
+       "vi": "biết đủ thì vui",
+       "diff": "không liên quan"
+      },
+      {
+       "w": "家喻户晓",
+       "py": "jiā yù hù xiǎo",
+       "vi": "ai ai cũng biết",
+       "diff": "nổi tiếng"
+      }
+     ],
+     "q": "Đề đối lập với 雪中送炭 (giúp lúc khó), hay nói đã khổ thêm khổ?"
+    },
+    {
+     "w": "善于",
+     "py": "shàn yú",
+     "vi": "giỏi, khéo (làm gì)",
+     "cum": "善于把握分寸",
+     "trait": [
+      "Động từ: có sở trường, thường đứng trước động từ",
+      "Đi với: 善于沟通, 善于观察, 善于学习"
+     ],
+     "conf": [
+      {
+       "w": "勇于",
+       "py": "yǒng yú",
+       "vi": "dám (làm)",
+       "diff": "can đảm làm việc khó"
+      },
+      {
+       "w": "鉴于",
+       "py": "jiàn yú",
+       "vi": "xét thấy",
+       "diff": "giới từ chỉ căn cứ"
+      },
+      {
+       "w": "擅长",
+       "py": "shàn cháng",
+       "vi": "sở trường",
+       "diff": "thường đi với danh từ: 擅长书法"
+      }
+     ],
+     "q": "Đề nói khéo léo làm gì, hay dám làm, hay xét căn cứ?"
+    },
+    {
+     "w": "犒劳",
+     "py": "kào láo",
+     "vi": "khao thưởng",
+     "cum": "喜欢吃甜食犒劳自己",
+     "trait": [
+      "Động từ: thưởng cho bản thân/người vừa vất vả",
+      "Đi với: 犒劳自己, 犒劳大家"
+     ],
+     "conf": [
+      {
+       "w": "奖赏",
+       "py": "jiǎng shǎng",
+       "vi": "khen thưởng",
+       "diff": "trao phần thưởng chính thức"
+      },
+      {
+       "w": "奖励",
+       "py": "jiǎng lì",
+       "vi": "khen thưởng, động viên",
+       "diff": "cho phần thưởng để khích lệ"
+      },
+      {
+       "w": "欣赏",
+       "py": "xīn shǎng",
+       "vi": "thưởng thức, quý trọng",
+       "diff": "cảm thấy đẹp/hay"
+      }
+     ],
+     "q": "Đề nói tự thưởng vì vất vả, hay thưởng chính thức, hay quý trọng cái đẹp?"
+    },
+    {
+     "w": "华丽",
+     "py": "huá lì",
+     "vi": "lộng lẫy",
+     "cum": "忘记那些紧身的华丽衣服",
+     "trait": [
+      "Tính từ: đẹp rực rỡ, cầu kỳ",
+      "Đi với: 华丽的衣服, 辞藻华丽, 华丽的转身"
+     ],
+     "conf": [
+      {
+       "w": "豪华",
+       "py": "háo huá",
+       "vi": "sang trọng xa xỉ",
+       "diff": "tiện nghi cao cấp, tốn tiền"
+      },
+      {
+       "w": "繁华",
+       "py": "fán huá",
+       "vi": "phồn hoa",
+       "diff": "nơi đô thị náo nhiệt"
+      },
+      {
+       "w": "完美",
+       "py": "wán měi",
+       "vi": "hoàn mỹ",
+       "diff": "không có khuyết điểm"
+      }
+     ],
+     "q": "Đề nói quần áo đẹp rực rỡ, hay sang xa xỉ, phố thị, hoàn hảo?"
+    },
+    {
+     "w": "消除",
+     "py": "xiāo chú",
+     "vi": "xóa bỏ, loại trừ",
+     "cum": "坏心情可以用甜美的食物来消除",
+     "trait": [
+      "Động từ: làm biến mất điều tiêu cực",
+      "Đi với: 消除疲劳, 消除误会, 消除隐患"
+     ],
+     "conf": [
+      {
+       "w": "取消",
+       "py": "qǔ xiāo",
+       "vi": "hủy bỏ",
+       "diff": "bỏ quy định, kế hoạch"
+      },
+      {
+       "w": "消灭",
+       "py": "xiāo miè",
+       "vi": "tiêu diệt",
+       "diff": "giết sạch kẻ địch, sâu bệnh"
+      },
+      {
+       "w": "消失",
+       "py": "xiāo shī",
+       "vi": "biến mất",
+       "diff": "nội động từ, không có tân ngữ"
+      }
+     ],
+     "q": "Đề nói làm hết cảm giác xấu, hay hủy kế hoạch, tiêu diệt, tự biến mất?"
+    }
+   ]
   }
  ]
 }
